@@ -23,5 +23,6 @@ child nodes) a zipper might support these operations:
                    returns a new zipper)
 * `delete` (removes the focus node and all subtrees,
             focus moves to the `next` node if possible
+            otherwise to the `prev` node if possible,
             otherwise to the parent node,
             returns a new zipper)
