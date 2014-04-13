@@ -58,7 +58,7 @@ For example:
 
 - "Have a nice day. Feed the dog & chill out!"
   - Normalizes to: "haveanicedayfeedthedogchillout"
-  - Which has length: 36
+  - Which has length: 30
   - And splits into 5 6-character rows:
     - "havean"
     - "iceday"
