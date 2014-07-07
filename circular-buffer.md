@@ -15,7 +15,9 @@ If two elements are then removed from the buffer, the oldest values inside the b
 If the buffer has 7 elements then it is completely full:
 [6][7][8][9][3][4][5]
 
-A consequence of the circular buffer is that when it is full and a subsequent write is performed, then it starts overwriting the oldest data. In this case, two more elements — A & B — are added and they overwrite the 3 & 4:
+When the buffer is full an error will be raised, alerting the client that further writes are blocked until a slot becomes free.
+
+The client can opt to overwrite the oldest data with a forced write. In this case, two more elements — A & B — are added and they overwrite the 3 & 4:
 [6][7][8][9][A][B][5]
 
 Finally, if two elements are now removed then what would be returned is not 3 & 4 but 5 & 6 because A & B overwrote the 3 & the 4 yielding the buffer with:
