@@ -1,5 +1,5 @@
 Scoring Bowling
-===============
+---------------
 
 The game consists of 10 frames. In each frame the player has
 two opportunities to knock down 10 pins.  The score for the frame is the total
@@ -18,7 +18,7 @@ balls to complete the frame.  However no more than three balls can be rolled in
 tenth frame.
 
 Requirements
-============
+------------
 
 Write a class named “Game” that has two methods:
 
