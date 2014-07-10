@@ -24,5 +24,3 @@ Write a class named “Game” that has two methods:
 
 * _roll(pins : int)_ is called each time the player rolls a ball.  The argument is the number of pins knocked down.
 * _score() : int_ is called only at the very end of the game.  It returns the total score for that game.
-
-*Source:* [http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata](http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata)
