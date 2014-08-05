@@ -17,5 +17,5 @@ The Aliquot sum is defined as the sum of the factors of a number not including t
 
 28 is perfect number because 28 = 1 + 2 + 4 + 7.
 
-Prime numbers 7, 13, etc are Deficient by the Micomachus classificaton. 
+Prime numbers 7, 13, etc are Deficient by the Nicomachus classificaton. 
 
