@@ -14,7 +14,6 @@ I'm not going to talk about lipids because they're crazy complex.
 
 So back to nucleotides.
 
-There are 5 types of nucleotides. 4 of these occur in DNA: `A`, `C`, `G`, and `T`. 4 occur in RNA: `A`, `C`, `G`, `U`.
+DNA contains four types of them: adenine (`A`), cytosine (`C`), guanine (`G`), and thymine (`T`).
 
-There are no other nucleotides.
-
+RNA contains a slightly different set of nucleotides but we don't care about that for now.
