@@ -1,7 +1,7 @@
 Write a program passing the tests.
 
-You will be guided to implement binary to decimal conversion.
-Given a binary input string, your program should be able to produce a decimal
+You will be guided to implement binary to decimal conversion.  Given a
+binary input string, your program should be able to produce a decimal
 output.
 
 ## Note
