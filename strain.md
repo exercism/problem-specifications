@@ -19,5 +19,5 @@ Note that the union of `keep` and `discard` is all the elements.
 ## Restrictions
 
 Keep your hands off that filter/reject/whatchamacallit functionality
-provided by your standard library!
-Solve this one yourself using other basic tools instead.
+provided by your standard library!  Solve this one yourself using other
+basic tools instead.

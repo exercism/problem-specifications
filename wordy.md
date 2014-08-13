@@ -6,7 +6,8 @@ E.g.
 
 The program should handle large numbers and negative numbers.
 
-Use the tests to drive your solution by deleting the `skip` in one test at a time.
+Use the tests to drive your solution by deleting the `skip` in one test
+at a time.
 
 ## Step 2
 
