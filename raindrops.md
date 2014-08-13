@@ -5,6 +5,7 @@
   just pass the number's digits straight through.
 
 ## Examples
+
 - 28's prime-factorization is 2, 2, 7.
   - In raindrop-speak, this would be a simple "Plong".
 - 1755 prime-factorization is 3, 3, 3, 5, 13.

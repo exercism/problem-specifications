@@ -1,5 +1,5 @@
-In Pascal's Triangle each number is computed by adding the numbers to the
-right and left of the current position in the previous row.
+In Pascal's Triangle each number is computed by adding the numbers to
+the right and left of the current position in the previous row.
 
 ```plain
     1
