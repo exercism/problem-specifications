@@ -31,7 +31,7 @@ input letters:
 
 A final note about scoring, Scrabble is played around the world in a
 variety of languages, each with its own unique scoring table. For
-example, an **A** is scored at 14 in the Basque-language version of the
+example, an "A" is scored at 14 in the Basque-language version of the
 game while being scored at 9 in the Latin-language version.
 
 Your mission, should you choose to accept it, is to write a program that
