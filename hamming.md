@@ -24,6 +24,6 @@ The Hamming distance between these two DNA strands is 7.
 
 # Implementation notes
 
-The Hamming distance is only defined for sequences of equal length. Hence you
-may assume that only sequences of equal length will be passed to your hamming
-distance function.
+The Hamming distance is only defined for sequences of equal length. This means
+that based on the definition, each language could deal with getting sequences
+of equal length differently.
