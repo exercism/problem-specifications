@@ -30,9 +30,9 @@ right.
 For example, the message above is coded as:
 
 ```plain
-imtgd vsfea rwerm ayoog
-oanou uiont nnlvt wttdd
-esaoh ghnss eoau
+imtgdvs fearwer mayoogo
+anouuio ntnnlvt wttddes
+aohghn  sseoau
 ```
 
 Write a program that, given an English text, outputs the encoded version
@@ -55,7 +55,7 @@ wide.
 A message between 5 and 8 characters long should use a rectangle 3
 characters wide.
 
-Output the encoded text in groups of five letters.
+Output the encoded text grouped by column.
 
 For example:
 
