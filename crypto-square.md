@@ -30,9 +30,7 @@ right.
 For example, the message above is coded as:
 
 ```plain
-imtgdvs fearwer mayoogo
-anouuio ntnnlvt wttddes
-aohghn  sseoau
+imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn sseoau
 ```
 
 Write a program that, given an English text, outputs the encoded version
