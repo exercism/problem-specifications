@@ -1,0 +1,217 @@
+{
+ "#set": [
+  "Test creating a new clock with an initial time, or test setting",
+  "time on a clock."
+ ],
+ "set": [
+  {
+   "desc": "on the hour",
+   "hour": 8,
+   "min":  0,
+   "want": "08:00"
+  },
+  {
+   "desc": "on the hour",
+   "hour": 9,
+   "min":  0,
+   "want": "09:00"
+  },
+  {
+   "desc": "past the hour",
+   "hour": 11,
+   "min":  9,
+   "want": "11:09"
+  },
+  {
+   "desc": "past the hour",
+   "hour": 11,
+   "min":  19,
+   "want": "11:19"
+  },
+  {
+   "desc": "midnight is zero hours",
+   "hour": 24,
+   "min":  0,
+   "want": "00:00"
+  },
+  {
+   "desc": "hour rolls over",
+   "hour": 25,
+   "min":  0,
+   "want": "01:00"
+  },
+  {
+   "desc": "sixty minutes is next hour",
+   "hour": 1,
+   "min":  60,
+   "want": "02:00"
+  },
+  {
+   "desc": "minutes roll over",
+   "hour": 0,
+   "min":  160,
+   "want": "02:40"
+  },
+  {
+   "desc": "hour and minutes roll over",
+   "hour": 25,
+   "min":  160,
+   "want": "03:40"
+  },
+  {
+   "desc": "negative hour",
+   "hour": -1,
+   "min":  15,
+   "want": "23:15"
+  },
+  {
+   "desc": "negative hour rolls over",
+   "hour": -25,
+   "min":  0,
+   "want": "23:00"
+  },
+  {
+   "desc": "negative minutes",
+   "hour": 1,
+   "min":  -40,
+   "want": "00:20"
+  },
+  {
+   "desc": "negative minutes roll over",
+   "hour": 1,
+   "min":  -160,
+   "want": "22:20"
+  },
+  {
+   "desc": "negative hour and minutes both roll over",
+   "hour": -25,
+   "min":  -160,
+   "want": "20:20"
+  }
+ ],
+
+ "#add": "Test adding and subtracting minutes.",
+ "add": [
+  {
+   "desc": "add minutes",
+   "hour": 10,
+   "min":  0,
+   "add":  3,
+   "want": "10:03"
+  },
+  {
+   "desc": "add to next hour",
+   "hour": 0,
+   "min":  45,
+   "add":  40,
+   "want": "01:25"
+  },
+  {
+   "desc": "add more than one hour",
+   "hour": 10,
+   "min":  0,
+   "add":  61,
+   "want": "11:01"
+  },
+  {
+   "desc": "add across midnight",
+   "hour": 23,
+   "min":  59,
+   "add":  2,
+   "want": "00:01"
+  },
+  {
+   "desc": "add more than one day",
+   "hour": 5,
+   "min":  32,
+   "#":    "1500 = 25 * 60",
+   "add":  1500,
+   "want": "06:32"
+  },
+  {
+   "desc": "add more than two hours with carry",
+   "hour": 0,
+   "min":  45,
+   "add":  160,
+   "want": "03:25"
+  },
+  {
+   "desc": "subtract minutes",
+   "hour": 10,
+   "min":  3,
+   "add":  -3,
+   "want": "10:00"
+  },
+  {
+   "desc": "subtract to previous hour",
+   "hour": 10,
+   "min":  3,
+   "add":  -30,
+   "want": "09:33"
+  },
+  {
+   "desc": "subtract more than an hour",
+   "hour": 10,
+   "min":  3,
+   "add":  -70,
+   "want": "08:53"
+  },
+  {
+   "desc": "subtract across midnight",
+   "hour": 0,
+   "min":  3,
+   "add":  -4,
+   "want": "23:59"
+  },
+  {
+   "desc": "subtract more than two hours",
+   "hour": 0,
+   "min":  0,
+   "add":  -160,
+   "want": "21:20"
+  },
+  {
+   "desc": "subtract more than one day",
+   "hour": 5,
+   "min":  32,
+   "#":    "1500 = 25 * 60",
+   "add":  -1500,
+   "want": "04:32"
+  },
+  {
+   "desc": "subtract more than two hours with borrow",
+   "hour": 6,
+   "min":  15,
+   "add":  -160,
+   "want": "03:35"
+  }
+ ],
+
+ "#equal": "Construct two separate clocks, set times, test if they are equal.",
+ "equal": [
+  {
+   "desc":   "clocks with same time should compare equal",
+   "clock1": {"hour": 15, "min":  37},
+   "clock2": {"hour": 15, "min":  37},
+   "want":  true
+  },
+  {
+   "desc":   "clocks a minute apart should compare not equal",
+   "clock1": {"hour": 15, "min":  36},
+   "clock2": {"hour": 15, "min":  37},
+   "want":   false
+  },
+  {
+   "desc":   "clocks an hour apart should compare not equal",
+   "clock1": {"hour": 14, "min":  37},
+   "clock2": {"hour": 15, "min":  37},
+   "want":   false
+  },
+  {
+   "desc":   "clocks set 24 hours apart should compare equal",
+   "clock1": {"hour": 10, "min":  37},
+   "clock2": {"hour": 34, "min":  37},
+   "want":   true
+  }
+ ]
+}
