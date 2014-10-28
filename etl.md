@@ -1,11 +1,12 @@
-This is a fancy way of saying, "We have some crufty, legacy data over in
-this system, and now we need it in this shiny new system over here, so
+### ETL
+Extract-Transform-Load (ETL) is a fancy way of saying, "We have some crufty, legacy data over in this system, and now we need it in this shiny new system over here, so
 we're going to migrate this."
 
 (Typically, this is followed by, "We're only going to need to run this
 once." That's then typically followed by much forehead slapping and
 moaning about how stupid we could possibly be.)
 
+### The goal
 We're going to extract some scrabble scores from a legacy system.
 
 The old system stored a list of letters per score:
@@ -29,14 +30,15 @@ input letters:
 - "d" is worth 2 points.
 - Etc.
 
+Your mission, should you choose to accept it, is to write a program that
+transforms the legacy data format to the shiny new format.
+
+### Notes
+Note that both the old and the new system use strings to represent
+letters, even in languages that have a separate data type for
+characters. 
+
 A final note about scoring, Scrabble is played around the world in a
 variety of languages, each with its own unique scoring table. For
 example, an "A" is scored at 14 in the Basque-language version of the
 game while being scored at 9 in the Latin-language version.
-
-Your mission, should you choose to accept it, is to write a program that
-transforms the legacy data format to the shiny new format.
-
-Note that both the old and the new system use strings to represent
-letters, even in languages that have a separate data type for
-characters. 
