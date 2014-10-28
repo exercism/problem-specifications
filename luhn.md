@@ -29,3 +29,25 @@ Write a program that, given a number
 - Can add a check digit to make the number valid per the Luhn formula and
   return the original number plus that digit. This should give "2323 2005 7766
   3554" in response to "2323 2005 7766 355".
+
+## About Checksums
+
+A checksum has to do with error-detection. There are a number of different
+ways in which a checksum could be calculated.
+
+When transmitting data, you might also send along a checksum that says how
+many bytes of data are being sent. That means that when the data arrives on
+the other side, you can count the bytes and compare it to the checksum. If
+these are different, then the data has been garbled in transmission.
+
+In the Luhn problem the final digit acts as a sanity check for all the prior
+digits. Running those prior digits through a particular algorithm should give
+you that final digit.
+
+It doesn't actually tell you if it's a real credit card number, only that it's
+a plausible one. It's the same thing with the bytes that get transmitted --
+you could have the right number of bytes and still have a garbled message. So
+checksums are a simple sanity-check, not a real in-depth verification of the
+authenticity of some data. It's often a cheap first pass, and can be used to
+quickly discard obviously invalid things.
+
