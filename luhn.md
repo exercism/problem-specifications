@@ -23,8 +23,9 @@ out to 6), while 8763 is valid (as shown above, it comes out to 20).
 
 Write a program that, given a number
 
-- Can check if it is valid per the Luhn formula.
-  - This should treat, for example, "2323 2005 7766 3554" as valid.
-- Can add a check digit to make the number valid per the Luhn formula.
-  - This should give "2323 2005 7766 3554" in response to "2323 2005
-    7766 355".
+- Can check if it is valid per the Luhn formula. This should treat, for
+  example, "2323 2005 7766 3554" as valid.
+- Can return the checksum, or the remainder from using the Luhn method.
+- Can add a check digit to make the number valid per the Luhn formula and
+  return the original number plus that digit. This should give "2323 2005 7766
+  3554" in response to "2323 2005 7766 355".
