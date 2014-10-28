@@ -1,4 +1,4 @@
-Compute an way to order a given set of dominoes in such a way that they form a
+Compute a way to order a given set of dominoes in such a way that they form a
 correct domino chain (the dots on one half of a stone match the dots on the
 neighbouring half of an adjacent stone) and that dots on the halfs of the stones
 which don't have a neighbour (the first and last stone) match eachother.
