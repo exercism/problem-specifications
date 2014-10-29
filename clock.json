@@ -1,0 +1,253 @@
+{
+   "#": [
+      "Most languages require constructing a clock with initial values,",
+      "adding a positive or negative number of minutes, and testing equality",
+      "in some language-native way.  Some languages require separate add and",
+      "subtract functions.  Negative and out of range values are generally",
+      "expected to wrap around rather than represent errors."
+   ],
+   "create": {
+      "description": [
+         "Test creating a new clock with an initial time."
+      ],
+      "cases": [
+         {
+            "description": "on the hour",
+            "hour": 8,
+            "minute": 0,
+            "expected": "08:00"
+         },
+         {
+            "description": "on the hour",
+            "hour": 9,
+            "minute": 0,
+            "expected": "09:00"
+         },
+         {
+            "description": "past the hour",
+            "hour": 11,
+            "minute": 9,
+            "expected": "11:09"
+         },
+         {
+            "description": "past the hour",
+            "hour": 11,
+            "minute": 19,
+            "expected": "11:19"
+         },
+         {
+            "description": "midnight is zero hours",
+            "hour": 24,
+            "minute": 0,
+            "expected": "00:00"
+         },
+         {
+            "description": "hour rolls over",
+            "hour": 25,
+            "minute": 0,
+            "expected": "01:00"
+         },
+         {
+            "description": "sixty minutes is next hour",
+            "hour": 1,
+            "minute": 60,
+            "expected": "02:00"
+         },
+         {
+            "description": "minutes roll over",
+            "hour": 0,
+            "minute": 160,
+            "expected": "02:40"
+         },
+         {
+            "description": "hour and minutes roll over",
+            "hour": 25,
+            "minute": 160,
+            "expected": "03:40"
+         },
+         {
+            "description": "negative hour",
+            "hour": -1,
+            "minute": 15,
+            "expected": "23:15"
+         },
+         {
+            "description": "negative hour rolls over",
+            "hour": -25,
+            "minute": 0,
+            "expected": "23:00"
+         },
+         {
+            "description": "negative minutes",
+            "hour": 1,
+            "minute": -40,
+            "expected": "00:20"
+         },
+         {
+            "description": "negative minutes roll over",
+            "hour": 1,
+            "minute": -160,
+            "expected": "22:20"
+         },
+         {
+            "description": "negative hour and minutes both roll over",
+            "hour": -25,
+            "minute": -160,
+            "expected": "20:20"
+         }
+      ]
+   },
+   "add": {
+      "description": [
+         "Test adding and subtracting minutes."
+      ],
+      "cases": [
+         {
+            "description": "add minutes",
+            "hour": 10,
+            "minute": 0,
+            "add": 3,
+            "expected": "10:03"
+         },
+         {
+            "description": "add to next hour",
+            "hour": 0,
+            "minute": 45,
+            "add": 40,
+            "expected": "01:25"
+         },
+         {
+            "description": "add more than one hour",
+            "hour": 10,
+            "minute": 0,
+            "add": 61,
+            "expected": "11:01"
+         },
+         {
+            "description": "add across midnight",
+            "hour": 23,
+            "minute": 59,
+            "add": 2,
+            "expected": "00:01"
+         },
+         {
+            "description": "add more than one day (1500 min = 25 hrs)",
+            "hour": 5,
+            "minute": 32,
+            "add": 1500,
+            "expected": "06:32"
+         },
+         {
+            "description": "add more than two hours with carry",
+            "hour": 0,
+            "minute": 45,
+            "add": 160,
+            "expected": "03:25"
+         },
+         {
+            "description": "subtract minutes",
+            "hour": 10,
+            "minute": 3,
+            "add": -3,
+            "expected": "10:00"
+         },
+         {
+            "description": "subtract to previous hour",
+            "hour": 10,
+            "minute": 3,
+            "add": -30,
+            "expected": "09:33"
+         },
+         {
+            "description": "subtract more than an hour",
+            "hour": 10,
+            "minute": 3,
+            "add": -70,
+            "expected": "08:53"
+         },
+         {
+            "description": "subtract across midnight",
+            "hour": 0,
+            "minute": 3,
+            "add": -4,
+            "expected": "23:59"
+         },
+         {
+            "description": "subtract more than two hours",
+            "hour": 0,
+            "minute": 0,
+            "add": -160,
+            "expected": "21:20"
+         },
+         {
+            "description": "subtract more than one day (1500 min = 25 hrs)",
+            "hour": 5,
+            "minute": 32,
+            "add": -1500,
+            "expected": "04:32"
+         },
+         {
+            "description": "subtract more than two hours with borrow",
+            "hour": 6,
+            "minute": 15,
+            "add": -160,
+            "expected": "03:35"
+         }
+      ]
+   },
+   "equal": {
+      "description": [
+         "Construct two separate clocks, set times, test if they are equal."
+      ],
+      "cases": [
+         {
+            "description": "clocks with same time",
+            "clock1": {
+               "hour": 15,
+               "minute": 37
+            },
+            "clock2": {
+               "hour": 15,
+               "minute": 37
+            },
+            "expected": true
+         },
+         {
+            "description": "clocks a minute apart",
+            "clock1": {
+               "hour": 15,
+               "minute": 36
+            },
+            "clock2": {
+               "hour": 15,
+               "minute": 37
+            },
+            "expected": false
+         },
+         {
+            "description": "clocks an hour apart",
+            "clock1": {
+               "hour": 14,
+               "minute": 37
+            },
+            "clock2": {
+               "hour": 15,
+               "minute": 37
+            },
+            "expected": false
+         },
+         {
+            "description": "clocks set 24 hours apart",
+            "clock1": {
+               "hour": 10,
+               "minute": 37
+            },
+            "clock2": {
+               "hour": 34,
+               "minute": 37
+            },
+            "expected": true
+         }
+      ]
+   }
+}
