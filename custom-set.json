@@ -1,0 +1,540 @@
+{
+   "#": [
+      "This problem is not too difficult but is long, with most languages",
+      "requiring a number of set operations.  Most languages test sets of",
+      "ints, which are represented here.  If you want to tests sets of",
+      "strings for example instead, just derive strings from the ints.",
+      "",
+      "Some languages test that integer-valued floats are considered distinct",
+      "from ints or test other types.  To simplify the JSON for test data",
+      "conversion programs these tests with non-int values are collected in",
+      "a separate section.  (Well, I confess, I was finding it awkward to",
+      "deal with this data in Go so I pulled it out.  I'd done the work to",
+      "collect these test cases though and I didn't want to throw them away",
+      "so I put them in that separate section.  If someone writing a test",
+      "data conversion program can use this data and wants to organize it",
+      "differently, go for it.  We'll deal with it.)",
+      "",
+      "Most languages rely on a solver-implemented 'equal' function for",
+      "testing other functions.  Equal tests should come before other",
+      "tests that rely on it.",
+      "",
+      "Languages vary some in terminology, for example in element/member,",
+      "add/put, size/length/cardinality.",
+      "",
+      "Languages often require some functions for getting data in or out",
+      "of sets, such as 'to-list' or 'string' methods.  These are generally",
+      "language specific and so are not represented here.",
+      "",
+      "Some languages with mutable types test functions that modify sets,",
+      "often by assigning variables in a sequence of operations.",
+      "This also is not represented here."
+   ],
+   "equal": {
+      "description": ["Test two sets for equality."],
+      "cases": [
+         {
+            "description": "order doesn't matter",
+            "set1": [1, 3],
+            "set2": [3, 1],
+            "expected": true
+         },
+         {
+            "description": "dupicates don't matter",
+            "set1": [1, 1],
+            "set2": [1],
+            "expected": true
+         },
+         {
+            "description": "empty sets are equal",
+            "set1": [],
+            "set2": [],
+            "expected": true
+         },
+         {
+            "description": "set with single element is equal to itself",
+            "set1": [1],
+            "set2": [1],
+            "expected": true
+         },
+         {
+            "description": "different sets are not equal",
+            "set1": [1, 2, 3],
+            "set2": [3, 4, 5],
+            "expected": false
+         },
+         {
+            "description": "empty set is not equal to non-empty set",
+            "set1": [],
+            "set2": [1, 2, 3],
+            "expected": false
+         },
+         {
+            "description": "non-empty set is not equal to empty set",
+            "set1": [1, 2, 3],
+            "set2": [],
+            "expected": false
+         },
+         {
+            "description": "having most in common is not good enough",
+            "set1": [1, 2, 3, 4],
+            "set2": [2, 3, 4, 5],
+            "expected": false
+         }
+      ]
+   },
+   "add": {
+      "description": ["Add an element to a set."],
+      "cases": [
+         {
+            "description": "add to empty set",
+            "set": [],
+            "element": 3,
+            "expected": [3]
+         },
+         {
+            "description": "add to non-empty set",
+            "set": [1, 2, 4],
+            "element": 3,
+            "expected": [1, 2, 3, 4]
+         },
+         {
+            "description": "add existing element",
+            "set": [1, 2, 3],
+            "element": 3,
+            "expected": [1, 2, 3]
+         }
+      ]
+   },
+   "delete": {
+      "description": ["Delete an element from a set."],
+      "cases": [
+         {
+            "description": "delete an element",
+            "set": [3, 2, 1],
+            "element": 2,
+            "expected": [1, 3]
+         },
+         {
+            "description": "delete an element not in set",
+            "set": [3, 2, 1],
+            "element": 4,
+            "expected": [1, 2, 3]
+         }
+      ]
+   },
+   "is-empty": {
+      "description": ["Test if is a set is empty."],
+      "cases": [
+         {
+            "description": "empty",
+            "set": [],
+            "expected": true
+         },
+         {
+            "description": "single element",
+            "set": [1],
+            "expected": false
+         },
+         {
+            "description": "a few elements",
+            "set": [1, 2, 3, 2],
+            "expected": false
+         }
+      ]
+   },
+   "size": {
+      "description": ["Return the cardinality of a set."],
+      "cases": [
+         {
+            "description": "empty set",
+            "set": [],
+            "expected": 0
+         },
+         {
+            "description": "non-empty set",
+            "set": [1, 2, 3],
+            "expected": 3
+         },
+         {
+            "description": "duplicate element",
+            "set": [1, 2, 3, 2],
+            "expected": 3
+         }
+      ]
+   },
+   "element": {
+      "description": ["Test if a value is an element of a set."],
+      "cases": [
+         {
+            "description": "nothing is an element of the empty set",
+            "set": [],
+            "element": 1,
+            "expected": false
+         },
+         {
+            "description": "1 is in the set",
+            "set": [1, 2, 3, 2],
+            "element": 1,
+            "expected": true
+         },
+         {
+            "description": "2 is in the set",
+            "set": [1, 2, 3, 2],
+            "element": 2,
+            "expected": true
+         },
+         {
+            "description": "3 is in the set",
+            "set": [1, 2, 3, 2],
+            "element": 3,
+            "expected": true
+         },
+         {
+            "description": "4 not in the set",
+            "set": [1, 2, 3, 2],
+            "element": 4,
+            "expected": false
+         }
+      ]
+   },
+   "subset": {
+      "description": ["Test if set1 is a subset of set2."],
+      "cases": [
+         {
+            "description": "empty set is subset of itself",
+            "set1": [],
+            "set2": [],
+            "expected": true
+         },
+         {
+            "description": "empty set is subset of non-empty set",
+            "set1": [],
+            "set2": [1],
+            "expected": true
+         },
+         {
+            "description": "non-empty set is not subset of empty set",
+            "set1": [1],
+            "set2": [],
+            "expected": false
+         },
+         {
+            "description": "non-empty set is subset of itself",
+            "set1": [1, 2, 3],
+            "set2": [1, 2, 3],
+            "expected": true
+         },
+         {
+            "description": "proper subset",
+            "set1": [1, 2, 3],
+            "set2": [4, 1, 2, 3],
+            "expected": true
+         },
+         {
+            "description": "same number of elements",
+            "set1": [1, 2, 3],
+            "set2": [4, 1, 3],
+            "expected": false
+         },
+         {
+            "description": "superset",
+            "set1": [1, 2, 3, 4, 5],
+            "set2": [2, 3, 4],
+            "expected": false
+         },
+         {
+            "description": "fewer elements but not a subset",
+            "set1": [1, 2, 3, 11],
+            "set2": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+            "expected": false
+         }
+      ]
+   },
+   "disjoint": {
+      "description": ["Test if two sets are disjoint."],
+      "cases": [
+         {
+            "description": "the empty set is disjoint with itself",
+            "set1": [],
+            "set2": [],
+            "expected": true
+         },
+         {
+            "description": "empty set disjoint with non-empty set",
+            "set1": [],
+            "set2": [1],
+            "expected": true
+         },
+         {
+            "description": "non-empty set disjoint with empty set",
+            "set1": [1],
+            "set2": [],
+            "expected": true
+         },
+         {
+            "description": "one element in common",
+            "set1": [1, 2],
+            "set2": [2, 3],
+            "expected": false
+         },
+         {
+            "description": "no elements in common",
+            "set1": [1, 2],
+            "set2": [3, 4],
+            "expected": true
+         }
+      ]
+   },
+   "intersection": {
+      "description": ["Intersect two sets."],
+      "cases": [
+         {
+            "description": "intersect empty sets",
+            "set1": [],
+            "set2": [],
+            "expected": []
+         },
+         {
+            "description": "intersect empty set with non-empty set",
+            "set1": [],
+            "set2": [3, 2, 5],
+            "expected": []
+         },
+         {
+            "description": "intersect non-empty set with empty set",
+            "set1": [1, 2, 3, 4],
+            "set2": [],
+            "expected": []
+         },
+         {
+            "description": "intersect one element with itself",
+            "set1": [3],
+            "set2": [3],
+            "expected": [3]
+         },
+         {
+            "description": "one element in common, extra elements in both sets",
+            "set1": [1, 2, 3],
+            "set2": [3, 5, 4],
+            "expected": [3]
+         },
+         {
+            "description": "two elements in common, extras in both sets",
+            "set1": [1, 2, 3, 4],
+            "set2": [3, 2, 5],
+            "expected": [2, 3]
+         },
+         {
+            "description": "intersect with subset",
+            "set1": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+            "set2": [5, 6, 7, 8, 9, 10],
+            "expected": [5, 6, 7, 8, 9, 10]
+         },
+         {
+            "description": "nothing in common",
+            "set1": [1, 2, 3],
+            "set2": [4, 5, 6],
+            "expected": []
+         }
+      ]
+   },
+   "union": {
+      "description": ["Produce the union of two sets."],
+      "cases": [
+         {
+            "description": "union of empty sets",
+            "set1": [],
+            "set2": [],
+            "expected": []
+         },
+         {
+            "description": "union of empty set with set of one element",
+            "set1": [],
+            "set2": [2],
+            "expected": [2]
+         },
+         {
+            "description": "union of empty set with non-empty set",
+            "set1": [],
+            "set2": [3, 2, 5],
+            "expected": [2, 3, 5]
+         },
+         {
+            "description": "union of non-empty set with empty set",
+            "set1": [1, 3],
+            "set2": [],
+            "expected": [1, 3]
+         },
+         {
+            "description": "union of a set with itself",
+            "set1": [1, 3],
+            "set2": [3, 1],
+            "expected": [1, 3]
+         },
+         {
+            "description": "union with one element",
+            "set1": [1, 3],
+            "set2": [2],
+            "expected": [1, 2, 3]
+         },
+         {
+            "description": "one element in common, one different",
+            "set1": [1, 3],
+            "set2": [2, 3],
+            "expected": [3, 2, 1]
+         },
+         {
+            "description": "two elements in common",
+            "set1": [1, 2, 3, 4],
+            "set2": [3, 2, 5],
+            "expected": [1, 2, 3, 4, 5]
+         }
+      ]
+   },
+   "difference": {
+      "description": ["Produce the set difference (set1 - set2)",
+      "or more specifically, (set1 ∖ set2)"],
+      "cases": [
+         {
+            "description": "difference of two empty sets",
+            "set1": [],
+            "set2": [],
+            "expected": []
+         },
+         {
+            "description": "difference of empty set and non-empty set",
+            "set1": [],
+            "set2": [3, 2, 5],
+            "expected": []
+         },
+         {
+            "description": "difference of non-empty set and empty set",
+            "set1": [1, 2, 3, 4],
+            "set2": [],
+            "expected": [1, 2, 3, 4]
+         },
+         {
+            "description": "no elements in common",
+            "set1": [1, 2, 3],
+            "set2": [4],
+            "expected": [1, 2, 3]
+         },
+         {
+            "description": "one element in common, one extra",
+            "set1": [3, 2, 1],
+            "set2": [2, 4],
+            "expected": [1, 3]
+         },
+         {
+            "description": "two elements in common, one extra",
+            "set1": [1, 2, 3, 4],
+            "set2": [3, 2, 5],
+            "expected": [1, 4]
+         }
+      ]
+   },
+   "symmetric-difference": {
+      "description": [
+         "Produce the symmetric difference of two sets.  The symmetric",
+         "difference consists of elements in one or the other but not both."
+      ],
+      "cases": [
+         {
+            "description": "two empty sets",
+            "set1": [],
+            "set2": [],
+            "expected": []
+         },
+         {
+            "description": "empty set and non-empty set",
+            "set1": [],
+            "set2": [3, 2, 5],
+            "expected": [3, 2, 5]
+         },
+         {
+            "description": "non-empty set and empty set",
+            "set1": [1, 2, 3, 4],
+            "set2": [],
+            "expected": [1, 2, 3, 4]
+         },
+         {
+            "description": "no elements in common",
+            "set1": [1, 2, 3],
+            "set2": [4],
+            "expected": [1, 2, 3, 4]
+         },
+         {
+            "description": "one element in common",
+            "set1": [3, 2, 1],
+            "set2": [2, 4],
+            "expected": [1, 3, 4]
+         }
+      ]
+   },
+   "mixed types": {
+      "description": ["Exercise various operations with mixed data types"],
+      "cases": [
+         {
+            "operation": "add",
+            "set": [1, 2, 3],
+            "element": 3.0,
+            "expected": [1, 2, 3, 3.0]
+         },
+         {
+            "operation": "delete mismatched type",
+            "set": [3, 2, 1],
+            "element": 2.0,
+            "expected": [1, 2, 3]
+         },
+         {
+            "operation": "delete float",
+            "set": [3, 2.0, 1],
+            "element": 2.0,
+            "expected": [1, 3]
+         },
+         {
+            "operation": "element",
+            "set": [1, 2, 3],
+            "element": 2.0,
+            "expected": false
+         },
+         {
+            "operation": "subset",
+            "set1": [1, 2, 3.0],
+            "set2": [1, 2, 3, 4],
+            "expected": false
+         },
+         {
+            "operation": "disjoint",
+            "set1": [1.0, 2.0],
+            "det2": [2, 3],
+            "expected": true
+         },
+         {
+            "operation": "intersection",
+            "set1": [1, 2, 3],
+            "set2": [1.0, 2.0, 3],
+            "expected": [3]
+         },
+         {
+            "operation": "union",
+            "set1": [1, 3],
+            "set2": [2, 3.0],
+            "expected": [3.0, 3, 2, 1]
+         },
+         {
+            "operation": "difference",
+            "set1": [1, 2.0, 3],
+            "set2": [2, 4],
+            "expected": [1, 2.0, 3]
+         },
+         {
+            "operation": "intersection",
+            "set1": ["a", "b", "c"],
+            "set2": ["a", "c", "d"],
+            "expected": ["a", "c"]
+         }
+      ]
+   }
+}
