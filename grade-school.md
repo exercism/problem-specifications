@@ -22,9 +22,10 @@ do you want?)
 Did you get the tests passing and the code clean? If you want to, these
 are some additional things you could try:
 
-- If your implementation allows outside code to mutate the school's
-  internal DB directly, see if you can prevent this. Feel free to
-  introduce additional tests.
+- If you're working in a language with mutable data structures and your
+  implementation allows outside code to mutate the school's internal DB
+  directly, see if you can prevent this. Feel free to introduce additional
+  tests.
 
 Then please share your thoughts in a comment on the submission. Did this
 experiment make the code better? Worse? Did you learn anything from it?
