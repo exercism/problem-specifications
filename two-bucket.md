@@ -5,15 +5,15 @@ Since this mathematical problem is fairly subject to interpretation / individual
 To help, the tests provide you with which bucket to fill first. That means, when starting with the larger bucket full, you are NOT allowed at any point to have the smaller bucket full and the larger bucket empty (aka, the opposite starting point); that would defeat the purpose of comparing both approaches! 
 
 Your program will take as input:
-- the size of bucket one, passed as a Number
-- the size of bucket two, passed as a Number
-- the desired number of liters to reach, passed as a Number
+- the size of bucket one, passed as a numeric value
+- the size of bucket two, passed as a numeric value
+- the desired number of liters to reach, passed as a numeric value
 - which bucket to fill first, passed as a String (either 'one' or 'two')
 
 Your program should determine:
-- the total number of "moves" it should take to reach the desired number of liters, including the first fill - expects a Number
+- the total number of "moves" it should take to reach the desired number of liters, including the first fill - expects a numeric value
 - which bucket should end up with the desired number of liters (let's say this is bucket A) - expects a String (either 'one' or 'two')
-- how many liters are left in the other bucket (bucket B) - expects a Number
+- how many liters are left in the other bucket (bucket B) - expects a numeric value
 
 Note: any time a change is made to either or both buckets counts as one (1) move. 
 
@@ -26,20 +26,3 @@ To conclude, the only valid moves are:
 - filling one bucket and doing nothing to the other
 
 Written with <3 at [Fullstack Academy](http://www.fullstackacademy.com/) by [Lindsay](http://lindsaylevine.com).
-
-## Making the Test Suite Pass
-
-Execute the tests with:
-
-```bash
-$ jasmine-node .
-```
-
-In many test suites all but the first test have been skipped.
-
-Once you get a test passing, you can unskip the next one by
-changing `xit` to `it`.
-
-## Source
-
-http://demonstrations.wolfram.com/WaterPouringProblem/
