@@ -1,8 +1,5 @@
-Write a program passing the tests.
-
-You will be guided to implement binary to decimal conversion.  Given a
-binary input string, your program should be able to produce a decimal
-output.
+Implement binary to decimal conversion.  Given a binary input
+string, your program should produce a decimal output.
 
 ## Note
 - Implement the conversion yourself.
@@ -17,7 +14,7 @@ as a linear combination of powers of 10:
 
 - The rightmost digit gets multiplied by 10^0 = 1
 - The next number gets multiplied by 10^1 = 10
-- …
+- ...
 - The *n*th number gets multiplied by 10^*(n-1)*.
 - All these values are summed.
 
