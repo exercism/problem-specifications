@@ -3,7 +3,7 @@ prime numbers up to any given limit. It does so by iteratively marking as
 composite (i.e. not prime) the multiples of each prime,
 starting with the multiples of 2.
 
-Create your range, starting at two and ending at the given limit.
+Create your range, starting at two and continuing up to and including the given limit. (i.e. [2, limit])
 
 The algorithm consists of repeating the following over and over:
 
