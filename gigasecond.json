@@ -6,7 +6,7 @@
       "here show the correct seconds, ignoring leap seconds.",
       "The date and time formats here are per",
       "http://www.ecma-international.org/ecma-262/5.1/#sec-15.9.1.15.",
-      "",
+      "if daylight savings is in effect exact times may be off by an hour",
       "Finally, as a demonstration but not really a test,",
       "some languages demonstrate the add function by inviting the",
       "solver to include their birthdate in either the solution code",
@@ -20,15 +20,15 @@
       "cases": [
          {
             "input": "2011-04-25",
-            "expected": "2043-01-01T01:46:40"
+            "expected": "2043-01-00T00:46:40"
          },
          {
             "input": "1977-06-13",
-            "expected": "2009-02-19T01:46:40"
+            "expected": "2009-02-19T00:46:40"
          },
          {
             "input": "1959-07-19",
-            "expected": "1991-03-27T01:46:40"
+            "expected": "1991-03-27T00:46:40"
          }
       ]
    }
