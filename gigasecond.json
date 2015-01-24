@@ -29,6 +29,16 @@
          {
             "input": "1959-07-19",
             "expected": "1991-03-27T01:46:40"
+         },
+         {
+            "#": "full time specified",
+            "input": "2015-01-24T22:00:00",
+            "expected": "2046-10-02T23:46:40"
+         },
+         {
+            "#": "full time with day roll-over",
+            "input": "2015-01-24T23:59:59",
+            "expected": "2046-10-03T01:46:39"
          }
       ]
    }
