@@ -1,0 +1,34 @@
+{
+   "cases": [
+      {
+         "description": "leap year",
+         "input": 1996,
+         "expected": true
+      },
+      {
+         "description": "non-leap year",
+         "input": 1997,
+         "expected": false
+      },
+      {
+         "description": "non-leap even year",
+         "input": 1998,
+         "expected": false
+      },
+      {
+         "description": "century",
+         "input": 1900,
+         "expected": false
+      },
+      {
+         "description": "fourth century",
+         "input": 2400,
+         "expected": true
+      },
+      {
+         "description": "Y2K",
+         "input": 2000,
+         "expected": true
+      }
+   ]
+}
