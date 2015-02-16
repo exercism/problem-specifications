@@ -14,7 +14,10 @@ taken from different genomes with a common ancestor, we get a measure of
 the minimum number of point mutations that could have occurred on the
 evolutionary path between the two strands.
 
-This is called the 'Hamming distance'
+This is called the 'Hamming distance'.
+
+It is found by comparing two DNA strands and counting how many of the
+nucleotides are different from their equivalent in the other string.
 
     GAGCCTACTAACGGGAT
     CATCGTAATGACGGCCT
