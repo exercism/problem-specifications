@@ -36,7 +36,7 @@ transforms the legacy data format to the shiny new format.
 ### Notes
 Note that both the old and the new system use strings to represent
 letters, even in languages that have a separate data type for
-characters. 
+characters.
 
 A final note about scoring, Scrabble is played around the world in a
 variety of languages, each with its own unique scoring table. For
