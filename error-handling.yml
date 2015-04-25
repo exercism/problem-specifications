@@ -1,0 +1,6 @@
+---
+blurb: "Implement various kinds of error handling and resource management"
+common:
+    type: focus
+go:
+    topics: ["defer", "errors", "panic"]
