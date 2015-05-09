@@ -1,5 +1,3 @@
-# Hello, World!
-
 ["Hello, World!"](http://en.wikipedia.org/wiki/%22Hello,_world!%22_program) is the traditional first program for beginning programmers. As programmers mature, they eventually want to test their code.
 
 Here at Exercism we encourage [Test Driven Development](http://en.wikipedia.org/wiki/Test-driven_development) (TDD). Test Driven Development is where you write your tests before writing any functionality. This allows you to consider the requirements of the code, and any edge cases that you may need to support.
