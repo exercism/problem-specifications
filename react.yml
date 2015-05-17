@@ -1,0 +1,4 @@
+---
+blurb: "Implement a basic reactive system."
+type: practice
+topics: ["observers", "reactive programming"]
