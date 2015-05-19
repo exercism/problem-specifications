@@ -1,4 +1,4 @@
 ---
-blurb: 'Write a program that greets the user by name, or by saying "Hello world!" if no name is given.'
+blurb: 'Write a program that greets the user by name, or by saying "Hello, world!" if no name is given.'
 source: "This is a program to introduce users to using Exercism"
 source_url: "http://en.wikipedia.org/wiki/%22Hello,_world!%22_program"
