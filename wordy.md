@@ -8,7 +8,7 @@ The program should handle large numbers and negative numbers.
 
 Remember, that these are verbal word problems, not treated as you
 normally would treat a written problem.  This means that you calculate
-as you move forward each step.  3 + 2 * 3 = 15, not 18.
+as you move forward each step.  3 + 2 * 3 = 15, not 9.
 
 Use the tests to drive your solution by deleting the `skip` in one test
 at a time.
