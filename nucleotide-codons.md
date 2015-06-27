@@ -10,3 +10,5 @@ So TAR stands for TAA and TAG (think of "TAR" as "TA[AG]" in regex notation).
 Write some code that given a codon, which may use shorthand, returns the
 name of the amino acid that that codon encodes for. You will be given
 a list of non-shorthand-codon/name pairs to base your computation on.
+
+See: [wikipedia](https://en.wikipedia.org/wiki/DNA_codon_table).
