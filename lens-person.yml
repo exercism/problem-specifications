@@ -1,0 +1,5 @@
+---
+blurb: "(Haskell specific) use lenses to update nested records."
+common:
+    type: focus
+    focus: lenses
