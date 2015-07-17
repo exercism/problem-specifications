@@ -1,10 +1,10 @@
-Implement binary to decimal conversion.  Given a binary input
-string, your program should produce a decimal output.
+Implement binary to decimal conversion. Given a binary input
+string, your program should produce a decimal output. The
+program should handle invalid inputs.
 
 ## Note
 - Implement the conversion yourself.
   Do not use something else to perform the conversion for you.
-- Treat invalid input as binary 0.
 
 ## About Binary (Base-2)
 Decimal is a base-10 system.
