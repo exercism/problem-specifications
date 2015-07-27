@@ -20,3 +20,6 @@ Solve this one yourself using other basic tools instead.
 
 Elixir specific: it's perfectly fine to use `Enum.reduce` or
 `Enumerable.reduce`.
+
+Lisp specific: it's perfectly fine to use `MAPCAR` or the equivalent,
+as this is idiomatic Lisp, not a library function.
