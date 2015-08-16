@@ -4,8 +4,8 @@ The first time you boot them up, a random name is generated, such as
 RX837 or BC811.
 
 Every once in a while we need to reset a robot to its factory settings,
-which means that their name gets wiped. The next time you ask, it gets a
-new name.
+which means that their name gets wiped. The next time you ask, it will
+respond with a new name.
 
 Random names means a risk of collisions. In some exercism language
 tracks there are tests to ensure that the same name is never used twice.
