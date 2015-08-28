@@ -1,0 +1,34 @@
+{
+    "cases": [
+        {
+            "description": "count one word",
+            "input": "word",
+            "expected": {"word": 1}
+        },
+        {
+            "description": "count one of each word",
+            "input": "one of each",
+            "expected": { "one": 1, "of": 1, "each": 1 }
+        },
+        {
+            "description": "multiple occurrences of a word",
+            "input": "one fish two fish red fish blue fish",
+            "expected": { "one" : 1, "fish" : 4, "two" : 1, "red" : 1, "blue" : 1 }
+        },
+        {
+            "description": "ignore punctuation",
+            "input": "car : carpet as java : javascript!!&@$%^&",
+            "expected": { "car" : 1, "carpet" : 1, "as" : 1, "java" : 1, "javascript" : 1 }
+        },
+        {
+            "description": "include numbers",
+            "input": "testing, 1, 2 testing",
+            "expected": { "testing" : 2, "1" : 1, "2" : 1 }
+        },
+        {
+            "description": "normalize case",
+            "input": "go Go GO",
+            "expected": { "go" : 3 }
+        }
+    ]
+}
