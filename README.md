@@ -9,7 +9,7 @@ Please see the [contributing guide](https://github.com/exercism/x-api/blob/maste
 
 ## Test Data Format
 
-Each problem can have a file &lt;problem>.json containing standard test data.
+Each problem can have a file <problem>.json containing standard test data.
 This data can be incoporated into test programs manually or extracted by a
 program.  The file contains a single JSON object with a key for documentation
 and keys for various tests that may be meaningful for a problem.
@@ -24,7 +24,18 @@ Each test uses a key name representative of the test and an object as the
 value.  This object has two keys, "Description" and "Cases".  Description has
 a list of strings as its value.  Cases has a list of objects as its value.
 Each case object represents a separate test case.  A case object should have
-a description field and fields for inputs and outputs.  A test case description should be a short phrase, suitable to be included in an error message.
+a description field and fields for inputs and outputs. A test case description
+should be a short phrase, suitable to be included in an error message.
+
+## Automated Tests
+
+The only thing that we're testing at the moment, is whether or not shared test data
+is valid json.
+
+If you want to run this before you commit, you will need to install
+[jq](https://stedolan.github.io/jq/download/). Then run the script with:
+
+    bin/jsonlint
 
 ## License
 

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+STATUS=0
+for f in $(ls *.json); do
+	cat $f | jq . > /dev/null 2>&1
+	if [ $? != 0 ]; then
+		echo "Invalid json: $f"
+		STATUS=1
+	fi
+done
+exit $STATUS
