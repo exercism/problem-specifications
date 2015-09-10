@@ -5,9 +5,8 @@ can charge against the account.
 Create an account that can be accessed from multiple threads/processes
 (terminology depends on your programming language).
 
-The account only needs to be available when the bank is open, though it
-may be available at all times. You will get notified when the bank opens
-and closes.
+It should be possible to close an account; operations against a closed
+account must fail.
 
 ## Instructions
 
