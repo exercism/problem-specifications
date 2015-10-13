@@ -20,12 +20,11 @@ interpreted in test programs across different languages.  In addition to a
 mainstream implementation path, this information can also document significant
 variations.
 
-Each test uses a key name representative of the test and an object as the
-value.  This object has two keys, "Description" and "Cases".  Description has
-a list of strings as its value.  Cases has a list of objects as its value.
-Each case object represents a separate test case.  A case object should have
-a description field and fields for inputs and outputs. A test case description
-should be a short phrase, suitable to be included in an error message.
+Each test case has the the following keys:
+    description: which will be used to name each generated test
+    'variable names': one or more variable names with values which will be passed to the solution method
+    expected: the expected result (this would be -1 when we expect an exception)
+    msg: a nice message for the failing case
 
 ## Automated Tests
 
