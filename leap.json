@@ -3,32 +3,38 @@
       {
          "description": "leap year",
          "input": 1996,
-         "expected": true
+         "expected": true,
+         "msg": "Yes, 1996 is a leap year"
       },
       {
          "description": "non-leap year",
          "input": 1997,
-         "expected": false
+         "expected": false,
+         "msg": "No, 1997 is not a leap year"
       },
       {
          "description": "non-leap even year",
          "input": 1998,
-         "expected": false
+         "expected": false,
+         "msg": "No, 1998 is not a leap year"
       },
       {
          "description": "century",
          "input": 1900,
-         "expected": false
+         "expected": false,
+         "msg": "No, 1900 is not a leap year"
       },
       {
          "description": "fourth century",
          "input": 2400,
-         "expected": true
+         "expected": true,
+         "msg": "Yes, 2400 is a leap year"
       },
       {
-         "description": "Y2K",
+         "description": "y2k",
          "input": 2000,
-         "expected": true
+         "expected": true,
+         "msg": "Yes, 2000 is a leap year"
       }
    ]
 }
