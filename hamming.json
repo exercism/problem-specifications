@@ -16,85 +16,99 @@
          "description": "identical strands",
          "strand1": "A",
          "strand2": "A",
-         "expected": 0
+         "expected": 0,
+         "msg": "No, these two strands are identical"
       },
       {
          "description": "long identical strands",
          "strand1": "GGACTGA",
          "strand2": "GGACTGA",
-         "expected": 0
+         "expected": 0,
+         "msg": "No, these two strands are identical"
       },
       {
          "description": "complete distance in single nucleotide strands",
          "strand1": "A",
          "strand2": "G",
-         "expected": 1
+         "expected": 1,
+         "msg": "No, there is a distance of 1 between the two strands"
       },
       {
          "description": "complete distance in small strands",
          "strand1": "AG",
          "strand2": "CT",
-         "expected": 2
+         "expected": 2,
+         "msg": "No, there is a distance of 2 between the two strands"
       },
       {
          "description": "small distance in small strands",
          "strand1": "AT",
          "strand2": "CT",
-         "expected": 1
+         "expected": 1,
+         "msg": "No, there is a distance of 1 between the two strands"
       },
       {
          "description": "small distance",
          "strand1": "GGACG",
          "strand2": "GGTCG",
-         "expected": 1
+         "expected": 1,
+         "msg": "No, there is a distance of 1 between the two strands"
       },
       {
          "description": "small distance in long strands",
          "strand1": "ACCAGGG",
          "strand2": "ACTATGG",
-         "expected": 2
+         "expected": 2,
+         "msg": "No, there is a distance of 2 between the two strands"
       },
       {
          "description": "non-unique character in first strand",
          "strand1": "AGA",
          "strand2": "AGG",
-         "expected": 1
+         "expected": 1,
+         "msg": "No, there is a distance of 1 between the two strands"
       },
       {
          "description": "non-unique character in second strand",
          "strand1": "AGG",
          "strand2": "AGA",
-         "expected": 1
+         "expected": 1,
+         "msg": "No, there is a distance of 1 between the two strands"
       },
       {
          "description": "large distance",
          "strand1": "GATACA",
          "strand2": "GCATAA",
-         "expected": 4
+         "expected": 4,
+         "msg": "No, there is a distance of 4 between the two strands"
       },
       {
          "description": "large distance in off-by-one strand",
          "strand1":  "GGACGGATTCTG",
          "strand2": "AGGACGGATTCT",
-         "expected": 9
+         "expected": 9,
+         "msg": "No, there is a distance of 9 between the two strands"
       },
       {
          "description": "empty strands",
          "strand1": "",
          "strand2": "",
-         "expected": 0
+         "expected": 0,
+         "msg": "No, these two strands are identical"
       },
       {
          "description": "disallow first strand longer",
          "strand1": "AATG",
          "strand2": "AAA",
-         "expected": -1
+         "expected": -1,
+         "msg": "You should riase an exception when the first strand is longer"
       },
       {
          "description": "disallow second strand longer",
          "strand1": "ATA",
          "strand2": "AGTG",
-         "expected": -1
+         "expected": -1,
+         "msg": "You should riase an exception when the second strand is longer"
       }
    ]
 }
