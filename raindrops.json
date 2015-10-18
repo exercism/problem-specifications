@@ -1,0 +1,106 @@
+{
+   "#": [
+     "Language implementations vary when one attempts a prime factor on a number with",
+     "and underscore in it.",
+     "In this set of test cases, we have one of these, and the solution would need to",
+     "handle the language implementation."
+   ],
+   "cases": [
+      {
+         "description": "1",
+         "number" : "1", 
+         "expected": "1",
+         "msg": "No, raindrop-speak of 1 is 1."
+      },
+      {
+         "description": "3",
+         "number" : "3", 
+         "expected": "Pling",
+         "msg": "No, raindrop-speak of 3 is Pling."
+      },
+      {
+         "description": "5",
+         "number" : "5", 
+         "expected": "Plang",
+         "msg": "No, raindrop-speak of 5 is Plang."
+      },
+      {
+         "description": "7",
+         "number" : "7", 
+         "expected": "Plong",
+         "msg": "No, raindrop-speak of 7 is Plong."
+      },
+      {
+         "description": "6",
+         "number" : "6", 
+         "expected": "Pling",
+         "msg": "No, raindrop-speak of 6 is Pling."
+      },
+      {
+         "description": "9",
+         "number" : "9", 
+         "expected": "Pling",
+         "msg": "No, raindrop-speak of 9 is Pling."
+      },
+      {
+         "description": "10",
+         "number" : "10", 
+         "expected": "Plang",
+         "msg": "No, raindrop-speak of 10 is Plang."
+      },
+      {
+         "description": "14",
+         "number" : "14", 
+         "expected": "Plong",
+         "msg": "No, raindrop-speak of 14 is Plong."
+      },
+      {
+         "description": "15",
+         "number" : "15", 
+         "expected": "PlingPlang",
+         "msg": "No, raindrop-speak of 15 is PlingPlang."
+      },
+      {
+         "description": "21",
+         "number" : "21", 
+         "expected": "PlingPlong",
+         "msg": "No, raindrop-speak of 21 is PlingPlong."
+      },
+      {
+         "description": "25",
+         "number" : "25", 
+         "expected": "Plang",
+         "msg": "No, raindrop-speak of 25 is Plang."
+      },
+      {
+         "description": "35",
+         "number" : "35", 
+         "expected": "PlangPlong",
+         "msg": "No, raindrop-speak of 35 is PlangPlong."
+      },
+      {
+         "description": "49",
+         "number" : "49", 
+         "expected": "Plong",
+         "msg": "No, raindrop-speak of 49 is Plong."
+      },
+      {
+         "description": "52",
+         "number" : "52", 
+         "expected": "52",
+         "msg": "No, raindrop-speak of 52 is 52."
+      },
+      {
+         "description": "105",
+         "number" : "105", 
+         "expected": "PlingPlangPlong",
+         "msg": "No, raindrop-speak of 105 is PlingPlangPlong."
+      },
+      {
+         "description": "12_121",
+         "number" : "12_121", 
+         "expected": "12121",
+         "msg": "No, raindrop-speak of 12_121 is 12121."
+      }
+   ]
+}
