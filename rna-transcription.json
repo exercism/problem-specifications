@@ -1,0 +1,105 @@
+{
+   "#": [
+     "Language implementations vary on the issue of missing input variables.",
+     "In this set of test cases, the input variable is left out of the definition,",
+     "and the generator would need to handle the language implementation."
+   ],
+   "cases": [
+      {
+         "description": "rna complement of cytosine is guanine",
+         "dna" : "C", 
+         "expected": "G",
+         "msg": "No, the rna complement of cytosine is guanine."
+      },
+      {
+         "description": "rna complement of guanine is cytosine",
+         "dna": "G",
+         "expected": "C",
+         "msg": "No, the rna complement of guanine is cytosine."
+      },
+      {
+         "description": "rna complement of thymine is adenine",
+         "dna": "T",
+         "expected": "A",
+         "msg": "No, the rna complement of thymine is adenine."
+      },
+      {
+         "description": "rna complement of adenine is uracil",
+         "dna": "A",
+         "expected": "U",
+         "msg": "No, the rna complement of adenine is uracil."
+      },
+      {
+         "description": "rna complement",
+         "dna": "ACGTGGTCTTAA",
+         "expected": "UGCACCAGAAUU",
+         "msg": "No, the rna complement of ACGTGGTCTTAA is UGCACCAGAAUU."
+      },
+         {
+         "description": "dna complement of cytosine is guanine",
+         "rna" : "C", 
+         "expected": "G",
+         "msg": "No, the dna complement of cytosine is guanine."
+      },
+      {
+         "description": "dna complement of guanine is cytosine",
+         "rna": "G",
+         "expected": "C",
+         "msg": "No, the dna complement of guanine is cytosine."
+      },
+      {
+         "description": "dna complement of uracil is adenine",
+         "rna": "U",
+         "expected": "A",
+         "msg": "No, the dna complement of uracil is adenine."
+      },
+      {
+         "description": "dna complement of adenine is thymine",
+         "rna": "A",
+         "expected": "T",
+         "msg": "No, the dna complement of adenine is thymine."
+      },
+      {
+         "description": "dna complement",
+         "rna": "UGAACCCGACAUG",
+         "expected": "ACTTGGGCTGTAC",
+         "msg": "No, the dna complement of UGAACCCGACAUG is ACTTGGGCTGTAC."
+      },
+      {
+         "description": "dna raises argument error",
+         "dna": "U",
+         "expected": -1,
+         "msg": "Dna must raise an exception on invalid input!"
+      },
+      {
+         "description": "rna raises argument error",
+         "rna": "T",
+         "expected": -1,
+         "msg": "Rna must raise an exception on invalid input!"
+      },
+      {
+         "description": "dna raises argument error on completely invalid input",
+         "dna": "XXX",
+         "expected": -1,
+         "msg": "Dna must raise an exception on complelely invalid input!"
+      },
+      {
+         "description": "rna raises argument error on completely invalid input",
+         "rna": "XXX",
+         "expected": -1,
+         "msg": "Rna must raise an exception on complelely invalid input!"
+      },
+      {
+         "description": "dna raises argument error on partially invalid input",
+         "dna": "ACGTXXXCTTAA",
+         "expected": -1,
+         "msg": "Dna must raise an exception on partially invalid input!"
+      },
+      {
+         "description": "rna raises argument error on partially invalid input",
+         "rna": "UGAAXXXGACAUG",
+         "expected": -1,
+         "msg": "Rna must raise an exception on partially invalid input!"
+      }
+   ]
+}
