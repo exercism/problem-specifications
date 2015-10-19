@@ -1,0 +1,79 @@
+{
+   "cases": [
+      {
+         "description": "1",
+         "number" : 1, 
+         "expected": "1"
+      },
+      {
+         "description": "3",
+         "number" : 3, 
+         "expected": "Pling"
+      },
+      {
+         "description": "5",
+         "number" : 5, 
+         "expected": "Plang"
+      },
+      {
+         "description": "7",
+         "number" : 7, 
+         "expected": "Plong"
+      },
+      {
+         "description": "6",
+         "number" : 6, 
+         "expected": "Pling"
+      },
+      {
+         "description": "9",
+         "number" : 9, 
+         "expected": "Pling"
+      },
+      {
+         "description": "10",
+         "number" : 10, 
+         "expected": "Plang"
+      },
+      {
+         "description": "14",
+         "number" : 14, 
+         "expected": "Plong"
+      },
+      {
+         "description": "15",
+         "number" : 15, 
+         "expected": "PlingPlang"
+      },
+      {
+         "description": "21",
+         "number" : 21, 
+         "expected": "PlingPlong"
+      },
+      {
+         "description": "25",
+         "number" : 25, 
+         "expected": "Plang"
+      },
+      {
+         "description": "35",
+         "number" : 35, 
+         "expected": "PlangPlong"
+      },
+      {
+         "description": "49",
+         "number" : 49, 
+         "expected": "Plong"
+      },
+      {
+         "description": "52",
+         "number" : 52, 
+         "expected": "52"
+      },
+      {
+         "description": "105",
+         "number" : 105, 
+         "expected": "PlingPlangPlong"
+      }
+   ]
+}
