@@ -7,20 +7,17 @@
    "cases": [
       {
          "description": "no name",
-         "expected": "Hello, World!",
-         "msg": "When given no name, it should greet the world!"
+         "expected": "Hello, World!"
       },
       {
          "description": "sample name",
          "name": "Alice",
-         "expected": "Hello, Alice!",
-         "msg": "When given Alice, it should greet Alice!"
+         "expected": "Hello, Alice!"
       },
       {
          "description": "other sample name",
          "name": "Bob",
-         "expected": "Hello, Bob!",
-         "msg": "When given Bob, it should greet Bob!"
+         "expected": "Hello, Bob!"
       }
    ]
 }
