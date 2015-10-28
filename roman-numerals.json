@@ -1,0 +1,76 @@
+{
+   "cases": [
+      {
+         "number" : 1, 
+         "expected": "I"
+      },
+      {
+         "number" : 2, 
+         "expected": "II"
+      },
+      {
+         "number" : 3, 
+         "expected": "III"
+      },
+      {
+         "number" : 4, 
+         "expected": "IV"
+      },
+      {
+         "number" : 5, 
+         "expected": "V"
+      },
+      {
+         "number" : 6, 
+         "expected": "VI"
+      },
+      {
+         "number" : 9, 
+         "expected": "IX"
+      },
+      {
+         "number" : 27, 
+         "expected": "XXVII"
+      },
+      {
+         "number" : 48, 
+         "expected": "XLVIII"
+      },
+      {
+         "number" : 59, 
+         "expected": "LIX"
+      },
+      {
+         "number" : 93, 
+         "expected": "XCIII"
+      },
+      {
+         "number" : 141, 
+         "expected": "CXLI"
+      },
+      {
+         "number" : 163, 
+         "expected": "CLXIII"
+      },
+      {
+         "number" : 402, 
+         "expected": "CDII"
+      },
+      {
+         "number" : 575, 
+         "expected": "DLXXV"
+      },
+      {
+         "number" : 911, 
+         "expected": "CMXI"
+      },
+      {
+         "number" : 1024, 
+         "expected": "MXXIV"
+      },
+      {
+         "number" : 3000, 
+         "expected": "MMM"
+      }
+   ]
+}
