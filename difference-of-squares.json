@@ -1,0 +1,59 @@
+{
+   "#": [
+      "Note that this test will need a bit more complexity in the test generator.",
+      "The generator will need to take into account that we have three method",
+      "calls, as well as to correctly format the long expected results number",
+      "dependant on the relevant language style eg 25_164_150 in Ruby.",
+      "In addition, some languages can include a test for consistent differences",
+      "which will need to be explictly articulated in the test generation template.",
+      "This test would have the form: assert_equal squares.difference, squares.difference",
+      "expressed in a lnaguage apprpriate syntax an style"
+   ],
+   "cases": [
+      {  
+         "description": "square of sums to 5",
+         "square_of_sums": 5,
+         "expected": 225
+      },
+      {
+         "description": "sum of squares to 5",
+         "sum_of_squares": 5,
+         "expected": 55 
+      },
+      {
+         "description": "difference of sums to 5",
+         "difference": 5,
+         "expected": 170
+      },
+      {
+         "description": "square of sums to 10",
+         "square_of_sums": 10,
+         "expected": 3025
+      },
+      {
+         "description": "sum of squares to 10",
+         "sum_of_squares": 10,
+         "expected": 385
+      },
+      {
+         "description": "difference of sums to 10",
+         "difference": 10,
+         "expected": 2640
+      },
+      {
+         "description": "square of sums to 100",
+         "square_of_sums": 100,
+         "expected": 25502500
+      },
+      {
+         "description": "sum of squares to 100",
+         "sum_of_squares": 100,
+         "expected": 338350
+      },
+      {
+         "description": "difference of sums to 100",
+         "difference": 100,
+         "expected": 25164150
+      }
+   ]
+}
