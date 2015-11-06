@@ -37,7 +37,7 @@ UCU, UCC, UCA, UCG    |Serine
 
 UAU, UAC              |Tyrosine
 
-UGU, UGC              |Cystine
+UGU, UGC              |Cysteine
 
 UGG                   |Tryptophan
 
