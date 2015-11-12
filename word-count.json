@@ -27,8 +27,8 @@
         },
         {
             "description": "normalize case",
-            "input": "go Go GO",
-            "expected": { "go" : 3 }
+            "input": "go Go GO Stop stop",
+            "expected": { "go" : 3, "stop" : 2 }
         }
     ]
 }
