@@ -1,2 +1,2 @@
-Ensure that all the curly braces and square brackets are matched correctly,
+Ensure that all the brackets and braces are matched correctly,
 and nested correctly.
