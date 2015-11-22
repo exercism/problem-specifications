@@ -1,0 +1,29 @@
+{
+   "cases": [
+      {
+         "description": "sentence empty",
+         "input": "",
+         "expected": false
+      },
+      {
+        "description": "pangram with only lower case",
+        "input": "the quick brown fox jumps over the lazy dog",
+        "expected": true
+      },
+      {
+        "description": "missing character 'x'",
+        "input": "a quick movement of the enemy will jeopardize five gunboats",
+        "expected": false
+      },
+      {
+        "description": "pangram with mixed case and punctuation",
+        "input": "\"Five quacking Zephyrs jolt my wax bed.\"",
+        "expected": true
+      },
+      {
+        "description": "pangram with non ascii characters",
+        "input": "Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.",
+        "expected": true
+      }
+   ]
+}
