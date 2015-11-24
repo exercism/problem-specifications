@@ -1,0 +1,42 @@
+{
+   "#": [
+   	  "The tests deliberately check that single characters are encoded without count."
+   ],
+   "cases": [
+      {
+         "description": "encode simple",
+         "input": "AABBBCCCC",
+         "expected": "2A3B4C"
+      },
+      {
+        "description": "decode simple",
+        "input": "2A3B4C",
+        "expected": "AABBBCCCC"
+      },
+      {
+        "description": "encode with single values",
+        "input": "WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB",
+        "expected": "12WB12W3B24WB"
+      },
+      {
+        "description": "decode with single values",
+        "input": "12WB12W3B24WB",
+        "expected": "WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB"
+      },
+      {
+        "description": "decode(encode(...)) combination",
+        "input": "zzz ZZ  zZ",
+        "expected": "zzz ZZ  zZ"
+      },
+      {
+        "description": "encode unicode",
+        "input": "⏰⚽⚽⚽⭐⭐⏰",
+        "expected": "⏰3⚽2⭐⏰"
+      },
+      {
+        "description": "decode unicode",
+        "input": "⏰3⚽2⭐⏰",
+        "expected": "⏰⚽⚽⚽⭐⭐⏰"
+      }
+   ]
+}
