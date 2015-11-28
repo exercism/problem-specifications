@@ -47,7 +47,7 @@ columns that corresponds to the smallest square that is larger than the
 number of characters in the message.
 
 For example, a message 4 characters long should use a 2 x 2 square. A
-message that is 81 characters long would use a square that is 9 colums
+message that is 81 characters long would use a square that is 9 columns
 wide.
 
 A message between 5 and 8 characters long should use a rectangle 3
