@@ -403,19 +403,19 @@ Ideally a track will have several maintainers, for two reasons:
 - more lively
 - spread the workload
 
-** More Lively**
+**More Lively**
 
 We've noticed that as soon as there are at least two people maintaining
 the same track we get rich discussions about quality and idioms. There's a lot
 more activity, and it's a lot more fun.
 
-** Spread the Workload **
+**Spread the Workload**
 
 We don't want to burn people out, and it's really nice to be able to
 go on vacation or get busy at work without worrying too much about a growing
 backlog of unanswered issues and unreviewed and unmerged pull requests.
 
-** Caveat **
+**Caveat**
 
 There's a small chance that when more people are involved there's a bit of
 diffusion of responsibility (worth googling and reading about if you haven't
