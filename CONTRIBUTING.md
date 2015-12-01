@@ -29,13 +29,16 @@ themselves. There are other guides about contributing to other parts of the Exer
     * [Updating a Generated Test Suite](#updating-a-generated-test-suite)
 * [Tweaking a README](#tweaking-a-readme)
 * [Porting an Exercise to a Another Language Track](#porting-an-exercise-to-another-language-track)
+    * [Providing Feedback on the Site for an Exercise You Implemented](#providing-feedback-on-the-site-for-an-exercise-you-implemented)
 * [Implementing a Completely New Exercise](#implementing-a-completely-new-exercise)
 * [Improving Consistency By Extracting Shared Test Data](#improving-consistency-by-extracting-shared-test-data)
 * [Writing a New Test Suite Generator](#writing-a-new-test-suite-generator)
+* [Starting a New Track](#starting-a-new-track)
 * [Maintaining a Track](#maintaining-a-track)
 * [Useful Tidbits](#useful-tidbits)
     * [Exercise Versioning](#exercise-versioning)
     * [Anatomy of an Exercise](#anatomy-of-an-exercise)
+    * [config.json](#config-json)
     * [Track-Level Linting With Configlet](#track-level-linting-with-configlet)
 
 ## We Will Gladly Help You Help Us
@@ -259,7 +262,20 @@ request](#pull-request-guidelines).
 
 ### Updating Language-Specific Additions
 
-TODO: write about `SETUP.md`
+Each language track may optionally contain a `SETUP.md` file in the root of
+the repository. This file should contain helpful, generic information about
+solving an exercism problem in the target language.
+
+The contents of the `SETUP.md` file gets included in the README.md that gets
+delivered along with the test suite and any supporting files when a user runs
+the `exercism fetch` command from their terminal.
+
+It would also be useful to explain in a generic way how to run the tests.
+Remember that this file will be included with _all_ the problems, so it gets
+confusing if we refer to specific problems or files.
+
+If a language track has specific expectations, these should also be documented
+here.
 
 ## Porting an Exercise to a Another Language Track
 
@@ -274,17 +290,41 @@ TODO: elaborate.
 * Write the test suite, implement a reference file, add the exercise
   to config.json, submit a PR.
 
+### Providing Feedback on the Site for an Exercise You Implemented
+
+Once you've created an exercise, you'll probably want to provide feedback to people who
+submit solutions to it. By default you only get access to exercises you've submitted
+a solution for.
+
+You can fetch the problem directly using the CLI:
+
+```bash
+$ exercism fetch <track_id> <slug>
+```
+
+Go ahead submit the reference solution that you wrote when creating the problem.
+Remember to archive it if you don't want other people to comment on it.
+
 ## Implementing a Completely New Exercise
 
-TODO: elaborate.
+A problem must have a unique slug. This slug is used as
 
-* Make the `<slug>.md` and `<slug>.yml` (in x-common).
-* Submit PR.
-* Do same as when [porting an
+* the directory name within each language-specific repository
+* the basename for the metadata files (in this repository)
+* to identify the exercise in `config.json`
+
+### In exercism/x-common
+
+* Create `<slug>.md` and `<slug>.yml`.
+* Bonus: `<slug>.json` with inputs/outputs for the test suite.
+* Submit a pull request.
+
+### In exercism/x<TRACK_ID>
+
+* Do the same as when [porting an
   exercise](#porting-an-exercise-to-another-language-track).
   Reference the PR in x-common if it hasn't been merged yet,
-  this should not be merged until the x-common one is merged.
-* Bonus: `<slug>.json`.
+  this **must not** be merged until the exercism/x-common PR is merged.
 
 ## Improving Consistency By Extracting Shared Test Data
 
@@ -293,6 +333,51 @@ TODO: elaborate.
 ## Writing a New Test Suite Generator
 
 TODO: elaborate.
+
+## Starting a New Track
+
+If you're interested in adding problems for a language that we don't yet have,
+[email Katrina](mailto:kytrinyx@exercism.io) and she'll set up a new repo for
+that language.
+
+Then you can fork and clone per usual.
+
+In order to launch the track needs:
+
+- At least 10 problems implemented.
+- A handful of people who can check in regularly and provide feedback on solutions.
+- Documentation in `docs/` for how to get started / run the tests
+
+TODO: Describe `docs/`.
+
+Once that is in place, the repository needs to be added as a submodule to
+[exercism/x-api](https://github.com/exercism/x-api/tree/master/tracks), and
+the `"active"` key in `config.json` must be flipped to `true`.
+
+We don't deploy x-api automatically, so it will go live the next time the submodules
+are updated (daily, for the most part).
+
+### Beta-Testing a Language Track
+---
+
+For a track that is set as `"active": false` in the `config.json`, `exercism fetch`
+will not automatically pull down problems. You can still test the language by
+fetching problems directly, e.g.:
+
+```
+exercism fetch cpp bob
+```
+
+This will allow you to do some dry-run tests of fetching exercises,
+double checking the instructions for each problem and submitting the
+problem solution for peer review.
+
+It is recommended that you configure a [Travis continuous integration build](http://travis-ci.org)
+with your language track to verify that your example problem solutions
+satisfy the tests provided for each problem.
+
+You can include advice and helpful links for your language track in the
+`SETUP.md` file.
 
 ## Maintaining a Track
 
@@ -454,9 +539,46 @@ that the exercise is coherent.
 If you change the test suite, then make sure the reference solution is fixed
 to pass the updated tests.
 
+### config.json
+
+Each language track has a `config.json` file. Important keys are:
+
+* `problems` - actively served via `exercism fetch`
+* `deprecated` - implemented, but aren't served anymore
+* `foregone` - will not be implemented in the track
+* `ignored` - these directories do not contain problems
+
+The `configlet` tool uses those categories to ensure that
+
+1. all the `problems` are implemented,
+2. `deprecated` problems are not actively served as problems, and
+3. `foregone` problems are not implemented.
+
+In addition, it will complain about problems that are implemented but are not
+listed in the config under the `problems` key. This is where the `ignored` key
+is useful. Ignored directories don't get flagged as unimplemented problems.
+
+A problem might be foregone for a number of reasons, typically because it's a
+bad exercise for the language.
+
+The `config.json` also has an optional `test_pattern` key. This is a regex that
+test filenames will match. If test files contain `/test/`, then this key can be
+deleted.
+
 ### Track-Level Linting With Configlet
 
-TODO
+If the `config.json` file is incomplete or broken, a lot of other things break.
+To make things easier we made a small tool to help verify the config:
+https://github.com/exercism/configlet#configlet
+
+You can download the latest release from the releases page in the [configlet
+repo](https://github.com/exercism/configlet/releases), or you can use the
+`bin/fetch-configlet` command from the root of the language track repository,
+which will make a guess at what operating system and architecture you have and
+attempt to download the right one.
+
+Verify the config by calling `bin/configlet .` (notice the dot). This says
+_check the config of the language track that is stored right here).
 
 ### et cetera
 
