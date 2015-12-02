@@ -1,0 +1,67 @@
+{
+    "square_of_sum": {
+        "description": ["Square the sum of the numbers up to the given number"],
+        "cases": [
+            {
+                "description": "square of sum 5",
+                "number": 5,
+                "expected": 225 
+            },
+            {
+                "description": "square of sum 10",
+                "number": 10,
+                "expected": 3025 
+            },
+            {
+                "description": "square of sum 100",
+                "number": 100,
+                "expected": 25502500 
+            }
+        ]
+    },
+    "sum_of_squares": {
+        "description": ["Sum the squares of the numbers up to the given number"],
+        "cases": [
+            {
+                "description": "sum of squares 5",
+                "number": 5,
+                "expected": 55 
+            },
+            {
+                "description": "sum of squares 10",
+                "number": 10,
+                "expected": 385 
+            },
+            {
+                "description": "sum of squares 100",
+                "number": 100,
+                "expected": 338350 
+            }
+        ]
+    },
+    "difference_of_squares": {
+        "description": ["Subtract sum of squares from square of sums"],
+        "cases": [
+            {
+                "description": "difference of squares 0",
+                "number": 0,
+                "expected": 0
+            },
+            {
+                "description": "difference of squares 5",
+                "number": 5,
+                "expected": 170 
+            },
+            {
+                "description": "difference of squares 10",
+                "number": 10,
+                "expected": 2640 
+            },
+            {
+                "description": "difference of squares 100",
+                "number": 100,
+                "expected": 25164150 
+            }
+        ]
+    }
+}
