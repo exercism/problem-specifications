@@ -1,0 +1,37 @@
+{
+    "abbreviate": {
+        "description": "Abbreviate a phrase",
+        "cases": [
+            {
+                "description": "basic",
+                "phrase": "Portable Network Graphics",
+                "expected": "PNG"
+            },
+            {
+                "description": "lowercase words",
+                "phrase": "Ruby on Rails",
+                "expected": "ROR"
+            },
+            {
+                "description": "camelcase",
+                "phrase": "HyperText Markup Language",
+                "expected": "HTML"
+            },
+            {
+                "description": "punctuation",
+                "phrase": "First In, First Out",
+                "expected": "FIFO"
+            },
+            {
+                "description": "all caps words",
+                "phrase": "PHP: Hypertext Preprocessor",
+                "expected": "PHP"
+            },
+            {
+                "description": "hyphenated",
+                "phrase": "Complementary metal-oxide semiconductor",
+                "expected": "CMOS"
+            }
+        ]
+    }
+}
