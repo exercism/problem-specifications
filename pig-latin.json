@@ -1,0 +1,128 @@
+{
+  "#" : [
+    "In languages with parameterized tests, test cases are grouped together into similar cases with",
+    "test names or comments to describe the group. Other languages just name the individual tests."
+  ],
+  "groups" : [
+    {
+      "description" : "ay is added to words that start with vowels",
+      "cases" : [
+        {
+          "description" : "word beginning with a",
+          "input" : "apple",
+          "expected" : "appleay"
+        },
+        {
+          "description" : "word beginning with e",
+          "input" : "ear",
+          "expected" : "earay"
+        },
+        {
+          "description" : "word beginning with i",
+          "input" : "igloo",
+          "expected" : "iglooay"
+        },
+        {
+          "description" : "word beginning with o",
+          "input" : "object",
+          "expected" : "objectay"
+        },
+        {
+          "description" : "word beginning with u",
+          "input" : "under",
+          "expected" : "underay"
+        }
+      ]
+    },
+    {
+      "description" : "first letter and ay are moved to the end of words that start with consonants",
+      "cases" : [
+        {
+          "description" : "word beginning with p",
+          "input" : "pig",
+          "expected" : "igpay"
+        },
+        {
+          "description" : "word beginning with k",
+          "input" : "koala",
+          "expected" : "oalakay"
+        },
+        {
+          "description" : "word beginning with y",
+          "input" : "yellow",
+          "expected" : "ellowyay"
+        },
+        {
+          "description" : "word beginning with x",
+          "input" : "xenon",
+          "expected" : "enonxay"
+        },
+        {
+          "description" : "word beginning with q without a following u",
+          "input" : "qat",
+          "expected" : "atqay"
+        }
+      ]
+    },
+    {
+      "description" : "some letter clusters are treated like a single consonant",
+      "cases" : [
+        {
+          "description" : "word beginning with ch",
+          "input" : "chair",
+          "expected" : "airchay"
+        },
+        {
+          "description" : "word beginning with qu",
+          "input" : "queen",
+          "expected" : "eenquay"
+        },
+        {
+          "description" : "word beginning with qu and a preceding consonant",
+          "input" : "square",
+          "expected" : "aresquay"
+        },
+        {
+          "description" : "word beginning with th",
+          "input" : "therapy",
+          "expected" : "erapythay"
+        },
+        {
+          "description" : "word beginning with thr",
+          "input" : "thrush",
+          "expected" : "ushthray"
+        },
+        {
+          "description" : "word beginning with sch",
+          "input" : "school",
+          "expected" : "oolschay"
+        }
+      ]
+    },
+    {
+      "description" : "some letter clusters are treated like a single vowel",
+      "cases" : [
+        {
+          "description" : "word beginning with yt",
+          "input" : "yttria",
+          "expected" : "yttriaay"
+        },
+        {
+          "description" : "word beginning with xr",
+          "input" : "xray",
+          "expected" : "xrayay"
+        }
+      ]
+    },
+    {
+      "description" : "phrases are translated",
+      "cases" : [
+        {
+          "description" : "a whole phrase",
+          "input" : "quick fast run",
+          "expected" : "ickquay astfay unray"
+        }
+      ]
+    }
+  ]
+}
