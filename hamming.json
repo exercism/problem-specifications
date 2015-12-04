@@ -101,14 +101,14 @@
          "strand1": "AATG",
          "strand2": "AAA",
          "expected": -1,
-         "msg": "You should riase an exception when the first strand is longer"
+         "msg": "You should raise an exception when the first strand is longer"
       },
       {
          "description": "disallow second strand longer",
          "strand1": "ATA",
          "strand2": "AGTG",
          "expected": -1,
-         "msg": "You should riase an exception when the second strand is longer"
+         "msg": "You should raise an exception when the second strand is longer"
       }
    ]
 }
