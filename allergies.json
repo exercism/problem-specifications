@@ -1,0 +1,109 @@
+{
+    "allergic_to": {
+        "description": [
+            "Given a number and a substance, indicate whether Tom is allergic ",
+            "to that substance.",
+            "Test cases for this method involve more than one assertion.",
+            "Each case in 'expected' specifies what the method should return for",
+            "the given substance."
+        ],
+        "cases": [
+            {
+                "description": "no allergies means not allergic", 
+                "score": 0,
+                "expected": [
+                    {
+                        "substance": "peanuts",
+                        "result": false
+                    },
+                    {
+                        "substance": "cats",
+                        "result": false
+                    },
+                    {
+                        "substance": "strawberries",
+                        "result": false
+                    }
+                ]
+            },
+            {
+                "description": "is allergic to eggs",
+                "score": 1,
+                "expected": [
+                    {
+                        "substance": "eggs",
+                        "result": true
+                    }
+                ]
+            },
+            {
+                "description": "allergic to eggs in addition to other stuff", 
+                "score": 5,
+                "expected": [
+                    {
+                        "substance": "eggs",
+                        "result": true
+                    },
+                    {
+                        "substance": "shellfish",
+                        "result": true
+                    },
+                    {
+                        "substance": "strawberries",
+                        "result": false
+                    }
+                ]
+            }
+        ]
+    },
+    "list": {
+        "description": ["Given a number, list all things Tom is allergic to"],
+        "cases": [
+            {
+                "description": "no allergies at all",
+                "score": 0,
+                "expected": []
+            },
+            {
+                "description": "allergic to just eggs",
+                "score": 1,
+                "expected": ["eggs"]
+            },
+            {
+                "description": "allergic to just peanuts",
+                "score": 2,
+                "expected": ["peanuts"]
+            },
+            {
+                "description": "allergic to just strawberries",
+                "score": 8,
+                "expected": ["strawberries"]
+            },
+            {
+                "description": "allergic to eggs and peanuts",
+                "score": 3,
+                "expected": ["eggs", "peanuts"]
+            },
+            {
+                "description": "allergic to more than eggs but not peanuts",
+                "score": 5,
+                "expected": ["eggs", "shellfish"]
+            },
+            {
+                "description": "allergic to lots of stuff",
+                "score": 248,
+                "expected": ["strawberries", "tomatoes", "chocolate", "pollen", "cats"]
+            },
+            {
+                "description": "allergic to everything",
+                "score": 255,
+                "expected": ["eggs", "peanuts", "shellfish", "strawberries", "tomatoes", "chocolate", "pollen", "cats"]
+            },
+            {
+                "description": "ignore non allergen score parts",
+                "score": 509,
+                "expected": ["eggs", "shellfish", "strawberries", "tomatoes", "chocolate", "pollen", "cats"]
+            }
+        ]
+    }
+}
