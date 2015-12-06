@@ -1,0 +1,50 @@
+{
+    "two_bucket": {
+        "cases": [
+            {
+                "bucket_one": 3,
+                "bucket_two": 5,
+                "goal": 1,
+                "start_bucket": "one",
+                "expected": {
+                    "moves": 4,
+                    "goal_bucket": "one",
+                    "other_bucket": 5
+                }
+            },
+            {
+                "bucket_one": 3,
+                "bucket_two": 5,
+                "goal": 1,
+                "start_bucket": "two",
+                "expected": {
+                    "moves": 8,
+                    "goal_bucket": "two",
+                    "other_bucket": 3
+                }
+            },
+            {
+                "bucket_one": 7,
+                "bucket_two": 11,
+                "goal": 2,
+                "start_bucket": "one",
+                "expected": {
+                    "moves": 14,
+                    "goal_bucket": "one",
+                    "other_bucket": 11
+                }
+            },
+            {
+                "bucket_one": 7,
+                "bucket_two": 11,
+                "goal": 2,
+                "start_bucket": "two",
+                "expected": {
+                    "moves": 18,
+                    "goal_bucket": "two",
+                    "other_bucket": 7
+                }
+            }
+        ]
+    }
+}
