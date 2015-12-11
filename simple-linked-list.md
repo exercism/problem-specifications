@@ -20,20 +20,3 @@ linked list and convert to and from arrays.
 
 When implementing this in a language with built-in linked lists,
 implement your own abstract data type.
-
-Examples (Ruby):
-
-    Element.to_a(nil) #=> []
-    Element.from_a([]) #=> nil
-    Element.reverse(nil) #=> nil
-    one = Element.new(1, nil)
-    one #=> <Element @datum=1, @next=nil>
-    one.datum #=> 1
-    one.next #=> nil
-    two = Element.new(2, one)
-    two #=> <Element @datum=2, @next=<Element @datum=1 @next=nil>>
-    Element.to_a(two) #=> [2, 1]
-    Element.reverse(two) #=> <Element @datum=1 @next=<Element @datum=2 @next=nil>>
-    range = Element.from_a(1..10)
-    range.datum #=> 1
-    range.next.next.next.next.next.next.next.next.next.next.datum #=> 10
