@@ -28,7 +28,7 @@ themselves. There are other guides about contributing to other parts of the Exer
 * [Updating an Exercise Test Suite](#updating-an-exercise-test-suite)
     * [Updating a Generated Test Suite](#updating-a-generated-test-suite)
 * [Tweaking a README](#tweaking-a-readme)
-* [Porting an Exercise to a Another Language Track](#porting-an-exercise-to-another-language-track)
+* [Porting an Exercise to Another Language Track](#porting-an-exercise-to-another-language-track)
     * [Providing Feedback on the Site for an Exercise You Implemented](#providing-feedback-on-the-site-for-an-exercise-you-implemented)
 * [Implementing a Completely New Exercise](#implementing-a-completely-new-exercise)
 * [Improving Consistency By Extracting Shared Test Data](#improving-consistency-by-extracting-shared-test-data)
@@ -284,7 +284,7 @@ confusing if we refer to specific problems or files.
 If a language track has specific expectations, these should also be documented
 here.
 
-## Porting an Exercise to a Another Language Track
+## Porting an Exercise to Another Language Track
 
 TODO: elaborate.
 
