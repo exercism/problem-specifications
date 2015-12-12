@@ -1,4 +1,5 @@
-ses": [
+{
+  "cases": [
     {
       "description": "Short input",
       "input": "a",
