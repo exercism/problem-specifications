@@ -1,4 +1,4 @@
-The tricky thing here is that a leap year occurs:
+The tricky thing here is that a leap year in the Gregorian calendar occurs:
 
 ```plain
 on every year that is evenly divisible by 4
