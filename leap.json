@@ -21,6 +21,11 @@
          "expected": false
       },
       {
+         "description": "second century",
+         "input": 1800,
+         "expected": false
+      },
+      {
          "description": "fourth century",
          "input": 2400,
          "expected": true
