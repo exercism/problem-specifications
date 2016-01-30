@@ -5,7 +5,7 @@ The `doc/` subdirectory contains all documentation that is not specific to a lan
 
 ## Contributing Guide
 
-Please see the [contributing guide](https://github.com/exercism/x-api/blob/master/CONTRIBUTING.md#the-exercise-data)
+Please see the [contributing guide](https://github.com/exercism/x-common/blob/master/CONTRIBUTING.md)
 
 ## Test Data Format
 
