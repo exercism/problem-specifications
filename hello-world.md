@@ -26,7 +26,7 @@ It will also provide you with a safety net to explore other solutions without br
 2. Write some code to fix the test you picked.
 3. Re-run the tests to confirm the test is now passing.
 4. Repeat from step 1.
-5. [Submit your solution](http://help.exercism.io/submitting-exercises.html).
+5. Submit your solution (`exercism submit /path/to/file`)
 
 ## Instructions
 
