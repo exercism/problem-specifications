@@ -138,6 +138,11 @@
          "description": "other whitespace",
          "input": "\n\r \t\u000b\u00a0\u2002",
          "expected": "Fine. Be that way!"
+      },
+      {
+      	"description": "non-question ending with whitespace",
+      	"input": "This is a statement ending with whitespace      ",
+      	"expected": "Whatever."
       }
    ]
 }
