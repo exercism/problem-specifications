@@ -7,7 +7,7 @@ Deques have four fundamental operations (using Array terminology):
 
 The difference between deque and Array performance is that a deque
 implements all of these operations in constant time. Even clever
-implemetations of Array will often have to copy the entire Array in
+implementations of Array will often have to copy the entire Array in
 order to unshift.
 
 Under the hood we'll use an Element class with two fields, `next` and
