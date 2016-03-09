@@ -22,13 +22,3 @@ conditions. Specifically: `pop` or `shift` will never be called on an
 empty list.
 
 If you want to know more about linked lists, check [Wikipedia](https://en.wikipedia.org/wiki/Linked_list).
-
----
-
-In languages that do not have good support for mutability (such as
-Elixir or Erlang), you may choose to implement a functional list where
-shift and pop have amortized O(1) time. The simplest data structure for
-this will have a pair of linked lists for the front and back, where
-iteration order is front ++ reverse back.
-
-
