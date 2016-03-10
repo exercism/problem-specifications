@@ -4,4 +4,8 @@ neighbouring half of an adjacent stone) and that dots on the halfs of the stones
 which don't have a neighbour (the first and last stone) match each other.
 
 For example given the stones `21`, `23` and `13` you should compute something
-like `12 23 31` or `32 21 13` or `13 32 21`, etc.
+like `12 23 31` or `32 21 13` or `13 32 21` where the first and last numbers
+are the same.
+
+For stones `12`, `41` and `23` the resulting chain is not valid: 
+`41 12 23`'s first and last numbers are not the same. `4 != 3`
