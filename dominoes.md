@@ -9,3 +9,6 @@ are the same.
 
 For stones `12`, `41` and `23` the resulting chain is not valid: 
 `41 12 23`'s first and last numbers are not the same. `4 != 3`
+
+Some test cases may use duplicate stones in a chain solution, assume that 
+multiple Domino sets are being used. 
