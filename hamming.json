@@ -67,6 +67,12 @@
          "expected": 1
       },
       {
+         "description": "same nucleotides in different positions",
+         "strand1": "TAG",
+         "strand2": "GAT",
+         "expected": 2
+      },
+      {
          "description": "large distance",
          "strand1": "GATACA",
          "strand2": "GCATAA",
