@@ -78,7 +78,7 @@
             "description": "detects anagrams using case-insensitve possible matches",
             "subject": "orchestra",
             "candidates": ["cashregister", "Carthorse", "radishes"],
-            "expected": ["carthorse"]
+            "expected": ["Carthorse"]
         },
         {
             "description": "does not detect a word as its own anagram",
