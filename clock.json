@@ -247,6 +247,18 @@
                "minute": 37
             },
             "expected": true
+         },
+         {
+            "description": "clocks with minute overflow",
+            "clock1": {
+               "hour": 0,
+               "minute": 1
+            },
+            "clock2": {
+               "hour": 0,
+               "minute": 1441
+            },
+            "expected": true
          }
       ]
    }
