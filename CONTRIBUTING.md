@@ -774,6 +774,22 @@ helpful:
 * [Pro Git](http://git-scm.com/book/en/v2) - "The Book" for learning Git in detail
 * [Git Branching Tutorial](http://pcottle.github.io/learnGitBranching/) - interactive tutorial, very visual
 
+#### Rebasing
+
+You'll often be asked to rebase your branch before we merge a pull request as Exercism likes to keep a linear project commit history. This is accomplished with git rebase. It takes the current branch and places all the commits at the front of the branch that you're rebasing with.
+
+For example, rebasing the current branch on top of upstream/master:
+```
+ git rebase upstream/master
+```
+Project commit history:
+```
+                       -- current branch --
+                      /
+--- master branch ----
+```
+[Further Reading](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+
 ### et cetera
 
 TODO: add more sections:
