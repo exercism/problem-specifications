@@ -5,7 +5,7 @@ reconstructed.
 
 Your job will be to refactor a working but slow and ugly piece of code that
 implements the tree building logic for highly abstracted records. The records
-only contain an id number and a parent id number. The id number is always
+only contain an ID number and a parent ID number. The ID number is always
 between 0 (inclusive) and the length of the record list (exclusive). No record
-has an parent id lower than it's own id and no record, except the root record,
-has a parent id that's equal to it's own id.
+has an parent ID lower than its own ID and no record, except the root record,
+has a parent ID that's equal to its own ID.
