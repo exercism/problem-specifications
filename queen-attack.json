@@ -37,7 +37,7 @@
       "black_queen": {
         "position": "(2,5)"
       },
-      "expected": false
+      "expected": true
     },
     {
       "description": "can attack on first diagonal",
@@ -47,7 +47,7 @@
       "black_queen": {
         "position": "(0,4)"
       },
-      "expected": false
+      "expected": true
     },
     {
       "description": "can attack on second diagonal",
@@ -57,27 +57,27 @@
       "black_queen": {
         "position": "(3,1)"
       },
-      "expected": false
+      "expected": true
     },
     {
       "description": "can attack on third diagonal",
       "white_queen": {
-        "position": "(2,4)"
+        "position": "(2,2)"
       },
       "black_queen": {
         "position": "(1,1)"
       },
-      "expected": false
+      "expected": true
     },
     {
       "description": "can attack on fourth diagonal",
       "white_queen": {
-        "position": "(2,4)"
+        "position": "(2,2)"
       },
       "black_queen": {
         "position": "(5,5)"
       },
-      "expected": false
+      "expected": true
     },
     {
       "description": "queen must have positive rank",
