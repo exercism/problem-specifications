@@ -2,24 +2,66 @@
   "#": [
     "Testing invalid positions will vary by language. The expected",
     "value of -1 is there to indicate some sort of failure should",
-    "occur.",
+    "occur, while a 0 means no failure.",
     "Some languages implement tests beyond this set, such as checking",
     "for two pieces being placed on the same position, representing",
     "the board graphically, or using standard chess notation. Those",
     "tests can be offered as extra credit"
   ],
-  "cases": [
-    {
-      "description": "can not attack",
-      "white_queen": {
-        "position": "(2,4)"
+  "create": {
+    "description": "Test creation of Queens with valid and invalid positions",
+    "cases" : [
+      {
+        "description": "queen with a valid position",
+        "queen": {
+          "position": "(2,2)"
+        },
+        "expected": 0
       },
-      "black_queen": {
-        "position": "(6,6)"
+      {
+        "description": "queen must have positive rank",
+        "queen": {
+          "position": "(-2,2)"
+        },
+        "expected": -1
       },
-      "expected": false
-    },
-    {
+      {
+        "description": "queen must have rank on board",
+        "queen": {
+          "position": "(8,4)"
+        },
+        "expected": -1
+      },
+      {
+        "description": "queen must have positive file",
+        "queen": {
+          "position": "(2,-2)"
+        },
+        "expected": -1
+      },
+      {
+        "description": "queen must have file on board",
+        "queen": {
+          "position": "(4,8)"
+        },
+        "expected": -1
+      }
+    ]
+  },
+  "can_attack": {
+    "description": "Test the ability of one queen to attack another",
+    "cases": [
+      {
+        "description": "can not attack",
+        "white_queen": {
+          "position": "(2,4)"
+        },
+        "black_queen": {
+          "position": "(6,6)"
+        },
+        "expected": false
+      },
+      {
       "description": "can attack on same rank",
       "white_queen": {
         "position": "(2,4)"
@@ -28,8 +70,8 @@
         "position": "(2,6)"
       },
       "expected": true
-    },
-    {
+      },
+      {
       "description": "can attack on same file",
       "white_queen": {
         "position": "(4,5)"
@@ -38,8 +80,8 @@
         "position": "(2,5)"
       },
       "expected": true
-    },
-    {
+      },
+      {
       "description": "can attack on first diagonal",
       "white_queen": {
         "position": "(2,2)"
@@ -48,8 +90,8 @@
         "position": "(0,4)"
       },
       "expected": true
-    },
-    {
+      },
+      {
       "description": "can attack on second diagonal",
       "white_queen": {
         "position": "(2,2)"
@@ -58,8 +100,8 @@
         "position": "(3,1)"
       },
       "expected": true
-    },
-    {
+      },
+      {
       "description": "can attack on third diagonal",
       "white_queen": {
         "position": "(2,2)"
@@ -68,8 +110,8 @@
         "position": "(1,1)"
       },
       "expected": true
-    },
-    {
+      },
+      {
       "description": "can attack on fourth diagonal",
       "white_queen": {
         "position": "(2,2)"
@@ -78,34 +120,7 @@
         "position": "(5,5)"
       },
       "expected": true
-    },
-    {
-      "description": "queen must have positive rank",
-      "white_queen": {
-        "position": "(-1,4)"
-      },
-      "expected": -1
-    },
-    {
-      "description": "queen must have rank on board",
-      "white_queen": {
-        "position": "(8,4)"
-      },
-      "expected": -1
-    },
-    {
-      "description": "queen must have positive file",
-      "white_queen": {
-        "position": "(2,-2)"
-      },
-      "expected": -1
-    },
-    {
-      "description": "queen must have file on board",
-      "white_queen": {
-        "position": "(4,8)"
-      },
-      "expected": -1
-    }
-  ]
+      }
+    ]
+  }
 }
