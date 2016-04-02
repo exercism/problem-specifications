@@ -286,16 +286,45 @@ here.
 
 ## Porting an Exercise to Another Language Track
 
-TODO: elaborate.
+We are working on a user-friendly page on Exercism for each language track
+which will show the list of exercises that have not yet been implemented in
+the track.
 
-* http://x.exercism.io/problems/:slug has list of tracks that
-  implement the problem. Better would be
-  `http://x.exercism.io/v3/problems/:slug`. See
-  [exercism/x-api#75](https://github.com/exercism/x-api/issues/75).
-* There might be shared metadata that gives ideas about inputs/outputs
-  (in this repository, as `<slug>.json`.
-* Write the test suite, implement a reference file, add the exercise
-  to config.json, submit a PR.
+For each exercise, we will link to existing implementations of the exercise in
+other language tracks, so that people can use those example solutions and test
+suites as inspiration.
+
+We are also working on extracting canonical inputs and outputs for a given
+exercise, which is stored in JSON format in the x-common repository.
+
+Until this page is implemented, you can get this information from the raw data
+served by the API endpoint `http://x.exercism.io/v3/tracks/:track_id/todo`.
+
+For example, here's the list of exercises that have not yet been implemented
+in the Elm track: http://x.exercism.io/v3/tracks/elm/todo
+
+It can be pretty unweildy to read the JSON directly. To make it easier,
+install a browser extension that formats the JSON nicely, or copy/paste the
+response body into http://jsonlint.com/ and click "validate JSON", which not
+only validates it, but pretty-prints it.
+
+The description of the problem can be found in the
+[x-commen](https://github.com/exercism/x-common) repository, in a file named
+after the problem slug: `<slug>.md`.
+
+Submit a pull request with the following, at minimum:
+
+* A test suite
+* A reference solution that passes the test
+
+The reference solution doesn't need to be beautiful code; it is used simply to
+verify that the test suite makes sense.
+
+The reference solution should be named with `[Ee]xample` somewhere in the path
+in order to avoid serving it to people when they fetch the exercise.
+
+Each language track might have additional requirements; check the README in
+the repository for the track.
 
 ### Providing Feedback on the Site for an Exercise You Implemented
 
