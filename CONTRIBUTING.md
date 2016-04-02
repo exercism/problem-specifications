@@ -312,16 +312,26 @@ The description of the problem can be found in the
 [x-commen](https://github.com/exercism/x-common) repository, in a file named
 after the problem slug: `<slug>.md`.
 
-Submit a pull request with the following, at minimum:
+**When you decide to implement an exercise**
+
+* check that there are no open pull requests for the same exercise
+* open a "work in progress" (WIP) pull request
+
+The way to open a WIP pull request even if you haven't done any work yet is:
+
+* Fork and clone the repository
+* Check out a branch for your the exercise
+* Add an empty commit `git commit --allow-empty -m "dibs: I will implement exercise <slug>"`
+  (replace <slug> with the actual name of the exercise).
+* Push the new branch to your repository, and open a pull request against that branch.
+
+Once you have added the actual exercise, then you can rebase your branch onto the upstream
+master, which will make the WIP commit go away.
+
+The exercise should consist of, at minimum:
 
 * A test suite
-* A reference solution that passes the test
-
-The reference solution doesn't need to be beautiful code; it is used simply to
-verify that the test suite makes sense.
-
-The reference solution should be named with `[Ee]xample` somewhere in the path
-in order to avoid serving it to people when they fetch the exercise.
+* A reference solution that passes the test (see [#reference-solution](#reference-solution)
 
 Each language track might have additional requirements; check the README in
 the repository for the track.
