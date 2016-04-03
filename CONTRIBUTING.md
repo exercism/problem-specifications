@@ -309,7 +309,7 @@ response body into http://jsonlint.com/ and click "validate JSON", which not
 only validates it, but pretty-prints it.
 
 The description of the problem can be found in the
-[x-commen](https://github.com/exercism/x-common) repository, in a file named
+[x-common](https://github.com/exercism/x-common) repository, in a file named
 after the problem slug: `<slug>.md`.
 
 **When you decide to implement an exercise**
@@ -331,7 +331,7 @@ master, which will make the WIP commit go away.
 The exercise should consist of, at minimum:
 
 * A test suite
-* A reference solution that passes the test (see [#reference-solution](#reference-solution)
+* A reference solution that passes the test (see [#reference-solution](#reference-solution))
 
 Each language track might have additional requirements; check the README in
 the repository for the track.
