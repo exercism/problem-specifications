@@ -14,7 +14,7 @@
    "cases": [
       {
          "description": "rna complement of cytosine is guanine",
-         "dna" : "C", 
+         "dna" : "C",
          "expected": "G"
       },
       {
@@ -37,39 +37,9 @@
          "dna": "ACGTGGTCTTAA",
          "expected": "UGCACCAGAAUU"
       },
-         {
-         "description": "dna complement of cytosine is guanine",
-         "rna" : "C", 
-         "expected": "G"
-      },
-      {
-         "description": "dna complement of guanine is cytosine",
-         "rna": "G",
-         "expected": "C"
-      },
-      {
-         "description": "dna complement of uracil is adenine",
-         "rna": "U",
-         "expected": "A"
-      },
-      {
-         "description": "dna complement of adenine is thymine",
-         "rna": "A",
-         "expected": "T"
-      },
-      {
-         "description": "dna complement",
-         "rna": "UGAACCCGACAUG",
-         "expected": "ACTTGGGCTGTAC"
-      },
       {
          "description": "dna correctly handles invalid input",
          "dna": "U",
-         "expected": null
-      },
-      {
-         "description": "rna correctly handles invalid input",
-         "rna": "T",
          "expected": null
       },
       {
@@ -78,18 +48,8 @@
          "expected": null
       },
       {
-         "description": "rna correctly handles completely invalid input",
-         "rna": "XXX",
-         "expected": null
-      },
-      {
          "description": "dna correctly handles partially invalid input",
          "dna": "ACGTXXXCTTAA",
-         "expected": null
-      },
-      {
-         "description": "rna correctly handles partially invalid input",
-         "rna": "UGAAXXXGACAUG",
          "expected": null
       }
    ]
