@@ -1,9 +1,24 @@
 { 
     "cases": [
         {
+            "description": "no primes under two",
+            "limit": 1,
+            "expected": []
+        },
+        {
+            "description": "find first prime",
+            "limit": 2,
+            "expected": [ 2 ]
+        },
+        {
             "description": "find primes up to 10",
             "limit": 10,
             "expected": [ 2, 3, 5, 7 ]
+        },
+        {
+            "description": "limit is prime",
+            "limit": 13,
+            "expected": [ 2, 3, 5, 7, 11, 13 ]
         },
         {
             "description": "find primes up to 1000",
@@ -23,21 +38,6 @@
                 859, 863, 877, 881, 883, 887, 907, 911, 919, 929, 937, 941, 947, 
                 953, 967, 971, 977, 983, 991, 997
             ]
-        },
-        {
-            "description": "limit is prime",
-            "limit": 13,
-            "expected": [ 2, 3, 5, 7, 11, 13 ]
-        },
-        {
-            "description": "find first prime",
-            "limit": 2,
-            "expected": [ 2 ]
-        },
-        {
-            "description": "no primes under two",
-            "limit": 1,
-            "expected": []
         }
     ]
 }
