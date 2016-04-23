@@ -16,6 +16,26 @@
         "expected": false
       },
       {
+        "description": "another missing character 'x'",
+        "input": "the quick brown fish jumps over the lazy dog",
+        "expected": false
+      },
+      {
+        "description": "pangram with underscores",
+        "input": "the_quick_brown_fox_jumps_over_the_lazy_dog",
+        "expected": true
+      },
+      {
+        "description": "pangram with numbers",
+        "input": "the 1 quick brown fox jumps over the 2 lazy dogs",
+        "expected": true
+      },
+      {
+        "description": "missing letters replaced by numbers",
+        "input": "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog",
+        "expected": false
+      },
+      {
         "description": "pangram with mixed case and punctuation",
         "input": "\"Five quacking Zephyrs jolt my wax bed.\"",
         "expected": true
