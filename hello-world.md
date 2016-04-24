@@ -32,4 +32,4 @@ It will also provide you with a safety net to explore other solutions without br
 
 Submissions are encouraged to be general, within reason. Having said that, it's also important not to over-engineer a solution.
 
-It's important to remember that the goal is to make code as expressive and readable as we can. However, solutions to the hello-world exercise will be not be reviewed by a person, but by rikki- the robot, who will offer an encouraging word.
+It's important to remember that the goal is to make code as expressive and readable as we can. However, solutions to the hello-world exercise will not be reviewed by a person, but by rikki- the robot, who will offer an encouraging word.
