@@ -675,7 +675,7 @@ codebase, the more important it is to have good commit messages.
 
 There's an excellent lightning talk by Ryan Geary called [Do Your Commit
 Messages
-Suck?](http://www.confreaks.com/videos/744-rockymtnruby2011-lightning-talk-do-your-commit-messages-suck).
+Suck?](https://www.youtube.com/watch?v=8YjSty6bfog).
 It's funny and enlightening, and you should watch it.
 
 Tim Pope wrote an article that has very clear guidelines about how to write
