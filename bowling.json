@@ -1,0 +1,117 @@
+{
+  "#": [
+    "Bowling is game where players roll a heavy ball to knock down pins",
+    "arranged in a triangle. Write code to keep track of the score of a",
+    "game of bowling."
+  ],
+  "methods": {
+    "description": [
+      "Check the public API is correct."
+    ],
+    "cases": [{
+      "description": "must be able to roll with a number of pins",
+      "method": "roll",
+      "arity": 1
+    }, {
+      "description": "must have a score",
+      "method": "score",
+      "arity": 0
+    }]
+  },
+  "score": {
+    "description": [
+      "Check game can be scored correctly."
+    ],
+    "cases": [{
+      "description": "should be able to score open frame",
+      "rolls": [3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "expected": 7
+    }, {
+      "description": "should be able to score multiple frames",
+      "rolls": [3, 4, 2, 3, 5, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "expected": 19
+    }, {
+      "description": "should be able to score a game with all gutterballs",
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "expected": 0
+    }, {
+      "description": "should be able to score a game with all single pin rolls",
+      "rolls": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+      "expected": 20
+    }, {
+      "description": "should be able to score a game with all open frames",
+      "rolls": [3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6],
+      "expected": 90
+    }, {
+      "description": "should be able to score a strike not in the last frame",
+      "rolls": [10, 5, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "expected": 26
+    }, {
+      "description": "should be able to score a spare not in the last frame",
+      "rolls": [5, 5, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "expected": 20
+    }, {
+      "description": "should be able to score multiple strikes in a row",
+      "rolls": [10, 10, 10, 5, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "expected": 81
+    }, {
+      "description": "should be able to score multiple spares in a row",
+      "rolls": [5, 5, 3, 7, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "expected": 32
+    }, {
+      "description": "should allow fill balls when the last frame is a strike",
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 7, 1],
+      "expected": 18
+    }, {
+      "description": "should allow fill ball when the last frame is a spare",
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 1, 7],
+      "expected": 17
+    }, {
+      "description": "should allow fill balls to be a strike",
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 10],
+      "expected": 30
+    }, {
+      "description": "should be able to score a perfect game",
+      "rolls": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
+      "expected": 300
+    }]
+  },
+  "validations": {
+    "description": [
+      "Check game rules."
+    ],
+    "cases": [{
+      "description": "should not allow rolls with negative pins",
+      "rolls": [-1],
+      "expected": "Pins must have a value from 0 to 10"
+    }, {
+      "description": "should not allow rolls better than strike",
+      "rolls": [11],
+      "expected": "Pins must have a value from 0 to 10"
+    }, {
+      "description": "should not allow two normal rolls better than strike",
+      "rolls": [5, 6],
+      "expected": "Pin count exceeds pins on the lane"
+    }, {
+      "description": "should not allow two normal rolls better than strike in last frame",
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 6],
+      "expected": "Pin count exceeds pins on the lane"
+    }, {
+      "description": "should not allow to take score at the beginning of the game",
+      "rolls": [],
+      "expected": "Score cannot be taken until the end of the game"
+    }, {
+      "description": "should not allow to take score before the game has ended",
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "expected": "Score cannot be taken until the end of the game"
+    }, {
+      "description": "should not allow rolls after the tenth frame",
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "expected": "Should not be able to roll after game is over"
+    }, {
+      "description": "should not calculate score before fill balls have been played",
+      "rolls": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
+      "expected": "Score cannot be taken until the end of the game"
+    }]
+  }
+}
