@@ -1,0 +1,4 @@
+---
+blurb: "Write a program that will take a nested list and returns a single list with all values except nill/null"
+source: "Interview Question"
+source_url: "https://reference.wolfram.com/language/ref/Flatten.html"
