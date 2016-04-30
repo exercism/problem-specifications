@@ -1,0 +1,19 @@
+{
+   "cases": [
+      {
+         "description": "flattens array with null and integers present",
+         "input": [0, 2, [[2, 3], 8, 100, null, [[null]]], -2],
+         "expected": [0, 2, 2, 3, 8, 100, -2]
+      },
+      {
+         "description": "flattens array with just integers present",
+         "input": [1,[2,3,4,5,6,7],8],
+         "expected": [1,2,3,4,5,6,7,8]
+      },
+      {
+         "description": "flattens array with just null",
+         "input": [null,[[[null]]],null,null,[[null,null],null],null],
+         "expected": []
+      }
+   ]
+}

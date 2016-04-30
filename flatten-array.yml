@@ -1,0 +1,4 @@
+---
+blurb: "Write a program that will take a nested array and returns a single with all values but null "
+source: "Wolfram defintion of flatten"
+source_url: "https://reference.wolfram.com/language/ref/Flatten.html"
