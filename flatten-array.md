@@ -1,19 +1,12 @@
-The challenge is to write a function that accepts an arbitrarily-deep nested Array-like structure and returns a flattened structure with any null values removed without using the reduce method.
+The challenge is to write a function that accepts an arbitrarily-deep nested list-like structure and returns a flattened structure list without using any  method that do this for you automatically.
 
 For Example
 
-flattener.flatten([0, 2, [[2, 3], 8, 100, null, [[null]]], -2]);
+input: [0, 2, [[2, 3], 8, 100, 4, [[50]]], -2]
 
-returns [0, 2, 2, 3, 8, 100, -2]
+output: [0, 2, 2, 3, 8, 100, 4, 50, -2]
 
 
-flattener.clear()
 
-returns []
 
-Tips
 
-* Define clear first before the function flatten
-* Think about closures and know what you have access to within a function
-
-Have Fun, very popular interview question
