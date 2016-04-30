@@ -1,3 +1,10 @@
+**NOTE: This exercise has been deprecated.**
+
+Please see the discussion in https://github.com/exercism/x-common/issues/80
+for more context.
+
+--------
+
 This is a special exercise. Instead of creating code that works with
 an existing test suite you get to define the test suite. To help you
 several variations of the code under test have been provided, your
