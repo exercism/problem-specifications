@@ -1,10 +1,10 @@
-For example, given the collection of numbers:
+Given the collection of numbers:
 
 - 1, 2, 3, 4, 5
 
 And the operation:
 
-- square a number
+- square a number (`x => x * x`)
 
 Your code should be able to produce the collection of squares:
 
