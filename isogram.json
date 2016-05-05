@@ -1,0 +1,30 @@
+{
+  "cases": [{
+    "input": "duplicates",
+    "expected": true
+  }, {
+    "input": "eleven",
+    "expected": false
+  }, {
+    "input": "subdermatoglyphic",
+    "expected": true
+  }, {
+    "input": "Alphabet",
+    "expected": false
+  }, {
+    "input": "thumbscrew-japingly",
+    "expected": true
+  }, {
+    "input": "Hjelmqvist-Gryb-Zock-Pfund-Wax",
+    "expected": true
+  }, {
+    "input": "Heizölrückstoßabdämpfung",
+    "expected": true
+  }, {
+    "input": "the quick brown fox",
+    "expected": false
+  }, {
+    "input": "Emily Jung Schwartzkopf",
+    "expected": true
+  }]
+}
