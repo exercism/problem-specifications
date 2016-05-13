@@ -47,4 +47,4 @@ W . . . E . . . C . . . R . . . L . . . T . . . E
 . . A . . . I . . . V . . . D . . . E . . . N . .
 ```
 
-If you now red along the zig-zag shape you can read the original message.
+If you now read along the zig-zag shape you can read the original message.
