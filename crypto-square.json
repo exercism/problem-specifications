@@ -53,7 +53,7 @@
         "expected": ""
       },
       {
-        "description": "Non-empty plaintext results in the combined plaintext_segments",
+        "description": "Non-empty plaintext results in the combined plaintext segments",
         "plaintext": "If man was meant to stay on the ground, god would have given us roots.",
         "expected": "imtgdvsfearwermayoogoanouuiontnnlvtwttddesaohghnsseoau"
       }
