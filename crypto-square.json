@@ -30,17 +30,17 @@
       {
         "description": "4 character plaintext results in an 2x2 rectangle",
         "plaintext": "Ab Cd",
-        "expected": "[ab, cd]"
+        "expected": ["ab", "cd"]
       },
       {
         "description": "9 character plaintext results in an 3x3 rectangle",
         "plaintext": "This is fun!",
-        "expected": "[thi, sis, fun]"
+        "expected": ["thi", "sis", "fun"]
       },
       {
         "description": "54 character plaintext results in an 8x7 rectangle",
         "plaintext": "If man was meant to stay on the ground, god would have given us roots.",
-        "expected": "[ifmanwas, meanttos, tayonthe, groundgo, dwouldha, vegivenu, sroots]"
+        "expected": ["ifmanwas", "meanttos", "tayonthe", "groundgo", "dwouldha", "vegivenu", "sroots"]
       }
     ]
   },
