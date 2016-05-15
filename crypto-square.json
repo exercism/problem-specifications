@@ -1,7 +1,7 @@
 {
   "normalized_plaintext": {
     "description": "the spaces and punctuation are removed from the English text and the message is downcased",
-    "cases" : [
+    "cases": [
       {
         "description": "Lowercase",
         "plaintext": "Hello",
@@ -20,8 +20,8 @@
     ]
   },
   "plaintext_segments": {
-"description": "The plaintext should be organized in to a rectangle.  The size of the rectangle (`r x c`) should be decided by the length of the message, such that `c >= r` and `c - r <= 1`, where `c` is the number of columns and `r` is the number of rows.",
-    "cases" : [
+    "description": "The plaintext should be organized in to a rectangle.  The size of the rectangle (`r x c`) should be decided by the length of the message, such that `c >= r` and `c - r <= 1`, where `c` is the number of columns and `r` is the number of rows.",
+    "cases": [
       {
         "description": "empty plaintext results in an empty rectangle",
         "plaintext": "",
@@ -30,23 +30,38 @@
       {
         "description": "4 character plaintext results in an 2x2 rectangle",
         "plaintext": "Ab Cd",
-        "expected": ["ab", "cd"]
+        "expected": [
+          "ab",
+          "cd"
+        ]
       },
       {
         "description": "9 character plaintext results in an 3x3 rectangle",
         "plaintext": "This is fun!",
-        "expected": ["thi", "sis", "fun"]
+        "expected": [
+          "thi",
+          "sis",
+          "fun"
+        ]
       },
       {
         "description": "54 character plaintext results in an 8x7 rectangle",
         "plaintext": "If man was meant to stay on the ground, god would have given us roots.",
-        "expected": ["ifmanwas", "meanttos", "tayonthe", "groundgo", "dwouldha", "vegivenu", "sroots"]
+        "expected": [
+          "ifmanwas",
+          "meanttos",
+          "tayonthe",
+          "groundgo",
+          "dwouldha",
+          "vegivenu",
+          "sroots"
+        ]
       }
     ]
   },
   "encoded": {
     "description": "The coded message is obtained by reading down the columns going left to right.",
-    "cases" : [
+    "cases": [
       {
         "description": "empty plaintext results in an empty encode",
         "plaintext": "",
@@ -61,7 +76,7 @@
   },
   "ciphertext": {
     "description": "Output the encoded text in chunks.  Phrases that fill perfect squares `(r X r)` should be output in `r`-length chunks separated by spaces.  Imperfect squares will have `n` empty spaces.  Those spaces should be distributed evenly across the last `n` rows.",
-    "cases" : [
+    "cases": [
       {
         "description": "empty plaintext results in an empty ciphertext",
         "plaintext": "",
