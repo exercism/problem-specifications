@@ -20,9 +20,7 @@ What do those abbreviations mean?
 
 A win earns a team 3 points. A draw earns 1. A loss earns 0.
 
-The outcome should be ordered by points, descending. Ties are broken by
-first looking at the number of wins then by ordering the team names
-alphabetically.
+The outcome should be ordered by points, descending. In case of a tie, the team with the most wins is ranked higher. If the teams have the same number of wins, then teams are ordered alphabetically.
 
 ###
 
