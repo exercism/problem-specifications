@@ -1,0 +1,92 @@
+{
+	"#": [
+		"Lists are ordered and sequential.",
+		"https://en.wikipedia.org/wiki/List_%28abstract_data_type%29",
+		"",
+		"Depending on your language, there may need to be some translation",
+		"to go from the JSON array to the list representation.",
+		"The expectation can be used to generate an expected value",
+		"based on your implementation (such as a constant 'EQUAL', 'SUBLIST', etc.)."
+	],
+	"cases": [{
+		"description": "empty lists",
+		"list_one": [],
+		"list_two": [],
+		"expectation": "equal"
+	}, {
+		"description": "empty list within non empty list",
+		"list_one": [],
+		"list_two": [1, 2, 3],
+		"expectation": "sublist"
+	}, {
+		"description": "non empty list contains empty list",
+		"list_one": [1, 2, 3],
+		"list_two": [],
+		"expectation": "superlist"
+	}, {
+		"description": "list equals itself",
+		"list_one": [1, 2, 3],
+		"list_two": [1, 2, 3],
+		"expectation": "equal"
+	}, {
+		"description": "different lists",
+		"list_one": [1, 2, 3],
+		"list_two": [2, 3, 4],
+		"expectation": "unequal"
+	}, {
+		"description": "false start",
+		"list_one": [1, 2, 5],
+		"list_two": [0, 1, 2, 3, 1, 2, 5, 6],
+		"expectation": "sublist"
+	}, {
+		"description": "consecutive",
+		"list_one": [1, 1, 2],
+		"list_two": [0, 1, 1, 1, 2, 1, 2],
+		"expectation": "sublist"
+	}, {
+		"description": "sublist at start",
+		"list_one": [0, 1, 2],
+		"list_two": [0, 1, 2, 3, 4, 5],
+		"expectation": "sublist"
+	}, {
+		"description": "sublist in middle",
+		"list_one": [2, 3, 4],
+		"list_two": [0, 1, 2, 3, 4, 5],
+		"expectation": "sublist"
+	}, {
+		"description": "sublist at end",
+		"list_one": [3, 4, 5],
+		"list_two": [0, 1, 2, 3, 4, 5],
+		"expectation": "sublist"
+	}, {
+		"description": "at start of superlist",
+		"list_one": [0, 1, 2, 3, 4, 5],
+		"list_two": [0, 1, 2],
+		"expectation": "superlist"
+	}, {
+		"description": "in middle of superlist",
+		"list_one": [0, 1, 2, 3, 4, 5],
+		"list_two": [2, 3],
+		"expectation": "superlist"
+	}, {
+		"description": "at end of superlist",
+		"list_one": [0, 1, 2, 3, 4, 5],
+		"list_two": [3, 4, 5],
+		"expectation": "superlist"
+	}, {
+		"description": "first list missing element from second list",
+		"list_one": [1, 3],
+		"list_two": [1, 2, 3],
+		"expectation": "unequal"
+	}, {
+		"description": "second list missing element from first list",
+		"list_one": [1, 2, 3],
+		"list_two": [1, 3],
+		"expectation": "unequal"
+	}, {
+		"description": "order matters to a list",
+		"list_one": [1, 2, 3],
+		"list_two": [3, 2, 1],
+		"expectation": "unequal"
+	}]
+}
