@@ -26,5 +26,8 @@
   }, {
     "input": "Emily Jung Schwartzkopf",
     "expected": true
+  }, {
+    "input": "éléphant",
+    "expected": false
   }]
 }
