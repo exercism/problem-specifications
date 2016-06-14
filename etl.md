@@ -37,5 +37,5 @@ transforms the legacy data format to the shiny new format.
 
 A final note about scoring, Scrabble is played around the world in a
 variety of languages, each with its own unique scoring table. For
-example, an "A" is scored at 14 in the Basque-language version of the
-game while being scored at 9 in the Latin-language version.
+example, an "E" is scored at 2 in the Māori-language version of the
+game while being scored at 4 in the Hawaiian-language version.
