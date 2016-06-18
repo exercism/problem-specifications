@@ -21,6 +21,16 @@
                 "description": "solve puzzle with exponents",
                 "puzzle": "PI * R ^ 2 == AREA",
                 "expected": { "P": 9, "I": 6, "R": 7, "A": 4, "E": 0 }
+            },
+            {
+                "description": "solution must have unique value for each letter",
+                "puzzle": "A == B",
+                "expected": null
+            },
+            {
+                "description": "leading zero solution is invalid",
+                "puzzle": "ACA + DD == BD",
+                "expected": null
             }
         ]
     }
