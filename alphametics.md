@@ -22,4 +22,7 @@ Replacing these with valid numbers gives:
 This is correct because every letter is replaced by a different number and the
 words, translated into numbers, then make a valid sum.
 
+Each letter must represent a different digit, and the leading digit of
+a multi-digit number must not be zero.
+
 Write a function to solve alphametics puzzles.
