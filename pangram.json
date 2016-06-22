@@ -44,6 +44,11 @@
         "description": "pangram with non ascii characters",
         "input": "Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.",
         "expected": true
+      },
+      {
+        "description": "missing dog replaced with uppercased FOX",
+        "input": "the quick brown fox jumped over the lazy FOX",
+        "expected": false
       }
    ]
 }
