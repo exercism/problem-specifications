@@ -1,0 +1,34 @@
+{
+    "cases": [
+        {
+            "description": "empty map",
+            "evaluation_map": [],
+            "expected": 0
+        },
+        {
+            "description": "smooth surface",
+            "evaluation_map": [3, 3, 3, 3, 3, 3, 3, 3, 3],
+            "expected": 0
+        },
+        {
+            "description": "beveled edges",
+            "evaluation_map": [0, 1, 2, 3, 4, 3, 2, 1, 0],
+            "expected": 0
+        },
+        {
+            "description": "one pick",
+            "evaluation_map": [1, 0, 1, 3, 2, 0, 1],
+            "expected": 2
+        },
+        {
+            "description": "submerged pick",
+            "evaluation_map": [1, 8, 0, 0, 0, 3, 0, 0, 0, 7, 5, 2],
+            "expected": 46
+        },
+        {
+            "description": "tall picks",
+            "evaluation_map": [1, 0, 4, 6, 1, 67, 3, 45, 24, 7, 33, 22, 8, 34, 55, 0, 23, 14],
+            "expected": 293
+        }
+    ]
+}
