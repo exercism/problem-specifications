@@ -34,7 +34,7 @@
     ]
   },
   "turn_right": {
-    "description": "rotates the robot's position 90 degrees clockwise",
+    "description": "rotates the robot's direction 90 degrees clockwise",
     "cases" : [
       {
         "description": "does not change the position",
@@ -53,7 +53,7 @@
           "direction": "north"
         },
         "expected": {
-          "position": "east"
+          "direction": "east"
         }
       },
       {
@@ -63,7 +63,7 @@
           "direction": "east"
         },
         "expected": {
-          "position": "south"
+          "direction": "south"
         }
       },
       {
@@ -73,7 +73,7 @@
           "direction": "south"
         },
         "expected": {
-          "position": "west"
+          "direction": "west"
         }
       },
       {
@@ -83,13 +83,13 @@
           "direction": "west"
         },
         "expected": {
-          "position": "north"
+          "direction": "north"
         }
       }
     ]
   },
   "turn_left": {
-    "description": "rotates the robot's position 90 degrees counter-clockwise",
+    "description": "rotates the robot's direction 90 degrees counter-clockwise",
     "cases" : [
       {
         "description": "does not change the position",
@@ -108,7 +108,7 @@
           "direction": "north"
         },
         "expected": {
-          "position": "west"
+          "direction": "west"
         }
       },
       {
@@ -118,7 +118,7 @@
           "direction": "west"
         },
         "expected": {
-          "position": "south"
+          "direction": "south"
         }
       },
       {
@@ -128,7 +128,7 @@
           "direction": "south"
         },
         "expected": {
-          "position": "east"
+          "direction": "east"
         }
       },
       {
@@ -138,7 +138,7 @@
           "direction": "east"
         },
         "expected": {
-          "position": "north"
+          "direction": "north"
         }
       }
     ]
