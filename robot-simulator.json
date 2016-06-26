@@ -162,7 +162,9 @@
           "position": "(0,0)",
           "direction": "north"
         },
-        "expected": "(0,1)"
+        "expected": {
+          "position": "(0,1)"
+        }
       },
       {
         "description": "decreases the y coordinate by one when facing south",
@@ -170,7 +172,9 @@
           "position": "(0,0)",
           "direction": "south"
         },
-        "expected": "(0,-1)"
+        "expected": {
+          "position": "(0,-1)"
+        }
       },
       {
         "description": "increases the x coordinate by one when facing east",
@@ -178,7 +182,9 @@
           "position": "(0,0)",
           "direction": "east"
         },
-        "expected": "(1,0)"
+        "expected": {
+          "position": "(1,0)"
+        }
       },
       {
         "description": "decreases the x coordinate by one when facing west",
@@ -186,7 +192,9 @@
           "position": "(0,0)",
           "direction": "west"
         },
-        "expected": "(-1,0)"
+        "expected": {
+          "position": "(-1,0)"
+        }
       }
     ]
   },
