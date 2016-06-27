@@ -59,7 +59,7 @@
       {
         "description": "changes the direction from east to south",
         "robot": {
-          "position": "(1,-1)",
+          "position": "(0,0)",
           "direction": "east"
         },
         "expected": {
@@ -69,7 +69,7 @@
       {
         "description": "changes the direction from south to west",
         "robot": {
-          "position": "(-1,-1)",
+          "position": "(0,0)",
           "direction": "south"
         },
         "expected": {
@@ -79,7 +79,7 @@
       {
         "description": "changes the direction from west to north",
         "robot": {
-          "position": "(-1,-1)",
+          "position": "(0,0)",
           "direction": "west"
         },
         "expected": {
@@ -114,7 +114,7 @@
       {
         "description": "changes the direction from west to south",
         "robot": {
-          "position": "(1,-1)",
+          "position": "(0,0)",
           "direction": "west"
         },
         "expected": {
@@ -124,7 +124,7 @@
       {
         "description": "changes the direction from south to east",
         "robot": {
-          "position": "(-1,-1)",
+          "position": "(0,0)",
           "direction": "south"
         },
         "expected": {
@@ -134,7 +134,7 @@
       {
         "description": "changes the direction from east to north",
         "robot": {
-          "position": "(-1,-1)",
+          "position": "(0,0)",
           "direction": "east"
         },
         "expected": {
