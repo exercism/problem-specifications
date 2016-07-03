@@ -3,8 +3,8 @@ Write a program that takes input text and outputs it -- transposed.
 Roughly explained, the transpose of a matrix:
 
 ```
-A B C
-D E F
+ABC
+DEF
 ```
 
 is given by:
