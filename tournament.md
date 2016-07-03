@@ -61,4 +61,7 @@ Devastating Donkeys;Courageous Californians;draw
 
 Means that the Devastating Donkeys and Courageous Californians tied.
 
-Your program should only accept inputs that follow this format.
+Your program should only process input lines that follow this format.
+All other lines should be ignored:
+If an input contains both valid and invalid input lines,
+output a table that contains just the results from the valid lines.
