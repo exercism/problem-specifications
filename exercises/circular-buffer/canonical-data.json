@@ -1,0 +1,296 @@
+{
+  "#": [
+    "In general, these circular buffers are expected to be stateful,",
+    "and each language will operate on them differently.",
+    "Tests tend to perform a series of operations, some of which expect a certain result.",
+    "As such, this common test suite can only say in abstract terms what should be done.",
+    "",
+    "Tests will contain a number of operations. The operation will be specified in the `operation` key.",
+    "Based on the operation, other keys may be present.",
+    "read: Reading from the buffer should produce the item located at `expected`.",
+    "write: Writing the item located at `item` should succeed.",
+    "readShouldFail: Reading from the buffer should fail.",
+    "writeShouldFail: Writing the item located at `item` should fail.",
+    "overwrite: Write the item located at `item` into the buffer, removing the oldest item if necessary.",
+    "clear: Clear the buffer.",
+    "",
+    "Finally, note that all values are integers.",
+    "If your language contains generics, you may consider allowing buffers to contain other types.",
+    "Tests for that are not included here.",
+    ""
+  ],
+  "cases": [
+    {
+      "description": "reading empty buffer should fail",
+      "capacity": 1,
+      "operations": [
+        {
+          "operation": "readShouldFail"
+        }
+      ]
+    },
+    {
+      "description": "can read an item just written",
+      "capacity": 1,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1
+        },
+        {
+          "operation": "read",
+          "expected": 1
+        }
+      ]
+    },
+    {
+      "description": "each item may only be read once",
+      "capacity": 1,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1
+        },
+        {
+          "operation": "read",
+          "expected": 1
+        },
+        {
+          "operation": "readShouldFail"
+        }
+      ]
+    },
+    {
+      "description": "items are read in the order they are written",
+      "capacity": 2,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1
+        },
+        {
+          "operation": "write",
+          "item": 2
+        },
+        {
+          "operation": "read",
+          "expected": 1
+        },
+        {
+          "operation": "read",
+          "expected": 2
+        }
+      ]
+    },
+    {
+      "description": "full buffer can't be written to",
+      "capacity": 1,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1
+        },
+        {
+          "operation": "writeShouldFail",
+          "item": 2
+        }
+      ]
+    },
+    {
+      "description": "a read frees up capacity for another write",
+      "capacity": 1,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1
+        },
+        {
+          "operation": "read",
+          "expected": 1
+        },
+        {
+          "operation": "write",
+          "item": 2
+        },
+        {
+          "operation": "read",
+          "expected": 2
+        }
+      ]
+    },
+    {
+      "description": "read position is maintained even across multiple writes",
+      "capacity": 3,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1
+        },
+        {
+          "operation": "write",
+          "item": 2
+        },
+        {
+          "operation": "read",
+          "expected": 1
+        },
+        {
+          "operation": "write",
+          "item": 3
+        },
+        {
+          "operation": "read",
+          "expected": 2
+        },
+        {
+          "operation": "read",
+          "expected": 3
+        }
+      ]
+    },
+    {
+      "description": "items cleared out of buffer can't be read",
+      "capacity": 1,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1
+        },
+        {
+          "operation": "clear"
+        },
+        {
+          "operation": "readShouldFail"
+        }
+      ]
+    },
+    {
+      "description": "clear frees up capacity for another write",
+      "capacity": 1,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1
+        },
+        {
+          "operation": "clear"
+        },
+        {
+          "operation": "write",
+          "item": 2
+        },
+        {
+          "operation": "read",
+          "expected": 2
+        }
+      ]
+    },
+    {
+      "description": "clear does nothing on empty buffer",
+      "capacity": 1,
+      "operations": [
+        {
+          "operation": "clear"
+        },
+        {
+          "operation": "write",
+          "item": 1
+        },
+        {
+          "operation": "read",
+          "expected": 1
+        }
+      ]
+    },
+    {
+      "description": "overwrite acts like write on non-full buffer",
+      "capacity": 2,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1
+        },
+        {
+          "operation": "overwrite",
+          "item": 2
+        },
+        {
+          "operation": "read",
+          "expected": 1
+        },
+        {
+          "operation": "read",
+          "expected": 2
+        }
+      ]
+    },
+    {
+      "description": "overwrite removes the oldest item on full buffer",
+      "capacity": 2,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1
+        },
+        {
+          "operation": "write",
+          "item": 2
+        },
+        {
+          "operation": "overwrite",
+          "item": 3
+        },
+        {
+          "operation": "read",
+          "expected": 2
+        },
+        {
+          "operation": "read",
+          "expected": 3
+        }
+      ]
+    },
+    {
+      "description": "overwrite doesn't remove an already-read item",
+      "capacity": 3,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1
+        },
+        {
+          "operation": "write",
+          "item": 2
+        },
+        {
+          "operation": "write",
+          "item": 3
+        },
+        {
+          "operation": "read",
+          "expected": 1
+        },
+        {
+          "operation": "write",
+          "item": 4
+        },
+        {
+          "operation": "overwrite",
+          "item": 5
+        },
+        {
+          "operation": "read",
+          "expected": 3
+        },
+        {
+          "operation": "read",
+          "expected": 4
+        },
+        {
+          "operation": "read",
+          "expected": 5
+        }
+      ]
+    }
+  ]
+}
