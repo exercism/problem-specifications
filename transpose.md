@@ -10,9 +10,9 @@ DEF
 is given by:
 
 ```
-A D
-B E
-C F
+AD
+BE
+CF
 ```
 
 Rows become columns and columns become rows. See <https://en.wikipedia.org/wiki/Transpose>.
