@@ -1,0 +1,101 @@
+{
+  "#": [
+    "The inputs are represented as arrays of strings to improve readability in this JSON file.",
+    "Your track may choose whether to present the input as a single string (concatenating all the lines) or as the list."
+  ],
+  "cases": [
+    {
+      "description": "no rows",
+      "input": [],
+      "expected": 0
+    },
+    {
+      "description": "no columns",
+      "input": [""],
+      "expected": 0
+    },
+    {
+      "description": "no rectangles",
+      "input": [" "],
+      "expected": 0
+    },
+    {
+      "description": "one rectangle",
+      "input": [
+        "+-+",
+        "| |",
+        "+-+"
+      ],
+      "expected": 1
+    },
+    {
+      "description": "two rectangles without shared parts",
+      "input": [
+        "  +-+",
+        "  | |",
+        "+-+-+",
+        "| |  ",
+        "+-+  "
+      ],
+      "expected": 2
+    },
+    {
+      "description": "five rectangles with shared parts",
+      "input": [
+        "  +-+",
+        "  | |",
+        "+-+-+",
+        "| | |",
+        "+-+-+"
+      ],
+      "expected": 5
+    },
+    {
+      "description": "only complete rectangles are counted",
+      "input": [
+        "  +-+",
+        "    |",
+        "+-+-+",
+        "| | -",
+        "+-+-+"
+      ],
+      "expected": 1
+    },
+    {
+      "description": "rectangles can be of different sizes",
+      "input": [
+        "+------+----+",
+        "|      |    |",
+        "+---+--+    |",
+        "|   |       |",
+        "+---+-------+"
+      ],
+      "expected": 3
+    },
+    {
+      "description": "corner is required for a rectangle to be complete",
+      "input": [
+        "+------+----+",
+        "|      |    |",
+        "+------+    |",
+        "|   |       |",
+        "+---+-------+"
+      ],
+      "expected": 2
+    },
+    {
+      "description": "large input with many rectangles",
+      "input": [
+        "+---+--+----+",
+        "|   +--+----+",
+        "+---+--+    |",
+        "|   +--+----+",
+        "+---+--+--+-+",
+        "+---+--+--+-+",
+        "+------+  | |",
+        "          +-+"
+      ],
+      "expected": 60
+    }
+  ]
+}
