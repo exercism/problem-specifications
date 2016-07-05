@@ -84,7 +84,7 @@
       "expected": 2
     },
     {
-      "description": "large input with many rectangles",
+      "description": "large input with many rectangles, ruling out inefficient solutions",
       "input": [
         "+---+--+----+",
         "|   +--+----+",
