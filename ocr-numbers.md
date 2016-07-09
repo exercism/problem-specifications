@@ -1,36 +1,74 @@
-## Step 1
+# Step One
 
-A simple binary font has been constructed using only pipes and
-underscores.
+To begin with, convert a simple binary font to a string containing 0 and 1.
 
-The number is four rows high, three columns wide:
+The binary font uses pipes and underscores, four rows high and three columns wide.
 
+```
      _   #
     | |  # zero.
     |_|  #
          # the fourth row is always blank
+```
 
+Is converted to "0"
+
+```
          #
       |  # one.
       |  #
          # (blank fourth row)
+```
 
-Write a program that, given a 3 x 4 grid of pipes, underscores, and
-spaces, can determine whether the the grid represents a zero, a one, or
-garble.
+Is converted to "1"
 
-Anything else is considered garble, and can be represented with a '?'
+If the input is the correct size, but not recognizable, your program should return '?'
 
-## Step 2
+If the input is the incorrect size, your program should return an error.
 
-A simple numeric font has been constructed using only pipes and
-underscores.
+# Step Two
 
-The number consists of four rows high, three columns wide:
+Update your program to recognize binary strings, replacing garbled numbers with ?
 
+# Step Three
+
+Update your program to recognize all numbers 0 through 9, both individually and as part of a larger string.
+
+```
+ _ 
+ _|
+|_ 
+   
+```
+
+Is converted to "2"
+
+```
       _  _     _  _  _  _  _  _  #
     | _| _||_||_ |_   ||_||_|| | # decimal numbers.
     ||_  _|  | _||_|  ||_| _||_| #
                                  # fourth line is always blank
+```
 
-There may be several numbers in the input text, one per line.
+Is converted to "1234567890"
+
+# Step Four
+
+Update your program to handle multiple numbers, one per line. When converting several lines, replace the empty lines with commas.
+
+```
+    _  _ 
+  | _| _|
+  ||_  _|
+         
+    _  _ 
+|_||_ |_ 
+  | _||_|
+         
+ _  _  _ 
+  ||_||_|
+  ||_| _|
+         
+```
+
+Is converted to "123,456,789"
