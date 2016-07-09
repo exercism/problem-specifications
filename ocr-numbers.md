@@ -1,6 +1,6 @@
 # Step One
 
-To begin with, convert a simple binary font to a string containing 0 and 1.
+To begin with, convert a simple binary font to a string containing 0 or 1.
 
 The binary font uses pipes and underscores, four rows high and three columns wide.
 
