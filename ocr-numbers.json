@@ -165,7 +165,7 @@
       "expected": "1234567890"
       },
       {
-      "description": "Numbers separated by empty lines are recognized. Empty lines are replaced with commas",
+      "description": "Numbers separated by empty lines are recognized. Lines are joined by commas.",
       "input": [
         "    _  _ ",
         "  | _| _|",

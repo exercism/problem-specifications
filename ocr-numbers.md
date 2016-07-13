@@ -28,7 +28,7 @@ If the input is the incorrect size, your program should return an error.
 
 # Step Two
 
-Update your program to recognize binary strings, replacing garbled numbers with ?
+Update your program to recognize multi-character binary strings, replacing garbled numbers with ?
 
 # Step Three
 
@@ -54,7 +54,7 @@ Is converted to "1234567890"
 
 # Step Four
 
-Update your program to handle multiple numbers, one per line. When converting several lines, replace the empty lines with commas.
+Update your program to handle multiple numbers, one per line. When converting several lines, join the lines with commas.
 
 ```
     _  _ 
