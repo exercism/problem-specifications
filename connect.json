@@ -56,7 +56,7 @@
       "expected": "O"
     },
     {
-      "description": "Aspiral black wins"
+      "description": "Aspiral black wins",
       "board": [
         "O X X X X X X X X",
         "O X O O O O O O O",
