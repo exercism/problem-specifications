@@ -7,7 +7,7 @@
         ". . . . .",
         ". . . . .",
         ". . . . .",
-        " . . . . ."
+        ". . . . ."
       ],
       "expected": ""
     },
@@ -53,7 +53,7 @@
         ". X X . .",
         "O O O O O"
       ], 
-      "expected": "O"
+      "expected": "X"
     },
     {
       "description": "Aspiral black wins",
