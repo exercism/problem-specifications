@@ -1,0 +1,88 @@
+{
+  "#": [
+    "The inputs and outputs are represented as arrays of strings to improve readability in this JSON file.",
+    "Your track may choose whether to present the input as a single string (concatenating all the lines) or as the list.",
+    "In most cases, it seems to make sense to expect the output as a single string."
+  ],
+  "valid_inputs": {
+    "cases": [
+      {
+        "description": "typical input",
+        "input": [
+          "Allegoric Alaskans;Blithering Badgers;win",
+          "Devastating Donkeys;Courageous Californians;draw",
+          "Devastating Donkeys;Allegoric Alaskans;win",
+          "Courageous Californians;Blithering Badgers;loss",
+          "Blithering Badgers;Devastating Donkeys;loss",
+          "Allegoric Alaskans;Courageous Californians;win"
+        ],
+        "expected": [
+          "Team                           | MP |  W |  D |  L |  P",
+          "Devastating Donkeys            |  3 |  2 |  1 |  0 |  7",
+          "Allegoric Alaskans             |  3 |  2 |  0 |  1 |  6",
+          "Blithering Badgers             |  3 |  1 |  0 |  2 |  3",
+          "Courageous Californians        |  3 |  0 |  1 |  2 |  1"
+        ]
+      },
+      {
+        "description": "incomplete competition (not all pairs have played)",
+        "input": [
+          "Allegoric Alaskans;Blithering Badgers;loss",
+          "Devastating Donkeys;Allegoric Alaskans;loss",
+          "Courageous Californians;Blithering Badgers;draw",
+          "Allegoric Alaskans;Courageous Californians;win"
+        ],
+        "expected": [
+          "Team                           | MP |  W |  D |  L |  P",
+          "Allegoric Alaskans             |  3 |  2 |  0 |  1 |  6",
+          "Blithering Badgers             |  2 |  1 |  1 |  0 |  4",
+          "Courageous Californians        |  2 |  0 |  1 |  1 |  1",
+          "Devastating Donkeys            |  1 |  0 |  0 |  1 |  0"
+        ]
+      },
+      {
+        "description": "ties broken alphabetically",
+        "input": [
+          "Courageous Californians;Devastating Donkeys;win",
+          "Allegoric Alaskans;Blithering Badgers;win",
+          "Devastating Donkeys;Allegoric Alaskans;loss",
+          "Courageous Californians;Blithering Badgers;win",
+          "Blithering Badgers;Devastating Donkeys;draw",
+          "Allegoric Alaskans;Courageous Californians;draw"
+        ],
+        "expected": [
+          "Team                           | MP |  W |  D |  L |  P",
+          "Allegoric Alaskans             |  3 |  2 |  1 |  0 |  7",
+          "Courageous Californians        |  3 |  2 |  1 |  0 |  7",
+          "Blithering Badgers             |  3 |  0 |  1 |  2 |  1",
+          "Devastating Donkeys            |  3 |  0 |  1 |  2 |  1"
+        ]
+      }
+    ]
+  },
+  "invalid_lines": {
+    "#": [
+      "Your track should test that, for each invalid line,",
+      "inserting the invalid line into an otherwise-valid game still results in valid output.",
+      "It's suggested to use one of the valid games above."
+    ],
+    "cases": [
+      {
+        "description": "an empty line",
+        "input": ""
+      },
+      {
+        "description": "wrong separator used",
+        "input": "Devastating Donkeys@Courageous Californians;draw"
+      },
+      {
+        "description": "too many separators",
+        "input": "Devastating Donkeys;Courageous Californians;draw;5"
+      },
+      {
+        "description": "invalid match result",
+        "input": "Devastating Donkeys;Allegoric Alaskans;dra"
+      }
+    ]
+  }
+}
