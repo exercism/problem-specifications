@@ -23,6 +23,17 @@
       "expected": ""
     },
     {
+      "description": "illegal diagonal nobody wins",
+      "board": [
+         "X O . .",
+         " O X X X",
+         "  O X O .",
+         "   . O X .",
+         "    X X O O"
+      ],
+      "expected": ""
+    },
+    {
       "description": "Rectangle black - black wins",
       "board": [
         ". O . .",
