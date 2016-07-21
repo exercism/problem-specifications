@@ -4,10 +4,10 @@
       "description": "an empty board has no winner",
       "board": [
         ". . . . .",
-        ". . . . .",
-        ". . . . .",
-        ". . . . .",
-        ". . . . ."
+        " . . . . .",
+        "  . . . . .",
+        "   . . . . .",
+        "    . . . . ."
       ],
       "expected": ""
     },
@@ -15,10 +15,10 @@
       "description": "only edges does not make a winner",
       "board": [
         ". . . . .",
-        ". . . . X",
-        ". O . X .",
-        ". . O . .",
-        ". . . O ."
+        " . . . . X",
+        "  . O . X .",
+        "   . . O . .",
+        "    . . . O ."
       ],
       "expected": ""
     },
@@ -26,10 +26,10 @@
       "description": "Rectangle black - black wins",
       "board": [
         ". O . .",
-        "O X X X",
-        "O X O .",
-        "X X O X",
-        ". O X ."
+        " O X X X",
+        "  O X O .",
+        "   X X O X",
+        "    . O X ."
       ],
       "expected": "X"
     },
@@ -37,10 +37,10 @@
       "description": "Rectangle white - white wins",
       "board": [
         ". O . .",
-        "O X X X",
-        "O O O .",
-        "X X O X",
-        ". O X ."
+        " O X X X",
+        "  O O O .",
+        "   X X O X",
+        "    . O X ."
       ],
       "expected": "O"
     },
@@ -48,10 +48,10 @@
       "description": "Convoluted path black wins",
       "board": [
         ". X X . .",
-        "X . X . X",
-        ". X . X .",
-        ". X X . .",
-        "O O O O O"
+        " X . X . X",
+        "  . X . X .",
+        "   . X X . .",
+        "    O O O O O"
       ], 
       "expected": "X"
     },
@@ -59,14 +59,14 @@
       "description": "Aspiral black wins",
       "board": [
         "O X X X X X X X X",
-        "O X O O O O O O O",
-        "O X O X X X X X O",
-        "O X O X O O O X O",
-        "O X O X X X O X O",
-        "O X O O O X O X O",
-        "O X X X X X O X O",
-        "O O O O O O O X O",
-        "X X X X X X X X O"
+        " O X O O O O O O O",
+        "  O X O X X X X X O",
+        "   O X O X O O O X O",
+        "    O X O X X X O X O",
+        "     O X O O O X O X O",
+        "      O X X X X X O X O",
+        "       O O O O O O O X O",
+        "        X X X X X X X X O"
       ],
       "expected": "X"
     }
