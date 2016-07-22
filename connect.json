@@ -34,13 +34,13 @@
       "expected": ""
     },
     {
-      "description": "illegal diagonal nobody wins",
+      "description": "adjacent angles are not connected and nobody wins",
       "board": [
-         "X O . .",
-         " O X X X",
-         "  O X O .",
-         "   . O X .",
-         "    X X O O"
+         "X . . .",
+         " . X O .",
+         "  O . X O",
+         "   . O . X",
+         "    . . O ."
       ],
       "expected": ""
     },
