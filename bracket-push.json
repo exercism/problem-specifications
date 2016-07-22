@@ -41,6 +41,11 @@
       "expected": true
     },
     {
+      "description": "unopened closing brackets",
+      "input": "{[)][]}",
+      "expected": false
+    },
+    {
       "description": "unpaired and nested brackets",
       "input": "([{])",
       "expected": false
