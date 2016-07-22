@@ -14,11 +14,11 @@
     {
       "description": "only edges does not make a winner",
       "board": [
-        ". . . . .",
+        ". X X X X",
         " . . . . X",
         "  . O . X .",
-        "   . . O . .",
-        "    . . . O ."
+        "   . O O . .",
+        "    . . O O ."
       ],
       "expected": ""
     },
