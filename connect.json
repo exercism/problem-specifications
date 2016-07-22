@@ -67,7 +67,7 @@
       "expected": "X"
     },
     {
-      "description": "Aspiral black wins",
+      "description": "spiral black wins",
       "board": [
         "O X X X X X X X X",
         " O X O O O O O O O",
