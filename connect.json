@@ -23,6 +23,17 @@
       "expected": ""
     },
     {
+      "description": "illegal diagonal does not make a winner",
+      "board": [
+        "X O . .",
+        " O X X X",
+        "  O X O .",
+        "   . O X .",
+        "    X X O O"
+      ],
+      "expected": ""
+    },
+    {
       "description": "illegal diagonal nobody wins",
       "board": [
          "X O . .",
