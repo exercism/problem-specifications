@@ -1,5 +1,5 @@
 {
-   "cases": [
+   "decimal": [
       {
          "description": "binary 0 is decimal 0",
          "binary": "0",
