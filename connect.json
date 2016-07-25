@@ -33,7 +33,7 @@
       "expected": ""
     },
     {
-      "description": "adjacent angles are not connected and nobody wins",
+      "description": "nobody wins crossing adjacent angles",
       "board": [
          "X . . .",
          " . X O .",
