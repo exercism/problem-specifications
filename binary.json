@@ -1,0 +1,59 @@
+{
+   "decimal": [
+      {
+         "description": "binary 0 is decimal 0",
+         "binary": "0",
+         "expected": 0
+      },
+      {
+         "description": "binary 1 is decimal 1",
+         "binary": "1",
+         "expected": 1
+      },
+      {
+         "description": "binary 10 is decimal 2",
+         "binary": "10",
+         "expected": 2
+      },
+      {
+         "description": "binary 11 is decimal 3",
+         "binary": "11",
+         "expected": 3
+      },
+      {
+         "description": "binary 100 is decimal 4",
+         "binary": "100",
+         "expected": 4
+      },
+      {
+         "description": "binary 1001 is decimal 9",
+         "binary": "1001",
+         "expected": 9
+      },
+      {
+         "description": "binary 11010 is decimal 26",
+         "binary": "11010",
+         "expected": 26
+      },
+      {
+         "description": "binary 10001101000 is decimal 1128",
+         "binary": "10001101000",
+         "expected": 1128
+      },
+      {
+         "description": "binary ignores leading zeros",
+         "binary": "000011111",
+         "expected": 31
+      },
+      {
+         "description": "numbers other than one and zero raise an error",
+         "binary": ["012", "2"],
+         "expected": -1
+      },
+      {
+         "description": "containing letters raises an error",
+         "binary": ["10nope", "nope10", "10nope10", "001 nope"],
+         "expected": -1
+      }
+   ]
+}
