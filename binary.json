@@ -46,14 +46,34 @@
          "expected": 31
       },
       {
-         "description": "numbers other than one and zero raise an error",
-         "binary": ["012", "2"],
-         "expected": -1
+        "description": "2 is not a valid binary digit",
+        "binary": "2",
+        "expected": null
       },
       {
-         "description": "containing letters raises an error",
-         "binary": ["10nope", "nope10", "10nope10", "001 nope"],
-         "expected": -1
+        "description": "a number containing a non-binary digit is invalid",
+        "binary": "01201",
+        "expected": null
+      },
+      {
+        "description": "a number with trailing non-binary characters is invalid",
+        "binary": "10nope",
+        "expected": null
+      },
+      {
+        "description": "a number with leading non-binary characters is invalid",
+        "binary": "nope10",
+        "expected": null
+      },
+      {
+        "description": "a number with internal non-binary characters is invalid",
+        "binary": "10nope10",
+        "expected": null
+      },
+      {
+        "description": "a number and a word whitespace spearated is invalid",
+        "binary": "001 nope",
+        "expected": null
       }
    ]
 }
