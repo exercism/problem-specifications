@@ -12,6 +12,20 @@
       "expected": ""
     },
     {
+      "description": "X can win on a 1x1 board",
+      "board": [
+        "X"
+      ],
+      "expected": "X"
+    },
+    {
+      "description": "O can win on a 1x1 board",
+      "board": [
+        "O"
+      ],
+      "expected": "O"
+    },
+    {
       "description": "only edges does not make a winner",
       "board": [
         "O O O X",
