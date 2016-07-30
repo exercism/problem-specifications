@@ -13,7 +13,7 @@ the same to pick a private key b.
 
 ## Step 2
 
-Alice calcuates a public key A.
+Alice calculates a public key A.
 
     A = g**a mod p
 

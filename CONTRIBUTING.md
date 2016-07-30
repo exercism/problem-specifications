@@ -149,7 +149,7 @@ this guide](#updating-a-generated-test-suite).
 
 The test suite is usually named with _test_ or _Test_ in the filename, though
 some language tracks have other conventions (e.g. _spec_ is fairly common, and
-sometimes it's just a matter of a different file extention).
+sometimes it's just a matter of a different file extension).
 
 If you're unsure where to make the change, ask us, and we'll help you figure it out.
 
@@ -303,7 +303,7 @@ served by the API endpoint `http://x.exercism.io/v3/tracks/:track_id/todo`.
 For example, here's the list of exercises that have not yet been implemented
 in the Elm track: http://x.exercism.io/v3/tracks/elm/todo
 
-It can be pretty unweildy to read the JSON directly. To make it easier,
+It can be pretty unwieldy to read the JSON directly. To make it easier,
 install a browser extension that formats the JSON nicely, or copy/paste the
 response body into http://jsonlint.com/ and click "validate JSON", which not
 only validates it, but pretty-prints it.
@@ -507,7 +507,7 @@ Exercises should not enforce a single way to solve the problem, if possible.
 The more interesting exercises allow several approaches, and create rich
 opportunities for discussing trade-offs when people submit their solutions.
 
-### Skipping Uninteresting Exerices
+### Skipping Uninteresting Exercises
 
 Don't be afraid to 'forego' exercises that don't make sense in the language,
 or that are not particularly interesting.

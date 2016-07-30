@@ -147,13 +147,13 @@
     "description": "moves the robot forward 1 space in the direction it is pointing",
     "cases" : [
       {
-        "description": "does not change the directon",
+        "description": "does not change the direction",
         "robot": {
           "position": "(0,0)",
           "direction": "north"
         },
         "expected": {
-          "directon": "north"
+          "direction": "north"
         }
       },
       {

@@ -10,7 +10,7 @@ Please see the [contributing guide](https://github.com/exercism/x-common/blob/ma
 ## Test Data Format
 
 Each problem can have a file <problem>.json containing standard test data.
-This data can be incoporated into test programs manually or extracted by a
+This data can be incorporated into test programs manually or extracted by a
 program.  The file contains a single JSON object with a key for documentation
 and keys for various tests that may be meaningful for a problem.
 
