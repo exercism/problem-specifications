@@ -99,12 +99,6 @@
             "expected": []
         },
         {
-            "description": "eliminates anagrams with the same checksum",
-            "subject": "mass",
-            "candidates": ["last"],
-            "expected": []
-        },
-        {
             "description": "detects unicode anagrams",
             "comment": "These words don't make sense, they're just greek letters cobbled together.",
             "subject": "ΑΒΓ",
@@ -122,13 +116,6 @@
             "description": "capital word is not own anagram",
             "subject": "BANANA",
             "candidates": ["Banana"],
-            "expected": []
-
-        },
-        {
-            "description": "anagrams must use all letters exactly once",
-            "subject": "patter",
-            "candidates": ["tapper"],
             "expected": []
         }
     ],
