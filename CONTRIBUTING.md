@@ -507,7 +507,7 @@ Exercises should not enforce a single way to solve the problem, if possible.
 The more interesting exercises allow several approaches, and create rich
 opportunities for discussing trade-offs when people submit their solutions.
 
-### Skipping Uninteresting Exerices
+### Skipping Uninteresting Exercises
 
 Don't be afraid to 'forego' exercises that don't make sense in the language,
 or that are not particularly interesting.
