@@ -303,7 +303,7 @@ served by the API endpoint `http://x.exercism.io/v3/tracks/:track_id/todo`.
 For example, here's the list of exercises that have not yet been implemented
 in the Elm track: http://x.exercism.io/v3/tracks/elm/todo
 
-It can be pretty unweildy to read the JSON directly. To make it easier,
+It can be pretty unwieldy to read the JSON directly. To make it easier,
 install a browser extension that formats the JSON nicely, or copy/paste the
 response body into http://jsonlint.com/ and click "validate JSON", which not
 only validates it, but pretty-prints it.
