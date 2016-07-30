@@ -194,7 +194,7 @@ If you want to add a new test or change some inputs or outputs, then the change
 needs to be made in the [exercism/x-common repository](https://github.com/exercism/x-common),
 not directly to the test suite itself.
 
-Find the JSON file for the problem in question. For example, if you want to change
+Find the JSON file for the problem in question. For example, if you want to change/
 the Clock problem, then look for `clock.json`.
 
 Submit a pull request with the change.
@@ -394,7 +394,7 @@ In order to launch the track needs:
 - A handful of people who can check in regularly and provide feedback on solutions.
 - Documentation in `docs/` for how to get started / run the tests
 
-Description of what is required for `docs/` can be found in the [x-common CONTRIBUTING guide](https://github.com/exercism/x-api/blob/master/CONTRIBUTING.md#track-anatomy)
+Description of what is required for `docs/` can be found in the [x-api CONTRIBUTING guide](https://github.com/exercism/x-api/blob/master/CONTRIBUTING.md#track-anatomy)
 
 Once that is in place, the repository needs to be added as a submodule to
 [exercism/x-api](https://github.com/exercism/x-api/tree/master/tracks), and
