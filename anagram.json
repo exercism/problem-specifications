@@ -118,19 +118,5 @@
             "candidates": ["Banana"],
             "expected": []
         }
-    ],
-    "string argument cases": [
-        {
-            "description": "accepts string arguments",
-            "subject": "ant",
-            "candidates": ["stand", "tan", "at"],
-            "expected": ["tan"]
-        },
-        {
-            "description": "accepts single string argument",
-            "subject": "ant",
-            "candidates": ["tan"],
-            "expected": ["tan"]
-        }
     ]
 }
