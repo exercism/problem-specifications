@@ -149,7 +149,7 @@ this guide](#updating-a-generated-test-suite).
 
 The test suite is usually named with _test_ or _Test_ in the filename, though
 some language tracks have other conventions (e.g. _spec_ is fairly common, and
-sometimes it's just a matter of a different file extention).
+sometimes it's just a matter of a different file extension).
 
 If you're unsure where to make the change, ask us, and we'll help you figure it out.
 
