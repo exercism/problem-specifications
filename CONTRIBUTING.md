@@ -394,7 +394,7 @@ In order to launch the track needs:
 - A handful of people who can check in regularly and provide feedback on solutions.
 - Documentation in `docs/` for how to get started / run the tests
 
-TODO: Describe `docs/`.
+Description of what is required for `docs/` can be found in the [x-api CONTRIBUTING guide](https://github.com/exercism/x-api/blob/master/CONTRIBUTING.md#track-anatomy)
 
 Once that is in place, the repository needs to be added as a submodule to
 [exercism/x-api](https://github.com/exercism/x-api/tree/master/tracks), and
