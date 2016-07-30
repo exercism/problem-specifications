@@ -75,7 +75,7 @@
             "expected": ["carthorse"]
         },
         {
-            "description": "detects anagrams using case-insensitve possible matches",
+            "description": "detects anagrams using case-insensitive possible matches",
             "subject": "orchestra",
             "candidates": ["cashregister", "Carthorse", "radishes"],
             "expected": ["Carthorse"]
