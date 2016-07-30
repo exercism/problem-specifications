@@ -17,4 +17,4 @@ including the number itself.
   3.
 - 28 is perfect number because 28 = 1 + 2 + 4 + 7 + 14.
 - Prime numbers 7, 13, etc are Deficient by the Nicomachus
-  classificaton.
+  classification.
