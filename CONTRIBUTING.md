@@ -286,18 +286,20 @@ here.
 
 ## Porting an Exercise to Another Language Track
 
-We are working on a user-friendly page on Exercism for each language track
-which will show the list of exercises that have not yet been implemented in
-the track.
+We now have a user-friendly page on Exercism for each language track
+which shows the list of exercises that have not yet been implemented in
+the track: `http://exercism.io/languages/:track_id/contribute`
 
-For each exercise, we will link to existing implementations of the exercise in
+For example, here is the Ruby contribution page: http://exercism.io/languages/ruby/contribute
+
+Each unimplemented exercise links to existing implementations of the exercise in
 other language tracks, so that people can use those example solutions and test
 suites as inspiration.
 
-We are also working on extracting canonical inputs and outputs for a given
-exercise, which is stored in JSON format in the x-common repository.
+We are also extracting canonical inputs and outputs for a given
+exercise and storing them in JSON format in the x-common repository.  We've accomplished this on a few exercises, but there are many more to do.
 
-Until this page is implemented, you can get this information from the raw data
+Although this page is now implemented, you can still get this information from the raw data
 served by the API endpoint `http://x.exercism.io/v3/tracks/:track_id/todo`.
 
 For example, here's the list of exercises that have not yet been implemented
