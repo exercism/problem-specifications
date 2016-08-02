@@ -58,7 +58,7 @@
         "description": ["Test decoding from atbash to English"],
         "cases": [
             {
-                "description": "decode exercim",
+                "description": "decode exercism",
                 "phrase": "vcvix rhn",
                 "expected": "exercism"
             },
