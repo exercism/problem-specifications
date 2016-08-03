@@ -6,7 +6,11 @@
 		"Depending on your language, there may need to be some translation",
 		"to go from the JSON array to the list representation.",
 		"The expectation can be used to generate an expected value",
-		"based on your implementation (such as a constant 'EQUAL', 'SUBLIST', etc.)."
+		"based on your implementation (such as a constant 'EQUAL', 'SUBLIST', etc.).",
+		"",
+		"If appropriate for your track, you'll need to ensure that no pair of expected values are equal.",
+		"Otherwise, an implementation that always returns a constant value may falsely pass the tests.",
+		"See https://github.com/exercism/xpython/issues/342"
 	],
 	"cases": [{
 		"description": "empty lists",
