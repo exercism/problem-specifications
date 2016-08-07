@@ -6,11 +6,12 @@
 
 ## Specification
 
-The `Hello World!` program will greet me, the caller.
+Write a `Hello World!` function that can greet someone given their name.
+The function should return the appropriate greeting.
 
-If I tell the program my name is Alice, it will greet me by saying "Hello, Alice!".
+For an input of "Alice", the response should be "Hello, Alice!".
 
-If I neglect to give it my name, it will greet me by saying "Hello, World!"
+If a name is not given, the response should be "Hello, World!"
 
 ## Test-Driven Development
 
