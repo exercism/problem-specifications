@@ -37,7 +37,7 @@ supports variations of play sequences. For example:
 Here the root node has two variations. The first (which by convention
 indicates what's actually played) is where black plays on 1-1. Black was
 sent this file by his teacher who pointed out a more sensible play in
-the second child of the root node: `B[dd]` (3-3 point, a very standard
+the second child of the root node: `B[dd]` (4-4 point, a very standard
 opening to take the corner).
 
 A key can have multiple values associated with it. For example:
