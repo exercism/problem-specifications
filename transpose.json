@@ -7,15 +7,25 @@
   "cases": [
     {
       "description": "empty string",
-      "input": "",
-      "expected": ""
+      "input": [],
+      "expected": []
     },
     {
-      "description": "two characters",
-      "input": "A1",
+      "description": "two characters in a row",
+      "input": ["A1"],
       "expected": [ 
           "A",
           "1"
+        ]
+    },
+    {
+      "description": "two characters in a column",
+      "input": [
+          "A",
+          "1"
+      ],
+      "expected": [
+          "A1"
         ]
     },
     {
@@ -32,7 +42,7 @@
     },
     {
       "description": "single line",
-      "input": "Single line.",
+      "input": ["Single line."],
       "expected": [ 
           "S",
           "i",
@@ -224,7 +234,7 @@
           "          o  n",
           "          v  d",
           "          e  .",
-          "          ,  "
+          "          ,"
       ]
     }
   ]
