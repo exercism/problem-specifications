@@ -11,11 +11,21 @@
       "expected": []
     },
     {
-      "description": "two characters",
+      "description": "two characters in a row",
       "input": ["A1"],
       "expected": [ 
           "A",
           "1"
+        ]
+    },
+    {
+      "description": "two characters in a column",
+      "input": [
+          "A",
+          "1"
+      ],
+      "expected": [
+          "A1"
         ]
     },
     {
