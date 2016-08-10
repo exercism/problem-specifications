@@ -7,12 +7,12 @@
   "cases": [
     {
       "description": "empty string",
-      "input": "",
-      "expected": ""
+      "input": [],
+      "expected": []
     },
     {
       "description": "two characters",
-      "input": "A1",
+      "input": ["A1"],
       "expected": [ 
           "A",
           "1"
@@ -32,7 +32,7 @@
     },
     {
       "description": "single line",
-      "input": "Single line.",
+      "input": ["Single line."],
       "expected": [ 
           "S",
           "i",
