@@ -14,13 +14,14 @@ binary decide to come up with a secret "handshake".
 10000 = Reverse the order of the operations in the secret handshake.
 ```
 
-```
-handshake = SecretHandshake.new 9
-handshake.commands # => ["wink","jump"]
+Here's a couple of examples:
 
-handshake = SecretHandshake.new "11001"
-handshake.commands # => ["jump","wink"]
-```
+Given the input 9, the function would return the array
+["wink","jump"]
+
+Given the input "11001", the function would return the array
+["jump", "wink"]
+
 
 The program should consider strings specifying an invalid binary as the
 value 0.
