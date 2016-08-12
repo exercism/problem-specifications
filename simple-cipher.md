@@ -21,11 +21,13 @@ recognize the few words that they did know.
 Your task is to create a simple shift cipher like the Caesar Cipher.
 This image is a great example of the Caesar Cipher: ![Caesar Cipher][1]
 
-Here are some examples:
+For example:
 
-    @cipher = Cipher.new
-    @cipher.encode("iamapandabear") #=> "ldpdsdqgdehdu"
-    @cipher.decode("ldpdsdqgdehdu") #=> "iamapandabear"
+Giving "iamapandabear" as input to the encode function returns the cipher "ldpdsdqgdehdu". Obscure enough to keep our message secret in transit.
+
+When "ldpdsdqgdehdu" is put into the decode function it would return
+the original "iamapandabear" letting your friend read your original
+message.
 
 ## Step 2
 
@@ -35,10 +37,11 @@ shift distance. This is called a substitution cipher.
 
 Here's an example:
 
-    @cipher = Cipher.new("aaaaaaaaaaaaaaaaaa")
-    @cipher.encode("iamapandabear") #=> "iamapandabear"
-    @cipher = Cipher.new("ddddddddddddddddd")
-    @cipher.encode("imapandabear") #=> "lpdsdqgdehdu"
+Given the key "aaaaaaaaaaaaaaaaaa", encoding the string "iamapandabear"
+would return the original "iamapandabear".
+
+Given the key "ddddddddddddddddd", encoding our string "iamapandabear"
+would return the obscured "lpdsdqgdehdu"
 
 In the example above, we've set a = 0 for the key value. So when the
 plaintext is added to the key, we end up with the same message coming
@@ -58,10 +61,6 @@ syntax means instance variable)
 
 If the key submitted has capital letters or numbers, throw an
 ArgumentError with a message to that effect.
-
-Some examples:
-    @cipher = Cipher.new
-    @cipher.key #=> "duxrceqyaimciuucnelkeoxjhdyduucpmrxmaivacmybmsdrzwqxvbxsygzsabdjmdjabeorttiwinfrpmpogvabiofqexnohrqu"
 
 ## Extensions
 
