@@ -17,7 +17,7 @@ binary decide to come up with a secret "handshake".
 Here's a couple of examples:
 
 Given the input 9, the function would return the array
-["wink","jump"]
+["wink", "jump"]
 
 Given the input "11001", the function would return the array
 ["jump", "wink"]
