@@ -1,0 +1,62 @@
+Basic concepts
+--------------
+Abstract classes
+Callbacks
+Control-flow (if-else statements)
+Control-flow (loops)
+Events
+Exception handling
+Generics
+Inheritance
+Interfaces
+Pattern matching
+Polymorphism
+Recursion
+Threading
+Type conversion
+Variables
+
+Data types
+----------
+Arrays
+Booleans
+Classes
+Dates
+Discriminated unions
+Enumerations
+Floating-point numbers
+Integers
+Lists
+Maps
+Optional values
+Queues
+Records
+Sequences
+Sets
+Stacks
+Strings
+Structs
+Time
+Trees
+Tuples
+
+Problem areas
+-------------
+Algorithms
+Files
+Filtering
+Games
+Globalization
+Logic
+Networking
+Parallellism
+Parsing
+Pattern recognition
+Performance
+Randomness
+Refactoring
+Searching
+Security
+Sorting
+Text formatting
+Transforming
