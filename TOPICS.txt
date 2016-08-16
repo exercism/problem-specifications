@@ -48,6 +48,7 @@ Filtering
 Games
 Globalization
 Logic
+Mathematics
 Networking
 Parallellism
 Parsing
