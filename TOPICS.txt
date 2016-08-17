@@ -28,6 +28,7 @@ Floating-point numbers
 Integers
 Lists
 Maps
+Matrices
 Optional values
 Queues
 Records
