@@ -19,7 +19,6 @@ Variables
 Data types
 ----------
 Arrays
-Bitwise operations
 Booleans
 Classes
 Dates
@@ -45,6 +44,7 @@ Tuples
 Problem areas
 -------------
 Algorithms
+Bitwise operations
 Domain-specific languages
 Files
 Filtering
