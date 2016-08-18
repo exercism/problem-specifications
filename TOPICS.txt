@@ -25,6 +25,7 @@ Dates
 Discriminated unions
 Enumerations
 Floating-point numbers
+Graphs
 Integers
 Lists
 Maps
