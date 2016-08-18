@@ -44,6 +44,7 @@ Tuples
 Problem areas
 -------------
 Algorithms
+Domain-specific languages
 Files
 Filtering
 Games
