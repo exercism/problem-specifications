@@ -55,6 +55,7 @@ Parsing
 Pattern recognition
 Performance
 Randomness
+Reactive programming
 Refactoring
 Searching
 Security
