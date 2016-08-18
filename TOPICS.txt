@@ -19,6 +19,7 @@ Variables
 Data types
 ----------
 Arrays
+Bitwise operations
 Booleans
 Classes
 Dates
