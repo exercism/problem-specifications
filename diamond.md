@@ -8,7 +8,8 @@ supplied letter at the widest point.
 
 * The first row contains one 'A'.
 * The last row contains one 'A'.
-* All rows, except the first and last, have exactly two identical letters. 
+* All rows, except the first and last, have exactly two identical letters.
+* All rows have as many trailing spaces as leading spaces. (This might be 0).
 * The diamond is horizontally symmetric.
 * The diamond is vertically symmetric.
 * The diamond has a square shape (width equals height).
@@ -19,6 +20,8 @@ supplied letter at the widest point.
 
 ## Examples
 
+In the following examples, spaces are indicated by `·` characters.
+
 Diamond for letter 'A':
 
 ```plain
@@ -28,23 +31,23 @@ A
 Diamond for letter 'C':
 
 ```plain
-  A
- B B
-C   C
- B B
-  A
+··A··
+·B·B·
+C···C
+·B·B·
+··A··
 ```
 
 Diamond for letter 'E':
 
 ```plain
-    A       
-   B B   
-  C   C 
- D     D
-E       E
- D     D   
-  C   C
-   B B
-    A
-``` 
+····A····
+···B·B···
+··C···C··
+·D·····D·
+E·······E
+·D·····D·
+··C···C··
+···B·B···
+····A····
+```
