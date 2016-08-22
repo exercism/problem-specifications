@@ -286,11 +286,11 @@ here.
 
 ## Porting an Exercise to Another Language Track
 
-We now have a user-friendly page on Exercism for each language track
-which shows the list of exercises that have not yet been implemented in
-the track: `http://exercism.io/languages/:track_id/contribute`
+To get a list of all the exercises that can be ported to the track,
+go to the url `http://exercism.io/languages/:track_id/contribute`.
 
-For example, here is the Ruby contribution page: http://exercism.io/languages/ruby/contribute
+For example here is the list of exercises that have not yet been implemented
+for the Ruby track: http://exercism.io/languages/ruby/contribute
 
 Each unimplemented exercise links to existing implementations of the exercise in
 other language tracks, so that people can use those example solutions and test
