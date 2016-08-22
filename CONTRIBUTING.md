@@ -286,7 +286,7 @@ here.
 
 ## Porting an Exercise to Another Language Track
 
-To get a list of all the exercises that can be ported to the track,
+To get a list of all the exercises that can be ported to a track,
 go to the url `http://exercism.io/languages/:track_id/contribute`.
 
 For example here is the list of exercises that have not yet been implemented
