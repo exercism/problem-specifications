@@ -1,0 +1,512 @@
+{
+  "#": [
+    "Note that, due to the nature of this exercise,",
+    "the tests are specified using their cells and a series of operations to perform on the cells.",
+    "",
+    "Each object in the `cells` array has a `name` and `type` (`input` or `output`).",
+    "input cells have an `initial_value`, and compute cells have `inputs` and `compute_function`",
+    "",
+    "Each object in the `operations` array has a `type`.",
+    "Depending on the type, it also has additional fields.",
+    "The possible types and semantics of their fields are as follows:",
+    "",
+    "* expect_cell_value (`cell`, `value`): Expect that cell `cell` has value `value`.",
+    "* set_value (`cell`, `value`): Sets input cell `cell` to value `value`.",
+    "* add_callback (`cell`, `name`): Adds a callback to cell `cell`. Store the callback ID in a variable named `name`.",
+    "  all callbacks are assumed to simply store the values they're called with in some array.",
+    "* remove_callback (`cell`, `name`): Removes the callback `name` from cell `cell`.",
+    "* expect_callback_values (`callback`, `values`): Expects callback `callback` to have been called with values `values`.",
+    "",
+    "Finally, note that all values are integers.",
+    "If your language supports generics, you may consider allowing reactors to act on other types.",
+    "Tests for that are not included here.",
+    ""
+  ],
+  "cases": [
+    {
+      "description": "input cells have a value",
+      "cells": [
+        {
+          "name": "input",
+          "type": "input",
+          "initial_value": 10
+        }
+      ],
+      "operations": [
+        {
+          "type": "expect_cell_value",
+          "cell": "input",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "description": "an input cell's value can be set",
+      "cells": [
+        {
+          "name": "input",
+          "type": "input",
+          "initial_value": 4
+        }
+      ],
+      "operations": [
+        {
+          "type": "set_value",
+          "cell": "input",
+          "value": 20
+        },
+        {
+          "type": "expect_cell_value",
+          "cell": "input",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "description": "compute cells calculate initial value",
+      "cells": [
+        {
+          "name": "input",
+          "type": "input",
+          "initial_value": 1
+        },
+        {
+          "name": "output",
+          "type": "compute",
+          "inputs": ["input"],
+          "compute_function": "inputs[0] + 1"
+        }
+      ],
+      "operations": [
+        {
+          "type": "expect_cell_value",
+          "cell": "output",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "description": "compute cells take inputs in the right order",
+      "cells": [
+        {
+          "name": "one",
+          "type": "input",
+          "initial_value": 1
+        },
+        {
+          "name": "two",
+          "type": "input",
+          "initial_value": 2
+        },
+        {
+          "name": "output",
+          "type": "compute",
+          "inputs": ["one", "two"],
+          "compute_function": "inputs[0] + inputs[1] * 10"
+        }
+      ],
+      "operations": [
+        {
+          "type": "expect_cell_value",
+          "cell": "output",
+          "value": 21
+        }
+      ]
+    },
+    {
+      "description": "compute cells update value when dependencies are changed",
+      "cells": [
+        {
+          "name": "input",
+          "type": "input",
+          "initial_value": 1
+        },
+        {
+          "name": "output",
+          "type": "compute",
+          "inputs": ["input"],
+          "compute_function": "inputs[0] + 1"
+        }
+      ],
+      "operations": [
+        {
+          "type": "set_value",
+          "cell": "input",
+          "value": 3
+        },
+        {
+          "type": "expect_cell_value",
+          "cell": "output",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "description": "compute cells can depend on other compute cells",
+      "cells": [
+        {
+          "name": "input",
+          "type": "input",
+          "initial_value": 1
+        },
+        {
+          "name": "times_two",
+          "type": "compute",
+          "inputs": ["input"],
+          "compute_function": "inputs[0] * 2"
+        },
+        {
+          "name": "times_thirty",
+          "type": "compute",
+          "inputs": ["input"],
+          "compute_function": "inputs[0] * 30"
+        },
+        {
+          "name": "output",
+          "type": "compute",
+          "inputs": ["times_two", "times_thirty"],
+          "compute_function": "inputs[0] + inputs[1]"
+        }
+      ],
+      "operations": [
+        {
+          "type": "expect_cell_value",
+          "cell": "output",
+          "value": 32
+        },
+        {
+          "type": "set_value",
+          "cell": "input",
+          "value": 3
+        },
+        {
+          "type": "expect_cell_value",
+          "cell": "output",
+          "value": 96
+        }
+      ]
+    },
+    {
+      "description": "compute cells fire callbacks",
+      "cells": [
+        {
+          "name": "input",
+          "type": "input",
+          "initial_value": 1
+        },
+        {
+          "name": "output",
+          "type": "compute",
+          "inputs": ["input"],
+          "compute_function": "inputs[0] + 1"
+        }
+      ],
+      "operations": [
+        {
+          "type": "add_callback",
+          "cell": "output",
+          "name": "callback1"
+        },
+        {
+          "type": "set_value",
+          "cell": "input",
+          "value": 3
+        },
+        {
+          "type": "expect_callback_values",
+          "callback": "callback1",
+          "values": [4]
+        }
+      ]
+    },
+    {
+      "description": "callback cells only fire on change",
+      "cells": [
+        {
+          "name": "input",
+          "type": "input",
+          "initial_value": 1
+        },
+        {
+          "name": "output",
+          "type": "compute",
+          "inputs": ["input"],
+          "compute_function": "if inputs[0] < 3 then 111 else 222"
+        }
+      ],
+      "operations": [
+        {
+          "type": "add_callback",
+          "cell": "output",
+          "name": "callback1"
+        },
+        {
+          "type": "set_value",
+          "cell": "input",
+          "value": 2
+        },
+        {
+          "type": "expect_callback_values",
+          "callback": "callback1",
+          "values": []
+        },
+        {
+          "type": "set_value",
+          "cell": "input",
+          "value": 4
+        },
+        {
+          "type": "expect_callback_values",
+          "callback": "callback1",
+          "values": [222]
+        }
+      ]
+    },
+    {
+      "description": "callbacks can be added and removed",
+      "cells": [
+        {
+          "name": "input",
+          "type": "input",
+          "initial_value": 11
+        },
+        {
+          "name": "output",
+          "type": "compute",
+          "inputs": ["input"],
+          "compute_function": "inputs[0] + 1"
+        }
+      ],
+      "operations": [
+        {
+          "type": "add_callback",
+          "cell": "output",
+          "name": "callback1"
+        },
+        {
+          "type": "add_callback",
+          "cell": "output",
+          "name": "callback2"
+        },
+        {
+          "type": "set_value",
+          "cell": "input",
+          "value": 31
+        },
+        {
+          "type": "remove_callback",
+          "cell": "output",
+          "name": "callback1"
+        },
+        {
+          "type": "add_callback",
+          "cell": "output",
+          "name": "callback3"
+        },
+        {
+          "type": "set_value",
+          "cell": "input",
+          "value": 41
+        },
+        {
+          "type": "expect_callback_values",
+          "callback": "callback1",
+          "values": [32]
+        },
+        {
+          "type": "expect_callback_values",
+          "callback": "callback2",
+          "values": [32, 42]
+        },
+        {
+          "type": "expect_callback_values",
+          "callback": "callback3",
+          "values": [42]
+        }
+      ]
+    },
+    {
+      "description": "removing a callback multiple times doesn't interfere with other callbacks",
+      "#": [
+        "Some incorrect implementations store their callbacks in an array",
+        "and removing a callback repeatedly either removes an unrelated callback",
+        "or causes an out of bounds access."
+      ],
+      "cells": [
+        {
+          "name": "input",
+          "type": "input",
+          "initial_value": 1
+        },
+        {
+          "name": "output",
+          "type": "compute",
+          "inputs": ["input"],
+          "compute_function": "inputs[0] + 1"
+        }
+      ],
+      "operations": [
+        {
+          "type": "add_callback",
+          "cell": "output",
+          "name": "callback1"
+        },
+        {
+          "type": "add_callback",
+          "cell": "output",
+          "name": "callback2"
+        },
+        {
+          "type": "remove_callback",
+          "cell": "output",
+          "name": "callback1"
+        },
+        {
+          "type": "remove_callback",
+          "cell": "output",
+          "name": "callback1"
+        },
+        {
+          "type": "remove_callback",
+          "cell": "output",
+          "name": "callback1"
+        },
+        {
+          "type": "set_value",
+          "cell": "input",
+          "value": 2
+        },
+        {
+          "type": "expect_callback_values",
+          "callback": "callback1",
+          "values": []
+        },
+        {
+          "type": "expect_callback_values",
+          "callback": "callback2",
+          "values": [3]
+        }
+      ]
+    },
+    {
+      "description": "callbacks should only be called once even if multiple dependencies change",
+      "#": [
+        "Some incorrect implementations call a callback function too early,",
+        "when not all of the inputs of a compute cell have propagated new values."
+      ],
+      "cells": [
+        {
+          "name": "input",
+          "type": "input",
+          "initial_value": 1
+        },
+        {
+          "name": "plus_one",
+          "type": "compute",
+          "inputs": ["input"],
+          "compute_function": "inputs[0] + 1"
+        },
+        {
+          "name": "minus_one1",
+          "type": "compute",
+          "inputs": ["input"],
+          "compute_function": "inputs[0] - 1"
+        },
+        {
+          "name": "minus_one2",
+          "type": "compute",
+          "inputs": ["minus_one1"],
+          "compute_function": "inputs[0] - 1"
+        },
+        {
+          "name": "output",
+          "type": "compute",
+          "inputs": ["plus_one", "minus_one2"],
+          "compute_function": "inputs[0] * inputs[1]"
+        }
+      ],
+      "operations": [
+        {
+          "type": "add_callback",
+          "cell": "output",
+          "name": "callback1"
+        },
+        {
+          "type": "set_value",
+          "cell": "input",
+          "value": 4
+        },
+        {
+          "type": "expect_callback_values",
+          "callback": "callback1",
+          "values": [10]
+        }
+      ]
+    },
+    {
+      "description": "callbacks should not be called if dependencies change but output value doesn't change",
+      "#": [
+        "Some incorrect implementations simply mark a compute cell as dirty when a dependency changes,",
+        "then call callbacks on all dirty cells.",
+        "This is incorrect since the specification indicates only to call callbacks on change."
+      ],
+      "cells": [
+        {
+          "name": "input",
+          "type": "input",
+          "initial_value": 1
+        },
+        {
+          "name": "plus_one",
+          "type": "compute",
+          "inputs": ["input"],
+          "compute_function": "inputs[0] + 1"
+        },
+        {
+          "name": "minus_one",
+          "type": "compute",
+          "inputs": ["input"],
+          "compute_function": "inputs[0] - 1"
+        },
+        {
+          "name": "always_two",
+          "type": "compute",
+          "inputs": ["plus_one", "minus_one"],
+          "compute_function": "inputs[0] - inputs[1]"
+        }
+      ],
+      "operations": [
+        {
+          "type": "add_callback",
+          "cell": "always_two",
+          "name": "callback1"
+        },
+        {
+          "type": "set_value",
+          "cell": "input",
+          "value": 2
+        },
+        {
+          "type": "set_value",
+          "cell": "input",
+          "value": 3
+        },
+        {
+          "type": "set_value",
+          "cell": "input",
+          "value": 4
+        },
+        {
+          "type": "set_value",
+          "cell": "input",
+          "value": 5
+        },
+        {
+          "type": "expect_callback_values",
+          "callback": "callback1",
+          "values": []
+        }
+      ]
+    }
+  ]
+}
