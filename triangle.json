@@ -56,6 +56,11 @@
             "expected": "scalene"
         },
         {
+            "description": "2a == b+c looks like equilateral, but isn't always",
+            "sides": [5, 4, 6],
+            "expected": "scalene"
+        },
+        {
             "description": "larger scalene triangle",
             "sides": [10, 11, 12],
             "expected": "scalene"
