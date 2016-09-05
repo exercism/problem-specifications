@@ -115,7 +115,7 @@ Many languages implement an exercise based on the same generic problem
 description. So you might have a "leap year" exercise in Haskell,
 JavaScript, Go, Ruby, and Python. The basic premise will be the same,
 but each language will tailor the exercise to fit the idioms and
-idiosyncracities of that language.
+idiosyncrasies of that language.
 
 We try to keep the generic descriptions generic--we avoid implementation-specific
 examples, and try not to be too prescriptive about suggesting how a problem
@@ -135,7 +135,7 @@ The generic problem descriptions live in this repository
 ## Updating an Exercise Test Suite
 
 Once you [find the correct repository](#language-track-repositories),
-you can [fork it](https://help.github.com/articles/fork-a-repo/) and then clone it.
+you can [fork it](https://help.github.com/articles/fork-a-repo/) and then [clone it](https://help.github.com/articles/cloning-a-repository/).
 
 The README in each individual language track repository covers how to set
 up the development environment for that language.
@@ -307,7 +307,7 @@ in the Elm track: http://x.exercism.io/v3/tracks/elm/todo
 
 It can be pretty unwieldy to read the JSON directly. To make it easier,
 install a browser extension that formats the JSON nicely, or copy/paste the
-response body into http://jsonlint.com/ and click "validate JSON", which not
+response body into [jsonlint.com](http://jsonlint.com/) and click "validate JSON", which not
 only validates it, but pretty-prints it.
 
 The description of the problem can be found in the
