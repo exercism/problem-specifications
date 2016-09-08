@@ -745,7 +745,7 @@ happened in lots of little (sometimes confusing) steps, but it really is one
 change.
 
 There are a number of ways to accomplish this, and many people like to use an
-interactive rebase, but it can be tricky if you haven't set git up to open
+[interactive rebase](#interactive-rebase), but it can be tricky if you haven't set git up to open
 your favorite editor.
 
 An easier way to do this is to un-commit everything, putting it back into the
@@ -829,12 +829,67 @@ Project commit history:
                       /
 --- master branch ----
 ```
+
+##### Interactive Rebase
+The rebase command has an option called `-i, --interactive` which will open an editor with a list of the commits which are about to be changed. This list accepts commands, allowing the user to edit the list before initiating the rebase action.
+
+Using the example from above, we have 5 commits that should be squashed into one.
+
+```bash
+433a0e1 added spinning wheel tests
+1f7d4aa pass spinning wheel
+cf21737 oops
+be4c410 rename example file
+bb89a77 update config
+```
+
+To interactively rebase, use the following incantation:
+
+```bash
+$ git rebase -i HEAD~5
+```
+This will bring up an editor with the following information:
+
+```bash
+pick 433a0e1 added spinning wheel tests
+pick 1f7d4aa pass spinning wheel
+pick cf21737 oops
+pick be4c410 rename example file
+pick bb89a77 update config
+
+#
+# Commands:
+#  p, pick = use commit
+#  r, reword = use commit, but edit the commit message
+#  e, edit = use commit, but stop for amending
+#  s, squash = use commit, but meld into previous commit
+#  f, fixup = like "squash", but discard this commit's log message
+#  x, exec = run command (the rest of the line) using shell
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+# Note that empty commits are commented out
+```
+
+By choosing the `reword` command for the top commit and choosing the `fixup` command for the remaining commits, you will be able to squash the commits into one commit and provide a descriptive summary of the entire change
+
+```bash
+reword 433a0e1 added spinning wheel tests
+fixup 1f7d4aa pass spinning wheel
+fixup cf21737 oops
+fixup be4c410 rename example file
+fixup bb89a77 update config
+```
+
 [Further Reading](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 
 ### et cetera
 
 TODO: add more sections:
 
-- how to rebase commits in a branch
 - how to merge something locally (for example when there are conflicts, or
   if you want to fix a small thing without nagging the contributor about it)
