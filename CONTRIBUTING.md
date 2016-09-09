@@ -125,11 +125,11 @@ The README of each exercise is pieced together from various bits and pieces of t
 shared metadata, along with some information that is custom to the language track
 in question.
 
-Some of the problems also have a JSON file containing shared test cases. These
+Some of the problems also have a JSON file containing canonical test cases. These
 are used to hand-craft a test suite generator, allowing us to quickly regenerate
 test suites when edge cases or errors are discovered.
 
-The generic problem descriptions live in this repository
+The generic problem descriptions live in the `exercises` folder in this repository
 ([exercism/x-common](https://github.com/exercism/x-common)).
 
 ## Updating an Exercise Test Suite
@@ -193,9 +193,9 @@ test suite](#updating-an-exercise-test-suite).
 If you want to add a new test or change some inputs or outputs, then the change
 needs to be made in the [exercism/x-common repository](https://github.com/exercism/x-common),
 not directly to the test suite itself.
-
+  
 Find the JSON file for the problem in question. For example, if you want to change
-the Clock problem, then look for `clock.json`.
+the Clock problem, then look for `exercises/clock/canonical-data.json`.
 
 Submit a pull request with the change.
 
@@ -254,9 +254,9 @@ where to find more documentation.
 Each generic problem is identified by a slug. For example, the problem _Crypto
 Square_ is `crypto-square`. There are two metadata files for each problem:
 
-* `<slug>.md` which contains the generic problem description which makes up
+* `exercises/<slug>/description.md` which contains the generic problem description which makes up
   the bulk of the README, and
-* `<slug>.yml` which contains a short one-line description of the problem as
+* `exercises/<slug>/metadata.yml` which contains a short one-line description of the problem as
   well as other metadata, such as the source that inspired the problem in the
   first place.
 
@@ -311,8 +311,8 @@ response body into [jsonlint.com](http://jsonlint.com/) and click "validate JSON
 only validates it, but pretty-prints it.
 
 The description of the problem can be found in the
-[x-common](https://github.com/exercism/x-common) repository, in a file named
-after the problem slug: `<slug>.md`.
+[x-common](https://github.com/exercism/x-common) repository, in a folder named
+after the problem slug: `exercises/<slug>/description.md`.
 
 **When you decide to implement an exercise**
 
@@ -358,13 +358,13 @@ Remember to archive it if you don't want other people to comment on it.
 A problem must have a unique slug. This slug is used as
 
 * the directory name within each language-specific repository
-* the basename for the metadata files (in this repository)
+* the directory name for the folder that contains the metadata files (in this repository)
 * to identify the exercise in `config.json`
 
 ### In exercism/x-common
 
-* Create `<slug>.md` and `<slug>.yml`.
-* Bonus: `<slug>.json` with inputs/outputs for the test suite.
+* Create `exercises/<slug>/description.md` and `exercises/<slug>/metadata.yml`.
+* Bonus: `exercises/<slug>/canonical-data.json` with inputs/outputs for the test suite.
 * Submit a pull request.
 
 ### In exercism/x<TRACK_ID>
