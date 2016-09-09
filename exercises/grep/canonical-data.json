@@ -89,6 +89,13 @@
                 ]
             },
             {
+                "description": "One file, several matches, match entire lines flag",
+                "pattern": "may",
+                "flags": ["-x"],
+                "files": ["midsummer-night.txt"],
+                "expected": []
+            },
+            {
                 "description": "One file, one match, print file names flag",
                 "pattern": "Forbidden",
                 "flags": ["-l"],
