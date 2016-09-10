@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 STATUS=0
-for f in $(ls *.json); do
+for f in $(ls exercises/**/*.json); do
 	cat $f | jq . > /dev/null 2>&1
 	if [ $? != 0 ]; then
 		echo "Invalid json: $f"
