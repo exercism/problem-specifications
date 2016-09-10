@@ -7,15 +7,40 @@ The `doc/` subdirectory contains all documentation that is not specific to a lan
 
 Please see the [contributing guide](https://github.com/exercism/x-common/blob/master/CONTRIBUTING.md)
 
-## Test Data Format
+## Problem metadata
 
-Each problem can have a file <problem>.json containing standard test data.
+Each problem's data lives in a directory under `exercises/`
+
+```
+exercises/
+├── accumulate
+│   ├── description.md
+│   └── metadata.yml
+├── ...
+├── minesweeper
+│   ├── canonical-data.json
+│   ├── description.md
+│   └── metadata.yml
+├── ...
+└── zipper
+    ├── description.md
+    └── metadata.yml
+```
+
+There are three metadata files:
+
+* `description.md` - the basic problem description
+* `metadata.yml` - additional information about the problem, such as where it came from
+* `canonical-data.json` (optional) - standardized test inputs and outputs that can be used to implement the problem
+
+## Test Data Format (canonical-data.json)
+
 This data can be incorporated into test programs manually or extracted by a
 program.  The file contains a single JSON object with a key for documentation
 and keys for various tests that may be meaningful for a problem.
 
 The documentation uses the key "#" with a list of strings as the value.
-These strings document how the problem readme (&lt;problem>.md) is generally
+These strings document how the problem readme (`description.md`) is generally
 interpreted in test programs across different languages.  In addition to a
 mainstream implementation path, this information can also document significant
 variations.
@@ -28,7 +53,7 @@ Each test case has the the following keys:
 
 ## Automated Tests
 
-The only thing that we're testing at the moment, is whether or not shared test data
+The only thing that we're testing at the moment, is whether or not `canonical-data.json`
 is valid json.
 
 If you want to run this before you commit, you will need to install
