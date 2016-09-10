@@ -67,6 +67,33 @@
                 ]
             },
             {
+                "description": "One file, one match, print file names flag",
+                "pattern": "Forbidden",
+                "flags": ["-l"],
+                "files": ["paradise-lost.txt"],
+                "expected": [
+                    "paradise-lost.txt"
+                ]
+            },
+            {
+                "description": "One file, one match, match entire lines flag",
+                "pattern": "With loss of Eden, till one greater Man",
+                "flags": ["-x"],
+                "files": ["paradise-lost.txt"],
+                "expected": [
+                    "With loss of Eden, till one greater Man"
+                ]
+            },
+            {
+                "description": "One file, one match, multiple flags",
+                "pattern": "OF ATREUS, Agamemnon, KIng of MEN.",
+                "flags": ["-n", "-i", "-x"],
+                "files": ["iliad.txt"],
+                "expected": [
+                    "9:Of Atreus, Agamemnon, King of men."
+                ]
+            },
+            {
                 "description": "One file, several matches, no flags",
                 "pattern": "may",
                 "flags": [],
@@ -96,15 +123,6 @@
                 "expected": []
             },
             {
-                "description": "One file, one match, print file names flag",
-                "pattern": "Forbidden",
-                "flags": ["-l"],
-                "files": ["paradise-lost.txt"],
-                "expected": [
-                    "paradise-lost.txt"
-                ]
-            },
-            {
                 "description": "One file, several matches, case-insensitive flag",
                 "pattern": "ACHILLES",
                 "flags": ["-i"],
@@ -125,24 +143,6 @@
                     "Restore us, and regain the blissful Seat,", 
                     "Sing Heav'nly Muse, that on the secret top",
                     "That Shepherd, who first taught the chosen Seed"
-                ]
-            },
-            {
-                "description": "One file, one match, match entire lines flag",
-                "pattern": "With loss of Eden, till one greater Man",
-                "flags": ["-x"],
-                "files": ["paradise-lost.txt"],
-                "expected": [
-                    "With loss of Eden, till one greater Man"
-                ]
-            },
-            {
-                "description": "One file, one match, multiple flags",
-                "pattern": "OF ATREUS, Agamemnon, KIng of MEN.",
-                "flags": ["-n", "-i", "-x"],
-                "files": ["iliad.txt"],
-                "expected": [
-                    "9:Of Atreus, Agamemnon, King of men."
                 ]
             },
             {
