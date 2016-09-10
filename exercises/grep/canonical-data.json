@@ -67,6 +67,24 @@
                 ]
             },
             {
+                "description": "One file, one match, print line numbers flag",
+                "pattern": "Forbidden",
+                "flags": ["-n"],
+                "files": ["paradise-lost.txt"],
+                "expected": [
+                    "2:Of that Forbidden Tree, whose mortal tast"
+                ]
+            },
+            {
+                "description": "One file, one match, case-insensitive flag",
+                "pattern": "FORBIDDEN",
+                "flags": ["-i"],
+                "files": ["paradise-lost.txt"],
+                "expected": [
+                    "Of that Forbidden Tree, whose mortal tast"
+                ]
+            },
+            {
                 "description": "One file, one match, print file names flag",
                 "pattern": "Forbidden",
                 "flags": ["-l"],
