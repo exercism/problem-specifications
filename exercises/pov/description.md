@@ -5,11 +5,11 @@ point of view. For example family trees are usually presented from the
 ancestor's perspective:
 
 ```
-          0
-          |
-    1-----2-----3
-    |     |     |
-  4-+-5 6-+-7 8-+-9
+    +------0------+
+    |      |      |
+  +-1-+  +-2-+  +-3-+
+  |   |  |   |  |   |
+  4   5  6   7  8   9
 ```
 
 But the same information can be presented from the perspective of any other node
@@ -19,11 +19,13 @@ with it. So the same graph from 6's perspective would look like:
 ```
         6
         |
-  7-----+-----2
-              |
-        1-----0-----3
+  +-----2-----+
+  |           |
+  7     +-----0-----+
         |           |
-      4-+-5       8-+-9
+      +-1-+       +-3-+
+      |   |       |   |
+      4   5       8   9
 ```
 
 This lets us more simply describe the paths between two nodes. So for example
