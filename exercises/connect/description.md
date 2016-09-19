@@ -21,6 +21,6 @@ the representation passed to your code):
     X O O O X
 ```
 
-White (`O`) plays from top to bottom, black (`X`) plays from left to right. In
-the above example white has made a connection from left to right but nobody has
-won since white didn't connect top and bottom.
+"Player `O`" plays from top to bottom, "Player `X`" plays from left to right. In
+the above example `O` has made a connection from left to right but nobody has
+won since `O` didn't connect top and bottom.
