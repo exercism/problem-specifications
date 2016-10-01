@@ -1,0 +1,356 @@
+{
+  "from_pov": {
+    "description": [
+      "Reroot a tree so that its root is the specified node.",
+      "In this way, the tree is presented from the point of view of the specified node.",
+      "The input trees used here are those in the `trees` section of this file.",
+      "",
+      "If appropriate for your track, you may test that the input tree is not modified.",
+      "",
+      "Note that when rerooting upon a target node that has both parents and children,",
+      "it does not matter whether the former parent comes before or after the former children.",
+      "Please account for this when checking correctness of the resulting trees.",
+      "One suggested method is to only check two things:",
+      "1) The root of the returned tree is the root that was passed in to from_pov.",
+      "2) The sorted edge list of the returned tree is the same as the sorted edge list of the expected tree."
+    ],
+    "cases": [
+      {
+        "description": "Results in the same tree if the input tree is a singleton",
+        "tree": "singleton",
+        "from": "x",
+        "expected": {
+          "label": "x"
+        }
+      },
+      {
+        "description": "Can reroot a tree with a parent and one sibling",
+        "tree": "simple",
+        "from": "x",
+        "expected": {
+          "label": "x",
+          "children": [
+            {
+              "label": "parent",
+              "children": [
+                {
+                  "label": "sibling"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "description": "Can reroot a tree with a parent and many siblings",
+        "tree": "large_flat",
+        "from": "x",
+        "expected": {
+          "label": "x",
+          "children": [
+            {
+              "label": "parent",
+              "children": [
+                {
+                  "label": "a"
+                },
+                {
+                  "label": "b"
+                },
+                {
+                  "label": "c"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "description": "Can reroot a tree with new root deeply nested in tree",
+        "tree": "deeply_nested",
+        "from": "x",
+        "expected": {
+          "label": "x",
+          "children": [
+            {
+              "label": "level-3",
+              "children": [
+                {
+                  "label": "level-2",
+                  "children": [
+                    {
+                      "label": "level-1",
+                      "children": [
+                        {
+                          "label": "level-0"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "description": "Moves children of the new root to same level as former parent",
+        "tree": "kids",
+        "from": "x",
+        "expected": {
+          "label": "x",
+          "children": [
+            {
+              "label": "kid-0"
+            },
+            {
+              "label": "kid-1"
+            },
+            {
+              "label": "parent"
+            }
+          ]
+        }
+      },
+      {
+        "description": "Can reroot a complex tree with cousins",
+        "tree": "cousins",
+        "from": "x",
+        "expected": {
+          "label": "x",
+          "children": [
+            {
+              "label": "kid-1"
+            },
+            {
+              "label": "kid-0"
+            },
+            {
+              "label": "parent",
+              "children": [
+                {
+                  "label": "sibling-0"
+                },
+                {
+                  "label": "sibling-1"
+                },
+                {
+                  "label": "grandparent",
+                  "children": [
+                    {
+                      "label": "uncle",
+                      "children": [
+                        {
+                          "label": "cousin-0"
+                        },
+                        {
+                          "label": "cousin-1"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "description": "Errors if target does not exist in a singleton tree",
+        "tree": "singleton",
+        "from": "nonexistent",
+        "expected": null
+      },
+      {
+        "description": "Errors if target does not exist in a large tree",
+        "tree": "cousins",
+        "from": "nonexistent",
+        "expected": null
+      }
+    ]
+  },
+  "path_to": {
+    "description": [
+      "Given two nodes, find the path between them.",
+      "A typical implementation would first reroot the tree on one of the two nodes.",
+      "",
+      "If appropriate for your track, you may test that the input tree is not modified.",
+      "",
+      "The trees used here are those in the `trees` section of this file."
+    ],
+    "cases": [
+      {
+        "description": "Can find path to parent",
+        "from": "x",
+        "to": "parent",
+        "tree": "simple",
+        "expected": [
+          "x",
+          "parent"
+        ]
+      },
+      {
+        "description": "Can find path to sibling",
+        "from": "x",
+        "to": "b",
+        "tree": "large_flat",
+        "expected": [
+          "x",
+          "parent",
+          "b"
+        ]
+      },
+      {
+        "description": "Can find path to cousin",
+        "from": "x",
+        "to": "cousin-1",
+        "tree": "cousins",
+        "expected": [
+          "x",
+          "parent",
+          "grandparent",
+          "uncle",
+          "cousin-1"
+        ]
+      },
+      {
+        "description": "Can find path from nodes other than x",
+        "from": "kid-1",
+        "to": "cousin-0",
+        "tree": "cousins",
+        "expected": [
+          "kid-1",
+          "x",
+          "parent",
+          "grandparent",
+          "uncle",
+          "cousin-0"
+        ]
+      },
+      {
+        "description": "Errors if destination does not exist",
+        "from": "x",
+        "to": "nonexistent",
+        "tree": "cousins",
+        "expected": null
+      },
+      {
+        "description": "Errors if source does not exist",
+        "from": "nonexistent",
+        "to": "x",
+        "tree": "cousins",
+        "expected": null
+      }
+    ]
+  },
+  "trees": {
+    "singleton": {
+      "label": "x"
+    },
+    "simple": {
+      "label": "parent",
+      "children": [
+        {
+          "label": "x"
+        },
+        {
+          "label": "sibling"
+        }
+      ]
+    },
+    "large_flat": {
+      "label": "parent",
+      "children": [
+        {
+          "label": "a"
+        },
+        {
+          "label": "x"
+        },
+        {
+          "label": "b"
+        },
+        {
+          "label": "c"
+        }
+      ]
+    },
+    "deeply_nested": {
+      "label": "level-0",
+      "children": [
+        {
+          "label": "level-1",
+          "children": [
+            {
+              "label": "level-2",
+              "children": [
+                {
+                  "label": "level-3",
+                  "children": [
+                    {
+                      "label": "x"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "kids": {
+      "label": "parent",
+      "children": [
+        {
+          "label": "x",
+          "children": [
+            {
+              "label": "kid-0"
+            },
+            {
+              "label": "kid-1"
+            }
+          ]
+        }
+      ]
+    },
+    "cousins": {
+      "label": "grandparent",
+      "children": [
+        {
+          "label": "parent",
+          "children": [
+            {
+              "label": "x",
+              "children": [
+                {
+                  "label": "kid-0"
+                },
+                {
+                  "label": "kid-1"
+                }
+              ]
+            },
+            {
+              "label": "sibling-0"
+            },
+            {
+              "label": "sibling-1"
+            }
+          ]
+        },
+        {
+          "label": "uncle",
+          "children": [
+            {
+              "label": "cousin-0"
+            },
+            {
+              "label": "cousin-1"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
