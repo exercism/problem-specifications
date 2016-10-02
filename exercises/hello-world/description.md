@@ -1,4 +1,5 @@
-["Hello, World!"](http://en.wikipedia.org/wiki/%22Hello,_world!%22_program) is the traditional first program for beginning programming in a new language.
+["Hello, World!"](http://en.wikipedia.org/wiki/%22Hello,_world!%22_program) is
+the traditional first program for beginning programming in a new language.
 
 **Note:** You can skip this exercise by running:
 
@@ -6,8 +7,8 @@
 
 ## Specification
 
-Write a `Hello World!` function that can greet someone given their name.
-The function should return the appropriate greeting.
+Write a `Hello World!` function that can greet someone given their name.  The
+function should return the appropriate greeting.
 
 For an input of "Alice", the response should be "Hello, Alice!".
 
@@ -17,9 +18,14 @@ If a name is not given, the response should be "Hello, World!"
 
 As programmers mature, they eventually want to test their code.
 
-Here at Exercism we simulate [Test-Driven Development](http://en.wikipedia.org/wiki/Test-driven_development) (TDD), where you write your tests before writing any functionality. The simulation comes in the form of a pre-written test suite, which will signal that you have solved the problem.
+Here at Exercism we simulate [Test-Driven
+Development](http://en.wikipedia.org/wiki/Test-driven_development) (TDD), where
+you write your tests before writing any functionality. The simulation comes in
+the form of a pre-written test suite, which will signal that you have solved
+the problem.
 
-It will also provide you with a safety net to explore other solutions without breaking the functionality.
+It will also provide you with a safety net to explore other solutions without
+breaking the functionality.
 
 ### A typical TDD workflow on Exercism:
 
@@ -31,6 +37,10 @@ It will also provide you with a safety net to explore other solutions without br
 
 ## Instructions
 
-Submissions are encouraged to be general, within reason. Having said that, it's also important not to over-engineer a solution.
+Submissions are encouraged to be general, within reason. Having said that, it's
+also important not to over-engineer a solution.
 
-It's important to remember that the goal is to make code as expressive and readable as we can. However, solutions to the hello-world exercise will not be reviewed by a person, but by rikki- the robot, who will offer an encouraging word.
+It's important to remember that the goal is to make code as expressive and
+readable as we can. However, solutions to the hello-world exercise will not be
+reviewed by a person, but by rikki- the robot, who will offer an encouraging
+word.
