@@ -1,4 +1,4 @@
-The challenge is to write a function that accepts an arbitrarily-deep nested list-like structure and returns a flattened structure without any null/nill values. 
+The challenge is to write a function that accepts an arbitrarily-deep nested list-like structure and returns a flattened structure without any nil/null values.
  
 For Example
 
