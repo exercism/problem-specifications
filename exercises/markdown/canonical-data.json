@@ -21,17 +21,17 @@
     {
       "description": "parsing italics",
       "input": "_This will be italic_",
-      "expected": "<p><i>This will be italic</i></p>"
+      "expected": "<p><em>This will be italic</em></p>"
     },
     {
       "description": "parsing bold text",
       "input": "__This will be bold__",
-      "expected": "<p><em>This will be bold</em></p>"
+      "expected": "<p><strong>This will be bold</strong></p>"
     },
     {
       "description": "mixed normal, italics and bold text",
       "input": "This will _be_ __mixed__",
-      "expected": "<p>This will <i>be</i> <em>mixed</em></p>"
+      "expected": "<p>This will <em>be</em> <strong>mixed</strong></p>"
     },
     {
       "description": "with h1 header level",
@@ -56,7 +56,7 @@
     {
       "description": "With a little bit of everything",
       "input": "# Header!\n* __Bold Item__\n* _Italic Item_",
-      "expected": "<h1>Header!</h1><ul><li><em>Bold Item</em></li><li><i>Italic Item</i></li></ul>"
+      "expected": "<h1>Header!</h1><ul><li><strong>Bold Item</strong></li><li><em>Italic Item</em></li></ul>"
     }
   ]
 }
