@@ -21,6 +21,16 @@
                 "description": "leading zero solution is invalid",
                 "puzzle": "ACA + DD == BD",
                 "expected": null
+            },
+            {
+                "description": "solve puzzle with four words",
+                "puzzle": "HE + SEES + THE == LIGHT",
+                "expected": { "E": 4, "G": 2, "H": 5, "I": 0, "L": 1, "S": 9, "T": 7 }
+            },
+            {
+                "description": "solve puzzle with many words",
+                "puzzle": "AND + A + STRONG + OFFENSE + AS + A + GOOD = DEFENSE",
+                "expected": { "A": 5, "D": 3, "E": 4, "F": 7, "G": 8, "N": 0, "O": 2, "R": 1, "S": 6, "T": 9 }
             }
         ]
     }
