@@ -13,16 +13,6 @@
                 "expected": { "S": 9, "E": 5, "N": 6, "D": 7, "M": 1, "O": 0, "R": 8, "Y": 2 }
             },
             {
-                "description": "solve puzzle with multiplication",
-                "puzzle": "IF * DR == DORI",
-                "expected": { "I": 8, "F": 2, "D": 3, "R": 9, "O": 1 }
-            },
-            {
-                "description": "solve puzzle with exponents",
-                "puzzle": "PI * R ^ 2 == AREA",
-                "expected": { "P": 9, "I": 6, "R": 7, "A": 4, "E": 0 }
-            },
-            {
                 "description": "solution must have unique value for each letter",
                 "puzzle": "A == B",
                 "expected": null
