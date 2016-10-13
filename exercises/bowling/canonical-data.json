@@ -8,6 +8,10 @@
     "The final tests define situations where the score can not be returned",
     "The expection for these tests is -1, indicating an error",
     "In these cases you should expect an error as is idiomatic for your language",
+    "When to error is also left up to your implementation. There are two options",
+    "  - Error as soon as an invalid roll is made",
+    "  - Error when scoring a game with an invalid roll",
+    "You can also error in both cases."
   ],
   "score": {
     "description": [
