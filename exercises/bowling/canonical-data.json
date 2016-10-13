@@ -3,7 +3,7 @@
     "Students should implement roll and score methods.",
     "Roll should accept a single integer.",
     "Score should return the game's final score, when possible",
-    "For brevity the tests all the rolls in an array;",
+    "For brevity the tests display all the rolls in an array;",
     "each element of the rolls array should be passed to the roll method",
     "The final tests define situations where the score can not be returned",
     "The expection for these tests is -1, indicating an exception",
