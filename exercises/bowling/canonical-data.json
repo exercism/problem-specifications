@@ -6,8 +6,8 @@
     "For brevity the tests display all the rolls in an array;",
     "each element of the rolls array should be passed to the roll method",
     "The final tests define situations where the score can not be returned",
-    "The expection for these tests is -1, indicating an exception",
-    "In these cases you should expect an exception as is idomatic for your language"
+    "The expection for these tests is -1, indicating an error",
+    "In these cases you should expect an error as is idiomatic for your language",
   ],
   "score": {
     "description": [
