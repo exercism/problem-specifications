@@ -86,6 +86,10 @@
       "rolls": [5, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "expected": -1
     }, {
+      "description": "Two bonus rolls after a strike in the last frame can not score more than 10 points",
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 5, 6],
+      "expected": -1
+    }, {
       "description": "An unstarted game can not be scored",
       "rolls": [],
       "expected": -1
