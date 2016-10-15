@@ -28,6 +28,11 @@
                 "expected": "PHP"
             },
             {
+                "description": "non-acronym all caps word",
+                "phrase": "GNU Image Manipulation Program",
+                "expected": "GIMP"
+            },
+            {
                 "description": "hyphenated",
                 "phrase": "Complementary metal-oxide semiconductor",
                 "expected": "CMOS"
