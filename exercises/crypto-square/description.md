@@ -42,9 +42,10 @@ The message above is coded as:
 imtgdvsfearwermayoogoanouuiontnnlvtwttddesaohghnsseoau
 ```
 
-Output the encoded text in chunks.  Phrases that fill perfect squares
-`(r X r)` should be output in `r`-length chunks separated by spaces.
-Imperfect squares will have `n` empty spaces.  Those spaces should be distributed evenly across the last `n` rows.
+Output the encoded text in chunks.  Phrases that fill perfect squares `(r X r)`
+should be output in `r`-length chunks separated by spaces.  Imperfect squares
+will have `n` empty spaces.  Those spaces should be distributed evenly across
+the last `n` rows.
 
 ```plain
 imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn sseoau
