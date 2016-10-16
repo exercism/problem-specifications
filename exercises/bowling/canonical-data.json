@@ -1,117 +1,118 @@
 {
   "#": [
-    "Bowling is game where players roll a heavy ball to knock down pins",
-    "arranged in a triangle. Write code to keep track of the score of a",
-    "game of bowling."
+    "Students should implement roll and score methods.",
+    "Roll should accept a single integer.",
+    "Score should return the game's final score, when possible",
+    "For brevity the tests display all the rolls in an array;",
+    "each element of the rolls array should be passed to the roll method",
+    "The final tests define situations where the score can not be returned",
+    "The expection for these tests is -1, indicating an error",
+    "In these cases you should expect an error as is idiomatic for your language",
+    "When to error is also left up to your implementation. There are two options",
+    "  - Error as soon as an invalid roll is made",
+    "  - Error when scoring a game with an invalid roll",
+    "You can also error in both cases."
   ],
-  "methods": {
-    "description": [
-      "Check the public API is correct."
-    ],
-    "cases": [{
-      "description": "must be able to roll with a number of pins",
-      "method": "roll",
-      "arity": 1
-    }, {
-      "description": "must have a score",
-      "method": "score",
-      "arity": 0
-    }]
-  },
   "score": {
     "description": [
-      "Check game can be scored correctly."
+      "Returns the final score of a bowling game"
     ],
     "cases": [{
-      "description": "should be able to score open frame",
-      "rolls": [3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      "expected": 7
-    }, {
-      "description": "should be able to score multiple frames",
-      "rolls": [3, 4, 2, 3, 5, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      "expected": 19
-    }, {
-      "description": "should be able to score a game with all gutterballs",
+      "description": "should be able to score a game with all zeros",
       "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "expected": 0
     }, {
-      "description": "should be able to score a game with all single pin rolls",
-      "rolls": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-      "expected": 20
-    }, {
-      "description": "should be able to score a game with all open frames",
+      "description": "should be able to score a game with no strikes or spares",
       "rolls": [3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6],
       "expected": 90
     }, {
-      "description": "should be able to score a strike not in the last frame",
+      "description": "a spare followed by zeros is worth ten points",
+      "rolls": [6, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "expected": 10
+    }, {
+      "description": "points scored in the roll after a spare are counted twice",
+      "rolls": [6, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "expected": 16
+    }, {
+      "description": "consecutive spares each get a one roll bonus",
+      "rolls": [5, 5, 3, 7, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "expected": 31
+    }, {
+      "description": "a spare in the last frame gets a one roll bonus that is counted once",
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 3, 7],
+      "expected": 17
+    }, {
+      "description": "a strike earns ten points in frame with a single roll",
+      "rolls": [10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "expected": 10
+    }, {
+      "description": "points scored in the two rolls after a strike are counted twice as a bonus",
       "rolls": [10, 5, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "expected": 26
     }, {
-      "description": "should be able to score a spare not in the last frame",
-      "rolls": [5, 5, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      "expected": 20
-    }, {
-      "description": "should be able to score multiple strikes in a row",
+      "description": "consecutive strikes each get the two roll bonus",
       "rolls": [10, 10, 10, 5, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "expected": 81
     }, {
-      "description": "should be able to score multiple spares in a row",
-      "rolls": [5, 5, 3, 7, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      "expected": 32
-    }, {
-      "description": "should allow fill balls when the last frame is a strike",
+      "description": "a strike in the last frame gets a two roll bonus that is counted once",
       "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 7, 1],
       "expected": 18
     }, {
-      "description": "should allow fill ball when the last frame is a spare",
-      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 1, 7],
-      "expected": 17
+      "description": "rolling a spare with the two roll bonus does not get a bonus roll",
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 7, 3],
+      "expected": 20
     }, {
-      "description": "should allow fill balls to be a strike",
+      "description": "strikes with the two roll bonus do not get bonus rolls",
       "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 10],
       "expected": 30
     }, {
-      "description": "should be able to score a perfect game",
+      "description": "a strike with the one roll bonus after a spare in the last frame does not get a bonus",
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 3, 10],
+      "expected": 20
+    }, {
+      "description": "all strikes is a perfect game",
       "rolls": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
       "expected": 300
-    }]
-  },
-  "validations": {
-    "description": [
-      "Check game rules."
-    ],
-    "cases": [{
-      "description": "should not allow rolls with negative pins",
-      "rolls": [-1],
-      "expected": "Pins must have a value from 0 to 10"
     }, {
-      "description": "should not allow rolls better than strike",
-      "rolls": [11],
-      "expected": "Pins must have a value from 0 to 10"
+      "description": "Rolls can not score negative points",
+      "rolls": [-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "expected": -1
     }, {
-      "description": "should not allow two normal rolls better than strike",
-      "rolls": [5, 6],
-      "expected": "Pin count exceeds pins on the lane"
+      "description": "A roll can not score more than 10 points",
+      "rolls": [11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "expected": -1
     }, {
-      "description": "should not allow two normal rolls better than strike in last frame",
-      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 6],
-      "expected": "Pin count exceeds pins on the lane"
+      "description": "Two rolls in a frame can not score more than 10 points",
+      "rolls": [5, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "expected": -1
     }, {
-      "description": "should not allow to take score at the beginning of the game",
+      "description": "Two bonus rolls after a strike in the last frame can not score more than 10 points",
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 5, 6],
+      "expected": -1
+    }, {
+      "description": "An unstarted game can not be scored",
       "rolls": [],
-      "expected": "Score cannot be taken until the end of the game"
+      "expected": -1
     }, {
-      "description": "should not allow to take score before the game has ended",
-      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      "expected": "Score cannot be taken until the end of the game"
+      "description": "An incomplete game can not be scored",
+      "rolls": [0, 0],
+      "expected": -1
     }, {
-      "description": "should not allow rolls after the tenth frame",
+      "description": "A game with more than ten frames can not be scored",
       "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      "expected": "Should not be able to roll after game is over"
+      "expected": -1
     }, {
-      "description": "should not calculate score before fill balls have been played",
-      "rolls": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
-      "expected": "Score cannot be taken until the end of the game"
+      "description": "bonus rolls for a strike in the last frame must be rolled before score can be calculated",
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10],
+      "expected": -1
+    }, {
+      "description": "both bonus rolls for a strike in the last frame must be rolled before score can be calculated",
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10],
+      "expected": -1
+    }, {
+      "description": "bonus roll for a spare in the last frame must be rolled before score can be calculated",
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 3],
+      "expected": -1
     }]
   }
 }
