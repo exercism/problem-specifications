@@ -1,0 +1,334 @@
+{
+  "#": [
+    "The cases are split into multiple sections, all with the same structure.",
+    "In all cases, the `expected` key is the resulting stack",
+    "after executing the Forth program contained in the `input` key."
+  ],
+  "parsing and numbers": {
+    "cases": [
+      {
+        "description": "empty input results in empty stack",
+        "input": [],
+        "expected": []
+      },
+      {
+        "description": "numbers just get pushed onto the stack",
+        "input": [
+          "1 2 3 4 5"
+        ],
+        "expected": [1, 2, 3, 4, 5]
+      },
+      {
+        "description": "all non-word characters are separators",
+        "input": [
+          "1\u00002\u00133\n4\r5 6\t7"
+        ],
+        "expected": [1, 2, 3, 4, 5, 6, 7]
+      }
+    ]
+  },
+  "addition": {
+    "cases": [
+      {
+        "description": "can add two numbers",
+        "input": [
+          "1 2 +"
+        ],
+        "expected": [3]
+      },
+      {
+        "description": "errors if there is nothing on the stack",
+        "input": [
+          "+"
+        ],
+        "expected": null
+      },
+      {
+        "description": "errors if there is only one value on the stack",
+        "input": [
+          "1 +"
+        ],
+        "expected": null
+      }
+    ]
+  },
+  "subtraction": {
+    "cases": [
+      {
+        "description": "can subtract two numbers",
+        "input": [
+          "3 4 -"
+        ],
+        "expected": [-1]
+      },
+      {
+        "description": "errors if there is nothing on the stack",
+        "input": [
+          "-"
+        ],
+        "expected": null
+      },
+      {
+        "description": "errors if there is only one value on the stack",
+        "input": [
+          "1 -"
+        ],
+        "expected": null
+      }
+    ]
+  },
+  "multiplication": {
+    "cases": [
+      {
+        "description": "can multiply two numbers",
+        "input": [
+          "2 4 *"
+        ],
+        "expected": [8]
+      },
+      {
+        "description": "errors if there is nothing on the stack",
+        "input": [
+          "*"
+        ],
+        "expected": null
+      },
+      {
+        "description": "errors if there is only one value on the stack",
+        "input": [
+          "1 *"
+        ],
+        "expected": null
+      }
+    ]
+  },
+  "division": {
+    "cases": [
+      {
+        "description": "can divide two numbers",
+        "input": [
+          "12 3 /"
+        ],
+        "expected": [4]
+      },
+      {
+        "description": "performs integer division",
+        "input": [
+          "8 3 /"
+        ],
+        "expected": [2]
+      },
+      {
+        "description": "errors if dividing by zero",
+        "input": [
+          "4 0 /"
+        ],
+        "expected": null
+      },
+      {
+        "description": "errors if there is nothing on the stack",
+        "input": [
+          "/"
+        ],
+        "expected": null
+      },
+      {
+        "description": "errors if there is only one value on the stack",
+        "input": [
+          "1 /"
+        ],
+        "expected": null
+      }
+    ]
+  },
+  "combined arithmetic": {
+    "cases": [
+      {
+        "description": "addition and subtraction",
+        "input": [
+          "1 2 + 4 -"
+        ],
+        "expected": [-1]
+      },
+      {
+        "description": "multiplication and division",
+        "input": [
+          "2 4 * 3 /"
+        ],
+        "expected": [2]
+      }
+    ]
+  },
+  "dup": {
+    "cases": [
+      {
+        "description": "copies the top value on the stack",
+        "input": [
+          "1 DUP"
+        ],
+        "expected": [1, 1]
+      },
+      {
+        "description": "is case-insensitive",
+        "input": [
+          "1 2 Dup"
+        ],
+        "expected": [1, 2, 2]
+      },
+      {
+        "description": "errors if there is nothing on the stack",
+        "input": [
+          "dup"
+        ],
+        "expected": null
+      }
+    ]
+  },
+  "drop": {
+    "cases": [
+      {
+        "description": "removes the top value on the stack if it is the only one",
+        "input": [
+          "1 drop"
+        ],
+        "expected": []
+      },
+      {
+        "description": "removes the top value on the stack if it not is the only one",
+        "input": [
+          "1 2 drop"
+        ],
+        "expected": [1]
+      },
+      {
+        "description": "errors if there is nothing on the stack",
+        "input": [
+          "drop"
+        ],
+        "expected": null
+      }
+    ]
+  },
+  "swap": {
+    "cases": [
+      {
+        "description": "swaps the top two values on the stack if they are the only ones",
+        "input": [
+          "1 2 swap"
+        ],
+        "expected": [2, 1]
+      },
+      {
+        "description": "swaps the top two values on the stack if they are not the only ones",
+        "input": [
+          "1 2 3 swap"
+        ],
+        "expected": [1, 3, 2]
+      },
+      {
+        "description": "errors if there is nothing on the stack",
+        "input": [
+          "swap"
+        ],
+        "expected": null
+      },
+      {
+        "description": "errors if there is only one value on the stack",
+        "input": [
+          "1 swap"
+        ],
+        "expected": null
+      }
+    ]
+  },
+  "over": {
+    "cases": [
+      {
+        "description": "copies the second element if there are only two",
+        "input": [
+          "1 2 over"
+        ],
+        "expected": [1, 2, 1]
+      },
+      {
+        "description": "copies the second element if there are more than two",
+        "input": [
+          "1 2 3 over"
+        ],
+        "expected": [1, 2, 3, 2]
+      },
+      {
+        "description": "errors if there is nothing on the stack",
+        "input": [
+          "over"
+        ],
+        "expected": null
+      },
+      {
+        "description": "errors if there is only one value on the stack",
+        "input": [
+          "1 over"
+        ],
+        "expected": null
+      }
+    ]
+  },
+  "user-defined words": {
+    "cases": [
+      {
+        "description": "can consist of built-in words",
+        "input": [
+          ": dup-twice dup dup ;",
+          "1 dup-twice"
+        ],
+        "expected": [1, 1, 1]
+      },
+      {
+        "description": "execute in the right order",
+        "input": [
+          ": countup 1 2 3 ;",
+          "countup"
+        ],
+        "expected": [1, 2, 3]
+      },
+      {
+        "description": "can override other user-defined words",
+        "input": [
+          ": foo dup ;",
+          ": foo dup dup ;",
+          "1 foo"
+        ],
+        "expected": [1, 1, 1]
+      },
+      {
+        "description": "can override built-in words",
+        "input": [
+          ": swap dup ;",
+          "1 swap"
+        ],
+        "expected": [1, 1]
+      },
+      {
+        "description": "can consist of arbitrary characters such as Unicode characters",
+        "input": [
+          ": € 220371 ; €"
+        ],
+        "expected": [220371]
+      },
+      {
+        "description": "cannot redefine numbers",
+        "input": [
+          ": 1 2 ;"
+        ],
+        "expected": null
+      },
+      {
+        "description": "errors if executing a non-existent word",
+        "input": [
+          "foo"
+        ],
+        "expected": null
+      }
+    ]
+  }
+}
