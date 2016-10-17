@@ -31,6 +31,11 @@
           "description" : "word beginning with u",
           "input" : "under",
           "expected" : "underay"
+        },
+        {
+          "description" : "word beginning with a vowel and followed by a qu",
+          "input" : "equal",
+          "expected" : "equalay"
         }
       ]
     },
