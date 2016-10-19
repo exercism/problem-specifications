@@ -99,20 +99,6 @@
             "expected": []
         },
         {
-            "description": "detects unicode anagrams",
-            "comment": "These words don't make sense, they're just greek letters cobbled together.",
-            "subject": "ΑΒΓ",
-            "candidates": ["ΒΓΑ", "ΒΓΔ", "γβα"],
-            "expected": ["ΒΓΑ", "γβα"]
-        },
-        {
-            "description": "eliminates misleading unicode anagrams",
-            "comment": "Despite what a human might think these words different letters, the candidates uses Greek A and B while the list of potential anagrams uses Latin A and B.",
-            "subject": "ΑΒΓ",
-            "candidates": ["ABΓ"],
-            "expected": []
-        },
-        {
             "description": "capital word is not own anagram",
             "subject": "BANANA",
             "candidates": ["Banana"],
