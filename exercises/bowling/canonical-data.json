@@ -94,6 +94,10 @@
       "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 6],
       "expected": 26
     }, {
+      "description": "The second bonus rolls after a strike in the last frame can not be a strike if the first one is not a strike",
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 10],
+      "expected": -1
+    }, {
       "description": "An unstarted game can not be scored",
       "rolls": [],
       "expected": -1
