@@ -15,7 +15,7 @@
   ],
   "score": {
     "description": [
-      "Returns the final score of a bowling game"
+      "returns the final score of a bowling game"
     ],
     "cases": [{
       "description": "should be able to score a game with all zeros",
@@ -74,39 +74,39 @@
       "rolls": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
       "expected": 300
     }, {
-      "description": "Rolls can not score negative points",
+      "description": "rolls can not score negative points",
       "rolls": [-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "expected": -1
     }, {
-      "description": "A roll can not score more than 10 points",
+      "description": "a roll can not score more than 10 points",
       "rolls": [11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "expected": -1
     }, {
-      "description": "Two rolls in a frame can not score more than 10 points",
+      "description": "two rolls in a frame can not score more than 10 points",
       "rolls": [5, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "expected": -1
     }, {
-      "description": "Two bonus rolls after a strike in the last frame can not score more than 10 points",
+      "description": "two bonus rolls after a strike in the last frame can not score more than 10 points",
       "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 5, 6],
       "expected": -1
     }, {
-      "description": "Two bonus rolls after a strike in the last frame can score more than 10 points if one is a strike",
+      "description": "two bonus rolls after a strike in the last frame can score more than 10 points if one is a strike",
       "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 6],
       "expected": 26
     }, {
-      "description": "The second bonus rolls after a strike in the last frame can not be a strike if the first one is not a strike",
+      "description": "the second bonus rolls after a strike in the last frame can not be a strike if the first one is not a strike",
       "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 10],
       "expected": -1
     }, {
-      "description": "An unstarted game can not be scored",
+      "description": "an unstarted game can not be scored",
       "rolls": [],
       "expected": -1
     }, {
-      "description": "An incomplete game can not be scored",
+      "description": "an incomplete game can not be scored",
       "rolls": [0, 0],
       "expected": -1
     }, {
-      "description": "A game with more than ten frames can not be scored",
+      "description": "a game with more than ten frames can not be scored",
       "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       "expected": -1
     }, {
