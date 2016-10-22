@@ -56,7 +56,7 @@
         "description": "square greater than 64 raises an execption",
         "input": 65,
         "expected": -1
-      },
+      }
     ]
   },
   "total": {
