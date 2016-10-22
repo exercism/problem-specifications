@@ -15,7 +15,7 @@
   ],
   "score": {
     "description": [
-      "Returns the final score of a bowling game"
+      "returns the final score of a bowling game"
     ],
     "cases": [{
       "description": "should be able to score a game with all zeros",
@@ -88,6 +88,14 @@
     }, {
       "description": "two bonus rolls after a strike in the last frame can not score more than 10 points",
       "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 5, 6],
+      "expected": -1
+    }, {
+      "description": "two bonus rolls after a strike in the last frame can score more than 10 points if one is a strike",
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 6],
+      "expected": 26
+    }, {
+      "description": "the second bonus rolls after a strike in the last frame can not be a strike if the first one is not a strike",
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 10],
       "expected": -1
     }, {
       "description": "an unstarted game can not be scored",
