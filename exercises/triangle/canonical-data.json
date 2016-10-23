@@ -42,7 +42,7 @@
         {
               "#": "Your track may choose to skip this test and deal only with integers if appropriate",
               "description": "sides may be floats",
-              "sides": [0.5, 0.4, 0.6],
+              "sides": [0.5, 0.5, 0.5],
               "expected": true
         }
       ]
@@ -83,7 +83,7 @@
         {
               "#": "Your track may choose to skip this test and deal only with integers if appropriate",
               "description": "sides may be floats",
-              "sides": [0.5, 0.4, 0.6],
+              "sides": [0.5, 0.4, 0.5],
               "expected": true
         }
       ]
@@ -99,12 +99,12 @@
         {
               "description": "false if all sides are equal",
               "sides": [4, 4, 4],
-              "expected": true
+              "expected": false
         },
         {
               "description": "false if two sides are equal",
               "sides": [4, 4, 3],
-              "expected": true
+              "expected": false
         },
         {
               "description": "Sides that violate triangle inequality are not scalene, even if they are all different",
