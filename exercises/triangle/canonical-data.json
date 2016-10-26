@@ -8,88 +8,115 @@
         "They're degenerate triangles with all three vertices collinear.",
         "(In contrast, we will test (0, 0, 0, Illegal), as it is a point).",
 
-        "The expectation are given as strings,",
-        "but your language may use the appropriate representations.",
-        "For example, enums, variants, or tagged unions all are viable candidates.",
+        "The tests assert properities of the triangle are true or false.",
+        "See: https://github.com/exercism/x-common/issues/379 for disscussion of this approach",
 
-        "Your track may choose to have the 'illegal' result be another member of the enum/variant/union/etc.,",
-        "or instead to signal an error/exception/etc. on an illegal triangle.",
-
-        "If appropriate for your track, you'll need to ensure that no pair of expected values are equal.",
-        "Otherwise, an implementation that always returns a constant value may falsely pass the tests.",
-        "See https://github.com/exercism/xgo/pull/208"
+        "How you handle invalid triangles is up to you. These tests suggest a triangle",
+        "is returned, but all of its properties are false. But you could also have the creation",
+        "of an invalid triangle return an error or exception. Choose what is idiomatic for",
+        "your language."
     ],
-    "cases": [
+    "equilateral": {
+      "description": "returns true if the triangle is equilateral",
+      "cases": [
         {
-            "description": "equilateral triangle has all sides equal",
-            "sides": [2, 2, 2],
-            "expected": "equilateral"
+              "description": "true if all sides are equal",
+              "sides": [2, 2, 2],
+              "expected": true
         },
         {
-            "description": "larger equilateral triangle",
-            "sides": [10, 10, 10],
-            "expected": "equilateral"
+              "description": "false if any side is unequal",
+              "sides": [2, 3, 2],
+              "expected": false
         },
         {
-            "description": "isosceles triangle with last two sides equal",
-            "sides": [3, 4, 4],
-            "expected": "isosceles"
+              "description": "false if no sides are equal",
+              "sides": [5, 4, 6],
+              "expected": false
         },
         {
-            "description": "isosceles triangle with first two sides equal",
-            "sides": [4, 4, 3],
-            "expected": "isosceles"
+              "description": "All zero sides are illegal, so the triangle is not equilateral",
+              "sides": [0, 0, 0],
+              "expected": false
         },
         {
-            "description": "isosceles triangle with first and last sides equal",
-            "sides": [4, 3, 4],
-            "expected": "isosceles"
-        },
-        {
-            "description": "isosceles triangle with unequal side larger than equal sides",
-            "sides": [4, 7, 4],
-            "expected": "isosceles"
-        },
-        {
-            "description": "scalene triangle has no equal sides",
-            "sides": [3, 4, 5],
-            "expected": "scalene"
-        },
-        {
-            "description": "2a == b+c looks like equilateral, but isn't always",
-            "sides": [5, 4, 6],
-            "expected": "scalene"
-        },
-        {
-            "description": "larger scalene triangle",
-            "sides": [10, 11, 12],
-            "expected": "scalene"
-        },
-        {
-            "description": "scalene triangle with sides in descending order",
-            "sides": [5, 4, 2],
-            "expected": "scalene"
-        },
-        {
-            "#": "Your track may choose to skip this test and deal only with integers if appropriate",
-            "description": "small scalene triangle with floating point values",
-            "sides": [0.4, 0.6, 0.3],
-            "expected": "scalene"
-        },
-        {
-            "description": "a triangle violating the triangle inequality is illegal",
-            "sides": [7, 3, 2],
-            "expected": "illegal"
-        },
-        {
-            "description": "two sides equal, but still violates triangle inequality",
-            "sides": [1, 1, 3],
-            "expected": "illegal"
-        },
-        {
-            "description": "triangles with all sides zero are illegal",
-            "sides": [0, 0, 0],
-            "expected": "illegal"
+              "#": "Your track may choose to skip this test and deal only with integers if appropriate",
+              "description": "sides may be floats",
+              "sides": [0.5, 0.5, 0.5],
+              "expected": true
         }
-    ]
+      ]
+    },
+    "isosceles": {
+      "description": "returns true if the triangle is isosceles",
+      "cases": [
+        {
+              "description": "true if last two sides are equal",
+              "sides": [3, 4, 4],
+              "expected": true
+        },
+        {
+              "description": "true if first two sides are equal",
+              "sides": [4, 4, 3],
+              "expected": true
+        },
+        {
+              "description": "true if first and last sides are equal",
+              "sides": [4, 3, 4],
+              "expected": true
+        },
+        {
+              "description": "equilateral triangles are also isosceles",
+              "sides": [4, 4, 4],
+              "expected": true
+        },
+        {
+              "description": "false if no sides are equal",
+              "sides": [2, 3, 4],
+              "expected": false
+        },
+        {
+              "description": "Sides that violate triangle inequality are not isosceles, even if two are equal",
+              "sides": [1, 1, 3],
+              "expected": false
+        },
+        {
+              "#": "Your track may choose to skip this test and deal only with integers if appropriate",
+              "description": "sides may be floats",
+              "sides": [0.5, 0.4, 0.5],
+              "expected": true
+        }
+      ]
+    },
+    "scalene": {
+      "description": "returns true if the triangle is scalene",
+      "cases": [
+        {
+              "description": "true if no sides are equal",
+              "sides": [5, 4, 6],
+              "expected": true
+        },
+        {
+              "description": "false if all sides are equal",
+              "sides": [4, 4, 4],
+              "expected": false
+        },
+        {
+              "description": "false if two sides are equal",
+              "sides": [4, 4, 3],
+              "expected": false
+        },
+        {
+              "description": "Sides that violate triangle inequality are not scalene, even if they are all different",
+              "sides": [7, 3, 2],
+              "expected": false
+        },
+        {
+              "#": "Your track may choose to skip this test and deal only with integers if appropriate",
+              "description": "sides may be floats",
+              "sides": [0.5, 0.4, 0.6],
+              "expected": true
+        }
+      ]
+    }
 }
