@@ -6,10 +6,10 @@
 
 ## Examples
 
-- 28's factors are 2, 4, **7**, 14.
+- 28's factors are 1, 2, 4, **7**, 14, 28.
   - In raindrop-speak, this would be a simple "Plong".
-- 30's factors are 2, **3**, **5**, 6, 15.
+- 30's factors are 1, 2, **3**, **5**, 6, 15, 30.
   - In raindrop-speak, this would be a "PlingPlang".
-- 34 only has two factors- 2 and 17.
+- 34 only has four factors: 1, 2, 17, and 34.
   - Raindrop-speak doesn't know what to make of that,
     so it just goes with the straightforward "34".
