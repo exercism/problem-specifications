@@ -18,16 +18,10 @@
     "input": "Hjelmqvist-Gryb-Zock-Pfund-Wax",
     "expected": true
   }, {
-    "input": "Heizölrückstoßabdämpfung",
-    "expected": true
-  }, {
     "input": "the quick brown fox",
     "expected": false
   }, {
     "input": "Emily Jung Schwartzkopf",
     "expected": true
-  }, {
-    "input": "éléphant",
-    "expected": false
   }]
 }
