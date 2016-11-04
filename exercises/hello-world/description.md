@@ -3,7 +3,7 @@ the traditional first program for beginning programming in a new language.
 
 **Note:** You can skip this exercise by running:
 
-    exercism skip $LANGUAGE hello-world
+    exercism skip $TRACK_ID hello-world
 
 ## Specification
 
