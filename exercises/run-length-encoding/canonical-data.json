@@ -4,6 +4,26 @@
    ],
    "cases": [
       {
+        "description": "encode empty string",
+        "input": "",
+        "expected": ""
+      },
+      {
+        "description": "encode single characters only",
+        "input": "XYZ",
+        "expected": "XYZ"
+      },
+      {
+        "description": "decode empty string",
+        "input": "",
+        "expected": ""
+      },
+      {
+        "description": "decode single characters only",
+        "input": "XYZ",
+        "expected": "XYZ"
+      },
+      {
          "description": "encode simple",
          "input": "AABBBCCCC",
          "expected": "2A3B4C"
