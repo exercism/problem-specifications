@@ -7,7 +7,7 @@
     },
     {
       "description": "isogram with only lower case characters",
-      "input": "duplicates",
+      "input": "isogram",
       "expected": true
     },
     {
