@@ -1,6 +1,6 @@
 {
    "#": [
-   	  "The tests deliberately check that single characters are encoded without count."
+      "The tests deliberately check that single characters are encoded without count."
    ],
    "cases": [
       {
@@ -27,16 +27,6 @@
         "description": "decode(encode(...)) combination",
         "input": "zzz ZZ  zZ",
         "expected": "zzz ZZ  zZ"
-      },
-      {
-        "description": "encode unicode",
-        "input": "⏰⚽⚽⚽⭐⭐⏰",
-        "expected": "⏰3⚽2⭐⏰"
-      },
-      {
-        "description": "decode unicode",
-        "input": "⏰3⚽2⭐⏰",
-        "expected": "⏰⚽⚽⚽⭐⭐⏰"
       }
    ]
 }
