@@ -1,7 +1,7 @@
 {
   "cases": [
     {
-      "description": "empty string has no duplicates",
+      "description": "empty string",
       "input": "",
       "expected": true
     },
