@@ -194,7 +194,7 @@
         "expected": []
       },
       {
-        "description": "removes the top value on the stack if it not is the only one",
+        "description": "removes the top value on the stack if it is not the only one",
         "input": [
           "1 2 drop"
         ],
