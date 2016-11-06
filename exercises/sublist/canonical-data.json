@@ -92,5 +92,10 @@
 		"list_one": [1, 2, 3],
 		"list_two": [3, 2, 1],
 		"expectation": "unequal"
+	}, {
+		"description": "same digits but different numbers",
+		"list_one": [1, 0, 1],
+		"list_two": [10, 1],
+		"expectation": "unequal"
 	}]
 }
