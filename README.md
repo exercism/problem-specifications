@@ -46,10 +46,10 @@ mainstream implementation path, this information can also document significant
 variations.
 
 Each test case has the the following keys:
-    description: which will be used to name each generated test
-    'variable names': one or more variable names with values which will be passed to the solution method
-    expected: the expected result (this would be -1 when we expect an exception)
-    msg: a nice message for the failing case
+- description: which will be used to name each generated test
+- 'variable names': one or more variable names with values which will be passed to the solution method
+- expected: the expected result (this would be -1 when we expect an exception)
+- msg: a nice message for the failing case
 
 ## Automated Tests
 
