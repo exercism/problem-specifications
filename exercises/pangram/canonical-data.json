@@ -39,16 +39,6 @@
         "description": "pangram with mixed case and punctuation",
         "input": "\"Five quacking Zephyrs jolt my wax bed.\"",
         "expected": true
-      },
-      {
-        "description": "pangram with non ascii characters",
-        "input": "Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.",
-        "expected": true
-      },
-      {
-         "description": "Panagram in alphabet other than ASCII",
-         "input": "Широкая электрификация южных губерний даст мощный толчок подъёму сельского хозяйства.",
-         "expected": false
       }
    ]
 }
