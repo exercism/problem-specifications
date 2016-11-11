@@ -352,7 +352,7 @@ You can fetch the problem directly using the CLI:
 $ exercism fetch <track_id> <slug>
 ```
 
-Go ahead submit the reference solution that you wrote when creating the problem.
+Go ahead and submit the reference solution that you wrote when creating the problem.
 Remember to archive it if you don't want other people to comment on it.
 
 ## Implementing a Completely New Exercise
