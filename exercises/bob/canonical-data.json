@@ -1,13 +1,4 @@
 {
-   "#": [
-      "For 'gibberish', some languages generate a random strings.",
-      "Similarly for 'prolonged silence' and 'alternate silence' some",
-      "languages generate random length strings of a whitespace character.",
-	  "",
-      "The \\u escaped 'other' whitespace (in case you don't have all of",
-	  "these codes memorized) are b: vertical tab, a0: non-breaking space,",
-	  "and 2002: en-space."
-   ],
    "cases": [
       {
          "description": "stating something",
@@ -75,16 +66,6 @@
          "expected": "Whoa, chill out!"
       },
       {
-         "description": "shouting with umlauts",
-         "input": "ÜMLÄÜTS!",
-         "expected": "Whoa, chill out!"
-      },
-      {
-         "description": "calmly speaking with umlauts",
-         "input": "ÜMLäÜTS!",
-         "expected": "Whatever."
-      },
-      {
          "description": "shouting with no exclamation mark",
          "input": "I HATE YOU",
          "expected": "Whoa, chill out!"
@@ -136,7 +117,7 @@
       },
       {
          "description": "other whitespace",
-         "input": "\n\r \t\u000b\u00a0\u2002",
+         "input": "\n\r \t",
          "expected": "Fine. Be that way!"
       },
       {
