@@ -26,7 +26,7 @@
          "expected": "Pling"
       },
       {
-        "description" : "the sound for 8 is 8",
+        "description" : "2 to the power 3 does not make a raindrop sound as 3 is the exponent not the base",
         "number" : 8,
         "expected": "8"
       },
@@ -41,7 +41,7 @@
          "expected": "Plang"
       },
       {
-         "description" : "the sound for 14 is Plong",
+         "description" : "the sound for 14 is Plong as it has a factor of 7",
          "number" : 14,
          "expected": "Plong"
       },
