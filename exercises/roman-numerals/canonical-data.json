@@ -1,75 +1,93 @@
 {
    "cases": [
       {
-         "number" : 1, 
+         "description" : "1 is I in Roman numerals",
+         "number" : 1,
          "expected": "I"
       },
       {
-         "number" : 2, 
+         "description" : "2 is II in Roman numerals",
+         "number" : 2,
          "expected": "II"
       },
       {
-         "number" : 3, 
+         "description" : "3 is III in Roman numerals",
+         "number" : 3,
          "expected": "III"
       },
       {
-         "number" : 4, 
+         "description" : "4 is IV in Roman numerals",
+         "number" : 4,
          "expected": "IV"
       },
       {
-         "number" : 5, 
+         "description" : "5 is V in Roman numerals",
+         "number" : 5,
          "expected": "V"
       },
       {
-         "number" : 6, 
+         "description" : "6 is VI in Roman numerals",
+         "number" : 6,
          "expected": "VI"
       },
       {
-         "number" : 9, 
+         "description" : "9 is IX in Roman numerals",
+         "number" : 9,
          "expected": "IX"
       },
       {
-         "number" : 27, 
+         "description" : "27 is XXVII in Roman numerals",
+         "number" : 27,
          "expected": "XXVII"
       },
       {
-         "number" : 48, 
+         "description" : "48 is XLVIII in Roman numerals",
+         "number" : 48,
          "expected": "XLVIII"
       },
       {
-         "number" : 59, 
+         "description" : "59 is LIX in Roman numerals",
+         "number" : 59,
          "expected": "LIX"
       },
       {
-         "number" : 93, 
+         "description" : "93 is XCIII in Roman numerals",
+         "number" : 93,
          "expected": "XCIII"
       },
       {
-         "number" : 141, 
+         "description" : "141 is CXLI in Roman numerals",
+         "number" : 141,
          "expected": "CXLI"
       },
       {
-         "number" : 163, 
+         "description" : "163 is CLXIII in Roman numerals",
+         "number" : 163,
          "expected": "CLXIII"
       },
       {
-         "number" : 402, 
+         "description" : "402 is CDII in Roman numerals",
+         "number" : 402,
          "expected": "CDII"
       },
       {
-         "number" : 575, 
+         "description" : "575 is DLXXV in Roman numerals",
+         "number" : 575,
          "expected": "DLXXV"
       },
       {
-         "number" : 911, 
+         "description" : "911 is CMXI in Roman numerals",
+         "number" : 911,
          "expected": "CMXI"
       },
       {
-         "number" : 1024, 
+         "description" : "1024 is MXXIV in Roman numerals",
+         "number" : 1024,
          "expected": "MXXIV"
       },
       {
-         "number" : 3000, 
+         "description" : "3000 is MMM in Roman numerals",
+         "number" : 3000,
          "expected": "MMM"
       }
    ]
