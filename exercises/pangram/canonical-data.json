@@ -39,6 +39,11 @@
         "description": "pangram with mixed case and punctuation",
         "input": "\"Five quacking Zephyrs jolt my wax bed.\"",
         "expected": true
+      },
+      {
+        "description": "upper and lower case versions of the same character should not be counted separately",
+        "input": "the quick brown fox jumped over the lazy FOX",
+        "expected": false
       }
    ]
 }
