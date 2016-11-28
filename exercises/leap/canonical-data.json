@@ -1,37 +1,37 @@
 {
    "cases": [
       {
-         "description": "leap year",
+         "description": "leap year in twentieth century",
          "input": 1996,
          "expected": true
       },
       {
-         "description": "standard and odd year",
+         "description": "odd standard year in twentieth century",
          "input": 1997,
          "expected": false
       },
       {
-         "description": "standard even year",
+         "description": "even standard year in twentieth century",
          "input": 1998,
          "expected": false
       },
       {
-         "description": "standard nineteenth century",
+         "description": "standard year in nineteenth century",
          "input": 1900,
          "expected": false
       },
       {
-         "description": "standard eighteenth century",
+         "description": "standard year in eighteenth century",
          "input": 1800,
          "expected": false
       },
       {
-         "description": "leap twenty fourth century",
+         "description": "leap year twenty four hundred",
          "input": 2400,
          "expected": true
       },
       {
-         "description": "leap y2k",
+         "description": "leap year two thousand",
          "input": 2000,
          "expected": true
       }
