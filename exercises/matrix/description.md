@@ -1,8 +1,8 @@
 So given a string with embedded newlines like:
 
-> 9 8 7
-> 5 3 2
-> 6 6 7
+> 9 8 7  
+> 5 3 2  
+> 6 6 7  
 
 representing this matrix:
 
