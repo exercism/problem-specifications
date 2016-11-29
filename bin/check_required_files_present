@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+MISSING_FILES=0
+
+if [ ! -d exercises ] ; then
+	echo "\"exercises\" directory not found, make sure you're running from the repository root"
+	exit 1
+fi
+
+function require_file {
+	filename=$1
+	if [ ! -f $filename ]; then
+		echo "required file missing: $filename"
+		let "MISSING_FILES+=1"
+	fi
+}
+
+for exercise_directory in exercises/* ; do
+	require_file "$exercise_directory/description.md"
+	require_file "$exercise_directory/metadata.yml"
+done
+
+exit $MISSING_FILES
