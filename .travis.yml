@@ -9,3 +9,4 @@ addons:
 
 script:
   - bin/jsonlint
+  - bin/check_required_files_present
