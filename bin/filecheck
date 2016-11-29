@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+MANDATORY_FILES=(description.md metadata.yml)
+
+function error_exit {
+    printf "$1" >&2
+    exit "${2:-1}"
+}
+
+
+for dir in $(ls exercises); do
+    for file in ${MANDATORY_FILES[@]}; do
+        if [ ! -f exercises/$dir/$file ]; then
+            error_exit "\n[Error] Missing file: exercises/$dir/$file\n"
+        fi
+        printf "." # show progress
+    done
+done
+printf "\n"
