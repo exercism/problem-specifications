@@ -56,9 +56,9 @@
     {
       "description": "space surrounded by mines",
       "input": [
-        "   ",
-        " 8 ",
-        "   "
+        "***",
+        "* *",
+        "***"
       ],
       "expected": [
         "***",
