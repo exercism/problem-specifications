@@ -2,14 +2,14 @@
 MISSING_FILES=0
 
 if [ ! -d exercises ] ; then
-	echo "\"exercises\" directory not found, make sure you're running from the repository root"
+	echo "\"exercises\" directory not found, make sure you're running from the repository root" >&2
 	exit 1
 fi
 
 function require_file {
 	filename=$1
 	if [ ! -f $filename ]; then
-		echo "required file missing: $filename"
+		echo "required file missing: $filename" >&2
 		let "MISSING_FILES+=1"
 	fi
 }
