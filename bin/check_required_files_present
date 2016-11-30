@@ -19,4 +19,6 @@ for exercise_directory in exercises/* ; do
 	require_file "$exercise_directory/metadata.yml"
 done
 
-exit $MISSING_FILES
+if (( $MISSING_FILES > 0 )); then
+	exit 1
+fi
