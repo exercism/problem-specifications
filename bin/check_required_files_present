@@ -1,12 +1,20 @@
 #!/usr/bin/env bash
 MISSING_FILES=0
+SHOW_PROGRESS='false'
 
 if [ ! -d exercises ] ; then
 	echo "\"exercises\" directory not found, make sure you're running from the repository root" >&2
 	exit 1
 fi
 
+function show_progress {
+	if [ $SHOW_PROGRESS == 'true' ]; then
+		echo -n '.'
+	fi
+}
+
 function require_file {
+	show_progress
 	filename=$1
 	if [ ! -f $filename ]; then
 		echo "required file missing: $filename" >&2
@@ -14,11 +22,30 @@ function require_file {
 	fi
 }
 
-for exercise_directory in exercises/* ; do
-	require_file "$exercise_directory/description.md"
-	require_file "$exercise_directory/metadata.yml"
+function check_directory {
+	directory=$1
+	for exercise_directory in $directory/* ; do
+		require_file "$exercise_directory/description.md"
+		require_file "$exercise_directory/metadata.yml"
+	done
+
+}
+
+while : 
+do
+	case "$1" in
+		-p | --progress)
+			SHOW_PROGRESS="true"
+			shift 1
+			;;
+		*)
+			check_directory 'exercises'
+			if (( $MISSING_FILES > 0 )); then
+				exit 1
+			else
+				exit 0
+			fi
+			;;
+	esac
 done
 
-if (( $MISSING_FILES > 0 )); then
-	exit 1
-fi
