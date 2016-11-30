@@ -14,7 +14,6 @@ function show_progress {
 }
 
 function require_file {
-	show_progress
 	filename=$1
 	if [ ! -f $filename ]; then
 		echo "required file missing: $filename" >&2
@@ -25,6 +24,7 @@ function require_file {
 function check_directory {
 	directory=$1
 	for exercise_directory in $directory/* ; do
+		show_progress
 		require_file "$exercise_directory/description.md"
 		require_file "$exercise_directory/metadata.yml"
 	done
@@ -40,6 +40,10 @@ do
 			;;
 		*)
 			check_directory 'exercises'
+			if [ $SHOW_PROGRESS == 'true' ]; then
+				echo 
+				echo Done: $MISSING_FILES files missing.
+			fi
 			if (( $MISSING_FILES > 0 )); then
 				exit 1
 			else
