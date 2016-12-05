@@ -1,37 +1,22 @@
 {
    "cases": [
       {
-         "description": "leap year in twentieth century",
-         "input": 1996,
+         "description": "year not divisible by 4: common year",
+         "input": 2015,
+         "expected": false
+      },
+      {
+         "description": "year divisible by 4, not divisible by 100: leap year",
+         "input": 2016,
          "expected": true
       },
       {
-         "description": "odd standard year in twentieth century",
-         "input": 1997,
+         "description": "year divisible by 100, not divisible by 400: common year",
+         "input": 2100,
          "expected": false
       },
       {
-         "description": "even standard year in twentieth century",
-         "input": 1998,
-         "expected": false
-      },
-      {
-         "description": "standard year in nineteenth century",
-         "input": 1900,
-         "expected": false
-      },
-      {
-         "description": "standard year in eighteenth century",
-         "input": 1800,
-         "expected": false
-      },
-      {
-         "description": "leap year twenty four hundred",
-         "input": 2400,
-         "expected": true
-      },
-      {
-         "description": "leap year two thousand",
+         "description": "year divisible by 400: leap year",
          "input": 2000,
          "expected": true
       }
