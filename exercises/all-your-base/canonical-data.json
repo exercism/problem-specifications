@@ -77,19 +77,19 @@
         , "input_base"   : 10
         , "input_digits" : [0]
         , "output_base"  : 2
-        , "expected"     : null
+        , "expected"     : [0]
         },
         { "description"  : "multiple zeros"
         , "input_base"   : 10
         , "input_digits" : [0, 0, 0]
         , "output_base"  : 2
-        , "expected"     : null
+        , "expected"     : [0]
         },
         { "description"  : "leading zeros"
         , "input_base"   : 7
         , "input_digits" : [0, 6, 0]
         , "output_base"  : 10
-        , "expected"     : null
+        , "expected"     : [4, 2]
         },
         { "description"  : "negative digit"
         , "input_base"   : 2
