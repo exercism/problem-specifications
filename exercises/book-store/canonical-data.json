@@ -8,7 +8,7 @@
          },
          {
             "description": "TestBasketContainsMyBooks",
-		    "mybasket": "3"
+		    "mybasket": "3",
             "expected": "3"
          },
          {
