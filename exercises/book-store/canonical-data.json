@@ -3,71 +3,84 @@
       "description": "Calculate lowest price for shopping basket only containing books from a single series",
       "cases": [
          {
-            "description": "TestSingleBookPrice",
-            "expected": 8.0
-         },
-         {
-            "description": "TestBasketContainsMyBooks",
-		    "mybasket": "3",
-            "expected": "3"
-         },
-         {
-            "description": "TestTotalBasketPriceSingleBook",
+            "description": "Test total basket price containing just a single book.",
             "basket": "1",
             "expected": 8.0
          },
          {
-            "description": "TestTotalBasketPriceTwoofSameBook",
+            "description": "Test total basket price with two of same book.",
             "basket": "22",
             "expected": 16.0
          },
          {
-            "description": "TestTotalBasketPriceEmptyBasket",
+            "description": "Test total basket price if basket is empty.",
             "basket": "",
             "expected": 0.0
          },
          {
-            "description": "TestBasketWith2DifferentBooks",
+            "description": "Test basket with two 2 different books.",
             "basket": "12",
             "expected": 15.2
          },
          {
-            "description": "TestBasketWith3DifferentBooks",
+            "description": "Test basket with three different books.",
             "basket": "123",
             "expected": 21.60
          },
          {
-            "description": "TestBasketWith4DifferentBooks",
+            "description": "Test basket with four different books.",
             "basket": "1234",
             "expected": 25.60
          },
          {
-            "description": "TestBasketWith5DifferentBooks",
+            "description": "Test basket with five different books.",
             "basket": "12345",
             "expected": 30.00
          },
          {
-            "description": "basket 11223345",
+            "description": [ 
+		             "Test a basket containing two copies of book 1, ",
+		             "two copies of book 2, two copies of book 3, ",
+		             "and one copy each of books 4 and 5."
+		           ],
             "basket": "11223345",
             "expected": 51.20
          },
          {
-            "description": "basket 112233445",
+            "description": [
+		             "Test a basket containing two copies of book 1, ",
+		             "two copies of book 2, two copies of book 3, ",
+		             "two copies of book 4, and one copy of book 5."
+		           ],
             "basket": "112233445",
             "expected": 55.60
          },
          {
-            "description": "basket 1122334455",
+            "description": [
+		             "Test a basket containing two copies of book 1, ",
+		             "two copies of book 2, two copies of book 3, ",
+		             "two copies of book 4, and two copies of book 5."
+		           ],
             "basket":  "1122334455",
             "expected": 60.00
          },
          {
-            "description": "basket 11223344551",
+            "description": [
+		             "Test a basket containing two copies of book 1, ",
+		             "two copies of book 2, two copies of book 3, ",
+		             "two copies of book 4, two copies of book 5, ",
+		             "and then another copy of book 1."
+		           ],
             "basket": "11223344551",
             "expected": 68.00
          },
          {
-            "description": "basket 112233445512",
+            "description": [
+		             "Test a basket containing two copies of book 1, ",
+		             "two copies of book 2, two copies of book 3, ",
+		             "two copies of book 4, two copies of book 5, ",
+		             "and then another copy of books 1 and 2."
+		           ],
             "basket": "112233445512",
             "expected": 75.20
          }
