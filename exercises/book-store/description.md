@@ -42,8 +42,8 @@ This would give a total of:
 
 Resulting in:
 
-- 5 x (8 2.00) == 5 x 6.00 == $30.00
-- +3 x (8 0.80) == 3 x 7.20 == $21.60
+- 5 x (8 - 2.00) == 5 x 6.00 == $30.00
+- +3 x (8 - 0.80) == 3 x 7.20 == $21.60
 
 For a total of $51.60
 
@@ -57,10 +57,10 @@ This would give a total of:
 - 4 books at a 20% discount
 - +4 books at a 20% discount
 
-Resulting:
+Resulting in:
 
-- 4 x (8-1.60) == 4 x 6.40 == $25.60
-- +4 x (8-1.60) == 4 x 6.40 == $25.60
+- 4 x (8 - 1.60) == 4 x 6.40 == $25.60
+- +4 x (8 - 1.60) == 4 x 6.40 == $25.60
 
 For a total of $51.20
 
