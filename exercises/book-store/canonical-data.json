@@ -3,85 +3,80 @@
       "description": "Calculate lowest price for shopping basket only containing books from a single series",
       "cases": [
          {
-            "description": "Test total basket price containing just a single book.",
-            "basket": "1",
+            "description": "A basket containing only a single book should total to single book price.",
+            "basket": [1],
             "expected": 8.0
          },
          {
-            "description": "Test total basket price with two of same book.",
-            "basket": "22",
+	    "description": "A basket containing two of the same book should total to single book price x2.",
+            "basket": [2, 2],
             "expected": 16.0
          },
          {
-            "description": "Test total basket price if basket is empty.",
-            "basket": "",
+            "description": "Should be able to cope with an empty basket.",
+            "basket": [],
             "expected": 0.0
          },
          {
-            "description": "Test basket with two 2 different books.",
-            "basket": "12",
+	    "description": "Should arrive at best discount and correct total for a basket containing two different books.",
+            "basket": [1, 2],
             "expected": 15.2
          },
          {
-            "description": "Test basket with three different books.",
-            "basket": "123",
+	    "description": "Should arrive at best discount and correct total for a basket containing three different books.",
+            "basket": [1, 2, 3],
             "expected": 21.60
          },
          {
-            "description": "Test basket with four different books.",
-            "basket": "1234",
+	    "description": "Should arrive at best discount and correct total for a basket containing four different books.",
+            "basket": [1, 2, 3, 4],
             "expected": 25.60
          },
          {
-            "description": "Test basket with five different books.",
-            "basket": "12345",
+	    "description": "Should arrive at best discount and correct total for a basket containing five different books.",
+            "basket": [1, 2, 3, 4, 5],
             "expected": 30.00
          },
          {
-            "description": [ 
-		             "Test a basket containing two copies of book 1, ",
-		             "two copies of book 2, two copies of book 3, ",
-		             "and one copy each of books 4 and 5."
+	    "description": [
+		             "Should arrive at best discount and correct total for a basket containing 8 books.",
+		             "The basket will consist of two each of the first 3 books and one each of books 4 and 5."
 		           ],
-            "basket": "11223345",
+            "basket": [1, 1, 2, 2, 3, 3, 4, 5],
             "expected": 51.20
          },
          {
-            "description": [
-		             "Test a basket containing two copies of book 1, ",
-		             "two copies of book 2, two copies of book 3, ",
-		             "two copies of book 4, and one copy of book 5."
+	    "description": [
+		             "Should arrive at best discount and correct total for a basket containing 9 books.",
+		             "The basket will consist of two each of the first 4 books and one copy of book 5."
 		           ],
-            "basket": "112233445",
+            "basket": [1, 1, 2, 2, 3, 3, 4, 4, 5],
             "expected": 55.60
          },
          {
-            "description": [
-		             "Test a basket containing two copies of book 1, ",
-		             "two copies of book 2, two copies of book 3, ",
-		             "two copies of book 4, and two copies of book 5."
+	    "description": [
+		             "Should arrive at best discount and correct total for a basket containing 10 books.",
+		             "The basket will consist of two copies each of the 5 books in the series."
 		           ],
-            "basket":  "1122334455",
+            "basket":  [1, 1, 2, 2, 3, 3, 4, 4, 5, 5],
             "expected": 60.00
          },
          {
-            "description": [
-		             "Test a basket containing two copies of book 1, ",
-		             "two copies of book 2, two copies of book 3, ",
-		             "two copies of book 4, two copies of book 5, ",
-		             "and then another copy of book 1."
+	    "description": [
+		             "Should arrive at best discount and correct total for a basket containing 11 books.",
+		             "The basket will consist of two copies each of the 5 books in the series.",
+		             "In addition, the basket will contain another copy of book 1."
 		           ],
-            "basket": "11223344551",
+            "basket": [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 1],
             "expected": 68.00
          },
          {
-            "description": [
-		             "Test a basket containing two copies of book 1, ",
-		             "two copies of book 2, two copies of book 3, ",
-		             "two copies of book 4, two copies of book 5, ",
-		             "and then another copy of books 1 and 2."
+	    "description": [
+		             "Should arrive at best discount and correct total for a basket containing 12 books.",
+		             "The basket will consist of two copies each of the 5 books in the series.",
+		             "In addition, the basket will contain another copy of books 1 and 2."
 		           ],
-            "basket": "112233445512",
+            "basket": [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 1, 2],
             "expected": 75.20
          }
    ]
