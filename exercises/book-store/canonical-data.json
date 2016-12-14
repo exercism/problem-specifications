@@ -3,78 +3,80 @@
       "description": "Calculate lowest price for shopping basket only containing books from a single series",
       "cases": [
          {
-            "description": "A basket containing only a single book should total to single book price.",
+            "description": "A basket containing only a single book is charged full price.",
             "basket": [1],
             "expected": 8.0
          },
          {
-	    "description": "A basket containing two of the same book should total to single book price x2.",
+	    "description": "A basket containing only two of the same book is charged full price.",
             "basket": [2, 2],
             "expected": 16.0
          },
          {
-            "description": "Should be able to cope with an empty basket.",
+            "description": "No charge to carry around an empty basket.",
             "basket": [],
             "expected": 0.0
          },
          {
-	    "description": "Should arrive at best discount and correct total for a basket containing two different books.",
+	    "description": [
+		             "A basket containing two different books is the cheapest grouping, ",
+		             "better than purchasing each book on its own."
+		           ],
             "basket": [1, 2],
             "expected": 15.2
          },
          {
-	    "description": "Should arrive at best discount and correct total for a basket containing three different books.",
+	    "description": "A basket of three different books is cheaper than grouping the books any other way.",
             "basket": [1, 2, 3],
             "expected": 21.60
          },
          {
-	    "description": "Should arrive at best discount and correct total for a basket containing four different books.",
+	    "description": "A basket of four different books is cheaper than grouping the books any other way.",
             "basket": [1, 2, 3, 4],
             "expected": 25.60
          },
          {
-	    "description": "Should arrive at best discount and correct total for a basket containing five different books.",
+	    "description": "A basket of five different books is cheaper than grouping the books any other way.",
             "basket": [1, 2, 3, 4, 5],
             "expected": 30.00
          },
          {
 	    "description": [
-		             "Should arrive at best discount and correct total for a basket containing 8 books.",
-		             "The basket will consist of two each of the first 3 books and one each of books 4 and 5."
+		             "A basket containing three pairs of three different books plus ",
+		             "one copy each of the other two books, not paired, is the least expensive ",
+		             "grouping."
 		           ],
             "basket": [1, 1, 2, 2, 3, 3, 4, 5],
             "expected": 51.20
          },
          {
 	    "description": [
-		             "Should arrive at best discount and correct total for a basket containing 9 books.",
-		             "The basket will consist of two each of the first 4 books and one copy of book 5."
+		             "A basket containing four pairs of four different books plus ",
+		             "one copy of a book, not already paired, is the least expensive grouping."
 		           ],
             "basket": [1, 1, 2, 2, 3, 3, 4, 4, 5],
             "expected": 55.60
          },
          {
 	    "description": [
-		             "Should arrive at best discount and correct total for a basket containing 10 books.",
-		             "The basket will consist of two copies each of the 5 books in the series."
+		             "One basket containing two each of the different books ",
+		             "is the least expensive grouping."
 		           ],
             "basket":  [1, 1, 2, 2, 3, 3, 4, 4, 5, 5],
             "expected": 60.00
          },
          {
 	    "description": [
-		             "Should arrive at best discount and correct total for a basket containing 11 books.",
-		             "The basket will consist of two copies each of the 5 books in the series.",
-		             "In addition, the basket will contain another copy of book 1."
+		             "One basket containing two each of the different books plus ",
+		             "one extra copy of the first book, is the least expensive grouping."
 		           ],
             "basket": [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 1],
             "expected": 68.00
          },
          {
 	    "description": [
-		             "Should arrive at best discount and correct total for a basket containing 12 books.",
-		             "The basket will consist of two copies each of the 5 books in the series.",
-		             "In addition, the basket will contain another copy of books 1 and 2."
+		             "One basket containing two each of the different books plus ",
+		             "one extra copy each of any two different books is the least expensive grouping."
 		           ],
             "basket": [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 1, 2],
             "expected": 75.20
