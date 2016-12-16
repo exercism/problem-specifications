@@ -1,67 +1,53 @@
-## Step 1
 
-E.g.
+## Iteration 1 — Addition
 
-> What is 5 plus 13?
-
-The program should handle large numbers and negative numbers.
-
-Remember, that these are verbal word problems, not treated as you
-normally would treat a written problem.  This means that you calculate
-as you move forward each step.  In other words, you should ignore order
-of operations.  3 + 2 * 3 = 15, not 9.
-
-Use the tests to drive your solution by deleting the `skip` in one test
-at a time.
-
-## Step 2
-
-E.g.
+Add two numbers together.
 
 > What is 5 plus 13?
+
+Evaluates to 18.
+
+Handle large numbers and negative numbers.
+
+
+## Iteration 2 — Subtraction, Multiplication and Division
+
+Now, perform the other three operations.
 
 > What is 7 minus 5?
+
+2
 
 > What is 6 multiplied by 4?
 
+24
+
 > What is 25 divided by 5?
 
-## Step 3
+5
 
-E.g.
+
+## Iteration 3 — Multiple Operations
+
+Handle a set of operations, in sequence.
+
+Since these are verbal word problems, evaluate the expression from
+left-to-right, _ignoring the typical order of operations._
 
 > What is 5 plus 13 plus 6?
 
-> What is 7 minus 5 minus 1?
+24
 
-> What is 9 minus 3 plus 5?
+> What is 3 plus 2 times 3?
 
-> What is 3 plus 5 minus 8?
+15  (i.e. not 9)
 
-## Step 4
 
-E.g.
+## Bonus — Exponentials
 
-> What is 5 plus 13?
-
-> What is 7 minus 5?
-
-> What is 6 times 4?
-
-> What is 25 divided by 5?
-
-> What is 78 plus 5 minus 3?
-
-> What is 18 times 3 plus 16?
-
-> What is 4 times 3 divided by 6?
-
-> What is 4 plus 3 times 2?
-
-## Extensions
-
-Implement questions of the type:
+If you'd like, handle exponentials.
 
 > What is 2 raised to the 5th power?
 
-Remember to write failing tests for this code.
+32
+
