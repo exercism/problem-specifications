@@ -16,8 +16,8 @@ An example tree:
 root (ID: 0, parent ID: 0)
 |-- child1 (ID: 1, parent ID: 0)
 |    |-- grandchild1 (ID: 4, parent ID: 1)
-|    +-- grandchild2 (ID: 5, parent ID: 1)
-+-- child2 (ID: 2, parent ID: 0)
-|    +-- grandchild3 (ID: 6, parent ID: 2)
-+-- child3 (ID: 3, parent ID: 0)
+|    +-- grandchild2 (ID: 8, parent ID: 1)
++-- child2 (ID: 5, parent ID: 0)
+|    +-- grandchild3 (ID: 6, parent ID: 5)
++-- child3 (ID: 7, parent ID: 0)
 </pre>
