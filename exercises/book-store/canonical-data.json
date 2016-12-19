@@ -8,7 +8,10 @@
             "expected": 8.0
          },
          {
-	        "description": "A basket containing only two of the same book is charged full price.",
+	        "description": [
+			                "A basket containing only two of the same book is most inexpensively ",
+							"grouped as two, one book, groups."
+						   ],
             "basket": [2, 2],
             "expected": 16.0
          },
@@ -18,65 +21,69 @@
             "expected": 0.0
          },
          {
-	        "description": [
-		                    "A basket containing two different books is the cheapest grouping, ",
-		                    "better than purchasing each book on its own."
-		                   ],
+	        "description": "A basket containing just two different books is the least expensive as a single group.",
             "basket": [1, 2],
             "expected": 15.2
          },
          {
-	        "description": "A basket of three different books is cheaper than grouping the books any other way.",
+	        "description": "A basket of three different books is the least expensive as a single group.",
             "basket": [1, 2, 3],
             "expected": 21.60
          },
          {
-	        "description": "A basket of four different books is cheaper than grouping the books any other way.",
+	        "description": "A basket of four different books is the least expensive as a single group.",
             "basket": [1, 2, 3, 4],
             "expected": 25.60
          },
          {
-	        "description": "A basket of five different books is cheaper than grouping the books any other way.",
+	        "description": "A basket of five different books is the least expensive as a single group.",
             "basket": [1, 2, 3, 4, 5],
             "expected": 30.00
          },
          {
 	        "description": [
-		                    "A basket containing three pairs of three different books plus ",
-		                    "one copy each of the other two books, not paired, is the least expensive ",
-		                    "grouping."
+		                    "For a basket containing eight books consisting of a pair each of the first three books ",
+							"plus one copy each of the last two books, it is the least expensive if the first four books ",
+							"are in one group and the first three books plus the fifth book are in a second group."
 		                   ],
             "basket": [1, 1, 2, 2, 3, 3, 4, 5],
             "expected": 51.20
          },
          {
 	        "description": [
-		                    "A basket containing four pairs of four different books plus ",
-		                    "one copy of a book, not already paired, is the least expensive grouping."
+		                    "For a basket containing nine books consisting of a pair each of the first four books ",
+							"plus one of the last book, it is the least expensive if the first five books ",
+							"are in one group and the first four books are in a second group."
 		                   ],
             "basket": [1, 1, 2, 2, 3, 3, 4, 4, 5],
             "expected": 55.60
          },
          {
 	        "description": [
-		                    "One basket containing two each of the different books ",
-		                    "is the least expensive grouping."
+		                    "For a basket containing ten books consisting of two copies of each book ",
+							"in the series, it is the least expensive if the books ",
+							"are split into two groups, each group consisting of one copy of each book."
 		                   ],
             "basket":  [1, 1, 2, 2, 3, 3, 4, 4, 5, 5],
             "expected": 60.00
          },
          {
 	        "description": [
-		                    "One basket containing two each of the different books plus ",
-		                    "one extra copy of any book in the series, is the least expensive grouping."
+		                    "For a basket containing eleven books consisting of three copies of the first book plus ",
+							"two each of the remaining four books in the series, it is the least expensive if the ",
+							"books are grouped into three groups.  The first two groups would each contain one copy ",
+							"of the five books in the series.  The third group would consist of only the first book."
 		                   ],
             "basket": [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 1],
             "expected": 68.00
          },
          {
 	        "description": [
-		                    "One basket containing two each of the different books plus ",
-		                    "one extra copy each of any two different books is the least expensive grouping."
+		                    "For a basket containing twelve books consisting of three copies of the first two books, plus ",
+							"two each of the remaining three books in the series, it is the least expensive if the ",
+							"books are grouped into three groups.  The first two groups would each contain one copy ",
+							"of the five books in the series.  The third group would consist of one copy each of the first ",
+							"second books."
 		                   ],
             "basket": [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 1, 2],
             "expected": 75.20
