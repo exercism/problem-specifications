@@ -14,7 +14,7 @@
          {
             "description":  "A basket containing only two of the same book.",
             "basket": [2, 2],
-            "targetgrouping": [2, 2],
+            "targetgrouping": [[2], [2]],
             "expected": 16.0
          },
          {
