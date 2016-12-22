@@ -2,13 +2,15 @@
    "book-store": {
       "description": [
                        "Calculate lowest price for shopping basket only ",
-                       "containing books from a single series"
+                       "containing books from a single series.  There is no ",
+                       "discount advantage for having more than one copy of ",
+                       "any single book in a grouping."
                      ],
       "cases": [
          {
             "description": "A basket containing only a single book.",
             "basket": [1],
-            "targetgrouping": [1],
+            "targetgrouping": [[1]],
             "expected": 8.0
          },
          {
@@ -20,38 +22,41 @@
          {
             "description": "No charge to carry around an empty basket.",
             "basket": [],
-            "targetgrouping": [],
+            "targetgrouping": [[]],
             "expected": 0.0
          },
          {
             "description": "A basket containing only two different books.",
             "basket": [1, 2],
-            "targetgrouping": [1, 2],
+            "targetgrouping": [[1, 2]],
             "expected": 15.2
          },
          {
             "description": "A basket of three different books.",
             "basket": [1, 2, 3],
-            "targetgrouping": [1, 2, 3],
+            "targetgrouping": [[1, 2, 3]],
             "expected": 21.60
          },
          {
             "description": "A basket of four different books.",
             "basket": [1, 2, 3, 4],
-            "targetgrouping": [1, 2, 3, 4],
+            "targetgrouping": [[1, 2, 3, 4]],
             "expected": 25.60
          },
          {
             "description": "A basket of five different books.",
             "basket": [1, 2, 3, 4, 5],
-            "targetgrouping": [1, 2, 3, 4, 5],
+            "targetgrouping": [[1, 2, 3, 4, 5]],
             "expected": 30.00
          },
          {
             "description": [
                             "A basket containing eight books consisting of a ",
                             "pair each of the first three books plus one copy ",
-                            "each of the last two books."
+                            "each of the last two books.  Please pay careful ",
+                            "attention to this particular target grouping, it ",
+                            "is not intuitive, but does grant the largest ",
+                            "discount."
                            ],
             "basket": [1, 1, 2, 2, 3, 3, 4, 5],
             "targetgrouping": [[1, 2, 3, 4], [1, 2, 3, 5]],
