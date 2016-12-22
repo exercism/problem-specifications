@@ -22,7 +22,7 @@
          {
             "description": "No charge to carry around an empty basket.",
             "basket": [],
-            "targetgrouping": [[]],
+            "targetgrouping": [],
             "expected": 0.0
          },
          {
