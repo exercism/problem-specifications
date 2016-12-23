@@ -1,0 +1,57 @@
+{
+  "number": {
+    "description": "Cleanup user-entered phone numbers",
+    "cases": [
+      {
+        "description": "cleans the number",
+        "phrase": "(123) 456-7890",
+        "expected": "1234567890"
+      },
+      {
+        "description": "cleans numbers with dots",
+        "phrase": "123.456.7890",
+        "expected": "1234567890"
+      },
+      {
+        "description": "cleans numbers with multiple spaces",
+        "phrase": "123 456   7890   ",
+        "expected": "1234567890"
+      },
+      {
+        "description": "invalid when 9 digits",
+        "phrase": "123456789",
+        "expected": null
+      },
+      {
+        "description": "invalid when 11 digits",
+        "phrase": "21234567890",
+        "expected": null
+      },
+      {
+        "description": "valid when 11 digits and starting with 1",
+        "phrase": "11234567890",
+        "expected": "1234567890"
+      },
+      {
+        "description": "invalid when 12 digits",
+        "phrase": "321234567890",
+        "expected": null
+      },
+      {
+        "description": "invalid with letters",
+        "phrase": "123-abc-7890",
+        "expected": null
+      },
+      {
+        "description": "invalid with punctuations",
+        "phrase": "123-@:!-7890",
+        "expected": null
+      },
+      {
+        "description": "invalid with right number of digits but letters mixed in",
+        "phrase": "1a2b3c4d5e6f7g8h9i0j",
+        "expected": null
+      }
+    ]
+  }
+}
