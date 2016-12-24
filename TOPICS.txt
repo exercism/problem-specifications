@@ -46,6 +46,7 @@ Problem areas
 -------------
 Algorithms
 Bitwise operations
+Concurrency
 Domain-specific languages
 Files
 Filtering
