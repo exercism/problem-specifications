@@ -44,7 +44,7 @@ An example of an invalid Canadian SIN where we've changed the final digit
 Double the second digits, starting from the right
 
 ```
-086 858 276
+086 858 277
 ```
 
 Sum the digits
