@@ -14,18 +14,21 @@
       "description": "invalid credit card",
       "input": "8273 1232 7352 0569",
       "expected": false
-    }
-  ],
-  "generate_check_digit": [
-    {
-      "description": "get valid check digit for Canadian SIN",
-      "input": "046 454 28",
-      "expected": 6
     },
     {
-      "description": "get valid check digit for credit account",
-      "input": "8273 1232 7352 056",
-      "expected": 2
-    }
+      "description": "single digit strings can not be valid",
+      "input": "1",
+      "expected": false
+    },
+    {
+      "description": "A single zero is invalid",
+      "input": "0",
+      "expected": false
+    },
+    {
+      "description": "strings that contain non-digits are not valid",
+      "input": "827a 1232 7352 0569",
+      "expected": false
+    },
   ]
 }

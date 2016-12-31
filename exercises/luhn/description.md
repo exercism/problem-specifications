@@ -76,37 +76,3 @@ Sum the digits
 ```
 
 57 is not evenly divisible by 10, so this number is not valid.
-
-Generating a Check Digit
-----
-
-The final number in these examples is called to a [check digit](https://en.wikipedia.org/wiki/Check_digit).
-
-```
- 046 454 28   6
-| account |   |check digit|
-```
-
-```
-8273 1232 7352 056   9
-|    account     |   |check digit|
-```
-
-Given an account number your code should be able to return a check digit
-that can be appended to the account to generate a valid Luhn
-
-Generate a correct check digit for our Canadian SIN account number
-
-```
-Luhn.generate_check_digit("046 454 28")
-#=> 6
-#=> 045 456 286 is valid
-```
-
-Generate a correct check digit for our credit card account
-
-```
-Luhn.generate_check_digit("8273 1232 7352 056")
-#=> 2
-#=> 8273 1232 7352 0562 is valid
-```
