@@ -1,6 +1,16 @@
 {
   "valid": [
     {
+      "description": "single digit strings can not be valid",
+      "input": "1",
+      "expected": false
+    },
+    {
+      "description": "A single zero is invalid",
+      "input": "0",
+      "expected": false
+    },
+    {
       "description": "valid Canadian SIN",
       "input": "046 454 286",
       "expected": true
@@ -13,16 +23,6 @@
     {
       "description": "invalid credit card",
       "input": "8273 1232 7352 0569",
-      "expected": false
-    },
-    {
-      "description": "single digit strings can not be valid",
-      "input": "1",
-      "expected": false
-    },
-    {
-      "description": "A single zero is invalid",
-      "input": "0",
       "expected": false
     },
     {
