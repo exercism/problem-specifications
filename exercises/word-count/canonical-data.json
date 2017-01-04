@@ -46,7 +46,7 @@
             "expected": { "first": 1, "don't": 2, "laugh": 1, "then": 1, "cry": 1 }
         },
         {
-            "description": "with_quotations",
+            "description": "with quotations",
             "input": "Joe can't tell between 'large' and large.",
             "expected": { "joe": 1, "can't": 1, "tell": 1, "between": 1, "large": 2, "and": 1 }
         }
