@@ -2,7 +2,7 @@ Basic concepts
 --------------
 Abstract classes
 Callbacks
-Control-flow (if-else statements)
+Control-flow (conditionals)
 Control-flow (loops)
 Events
 Exception handling
