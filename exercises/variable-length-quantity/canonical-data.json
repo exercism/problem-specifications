@@ -1,0 +1,185 @@
+{
+  "#": [
+    "JSON doesn't allow hexadecimal literals.",
+    "All numbers are given as decimal literals instead.",
+    "It is highly recommended that your track's test generator display all numbers as hexadecimal literals."
+  ],
+  "encode": {
+    "single": {
+      "description": ["Encode a single integer, producing a series of bytes."],
+      "cases": [
+        {
+          "description": "zero",
+          "input": 0,
+          "expected": [0]
+        },
+        {
+          "description": "arbitrary single byte",
+          "input": 64,
+          "expected": [64]
+        },
+        {
+          "description": "largest single byte",
+          "input": 127,
+          "expected": [127]
+        },
+        {
+          "description": "smallest double byte",
+          "input": 128,
+          "expected": [129, 0]
+        },
+        {
+          "description": "arbitrary double byte",
+          "input": 8192,
+          "expected": [192, 0]
+        },
+        {
+          "description": "largest double byte",
+          "input": 16383,
+          "expected": [255, 127]
+        },
+        {
+          "description": "smallest triple byte",
+          "input": 16384,
+          "expected": [129, 128, 0]
+        },
+        {
+          "description": "arbitrary triple byte",
+          "input": 1048576,
+          "expected": [192, 128, 0]
+        },
+        {
+          "description": "largest triple byte",
+          "input": 2097151,
+          "expected": [255, 255, 127]
+        },
+        {
+          "description": "smallest quadruple byte",
+          "input": 2097152,
+          "expected": [129, 128, 128, 0]
+        },
+        {
+          "description": "arbitrary quadruple byte",
+          "input": 134217728,
+          "expected": [192, 128, 128, 0]
+        },
+        {
+          "description": "largest quadruple byte",
+          "input": 268435455,
+          "expected": [255, 255, 255, 127]
+        },
+        {
+          "description": "smallest quintuple byte",
+          "input": 268435456,
+          "expected": [129, 128, 128, 128, 0]
+        },
+        {
+          "description": "arbitrary quintuple byte",
+          "input": 4278190080,
+          "expected": [143, 248, 128, 128, 0]
+        },
+        {
+          "description": "maximum 32-bit integer input",
+          "input": 4294967295,
+          "expected": [143, 255, 255, 255, 127]
+        }
+      ]
+    },
+    "multiple": {
+      "description": ["Encode a series of integers, producing a series of bytes."],
+      "cases": [
+        {
+          "description": "multiple single-byte values",
+          "input": [64, 127],
+          "expected": [64, 127]
+        },
+        {
+          "description": "two multi-byte values",
+          "input": [16384, 1193046],
+          "expected": [129, 128, 0, 200, 232, 86]
+        },
+        {
+          "description": "many multi-byte values",
+          "input": [8192, 1193046, 268435455, 0, 16383, 16384],
+          "expected": [192, 0, 200, 232, 86, 255, 255, 255, 127, 0, 255, 127, 129, 128, 0]
+        }
+      ]
+    }
+  },
+  "decode": {
+    "single": {
+      "description": ["Decode a series of bytes, producing a single integer."],
+      "cases": [
+        {
+          "description": "one byte",
+          "input": [127],
+          "expected": 127
+        },
+        {
+          "description": "two bytes",
+          "input": [192, 0],
+          "expected": 8192
+        },
+        {
+          "description": "three bytes",
+          "input": [255, 255, 127],
+          "expected": 2097151
+        },
+        {
+          "description": "four bytes",
+          "input": [129, 128, 128, 0],
+          "expected": 2097152
+        },
+        {
+          "description": "maximum 32-bit integer",
+          "input": [143, 255, 255, 255, 127],
+          "expected": 4294967295
+        },
+        {
+          "description": "incomplete sequence causes error",
+          "input": [255],
+          "expected": null
+        },
+        {
+          "description": "incomplete sequence causes error, even if value is zero",
+          "input": [128],
+          "expected": null
+        },
+        {
+          "description": "overflowing a 32-bit integer causes error",
+          "#": "Your track may exclude this test if it is reasonable to give implementations the freedom to encode/decode larger numbers.",
+          "input": [255, 255, 255, 255, 127],
+          "expected": null
+        }
+      ]
+    },
+    "multiple": {
+      "description": ["Decode a series of bytes, producing a series of integers."],
+      "cases": [
+        {
+          "description": "multiple values",
+          "input": [192, 0, 200, 232, 86, 255, 255, 255, 127, 0, 255, 127, 129, 128, 0],
+          "expected": [8192, 1193046, 268435455, 0, 16383, 16384]
+        }
+      ]
+    }
+  },
+  "decode_encode": {
+    "cases": [
+      {
+        "description": "Round-trip through decode then encode should give original bytes.",
+        "input": [192, 0, 200, 232, 86, 255, 255, 255, 127, 0, 255, 127, 129, 128, 0],
+        "expected": [192, 0, 200, 232, 86, 255, 255, 255, 127, 0, 255, 127, 129, 128, 0]
+      }
+    ]
+  },
+  "encode_decode": {
+    "cases": [
+      {
+        "description": "Round-trip through encode then decode should give original integers.",
+        "input": [8192, 1193046, 268435455, 0, 16383, 16384],
+        "expected": [8192, 1193046, 268435455, 0, 16383, 16384]
+      }
+    ]
+  }
+}
