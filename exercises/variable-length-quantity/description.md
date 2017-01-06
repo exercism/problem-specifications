@@ -8,7 +8,7 @@ To indicate which is the last byte of the series, you leave bit #7 clear.
 In all of the preceding bytes, you set bit #7. 
 
 So, if an integer is between `0-127`, it can be represented as one byte. 
-The largest integer allowed is `0FFFFFFF`, which translates to 4 bytes variable length. 
+Although VLQ can deal with numbers of arbitrary sizes, for this exercise we will restrict ourselves to only numbers that fit in a 32-bit unsigned integer.
 Here are examples of integers as 32-bit values, and the variable length quantities that they translate to:
 
 
