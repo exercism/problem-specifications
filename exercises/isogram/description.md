@@ -1,4 +1,5 @@
-An isogram (also known as a "nonpattern word") is a word or phrase without a repeating letter.
+An isogram (also known as a "nonpattern word") is a word or phrase without a
+repeating letter.
 
 Examples of isograms:
 

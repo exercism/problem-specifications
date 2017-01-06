@@ -1,5 +1,6 @@
-The Unix [`grep`](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/grep.html) command can be used to search for lines in one or more files 
-that match a user-provided search query (known as the *pattern*).
+The Unix [`grep`](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/grep.html) 
+command can be used to search for lines in one or more files that match a
+user-provided search query (known as the *pattern*).
 
 The `grep` command takes three arguments:
 
@@ -13,7 +14,8 @@ and then output those lines as a single string. Note that the lines should
 be output in the order in which they were found, with the first matching line
 in the first file being output first.
 
-As an example, suppose there is a file named "input.txt" with the following contents:
+As an example, suppose there is a file named "input.txt" with the following
+contents:
 
 <pre>
 hello

@@ -43,11 +43,13 @@ a "whole step" or "major second" (written as an upper-case "M"). The
 diatonic scales are built using only these two intervals between
 adjacent notes.
 
-Non-diatonic scales can contain the same letter twice, and can contain other intervals.
-Sometimes they may be smaller than usual (diminished, written "D"), or larger
-(augmented, written "A").  Intervals larger than an augmented second have other names.
+Non-diatonic scales can contain the same letter twice, and can contain other
+intervals.  Sometimes they may be smaller than usual (diminished, written "D"),
+or larger (augmented, written "A").  Intervals larger than an augmented second
+have other names.
 
-Here is a table of pitches with the names of their interval distance from the tonic (A).
+Here is a table of pitches with the names of their interval distance from the
+tonic (A).
 
     A    |    A#   |    B    |    C    |    C#   |    D    |    D#   |
 ----------------------------------------------------------------------

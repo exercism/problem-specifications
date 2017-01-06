@@ -1,6 +1,7 @@
 ### ETL
-Extract-Transform-Load (ETL) is a fancy way of saying, "We have some crufty, legacy data over in this system, and now we need it in this shiny new system over here, so
-we're going to migrate this."
+Extract-Transform-Load (ETL) is a fancy way of saying, "We have some crufty,
+legacy data over in this system, and now we need it in this shiny new system
+over here, so we're going to migrate this."
 
 (Typically, this is followed by, "We're only going to need to run this
 once." That's then typically followed by much forehead slapping and

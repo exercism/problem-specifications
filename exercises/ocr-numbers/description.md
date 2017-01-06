@@ -2,7 +2,8 @@
 
 To begin with, convert a simple binary font to a string containing 0 or 1.
 
-The binary font uses pipes and underscores, four rows high and three columns wide.
+The binary font uses pipes and underscores, four rows high and three columns
+wide.
 
 ```
      _   #
@@ -22,17 +23,20 @@ Is converted to "0"
 
 Is converted to "1"
 
-If the input is the correct size, but not recognizable, your program should return '?'
+If the input is the correct size, but not recognizable, your program should
+return '?'
 
 If the input is the incorrect size, your program should return an error.
 
 # Step Two
 
-Update your program to recognize multi-character binary strings, replacing garbled numbers with ?
+Update your program to recognize multi-character binary strings, replacing
+garbled numbers with ?
 
 # Step Three
 
-Update your program to recognize all numbers 0 through 9, both individually and as part of a larger string.
+Update your program to recognize all numbers 0 through 9, both individually and
+as part of a larger string.
 
 ```
  _ 
@@ -54,7 +58,8 @@ Is converted to "1234567890"
 
 # Step Four
 
-Update your program to handle multiple numbers, one per line. When converting several lines, join the lines with commas.
+Update your program to handle multiple numbers, one per line. When converting
+several lines, join the lines with commas.
 
 ```
     _  _ 
