@@ -149,23 +149,5 @@
         "expected": [8192, 1193046, 268435455, 0, 16383, 16384]
       }
     ]
-  },
-  "decode_encode": {
-    "cases": [
-      {
-        "description": "Round-trip through decode then encode should give original bytes.",
-        "input": [192, 0, 200, 232, 86, 255, 255, 255, 127, 0, 255, 127, 129, 128, 0],
-        "expected": [192, 0, 200, 232, 86, 255, 255, 255, 127, 0, 255, 127, 129, 128, 0]
-      }
-    ]
-  },
-  "encode_decode": {
-    "cases": [
-      {
-        "description": "Round-trip through encode then decode should give original integers.",
-        "input": [8192, 1193046, 268435455, 0, 16383, 16384],
-        "expected": [8192, 1193046, 268435455, 0, 16383, 16384]
-      }
-    ]
   }
 }
