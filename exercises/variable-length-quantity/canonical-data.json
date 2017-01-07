@@ -138,12 +138,6 @@
         "expected": null
       },
       {
-        "description": "overflowing a 32-bit integer causes error",
-        "#": "Your track may exclude this test if it is reasonable to give implementations the freedom to encode/decode larger numbers.",
-        "input": [255, 255, 255, 255, 127],
-        "expected": null
-      },
-      {
         "description": "multiple values",
         "input": [192, 0, 200, 232, 86, 255, 255, 255, 127, 0, 255, 127, 129, 128, 0],
         "expected": [8192, 1193046, 268435455, 0, 16383, 16384]
