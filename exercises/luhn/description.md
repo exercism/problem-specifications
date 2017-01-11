@@ -7,8 +7,11 @@ The task is to write a function that checks if a given string is valid.
 
 Validating a Number
 ------
+Strings of length 1 or less are not valid. Spaces are allowed in the input,
+but they should be stripped before checking. All other non-digit characters
+are disallowed.
 
-As an example, here is a valid (but fictitious) Canadian Social Insurance
+As an example of a valid string, here is a fictitious Canadian Social Insurance
 Number.
 
 ```
