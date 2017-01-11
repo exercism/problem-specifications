@@ -1,70 +1,34 @@
 {
-   "#": [
-     "The only note about this exercise is to make sure that the methods used",
-     "to check if a number is valid and to compute its checksum DO NOT modify",
-     "the value of the internal attributes.  ",
-     "I say this because I've seen for the Python testcases that it needs a last",
-     "test to call the validation method twice to assure this.  ",
-     "Simply assure that the two methods are const methods (to use a C++ notation)",
-     "using the tools available in your language.  ",
-     "Here is a pretty universal solution for the validation method:  ",
-     "`return (0 === (this.checksum % 10)) ? true : false;`"
-   ],
-   "cases": [
-      {
-         "description": "check digit",
-         "input": 34567,
-         "expected": 7
-      },
-      {
-         "description": "check digit with input ending in zero",
-         "input": 91370,
-         "expected": 0
-      },
-      {
-         "description": "check addends",
-         "input": 12121,
-         "expected": [1, 4, 1, 4, 1]
-      },
-      {
-         "description": "check too large addends",
-         "input": 8631,
-         "expected": [7, 6, 6, 1]
-      },
-      {
-         "description": "checksum",
-         "input": 4913,
-         "expected": 22
-      },
-      {
-         "description": "checksum of larger number",
-         "input": 201773,
-         "expected": 21
-      },
-      {
-         "description": "check invalid number",
-         "input": 738,
-         "expected": false
-      },
-      {
-         "description": "check valid number",
-         "input": 8739567,
-         "expected": true
-      },
-      {
-         "description": "create valid number",
-         "input": 123,
-         "expected": 1230
-      },
-      {
-         "description": "create larger valid number",
-         "input": 873956,
-         "expected": 8739567
-      },
-      {
-         "description": "create even larger valid number",
-         "input": 837263756,
-         "expected": 8372637564
-      }
-   ]
+  "valid": [
+    {
+      "description": "single digit strings can not be valid",
+      "input": "1",
+      "expected": false
+    },
+    {
+      "description": "A single zero is invalid",
+      "input": "0",
+      "expected": false
+    },
+    {
+      "description": "valid Canadian SIN",
+      "input": "046 454 286",
+      "expected": true
+    },
+    {
+      "description": "invalid Canadian SIN",
+      "input": "046 454 287",
+      "expected": false
+    },
+    {
+      "description": "invalid credit card",
+      "input": "8273 1232 7352 0569",
+      "expected": false
+    },
+    {
+      "description": "strings that contain non-digits are not valid",
+      "input": "827a 1232 7352 0569",
+      "expected": false
+    }
+  ]
 }
