@@ -5,6 +5,7 @@ Callbacks
 Control-flow (conditionals)
 Control-flow (loops)
 Events
+Equality
 Exception handling
 Generics
 Inheritance
