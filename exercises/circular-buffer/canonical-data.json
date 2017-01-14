@@ -7,12 +7,15 @@
     "",
     "Tests will contain a number of operations. The operation will be specified in the `operation` key.",
     "Based on the operation, other keys may be present.",
-    "read: Reading from the buffer should produce the item located at `expected`.",
-    "write: Writing the item located at `item` should succeed.",
-    "readShouldFail: Reading from the buffer should fail.",
-    "writeShouldFail: Writing the item located at `item` should fail.",
+    "read: Reading from the buffer should succeed if and only if `should_succeed` is true.",
+    "  If it should succeed, it should produce the item at `expected`. ",
+    "  If it should fail, `expected` will not be present. ",
+    "write: Writing the item located at `item` should succeed if and only if `should_succeed` is true.",
     "overwrite: Write the item located at `item` into the buffer, removing the oldest item if necessary.",
     "clear: Clear the buffer.",
+    "",
+    "Failure of either `read` or `write` may be indicated in a manner appropriate for your language:",
+    "Raising an exception, returning (int, error), returning Option<int>, etc.",
     "",
     "Finally, note that all values are integers.",
     "If your language contains generics, you may consider allowing buffers to contain other types.",
@@ -25,7 +28,8 @@
       "capacity": 1,
       "operations": [
         {
-          "operation": "readShouldFail"
+          "operation": "read",
+          "should_succeed": false
         }
       ]
     },
@@ -35,10 +39,12 @@
       "operations": [
         {
           "operation": "write",
-          "item": 1
+          "item": 1,
+          "should_succeed": true
         },
         {
           "operation": "read",
+          "should_succeed": true,
           "expected": 1
         }
       ]
@@ -49,14 +55,17 @@
       "operations": [
         {
           "operation": "write",
-          "item": 1
+          "item": 1,
+          "should_succeed": true
         },
         {
           "operation": "read",
+          "should_succeed": true,
           "expected": 1
         },
         {
-          "operation": "readShouldFail"
+          "operation": "read",
+          "should_succeed": false
         }
       ]
     },
@@ -66,18 +75,22 @@
       "operations": [
         {
           "operation": "write",
-          "item": 1
+          "item": 1,
+          "should_succeed": true
         },
         {
           "operation": "write",
-          "item": 2
+          "item": 2,
+          "should_succeed": true
         },
         {
           "operation": "read",
+          "should_succeed": true,
           "expected": 1
         },
         {
           "operation": "read",
+          "should_succeed": true,
           "expected": 2
         }
       ]
@@ -88,11 +101,13 @@
       "operations": [
         {
           "operation": "write",
-          "item": 1
+          "item": 1,
+          "should_succeed": true
         },
         {
-          "operation": "writeShouldFail",
-          "item": 2
+          "operation": "write",
+          "item": 2,
+          "should_succeed": false
         }
       ]
     },
@@ -102,18 +117,22 @@
       "operations": [
         {
           "operation": "write",
-          "item": 1
+          "item": 1,
+          "should_succeed": true
         },
         {
           "operation": "read",
+          "should_succeed": true,
           "expected": 1
         },
         {
           "operation": "write",
-          "item": 2
+          "item": 2,
+          "should_succeed": true
         },
         {
           "operation": "read",
+          "should_succeed": true,
           "expected": 2
         }
       ]
@@ -124,26 +143,32 @@
       "operations": [
         {
           "operation": "write",
-          "item": 1
+          "item": 1,
+          "should_succeed": true
         },
         {
           "operation": "write",
-          "item": 2
+          "item": 2,
+          "should_succeed": true
         },
         {
           "operation": "read",
+          "should_succeed": true,
           "expected": 1
         },
         {
           "operation": "write",
-          "item": 3
+          "item": 3,
+          "should_succeed": true
         },
         {
           "operation": "read",
+          "should_succeed": true,
           "expected": 2
         },
         {
           "operation": "read",
+          "should_succeed": true,
           "expected": 3
         }
       ]
@@ -154,13 +179,15 @@
       "operations": [
         {
           "operation": "write",
-          "item": 1
+          "item": 1,
+          "should_succeed": true
         },
         {
           "operation": "clear"
         },
         {
-          "operation": "readShouldFail"
+          "operation": "read",
+          "should_succeed": false
         }
       ]
     },
@@ -170,17 +197,20 @@
       "operations": [
         {
           "operation": "write",
-          "item": 1
+          "item": 1,
+          "should_succeed": true
         },
         {
           "operation": "clear"
         },
         {
           "operation": "write",
-          "item": 2
+          "item": 2,
+          "should_succeed": true
         },
         {
           "operation": "read",
+          "should_succeed": true,
           "expected": 2
         }
       ]
@@ -194,10 +224,12 @@
         },
         {
           "operation": "write",
-          "item": 1
+          "item": 1,
+          "should_succeed": true
         },
         {
           "operation": "read",
+          "should_succeed": true,
           "expected": 1
         }
       ]
@@ -208,7 +240,8 @@
       "operations": [
         {
           "operation": "write",
-          "item": 1
+          "item": 1,
+          "should_succeed": true
         },
         {
           "operation": "overwrite",
@@ -216,10 +249,12 @@
         },
         {
           "operation": "read",
+          "should_succeed": true,
           "expected": 1
         },
         {
           "operation": "read",
+          "should_succeed": true,
           "expected": 2
         }
       ]
@@ -230,11 +265,13 @@
       "operations": [
         {
           "operation": "write",
-          "item": 1
+          "item": 1,
+          "should_succeed": true
         },
         {
           "operation": "write",
-          "item": 2
+          "item": 2,
+          "should_succeed": true
         },
         {
           "operation": "overwrite",
@@ -242,10 +279,12 @@
         },
         {
           "operation": "read",
+          "should_succeed": true,
           "expected": 2
         },
         {
           "operation": "read",
+          "should_succeed": true,
           "expected": 3
         }
       ]
@@ -256,23 +295,28 @@
       "operations": [
         {
           "operation": "write",
-          "item": 1
+          "item": 1,
+          "should_succeed": true
         },
         {
           "operation": "write",
-          "item": 2
+          "item": 2,
+          "should_succeed": true
         },
         {
           "operation": "write",
-          "item": 3
+          "item": 3,
+          "should_succeed": true
         },
         {
           "operation": "read",
+          "should_succeed": true,
           "expected": 1
         },
         {
           "operation": "write",
-          "item": 4
+          "item": 4,
+          "should_succeed": true
         },
         {
           "operation": "overwrite",
@@ -280,14 +324,17 @@
         },
         {
           "operation": "read",
+          "should_succeed": true,
           "expected": 3
         },
         {
           "operation": "read",
+          "should_succeed": true,
           "expected": 4
         },
         {
           "operation": "read",
+          "should_succeed": true,
           "expected": 5
         }
       ]
