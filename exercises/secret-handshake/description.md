@@ -16,12 +16,10 @@ binary decide to come up with a secret "handshake".
 
 Here's a couple of examples:
 
-Given the input 9, the function would return the array
-["wink", "jump"]
+Given the input 3, the function would return the array
+["wink", "double blink"] because 3 is 11 in binary.
 
-Given the input "11001", the function would return the array
-["jump", "wink"]
-
-
-The program should consider strings specifying an invalid binary as the
-value 0.
+Given the input 19, the function would return the array
+["double blink", "wink"] because 19 is 10011 in binary.
+Notice that the addition of 16 (10000 in binary)
+has caused the array to be reversed.
