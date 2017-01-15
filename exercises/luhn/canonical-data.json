@@ -27,7 +27,7 @@
     },
     {
       "description": "strings that contain non-digits are not valid",
-      "input": "827a 1232 7352 0569",
+      "input": "046a 454 286",
       "expected": false
     }
   ]
