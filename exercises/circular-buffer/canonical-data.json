@@ -1,0 +1,343 @@
+{
+  "#": [
+    "In general, these circular buffers are expected to be stateful,",
+    "and each language will operate on them differently.",
+    "Tests tend to perform a series of operations, some of which expect a certain result.",
+    "As such, this common test suite can only say in abstract terms what should be done.",
+    "",
+    "Tests will contain a number of operations. The operation will be specified in the `operation` key.",
+    "Based on the operation, other keys may be present.",
+    "read: Reading from the buffer should succeed if and only if `should_succeed` is true.",
+    "  If it should succeed, it should produce the item at `expected`. ",
+    "  If it should fail, `expected` will not be present. ",
+    "write: Writing the item located at `item` should succeed if and only if `should_succeed` is true.",
+    "overwrite: Write the item located at `item` into the buffer, removing the oldest item if necessary.",
+    "clear: Clear the buffer.",
+    "",
+    "Failure of either `read` or `write` may be indicated in a manner appropriate for your language:",
+    "Raising an exception, returning (int, error), returning Option<int>, etc.",
+    "",
+    "Finally, note that all values are integers.",
+    "If your language contains generics, you may consider allowing buffers to contain other types.",
+    "Tests for that are not included here.",
+    ""
+  ],
+  "cases": [
+    {
+      "description": "reading empty buffer should fail",
+      "capacity": 1,
+      "operations": [
+        {
+          "operation": "read",
+          "should_succeed": false
+        }
+      ]
+    },
+    {
+      "description": "can read an item just written",
+      "capacity": 1,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1,
+          "should_succeed": true
+        },
+        {
+          "operation": "read",
+          "should_succeed": true,
+          "expected": 1
+        }
+      ]
+    },
+    {
+      "description": "each item may only be read once",
+      "capacity": 1,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1,
+          "should_succeed": true
+        },
+        {
+          "operation": "read",
+          "should_succeed": true,
+          "expected": 1
+        },
+        {
+          "operation": "read",
+          "should_succeed": false
+        }
+      ]
+    },
+    {
+      "description": "items are read in the order they are written",
+      "capacity": 2,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1,
+          "should_succeed": true
+        },
+        {
+          "operation": "write",
+          "item": 2,
+          "should_succeed": true
+        },
+        {
+          "operation": "read",
+          "should_succeed": true,
+          "expected": 1
+        },
+        {
+          "operation": "read",
+          "should_succeed": true,
+          "expected": 2
+        }
+      ]
+    },
+    {
+      "description": "full buffer can't be written to",
+      "capacity": 1,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1,
+          "should_succeed": true
+        },
+        {
+          "operation": "write",
+          "item": 2,
+          "should_succeed": false
+        }
+      ]
+    },
+    {
+      "description": "a read frees up capacity for another write",
+      "capacity": 1,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1,
+          "should_succeed": true
+        },
+        {
+          "operation": "read",
+          "should_succeed": true,
+          "expected": 1
+        },
+        {
+          "operation": "write",
+          "item": 2,
+          "should_succeed": true
+        },
+        {
+          "operation": "read",
+          "should_succeed": true,
+          "expected": 2
+        }
+      ]
+    },
+    {
+      "description": "read position is maintained even across multiple writes",
+      "capacity": 3,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1,
+          "should_succeed": true
+        },
+        {
+          "operation": "write",
+          "item": 2,
+          "should_succeed": true
+        },
+        {
+          "operation": "read",
+          "should_succeed": true,
+          "expected": 1
+        },
+        {
+          "operation": "write",
+          "item": 3,
+          "should_succeed": true
+        },
+        {
+          "operation": "read",
+          "should_succeed": true,
+          "expected": 2
+        },
+        {
+          "operation": "read",
+          "should_succeed": true,
+          "expected": 3
+        }
+      ]
+    },
+    {
+      "description": "items cleared out of buffer can't be read",
+      "capacity": 1,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1,
+          "should_succeed": true
+        },
+        {
+          "operation": "clear"
+        },
+        {
+          "operation": "read",
+          "should_succeed": false
+        }
+      ]
+    },
+    {
+      "description": "clear frees up capacity for another write",
+      "capacity": 1,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1,
+          "should_succeed": true
+        },
+        {
+          "operation": "clear"
+        },
+        {
+          "operation": "write",
+          "item": 2,
+          "should_succeed": true
+        },
+        {
+          "operation": "read",
+          "should_succeed": true,
+          "expected": 2
+        }
+      ]
+    },
+    {
+      "description": "clear does nothing on empty buffer",
+      "capacity": 1,
+      "operations": [
+        {
+          "operation": "clear"
+        },
+        {
+          "operation": "write",
+          "item": 1,
+          "should_succeed": true
+        },
+        {
+          "operation": "read",
+          "should_succeed": true,
+          "expected": 1
+        }
+      ]
+    },
+    {
+      "description": "overwrite acts like write on non-full buffer",
+      "capacity": 2,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1,
+          "should_succeed": true
+        },
+        {
+          "operation": "overwrite",
+          "item": 2
+        },
+        {
+          "operation": "read",
+          "should_succeed": true,
+          "expected": 1
+        },
+        {
+          "operation": "read",
+          "should_succeed": true,
+          "expected": 2
+        }
+      ]
+    },
+    {
+      "description": "overwrite removes the oldest item on full buffer",
+      "capacity": 2,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1,
+          "should_succeed": true
+        },
+        {
+          "operation": "write",
+          "item": 2,
+          "should_succeed": true
+        },
+        {
+          "operation": "overwrite",
+          "item": 3
+        },
+        {
+          "operation": "read",
+          "should_succeed": true,
+          "expected": 2
+        },
+        {
+          "operation": "read",
+          "should_succeed": true,
+          "expected": 3
+        }
+      ]
+    },
+    {
+      "description": "overwrite doesn't remove an already-read item",
+      "capacity": 3,
+      "operations": [
+        {
+          "operation": "write",
+          "item": 1,
+          "should_succeed": true
+        },
+        {
+          "operation": "write",
+          "item": 2,
+          "should_succeed": true
+        },
+        {
+          "operation": "write",
+          "item": 3,
+          "should_succeed": true
+        },
+        {
+          "operation": "read",
+          "should_succeed": true,
+          "expected": 1
+        },
+        {
+          "operation": "write",
+          "item": 4,
+          "should_succeed": true
+        },
+        {
+          "operation": "overwrite",
+          "item": 5
+        },
+        {
+          "operation": "read",
+          "should_succeed": true,
+          "expected": 3
+        },
+        {
+          "operation": "read",
+          "should_succeed": true,
+          "expected": 4
+        },
+        {
+          "operation": "read",
+          "should_succeed": true,
+          "expected": 5
+        }
+      ]
+    }
+  ]
+}
