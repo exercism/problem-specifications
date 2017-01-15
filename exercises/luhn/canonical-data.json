@@ -26,7 +26,7 @@
       "expected": false
     },
     {
-      "description": "strings that contain non-digits are not valid",
+      "description": "valid strings with a non-digit added become invalid",
       "input": "046a 454 286",
       "expected": false
     }
