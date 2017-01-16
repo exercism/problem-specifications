@@ -51,6 +51,31 @@
       "expected": 5
     },
     {
+      "description": "rectangle of height 1 is counted",
+      "input": [
+        "+--+",
+        "+--+"
+      ],
+      "expected": 1
+    },
+    {
+      "description": "rectangle of width 1 is counted",
+      "input": [
+        "++",
+        "||",
+        "++"
+      ],
+      "expected": 1
+    },
+    {
+      "description": "1x1 square is counted",
+      "input": [
+        "++",
+        "++"
+      ],
+      "expected": 1
+    },
+    {
       "description": "only complete rectangles are counted",
       "input": [
         "  +-+",
