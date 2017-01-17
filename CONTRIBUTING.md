@@ -337,7 +337,12 @@ The exercise should consist of, at minimum:
 * A test suite
 * A reference solution that passes the test (see [#reference-solution](#reference-solution))
 
-Each language track might have additional requirements; check the README in
+You will need to add the exercise to `"exercises"` section of the `config.json` file in the track.
+The order in which the exercises are listed there is the order in which they are fetched by default by `exercism fetch`.
+Typically, exercises are ordered by difficulty, unless there is a particular reason to do otherwise.
+
+Each language track might have additional guidance on how to order their
+exercises or additional requirements on new exercise files; check the README in
 the repository for the track.
 
 ### Providing Feedback on the Site for an Exercise You Implemented
