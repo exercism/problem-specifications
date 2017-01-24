@@ -1,0 +1,62 @@
+{
+  "to_decimal": {
+    "description": "returns the decimal representation of the input trinary value",
+    "cases": [
+      {
+        "description": "trinary 1 is decimal 1",
+        "input": 1,
+        "expected": 1
+      },
+      {
+        "description": "trinary 2 is decimal 2",
+        "input": 2,
+        "expected": 2
+      },
+      {
+        "description": "trinary 10 is decimal 3",
+        "input": 10,
+        "expected": 3
+      },
+      {
+        "description": "trinary 11 is decimal 4",
+        "input": 11,
+        "expected": 4
+      },
+      {
+        "description": "trinary 100 is decimal 9",
+        "input": 100,
+        "expected": 9
+      },
+      {
+        "description": "trinary 112 is decimal 14",
+        "input": 112,
+        "expected": 14
+      },
+      {
+        "description": "trinary 222 is decimal 26",
+        "input": 222,
+        "expected": 26
+      },
+      {
+        "description": "trinary 1122000120 is decimal 32091",
+        "input": 1122000120,
+        "expected": 32091
+      },
+      {
+        "description": "invalid trinary digits returns 0",
+        "input": "1234",
+        "expected": 0
+      },
+      {
+        "description": "invalid word as input returns 0",
+        "input": "carrot",
+        "expected": 0
+      },
+      {
+        "description": "invalid numbers with letters as input returns 0",
+        "input": "0a1b2c",
+        "expected": 0
+      }
+    ]
+  }
+}
