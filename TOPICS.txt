@@ -63,6 +63,7 @@ Performance
 Randomness
 Reactive programming
 Refactoring
+Regular Expressions
 Searching
 Security
 Sorting
