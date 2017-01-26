@@ -1,106 +1,278 @@
 {
-   "book-store": {
-      "description": [
-                       "Calculate lowest price for shopping basket only ",
-                       "containing books from a single series.  There is no ",
-                       "discount advantage for having more than one copy of ",
-                       "any single book in a grouping."
-                     ],
-      "cases": [
-         {
-            "description": "A basket containing only a single book.",
-            "basket": [1],
-            "targetgrouping": [[1]],
-            "expected": 8.0
-         },
-         {
-            "description":  "A basket containing only two of the same book.",
-            "basket": [2, 2],
-            "targetgrouping": [[2], [2]],
-            "expected": 16.0
-         },
-         {
-            "description": "No charge to carry around an empty basket.",
-            "basket": [],
-            "targetgrouping": [],
-            "expected": 0.0
-         },
-         {
-            "description": "A basket containing only two different books.",
-            "basket": [1, 2],
-            "targetgrouping": [[1, 2]],
-            "expected": 15.2
-         },
-         {
-            "description": "A basket of three different books.",
-            "basket": [1, 2, 3],
-            "targetgrouping": [[1, 2, 3]],
-            "expected": 21.60
-         },
-         {
-            "description": "A basket of four different books.",
-            "basket": [1, 2, 3, 4],
-            "targetgrouping": [[1, 2, 3, 4]],
-            "expected": 25.60
-         },
-         {
-            "description": "A basket of five different books.",
-            "basket": [1, 2, 3, 4, 5],
-            "targetgrouping": [[1, 2, 3, 4, 5]],
-            "expected": 30.00
-         },
-         {
-            "description": [
-                            "A basket containing eight books consisting of a ",
-                            "pair each of the first three books plus one copy ",
-                            "each of the last two books.  Please pay careful ",
-                            "attention to this particular target grouping, it ",
-                            "is not intuitive, but does grant the largest ",
-                            "discount."
-                           ],
-            "basket": [1, 1, 2, 2, 3, 3, 4, 5],
-            "targetgrouping": [[1, 2, 3, 4], [1, 2, 3, 5]],
-            "expected": 51.20
-         },
-         {
-            "description": [
-                            "A basket containing nine books consisting of a ",
-                            "pair each of the first four books plus one of ",
-                            "the last book."
-                           ],
-            "basket": [1, 1, 2, 2, 3, 3, 4, 4, 5],
-            "targetgrouping": [[1, 2, 3, 4, 5], [1, 2, 3, 4]],
-            "expected": 55.60
-         },
-         {
-            "description": [
-                            "A basket containing ten books consisting of two ",
-                            "copies of each book in the series."
-                           ],
-            "basket":  [1, 1, 2, 2, 3, 3, 4, 4, 5, 5],
-            "targetgrouping": [[1, 2, 3, 4, 5], [1, 2, 3, 4, 5]],
-            "expected": 60.00
-         },
-         {
-            "description": [
-                            "A basket containing eleven books consisting ",
-                            "of three copies of the first book plus two each ",
-                            "of the remaining four books in the series."
-                           ],
-            "basket": [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 1],
-            "targetgrouping": [[1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [1]],
-            "expected": 68.00
-         },
-         {
-            "description": [
-                            "A basket containing twelve books consisting of ",
-                            "three copies of the first two books, plus two ",
-                            "each of the remaining three books in the series."
-                           ],
-            "basket": [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 1, 2],
-            "targetgrouping": [[1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [1, 2]],
-            "expected": 75.20
-         }
-   ]
-}
+  "book-store": {
+    "description": [
+      "Calculate lowest price for a shopping basket containing ",
+      "books only from a single series.  There is no ",
+      "discount advantage for having more than one copy of ",
+      "any single book in a grouping."
+    ],
+    "cases": [
+      {
+        "description": "Only a single book",
+        "basket": [
+          1
+        ],
+        "targetgrouping": [
+          [
+            1
+          ]
+        ],
+        "expected": 8
+      },
+      {
+        "description": "Two of the same book",
+        "basket": [
+          2,
+          2
+        ],
+        "targetgrouping": [
+          [
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "expected": 16
+      },
+      {
+        "description": "Empty basket",
+        "basket": [],
+        "targetgrouping": [],
+        "expected": 0
+      },
+      {
+        "description": "Two different books",
+        "basket": [
+          1,
+          2
+        ],
+        "targetgrouping": [
+          [
+            1,
+            2
+          ]
+        ],
+        "expected": 15.2
+      },
+      {
+        "description": "Three different books",
+        "basket": [
+          1,
+          2,
+          3
+        ],
+        "targetgrouping": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": 21.6
+      },
+      {
+        "description": "Four different books",
+        "basket": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "targetgrouping": [
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": 25.6
+      },
+      {
+        "description": "Five different books",
+        "basket": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "targetgrouping": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "expected": 30
+      },
+      {
+        "description": "Two each of first 3 books and 1 copy each of rest",
+        "basket": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          5
+        ],
+        "targetgrouping": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            1,
+            2,
+            3,
+            5
+          ]
+        ],
+        "expected": 51.2
+      },
+      {
+        "description": "Two each of first 4 books and 1 copy each of rest",
+        "basket": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          5
+        ],
+        "targetgrouping": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": 55.6
+      },
+      {
+        "description": "Two copies of each book",
+        "basket": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          5,
+          5
+        ],
+        "targetgrouping": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "expected": 60
+      },
+      {
+        "description": "Three copies of first book and 2 each of remaining",
+        "basket": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          5,
+          5,
+          1
+        ],
+        "targetgrouping": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1
+          ]
+        ],
+        "expected": 68
+      },
+      {
+        "description": "Three each of first 2 books and 2 each of remaining books",
+        "basket": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          5,
+          5,
+          1,
+          2
+        ],
+        "targetgrouping": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "expected": 75.2
+      }
+    ]
+  }
 }
