@@ -1,5 +1,12 @@
 {
   "transform": {
+    "#": [
+	"Note:  The expected input data for these tests should have",
+        "integer keys (not stringified numbers as shown in the JSON below",
+        "Unless the language prohibits that, please implement these tests",
+        "such that keys are integers. e.g. in JavaScript, it might look ",
+        "like `transform( { 1: ['A'] } );`"
+    ],
     "description": "transforms the a set of scrabble data previously indexed by the tile score to a set of data indexed by the tile letter",
     "cases": [
       {
