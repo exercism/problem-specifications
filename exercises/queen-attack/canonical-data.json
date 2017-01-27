@@ -14,35 +14,35 @@
       {
         "description": "queen with a valid position",
         "queen": {
-          "position": "(2,2)"
+          "position": "d1"
         },
         "expected": 0
       },
       {
         "description": "queen must have positive rank",
         "queen": {
-          "position": "(-2,2)"
+          "position": "a-1"
         },
         "expected": -1
       },
       {
         "description": "queen must have rank on board",
         "queen": {
-          "position": "(8,4)"
+          "position": "f9"
         },
         "expected": -1
       },
       {
         "description": "queen must have positive file",
         "queen": {
-          "position": "(2,-2)"
+          "position": "_3"
         },
         "expected": -1
       },
       {
         "description": "queen must have file on board",
         "queen": {
-          "position": "(4,8)"
+          "position": "i3"
         },
         "expected": -1
       }
@@ -54,70 +54,70 @@
       {
         "description": "can not attack",
         "white_queen": {
-          "position": "(2,4)"
+          "position": "c4"
         },
         "black_queen": {
-          "position": "(6,6)"
+          "position": "g6"
         },
         "expected": false
       },
       {
-      "description": "can attack on same rank",
+      "description": "can attack on same file",
       "white_queen": {
-        "position": "(2,4)"
+        "position": "c4"
       },
       "black_queen": {
-        "position": "(2,6)"
+        "position": "c6"
       },
       "expected": true
       },
       {
-      "description": "can attack on same file",
+      "description": "can attack on same rank",
       "white_queen": {
-        "position": "(4,5)"
+        "position": "e5"
       },
       "black_queen": {
-        "position": "(2,5)"
+        "position": "c5"
       },
       "expected": true
       },
       {
       "description": "can attack on first diagonal",
       "white_queen": {
-        "position": "(2,2)"
+        "position": "c2"
       },
       "black_queen": {
-        "position": "(0,4)"
+        "position": "a4"
       },
       "expected": true
       },
       {
       "description": "can attack on second diagonal",
       "white_queen": {
-        "position": "(2,2)"
+        "position": "c2"
       },
       "black_queen": {
-        "position": "(3,1)"
+        "position": "d1"
       },
       "expected": true
       },
       {
       "description": "can attack on third diagonal",
       "white_queen": {
-        "position": "(2,2)"
+        "position": "c2"
       },
       "black_queen": {
-        "position": "(1,1)"
+        "position": "b1"
       },
       "expected": true
       },
       {
       "description": "can attack on fourth diagonal",
       "white_queen": {
-        "position": "(2,2)"
+        "position": "c2"
       },
       "black_queen": {
-        "position": "(5,5)"
+        "position": "f5"
       },
       "expected": true
       }
