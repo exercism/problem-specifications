@@ -51,6 +51,16 @@
         "description": "invalid with right number of digits but letters mixed in",
         "phrase": "1a2b3c4d5e6f7g8h9i0j",
         "expected": null
+      },
+      {
+        "description": "has an area code",
+        "phrase": "1234567890",
+        "expected": "123"
+      },
+      {
+        "description": "formats a number",
+        "phrase": "1234567890",
+        "expected": "(123) 456-7890"
       }
     ]
   }
