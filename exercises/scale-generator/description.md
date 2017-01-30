@@ -1,7 +1,6 @@
-Write a program that can generate musical scales. It should accept
-a tonic, or starting note, and a set of intervals. It should be able to
-output the notes in the given scale, starting with the tonic and
-following the specified interval pattern.
+Given a tonic, or starting note, and a set of intervals, generate
+the musical scale starting with the tonic and following the
+specified interval pattern.
 
 Scales in Western music are based on the chromatic (12-note) scale.This
 scale can be expressed as the following group of pitches:
