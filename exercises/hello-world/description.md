@@ -7,12 +7,10 @@ the traditional first program for beginning programming in a new language.
 
 ## Specification
 
-Write a `Hello World!` function that can greet someone given their name.  The
-function should return the appropriate greeting.
+Write a `Hello World!` function that can greet the world or a specific person.
+The function should return the appropriate greeting.
 
 For an input of "Alice", the response should be "Hello, Alice!".
-
-If a name is not given, the response should be "Hello, World!"
 
 ## Test-Driven Development
 
