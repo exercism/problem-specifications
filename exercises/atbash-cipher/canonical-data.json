@@ -46,11 +46,6 @@
                 "description": "encode all the letters",
                 "phrase": "The quick brown fox jumps over the lazy dog.",
                 "expected": "gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt"
-            },
-            {
-                "description": "encode ignores non ascii",
-                "phrase": "non ascii éignored",
-                "expected": "mlmzh xrrrt mlivw"
             }
         ]
     },

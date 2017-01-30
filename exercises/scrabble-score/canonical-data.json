@@ -46,11 +46,6 @@
       "expected": 8
     },
     {
-      "description": "non-english letter is not scored",
-      "input": "piñata",
-      "expected": 7
-    },
-    {
       "description": "empty input",
       "input": "",
       "expected": 0
