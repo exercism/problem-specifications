@@ -3,7 +3,7 @@ a simple checksum formula used to validate a variety of identification
 numbers, such as credit card numbers and Canadian Social Insurance
 Numbers.
 
-The task is to write a function that checks if a given string is valid.
+The task is to check if a given string is valid.
 
 Validating a Number
 ------
