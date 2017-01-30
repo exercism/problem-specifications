@@ -1,4 +1,4 @@
 ---
-blurb: "Write a program that can tell you what the nth prime is."
+blurb: "Given a number n, determine what the nth prime is."
 source: "A variation on Problem 7 at Project Euler"
 source_url: "http://projecteuler.net/problem=7"
