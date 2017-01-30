@@ -1,4 +1,4 @@
-Write a program that takes input text and outputs it -- transposed.
+Given an input text output it transposed.
 
 Roughly explained, the transpose of a matrix:
 
