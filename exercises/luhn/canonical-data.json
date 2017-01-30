@@ -11,6 +11,11 @@
       "expected": false
     },
     {
+      "description": "simple valid sin",
+      "input": " 5 9 ",
+      "expected": true
+    },
+    {
       "description": "valid Canadian SIN",
       "input": "046 454 286",
       "expected": true
@@ -29,6 +34,36 @@
       "description": "valid strings with a non-digit added become invalid",
       "input": "046a 454 286",
       "expected": false
+    },
+    {
+      "description": "punctuation is not allowed",
+      "input": "055-444-285",
+      "expected": false
+    },
+    {
+      "description": "symbols are not allowed",
+      "input": "055£ 444$ 285",
+      "expected": false
+    },
+    {
+      "description": "single zero with space is invalid",
+      "input": " 0",
+      "expected": false
+    },
+    {
+      "description": "lots of zeros are valid",
+      "input": " 00000",
+      "expected": true
+    },
+    {
+      "description": "another valid sin",
+      "input": "055 444 285",
+      "expected": true
+    },
+    {
+      "description": "nine doubled is nine",
+      "input": "091",
+      "expected": true
     }
   ]
 }
