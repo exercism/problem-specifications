@@ -1,4 +1,4 @@
 ---
-blurb: "Write a program that, given a string representing a matrix of numbers, can return the rows and columns of that matrix."
+blurb: "Given a string representing a matrix of numbers, return the rows and columns of that matrix."
 source: "Warmup to the `saddle-points` warmup."
 source_url: "http://jumpstartlab.com"
