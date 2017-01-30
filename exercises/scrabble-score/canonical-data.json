@@ -54,6 +54,11 @@
       "description": "empty input",
       "input": "",
       "expected": 0
+    },
+    {
+      "description": "entire alphabet available",
+      "input": "abcdefghijklmnopqrstuvwxyz",
+      "expected": 87
     }
   ]
 }
