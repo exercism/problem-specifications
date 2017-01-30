@@ -30,8 +30,8 @@ input letters:
 - "d" is worth 2 points.
 - Etc.
 
-Your mission, should you choose to accept it, is to write a program that
-transforms the legacy data format to the shiny new format.
+Your mission, should you choose to accept it, is to transform the legacy data
+format to the shiny new format.
 
 ### Notes
 
