@@ -14,7 +14,7 @@ To keep things simple the only data type you need to support is signed
 integers of at least 16 bits size.
 
 You should use the following rules for the syntax: a number is a
-sequence of one or more (unicode) digits, a word is a sequence of one or
+sequence of one or more (ASCII) digits, a word is a sequence of one or
 more letters, digits, symbols or punctuation that is not a number.
 (Forth probably uses slightly different rules, but this is close
 enough.)

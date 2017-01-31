@@ -309,13 +309,6 @@
         "expected": [1, 1]
       },
       {
-        "description": "can consist of arbitrary characters such as Unicode characters",
-        "input": [
-          ": € 220371 ; €"
-        ],
-        "expected": [220371]
-      },
-      {
         "description": "cannot redefine numbers",
         "input": [
           ": 1 2 ;"
