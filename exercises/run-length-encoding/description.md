@@ -13,3 +13,6 @@ the compressed data, which makes it a lossless data compression.
 ```
 "AABCCCDEEEE"  ->  "2AB3CD4E"  ->  "AABCCCDEEEE"
 ```
+
+For simplicity, you can assume that the unencoded string will only contain
+the letters A through Z.
