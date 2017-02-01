@@ -1,5 +1,4 @@
-Write a program that, given an English text, outputs the encoded version
-of that text.
+Given an English text, output the encoded version of that text.
 
 First, the input is normalized: the spaces and punctuation are removed
 from the English text and the message is downcased.
