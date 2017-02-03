@@ -1,0 +1,70 @@
+{
+    "#": [
+        "The tests are a series of rotation tests: "
+    ],
+    "rotate": {
+        "description": ["Test rotation from English to ROTn"],
+        "cases": [
+            {
+                "description": "rotate a by 1",
+                "text": "a",
+                "shift_key": 1,
+                "expected": "b"
+            },
+            {
+                "description": "rotate a by 26, same output as input",
+                "text": "a",
+                "shift_key": 26,
+                "expected": "a"
+            },
+            {
+                "description": "rotate a by 0, same output as input",
+                "text": "a",
+                "shift_key": 26,
+                "expected": "a"
+            },
+            {
+                "description": "rotate m by 13",
+                "text": "m",
+                "shift_key": 13,
+                "expected": "z"
+            },
+            {
+                "description": "rotate n by 13 with wrap around alphabet",
+                "text": "n",
+                "shift_key": 13,
+                "expected": "a"
+            },
+            {
+                "description": "rotate capital letters",
+                "text": "OMG",
+                "shift_key": 5,
+                "expected": "TRL"
+            },
+            {
+                "description": "rotate spaces",
+                "text": "O M G",
+                "shift_key": 5,
+                "expected": "T R L"
+            },
+            {
+                "description": "rotate numbers",
+                "text": "Testing 1 2 3 testing",
+                "shift_key": 4,
+                "expected": "Xiwxmrk 1 2 3 xiwxmrk"
+            },
+            {
+                "description": "rotate punctuation",
+                "text": "Let's eat, Grandma!",
+                "shift_key": 21,
+                "expected": "Gzo'n zvo, Bmviyhv!"
+            },
+            {
+                "description": "rotate all letters",
+                "text": "The quick brown fox jumps over the lazy dog.",
+                "shift_key": 13,
+                "expected": "Gur dhvpx oebja sbk whzcf bire gur ynml qbt."
+            }
+        ]
+    }
+}
