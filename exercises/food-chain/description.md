@@ -1,5 +1,4 @@
-Generate the lyrics to the song "I know an old lady who
-swallowed a fly". While you could copy/paste the lyrics,
+While you could copy/paste the lyrics,
 or read them from a file, this problem is much more
 interesting if you approach it algorithmically.
 
