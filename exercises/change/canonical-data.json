@@ -49,6 +49,12 @@
                 "expected": -1
             },
             {
+                "description": "error if no combination can add up to target",
+                "coins": [5, 10],
+                "target": 94,
+                "expected": -1
+            },
+            {
                 "description": "cannot find negative change values",
                 "coins": [1, 2, 5],
                 "target": -5,
