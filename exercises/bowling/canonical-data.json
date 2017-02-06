@@ -5,13 +5,21 @@
     "Score should return the game's final score, when possible",
     "For brevity the tests display all the rolls in an array;",
     "each element of the rolls array should be passed to the roll method",
-    "The final tests define situations where the score can not be returned",
-    "The expection for these tests is -1, indicating an error",
-    "In these cases you should expect an error as is idiomatic for your language",
-    "When to error is also left up to your implementation. There are two options",
-    "  - Error as soon as an invalid roll is made",
-    "  - Error when scoring a game with an invalid roll",
-    "You can also error in both cases."
+    "",
+    "If the `roll_should_fail` key is present",
+    "Then after rolling the values in the `roll` key,",
+    "attempting to roll the value in the `roll_should_fail` key should produce an error.",
+    "",
+    "If the `expected` key is present and non-negative",
+    "all rolls should succeed, and the final score should equal that value.",
+    "",
+    "If the `expected` key is present and negative,",
+    "all rolls should succeed, but attempting to score the game should result in an error.",
+    "",
+    "Each case will have exactly one of `roll_should_fail` or `expected`.",
+    "",
+    "In all error cases you should expect an error as is idiomatic for your language",
+    "whether that be via exceptions, optional values, or otherwise."
   ],
   "score": {
     "description": [
@@ -75,36 +83,36 @@
       "expected": 300
     }, {
       "description": "rolls can not score negative points",
-      "rolls": [-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      "expected": -1
+      "rolls": [],
+      "roll_should_fail": -1
     }, {
       "description": "a roll can not score more than 10 points",
-      "rolls": [11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      "expected": -1
+      "rolls": [],
+      "roll_should_fail": 11
     }, {
       "description": "two rolls in a frame can not score more than 10 points",
-      "rolls": [5, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      "expected": -1
+      "rolls": [5],
+      "roll_should_fail": 6
     }, {
       "description": "bonus roll after a strike in the last frame can not score more than 10 points",
-      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 11],
-      "expected": -1
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10],
+      "roll_should_fail": 11
     }, {
       "description": "two bonus rolls after a strike in the last frame can not score more than 10 points",
-      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 5, 6],
-      "expected": -1
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 5],
+      "roll_should_fail": 6
     }, {
       "description": "two bonus rolls after a strike in the last frame can score more than 10 points if one is a strike",
       "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 6],
       "expected": 26
     }, {
       "description": "the second bonus rolls after a strike in the last frame can not be a strike if the first one is not a strike",
-      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 10],
-      "expected": -1
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6],
+      "roll_should_fail": 10
     }, {
       "description": "second bonus roll after a strike in the last frame can not score than 10 points",
-      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 11],
-      "expected": -1
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10],
+      "roll_should_fail": 11
     }, {
       "description": "an unstarted game can not be scored",
       "rolls": [],
@@ -114,9 +122,9 @@
       "rolls": [0, 0],
       "expected": -1
     }, {
-      "description": "a game with more than ten frames can not be scored",
-      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      "expected": -1
+      "description": "cannot roll if game already has ten frames",
+      "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "roll_should_fail": 0
     }, {
       "description": "bonus rolls for a strike in the last frame must be rolled before score can be calculated",
       "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10],
