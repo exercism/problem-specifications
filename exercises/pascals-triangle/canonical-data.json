@@ -8,7 +8,7 @@
       "description": "Given a count, return a collection of that many rows of pascal's triangle",
       "cases": [
         {
-            "description": "no rows",
+            "description": "zero rows",
             "count": 0,
             "expected": []
         },
@@ -38,7 +38,7 @@
             "expected": -1
         },
         {
-            "description": "no rows",
+            "description": "null/no rows",
             "count": null,
             "expected": -1
         }
