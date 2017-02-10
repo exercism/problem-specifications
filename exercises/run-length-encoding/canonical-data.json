@@ -1,52 +1,61 @@
 {
-   "#": [
-      "The tests deliberately check that single characters are encoded without count."
-   ],
-   "cases": [
-      {
-        "description": "encode empty string",
-        "input": "",
-        "expected": ""
-      },
-      {
-        "description": "encode single characters only",
-        "input": "XYZ",
-        "expected": "XYZ"
-      },
-      {
-        "description": "decode empty string",
-        "input": "",
-        "expected": ""
-      },
-      {
-        "description": "decode single characters only",
-        "input": "XYZ",
-        "expected": "XYZ"
-      },
-      {
-         "description": "encode simple",
-         "input": "AABBBCCCC",
-         "expected": "2A3B4C"
-      },
-      {
-        "description": "decode simple",
-        "input": "2A3B4C",
-        "expected": "AABBBCCCC"
-      },
-      {
-        "description": "encode with single values",
-        "input": "WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB",
-        "expected": "12WB12W3B24WB"
-      },
-      {
-        "description": "decode with single values",
-        "input": "12WB12W3B24WB",
-        "expected": "WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB"
-      },
-      {
-        "description": "decode(encode(...)) combination",
-        "input": "zzz ZZ  zZ",
-        "expected": "zzz ZZ  zZ"
-      }
-   ]
+   "encode": {
+      "description": "run-length encode a string",
+      "cases": [
+          {
+            "description": "empty string",
+            "input": "",
+            "expected": ""
+          },
+          {
+            "description": "single characters only are encoded without count",
+            "input": "XYZ",
+            "expected": "XYZ"
+          },
+          {
+            "description": "string with no single characters",
+            "input": "AABBBCCCC",
+            "expected": "2A3B4C"
+          },
+          {
+            "description": "single characters mixed with repeated characters",
+            "input": "WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB",
+            "expected": "12WB12W3B24WB"
+          }
+      ]
+   },
+   "decode": {
+      "description": "run-length decode a string",
+      "cases": [
+          {
+            "description": "empty string",
+            "input": "",
+            "expected": ""
+          },
+          {
+            "description": "single characters only",
+            "input": "XYZ",
+            "expected": "XYZ"
+          },
+          {
+            "description": "string with no single characters",
+            "input": "2A3B4C",
+            "expected": "AABBBCCCC"
+          },
+          {
+            "description": "single characters with repeated characters",
+            "input": "12WB12W3B24WB",
+            "expected": "WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB"
+          }
+      ]
+   },
+   "consistency": {
+      "cases": [
+          {
+            "description": "encode followed by decode gives original string",
+            "input": "zzz ZZ  zZ",
+            "expected": "zzz ZZ  zZ"
+          }
+      ]
+   }
 }
