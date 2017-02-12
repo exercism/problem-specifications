@@ -11,23 +11,23 @@
       "expected": false
     },
     {
-      "description": "simple valid SIN",
-      "input": " 5 9 ",
+      "description": "a simple valid SIN that remains valid if reversed",
+      "input": "059",
       "expected": true
     },
     {
-      "description": "valid Canadian SIN",
-      "input": "046 454 286",
+      "description": "a simple valid SIN that becomes invalid if reversed",
+      "input": "59",
       "expected": true
     },
     {
-      "description": "another valid Canadian SIN",
+      "description": "a valid Canadian SIN",
       "input": "055 444 285",
       "expected": true
     },
     {
       "description": "invalid Canadian SIN",
-      "input": "046 454 287",
+      "input": "055 444 286",
       "expected": false
     },
     {
@@ -37,7 +37,7 @@
     },
     {
       "description": "valid strings with a non-digit included become invalid",
-      "input": "046a 454 286",
+      "input": "055a 444 285",
       "expected": false
     },
     {
@@ -57,7 +57,7 @@
     },
     {
       "description": "more than a single zero is valid",
-      "input": "00 000",
+      "input": "0000 0",
       "expected": true
     },
     {
