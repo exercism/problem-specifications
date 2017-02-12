@@ -55,7 +55,7 @@ Double the second digits, starting from the right
 Sum the digits
 
 ```
-7+2+5+3+2+2+5+2+5+3+1+2+0+5+3+9 = 57
+7+2+5+3+2+2+6+2+5+3+1+2+0+5+3+9 = 57
 ```
 
 57 is not evenly divisible by 10, so this number is not valid.
