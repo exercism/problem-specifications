@@ -55,7 +55,6 @@ Each test case has the the following keys:
   - if an error is expected (because the input is invalid, or any other reason), the value at `"expected"` should be an object containing exactly one property, `"error"`, whose value is a string.
     - The string should explain why the error would occur.
     - A particular track's implementation of the exercise **need not** necessarily check that the error includes that exact string as the cause, depending on what is idiomatic in the language (it may not be idiomatic to check strings for error messages).
-- msg: a nice message for the failing case
 
 ## Automated Tests
 
