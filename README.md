@@ -47,6 +47,8 @@ variations.
 
 Each test case has the the following keys:
 - description: which will be used to name each generated test
+  - The description should not simply explain **what** each case is (that is redundant information)
+  - The description should explain **why** each case is there. For example, what kinds of implementation mistakes might this case help us find?
 - 'variable names': one or more variable names with values which will be passed to the solution method
 - expected: the expected result (this would be -1 when we expect an exception)
 - msg: a nice message for the failing case
