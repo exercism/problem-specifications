@@ -52,10 +52,16 @@
            "expected": 30.00
          },
          {
-           "description": "Two each of first 3 books and 1 copy each of rest",
+           "description": "Two groups of four is cheaper than group of five plus group of three",
            "basket": [1,1,2,2,3,3,4,5],
            "targetgrouping": [[1,2,3,4],[1,2,3,5]],
            "expected": 51.20
+         },
+         {
+           "description": "Group of four plus group of two is cheaper than two groups of three",
+           "basket": [1,1,2,2,3,4],
+           "targetgrouping": [[1,2,3,4],[1,2]],
+           "expected": 40.8
          },
          {
            "description": "Two each of first 4 books and 1 copy each of rest",
