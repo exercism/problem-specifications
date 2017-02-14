@@ -38,6 +38,7 @@ themselves. There are other guides about contributing to other parts of the Exer
     * [Beta-Testing a Language Track](#beta-testing-a-language-track)
 * [Maintaining a Track](#maintaining-a-track)
 * [Useful Tidbits](#useful-tidbits)
+    * [Pull Request Guidelines](#pull-request-guidelines)
     * [Exercise Versioning](#exercise-versioning)
     * [Anatomy of an Exercise](#anatomy-of-an-exercise)
     * [config.json](#config-json)
