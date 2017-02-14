@@ -591,6 +591,9 @@ scenarios in this guide.
 
 1. Put the name of the exercise in the subject line of the commit.
    E.g. `hamming: Add test case for strands of unequal length`
+1. The subject line should be a one-sentence summary, and should not include
+   the word *and* (explicitly or implied).
+1. Any extra detail should be provided in the body of the PR.
 1. Don't submit unrelated changes in the same pull request.
 1. If you had a bit of churn in the process of getting the change right,
    squash your commits.
@@ -598,6 +601,12 @@ scenarios in this guide.
    see two commits: First the refactoring, then the added behavior. It's
    fine to put this in the same pull request, unless the refactoring is
    huge and would make it hard to review both at the same time.
+1. If you are referencing another issue or pull-request, for instance
+   *closes #XXX* or *see #XXX*, please include the reference in the body of the PR,
+   rather than the subject line. This is simply because the subject line doesn't
+   support markdown, and so these don't get turned into clickable links. It makes
+   it harder to follow and to go look at the related issue or PR.
+1. Please also refer to the guidelines for [commit messages](#commit-messages).
 
 Once you've submitted a pull request, one or more of the track maintainers
 will review it. Some tracks are less active and might not have someone
@@ -748,9 +757,11 @@ Messages
 Suck?](https://www.youtube.com/watch?v=8YjSty6bfog).
 It's funny and enlightening, and you should watch it.
 
-Tim Pope wrote an article that has very clear guidelines about how to write
-excellent commit messages. [Please read
-it](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).
+Two articles that have very clear guidelines about how to write
+excellent commit messages are Tim Pope's
+[A Note About Git Commit Messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+and Chris Beams' [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/).
+Please read them.
 
 ##### Examples
 
