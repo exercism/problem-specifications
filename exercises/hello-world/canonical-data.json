@@ -1,14 +1,5 @@
 {
-   "#": [
-     "Language implementations vary on the issue of missing input variables.",
-     "In this set of test cases, the input variable is left out of the definition,",
-     "and the generator would need to handle the language implementation."
-   ],
    "cases": [
-      {
-         "description": "no name",
-         "expected": "Hello, World!"
-      },
       {
          "description": "sample name",
          "name": "Alice",
@@ -16,8 +7,8 @@
       },
       {
          "description": "other sample name",
-         "name": "Bob",
-         "expected": "Hello, Bob!"
+         "name": "World",
+         "expected": "Hello, World!"
       }
    ]
 }
