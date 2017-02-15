@@ -7,62 +7,40 @@ The task is to check if a given string is valid.
 
 Validating a Number
 ------
+
 Strings of length 1 or less are not valid. Spaces are allowed in the input,
 but they should be stripped before checking. All other non-digit characters
 are disallowed.
 
-As an example of a valid string, here is a fictitious Canadian Social Insurance
-Number.
+## Example 1: valid credit card number
 
 ```
-046 454 286
+4539 1488 0343 6467
 ```
 
 The first step of the Luhn algorithm is to double every second digit,
 starting from the right. We will be doubling
 
 ```
-_4_ 4_4 _8_
+4_3_ 1_8_ 0_4_ 6_6_
 ```
 
 If doubling the number results in a number greater than 9 then subtract 9
 from the product. The results of our doubling:
 
 ```
-086 858 276
+8569 2478 0383 3437
 ```
 
-Then sum all of the digits
+Then sum all of the digits:
 
 ```
-0+8+6+8+5+8+2+7+6 = 50
+8+5+6+9+2+4+7+8+0+3+8+3+3+4+3+7 = 80
 ```
 
 If the sum is evenly divisible by 10, then the number is valid. This number is valid!
 
-An example of an invalid Canadian SIN where we've changed the final digit
-
-```
-046 454 287
-```
-
-Double the second digits, starting from the right
-
-```
-086 858 277
-```
-
-Sum the digits
-
-```
-0+8+6+8+5+8+2+7+7 = 51
-```
-
-51 is not evenly divisible by 10, so this number is not valid.
-
-----
-
-An example of an invalid credit card account
+## Example 2: invalid credit card number
 
 ```
 8273 1232 7352 0569
@@ -77,7 +55,7 @@ Double the second digits, starting from the right
 Sum the digits
 
 ```
-7+2+5+3+2+2+5+2+5+3+1+2+0+5+3+9 = 57
+7+2+5+3+2+2+6+2+5+3+1+2+0+5+3+9 = 57
 ```
 
 57 is not evenly divisible by 10, so this number is not valid.
