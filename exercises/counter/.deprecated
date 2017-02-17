@@ -1,1 +1,3 @@
 **NOTE: This exercise has been deprecated.**
+It was decided that Exercism should focus on exercises with provided test suites, rather than the reverse ("write the test suite").
+https://github.com/exercism/x-common/issues/80
