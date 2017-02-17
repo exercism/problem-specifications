@@ -47,9 +47,14 @@ variations.
 
 Each test case has the the following keys:
 - description: which will be used to name each generated test
+  - The description should not simply explain **what** each case is (that is redundant information)
+  - The description should explain **why** each case is there. For example, what kinds of implementation mistakes might this case help us find?
 - 'variable names': one or more variable names with values which will be passed to the solution method
-- expected: the expected result (this would be -1 when we expect an exception)
-- msg: a nice message for the failing case
+- expected: the expected result
+  - if the input is valid but there is no result for the input, the value at `"expected"` should be `null`.
+  - if an error is expected (because the input is invalid, or any other reason), the value at `"expected"` should be an object containing exactly one property, `"error"`, whose value is a string.
+    - The string should explain why the error would occur.
+    - A particular track's implementation of the exercise **need not** necessarily check that the error includes that exact string as the cause, depending on what is idiomatic in the language (it may not be idiomatic to check strings for error messages).
 
 ## Automated Tests
 
