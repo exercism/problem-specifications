@@ -1,23 +1,11 @@
 {
-   "#": [
-     "Language implementations vary on the issue of missing input variables.",
-     "In this set of test cases, the input variable is left out of the definition,",
-     "and the generator would need to handle the language implementation."
-   ],
-   "cases": [
-      {
-         "description": "no name",
-         "expected": "Hello, World!"
-      },
-      {
-         "description": "sample name",
-         "name": "Alice",
-         "expected": "Hello, Alice!"
-      },
-      {
-         "description": "other sample name",
-         "name": "Bob",
-         "expected": "Hello, Bob!"
-      }
-   ]
+  "exercise":"hello-world",
+  "version":"0.1.0",
+  "cases":[
+    {
+      "description":"Say Hi!",
+      "property":"hello",
+      "expected":"Hello, World!"
+    }
+  ]
 }
