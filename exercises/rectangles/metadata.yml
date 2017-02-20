@@ -1,5 +1,2 @@
 ---
 blurb: Count the rectangles in an ASCII diagram.
-common:
-    type: practice
-    focus: algorithms
