@@ -10,11 +10,9 @@
     "Then after rolling the values in the `roll` key,",
     "attempting to roll the value in the `roll_should_fail` key should produce an error.",
     "",
-    "If the `expected` key is present and non-negative",
-    "all rolls should succeed, and the final score should equal that value.",
-    "",
-    "If the `expected` key is present and negative,",
-    "all rolls should succeed, but attempting to score the game should result in an error.",
+    "If the `expected` key is present, it will either be an integer or an error object.",
+    "If it is an integer, all rolls should succeed, and the final score should equal that value.",
+    "If it is an error object, all rolls should succeed, but attempting to score the game should result in an error.",
     "",
     "Each case will have exactly one of `roll_should_fail` or `expected`.",
     "",
@@ -116,11 +114,11 @@
     }, {
       "description": "an unstarted game can not be scored",
       "rolls": [],
-      "expected": -1
+      "expected": {"error": "Score cannot be taken until the end of the game"}
     }, {
       "description": "an incomplete game can not be scored",
       "rolls": [0, 0],
-      "expected": -1
+      "expected": {"error": "Score cannot be taken until the end of the game"}
     }, {
       "description": "cannot roll if game already has ten frames",
       "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -128,15 +126,15 @@
     }, {
       "description": "bonus rolls for a strike in the last frame must be rolled before score can be calculated",
       "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10],
-      "expected": -1
+      "expected": {"error": "Score cannot be taken until the end of the game"}
     }, {
       "description": "both bonus rolls for a strike in the last frame must be rolled before score can be calculated",
       "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10],
-      "expected": -1
+      "expected": {"error": "Score cannot be taken until the end of the game"}
     }, {
       "description": "bonus roll for a spare in the last frame must be rolled before score can be calculated",
       "rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 3],
-      "expected": -1
+      "expected": {"error": "Score cannot be taken until the end of the game"}
     }]
   }
 }
