@@ -1,5 +1,7 @@
 {
-  "#": [
+  "exercise": "bowling",
+  "version": "1",
+  "comments": [
     "Students should implement roll and score methods.",
     "Roll should accept a single integer.",
     "Score should return the game's final score, when possible",
