@@ -7,129 +7,163 @@
     "each element of the previous_rolls array should be passed to the roll method",
     "and each of those previous rolls is expected to succeed.",
     "",
-    "If the `roll_should_fail` key is present",
-    "Then after rolling the values in the `roll` key,",
-    "attempting to roll the value in the `roll_should_fail` key should produce an error.",
+    "Two properties are tested:",
     "",
-    "If the `expected` key is present, it will either be an integer or an error object.",
-    "If it is an integer, all rolls should succeed, and the final score should equal that value.",
-    "If it is an error object, all rolls should succeed, but attempting to score the game should result in an error.",
+    "`score`: All rolls succeed, and taking the score gives the expected result.",
+    "The expected result may be an integer score or an error.",
     "",
-    "Each case will have exactly one of `roll_should_fail` or `expected`.",
+    "`roll`: All previous_rolls succeed, and rolling the number of pins in `roll` produces the expected result.",
+    "Currently, all cases of this type result in errors.",
     "",
     "In all error cases you should expect an error as is idiomatic for your language",
     "whether that be via exceptions, optional values, or otherwise."
   ],
   "cases": [{
     "description": "should be able to score a game with all zeros",
+    "property": "score",
     "previous_rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     "expected": 0
   }, {
     "description": "should be able to score a game with no strikes or spares",
+    "property": "score",
     "previous_rolls": [3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6],
     "expected": 90
   }, {
     "description": "a spare followed by zeros is worth ten points",
+    "property": "score",
     "previous_rolls": [6, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     "expected": 10
   }, {
     "description": "points scored in the roll after a spare are counted twice",
+    "property": "score",
     "previous_rolls": [6, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     "expected": 16
   }, {
     "description": "consecutive spares each get a one roll bonus",
+    "property": "score",
     "previous_rolls": [5, 5, 3, 7, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     "expected": 31
   }, {
     "description": "a spare in the last frame gets a one roll bonus that is counted once",
+    "property": "score",
     "previous_rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 3, 7],
     "expected": 17
   }, {
     "description": "a strike earns ten points in a frame with a single roll",
+    "property": "score",
     "previous_rolls": [10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     "expected": 10
   }, {
     "description": "points scored in the two rolls after a strike are counted twice as a bonus",
+    "property": "score",
     "previous_rolls": [10, 5, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     "expected": 26
   }, {
     "description": "consecutive strikes each get the two roll bonus",
+    "property": "score",
     "previous_rolls": [10, 10, 10, 5, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     "expected": 81
   }, {
     "description": "a strike in the last frame gets a two roll bonus that is counted once",
+    "property": "score",
     "previous_rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 7, 1],
     "expected": 18
   }, {
     "description": "rolling a spare with the two roll bonus does not get a bonus roll",
+    "property": "score",
     "previous_rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 7, 3],
     "expected": 20
   }, {
     "description": "strikes with the two roll bonus do not get bonus rolls",
+    "property": "score",
     "previous_rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 10],
     "expected": 30
   }, {
     "description": "a strike with the one roll bonus after a spare in the last frame does not get a bonus",
+    "property": "score",
     "previous_rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 3, 10],
     "expected": 20
   }, {
     "description": "all strikes is a perfect game",
+    "property": "score",
     "previous_rolls": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
     "expected": 300
   }, {
     "description": "rolls can not score negative points",
+    "property": "roll",
     "previous_rolls": [],
-    "roll_should_fail": -1
+    "roll": -1,
+    "expected": {"error": "Negative roll is invalid"}
   }, {
     "description": "a roll can not score more than 10 points",
+    "property": "roll",
     "previous_rolls": [],
-    "roll_should_fail": 11
+    "roll": 11,
+    "expected": {"error": "Pin count exceeds pins on the lane"}
   }, {
     "description": "two rolls in a frame can not score more than 10 points",
+    "property": "roll",
     "previous_rolls": [5],
-    "roll_should_fail": 6
+    "roll": 6,
+    "expected": {"error": "Pin count exceeds pins on the lane"}
   }, {
     "description": "bonus roll after a strike in the last frame can not score more than 10 points",
+    "property": "roll",
     "previous_rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10],
-    "roll_should_fail": 11
+    "roll": 11,
+    "expected": {"error": "Pin count exceeds pins on the lane"}
   }, {
     "description": "two bonus rolls after a strike in the last frame can not score more than 10 points",
+    "property": "roll",
     "previous_rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 5],
-    "roll_should_fail": 6
+    "roll": 6,
+    "expected": {"error": "Pin count exceeds pins on the lane"}
   }, {
     "description": "two bonus rolls after a strike in the last frame can score more than 10 points if one is a strike",
+    "property": "score",
     "previous_rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 6],
     "expected": 26
   }, {
     "description": "the second bonus rolls after a strike in the last frame can not be a strike if the first one is not a strike",
+    "property": "roll",
     "previous_rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6],
-    "roll_should_fail": 10
+    "roll": 10,
+    "expected": {"error": "Pin count exceeds pins on the lane"}
   }, {
     "description": "second bonus roll after a strike in the last frame can not score than 10 points",
+    "property": "roll",
     "previous_rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10],
-    "roll_should_fail": 11
+    "roll": 11,
+    "expected": {"error": "Pin count exceeds pins on the lane"}
   }, {
     "description": "an unstarted game can not be scored",
+    "property": "score",
     "previous_rolls": [],
     "expected": {"error": "Score cannot be taken until the end of the game"}
   }, {
     "description": "an incomplete game can not be scored",
+    "property": "score",
     "previous_rolls": [0, 0],
     "expected": {"error": "Score cannot be taken until the end of the game"}
   }, {
     "description": "cannot roll if game already has ten frames",
+    "property": "roll",
     "previous_rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    "roll_should_fail": 0
+    "roll": 0,
+    "expected": {"error": "Cannot roll after game is over"}
   }, {
     "description": "bonus rolls for a strike in the last frame must be rolled before score can be calculated",
+    "property": "score",
     "previous_rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10],
     "expected": {"error": "Score cannot be taken until the end of the game"}
   }, {
     "description": "both bonus rolls for a strike in the last frame must be rolled before score can be calculated",
+    "property": "score",
     "previous_rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10],
     "expected": {"error": "Score cannot be taken until the end of the game"}
   }, {
     "description": "bonus roll for a spare in the last frame must be rolled before score can be calculated",
+    "property": "score",
     "previous_rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 3],
     "expected": {"error": "Score cannot be taken until the end of the game"}
   }]
