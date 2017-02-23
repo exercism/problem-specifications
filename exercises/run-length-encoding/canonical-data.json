@@ -21,6 +21,11 @@
             "description": "single characters mixed with repeated characters",
             "input": "WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB",
             "expected": "12WB12W3B24WB"
+          },
+          {
+            "description": "encoding passes whitespace through unchanged",
+            "input": "  hsqq qww  ",
+            "expected": "  hs2q q2w  "
           }
       ]
    },
@@ -46,6 +51,11 @@
             "description": "single characters with repeated characters",
             "input": "12WB12W3B24WB",
             "expected": "WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB"
+          },
+          {
+            "description": "decoding passes whitespace through unchanged",
+            "input": "  hsqq qww  ",
+            "expected": "  hs2q q2w  "
           }
       ]
    },
