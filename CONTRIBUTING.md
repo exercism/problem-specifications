@@ -290,10 +290,10 @@ here.
 ## Porting an Exercise to Another Language Track
 
 To get a list of all the exercises that can be ported to a track,
-go to the url `http://exercism.io/languages/:track_id/contribute`.
+go to the url `http://exercism.io/languages/:track_id/todo`.
 
 For example here is the list of exercises that have not yet been implemented
-for the Ruby track: http://exercism.io/languages/ruby/contribute
+for the Ruby track: http://exercism.io/languages/ruby/todo
 
 Each unimplemented exercise links to existing implementations of the exercise in
 other language tracks, so that people can use those example solutions and test
