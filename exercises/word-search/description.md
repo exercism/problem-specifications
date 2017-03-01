@@ -4,15 +4,15 @@ words in them.
 For example:
 
 ```
-gefblpepre
-cbmdcimguc
-oikoknrjsm
-pbwjrqrota
-rixilelhgs
-woncqlispc
-schemekmgr
-alxhprubyi
-javaocamlp
+jefblpepre
+camdcimgtc
+oivokprjsm
+pbwasqroua
+rixilelhrs
+wolcqlirpc
+screeaumgr
+alxhpburyi
+jalaycalmp
 clojurermt
 ```
 
