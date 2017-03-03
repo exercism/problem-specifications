@@ -37,6 +37,12 @@
                 "expected": [2, 2, 5, 20, 20, 50, 100, 100, 100, 100, 100, 100, 100, 100, 100]
             },
             {
+                "description": "possible change without unit coins available",
+                "coins": [2, 5, 10, 20, 50],
+                "target": 21,
+                "expected": [2, 2, 2, 5, 10]
+            },
+            {
                 "description": "no coins make 0 change",
                 "coins": [1, 5, 10, 21, 25],
                 "target": 0,
