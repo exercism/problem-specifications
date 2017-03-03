@@ -17,13 +17,6 @@
           "1 2 3 4 5"
         ],
         "expected": [1, 2, 3, 4, 5]
-      },
-      {
-        "description": "all non-word characters are separators",
-        "input": [
-          "1\u00002\u00133\n4\r5 6\t7"
-        ],
-        "expected": [1, 2, 3, 4, 5, 6, 7]
       }
     ]
   },
