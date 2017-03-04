@@ -27,4 +27,4 @@ The largest product is `9`. It's factors are `(1, 9)`, `(3, 3)`, and `(9, 1)`.
 Given the range `[10, 99]` (both inclusive)...
 
 The smallest palindrome product is `121`. It's factors are `(11, 11)`.
-The largest palindrome product is `9009`. It's factors are `(93, 99)` and `(99, 91)`.
+The largest palindrome product is `9009`. It's factors are `(91, 99)` and `(99, 91)`.
