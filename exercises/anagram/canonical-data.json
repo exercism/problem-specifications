@@ -5,9 +5,7 @@
     "The string argument cases possible matches are passed in as",
     "individual arguments rather than arrays. Languages can include",
     "these string argument cases if passing individual arguments is",
-    "idiomatic in that language.",
-    "Some tests have a \"comment\" property, which provides more",
-    "information that could be added to the test case as a code comment."
+    "idiomatic in that language."
   ],
   "cases": [
     {
