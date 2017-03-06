@@ -14,11 +14,7 @@ the compressed data, which makes it a lossless data compression.
 "AABCCCDEEEE"  ->  "2AB3CD4E"  ->  "AABCCCDEEEE"
 ```
 
-If the string contains any whitespace, it should be passed through unchanged:
-
-```
-"aabc dddef"  ->  "2abc 3def"
-```
-
 For simplicity, you can assume that the unencoded string will only contain
-the letters A through Z (either lower or uppercase) and whitespace.
+the letters A through Z (either lower or upper case) and whitespace. This way 
+data to be encoded will never contain any numbers and numbers inside data to 
+be decoded always represent the count for the following character.
