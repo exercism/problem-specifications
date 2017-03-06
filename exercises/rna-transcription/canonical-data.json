@@ -1,66 +1,66 @@
 {
   "exercise": "rna-transcription",
   "version": "1.0.0",
-   "comments": [
-     "Language implementations vary on the issue of invalid input data.",
-     "A language may elect to simplify this task by only presenting valid",
-     "test cases.  For languages handling invalid input data as",
-     "error conditions, invalid test cases are included here and are",
-     "indicated with an expected value of null.  Note however that null is",
-     "simply an indication here in the JSON.  Actually returning null from",
-     "a rna-transcription function may or may not be idiomatic in a language.",
-     "Language idioms of errors or exceptions should be followed.",
-     "Alternative interpretations such as ignoring excess length at the end",
-     "are not represented here."
-   ],
-   "cases": [
-      {
-         "description": "rna complement of cytosine is guanine",
-         "property": "toRna",
-         "dna" : "C",
-         "expected": "G"
-      },
-      {
-         "description": "rna complement of guanine is cytosine",
-         "property": "toRna",
-         "dna": "G",
-         "expected": "C"
-      },
-      {
-         "description": "rna complement of thymine is adenine",
-         "property": "toRna",
-         "dna": "T",
-         "expected": "A"
-      },
-      {
-         "description": "rna complement of adenine is uracil",
-         "property": "toRna",
-         "dna": "A",
-         "expected": "U"
-      },
-      {
-         "description": "rna complement",
-         "property": "toRna",
-         "dna": "ACGTGGTCTTAA",
-         "expected": "UGCACCAGAAUU"
-      },
-      {
-         "description": "dna correctly handles invalid input",
-         "property": "toRna",
-         "dna": "U",
-         "expected": null
-      },
-      {
-         "description": "dna correctly handles completely invalid input",
-         "property": "toRna",
-         "dna": "XXX",
-         "expected": null
-      },
-      {
-         "description": "dna correctly handles partially invalid input",
-         "property": "toRna",
-         "dna": "ACGTXXXCTTAA",
-         "expected": null
-      }
-   ]
+  "comments": [
+    "Language implementations vary on the issue of invalid input data.",
+    "A language may elect to simplify this task by only presenting valid",
+    "test cases.  For languages handling invalid input data as",
+    "error conditions, invalid test cases are included here and are",
+    "indicated with an expected value of null.  Note however that null is",
+    "simply an indication here in the JSON.  Actually returning null from",
+    "a rna-transcription function may or may not be idiomatic in a language.",
+    "Language idioms of errors or exceptions should be followed.",
+    "Alternative interpretations such as ignoring excess length at the end",
+    "are not represented here."
+  ],
+  "cases": [
+    {
+      "description": "rna complement of cytosine is guanine",
+      "property": "toRna",
+      "dna": "C",
+      "expected": "G"
+    },
+    {
+      "description": "rna complement of guanine is cytosine",
+      "property": "toRna",
+      "dna": "G",
+      "expected": "C"
+    },
+    {
+      "description": "rna complement of thymine is adenine",
+      "property": "toRna",
+      "dna": "T",
+      "expected": "A"
+    },
+    {
+      "description": "rna complement of adenine is uracil",
+      "property": "toRna",
+      "dna": "A",
+      "expected": "U"
+    },
+    {
+      "description": "rna complement",
+      "property": "toRna",
+      "dna": "ACGTGGTCTTAA",
+      "expected": "UGCACCAGAAUU"
+    },
+    {
+      "description": "dna correctly handles invalid input",
+      "property": "toRna",
+      "dna": "U",
+      "expected": null
+    },
+    {
+      "description": "dna correctly handles completely invalid input",
+      "property": "toRna",
+      "dna": "XXX",
+      "expected": null
+    },
+    {
+      "description": "dna correctly handles partially invalid input",
+      "property": "toRna",
+      "dna": "ACGTXXXCTTAA",
+      "expected": null
+    }
+  ]
 }
