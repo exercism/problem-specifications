@@ -1,5 +1,7 @@
 {
-    "#":    [ "It's up to each track do decide:"
+  "exercise": "all-your-base",
+  "version": "1.0.0",
+  "comments":    [ "It's up to each track do decide:"
             , ""
             , "1. What's the canonical representation of zero?"
             , " - []?"
@@ -20,126 +22,147 @@
             ],
     "cases": [
         { "description"  : "single bit one to decimal"
+        , "property": "rebase"
         , "input_base"   : 2
         , "input_digits" : [1]
         , "output_base"  : 10
         , "expected"     : [1]
         },
         { "description"  : "binary to single decimal"
+        , "property": "rebase"
         , "input_base"   : 2
         , "input_digits" : [1, 0, 1]
         , "output_base"  : 10
         , "expected"     : [5]
         },
         { "description"  : "single decimal to binary"
+        , "property": "rebase"
         , "input_base"   : 10
         , "input_digits" : [5]
         , "output_base"  : 2
         , "expected"     : [1, 0, 1]
         },
         { "description"  : "binary to multiple decimal"
+        , "property": "rebase"
         , "input_base"   : 2
         , "input_digits" : [1, 0, 1, 0, 1, 0]
         , "output_base"  : 10
         , "expected"     : [4, 2]
         },
         { "description"  : "decimal to binary"
+        , "property": "rebase"
         , "input_base"   : 10
         , "input_digits" : [4, 2]
         , "output_base"  : 2
         , "expected"     : [1, 0, 1, 0, 1, 0]
         },
         { "description"  : "trinary to hexadecimal"
+        , "property": "rebase"
         , "input_base"   : 3
         , "input_digits" : [1, 1, 2, 0]
         , "output_base"  : 16
         , "expected"     : [2, 10]
         },
         { "description"  : "hexadecimal to trinary"
+        , "property": "rebase"
         , "input_base"   : 16
         , "input_digits" : [2, 10]
         , "output_base"  : 3
         , "expected"     : [1, 1, 2, 0]
         },
         { "description"  : "15-bit integer"
+        , "property": "rebase"
         , "input_base"   : 97
         , "input_digits" : [3,46,60]
         , "output_base"  : 73
         , "expected"     : [6,10,45]
         },
         { "description"  : "empty list"
+        , "property": "rebase"
         , "input_base"   : 2
         , "input_digits" : []
         , "output_base"  : 10
         , "expected"     : null
         },
         { "description"  : "single zero"
+        , "property": "rebase"
         , "input_base"   : 10
         , "input_digits" : [0]
         , "output_base"  : 2
         , "expected"     : null
         },
         { "description"  : "multiple zeros"
+        , "property": "rebase"
         , "input_base"   : 10
         , "input_digits" : [0, 0, 0]
         , "output_base"  : 2
         , "expected"     : null
         },
         { "description"  : "leading zeros"
+        , "property": "rebase"
         , "input_base"   : 7
         , "input_digits" : [0, 6, 0]
         , "output_base"  : 10
         , "expected"     : null
         },
         { "description"  : "negative digit"
+        , "property": "rebase"
         , "input_base"   : 2
         , "input_digits" : [1, -1, 1, 0, 1, 0]
         , "output_base"  : 10
         , "expected"     : null
         },
         { "description"  : "invalid positive digit"
+        , "property": "rebase"
         , "input_base"   : 2
         , "input_digits" : [1, 2, 1, 0, 1, 0]
         , "output_base"  : 10
         , "expected"     : null
         },
         { "description"  : "first base is one"
+        , "property": "rebase"
         , "input_base"   : 1
         , "input_digits" : []
         , "output_base"  : 10
         , "expected"     : null
         },
         { "description"  : "second base is one"
+        , "property": "rebase"
         , "input_base"   : 2
         , "input_digits" : [1, 0, 1, 0, 1, 0]
         , "output_base"  : 1
         , "expected"     : null
         },
         { "description"  : "first base is zero"
+        , "property": "rebase"
         , "input_base"   : 0
         , "input_digits" : []
         , "output_base"  : 10
         , "expected"     : null
         },
         { "description"  : "second base is zero"
+        , "property": "rebase"
         , "input_base"   : 10
         , "input_digits" : [7]
         , "output_base"  : 0
         , "expected"     : null
         },
         { "description"  : "first base is negative"
+        , "property": "rebase"
         , "input_base"   : -2
         , "input_digits" : [1]
         , "output_base"  : 10
         , "expected"     : null
         },
         { "description"  : "second base is negative"
+        , "property": "rebase"
         , "input_base"   : 2
         , "input_digits" : [1]
         , "output_base"  : -7
         , "expected"     : null
         },
         { "description"  : "both bases are negative"
+        , "property": "rebase"
         , "input_base"   : -2
         , "input_digits" : [1]
         , "output_base"  : -7
