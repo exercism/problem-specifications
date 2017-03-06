@@ -1,6 +1,10 @@
 {
   "exercise": "word-count",
   "version": "1.0.0",
+  "comments": [
+    "For each word in the input, count the number of times it appears in the",
+    "entire sentence."
+  ],
   "cases": [
     {
       "description": "count one word",
