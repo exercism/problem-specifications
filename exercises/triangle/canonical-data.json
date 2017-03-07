@@ -2,19 +2,20 @@
   "exercise": "triangle",
   "version": "1.0.0",
   "comments": [
-    "Pursuant to discussion in #202,",
-    "we have decided NOT to test triangles where all side lengths are positive but a + b = c.",
-    "e.g: (2, 4, 2, Isosceles), (1, 3, 4, Scalene).",
-    "It's true that the triangle inequality admits such triangles.",
-    "These triangles have zero area, however.",
-    "They're degenerate triangles with all three vertices collinear.",
-    "(In contrast, we will test (0, 0, 0, Illegal), as it is a point).",
-    "The tests assert properities of the triangle are true or false.",
-    "See: https://github.com/exercism/x-common/issues/379 for disscussion of this approach",
-    "How you handle invalid triangles is up to you. These tests suggest a triangle",
-    "is returned, but all of its properties are false. But you could also have the creation",
-    "of an invalid triangle return an error or exception. Choose what is idiomatic for",
-    "your language."
+    " Pursuant to discussion in #202, we have decided NOT to test triangles ",
+    " where all side lengths are positive but a + b = c. e.g:               ",
+    " (2, 4, 2, Isosceles), (1, 3, 4, Scalene).                             ",
+    " It's true that the triangle inequality admits such triangles.These    ",
+    " triangles have zero area, however.                                    ",
+    " They're degenerate triangles with all three vertices collinear.       ",
+    " (In contrast, we will test (0, 0, 0, Illegal), as it is a point)      ",
+    " The tests assert properities of the triangle are true or false.       ",
+    " See: https://github.com/exercism/x-common/issues/379 for disscussion  ",
+    " of this approach                                                      ",
+    " How you handle invalid triangles is up to you. These tests suggest a  ",
+    " triangle is returned, but all of its properties are false. But you    ",
+    " could also have the creation of an invalid triangle return an error   ",
+    " or exception. Choose what is idiomatic for your language.             "
   ],
   "cases": [
     {
@@ -46,7 +47,8 @@
         },
         {
           "comments": [
-            "Your track may choose to skip this test and deal only with integers if appropriate"
+            " Your track may choose to skip this test    ",
+            " and deal only with integers if appropriate "
           ],
           "description": "sides may be floats",
           "property": "equilateral",
@@ -96,7 +98,8 @@
         },
         {
           "comments": [
-            "Your track may choose to skip this test and deal only with integers if appropriate"
+            " Your track may choose to skip this test    ",
+            " and deal only with integers if appropriate "
           ],
           "property": "isosceles",
           "description": "sides may be floats",
@@ -134,7 +137,8 @@
         },
         {
           "comments": [
-            "Your track may choose to skip this test and deal only with integers if appropriate"
+            " Your track may choose to skip this test    ",
+            " and deal only with integers if appropriate "
           ],
           "description": "sides may be floats",
           "property": "scalene",
