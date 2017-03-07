@@ -1,11 +1,11 @@
 {
-  "exercise":"hello-world",
-  "version":"0.1.0",
-  "cases":[
+  "exercise": "hello-world",
+  "version": "1.0.0",
+  "cases": [
     {
-      "description":"Say Hi!",
-      "property":"hello",
-      "expected":"Hello, World!"
+      "description": "Say Hi!",
+      "property": "hello",
+      "expected": "Hello, World!"
     }
   ]
 }
