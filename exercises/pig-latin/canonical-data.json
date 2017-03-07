@@ -1,39 +1,47 @@
 {
-  "#" : [
+  "exercise": "pig-latin",
+  "version": "1.0.0",
+  "comments" : [
     "In languages with parameterized tests, test cases are grouped together into similar cases with",
     "test names or comments to describe the group. Other languages just name the individual tests."
   ],
-  "groups" : [
+  "cases" : [
     {
       "description" : "ay is added to words that start with vowels",
       "cases" : [
         {
           "description" : "word beginning with a",
+          "property": "translate",
           "input" : "apple",
           "expected" : "appleay"
         },
         {
           "description" : "word beginning with e",
+          "property": "translate",
           "input" : "ear",
           "expected" : "earay"
         },
         {
           "description" : "word beginning with i",
+          "property": "translate",
           "input" : "igloo",
           "expected" : "iglooay"
         },
         {
           "description" : "word beginning with o",
+          "property": "translate",
           "input" : "object",
           "expected" : "objectay"
         },
         {
           "description" : "word beginning with u",
+          "property": "translate",
           "input" : "under",
           "expected" : "underay"
         },
         {
           "description" : "word beginning with a vowel and followed by a qu",
+          "property": "translate",
           "input" : "equal",
           "expected" : "equalay"
         }
@@ -44,26 +52,31 @@
       "cases" : [
         {
           "description" : "word beginning with p",
+          "property": "translate",
           "input" : "pig",
           "expected" : "igpay"
         },
         {
           "description" : "word beginning with k",
+          "property": "translate",
           "input" : "koala",
           "expected" : "oalakay"
         },
         {
           "description" : "word beginning with y",
+          "property": "translate",
           "input" : "yellow",
           "expected" : "ellowyay"
         },
         {
           "description" : "word beginning with x",
+          "property": "translate",
           "input" : "xenon",
           "expected" : "enonxay"
         },
         {
           "description" : "word beginning with q without a following u",
+          "property": "translate",
           "input" : "qat",
           "expected" : "atqay"
         }
@@ -74,31 +87,37 @@
       "cases" : [
         {
           "description" : "word beginning with ch",
+          "property": "translate",
           "input" : "chair",
           "expected" : "airchay"
         },
         {
           "description" : "word beginning with qu",
+          "property": "translate",
           "input" : "queen",
           "expected" : "eenquay"
         },
         {
           "description" : "word beginning with qu and a preceding consonant",
+          "property": "translate",
           "input" : "square",
           "expected" : "aresquay"
         },
         {
           "description" : "word beginning with th",
+          "property": "translate",
           "input" : "therapy",
           "expected" : "erapythay"
         },
         {
           "description" : "word beginning with thr",
+          "property": "translate",
           "input" : "thrush",
           "expected" : "ushthray"
         },
         {
           "description" : "word beginning with sch",
+          "property": "translate",
           "input" : "school",
           "expected" : "oolschay"
         }
@@ -109,11 +128,13 @@
       "cases" : [
         {
           "description" : "word beginning with yt",
+          "property": "translate",
           "input" : "yttria",
           "expected" : "yttriaay"
         },
         {
           "description" : "word beginning with xr",
+          "property": "translate",
           "input" : "xray",
           "expected" : "xrayay"
         }
@@ -124,6 +145,7 @@
       "cases" : [
         {
           "description" : "a whole phrase",
+          "property": "translate",
           "input" : "quick fast run",
           "expected" : "ickquay astfay unray"
         }
