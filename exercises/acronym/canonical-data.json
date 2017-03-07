@@ -1,42 +1,53 @@
 {
-    "abbreviate": {
-        "description": "Abbreviate a phrase",
-        "cases": [
-            {
-                "description": "basic",
-                "phrase": "Portable Network Graphics",
-                "expected": "PNG"
-            },
-            {
-                "description": "lowercase words",
-                "phrase": "Ruby on Rails",
-                "expected": "ROR"
-            },
-            {
-                "description": "camelcase",
-                "phrase": "HyperText Markup Language",
-                "expected": "HTML"
-            },
-            {
-                "description": "punctuation",
-                "phrase": "First In, First Out",
-                "expected": "FIFO"
-            },
-            {
-                "description": "all caps words",
-                "phrase": "PHP: Hypertext Preprocessor",
-                "expected": "PHP"
-            },
-            {
-                "description": "non-acronym all caps word",
-                "phrase": "GNU Image Manipulation Program",
-                "expected": "GIMP"
-            },
-            {
-                "description": "hyphenated",
-                "phrase": "Complementary metal-oxide semiconductor",
-                "expected": "CMOS"
-            }
-        ]
+  "exercise": "acronym",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "description": "Abbreviate a phrase",
+      "cases": [
+        {
+          "description": "basic",
+          "property": "abbreviate",
+          "phrase": "Portable Network Graphics",
+          "expected": "PNG"
+        },
+        {
+          "description": "lowercase words",
+          "property": "abbreviate",
+          "phrase": "Ruby on Rails",
+          "expected": "ROR"
+        },
+        {
+          "description": "camelcase",
+          "property": "abbreviate",
+          "phrase": "HyperText Markup Language",
+          "expected": "HTML"
+        },
+        {
+          "description": "punctuation",
+          "property": "abbreviate",
+          "phrase": "First In, First Out",
+          "expected": "FIFO"
+        },
+        {
+          "description": "all caps words",
+          "property": "abbreviate",
+          "phrase": "PHP: Hypertext Preprocessor",
+          "expected": "PHP"
+        },
+        {
+          "description": "non-acronym all caps word",
+          "property": "abbreviate",
+          "phrase": "GNU Image Manipulation Program",
+          "expected": "GIMP"
+        },
+        {
+          "description": "hyphenated",
+          "property": "abbreviate",
+          "phrase": "Complementary metal-oxide semiconductor",
+          "expected": "CMOS"
+        }
+      ]
     }
+  ]
 }
