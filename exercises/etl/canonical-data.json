@@ -1,6 +1,9 @@
 {
-  "transform": {
-    "#": [
+  "exercise": "etl",
+  "version": "1.0.0",
+  "cases": [
+  {
+    "comments": [
 	"Note:  The expected input data for these tests should have",
         "integer keys (not stringified numbers as shown in the JSON below",
         "Unless the language prohibits that, please implement these tests",
@@ -11,6 +14,7 @@
     "cases": [
       {
         "description": "a single letter",
+        "property": "transform",
         "input": {
           "1": ["A"]
         },
@@ -20,6 +24,7 @@
       },
       {
         "description": "single score with multiple letters",
+        "property": "transform",
         "input": {
           "1": ["A", "E", "I", "O", "U" ]
         },
@@ -33,6 +38,7 @@
       },
       {
         "description": "multiple scores with multiple letters",
+        "property": "transform",
         "input": {
           "1": ["A", "E"],
           "2": ["D", "G"]
@@ -46,6 +52,7 @@
       },
       {
         "description": "multiple scores with differing numbers of letters",
+        "property": "transform",
         "input": {
           "1": [ "A", "E", "I", "O", "U", "L", "N", "R", "S", "T" ],
           "2": [ "D", "G" ],
@@ -66,4 +73,5 @@
       }
     ]
   }
+  ]
 }
