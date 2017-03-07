@@ -1,153 +1,153 @@
 {
   "exercise": "pig-latin",
   "version": "1.0.0",
-  "comments" : [
+  "comments": [
     "In languages with parameterized tests, test cases are grouped together into similar cases with",
     "test names or comments to describe the group. Other languages just name the individual tests."
   ],
-  "cases" : [
+  "cases": [
     {
-      "description" : "ay is added to words that start with vowels",
-      "cases" : [
+      "description": "ay is added to words that start with vowels",
+      "cases": [
         {
-          "description" : "word beginning with a",
+          "description": "word beginning with a",
           "property": "translate",
-          "input" : "apple",
-          "expected" : "appleay"
+          "input": "apple",
+          "expected": "appleay"
         },
         {
-          "description" : "word beginning with e",
+          "description": "word beginning with e",
           "property": "translate",
-          "input" : "ear",
-          "expected" : "earay"
+          "input": "ear",
+          "expected": "earay"
         },
         {
-          "description" : "word beginning with i",
+          "description": "word beginning with i",
           "property": "translate",
-          "input" : "igloo",
-          "expected" : "iglooay"
+          "input": "igloo",
+          "expected": "iglooay"
         },
         {
-          "description" : "word beginning with o",
+          "description": "word beginning with o",
           "property": "translate",
-          "input" : "object",
-          "expected" : "objectay"
+          "input": "object",
+          "expected": "objectay"
         },
         {
-          "description" : "word beginning with u",
+          "description": "word beginning with u",
           "property": "translate",
-          "input" : "under",
-          "expected" : "underay"
+          "input": "under",
+          "expected": "underay"
         },
         {
-          "description" : "word beginning with a vowel and followed by a qu",
+          "description": "word beginning with a vowel and followed by a qu",
           "property": "translate",
-          "input" : "equal",
-          "expected" : "equalay"
+          "input": "equal",
+          "expected": "equalay"
         }
       ]
     },
     {
-      "description" : "first letter and ay are moved to the end of words that start with consonants",
-      "cases" : [
+      "description": "first letter and ay are moved to the end of words that start with consonants",
+      "cases": [
         {
-          "description" : "word beginning with p",
+          "description": "word beginning with p",
           "property": "translate",
-          "input" : "pig",
-          "expected" : "igpay"
+          "input": "pig",
+          "expected": "igpay"
         },
         {
-          "description" : "word beginning with k",
+          "description": "word beginning with k",
           "property": "translate",
-          "input" : "koala",
-          "expected" : "oalakay"
+          "input": "koala",
+          "expected": "oalakay"
         },
         {
-          "description" : "word beginning with y",
+          "description": "word beginning with y",
           "property": "translate",
-          "input" : "yellow",
-          "expected" : "ellowyay"
+          "input": "yellow",
+          "expected": "ellowyay"
         },
         {
-          "description" : "word beginning with x",
+          "description": "word beginning with x",
           "property": "translate",
-          "input" : "xenon",
-          "expected" : "enonxay"
+          "input": "xenon",
+          "expected": "enonxay"
         },
         {
-          "description" : "word beginning with q without a following u",
+          "description": "word beginning with q without a following u",
           "property": "translate",
-          "input" : "qat",
-          "expected" : "atqay"
+          "input": "qat",
+          "expected": "atqay"
         }
       ]
     },
     {
-      "description" : "some letter clusters are treated like a single consonant",
-      "cases" : [
+      "description": "some letter clusters are treated like a single consonant",
+      "cases": [
         {
-          "description" : "word beginning with ch",
+          "description": "word beginning with ch",
           "property": "translate",
-          "input" : "chair",
-          "expected" : "airchay"
+          "input": "chair",
+          "expected": "airchay"
         },
         {
-          "description" : "word beginning with qu",
+          "description": "word beginning with qu",
           "property": "translate",
-          "input" : "queen",
-          "expected" : "eenquay"
+          "input": "queen",
+          "expected": "eenquay"
         },
         {
-          "description" : "word beginning with qu and a preceding consonant",
+          "description": "word beginning with qu and a preceding consonant",
           "property": "translate",
-          "input" : "square",
-          "expected" : "aresquay"
+          "input": "square",
+          "expected": "aresquay"
         },
         {
-          "description" : "word beginning with th",
+          "description": "word beginning with th",
           "property": "translate",
-          "input" : "therapy",
-          "expected" : "erapythay"
+          "input": "therapy",
+          "expected": "erapythay"
         },
         {
-          "description" : "word beginning with thr",
+          "description": "word beginning with thr",
           "property": "translate",
-          "input" : "thrush",
-          "expected" : "ushthray"
+          "input": "thrush",
+          "expected": "ushthray"
         },
         {
-          "description" : "word beginning with sch",
+          "description": "word beginning with sch",
           "property": "translate",
-          "input" : "school",
-          "expected" : "oolschay"
+          "input": "school",
+          "expected": "oolschay"
         }
       ]
     },
     {
-      "description" : "some letter clusters are treated like a single vowel",
-      "cases" : [
+      "description": "some letter clusters are treated like a single vowel",
+      "cases": [
         {
-          "description" : "word beginning with yt",
+          "description": "word beginning with yt",
           "property": "translate",
-          "input" : "yttria",
-          "expected" : "yttriaay"
+          "input": "yttria",
+          "expected": "yttriaay"
         },
         {
-          "description" : "word beginning with xr",
+          "description": "word beginning with xr",
           "property": "translate",
-          "input" : "xray",
-          "expected" : "xrayay"
+          "input": "xray",
+          "expected": "xrayay"
         }
       ]
     },
     {
-      "description" : "phrases are translated",
-      "cases" : [
+      "description": "phrases are translated",
+      "cases": [
         {
-          "description" : "a whole phrase",
+          "description": "a whole phrase",
           "property": "translate",
-          "input" : "quick fast run",
-          "expected" : "ickquay astfay unray"
+          "input": "quick fast run",
+          "expected": "ickquay astfay unray"
         }
       ]
     }
