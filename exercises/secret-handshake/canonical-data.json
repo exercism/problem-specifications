@@ -3,81 +3,81 @@
   "version": "1.0.0",
   "cases": [
     {
-        "description": "Create a handshake for a number",
-        "cases": [
-            {
-                "description": "wink for 1",
-                "property": "commands",
-                "input": 1,
-                "expected": ["wink"]
-            },
-            {
-                "description": "double blink for 10",
-                "property": "commands",
-                "input": 2,
-                "expected": ["double blink"]
-            },
-            {
-                "description": "close your eyes for 100",
-                "property": "commands",
-                "input": 4,
-                "expected": ["close your eyes"]
-            },
-            {
-                "description": "jump for 1000",
-                "property": "commands",
-                "input": 8,
-                "expected": ["jump"]
-            },
-            {
-                "description": "combine two actions",
-                "property": "commands",
-                "input": 3,
-                "expected": ["wink", "double blink"]
-            },
-            {
-                "description": "reverse two actions",
-                "property": "commands",
-                "input": 19,
-                "expected": ["double blink", "wink"]
-            },
-            {
-                "description": "reversing one action gives the same action",
-                "property": "commands",
-                "input": 24,
-                "expected": ["jump"]
-            },
-            {
-                "description": "reversing no actions still gives no actions",
-                "property": "commands",
-                "input": 16,
-                "expected": []
-            },
-            {
-                "description": "all possible actions",
-                "property": "commands",
-                "input": 15,
-                "expected": ["wink", "double blink", "close your eyes", "jump"]
-            },
-            {
-                "description": "reverse all possible actions",
-                "property": "commands",
-                "input": 31,
-                "expected": ["jump", "close your eyes", "double blink", "wink"]
-            },
-            {
-                "description": "do nothing for zero",
-                "property": "commands",
-                "input": 0,
-                "expected": []
-            },
-            {
-                "description": "do nothing if lower 5 bits not set",
-                "property": "commands",
-                "input": 32,
-                "expected": []
-            }
-        ]
+      "description": "Create a handshake for a number",
+      "cases": [
+        {
+          "description": "wink for 1",
+          "property": "commands",
+          "input": 1,
+          "expected": ["wink"]
+        },
+        {
+          "description": "double blink for 10",
+          "property": "commands",
+          "input": 2,
+          "expected": ["double blink"]
+        },
+        {
+          "description": "close your eyes for 100",
+          "property": "commands",
+          "input": 4,
+          "expected": ["close your eyes"]
+        },
+        {
+          "description": "jump for 1000",
+          "property": "commands",
+          "input": 8,
+          "expected": ["jump"]
+        },
+        {
+          "description": "combine two actions",
+          "property": "commands",
+          "input": 3,
+          "expected": ["wink", "double blink"]
+        },
+        {
+          "description": "reverse two actions",
+          "property": "commands",
+          "input": 19,
+          "expected": ["double blink", "wink"]
+        },
+        {
+          "description": "reversing one action gives the same action",
+          "property": "commands",
+          "input": 24,
+          "expected": ["jump"]
+        },
+        {
+          "description": "reversing no actions still gives no actions",
+          "property": "commands",
+          "input": 16,
+          "expected": []
+        },
+        {
+          "description": "all possible actions",
+          "property": "commands",
+          "input": 15,
+          "expected": ["wink", "double blink", "close your eyes", "jump"]
+        },
+        {
+          "description": "reverse all possible actions",
+          "property": "commands",
+          "input": 31,
+          "expected": ["jump", "close your eyes", "double blink", "wink"]
+        },
+        {
+          "description": "do nothing for zero",
+          "property": "commands",
+          "input": 0,
+          "expected": []
+        },
+        {
+          "description": "do nothing if lower 5 bits not set",
+          "property": "commands",
+          "input": 32,
+          "expected": []
+        }
+      ]
     }
   ]
 }
