@@ -1,0 +1,15 @@
+{
+  "name": "x-common",
+  "version": "1.0.0",
+  "description": "Shared metadata for exercism exercises.",
+  "main": "index.js",
+  "repository": "git@github.com:exercism/x-common.git",
+  "author": "Tejas Bubane <tejasbubane@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ajv-cli": "^1.1.1"
+  },
+  "scripts": {
+    "test": "ajv validate -s canonical-schema.json -d \"exercises/*/canonical-data.json\""
+  }
+}
