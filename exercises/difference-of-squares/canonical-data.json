@@ -1,67 +1,81 @@
 {
-    "square_of_sum": {
-        "description": ["Square the sum of the numbers up to the given number"],
-        "cases": [
-            {
-                "description": "square of sum 5",
-                "number": 5,
-                "expected": 225
-            },
-            {
-                "description": "square of sum 10",
-                "number": 10,
-                "expected": 3025
-            },
-            {
-                "description": "square of sum 100",
-                "number": 100,
-                "expected": 25502500
-            }
-        ]
+  "exercise": "difference-of-squares",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "description": "Square the sum of the numbers up to the given number",
+      "cases": [
+        {
+          "description": "square of sum 5",
+          "property": "squareOfSum",
+          "number": 5,
+          "expected": 225
+        },
+        {
+          "description": "square of sum 10",
+          "property": "squareOfSum",
+          "number": 10,
+          "expected": 3025
+        },
+        {
+          "description": "square of sum 100",
+          "property": "squareOfSum",
+          "number": 100,
+          "expected": 25502500
+        }
+      ]
     },
-    "sum_of_squares": {
-        "description": ["Sum the squares of the numbers up to the given number"],
-        "cases": [
-            {
-                "description": "sum of squares 5",
-                "number": 5,
-                "expected": 55
-            },
-            {
-                "description": "sum of squares 10",
-                "number": 10,
-                "expected": 385
-            },
-            {
-                "description": "sum of squares 100",
-                "number": 100,
-                "expected": 338350
-            }
-        ]
+    {
+      "description": "Sum the squares of the numbers up to the given number",
+      "cases": [
+        {
+          "description": "sum of squares 5",
+          "property": "sumOfSquares",
+          "number": 5,
+          "expected": 55
+        },
+        {
+          "description": "sum of squares 10",
+          "property": "sumOfSquares",
+          "number": 10,
+          "expected": 385
+        },
+        {
+          "description": "sum of squares 100",
+          "property": "sumOfSquares",
+          "number": 100,
+          "expected": 338350
+        }
+      ]
     },
-    "difference_of_squares": {
-        "description": ["Subtract sum of squares from square of sums"],
-        "cases": [
-            {
-                "description": "difference of squares 0",
-                "number": 0,
-                "expected": 0
-            },
-            {
-                "description": "difference of squares 5",
-                "number": 5,
-                "expected": 170
-            },
-            {
-                "description": "difference of squares 10",
-                "number": 10,
-                "expected": 2640
-            },
-            {
-                "description": "difference of squares 100",
-                "number": 100,
-                "expected": 25164150
-            }
-        ]
+    {
+      "description": "Subtract sum of squares from square of sums",
+      "cases": [
+        {
+          "description": "difference of squares 0",
+          "property": "differenceOfSquares",
+          "number": 0,
+          "expected": 0
+        },
+        {
+          "description": "difference of squares 5",
+          "property": "differenceOfSquares",
+          "number": 5,
+          "expected": 170
+        },
+        {
+          "description": "difference of squares 10",
+          "property": "differenceOfSquares",
+          "number": 10,
+          "expected": 2640
+        },
+        {
+          "description": "difference of squares 100",
+          "property": "differenceOfSquares",
+          "number": 100,
+          "expected": 25164150
+        }
+      ]
     }
+  ]
 }
