@@ -1,5 +1,7 @@
 {
-  "#": [
+  "exercise": "queen-attack",
+  "version": "1.0.0",
+  "comments": [
     "Testing invalid positions will vary by language. The expected",
     "value of -1 is there to indicate some sort of failure should",
     "occur, while a 0 means no failure.",
@@ -8,11 +10,13 @@
     "the board graphically, or using standard chess notation. Those",
     "tests can be offered as extra credit"
   ],
-  "create": {
+  "cases": [
+  {
     "description": "Test creation of Queens with valid and invalid positions",
     "cases" : [
       {
         "description": "queen with a valid position",
+        "property": "create",
         "queen": {
           "position": "(2,2)"
         },
@@ -20,6 +24,7 @@
       },
       {
         "description": "queen must have positive rank",
+        "property": "create",
         "queen": {
           "position": "(-2,2)"
         },
@@ -27,6 +32,7 @@
       },
       {
         "description": "queen must have rank on board",
+        "property": "create",
         "queen": {
           "position": "(8,4)"
         },
@@ -34,6 +40,7 @@
       },
       {
         "description": "queen must have positive file",
+        "property": "create",
         "queen": {
           "position": "(2,-2)"
         },
@@ -41,6 +48,7 @@
       },
       {
         "description": "queen must have file on board",
+        "property": "create",
         "queen": {
           "position": "(4,8)"
         },
@@ -48,11 +56,12 @@
       }
     ]
   },
-  "can_attack": {
+  {
     "description": "Test the ability of one queen to attack another",
     "cases": [
       {
         "description": "can not attack",
+        "property": "canAttack",
         "white_queen": {
           "position": "(2,4)"
         },
@@ -63,6 +72,7 @@
       },
       {
       "description": "can attack on same rank",
+        "property": "canAttack",
       "white_queen": {
         "position": "(2,4)"
       },
@@ -73,6 +83,7 @@
       },
       {
       "description": "can attack on same file",
+      "property": "canAttack",
       "white_queen": {
         "position": "(4,5)"
       },
@@ -83,6 +94,7 @@
       },
       {
       "description": "can attack on first diagonal",
+      "property": "canAttack",
       "white_queen": {
         "position": "(2,2)"
       },
@@ -93,6 +105,7 @@
       },
       {
       "description": "can attack on second diagonal",
+      "property": "canAttack",
       "white_queen": {
         "position": "(2,2)"
       },
@@ -103,6 +116,7 @@
       },
       {
       "description": "can attack on third diagonal",
+      "property": "canAttack",
       "white_queen": {
         "position": "(2,2)"
       },
@@ -113,6 +127,7 @@
       },
       {
       "description": "can attack on fourth diagonal",
+      "property": "canAttack",
       "white_queen": {
         "position": "(2,2)"
       },
@@ -123,4 +138,5 @@
       }
     ]
   }
+  ]
 }
