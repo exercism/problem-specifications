@@ -1,12 +1,16 @@
 {
-  "#": [
+  "exercise": "ocr-numbers",
+  "version": "1.0.0",
+  "comments": [
     "An expectation of  -1 indicates that a failure should be raised"
   ],
-  "convert": {
+  "cases": [
+  {
     "description": "Converts lines of OCR Numbers to a string of integers",
     "cases": [
       {
         "description": "Recognizes 0",
+        "property": "convert",
         "input": [
           " _ ",
           "| |",
@@ -17,6 +21,7 @@
       },
       {
         "description": "Recognizes 1",
+        "property": "convert",
         "input": [
           "   ",
           "  |",
@@ -27,6 +32,7 @@
       },
       {
         "description": "Unreadable but correctly sized inputs return ?",
+        "property": "convert",
         "input": [
           "   ",
           "  _",
@@ -37,6 +43,7 @@
       },
       {
         "description": "Input with a number of lines that is not a multiple of four raises an error",
+        "property": "convert",
         "input": [
           " _ ",
           "| |",
@@ -46,6 +53,7 @@
       },
       {
         "description": "Input with a number of columns that is not a multiple of three raises an error",
+        "property": "convert",
         "input": [
           "    ",
           "   |",
@@ -56,6 +64,7 @@
       },
       {
         "description": "Recognizes 110101100",
+        "property": "convert",
         "input": [
           "       _     _        _  _ ",
           "  |  || |  || |  |  || || |",
@@ -66,6 +75,7 @@
       },
       {
         "description": "Garbled numbers in a string are replaced with ?",
+        "property": "convert",
         "input": [
           "       _     _           _ ",
           "  |  || |  || |     || || |",
@@ -76,6 +86,7 @@
       },
       {
         "description": "Recognizes 2",
+        "property": "convert",
         "input": [
           " _ ",
           " _|",
@@ -86,6 +97,7 @@
       },
       {
       "description": "Recognizes 3",
+      "property": "convert",
       "input": [
         " _ ",
         " _|",
@@ -96,6 +108,7 @@
       },
       {
       "description": "Recognizes 4",
+      "property": "convert",
       "input": [
         "   ",
         "|_|",
@@ -106,6 +119,7 @@
       },
       {
       "description": "Recognizes 5",
+      "property": "convert",
       "input": [
         " _ ",
         "|_ ",
@@ -116,6 +130,7 @@
       },
       {
       "description": "Recognizes 6",
+      "property": "convert",
       "input": [
         " _ ",
         "|_ ",
@@ -126,6 +141,7 @@
       },
       {
       "description": "Recognizes 7",
+      "property": "convert",
       "input": [
         " _ ",
         "  |",
@@ -136,6 +152,7 @@
       },
       {
       "description": "Recognizes 8",
+      "property": "convert",
       "input": [
         " _ ",
         "|_|",
@@ -146,6 +163,7 @@
       },
       {
       "description": "Recognizes 9",
+      "property": "convert",
       "input": [
         " _ ",
         "|_|",
@@ -156,6 +174,7 @@
       },
       {
       "description": "Recognizes string of decimal numbers",
+      "property": "convert",
       "input": [
         "    _  _     _  _  _  _  _  _ ",
         "  | _| _||_||_ |_   ||_||_|| |",
@@ -166,6 +185,7 @@
       },
       {
       "description": "Numbers separated by empty lines are recognized. Lines are joined by commas.",
+      "property": "convert",
       "input": [
         "    _  _ ",
         "  | _| _|",
@@ -184,4 +204,5 @@
       }
     ]
   }
+  ]
 }
