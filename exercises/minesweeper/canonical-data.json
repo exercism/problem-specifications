@@ -9,13 +9,13 @@
     {
       "description": "no rows",
       "property": "annotate",
-      "input" : [],
+      "input": [],
       "expected": []
     },
     {
       "description": "no columns",
       "property": "annotate",
-      "input" : [""],
+      "input": [""],
       "expected": [""]
     },
     {
