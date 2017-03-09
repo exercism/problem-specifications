@@ -1,56 +1,56 @@
 {
-    "exercise": "pascals-triangle",
-    "version": "1.0.0",
-    "comments": [
-      "Expectations are represented here as an array of arrays.",
-      "How you represent this idiomatically in your language is up to you.",
-      "An expectation of -1 indicates some sort of failure should occur"
-    ],
-    "cases": [
+  "exercise": "pascals-triangle",
+  "version": "1.0.0",
+  "comments": [
+    "Expectations are represented here as an array of arrays.",
+    "How you represent this idiomatically in your language is up to you.",
+    "An expectation of -1 indicates some sort of failure should occur"
+  ],
+  "cases": [
     {
       "description": "Given a count, return a collection of that many rows of pascal's triangle",
       "cases": [
         {
-            "description": "zero rows",
-            "property": "rows",
-            "count": 0,
-            "expected": []
+          "description": "zero rows",
+          "property": "rows",
+          "count": 0,
+          "expected": []
         },
         {
-            "description": "single row",
-            "property": "rows",
-            "count": 1,
-            "expected": [[1]]
+          "description": "single row",
+          "property": "rows",
+          "count": 1,
+          "expected": [[1]]
         },
         {
-            "description": "two rows",
-            "property": "rows",
-            "count": 2,
-            "expected": [[1], [1, 1]]
+          "description": "two rows",
+          "property": "rows",
+          "count": 2,
+          "expected": [[1], [1, 1]]
         },
         {
-            "description": "three rows",
-            "property": "rows",
-            "count": 3,
-            "expected": [[1], [1, 1], [1, 2, 1]]
+          "description": "three rows",
+          "property": "rows",
+          "count": 3,
+          "expected": [[1], [1, 1], [1, 2, 1]]
         },
         {
-            "description": "four rows",
-            "property": "rows",
-            "count": 4,
-            "expected": [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1]]
+          "description": "four rows",
+          "property": "rows",
+          "count": 4,
+          "expected": [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1]]
         },
         {
-            "description": "negative rows",
-            "property": "rows",
-            "count": -1,
-            "expected": -1
+          "description": "negative rows",
+          "property": "rows",
+          "count": -1,
+          "expected": -1
         },
         {
-            "description": "null/no rows",
-            "property": "rows",
-            "count": null,
-            "expected": -1
+          "description": "null/no rows",
+          "property": "rows",
+          "count": null,
+          "expected": -1
         }
       ]
     }
