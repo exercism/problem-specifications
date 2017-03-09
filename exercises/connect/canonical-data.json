@@ -57,11 +57,11 @@
       "description": "nobody wins crossing adjacent angles",
       "property": "winner",
       "board": [
-         "X . . .",
-         " . X O .",
-         "  O . X O",
-         "   . O . X",
-         "    . . O ."
+        "X . . .",
+        " . X O .",
+        "  O . X O",
+        "   . O . X",
+        "    . . O ."
       ],
       "expected": ""
     },
@@ -98,7 +98,7 @@
         "  . X . X .",
         "   . X X . .",
         "    O O O O O"
-      ], 
+      ],
       "expected": "X"
     },
     {
