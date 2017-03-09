@@ -1,139 +1,158 @@
 {
-   "#": [
+   "exercise": "clock",
+   "version": "1.0.0",
+   "comments": [
       "Most languages require constructing a clock with initial values,",
       "adding a positive or negative number of minutes, and testing equality",
       "in some language-native way.  Some languages require separate add and",
       "subtract functions.  Negative and out of range values are generally",
       "expected to wrap around rather than represent errors."
    ],
-   "create": {
-      "description": [
-         "Test creating a new clock with an initial time."
-      ],
+   "cases": [
+   {
+      "description": "Test creating a new clock with an initial time.",
       "cases": [
          {
             "description": "on the hour",
+            "property": "create",
             "hour": 8,
             "minute": 0,
             "expected": "08:00"
          },
          {
             "description": "past the hour",
+            "property": "create",
             "hour": 11,
             "minute": 9,
             "expected": "11:09"
          },
          {
             "description": "midnight is zero hours",
+            "property": "create",
             "hour": 24,
             "minute": 0,
             "expected": "00:00"
          },
          {
             "description": "hour rolls over",
+            "property": "create",
             "hour": 25,
             "minute": 0,
             "expected": "01:00"
          },
          {
             "description": "hour rolls over continuously",
+            "property": "create",
             "hour": 100,
             "minute": 0,
             "expected": "04:00"
          },
          {
             "description": "sixty minutes is next hour",
+            "property": "create",
             "hour": 1,
             "minute": 60,
             "expected": "02:00"
          },
          {
             "description": "minutes roll over",
+            "property": "create",
             "hour": 0,
             "minute": 160,
             "expected": "02:40"
          },
          {
             "description": "minutes roll over continuously",
+            "property": "create",
             "hour": 0,
             "minute": 1723,
             "expected": "04:43"
          },
          {
             "description": "hour and minutes roll over",
+            "property": "create",
             "hour": 25,
             "minute": 160,
             "expected": "03:40"
          },
          {
             "description": "hour and minutes roll over continuously",
+            "property": "create",
             "hour": 201,
             "minute": 3001,
             "expected": "11:01"
          },
          {
             "description": "hour and minutes roll over to exactly midnight",
+            "property": "create",
             "hour": 72,
             "minute": 8640,
             "expected": "00:00"
          },
          {
             "description": "negative hour",
+            "property": "create",
             "hour": -1,
             "minute": 15,
             "expected": "23:15"
          },
          {
             "description": "negative hour rolls over",
+            "property": "create",
             "hour": -25,
             "minute": 0,
             "expected": "23:00"
          },
          {
             "description": "negative hour rolls over continuously",
+            "property": "create",
             "hour": -91,
             "minute": 0,
             "expected": "05:00"
          },
          {
             "description": "negative minutes",
+            "property": "create",
             "hour": 1,
             "minute": -40,
             "expected": "00:20"
          },
          {
             "description": "negative minutes roll over",
+            "property": "create",
             "hour": 1,
             "minute": -160,
             "expected": "22:20"
          },
          {
             "description": "negative minutes roll over continuously",
+            "property": "create",
             "hour": 1,
             "minute": -4820,
             "expected": "16:40"
          },
          {
             "description": "negative hour and minutes both roll over",
+            "property": "create",
             "hour": -25,
             "minute": -160,
             "expected": "20:20"
          },
          {
             "description": "negative hour and minutes both roll over continuously",
+            "property": "create",
             "hour": -121,
             "minute": -5810,
             "expected": "22:10"
          }
       ]
    },
-   "add": {
-      "description": [
-         "Test adding and subtracting minutes."
-      ],
+   {
+      "description": "Test adding and subtracting minutes.",
       "cases": [
          {
             "description": "add minutes",
+            "property": "add",
             "hour": 10,
             "minute": 0,
             "add": 3,
@@ -141,6 +160,7 @@
          },
          {
             "description": "add no minutes",
+            "property": "add",
             "hour": 6,
             "minute": 41,
             "add": 0,
@@ -148,6 +168,7 @@
          },
          {
             "description": "add to next hour",
+            "property": "add",
             "hour": 0,
             "minute": 45,
             "add": 40,
@@ -155,6 +176,7 @@
          },
          {
             "description": "add more than one hour",
+            "property": "add",
             "hour": 10,
             "minute": 0,
             "add": 61,
@@ -162,6 +184,7 @@
          },
          {
             "description": "add more than two hours with carry",
+            "property": "add",
             "hour": 0,
             "minute": 45,
             "add": 160,
@@ -169,6 +192,7 @@
          },
          {
             "description": "add across midnight",
+            "property": "add",
             "hour": 23,
             "minute": 59,
             "add": 2,
@@ -176,6 +200,7 @@
          },
          {
             "description": "add more than one day (1500 min = 25 hrs)",
+            "property": "add",
             "hour": 5,
             "minute": 32,
             "add": 1500,
@@ -183,6 +208,7 @@
          },
          {
             "description": "add more than two days",
+            "property": "add",
             "hour": 1,
             "minute": 1,
             "add": 3500,
@@ -190,6 +216,7 @@
          },
          {
             "description": "subtract minutes",
+            "property": "add",
             "hour": 10,
             "minute": 3,
             "add": -3,
@@ -197,6 +224,7 @@
          },
          {
             "description": "subtract to previous hour",
+            "property": "add",
             "hour": 10,
             "minute": 3,
             "add": -30,
@@ -204,6 +232,7 @@
          },
          {
             "description": "subtract more than an hour",
+            "property": "add",
             "hour": 10,
             "minute": 3,
             "add": -70,
@@ -211,6 +240,7 @@
          },
          {
             "description": "subtract across midnight",
+            "property": "add",
             "hour": 0,
             "minute": 3,
             "add": -4,
@@ -218,6 +248,7 @@
          },
          {
             "description": "subtract more than two hours",
+            "property": "add",
             "hour": 0,
             "minute": 0,
             "add": -160,
@@ -225,6 +256,7 @@
          },
          {
             "description": "subtract more than two hours with borrow",
+            "property": "add",
             "hour": 6,
             "minute": 15,
             "add": -160,
@@ -232,6 +264,7 @@
          },
          {
             "description": "subtract more than one day (1500 min = 25 hrs)",
+            "property": "add",
             "hour": 5,
             "minute": 32,
             "add": -1500,
@@ -239,6 +272,7 @@
          },
          {
             "description": "subtract more than two days",
+            "property": "add",
             "hour": 2,
             "minute": 20,
             "add": -3000,
@@ -246,13 +280,12 @@
          }
       ]
    },
-   "equal": {
-      "description": [
-         "Construct two separate clocks, set times, test if they are equal."
-      ],
+   {
+      "description": "Construct two separate clocks, set times, test if they are equal.",
       "cases": [
          {
             "description": "clocks with same time",
+            "property": "equal",
             "clock1": {
                "hour": 15,
                "minute": 37
@@ -265,6 +298,7 @@
          },
          {
             "description": "clocks a minute apart",
+            "property": "equal",
             "clock1": {
                "hour": 15,
                "minute": 36
@@ -277,6 +311,7 @@
          },
          {
             "description": "clocks an hour apart",
+            "property": "equal",
             "clock1": {
                "hour": 14,
                "minute": 37
@@ -289,6 +324,7 @@
          },
          {
             "description": "clocks with hour overflow",
+            "property": "equal",
             "clock1": {
                "hour": 10,
                "minute": 37
@@ -301,6 +337,7 @@
          },
          {
             "description": "clocks with hour overflow by several days",
+            "property": "equal",
             "clock1": {
                "hour": 3,
                "minute": 11
@@ -313,6 +350,7 @@
          },
          {
             "description": "clocks with negative hour",
+            "property": "equal",
             "clock1": {
                "hour": 22,
                "minute": 40
@@ -325,6 +363,7 @@
          },
          {
             "description": "clocks with negative hour that wraps",
+            "property": "equal",
             "clock1": {
                "hour": 17,
                "minute": 3
@@ -337,6 +376,7 @@
          },
          {
             "description": "clocks with negative hour that wraps multiple times",
+            "property": "equal",
             "clock1": {
                "hour": 13,
                "minute": 49
@@ -349,6 +389,7 @@
          },
          {
             "description": "clocks with minute overflow",
+            "property": "equal",
             "clock1": {
                "hour": 0,
                "minute": 1
@@ -361,6 +402,7 @@
          },
          {
             "description": "clocks with minute overflow by several days",
+            "property": "equal",
             "clock1": {
                "hour": 2,
                "minute": 2
@@ -373,6 +415,7 @@
          },
          {
             "description": "clocks with negative minute",
+            "property": "equal",
             "clock1": {
                "hour": 2,
                "minute": 40
@@ -385,6 +428,7 @@
          },
          {
             "description": "clocks with negative minute that wraps",
+            "property": "equal",
             "clock1": {
                "hour": 4,
                "minute": 10
@@ -397,6 +441,7 @@
          },
          {
             "description": "clocks with negative minute that wraps multiple times",
+            "property": "equal",
             "clock1": {
                "hour": 6,
                "minute": 15
@@ -409,6 +454,7 @@
          },
          {
             "description": "clocks with negative hours and minutes",
+            "property": "equal",
             "clock1": {
                "hour": 7,
                "minute": 32
@@ -421,6 +467,7 @@
          },
          {
             "description": "clocks with negative hours and minutes that wrap",
+            "property": "equal",
             "clock1": {
                "hour": 18,
                "minute": 7
@@ -433,4 +480,5 @@
          }
       ]
    }
+   ]
 }
