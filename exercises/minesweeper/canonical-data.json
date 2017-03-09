@@ -1,21 +1,28 @@
 {
-  "#": [
-    "The expected outputs are represented as arrays of strings to improve readability in this JSON file.",
-    "Your track may choose whether to present the input as a single string (concatenating all the lines) or as the list."
+  "exercise": "minesweeper",
+  "version": "1.0.0",
+  "comments": [
+    " The expected outputs are represented as arrays of strings to   ",
+    " improve readability in this JSON file.                         ",
+    " Your track may choose whether to present the input as a single ",
+    " string (concatenating all the lines) or as the list.           "
   ],
   "cases": [
     {
       "description": "no rows",
-      "input" : [],
+      "property": "annotate",
+      "input": [],
       "expected": []
     },
     {
       "description": "no columns",
-      "input" : [""],
+      "property": "annotate",
+      "input": [""],
       "expected": [""]
     },
     {
       "description": "no mines",
+      "property": "annotate",
       "input": [
         "   ",
         "   ",
@@ -29,6 +36,7 @@
     },
     {
       "description": "board with only mines",
+      "property": "annotate",
       "input": [
         "***",
         "***",
@@ -42,6 +50,7 @@
     },
     {
       "description": "mine surrounded by spaces",
+      "property": "annotate",
       "input": [
         "   ",
         " * ",
@@ -55,6 +64,7 @@
     },
     {
       "description": "space surrounded by mines",
+      "property": "annotate",
       "input": [
         "***",
         "* *",
@@ -68,16 +78,19 @@
     },
     {
       "description": "horizontal line",
+      "property": "annotate",
       "input": [" * * "],
       "expected": ["1*2*1"]
     },
     {
       "description": "horizontal line, mines at edges",
+      "property": "annotate",
       "input": ["*   *"],
       "expected": ["*1 1*"]
     },
     {
       "description": "vertical line",
+      "property": "annotate",
       "input": [
         " ",
         "*",
@@ -95,6 +108,7 @@
     },
     {
       "description": "vertical line, mines at edges",
+      "property": "annotate",
       "input": [
         "*",
         " ",
@@ -112,6 +126,7 @@
     },
     {
       "description": "cross",
+      "property": "annotate",
       "input": [
         "  *  ",
         "  *  ",
@@ -129,6 +144,7 @@
     },
     {
       "description": "large board",
+      "property": "annotate",
       "input": [
         " *  * ",
         "  *   ",
