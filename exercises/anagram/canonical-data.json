@@ -30,7 +30,7 @@
       "expected": []
     },
     {
-      "description": "detects multiple anagrams",
+      "description": "detects two anagrams",
       "property": "anagrams",
       "subject": "master",
       "candidates": ["stream", "pigeon", "maters"],
@@ -51,7 +51,7 @@
       "expected": ["inlets"]
     },
     {
-      "description": "detects multiple anagrams",
+      "description": "detects three anagrams",
       "property": "anagrams",
       "subject": "allergy",
       "candidates": [ "gallery",
