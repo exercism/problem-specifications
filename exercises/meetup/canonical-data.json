@@ -1,7 +1,10 @@
 {
+   "exercise": "meetup",
+   "version": "1.0.0",
    "cases": [
       {
          "description": "monteenth of May 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 5,
          "week": "teenth",
@@ -10,6 +13,7 @@
       },
       {
          "description": "monteenth of August 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 8,
          "week": "teenth",
@@ -18,6 +22,7 @@
       },
       {
          "description": "monteenth of September 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 9,
          "week": "teenth",
@@ -26,6 +31,7 @@
       },
       {
          "description": "tuesteenth of March 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 3,
          "week": "teenth",
@@ -34,6 +40,7 @@
       },
       {
          "description": "tuesteenth of April 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 4,
          "week": "teenth",
@@ -42,6 +49,7 @@
       },
       {
          "description": "tuesteenth of August 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 8,
          "week": "teenth",
@@ -50,6 +58,7 @@
       },
       {
          "description": "wednesteenth of January 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 1,
          "week": "teenth",
@@ -58,6 +67,7 @@
       },
       {
          "description": "wednesteenth of February 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 2,
          "week": "teenth",
@@ -66,6 +76,7 @@
       },
       {
          "description": "wednesteenth of June 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 6,
          "week": "teenth",
@@ -74,6 +85,7 @@
       },
       {
          "description": "thursteenth of May 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 5,
          "week": "teenth",
@@ -82,6 +94,7 @@
       },
       {
          "description": "thursteenth of June 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 6,
          "week": "teenth",
@@ -90,6 +103,7 @@
       },
       {
          "description": "thursteenth of September 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 9,
          "week": "teenth",
@@ -98,6 +112,7 @@
       },
       {
          "description": "friteenth of April 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 4,
          "week": "teenth",
@@ -106,6 +121,7 @@
       },
       {
          "description": "friteenth of August 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 8,
          "week": "teenth",
@@ -114,6 +130,7 @@
       },
       {
          "description": "friteenth of September 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 9,
          "week": "teenth",
@@ -122,6 +139,7 @@
       },
       {
          "description": "saturteenth of February 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 2,
          "week": "teenth",
@@ -130,6 +148,7 @@
       },
       {
          "description": "saturteenth of April 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 4,
          "week": "teenth",
@@ -138,6 +157,7 @@
       },
       {
          "description": "saturteenth of October 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 10,
          "week": "teenth",
@@ -146,6 +166,7 @@
       },
       {
          "description": "sunteenth of May 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 5,
          "week": "teenth",
@@ -154,6 +175,7 @@
       },
       {
          "description": "sunteenth of June 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 6,
          "week": "teenth",
@@ -162,6 +184,7 @@
       },
       {
          "description": "sunteenth of October 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 10,
          "week": "teenth",
@@ -170,6 +193,7 @@
       },
       {
          "description": "first Monday of March 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 3,
          "week": "first",
@@ -178,6 +202,7 @@
       },
       {
          "description": "first Monday of April 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 4,
          "week": "first",
@@ -186,6 +211,7 @@
       },
       {
          "description": "first Tuesday of May 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 5,
          "week": "first",
@@ -194,6 +220,7 @@
       },
       {
          "description": "first Tuesday of June 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 6,
          "week": "first",
@@ -202,6 +229,7 @@
       },
       {
          "description": "first Wednesday of July 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 7,
          "week": "first",
@@ -210,6 +238,7 @@
       },
       {
          "description": "first Wednesday of August 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 8,
          "week": "first",
@@ -218,6 +247,7 @@
       },
       {
          "description": "first Thursday of September 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 9,
          "week": "first",
@@ -226,6 +256,7 @@
       },
       {
          "description": "first Thursday of October 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 10,
          "week": "first",
@@ -234,6 +265,7 @@
       },
       {
          "description": "first Friday of November 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 11,
          "week": "first",
@@ -242,6 +274,7 @@
       },
       {
          "description": "first Friday of December 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 12,
          "week": "first",
@@ -250,6 +283,7 @@
       },
       {
          "description": "first Saturday of January 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 1,
          "week": "first",
@@ -258,6 +292,7 @@
       },
       {
          "description": "first Saturday of February 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 2,
          "week": "first",
@@ -266,6 +301,7 @@
       },
       {
          "description": "first Sunday of March 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 3,
          "week": "first",
@@ -274,6 +310,7 @@
       },
       {
          "description": "first Sunday of April 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 4,
          "week": "first",
@@ -282,6 +319,7 @@
       },
       {
          "description": "second Monday of March 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 3,
          "week": "second",
@@ -290,6 +328,7 @@
       },
       {
          "description": "second Monday of April 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 4,
          "week": "second",
@@ -298,6 +337,7 @@
       },
       {
          "description": "second Tuesday of May 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 5,
          "week": "second",
@@ -306,6 +346,7 @@
       },
       {
          "description": "second Tuesday of June 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 6,
          "week": "second",
@@ -314,6 +355,7 @@
       },
       {
          "description": "second Wednesday of July 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 7,
          "week": "second",
@@ -322,6 +364,7 @@
       },
       {
          "description": "second Wednesday of August 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 8,
          "week": "second",
@@ -330,6 +373,7 @@
       },
       {
          "description": "second Thursday of September 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 9,
          "week": "second",
@@ -338,6 +382,7 @@
       },
       {
          "description": "second Thursday of October 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 10,
          "week": "second",
@@ -346,6 +391,7 @@
       },
       {
          "description": "second Friday of November 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 11,
          "week": "second",
@@ -354,6 +400,7 @@
       },
       {
          "description": "second Friday of December 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 12,
          "week": "second",
@@ -362,6 +409,7 @@
       },
       {
          "description": "second Saturday of January 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 1,
          "week": "second",
@@ -370,6 +418,7 @@
       },
       {
          "description": "second Saturday of February 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 2,
          "week": "second",
@@ -378,6 +427,7 @@
       },
       {
          "description": "second Sunday of March 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 3,
          "week": "second",
@@ -386,6 +436,7 @@
       },
       {
          "description": "second Sunday of April 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 4,
          "week": "second",
@@ -394,6 +445,7 @@
       },
       {
          "description": "third Monday of March 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 3,
          "week": "third",
@@ -402,6 +454,7 @@
       },
       {
          "description": "third Monday of April 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 4,
          "week": "third",
@@ -410,6 +463,7 @@
       },
       {
          "description": "third Tuesday of May 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 5,
          "week": "third",
@@ -418,6 +472,7 @@
       },
       {
          "description": "third Tuesday of June 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 6,
          "week": "third",
@@ -426,6 +481,7 @@
       },
       {
          "description": "third Wednesday of July 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 7,
          "week": "third",
@@ -434,6 +490,7 @@
       },
       {
          "description": "third Wednesday of August 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 8,
          "week": "third",
@@ -442,6 +499,7 @@
       },
       {
          "description": "third Thursday of September 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 9,
          "week": "third",
@@ -450,6 +508,7 @@
       },
       {
          "description": "third Thursday of October 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 10,
          "week": "third",
@@ -458,6 +517,7 @@
       },
       {
          "description": "third Friday of November 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 11,
          "week": "third",
@@ -466,6 +526,7 @@
       },
       {
          "description": "third Friday of December 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 12,
          "week": "third",
@@ -474,6 +535,7 @@
       },
       {
          "description": "third Saturday of January 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 1,
          "week": "third",
@@ -482,6 +544,7 @@
       },
       {
          "description": "third Saturday of February 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 2,
          "week": "third",
@@ -490,6 +553,7 @@
       },
       {
          "description": "third Sunday of March 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 3,
          "week": "third",
@@ -498,6 +562,7 @@
       },
       {
          "description": "third Sunday of April 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 4,
          "week": "third",
@@ -506,6 +571,7 @@
       },
       {
          "description": "fourth Monday of March 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 3,
          "week": "fourth",
@@ -514,6 +580,7 @@
       },
       {
          "description": "fourth Monday of April 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 4,
          "week": "fourth",
@@ -522,6 +589,7 @@
       },
       {
          "description": "fourth Tuesday of May 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 5,
          "week": "fourth",
@@ -530,6 +598,7 @@
       },
       {
          "description": "fourth Tuesday of June 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 6,
          "week": "fourth",
@@ -538,6 +607,7 @@
       },
       {
          "description": "fourth Wednesday of July 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 7,
          "week": "fourth",
@@ -546,6 +616,7 @@
       },
       {
          "description": "fourth Wednesday of August 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 8,
          "week": "fourth",
@@ -554,6 +625,7 @@
       },
       {
          "description": "fourth Thursday of September 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 9,
          "week": "fourth",
@@ -562,6 +634,7 @@
       },
       {
          "description": "fourth Thursday of October 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 10,
          "week": "fourth",
@@ -570,6 +643,7 @@
       },
       {
          "description": "fourth Friday of November 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 11,
          "week": "fourth",
@@ -578,6 +652,7 @@
       },
       {
          "description": "fourth Friday of December 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 12,
          "week": "fourth",
@@ -586,6 +661,7 @@
       },
       {
          "description": "fourth Saturday of January 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 1,
          "week": "fourth",
@@ -594,6 +670,7 @@
       },
       {
          "description": "fourth Saturday of February 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 2,
          "week": "fourth",
@@ -602,6 +679,7 @@
       },
       {
          "description": "fourth Sunday of March 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 3,
          "week": "fourth",
@@ -610,6 +688,7 @@
       },
       {
          "description": "fourth Sunday of April 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 4,
          "week": "fourth",
@@ -618,6 +697,7 @@
       },
       {
          "description": "last Monday of March 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 3,
          "week": "last",
@@ -626,6 +706,7 @@
       },
       {
          "description": "last Monday of April 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 4,
          "week": "last",
@@ -634,6 +715,7 @@
       },
       {
          "description": "last Tuesday of May 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 5,
          "week": "last",
@@ -642,6 +724,7 @@
       },
       {
          "description": "last Tuesday of June 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 6,
          "week": "last",
@@ -650,6 +733,7 @@
       },
       {
          "description": "last Wednesday of July 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 7,
          "week": "last",
@@ -658,6 +742,7 @@
       },
       {
          "description": "last Wednesday of August 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 8,
          "week": "last",
@@ -666,6 +751,7 @@
       },
       {
          "description": "last Thursday of September 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 9,
          "week": "last",
@@ -674,6 +760,7 @@
       },
       {
          "description": "last Thursday of October 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 10,
          "week": "last",
@@ -682,6 +769,7 @@
       },
       {
          "description": "last Friday of November 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 11,
          "week": "last",
@@ -690,6 +778,7 @@
       },
       {
          "description": "last Friday of December 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 12,
          "week": "last",
@@ -698,6 +787,7 @@
       },
       {
          "description": "last Saturday of January 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 1,
          "week": "last",
@@ -706,6 +796,7 @@
       },
       {
          "description": "last Saturday of February 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 2,
          "week": "last",
@@ -714,6 +805,7 @@
       },
       {
          "description": "last Sunday of March 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 3,
          "week": "last",
@@ -722,6 +814,7 @@
       },
       {
          "description": "last Sunday of April 2013",
+         "property": "meetup",
          "year": 2013,
          "month": 4,
          "week": "last",
@@ -730,6 +823,7 @@
       },
       {
          "description": "last Wednesday of February 2012",
+         "property": "meetup",
          "year": 2012,
          "month": 2,
          "week": "last",
@@ -738,6 +832,7 @@
       },
       {
          "description": "last Wednesday of December 2014",
+         "property": "meetup",
          "year": 2014,
          "month": 12,
          "week": "last",
@@ -746,6 +841,7 @@
       },
       {
          "description": "last Sunday of February 2015",
+         "property": "meetup",
          "year": 2015,
          "month": 2,
          "week": "last",
@@ -754,6 +850,7 @@
       },
       {
          "description": "first Friday of December 2012",
+         "property": "meetup",
          "year": 2012,
          "month": 12,
          "week": "first",
