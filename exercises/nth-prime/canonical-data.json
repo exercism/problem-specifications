@@ -8,34 +8,34 @@
   ],
   "cases": [
     {
-       "description": "first prime",
-       "property": "prime",
-       "input": 1,
-       "expected": 2
+      "description": "first prime",
+      "property": "prime",
+      "input": 1,
+      "expected": 2
     },
     {
-       "description": "second prime",
-       "property": "prime",
-       "input": 2,
-       "expected": 3
+      "description": "second prime",
+      "property": "prime",
+      "input": 2,
+      "expected": 3
     },
     {
-       "description": "sixth prime",
-       "property": "prime",
-       "input": 6,
-       "expected": 13
+      "description": "sixth prime",
+      "property": "prime",
+      "input": 6,
+      "expected": 13
     },
     {
-       "description": "big prime",
-       "property": "prime",
-       "input": 10001,
-       "expected": 104743
+      "description": "big prime",
+      "property": "prime",
+      "input": 10001,
+      "expected": 104743
     },
     {
-       "description": "there is no zeroth prime",
-       "property": "prime",
-       "input": 0,
-       "expected": false
+      "description": "there is no zeroth prime",
+      "property": "prime",
+      "input": 0,
+      "expected": false
     }
   ]
 }
