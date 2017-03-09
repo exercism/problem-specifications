@@ -2,51 +2,51 @@
   "exercise": "nucleotide-count",
   "version": "1.0.0",
   "cases": [
-  {
-    "description": "count all nucleotides in a strand",
-    "cases": [
-      {
-        "description": "empty strand",
-        "property": "nucleotideCounts",
-        "strand": "",
-        "expected": {
-          "A": 0,
-          "C": 0,
-          "G": 0,
-          "T": 0
+    {
+      "description": "count all nucleotides in a strand",
+      "cases": [
+        {
+          "description": "empty strand",
+          "property": "nucleotideCounts",
+          "strand": "",
+          "expected": {
+            "A": 0,
+            "C": 0,
+            "G": 0,
+            "T": 0
+          }
+        },
+        {
+          "description": "strand with repeated nucleotide",
+          "property": "nucleotideCounts",
+          "strand": "GGGGGGG",
+          "expected": {
+            "A": 0,
+            "C": 0,
+            "G": 7,
+            "T": 0
+          }
+        },
+        {
+          "description": "strand with multiple nucleotides",
+          "property": "nucleotideCounts",
+          "strand": "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC",
+          "expected": {
+            "A": 20,
+            "C": 12,
+            "G": 17,
+            "T": 21
+          }
+        },
+        {
+          "description": "strand with invalid nucleotides",
+          "property": "nucleotideCounts",
+          "strand": "AGXXACT",
+          "expected": {
+            "error": "Invalid nucleotide in strand"
+          }
         }
-      },
-      {
-        "description": "strand with repeated nucleotide",
-        "property": "nucleotideCounts",
-        "strand": "GGGGGGG",
-        "expected": {
-          "A": 0,
-          "C": 0,
-          "G": 7,
-          "T": 0
-        }
-      },
-      {
-        "description": "strand with multiple nucleotides",
-        "property": "nucleotideCounts",
-        "strand": "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC",
-        "expected": {
-          "A": 20,
-          "C": 12,
-          "G": 17,
-          "T": 21
-        }
-      },
-      {
-        "description": "strand with invalid nucleotides",
-        "property": "nucleotideCounts",
-        "strand": "AGXXACT",
-        "expected": {
-          "error": "Invalid nucleotide in strand"
-        }
-      }
-    ]
-  }
+      ]
+    }
   ]
 }
