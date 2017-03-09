@@ -20,7 +20,7 @@
             {
                 "description": "rotate a by 0, same output as input",
                 "text": "a",
-                "shift_key": 26,
+                "shift_key": 0,
                 "expected": "a"
             },
             {
