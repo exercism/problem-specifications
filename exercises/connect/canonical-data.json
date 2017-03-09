@@ -1,7 +1,10 @@
 {
+  "exercise": "connect",
+  "version": "1.0.0",
   "cases": [
     {
       "description": "an empty board has no winner",
+      "property": "winner",
       "board": [
         ". . . . .",
         " . . . . .",
@@ -13,6 +16,7 @@
     },
     {
       "description": "X can win on a 1x1 board",
+      "property": "winner",
       "board": [
         "X"
       ],
@@ -20,6 +24,7 @@
     },
     {
       "description": "O can win on a 1x1 board",
+      "property": "winner",
       "board": [
         "O"
       ],
@@ -27,6 +32,7 @@
     },
     {
       "description": "only edges does not make a winner",
+      "property": "winner",
       "board": [
         "O O O X",
         " X . . X",
@@ -37,6 +43,7 @@
     },
     {
       "description": "illegal diagonal does not make a winner",
+      "property": "winner",
       "board": [
         "X O . .",
         " O X X X",
@@ -48,6 +55,7 @@
     },
     {
       "description": "nobody wins crossing adjacent angles",
+      "property": "winner",
       "board": [
          "X . . .",
          " . X O .",
@@ -59,6 +67,7 @@
     },
     {
       "description": "X wins crossing from left to right",
+      "property": "winner",
       "board": [
         ". O . .",
         " O X X X",
@@ -70,6 +79,7 @@
     },
     {
       "description": "O wins crossing from top to bottom",
+      "property": "winner",
       "board": [
         ". O . .",
         " O X X X",
@@ -81,6 +91,7 @@
     },
     {
       "description": "X wins using a convoluted path",
+      "property": "winner",
       "board": [
         ". X X . .",
         " X . X . X",
@@ -92,6 +103,7 @@
     },
     {
       "description": "X wins using a spiral path",
+      "property": "winner",
       "board": [
         "O X X X X X X X X",
         " O X O O O O O O O",
