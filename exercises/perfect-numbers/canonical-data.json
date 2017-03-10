@@ -1,6 +1,6 @@
 {
     "exercise": "perfect-numbers",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "cases": [
         {
             "description": "Perfect numbers",
@@ -87,7 +87,7 @@
             "description": "Invalid inputs",
             "cases": [
                 {
-                    "description": "Non-negative integer is rejected (not a natural number)",
+                    "description": "Zero is rejected (not a natural number)",
                     "property": "classify",
                     "input": 0,
                     "expected": {
