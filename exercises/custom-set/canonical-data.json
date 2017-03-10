@@ -1,6 +1,6 @@
 {
   "exercise": "custom-set",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "comments": [
     "These tests cover the core components of a set data structure: checking",
     "presence, adding, comparing and basic set operations. Other features",
@@ -209,7 +209,7 @@
       ]
     },
     {
-      "description": "Intersect returns a set of all shared elements",
+      "description": "Intersection returns a set of all shared elements",
       "cases": [
         {
           "description": "intersection of two empty sets is an empty set",
