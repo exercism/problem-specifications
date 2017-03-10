@@ -7,162 +7,162 @@
     "solutions have thought about performance concerns."
   ],
   "cases": [
-  {
-    "description": "append entries to a list and return the new list",
-    "cases": [
-      {
-        "description": "empty lists",
-        "property": "append",
-        "list1": [],
-        "list2": [],
-        "expected": []
-      },
-      {
-        "description": "empty list to list",
-        "property": "append",
-        "list1": [],
-        "list2": [1,2,3,4],
-        "expected": [1,2,3,4]
-      },
-      {
-        "description": "non-empty lists",
-        "property": "append",
-        "list1": [1,2],
-        "list2": [2,3,4,5],
-        "expected": [1,2,2,3,4,5]
-      }
-    ]
-  },
-  {
-    "description": "concat lists and lists of list into a new list",
-    "cases": [
-      {
-        "description": "empty list",
-        "property": "concat",
-        "lists": [],
-        "expected": []
-      },
-      {
-        "description": "list of lists",
-        "property": "concat",
-        "lists": [[1,2],[3],[],[4,5,6]],
-        "expected": [1,2,3,4,5,6]
-      }
-    ]
-  },
-  {
-    "description": "filter list returning only values that satisfy the filter function",
-    "cases": [
-      {
-        "description": "empty list",
-        "property": "filter",
-        "list": [],
-        "function": "value modulo 2 == 1",
-        "expected": []
-      },
-      {
-        "description": "non-empty list",
-        "property": "filter",
-        "list": [1,2,3,5],
-        "function": "value modulo 2 == 1",
-        "expected": [1,3,5]
-      }
-    ]
-  },
-  {
-    "description": "returns the length of a list",
-    "cases": [
-      {
-        "description": "empty list",
-        "property": "length",
-        "list": [],
-        "expected": 0
-      },
-      {
-        "description": "non-empty list",
-        "property": "length",
-        "list": [1,2,3,4],
-        "expected": 4
-      }
-    ]
-  },
-  {
-    "description": "return a list of elements whos values equal the list value transformed by the mapping function",
-    "cases": [
-      {
-        "description": "empty list",
-        "property": "map",
-        "list": [],
-        "function": "value + 1",
-        "expected": []
-      },
-      {
-        "description": "non-empty list",
-        "property": "map",
-        "list": [1,3,5,7],
-        "function": "value + 1",
-        "expected": [2,4,6,8]
-      }
-    ]
-  },
-  {
-    "description": "folds (reduces) the given list from the left with a function",
-    "cases": [
-      {
-        "description": "empty list",
-        "property": "foldl",
-        "list": [],
-        "initial": 2,
-        "function": "value / accumulator",
-        "expected": 2
-      },
-      {
-        "description": "division of integers",
-        "property": "foldl",
-        "list": [1,2,3,4],
-        "initial": 24,
-        "function": "value / accumulator",
-        "expected": 64
-      }
-    ]
-  },
-  {
-    "description": "folds (reduces) the given list from the right with a function",
-    "cases": [
-      {
-        "description": "empty list",
-        "property": "foldr",
-        "list": [],
-        "initial": 2,
-        "function": "value / accumulator",
-        "expected": 2
-      },
-      {
-        "description": "division of integers",
-        "property": "foldr",
-        "list": [1,2,3,4],
-        "initial": 24,
-        "function": "value / accumulator",
-        "expected": 9
-      }
-    ]
-  },
-  {
-    "description": "reverse the elements of the list",
-    "cases": [
-      {
-        "description": "empty list",
-        "property": "reverse",
-        "list": [],
-        "expected": []
-      },
-      {
-        "description": "non-empty list",
-        "property": "reverse",
-        "list": [1,3,5,7],
-        "expected": [7,5,3,1]
-      }
-    ]
-  }
+    {
+      "description": "append entries to a list and return the new list",
+      "cases": [
+        {
+          "description": "empty lists",
+          "property": "append",
+          "list1": [],
+          "list2": [],
+          "expected": []
+        },
+        {
+          "description": "empty list to list",
+          "property": "append",
+          "list1": [],
+          "list2": [1, 2, 3, 4],
+          "expected": [1, 2, 3, 4]
+        },
+        {
+          "description": "non-empty lists",
+          "property": "append",
+          "list1": [1, 2],
+          "list2": [2, 3, 4, 5],
+          "expected": [1, 2, 2, 3, 4, 5]
+        }
+      ]
+    },
+    {
+      "description": "concat lists and lists of list into a new list",
+      "cases": [
+        {
+          "description": "empty list",
+          "property": "concat",
+          "lists": [],
+          "expected": []
+        },
+        {
+          "description": "list of lists",
+          "property": "concat",
+          "lists": [[1, 2], [3], [], [4, 5, 6]],
+          "expected": [1, 2, 3, 4, 5, 6]
+        }
+      ]
+    },
+    {
+      "description": "filter list returning only values that satisfy the filter function",
+      "cases": [
+        {
+          "description": "empty list",
+          "property": "filter",
+          "list": [],
+          "function": "value modulo 2 == 1",
+          "expected": []
+        },
+        {
+          "description": "non-empty list",
+          "property": "filter",
+          "list": [1, 2, 3, 5],
+          "function": "value modulo 2 == 1",
+          "expected": [1, 3, 5]
+        }
+      ]
+    },
+    {
+      "description": "returns the length of a list",
+      "cases": [
+        {
+          "description": "empty list",
+          "property": "length",
+          "list": [],
+          "expected": 0
+        },
+        {
+          "description": "non-empty list",
+          "property": "length",
+          "list": [1, 2, 3, 4],
+          "expected": 4
+        }
+      ]
+    },
+    {
+      "description": "return a list of elements whos values equal the list value transformed by the mapping function",
+      "cases": [
+        {
+          "description": "empty list",
+          "property": "map",
+          "list": [],
+          "function": "value + 1",
+          "expected": []
+        },
+        {
+          "description": "non-empty list",
+          "property": "map",
+          "list": [1, 3, 5, 7],
+          "function": "value + 1",
+          "expected": [2, 4, 6, 8]
+        }
+      ]
+    },
+    {
+      "description": "folds (reduces) the given list from the left with a function",
+      "cases": [
+        {
+          "description": "empty list",
+          "property": "foldl",
+          "list": [],
+          "initial": 2,
+          "function": "value / accumulator",
+          "expected": 2
+        },
+        {
+          "description": "division of integers",
+          "property": "foldl",
+          "list": [1, 2, 3, 4],
+          "initial": 24,
+          "function": "value / accumulator",
+          "expected": 64
+        }
+      ]
+    },
+    {
+      "description": "folds (reduces) the given list from the right with a function",
+      "cases": [
+        {
+          "description": "empty list",
+          "property": "foldr",
+          "list": [],
+          "initial": 2,
+          "function": "value / accumulator",
+          "expected": 2
+        },
+        {
+          "description": "division of integers",
+          "property": "foldr",
+          "list": [1, 2, 3, 4],
+          "initial": 24,
+          "function": "value / accumulator",
+          "expected": 9
+        }
+      ]
+    },
+    {
+      "description": "reverse the elements of the list",
+      "cases": [
+        {
+          "description": "empty list",
+          "property": "reverse",
+          "list": [],
+          "expected": []
+        },
+        {
+          "description": "non-empty list",
+          "property": "reverse",
+          "list": [1, 3, 5, 7],
+          "expected": [7, 5, 3, 1]
+        }
+      ]
+    }
   ]
 }
