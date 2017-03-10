@@ -1,6 +1,6 @@
 {
   "exercise": "anagram",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "comments": [
     "The string argument cases possible matches are passed in as",
     "individual arguments rather than arrays. Languages can include",
@@ -30,7 +30,7 @@
       "expected": []
     },
     {
-      "description": "detects multiple anagrams",
+      "description": "detects two anagrams",
       "property": "anagrams",
       "subject": "master",
       "candidates": ["stream", "pigeon", "maters"],
@@ -51,7 +51,7 @@
       "expected": ["inlets"]
     },
     {
-      "description": "detects multiple anagrams",
+      "description": "detects three anagrams",
       "property": "anagrams",
       "subject": "allergy",
       "candidates": [ "gallery",
