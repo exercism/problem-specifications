@@ -17,42 +17,39 @@
   ],
   "cases": [
     {
-      "add":
-      {
-        "comments": "Add one gigasecond to the input.",
-        "cases": [
-          {
-            "description": "date only specification of time",
-            "property": "integer",
-            "input": "2011-04-25",
-            "expected": "2043-01-01T01:46:40"
-          },
-          {
-            "description": "second test for date only specification of time",
-            "property": "integer",
-            "input": "1977-06-13",
-            "expected": "2009-02-19T01:46:40"
-          },
-          {
-            "description": "third test for date only specification of time",
-            "property": "integer",
-            "input": "1959-07-19",
-            "expected": "1991-03-27T01:46:40"
-          },
-          {
-            "description": "full time specified",
-            "property": "integer",
-            "input": "2015-01-24T22:00:00",
-            "expected": "2046-10-02T23:46:40"
-          },
-          {
-            "description": "full time with day roll-over",
-            "property": "integer",
-            "input": "2015-01-24T23:59:59",
-            "expected": "2046-10-03T01:46:39"
-          }
-        ]
-      }
+      "description": "Add one gigasecond to the input.",
+      "cases": [
+        {
+          "description": "date only specification of time",
+          "property": "add",
+          "input": "2011-04-25",
+          "expected": "2043-01-01T01:46:40"
+        },
+        {
+          "description": "second test for date only specification of time",
+          "property": "add",
+          "input": "1977-06-13",
+          "expected": "2009-02-19T01:46:40"
+        },
+        {
+          "description": "third test for date only specification of time",
+          "property": "add",
+          "input": "1959-07-19",
+          "expected": "1991-03-27T01:46:40"
+        },
+        {
+          "description": "full time specified",
+          "property": "add",
+          "input": "2015-01-24T22:00:00",
+          "expected": "2046-10-02T23:46:40"
+        },
+        {
+          "description": "full time with day roll-over",
+          "property": "add",
+          "input": "2015-01-24T23:59:59",
+          "expected": "2046-10-03T01:46:39"
+        }
+      ]
     }
   ]
 }
