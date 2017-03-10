@@ -1,5 +1,7 @@
 {
-   "#": [
+   "exercise": "dominoes",
+   "version": "1.0.0",
+   "comments": [
       "Inputs are given as lists of two-element lists.",
       "Feel free to convert the input to a sensible type in the specific language",
       "For example, if the target language has 2-tuples, that is a good candidate.",
@@ -37,75 +39,87 @@
    "cases": [
       {
          "description": "empty input = empty output",
+         "property": "canChain",
          "input": [],
          "can_chain": true
       },
       {
          "description": "singleton input = singleton output",
+         "property": "canChain",
          "input": [[1, 1]],
          "can_chain": true
       },
       {
          "description": "singleton that can't be chained",
+         "property": "canChain",
          "input": [[1, 2]],
          "can_chain": false
       },
       {
          "description": "three elements",
+         "property": "canChain",
          "input": [[1, 2], [3, 1], [2, 3]],
          "can_chain": true
       },
       {
          "description": "can reverse dominoes",
+         "property": "canChain",
          "input": [[1, 2], [1, 3], [2, 3]],
          "can_chain": true
       },
       {
          "description": "can't be chained",
+         "property": "canChain",
          "input": [[1, 2], [4, 1], [2, 3]],
          "can_chain": false
       },
       {
          "description": "disconnected - simple",
-         "#": [
+         "comments": [
            "This meets the requirement of being possibly-Euclidean.",
            "All vertices have even degree.",
            "Nevertheless, there is no chain here, as there's no way to get from 1 to 2.",
            "This test (and the two following) prevent solutions from using the even-degree test as the sole criterion,",
            "as that is not a sufficient condition."
          ],
+         "property": "canChain",
          "input": [[1, 1], [2, 2]],
          "can_chain": false
       },
       {
          "description": "disconnected - double loop",
+         "property": "canChain",
          "input": [[1, 2], [2, 1], [3, 4], [4, 3]],
          "can_chain": false
       },
       {
          "description": "disconnected - single isolated",
+         "property": "canChain",
          "input": [[1, 2], [2, 3], [3, 1], [4, 4]],
          "can_chain": false
       },
       {
          "description": "need backtrack",
-         "#": [
+         "comments": [
            "Some solutions may make a chain out of (1, 2), (2, 3), (3, 1)",
            "then decide that since there are no more dominoes containing a 1,",
            "there is no chain possible.",
            "There is indeed a chain here, so this test checks for this line of reasoning.",
            "You need to place the (2, 4) after the (1, 2) rather than the (2, 3)."
          ],
+         "property": "canChain",
          "input": [[1, 2], [2, 3], [3, 1], [2, 4], [2, 4]],
          "can_chain": true
       },
       {
          "description": "separate loops",
+         "property": "canChain",
          "input": [[1, 2], [2, 3], [3, 1], [1, 1], [2, 2], [3, 3]],
          "can_chain": true
       },
       {
          "description": "ten elements",
+         "property": "canChain",
          "input": [[1, 2], [5, 3], [3, 1], [1, 2], [2, 4], [1, 6], [2, 3], [3, 4], [5, 6]],
          "can_chain": true
       }
