@@ -1,18 +1,24 @@
 {
-  "#": [
+  "exercise": "forth",
+  "version": "1.0.0",
+  "comments": [
     "The cases are split into multiple sections, all with the same structure.",
     "In all cases, the `expected` key is the resulting stack",
     "after executing the Forth program contained in the `input` key."
   ],
-  "parsing and numbers": {
+  "cases": [
+  {
+    "description": "parsing and numbers",
     "cases": [
       {
         "description": "empty input results in empty stack",
+        "property": "evaluate",
         "input": [],
         "expected": []
       },
       {
         "description": "numbers just get pushed onto the stack",
+        "property": "evaluate",
         "input": [
           "1 2 3 4 5"
         ],
@@ -20,6 +26,7 @@
       },
       {
         "description": "all non-word characters are separators",
+        "property": "evaluate",
         "input": [
           "1\u00002\u00133\n4\r5 6\t7"
         ],
@@ -27,10 +34,12 @@
       }
     ]
   },
-  "addition": {
+  {
+    "description": "addition",
     "cases": [
       {
         "description": "can add two numbers",
+        "property": "evaluate",
         "input": [
           "1 2 +"
         ],
@@ -38,6 +47,7 @@
       },
       {
         "description": "errors if there is nothing on the stack",
+        "property": "evaluate",
         "input": [
           "+"
         ],
@@ -45,6 +55,7 @@
       },
       {
         "description": "errors if there is only one value on the stack",
+        "property": "evaluate",
         "input": [
           "1 +"
         ],
@@ -52,10 +63,12 @@
       }
     ]
   },
-  "subtraction": {
+  {
+    "description": "subtraction",
     "cases": [
       {
         "description": "can subtract two numbers",
+        "property": "evaluate",
         "input": [
           "3 4 -"
         ],
@@ -63,6 +76,7 @@
       },
       {
         "description": "errors if there is nothing on the stack",
+        "property": "evaluate",
         "input": [
           "-"
         ],
@@ -70,6 +84,7 @@
       },
       {
         "description": "errors if there is only one value on the stack",
+        "property": "evaluate",
         "input": [
           "1 -"
         ],
@@ -77,10 +92,12 @@
       }
     ]
   },
-  "multiplication": {
+  {
+    "description": "multiplication",
     "cases": [
       {
         "description": "can multiply two numbers",
+        "property": "evaluate",
         "input": [
           "2 4 *"
         ],
@@ -88,6 +105,7 @@
       },
       {
         "description": "errors if there is nothing on the stack",
+        "property": "evaluate",
         "input": [
           "*"
         ],
@@ -95,6 +113,7 @@
       },
       {
         "description": "errors if there is only one value on the stack",
+        "property": "evaluate",
         "input": [
           "1 *"
         ],
@@ -102,10 +121,12 @@
       }
     ]
   },
-  "division": {
+  {
+    "description": "division",
     "cases": [
       {
         "description": "can divide two numbers",
+        "property": "evaluate",
         "input": [
           "12 3 /"
         ],
@@ -113,6 +134,7 @@
       },
       {
         "description": "performs integer division",
+        "property": "evaluate",
         "input": [
           "8 3 /"
         ],
@@ -120,6 +142,7 @@
       },
       {
         "description": "errors if dividing by zero",
+        "property": "evaluate",
         "input": [
           "4 0 /"
         ],
@@ -127,6 +150,7 @@
       },
       {
         "description": "errors if there is nothing on the stack",
+        "property": "evaluate",
         "input": [
           "/"
         ],
@@ -134,6 +158,7 @@
       },
       {
         "description": "errors if there is only one value on the stack",
+        "property": "evaluate",
         "input": [
           "1 /"
         ],
@@ -141,10 +166,12 @@
       }
     ]
   },
-  "combined arithmetic": {
+  {
+    "description": "combined arithmetic",
     "cases": [
       {
         "description": "addition and subtraction",
+        "property": "evaluate",
         "input": [
           "1 2 + 4 -"
         ],
@@ -152,6 +179,7 @@
       },
       {
         "description": "multiplication and division",
+        "property": "evaluate",
         "input": [
           "2 4 * 3 /"
         ],
@@ -159,10 +187,12 @@
       }
     ]
   },
-  "dup": {
+  {
+    "description": "dup",
     "cases": [
       {
         "description": "copies the top value on the stack",
+        "property": "evaluate",
         "input": [
           "1 DUP"
         ],
@@ -170,6 +200,7 @@
       },
       {
         "description": "is case-insensitive",
+        "property": "evaluate",
         "input": [
           "1 2 Dup"
         ],
@@ -177,6 +208,7 @@
       },
       {
         "description": "errors if there is nothing on the stack",
+        "property": "evaluate",
         "input": [
           "dup"
         ],
@@ -184,10 +216,12 @@
       }
     ]
   },
-  "drop": {
+  {
+    "description": "drop",
     "cases": [
       {
         "description": "removes the top value on the stack if it is the only one",
+        "property": "evaluate",
         "input": [
           "1 drop"
         ],
@@ -195,6 +229,7 @@
       },
       {
         "description": "removes the top value on the stack if it is not the only one",
+        "property": "evaluate",
         "input": [
           "1 2 drop"
         ],
@@ -202,6 +237,7 @@
       },
       {
         "description": "errors if there is nothing on the stack",
+        "property": "evaluate",
         "input": [
           "drop"
         ],
@@ -209,10 +245,12 @@
       }
     ]
   },
-  "swap": {
+  {
+    "description": "swap",
     "cases": [
       {
         "description": "swaps the top two values on the stack if they are the only ones",
+        "property": "evaluate",
         "input": [
           "1 2 swap"
         ],
@@ -220,6 +258,7 @@
       },
       {
         "description": "swaps the top two values on the stack if they are not the only ones",
+        "property": "evaluate",
         "input": [
           "1 2 3 swap"
         ],
@@ -227,6 +266,7 @@
       },
       {
         "description": "errors if there is nothing on the stack",
+        "property": "evaluate",
         "input": [
           "swap"
         ],
@@ -234,6 +274,7 @@
       },
       {
         "description": "errors if there is only one value on the stack",
+        "property": "evaluate",
         "input": [
           "1 swap"
         ],
@@ -241,10 +282,12 @@
       }
     ]
   },
-  "over": {
+  {
+    "description": "over",
     "cases": [
       {
         "description": "copies the second element if there are only two",
+        "property": "evaluate",
         "input": [
           "1 2 over"
         ],
@@ -252,6 +295,7 @@
       },
       {
         "description": "copies the second element if there are more than two",
+        "property": "evaluate",
         "input": [
           "1 2 3 over"
         ],
@@ -259,6 +303,7 @@
       },
       {
         "description": "errors if there is nothing on the stack",
+        "property": "evaluate",
         "input": [
           "over"
         ],
@@ -266,6 +311,7 @@
       },
       {
         "description": "errors if there is only one value on the stack",
+        "property": "evaluate",
         "input": [
           "1 over"
         ],
@@ -273,10 +319,12 @@
       }
     ]
   },
-  "user-defined words": {
+  {
+    "description": "user-defined words",
     "cases": [
       {
         "description": "can consist of built-in words",
+        "property": "evaluate",
         "input": [
           ": dup-twice dup dup ;",
           "1 dup-twice"
@@ -285,6 +333,7 @@
       },
       {
         "description": "execute in the right order",
+        "property": "evaluate",
         "input": [
           ": countup 1 2 3 ;",
           "countup"
@@ -293,6 +342,7 @@
       },
       {
         "description": "can override other user-defined words",
+        "property": "evaluate",
         "input": [
           ": foo dup ;",
           ": foo dup dup ;",
@@ -302,6 +352,7 @@
       },
       {
         "description": "can override built-in words",
+        "property": "evaluate",
         "input": [
           ": swap dup ;",
           "1 swap"
@@ -310,6 +361,7 @@
       },
       {
         "description": "cannot redefine numbers",
+        "property": "evaluate",
         "input": [
           ": 1 2 ;"
         ],
@@ -317,6 +369,7 @@
       },
       {
         "description": "errors if executing a non-existent word",
+        "property": "evaluate",
         "input": [
           "foo"
         ],
@@ -324,4 +377,5 @@
       }
     ]
   }
+  ]
 }
