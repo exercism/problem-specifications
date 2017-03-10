@@ -1,5 +1,7 @@
 {
-  "#": [
+  "exercise": "circular-buffer",
+  "version": "1.0.0",
+  "comments": [
     "In general, these circular buffers are expected to be stateful,",
     "and each language will operate on them differently.",
     "Tests tend to perform a series of operations, some of which expect a certain result.",
@@ -25,6 +27,7 @@
   "cases": [
     {
       "description": "reading empty buffer should fail",
+      "property": "run",
       "capacity": 1,
       "operations": [
         {
@@ -35,6 +38,7 @@
     },
     {
       "description": "can read an item just written",
+      "property": "run",
       "capacity": 1,
       "operations": [
         {
@@ -51,6 +55,7 @@
     },
     {
       "description": "each item may only be read once",
+      "property": "run",
       "capacity": 1,
       "operations": [
         {
@@ -71,6 +76,7 @@
     },
     {
       "description": "items are read in the order they are written",
+      "property": "run",
       "capacity": 2,
       "operations": [
         {
@@ -97,6 +103,7 @@
     },
     {
       "description": "full buffer can't be written to",
+      "property": "run",
       "capacity": 1,
       "operations": [
         {
@@ -113,6 +120,7 @@
     },
     {
       "description": "a read frees up capacity for another write",
+      "property": "run",
       "capacity": 1,
       "operations": [
         {
@@ -139,6 +147,7 @@
     },
     {
       "description": "read position is maintained even across multiple writes",
+      "property": "run",
       "capacity": 3,
       "operations": [
         {
@@ -175,6 +184,7 @@
     },
     {
       "description": "items cleared out of buffer can't be read",
+      "property": "run",
       "capacity": 1,
       "operations": [
         {
@@ -193,6 +203,7 @@
     },
     {
       "description": "clear frees up capacity for another write",
+      "property": "run",
       "capacity": 1,
       "operations": [
         {
@@ -217,6 +228,7 @@
     },
     {
       "description": "clear does nothing on empty buffer",
+      "property": "run",
       "capacity": 1,
       "operations": [
         {
@@ -236,6 +248,7 @@
     },
     {
       "description": "overwrite acts like write on non-full buffer",
+      "property": "run",
       "capacity": 2,
       "operations": [
         {
@@ -261,6 +274,7 @@
     },
     {
       "description": "overwrite removes the oldest item on full buffer",
+      "property": "run",
       "capacity": 2,
       "operations": [
         {
@@ -291,6 +305,7 @@
     },
     {
       "description": "overwrite doesn't remove an already-read item",
+      "property": "run",
       "capacity": 3,
       "operations": [
         {
