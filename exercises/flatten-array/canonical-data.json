@@ -1,36 +1,36 @@
 {
-   "exercise": "flatten-array",
-   "version": "1.0.0",
-   "cases": [
-      {
-         "description": "flattens array with just integers present",
-         "property": "flatten",
-         "input": [1,[2,3,4,5,6,7],8],
-         "expected": [1,2,3,4,5,6,7,8]
-      },
-      {
-         "description": "5 level nesting",
-         "property": "flatten",
-         "input": [0, 2, [[2, 3], 8, 100, 4,[[[50]]]], -2],
-         "expected":[0, 2, 2, 3, 8, 100, 4, 50, -2]
-      },
-      {
-         "description": "6 level nesting",
-         "property": "flatten",
-         "input": [1,[2,[[3]],[4,[[5]]],6,7],8],
-         "expected":[1,2,3,4,5,6,7,8]
-      },
-      {
-         "description": "6 level nest list with null values",
-         "property": "flatten",
-         "input": [0, 2, [[2, 3], 8, [[100]], null, [[null]]], -2],
-         "expected":[0,2,2,3,8,100,-2]
-      },
-      {
-         "description": "all values in nested list are null",
-         "property": "flatten",
-         "input": [null,[[[null]]],null,null,[[null,null],null],null],
-         "expected":[]
-      }
-   ]
+  "exercise": "flatten-array",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "description": "flattens array with just integers present",
+      "property": "flatten",
+      "input": [1, [2, 3, 4, 5, 6, 7], 8],
+      "expected": [1, 2, 3, 4, 5, 6, 7, 8]
+    },
+    {
+      "description": "5 level nesting",
+      "property": "flatten",
+      "input": [0, 2, [[2, 3], 8, 100, 4, [[[50]]]], -2],
+      "expected": [0, 2, 2, 3, 8, 100, 4, 50, -2]
+    },
+    {
+      "description": "6 level nesting",
+      "property": "flatten",
+      "input": [1, [2, [[3]], [4, [[5]]], 6, 7], 8],
+      "expected": [1, 2, 3, 4, 5, 6, 7, 8]
+    },
+    {
+      "description": "6 level nest list with null values",
+      "property": "flatten",
+      "input": [0, 2, [[2, 3], 8, [[100]], null, [[null]]], -2],
+      "expected": [0, 2, 2, 3, 8, 100, -2]
+    },
+    {
+      "description": "all values in nested list are null",
+      "property": "flatten",
+      "input": [null, [[[null]]], null, null, [[null, null], null], null],
+      "expected": []
+    }
+  ]
 }
