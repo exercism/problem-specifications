@@ -1,277 +1,318 @@
 {
-   "#": [
-     "These tests cover the core components of a set data structure: checking",
-     "presence, adding, comparing and basic set operations. Other features",
-     "such as deleting elements, checking size, sorting are not tested, but",
-     "you can add them if they are interesting in your language",
-     "",
-     "Tests about mixed-type sets are not included because the ability",
-     "to implement that will vary by language. If your language supports it",
-     "and you want to implement mixed-type sets, feel free."
-   ],
-   "empty": {
-     "description": "Returns true if the set contains no elements",
-     "cases": [
-       {
+  "exercise": "custom-set",
+  "version": "1.0.0",
+  "comments": [
+    "These tests cover the core components of a set data structure: checking",
+    "presence, adding, comparing and basic set operations. Other features",
+    "such as deleting elements, checking size, sorting are not tested, but",
+    "you can add them if they are interesting in your language",
+    "",
+    "Tests about mixed-type sets are not included because the ability",
+    "to implement that will vary by language. If your language supports it",
+    "and you want to implement mixed-type sets, feel free."
+  ],
+  "cases": [
+    {
+      "description": "Returns true if the set contains no elements",
+      "cases": [
+        {
           "description": "sets with no elements are empty",
+          "property": "empty",
           "set": [],
           "expected": true
-       },
-       {
+        },
+        {
           "description": "sets with elements are not empty",
+          "property": "empty",
           "set": [1],
           "expected": false
-       }
-     ]
-   },
-   "contains": {
+        }
+      ]
+    },
+    {
       "description": "Sets can report if they contain an element",
       "cases": [
-         {
-            "description": "nothing is contained in an empty set",
-            "set": [],
-            "element": 1,
-            "expected": false
-         },
-         {
-            "description": "when the element is in the set",
-            "set": [1, 2, 3],
-            "element": 1,
-            "expected": true
-         },
-         {
-            "description": "when the element is not in the set",
-            "set": [1, 2, 3],
-            "element": 4,
-            "expected": false
-         }
+        {
+          "description": "nothing is contained in an empty set",
+          "property": "contains",
+          "set": [],
+          "element": 1,
+          "expected": false
+        },
+        {
+          "description": "when the element is in the set",
+          "property": "contains",
+          "set": [1, 2, 3],
+          "element": 1,
+          "expected": true
+        },
+        {
+          "description": "when the element is not in the set",
+          "property": "contains",
+          "set": [1, 2, 3],
+          "element": 4,
+          "expected": false
+        }
       ]
-   },
-   "subset": {
+    },
+    {
       "description": "A set is a subset if all of its elements are contained in the other set",
       "cases": [
-         {
-            "description": "empty set is a subset of another empty set",
-            "set1": [],
-            "set2": [],
-            "expected": true
-         },
-         {
-            "description": "empty set is a subset of non-empty set",
-            "set1": [],
-            "set2": [1],
-            "expected": true
-         },
-         {
-            "description": "non-empty set is not a subset of empty set",
-            "set1": [1],
-            "set2": [],
-            "expected": false
-         },
-         {
-            "description": "set is a subset of set with exact same elements",
-            "set1": [1, 2, 3],
-            "set2": [1, 2, 3],
-            "expected": true
-         },
-         {
-            "description": "set is a subset of larger set with same elements",
-            "set1": [1, 2, 3],
-            "set2": [4, 1, 2, 3],
-            "expected": true
-         },
-         {
-            "description": "set is not a subset of set that does not contain its elements",
-            "set1": [1, 2, 3],
-            "set2": [4, 1, 3],
-            "expected": false
-         }
+        {
+          "description": "empty set is a subset of another empty set",
+          "property": "subset",
+          "set1": [],
+          "set2": [],
+          "expected": true
+        },
+        {
+          "description": "empty set is a subset of non-empty set",
+          "property": "subset",
+          "set1": [],
+          "set2": [1],
+          "expected": true
+        },
+        {
+          "description": "non-empty set is not a subset of empty set",
+          "property": "subset",
+          "set1": [1],
+          "set2": [],
+          "expected": false
+        },
+        {
+          "description": "set is a subset of set with exact same elements",
+          "property": "subset",
+          "set1": [1, 2, 3],
+          "set2": [1, 2, 3],
+          "expected": true
+        },
+        {
+          "description": "set is a subset of larger set with same elements",
+          "property": "subset",
+          "set1": [1, 2, 3],
+          "set2": [4, 1, 2, 3],
+          "expected": true
+        },
+        {
+          "description": "set is not a subset of set that does not contain its elements",
+          "property": "subset",
+          "set1": [1, 2, 3],
+          "set2": [4, 1, 3],
+          "expected": false
+        }
       ]
-   },
-   "disjoint": {
+    },
+    {
       "description": "Sets are disjoint if they share no elements",
       "cases": [
-         {
-            "description": "the empty set is disjoint with itself",
-            "set1": [],
-            "set2": [],
-            "expected": true
-         },
-         {
-            "description": "empty set is disjoint with non-empty set",
-            "set1": [],
-            "set2": [1],
-            "expected": true
-         },
-         {
-            "description": "non-empty set is disjoint with empty set",
-            "set1": [1],
-            "set2": [],
-            "expected": true
-         },
-         {
-            "description": "sets are not disjoint if they share an element",
-            "set1": [1, 2],
-            "set2": [2, 3],
-            "expected": false
-         },
-         {
-            "description": "sets are disjoint if they share no elements",
-            "set1": [1, 2],
-            "set2": [3, 4],
-            "expected": true
-         }
+        {
+          "description": "the empty set is disjoint with itself",
+          "property": "disjoint",
+          "set1": [],
+          "set2": [],
+          "expected": true
+        },
+        {
+          "description": "empty set is disjoint with non-empty set",
+          "property": "disjoint",
+          "set1": [],
+          "set2": [1],
+          "expected": true
+        },
+        {
+          "description": "non-empty set is disjoint with empty set",
+          "property": "disjoint",
+          "set1": [1],
+          "set2": [],
+          "expected": true
+        },
+        {
+          "description": "sets are not disjoint if they share an element",
+          "property": "disjoint",
+          "set1": [1, 2],
+          "set2": [2, 3],
+          "expected": false
+        },
+        {
+          "description": "sets are disjoint if they share no elements",
+          "property": "disjoint",
+          "set1": [1, 2],
+          "set2": [3, 4],
+          "expected": true
+        }
       ]
-   },
-   "equal": {
+    },
+    {
       "description": "Sets with the same elements are equal",
       "cases": [
-         {
-            "description": "empty sets are equal",
-            "set1": [],
-            "set2": [],
-            "expected": true
-         },
-         {
-            "description": "empty set is not equal to non-empty set",
-            "set1": [],
-            "set2": [1, 2, 3],
-            "expected": false
-         },
-         {
-            "description": "non-empty set is not equal to empty set",
-            "set1": [1, 2, 3],
-            "set2": [],
-            "expected": false
-         },
-         {
-            "description": "sets with the same elements are equal",
-            "set1": [1, 2],
-            "set2": [2, 1],
-            "expected": true
-         },
-         {
-            "description": "sets with different elements are not equal",
-            "set1": [1, 2, 3],
-            "set2": [1, 2, 4],
-            "expected": false
-         }
+        {
+          "description": "empty sets are equal",
+          "property": "equal",
+          "set1": [],
+          "set2": [],
+          "expected": true
+        },
+        {
+          "description": "empty set is not equal to non-empty set",
+          "property": "equal",
+          "set1": [],
+          "set2": [1, 2, 3],
+          "expected": false
+        },
+        {
+          "description": "non-empty set is not equal to empty set",
+          "property": "equal",
+          "set1": [1, 2, 3],
+          "set2": [],
+          "expected": false
+        },
+        {
+          "description": "sets with the same elements are equal",
+          "property": "equal",
+          "set1": [1, 2],
+          "set2": [2, 1],
+          "expected": true
+        },
+        {
+          "description": "sets with different elements are not equal",
+          "property": "equal",
+          "set1": [1, 2, 3],
+          "set2": [1, 2, 4],
+          "expected": false
+        }
       ]
-   },
-   "add": {
+    },
+    {
       "description": "Unique elements can be added to a set",
       "cases": [
-         {
-            "description": "add to empty set",
-            "set": [],
-            "element": 3,
-            "expected": [3]
-         },
-         {
-            "description": "add to non-empty set",
-            "set": [1, 2, 4],
-            "element": 3,
-            "expected": [1, 2, 3, 4]
-         },
-         {
-            "description": "adding an existing element does not change the set",
-            "set": [1, 2, 3],
-            "element": 3,
-            "expected": [1, 2, 3]
-         }
+        {
+          "description": "add to empty set",
+          "property": "add",
+          "set": [],
+          "element": 3,
+          "expected": [3]
+        },
+        {
+          "description": "add to non-empty set",
+          "property": "add",
+          "set": [1, 2, 4],
+          "element": 3,
+          "expected": [1, 2, 3, 4]
+        },
+        {
+          "description": "adding an existing element does not change the set",
+          "property": "add",
+          "set": [1, 2, 3],
+          "element": 3,
+          "expected": [1, 2, 3]
+        }
       ]
-   },
-   "intersection": {
+    },
+    {
       "description": "Intersect returns a set of all shared elements",
       "cases": [
-         {
-            "description": "intersection of two empty sets is an empty set",
-            "set1": [],
-            "set2": [],
-            "expected": []
-         },
-         {
-            "description": "intersection of an empty set and non-empty set is an empty set",
-            "set1": [],
-            "set2": [3, 2, 5],
-            "expected": []
-         },
-         {
-            "description": "intersection of a non-empty set and an empty set is an empty set",
-            "set1": [1, 2, 3, 4],
-            "set2": [],
-            "expected": []
-         },
-         {
-            "description": "intersection of two sets with no shared elements is an empty set",
-            "set1": [1, 2, 3],
-            "set2": [4, 5, 6],
-            "expected": []
-         },
-         {
-            "description": "intersection of two sets with shared elements is a set of the shared elements",
-            "set1": [1, 2, 3, 4],
-            "set2": [3, 2, 5],
-            "expected": [2, 3]
-         }
+        {
+          "description": "intersection of two empty sets is an empty set",
+          "property": "intersection",
+          "set1": [],
+          "set2": [],
+          "expected": []
+        },
+        {
+          "description": "intersection of an empty set and non-empty set is an empty set",
+          "property": "intersection",
+          "set1": [],
+          "set2": [3, 2, 5],
+          "expected": []
+        },
+        {
+          "description": "intersection of a non-empty set and an empty set is an empty set",
+          "property": "intersection",
+          "set1": [1, 2, 3, 4],
+          "set2": [],
+          "expected": []
+        },
+        {
+          "description": "intersection of two sets with no shared elements is an empty set",
+          "property": "intersection",
+          "set1": [1, 2, 3],
+          "set2": [4, 5, 6],
+          "expected": []
+        },
+        {
+          "description": "intersection of two sets with shared elements is a set of the shared elements",
+          "property": "intersection",
+          "set1": [1, 2, 3, 4],
+          "set2": [3, 2, 5],
+          "expected": [2, 3]
+        }
       ]
-   },
-   "difference": {
+    },
+    {
       "description": "Difference (or Complement) of a set is a set of all elements that are only in the first set",
       "cases": [
-         {
-            "description": "difference of two empty sets is an empty set",
-            "set1": [],
-            "set2": [],
-            "expected": []
-         },
-         {
-            "description": "difference of empty set and non-empty set is an empty set",
-            "set1": [],
-            "set2": [3, 2, 5],
-            "expected": []
-         },
-         {
-            "description": "difference of a non-empty set and an empty set is the non-empty set",
-            "set1": [1, 2, 3, 4],
-            "set2": [],
-            "expected": [1, 2, 3, 4]
-         },
-         {
-            "description": "difference of two non-empty sets is a set of elements that are only in the first set",
-            "set1": [3, 2, 1],
-            "set2": [2, 4],
-            "expected": [1, 3]
-         }
+        {
+          "description": "difference of two empty sets is an empty set",
+          "property": "difference",
+          "set1": [],
+          "set2": [],
+          "expected": []
+        },
+        {
+          "description": "difference of empty set and non-empty set is an empty set",
+          "property": "difference",
+          "set1": [],
+          "set2": [3, 2, 5],
+          "expected": []
+        },
+        {
+          "description": "difference of a non-empty set and an empty set is the non-empty set",
+          "property": "difference",
+          "set1": [1, 2, 3, 4],
+          "set2": [],
+          "expected": [1, 2, 3, 4]
+        },
+        {
+          "description": "difference of two non-empty sets is a set of elements that are only in the first set",
+          "property": "difference",
+          "set1": [3, 2, 1],
+          "set2": [2, 4],
+          "expected": [1, 3]
+        }
       ]
-   },
-   "union": {
+    },
+    {
       "description": "Union returns a set of all elements in either set",
       "cases": [
-         {
-            "description": "union of empty sets is an empty set",
-            "set1": [],
-            "set2": [],
-            "expected": []
-         },
-         {
-            "description": "union of an empty set and non-empty set is the non-empty set",
-            "set1": [],
-            "set2": [2],
-            "expected": [2]
-         },
-         {
-            "description": "union of a non-empty set and empty set is the non-empty set",
-            "set1": [1, 3],
-            "set2": [],
-            "expected": [1, 3]
-         },
-         {
-            "description": "union of non-empty sets contains all unique elements",
-            "set1": [1, 3],
-            "set2": [2, 3],
-            "expected": [3, 2, 1]
-         }
+        {
+          "description": "union of empty sets is an empty set",
+          "property": "union",
+          "set1": [],
+          "set2": [],
+          "expected": []
+        },
+        {
+          "description": "union of an empty set and non-empty set is the non-empty set",
+          "property": "union",
+          "set1": [],
+          "set2": [2],
+          "expected": [2]
+        },
+        {
+          "description": "union of a non-empty set and empty set is the non-empty set",
+          "property": "union",
+          "set1": [1, 3],
+          "set2": [],
+          "expected": [1, 3]
+        },
+        {
+          "description": "union of non-empty sets contains all unique elements",
+          "property": "union",
+          "set1": [1, 3],
+          "set2": [2, 3],
+          "expected": [3, 2, 1]
+        }
       ]
-   }
+    }
+  ]
 }
