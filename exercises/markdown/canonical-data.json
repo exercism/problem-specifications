@@ -6,10 +6,10 @@
   ],
   "cases": [
     {
-       "description": "parses normal text as a paragraph",
-       "property": "parse",
-       "input": "This will be a paragraph",
-       "expected": "<p>This will be a paragraph</p>"
+      "description": "parses normal text as a paragraph",
+      "property": "parse",
+      "input": "This will be a paragraph",
+      "expected": "<p>This will be a paragraph</p>"
     },
     {
       "description": "parsing italics",
