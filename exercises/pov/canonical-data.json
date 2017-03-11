@@ -187,7 +187,44 @@
       {
         "description": "Can reroot a complex tree with cousins",
         "property": "fromPov",
-        "tree": "cousins",
+        "tree": {
+          "label": "grandparent",
+          "children": [
+            {
+              "label": "parent",
+              "children": [
+                {
+                  "label": "x",
+                  "children": [
+                    {
+                      "label": "kid-0"
+                    },
+                    {
+                      "label": "kid-1"
+                    }
+                  ]
+                },
+                {
+                  "label": "sibling-0"
+                },
+                {
+                  "label": "sibling-1"
+                }
+              ]
+            },
+            {
+              "label": "uncle",
+              "children": [
+                {
+                  "label": "cousin-0"
+                },
+                {
+                  "label": "cousin-1"
+                }
+              ]
+            }
+          ]
+        },
         "from": "x",
         "expected": {
           "label": "x",
@@ -330,7 +367,44 @@
         "property": "pathTo",
         "from": "x",
         "to": "cousin-1",
-        "tree": "cousins",
+        "tree": {
+          "label": "grandparent",
+          "children": [
+            {
+              "label": "parent",
+              "children": [
+                {
+                  "label": "x",
+                  "children": [
+                    {
+                      "label": "kid-0"
+                    },
+                    {
+                      "label": "kid-1"
+                    }
+                  ]
+                },
+                {
+                  "label": "sibling-0"
+                },
+                {
+                  "label": "sibling-1"
+                }
+              ]
+            },
+            {
+              "label": "uncle",
+              "children": [
+                {
+                  "label": "cousin-0"
+                },
+                {
+                  "label": "cousin-1"
+                }
+              ]
+            }
+          ]
+        },
         "expected": [
           "x",
           "parent",
@@ -426,45 +500,5 @@
         "expected": null
       }
     ]
-  }],
-  "trees": {
-    "cousins": {
-      "label": "grandparent",
-      "children": [
-        {
-          "label": "parent",
-          "children": [
-            {
-              "label": "x",
-              "children": [
-                {
-                  "label": "kid-0"
-                },
-                {
-                  "label": "kid-1"
-                }
-              ]
-            },
-            {
-              "label": "sibling-0"
-            },
-            {
-              "label": "sibling-1"
-            }
-          ]
-        },
-        {
-          "label": "uncle",
-          "children": [
-            {
-              "label": "cousin-0"
-            },
-            {
-              "label": "cousin-1"
-            }
-          ]
-        }
-      ]
-    }
-  }
+  }]
 }
