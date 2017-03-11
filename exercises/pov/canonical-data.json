@@ -1,6 +1,6 @@
 {
   "exercise": "pov",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "cases": [{
     "description": "Reroot a tree so that its root is the specified node.",
     "comments": [
@@ -240,7 +240,28 @@
       {
         "description": "Errors if target does not exist in a large tree",
         "property": "fromPov",
-        "tree": "cousins",
+        "tree": {
+          "label": "parent",
+          "children": [
+            {
+              "label": "x",
+              "children": [
+                {
+                  "label": "kid-0"
+                },
+                {
+                  "label": "kid-1"
+                }
+              ]
+            },
+            {
+              "label": "sibling-0"
+            },
+            {
+              "label": "sibling-1"
+            }
+          ]
+        },
         "from": "nonexistent",
         "expected": null
       }
@@ -321,16 +342,29 @@
       {
         "description": "Can find path from nodes other than x",
         "property": "pathTo",
-        "from": "kid-1",
-        "to": "cousin-0",
-        "tree": "cousins",
+        "from": "a",
+        "to": "c",
+        "tree": {
+          "label": "parent",
+          "children": [
+            {
+              "label": "a"
+            },
+            {
+              "label": "x"
+            },
+            {
+              "label": "b"
+            },
+            {
+              "label": "c"
+            }
+          ]
+        },
         "expected": [
-          "kid-1",
-          "x",
+          "a",
           "parent",
-          "grandparent",
-          "uncle",
-          "cousin-0"
+          "c"
         ]
       },
       {
@@ -338,7 +372,28 @@
         "property": "pathTo",
         "from": "x",
         "to": "nonexistent",
-        "tree": "cousins",
+        "tree": {
+          "label": "parent",
+          "children": [
+            {
+              "label": "x",
+              "children": [
+                {
+                  "label": "kid-0"
+                },
+                {
+                  "label": "kid-1"
+                }
+              ]
+            },
+            {
+              "label": "sibling-0"
+            },
+            {
+              "label": "sibling-1"
+            }
+          ]
+        },
         "expected": null
       },
       {
@@ -346,7 +401,28 @@
         "property": "pathTo",
         "from": "nonexistent",
         "to": "x",
-        "tree": "cousins",
+        "tree": {
+          "label": "parent",
+          "children": [
+            {
+              "label": "x",
+              "children": [
+                {
+                  "label": "kid-0"
+                },
+                {
+                  "label": "kid-1"
+                }
+              ]
+            },
+            {
+              "label": "sibling-0"
+            },
+            {
+              "label": "sibling-1"
+            }
+          ]
+        },
         "expected": null
       }
     ]
