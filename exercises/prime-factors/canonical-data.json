@@ -1,42 +1,53 @@
 {
-  "for": {
-    "description": "returns prime factors for the given input number",
-    "cases": [
-      {
-        "description" : "no factors",
-        "input" : 1,
-        "expected" : []
-      },
-      {
-        "description" : "prime number",
-        "input" : 2,
-        "expected" : [2]
-      },
-      {
-        "description" : "square of a prime",
-        "input" : 9,
-        "expected" : [3, 3]
-      },
-      {
-        "description" : "cube of a prime",
-        "input" : 8,
-        "expected" : [2, 2, 2]
-      },
-      {
-        "description" : "product of primes and non-primes",
-        "input" : 12,
-        "expected" : [2, 2, 3]
-      },
-      {
-        "description" : "product of primes",
-        "input" : 901255,
-        "expected" : [5, 17, 23, 461]
-      },
-      {
-        "description" : "factors include a large prime",
-        "input" : 93819012551,
-        "expected" : [11, 9539, 894119]
-      }
-    ]
-  }
+  "exercise": "prime-factors",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "description": "returns prime factors for the given input number",
+      "cases": [
+        {
+          "description": "no factors",
+          "property": "factors",
+          "input": 1,
+          "expected": []
+        },
+        {
+          "description": "prime number",
+          "property": "factors",
+          "input": 2,
+          "expected": [2]
+        },
+        {
+          "description": "square of a prime",
+          "property": "factors",
+          "input": 9,
+          "expected": [3, 3]
+        },
+        {
+          "description": "cube of a prime",
+          "property": "factors",
+          "input": 8,
+          "expected": [2, 2, 2]
+        },
+        {
+          "description": "product of primes and non-primes",
+          "property": "factors",
+          "input": 12,
+          "expected": [2, 2, 3]
+        },
+        {
+          "description": "product of primes",
+          "property": "factors",
+          "input": 901255,
+          "expected": [5, 17, 23, 461]
+        },
+        {
+          "description": "factors include a large prime",
+          "property": "factors",
+          "input": 93819012551,
+          "expected": [11, 9539, 894119]
+        }
+      ]
+    }
+  ]
 }
