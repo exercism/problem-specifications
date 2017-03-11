@@ -1,50 +1,62 @@
 {
-   "#": [
+   "exercise": "rail-fence-cipher",
+   "version": "1.0.0",
+   "comments": [
       "The tests do not expect any normalization or cleaning.",
       "That trade is tested in enough other exercises."
    ],
-   "encode": {
+   "cases": [
+   {
+      "description": "encode",
       "cases": [
          {
             "description": "test to encode with two rails",
+            "property": "encode",
             "msg": "XOXOXOXOXOXOXOXOXO",
             "rails": 2,
             "expected": "XXXXXXXXXOOOOOOOOO"
          },
          {
             "description": "test to encode with three rails",
+            "property": "encode",
             "msg": "WEAREDISCOVEREDFLEEATONCE",
             "rails": 3,
             "expected": "WECRLTEERDSOEEFEAOCAIVDEN"
          },
          {
             "description": "test to encode with ending in the middle",
+            "property": "encode",
             "msg": "EXERCISES",
             "rails": 4,
             "expected": "ESXIEECSR"
          }
       ]
    },
-   "decode": {
+   {
+      "description": "decode",
       "cases": [
          {
             "description": "test to decode with three rails",
+            "property": "decode",
             "msg": "TEITELHDVLSNHDTISEIIEA",
             "rails": 3,
             "expected": "THEDEVILISINTHEDETAILS"
          },
          {
             "description": "test to decode with five rails",
+            "property": "decode",
             "msg": "EIEXMSMESAORIWSCE",
             "rails": 5,
             "expected": "EXERCISMISAWESOME"
          },
          {
             "description": "test to decode with six rails",
+            "property": "decode",
             "msg": "133714114238148966225439541018335470986172518171757571896261",
             "rails": 6,
             "expected": "112358132134558914423337761098715972584418167651094617711286"
          }
       ]
    }
+   ]
 }
