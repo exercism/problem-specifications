@@ -20,7 +20,9 @@
       {
         "description": "Results in the same tree if the input tree is a singleton",
         "property": "fromPov",
-        "tree": "singleton",
+        "tree": {
+          "label": "x"
+        },
         "from": "x",
         "expected": {
           "label": "x"
@@ -29,7 +31,17 @@
       {
         "description": "Can reroot a tree with a parent and one sibling",
         "property": "fromPov",
-        "tree": "simple",
+        "tree": {
+          "label": "parent",
+          "children": [
+            {
+              "label": "x"
+            },
+            {
+              "label": "sibling"
+            }
+          ]
+        },
         "from": "x",
         "expected": {
           "label": "x",
@@ -48,7 +60,23 @@
       {
         "description": "Can reroot a tree with a parent and many siblings",
         "property": "fromPov",
-        "tree": "large_flat",
+        "tree": {
+          "label": "parent",
+          "children": [
+            {
+              "label": "a"
+            },
+            {
+              "label": "x"
+            },
+            {
+              "label": "b"
+            },
+            {
+              "label": "c"
+            }
+          ]
+        },
         "from": "x",
         "expected": {
           "label": "x",
@@ -73,7 +101,29 @@
       {
         "description": "Can reroot a tree with new root deeply nested in tree",
         "property": "fromPov",
-        "tree": "deeply_nested",
+        "tree": {
+          "label": "level-0",
+          "children": [
+            {
+              "label": "level-1",
+              "children": [
+                {
+                  "label": "level-2",
+                  "children": [
+                    {
+                      "label": "level-3",
+                      "children": [
+                        {
+                          "label": "x"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         "from": "x",
         "expected": {
           "label": "x",
@@ -102,7 +152,22 @@
       {
         "description": "Moves children of the new root to same level as former parent",
         "property": "fromPov",
-        "tree": "kids",
+        "tree": {
+          "label": "parent",
+          "children": [
+            {
+              "label": "x",
+              "children": [
+                {
+                  "label": "kid-0"
+                },
+                {
+                  "label": "kid-1"
+                }
+              ]
+            }
+          ]
+        },
         "from": "x",
         "expected": {
           "label": "x",
@@ -166,7 +231,9 @@
       {
         "description": "Errors if target does not exist in a singleton tree",
         "property": "fromPov",
-        "tree": "singleton",
+        "tree": {
+          "label": "x"
+        },
         "from": "nonexistent",
         "expected": null
       },
@@ -193,7 +260,17 @@
         "property": "pathTo",
         "from": "x",
         "to": "parent",
-        "tree": "simple",
+        "tree": {
+          "label": "parent",
+          "children": [
+            {
+              "label": "x"
+            },
+            {
+              "label": "sibling"
+            }
+          ]
+        },
         "expected": [
           "x",
           "parent"
@@ -204,7 +281,23 @@
         "property": "pathTo",
         "from": "x",
         "to": "b",
-        "tree": "large_flat",
+        "tree": {
+          "label": "parent",
+          "children": [
+            {
+              "label": "a"
+            },
+            {
+              "label": "x"
+            },
+            {
+              "label": "b"
+            },
+            {
+              "label": "c"
+            }
+          ]
+        },
         "expected": [
           "x",
           "parent",
@@ -259,76 +352,6 @@
     ]
   }],
   "trees": {
-    "singleton": {
-      "label": "x"
-    },
-    "simple": {
-      "label": "parent",
-      "children": [
-        {
-          "label": "x"
-        },
-        {
-          "label": "sibling"
-        }
-      ]
-    },
-    "large_flat": {
-      "label": "parent",
-      "children": [
-        {
-          "label": "a"
-        },
-        {
-          "label": "x"
-        },
-        {
-          "label": "b"
-        },
-        {
-          "label": "c"
-        }
-      ]
-    },
-    "deeply_nested": {
-      "label": "level-0",
-      "children": [
-        {
-          "label": "level-1",
-          "children": [
-            {
-              "label": "level-2",
-              "children": [
-                {
-                  "label": "level-3",
-                  "children": [
-                    {
-                      "label": "x"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "kids": {
-      "label": "parent",
-      "children": [
-        {
-          "label": "x",
-          "children": [
-            {
-              "label": "kid-0"
-            },
-            {
-              "label": "kid-1"
-            }
-          ]
-        }
-      ]
-    },
     "cousins": {
       "label": "grandparent",
       "children": [
