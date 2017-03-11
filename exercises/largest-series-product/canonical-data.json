@@ -1,125 +1,142 @@
 {
-    "#": [
-        "A negative expected value means the input is invalid.",
-        "Different languages may handle this differently.",
-        "e.g. raise exceptions, return (int, error), return Option<int>, etc.",
+  "exercise": "largest-series-product",
+  "version": "1.0.0",
+  "comments": [
+    "A negative expected value means the input is invalid.",
+    "Different languages may handle this differently.",
+    "e.g. raise exceptions, return (int, error), return Option<int>, etc.",
 
-        "Some languages specifically test the string->digits conversion",
-        "and the 'slices of size N' operation.",
-        "These cases *deliberately* do not cover those two operations.",
-        "Those are implementation details.",
-        "Testing them constrains implementations,",
-        "and not all implementations use these operations.",
-        "e.g. The implementation which makes a single pass through the digits."
-    ],
-    "cases": [
-        {
-            "description": "finds the largest product if span equals length",
-            "digits": "29",
-            "span": 2,
-            "expected": 18
-        },
-        {
-            "description": "can find the largest product of 2 with numbers in order",
-            "digits": "0123456789",
-            "span": 2,
-            "expected": 72
-        },
-        {
-            "description": "can find the largest product of 2",
-            "digits": "576802143",
-            "span": 2,
-            "expected": 48
-        },
-        {
-            "description": "can find the largest product of 3 with numbers in order",
-            "digits": "0123456789",
-            "span": 3,
-            "expected": 504
-        },
-        {
-            "description": "can find the largest product of 3",
-            "digits": "1027839564",
-            "span": 3,
-            "expected": 270
-        },
-        {
-            "description": "can find the largest product of 5 with numbers in order",
-            "digits": "0123456789",
-            "span": 5,
-            "expected": 15120
-        },
-        {
-            "description": "can get the largest product of a big number",
-            "digits": "73167176531330624919225119674426574742355349194934",
-            "span": 6,
-            "expected": 23520
-        },
-        {
-            "description": "reports zero if the only digits are zero",
-            "digits": "0000",
-            "span": 2,
-            "expected": 0
-        },
-        {
-            "description": "reports zero if all spans include zero",
-            "digits": "99099",
-            "span": 3,
-            "expected": 0
-        },
-        {
-            "description": "rejects span longer than string length",
-            "digits": "123",
-            "span": 4,
-            "expected": -1
-        },
-        {
-            "#": [
-              "There may be some confusion about whether this should be 1 or error.",
-              "The reasoning for it being 1 is this:",
-              "There is one 0-character string contained in the empty string.",
-              "That's the empty string itself.",
-              "The empty product is 1 (the identity for multiplication).",
-              "Therefore LSP('', 0) is 1.",
-              "It's NOT the case that LSP('', 0) takes max of an empty list.",
-              "So there is no error.",
-              "Compare against LSP('123', 4):",
-              "There are zero 4-character strings in '123'.",
-              "So LSP('123', 4) really DOES take the max of an empty list.",
-              "So LSP('123', 4) errors and LSP('', 0) does NOT."
-            ],
-            "description": "reports 1 for empty string and empty product (0 span)",
-            "digits": "",
-            "span": 0,
-            "expected": 1
-        },
-        {
-            "#": [
-              "As above, there is one 0-character string in '123'.",
-              "So again no error. It's the empty product, 1."
-            ],
-            "description": "reports 1 for nonempty string and empty product (0 span)",
-            "digits": "123",
-            "span": 0,
-            "expected": 1
-        },
-        {
-            "description": "rejects empty string and nonzero span",
-            "digits": "",
-            "span": 1,
-            "expected": -1
-        },
-        {
-            "description": "rejects invalid character in digits",
-            "digits": "1234a5",
-            "span": 2,
-            "expected": -1
-        },
-        {
-            "description": "rejects negative span",
-            "digits": "12345",
-            "span": -1,
-            "expected": -1
-        }
-    ]
+    "Some languages specifically test the string->digits conversion",
+    "and the 'slices of size N' operation.",
+    "These cases *deliberately* do not cover those two operations.",
+    "Those are implementation details.",
+    "Testing them constrains implementations,",
+    "and not all implementations use these operations.",
+    "e.g. The implementation which makes a single pass through the digits."
+  ],
+  "cases": [
+    {
+      "description": "finds the largest product if span equals length",
+      "property": "largestProduct",
+      "digits": "29",
+      "span": 2,
+      "expected": 18
+    },
+    {
+      "description": "can find the largest product of 2 with numbers in order",
+      "property": "largestProduct",
+      "digits": "0123456789",
+      "span": 2,
+      "expected": 72
+    },
+    {
+      "description": "can find the largest product of 2",
+      "property": "largestProduct",
+      "digits": "576802143",
+      "span": 2,
+      "expected": 48
+    },
+    {
+      "description": "can find the largest product of 3 with numbers in order",
+      "property": "largestProduct",
+      "digits": "0123456789",
+      "span": 3,
+      "expected": 504
+    },
+    {
+      "description": "can find the largest product of 3",
+      "property": "largestProduct",
+      "digits": "1027839564",
+      "span": 3,
+      "expected": 270
+    },
+    {
+      "description": "can find the largest product of 5 with numbers in order",
+      "property": "largestProduct",
+      "digits": "0123456789",
+      "span": 5,
+      "expected": 15120
+    },
+    {
+      "description": "can get the largest product of a big number",
+      "property": "largestProduct",
+      "digits": "73167176531330624919225119674426574742355349194934",
+      "span": 6,
+      "expected": 23520
+    },
+    {
+      "description": "reports zero if the only digits are zero",
+      "property": "largestProduct",
+      "digits": "0000",
+      "span": 2,
+      "expected": 0
+    },
+    {
+      "description": "reports zero if all spans include zero",
+      "property": "largestProduct",
+      "digits": "99099",
+      "span": 3,
+      "expected": 0
+    },
+    {
+      "description": "rejects span longer than string length",
+      "property": "largestProduct",
+      "digits": "123",
+      "span": 4,
+      "expected": -1
+    },
+    {
+      "comments": [
+        "There may be some confusion about whether this should be 1 or error.",
+        "The reasoning for it being 1 is this:",
+        "There is one 0-character string contained in the empty string.",
+        "That's the empty string itself.",
+        "The empty product is 1 (the identity for multiplication).",
+        "Therefore LSP('', 0) is 1.",
+        "It's NOT the case that LSP('', 0) takes max of an empty list.",
+        "So there is no error.",
+        "Compare against LSP('123', 4):",
+        "There are zero 4-character strings in '123'.",
+        "So LSP('123', 4) really DOES take the max of an empty list.",
+        "So LSP('123', 4) errors and LSP('', 0) does NOT."
+      ],
+      "description": "reports 1 for empty string and empty product (0 span)",
+      "property": "largestProduct",
+      "digits": "",
+      "span": 0,
+      "expected": 1
+    },
+    {
+      "comments": [
+        "As above, there is one 0-character string in '123'.",
+        "So again no error. It's the empty product, 1."
+      ],
+      "description": "reports 1 for nonempty string and empty product (0 span)",
+      "property": "largestProduct",
+      "digits": "123",
+      "span": 0,
+      "expected": 1
+    },
+    {
+      "description": "rejects empty string and nonzero span",
+      "property": "largestProduct",
+      "digits": "",
+      "span": 1,
+      "expected": -1
+    },
+    {
+      "description": "rejects invalid character in digits",
+      "property": "largestProduct",
+      "digits": "1234a5",
+      "span": 2,
+      "expected": -1
+    },
+    {
+      "description": "rejects negative span",
+      "property": "largestProduct",
+      "digits": "12345",
+      "span": -1,
+      "expected": -1
+    }
+  ]
 }
