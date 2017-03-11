@@ -1,7 +1,9 @@
 {
-  "from_pov": {
-    "description": [
-      "Reroot a tree so that its root is the specified node.",
+  "exercise": "pov",
+  "version": "1.0.0",
+  "cases": [{
+    "description": "Reroot a tree so that its root is the specified node.",
+    "comments": [
       "In this way, the tree is presented from the point of view of the specified node.",
       "The input trees used here are those in the `trees` section of this file.",
       "",
@@ -17,6 +19,7 @@
     "cases": [
       {
         "description": "Results in the same tree if the input tree is a singleton",
+        "property": "fromPov",
         "tree": "singleton",
         "from": "x",
         "expected": {
@@ -25,6 +28,7 @@
       },
       {
         "description": "Can reroot a tree with a parent and one sibling",
+        "property": "fromPov",
         "tree": "simple",
         "from": "x",
         "expected": {
@@ -43,6 +47,7 @@
       },
       {
         "description": "Can reroot a tree with a parent and many siblings",
+        "property": "fromPov",
         "tree": "large_flat",
         "from": "x",
         "expected": {
@@ -67,6 +72,7 @@
       },
       {
         "description": "Can reroot a tree with new root deeply nested in tree",
+        "property": "fromPov",
         "tree": "deeply_nested",
         "from": "x",
         "expected": {
@@ -95,6 +101,7 @@
       },
       {
         "description": "Moves children of the new root to same level as former parent",
+        "property": "fromPov",
         "tree": "kids",
         "from": "x",
         "expected": {
@@ -114,6 +121,7 @@
       },
       {
         "description": "Can reroot a complex tree with cousins",
+        "property": "fromPov",
         "tree": "cousins",
         "from": "x",
         "expected": {
@@ -157,21 +165,22 @@
       },
       {
         "description": "Errors if target does not exist in a singleton tree",
+        "property": "fromPov",
         "tree": "singleton",
         "from": "nonexistent",
         "expected": null
       },
       {
         "description": "Errors if target does not exist in a large tree",
+        "property": "fromPov",
         "tree": "cousins",
         "from": "nonexistent",
         "expected": null
       }
     ]
-  },
-  "path_to": {
-    "description": [
-      "Given two nodes, find the path between them.",
+  }, {
+    "description": "Given two nodes, find the path between them",
+    "comments": [
       "A typical implementation would first reroot the tree on one of the two nodes.",
       "",
       "If appropriate for your track, you may test that the input tree is not modified.",
@@ -181,6 +190,7 @@
     "cases": [
       {
         "description": "Can find path to parent",
+        "property": "pathTo",
         "from": "x",
         "to": "parent",
         "tree": "simple",
@@ -191,6 +201,7 @@
       },
       {
         "description": "Can find path to sibling",
+        "property": "pathTo",
         "from": "x",
         "to": "b",
         "tree": "large_flat",
@@ -202,6 +213,7 @@
       },
       {
         "description": "Can find path to cousin",
+        "property": "pathTo",
         "from": "x",
         "to": "cousin-1",
         "tree": "cousins",
@@ -215,6 +227,7 @@
       },
       {
         "description": "Can find path from nodes other than x",
+        "property": "pathTo",
         "from": "kid-1",
         "to": "cousin-0",
         "tree": "cousins",
@@ -229,6 +242,7 @@
       },
       {
         "description": "Errors if destination does not exist",
+        "property": "pathTo",
         "from": "x",
         "to": "nonexistent",
         "tree": "cousins",
@@ -236,13 +250,14 @@
       },
       {
         "description": "Errors if source does not exist",
+        "property": "pathTo",
         "from": "nonexistent",
         "to": "x",
         "tree": "cousins",
         "expected": null
       }
     ]
-  },
+  }],
   "trees": {
     "singleton": {
       "label": "x"
