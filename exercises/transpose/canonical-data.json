@@ -1,5 +1,7 @@
 {
-  "#": [
+  "exercise": "transpose",
+  "version": "1.0.0",
+  "comments": [
       "JSON doesn't allow for multi-line strings, so all multi-line input is ",
       "presented here as arrays of strings. It's up to the test generator to join the ", 
       "lines together with line breaks."
@@ -7,11 +9,13 @@
   "cases": [
     {
       "description": "empty string",
+      "property": "transpose",
       "input": [],
       "expected": []
     },
     {
       "description": "two characters in a row",
+      "property": "transpose",
       "input": ["A1"],
       "expected": [ 
           "A",
@@ -20,6 +24,7 @@
     },
     {
       "description": "two characters in a column",
+      "property": "transpose",
       "input": [
           "A",
           "1"
@@ -30,6 +35,7 @@
     },
     {
       "description": "simple",
+      "property": "transpose",
       "input": [ 
           "ABC",
           "123"
@@ -42,6 +48,7 @@
     },
     {
       "description": "single line",
+      "property": "transpose",
       "input": ["Single line."],
       "expected": [ 
           "S",
@@ -60,6 +67,7 @@
     },
     {
       "description": "first line longer than second line",
+      "property": "transpose",
       "input": [ 
           "The fourth line.",
           "The fifth line."
@@ -85,6 +93,7 @@
     },
     {
       "description": "second line longer than first line",
+      "property": "transpose",
       "input": [ 
           "The first line.",
           "The second line."
@@ -110,6 +119,7 @@
     },
     {
       "description": "square",
+      "property": "transpose",
       "input": [ 
           "HEART",
           "EMBER",
@@ -127,6 +137,7 @@
     },
     {
       "description": "rectangle",
+      "property": "transpose",
       "input": [ 
           "FRACTURE",
           "OUTLINED",
@@ -146,6 +157,7 @@
     },
     {
       "description": "triangle",
+      "property": "transpose",
       "input": [ 
           "T",
           "EE",
@@ -165,6 +177,7 @@
     },
     {
       "description": "many lines",
+      "property": "transpose",
       "input": [ 
           "Chor. Two households, both alike in dignity,",
           "In fair Verona, where we lay our scene,",
