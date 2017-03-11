@@ -1,5 +1,7 @@
 {
-	"#": [
+  "exercise": "sublist",
+  "version": "1.0.0",
+	"comments": [
 		"Lists are ordered and sequential.",
 		"https://en.wikipedia.org/wiki/List_%28abstract_data_type%29",
 		"",
@@ -14,86 +16,103 @@
 	],
 	"cases": [{
 		"description": "empty lists",
+                "property": "sublist",
 		"list_one": [],
 		"list_two": [],
 		"expectation": "equal"
 	}, {
 		"description": "empty list within non empty list",
+                "property": "sublist",
 		"list_one": [],
 		"list_two": [1, 2, 3],
 		"expectation": "sublist"
 	}, {
 		"description": "non empty list contains empty list",
+                "property": "sublist",
 		"list_one": [1, 2, 3],
 		"list_two": [],
 		"expectation": "superlist"
 	}, {
 		"description": "list equals itself",
+                "property": "sublist",
 		"list_one": [1, 2, 3],
 		"list_two": [1, 2, 3],
 		"expectation": "equal"
 	}, {
 		"description": "different lists",
+                "property": "sublist",
 		"list_one": [1, 2, 3],
 		"list_two": [2, 3, 4],
 		"expectation": "unequal"
 	}, {
 		"description": "false start",
+                "property": "sublist",
 		"list_one": [1, 2, 5],
 		"list_two": [0, 1, 2, 3, 1, 2, 5, 6],
 		"expectation": "sublist"
 	}, {
 		"description": "consecutive",
+                "property": "sublist",
 		"list_one": [1, 1, 2],
 		"list_two": [0, 1, 1, 1, 2, 1, 2],
 		"expectation": "sublist"
 	}, {
 		"description": "sublist at start",
+                "property": "sublist",
 		"list_one": [0, 1, 2],
 		"list_two": [0, 1, 2, 3, 4, 5],
 		"expectation": "sublist"
 	}, {
 		"description": "sublist in middle",
+                "property": "sublist",
 		"list_one": [2, 3, 4],
 		"list_two": [0, 1, 2, 3, 4, 5],
 		"expectation": "sublist"
 	}, {
 		"description": "sublist at end",
+                "property": "sublist",
 		"list_one": [3, 4, 5],
 		"list_two": [0, 1, 2, 3, 4, 5],
 		"expectation": "sublist"
 	}, {
 		"description": "at start of superlist",
+                "property": "sublist",
 		"list_one": [0, 1, 2, 3, 4, 5],
 		"list_two": [0, 1, 2],
 		"expectation": "superlist"
 	}, {
 		"description": "in middle of superlist",
+                "property": "sublist",
 		"list_one": [0, 1, 2, 3, 4, 5],
 		"list_two": [2, 3],
 		"expectation": "superlist"
 	}, {
 		"description": "at end of superlist",
+                "property": "sublist",
 		"list_one": [0, 1, 2, 3, 4, 5],
 		"list_two": [3, 4, 5],
 		"expectation": "superlist"
 	}, {
 		"description": "first list missing element from second list",
+                "property": "sublist",
 		"list_one": [1, 3],
 		"list_two": [1, 2, 3],
 		"expectation": "unequal"
 	}, {
 		"description": "second list missing element from first list",
+                "property": "sublist",
 		"list_one": [1, 2, 3],
 		"list_two": [1, 3],
 		"expectation": "unequal"
 	}, {
 		"description": "order matters to a list",
+                "property": "sublist",
 		"list_one": [1, 2, 3],
 		"list_two": [3, 2, 1],
 		"expectation": "unequal"
 	}, {
 		"description": "same digits but different numbers",
+                "property": "sublist",
 		"list_one": [1, 0, 1],
 		"list_two": [10, 1],
 		"expectation": "unequal"
