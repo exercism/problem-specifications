@@ -1,13 +1,15 @@
 {
-  "#": [
+  "exercise": "tournament",
+  "version": "1.1.0",
+  "comments": [
     "The inputs and outputs are represented as arrays of strings to improve readability in this JSON file.",
     "Your track may choose whether to present the input as a single string (concatenating all the lines) or as the list.",
     "In most cases, it seems to make sense to expect the output as a single string."
   ],
-  "valid_inputs": {
     "cases": [
       {
         "description": "typical input",
+        "property": "tally",
         "input": [
           "Allegoric Alaskans;Blithering Badgers;win",
           "Devastating Donkeys;Courageous Californians;draw",
@@ -26,6 +28,7 @@
       },
       {
         "description": "incomplete competition (not all pairs have played)",
+        "property": "tally",
         "input": [
           "Allegoric Alaskans;Blithering Badgers;loss",
           "Devastating Donkeys;Allegoric Alaskans;loss",
@@ -42,6 +45,7 @@
       },
       {
         "description": "ties broken alphabetically",
+        "property": "tally",
         "input": [
           "Courageous Californians;Devastating Donkeys;win",
           "Allegoric Alaskans;Blithering Badgers;win",
@@ -59,11 +63,12 @@
         ]
       },
       {
-        "#": [
+        "comments": [
           "Invalid input lines in an otherwise-valid game",
           "still results in valid output."
         ],
         "description": "mostly invalid lines",
+        "property": "tally",
         "input": [
           "",
           "Allegoric Alaskans@Blithering Badgers;draw",
@@ -78,5 +83,4 @@
         ]
       }
     ]
-  }
 }
