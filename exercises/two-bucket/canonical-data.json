@@ -1,8 +1,10 @@
 {
-    "two_bucket": {
+  "exercise": "two-buckets",
+  "version": "1.0.0",
         "cases": [
             {
                 "description": "(3, 5) -> 1, starting with the first bucket",
+                "property": "measure",
                 "bucket_one": 3,
                 "bucket_two": 5,
                 "goal": 1,
@@ -15,6 +17,7 @@
             },
             {
                 "description": "(3, 5) -> 1, starting with the second bucket",
+                "property": "measure",
                 "bucket_one": 3,
                 "bucket_two": 5,
                 "goal": 1,
@@ -27,6 +30,7 @@
             },
             {
                 "description": "(7, 11) -> 2, starting with the first bucket",
+                "property": "measure",
                 "bucket_one": 7,
                 "bucket_two": 11,
                 "goal": 2,
@@ -39,6 +43,7 @@
             },
             {
                 "description": "(7, 11) -> 2, starting with the second bucket",
+                "property": "measure",
                 "bucket_one": 7,
                 "bucket_two": 11,
                 "goal": 2,
@@ -50,5 +55,4 @@
                 }
             }
         ]
-    }
 }
