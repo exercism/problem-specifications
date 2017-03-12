@@ -1,6 +1,6 @@
 {
-  "exercise": "two-buckets",
-  "version": "1.0.0",
+  "exercise": "two-bucket",
+  "version": "1.0.1",
   "cases": [
     {
       "description": "(3, 5) -> 1, starting with the first bucket",
