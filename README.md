@@ -113,13 +113,26 @@ There are also some convention about `expected` that you must follow:
 
 ## Automated Tests
 
-The only thing that we're testing at the moment, is whether or not `canonical-data.json`
-is valid json.
+`canonical-data.json` for each exercise is checked for compliancy against the [canonical-schema.json](canonical-schema.json).
+In order to run these tests, you will need to have `node` and `npm` installed on your system.
+Install them from [here](https://nodejs.org/en/). (`npm` comes bundled with most installations of `node`).
 
-If you want to run this before you commit, you will need to install
-[jq](https://stedolan.github.io/jq/download/). Then run the script with:
+Install the required packages:
+```shell
+npm install
+```
 
-    bin/jsonlint
+Run for all exercises:
+```shell
+npm test
+```
+
+Run for single exercise:
+```shell
+npm test-one exercises/<exercise>/canonical-data.json
+```
+Replace `<exercise>` by the name of exercise which you want to check.
+
 
 ## License
 
