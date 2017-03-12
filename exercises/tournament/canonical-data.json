@@ -2,9 +2,12 @@
   "exercise": "tournament",
   "version": "1.1.0",
   "comments": [
-    "The inputs and outputs are represented as arrays of strings to improve readability in this JSON file.",
-    "Your track may choose whether to present the input as a single string (concatenating all the lines) or as the list.",
-    "In most cases, it seems to make sense to expect the output as a single string."
+    "The inputs and outputs are represented as arrays of strings to",
+    "improve readability in this JSON file.",
+    "Your track may choose whether to present the input as a single",
+    "string (concatenating all the lines) or as the list.",
+    "In most cases, it seems to make sense to expect the output as",
+    "a single string."
   ],
   "cases": [
     {
