@@ -1,11 +1,10 @@
 {
   "exercise": "pov",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "cases": [{
     "description": "Reroot a tree so that its root is the specified node.",
     "comments": [
       "In this way, the tree is presented from the point of view of the specified node.",
-      "The input trees used here are those in the `trees` section of this file.",
       "",
       "If appropriate for your track, you may test that the input tree is not modified.",
       "",
@@ -308,9 +307,7 @@
     "comments": [
       "A typical implementation would first reroot the tree on one of the two nodes.",
       "",
-      "If appropriate for your track, you may test that the input tree is not modified.",
-      "",
-      "The trees used here are those in the `trees` section of this file."
+      "If appropriate for your track, you may test that the input tree is not modified."
     ],
     "cases": [
       {
