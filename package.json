@@ -10,6 +10,7 @@
     "ajv-cli": "^1.1.1"
   },
   "scripts": {
-    "test": "ajv validate -s canonical-schema.json -d \"exercises/*/canonical-data.json\""
+    "test": "ajv -s canonical-schema.json -d \"exercises/*/canonical-data.json\"",
+    "test-one": "ajv -s canonical-schema.json -d"
   }
 }
