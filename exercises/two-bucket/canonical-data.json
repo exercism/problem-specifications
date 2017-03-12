@@ -1,58 +1,58 @@
 {
   "exercise": "two-buckets",
   "version": "1.0.0",
-        "cases": [
-            {
-                "description": "(3, 5) -> 1, starting with the first bucket",
-                "property": "measure",
-                "bucket_one": 3,
-                "bucket_two": 5,
-                "goal": 1,
-                "start_bucket": "one",
-                "expected": {
-                    "moves": 4,
-                    "goal_bucket": "one",
-                    "other_bucket": 5
-                }
-            },
-            {
-                "description": "(3, 5) -> 1, starting with the second bucket",
-                "property": "measure",
-                "bucket_one": 3,
-                "bucket_two": 5,
-                "goal": 1,
-                "start_bucket": "two",
-                "expected": {
-                    "moves": 8,
-                    "goal_bucket": "two",
-                    "other_bucket": 3
-                }
-            },
-            {
-                "description": "(7, 11) -> 2, starting with the first bucket",
-                "property": "measure",
-                "bucket_one": 7,
-                "bucket_two": 11,
-                "goal": 2,
-                "start_bucket": "one",
-                "expected": {
-                    "moves": 14,
-                    "goal_bucket": "one",
-                    "other_bucket": 11
-                }
-            },
-            {
-                "description": "(7, 11) -> 2, starting with the second bucket",
-                "property": "measure",
-                "bucket_one": 7,
-                "bucket_two": 11,
-                "goal": 2,
-                "start_bucket": "two",
-                "expected": {
-                    "moves": 18,
-                    "goal_bucket": "two",
-                    "other_bucket": 7
-                }
-            }
-        ]
+  "cases": [
+    {
+      "description": "(3, 5) -> 1, starting with the first bucket",
+      "property": "measure",
+      "bucket_one": 3,
+      "bucket_two": 5,
+      "goal": 1,
+      "start_bucket": "one",
+      "expected": {
+        "moves": 4,
+        "goal_bucket": "one",
+        "other_bucket": 5
+      }
+    },
+    {
+      "description": "(3, 5) -> 1, starting with the second bucket",
+      "property": "measure",
+      "bucket_one": 3,
+      "bucket_two": 5,
+      "goal": 1,
+      "start_bucket": "two",
+      "expected": {
+        "moves": 8,
+        "goal_bucket": "two",
+        "other_bucket": 3
+      }
+    },
+    {
+      "description": "(7, 11) -> 2, starting with the first bucket",
+      "property": "measure",
+      "bucket_one": 7,
+      "bucket_two": 11,
+      "goal": 2,
+      "start_bucket": "one",
+      "expected": {
+        "moves": 14,
+        "goal_bucket": "one",
+        "other_bucket": 11
+      }
+    },
+    {
+      "description": "(7, 11) -> 2, starting with the second bucket",
+      "property": "measure",
+      "bucket_one": 7,
+      "bucket_two": 11,
+      "goal": 2,
+      "start_bucket": "two",
+      "expected": {
+        "moves": 18,
+        "goal_bucket": "two",
+        "other_bucket": 7
+      }
+    }
+  ]
 }
