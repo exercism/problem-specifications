@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "cases": [
     {
-      "description": "(3, 5) -> 1, starting with the first bucket",
+      "description": "Measure using bucket one of size 3 and bucket two of size 5 - start with bucket one",
       "property": "measure",
       "bucket_one": 3,
       "bucket_two": 5,
@@ -16,7 +16,7 @@
       }
     },
     {
-      "description": "(3, 5) -> 1, starting with the second bucket",
+      "description": "Measure using bucket one of size 3 and bucket two of size 5 - start with bucket two",
       "property": "measure",
       "bucket_one": 3,
       "bucket_two": 5,
@@ -29,7 +29,7 @@
       }
     },
     {
-      "description": "(7, 11) -> 2, starting with the first bucket",
+      "description": "Measure using bucket one of size 7 and bucket two of size 11 - start with bucket one",
       "property": "measure",
       "bucket_one": 7,
       "bucket_two": 11,
@@ -42,7 +42,7 @@
       }
     },
     {
-      "description": "(7, 11) -> 2, starting with the second bucket",
+      "description": "Measure using bucket one of size 7 and bucket two of size 11 - start with bucket two",
       "property": "measure",
       "bucket_one": 7,
       "bucket_two": 11,
