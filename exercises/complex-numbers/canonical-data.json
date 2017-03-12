@@ -1,0 +1,88 @@
+{
+  "exercise": "complex-numbers",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "comments": [
+        " The canonical data assumes mathematically correct real   ",
+        " numbers. The testsuites should consider rounding errors  ",
+        " instead of testing for exact values for any non-integer  ",
+        " tests.                                                   "
+      ],
+      "description": "Arithmetic",
+      "cases": [
+        {
+          "description": "Addition",
+          "property": "add",
+          "z1": "1+2i",
+          "z2": "3+4i",
+          "expected": "4+6i"
+        },
+        {
+          "description": "Subtraction",
+          "property": "sub",
+          "z1": "1+2i",
+          "z2": "3+4i",
+          "expected": "-2-2i"
+        },
+        {
+          "description": "Multiplication",
+          "property": "mul",
+          "z1": "1+2i",
+          "z2": "3+4i",
+          "expected": "-5+10i"
+        },
+        {
+          "description": "Division",
+          "property": "div",
+          "z1": "1+2i",
+          "z2": "3+4i",
+          "expected": "11/25+2i/25"
+        }
+      ]
+    },
+    {
+      "description": "Absolute value",
+      "property": "abs",
+      "input": "(1+i)*(1+i)",
+      "expected": "2"
+    },
+    {
+      "description": "Complex conjugate",
+      "property": "conjugate",
+      "input": "1+i",
+      "expected": "1-i"
+    },
+    {
+      "description": "Real part",
+      "property": "real",
+      "input": "1+2i",
+      "expected": "1"
+    },
+    {
+      "description": "Imaginary part",
+      "property": "imaginary",
+      "input": "1+2i",
+      "expected": "2"
+    },
+    {
+      "description": "Imaginary unit",
+      "property": "mul",
+      "input": "i*i",
+      "expected": "-1"
+    },
+    {
+      "comments": [
+        " Defining the exponential function can be optional.       ",
+        " If the language used does not have sine and cosine       ",
+        " functions in the standard library, this will be          ",
+        " significantly more difficult than the rest of the exer-  ",
+        " cise and should probably not be part of the problem.     "
+      ],
+      "description": "Euler identity",
+      "property": "exp",
+      "input": "pi*i",
+      "expected": "-1"
+    }
+  ]
+}
