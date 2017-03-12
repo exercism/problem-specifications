@@ -47,7 +47,7 @@
           "expected": "1234567890"
         },
         {
-          "description": "invalid when 12 digits",
+          "description": "invalid when more than 11 digits",
           "property": "clean",
           "phrase": "321234567890",
           "expected": null
