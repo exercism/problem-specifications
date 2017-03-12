@@ -57,31 +57,25 @@
           "Blithering Badgers             |  3 |  0 |  1 |  2 |  1",
           "Devastating Donkeys            |  3 |  0 |  1 |  2 |  1"
         ]
-      }
-    ]
-  },
-  "invalid_lines": {
-    "#": [
-      "Your track should test that, for each invalid line,",
-      "inserting the invalid line into an otherwise-valid game still results in valid output.",
-      "It's suggested to use one of the valid games above."
-    ],
-    "cases": [
-      {
-        "description": "an empty line",
-        "input": ""
       },
       {
-        "description": "wrong separator used",
-        "input": "Devastating Donkeys@Courageous Californians;draw"
-      },
-      {
-        "description": "too many separators",
-        "input": "Devastating Donkeys;Courageous Californians;draw;5"
-      },
-      {
-        "description": "invalid match result",
-        "input": "Devastating Donkeys;Allegoric Alaskans;dra"
+        "#": [
+          "Invalid input lines in an otherwise-valid game",
+          "still results in valid output."
+        ],
+        "description": "mostly invalid lines",
+        "input": [
+          "",
+          "Allegoric Alaskans@Blithering Badgers;draw",
+          "Blithering Badgers;Devastating Donkeys;loss",
+          "Devastating Donkeys;Courageous Californians;win;5",
+          "Courageous Californians;Allegoric Alaskans;los"
+        ],
+        "expected": [
+          "Team                           | MP |  W |  D |  L |  P",
+          "Devastating Donkeys            |  1 |  1 |  0 |  0 |  3",
+          "Blithering Badgers             |  1 |  0 |  0 |  1 |  0"
+        ]
       }
     ]
   }
