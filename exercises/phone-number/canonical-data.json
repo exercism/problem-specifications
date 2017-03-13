@@ -1,6 +1,6 @@
 {
   "exercise": "phone-number",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "cases": [
     {
       "description": "Cleanup user-entered phone numbers",
@@ -47,7 +47,7 @@
           "expected": "1234567890"
         },
         {
-          "description": "invalid when 12 digits",
+          "description": "invalid when more than 11 digits",
           "property": "clean",
           "phrase": "321234567890",
           "expected": null
