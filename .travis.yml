@@ -1,12 +1,9 @@
-language: bash
+language: node_js
+node_js:
+  - "6"
 
-sudo: false
-
-addons:
-  apt:
-    packages:
-      - jq
+cache: yarn
 
 script:
-  - bin/jsonlint
   - bin/check_required_files_present
+  - npm test
