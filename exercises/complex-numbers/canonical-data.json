@@ -44,8 +44,8 @@
     {
       "description": "Absolute value",
       "property": "abs",
-      "input": "(1+i)*(1+i)",
-      "expected": "2"
+      "input": "3+4i",
+      "expected": "5"
     },
     {
       "description": "Complex conjugate",
@@ -68,7 +68,8 @@
     {
       "description": "Imaginary unit",
       "property": "mul",
-      "input": "i*i",
+      "z1": "i",
+      "z2": "i",
       "expected": "-1"
     },
     {
