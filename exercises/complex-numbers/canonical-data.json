@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "cases": [
     {
+      "description": "Imaginary unit",
+      "property": "mul",
+      "z1": "i",
+      "z2": "i",
+      "expected": "-1+0i"
+    },
+    {
       "comments": [
         " The canonical data assumes mathematically correct real   ",
         " numbers. The testsuites should consider rounding errors  ",
@@ -13,64 +20,213 @@
       "cases": [
         {
           "description": "Addition",
-          "property": "add",
-          "z1": "1+2i",
-          "z2": "3+4i",
-          "expected": "4+6i"
+          "cases": [
+            {
+              "description": "Add purely real numbers",
+              "property": "add",
+              "z1": "1+0i",
+              "z2": "2+0i",
+              "expected": "3+0i"
+            },
+            {
+              "description": "Add purely imaginary numbers",
+              "property": "add",
+              "z1": "0+i",
+              "z2": "0+2i",
+              "expected": "0+3i"
+            },
+            {
+              "description": "Add numbers with real and imaginary part",
+              "property": "add",
+              "z1": "1+2i",
+              "z2": "3+4i",
+              "expected": "4+6i"
+            }
+          ]
         },
         {
           "description": "Subtraction",
-          "property": "sub",
-          "z1": "1+2i",
-          "z2": "3+4i",
-          "expected": "-2-2i"
+          "cases": [
+            {
+              "description": "Subtract purely real numbers",
+              "property": "sub",
+              "z1": "1+0i",
+              "z2": "2+0i",
+              "expected": "-1+0i"
+            },
+            {
+              "description": "Subtract purely imaginary numbers",
+              "property": "sub",
+              "z1": "0+i",
+              "z2": "0+2i",
+              "expected": "0-1i"
+            },
+            {
+              "description": "Subtract numbers with real and imaginary part",
+              "property": "sub",
+              "z1": "1+2i",
+              "z2": "3+4i",
+              "expected": "-2-2i"
+            }
+          ]
         },
         {
           "description": "Multiplication",
-          "property": "mul",
-          "z1": "1+2i",
-          "z2": "3+4i",
-          "expected": "-5+10i"
+          "cases": [
+            {
+              "description": "Multiply purely real numbers",
+              "property": "mul",
+              "z1": "1+0i",
+              "z2": "2+0i",
+              "expected": "2+0i"
+            },
+            {
+              "description": "Multiply purely imaginary numbers",
+              "property": "mul",
+              "z1": "0+i",
+              "z2": "0+2i",
+              "expected": "-2+0i"
+            },
+            {
+              "description": "Multiply numbers with real and imaginary part",
+              "property": "mul",
+              "z1": "1+2i",
+              "z2": "3+4i",
+              "expected": "-5+10i"
+            }
+          ]
         },
         {
           "description": "Division",
-          "property": "div",
-          "z1": "1+2i",
-          "z2": "3+4i",
-          "expected": "11/25+2i/25"
+          "cases": [
+            {
+              "description": "Divide purely real numbers",
+              "property": "div",
+              "z1": "1+0i",
+              "z2": "2+0i",
+              "expected": "0.5+0i"
+            },
+            {
+              "description": "Divide purely imaginary numbers",
+              "property": "div",
+              "z1": "0+i",
+              "z2": "0+2i",
+              "expected": "0.5+0i"
+            },
+            {
+              "description": "Divide numbers with real and imaginary part",
+              "property": "div",
+              "z1": "1+2i",
+              "z2": "3+4i",
+              "expected": "0.44+0.08i"
+            }
+          ]
         }
       ]
     },
     {
       "description": "Absolute value",
-      "property": "abs",
-      "input": "3+4i",
-      "expected": "5"
+      "cases": [
+        {
+          "description": "Absolute value of a positive purely real number",
+          "property": "abs",
+          "input": "5+0i",
+          "expected": 5
+        },
+        {
+          "description": "Absolute value of a negative purely real number",
+          "property": "abs",
+          "input": "-5+0i",
+          "expected": 5
+        },
+        {
+          "description": "Absolute value of a purely imaginary number with positive imaginary part",
+          "property": "abs",
+          "input": "0+5i",
+          "expected": 5
+        },
+        {
+          "description": "Absolute value of a purely imaginary number with negative imaginary part",
+          "property": "abs",
+          "input": "0-5i",
+          "expected": 5
+        },
+        {
+          "description": "Absolute value of a number with real and imaginary part",
+          "property": "abs",
+          "input": "3+4i",
+          "expected": 5
+        }
+      ]
     },
     {
       "description": "Complex conjugate",
-      "property": "conjugate",
-      "input": "1+i",
-      "expected": "1-i"
+      "cases": [
+        {
+          "description": "Conjugate a purely real number",
+          "property": "conjugate",
+          "input": "5+0i",
+          "expected": "5+0i"
+        },
+        {
+          "description": "Conjugate a purely imaginary number",
+          "property": "conjugate",
+          "input": "0+5i",
+          "expected": "0-5i"
+        },
+        {
+          "description": "Conjugate a number with real and imaginary part",
+          "property": "conjugate",
+          "input": "1+i",
+          "expected": "1-i"
+        }
+      ]
     },
     {
       "description": "Real part",
-      "property": "real",
-      "input": "1+2i",
-      "expected": "1"
+      "cases": [
+        {
+          "description": "Real part of a purely real number",
+          "property": "real",
+          "input": "1+0i",
+          "expected": 1
+        },
+        {
+          "description": "Real part of a purely imaginary number",
+          "property": "real",
+          "input": "0+1i",
+          "expected": 0
+        },
+        {
+          "description": "Real part of a number with real and imaginary part",
+          "property": "real",
+          "input": "1+2i",
+          "expected": 1
+        }
+      ]
     },
     {
       "description": "Imaginary part",
-      "property": "imaginary",
-      "input": "1+2i",
-      "expected": "2"
-    },
-    {
-      "description": "Imaginary unit",
-      "property": "mul",
-      "z1": "i",
-      "z2": "i",
-      "expected": "-1"
+      "cases": [
+        {
+          "description": "Imaginary part of a purely real number",
+          "property": "imaginary",
+          "input": "1+0i",
+          "expected": 0
+        },
+        {
+          "description": "Imaginary part of a purely imaginary number",
+          "property": "imaginary",
+          "input": "0+1i",
+          "expected": 1
+        },
+        {
+          "description": "Imaginary part of a number with real and imaginary part",
+          "property": "imaginary",
+          "input": "1+2i",
+          "expected": 2
+        }
+      ]
     },
     {
       "comments": [
@@ -78,9 +234,13 @@
         " If the language used does not have sine and cosine       ",
         " functions in the standard library, this will be          ",
         " significantly more difficult than the rest of the exer-  ",
-        " cise and should probably not be part of the problem.     "
+        " cise and should probably not be part of the problem.     ",
+        " The recommended implementation uses Euler's formula      ",
+        " exp(ix) = cos(x) + i * sin(x). This is not an ideal sol- ",
+        " ution but works for the purpose of teaching complex      ",
+        " numbers.                                                 "
       ],
-      "description": "Euler identity",
+      "description": "Euler's identity/formula",
       "property": "exp",
       "input": "pi*i",
       "expected": "-1"
