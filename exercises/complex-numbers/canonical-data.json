@@ -1,21 +1,23 @@
 {
   "exercise": "complex-numbers",
   "version": "1.0.0",
+  "comments": [
+    " The canonical data assumes mathematically correct real   ",
+    " numbers. The testsuites should consider rounding errors  ",
+    " instead of testing for exact values for any non-integer  ",
+    " tests.                                                   ",
+    " Complex numbers z are represented as arrays [x, y] so    ",
+    " that z = x + i * y.                                      "
+  ],
   "cases": [
     {
       "description": "Imaginary unit",
       "property": "mul",
-      "z1": "i",
-      "z2": "i",
-      "expected": "-1+0i"
+      "z1": [0, 1],
+      "z2": [0, 1],
+      "expected": [-1, 0]
     },
     {
-      "comments": [
-        " The canonical data assumes mathematically correct real   ",
-        " numbers. The testsuites should consider rounding errors  ",
-        " instead of testing for exact values for any non-integer  ",
-        " tests.                                                   "
-      ],
       "description": "Arithmetic",
       "cases": [
         {
@@ -24,23 +26,23 @@
             {
               "description": "Add purely real numbers",
               "property": "add",
-              "z1": "1+0i",
-              "z2": "2+0i",
-              "expected": "3+0i"
+              "z1": [1, 0],
+              "z2": [2, 0],
+              "expected": [3, 0]
             },
             {
               "description": "Add purely imaginary numbers",
               "property": "add",
-              "z1": "0+i",
-              "z2": "0+2i",
-              "expected": "0+3i"
+              "z1": [0, 1],
+              "z2": [0, 2],
+              "expected": [0, 3]
             },
             {
               "description": "Add numbers with real and imaginary part",
               "property": "add",
-              "z1": "1+2i",
-              "z2": "3+4i",
-              "expected": "4+6i"
+              "z1": [1, 2],
+              "z2": [3, 4],
+              "expected": [4, 6]
             }
           ]
         },
@@ -50,23 +52,23 @@
             {
               "description": "Subtract purely real numbers",
               "property": "sub",
-              "z1": "1+0i",
-              "z2": "2+0i",
-              "expected": "-1+0i"
+              "z1": [1, 0],
+              "z2": [2, 0],
+              "expected": [-1, 0]
             },
             {
               "description": "Subtract purely imaginary numbers",
               "property": "sub",
-              "z1": "0+i",
-              "z2": "0+2i",
-              "expected": "0-1i"
+              "z1": [0, 1],
+              "z2": [0, 2],
+              "expected": [0, -1]
             },
             {
               "description": "Subtract numbers with real and imaginary part",
               "property": "sub",
-              "z1": "1+2i",
-              "z2": "3+4i",
-              "expected": "-2-2i"
+              "z1": [1, 2],
+              "z2": [3, 4],
+              "expected": [-2, -2]
             }
           ]
         },
@@ -76,23 +78,23 @@
             {
               "description": "Multiply purely real numbers",
               "property": "mul",
-              "z1": "1+0i",
-              "z2": "2+0i",
-              "expected": "2+0i"
+              "z1": [1, 0],
+              "z2": [2, 0],
+              "expected": [2, 0]
             },
             {
               "description": "Multiply purely imaginary numbers",
               "property": "mul",
-              "z1": "0+i",
-              "z2": "0+2i",
-              "expected": "-2+0i"
+              "z1": [0, 1],
+              "z2": [0, 2],
+              "expected": [-2, 0]
             },
             {
               "description": "Multiply numbers with real and imaginary part",
               "property": "mul",
-              "z1": "1+2i",
-              "z2": "3+4i",
-              "expected": "-5+10i"
+              "z1": [1, 2],
+              "z2": [3, 4],
+              "expected": [-5, 10]
             }
           ]
         },
@@ -102,23 +104,23 @@
             {
               "description": "Divide purely real numbers",
               "property": "div",
-              "z1": "1+0i",
-              "z2": "2+0i",
-              "expected": "0.5+0i"
+              "z1": [1, 0],
+              "z2": [2, 0],
+              "expected": [0.5, 0]
             },
             {
               "description": "Divide purely imaginary numbers",
               "property": "div",
-              "z1": "0+i",
-              "z2": "0+2i",
-              "expected": "0.5+0i"
+              "z1": [0, 1],
+              "z2": [0, 2],
+              "expected": [0.5, 0]
             },
             {
               "description": "Divide numbers with real and imaginary part",
               "property": "div",
-              "z1": "1+2i",
-              "z2": "3+4i",
-              "expected": "0.44+0.08i"
+              "z1": [1, 2],
+              "z2": [3, 4],
+              "expected": [0.44, 0.08]
             }
           ]
         }
@@ -130,31 +132,31 @@
         {
           "description": "Absolute value of a positive purely real number",
           "property": "abs",
-          "input": "5+0i",
+          "input": [5, 0],
           "expected": 5
         },
         {
           "description": "Absolute value of a negative purely real number",
           "property": "abs",
-          "input": "-5+0i",
+          "input": [-5, 0],
           "expected": 5
         },
         {
           "description": "Absolute value of a purely imaginary number with positive imaginary part",
           "property": "abs",
-          "input": "0+5i",
+          "input": [0, 5],
           "expected": 5
         },
         {
           "description": "Absolute value of a purely imaginary number with negative imaginary part",
           "property": "abs",
-          "input": "0-5i",
+          "input": [0, -5],
           "expected": 5
         },
         {
           "description": "Absolute value of a number with real and imaginary part",
           "property": "abs",
-          "input": "3+4i",
+          "input": [3, 4],
           "expected": 5
         }
       ]
@@ -165,20 +167,20 @@
         {
           "description": "Conjugate a purely real number",
           "property": "conjugate",
-          "input": "5+0i",
-          "expected": "5+0i"
+          "input": [5, 0],
+          "expected": [5, 0]
         },
         {
           "description": "Conjugate a purely imaginary number",
           "property": "conjugate",
-          "input": "0+5i",
-          "expected": "0-5i"
+          "input": [0, 5],
+          "expected": [0, -5]
         },
         {
           "description": "Conjugate a number with real and imaginary part",
           "property": "conjugate",
-          "input": "1+i",
-          "expected": "1-i"
+          "input": [1, 1],
+          "expected": [1, -1]
         }
       ]
     },
@@ -188,19 +190,19 @@
         {
           "description": "Real part of a purely real number",
           "property": "real",
-          "input": "1+0i",
+          "input": [1, 0],
           "expected": 1
         },
         {
           "description": "Real part of a purely imaginary number",
           "property": "real",
-          "input": "0+1i",
+          "input": [0, 1],
           "expected": 0
         },
         {
           "description": "Real part of a number with real and imaginary part",
           "property": "real",
-          "input": "1+2i",
+          "input": [1, 2],
           "expected": 1
         }
       ]
@@ -211,19 +213,19 @@
         {
           "description": "Imaginary part of a purely real number",
           "property": "imaginary",
-          "input": "1+0i",
+          "input": [1, 0],
           "expected": 0
         },
         {
           "description": "Imaginary part of a purely imaginary number",
           "property": "imaginary",
-          "input": "0+1i",
+          "input": [0, 1],
           "expected": 1
         },
         {
           "description": "Imaginary part of a number with real and imaginary part",
           "property": "imaginary",
-          "input": "1+2i",
+          "input": [1, 2],
           "expected": 2
         }
       ]
@@ -242,8 +244,8 @@
       ],
       "description": "Euler's identity/formula",
       "property": "exp",
-      "input": "pi*i",
-      "expected": "-1"
+      "input": [0, "pi"],
+      "expected": -1
     }
   ]
 }
