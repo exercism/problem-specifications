@@ -54,7 +54,7 @@ would get the same thing as the Caesar Cipher.
 
 The weakest link in any cipher is the human being. Let's make your
 substitution cipher a little more fault tolerant by providing a source
-of randomness and ensuring that they key is not composed of numbers or
+of randomness and ensuring that the key is not composed of numbers or
 capital letters.
 
 If someone doesn't submit a key at all, generate a truly random key of
