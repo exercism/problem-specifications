@@ -198,7 +198,10 @@ needs to be made in the [exercism/x-common repository](https://github.com/exerci
 not directly to the test suite itself.
 
 Find the JSON file for the problem in question. For example, if you want to change
-the Clock problem, then look for `exercises/clock/canonical-data.json`.
+the Clock problem, then look for `exercises/clock/canonical-data.json`. Each 
+change should also bump the version of the test data. For more information,
+see the [test data versioning](README.md#test-data-versioning) section of the 
+README.
 
 Submit a pull request with the change.
 
