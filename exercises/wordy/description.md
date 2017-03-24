@@ -38,7 +38,7 @@ left-to-right, _ignoring the typical order of operations._
 
 24
 
-> What is 3 plus 2 times 3?
+> What is 3 plus 2 multiplied by 3?
 
 15  (i.e. not 9)
 
