@@ -111,6 +111,58 @@ There are also some convention about `expected` that you must follow:
     - The string should explain why the error would occur.
     - A particular track's implementation of the exercise **need not** necessarily check that the error includes that exact string as the cause, depending on what is idiomatic in the language (it may not be idiomatic to check strings for error messages).
 
+### Test Data Versioning
+
+Test data should be versioned according to [Semantic Version 2.0](http://semver.org/), which is defined as follows:
+
+> Given a version number MAJOR.MINOR.PATCH, increment the:
+>
+> MAJOR version when you make incompatible API changes,
+> MINOR version when you add functionality in a backwards-compatible manner, and
+> PATCH version when you make backwards-compatible bug fixes.
+> Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+
+#### MAJOR version changes
+
+The MAJOR version should be changed when the test suite is modified in a 
+fundamentally incompatible way. 
+
+There are examples of changes requiring a MAJOR version change:
+
+- A new "property" (test type).
+- Renaming a "property".
+- Insertion, deletion or renaming of keys in the test data object.
+- Changing the type of one of the test data keys.
+
+MAJOR changes should be expected to break even well-behaved test generators.
+
+#### MINOR version changes
+
+The MINOR version should change when you add functionality in a backwards-compatible manner, make 
+non-breaking changes that alter the meaning of the test suite, make previously
+passing solutions possibly fail, or failing solutions fail at a different spot.
+
+There are examples of changes requiring a MINOR version change:
+
+- Adding or deleting test cases.
+- Changing the test cases inputs and/or outputs.
+- Changing the test cases ordering.
+
+MINOR changes would never break well-designed test generators, because the test-generation logic remains exactly the same.
+
+#### PATCH version changes
+
+The PATCH version should change when you make backwards-compatible bug fixes or
+ whenever the meaning of the tests does not change.
+
+There are examples of changes requiring a PATCH version change:
+
+- Regrouping/"Renesting" test cases without changing test case ordering.
+- Changing descriptions or comments.
+- Changing keys' ordering or formatting (would result in an equivalent JSON file).    
+
+PATCH changes would never break well-designed test generators, because the test data remains exactly the same.
+
 ## Automated Tests
 
 `canonical-data.json` for each exercise is checked for compliancy against the [canonical-schema.json](canonical-schema.json).
