@@ -58,6 +58,12 @@
           "property": "isIsogram",
           "input": "Emily Jung Schwartzkopf",
           "expected": true
+        },
+        {
+          "description": "non isogram with duplicated letter not at the start",
+          "property": "isIsogram",
+          "input": "supercalifragi",
+          "expected": false
         }
       ]
     }
