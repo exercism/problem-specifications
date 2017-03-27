@@ -64,6 +64,18 @@
           "property": "isPangram",
           "input": "the quick brown fox jumped over the lazy FOX",
           "expected": false
+        },
+        {
+          "description":"pangram with non ascii characters",
+          "property": "isPangram",
+          "input": "Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.",
+          "expected": true
+        },
+        {
+          "description":"pangram with non ascii characters missing character 'x'",
+          "property": "isPangram",
+          "input": "Victor jagt zwölf Botkämpfer quer über den großen Sylter Deich.",
+          "expected": false
         }
       ]
     }
