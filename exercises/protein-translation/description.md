@@ -1,4 +1,4 @@
-Let's translate RNA sequences into proteins. [general ref](http://en.wikipedia.org/wiki/Translation_(biology)
+Let's translate RNA sequences into proteins. [general ref](http://en.wikipedia.org/wiki/Translation_(biology))
 
 RNA can be broken into three nucleotide sequences called codons, and then translated to a polypeptide like so:
 
