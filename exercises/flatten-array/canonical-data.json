@@ -1,7 +1,13 @@
 {
   "exercise": "flatten-array",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "cases": [
+    {
+      "description": "no nesting",
+      "property": "flatten",
+      "input": [0, 1, 2],
+      "expected": [0, 1, 2]
+    },
     {
       "description": "flattens array with just integers present",
       "property": "flatten",
