@@ -1,16 +1,22 @@
-The rules are as follows:
+The **North American Numbering Plan (NANP)** is a telephone numbering system used by many countries in North America like the United States, Canada or Bermuda. All NANP-countries share the same international country code `1`.
 
-- If the phone number is less than 10 digits assume that it is bad
-  number
-- If the phone number is 10 digits assume that it is good
-- If the phone number is 11 digits and the first number is 1, trim the 1
-  and use the last 10 digits
-- If the phone number is 11 digits and the first number is not 1, then
-  it is a bad number
-- If the phone number is more than 11 digits assume that it is a bad
-  number
+NANP numbers are ten-digit numbers consisting of a three-digit Numbering Plan Area code, commonly known as *area code*, followed by a seven-digit local number. The first three digigts of the local number represent the *exchange code*, followed by the unique four-digit number which is the *subscriber number*.
 
-We've provided tests, now make them pass.
 
-Hint: Only make one test pass at a time. Disable the others, then flip
-each on in turn after you get the current failing one to pass.
+The format is usually represented as
+```
+(NXX)-NXX-XXXX
+```
+where N is any digit from 2 through 9 and X is any digit from 0 through 9.
+
+You task is to clean up differently formated telephone numbers by removeing punctuatin and the country code (1) if present.
+
+**Example:**
++1 (613)-995-0253
+613-995-0253
+1 613 995 0253
+613.995.0253
+- - - - - - - - - - - - -
+6139950253
+
+**Note:** As this exercise only deals with telephone numbers used in NANP-countries only 1 is considered a valid country code.
