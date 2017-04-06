@@ -12,5 +12,5 @@ Random names means a risk of collisions. Your solution should not allow
 the use of the same name twice when avoidable. 
 
 ## Extensions
-- Ensure that the same name is never used twice.
-- There are 26^2 * 1,000 = 676,000 possible robot names - ensure that none are repeated.
+- There are 26^2 * 1,000 = 676,000 possible robot names.
+- Ensure that names are never repeated. 
