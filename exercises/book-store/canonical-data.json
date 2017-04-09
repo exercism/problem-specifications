@@ -1,6 +1,6 @@
 {
   "exercise": "book-store",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "cases": [
     {
       "description": "Return the total basket price after applying the best discount.",
@@ -71,7 +71,7 @@
          "description": "Group of four plus group of two is cheaper than two groups of three",
          "basket": [1,1,2,2,3,4],
          "targetgrouping": [[1,2,3,4],[1,2]],
-         "expected": 40.8
+         "expected": 40.80
         },
         {
          "property": "total",
