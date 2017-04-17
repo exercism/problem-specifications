@@ -1,0 +1,87 @@
+{
+  "exercise": "saddle-points",
+  "version": "1.0.0",
+  "comments": [
+    "Matrix rows and columns are 0-indexed."
+  ],
+  "cases": [
+    {
+      "description": "Can identify single saddle point",
+      "comments": [
+        "This is the README example."
+      ],
+      "property": "saddlePoints",
+      "input": [
+        [9, 8, 7],
+        [5, 3, 2],
+        [6, 6, 7]
+      ],
+      "expected": [
+        {
+          "row": 1,
+          "column": 0
+        }
+      ]
+    },
+    {
+      "description": "Can identify that empty matrix has no saddle points",
+      "property": "saddlePoints",
+      "input": [
+        []
+      ],
+      "expected": []
+    },
+    {
+      "description": "Can identify lack of saddle points when there are none",
+      "property": "saddlePoints",
+      "input": [
+        [1, 2, 3],
+        [3, 1, 2],
+        [2, 3, 1]
+      ],
+      "expected": []
+    },
+    {
+      "description": "Can identify multiple saddle points",
+      "property": "saddlePoints",
+      "input": [
+        [4, 5, 4],
+        [3, 5, 5],
+        [1, 5, 4]
+      ],
+      "expected": [
+        {
+          "row": 0,
+          "column": 1
+        },
+        {
+          "row": 1,
+          "column": 1
+        },
+        {
+          "row": 2,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "description": "Can identify saddle point in bottom right corner",
+      "comments": [
+        "This is a permutation of the README matrix designed to test",
+        "off-by-one errors."
+      ],
+      "property": "saddlePoints",
+      "input": [
+        [8, 7, 9],
+        [6, 7, 6],
+        [3, 2, 5]
+      ],
+      "expected": [
+        {
+          "row": 2,
+          "column": 2
+        }
+      ]
+    }
+  ]
+}
