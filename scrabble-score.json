@@ -1,0 +1,64 @@
+{
+  "cases": [
+    {
+      "description": "Short input",
+      "input": "a",
+      "expected": 1,
+      "msg": "No, 'a' scores 1 point"
+    },
+    {
+      "description": "Uppercase Short input",
+      "input": "A",
+      "expected": 1,
+      "msg": "No, 'A' scores 1 point"
+    },
+    {
+      "description": "Single Letter worth multiple points",
+      "input": "f",
+      "expected": 4,
+      "msg": "No, 'f' scores 4 point"
+    },
+    {
+      "description": "Short word",
+      "input": "at",
+      "expected": 2,
+      "msg": "No, 'at' scores 2 point"
+    },
+    {
+      "description": "Short word, with letters worth multiple points",
+      "input": "zoo",
+      "expected": 12,
+      "msg": "No, 'zoo' scores 12 point"
+    },
+    {
+      "description": "Medium word",
+      "input": "street",
+      "expected": 6,
+      "msg": "No, 'street' scores 6 point"
+    },
+    {
+      "description": "Medium word, with letters worth multiple points",
+      "input": "quirky",
+      "expected": 22,
+      "msg": "No, 'quirky' scores 22 point"
+    },
+    {
+      "description": "Upper case long word",
+      "input": "MULTIBILLIONAIRE",
+      "expected": 20,
+      "msg": "No, 'MULTIBILLIONAIRE' scores 20 point"
+    },
+    {
+      "description": "Mixed Case long word",
+      "input": "OxyphenButazone",
+      "expected": 41,
+      "msg": "No, 'OxyphenButazone' scores 41 point"
+    },
+    {
+      "description": "Empty input",
+      "input": "",
+      "expected": 0,
+      "msg": "No, an empty input scores zero points"
+    }
+  ]
+}
