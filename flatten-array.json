@@ -1,0 +1,29 @@
+{
+   "cases": [
+      {
+         "description": "flattens list with one nested empty list",
+         "input": [[]],
+         "expected": []
+      },
+      {
+         "description": "flattens list with one nested list",
+         "input": [1,[2,3,4],5],
+         "expected": [1, 2, 3, 4, 5]
+      },
+      {
+         "description": "flattens list  with more than one nested list",
+         "input": [1,[2,3,4],5,[6,[7,8]]],
+         "expected": [1,2,3,4,5,6,7,8]
+      },
+      {
+         "description": "flattens list with a lot of nested list",
+         "input": [0, 2, [[2, 3], 8, 100, 4,[[[50]]]], -2],
+         "expected": [0, 2, 2, 3, 8, 100, 4, 50, -2]
+      },
+      {
+         "description": "flattens list with with negative numbers",
+         "input": [0, 2, [[2, 3], 8, 100, 4,[[[50]]]], -2],
+         "expected": [0, 2, 2, 3, 8, 100, 4, 50, -2]
+      }
+   ]
+}
