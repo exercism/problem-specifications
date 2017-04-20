@@ -43,10 +43,12 @@ imtgdvsfearwermayoogoanouuiontnnlvtwttddesaohghnsseoau
 
 Output the encoded text in chunks.  Phrases that fill perfect squares
 `(r X r)` should be output in `r`-length chunks separated by spaces.
-Imperfect squares will have `n` empty spaces.  Those spaces should be distributed evenly across the last `n` rows.
+Imperfect squares will have `n` empty spaces.  The final row should
+not have any trailing whitespace instead of including `n` empty
+spaces at the end.
 
 ```plain
-imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn sseoau
+imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghns seoau
 ```
 
 Notice that were we to stack these, we could visually decode the
@@ -59,6 +61,6 @@ mayoogo
 anouuio
 ntnnlvt
 wttddes
-aohghn
-sseoau
+aohghns
+seoau
 ```
