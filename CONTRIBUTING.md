@@ -41,7 +41,7 @@ themselves. There are other guides about contributing to other parts of the Exer
     * [Pull Request Guidelines](#pull-request-guidelines)
     * [Exercise Versioning](#exercise-versioning)
     * [Anatomy of an Exercise](#anatomy-of-an-exercise)
-    * [config.json](#config-json)
+    * [config.json](#config.json)
     * [Track-Level Linting With Configlet](#track-level-linting-with-configlet)
     * [Git Basics](#git-basics)
         * [Getting the Code](#getting-the-code)
