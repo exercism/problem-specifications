@@ -691,8 +691,8 @@ A problem might be foregone for a number of reasons, typically because it's a
 bad exercise for the language.
 
 Optional keys:
-`test_pattern` - A (case sensitive) regex pattern that test filenames will match. It is used to determine which files will be visible on a problems test-suite page on the exercism.io site. The default value used if this key is not present is (case insensitve) `test`
-`ignore_pattern` - A (case insensitive) regex pattern that will cause files matching it to not be served to the student by `exercism fetch`. The default value used if this key is not present is 'example'
+* `test_pattern` - A (case sensitive) regex pattern that test filenames will match. It is used to determine which files will be visible on a problems test-suite page on the exercism.io site. The default value used if this key is not present is (case insensitve) `test`
+* `ignore_pattern` - A (case insensitive) regex pattern that will cause files matching it to not be served to the student by `exercism fetch`. The default value used if this key is not present is 'example'
 
 ### Track-Level Linting With Configlet
 
