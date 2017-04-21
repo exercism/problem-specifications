@@ -670,8 +670,9 @@ to pass the updated tests.
 
 ### Track configuration file
 
-Each language track has a `config.json` file. Important keys are:
+Each language track has a configuration file called `config.json`.
 
+Important keys are:
 * `problems` - actively served via `exercism fetch`
 * `deprecated` - implemented, but aren't served anymore
 * `foregone` - will not be implemented in the track
