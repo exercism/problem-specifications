@@ -692,6 +692,7 @@ bad exercise for the language.
 
 Optional keys:
 `test_pattern` - This is a regex that test filenames will match. If test files contain `/test/`, then this key can be deleted.
+`ignore_pattern` - A (case insensitive) regex pattern that will cause files matching it to not be served to the student by `exercism fetch`. The default value used if this key is not present is 'example'
 
 ### Track-Level Linting With Configlet
 
