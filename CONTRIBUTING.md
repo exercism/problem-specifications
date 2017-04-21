@@ -41,7 +41,7 @@ themselves. There are other guides about contributing to other parts of the Exer
     * [Pull Request Guidelines](#pull-request-guidelines)
     * [Exercise Versioning](#exercise-versioning)
     * [Anatomy of an Exercise](#anatomy-of-an-exercise)
-    * [config.json](#config-json)
+    * [Track configuration file (config.json)](#track-configuration-file)
     * [Track-Level Linting With Configlet](#track-level-linting-with-configlet)
     * [Git Basics](#git-basics)
         * [Getting the Code](#getting-the-code)
@@ -668,10 +668,11 @@ that the exercise is coherent.
 If you change the test suite, then make sure the reference solution is fixed
 to pass the updated tests.
 
-### config.json
+### Track configuration file
 
-Each language track has a `config.json` file. Important keys are:
+Each language track has a configuration file called `config.json`.
 
+Important keys are:
 * `problems` - actively served via `exercism fetch`
 * `deprecated` - implemented, but aren't served anymore
 * `foregone` - will not be implemented in the track
@@ -690,9 +691,9 @@ is useful. Ignored directories don't get flagged as unimplemented problems.
 A problem might be foregone for a number of reasons, typically because it's a
 bad exercise for the language.
 
-The `config.json` also has an optional `test_pattern` key. This is a regex that
-test filenames will match. If test files contain `/test/`, then this key can be
-deleted.
+Optional keys:
+* `test_pattern` - A (case sensitive) regex pattern that test filenames will match. It is used to determine which files will be visible on a problem's test-suite page on the exercism.io site. The default value used if this key is not present is `test` (note: this is case _insensitve_)
+* `ignore_pattern` - A (case insensitive) regex pattern that will cause files matching it to not be served to the student by `exercism fetch`. The default value used if this key is not present is `example`
 
 ### Track-Level Linting With Configlet
 
