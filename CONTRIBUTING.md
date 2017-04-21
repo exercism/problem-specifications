@@ -41,7 +41,7 @@ themselves. There are other guides about contributing to other parts of the Exer
     * [Pull Request Guidelines](#pull-request-guidelines)
     * [Exercise Versioning](#exercise-versioning)
     * [Anatomy of an Exercise](#anatomy-of-an-exercise)
-    * [config.json](#config.json)
+    * [Track configuration file (config.json)](#track-configuration-file)
     * [Track-Level Linting With Configlet](#track-level-linting-with-configlet)
     * [Git Basics](#git-basics)
         * [Getting the Code](#getting-the-code)
@@ -668,7 +668,7 @@ that the exercise is coherent.
 If you change the test suite, then make sure the reference solution is fixed
 to pass the updated tests.
 
-### config.json
+### Track configuration file
 
 Each language track has a `config.json` file. Important keys are:
 
