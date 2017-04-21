@@ -52,8 +52,9 @@
         "moves": 18,
         "goal_bucket": "two",
         "other_bucket": 7
-      },
-      {
+      }
+    },
+    {
       "description": "Measure one step using bucket one of size 1 and bucket two of size 3 - start with bucket two",
       "property": "measure",
       "bucket_one": 1,
@@ -64,8 +65,9 @@
         "moves": 1,
         "goal_bucket": "two",
         "other_bucket": 0
-      },
-      {
+      }
+    },
+    {
       "description": "Measure using bucket one of size 2 and bucket two of size 3 - start with bucket one and end with bucket two",
       "property": "measure",
       "bucket_one": 2,
