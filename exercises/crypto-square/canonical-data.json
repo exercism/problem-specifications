@@ -1,6 +1,6 @@
 {
   "exercise": "crypto-square",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "cases": [
     {
       "description": "the spaces and punctuation are removed from the English text and the message is downcased",
@@ -32,7 +32,7 @@
           "description": "empty plaintext results in an empty rectangle",
           "property": "plaintextSegments",
           "plaintext": "",
-          "expected": "[]"
+          "expected": []
         },
         {
           "description": "4 character plaintext results in an 2x2 rectangle",
