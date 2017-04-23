@@ -8,7 +8,8 @@ side directly opposite it and the other player gets assigned the two other
 sides).
 
 Your goal is to build a program that given a simple representation of a board
-computes the winner (or lack thereof).
+computes the winner (or lack thereof). Note that all games need not be "fair".
+(For example, players may have mismatched piece counts.)
 
 The boards look like this (with spaces added for readability, which won't be in
 the representation passed to your code):
