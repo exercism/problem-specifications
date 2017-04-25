@@ -13,6 +13,7 @@ Interfaces
 Pattern matching
 Polymorphism
 Recursion
+Structural equality
 Threading
 Type conversion
 Variables
