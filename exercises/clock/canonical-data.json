@@ -1,6 +1,6 @@
 {
   "exercise": "clock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "comments": [
     "Most languages require constructing a clock with initial values,",
     "adding a positive or negative number of minutes, and testing equality",
@@ -10,7 +10,7 @@
   ],
   "cases": [
     {
-      "description": "Test creating a new clock with an initial time.",
+      "description": "Create a new clock with an initial time",
       "cases": [
         {
           "description": "on the hour",
@@ -148,7 +148,7 @@
       ]
     },
     {
-      "description": "Test adding and subtracting minutes.",
+      "description": "Add minutes",
       "cases": [
         {
           "description": "add minutes",
@@ -213,7 +213,12 @@
           "minute": 1,
           "add": 3500,
           "expected": "11:21"
-        },
+        }
+      ]
+    },
+    {
+      "description": "Subtract minutes",
+      "cases": [
         {
           "description": "subtract minutes",
           "property": "add",
@@ -281,7 +286,7 @@
       ]
     },
     {
-      "description": "Construct two separate clocks, set times, test if they are equal.",
+      "description": "Compare two clocks for equality",
       "cases": [
         {
           "description": "clocks with same time",
