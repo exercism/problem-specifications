@@ -30,5 +30,5 @@ And to total:
 - = 14
 
 ## Extensions
-- You can play a `:double` or a `:triple` letter.
-- You can play a `:double` or a `:triple` word.
+- You can play a double or a triple letter.
+- You can play a double or a triple word.
