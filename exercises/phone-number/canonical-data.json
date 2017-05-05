@@ -71,12 +71,6 @@
           "expected": null
         },
         {
-          "description": "invalid with right number of digits but letters mixed in",
-          "property": "clean",
-          "phrase": "1a2b3c4d5e6f7g8h9i0j",
-          "expected": null
-        },
-        {
           "description": "invalid if area code does not start with 2-9",
           "property": "clean",
           "phrase": "(123) 456-7890",
