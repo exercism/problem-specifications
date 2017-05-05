@@ -1,6 +1,6 @@
 {
   "exercise": "tournament",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments": [
     "The inputs and outputs are represented as arrays of strings to",
     "improve readability in this JSON file.",
@@ -65,25 +65,5 @@
         "Devastating Donkeys            |  3 |  0 |  1 |  2 |  1"
       ]
     },
-    {
-      "comments": [
-        "Invalid input lines in an otherwise-valid game",
-        "still results in valid output."
-      ],
-      "description": "mostly invalid lines",
-      "property": "tally",
-      "input": [
-        "",
-        "Allegoric Alaskans@Blithering Badgers;draw",
-        "Blithering Badgers;Devastating Donkeys;loss",
-        "Devastating Donkeys;Courageous Californians;win;5",
-        "Courageous Californians;Allegoric Alaskans;los"
-      ],
-      "expected": [
-        "Team                           | MP |  W |  D |  L |  P",
-        "Devastating Donkeys            |  1 |  1 |  0 |  0 |  3",
-        "Blithering Badgers             |  1 |  0 |  0 |  1 |  0"
-      ]
-    }
   ]
 }
