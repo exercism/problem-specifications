@@ -8,5 +8,5 @@ which means that their name gets wiped. The next time you ask, it will
 respond with a new random name.
 
 The names must be random: they should not follow a predictable sequence.
-Random names means a risk of collisions. Your solution should ensure that
+Random names means a risk of collisions. Your solution must ensure that
 every existing robot has a unique name.
