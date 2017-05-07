@@ -1,6 +1,6 @@
 {
   "exercise": "dominoes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "comments": [
     "Inputs are given as lists of two-element lists.",
     "Feel free to convert the input to a sensible type in the specific language",
@@ -118,7 +118,7 @@
       "can_chain": true
     },
     {
-      "description": "ten elements",
+      "description": "nine elements",
       "property": "canChain",
       "input": [[1, 2], [5, 3], [3, 1], [1, 2], [2, 4], [1, 6], [2, 3], [3, 4], [5, 6]],
       "can_chain": true
