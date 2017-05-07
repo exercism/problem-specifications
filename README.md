@@ -1,7 +1,6 @@
 # x-Common
 
 Shared metadata for Exercism exercises.
-The `doc/` subdirectory contains all documentation that is not specific to a language track.
 
 ## Contributing Guide
 
