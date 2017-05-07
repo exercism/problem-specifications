@@ -1,6 +1,6 @@
 {
   "exercise": "tournament",
-  "version": "1.1.0",
+  "version": "1.3.0",
   "comments": [
     "The inputs and outputs are represented as arrays of strings to",
     "improve readability in this JSON file.",
@@ -10,6 +10,101 @@
     "a single string."
   ],
   "cases": [
+    {
+      "description": "just the header if no input",
+      "property": "tally",
+      "input": [],
+      "expected": [ "Team                           | MP |  W |  D |  L |  P" ]
+    },
+    {
+      "description": "a win is three points, a loss is zero points",
+      "property": "tally",
+      "input": [
+        "Allegoric Alaskans;Blithering Badgers;win"
+      ],
+      "expected": [
+        "Team                           | MP |  W |  D |  L |  P",
+        "Allegoric Alaskans             |  1 |  1 |  0 |  0 |  3",
+        "Blithering Badgers             |  1 |  0 |  0 |  1 |  0"
+		]
+	},
+    {
+      "description": "a win can also be expressed as a loss",
+      "property": "tally",
+      "input": [
+        "Blithering Badgers;Allegoric Alaskans;loss"
+      ],
+      "expected": [
+        "Team                           | MP |  W |  D |  L |  P",
+        "Allegoric Alaskans             |  1 |  1 |  0 |  0 |  3",
+        "Blithering Badgers             |  1 |  0 |  0 |  1 |  0"
+		]
+	},
+    {
+      "description": "a different team can win",
+      "property": "tally",
+      "input": [
+        "Blithering Badgers;Allegoric Alaskans;win"
+      ],
+      "expected": [
+        "Team                           | MP |  W |  D |  L |  P",
+        "Blithering Badgers             |  1 |  1 |  0 |  0 |  3",
+        "Allegoric Alaskans             |  1 |  0 |  0 |  1 |  0"
+		]
+	},
+    {
+      "description": "a draw is one point each",
+      "property": "tally",
+      "input": [
+        "Allegoric Alaskans;Blithering Badgers;draw"
+      ],
+      "expected": [
+        "Team                           | MP |  W |  D |  L |  P",
+        "Allegoric Alaskans             |  1 |  0 |  1 |  0 |  1",
+        "Blithering Badgers             |  1 |  0 |  1 |  0 |  1"
+		]
+	},
+    {
+      "description": "There can be more than one match",
+      "property": "tally",
+      "input": [
+        "Allegoric Alaskans;Blithering Badgers;win",
+        "Allegoric Alaskans;Blithering Badgers;win"
+      ],
+      "expected": [
+        "Team                           | MP |  W |  D |  L |  P",
+        "Allegoric Alaskans             |  2 |  2 |  0 |  0 |  6",
+        "Blithering Badgers             |  2 |  0 |  0 |  2 |  0"
+		]
+	},
+    {
+      "description": "There can be more than one winner",
+      "property": "tally",
+      "input": [
+        "Allegoric Alaskans;Blithering Badgers;loss",
+        "Allegoric Alaskans;Blithering Badgers;win"
+      ],
+      "expected": [
+        "Team                           | MP |  W |  D |  L |  P",
+        "Allegoric Alaskans             |  2 |  1 |  0 |  1 |  3",
+        "Blithering Badgers             |  2 |  1 |  0 |  1 |  3"
+		]
+	},
+    {
+      "description": "There can be more than two teams",
+      "property": "tally",
+      "input": [
+        "Allegoric Alaskans;Blithering Badgers;win",
+        "Blithering Badgers;Courageous Californians;win",
+        "Courageous Californians;Allegoric Alaskans;loss"
+      ],
+      "expected": [
+        "Team                           | MP |  W |  D |  L |  P",
+        "Allegoric Alaskans             |  2 |  2 |  0 |  0 |  6",
+        "Blithering Badgers             |  2 |  1 |  0 |  1 |  3",
+        "Courageous Californians        |  2 |  0 |  0 |  2 |  0"
+		]
+	},
     {
       "description": "typical input",
       "property": "tally",
@@ -63,26 +158,6 @@
         "Courageous Californians        |  3 |  2 |  1 |  0 |  7",
         "Blithering Badgers             |  3 |  0 |  1 |  2 |  1",
         "Devastating Donkeys            |  3 |  0 |  1 |  2 |  1"
-      ]
-    },
-    {
-      "comments": [
-        "Invalid input lines in an otherwise-valid game",
-        "still results in valid output."
-      ],
-      "description": "mostly invalid lines",
-      "property": "tally",
-      "input": [
-        "",
-        "Allegoric Alaskans@Blithering Badgers;draw",
-        "Blithering Badgers;Devastating Donkeys;loss",
-        "Devastating Donkeys;Courageous Californians;win;5",
-        "Courageous Californians;Allegoric Alaskans;los"
-      ],
-      "expected": [
-        "Team                           | MP |  W |  D |  L |  P",
-        "Devastating Donkeys            |  1 |  1 |  0 |  0 |  3",
-        "Blithering Badgers             |  1 |  0 |  0 |  1 |  0"
       ]
     }
   ]
