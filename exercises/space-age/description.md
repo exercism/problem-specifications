@@ -1,3 +1,5 @@
+Given an age in seconds, calculate how old someone is in terms of a given planet's solar years.
+
 Given an age in seconds, calculate how old someone would be on:
 
    - Earth: orbital period 365.25 Earth days, or 31557600 seconds

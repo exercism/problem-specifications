@@ -1,3 +1,5 @@
+Implement a binary search algorithm.
+
 Searching a sorted collection is a common task. A dictionary is a sorted
 list of word definitions. Given a word, one can find its definition. A
 telephone book is a sorted list of people's names, addresses, and

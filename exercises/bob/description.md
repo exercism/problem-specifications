@@ -1,3 +1,5 @@
+Bob is a lackadaisical teenager. In conversation, his responses are very limited.
+
 Bob answers 'Sure.' if you ask him a question.
 
 He answers 'Whoa, chill out!' if you yell at him.

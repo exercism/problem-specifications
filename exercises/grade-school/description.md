@@ -1,3 +1,5 @@
+Given students' names along with the grade that they are in, create a roster for the school
+
 In the end, you should be able to:
 
 - Add a student's name to the roster for a grade

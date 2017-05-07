@@ -1,3 +1,5 @@
+Convert a trinary number, represented as a string (e.g. '102012'), to its decimal equivalent using first principles.
+
 The program should consider strings specifying an invalid trinary as the
 value 0.
 

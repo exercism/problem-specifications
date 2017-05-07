@@ -1,3 +1,5 @@
+Detect saddle points in a matrix.
+
 So say you have a matrix like so:
 
 ```plain

@@ -1,3 +1,5 @@
+Implement encoding and decoding for the rail fence cipher.
+
 The Rail Fence cipher is a form of transposition cipher that gets its name from
 the way in which it's encoded. It was already used by the ancient Greeks.
 

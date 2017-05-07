@@ -1,3 +1,5 @@
+Design a test suite for a line/letter/character counter tool.
+
 **NOTE: This exercise has been deprecated.**
 
 Please see the discussion in https://github.com/exercism/x-common/issues/80

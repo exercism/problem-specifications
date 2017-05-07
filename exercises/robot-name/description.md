@@ -1,3 +1,5 @@
+Manage robot factory settings.
+
 When robots come off the factory floor, they have no name.
 
 The first time you boot them up, a random name is generated in the format
