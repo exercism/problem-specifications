@@ -1,0 +1,124 @@
+{
+  "exercise": "kindergarten-garden",
+  "version": "1.0.0",
+  "comments": [
+    "Garden can be created with just a diagram or a diagram and students."
+  ],
+  "cases": [
+    {
+      "description": "partial garden",
+      "cases": [
+        {
+          "description": "garden with single student",
+          "property": "plants",
+          "diagram": "RC\nGG",
+          "student": "Alice",
+          "expected": ["radishes", "clover", "grass", "grass"]
+        },
+        {
+          "description": "different garden with single student",
+          "property": "plants",
+          "diagram": "VC\nRC",
+          "student": "Alice",
+          "expected": ["violets", "clover", "radishes", "clover"]
+        },
+        {
+          "description": "garden with two students",
+          "property": "plants",
+          "diagram": "VVCG\nVVRC",
+          "student": "Bob",
+          "expected": ["clover", "grass", "radishes", "clover"]
+        },
+        {
+          "description": "multiple students for the same garden with three students",
+          "cases": [
+            {
+              "description": "second student's garden",
+              "property": "plants",
+              "diagram": "VVCCGG\nVVCCGG",
+              "student": "Bob",
+              "expected": ["clover", "clover", "clover", "clover"]
+            },
+            {
+              "description": "third student's garden",
+              "property": "plants",
+              "diagram": "VVCCGG\nVVCCGG",
+              "student": "Charlie",
+              "expected": ["grass", "grass", "grass", "grass"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "full garden",
+      "cases": [
+        {
+          "description": "first student's garden",
+          "property": "plants",
+          "diagram": "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV",
+          "student": "Alice",
+          "expected": ["violets", "radishes", "violets", "radishes"]
+        },
+        {
+          "description": "second student's garden",
+          "property": "plants",
+          "diagram": "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV",
+          "student": "Bob",
+          "expected": ["clover", "grass", "clover", "clover"]
+        },
+        {
+          "description": "second to last student's garden",
+          "property": "plants",
+          "diagram": "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV",
+          "student": "Kincaid",
+          "expected": ["grass", "clover", "clover", "grass"]
+        },
+        {
+          "description": "last student's garden",
+          "property": "plants",
+          "diagram": "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV",
+          "student": "Larry",
+          "expected": ["grass", "violets", "clover", "violets"]
+        }
+      ]
+    },
+    {
+      "description": "non-alphabetical student list",
+      "cases": [
+        {
+          "description": "first student's garden",
+          "property": "plants",
+          "students": ["Samantha", "Patricia", "Xander", "Roger"],
+          "diagram": "VCRRGVRG\nRVGCCGCV",
+          "student": "Patricia",
+          "expected": ["violets", "clover", "radishes", "violets"]
+        },
+        {
+          "description": "second student's garden",
+          "property": "plants",
+          "students": ["Samantha", "Patricia", "Xander", "Roger"],
+          "diagram": "VCRRGVRG\nRVGCCGCV",
+          "student": "Roger",
+          "expected": ["radishes", "radishes", "grass", "clover"]
+        },
+        {
+          "description": "third student's garden",
+          "property": "plants",
+          "students": ["Samantha", "Patricia", "Xander", "Roger"],
+          "diagram": "VCRRGVRG\nRVGCCGCV",
+          "student": "Samantha",
+          "expected": ["grass", "violets", "clover", "grass"]
+        },
+        {
+          "description": "fourth (last) student's garden",
+          "property": "plants",
+          "students": ["Samantha", "Patricia", "Xander", "Roger"],
+          "diagram": "VCRRGVRG\nRVGCCGCV",
+          "student": "Xander",
+          "expected": ["radishes", "grass", "clover", "violets"]
+        }
+      ]
+    }
+  ]
+}
