@@ -95,7 +95,7 @@ TODO
 * Elixir
 * Haskell
 * Java
-* [Ruby](https://github.com/exercism/xruby)
+* [Ruby](https://github.com/exercism/xruby)  
    Active: kotp, insti, hilary, tommyschaefer, bmulvihill  
    Alumni: kytrinyx, bernardoamc, Cohen-Carlisle  
 
