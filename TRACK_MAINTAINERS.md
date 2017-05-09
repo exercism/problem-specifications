@@ -22,7 +22,7 @@ Sumbit a PR to this file add/remove maintainers.
 
 TODO
 
-# Stepping down as a matntainer
+# Stepping down as a maintainer
 
 TODO
 
@@ -50,7 +50,6 @@ TODO
 * Perl 5
 * PowerShell
 * Purescript
-* R
 * Standard ML
 * TECO
 * Tcl
@@ -75,6 +74,9 @@ TODO
 * [Pony](https://github.com/exercism/xpony)  
    Active: theodus 
 * Prolog
+* [R](https://github.com/exercism/xr)
+   Active: jonmcalder
+   Alumni: jonboiser
 * Racket
 * Scheme
 
