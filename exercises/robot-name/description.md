@@ -9,5 +9,8 @@ respond with a new random name.
 
 The names must be random: they should not follow a predictable sequence.
 Random names means a risk of collisions. Your solution should not allow
-the use of the same name twice when avoidable. In some exercism language
-tracks there are tests to ensure that the same name is never used twice.
+the use of the same name twice when avoidable. 
+
+## Extensions
+- There are 26^2 * 1,000 = 676,000 possible robot names.
+- Ensure that names are never repeated. 
