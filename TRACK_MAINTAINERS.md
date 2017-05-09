@@ -48,7 +48,6 @@ TODO
 * PL/SQL
 * Pascal
 * Perl 5
-* Pony
 * PowerShell
 * Purescript
 * R
@@ -73,6 +72,8 @@ TODO
 * MIPS Assembly
 * PHP
 * Perl 6
+* [Pony](https://github.com/exercism/xpony)  
+   Active: theodus 
 * Prolog
 * Racket
 * Scheme
