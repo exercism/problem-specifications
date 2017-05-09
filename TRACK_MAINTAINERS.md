@@ -82,6 +82,8 @@ TODO
 
 * C#
 * Clojure
+* [Delphi](https://github.com/exercism/xdelphi)  
+   Active: rpottsoh, kotp
 * ECMAScript
 * F#
 * JavaScript
@@ -96,8 +98,6 @@ TODO
 
 * C
 * Crystal
-* [Delphi](https://github.com/exercism/xdelphi)  
-   Active: rpottsoh, kotp
 * Elixir
 * Haskell
 * Java
