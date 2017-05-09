@@ -5,7 +5,10 @@ page](https://github.com/orgs/exercism/teams) but unhelpfully, you need to be a
 team member before you can see the other team members.
 
 
-See also: https://github.com/exercism/discussions/issues/97
+See also: 
+
+* https://github.com/exercism/discussions/issues/97
+* http://tinyletter.com/exercism/letters/exercism-behind-the-scenes-the-challenge-of-unmaintained-and-undermaintained-tracks
 
 
 # Instructions
