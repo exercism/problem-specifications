@@ -33,73 +33,69 @@ TODO
 ### Orphaned
 
 * Bash
+* Ceylon
 * CoffeeScript
+* ColdFusion
 * D
 * Groovy
+* Haxe
+* Idris
 * Kotlin
+* Nim
 * PL/SQL
+* Pascal
 * Perl 5
 * Pony
+* PowerShell
+* Purescript
 * R
 * Standard ML
+* TECO
+* Tcl
+* The Netwide Assembler
+* VB.NET
+* Vimscript
 
 ### Endangered
 
-* Lua
-* Lisp
-* Erlang
-* Go
-* Factor
-* Perl 6
-* PHP
 * C++
 * Elm
 * Emacs Lisp
+* Erlang
+* Factor
+* Go
+* Lisp
 * Lisp Flavored Erlang
+* Lua
 * MIPS Assembly
+* PHP
+* Perl 6
+* Prolog
 * Racket
 * Scheme
-* Prolog
 
 ### At Risk
 
-* Swift
-* Rust (but very active)
-* OCaml
-* JavaScript
-* ECMAScript
-* Python
-* Scala
-* F#
 * C#
 * Clojure
+* ECMAScript
+* F#
+* JavaScript
+* OCaml
 * Objective-C
+* Python
+* Rust
+* Scala
+* Swift
 
 ### Maintained
 
+* C
+* Crystal
+* Elixir
+* Haskell
+* Java
 * Ruby   
    Active: @kotp, @insti, @hilary, @tommyschaefer, @bmulvihill  
    Alumni: @kytrinyx, @bernardoamc, @Cohen-Carlisle  
 
-* C
-* Java
-* Crystal
-* Elixir
-* Haskell
-
-### Inactive Tracks
-
-There has not been enough activity to generate a heartbeat for the following tracks:
-
-* Ceylon
-* ColdFusion
-* Haxe
-* Idris
-* The Netwide Assembler
-* Nim
-* Pascal
-* PowerShell
-* Purescript
-* Tcl
-* TECO
-* VB.NET
