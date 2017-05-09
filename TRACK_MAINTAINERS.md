@@ -95,7 +95,7 @@ TODO
 * Elixir
 * Haskell
 * Java
-* Ruby   
-   Active: @kotp, @insti, @hilary, @tommyschaefer, @bmulvihill  
-   Alumni: @kytrinyx, @bernardoamc, @Cohen-Carlisle  
+* [Ruby](https://github.com/exercism/xruby)
+   Active: kotp, insti, hilary, tommyschaefer, bmulvihill  
+   Alumni: kytrinyx, bernardoamc, Cohen-Carlisle  
 
