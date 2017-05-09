@@ -79,7 +79,7 @@ TODO
 
 * Ruby   
    Active: @kotp, @insti, @hilary, @tommyschaefer, @bmulvihill  
-   Alumni: @kytrynx, @bernardoamc, @Cohen-Carlisle  
+   Alumni: @kytrinyx, @bernardoamc, @Cohen-Carlisle  
 
 * C
 * Java
