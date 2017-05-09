@@ -1,8 +1,11 @@
-What this is about - TODO
+https://github.com/exercism/discussions/issues/97 investigated the status of all Exercism language tracks. This file is intended to continue and maintain that process in a community driven manner.
 
 Information about who is a maintainer can be found on the [Exercism Teams
 page](https://github.com/orgs/exercism/teams) but unhelpfully, you need to be a
 team member before you can see the other team members.
+
+Ideally a bot could keep this file updated, but until someone writes one we
+will just have to do it manually.
 
 
 See also: 
