@@ -96,6 +96,8 @@ TODO
 
 * C
 * Crystal
+* [Delphi](https://github.com/exercism/xdelphi)  
+   Active: rpottsoh, kotp
 * Elixir
 * Haskell
 * Java
