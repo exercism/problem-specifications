@@ -69,6 +69,9 @@ TODO
   Active: verdammelt  
 * Lisp Flavored Erlang
 * Lua
+* [Lua](https://github.com/exercism/xlua)  
+   Active: ryanplusplus, robphoenix  
+   Alumni: aarti
 * MIPS Assembly
 * PHP
 * Perl 6
