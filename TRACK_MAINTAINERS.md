@@ -65,7 +65,8 @@ TODO
 * Erlang
 * Factor
 * Go
-* Lisp
+* [Lisp](https://github/exercism/xlisp)  
+  Active: verdammelt  
 * Lisp Flavored Erlang
 * Lua
 * MIPS Assembly
