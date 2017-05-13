@@ -21,4 +21,4 @@ things based on word boundaries.
 ## Examples
 - Encoding `test` gives `gvhg`
 - Decoding `gvhg` gives `test`
-- Decoding `gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt` gives `The quick brown fox jumps over the lazy dog.`
+- Decoding `gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt` gives `thequickbrownfoxjumpsoverthelazydog`
