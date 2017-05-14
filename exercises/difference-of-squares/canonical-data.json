@@ -1,21 +1,27 @@
 {
   "exercise": "difference-of-squares",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "cases": [
     {
       "description": "Square the sum of the numbers up to the given number",
       "cases": [
         {
+          "description": "square of sum 0",
+          "property": "squareOfSum",
+          "number": 0,
+          "expected": 0
+        },
+        {
+          "description": "square of sum 1",
+          "property": "squareOfSum",
+          "number": 1,
+          "expected": 1
+        },
+        {
           "description": "square of sum 5",
           "property": "squareOfSum",
           "number": 5,
           "expected": 225
-        },
-        {
-          "description": "square of sum 10",
-          "property": "squareOfSum",
-          "number": 10,
-          "expected": 3025
         },
         {
           "description": "square of sum 100",
@@ -29,16 +35,22 @@
       "description": "Sum the squares of the numbers up to the given number",
       "cases": [
         {
+          "description": "sum of squares 0",
+          "property": "sumOfSquares",
+          "number": 0,
+          "expected": 0
+        },
+        {
+          "description": "sum of squares 1",
+          "property": "sumOfSquares",
+          "number": 1,
+          "expected": 1
+        },
+        {
           "description": "sum of squares 5",
           "property": "sumOfSquares",
           "number": 5,
           "expected": 55
-        },
-        {
-          "description": "sum of squares 10",
-          "property": "sumOfSquares",
-          "number": 10,
-          "expected": 385
         },
         {
           "description": "sum of squares 100",
@@ -58,16 +70,16 @@
           "expected": 0
         },
         {
+          "description": "difference of squares 1",
+          "property": "differenceOfSquares",
+          "number": 1,
+          "expected": 0
+        },
+        {
           "description": "difference of squares 5",
           "property": "differenceOfSquares",
           "number": 5,
           "expected": 170
-        },
-        {
-          "description": "difference of squares 10",
-          "property": "differenceOfSquares",
-          "number": 10,
-          "expected": 2640
         },
         {
           "description": "difference of squares 100",
