@@ -6,6 +6,12 @@
       "description": "Square the sum of the numbers up to the given number",
       "cases": [
         {
+          "description": "square of sum 1",
+          "property": "squareOfSum",
+          "number": 1,
+          "expected": 1
+        },
+        {
           "description": "square of sum 5",
           "property": "squareOfSum",
           "number": 5,
@@ -16,18 +22,18 @@
           "property": "squareOfSum",
           "number": 100,
           "expected": 25502500
-        },
-        {
-          "description": "square of sum 1",
-          "property": "squareOfSum",
-          "number": 1,
-          "expected": 1
         }
       ]
     },
     {
       "description": "Sum the squares of the numbers up to the given number",
       "cases": [
+        {
+          "description": "sum of squares 1",
+          "property": "sumOfSquares",
+          "number": 1,
+          "expected": 1
+        },
         {
           "description": "sum of squares 5",
           "property": "sumOfSquares",
@@ -39,18 +45,18 @@
           "property": "sumOfSquares",
           "number": 100,
           "expected": 338350
-        },
-        {
-          "description": "sum of squares 1",
-          "property": "sumOfSquares",
-          "number": 1,
-          "expected": 1
         }
       ]
     },
     {
       "description": "Subtract sum of squares from square of sums",
       "cases": [
+        {
+          "description": "difference of squares 1",
+          "property": "differenceOfSquares",
+          "number": 1,
+          "expected": 0
+        },
         {
           "description": "difference of squares 5",
           "property": "differenceOfSquares",
@@ -62,12 +68,6 @@
           "property": "differenceOfSquares",
           "number": 100,
           "expected": 25164150
-        },
-        {
-          "description": "difference of squares 1",
-          "property": "differenceOfSquares",
-          "number": 1,
-          "expected": 0
         }
       ]
     }
