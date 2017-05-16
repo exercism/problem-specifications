@@ -1,6 +1,6 @@
 {
   "exercise": "react",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "comments": [
     "Note that, due to the nature of this exercise,",
     "the tests are specified using their cells and a series of operations to perform on the cells.",
@@ -351,6 +351,58 @@
           "type": "expect_callback_values",
           "callback": "callback3",
           "values": [42]
+        }
+      ]
+    },
+    {
+      "description": "removing the most recent callback doesn't interfere with other callbacks",
+      "comments": [
+        "Some comment about an implementation that stores their callbacks in linked lists."
+      ],
+      "property": "react",
+      "cells": [
+        {
+          "name": "input",
+          "type": "input",
+          "initial_value": 1
+        },
+        {
+          "name": "output",
+          "type": "compute",
+          "inputs": ["input"],
+          "compute_function": "inputs[0] + 1"
+        }
+      ],
+      "operations": [
+        {
+          "type": "add_callback",
+          "cell": "output",
+          "name": "callback1"
+        },
+        {
+          "type": "add_callback",
+          "cell": "output",
+          "name": "callback2"
+        },
+        {
+          "type": "remove_callback",
+          "cell": "output",
+          "name": "callback2"
+        },
+        {
+          "type": "set_value",
+          "cell": "input",
+          "value": 2
+        },
+        {
+          "type": "expect_callback_values",
+          "callback": "callback1",
+          "values": [3]
+        },
+        {
+          "type": "expect_callback_values",
+          "callback": "callback2",
+          "values": []
         }
       ]
     },
