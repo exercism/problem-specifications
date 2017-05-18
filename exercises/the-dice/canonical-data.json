@@ -1,0 +1,41 @@
+{
+  "exercise": "the-dice",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "description": "two pairs of 6s",
+      "property": "calculatePairs",
+      "trial": [1, 1, 6, 6, 2, 6, 6],
+      "expected": 2
+    },
+    {
+      "description": "three 6s",
+      "property": "calculatePairs",
+      "trial": [6, 6, 6, 1],
+      "expected": 0
+    },
+    {
+      "description": "6s at start",
+      "property": "calculatePairs",
+      "trial": [6, 6, 1, 1, 2],
+      "expected": 1
+    },
+    {
+      "description": "6s at end",
+      "property": "calculatePairs",
+      "trial": [1, 1, 2, 3, 6, 4, 6, 6],
+      "expected": 1
+    },
+    {
+      "description": "big series",
+      "property": "calculatePairs",
+      "trial": [2, 6, 6, 6, 6, 2, 4, 5, 1, 6, 6, 2, 6, 6, 3, 6, 6, 6],
+      "expected": 2
+    },
+    {
+        "description": "last one",
+        "property": "calculatePairs",
+        "trial": [1, 3, 4, 5, 6, 6, 4, 6, 6, 5, 5, 3, 6, 6, 3, 6, 6],
+        "expected": 4
+    }]
+}
