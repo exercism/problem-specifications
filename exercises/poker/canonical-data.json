@@ -160,7 +160,7 @@
       ]
     },
     {
-      "description":"aces can end a straight (10 J Q K A)",
+      "description": "aces can end a straight (10 J Q K A)",
       "property": "bestHands",
       "input": [
         "4S 5H 4C 8D 4H",
