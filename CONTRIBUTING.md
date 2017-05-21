@@ -28,7 +28,6 @@ themselves. There are other guides about contributing to other parts of the Exer
 * [Updating an Exercise Test Suite](#updating-an-exercise-test-suite)
     * [Updating a Generated Test Suite](#updating-a-generated-test-suite)
 * [Implementing a Completely New Exercise](#implementing-a-completely-new-exercise)
-* [Improving Consistency By Extracting Shared Test Data](#improving-consistency-by-extracting-shared-test-data)
 * [Writing a New Test Suite Generator](#writing-a-new-test-suite-generator)
 * [Track Anatomy](#track-anatomy)
 * [Starting a New Track](#starting-a-new-track)
@@ -241,25 +240,6 @@ A problem must have a unique slug. This slug is used as
   exercise](#porting-an-exercise-to-another-language-track).
   Reference the PR in x-common if it hasn't been merged yet,
   this **must not** be merged until the exercism/x-common PR is merged.
-
-## Improving Consistency By Extracting Shared Test Data
-The goal is to have a file `exercises/<slug>/canonical-data.json` for each exercise in this repository. This JSON file should contain the generic (i.e. language independent) test data for that exercise. With this the quality of the tracks can be improved, e.g. fixes or new tests can be propagated to all the tracks. They can then be implemented manually or by running the test generator. (See [this issue](https://github.com/exercism/todo/issues/13) for more background info.)
-
-The following steps help you extracting the canonical test data.
-
-1. Select the exercise for which you want to create the shared test data from the [list of open todos](https://github.com/exercism/todo/issues?q=is%3Aissue+is%3Aopen+label%3Ashared-test-data)
-2. Now you need to find the existing tests. You can get a list with links to the all of those one of two ways
-  * Search for the exercise in this list http://x.exercism.io/v3/problems/data-todos (your browser might need a JSON viewer plugin/add-on to show this)
-  * Run this command in your terminal `curl http://x.exercism.io/v3/problems/data-todos | jq '.[] | map(select(.["slug"] == "accumulate"))'`. Replace `accumulate` with the name of the exercise you have chosen.
-3. Open the links in different browser tabs, navigate to the test files and read through the tests. Look for test cases that all/many of the languages have in common and identify outliers that only appear in one or two languages. It might be helpful to make some notes on your findings.
-4. Now it's time to write the canonical-data.json file. Look at examples like [the test data for hamming](https://github.com/exercism/x-common/blob/master/exercises/hamming/canonical-data.json) and check the [readme](https://github.com/exercism/x-common#test-data-format-canonical-datajson) to find out how to best structure the JSON file.
-From what you learned in step 3 decide for a sensible set of test cases. The following considerations might help with that.
-  * Try to stick to test cases that already occur in many languages so it is feasible for the track maintainers to adapt to the canonical set.
-  * All tests should be essential to the problem. Ensure people can get the first test passing easily. Then each following test should ideally add a little functionality. People should be able to solve the problem a little at a time. Avoid test cases that don't introduce any new aspect and would already pass anyway.
-  * The test cases should not require people to follow one very specific way to solve the problem, e.g. the tests should avoid checking for helper functions that might not be present in other implementations.
-  * Performance tests should not be included in the canonical test data.
-
-  If you are unsure about all these considerations just make a pull request with an initial proposal and ask the community for help.
 
 ## Writing a New Test Suite Generator
 
