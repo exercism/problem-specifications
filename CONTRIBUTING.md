@@ -36,7 +36,6 @@ themselves. There are other guides about contributing to other parts of the Exer
 * [Track Anatomy](#track-anatomy)
 * [Starting a New Track](#starting-a-new-track)
     * [Beta-Testing a Language Track](#beta-testing-a-language-track)
-* [Maintaining a Track](#maintaining-a-track)
 * [Useful Tidbits](#useful-tidbits)
     * [Pull Request Guidelines](#pull-request-guidelines)
     * [Exercise Versioning](#exercise-versioning)
@@ -498,93 +497,6 @@ satisfy the tests provided for each problem.
 
 You can include advice and helpful links for your language track in the
 `SETUP.md` file.
-
-## Maintaining a Track
-
-Maintaining a language track generally consists of:
-
-- Reviewing/merging pull requests.
-- Discussing improvements in the exercises.
-- Implementing or porting new exercises.
-- Improving the development tooling (e.g. implementing continuous
-  integration).
-- Language-Specific support.
-- Adding/improving language-specific documentation.
-
-Ideally a track will have several maintainers, for two reasons:
-
-- more lively
-- spread the workload
-
-**More Lively**
-
-We've noticed that as soon as there are at least two people maintaining
-the same track we get rich discussions about quality and idioms. There's a lot
-more activity, and it's a lot more fun.
-
-**Spread the Workload**
-
-We don't want to burn people out, and it's really nice to be able to
-go on vacation or get busy at work without worrying too much about a growing
-backlog of unanswered issues and unreviewed and unmerged pull requests.
-
-**Caveat**
-
-There's a small chance that when more people are involved there's a bit of
-diffusion of responsibility (worth googling and reading about if you haven't
-heard the term before).
-
-### Reviewing/Merging Pull Requests
-
-In general:
-
-- Avoid merging your own pull requests (but it's fine if it's really simple).
-- If the change is significant, get a second opinion.
-- If it's insignificant or simple or uncontroversial, go ahead and merge.
-- If nobody else responds within a certain amount of time, go ahead and merge
-  it anyway, if you feel like it's good enough (we can always fix things
-  later).
-
-Many maintainers have mentioned that they like to get a second pair of eyes
-even for simple fixes, because it's so easy to for typos and really silly
-things to slip in.
-
-### Use Branches (Probably, Mostly)
-
-Even for simple fixes (documentation, typos) branches let others see what's
-going on in the repository. If it's insignificant, go ahead and merge it
-yourself.
-
-Sometimes it's just silly to create a branch. In that case, go ahead and put
-it in master, unless there's a track-level policy about not doing that.
-
-### Claiming Issues
-
-When you start working on an issue, claim it (either assign it to yourself
-or just add a comment that you're taking it).
-
-If you have a big list of similar, related things, it's fine to create
-a single issue with a todo list, and people can claim individual things
-in the comment thread.
-
-### Implementing / Reviewing New Exercises
-
-The tracks should implement the exercise idiomatically in the language
-at hand, without veering too far from the README as described (does expanding
-the exercise introduce new ideas or just add more work? Is this better off
-treated as a new, separate exercise?).
-
-If there are interesting corner cases, then these should be added to the
-README, they help make the discussions better.
-
-Exercises should not enforce a single way to solve the problem, if possible.
-The more interesting exercises allow several approaches, and create rich
-opportunities for discussing trade-offs when people submit their solutions.
-
-### Skipping Uninteresting Exercises
-
-Don't be afraid to 'forego' exercises that don't make sense in the language,
-or that are not particularly interesting.
 
 ## Useful Tidbits
 
