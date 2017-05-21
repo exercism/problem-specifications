@@ -28,7 +28,6 @@ themselves. There are other guides about contributing to other parts of the Exer
 * [Updating an Exercise Test Suite](#updating-an-exercise-test-suite)
     * [Updating a Generated Test Suite](#updating-a-generated-test-suite)
 * [Implementing a Completely New Exercise](#implementing-a-completely-new-exercise)
-* [Writing a New Test Suite Generator](#writing-a-new-test-suite-generator)
 * [Track Anatomy](#track-anatomy)
 * [Starting a New Track](#starting-a-new-track)
     * [Beta-Testing a Language Track](#beta-testing-a-language-track)
@@ -240,10 +239,6 @@ A problem must have a unique slug. This slug is used as
   exercise](#porting-an-exercise-to-another-language-track).
   Reference the PR in x-common if it hasn't been merged yet,
   this **must not** be merged until the exercism/x-common PR is merged.
-
-## Writing a New Test Suite Generator
-
-TODO: elaborate.
 
 ## Track Anatomy
 
