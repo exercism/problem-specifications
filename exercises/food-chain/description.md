@@ -1,4 +1,4 @@
-Generate the lyrics of the song 'I Know an Old Lady Who Swallowed a Fly'
+Generate the lyrics of the song 'I Know an Old Lady Who Swallowed a Fly'.
 
 While you could copy/paste the lyrics,
 or read them from a file, this problem is much more

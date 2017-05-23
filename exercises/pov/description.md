@@ -1,4 +1,4 @@
-Reparent a graph on a selected node
+Reparent a graph on a selected node.
 
 # Tree Reparenting
 

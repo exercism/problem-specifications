@@ -1,4 +1,4 @@
-Implement a doubly linked list
+Implement a doubly linked list.
 
 Like an array, a linked list is a simple linear data structure. Several 
 common data types can be implemented using linked lists, like queues, 

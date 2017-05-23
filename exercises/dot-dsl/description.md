@@ -1,4 +1,4 @@
-Write a Domain Specific Language similar to the Graphviz dot language
+Write a Domain Specific Language similar to the Graphviz dot language.
 
 A [Domain Specific Language
 (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language) is a

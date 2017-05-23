@@ -1,4 +1,4 @@
-Compute the result for a game of Hex / Polygon
+Compute the result for a game of Hex / Polygon.
 
 The abstract boardgame known as
 [Hex](https://en.wikipedia.org/wiki/Hex_%28board_game%29) / Polygon /

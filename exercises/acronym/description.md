@@ -1,4 +1,4 @@
-Convert a long phrase to its acronym
+Convert a long phrase to its acronym.
 
 Techies love their TLA (Three Letter Acronyms)!
 

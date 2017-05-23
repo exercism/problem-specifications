@@ -1,4 +1,4 @@
-Add the numbers to a minesweeper board
+Add the numbers to a minesweeper board.
 
 Minesweeper is a popular game where the user has to find the mines using
 numeric hints that indicate how many mines are directly adjacent
