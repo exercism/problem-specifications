@@ -1,6 +1,6 @@
 {
   "exercise": "word-count",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "comments": [
     "For each word in the input, count the number of times it appears in the",
     "entire sentence."
@@ -85,31 +85,6 @@
       "expected": {
         "go": 3,
         "stop": 2
-      }
-    },
-    {
-      "description": "with apostrophes",
-      "property": "countwords",
-      "input": "First: don't laugh. Then: don't cry.",
-      "expected": {
-        "first": 1,
-        "don't": 2,
-        "laugh": 1,
-        "then": 1,
-        "cry": 1
-      }
-    },
-    {
-      "description": "with quotations",
-      "property": "countwords",
-      "input": "Joe can't tell between 'large' and large.",
-      "expected": {
-        "joe": 1,
-        "can't": 1,
-        "tell": 1,
-        "between": 1,
-        "large": 2,
-        "and": 1
       }
     }
   ]
