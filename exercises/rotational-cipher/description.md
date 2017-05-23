@@ -1,9 +1,5 @@
 Create an implementation of the rotational cipher, also sometimes called the Caesar cipher.
 
-# Rotational Cipher
-
-Create an implementation of the rotational cipher, also sometimes called the Caesar cipher.
-
 The Caesar cipher is a simple shift cipher that relies on
 transposing all the letters in the alphabet using an integer key
 between `0` and `26`. Using a key of `0` or `26` will always yield

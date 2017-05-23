@@ -1,6 +1,4 @@
-Count the rectangles in an ASCII diagram.
-
-Create a program to count the rectangles in an ASCII diagram like the one below.
+Count the rectangles in an ASCII diagram like the one below.
 
 ```
    +--+

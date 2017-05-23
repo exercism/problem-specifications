@@ -1,4 +1,5 @@
-Given a string representing a matrix of numbers, return the rows and columns of that matrix.
+Given a string representing a matrix of numbers, return the rows and columns of
+that matrix.
 
 So given a string with embedded newlines like:
 

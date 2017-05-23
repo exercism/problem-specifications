@@ -1,4 +1,5 @@
-For want of a horseshoe nail, a kingdom was lost, or so the saying goes. Output the full text of this proverbial rhyme.
+For want of a horseshoe nail, a kingdom was lost, or so the saying goes. Output
+the full text of this proverbial rhyme.
 
 For want of a nail the shoe was lost.
 For want of a shoe the horse was lost.
