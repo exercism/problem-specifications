@@ -1,4 +1,4 @@
-Report network IO statistics
+Report network IO statistics.
 
 You are writing a [PaaS][], and you need a way to bill customers based
 on network and filesystem usage.
