@@ -1,3 +1,5 @@
+Implement a clock that handles times without dates.
+
 Create a clock that is independent of date.
 
 You should be able to add and subtract minutes to it.

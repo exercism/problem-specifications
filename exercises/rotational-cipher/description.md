@@ -1,3 +1,5 @@
+Create an implementation of the rotational cipher, also sometimes called the Caesar cipher.
+
 # Rotational Cipher
 
 Create an implementation of the rotational cipher, also sometimes called the Caesar cipher.

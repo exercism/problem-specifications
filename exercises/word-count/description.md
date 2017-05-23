@@ -1,3 +1,5 @@
+Given a phrase, count the occurrences of each word in that phrase.
+
 For example for the input `"olly olly in come free"`
 
 ```plain

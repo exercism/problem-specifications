@@ -1,3 +1,5 @@
+Create a program to solve a word search puzzle.
+
 In word search puzzles you get a square of letters and have to find specific
 words in them.
 

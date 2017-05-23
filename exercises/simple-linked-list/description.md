@@ -1,3 +1,5 @@
+Write a simple linked list implementation that uses Elements and a List
+
 The linked list is a fundamental data structure in computer science,
 often used in the implementation of other data structures. They're
 pervasive in functional programming languages, such as Clojure, Erlang,

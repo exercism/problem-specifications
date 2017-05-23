@@ -1,3 +1,5 @@
+Given a DNA string, compute how many times each nucleotide occurs in the string.
+
 DNA is represented by an alphabet of the following symbols: 'A', 'C',
 'G', and 'T'.
 

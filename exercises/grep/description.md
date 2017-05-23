@@ -1,3 +1,5 @@
+Search a file for lines matching a regular expression pattern. Return the line number and contents of each matching line.
+
 The Unix [`grep`](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/grep.html) command can be used to search for lines in one or more files 
 that match a user-provided search query (known as the *pattern*).
 

@@ -1,3 +1,5 @@
+Calculate the date of meetups.
+
 Typically meetups happen on the same day of the week.  In this exercise, you will take
 a description of a meetup date, and return the actual meetup date.
 

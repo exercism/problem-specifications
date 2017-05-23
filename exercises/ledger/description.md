@@ -1,3 +1,5 @@
+Refactor a ledger printer.
+
 The ledger exercise is a refactoring exercise. There is code that prints a
 nicely formatted ledger, given a locale (American or Dutch) and a currency (US
 dollar or euro). The code however is rather badly written, though (somewhat

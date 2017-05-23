@@ -1,3 +1,5 @@
+Refactor a Markdown parser
+
 The markdown exercise is a refactoring exercise. There is code that parses a
 given string with [Markdown
 syntax](https://guides.github.com/features/mastering-markdown/) and returns the

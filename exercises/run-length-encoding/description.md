@@ -1,3 +1,5 @@
+Implement run-length encoding and decoding.
+
 Run-length encoding (RLE) is a simple form of data compression, where runs
 (consecutive data elements) are replaced by just one data value and count.
 

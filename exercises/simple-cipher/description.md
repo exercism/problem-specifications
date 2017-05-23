@@ -1,3 +1,5 @@
+Implement a simple shift cipher like Caesar and a more secure substitution cipher
+
 ## Step 1
 
 "If he had anything confidential to say, he wrote it in cipher, that is,

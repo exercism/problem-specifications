@@ -1,3 +1,5 @@
+Write a robot simulator.
+
 A robot factory's test facility needs a program to verify robot movements.
 
 The robots have three possible movements:
