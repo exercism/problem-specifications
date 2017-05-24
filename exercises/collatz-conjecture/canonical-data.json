@@ -1,0 +1,36 @@
+{
+  "exercise": "collatz-conjecture",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "description": "zero steps for one",
+      "property": "collatz",
+      "number": 1,
+      "expected": 0
+    },
+    {
+      "description": "divide if even",
+      "property": "collatz",
+      "number": 16,
+      "expected": 4
+    },
+    {
+      "description": "even and odd steps",
+      "property": "collatz",
+      "number": 12,
+      "expected": 9
+    },
+    {
+      "description": "zero is an error",
+      "property": "collatz",
+      "number": 0,
+      "expected": -1
+    },
+    {
+      "description": "negative value is an error ",
+      "property": "collatz",
+      "number": -15,
+      "expected": -1
+    }
+  ]
+}
