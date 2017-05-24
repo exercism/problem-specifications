@@ -27,8 +27,6 @@ themselves. There are other guides about contributing to other parts of the Exer
 * [Overview](#overview)
 * [Updating an Exercise Test Suite](#updating-an-exercise-test-suite)
     * [Updating a Generated Test Suite](#updating-a-generated-test-suite)
-* [Porting an Exercise to Another Language Track](#porting-an-exercise-to-another-language-track)
-    * [Providing Feedback on the Site for an Exercise You Implemented](#providing-feedback-on-the-site-for-an-exercise-you-implemented)
 * [Implementing a Completely New Exercise](#implementing-a-completely-new-exercise)
 * [Track Anatomy](#track-anatomy)
 * [Starting a New Track](#starting-a-new-track)
@@ -217,80 +215,6 @@ regenerating the exercise should be described in the README of the repository.
 Follow the guidelines for setting up a development environment, verifying the change,
 and submitting a pull request, as described in the [main section about updating an
 exercise test suite](#updating-an-exercise-test-suite).
-
-## Porting an Exercise to Another Language Track
-
-To get a list of all the exercises that can be ported to a track,
-go to the url `http://exercism.io/languages/:track_id/todo`.
-
-For example here is the list of exercises that have not yet been implemented
-for the Ruby track: http://exercism.io/languages/ruby/todo
-
-Each unimplemented exercise links to existing implementations of the exercise in
-other language tracks, so that people can use those example solutions and test
-suites as inspiration.
-
-We are also extracting canonical inputs and outputs for a given
-exercise and storing them in JSON format in the x-common repository.  We've accomplished this on a few exercises, but there are many more to do.
-
-Although this page is now implemented, you can still get this information from the raw data
-served by the API endpoint `http://x.exercism.io/v3/tracks/:track_id/todo`.
-
-For example, here's the list of exercises that have not yet been implemented
-in the Elm track: http://x.exercism.io/v3/tracks/elm/todo
-
-It can be pretty unwieldy to read the JSON directly. To make it easier,
-install a browser extension that formats the JSON nicely, or copy/paste the
-response body into [jsonlint.com](http://jsonlint.com/) and click "validate JSON", which not
-only validates it, but pretty-prints it.
-
-The description of the problem can be found in the
-[x-common](https://github.com/exercism/x-common) repository, in a folder named
-after the problem slug: `exercises/<slug>/description.md`.
-
-**When you decide to implement an exercise**
-
-* check that there are no open pull requests for the same exercise
-* open a "work in progress" (WIP) pull request
-
-The way to open a WIP pull request even if you haven't done any work yet is:
-
-* Fork and clone the repository
-* Check out a branch for your the exercise
-* Add an empty commit `git commit --allow-empty -m "dibs: I will implement exercise <slug>"`
-  (replace <slug> with the actual name of the exercise).
-* Push the new branch to your repository, and open a pull request against that branch.
-
-Once you have added the actual exercise, then you can rebase your branch onto the upstream
-master, which will make the WIP commit go away.
-
-The exercise should consist of, at minimum:
-
-* A test suite
-* A reference solution that passes the test (see [#reference-solution](#reference-solution))
-
-You will need to add the exercise to `"exercises"` section of the `config.json` file in the track.
-The order in which the exercises are listed there is the order in which they are fetched by default by `exercism fetch`.
-Typically, exercises are ordered by difficulty, unless there is a particular reason to do otherwise.
-
-Each language track might have additional guidance on how to order their
-exercises or additional requirements on new exercise files; check the README in
-the repository for the track.
-
-### Providing Feedback on the Site for an Exercise You Implemented
-
-Once you've created an exercise, you'll probably want to provide feedback to people who
-submit solutions to it. By default you only get access to exercises you've submitted
-a solution for.
-
-You can fetch the problem directly using the CLI:
-
-```bash
-$ exercism fetch <track_id> <slug>
-```
-
-Go ahead and submit the reference solution that you wrote when creating the problem.
-Remember to archive it if you don't want other people to comment on it.
 
 ## Implementing a Completely New Exercise
 
