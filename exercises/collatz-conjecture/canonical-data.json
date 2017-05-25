@@ -4,33 +4,33 @@
   "cases": [
     {
       "description": "zero steps for one",
-      "property": "collatz",
+      "property": "steps",
       "number": 1,
       "expected": 0
     },
     {
       "description": "divide if even",
-      "property": "collatz",
+      "property": "steps",
       "number": 16,
       "expected": 4
     },
     {
       "description": "even and odd steps",
-      "property": "collatz",
+      "property": "steps",
       "number": 12,
       "expected": 9
     },
     {
       "description": "zero is an error",
-      "property": "collatz",
+      "property": "steps",
       "number": 0,
-      "expected": -1
+      "expected": { "error": "Only positive numbers are allowed" }
     },
     {
       "description": "negative value is an error ",
-      "property": "collatz",
+      "property": "steps",
       "number": -15,
-      "expected": -1
+      "expected": { "error": "Only positive numbers are allowed" }
     }
   ]
 }
