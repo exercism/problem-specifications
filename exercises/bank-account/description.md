@@ -1,4 +1,5 @@
-Simulate a bank account supporting opening/closing, withdraws, and deposits of money. Watch out for concurrent transactions!
+Simulate a bank account supporting opening/closing, withdrawals, and deposits
+of money. Watch out for concurrent transactions!
 
 A bank account can be accessed in multiple ways. Clients can make
 deposits and withdrawals using the internet, mobile phones, etc. Shops

@@ -1,5 +1,3 @@
-Given a decimal number, convert it to the appropriate sequence of events for a secret handshake.
-
 > There are 10 types of people in the world: Those who understand
 > binary, and those who don't.
 
@@ -15,6 +13,8 @@ binary decide to come up with a secret "handshake".
 
 10000 = Reverse the order of the operations in the secret handshake.
 ```
+
+Given a decimal number, convert it to the appropriate sequence of events for a secret handshake.
 
 Here's a couple of examples:
 

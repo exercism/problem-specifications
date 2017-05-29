@@ -1,4 +1,5 @@
-Given a 3 x 4 grid of pipes, underscores, and spaces, determine which number is represented, or whether it is garbled.
+Given a 3 x 4 grid of pipes, underscores, and spaces, determine which number is
+represented, or whether it is garbled.
 
 # Step One
 
