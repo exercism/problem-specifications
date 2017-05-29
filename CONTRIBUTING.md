@@ -27,16 +27,10 @@ themselves. There are other guides about contributing to other parts of the Exer
 * [Overview](#overview)
 * [Updating an Exercise Test Suite](#updating-an-exercise-test-suite)
     * [Updating a Generated Test Suite](#updating-a-generated-test-suite)
-* [Tweaking a README](#tweaking-a-readme)
-* [Porting an Exercise to Another Language Track](#porting-an-exercise-to-another-language-track)
-    * [Providing Feedback on the Site for an Exercise You Implemented](#providing-feedback-on-the-site-for-an-exercise-you-implemented)
 * [Implementing a Completely New Exercise](#implementing-a-completely-new-exercise)
-* [Improving Consistency By Extracting Shared Test Data](#improving-consistency-by-extracting-shared-test-data)
-* [Writing a New Test Suite Generator](#writing-a-new-test-suite-generator)
 * [Track Anatomy](#track-anatomy)
 * [Starting a New Track](#starting-a-new-track)
     * [Beta-Testing a Language Track](#beta-testing-a-language-track)
-* [Maintaining a Track](#maintaining-a-track)
 * [Useful Tidbits](#useful-tidbits)
     * [Pull Request Guidelines](#pull-request-guidelines)
     * [Exercise Versioning](#exercise-versioning)
@@ -227,143 +221,6 @@ Follow the guidelines for setting up a development environment, verifying the ch
 and submitting a pull request, as described in the [main section about updating an
 exercise test suite](#updating-an-exercise-test-suite).
 
-## Tweaking a README
-
-The Exercism exercise README treads a very fine line between useful ambiguity and confusing
-vagueness. Because the README is the same whether you're solving the problem in C++ or in Lua,
-the problem description needs to be high-level enough to allow for the syntactic, semantic, and
-philosophical differences in the various languages.
-
-In other words: no specific references to syntax or data structures of a specific language
-can be used to further clarify a problem.
-
-However, within this purposeful ambiguity might lie some opportunities for making an exercise
-description more clear. Typical issues to be attentive to:
-
-- poorly worded sentences
-- outdated information
-- incorrect directives
-- typos
-
-Each language's test suite provides the precise specification for the
-exercise, which allows the user to view the problem from a perspective that is
-interesting and idiomatic for that specific language.
-
-In addition, there's some language-specific content that gets woven into
-the README, usually a quick reminder about how to run the tests, and
-where to find more documentation.
-
-### Updating a Generic Problem Description
-
-[Fork this repository](https://github.com/exercism/x-common/fork).
-
-Each generic problem is identified by a slug. For example, the problem _Crypto
-Square_ is `crypto-square`. There are two metadata files for each problem:
-
-* `exercises/<slug>/description.md` which contains the generic problem description which makes up
-  the bulk of the README, and
-* `exercises/<slug>/metadata.yml` which contains a short one-line description of the problem as
-  well as other metadata, such as the source that inspired the problem in the
-  first place.
-
-There aren't any rules about what a good exercism problem README looks like.
-If in doubt, [open up a GitHub issue](https://github.com/exercism/x-common/issues/new)
-describing your suggestion.
-
-Once you've made your change [submit a pull
-request](#pull-request-guidelines).
-
-### Updating Language-Specific Additions
-
-Each language track may optionally contain a `SETUP.md` file in the root of
-the repository. This file should contain helpful, generic information about
-solving an exercism problem in the target language.
-
-The contents of the `SETUP.md` file gets included in the README.md that gets
-delivered along with the test suite and any supporting files when a user runs
-the `exercism fetch` command from their terminal.
-
-It would also be useful to explain in a generic way how to run the tests.
-Remember that this file will be included with _all_ the problems, so it gets
-confusing if we refer to specific problems or files.
-
-If a language track has specific expectations, these should also be documented
-here.
-
-## Porting an Exercise to Another Language Track
-
-To get a list of all the exercises that can be ported to a track,
-go to the url `http://exercism.io/languages/:track_id/todo`.
-
-For example here is the list of exercises that have not yet been implemented
-for the Ruby track: http://exercism.io/languages/ruby/todo
-
-Each unimplemented exercise links to existing implementations of the exercise in
-other language tracks, so that people can use those example solutions and test
-suites as inspiration.
-
-We are also extracting canonical inputs and outputs for a given
-exercise and storing them in JSON format in the x-common repository.  We've accomplished this on a few exercises, but there are many more to do.
-
-Although this page is now implemented, you can still get this information from the raw data
-served by the API endpoint `http://x.exercism.io/v3/tracks/:track_id/todo`.
-
-For example, here's the list of exercises that have not yet been implemented
-in the Elm track: http://x.exercism.io/v3/tracks/elm/todo
-
-It can be pretty unwieldy to read the JSON directly. To make it easier,
-install a browser extension that formats the JSON nicely, or copy/paste the
-response body into [jsonlint.com](http://jsonlint.com/) and click "validate JSON", which not
-only validates it, but pretty-prints it.
-
-The description of the problem can be found in the
-[x-common](https://github.com/exercism/x-common) repository, in a folder named
-after the problem slug: `exercises/<slug>/description.md`.
-
-**When you decide to implement an exercise**
-
-* check that there are no open pull requests for the same exercise
-* open a "work in progress" (WIP) pull request
-
-The way to open a WIP pull request even if you haven't done any work yet is:
-
-* Fork and clone the repository
-* Check out a branch for your the exercise
-* Add an empty commit `git commit --allow-empty -m "dibs: I will implement exercise <slug>"`
-  (replace <slug> with the actual name of the exercise).
-* Push the new branch to your repository, and open a pull request against that branch.
-
-Once you have added the actual exercise, then you can rebase your branch onto the upstream
-master, which will make the WIP commit go away.
-
-The exercise should consist of, at minimum:
-
-* A test suite
-* A reference solution that passes the test (see [#reference-solution](#reference-solution))
-
-You will need to add the exercise to `"exercises"` section of the `config.json` file in the track.
-The order in which the exercises are listed there is the order in which they are fetched by default by `exercism fetch`.
-Typically, exercises are ordered by difficulty, unless there is a particular reason to do otherwise.
-
-Each language track might have additional guidance on how to order their
-exercises or additional requirements on new exercise files; check the README in
-the repository for the track.
-
-### Providing Feedback on the Site for an Exercise You Implemented
-
-Once you've created an exercise, you'll probably want to provide feedback to people who
-submit solutions to it. By default you only get access to exercises you've submitted
-a solution for.
-
-You can fetch the problem directly using the CLI:
-
-```bash
-$ exercism fetch <track_id> <slug>
-```
-
-Go ahead and submit the reference solution that you wrote when creating the problem.
-Remember to archive it if you don't want other people to comment on it.
-
 ## Implementing a Completely New Exercise
 
 A problem must have a unique slug. This slug is used as
@@ -384,29 +241,6 @@ A problem must have a unique slug. This slug is used as
   exercise](#porting-an-exercise-to-another-language-track).
   Reference the PR in x-common if it hasn't been merged yet,
   this **must not** be merged until the exercism/x-common PR is merged.
-
-## Improving Consistency By Extracting Shared Test Data
-The goal is to have a file `exercises/<slug>/canonical-data.json` for each exercise in this repository. This JSON file should contain the generic (i.e. language independent) test data for that exercise. With this the quality of the tracks can be improved, e.g. fixes or new tests can be propagated to all the tracks. They can then be implemented manually or by running the test generator. (See [this issue](https://github.com/exercism/todo/issues/13) for more background info.)
-
-The following steps help you extracting the canonical test data.
-
-1. Select the exercise for which you want to create the shared test data from the [list of open todos](https://github.com/exercism/todo/issues?q=is%3Aissue+is%3Aopen+label%3Ashared-test-data)
-2. Now you need to find the existing tests. You can get a list with links to the all of those one of two ways
-  * Search for the exercise in this list http://x.exercism.io/v3/problems/data-todos (your browser might need a JSON viewer plugin/add-on to show this)
-  * Run this command in your terminal `curl http://x.exercism.io/v3/problems/data-todos | jq '.[] | map(select(.["slug"] == "accumulate"))'`. Replace `accumulate` with the name of the exercise you have chosen.
-3. Open the links in different browser tabs, navigate to the test files and read through the tests. Look for test cases that all/many of the languages have in common and identify outliers that only appear in one or two languages. It might be helpful to make some notes on your findings.
-4. Now it's time to write the canonical-data.json file. Look at examples like [the test data for hamming](https://github.com/exercism/x-common/blob/master/exercises/hamming/canonical-data.json) and check the [readme](https://github.com/exercism/x-common#test-data-format-canonical-datajson) to find out how to best structure the JSON file.
-From what you learned in step 3 decide for a sensible set of test cases. The following considerations might help with that.
-  * Try to stick to test cases that already occur in many languages so it is feasible for the track maintainers to adapt to the canonical set.
-  * All tests should be essential to the problem. Ensure people can get the first test passing easily. Then each following test should ideally add a little functionality. People should be able to solve the problem a little at a time. Avoid test cases that don't introduce any new aspect and would already pass anyway.
-  * The test cases should not require people to follow one very specific way to solve the problem, e.g. the tests should avoid checking for helper functions that might not be present in other implementations.
-  * Performance tests should not be included in the canonical test data.
-
-  If you are unsure about all these considerations just make a pull request with an initial proposal and ask the community for help.
-
-## Writing a New Test Suite Generator
-
-TODO: elaborate.
 
 ## Track Anatomy
 
@@ -498,93 +332,6 @@ satisfy the tests provided for each problem.
 
 You can include advice and helpful links for your language track in the
 `SETUP.md` file.
-
-## Maintaining a Track
-
-Maintaining a language track generally consists of:
-
-- Reviewing/merging pull requests.
-- Discussing improvements in the exercises.
-- Implementing or porting new exercises.
-- Improving the development tooling (e.g. implementing continuous
-  integration).
-- Language-Specific support.
-- Adding/improving language-specific documentation.
-
-Ideally a track will have several maintainers, for two reasons:
-
-- more lively
-- spread the workload
-
-**More Lively**
-
-We've noticed that as soon as there are at least two people maintaining
-the same track we get rich discussions about quality and idioms. There's a lot
-more activity, and it's a lot more fun.
-
-**Spread the Workload**
-
-We don't want to burn people out, and it's really nice to be able to
-go on vacation or get busy at work without worrying too much about a growing
-backlog of unanswered issues and unreviewed and unmerged pull requests.
-
-**Caveat**
-
-There's a small chance that when more people are involved there's a bit of
-diffusion of responsibility (worth googling and reading about if you haven't
-heard the term before).
-
-### Reviewing/Merging Pull Requests
-
-In general:
-
-- Avoid merging your own pull requests (but it's fine if it's really simple).
-- If the change is significant, get a second opinion.
-- If it's insignificant or simple or uncontroversial, go ahead and merge.
-- If nobody else responds within a certain amount of time, go ahead and merge
-  it anyway, if you feel like it's good enough (we can always fix things
-  later).
-
-Many maintainers have mentioned that they like to get a second pair of eyes
-even for simple fixes, because it's so easy to for typos and really silly
-things to slip in.
-
-### Use Branches (Probably, Mostly)
-
-Even for simple fixes (documentation, typos) branches let others see what's
-going on in the repository. If it's insignificant, go ahead and merge it
-yourself.
-
-Sometimes it's just silly to create a branch. In that case, go ahead and put
-it in master, unless there's a track-level policy about not doing that.
-
-### Claiming Issues
-
-When you start working on an issue, claim it (either assign it to yourself
-or just add a comment that you're taking it).
-
-If you have a big list of similar, related things, it's fine to create
-a single issue with a todo list, and people can claim individual things
-in the comment thread.
-
-### Implementing / Reviewing New Exercises
-
-The tracks should implement the exercise idiomatically in the language
-at hand, without veering too far from the README as described (does expanding
-the exercise introduce new ideas or just add more work? Is this better off
-treated as a new, separate exercise?).
-
-If there are interesting corner cases, then these should be added to the
-README, they help make the discussions better.
-
-Exercises should not enforce a single way to solve the problem, if possible.
-The more interesting exercises allow several approaches, and create rich
-opportunities for discussing trade-offs when people submit their solutions.
-
-### Skipping Uninteresting Exercises
-
-Don't be afraid to 'forego' exercises that don't make sense in the language,
-or that are not particularly interesting.
 
 ## Useful Tidbits
 
