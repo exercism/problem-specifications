@@ -32,7 +32,6 @@ themselves. There are other guides about contributing to other parts of the Exer
     * [Providing Feedback on the Site for an Exercise You Implemented](#providing-feedback-on-the-site-for-an-exercise-you-implemented)
 * [Implementing a Completely New Exercise](#implementing-a-completely-new-exercise)
 * [Improving Consistency By Extracting Shared Test Data](#improving-consistency-by-extracting-shared-test-data)
-* [Writing a New Test Suite Generator](#writing-a-new-test-suite-generator)
 * [Track Anatomy](#track-anatomy)
 * [Starting a New Track](#starting-a-new-track)
     * [Beta-Testing a Language Track](#beta-testing-a-language-track)
@@ -403,10 +402,6 @@ From what you learned in step 3 decide for a sensible set of test cases. The fol
   * Performance tests should not be included in the canonical test data.
 
   If you are unsure about all these considerations just make a pull request with an initial proposal and ask the community for help.
-
-## Writing a New Test Suite Generator
-
-TODO: elaborate.
 
 ## Track Anatomy
 
