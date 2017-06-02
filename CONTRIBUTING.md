@@ -691,9 +691,6 @@ Optional keys:
 * `ignore_pattern` - A (case insensitive) regex pattern that will cause files matching it to not be served to the student by `exercism fetch`. The default value used if this key is not present is `example`
 * `solution_pattern` - A (case sensitive) regex pattern that matches solution files in the track repository. Used by [configlet](https://github.com/exercism/configlet) to check for the presence of an example solution for each problem implemented by the track.  The default value used if this key is not present is `[Ee]xample`.
 
-### Track-Level Linting With Configlet
-Refer to [documentation](https://github.com/exercism/docs/tree/master/maintaining-a-track)
-
 ### Git Basics
 
 If you're concerned that you haven't done it right, don't worry. Submit your pull request, and we'll help you get the details sorted out.
