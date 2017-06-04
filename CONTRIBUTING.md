@@ -27,7 +27,6 @@ themselves. There are other guides about contributing to other parts of the Exer
 * [Overview](#overview)
 * [Updating an Exercise Test Suite](#updating-an-exercise-test-suite)
     * [Updating a Generated Test Suite](#updating-a-generated-test-suite)
-* [Tweaking a README](#tweaking-a-readme)
 * [Porting an Exercise to Another Language Track](#porting-an-exercise-to-another-language-track)
     * [Providing Feedback on the Site for an Exercise You Implemented](#providing-feedback-on-the-site-for-an-exercise-you-implemented)
 * [Implementing a Completely New Exercise](#implementing-a-completely-new-exercise)
@@ -219,69 +218,6 @@ regenerating the exercise should be described in the README of the repository.
 Follow the guidelines for setting up a development environment, verifying the change,
 and submitting a pull request, as described in the [main section about updating an
 exercise test suite](#updating-an-exercise-test-suite).
-
-## Tweaking a README
-
-The Exercism exercise README treads a very fine line between useful ambiguity and confusing
-vagueness. Because the README is the same whether you're solving the problem in C++ or in Lua,
-the problem description needs to be high-level enough to allow for the syntactic, semantic, and
-philosophical differences in the various languages.
-
-In other words: no specific references to syntax or data structures of a specific language
-can be used to further clarify a problem.
-
-However, within this purposeful ambiguity might lie some opportunities for making an exercise
-description more clear. Typical issues to be attentive to:
-
-- poorly worded sentences
-- outdated information
-- incorrect directives
-- typos
-
-Each language's test suite provides the precise specification for the
-exercise, which allows the user to view the problem from a perspective that is
-interesting and idiomatic for that specific language.
-
-In addition, there's some language-specific content that gets woven into
-the README, usually a quick reminder about how to run the tests, and
-where to find more documentation.
-
-### Updating a Generic Problem Description
-
-[Fork this repository](https://github.com/exercism/x-common/fork).
-
-Each generic problem is identified by a slug. For example, the problem _Crypto
-Square_ is `crypto-square`. There are two metadata files for each problem:
-
-* `exercises/<slug>/description.md` which contains the generic problem description which makes up
-  the bulk of the README, and
-* `exercises/<slug>/metadata.yml` which contains a short one-line description of the problem as
-  well as other metadata, such as the source that inspired the problem in the
-  first place.
-
-There aren't any rules about what a good exercism problem README looks like.
-If in doubt, [open up a GitHub issue](https://github.com/exercism/x-common/issues/new)
-describing your suggestion.
-
-Once you've made your change [submit a pull
-request](#pull-request-guidelines).
-
-### Updating Language-Specific Additions
-
-Each language track may optionally contain a `SETUP.md` file in the root of
-the repository. This file should contain helpful, generic information about
-solving an exercism problem in the target language.
-
-The contents of the `SETUP.md` file gets included in the README.md that gets
-delivered along with the test suite and any supporting files when a user runs
-the `exercism fetch` command from their terminal.
-
-It would also be useful to explain in a generic way how to run the tests.
-Remember that this file will be included with _all_ the problems, so it gets
-confusing if we refer to specific problems or files.
-
-If a language track has specific expectations, these should also be documented
-here.
 
 ## Porting an Exercise to Another Language Track
 
