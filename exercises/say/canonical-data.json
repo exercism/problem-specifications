@@ -61,6 +61,12 @@
       "expected": "one thousand two hundred thirty-four"
     },
     {
+      "description": "eight hundred and ten thousand",
+      "property": "say",
+      "input": 810000,
+      "expected": "eight hundred and ten thousand"
+    },
+    {
       "description": "one million",
       "property": "say",
       "input": 1000000,
