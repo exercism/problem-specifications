@@ -21,10 +21,10 @@
       "expected": 9
     },
     {
-      "description": "Largest number of steps for number less than one million",
+      "description": "Large number of even and odd steps",
       "property": "steps",
-      "number": 837799,
-      "expected": 524
+      "number": 1000000,
+      "expected": 152
     },
     {
       "description": "zero is an error",
