@@ -6,6 +6,12 @@
       "description": "Square the sum of the numbers up to the given number",
       "cases": [
         {
+          "description": "square of sum 0",
+          "property": "squareOfSum",
+          "number": 0,
+          "expected": 0
+        },
+        {
           "description": "square of sum 1",
           "property": "squareOfSum",
           "number": 1,
@@ -29,6 +35,12 @@
       "description": "Sum the squares of the numbers up to the given number",
       "cases": [
         {
+          "description": "sum of squares 0",
+          "property": "sumOfSquares",
+          "number": 0,
+          "expected": 0
+        },
+        {
           "description": "sum of squares 1",
           "property": "sumOfSquares",
           "number": 1,
@@ -51,6 +63,12 @@
     {
       "description": "Subtract sum of squares from square of sums",
       "cases": [
+        {
+          "description": "difference of squares 0",
+          "property": "differenceOfSquares",
+          "number": 0,
+          "expected": 0
+        },
         {
           "description": "difference of squares 1",
           "property": "differenceOfSquares",
