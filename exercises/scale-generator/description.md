@@ -48,17 +48,8 @@ Sometimes they may be smaller than usual (diminished, written "D"), or larger
 
 Here is a table of pitches with the names of their interval distance from the tonic (A).
 
-    A    |    A#   |    B    |    C    |    C#   |    D    |    D#   |
-----------------------------------------------------------------------
-  Unison | Min 2nd | Maj 2nd | Min 3rd | Maj 3rd | Per 4th | Tritone |
-         |         | Dim 3rd | Aug 2nd | Dim 4th |         | Aug 4th |
-                                                           | Dim 5th |
-
-
-    E    |    F    |    F#   |    G    |    G#   |    A   |
------------------------------------------------------------
- Per 5th | Min 6th | Maj 6th | Min 7th | Maj 7th | Octave |
- Dim 5th | Aug 5th | Dim 7th | Aug 6th | Dim 8ve |        |
-
-
-
+|   A    |    A#   |    B    |    C    |    C#   |    D    |    D#   |    E    |    F    |    F#   |    G    |    G#   |    A   |
+|:------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:------:|
+| Unison | Min 2nd | Maj 2nd | Min 3rd | Maj 3rd | Per 4th | Tritone | Per 5th | Min 6th | Maj 6th | Min 7th | Maj 7th | Octave |
+|        |         | Dim 3rd | Aug 2nd | Dim 4th |         | Aug 4th | Dim 5th | Aug 5th | Dim 7th | Aug 6th | Dim 8ve |        |
+|        |         |         |         |         |         | Dim 5th |         |         |         |         |         |        |
