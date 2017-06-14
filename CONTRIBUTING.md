@@ -38,7 +38,7 @@ themselves. There are other guides about contributing to other parts of the Exer
     * [Track configuration file (config.json)](#track-configuration-file)
     * [Track-Level Linting With Configlet](#track-level-linting-with-configlet)
     * [Git Basics](#git-basics)
-[Improving Consistency By Extracting Shared Test Data](#improving-consistency-by-extracting-shared-test-data)
+    * [Improving Consistency By Extracting Shared Test Data](#improving-consistency-by-extracting-shared-test-data)
 
 ## We Will Gladly Help You Help Us
 
