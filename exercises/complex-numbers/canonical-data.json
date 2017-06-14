@@ -8,7 +8,8 @@
     " tests.                                                   ",
     " Complex numbers z are represented as arrays [x, y] so    ",
     " that z = x + i * y.                                      ",
-    " Pi is represented as a string \"pi\".                    "
+    " Pi is represented as a string \"pi\", euler's number is  ",
+    " represented as \"e\".                                    "
   ],
   "cases": [
     {
@@ -261,7 +262,7 @@
           "description": "Exponential of a purely real number",
           "property": "exp",
           "input": [1, 0],
-          "expected": [2.718281828459045, 0]
+          "expected": ["e", 0]
         }
       ]
     }
