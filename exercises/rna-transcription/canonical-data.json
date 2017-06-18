@@ -1,6 +1,6 @@
 {
   "exercise": "rna-transcription",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "comments": [
     "Language implementations vary on the issue of invalid input data.",
     "A language may elect to simplify this task by only presenting valid",
@@ -15,49 +15,49 @@
   ],
   "cases": [
     {
-      "description": "rna complement of cytosine is guanine",
+      "description": "RNA complement of cytosine is guanine",
       "property": "toRna",
       "dna": "C",
       "expected": "G"
     },
     {
-      "description": "rna complement of guanine is cytosine",
+      "description": "RNA complement of guanine is cytosine",
       "property": "toRna",
       "dna": "G",
       "expected": "C"
     },
     {
-      "description": "rna complement of thymine is adenine",
+      "description": "RNA complement of thymine is adenine",
       "property": "toRna",
       "dna": "T",
       "expected": "A"
     },
     {
-      "description": "rna complement of adenine is uracil",
+      "description": "RNA complement of adenine is uracil",
       "property": "toRna",
       "dna": "A",
       "expected": "U"
     },
     {
-      "description": "rna complement",
+      "description": "RNA complement",
       "property": "toRna",
       "dna": "ACGTGGTCTTAA",
       "expected": "UGCACCAGAAUU"
     },
     {
-      "description": "dna correctly handles invalid input",
+      "description": "DNA correctly handles invalid input",
       "property": "toRna",
       "dna": "U",
       "expected": null
     },
     {
-      "description": "dna correctly handles completely invalid input",
+      "description": "DNA correctly handles completely invalid input",
       "property": "toRna",
       "dna": "XXX",
       "expected": null
     },
     {
-      "description": "dna correctly handles partially invalid input",
+      "description": "DNA correctly handles partially invalid input",
       "property": "toRna",
       "dna": "ACGTXXXCTTAA",
       "expected": null
