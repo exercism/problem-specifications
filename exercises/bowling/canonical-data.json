@@ -1,6 +1,6 @@
 {
   "exercise": "bowling",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "comments": [
     "Students should implement roll and score methods.",
     "Roll should accept a single integer.",
@@ -91,31 +91,31 @@
     "previous_rolls": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
     "expected": 300
   }, {
-    "description": "rolls can not score negative points",
+    "description": "rolls cannot score negative points",
     "property": "roll",
     "previous_rolls": [],
     "roll": -1,
     "expected": {"error": "Negative roll is invalid"}
   }, {
-    "description": "a roll can not score more than 10 points",
+    "description": "a roll cannot score more than 10 points",
     "property": "roll",
     "previous_rolls": [],
     "roll": 11,
     "expected": {"error": "Pin count exceeds pins on the lane"}
   }, {
-    "description": "two rolls in a frame can not score more than 10 points",
+    "description": "two rolls in a frame cannot score more than 10 points",
     "property": "roll",
     "previous_rolls": [5],
     "roll": 6,
     "expected": {"error": "Pin count exceeds pins on the lane"}
   }, {
-    "description": "bonus roll after a strike in the last frame can not score more than 10 points",
+    "description": "bonus roll after a strike in the last frame cannot score more than 10 points",
     "property": "roll",
     "previous_rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10],
     "roll": 11,
     "expected": {"error": "Pin count exceeds pins on the lane"}
   }, {
-    "description": "two bonus rolls after a strike in the last frame can not score more than 10 points",
+    "description": "two bonus rolls after a strike in the last frame cannot score more than 10 points",
     "property": "roll",
     "previous_rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 5],
     "roll": 6,
@@ -126,24 +126,24 @@
     "previous_rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 6],
     "expected": 26
   }, {
-    "description": "the second bonus rolls after a strike in the last frame can not be a strike if the first one is not a strike",
+    "description": "the second bonus rolls after a strike in the last frame cannot be a strike if the first one is not a strike",
     "property": "roll",
     "previous_rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6],
     "roll": 10,
     "expected": {"error": "Pin count exceeds pins on the lane"}
   }, {
-    "description": "second bonus roll after a strike in the last frame can not score than 10 points",
+    "description": "second bonus roll after a strike in the last frame cannot score more than 10 points",
     "property": "roll",
     "previous_rolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10],
     "roll": 11,
     "expected": {"error": "Pin count exceeds pins on the lane"}
   }, {
-    "description": "an unstarted game can not be scored",
+    "description": "an unstarted game cannot be scored",
     "property": "score",
     "previous_rolls": [],
     "expected": {"error": "Score cannot be taken until the end of the game"}
   }, {
-    "description": "an incomplete game can not be scored",
+    "description": "an incomplete game cannot be scored",
     "property": "score",
     "previous_rolls": [0, 0],
     "expected": {"error": "Score cannot be taken until the end of the game"}
