@@ -263,7 +263,7 @@ Each track should have the following structure:
         └── hello-world_test.file
 ```
 
-The example template for a track can be found at [x-template](https://github.com/exercism/x-template).
+The example template for a track can be found in the [request-new-language-track repository](https://github.com/exercism/request-new-language-track).
 
 * `LICENSE` - The MIT License (MIT)
 * `README.md` - a thorough explanation of how to contribute to the track.
