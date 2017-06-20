@@ -93,13 +93,13 @@ language name. For example, _C++_ has the ID `cpp`. This ID is used throughout
 the Exercism ecosystem.
 
 Each language-specific repository can be found under the Exercism GitHub
-organization, named with the track ID, prefixed with `x`.
+organization named with the track ID.
 
 ```
-https://github.com/exercism/x{TRACK_ID}
+https://github.com/exercism/{TRACK_ID}
 ```
 
-For example, the C++ repository is [exercism/xcpp](https://github.com/exercism/xcpp).
+For example, the C++ repository is [exercism/cpp](https://github.com/exercism/cpp).
 
 ### Problem Metadata
 
@@ -230,7 +230,7 @@ A problem must have a unique slug. This slug is used as
 * Bonus: `exercises/<slug>/canonical-data.json` with inputs/outputs for the test suite.
 * Submit a pull request.
 
-### In exercism/x<TRACK_ID>
+### In exercism/<TRACK_ID>
 
 * Do the same as when [porting an
   exercise](#porting-an-exercise-to-another-language-track).
