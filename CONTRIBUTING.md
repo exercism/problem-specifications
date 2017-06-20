@@ -230,7 +230,7 @@ A problem must have a unique slug. This slug is used as
 * Bonus: `exercises/<slug>/canonical-data.json` with inputs/outputs for the test suite.
 * Submit a pull request.
 
-### In exercism/x<TRACK_ID>
+### In exercism/<TRACK_ID>
 
 * Do the same as when [porting an
   exercise](#porting-an-exercise-to-another-language-track).
