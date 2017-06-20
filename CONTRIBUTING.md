@@ -93,13 +93,13 @@ language name. For example, _C++_ has the ID `cpp`. This ID is used throughout
 the Exercism ecosystem.
 
 Each language-specific repository can be found under the Exercism GitHub
-organization, named with the track ID, prefixed with `x`.
+organization named with the track ID.
 
 ```
-https://github.com/exercism/x{TRACK_ID}
+https://github.com/exercism/{TRACK_ID}
 ```
 
-For example, the C++ repository is [exercism/xcpp](https://github.com/exercism/xcpp).
+For example, the C++ repository is [exercism/cpp](https://github.com/exercism/cpp).
 
 ### Problem Metadata
 
