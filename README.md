@@ -183,10 +183,3 @@ Run for single exercise:
 npm test-one exercises/<exercise>/canonical-data.json
 ```
 Replace `<exercise>` by the name of exercise which you want to check.
-
-
-## License
-
-The MIT License (MIT)
-
-Copyright (c) 2014 Katrina Owen, _@kytrinyx.com
