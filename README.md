@@ -1,4 +1,4 @@
-# x-Common
+# problem-specifications
 
 Shared metadata for Exercism exercises.
 
