@@ -1,6 +1,6 @@
 {
   "exercise": "difference-of-squares",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "cases": [
     {
       "description": "Square the sum of the numbers up to the given number",
@@ -22,6 +22,12 @@
           "property": "squareOfSum",
           "number": 100,
           "expected": 25502500
+        },
+        {
+          "description": "square of sum 2000",
+          "property": "squareOfSum",
+          "number": 2000,
+          "expected": 4004001000000
         }
       ]
     },
@@ -45,6 +51,12 @@
           "property": "sumOfSquares",
           "number": 100,
           "expected": 338350
+        },
+        {
+          "description": "sum of squares 2000",
+          "property": "sumOfSquares",
+          "number": 2000,
+          "expected": 2668667000
         }
       ]
     },
@@ -68,6 +80,12 @@
           "property": "differenceOfSquares",
           "number": 100,
           "expected": 25164150
+        },
+        {
+          "description": "difference of squares 2000",
+          "property": "differenceOfSquares",
+          "number": 2000,
+          "expected": 4001332333000
         }
       ]
     }
