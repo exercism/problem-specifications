@@ -33,7 +33,7 @@
       "expected": { "error": "Only positive numbers are allowed" }
     },
     {
-      "description": "negative value is an error ",
+      "description": "negative value is an error",
       "property": "steps",
       "number": -15,
       "expected": { "error": "Only positive numbers are allowed" }
