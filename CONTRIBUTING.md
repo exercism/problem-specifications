@@ -397,7 +397,6 @@ Important keys are:
 * `problems` - actively served via `exercism fetch`
 * `deprecated` - implemented, but aren't served anymore
 * `foregone` - will not be implemented in the track
-* `ignored` - these directories do not contain problems
 
 The `configlet` tool uses those categories to ensure that
 
@@ -406,8 +405,7 @@ The `configlet` tool uses those categories to ensure that
 3. `foregone` problems are not implemented.
 
 In addition, it will complain about problems that are implemented but are not
-listed in the config under the `problems` key. This is where the `ignored` key
-is useful. Ignored directories don't get flagged as unimplemented problems.
+listed in the config under the `problems` key.
 
 A problem might be foregone for a number of reasons, typically because it's a
 bad exercise for the language.
