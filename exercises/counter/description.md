@@ -1,6 +1,6 @@
 **NOTE: This exercise has been deprecated.**
 
-Please see the discussion in https://github.com/exercism/x-common/issues/80
+Please see the discussion in https://github.com/exercism/problem-specifications/issues/80
 for more context.
 
 --------

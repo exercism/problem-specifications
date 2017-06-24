@@ -122,7 +122,7 @@ are used to hand-craft a test suite generator, allowing us to quickly regenerate
 test suites when edge cases or errors are discovered.
 
 The generic problem descriptions live in the `exercises` folder in this repository
-([exercism/x-common](https://github.com/exercism/x-common)).
+([exercism/problem-specifications](https://github.com/exercism/problem-specifications)).
 
 ## Updating an Exercise Test Suite
 
@@ -183,7 +183,7 @@ test suite](#updating-an-exercise-test-suite).
 #### Changing Inputs and Outputs
 
 If you want to add a new test or change some inputs or outputs, then the change
-needs to be made in the [exercism/x-common repository](https://github.com/exercism/x-common),
+needs to be made in the [exercism/problem-specifications repository](https://github.com/exercism/problem-specifications),
 not directly to the test suite itself.
 
 Find the JSON file for the problem in question. For example, if you want to change
@@ -224,7 +224,7 @@ A problem must have a unique slug. This slug is used as
 * the directory name for the folder that contains the metadata files (in this repository)
 * to identify the exercise in `config.json`
 
-### In exercism/x-common
+### In exercism/problem-specifications
 
 * Create `exercises/<slug>/description.md` and `exercises/<slug>/metadata.yml`.
 * Bonus: `exercises/<slug>/canonical-data.json` with inputs/outputs for the test suite.
@@ -234,8 +234,8 @@ A problem must have a unique slug. This slug is used as
 
 * Do the same as when [porting an
   exercise](#porting-an-exercise-to-another-language-track).
-  Reference the PR in x-common if it hasn't been merged yet,
-  this **must not** be merged until the exercism/x-common PR is merged.
+  Reference the PR in problem-specifications if it hasn't been merged yet,
+  this **must not** be merged until the exercism/problem-specifications PR is merged.
 
 ## Track Anatomy
 

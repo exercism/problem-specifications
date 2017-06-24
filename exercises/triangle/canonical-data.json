@@ -10,7 +10,7 @@
     " They're degenerate triangles with all three vertices collinear.       ",
     " (In contrast, we will test (0, 0, 0, Illegal), as it is a point)      ",
     " The tests assert properities of the triangle are true or false.       ",
-    " See: https://github.com/exercism/x-common/issues/379 for disscussion  ",
+    " See: https://github.com/exercism/problem-specifications/issues/379 for disscussion  ",
     " of this approach                                                      ",
     " How you handle invalid triangles is up to you. These tests suggest a  ",
     " triangle is returned, but all of its properties are false. But you    ",
