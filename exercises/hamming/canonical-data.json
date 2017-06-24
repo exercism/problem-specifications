@@ -1,6 +1,6 @@
 {
 "exercise": "hamming",
-"version": "1.0.0",
+"version": "1.0.1",
   "comments": [
     "Language implementations vary on the issue of unequal length strands.",
     "A language may elect to simplify this task by only presenting equal",
@@ -14,6 +14,13 @@
     "are not represented here."
   ],
   "cases": [
+    {
+      "description": "empty strands",
+      "property": "distance",
+      "strand1": "",
+      "strand2": "",
+      "expected": 0
+    },
     {
       "description": "identical strands",
       "property": "distance",
@@ -97,13 +104,6 @@
       "strand1":  "GGACGGATTCTG",
       "strand2": "AGGACGGATTCT",
       "expected": 9
-    },
-    {
-      "description": "empty strands",
-      "property": "distance",
-      "strand1": "",
-      "strand2": "",
-      "expected": 0
     },
     {
       "description": "disallow first strand longer",
