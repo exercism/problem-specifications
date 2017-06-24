@@ -361,6 +361,8 @@ the reference solution. If the change you're making is backwards-incompatible,
 then please increment the version in both the test suite and the reference
 solution.
 
+Please review the details in [README.md](https://github.com/exercism/problem-specifications#test-data-versioning) and bump the version number accordingly.
+
 ### Anatomy of an Exercise
 
 TODO: expand on notes below.
