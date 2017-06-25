@@ -1,6 +1,6 @@
 {
   "exercise": "forth",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments": [
     "The cases are split into multiple sections, all with the same structure.",
     "In all cases, the `expected` key is the resulting stack",
@@ -288,6 +288,15 @@
             "1 swap"
           ],
           "expected": [1, 1]
+        },
+        {
+          "description": "can override built-in operators",
+          "property": "evaluate",
+          "input": [
+            ": + * ;",
+            "3 4 +"
+          ],
+          "expected": [12]
         },
         {
           "description": "cannot redefine numbers",
