@@ -6,14 +6,14 @@
     "It should be replaced with the respective expression that is idiomatic",
     "for the language that implements the tests.",
 
-    "Following https://github.com/exercism/x-common/issues/234 the exercise",
+    "Following https://github.com/exercism/problem-specifications/issues/234 the exercise",
     "should NOT include checking whether the array is sorted as it defeats",
     "the point of the binary search.",
 
     "The exercise should utilize an array-like (i.e. constant-time indexed)",
     "data structure and not a linked list. If something like an array is not",
     "usually used in the language the problem should not be implemented.",
-    "See https://github.com/exercism/x-common/issues/244 for details."
+    "See https://github.com/exercism/problem-specifications/issues/244 for details."
   ],
   "cases": [
     {
