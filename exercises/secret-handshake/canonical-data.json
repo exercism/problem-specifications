@@ -2,8 +2,8 @@
   "exercise": "secret-handshake",
   "version": "1.1.0",
   "comments": [
-    " In a discussion in https://github.com/exercism/x-common/pull/794 and    ",
-    " https://github.com/exercism/x-common/issues/335 it has been decided to  ",
+    " In a discussion in https://github.com/exercism/problem-specifications/pull/794 and    ",
+    " https://github.com/exercism/problem-specifications/issues/335 it has been decided to  ",
     " only include numbers between 0 and 31 (00000 to 11111) in the canonical ",
     " test data.                                                              ",
     "                                                                         ",
