@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-# This is a temporary file which exists to support the x-common issue #767
-# [Make description.md self contained.](# https://github.com/exercism/x-common/issues/767)
+# This is a temporary file which exists to support the problem-specifications issue #767
+# [Make description.md self contained.](# https://github.com/exercism/problem-specifications/issues/767)
 #
 # The exercise description given in description.md should be complete and self
 # contained, and not require the addition of the blurb to make sense.
