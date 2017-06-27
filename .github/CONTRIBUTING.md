@@ -32,7 +32,6 @@ themselves. There are other guides about contributing to other parts of the Exer
 * [Starting a New Track](#starting-a-new-track)
     * [Beta-Testing a Language Track](#beta-testing-a-language-track)
 * [Useful Tidbits](#useful-tidbits)
-    * [Pull Request Guidelines](#pull-request-guidelines)
     * [Exercise Versioning](#exercise-versioning)
     * [Anatomy of an Exercise](#anatomy-of-an-exercise)
     * [Track configuration file (config.json)](#track-configuration-file)
@@ -158,10 +157,6 @@ Once you've updated the test suite, there are a few things you'll want to check.
 
 You can also take a look at the `.travis.yml` file to see what the continuous
 integration system will do to verify the track.
-
-Take a look at our [pull request guidelines](#pull-request-guidelines).
-You don't need to get it perfect the first time around; we'll work with you to
-get the patch merged.
 
 ### Updating a Generated Test Suite
 
@@ -333,10 +328,6 @@ You can include advice and helpful links for your language track in the
 Here are a few bits and pieces that are referenced from some of the
 scenarios in this guide.
 
-### Pull Request Guidelines
-
-See the [pull request guidelines](https://github.com/exercism/docs/blob/master/contributing-to-language-tracks/pull-request-guidelines.md) in the docs repository.
-
 ### Exercise Versioning
 
 It's only when we get a bunch of people having conversations about the
@@ -360,8 +351,6 @@ _book-keeping_ type test at the very bottom that asserts against a value in
 the reference solution. If the change you're making is backwards-incompatible,
 then please increment the version in both the test suite and the reference
 solution.
-
-Please review the details in [README.md](https://github.com/exercism/problem-specifications#test-data-versioning) and bump the version number accordingly.
 
 ### Anatomy of an Exercise
 
