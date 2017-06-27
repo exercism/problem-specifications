@@ -4,7 +4,7 @@ Shared metadata for Exercism exercises.
 
 ## Contributing Guide
 
-Please see the [contributing guide](https://github.com/exercism/x-common/blob/master/.github/CONTRIBUTING.md) and the [pull request template](https://github.com/exercism/x-common/blob/master/.github/PULL_REQUEST_TEMPLATE.md).
+Please see the [contributing guide](https://github.com/exercism/problem-specifications/blob/master/CONTRIBUTING.md) and the [pull request template](https://github.com/exercism/problem-specifications/blob/master/PULL_REQUEST_TEMPLATE.md).
 
 ## Problem metadata
 
