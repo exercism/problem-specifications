@@ -1,0 +1,78 @@
+{
+  "exercise": "dna subsequence",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "description": "empty subsequence",
+      "property": "subsequence",
+      "input": [
+	"accaacaacacc", 
+	"tggtggggttgtt"
+      ],
+      "expected": ""
+    },
+    {
+      "description": "empty strands",
+      "property": "subsequence",
+      "input": [
+	"", 
+	""
+      ],
+      "expected": ""
+    },
+    {
+      "description": "same strand",
+      "property": "subsequence",
+      "input": [
+	"taggcta", 
+	"taggcta"
+      ],
+      "expected": "taggcta"
+    },
+    {
+      "description": "more than one possible subsequences",
+      "property": "subsequence",
+      "input": [
+	"agtc", 
+	"gact"
+      ],
+      "expected": "at"
+    },
+    {
+      "description": "short strands1",
+      "property": "subsequence",
+      "input": [
+	"gtcatgcttaggcta", 
+	"agcatgctgcag"
+      ],
+      "expected": "gcatgctgca"
+    },
+    {
+      "description": "short strands2",
+      "property": "subsequence",
+      "input": [
+	"taccaacaacacc",
+	"tggtggcggttgtt"
+      ],
+      "expected": "tc"
+    },
+    {
+      "description": "long strands1",
+      "property": "subsequence",
+      "input": [
+	"accggtcgagtgcgcggaagccggccgaa", 
+	"gtcgttcggaatgccgttgctctgtaaa"
+      ],
+      "expected": "gtcgtcggaagccggccgaa"
+    },
+    {
+      "description": "long strands2",
+      "property": "subsequence",
+      "input": [
+	"gatccatctggatcctatagttcatggaaagccgctgc", 
+	"tatttcaacattaattgttggttttgatacagatggtacacca"
+      ],
+      "expected": "atccattggttatagatggaacc"
+    }
+  ]
+}
