@@ -286,25 +286,7 @@ The example template for a track can be found in the [request-new-language-track
 ## Starting a New Track
 
 If you're interested in adding problems for a language that we don't yet have,
-[email Katrina](mailto:kytrinyx@exercism.io) and she'll set up a new repo for
-that language.
-
-Then you can fork and clone per usual.
-
-In order to launch the track needs:
-
-- At least 10 problems implemented.
-- A handful of people who can check in regularly and provide feedback on solutions.
-- Documentation in `docs/` for how to get started / run the tests
-
-Description of what is required for `docs/` can be found in the [Track Anatomy](#track-anatomy).
-
-Once that is in place, the repository needs to be added as a submodule to
-[exercism/x-api](https://github.com/exercism/x-api/tree/master/tracks), and
-the `"active"` key in `config.json` must be flipped to `true`.
-
-We don't deploy x-api automatically, so it will go live the next time the submodules
-are updated (daily, for the most part).
+open an issue in the https://github.com/exercism/request-new-language-track repository.
 
 ### Beta-Testing a Language Track
 ---
