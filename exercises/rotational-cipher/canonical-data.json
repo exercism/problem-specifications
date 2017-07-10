@@ -1,6 +1,6 @@
 {
   "exercise": "rotational-cipher",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "comments": [
     "The tests are a series of rotation tests: "
   ],
@@ -8,6 +8,13 @@
     {
       "description": "Test rotation from English to ROTn",
       "cases": [
+        {
+          "description": "rotate a by 0, same output as input",
+          "property": "rotate",
+          "text": "a",
+          "shiftKey": 0,
+          "expected": "a"
+        },
         {
           "description": "rotate a by 1",
           "property": "rotate",
@@ -20,13 +27,6 @@
           "property": "rotate",
           "text": "a",
           "shiftKey": 26,
-          "expected": "a"
-        },
-        {
-          "description": "rotate a by 0, same output as input",
-          "property": "rotate",
-          "text": "a",
-          "shiftKey": 0,
           "expected": "a"
         },
         {
