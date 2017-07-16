@@ -169,7 +169,7 @@ Some language tracks are experimenting with generating test suites from shared
 test data. This is because various interesting edge cases are discovered as
 people discuss solutions, but these edge cases are usually then only added
 to a single language track. By standardising the inputs and outputs, it becomes
-easier to and improve the exercises across all the languages.
+easier to improve the exercises across all the languages.
 
 There are two possible scenarios, described below.
 
