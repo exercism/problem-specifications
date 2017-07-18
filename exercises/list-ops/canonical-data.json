@@ -1,6 +1,6 @@
 {
   "exercise": "list-ops",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "comments": [
     "Though there are no specifications here for dealing with large lists,",
     "implementers may add tests for handling large lists to ensure that the",
@@ -113,16 +113,24 @@
           "property": "foldl",
           "list": [],
           "initial": 2,
-          "function": "value / accumulator",
+          "function": "(x, y) -> x * y",
           "expected": 2
         },
         {
-          "description": "division of integers",
+          "description": "direction independent function applied to non-empty list",
           "property": "foldl",
           "list": [1, 2, 3, 4],
-          "initial": 24,
-          "function": "value / accumulator",
-          "expected": 64
+          "initial": 5,
+          "function": "(x, y) -> x + y",
+          "expected": 15
+        },
+        {
+          "description": "direction dependent function applied to non-empty list",
+          "property": "foldl",
+          "list": [2, 5],
+          "initial": 5,
+          "function": "(x, y) -> x / y",
+          "expected": 0
         }
       ]
     },
@@ -134,16 +142,24 @@
           "property": "foldr",
           "list": [],
           "initial": 2,
-          "function": "value / accumulator",
+          "function": "(x, y) -> x * y",
           "expected": 2
         },
         {
-          "description": "division of integers",
+          "description": "direction independent function applied to non-empty list",
           "property": "foldr",
           "list": [1, 2, 3, 4],
-          "initial": 24,
-          "function": "value / accumulator",
-          "expected": 9
+          "initial": 5,
+          "function": "(x, y) -> x + y",
+          "expected": 15
+        },
+        {
+          "description": "direction dependent function applied to non-empty list",
+          "property": "foldr",
+          "list": [2, 5],
+          "initial": 5,
+          "function": "(x, y) -> x / y",
+          "expected": 2
         }
       ]
     },
