@@ -223,7 +223,7 @@
           "description": "full rhyme",
           "property": "verse",
           "start verse": 1,
-          "end verse": 8,
+          "end verse": 12,
           "expected": [
             "This is the house that Jack built.",
             "",
