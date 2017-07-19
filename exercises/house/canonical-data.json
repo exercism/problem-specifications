@@ -179,7 +179,7 @@
         },
         {
           "description": "multiple verses",
-          "property": "verse",
+          "property": "verses",
           "start verse": 4,
           "end verse": 8,
           "expected": [
@@ -221,7 +221,7 @@
         },
         {
           "description": "full rhyme",
-          "property": "verse",
+          "property": "verses",
           "start verse": 1,
           "end verse": 12,
           "expected": [
