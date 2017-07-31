@@ -1,6 +1,7 @@
-Write two functions that each take a function and a list.  One of them will
-return the list of items for which the passed in function is true, and the
-other will return the items for which it is false.
+Implement the `keep` and `discard` operation on collections. Given a collection
+and a predicate on the collection's elements, `keep` returns a new collection
+containing those elements where the predicate is true, while `discard` returns
+a new collection containing those elements where the predicate is false.
 
 For example, given the collection of numbers:
 

@@ -1,6 +1,6 @@
 {
   "exercise": "forth",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "comments": [
     "The cases are split into multiple sections, all with the same structure.",
     "In all cases, the `expected` key is the resulting stack",
@@ -21,12 +21,6 @@
           "property": "evaluate",
           "input": ["1 2 3 4 5"],
           "expected": [1, 2, 3, 4, 5]
-        },
-        {
-          "description": "all non-word characters are separators",
-          "property": "evaluate",
-          "input": ["1\u00002\u00133\n4\r5 6\t7"],
-          "expected": [1, 2, 3, 4, 5, 6, 7]
         }
       ]
     },
@@ -294,6 +288,15 @@
             "1 swap"
           ],
           "expected": [1, 1]
+        },
+        {
+          "description": "can override built-in operators",
+          "property": "evaluate",
+          "input": [
+            ": + * ;",
+            "3 4 +"
+          ],
+          "expected": [12]
         },
         {
           "description": "cannot redefine numbers",

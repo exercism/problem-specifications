@@ -1,6 +1,6 @@
 {
   "exercise": "acronym",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "cases": [
     {
       "description": "Abbreviate a phrase",
@@ -16,12 +16,6 @@
           "property": "abbreviate",
           "phrase": "Ruby on Rails",
           "expected": "ROR"
-        },
-        {
-          "description": "camelcase",
-          "property": "abbreviate",
-          "phrase": "HyperText Markup Language",
-          "expected": "HTML"
         },
         {
           "description": "punctuation",

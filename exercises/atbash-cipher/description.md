@@ -1,3 +1,5 @@
+Create an implementation of the atbash cipher, an ancient encryption system created in the Middle East.
+
 The Atbash cipher is a simple substitution cipher that relies on
 transposing all the letters in the alphabet such that the resulting
 alphabet is backwards. The first letter is replaced with the last

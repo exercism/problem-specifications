@@ -1,3 +1,5 @@
+Parse and evaluate simple math word problems returning the answer as an integer.
+
 
 ## Iteration 1 — Addition
 

@@ -1,3 +1,6 @@
+Given a string of digits, calculate the largest product for a contiguous
+substring of digits of length n.
+
 For example, for the input `'1027839564'`, the largest product for a
 series of 3 digits is 270 (9 * 5 * 6), and the largest product for a
 series of 5 digits is 7560 (7 * 8 * 3 * 9 * 5).

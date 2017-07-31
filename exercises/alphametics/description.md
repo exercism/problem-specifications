@@ -1,3 +1,5 @@
+Write a function to solve alphametics puzzles.
+
 [Alphametics](https://en.wikipedia.org/wiki/Alphametics) is a puzzle where
 letters in words are replaced with numbers.
 

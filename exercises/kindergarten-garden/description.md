@@ -1,3 +1,6 @@
+Given a diagram, determine which plants each child in the kindergarten class is
+responsible for.
+
 The kindergarten class is learning about growing plants. The teachers
 thought it would be a good idea to give them actual seeds, plant them in
 actual dirt, and grow actual plants.

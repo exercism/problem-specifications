@@ -1,3 +1,5 @@
+Given a word, compute the scrabble score for that word.
+
 ## Letter Values
 
 You'll need these:

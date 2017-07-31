@@ -1,3 +1,5 @@
+Make a chain of dominoes.
+
 Compute a way to order a given set of dominoes in such a way that they form a
 correct domino chain (the dots on one half of a stone match the dots on the
 neighbouring half of an adjacent stone) and that dots on the halfs of the stones

@@ -1,3 +1,6 @@
+Given a 3 x 4 grid of pipes, underscores, and spaces, determine which number is
+represented, or whether it is garbled.
+
 # Step One
 
 To begin with, convert a simple binary font to a string containing 0 or 1.

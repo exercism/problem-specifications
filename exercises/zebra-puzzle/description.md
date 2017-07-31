@@ -1,3 +1,5 @@
+Solve the zebra puzzle.
+
 1. There are five houses.
 2. The Englishman lives in the red house.
 3. The Spaniard owns the dog.
@@ -16,7 +18,7 @@
 
 Each of the five houses is painted a different color, and their
 inhabitants are of different national extractions, own different pets,
-drink different beverages and smoke different brands of cigarets.
+drink different beverages and smoke different brands of cigarettes.
 
 Which of the residents drinks water?
 Who owns the zebra?

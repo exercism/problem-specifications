@@ -1,3 +1,6 @@
+Given a string representing a matrix of numbers, return the rows and columns of
+that matrix.
+
 So given a string with embedded newlines like:
 
 > 9 8 7  

@@ -1,3 +1,5 @@
+Parsing a Smart Game Format string.
+
 [SGF](https://en.wikipedia.org/wiki/Smart_Game_Format) is a standard format for
 storing board game files, in particular go.
 

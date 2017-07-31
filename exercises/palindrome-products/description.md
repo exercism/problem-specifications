@@ -1,3 +1,5 @@
+Detect palindrome products in a given range.
+
 A palindromic number is a number that remains the same when its digits are
 reversed. For example, `121` is a palindromic number but `112` is not.
 

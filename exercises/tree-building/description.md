@@ -1,3 +1,5 @@
+Refactor a tree building algorithm.
+
 Some web-forums have a tree layout, so posts are presented as a tree. However
 the posts are typically stored in a database as an unsorted set of records. Thus
 when presenting the posts to the user the tree structure has to be

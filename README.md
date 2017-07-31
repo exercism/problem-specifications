@@ -1,10 +1,10 @@
-# x-Common
+# problem-specifications
 
 Shared metadata for Exercism exercises.
 
 ## Contributing Guide
 
-Please see the [contributing guide](https://github.com/exercism/x-common/blob/master/CONTRIBUTING.md)
+Please see the [contributing guide](https://github.com/exercism/problem-specifications/blob/master/CONTRIBUTING.md)
 
 ## Problem metadata
 
@@ -183,10 +183,3 @@ Run for single exercise:
 npm test-one exercises/<exercise>/canonical-data.json
 ```
 Replace `<exercise>` by the name of exercise which you want to check.
-
-
-## License
-
-The MIT License (MIT)
-
-Copyright (c) 2014 Katrina Owen, _@kytrinyx.com

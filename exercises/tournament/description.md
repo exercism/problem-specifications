@@ -1,6 +1,7 @@
-Tally the results of a small football competition. Based on an input file
-containing which team played against which and what the outcome was
-create a file with a table like this:
+Tally the results of a small football competition.
+
+Based on an input file containing which team played against which and what the
+outcome was, create a file with a table like this:
 
 ```
 Team                           | MP |  W |  D |  L |  P

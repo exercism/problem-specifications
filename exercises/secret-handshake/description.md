@@ -14,6 +14,8 @@ binary decide to come up with a secret "handshake".
 10000 = Reverse the order of the operations in the secret handshake.
 ```
 
+Given a decimal number, convert it to the appropriate sequence of events for a secret handshake.
+
 Here's a couple of examples:
 
 Given the input 3, the function would return the array

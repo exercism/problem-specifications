@@ -1,3 +1,5 @@
+Given a number from 0 to 999,999,999,999, spell out that number in English.
+
 ## Step 1
 
 Handle the basic case of 0 through 99.

@@ -1,3 +1,5 @@
+Implement variable length quantity encoding and decoding.
+
 The goal of this exercise is to implement [VLQ](https://en.wikipedia.org/wiki/Variable-length_quantity) encoding/decoding.
 
 In short, the goal of this encoding is to encode integer values in a way that would save bytes.
