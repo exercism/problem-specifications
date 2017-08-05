@@ -110,14 +110,14 @@
       "property": "distance",
       "strand1": "AATG",
       "strand2": "AAA",
-      "expected": -1
+      "expected": {"error": "leftStrand and rightStrand must be of equal length"}
     },
     {
       "description": "disallow second strand longer",
       "property": "distance",
       "strand1": "ATA",
       "strand2": "AGTG",
-      "expected": -1
+      "expected": {"error": "leftStrand and rightStrand must be of equal length"}
     }
   ]
 }
