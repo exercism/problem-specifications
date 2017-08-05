@@ -388,6 +388,6 @@ TODO: add more sections:
 
 ## Improving Consistency By Extracting Shared Test Data
 
-This documentation has moved [to the docs repository](https://github.com/exercism/docs/blob/master/contributing-to-language-tracks/improving-consistency-across-tracks.md).
+This documentation has moved [to the docs repository](https://github.com/exercism/docs/blob/master/you-can-help/improve-exercise-metadata.md).
 
 We are maintaining this section, since many open issues link to it.
