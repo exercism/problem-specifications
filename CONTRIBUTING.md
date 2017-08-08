@@ -317,7 +317,7 @@ scenarios in this guide.
 
 ### Pull Request Guidelines
 
-See the [pull request guidelines](https://github.com/exercism/docs/blob/master/contributing-to-language-tracks/pull-request-guidelines.md) in the docs repository.
+See the [pull request guidelines](https://github.com/exercism/docs/blob/master/contributing/pull-request-guidelines.md) in the docs repository.
 
 ### Exercise Versioning
 
