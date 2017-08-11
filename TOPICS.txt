@@ -48,6 +48,7 @@ Problem areas
 Algorithms
 Bitwise operations
 Concurrency
+Cryptography
 Domain-specific languages
 Files
 Filtering
@@ -55,6 +56,7 @@ Games
 Globalization
 Logic
 Mathematics
+Memory Management
 Networking
 Parallellism
 Parsing
