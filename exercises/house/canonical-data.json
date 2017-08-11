@@ -16,7 +16,7 @@
       "description": "Return specified verse or series of verses",
       "cases": [
         {
-          "description": "verse one",
+          "description": "verse one - the house that jack built",
           "property": "verse",
           "verse": 1,
           "expected": [
@@ -24,7 +24,7 @@
           ]
         },
         {
-          "description": "verse two",
+          "description": "verse two - the malt that lay",
           "property": "verse",
           "verse": 2,
           "expected": [
@@ -33,7 +33,7 @@
           ]
         },
         {
-          "description": "verse three",
+          "description": "verse three - the rat that ate",
           "property": "verse",
           "verse": 3,
           "expected": [
@@ -43,7 +43,7 @@
           ]
         },
         {
-          "description": "verse four",
+          "description": "verse four - the cat that killed",
           "property": "verse",
           "verse": 4,
           "expected": [
@@ -54,7 +54,7 @@
           ]
         },
         {
-          "description": "verse five",
+          "description": "verse five - the dog that worried",
           "property": "verse",
           "verse": 5,
           "expected": [
@@ -66,7 +66,7 @@
           ]
         },
         {
-          "description": "verse six",
+          "description": "verse six - the cow with the crumpled horn",
           "property": "verse",
           "verse": 6,
           "expected": [
@@ -79,7 +79,7 @@
           ]
         },
         {
-          "description": "verse seven",
+          "description": "verse seven - the maiden all forlorn",
           "property": "verse",
           "verse": 7,
           "expected": [
@@ -93,7 +93,7 @@
           ]
         },
         {
-          "description": "verse eight",
+          "description": "verse eight - the man all tattered and torn",
           "property": "verse",
           "verse": 8,
           "expected": [
@@ -108,7 +108,7 @@
           ]
         },
         {
-          "description": "verse nine",
+          "description": "verse nine - the priest all shaven and shorn",
           "property": "verse",
           "verse": 9,
           "expected": [
@@ -124,7 +124,7 @@
           ]
         },
         {
-          "description": "verse 10",
+          "description": "verse 10 - the rooster that crowed in the morn",
           "property": "verse",
           "verse": 10,
           "expected": [
@@ -141,7 +141,7 @@
           ]
         },
         {
-          "description": "verse 11",
+          "description": "verse 11 - the farmer sowing his corn",
           "property": "verse",
           "verse": 11,
           "expected": [
@@ -159,7 +159,7 @@
           ]
         },
         {
-          "description": "verse 12",
+          "description": "verse 12 - the horse and the hound and the horn",
           "property": "verse",
           "verse": 12,
           "expected": [
