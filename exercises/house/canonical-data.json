@@ -1,0 +1,322 @@
+{
+  "exercise": "house",
+  "version": "1.0.0",
+  "comments": [
+    "JSON doesn't allow for multi-line strings, so all verses are presented ",
+    "here as arrays of strings. It's up to the test generator to join the ",
+    "lines together with line breaks.",
+    "Some languages test for the verse() method, which takes a start verse ",
+    "and optional end verse, but other languages have only tested for the full poem.",
+    "For those languages in the latter category, you may wish to only ",
+    "implement the full song test and leave the rest alone, ignoring the start verse, ",
+    "end verse, and verse fields."
+  ],
+  "cases": [
+    {
+      "description": "Return specified verse or series of verses",
+      "cases": [
+        {
+          "description": "verse one - the house that jack built",
+          "property": "verse",
+          "verse": 1,
+          "expected": [
+            "This is the house that Jack built."
+          ]
+        },
+        {
+          "description": "verse two - the malt that lay",
+          "property": "verse",
+          "verse": 2,
+          "expected": [
+            "This is the malt",
+            "that lay in the house that Jack built."
+          ]
+        },
+        {
+          "description": "verse three - the rat that ate",
+          "property": "verse",
+          "verse": 3,
+          "expected": [
+            "This is the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built."
+          ]
+        },
+        {
+          "description": "verse four - the cat that killed",
+          "property": "verse",
+          "verse": 4,
+          "expected": [
+            "This is the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built."
+          ]
+        },
+        {
+          "description": "verse five - the dog that worried",
+          "property": "verse",
+          "verse": 5,
+          "expected": [
+            "This is the dog",
+            "that worried the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built."
+          ]
+        },
+        {
+          "description": "verse six - the cow with the crumpled horn",
+          "property": "verse",
+          "verse": 6,
+          "expected": [
+            "This is the cow with the crumpled horn",
+            "that tossed the dog",
+            "that worried the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built."
+          ]
+        },
+        {
+          "description": "verse seven - the maiden all forlorn",
+          "property": "verse",
+          "verse": 7,
+          "expected": [
+            "This is the maiden all forlorn",
+            "that milked the cow with the crumpled horn",
+            "that tossed the dog",
+            "that worried the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built."
+          ]
+        },
+        {
+          "description": "verse eight - the man all tattered and torn",
+          "property": "verse",
+          "verse": 8,
+          "expected": [
+            "This is the man all tattered and torn",
+            "that kissed the maiden all forlorn",
+            "that milked the cow with the crumpled horn",
+            "that tossed the dog",
+            "that worried the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built."
+          ]
+        },
+        {
+          "description": "verse nine - the priest all shaven and shorn",
+          "property": "verse",
+          "verse": 9,
+          "expected": [
+            "This is the priest all shaven and shorn",
+            "that married the man all tattered and torn",
+            "that kissed the maiden all forlorn",
+            "that milked the cow with the crumpled horn",
+            "that tossed the dog",
+            "that worried the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built."
+          ]
+        },
+        {
+          "description": "verse 10 - the rooster that crowed in the morn",
+          "property": "verse",
+          "verse": 10,
+          "expected": [
+            "This is the rooster that crowed in the morn",
+            "that woke the priest all shaven and shorn",
+            "that married the man all tattered and torn",
+            "that kissed the maiden all forlorn",
+            "that milked the cow with the crumpled horn",
+            "that tossed the dog",
+            "that worried the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built."
+          ]
+        },
+        {
+          "description": "verse 11 - the farmer sowing his corn",
+          "property": "verse",
+          "verse": 11,
+          "expected": [
+            "This is the farmer sowing his corn",
+            "that kept the rooster that crowed in the morn",
+            "that woke the priest all shaven and shorn",
+            "that married the man all tattered and torn",
+            "that kissed the maiden all forlorn",
+            "that milked the cow with the crumpled horn",
+            "that tossed the dog",
+            "that worried the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built."
+          ]
+        },
+        {
+          "description": "verse 12 - the horse and the hound and the horn",
+          "property": "verse",
+          "verse": 12,
+          "expected": [
+            "This is the horse and the hound and the horn",
+            "that belonged to the farmer sowing his corn",
+            "that kept the rooster that crowed in the morn",
+            "that woke the priest all shaven and shorn",
+            "that married the man all tattered and torn",
+            "that kissed the maiden all forlorn",
+            "that milked the cow with the crumpled horn",
+            "that tossed the dog",
+            "that worried the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built."
+          ]
+        },
+        {
+          "description": "multiple verses",
+          "property": "verses",
+          "start verse": 4,
+          "end verse": 8,
+          "expected": [
+            "This is the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built.",
+            "",
+            "This is the dog",
+            "that worried the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built.",
+            "",
+            "This is the cow with the crumpled horn",
+            "that tossed the dog",
+            "that worried the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built.",
+            "",
+            "This is the maiden all forlorn",
+            "that milked the cow with the crumpled horn",
+            "that tossed the dog",
+            "that worried the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built.",
+            "",
+            "This is the man all tattered and torn",
+            "that kissed the maiden all forlorn",
+            "that milked the cow with the crumpled horn",
+            "that tossed the dog",
+            "that worried the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built."
+          ]
+        },
+        {
+          "description": "full rhyme",
+          "property": "verses",
+          "start verse": 1,
+          "end verse": 12,
+          "expected": [
+            "This is the house that Jack built.",
+            "",
+            "This is the malt",
+            "that lay in the house that Jack built.",
+            "",
+            "This is the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built.",
+            "",
+            "This is the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built.",
+            "",
+            "This is the dog",
+            "that worried the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built.",
+            "",
+            "This is the cow with the crumpled horn",
+            "that tossed the dog",
+            "that worried the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built.",
+            "",
+            "This is the maiden all forlorn",
+            "that milked the cow with the crumpled horn",
+            "that tossed the dog",
+            "that worried the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built.",
+            "",
+            "This is the man all tattered and torn",
+            "that kissed the maiden all forlorn",
+            "that milked the cow with the crumpled horn",
+            "that tossed the dog",
+            "that worried the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built.",
+            "",
+            "This is the priest all shaven and shorn",
+            "that married the man all tattered and torn",
+            "that kissed the maiden all forlorn",
+            "that milked the cow with the crumpled horn",
+            "that tossed the dog",
+            "that worried the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built.",
+            "",
+            "This is the rooster that crowed in the morn",
+            "that woke the priest all shaven and shorn",
+            "that married the man all tattered and torn",
+            "that kissed the maiden all forlorn",
+            "that milked the cow with the crumpled horn",
+            "that tossed the dog",
+            "that worried the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built.",
+            "",
+            "This is the farmer sowing his corn",
+            "that kept the rooster that crowed in the morn",
+            "that woke the priest all shaven and shorn",
+            "that married the man all tattered and torn",
+            "that kissed the maiden all forlorn",
+            "that milked the cow with the crumpled horn",
+            "that tossed the dog",
+            "that worried the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built.",
+            "",
+            "This is the horse and the hound and the horn",
+            "that belonged to the farmer sowing his corn",
+            "that kept the rooster that crowed in the morn",
+            "that woke the priest all shaven and shorn",
+            "that married the man all tattered and torn",
+            "that kissed the maiden all forlorn",
+            "that milked the cow with the crumpled horn",
+            "that tossed the dog",
+            "that worried the cat",
+            "that killed the rat",
+            "that ate the malt",
+            "that lay in the house that Jack built."
+          ]
+        }
+      ]
+    }
+  ]
+}
