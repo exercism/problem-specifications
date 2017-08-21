@@ -63,7 +63,6 @@ Parsing
 Pattern recognition
 Performance
 Randomness
-Reactive programming
 Refactoring
 Regular Expressions
 Searching
@@ -71,3 +70,11 @@ Security
 Sorting
 Text formatting
 Transforming
+
+Programming Style
+---
+Behavior driven development
+Functional programming
+Object oriented programming
+Reactive programming
+Test driven development
