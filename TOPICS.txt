@@ -73,8 +73,8 @@ Transforming
 
 Programming Style
 ---
-Behavior driven development
+Behavior-driven development
 Functional programming
-Object oriented programming
+Object-oriented programming
 Reactive programming
-Test driven development
+Test-driven development
