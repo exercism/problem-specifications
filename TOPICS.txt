@@ -2,14 +2,14 @@ Basic concepts
 --------------
 Abstract classes
 Callbacks
-Control-flow (conditionals)
-Control-flow (loops)
+Conditionals
 Events
 Equality
 Exception handling
 Generics
 Inheritance
 Interfaces
+Loops
 Pattern matching
 Polymorphism
 Recursion
