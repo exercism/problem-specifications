@@ -68,6 +68,7 @@ Regular Expressions
 Searching
 Security
 Sorting
+State management
 Text formatting
 Transforming
 
