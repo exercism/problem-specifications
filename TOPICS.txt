@@ -1,80 +1,80 @@
-Basic concepts
+Basic Concepts
 --------------
-Abstract classes
-Callbacks
-Conditionals
-Events
-Equality
-Exception handling
-Generics
-Inheritance
-Interfaces
-Loops
-Pattern matching
-Polymorphism
-Recursion
-Threading
-Type conversion
-Variables
+abstract_classes
+callbacks
+conditionals
+events
+equality
+exception_handling
+generics
+inheritance
+interfaces
+loops
+pattern_matching
+polymorphism
+recursion
+threading
+type_conversion
+variables
 
-Data types
+Data Types
 ----------
-Arrays
-Booleans
-Classes
-Dates
-Discriminated unions
-Enumerations
-Floating-point numbers
-Graphs
-Integers
-Lists
-Maps
-Matrices
-Optional values
-Queues
-Records
-Sequences
-Sets
-Stacks
-Strings
-Structs
-Time
-Trees
-Tuples
+arrays
+booleans
+classes
+dates
+discriminated_unions
+enumerations
+floating_point_numbers
+graphs
+integers
+lists
+maps
+matrices
+optional_values
+queues
+records
+sequences
+sets
+stacks
+strings
+structs
+time
+trees
+tuples
 
-Problem areas
+Problem Areas
 -------------
-Algorithms
-Bitwise operations
-Concurrency
-Cryptography
-Domain-specific languages
-Files
-Filtering
-Games
-Globalization
-Logic
-Mathematics
-Memory Management
-Networking
-Parallellism
-Parsing
-Pattern recognition
-Performance
-Randomness
-Refactoring
-Regular Expressions
-Searching
-Security
-Sorting
-Text formatting
-Transforming
+algorithms
+bitwise_operations
+concurrency
+cryptography
+domain_specific_languages
+files
+filtering
+games
+globalization
+logic
+mathematics
+memory_management
+networking
+parallellism
+parsing
+pattern_recognition
+performance
+randomness
+refactoring
+regular_expressions
+searching
+security
+sorting
+text_formatting
+transforming
 
 Programming Style
----
-Behavior-driven development
-Functional programming
-Object-oriented programming
-Reactive programming
-Test-driven development
+-----------------
+behavior_driven_development
+functional_programming
+object_oriented_programming
+reactive_programming
+test_driven_development
