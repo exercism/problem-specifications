@@ -1,6 +1,6 @@
 {
   "exercise": "circular-buffer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "comments": [
     "In general, these circular buffers are expected to be stateful,",
     "and each language will operate on them differently.",
@@ -13,7 +13,7 @@
     "  If it should succeed, it should produce the item at `expected`. ",
     "  If it should fail, `expected` will not be present. ",
     "write: Writing the item located at `item` should succeed if and only if `should_succeed` is true.",
-    "overwrite: Write the item located at `item` into the buffer, removing the oldest item if necessary.",
+    "overwrite: Write the item located at `item` into the buffer, replacing the oldest item if necessary.",
     "clear: Clear the buffer.",
     "",
     "Failure of either `read` or `write` may be indicated in a manner appropriate for your language:",
@@ -273,7 +273,7 @@
       ]
     },
     {
-      "description": "overwrite removes the oldest item on full buffer",
+      "description": "overwrite replaces the oldest item on full buffer",
       "property": "run",
       "capacity": 2,
       "operations": [
@@ -304,7 +304,7 @@
       ]
     },
     {
-      "description": "overwrite doesn't remove an already-read item",
+      "description": "overwrite replaces the oldest item remaining in buffer following a read",
       "property": "run",
       "capacity": 3,
       "operations": [
