@@ -1,12 +1,12 @@
 {
   "exercise": "nucleotide-count",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "cases": [
     {
-      "description": "count all nucleotides in a strand",
+      "description": "nucleotideCounts counts all DNA-nucleotides in the input strand and returns an object with properties A, C, G and T holding their respective amounts.",
       "cases": [
         {
-          "description": "empty strand",
+          "description": "counts an empty DNA strand as 0.",
           "property": "nucleotideCounts",
           "strand": "",
           "expected": {
@@ -17,7 +17,30 @@
           }
         },
         {
-          "description": "strand with repeated nucleotide",
+          "comments" : ["Should check for null-references and assume an empty input."],
+          "description": "counts an undefined DNA strand as empty strand.",
+          "property": "nucleotideCounts",
+          "strand": null,
+          "expected": {
+            "A": 0,
+            "C": 0,
+            "G": 0,
+            "T": 0
+          }
+        },
+        {
+          "description": "counts a single nucleotide correctly.",
+          "property": "nucleotideCounts",
+          "strand": "G",
+          "expected": {
+            "A": 0,
+            "C": 0,
+            "G": 1,
+            "T": 0
+          }
+        },
+        {
+          "description": "counts a single repetitive nucleotide correctly.",
           "property": "nucleotideCounts",
           "strand": "GGGGGGG",
           "expected": {
@@ -28,7 +51,7 @@
           }
         },
         {
-          "description": "strand with multiple nucleotides",
+          "description": "counts all nucleotides correctly.",
           "property": "nucleotideCounts",
           "strand": "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC",
           "expected": {
@@ -39,12 +62,38 @@
           }
         },
         {
-          "description": "strand with invalid nucleotides",
+          "description": "counts all nucleotides correctly in mixed case.",
           "property": "nucleotideCounts",
-          "strand": "AGXXACT",
+          "strand": "aGcTtTtCaTtCtGaCtGcAaCgGgCaAtAtGtCtCtGtGtGgAtTaAaAaAaGaGtGtCtGaTaGcAgC",
           "expected": {
-            "error": "Invalid nucleotide in strand"
+            "A": 20,
+            "C": 12,
+            "G": 17,
+            "T": 21
           }
+        },
+        {
+          "comments" : [
+            "This should call the property/function at least two times and check if it returns the same",
+            "result. This prevents errors where the call aggregates (sums up) the counts of each call."
+          ],
+          "description": "returns the same amounts for consecutive nucleotideCounts calls.",
+          "property": "nucleotideCounts",
+          "strand": "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC",
+          "expected" : true
+        },
+        {
+          "description": "handle incorrect inputs",
+          "cases": [
+            {
+              "description": "checks if DNA input does not include invalid characters.",
+              "property": "nucleotideCounts",
+              "strand": "AGUUÄ1+ :'A'}CT",
+              "expected": {
+                "error": "Invalid nucleotide in strand"
+              }
+            }
+          ]
         }
       ]
     }
