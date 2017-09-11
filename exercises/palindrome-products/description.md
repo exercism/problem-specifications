@@ -27,8 +27,8 @@ And given the list of all possible products within this range:
 The palindrome products are all single digit numbers (in this case):
 `[1, 2, 3, 4, 5, 6, 7, 8, 9]`
 
-The smallest palindrome product is `1`. It's factors are `(1, 1)`.
-The largest palindrome product is `9`. It's factors are `(1, 9)`, `(3, 3)`, and `(9, 1)`.
+The smallest palindrome product is `1`. Its factors are `(1, 1)`.
+The largest palindrome product is `9`. Its factors are `(1, 9)`, `(3, 3)`, and `(9, 1)`.
 
 ## Example 2
 
