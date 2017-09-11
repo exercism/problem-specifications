@@ -28,11 +28,11 @@ The palindrome products are all single digit numbers (in this case):
 `[1, 2, 3, 4, 5, 6, 7, 8, 9]`
 
 The smallest palindrome product is `1`. Its factors are `(1, 1)`.
-The largest palindrome product is `9`. Its factors are `(1, 9)`, `(3, 3)`, and `(9, 1)`.
+The largest palindrome product is `9`. Its factors are `(1, 9)` and `(3, 3)`.
 
 ## Example 2
 
 Given the range `[10, 99]` (both inclusive)...
 
 The smallest palindrome product is `121`. Its factors are `(11, 11)`.
-The largest palindrome product is `9009`. Its factors are `(91, 99)` and `(99, 91)`.
+The largest palindrome product is `9009`. Its factors are `(91, 99)`.
