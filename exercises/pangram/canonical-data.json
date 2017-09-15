@@ -6,87 +6,75 @@
   "version": "1.2.0",
   "cases": [
     {
-      "description": "Check if the given string is an pangram",
+      "description": "checks if the given string is a pangram.",
       "comments": [
         "Output should be a boolean denoting if the string is a pangram or not."
       ],
       "cases": [
         {
-          "description": "can handle an empty sentence",
+          "description": "returns false for an empty message.",
           "property": "isPangram",
           "input": "",
           "expected": false
         },
         {
-          "description": "handles an undefined message as empty message",
+          "description": "returns false for an undefined/null message as argument.",
           "property": "isPangram",
-          "input": "null",
+          "input": null,
           "expected": false
         },
         {
-          "description": "recognizes a lower case pangram",
+          "description": "recognizes a perfect lower case pangram.",
           "property": "isPangram",
-          "input": "thequickbrownfoxjumpsoverthelazydog",
+          "input": "abcdefghijklmnopqrstuvwxyz",
           "expected": true
         },
         {
-          "description": "recognizes a missing character 'x'",
+          "description": "recognizes missing characters, e.g. 'x'.",
           "property": "isPangram",
           "input": "aquickmovementoftheenemywilljeopardizefivegunboats",
           "expected": false
         },
         {
-          "description": "recognizes a missing character 'h'",
+          "description": "recognizes missing characters, e.g. 'h'.",
           "property": "isPangram",
           "input": "fiveboxingwizardsjumpquicklyatit",
           "expected": false
         },
         {
-          "description": "recognizes an upper case pangram",
+          "description": "recognizes an upper-case pangram.",
           "property": "isPangram",
           "input": "THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG",
           "expected": true
         },
         {
-          "description": "recognizes a missing character in upper case",
+          "description": "recognizes a missing character in upper-case, e.g. 'G'.",
           "property": "isPangram",
           "input": "THEQUICKBROWNFOXJUMPSOVERTHELAZYDOLL",
           "expected": false
         },
         {
-          "description": "recognizes a mixed case pangram",
+          "description": "recognizes a mixed-case pangram.",
           "property": "isPangram",
           "input": "ThEFiVebOxInGWiZaRdSJuMpqUiCkLy",
           "expected": true
         },
         {
-          "description": "recognizes a missing character in mixed case",
+          "description": "recognizes a missing character in mixed-case, e.g. 'Y'.",
           "property": "isPangram",
           "input": "ThEFiVebOxInGWiZaRdSJuMpqUiCkL",
           "expected": false
         },
         {
-          "description": "ignores other characters in correct pangram",
+          "description": "recognizes a pangram even if additional characters other than a-z are present.",
           "property": "isPangram",
           "input": "Victor_jagt-zwölf.B0xkämpfer >qu3r<über;den'großen\" Sylter#Deich!",
           "expected": true
         },
         {
-          "description": "ignores other characters in incorrect pangram",
+          "description": "recognizes missing characters (e.g. 'd') even if additional characters other than a-z are present.",
           "property": "isPangram",
           "input": "Victor_jagt-zwölf.B0xkämpfer >qu3r< über;einen'großen\" Sylter#Teich!",
-          "expected": false
-        },
-        {
-          "description": "ignores non-ANSI characters in correct pangram",
-          "property": "isPangram",
-          "input": "Few quips galvanized the ① mock 😮 jury box 🗃️.",
-          "expected": true
-        },
-        {
-          "description": "ignores non-ANSI characters in incorrect pangram",
-          "property": "isPangram",
-          "input": "Few quips gal℣anized the ① mock 😮 jury box 🗃️.",
           "expected": false
         }
       ]
