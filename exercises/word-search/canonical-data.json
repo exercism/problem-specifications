@@ -1,13 +1,161 @@
 {
   "exercise": "word-search",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "comments": [
     "Grid rows and columns are 1-indexed.",
     "An expected value of -1 indicates that some sort of failure should occur."
   ],
   "cases": [
     {
-      "description": "Should locate words written left to right",
+      "description": "Should accept an initial game grid and a target search word",
+      "property": "search",
+      "grid": [
+        "jefblpepre"
+      ],
+      "wordsToSearchFor": [
+        "clojure"
+      ],
+      "expected": {
+        "clojure": null
+      }
+    },
+    {
+      "description": "Should locate one word written left to right",
+      "property": "search",
+      "grid": [
+        "clojurermt"
+      ],
+      "wordsToSearchFor": [
+        "clojure"
+      ],
+      "expected": {
+        "clojure": {
+          "start": {
+            "column": 1,
+            "row": 1
+          },
+          "end": {
+            "column": 7,
+            "row": 1
+          }
+        }
+      }
+    },
+    {
+      "description": "Should locate the same word written left to right in a different position",
+      "property": "search",
+      "grid": [
+        "mtclojurer"
+      ],
+      "wordsToSearchFor": [
+        "clojure"
+      ],
+      "expected": {
+        "clojure": {
+          "start": {
+            "column": 3,
+            "row": 1
+          },
+          "end": {
+            "column": 9,
+            "row": 1
+          }
+        }
+      }
+    },
+    {
+      "description": "Should locate a different left to right word",
+      "property": "search",
+      "grid": [
+        "coffeelplx"
+      ],
+      "wordsToSearchFor": [
+        "coffee"
+      ],
+      "expected": {
+        "coffee": {
+          "start": {
+            "column": 1,
+            "row": 1
+          },
+          "end": {
+            "column": 6,
+            "row": 1
+          }
+        }
+      }
+    },
+    {
+      "description": "Should locate that different left to right word in a different position",
+      "property": "search",
+      "grid": [
+        "xcoffeezlp"
+      ],
+      "wordsToSearchFor": [
+        "coffee"
+      ],
+      "expected": {
+        "coffee": {
+          "start": {
+            "column": 2,
+            "row": 1
+          },
+          "end": {
+            "column": 7,
+            "row": 1
+          }
+        }
+      }
+    },
+    {
+      "description": "Should locate a left to right word in two line grid",
+      "property": "search",
+      "grid": [
+        "jefblpepre",
+        "tclojurerm"
+      ],
+      "wordsToSearchFor": [
+        "clojure"
+      ],
+      "expected": {
+        "clojure": {
+          "start": {
+            "column": 2,
+            "row": 2
+          },
+          "end": {
+            "column": 8,
+            "row": 2
+          }
+        }
+      }
+    },
+    {
+      "description": "Should locate a left to right word in three line grid",
+      "property": "search",
+      "grid": [
+        "camdcimgtc",
+        "jefblpepre",
+        "clojurermt"
+      ],
+      "wordsToSearchFor": [
+        "clojure"
+      ],
+      "expected": {
+        "clojure": {
+          "start": {
+            "column": 1,
+            "row": 3
+          },
+          "end": {
+            "column": 7,
+            "row": 3
+          }
+        }
+      }
+    },
+    {
+      "description": "Should locate a left to right word in ten line grid",
       "property": "search",
       "grid": [
         "jefblpepre",
@@ -38,7 +186,133 @@
       }
     },
     {
-      "description": "Should locate words written right to left",
+      "description": "Should locate that left to right word in a different position in a ten line grid",
+      "property": "search",
+      "grid": [
+        "jefblpepre",
+        "camdcimgtc",
+        "oivokprjsm",
+        "pbwasqroua",
+        "rixilelhrs",
+        "wolcqlirpc",
+        "screeaumgr",
+        "alxhpburyi",
+        "clojurermt",
+        "jalaycalmp"
+      ],
+      "wordsToSearchFor": [
+        "clojure"
+      ],
+      "expected": {
+        "clojure": {
+          "start": {
+            "column": 1,
+            "row": 9
+          },
+          "end": {
+            "column": 7,
+            "row": 9
+          }
+        }
+      }
+    },
+    {
+      "description": "Should locate a different left to right word in a ten line grid",
+      "property": "search",
+      "grid": [
+        "jefblpepre",
+        "camdcimgtc",
+        "oivokprjsm",
+        "pbwasqroua",
+        "rixilelhrs",
+        "wolcqlirpc",
+        "fortranftw",
+        "alxhpburyi",
+        "clojurermt",
+        "jalaycalmp"
+      ],
+      "wordsToSearchFor": [
+        "fortran"
+      ],
+      "expected": {
+        "fortran": {
+          "start": {
+            "column": 1,
+            "row": 7
+          },
+          "end": {
+            "column": 7,
+            "row": 7
+          }
+        }
+      }
+    },
+    {
+      "description": "Should locate multiple words",
+      "property": "search",
+      "grid": [
+        "jefblpepre",
+        "camdcimgtc",
+        "oivokprjsm",
+        "pbwasqroua",
+        "rixilelhrs",
+        "wolcqlirpc",
+        "fortranftw",
+        "alxhpburyi",
+        "jalaycalmp",
+        "clojurermt"
+      ],
+      "wordsToSearchFor": [
+        "fortran",
+        "clojure"
+      ],
+      "expected": {
+        "clojure": {
+          "start": {
+            "column": 1,
+            "row": 10
+          },
+          "end": {
+            "column": 7,
+            "row": 10
+          }
+        },
+        "fortran": {
+          "start": {
+            "column": 1,
+            "row": 7
+          },
+          "end": {
+            "column": 7,
+            "row": 7
+          }
+        }
+      }
+    },
+    {
+      "description": "Should locate a single word written right to left",
+      "property": "search",
+      "grid": [
+        "rixilelhrs"
+      ],
+      "wordsToSearchFor": [
+        "elixir"
+      ],
+      "expected": {
+        "elixir": {
+          "start": {
+            "column": 6,
+            "row": 1
+          },
+          "end": {
+            "column": 1,
+            "row": 1
+          }
+        }
+      }
+    },
+    {
+      "description": "Should locate multiple words written in different horizontal directions",
       "property": "search",
       "grid": [
         "jefblpepre",
@@ -53,8 +327,8 @@
         "clojurermt"
       ],
       "wordsToSearchFor": [
-        "clojure",
-        "elixir"
+        "elixir",
+        "clojure"
       ],
       "expected": {
         "clojure": {
