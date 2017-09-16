@@ -180,6 +180,6 @@ npm test
 
 Run for single exercise:
 ```shell
-npm test-one exercises/<exercise>/canonical-data.json
+npm run test-one exercises/<exercise>/canonical-data.json
 ```
 Replace `<exercise>` by the name of exercise which you want to check.
