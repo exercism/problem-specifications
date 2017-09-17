@@ -1,6 +1,6 @@
 {
   "exercise": "pig-latin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "cases": [
     {
       "description": "ay is added to words that start with vowels",
@@ -57,12 +57,6 @@
           "property": "translate",
           "input": "koala",
           "expected": "oalakay"
-        },
-        {
-          "description": "word beginning with y",
-          "property": "translate",
-          "input": "yellow",
-          "expected": "ellowyay"
         },
         {
           "description": "word beginning with x",
@@ -133,6 +127,29 @@
           "property": "translate",
           "input": "xray",
           "expected": "xrayay"
+        }
+      ]
+    },
+    {
+      "description": "position of y in a word determines if it is a consonant or a vowel",
+      "cases": [
+        {
+          "description": "y is treated like a consonant at the beginning of a word",
+          "property": "translate",
+          "input": "yellow",
+          "expected": "ellowyay"
+        },
+        {
+          "description": "y is treated like a vowel at the end of a consonant cluster",
+          "property": "translate",
+          "input": "rhythm",
+          "expected": "ythmrhay"
+        },
+        {
+          "description": "y as second letter in two letter word",
+          "property": "translate",
+          "input": "my",
+          "expected": "ymay"
         }
       ]
     },
