@@ -59,12 +59,6 @@
           "expected": "oalakay"
         },
         {
-          "description": "word beginning with y",
-          "property": "translate",
-          "input": "yellow",
-          "expected": "ellowyay"
-        },
-        {
           "description": "word beginning with x",
           "property": "translate",
           "input": "xenon",
@@ -133,6 +127,29 @@
           "property": "translate",
           "input": "xray",
           "expected": "xrayay"
+        }
+      ]
+    },
+    {
+      "description": "position of y in a word determines if it is a consonant or a vowel",
+      "cases": [
+        {
+          "description": "y at beginning of a word is treated like a consonant",
+          "property": "translate",
+          "input": "yellow",
+          "expected": "ellowyay"
+        },
+        {
+          "description": "at end of a consonant cluster, y is treated like a vowel",
+          "property": "translate",
+          "input": "rhythm",
+          "expected": "ythmrhay"
+        },
+        {
+          "description": "y as second letter in two letter word",
+          "property": "translate",
+          "input": "my",
+          "expected": "ymay"
         }
       ]
     },
