@@ -1,6 +1,6 @@
 {
   "exercise": "pig-latin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "cases": [
     {
       "description": "ay is added to words that start with vowels",
