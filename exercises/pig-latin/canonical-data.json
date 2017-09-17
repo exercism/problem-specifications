@@ -134,13 +134,13 @@
       "description": "position of y in a word determines if it is a consonant or a vowel",
       "cases": [
         {
-          "description": "y at beginning of a word is treated like a consonant",
+          "description": "y is treated like a consonant at the beginning of a word",
           "property": "translate",
           "input": "yellow",
           "expected": "ellowyay"
         },
         {
-          "description": "at end of a consonant cluster, y is treated like a vowel",
+          "description": "y is treated like a vowel at the end of a consonant cluster",
           "property": "translate",
           "input": "rhythm",
           "expected": "ythmrhay"
