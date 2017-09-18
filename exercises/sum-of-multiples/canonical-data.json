@@ -1,27 +1,20 @@
 {
   "exercise": "sum-of-multiples",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "cases": [
     {
-      "description": "multiples of 3 up to 1",
+      "description": "multiples of 3 or 5 up to 1",
       "property": "sum",
-      "factors": [3],
+      "factors": [3, 5],
       "limit": 1,
       "expected": 0
     },
     {
-      "description": "multiples of 3 up to 4",
+      "description": "multiples of 3 or 5 up to 4",
       "property": "sum",
-      "factors": [3],
+      "factors": [3, 5],
       "limit": 4,
       "expected": 3
-    },
-    {
-      "description": "multiples of 3 up to 7",
-      "property": "sum",
-      "factors": [3],
-      "limit": 7,
-      "expected": 9
     },
     {
       "description": "multiples of 3 or 5 up to 10",
