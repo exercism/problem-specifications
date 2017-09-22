@@ -1,6 +1,6 @@
 {
   "exercise": "sum-of-multiples",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "cases": [
     {
       "description": "multiples of 3 or 5 up to 1",
@@ -15,6 +15,13 @@
       "factors": [3, 5],
       "limit": 4,
       "expected": 3
+    },
+    {
+      "description": "multiples of 3 up to 7",
+      "property": "sum",
+      "factors": [3],
+      "limit": 7,
+      "expected": 9
     },
     {
       "description": "multiples of 3 or 5 up to 10",
