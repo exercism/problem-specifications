@@ -241,7 +241,7 @@ A problem must have a unique slug. This slug is used as
 
 Each track should have the following structure:
 
-```bash
+```text
 ├── .gitignore
 ├── .travis.yml
 ├── LICENSE
