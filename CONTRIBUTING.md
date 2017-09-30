@@ -347,7 +347,7 @@ Please review the details in [README.md](https://github.com/exercism/problem-spe
 
 ### Anatomy of an Exercise
 
-See the [anatomy of an exercise](https://github.com/exercism/docs/tree/master/maintaining-a-track/anatomy-of-an-exercise.md) in the docs repository.
+See the [anatomy of an exercise](https://github.com/exercism/docs/tree/master/language-tracks/exercises/anatomy) in the docs repository.
 
 ### Track configuration file
 
