@@ -20,7 +20,6 @@ Then reads off:
 WECRLTEERDSOEEFEAOCAIVDEN
 ```
 
-
 To decrypt a message you take the zig-zag shape and fill the ciphertext along the rows.
 ```text
 ? . . . ? . . . ? . . . ? . . . ? . . . ? . . . ?
