@@ -1,14 +1,14 @@
 Search a file for lines matching a regular expression pattern. Return the line
 number and contents of each matching line.
 
-The Unix [`grep`](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/grep.html) command can be used to search for lines in one or more files 
+The Unix [`grep`](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/grep.html) command can be used to search for lines in one or more files
 that match a user-provided search query (known as the *pattern*).
 
 The `grep` command takes three arguments:
 
-1. The pattern used to match lines in a file. 
+1. The pattern used to match lines in a file.
 2. Zero or more flags to customize the matching behavior.
-3. One or more files in which to search for matching lines. 
+3. One or more files in which to search for matching lines.
 
 Your task is to implement the `grep` function, which should read the contents
 of the specified files, find the lines that match the specified pattern
@@ -49,7 +49,7 @@ lines to be prefixed with its line number:
 3:hello again
 ```
 
-And if we run `grep -i "HELLO" input.txt`, we'll do a case-insensitive match, 
+And if we run `grep -i "HELLO" input.txt`, we'll do a case-insensitive match,
 and the output will be:
 
 ```text
