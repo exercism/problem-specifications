@@ -10,7 +10,7 @@ multiple values.
 
 An SGF file may look like this:
 
-```
+```text
 (;FF[4]C[root]SZ[19];B[aa];W[ab])
 ```
 
@@ -32,7 +32,7 @@ SGF can encode variations of play. Go players do a lot of backtracking
 in their reviews (let's try this, doesn't work, let's try that) and SGF
 supports variations of play sequences. For example:
 
-```
+```text
 (;FF[4](;B[aa];W[ab])(;B[dd];W[ee]))
 ```
 
@@ -44,7 +44,7 @@ opening to take the corner).
 
 A key can have multiple values associated with it. For example:
 
-```
+```text
 (;FF[4];AB[aa][ab][ba])
 ```
 
