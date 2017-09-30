@@ -22,13 +22,13 @@ In the following examples, spaces are indicated by `·` characters.
 
 Diamond for letter 'A':
 
-```plain
+```text
 A
 ```
 
 Diamond for letter 'C':
 
-```plain
+```text
 ··A··
 ·B·B·
 C···C
@@ -38,7 +38,7 @@ C···C
 
 Diamond for letter 'E':
 
-```plain
+```text
 ····A····
 ···B·B···
 ··C···C··

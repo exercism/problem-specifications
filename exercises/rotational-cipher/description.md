@@ -11,7 +11,7 @@ The most commonly used rotational cipher is `ROT13`.
 
 A `ROT13` on the Latin alphabet would be as follows:
 
-```plain
+```text
 Plain:  abcdefghijklmnopqrstuvwxyz
 Cipher: nopqrstuvwxyzabcdefghijklm
 ```
