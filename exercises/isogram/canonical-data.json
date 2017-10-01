@@ -48,9 +48,9 @@
           "expected": true
         },
         {
-          "description": "isogram with duplicated non letter character",
+          "description": "isogram with duplicated hyphen",
           "property": "isIsogram",
-          "input": "Hjelmqvist-Gryb-Zock-Pfund-Wax",
+          "input": "six-year-old",
           "expected": true
         },
         {
