@@ -10,4 +10,3 @@ Here is an analogy:
 - legos are to lego houses as
 - words are to sentences as...
 
-In RNA the thymine is substituted with 'U' for uracil, while the remainder stay the same; A, U, C, G.
