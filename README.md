@@ -10,7 +10,7 @@ Please see the [contributing guide](https://github.com/exercism/problem-specific
 
 Each problem's data lives in a directory under `exercises/`
 
-```
+```text
 exercises/
 ├── accumulate
 │   ├── description.md
@@ -169,17 +169,21 @@ In order to run these tests, you will need to have `node` and `npm` installed on
 Install them from [here](https://nodejs.org/en/). (`npm` comes bundled with most installations of `node`).
 
 Install the required packages:
+
 ```shell
 npm install
 ```
 
 Run for all exercises:
+
 ```shell
 npm test
 ```
 
 Run for single exercise:
+
 ```shell
 npm run test-one exercises/<exercise>/canonical-data.json
 ```
+
 Replace `<exercise>` by the name of exercise which you want to check.

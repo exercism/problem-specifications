@@ -5,7 +5,7 @@ letters in words are replaced with numbers.
 
 For example `SEND + MORE = MONEY`:
 
-```
+```text
   S E N D
   M O R E +
 -----------
@@ -14,7 +14,7 @@ M O N E Y
 
 Replacing these with valid numbers gives:
 
-```
+```text
   9 5 6 7
   1 0 8 5 +
 -----------

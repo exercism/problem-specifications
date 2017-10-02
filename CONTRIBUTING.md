@@ -95,7 +95,7 @@ the Exercism ecosystem.
 Each language-specific repository can be found under the Exercism GitHub
 organization named with the track ID.
 
-```
+```text
 https://github.com/exercism/{TRACK_ID}
 ```
 
@@ -241,7 +241,7 @@ A problem must have a unique slug. This slug is used as
 
 Each track should have the following structure:
 
-```bash
+```text
 ├── .gitignore
 ├── .travis.yml
 ├── LICENSE
@@ -295,7 +295,7 @@ For a track that is set as `"active": false` in the `config.json`, `exercism fet
 will not automatically pull down problems. You can still test the language by
 fetching problems directly, e.g.:
 
-```
+```shell
 exercism fetch cpp bob
 ```
 
