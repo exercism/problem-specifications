@@ -9,4 +9,3 @@ Here is an analogy:
 - nucleotides are to DNA as
 - legos are to lego houses as
 - words are to sentences as...
-
