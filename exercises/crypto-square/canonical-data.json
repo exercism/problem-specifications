@@ -1,82 +1,27 @@
 {
   "exercise": "crypto-square",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "cases": [
     {
       "description": "the spaces and punctuation are removed from the English text and the message is downcased",
       "cases": [
         {
           "description": "Lowercase",
-          "property": "normalizedPlaintext",
-          "plaintext": "Hello",
-          "expected": "hello"
+          "property": "ciphertext",
+          "plaintext": "A",
+          "expected": "a"
         },
         {
           "description": "Remove spaces",
-          "property": "normalizedPlaintext",
-          "plaintext": "Hi there",
-          "expected": "hithere"
+          "property": "ciphertext",
+          "plaintext": "  b ",
+          "expected": "b"
         },
         {
           "description": "Remove punctuation",
-          "property": "normalizedPlaintext",
-          "plaintext": "@1, 2%, 3 Go!",
-          "expected": "123go"
-        }
-      ]
-    },
-    {
-      "description": "The plaintext should be organized in to a rectangle.  The size of the rectangle (`r x c`) should be decided by the length of the message, such that `c >= r` and `c - r <= 1`, where `c` is the number of columns and `r` is the number of rows.",
-      "cases": [
-        {
-          "description": "empty plaintext results in an empty rectangle",
-          "property": "plaintextSegments",
-          "plaintext": "",
-          "expected": []
-        },
-        {
-          "description": "4 character plaintext results in an 2x2 rectangle",
-          "property": "plaintextSegments",
-          "plaintext": "Ab Cd",
-          "expected": [ "ab",
-                        "cd" ]
-        },
-        {
-          "description": "9 character plaintext results in an 3x3 rectangle",
-          "property": "plaintextSegments",
-          "plaintext": "This is fun!",
-          "expected": [ "thi",
-                        "sis",
-                        "fun" ]
-        },
-        {
-          "description": "54 character plaintext results in an 8x7 rectangle",
-          "property": "plaintextSegments",
-          "plaintext": "If man was meant to stay on the ground, god would have given us roots.",
-          "expected": [ "ifmanwas",
-                        "meanttos",
-                        "tayonthe",
-                        "groundgo",
-                        "dwouldha",
-                        "vegivenu",
-                        "sroots"   ]
-        }
-      ]
-    },
-    {
-      "description": "The coded message is obtained by reading down the columns going left to right.",
-      "cases": [
-        {
-          "description": "empty plaintext results in an empty encode",
-          "property": "encoded",
-          "plaintext": "",
-          "expected": ""
-        },
-        {
-          "description": "Non-empty plaintext results in the combined plaintext segments",
-          "property": "encoded",
-          "plaintext": "If man was meant to stay on the ground, god would have given us roots.",
-          "expected": "imtgdvsfearwermayoogoanouuiontnnlvtwttddesaohghnsseoau"
+          "property": "ciphertext",
+          "plaintext": "@1,%!",
+          "expected": "1"
         }
       ]
     },
