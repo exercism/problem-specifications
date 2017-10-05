@@ -37,7 +37,7 @@
             "expected": false
         },
         {
-            "description": "valid character in isbn",
+            "description": "X is only valid as a check digit",
             "property": "isbn",
             "input": "3-598-2X507-0",
             "expected": false
@@ -49,19 +49,19 @@
             "expected": true
         },
         {
-            "description": "isbn without separating dashes",
+            "description": "isbn without separating dashes and X as check digit",
             "property": "isbn",
             "input": "359821507X",
             "expected": true
         },
         {
-            "description": "isbn without check digit",
+            "description": "isbn without check digit and dashes",
             "property": "isbn",
             "input": "359821507",
             "expected": false
         },
         {
-            "description": "too long isbn",
+            "description": "too long isbn and no dashes",
             "property": "isbn",
             "input": "3598215078X",
             "expected": false
@@ -76,6 +76,12 @@
             "description": "too long isbn",
             "property": "isbn",
             "input": "3-598-21507-XA",
+            "expected": false
+        },
+        {
+            "description": "check digit should be 0 but is X to prevent solutions to use X as 0",
+            "property": "isbn",
+            "input": "3-598-21515-X",
             "expected": false
         }
     ]
