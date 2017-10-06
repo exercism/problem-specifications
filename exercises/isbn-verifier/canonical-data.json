@@ -79,7 +79,7 @@
             "expected": false
         },
         {
-            "description": "check digit should be 0 but is X to prevent solutions to use X as 0",
+            "description": "check digit of X should not be used for 0",
             "property": "isbn",
             "input": "3-598-21515-X",
             "expected": false

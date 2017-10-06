@@ -15,7 +15,7 @@ The following number block is to identify the publisher. Since this is a three d
 The last digit in the ISBN is the check digit which is used to detect read errors.
 
 The first 9 digits in the ISBN have to be between 0 and 9.
-The check digit can additionally be an 'X' to allow 10 to be a valid check digit as well.
+The check digit can additionally be a 'X' to allow 10 to be a valid check digit as well.
 
 A valid ISBN-10 is calculated with this formula `(x1 * 10 + x2 * 9 + x3 * 8 + x4 * 7 + x5 * 6 + x6 * 5 + x7 * 4 + x8 * 3 + x9 * 2 + x10 * 1) mod 11 == 0`
 So for our example ISBN this means:
@@ -30,6 +30,6 @@ It's getting even trickier since the check-digit of an ISBN-10 can be 'X'.
 
 ## Bonus tasks
 
-* Generate an valid ISBN-13 from the input ISBN-10 (and maybe verify it again with an derived verifier)
+* Generate a valid ISBN-13 from the input ISBN-10 (and maybe verify it again with a derived verifier)
 
 * Generate valid ISBN, maybe even from a given starting ISBN
