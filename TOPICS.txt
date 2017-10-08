@@ -16,6 +16,44 @@ recursion
 threading
 type_conversion
 variables
+constructors
+contol flow(if,if...else,switch...case)
+instanceof operator
+super keyword
+this keyword
+static keyword
+final keyword
+package
+collection
+swings
+applet
+jdbc
+access modifiers (private,protected,public)
+Files and I/O (FileInputStream,FileOutputStream,FileReader,FileWriter)
+
+Operators
+---------
+Bitwise:
+  &   - and
+  |   - or
+  ~   - not
+  <<  - shift left
+  >>  - shift right
+  >>> - shift right with zero fill
+
+Logical:
+  &&  - and
+  ||  - or
+  
+Relational:
+  >   - greater than
+  <   - less than
+  >=  - greater than equal to
+  <=  - less than equal to
+  !=  - not equal to
+  ==  - equal to
+
+Conditional/Ternary: (?:)
 
 Data Types
 ----------
