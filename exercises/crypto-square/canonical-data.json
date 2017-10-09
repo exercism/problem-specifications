@@ -33,6 +33,12 @@
       "expected": "tsf hiu isn"
     },
     {
+      "description": "8 character plaintext results in 3 chunks, the last one with a trailing space",
+      "property": "ciphertext",
+      "plaintext": "Chill out.",
+      "expected": "clu hlt io "
+    },
+    {
       "description": "54 character plaintext results in 7 chunks, the last two padded with spaces",
       "property": "ciphertext",
       "plaintext": "If man was meant to stay on the ground, god would have given us roots.",
