@@ -3,6 +3,12 @@
   "version": "3.1.0",
   "cases": [
     {
+      "description": "empty plaintext results in an empty ciphertext",
+      "property": "ciphertext",
+      "plaintext": "",
+      "expected": ""
+    },
+    {
       "description": "Lowercase",
       "property": "ciphertext",
       "plaintext": "A",
@@ -19,12 +25,6 @@
       "property": "ciphertext",
       "plaintext": "@1,%!",
       "expected": "1"
-    },
-    {
-      "description": "empty plaintext results in an empty ciphertext",
-      "property": "ciphertext",
-      "plaintext": "",
-      "expected": ""
     },
     {
       "description": "9 character plaintext results in 3 chunks of 3 characters",
