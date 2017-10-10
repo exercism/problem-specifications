@@ -75,9 +75,9 @@
       "goal": 3,
       "start_bucket": "one",
       "expected": {
-        "moves": 4,
+        "moves": 2,
         "goal_bucket": "two",
-        "other_bucket": 1
+        "other_bucket": 2
       }
     }
   ]
