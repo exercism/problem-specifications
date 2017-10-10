@@ -1,6 +1,6 @@
 {
   "exercise": "two-bucket",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "cases": [
     {
       "description": "Measure using bucket one of size 3 and bucket two of size 5 - start with bucket one",
@@ -75,9 +75,9 @@
       "goal": 3,
       "start_bucket": "one",
       "expected": {
-        "moves": 4,
+        "moves": 2,
         "goal_bucket": "two",
-        "other_bucket": 1
+        "other_bucket": 2
       }
     }
   ]
