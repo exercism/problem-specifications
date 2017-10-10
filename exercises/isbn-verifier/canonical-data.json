@@ -1,0 +1,88 @@
+{
+    "exercise": "isbn-verifier",
+    "version": "1.0.0",
+    "comments": [
+        "An expected value of true indicates a valid ISBN-10, ",
+        "whereas false means the ISBN-10 is invalid."
+    ],
+    "cases": [
+        {
+            "description": "valid isbn number",
+            "property": "isbn",
+            "input": "3-598-21508-8",
+            "expected": true
+        },
+        {
+            "description": "invalid isbn check digit",
+            "property": "isbn",
+            "input": "3-598-21508-9",
+            "expected": false
+        },
+        {
+            "description": "valid isbn number with a check digit of 10",
+            "property": "isbn",
+            "input": "3-598-21507-X",
+            "expected": true
+        },
+        {
+            "description": "check digit is a character other than X",
+            "property": "isbn",
+            "input": "3-598-21507-A",
+            "expected": false
+        },
+        {
+            "description": "invalid character in isbn",
+            "property": "isbn",
+            "input": "3-598-2K507-0",
+            "expected": false
+        },
+        {
+            "description": "X is only valid as a check digit",
+            "property": "isbn",
+            "input": "3-598-2X507-0",
+            "expected": false
+        },
+        {
+            "description": "valid isbn without separating dashes",
+            "property": "isbn",
+            "input": "3598215088",
+            "expected": true
+        },
+        {
+            "description": "isbn without separating dashes and X as check digit",
+            "property": "isbn",
+            "input": "359821507X",
+            "expected": true
+        },
+        {
+            "description": "isbn without check digit and dashes",
+            "property": "isbn",
+            "input": "359821507",
+            "expected": false
+        },
+        {
+            "description": "too long isbn and no dashes",
+            "property": "isbn",
+            "input": "3598215078X",
+            "expected": false
+        },
+        {
+            "description": "isbn without check digit",
+            "property": "isbn",
+            "input": "3-598-21507",
+            "expected": false
+        },
+        {
+            "description": "too long isbn",
+            "property": "isbn",
+            "input": "3-598-21507-XA",
+            "expected": false
+        },
+        {
+            "description": "check digit of X should not be used for 0",
+            "property": "isbn",
+            "input": "3-598-21515-X",
+            "expected": false
+        }
+    ]
+}
