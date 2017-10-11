@@ -4,7 +4,7 @@ A complex number is a number in the form `a + b * i` where `a` and `b` are real 
 The conjugate of the number `a + b * i` is the number `a - b * i`.
 The absolute value of a complex number `z = a + b * i` is a real number `|z| = sqrt(a^2 + b^2)`. The square of the absolute value `|z|^2` is the result of multiplication of `z` by its complex conjugate.
 
-The sum / difference of two complex numbers involves adding / subtracting their real and imaginary parts separately:
+The sum/difference of two complex numbers involves adding/subtracting their real and imaginary parts separately:
 `(a + i * b) + (c + i * d) = (a + c) + (b + d) * i`,
 `(a + i * b) - (c + i * d) = (a - c) + (b - d) * i`.
 
