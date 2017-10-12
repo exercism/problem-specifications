@@ -7,13 +7,13 @@ actual dirt, and grow actual plants.
 
 They've chosen to grow grass, clover, radishes, and violets.
 
-To this end, they've put little styrofoam cups along the window sills,
+To this end, they've put little Styrofoam cups along the window sills,
 and planted one type of plant in each cup, choosing randomly from the
 available types of seeds.
 
 ```text
 [window][window][window]
-........................ # each dot represents a styrofoam cup
+........................ # each dot represents a Styrofoam cup
 ........................
 ```
 
@@ -23,7 +23,7 @@ There are 12 children in the class:
 - Eve, Fred, Ginny, Harriet,
 - Ileana, Joseph, Kincaid, and Larry.
 
-Each child gets 4 cups, two on each row. The children are assigned to
+Each child gets 4 cups, two on each row. The children are assigned
 cups in alphabetical order.
 
 The following diagram represents Alice's plants:
