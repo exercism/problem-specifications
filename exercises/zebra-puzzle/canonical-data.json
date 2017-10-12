@@ -1,0 +1,16 @@
+{
+  "exercise": "zebra-puzzle",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "description": "resident who drinks water",
+      "property": "nationality",
+      "expected": "Norwegian"
+    },
+    {
+      "description": "resident who owns zebra",
+      "property": "nationality",
+      "expected": "Japanese"
+    }
+  ]
+}
