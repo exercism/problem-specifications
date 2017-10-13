@@ -13,7 +13,7 @@ types of seeds.
 
 ```text
 [window][window][window]
-........................ # each dot represents a cup location
+........................ # each dot represents a cup
 ........................
 ```
 
@@ -34,7 +34,7 @@ VR......................
 RG......................
 ```
 
-In the row nearest the window, she has a violet and a radish.  In the
+In the first row, nearest the windows, she has a violet and a radish.  In the
 second row she has a radish and some grass.
 
 Your program will be given the plants from left-to-right starting with
