@@ -4,12 +4,12 @@
   "cases": [
     {
       "description": "resident who drinks water",
-      "property": "nationality",
+      "property": "drinks_water",
       "expected": "Norwegian"
     },
     {
       "description": "resident who owns zebra",
-      "property": "nationality",
+      "property": "owns_zebra",
       "expected": "Japanese"
     }
   ]
