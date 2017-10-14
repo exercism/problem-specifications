@@ -1,68 +1,87 @@
 {
   "exercise": "pangram",
   "comments": [
-    "A pangram is a sentence using every letter of the alphabet at least once."
+    "A pangram is a sentence using every letter of the alphabet at least once.",
+    "",
+    "It is the track's responsibility to add further language specific tests, like:",
+    "input error handling (null/undefined parameters etc.)",
+    "referential transparency (i.e. evaluating, a function/method gives the same value for same arguments every time.)",
+    "etc.",
+    "",
+    "'error' and 'null' should be treated according to the languages' specifics and possibilities."
   ],
-  "version": "1.1.0",
+  "version": "1.2.0",
   "cases": [
     {
-      "description": "Check if the given string is an pangram",
+      "description": "checks if the given string is a pangram.",
       "comments": [
         "Output should be a boolean denoting if the string is a pangram or not."
       ],
       "cases": [
         {
-          "description": "sentence empty",
+          "description": "returns false for an empty message.",
           "property": "isPangram",
           "input": "",
           "expected": false
         },
         {
-          "description": "pangram with only lower case",
+          "description": "recognizes a perfect lower case pangram.",
           "property": "isPangram",
-          "input": "the quick brown fox jumps over the lazy dog",
+          "input": "abcdefghijklmnopqrstuvwxyz",
           "expected": true
         },
         {
-          "description": "missing character 'x'",
+          "description": "recognizes lower case pangram with spaces.",
+          "property": "isPangram",
+          "input": "few quips galvanized the mock jury box",
+          "expected": true
+        },
+        {
+          "description": "recognizes missing characters, e.g. 'x'.",
           "property": "isPangram",
           "input": "a quick movement of the enemy will jeopardize five gunboats",
           "expected": false
         },
         {
-          "description": "another missing character 'x'",
+          "description": "recognizes missing characters, e.g. 'h'.",
           "property": "isPangram",
-          "input": "the quick brown fish jumps over the lazy dog",
+          "input": "five boxing wizards jump quickly at it",
           "expected": false
         },
         {
-          "description": "pangram with underscores",
+          "description": "recognizes an upper-case pangram.",
           "property": "isPangram",
-          "input": "the_quick_brown_fox_jumps_over_the_lazy_dog",
+          "input": "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG",
           "expected": true
         },
         {
-          "description": "pangram with numbers",
+          "description": "recognizes a missing character in upper-case, e.g. 'G'.",
           "property": "isPangram",
-          "input": "the 1 quick brown fox jumps over the 2 lazy dogs",
-          "expected": true
-        },
-        {
-          "description": "missing letters replaced by numbers",
-          "property": "isPangram",
-          "input": "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog",
+          "input": "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOLL",
           "expected": false
         },
         {
-          "description": "pangram with mixed case and punctuation",
+          "description": "recognizes a mixed-case pangram.",
           "property": "isPangram",
-          "input": "\"Five quacking Zephyrs jolt my wax bed.\"",
+          "input": "ThE FiVe bOxInG WiZaRdS JuMp qUiCkLy",
           "expected": true
         },
         {
-          "description": "upper and lower case versions of the same character should not be counted separately",
+          "description": "recognizes a missing character in mixed-case, e.g. 'Y'.",
           "property": "isPangram",
-          "input": "the quick brown fox jumps over with lazy FX",
+          "input": "ThE FiVe bOxInG WiZaRdS JuMp qUiCkL",
+          "expected": false
+        },
+        {
+          "description": "recognizes a pangram with special characters.",
+          "property": "isPangram",
+          "input": "Sphinx_of-'black\" .quartz, >judge< my; #v0w!",
+          "expected": true
+        },
+        {
+          "description": "recognizes missing characters (e.g. 'o') with special characters present.",
+          "property": "isPangram",
+          "input": "Sphinx_0f-'black\" .quartz, >judge< my; #v0w!",
           "expected": false
         }
       ]
