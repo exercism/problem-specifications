@@ -10,7 +10,9 @@ Given an age in seconds, calculate how old someone would be on:
    - Neptune: orbital period 164.79132 Earth years
 
 So if you were told someone were 1,000,000,000 seconds old, you should
-be able to say that they're 31.69 Earth-years old.
+be able to say that they're 31.69 Earth-years old. Because floating-point
+math is not exact, your answer only needs to be correct to two decimal places.
+This means you are free to leave your answer unrounded.
 
 If you're wondering why Pluto didn't make the cut, go watch [this
 youtube video](http://www.youtube.com/watch?v=Z_2gbGXzFbs).
