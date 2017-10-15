@@ -44,13 +44,13 @@
             , "property"   : "new"
             , "p"  : 0
             , "g"   : 9999
-            , "expected"   : { "error": "Constructor arguments are out of range or non-prime!" }
+            , "expected"   : { "error": "Constructor arguments are out of range." }
             }
           , { "description": "Fails when the constructor arguments are not prime."
             , "property"   : "new"
             , "p"  : 10
             , "g"   : 13
-            , "expected"   : { "error": "Constructor arguments are out of range or non-prime!" }
+            , "expected"   : { "error": "Constructor arguments are non-prime!" }
             }
           , { "description": "Fails when private key is negative."
             , "property"   : "getPublicKeyFromPrivateKey"
