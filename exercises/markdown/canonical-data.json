@@ -1,6 +1,6 @@
 {
   "exercise": "markdown",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "comments": [
     "Markdown is a shorthand for creating HTML from text strings."
   ],
@@ -51,7 +51,7 @@
       "description": "unordered lists",
       "property": "parse",
       "input": "* Item 1\n* Item 2",
-      "expected": "<ul><li><p>Item 1</p></li><li><p>Item 2</p></li></ul>"
+      "expected": "<ul><li>Item 1</li><li>Item 2</li></ul>"
     },
     {
       "description": "With a little bit of everything",
