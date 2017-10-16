@@ -1,6 +1,6 @@
 {
   "exercise": "nucleotide-count",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "cases": [
     {
       "description": "count all nucleotides in a strand",
@@ -17,17 +17,6 @@
           }
         },
         {
-          "description": "strand with repeated nucleotide",
-          "property": "nucleotideCounts",
-          "strand": "GGGGGGG",
-          "expected": {
-            "A": 0,
-            "C": 0,
-            "G": 7,
-            "T": 0
-          }
-        },
-        {
           "description": "can count one nucleotide in single-character input",
           "property": "nucleotideCounts",
           "strand": "G",
@@ -35,6 +24,17 @@
             "A": 0,
             "C": 0,
             "G": 1,
+            "T": 0
+          }
+        },
+        {
+          "description": "strand with repeated nucleotide",
+          "property": "nucleotideCounts",
+          "strand": "GGGGGGG",
+          "expected": {
+            "A": 0,
+            "C": 0,
+            "G": 7,
             "T": 0
           }
         },
