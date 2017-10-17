@@ -1,0 +1,5 @@
+---
+blurb: "Given a string, reverse it’s letters and output a new string."
+title: "reverse-string"
+source: "Common introductory challenge to learn loops and strings"
+source_url: "https://medium.freecodecamp.org/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb"

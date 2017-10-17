@@ -1,0 +1,54 @@
+{
+  "exercise": "revere-string",
+  "version": "1.0.1",
+  "comments": [
+    "The string argument cases possible matches are passed in as",
+    "individual arguments rather than arrays. Languages can include",
+    "these string argument cases if passing individual arguments is",
+    "idiomatic in that language."
+  ],
+  "cases": [
+    {
+      "description": "no matches",
+      "property": "reverse-string",
+      "subject": "car",
+      "candidates": ["girl", "Japan", "bear", "candy"],
+      "expected": []
+    },
+    {
+      "description": "detects simple reverse string",
+      "property": "reverse-string",
+      "subject": "ant",
+      "candidates": ["tna"],
+      "expected": ["tan"]
+    },
+    {
+      "description": "detects reverse-string",
+      "property": "reverse-string",
+      "subject": "listen",
+      "candidates": ["netsil"],
+      "expected": ["netsil"]
+    },
+    {
+      "description": "detects anagrams case-insensitively",
+      "property": "reverse-string",
+      "subject": "NinJa",
+      "candidates": ["ajnin"],
+      "expected": ["ajnin"]
+    },
+    {
+      "description": "matches() accepts string arguments",
+      "property": "reverse-string",
+      "subject": "ant",
+      "candidates": ["tna"],
+      "expected": ["tna"]
+    },
+    {
+      "description": "matches() accepts single string argument",
+      "property": "reverse-string",
+      "subject": "ant",
+      "candidates": ["ant"],
+      "expected": ["tna"]
+    }
+  ]
+}
