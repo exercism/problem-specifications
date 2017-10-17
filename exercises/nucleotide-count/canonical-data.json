@@ -1,6 +1,6 @@
 {
   "exercise": "nucleotide-count",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "cases": [
     {
       "description": "count all nucleotides in a strand",
@@ -42,6 +42,17 @@
           "description": "strand with multiple nucleotides",
           "property": "nucleotideCounts",
           "strand": "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC",
+          "expected": {
+            "A": 20,
+            "C": 12,
+            "G": 17,
+            "T": 21
+          }
+        },
+        {
+          "description": "is case-agnostic against a strand of mixed-case nucleotides",
+          "property": "nucleotideCounts",
+          "strand": "aGcTtTtCaTtCtGaCtGcAaCgGgCaAtAtGtCtCtGtGtGgAtTaAaAaAaGaGtGtCtGaTaGcAgC",
           "expected": {
             "A": 20,
             "C": 12,
