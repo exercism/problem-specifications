@@ -3,20 +3,50 @@
   "version": "1.0.0",
   "cases": [
     {
-      "description": "detects reverse-string",
+      "description": "empty string",
+      "property": "reverse-string",
+      "input": "",
+      "expected": ""
+    },
+       {
+      "description": "reverse a single character string",
+      "property": "reverse-string",
+      "input": "e",
+      "expected": "e"
+    },
+    {
+      "description": "reverse a string",
       "property": "reverse-string",
       "input": "robot",
       "expected": "tobor"
     },
     {
-      "description": "detects empty string",
+      "description": "reverse a string consisting of a single lowercase letter",
       "property": "reverse-string",
-      "input": "",
-      "expected": "String is empty, input valid string"
+      "input": "WOLf",
+      "expected": "fLOW"
     },
-        {
-      "description": "detects reverse-string twice and check if it's original string",
+    {
+      "description": "reverse a string having more than a single lowercase letter",
       "property": "reverse-string",
+      "input": "DEssERTS",
+      "expected": "STREssED"
+    },
+    {
+      "description": "reverse a string with at least a capital letter",
+      "property": "reverse-string",
+      "input": "Ramen",
+      "expected": "nemaR"
+    },
+    {
+      "description": "reverse a string that contains a proper sentence with punctuation.",
+      "property": "reverse-string",
+      "input": "I'm hungry!",
+      "expected": "!yrgnuh m'I"
+    },
+    {
+      "description": "reverse a string twice and check if it's original string",
+      "property": "reverse-string twice",
       "input": "robot",
       "expected": "robot"
     },
