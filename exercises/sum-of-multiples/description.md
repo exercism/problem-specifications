@@ -1,4 +1,4 @@
-Given a number, find the sum of all the unique multiples of particular numbers up to
+Given a number, find the sum of all the multiples of particular numbers up to
 but not including that number.
 
 If we list all the natural numbers up to but not including 20 that are
