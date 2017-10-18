@@ -5,8 +5,20 @@
     {
       "description": "detects reverse-string",
       "property": "reverse-string",
-      "input": "robot", "superman", "ramen",
-      "expected": ["tobor", "namrepus", "nemar"]
-    }
+      "input": "robot",
+      "expected": "tobor"
+    },
+    {
+      "description": "detects empty string",
+      "property": "reverse-string",
+      "input": "",
+      "expected": "String is empty, input valid string"
+    },
+        {
+      "description": "detects reverse-string twice and check if it's original string",
+      "property": "reverse-string",
+      "input": "robot",
+      "expected": "robot"
+    },
   ]
 }
