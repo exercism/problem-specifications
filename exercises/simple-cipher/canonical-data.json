@@ -1,0 +1,120 @@
+{
+  "exercise": "simple-cipher",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "description": "Random key cipher",
+      "cases": [
+        {
+          "description": "It has a key made of letters",
+          "property": "key",
+          "input": "any",
+          "matches_regex": "^[a-z]+$"
+        },
+        {
+          "description": "It can encode",
+          "property": "encode",
+          "input_plaintext": "aaaaaaaaaa",
+          "output_key": "cipher.key"
+        },
+        {
+          "description": "It can decode",
+          "property": "decode",
+          "input_key": "cipher.key",
+          "output_string": "aaaaaaaaaa"
+        },
+        {
+          "description": "It is reversible",
+          "property": "encode -> decode",
+          "input_encode": "plaintext string",
+          "output_decode": "plaintext string"
+        }
+      ]
+    },
+    {
+      "description": "Incorrect key cipher",
+      "cases": [
+        {
+          "description": "It throws an error with an all caps key",
+          "property": "Cipher Key",
+          "input_all_caps_string": "ABCDEF",
+          "output_error": "Bad key"
+        },
+        {
+          "description": "It throws an error with a numeric key",
+          "property": "Cipher Key",
+          "input_all_number_string": "'12345'",
+          "output_error": "Bad key"
+        },
+        {
+          "description": "It throws an error with empty key",
+          "property": "Cipher Key",
+          "input_empty_string": "''",
+          "output_error": "Bad key"
+        }
+      ]
+    },
+    {
+      "description": "Substitution cipher",
+      "cipher_key_string": "abcdefgihj",
+      "cases": [
+        {
+          "description": "It keeps submitted key",
+          "property": "key",
+          "input_key": "cipher.key",
+          "output_key": "input_key"
+        },
+        {
+          "description": "It can encode",
+          "property": "encode",
+          "input_string": "aaaaaaaaaa",
+          "output_key": "abcdefghij"
+        },
+        {
+          "description": "It can decode",
+          "property": "decode",
+          "input_string": "abcdefghij",
+          "output_string": "aaaaaaaaaa"
+        },
+        {
+          "description": "It is reversible",
+          "property": "encode -> decode",
+          "input_encode": "abcdefghij",
+          "output_decode": "abcdefghij"
+        },
+        {
+          "description": "It can double shift encode",
+          "property": "key",
+          "cipher_key": "iamapandabear",
+          "case": {
+            "property": "encode",
+            "input_string": "iamapandabear",
+            "output_string": "qayaeaagacia"
+          }
+        },
+        {
+          "description": "It can wrap on encode",
+          "property": "encode",
+          "input_string": "zzzzzzzzzz",
+          "output_string": "zabcdefghi"
+        },
+        {
+          "description": "It can wrap on decode",
+          "property": "decode",
+          "input_string": "zabcdefghi",
+          "output_string": "zzzzzzzzzz"
+        },
+        {
+          "description": "It can handle messages longer than the key",
+          "property": "cipher.key",
+          "cipher_key": "abc",
+          "case": {
+            "property": "encode",
+            "input_string": "iamapandabear",
+            "output_string": "iboaqcnecbfcr"
+          }
+        }
+      ]
+    }
+  ]
+}
