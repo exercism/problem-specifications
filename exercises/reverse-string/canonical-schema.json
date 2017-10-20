@@ -8,29 +8,11 @@
       "input": "",
       "expected": ""
     },
-       {
-      "description": "reverse a single character string",
-      "property": "reverse-string",
-      "input": "e",
-      "expected": "e"
-    },
     {
       "description": "reverse a string",
       "property": "reverse-string",
       "input": "robot",
       "expected": "tobor"
-    },
-    {
-      "description": "reverse a string consisting of a single lowercase letter",
-      "property": "reverse-string",
-      "input": "WOLf",
-      "expected": "fLOW"
-    },
-    {
-      "description": "reverse a string having more than a single lowercase letter",
-      "property": "reverse-string",
-      "input": "DEssERTS",
-      "expected": "STREssED"
     },
     {
       "description": "reverse a string with at least a capital letter",
@@ -39,16 +21,16 @@
       "expected": "nemaR"
     },
     {
-      "description": "reverse a string that contains a proper sentence with punctuation.",
+      "description": "reverse a string that contains a proper sentence with punctuation",
       "property": "reverse-string",
       "input": "I'm hungry!",
       "expected": "!yrgnuh m'I"
     },
     {
-      "description": "reverse a string twice and check if it's original string",
-      "property": "reverse-string twice",
-      "input": "robot",
-      "expected": "robot"
+      "description": "reverse a string and check if it is the same as input string (Palindrome)",
+      "property": "reverse-string",
+      "input": "racecar",
+      "expected": "racecar"
     },
   ]
 }
