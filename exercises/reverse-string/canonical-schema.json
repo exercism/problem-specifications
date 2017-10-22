@@ -1,6 +1,10 @@
 {
   "exercise": "reverse-string",
-  "version": "1.0.0",
+  "version": "1.0.0",      
+  "comments": [
+        "If property based testing tools are available, a good property to test is:"
+        ``` reverse(reverse(str)) == str ```
+      ],
   "cases": [
     {
       "description": "empty string",
@@ -31,6 +35,6 @@
       "property": "reverse-string",
       "input": "racecar",
       "expected": "racecar"
-    },
+    }
   ]
 }
