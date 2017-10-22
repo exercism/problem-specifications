@@ -82,43 +82,6 @@
           "expected": ["grass", "violets", "clover", "violets"]
         }
       ]
-    },
-    {
-      "description": "non-alphabetical student list",
-      "cases": [
-        {
-          "description": "first student's garden",
-          "property": "plants",
-          "students": ["Samantha", "Patricia", "Xander", "Roger"],
-          "diagram": "VCRRGVRG\nRVGCCGCV",
-          "student": "Patricia",
-          "expected": ["violets", "clover", "radishes", "violets"]
-        },
-        {
-          "description": "second student's garden",
-          "property": "plants",
-          "students": ["Samantha", "Patricia", "Xander", "Roger"],
-          "diagram": "VCRRGVRG\nRVGCCGCV",
-          "student": "Roger",
-          "expected": ["radishes", "radishes", "grass", "clover"]
-        },
-        {
-          "description": "third student's garden",
-          "property": "plants",
-          "students": ["Samantha", "Patricia", "Xander", "Roger"],
-          "diagram": "VCRRGVRG\nRVGCCGCV",
-          "student": "Samantha",
-          "expected": ["grass", "violets", "clover", "grass"]
-        },
-        {
-          "description": "fourth (last) student's garden",
-          "property": "plants",
-          "students": ["Samantha", "Patricia", "Xander", "Roger"],
-          "diagram": "VCRRGVRG\nRVGCCGCV",
-          "student": "Xander",
-          "expected": ["radishes", "grass", "clover", "violets"]
-        }
-      ]
     }
   ]
 }
