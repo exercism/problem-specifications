@@ -12,5 +12,3 @@ The objectives are simple:
 - Run the test suite and make sure that it succeeds.
 - Submit your solution and check it at the website.
 
-Comments: 
-If testing tools are available, a property that can be tested is to reverse string twice and see if the output is the original string.
