@@ -1,11 +1,6 @@
 {
   "exercise": "nth-prime",
-  "version": "1.0.0",
-  "comments": [
-    "The tests that expect 'false' should be implemented to raise",
-    "an error, or indicate a failure. Implement this in a way that",
-    "makes sense for your language."
-  ],
+  "version": "2.0.0",
   "cases": [
     {
       "description": "first prime",
@@ -35,7 +30,7 @@
       "description": "there is no zeroth prime",
       "property": "prime",
       "input": 0,
-      "expected": false
+      "expected": { "error": "there is no zeroth prime" }
     }
   ]
 }
