@@ -1,6 +1,6 @@
 {
   "exercise": "food-chain",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "comments": [
     "JSON doesn't allow for multi-line strings, so all verses are presented ",
     "here as arrays of strings. It's up to the test generator to join the ",
@@ -18,7 +18,7 @@
         {
           "description": "fly",
           "property": "verse",
-          "start verse": 1,
+          "verse": 1,
           "expected": [
             "I know an old lady who swallowed a fly.",
             "I don't know why she swallowed the fly. Perhaps she'll die."
@@ -27,7 +27,7 @@
         {
           "description": "spider",
           "property": "verse",
-          "start verse": 2,
+          "verse": 2,
           "expected": [
             "I know an old lady who swallowed a spider.",
             "It wriggled and jiggled and tickled inside her.",
@@ -38,7 +38,7 @@
         {
           "description": "bird",
           "property": "verse",
-          "start verse": 3,
+          "verse": 3,
           "expected": [
             "I know an old lady who swallowed a bird.",
             "How absurd to swallow a bird!",
@@ -50,7 +50,7 @@
         {
           "description": "cat",
           "property": "verse",
-          "start verse": 4,
+          "verse": 4,
           "expected": [
             "I know an old lady who swallowed a cat.",
             "Imagine that, to swallow a cat!",
@@ -63,7 +63,7 @@
         {
           "description": "dog",
           "property": "verse",
-          "start verse": 5,
+          "verse": 5,
           "expected": [
             "I know an old lady who swallowed a dog.",
             "What a hog, to swallow a dog!",
@@ -77,7 +77,7 @@
         {
           "description": "goat",
           "property": "verse",
-          "start verse": 6,
+          "verse": 6,
           "expected": [
             "I know an old lady who swallowed a goat.",
             "Just opened her throat and swallowed a goat!",
@@ -92,7 +92,7 @@
         {
           "description": "cow",
           "property": "verse",
-          "start verse": 7,
+          "verse": 7,
           "expected": [
             "I know an old lady who swallowed a cow.",
             "I don't know how she swallowed a cow!",
@@ -108,7 +108,7 @@
         {
           "description": "horse",
           "property": "verse",
-          "start verse": 8,
+          "verse": 8,
           "expected": [
             "I know an old lady who swallowed a horse.",
             "She's dead, of course!"
@@ -116,7 +116,7 @@
         },
         {
           "description": "multiple verses",
-          "property": "verse",
+          "property": "verses",
           "start verse": 1,
           "end verse": 3,
           "expected": [
@@ -137,7 +137,7 @@
         },
         {
           "description": "full song",
-          "property": "verse",
+          "property": "verses",
           "start verse": 1,
           "end verse": 8,
           "expected": [
