@@ -15,3 +15,7 @@ each nucleotide with its complement:
 * `C` -> `G`
 * `T` -> `A`
 * `A` -> `U`
+
+Note that since we are finding the complement, you should use the mapping of pairs above (and not just swap T for U).
+
+Your function will need to be able to handle invalid inputs, both partial (a few invalid bases) and completely invalid strings. In these cases it should return an empty string.
