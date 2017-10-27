@@ -1,6 +1,6 @@
 {
   "exercise": "forth",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "comments": [
     "The cases are split into multiple sections, all with the same structure.",
     "In all cases, the `expected` key is the resulting stack",
@@ -14,6 +14,12 @@
           "description": "empty input results in empty stack",
           "property": "evaluate",
           "input": [],
+          "expected": []
+        },
+        {
+          "description": "empty line results in empty stack",
+          "property": "evaluate",
+          "input": [""],
           "expected": []
         },
         {
