@@ -11,18 +11,6 @@
       "description": "parsing and numbers",
       "cases": [
         {
-          "description": "empty input results in empty stack",
-          "property": "evaluate",
-          "input": [],
-          "expected": []
-        },
-        {
-          "description": "empty line results in empty stack",
-          "property": "evaluate",
-          "input": [""],
-          "expected": []
-        },
-        {
           "description": "numbers just get pushed onto the stack",
           "property": "evaluate",
           "input": ["1 2 3 4 5"],
