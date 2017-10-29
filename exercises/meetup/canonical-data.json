@@ -3,196 +3,231 @@
   "version": "1.0.0",
   "cases": [
     {
-      "description": "monteenth of May 2013",
-      "property": "meetup",
-      "year": 2013,
-      "month": 5,
-      "week": "teenth",
-      "dayofweek": "Monday",
-      "dayofmonth": 13
+      "description": "test monteenth",
+      "cases": [
+        {
+          "description": "testcase 1 : May 2013",
+          "property": "meetup",
+          "year": 2013,
+          "month": 5,
+          "week": "teenth",
+          "dayofweek": "Monday",
+          "dayofmonth": 13
+        },
+        {
+          "description": "testcase 2 : August 2013",
+          "property": "meetup",
+          "year": 2013,
+          "month": 8,
+          "week": "teenth",
+          "dayofweek": "Monday",
+          "dayofmonth": 19
+        },
+        {
+          "description": "testcase 3 : September 2013",
+          "property": "meetup",
+          "year": 2013,
+          "month": 9,
+          "week": "teenth",
+          "dayofweek": "Monday",
+          "dayofmonth": 16
+        }
+      ]
     },
     {
-      "description": "monteenth of August 2013",
-      "property": "meetup",
-      "year": 2013,
-      "month": 8,
-      "week": "teenth",
-      "dayofweek": "Monday",
-      "dayofmonth": 19
+      "description": "tuesteenth",
+      "cases": [
+        {
+          "description": "testcase 1 : March 2013",
+          "property": "meetup",
+          "year": 2013,
+          "month": 3,
+          "week": "teenth",
+          "dayofweek": "Tuesday",
+          "dayofmonth": 19
+        },
+        {
+          "description": "testcase 2 : April 2013",
+          "property": "meetup",
+          "year": 2013,
+          "month": 4,
+          "week": "teenth",
+          "dayofweek": "Tuesday",
+          "dayofmonth": 16
+        },
+        {
+          "description": "testcase 3 : August 2013",
+          "property": "meetup",
+          "year": 2013,
+          "month": 8,
+          "week": "teenth",
+          "dayofweek": "Tuesday",
+          "dayofmonth": 13
+        }
+      ]
     },
     {
-      "description": "monteenth of September 2013",
-      "property": "meetup",
-      "year": 2013,
-      "month": 9,
-      "week": "teenth",
-      "dayofweek": "Monday",
-      "dayofmonth": 16
+      "description": "wednesteenth",
+      "cases": [
+        {
+          "description": "testcase 1 : January 2013",
+          "property": "meetup",
+          "year": 2013,
+          "month": 1,
+          "week": "teenth",
+          "dayofweek": "Wednesday",
+          "dayofmonth": 16
+        },
+        {
+          "description": "testcase 2 : February 2013",
+          "property": "meetup",
+          "year": 2013,
+          "month": 2,
+          "week": "teenth",
+          "dayofweek": "Wednesday",
+          "dayofmonth": 13
+        },
+        {
+          "description": "testcase 3 : June 2013",
+          "property": "meetup",
+          "year": 2013,
+          "month": 6,
+          "week": "teenth",
+          "dayofweek": "Wednesday",
+          "dayofmonth": 19
+        }
+      ]
     },
     {
-      "description": "tuesteenth of March 2013",
-      "property": "meetup",
-      "year": 2013,
-      "month": 3,
-      "week": "teenth",
-      "dayofweek": "Tuesday",
-      "dayofmonth": 19
+      "description": "thursteenth",
+      "cases":[
+        {
+          "description": "testcase 1 : May 2013",
+          "property": "meetup",
+          "year": 2013,
+          "month": 5,
+          "week": "teenth",
+          "dayofweek": "Thursday",
+          "dayofmonth": 16
+        },
+        {
+          "description": "testcase 2 : June 2013",
+          "property": "meetup",
+          "year": 2013,
+          "month": 6,
+          "week": "teenth",
+          "dayofweek": "Thursday",
+          "dayofmonth": 13
+        },
+        {
+          "description": "testcase 3 : September 2013",
+          "property": "meetup",
+          "year": 2013,
+          "month": 9,
+          "week": "teenth",
+          "dayofweek": "Thursday",
+          "dayofmonth": 19
+        }
+      ]
     },
     {
-      "description": "tuesteenth of April 2013",
-      "property": "meetup",
-      "year": 2013,
-      "month": 4,
-      "week": "teenth",
-      "dayofweek": "Tuesday",
-      "dayofmonth": 16
+      "description": "friteenth",
+      "cases":[
+        {
+          "description": "test friteenth - random month 1 : April 2013",
+          "property": "meetup",
+          "year": 2013,
+          "month": 4,
+          "week": "teenth",
+          "dayofweek": "Friday",
+          "dayofmonth": 19
+        },
+        {
+          "description": "testcase 2 : August 2013",
+          "property": "meetup",
+          "year": 2013,
+          "month": 8,
+          "week": "teenth",
+          "dayofweek": "Friday",
+          "dayofmonth": 16
+        },
+        {
+          "description": "testcase 3 : September 2013",
+          "property": "meetup",
+          "year": 2013,
+          "month": 9,
+          "week": "teenth",
+          "dayofweek": "Friday",
+          "dayofmonth": 13
+        }
+      ]
     },
     {
-      "description": "tuesteenth of August 2013",
-      "property": "meetup",
-      "year": 2013,
-      "month": 8,
-      "week": "teenth",
-      "dayofweek": "Tuesday",
-      "dayofmonth": 13
+      "description": "saturteenth",
+      "cases":[
+        {
+          "description": "testcase 1 : February 2013",
+          "property": "meetup",
+          "year": 2013,
+          "month": 2,
+          "week": "teenth",
+          "dayofweek": "Saturday",
+          "dayofmonth": 16
+        },
+        {
+          "description": "testcase 2 : April 2013",
+          "property": "meetup",
+          "year": 2013,
+          "month": 4,
+          "week": "teenth",
+          "dayofweek": "Saturday",
+          "dayofmonth": 13
+        },
+        {
+          "description": "testcase 3 : October 2013",
+          "property": "meetup",
+          "year": 2013,
+          "month": 10,
+          "week": "teenth",
+          "dayofweek": "Saturday",
+          "dayofmonth": 19
+        }
+      ]
     },
     {
-      "description": "wednesteenth of January 2013",
-      "property": "meetup",
-      "year": 2013,
-      "month": 1,
-      "week": "teenth",
-      "dayofweek": "Wednesday",
-      "dayofmonth": 16
+      "description": "sunteenth",
+      "cases":[
+        {
+          "description": "testcase 1 : May 2013",
+          "property": "meetup",
+          "year": 2013,
+          "month": 5,
+          "week": "teenth",
+          "dayofweek": "Sunday",
+          "dayofmonth": 19
+        },
+        {
+          "description": "testcase 2 : June 2013",
+          "property": "meetup",
+          "year": 2013,
+          "month": 6,
+          "week": "teenth",
+          "dayofweek": "Sunday",
+          "dayofmonth": 16
+        },
+        {
+          "description": "testcase 3 : October 2013",
+          "property": "meetup",
+          "year": 2013,
+          "month": 10,
+          "week": "teenth",
+          "dayofweek": "Sunday",
+          "dayofmonth": 13
+        }
+      ]
     },
     {
-      "description": "wednesteenth of February 2013",
-      "property": "meetup",
-      "year": 2013,
-      "month": 2,
-      "week": "teenth",
-      "dayofweek": "Wednesday",
-      "dayofmonth": 13
-    },
-    {
-      "description": "wednesteenth of June 2013",
-      "property": "meetup",
-      "year": 2013,
-      "month": 6,
-      "week": "teenth",
-      "dayofweek": "Wednesday",
-      "dayofmonth": 19
-    },
-    {
-      "description": "thursteenth of May 2013",
-      "property": "meetup",
-      "year": 2013,
-      "month": 5,
-      "week": "teenth",
-      "dayofweek": "Thursday",
-      "dayofmonth": 16
-    },
-    {
-      "description": "thursteenth of June 2013",
-      "property": "meetup",
-      "year": 2013,
-      "month": 6,
-      "week": "teenth",
-      "dayofweek": "Thursday",
-      "dayofmonth": 13
-    },
-    {
-      "description": "thursteenth of September 2013",
-      "property": "meetup",
-      "year": 2013,
-      "month": 9,
-      "week": "teenth",
-      "dayofweek": "Thursday",
-      "dayofmonth": 19
-    },
-    {
-      "description": "friteenth of April 2013",
-      "property": "meetup",
-      "year": 2013,
-      "month": 4,
-      "week": "teenth",
-      "dayofweek": "Friday",
-      "dayofmonth": 19
-    },
-    {
-      "description": "friteenth of August 2013",
-      "property": "meetup",
-      "year": 2013,
-      "month": 8,
-      "week": "teenth",
-      "dayofweek": "Friday",
-      "dayofmonth": 16
-    },
-    {
-      "description": "friteenth of September 2013",
-      "property": "meetup",
-      "year": 2013,
-      "month": 9,
-      "week": "teenth",
-      "dayofweek": "Friday",
-      "dayofmonth": 13
-    },
-    {
-      "description": "saturteenth of February 2013",
-      "property": "meetup",
-      "year": 2013,
-      "month": 2,
-      "week": "teenth",
-      "dayofweek": "Saturday",
-      "dayofmonth": 16
-    },
-    {
-      "description": "saturteenth of April 2013",
-      "property": "meetup",
-      "year": 2013,
-      "month": 4,
-      "week": "teenth",
-      "dayofweek": "Saturday",
-      "dayofmonth": 13
-    },
-    {
-      "description": "saturteenth of October 2013",
-      "property": "meetup",
-      "year": 2013,
-      "month": 10,
-      "week": "teenth",
-      "dayofweek": "Saturday",
-      "dayofmonth": 19
-    },
-    {
-      "description": "sunteenth of May 2013",
-      "property": "meetup",
-      "year": 2013,
-      "month": 5,
-      "week": "teenth",
-      "dayofweek": "Sunday",
-      "dayofmonth": 19
-    },
-    {
-      "description": "sunteenth of June 2013",
-      "property": "meetup",
-      "year": 2013,
-      "month": 6,
-      "week": "teenth",
-      "dayofweek": "Sunday",
-      "dayofmonth": 16
-    },
-    {
-      "description": "sunteenth of October 2013",
-      "property": "meetup",
-      "year": 2013,
-      "month": 10,
-      "week": "teenth",
-      "dayofweek": "Sunday",
-      "dayofmonth": 13
-    },
-    {
-      "description": "first Monday of March 2013",
+      "description": "test first Monday - testcase 1 : March 2013",
       "property": "meetup",
       "year": 2013,
       "month": 3,
