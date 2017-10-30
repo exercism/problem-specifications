@@ -23,21 +23,21 @@
               "expected": "3 bottles of beer on the wall, 3 bottles of beer.\nTake one down and pass it around, 2 bottles of beer on the wall.\n"
             },
             {
-              "description": "verse 2",
+              "description": "verse with 2 bottles",
               "property": "recite",
               "startBottles": 2,
               "endBottles": 2,
               "expected": "2 bottles of beer on the wall, 2 bottles of beer.\nTake one down and pass it around, 1 bottle of beer on the wall.\n"
             },
             {
-              "description": "verse 1",
+              "description": "verse with 1 bottle",
               "property": "recite",
               "startBottles": 1,
               "endBottles": 1,
               "expected": "1 bottle of beer on the wall, 1 bottle of beer.\nTake it down and pass it around, no more bottles of beer on the wall.\n"
             },
             {
-              "description": "verse 0",
+              "description": "verse with 0 bottles",
               "property": "recite",
               "startBottles": 0,
               "endBottles": 0,
