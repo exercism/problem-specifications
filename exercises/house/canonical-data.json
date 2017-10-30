@@ -8,8 +8,8 @@
     "Some languages test for the verse() method, which takes a start verse ",
     "and optional end verse, but other languages have only tested for the full poem.",
     "For those languages in the latter category, you may wish to only ",
-    "implement the full song test and leave the rest alone, ignoring the start verse ",
-    "and end verse fields."
+    "implement the full song test and leave the rest alone, ignoring the startVerse ",
+    "and endVerse fields."
   ],
   "cases": [
     {
@@ -18,8 +18,8 @@
         {
           "description": "verse one - the house that jack built",
           "property": "recite",
-          "start verse": 1,
-          "end verse": 1,
+          "startVerse": 1,
+          "endVerse": 1,
           "expected": [
             "This is the house that Jack built."
           ]
@@ -27,8 +27,8 @@
         {
           "description": "verse two - the malt that lay",
           "property": "recite",
-          "start verse": 2,
-          "end verse": 2,
+          "startVerse": 2,
+          "endVerse": 2,
           "expected": [
             "This is the malt",
             "that lay in the house that Jack built."
@@ -37,8 +37,8 @@
         {
           "description": "verse three - the rat that ate",
           "property": "recite",
-          "start verse": 3,
-          "end verse": 3,
+          "startVerse": 3,
+          "endVerse": 3,
           "expected": [
             "This is the rat",
             "that ate the malt",
@@ -48,8 +48,8 @@
         {
           "description": "verse four - the cat that killed",
           "property": "recite",
-          "start verse": 4,
-          "end verse": 4,
+          "startVerse": 4,
+          "endVerse": 4,
           "expected": [
             "This is the cat",
             "that killed the rat",
@@ -60,8 +60,8 @@
         {
           "description": "verse five - the dog that worried",
           "property": "recite",
-          "start verse": 5,
-          "end verse": 5,
+          "startVerse": 5,
+          "endVerse": 5,
           "expected": [
             "This is the dog",
             "that worried the cat",
@@ -73,8 +73,8 @@
         {
           "description": "verse six - the cow with the crumpled horn",
           "property": "recite",
-          "start verse": 6,
-          "end verse": 6,
+          "startVerse": 6,
+          "endVerse": 6,
           "expected": [
             "This is the cow with the crumpled horn",
             "that tossed the dog",
@@ -87,8 +87,8 @@
         {
           "description": "verse seven - the maiden all forlorn",
           "property": "recite",
-          "start verse": 7,
-          "end verse": 7,
+          "startVerse": 7,
+          "endVerse": 7,
           "expected": [
             "This is the maiden all forlorn",
             "that milked the cow with the crumpled horn",
@@ -102,8 +102,8 @@
         {
           "description": "verse eight - the man all tattered and torn",
           "property": "recite",
-          "start verse": 8,
-          "end verse": 8,
+          "startVerse": 8,
+          "endVerse": 8,
           "expected": [
             "This is the man all tattered and torn",
             "that kissed the maiden all forlorn",
@@ -118,8 +118,8 @@
         {
           "description": "verse nine - the priest all shaven and shorn",
           "property": "recite",
-          "start verse": 9,
-          "end verse": 9,
+          "startVerse": 9,
+          "endVerse": 9,
           "expected": [
             "This is the priest all shaven and shorn",
             "that married the man all tattered and torn",
@@ -135,8 +135,8 @@
         {
           "description": "verse 10 - the rooster that crowed in the morn",
           "property": "recite",
-          "start verse": 10,
-          "end verse": 10,
+          "startVerse": 10,
+          "endVerse": 10,
           "expected": [
             "This is the rooster that crowed in the morn",
             "that woke the priest all shaven and shorn",
@@ -153,8 +153,8 @@
         {
           "description": "verse 11 - the farmer sowing his corn",
           "property": "recite",
-          "start verse": 11,
-          "end verse": 11,
+          "startVerse": 11,
+          "endVerse": 11,
           "expected": [
             "This is the farmer sowing his corn",
             "that kept the rooster that crowed in the morn",
@@ -172,8 +172,8 @@
         {
           "description": "verse 12 - the horse and the hound and the horn",
           "property": "recite",
-          "start verse": 12,
-          "end verse": 12,
+          "startVerse": 12,
+          "endVerse": 12,
           "expected": [
             "This is the horse and the hound and the horn",
             "that belonged to the farmer sowing his corn",
@@ -192,8 +192,8 @@
         {
           "description": "multiple verses",
           "property": "recite",
-          "start verse": 4,
-          "end verse": 8,
+          "startVerse": 4,
+          "endVerse": 8,
           "expected": [
             "This is the cat",
             "that killed the rat",
@@ -234,8 +234,8 @@
         {
           "description": "full rhyme",
           "property": "recite",
-          "start verse": 1,
-          "end verse": 12,
+          "startVerse": 1,
+          "endVerse": 12,
           "expected": [
             "This is the house that Jack built.",
             "",
