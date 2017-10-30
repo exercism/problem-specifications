@@ -58,7 +58,7 @@ logic
 mathematics
 memory_management
 networking
-parallellism
+parallelism
 parsing
 pattern_recognition
 performance
