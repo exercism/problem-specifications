@@ -179,6 +179,13 @@
           "set1": [1, 2, 3],
           "set2": [1, 2, 4],
           "expected": false
+        },
+        {
+          "description": "set is not equal to larger set with same elements",
+          "property": "equal",
+          "set1": [1, 2, 3],
+          "set2": [1, 2, 3, 4],
+          "expected": false
         }
       ]
     },
