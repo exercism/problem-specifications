@@ -17,9 +17,9 @@
       "cases": [
         {
           "description": "fly",
-          "property": "verses",
-          "start verse": 1,
-          "end verse": 1,
+          "property": "recite",
+          "startVerse": 1,
+          "endVerse": 1,
           "expected": [
             "I know an old lady who swallowed a fly.",
             "I don't know why she swallowed the fly. Perhaps she'll die."
@@ -27,9 +27,9 @@
         },
         {
           "description": "spider",
-          "property": "verses",
-          "start verse": 2,
-          "end verse": 2,
+          "property": "recite",
+          "startVerse": 2,
+          "endVerse": 2,
           "expected": [
             "I know an old lady who swallowed a spider.",
             "It wriggled and jiggled and tickled inside her.",
@@ -39,9 +39,9 @@
         },
         {
           "description": "bird",
-          "property": "verses",
-          "start verse": 3,
-          "end verse": 3,
+          "property": "recite",
+          "startVerse": 3,
+          "endVerse": 3,
           "expected": [
             "I know an old lady who swallowed a bird.",
             "How absurd to swallow a bird!",
@@ -52,9 +52,9 @@
         },
         {
           "description": "cat",
-          "property": "verses",
-          "start verse": 4,
-          "end verse": 4,
+          "property": "recite",
+          "startVerse": 4,
+          "endVerse": 4,
           "expected": [
             "I know an old lady who swallowed a cat.",
             "Imagine that, to swallow a cat!",
@@ -66,9 +66,9 @@
         },
         {
           "description": "dog",
-          "property": "verses",
-          "start verse": 5,
-          "end verse": 5,
+          "property": "recite",
+          "startVerse": 5,
+          "endVerse": 5,
           "expected": [
             "I know an old lady who swallowed a dog.",
             "What a hog, to swallow a dog!",
@@ -81,9 +81,9 @@
         },
         {
           "description": "goat",
-          "property": "verses",
-          "start verse": 6,
-          "end verse": 6,
+          "property": "recite",
+          "startVerse": 6,
+          "endVerse": 6,
           "expected": [
             "I know an old lady who swallowed a goat.",
             "Just opened her throat and swallowed a goat!",
@@ -97,9 +97,9 @@
         },
         {
           "description": "cow",
-          "property": "verses",
-          "start verse": 7,
-          "end verse": 7,
+          "property": "recite",
+          "startVerse": 7,
+          "endVerse": 7,
           "expected": [
             "I know an old lady who swallowed a cow.",
             "I don't know how she swallowed a cow!",
@@ -114,9 +114,9 @@
         },
         {
           "description": "horse",
-          "property": "verses",
-          "start verse": 8,
-          "end verse": 8,
+          "property": "recite",
+          "startVerse": 8,
+          "endVerse": 8,
           "expected": [
             "I know an old lady who swallowed a horse.",
             "She's dead, of course!"
@@ -124,9 +124,9 @@
         },
         {
           "description": "multiple verses",
-          "property": "verses",
-          "start verse": 1,
-          "end verse": 3,
+          "property": "recite",
+          "startVerse": 1,
+          "endVerse": 3,
           "expected": [
             "I know an old lady who swallowed a fly.",
             "I don't know why she swallowed the fly. Perhaps she'll die.",
@@ -145,9 +145,9 @@
         },
         {
           "description": "full song",
-          "property": "verses",
-          "start verse": 1,
-          "end verse": 8,
+          "property": "recite",
+          "startVerse": 1,
+          "endVerse": 8,
           "expected": [
             "I know an old lady who swallowed a fly.",
             "I don't know why she swallowed the fly. Perhaps she'll die.",
