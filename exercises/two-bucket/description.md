@@ -8,11 +8,11 @@ Your program will take as input:
 - the size of bucket one, passed as a numeric value
 - the size of bucket two, passed as a numeric value
 - the desired number of liters to reach, passed as a numeric value
-- which bucket to fill first, passed as a String (either 'one' or 'two')
+- which bucket to fill first, either bucket one or bucket two
 
 Your program should determine:
 - the total number of "moves" it should take to reach the desired number of liters, including the first fill - expects a numeric value
-- which bucket should end up with the desired number of liters (let's say this is bucket A) - expects a String (either 'one' or 'two')
+- which bucket should end up with the desired number of liters (let's say this is bucket A) - either bucket one or bucket two
 - how many liters are left in the other bucket (bucket B) - expects a numeric value
 
 Note: any time a change is made to either or both buckets counts as one (1) move.
