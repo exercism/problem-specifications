@@ -1,6 +1,6 @@
 {
   "exercise": "custom-set",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "comments": [
     "These tests cover the core components of a set data structure: checking",
     "presence, adding, comparing and basic set operations. Other features",
@@ -178,6 +178,13 @@
           "property": "equal",
           "set1": [1, 2, 3],
           "set2": [1, 2, 4],
+          "expected": false
+        },
+        {
+          "description": "set is not equal to larger set with same elements",
+          "property": "equal",
+          "set1": [1, 2, 3],
+          "set2": [1, 2, 3, 4],
           "expected": false
         }
       ]
