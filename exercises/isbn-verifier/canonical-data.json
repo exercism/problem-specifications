@@ -1,6 +1,6 @@
 {
     "exercise": "isbn-verifier",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "comments": [
         "An expected value of true indicates a valid ISBN-10, ",
         "whereas false means the ISBN-10 is invalid."
@@ -39,7 +39,7 @@
         {
             "description": "X is only valid as a check digit",
             "property": "isbn",
-            "input": "3-598-2X507-0",
+            "input": "3-598-2X507-9",
             "expected": false
         },
         {
@@ -75,7 +75,7 @@
         {
             "description": "too long isbn",
             "property": "isbn",
-            "input": "3-598-21507-XA",
+            "input": "3-598-21507-XX",
             "expected": false
         },
         {
