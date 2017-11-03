@@ -1,0 +1,69 @@
+{
+    "cases": [
+        {
+            "cases": [
+                {
+                    "description": "zero pieces",
+                    "expected": "",
+                    "input": [],
+                    "property": "construct"
+                },
+                {
+                    "description": "one piece",
+                    "expected": "And all for the want of a nail.",
+                    "input": [
+                        "nail"
+                    ],
+                    "property": "construct"
+                },
+                {
+                    "description": "two pieces",
+                    "expected": "For want of a nail the shoe was lost.\nAnd all for the want of a nail.",
+                    "input": [
+                        "nail",
+                        "shoe"
+                    ],
+                    "property": "construct"
+                },
+                {
+                    "description": "three pieces",
+                    "expected": "For want of a nail the shoe was lost.\nFor want of a shoe the horse was lost.\nAnd all for the want of a nail.",
+                    "input": [
+                        "nail",
+                        "shoe",
+                        "horse"
+                    ],
+                    "property": "construct"
+                },
+                {
+                    "description": "full proverb",
+                    "expected": "For want of a nail the shoe was lost.\nFor want of a shoe the horse was lost.\nFor want of a horse the rider was lost.\nFor want of a rider the message was lost.\nFor want of a message the battle was lost.\nFor want of a battle the kingdom was lost.\nAnd all for the want of a nail.",
+                    "input": [
+                        "nail",
+                        "shoe",
+                        "horse",
+                        "rider",
+                        "message",
+                        "battle",
+                        "kingdom"
+                    ],
+                    "property": "construct"
+                },
+                {
+                    "description": "three pieces modernized",
+                    "expected": "For want of a pin the gun was lost.\nFor want of a gun the soldier was lost.\nFor want of a soldier the battle was lost.\nAnd all for the want of a pin.",
+                    "input": [
+                        "pin",
+                        "gun",
+                        "soldier",
+                        "battle"
+                    ],
+                    "property": "construct"
+                }
+            ],
+            "description": "Construct a proverb of the form 'for want of an X, the Y was lost'"
+        }
+    ],
+    "exercise": "proverb",
+    "version": "1.0.0"
+}
