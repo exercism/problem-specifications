@@ -6,7 +6,6 @@
        "here as arrays of strings. It's up to the test generator to join the ",
        "lines together with line breaks."
     ],
-    "description": "https://github.com/exercism/problem-specifications/blob/master/exercises/proverb/description.md",
     "cases": [
         {
             "cases": [
