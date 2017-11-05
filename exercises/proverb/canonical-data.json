@@ -4,10 +4,7 @@
     "comments": [
         "JSON doesn't allow for multi-line strings, so all expected outputs are presented ",
         "here as arrays of strings. It's up to the test generator to join the ",
-        "lines together with line breaks. ",
-        "All cases expect the student to construct a proverb of the form ",
-        "'For want of an X, the Y was lost.', terminating with the stock phrase ",
-        "'And all for the want of a Z.'"
+        "lines together with line breaks. "
     ],
     "cases": [
         {
