@@ -18,13 +18,13 @@
       "expected": "tobor"
     },
     {
-      "description": "reverse a string with at least a capital letter",
+      "description": "reverse a string with a capital letter",
       "property": "reverse",
       "input": "Ramen",
       "expected": "nemaR"
     },
     {
-      "description": "reverse a string that contains a proper sentence with punctuation",
+      "description": "reverse a string with punctuation",
       "property": "reverse",
       "input": "I'm hungry!",
       "expected": "!yrgnuh m'I"

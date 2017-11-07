@@ -1,5 +1,5 @@
 Reverse a string
 
-For Example:
+For example:
 input: "cool"
 output: "looc"
