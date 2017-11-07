@@ -1,7 +1,5 @@
-# Reverse String
+Reverse a string
 
-The objective is to write a function that reverses the input sequence of characters.
-
-## For Example
+For Example:
 input: "cool"
 output: "looc"
