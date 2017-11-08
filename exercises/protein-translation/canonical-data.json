@@ -121,13 +121,13 @@
           "description": "Translation stops if STOP codon present in short string",
           "property": "translate",
           "strand": "AUGUUUUAA",
-          "expected": ["Methionine","Phenylalanine"]
+          "expected": ["Methionine","Phenylalanine", "STOP"]
         },
         {
-          "description": "Translation stops if codon present in longer string",
+          "description": "Translation stops if codon in middle of sequence",
           "property": "translate",
           "strand": "UGGUGUUAUUAAUGGUUU",
-          "expected": ["Tryptophan","Cysteine","Tyrosine"]
+          "expected": ["Tryptophan","Cysteine","Tyrosine", "STOP"]
         },
         {
           "description": "Test invalid codons",
