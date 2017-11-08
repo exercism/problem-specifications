@@ -118,13 +118,13 @@
           "expected": ["Methionine","Phenylalanine","Tryptophan"]
         },
         {
-          "description": "Translation stops if STOP codon present 1",
+          "description": "Translation stops if STOP codon present in short string",
           "property": "translate",
           "strand": "AUGUUUUAA",
           "expected": ["Methionine","Phenylalanine"]
         },
         {
-          "description": "Translation stops if codon present 2",
+          "description": "Translation stops if codon present in longer string",
           "property": "translate",
           "strand": "UGGUGUUAUUAAUGGUUU",
           "expected": ["Tryptophan","Cysteine","Tyrosine"]
