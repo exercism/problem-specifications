@@ -3,11 +3,9 @@
    [ " This is a JSON Schema for 'canonical-data.json' files.     "
    , "                                                            "
    , " It enforces just a general structure for all exercises,    "
-   , " without specifying how the test data should be organized   "
-   , " for each type of test. We do this to keep generality and   "
-   , " allow support for tests the do not fit well in the         "
-   , " 'function (input) == output' structure, like property      "
-   , " tests.                                                     "
+   , " optimising for the ability to represent example-based tests"
+   , " of the form 'function (input) == output'. Future expansions"
+   , " may allow for other types of tests such as property-based. "
    , "                                                            "
    , " The only thing enforced regarding how test data should be  "
    , " structured is the error encoding, because it was agreed    "
@@ -85,13 +83,15 @@
       "labeledTest":
           { "description": "A single test with a description"
           , "type"       : "object"
-          , "required"   : ["description", "property"]
+          , "required"   : ["description", "property", "input", "expected"]
           , "properties" :
                 { "description": { "$ref": "#/definitions/description" }
                 , "comments"   : { "$ref": "#/definitions/comments"    }
                 , "property"   : { "$ref": "#/definitions/property"    }
+                , "input"      : { "$ref": "#/definitions/input"       }
                 , "expected"   : { "$ref": "#/definitions/expected"    }
                 }
+          , "additionalProperties": false
           },
 
       "labeledTestGroup":
@@ -115,6 +115,11 @@
           { "description": "A letters-only, lowerCamelCase property name"
           , "type"       : "string"
           , "pattern"    : "^[a-z]+([A-Z][a-z]+)*[A-Z]?$"
+          },
+
+      "input":
+          { "description": "The inputs to a test case"
+          , "type"       : "object"
           },
 
       "expected":
