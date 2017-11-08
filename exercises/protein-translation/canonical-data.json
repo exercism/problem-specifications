@@ -10,103 +10,103 @@
       ],
       "cases": [
         {
-          "description": "Methionine RNA sequence is identified",
+          "description": "Methionine RNA sequence",
           "property": "translate",
           "strand": "AUG",
           "expected": ["Methionine"]
         },
         {
-          "description": "Phenylalanine RNA sequence 1 is identified",
+          "description": "Phenylalanine RNA sequence 1",
           "property": "translate",
           "strand": "UUU",
           "expected": ["Phenylalanine"]
         },
         {
-          "description": "Phenylalanine RNA sequence 2 is identified",
+          "description": "Phenylalanine RNA sequence 2",
           "property": "translate",
           "strand": "UUC",
           "expected": ["Phenylalanine"]
         },
         {
-          "description": "Leucine RNA sequence 1 is identified",
+          "description": "Leucine RNA sequence 1",
           "property": "translate",
           "strand": "UUA",
           "expected": ["Leucine"]
         },
         {
-          "description": "Leucine RNA sequence 2 is identified",
+          "description": "Leucine RNA sequence 2",
           "property": "translate",
           "strand": "UUG",
           "expected": ["Leucine"]
         },
         {
-          "description": "Serine RNA sequence 1 is identified",
+          "description": "Serine RNA sequence 1",
           "property": "translate",
           "strand": "UCU",
           "expected": ["Serine"]
         },
         {
-          "description": "Serine RNA sequence 2 is identified",
+          "description": "Serine RNA sequence 2",
           "property": "translate",
           "strand": "UCC",
           "expected": ["Serine"]
         },
         {
-          "description": "Serine RNA sequence 3 is identified",
+          "description": "Serine RNA sequence 3",
           "property": "translate",
           "strand": "UCA",
           "expected": ["Serine"]
         },
         {
-          "description": "Serine RNA sequence 4 is identified",
+          "description": "Serine RNA sequence 4",
           "property": "translate",
           "strand": "UCG",
           "expected": ["Serine"]
         },
         {
-          "description": "Tyrosine RNA sequence 1 is identified",
+          "description": "Tyrosine RNA sequence 1",
           "property": "translate",
           "strand": "UAU",
           "expected": ["Tyrosine"]
         },
         {
-          "description": "Tyrosine RNA sequence 2 is identified",
+          "description": "Tyrosine RNA sequence 2",
           "property": "translate",
           "strand": "UAC",
           "expected": ["Tyrosine"]
         },
         {
-          "description": "Cysteine RNA sequence 1 is identified",
+          "description": "Cysteine RNA sequence 1",
           "property": "translate",
           "strand": "UGU",
           "expected": ["Cysteine"]
         },
         {
-          "description": "Cysteine RNA sequence 2 is identified",
+          "description": "Cysteine RNA sequence 2",
           "property": "translate",
           "strand": "UGC",
           "expected": ["Cysteine"]
         },
         {
-          "description": "Tryptophan RNA sequence is identified",
+          "description": "Tryptophan RNA sequence",
           "property": "translate",
           "strand": "UGG",
           "expected": ["Tryptophan"]
         },
         {
-          "description": "STOP codon RNA sequence is identified",
+          "description": "STOP codon RNA sequence",
           "property": "translate",
           "strand": "UAA",
           "expected": ["STOP"]
         },
         {
-          "description": "STOP codon RNA sequence is identified",
+          "description": "STOP codon RNA sequence",
           "property": "translate",
           "strand": "UAG",
           "expected": ["STOP"]
         },
         {
-          "description": "STOP codon RNA sequence is identified",
+          "description": "STOP codon RNA sequence",
           "property": "translate",
           "strand": "UGA",
           "expected": ["STOP"]
