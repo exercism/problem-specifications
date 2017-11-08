@@ -118,7 +118,7 @@
           "expected": ["Methionine","Phenylalanine","Tryptophan"]
         },
         {
-          "description": "Translation stops if STOP codon present in short string",
+          "description": "Translation stops if STOP codon at end of sequence",
           "property": "translate",
           "strand": "AUGUUUUAA",
           "expected": ["Methionine","Phenylalanine", "STOP"]
