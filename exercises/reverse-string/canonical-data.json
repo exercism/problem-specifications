@@ -12,25 +12,25 @@
       "expected": ""
     },
     {
-      "description": "reverse a string",
+      "description": "a word",
       "property": "reverse",
       "input": "robot",
       "expected": "tobor"
     },
     {
-      "description": "reverse a string with a capital letter",
+      "description": "a capitalized word",
       "property": "reverse",
       "input": "Ramen",
       "expected": "nemaR"
     },
     {
-      "description": "reverse a string with punctuation",
-      "property": "reverse",
+      "description": "a sentence with punctuation",
+      "property": "reverse",  
       "input": "I'm hungry!",
       "expected": "!yrgnuh m'I"
     },
     {
-      "description": "reverse a string and check if it is the same as input string (Palindrome)",
+      "description": "a string that reads the same backward as forward (i.e. palindrome)",
       "property": "reverse",
       "input": "racecar",
       "expected": "racecar"
