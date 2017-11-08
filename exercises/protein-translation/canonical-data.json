@@ -11,127 +11,127 @@
       "cases": [
         {
           "description": "Methionine RNA sequence is identified",
-          "property": "translate",
+          "property": "translate_codon",
           "strand": "AUG",
           "expected": "Methionine"
         },
         {
           "description": "Phenylalanine RNA sequence 1 is identified",
-          "property": "translate",
+          "property": "translate_codon",
           "strand": "UUU",
           "expected": "Phenylalanine"
         },
         {
           "description": "Phenylalanine RNA sequence 2 is identified",
-          "property": "translate",
+          "property": "translate_codon",
           "strand": "UUC",
           "expected": "Phenylalanine"
         },
         {
           "description": "Leucine RNA sequence 1 is identified",
-          "property": "translate",
+          "property": "translate_codon",
           "strand": "UUA",
           "expected": "Leucine"
         },
         {
           "description": "Leucine RNA sequence 2 is identified",
-          "property": "translate",
+          "property": "translate_codon",
           "strand": "UUG",
           "expected": "Leucine"
         },
         {
           "description": "Serine RNA sequence 1 is identified",
-          "property": "translate",
+          "property": "translate_codon",
           "strand": "UCU",
           "expected": "Serine"
         },
         {
           "description": "Serine RNA sequence 2 is identified",
-          "property": "translate",
+          "property": "translate_codon",
           "strand": "UCC",
           "expected": "Serine"
         },
         {
           "description": "Serine RNA sequence 3 is identified",
-          "property": "translate",
+          "property": "translate_codon",
           "strand": "UCA",
           "expected": "Serine"
         },
         {
           "description": "Serine RNA sequence 4 is identified",
-          "property": "translate",
+          "property": "translate_codon",
           "strand": "UCG",
           "expected": "Serine"
         },
         {
           "description": "Tyrosine RNA sequence 1 is identified",
-          "property": "translate",
+          "property": "translate_codon",
           "strand": "UAU",
           "expected": "Tyrosine"
         },
         {
           "description": "Tyrosine RNA sequence 2 is identified",
-          "property": "translate",
+          "property": "translate_codon",
           "strand": "UAC",
           "expected": "Tyrosine"
         },
         {
           "description": "Cysteine RNA sequence 1 is identified",
-          "property": "translate",
+          "property": "translate_codon",
           "strand": "UGU",
           "expected": "Cysteine"
         },
         {
           "description": "Cysteine RNA sequence 2 is identified",
-          "property": "translate",
+          "property": "translate_codon",
           "strand": "UGC",
           "expected": "Cysteine"
         },
         {
           "description": "Tryptophan RNA sequence is identified",
-          "property": "translate",
+          "property": "translate_codon",
           "strand": "UGG",
           "expected": "Tryptophan"
         },
         {
           "description": "STOP codon RNA sequence is identified",
-          "property": "translate",
+          "property": "translate_codon",
           "strand": "UAA",
           "expected": "STOP"
         },
         {
           "description": "STOP codon RNA sequence is identified",
-          "property": "translate",
+          "property": "translate_codon",
           "strand": "UAG",
           "expected": "STOP"
         },
         {
           "description": "STOP codon RNA sequence is identified",
-          "property": "translate",
+          "property": "translate_codon",
           "strand": "UGA",
           "expected": "STOP"
         },
         {
           "description": "Translate RNA strand into correct protein list",
-          "property": "translate",
+          "property": "translate_rna",
           "strand": "AUGUUUUGG",
           "expected": ["Methionine","Phenylalanine","Tryptophan"]
         },
         {
           "description": "Translation stops if STOP codon present 1",
-          "property": "translate",
+          "property": "translate_rna",
           "strand": "AUGUUUUAA",
           "expected": ["Methionine","Phenylalanine"]
         },
         {
           "description": "Translation stops if codon present 2",
-          "property": "translate",
+          "property": "translate_rna",
           "strand": "UGGUGUUAUUAAUGGUUU",
           "expected": ["Tryptophan","Cysteine","Tyrosine"]
         },
         {
           "description": "Test invalid codons",
-          "property": "translate",
+          "property": "translate_codon",
           "strand": "CARROT",
           "expected": {
             "error": "Invalid nucleotide in strand"
