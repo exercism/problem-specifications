@@ -94,22 +94,22 @@
           "expected": ["Tryptophan"]
         },
         {
-          "description": "STOP codon RNA sequence",
+          "description": "STOP codon RNA sequence 1",
           "property": "translate",
           "strand": "UAA",
-          "expected": ["STOP"]
+          "expected": []
         },
         {
-          "description": "STOP codon RNA sequence",
+          "description": "STOP codon RNA sequence 2",
           "property": "translate",
           "strand": "UAG",
-          "expected": ["STOP"]
+          "expected": []
         },
         {
-          "description": "STOP codon RNA sequence",
+          "description": "STOP codon RNA sequence 3",
           "property": "translate",
           "strand": "UGA",
-          "expected": ["STOP"]
+          "expected": []
         },
         {
           "description": "Translate RNA strand into correct protein list",
@@ -121,13 +121,13 @@
           "description": "Translation stops if STOP codon at end of sequence",
           "property": "translate",
           "strand": "AUGUUUUAA",
-          "expected": ["Methionine","Phenylalanine", "STOP"]
+          "expected": ["Methionine","Phenylalanine"]
         },
         {
           "description": "Translation stops if codon in middle of sequence",
           "property": "translate",
           "strand": "UGGUGUUAUUAAUGGUUU",
-          "expected": ["Tryptophan","Cysteine","Tyrosine", "STOP"]
+          "expected": ["Tryptophan","Cysteine","Tyrosine"]
         },
         {
           "description": "Test invalid codons",
