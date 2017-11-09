@@ -11,131 +11,141 @@
       "cases": [
         {
           "description": "Methionine RNA sequence",
-          "property": "translate",
+          "property": "proteins",
           "strand": "AUG",
           "expected": ["Methionine"]
         },
         {
           "description": "Phenylalanine RNA sequence 1",
-          "property": "translate",
+          "property": "proteins",
           "strand": "UUU",
           "expected": ["Phenylalanine"]
         },
         {
           "description": "Phenylalanine RNA sequence 2",
-          "property": "translate",
+          "property": "proteins",
           "strand": "UUC",
           "expected": ["Phenylalanine"]
         },
         {
           "description": "Leucine RNA sequence 1",
-          "property": "translate",
+          "property": "proteins",
           "strand": "UUA",
           "expected": ["Leucine"]
         },
         {
           "description": "Leucine RNA sequence 2",
-          "property": "translate",
+          "property": "proteins",
           "strand": "UUG",
           "expected": ["Leucine"]
         },
         {
           "description": "Serine RNA sequence 1",
-          "property": "translate",
+          "property": "proteins",
           "strand": "UCU",
           "expected": ["Serine"]
         },
         {
           "description": "Serine RNA sequence 2",
-          "property": "translate",
+          "property": "proteins",
           "strand": "UCC",
           "expected": ["Serine"]
         },
         {
           "description": "Serine RNA sequence 3",
-          "property": "translate",
+          "property": "proteins",
           "strand": "UCA",
           "expected": ["Serine"]
         },
         {
           "description": "Serine RNA sequence 4",
-          "property": "translate",
+          "property": "proteins",
           "strand": "UCG",
           "expected": ["Serine"]
         },
         {
           "description": "Tyrosine RNA sequence 1",
-          "property": "translate",
+          "property": "proteins",
           "strand": "UAU",
           "expected": ["Tyrosine"]
         },
         {
           "description": "Tyrosine RNA sequence 2",
-          "property": "translate",
+          "property": "proteins",
           "strand": "UAC",
           "expected": ["Tyrosine"]
         },
         {
           "description": "Cysteine RNA sequence 1",
-          "property": "translate",
+          "property": "proteins",
           "strand": "UGU",
           "expected": ["Cysteine"]
         },
         {
           "description": "Cysteine RNA sequence 2",
-          "property": "translate",
+          "property": "proteins",
           "strand": "UGC",
           "expected": ["Cysteine"]
         },
         {
           "description": "Tryptophan RNA sequence",
-          "property": "translate",
+          "property": "proteins",
           "strand": "UGG",
           "expected": ["Tryptophan"]
         },
         {
           "description": "STOP codon RNA sequence 1",
-          "property": "translate",
+          "property": "proteins",
           "strand": "UAA",
           "expected": []
         },
         {
           "description": "STOP codon RNA sequence 2",
-          "property": "translate",
+          "property": "proteins",
           "strand": "UAG",
           "expected": []
         },
         {
           "description": "STOP codon RNA sequence 3",
-          "property": "translate",
+          "property": "proteins",
           "strand": "UGA",
           "expected": []
         },
         {
           "description": "Translate RNA strand into correct protein list",
-          "property": "translate",
+          "property": "proteins",
           "strand": "AUGUUUUGG",
           "expected": ["Methionine","Phenylalanine","Tryptophan"]
         },
         {
-          "description": "Translation stops if STOP codon at end of sequence",
-          "property": "translate",
+          "description": "Translation stops if STOP codon at beginning of sequence",
+          "property": "proteins",
+          "strand": "UAGUGG",
+          "expected": []
+        },
+        {
+          "description": "Translation stops if STOP codon at end of two-codon sequence",
+          "property": "proteins",
+          "strand": "UGGUAG",
+          "expected": ["Tryptophan"]
+        },
+        {
+          "description": "Translation stops if STOP codon at end of three-codon sequence",
+          "property": "proteins",
           "strand": "AUGUUUUAA",
           "expected": ["Methionine","Phenylalanine"]
         },
         {
-          "description": "Translation stops if codon in middle of sequence",
-          "property": "translate",
-          "strand": "UGGUGUUAUUAAUGGUUU",
-          "expected": ["Tryptophan","Cysteine","Tyrosine"]
+          "description": "Translation stops if STOP codon in middle of sequence of three-codon sequence",
+          "property": "proteins",
+          "strand": "UGGUAGUGG",
+          "expected": ["Tryptophan"]
         },
         {
-          "description": "Test invalid codons",
-          "property": "translate",
-          "strand": "CARROT",
-          "expected": {
-            "error": "Invalid nucleotide in strand"
-          }
+          "description": "Translation stops if codon in middle of sequence of six-codon sequence",
+          "property": "proteins",
+          "strand": "UGGUGUUAUUAAUGGUUU",
+          "expected": ["Tryptophan","Cysteine","Tyrosine"]
         }
       ]
     }
