@@ -30,7 +30,7 @@
       "expected": "!yrgnuh m'I"
     },
     {
-      "description": "a string that reads the same backward as forward (i.e. palindrome)",
+      "description": "a palindrome",
       "property": "reverse",
       "input": "racecar",
       "expected": "racecar"
