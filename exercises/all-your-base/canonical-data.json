@@ -1,6 +1,6 @@
 {
   "exercise": "all-your-base",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "comments": [
     "This canonical data makes the following choices:",
     "1. Zero is always represented in outputs as [0] instead of [].",
@@ -9,11 +9,6 @@
     "4. An empty sequence of input digits is considered zero, rather than an error.",
     "",
     "Tracks that wish to make different decisions for these choices may translate appropriately.",
-    "",
-    "It's up to each track do decide:",
-    "How should invalid input be handled?",
-    "",
-    "All the undefined cases are marked as null.",
     "",
     "All your numeric-base are belong to [2..]. :)"
   ],
@@ -120,7 +115,7 @@
       "input_base": 1,
       "input_digits": [],
       "output_base": 10,
-      "expected": null
+      "expected": {"error": "input base must be >= 2"}
     },
     {
       "description": "first base is zero",
@@ -128,7 +123,7 @@
       "input_base": 0,
       "input_digits": [],
       "output_base": 10,
-      "expected": null
+      "expected": {"error": "input base must be >= 2"}
     },
     {
       "description": "first base is negative",
@@ -136,7 +131,7 @@
       "input_base": -2,
       "input_digits": [1],
       "output_base": 10,
-      "expected": null
+      "expected": {"error": "input base must be >= 2"}
     },
     {
       "description": "negative digit",
@@ -144,7 +139,7 @@
       "input_base": 2,
       "input_digits": [1, -1, 1, 0, 1, 0],
       "output_base": 10,
-      "expected": null
+      "expected": {"error": "all digits must satisfy 0 <= d < input base"}
     },
     {
       "description": "invalid positive digit",
@@ -152,7 +147,7 @@
       "input_base": 2,
       "input_digits": [1, 2, 1, 0, 1, 0],
       "output_base": 10,
-      "expected": null
+      "expected": {"error": "all digits must satisfy 0 <= d < input base"}
     },
     {
       "description": "second base is one",
@@ -160,7 +155,7 @@
       "input_base": 2,
       "input_digits": [1, 0, 1, 0, 1, 0],
       "output_base": 1,
-      "expected": null
+      "expected": {"error": "output base must be >= 2"}
     },
     {
       "description": "second base is zero",
@@ -168,7 +163,7 @@
       "input_base": 10,
       "input_digits": [7],
       "output_base": 0,
-      "expected": null
+      "expected": {"error": "output base must be >= 2"}
     },
     {
       "description": "second base is negative",
@@ -176,7 +171,7 @@
       "input_base": 2,
       "input_digits": [1],
       "output_base": -7,
-      "expected": null
+      "expected": {"error": "output base must be >= 2"}
     },
     {
       "description": "both bases are negative",
@@ -184,7 +179,7 @@
       "input_base": -2,
       "input_digits": [1],
       "output_base": -7,
-      "expected": null
+      "expected": {"error": "input base must be >= 2"}
     }
   ]
 }
