@@ -1,23 +1,27 @@
 {
   "exercise": "all-your-base",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "comments": [
     "It's up to each track do decide:",
     "",
     "1. What's the canonical representation of zero?",
-    " - []?",
-    " - [0]?",
+    " - []? (if your track does this iff the input was empty, then follow if_your_track_translates_empty_to_empty)",
+    " - [0]? (if your track does this, then follow if_your_track_outputs_zero_as_a_single_zero)",
     "",
     "2. What representations of zero are allowed?",
-    " - []?",
-    " - [0]?",
-    " - [0,0]?",
+    " - []? (if your track allows this, then follow if_your_track_allows_empty_input_digits)",
+    " - [0]? (if your track allows this, then follow if_your_track_allows_single_zero_as_input)",
+    " - [0,0]? (if your track allows this, then follow if_your_track_allows_leading_zeroes_in_input)",
     "",
     "3. Are leading zeroes allowed?",
+    "If so then follow if_your_track_allows_leading_zeroes_in_input",
     "",
     "4. How should invalid input be handled?",
     "",
-    "All the undefined cases are marked as null.",
+    "All the undefined cases have objects under the `expected` key",
+    "showing the different possible choices one can take.",
+    "",
+    "todo: one could imagine an explanation of the choices object",
     "",
     "All your numeric-base are belong to [2..]. :)"
   ],
@@ -92,7 +96,18 @@
       "input_base": 2,
       "input_digits": [],
       "output_base": 10,
-      "expected": null
+      "expected": {
+        "choices": {
+          "if_your_track_allows_empty_input_digits": {
+            "choices": {
+              "if_your_track_translates_empty_to_empty": [],
+              "if_your_track_outputs_zero_as_a_single_zero": [0],
+              "otherwise": []
+            }
+          },
+          "otherwise": {"error": "input digits cannot be empty"}
+        }
+      }
     },
     {
       "description": "single zero",
@@ -100,7 +115,17 @@
       "input_base": 10,
       "input_digits": [0],
       "output_base": 2,
-      "expected": null
+      "expected": {
+        "choices": {
+          "if_your_track_allows_single_zero_as_input": {
+            "choices": {
+              "if_your_track_outputs_zero_as_a_single_zero": [0],
+              "otherwise": []
+            }
+          },
+          "otherwise": {"error": "leading zeroes not allowed"}
+        }
+      }
     },
     {
       "description": "multiple zeros",
@@ -108,7 +133,17 @@
       "input_base": 10,
       "input_digits": [0, 0, 0],
       "output_base": 2,
-      "expected": null
+      "expected": {
+        "choices": {
+          "if_your_track_allows_leading_zeroes_in_input": {
+            "choices": {
+              "if_your_track_outputs_zero_as_a_single_zero": [0],
+              "otherwise": []
+            }
+          },
+          "otherwise": {"error": "leading zeroes not allowed"}
+        }
+      }
     },
     {
       "description": "leading zeros",
@@ -116,7 +151,12 @@
       "input_base": 7,
       "input_digits": [0, 6, 0],
       "output_base": 10,
-      "expected": null
+      "expected": {
+        "choices": {
+          "if_your_track_allows_leading_zeroes_in_input": [4, 2],
+          "otherwise": {"error": "leading zeroes not allowed"}
+        }
+      }
     },
     {
       "description": "first base is one",
