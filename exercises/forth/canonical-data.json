@@ -1,6 +1,6 @@
 {
   "exercise": "forth",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "comments": [
     "The cases are split into multiple sections, all with the same structure.",
     "In all cases, the `expected` key is the resulting stack",
@@ -143,15 +143,15 @@
       "description": "dup",
       "cases": [
         {
-          "description": "copies the top value on the stack",
+          "description": "copies a value on the stack",
           "property": "evaluate",
-          "input": ["1 DUP"],
+          "input": ["1 dup"],
           "expected": [1, 1]
         },
         {
-          "description": "is case-insensitive",
+          "description": "copies the top value on the stack",
           "property": "evaluate",
-          "input": ["1 2 Dup"],
+          "input": ["1 2 dup"],
           "expected": [1, 2, 2]
         },
         {
@@ -303,6 +303,53 @@
           "property": "evaluate",
           "input": ["foo"],
           "expected": null
+        }
+      ]
+    },
+    {
+      "description": "case-insensitivity",
+      "cases": [
+        {
+          "description": "DUP is case-insensitive",
+          "property": "evaluate",
+          "input": ["1 DUP Dup dup"],
+          "expected": [1, 1, 1, 1]
+        },
+        {
+          "description": "DROP is case-insensitive",
+          "property": "evaluate",
+          "input": ["1 2 3 4 DROP Drop drop"],
+          "expected": [1]
+        },
+        {
+          "description": "SWAP is case-insensitive",
+          "property": "evaluate",
+          "input": ["1 2 SWAP 3 Swap 4 swap"],
+          "expected": [2, 3, 4, 1]
+        },
+        {
+          "description": "OVER is case-insensitive",
+          "property": "evaluate",
+          "input": ["1 2 OVER Over over"],
+          "expected": [1, 2, 1, 2, 1]
+        },
+        {
+          "description": "user-defined words are case-insensitive",
+          "property": "evaluate",
+          "input": [
+            ": foo dup ;",
+            "1 FOO Foo foo"
+          ],
+          "expected": [1, 1, 1, 1]
+        },
+        {
+          "description": "definitions are case-insensitive",
+          "property": "evaluate",
+          "input": [
+            ": SWAP DUP Dup dup ;",
+            "1 swap"
+          ],
+          "expected": [1, 1, 1, 1]
         }
       ]
     }
