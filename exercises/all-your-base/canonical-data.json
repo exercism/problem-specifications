@@ -1,21 +1,17 @@
 {
   "exercise": "all-your-base",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments": [
+    "This canonical data makes the following choices:",
+    "1. Zero is always represented in outputs as [0] instead of [].",
+    "2. In no other instances are leading zeroes present in any outputs.",
+    "3. Leading zeroes are accepted in inputs.",
+    "4. An empty sequence of input digits is considered zero, rather than an error.",
+    "",
+    "Tracks that wish to make different decisions for these choices may translate appropriately.",
+    "",
     "It's up to each track do decide:",
-    "",
-    "1. What's the canonical representation of zero?",
-    " - []?",
-    " - [0]?",
-    "",
-    "2. What representations of zero are allowed?",
-    " - []?",
-    " - [0]?",
-    " - [0,0]?",
-    "",
-    "3. Are leading zeroes allowed?",
-    "",
-    "4. How should invalid input be handled?",
+    "How should invalid input be handled?",
     "",
     "All the undefined cases are marked as null.",
     "",
@@ -92,7 +88,7 @@
       "input_base": 2,
       "input_digits": [],
       "output_base": 10,
-      "expected": null
+      "expected": [0]
     },
     {
       "description": "single zero",
@@ -100,7 +96,7 @@
       "input_base": 10,
       "input_digits": [0],
       "output_base": 2,
-      "expected": null
+      "expected": [0]
     },
     {
       "description": "multiple zeros",
@@ -108,7 +104,7 @@
       "input_base": 10,
       "input_digits": [0, 0, 0],
       "output_base": 2,
-      "expected": null
+      "expected": [0]
     },
     {
       "description": "leading zeros",
@@ -116,7 +112,7 @@
       "input_base": 7,
       "input_digits": [0, 6, 0],
       "output_base": 10,
-      "expected": null
+      "expected": [4, 2]
     },
     {
       "description": "first base is one",
