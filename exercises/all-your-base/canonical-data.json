@@ -1,6 +1,6 @@
 {
   "exercise": "all-your-base",
-  "version": "2.0.0",
+  "version": "1.2.0",
   "comments": [
     "This canonical data makes the following choices:",
     "1. Zero is always represented in outputs as [0] instead of [].",
@@ -9,6 +9,11 @@
     "4. An empty sequence of input digits is considered zero, rather than an error.",
     "",
     "Tracks that wish to make different decisions for these choices may translate appropriately.",
+    "",
+    "It's up to each track do decide:",
+    "How should invalid input be handled?",
+    "",
+    "All the undefined cases are marked as null.",
     "",
     "All your numeric-base are belong to [2..]. :)"
   ],
