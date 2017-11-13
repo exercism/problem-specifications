@@ -1,6 +1,6 @@
 {
   "exercise": "all-your-base",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "comments": [
     "This canonical data makes the following choices:",
     "1. Zero is always represented in outputs as [0] instead of [].",
@@ -110,7 +110,7 @@
       "expected": [4, 2]
     },
     {
-      "description": "first base is one",
+      "description": "input base is one",
       "property": "rebase",
       "input_base": 1,
       "input_digits": [],
@@ -118,7 +118,7 @@
       "expected": {"error": "input base must be >= 2"}
     },
     {
-      "description": "first base is zero",
+      "description": "input base is zero",
       "property": "rebase",
       "input_base": 0,
       "input_digits": [],
@@ -126,7 +126,7 @@
       "expected": {"error": "input base must be >= 2"}
     },
     {
-      "description": "first base is negative",
+      "description": "input base is negative",
       "property": "rebase",
       "input_base": -2,
       "input_digits": [1],
@@ -150,7 +150,7 @@
       "expected": {"error": "all digits must satisfy 0 <= d < input base"}
     },
     {
-      "description": "second base is one",
+      "description": "output base is one",
       "property": "rebase",
       "input_base": 2,
       "input_digits": [1, 0, 1, 0, 1, 0],
@@ -158,7 +158,7 @@
       "expected": {"error": "output base must be >= 2"}
     },
     {
-      "description": "second base is zero",
+      "description": "output base is zero",
       "property": "rebase",
       "input_base": 10,
       "input_digits": [7],
@@ -166,7 +166,7 @@
       "expected": {"error": "output base must be >= 2"}
     },
     {
-      "description": "second base is negative",
+      "description": "output base is negative",
       "property": "rebase",
       "input_base": 2,
       "input_digits": [1],
