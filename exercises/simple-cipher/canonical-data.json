@@ -23,10 +23,12 @@
           "input_key": "cipher.key",
           "output_string": "aaaaaaaaaa"
         },
-        "description": "It is reversible",
-        "property": "encode -> decode",
-        "input_encode": "plaintext string",
-        "output_decode": "plaintext string"
+        {
+          "description": "It is reversible",
+          "property": "encode -> decode",
+          "input_encode": "plaintext string",
+          "output_decode": "plaintext string"
+        }
       ]
     },
     {
@@ -114,4 +116,5 @@
         }
       ]
     }
+  ]
 }
