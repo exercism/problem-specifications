@@ -4,6 +4,7 @@
   "cases": [
     {
       "description": "Random key cipher",
+      "property": "random",
       "cases": [
         {
           "description": "It has a key made of letters",
@@ -33,6 +34,7 @@
     },
     {
       "description": "Incorrect key cipher",
+      "property": "incorrect",
       "cases": [
         {
           "description": "It throws an error with an all caps key",
@@ -56,6 +58,7 @@
     },
     {
       "description": "Substitution cipher",
+      "property": "substitution",
       "cipher_key_string": "abcdefgihj",
       "cases": [
         {
