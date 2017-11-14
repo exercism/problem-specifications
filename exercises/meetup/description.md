@@ -6,7 +6,7 @@ will take a description of a meetup date, and return the actual meetup date.
 Examples of general descriptions are:
 
 - The first Monday of January 2017
-- The third Tuesday of January 2017
+- The second Tuesday of January 2017
 - The wednesteenth of January 2017
 - The last Thursday of January 2017
 
