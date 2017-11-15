@@ -105,7 +105,7 @@ example, what kinds of implementation mistakes might this case help us find?
 
 There are also some convention about `expected` that you must follow:
 
-  - all keys should follow [lowerCamelCase](http://wiki.c2.com/?LowerCamelCase) convention.
+  - All keys should follow the [lowerCamelCase](http://wiki.c2.com/?LowerCamelCase) convention.
   - if the input is valid but there is no result for the input, the value at `"expected"` should be `null`.
   - if an error is expected (because the input is invalid, or any other reason), the value at `"expected"` should be an object containing exactly one property, `"error"`, whose value is a string.
     - The string should explain why the error would occur.
