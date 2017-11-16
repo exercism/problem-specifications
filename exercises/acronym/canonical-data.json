@@ -40,6 +40,12 @@
           "property": "abbreviate",
           "phrase": "Complementary metal-oxide semiconductor",
           "expected": "CMOS"
+        },
+        {
+          "description": "starting + ending white spaces",
+          "property": "abbreviate",
+          "phrase":    " \tUnusable   acronym over the years \n\t ",
+          "expected": "UAOTY"
         }
       ]
     }
