@@ -30,13 +30,13 @@ There are three metadata files:
 
 * `description.md` - the basic problem description
 * `metadata.yml` - additional information about the problem, such as where it came from
-* `canonical-data.json` (optional) - standardized test inputs and outputs that can be used to implement the problem
+* `canonical-data.json` - standardized test inputs and outputs that can be used to implement the problem
 
 ## Test Data Format (canonical-data.json)
 
 This data can be incorporated into test programs manually or extracted by a
 program.  The file format is described in `canonical-schema.json`, but it
-is easier to understand with a example:
+is easier to understand with an example:
 
 ```json
 { "exercise": "foobar"
@@ -103,11 +103,11 @@ Keep in mind that the description should not simply explain **what** each case
 is (that is redundant information) but also **why** each case is there. For
 example, what kinds of implementation mistakes might this case help us find?
 
-There are also some convention about `expected` that you must follow:
+There are also some conventions that must be followed:
 
   - All keys should follow the [lowerCamelCase](http://wiki.c2.com/?LowerCamelCase) convention.
-  - if the input is valid but there is no result for the input, the value at `"expected"` should be `null`.
-  - if an error is expected (because the input is invalid, or any other reason), the value at `"expected"` should be an object containing exactly one property, `"error"`, whose value is a string.
+  - If the input is valid but there is no result for the input, the value at `"expected"` should be `null`.
+  - If an error is expected (because the input is invalid, or any other reason), the value at `"expected"` should be an object containing exactly one property, `"error"`, whose value is a string.
     - The string should explain why the error would occur.
     - A particular track's implementation of the exercise **need not** necessarily check that the error includes that exact string as the cause, depending on what is idiomatic in the language (it may not be idiomatic to check strings for error messages).
 
@@ -165,7 +165,7 @@ PATCH changes would never break well-designed test generators, because the test 
 
 ## Automated Tests
 
-`canonical-data.json` for each exercise is checked for compliancy against the [canonical-schema.json](canonical-schema.json).
+`canonical-data.json` for each exercise is checked for compliance against the [canonical-schema.json](canonical-schema.json).
 In order to run these tests, you will need to have `node` and `npm` installed on your system.
 Install them from [here](https://nodejs.org/en/). (`npm` comes bundled with most installations of `node`).
 
