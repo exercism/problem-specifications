@@ -1,0 +1,4 @@
+---
+blurb: "Given two decimal parameters (number and base) return True if the number 'number' is an armstrong number with respect to the numeral system with base 'base'."
+source: "Wikipedia"
+source_url: "https://en.wikipedia.org/wiki/Narcissistic_number"
