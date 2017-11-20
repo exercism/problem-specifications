@@ -1,6 +1,6 @@
 {
   "exercise": "protein-translation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "cases": [
     {
       "description": "Translate input RNA sequences into proteins",
