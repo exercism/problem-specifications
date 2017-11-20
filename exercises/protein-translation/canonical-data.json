@@ -142,7 +142,7 @@
           "expected": ["Tryptophan"]
         },
         {
-          "description": "Translation stops if codon in middle of six-codon sequence",
+          "description": "Translation stops if STOP codon in middle of six-codon sequence",
           "property": "proteins",
           "strand": "UGGUGUUAUUAAUGGUUU",
           "expected": ["Tryptophan","Cysteine","Tyrosine"]
