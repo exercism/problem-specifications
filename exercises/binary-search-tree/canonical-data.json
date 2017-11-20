@@ -2,67 +2,153 @@
     "exercise": "binary-search-tree",
     "version": "1.0.0",
     "comments": [
-        "For simplicity only positive integer is considered as valid data,",
-        "null should be replaced by the respective language equivalent or -1",
-        "if the language does not have any.",
-
-        "The purpose of ths exercise is to create a data structure which",
-        "makes sure the data is always sorted, hence the exercise should",
-        "not make use of any sort() functions or sorting algorithms."
+        "Each test case assumes an empty/new tree.",
+        "The key 'tree_data' represents an array of numbers the data should be ",
+        "inserted/added to the tree as it appears in the array from left to right.",
+        "e.g. tree_data: ['2', '1', '3', '6', '7', '5']",
+        "Insert 2. Insert 1. Insert 3. Insert 6, so on...",
+        "The key 'expected' represents tree state as JSON object of schema :",
+        "{",
+        "    'title':'nodeObject',",
+        "    'type':'object',",
+        "    'properties':{",
+        "        'data':{",
+        "            'type':'string'",
+        "        },",
+        "        'left':{",
+        "            'type':'nodeObject'",
+        "        },",
+        "        'right':{",
+        "            'type':'nodeObject'",
+        "        }",
+        "    },",
+        "    'required':['data', 'left', 'right']",
+        "}"
     ],
     "cases": [{
-            "description": "insert invalid/null data into the tree",
-            "property": "insert",
-            "value": null,
-            "expected": false
+            "description": "data is retained",
+            "property": "data",
+            "tree_data": ["4"],
+            "expected": {
+                "data": "4",
+                "left": null,
+                "right": null
+            }
         },
         {
-            "description": "insert a number into the tree",
-            "property": "insert",
-            "value": 6,
-            "expected": true
+            "description": "insert data at proper node",
+            "cases": [{
+                    "description": "smaller number at left node",
+                    "property": "data",
+                    "tree_data": ["4", "2"],
+                    "expected": {
+                        "data": "4",
+                        "left": {
+                            "data": "2",
+                            "left": null,
+                            "right": null
+                        },
+                        "right": null
+                    }
+                },
+                {
+                    "description": "same number at left node",
+                    "property": "data",
+                    "node": "root->left",
+                    "tree_data": ["4", "4"],
+                    "expected": {
+                        "data": "4",
+                        "left": {
+                            "data": "4",
+                            "left": null,
+                            "right": null
+                        },
+                        "right": null
+                    }
+                },
+                {
+                    "description": "greater number at right node",
+                    "property": "data",
+                    "tree_data": ["4", "5"],
+                    "expected": {
+                        "data": "4",
+                        "left": null,
+                        "right": {
+                            "data": "5",
+                            "left": null,
+                            "right": null
+                        }
+                    }
+                }
+            ]
         },
         {
-            "description": "insert a number that already exist",
-            "property": "insert",
-            "value": 6,
-            "expected": false
+            "description": "can create complex tree",
+            "property": "data",
+            "tree_data": ["4", "2", "6", "1", "3", "5", "7"],
+            "expected": {
+                "data": "4",
+                "left": {
+                    "data": "2",
+                    "left": {
+                        "data": "1",
+                        "left": null,
+                        "right": null
+                    },
+                    "right": {
+                        "data": "3",
+                        "left": null,
+                        "right": null
+                    }
+                },
+                "right": {
+                    "data": "6",
+                    "left": {
+                        "data": "5",
+                        "left": null,
+                        "right": null
+                    },
+                    "right": {
+                        "data": "7",
+                        "left": null,
+                        "right": null
+                    }
+                }
+            }
         },
         {
-            "description": "search invalid/null data",
-            "property": "search",
-            "value": null,
-            "expected": false
-        },
-        {
-            "description": "search a number that exists",
-            "property": "search",
-            "value": 6,
-            "expected": true
-        },
-        {
-            "description": "search a number that does not exist",
-            "property": "search",
-            "value": 11,
-            "expected": false
-        },
-        {
-            "description": "traverse the data in ascending order",
-            "property": "ascendingOrder",
-            "comments": [
-                "Assuming the data is entered in this order :",
-                "6 -> 1 -> 3 -> 2 -> 5"
-            ],
-            "expected": [1, 2, 3, 5, 6]
-        },
-        {
-            "description": "traverse the data in descending order",
-            "property": "descendingOrder",
-            "comments": [
-                "Assuming the data is entered in this order :",
-                "6 -> 1 -> 3 -> 2 -> 5"
-            ],
-            "expected": [6, 5, 3, 2, 1]
+            "description": "can sort data",
+            "cases": [{
+                    "description": "can sort single number",
+                    "property": "sortedData",
+                    "tree_data": ["2"],
+                    "expected": ["2"]
+                },
+                {
+                    "description": "can sort if second number is smaller than first",
+                    "property": "sortedData",
+                    "tree_data": ["2", "1"],
+                    "expected": ["1", "2"]
+                },
+                {
+                    "description": "can sort if second number is same as first",
+                    "property": "sortedData",
+                    "tree_data": ["2", "2"],
+                    "expected": ["2", "2"]
+                },
+                {
+                    "description": "can sort if second number is greater than first",
+                    "property": "sortedData",
+                    "tree_data": ["2", "3"],
+                    "expected": ["2", "3"]
+                },
+                {
+                    "description": "can sort complex tree",
+                    "property": "sortedData",
+                    "tree_data": ["2", "1", "3", "6", "7", "5"],
+                    "expected": ["1", "2", "3", "5", "6", "7"]
+                }
+            ]
         }
     ]
 }
