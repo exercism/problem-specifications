@@ -2,7 +2,7 @@
   "exercise": "armstrong-number",
   "version": "1.0.0",
   "comments": [
-    "Both input-parameters are always given in base-10(decimal)."
+    "Both input-parameters are always given in base-10 (decimal)."
   ],
   "cases": [
     {
