@@ -1,13 +1,6 @@
 The [ISBN-10 verification process](https://en.wikipedia.org/wiki/International_Standard_Book_Number) is used to validate book identification
 numbers.
 
-## Functionality
-
-Given an unknown string the program should check if the provided string is a valid ISBN-10.
-Putting this into place requires some thinking about preprocessing/parsing of the string prior to calculating the check digit for the ISBN.
-
-The program should allow for ISBN-10 both with and without separating dashes to be verified. For example, `3-598-21508-8` and `3598215088`.
-
 ## ISBN
 
 The ISBN-10 format is 9 digits (0 to 9) plus one check character (either a digit or an X only). In the case the check character is an X, this represents the value '10'. These may be communicated with or without hyphens, and can be checked for their validity by the following formula:
@@ -26,6 +19,14 @@ Let's take the ISBN-10 `3-598-21508-8`. We plug it in to the formula, and get:
 ```
 
 Since the result is 0, this proves that our ISBN is valid.
+
+## Test
+
+Given an unknown string the program should check if the provided string is a valid ISBN-10.
+Putting this into place requires some thinking about preprocessing/parsing of the string prior to calculating the check digit for the ISBN.
+
+The program should allow for ISBN-10 both with and without separating dashes to be verified. For example, `3-598-21508-8` and `3598215088`.
+
 
 ## Caveats
 
