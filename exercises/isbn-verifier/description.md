@@ -1,4 +1,4 @@
-The [ISBN-10 verification process](https://en.wikipedia.org/wiki/International_Standard_Book_Number) is mostly used to validate book identification
+The [ISBN-10 verification process](https://en.wikipedia.org/wiki/International_Standard_Book_Number) is used to validate book identification
 numbers.
 
 ## Functionality
