@@ -1,5 +1,5 @@
-The [ISBN-10 verification process](http://www.hahnlibrary.net/libraries/isbncalc.html) is mostly used to validate book identification
-numbers. More information on ISBN can be found [here](https://en.wikipedia.org/wiki/International_Standard_Book_Number).
+The [ISBN-10 verification process](https://en.wikipedia.org/wiki/International_Standard_Book_Number) is mostly used to validate book identification
+numbers.
 
 ## Functionality
 
