@@ -1,7 +1,5 @@
-Given a number, check if a given ISBN-10 is valid.
-
-The [ISBN-10 verification process](http://www.hahnlibrary.net/libraries/isbncalc.html) requires use of a simple formula, and is mostly used to validate book identification
-numbers.
+The [ISBN-10 verification process](http://www.hahnlibrary.net/libraries/isbncalc.html) is mostly used to validate book identification
+numbers. More information on ISBN can be found [here](https://en.wikipedia.org/wiki/International_Standard_Book_Number).
 
 ## Functionality
 
@@ -22,12 +20,7 @@ If the result is 0, then it is a valid ISBN-10, otherwise it is invalid.
 
 ## Example
 
-Let's take a random ISBN-10 number, for instance `3-598-21508-8`.
-The first digit block indicates the group where the ISBN belongs. Groups can consist of shared languages, geographic regions or countries. The leading '3' signals this ISBN is from a german speaking country.
-The following number block is to identify the publisher. Since this is a three digit publisher number there is a 5 digit title number for this book.
-The last digit in the ISBN is the check digit which is used to detect read errors.
-
-So for our example ISBN this means:
+Let's take the ISBN-10 `3-598-21508-8`. We plug it in to the formula, and get:
 ```
 (3 * 10 + 5 * 9 + 9 * 8 + 8 * 7 + 2 * 6 + 1 * 5 + 5 * 4 + 0 * 3 + 8 * 2 + 8 * 1) mod 11 = 0
 ```
