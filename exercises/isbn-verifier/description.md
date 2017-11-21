@@ -1,5 +1,5 @@
 The [ISBN-10 verification process](https://en.wikipedia.org/wiki/International_Standard_Book_Number) is used to validate book identification
-numbers.
+numbers. These normally contain dashes and look like: `3-598-21508-8`
 
 ## ISBN
 
@@ -25,7 +25,7 @@ Since the result is 0, this proves that our ISBN is valid.
 Given an unknown string the program should check if the provided string is a valid ISBN-10.
 Putting this into place requires some thinking about preprocessing/parsing of the string prior to calculating the check digit for the ISBN.
 
-The program should allow for ISBN-10 both with and without separating dashes to be verified. For example, `3-598-21508-8` and `3598215088`.
+The program should allow for ISBN-10 both with and without separating dashes to be verified.
 
 
 ## Caveats
