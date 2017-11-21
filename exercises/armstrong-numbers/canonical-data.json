@@ -177,15 +177,6 @@
       "expected": true
     },
     {
-      "description": "10 is not an Armstrong number in base 8",
-      "property": "armstrong",
-      "input": {
-        "number": 10,
-        "base": 8
-      },
-      "expected": false
-    },
-    {
       "description": "10 is an Armstrong number in base 16",
       "property": "armstrong",
       "input": {
