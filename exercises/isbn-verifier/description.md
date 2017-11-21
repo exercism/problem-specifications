@@ -30,7 +30,7 @@ Since the result is 0, this proves that our ISBN is valid.
 ## Caveats
 
 Converting from strings to numbers can be tricky in certain languages.
-Now, it's even trickier since the check digit of an ISBN-10 may be 'X' (representing '10').
+Now, it's even trickier since the check digit of an ISBN-10 may be 'X' (representing '10'). For instance `3-598-21507-X` is a valid ISBN-10.
 
 ## Bonus tasks
 
