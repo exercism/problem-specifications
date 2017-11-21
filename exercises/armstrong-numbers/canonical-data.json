@@ -60,15 +60,6 @@
       "expected": false
     },
     {
-      "description": "111 is not an Armstrong number in base 10",
-      "property": "armstrong",
-      "input": {
-        "number": 111,
-        "base": 10
-      },
-      "expected": false
-    },
-    {
       "description": "153 is an Armstrong number in base 10",
       "property": "armstrong",
       "input": {
