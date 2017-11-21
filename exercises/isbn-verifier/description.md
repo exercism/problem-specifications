@@ -20,9 +20,9 @@ Let's take the ISBN-10 `3-598-21508-8`. We plug it in to the formula, and get:
 
 Since the result is 0, this proves that our ISBN is valid.
 
-## Test
+## Task
 
-Given an unknown string the program should check if the provided string is a valid ISBN-10.
+Given a string the program should check if the provided string is a valid ISBN-10.
 Putting this into place requires some thinking about preprocessing/parsing of the string prior to calculating the check digit for the ISBN.
 
 The program should allow for ISBN-10 both with and without separating dashes to be verified.
