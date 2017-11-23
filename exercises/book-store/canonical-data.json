@@ -1,13 +1,13 @@
 {
   "exercise": "book-store",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "cases": [
     {
       "description": "Return the total basket price after applying the best discount.",
       "comments": [
         "Calculate lowest price for a shopping basket containing books only from ",
         "a single series.  There is no discount advantage for having more than ",
-        "one copy of any single book in a grouping."      
+        "one copy of any single book in a grouping."
       ],
       "cases": [
         {
@@ -100,6 +100,13 @@
          "basket": [1,1,2,2,3,3,4,4,5,5,1,2],
          "targetgrouping": [[1,2,3,4,5],[1,2,3,4,5],[1,2]],
          "expected": 75.20
+        },
+        {
+         "property": "total",
+         "description": "Two moves are required to find minimal price",
+         "basket": [1,1,2,2,3,3,4,5,1,1,2,2,3,3,4,5],
+         "targetgrouping": [[1,2,3,4],[1,2,3,5],[1,2,3,4],[1,2,3,5]],
+         "expected": 102.4
         }
      ]
     }
