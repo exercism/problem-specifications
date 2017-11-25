@@ -111,6 +111,15 @@
         "large": 2,
         "and": 1
       }
+    },
+    {
+      "description": "with multiple whitespace",
+      "property": "countwords",
+      "input": " multiple   whitespaces",
+      "expected": {
+        "multiple": 1,
+        "whitespaces": 1
+      }
     }
   ]
 }
