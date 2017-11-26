@@ -1,189 +1,86 @@
 {
   "exercise": "armstrong-number",
   "version": "1.0.0",
-  "comments": [
-    "Both input-parameters are always given in base-10 (decimal)."
-  ],
   "cases": [
     {
-      "description": "0 is an Armstrong number in base 10",
+      "description": "0 is an Armstrong number",
       "property": "armstrong",
       "input": {
-        "number": 0,
-        "base": 10
+        "number": 0
       },
       "expected": true
     },
     {
-      "description": "1 is an Armstrong number in base 10",
+      "description": "1 is an Armstrong number",
       "property": "armstrong",
       "input": {
-        "number": 1,
-        "base": 10
+        "number": 1
       },
       "expected": true
     },
     {
-      "description": "2 is an Armstrong number in base 10",
+      "description": "9 is an Armstrong number",
       "property": "armstrong",
       "input": {
-        "number": 2,
-        "base": 10
+        "number": 9
       },
       "expected": true
     },
     {
-      "description": "9 is an Armstrong number in base 10",
+      "description": "10 is not an Armstrong number",
       "property": "armstrong",
       "input": {
-        "number": 9,
-        "base": 10
-      },
-      "expected": true
-    },
-    {
-      "description": "10 is not an Armstrong number in base 10",
-      "property": "armstrong",
-      "input": {
-        "number": 10,
-        "base": 10
+        "number": 10
       },
       "expected": false
     },
     {
-      "description": "100 is not an Armstrong number in base 10",
+      "description": "100 is not an Armstrong number",
       "property": "armstrong",
       "input": {
-        "number": 100,
-        "base": 10
+        "number": 100
       },
       "expected": false
     },
     {
-      "description": "153 is an Armstrong number in base 10",
+      "description": "153 is an Armstrong number",
       "property": "armstrong",
       "input": {
-        "number": 153,
-        "base": 10
+        "number": 153
       },
       "expected": true
     },
     {
-      "description": "370 is an Armstrong number in base 10",
+      "description": "370 is an Armstrong number",
       "property": "armstrong",
       "input": {
-        "number": 370,
-        "base": 10
+        "number": 370
       },
       "expected": true
     },
     {
-      "description": "9474 is an Armstrong number in base 10",
+      "description": "9474 is an Armstrong number",
       "property": "armstrong",
       "input": {
-        "number": 9474,
-        "base": 10
+        "number": 9474
       },
       "expected": true
     },
     {
-      "description": "0 is an Armstrong number in base 8",
+      "description": "9926314 is not an Armstrong number",
       "property": "armstrong",
       "input": {
-        "number": 0,
-        "base": 8
-      },
-      "expected": true
-    },
-    {
-      "description": "1 is an Armstrong number in base 8",
-      "property": "armstrong",
-      "input": {
-        "number": 1,
-        "base": 8
-      },
-      "expected": true
-    },
-    {
-      "description": "2 is an Armstrong number in base 8",
-      "property": "armstrong",
-      "input": {
-        "number": 2,
-        "base": 8
-      },
-      "expected": true
-    },
-    {
-      "description": "7 is an Armstrong number in base 8",
-      "property": "armstrong",
-      "input": {
-        "number": 7,
-        "base": 8
-      },
-      "expected": true
-    },
-    {
-      "description": "10 is not an Armstrong number in base 8",
-      "property": "armstrong",
-      "input": {
-        "number": 10,
-        "base": 8
+        "number": 9926314
       },
       "expected": false
     },
     {
-      "description": "432 is an Armstrong number in base 8",
+      "description": "9926315 is an Armstrong number",
       "property": "armstrong",
       "input": {
-        "number": 432,
-        "base": 8
+        "number": 9926315
       },
       "expected": true
-    },
-    {
-      "description": "2 is an Armstrong number in base 3",
-      "property": "armstrong",
-      "input": {
-        "number": 2,
-        "base": 3
-      },
-      "expected": true
-    },
-    {
-      "description": "4 is not an Armstrong number in base 3",
-      "property": "armstrong",
-      "input": {
-        "number": 4,
-        "base": 3
-      },
-      "expected": false
-    },
-    {
-      "description": "17 is an Armstrong number in base 3",
-      "property": "armstrong",
-      "input": {
-        "number": 17,
-        "base": 3
-      },
-      "expected": true
-    },
-    {
-      "description": "10 is an Armstrong number in base 16",
-      "property": "armstrong",
-      "input": {
-        "number": 10,
-        "base": 16
-      },
-      "expected": true
-    },
-    {
-      "description": "10 is not an Armstrong number in base 3",
-      "property": "armstrong",
-      "input": {
-        "number": 10,
-        "base": 3
-      },
-      "expected": false
     }
   ]
 }
