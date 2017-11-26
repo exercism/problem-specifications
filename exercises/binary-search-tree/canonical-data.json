@@ -62,7 +62,6 @@
                 {
                     "description": "same number at left node",
                     "property": "data",
-                    "node": "root->left",
                     "input": {
                         "tree_data": ["4", "4"]
                     },
