@@ -103,7 +103,7 @@
         },
         {
          "property": "total",
-         "description": "Two moves are required to find minimal price",
+         "description": "Four groups of four are cheaper than two groups each of five and three",
          "basket": [1,1,2,2,3,3,4,5,1,1,2,2,3,3,4,5],
          "targetgrouping": [[1,2,3,4],[1,2,3,5],[1,2,3,4],[1,2,3,5]],
          "expected": 102.4
