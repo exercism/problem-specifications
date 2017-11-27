@@ -1,10 +1,10 @@
 {
-  "exercise": "armstrong-number",
+  "exercise": "armstrong-numbers",
   "version": "1.0.0",
   "cases": [
     {
       "description": "0 is an Armstrong number",
-      "property": "armstrong",
+      "property": "isArmstrongNumber",
       "input": {
         "number": 0
       },
@@ -12,7 +12,7 @@
     },
     {
       "description": "1 is an Armstrong number",
-      "property": "armstrong",
+      "property": "isArmstrongNumber",
       "input": {
         "number": 1
       },
@@ -20,7 +20,7 @@
     },
     {
       "description": "9 is an Armstrong number",
-      "property": "armstrong",
+      "property": "isArmstrongNumber",
       "input": {
         "number": 9
       },
@@ -28,7 +28,7 @@
     },
     {
       "description": "10 is not an Armstrong number",
-      "property": "armstrong",
+      "property": "isArmstrongNumber",
       "input": {
         "number": 10
       },
@@ -36,7 +36,7 @@
     },
     {
       "description": "100 is not an Armstrong number",
-      "property": "armstrong",
+      "property": "isArmstrongNumber",
       "input": {
         "number": 100
       },
@@ -44,7 +44,7 @@
     },
     {
       "description": "153 is an Armstrong number",
-      "property": "armstrong",
+      "property": "isArmstrongNumber",
       "input": {
         "number": 153
       },
@@ -52,7 +52,7 @@
     },
     {
       "description": "370 is an Armstrong number",
-      "property": "armstrong",
+      "property": "isArmstrongNumber",
       "input": {
         "number": 370
       },
@@ -60,7 +60,7 @@
     },
     {
       "description": "9474 is an Armstrong number",
-      "property": "armstrong",
+      "property": "isArmstrongNumber",
       "input": {
         "number": 9474
       },
@@ -68,7 +68,7 @@
     },
     {
       "description": "9926314 is not an Armstrong number",
-      "property": "armstrong",
+      "property": "isArmstrongNumber",
       "input": {
         "number": 9926314
       },
@@ -76,7 +76,7 @@
     },
     {
       "description": "9926315 is an Armstrong number",
-      "property": "armstrong",
+      "property": "isArmstrongNumber",
       "input": {
         "number": 9926315
       },
