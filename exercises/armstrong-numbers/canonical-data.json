@@ -1,6 +1,7 @@
 {
   "exercise": "armstrong-numbers",
   "version": "1.0.0",
+  "description": "There are no 2 digit Armstrong numbers",
   "cases": [
     {
       "description": "0 is an Armstrong number",
