@@ -3,26 +3,10 @@
   "version": "1.0.0",
   "cases": [
     {
-      "description": "0 is an Armstrong number",
+      "description": "Single digit numbers are Armstrong numbers",
       "property": "isArmstrongNumber",
       "input": {
-        "number": 0
-      },
-      "expected": true
-    },
-    {
-      "description": "1 is an Armstrong number",
-      "property": "isArmstrongNumber",
-      "input": {
-        "number": 1
-      },
-      "expected": true
-    },
-    {
-      "description": "9 is an Armstrong number",
-      "property": "isArmstrongNumber",
-      "input": {
-        "number": 9
+        "number": 5
       },
       "expected": true
     },
