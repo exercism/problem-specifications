@@ -54,7 +54,7 @@
       "description": "forceful question",
       "property": "response",
       "input": "WHAT THE HELL WERE YOU THINKING?",
-      "expected": "Whoa, chill out!"
+      "expected": "Calm down, I know what I'm doing!"
     },
     {
       "description": "shouting numbers",
