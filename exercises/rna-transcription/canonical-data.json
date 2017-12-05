@@ -48,19 +48,19 @@
       "description": "correctly handles invalid input (RNA instead of DNA)",
       "property": "toRna",
       "dna": "U",
-      "expected": null
+      "expected": {"error": "invalid input"}
     },
     {
       "description": "correctly handles completely invalid DNA input",
       "property": "toRna",
       "dna": "XXX",
-      "expected": null
+      "expected": {"error": "invalid input"}
     },
     {
       "description": "correctly handles partially invalid DNA input",
       "property": "toRna",
       "dna": "ACGTXXXCTTAA",
-      "expected": null
+      "expected": {"error": "invalid input"}
     }
   ]
 }
