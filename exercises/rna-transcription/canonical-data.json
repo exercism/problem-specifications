@@ -1,18 +1,6 @@
 {
   "exercise": "rna-transcription",
-  "version": "1.0.1",
-  "comments": [
-    "Language implementations vary on the issue of invalid input data.",
-    "A language may elect to simplify this task by only presenting valid",
-    "test cases.  For languages handling invalid input data as",
-    "error conditions, invalid test cases are included here and are",
-    "indicated with an expected value of null.  Note however that null is",
-    "simply an indication here in the JSON.  Actually returning null from",
-    "a rna-transcription function may or may not be idiomatic in a language.",
-    "Language idioms of errors or exceptions should be followed.",
-    "Alternative interpretations such as ignoring excess length at the end",
-    "are not represented here."
-  ],
+  "version": "1.1.0",
   "cases": [
     {
       "description": "RNA complement of cytosine is guanine",
