@@ -71,8 +71,10 @@ is easier to understand with an example:
       }
     , { "description": "Bar'ing a name returns its parts combined"
       , "property"   : "bar"
-      , "firstName"  : "Alan"
-      , "lastName"   : "Smithee"
+      , "input"      : {
+          "firstName"  : "Alan",
+          "lastName"   : "Smithee"
+        }  
       , "expected"   : "ASlmainthee"
       }
     , { "comments":
@@ -88,8 +90,10 @@ is easier to understand with an example:
             }
           , { "description": "Bar'ing a name with numbers gives an error"
             , "property"   : "bar"
-            , "firstName"  : "HAL"
-            , "lastName"   : "9000"
+            , "input"      : {
+                "firstName"  : "HAL",
+                "lastName"   : "9000"
+              }  
             , "expected"   : { "error": "You should never bar a number" }
             }
           ]
