@@ -1,6 +1,6 @@
 {
   "exercise": "alphametics",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "cases": [
     {
       "description": "Solve the alphametics puzzle",
@@ -8,7 +8,9 @@
         {
           "description": "puzzle with three letters",
           "property": "solve",
-          "puzzle": "I + BB == ILL",
+          "input": {
+            "puzzle": "I + BB == ILL"
+          },
           "expected": {
             "I": 1,
             "B": 9,
@@ -18,19 +20,25 @@
         {
           "description": "solution must have unique value for each letter",
           "property": "solve",
-          "puzzle": "A == B",
+          "input": {
+            "puzzle": "A == B"
+          },
           "expected": null
         },
         {
           "description": "leading zero solution is invalid",
           "property": "solve",
-          "puzzle": "ACA + DD == BD",
+          "input": {
+            "puzzle": "ACA + DD == BD"
+          },
           "expected": null
         },
         {
           "description": "puzzle with four letters",
           "property": "solve",
-          "puzzle": "AS + A == MOM",
+          "input": {
+            "puzzle": "AS + A == MOM"
+          },
           "expected": {
             "A": 9,
             "S": 2,
@@ -41,7 +49,9 @@
         {
           "description": "puzzle with six letters",
           "property": "solve",
-          "puzzle": "NO + NO + TOO == LATE",
+          "input": {
+            "puzzle": "NO + NO + TOO == LATE"
+          },
           "expected": {
             "N": 7,
             "O": 4,
@@ -54,7 +64,9 @@
         {
           "description": "puzzle with seven letters",
           "property": "solve",
-          "puzzle": "HE + SEES + THE == LIGHT",
+          "input": {
+            "puzzle": "HE + SEES + THE == LIGHT"
+          },
           "expected": {
             "E": 4,
             "G": 2,
@@ -68,7 +80,9 @@
         {
           "description": "puzzle with eight letters",
           "property": "solve",
-          "puzzle": "SEND + MORE == MONEY",
+          "input": {
+            "puzzle": "SEND + MORE == MONEY"
+          },
           "expected": {
             "S": 9,
             "E": 5,
@@ -83,7 +97,9 @@
         {
           "description": "puzzle with ten letters",
           "property": "solve",
-          "puzzle": "AND + A + STRONG + OFFENSE + AS + A + GOOD == DEFENSE",
+          "input": {
+            "puzzle": "AND + A + STRONG + OFFENSE + AS + A + GOOD == DEFENSE"
+          },
           "expected": {
             "A": 5,
             "D": 3,
