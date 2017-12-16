@@ -1,95 +1,125 @@
 {
   "exercise": "binary",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "cases": [
     {
       "description": "binary 0 is decimal 0",
       "property": "decimal",
-      "binary": "0",
+      "input": {
+        "binary": "0"
+      },
       "expected": 0
     },
     {
       "description": "binary 1 is decimal 1",
       "property": "decimal",
-      "binary": "1",
+      "input": {
+        "binary": "1"
+      },
       "expected": 1
     },
     {
       "description": "binary 10 is decimal 2",
       "property": "decimal",
-      "binary": "10",
+      "input": {
+        "binary": "10"
+      },
       "expected": 2
     },
     {
       "description": "binary 11 is decimal 3",
       "property": "decimal",
-      "binary": "11",
+      "input": {
+        "binary": "11"
+      },
       "expected": 3
     },
     {
       "description": "binary 100 is decimal 4",
       "property": "decimal",
-      "binary": "100",
+      "input": {
+        "binary": "100"
+      },
       "expected": 4
     },
     {
       "description": "binary 1001 is decimal 9",
       "property": "decimal",
-      "binary": "1001",
+      "input": {
+        "binary": "1001"
+      },
       "expected": 9
     },
     {
       "description": "binary 11010 is decimal 26",
       "property": "decimal",
-      "binary": "11010",
+      "input": {
+        "binary": "11010"
+      },
       "expected": 26
     },
     {
       "description": "binary 10001101000 is decimal 1128",
       "property": "decimal",
-      "binary": "10001101000",
+      "input": {
+        "binary": "10001101000"
+      },
       "expected": 1128
     },
     {
       "description": "binary ignores leading zeros",
       "property": "decimal",
-      "binary": "000011111",
+      "input": {
+        "binary": "000011111"
+      },
       "expected": 31
     },
     {
       "description": "2 is not a valid binary digit",
       "property": "decimal",
-      "binary": "2",
+      "input": {
+        "binary": "2"
+      },
       "expected": null
     },
     {
       "description": "a number containing a non-binary digit is invalid",
       "property": "decimal",
-      "binary": "01201",
+      "input": {
+        "binary": "01201"
+      },
       "expected": null
     },
     {
       "description": "a number with trailing non-binary characters is invalid",
       "property": "decimal",
-      "binary": "10nope",
+      "input": {
+        "binary": "10nope"
+      },
       "expected": null
     },
     {
       "description": "a number with leading non-binary characters is invalid",
       "property": "decimal",
-      "binary": "nope10",
+      "input": {
+        "binary": "nope10"
+      },
       "expected": null
     },
     {
       "description": "a number with internal non-binary characters is invalid",
       "property": "decimal",
-      "binary": "10nope10",
+      "input": {
+        "binary": "10nope10"
+      },
       "expected": null
     },
     {
       "description": "a number and a word whitespace spearated is invalid",
       "property": "decimal",
-      "binary": "001 nope",
+      "input": {
+        "binary": "001 nope"
+      },
       "expected": null
     }
   ]
