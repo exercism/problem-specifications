@@ -115,7 +115,7 @@
       "expected": null
     },
     {
-      "description": "a number and a word whitespace spearated is invalid",
+      "description": "a number and a word whitespace separated is invalid",
       "property": "decimal",
       "input": {
         "binary": "001 nope"
