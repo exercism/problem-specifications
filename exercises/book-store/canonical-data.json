@@ -1,6 +1,6 @@
 {
   "exercise": "book-store",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "cases": [
     {
       "description": "Return the total basket price after applying the best discount.",
@@ -13,99 +13,127 @@
         {
          "property": "total",
          "description": "Only a single book",
-         "basket": [1],
-         "targetgrouping": [[1]],
+         "comments": ["Suggested grouping, [[1]]."],
+         "input": {
+           "basket": [1]
+         },
          "expected": 8.00
         },
         {
          "property": "total",
          "description": "Two of the same book",
-         "basket": [2,2],
-         "targetgrouping": [[2],[2]],
+         "comments": ["Suggested grouping, [[2],[2]]."],
+         "input": {
+           "basket": [2,2]
+         },
          "expected": 16.00
         },
         {
          "property": "total",
          "description": "Empty basket",
-         "basket": [],
-         "targetgrouping": [],
+         "comments": ["Suggested grouping, []."],
+         "input": {
+           "basket": []
+         },
          "expected": 0.00
         },
         {
          "property": "total",
          "description": "Two different books",
-         "basket": [1,2],
-         "targetgrouping": [[1,2]],
+         "comments": ["Suggested grouping, [[1,2]]."],
+         "input": {
+           "basket": [1,2]
+         },
          "expected": 15.20
         },
         {
          "property": "total",
          "description": "Three different books",
-         "basket": [1,2,3],
-         "targetgrouping": [[1,2,3]],
+         "comments": ["Suggested grouping, [[1,2,3]]."],
+         "input": {
+           "basket": [1,2,3]
+         },
          "expected": 21.60
         },
         {
          "property": "total",
          "description": "Four different books",
-         "basket": [1,2,3,4],
-         "targetgrouping": [[1,2,3,4]],
+         "comments": ["Suggested grouping, [[1,2,3,4]]."],
+         "input": {
+           "basket": [1,2,3,4]
+         },
          "expected": 25.60
         },
         {
          "property": "total",
          "description": "Five different books",
-         "basket": [1,2,3,4,5],
-         "targetgrouping": [[1,2,3,4,5]],
+         "comments": ["Suggested grouping, [[1,2,3,4,5]]."],
+         "input": {
+           "basket": [1,2,3,4,5]
+         },
          "expected": 30.00
         },
         {
          "property": "total",
          "description": "Two groups of four is cheaper than group of five plus group of three",
-         "basket": [1,1,2,2,3,3,4,5],
-         "targetgrouping": [[1,2,3,4],[1,2,3,5]],
+         "comments": ["Suggested grouping, [[1,2,3,4],[1,2,3,5]]."],
+         "input": {
+           "basket": [1,1,2,2,3,3,4,5]
+         },
          "expected": 51.20
         },
         {
          "property": "total",
          "description": "Group of four plus group of two is cheaper than two groups of three",
-         "basket": [1,1,2,2,3,4],
-         "targetgrouping": [[1,2,3,4],[1,2]],
+         "comments": ["Suggested grouping, [[1,2,3,4],[1,2]]."],
+         "input": {
+           "basket": [1,1,2,2,3,4]
+         },
          "expected": 40.80
         },
         {
          "property": "total",
          "description": "Two each of first 4 books and 1 copy each of rest",
-         "basket": [1,1,2,2,3,3,4,4,5],
-         "targetgrouping": [[1,2,3,4,5],[1,2,3,4]],
+         "comments": ["Suggested grouping, [[1,2,3,4,5],[1,2,3,4]]."],
+         "input": {
+           "basket": [1,1,2,2,3,3,4,4,5]
+         },
          "expected": 55.60
         },
         {
          "property": "total",
          "description": "Two copies of each book",
-         "basket": [1,1,2,2,3,3,4,4,5,5],
-         "targetgrouping": [[1,2,3,4,5],[1,2,3,4,5]],
+         "comments": ["Suggested grouping, [[1,2,3,4,5],[1,2,3,4,5]]."],
+         "input": {
+           "basket": [1,1,2,2,3,3,4,4,5,5]
+         },
          "expected": 60.00
         },
         {
          "property": "total",
          "description": "Three copies of first book and 2 each of remaining",
-         "basket": [1,1,2,2,3,3,4,4,5,5,1],
-         "targetgrouping": [[1,2,3,4,5],[1,2,3,4,5],[1]],
+         "comments": ["Suggested grouping, [[1,2,3,4,5],[1,2,3,4,5],[1]]."],
+         "input": {
+           "basket": [1,1,2,2,3,3,4,4,5,5,1]
+         },
          "expected": 68.00
         },
         {
          "property": "total",
          "description": "Three each of first 2 books and 2 each of remaining books",
-         "basket": [1,1,2,2,3,3,4,4,5,5,1,2],
-         "targetgrouping": [[1,2,3,4,5],[1,2,3,4,5],[1,2]],
+         "comments": ["Suggested grouping, [[1,2,3,4,5],[1,2,3,4,5],[1,2]]."],
+         "input": {
+           "basket": [1,1,2,2,3,3,4,4,5,5,1,2]
+         },
          "expected": 75.20
         },
         {
          "property": "total",
          "description": "Four groups of four are cheaper than two groups each of five and three",
-         "basket": [1,1,2,2,3,3,4,5,1,1,2,2,3,3,4,5],
-         "targetgrouping": [[1,2,3,4],[1,2,3,5],[1,2,3,4],[1,2,3,5]],
+         "comments": ["Suggested grouping, [[1,2,3,4],[1,2,3,5],[1,2,3,4],[1,2,3,5]]."],
+         "input": {
+           "basket": [1,1,2,2,3,3,4,5,1,1,2,2,3,3,4,5]
+         },
          "expected": 102.4
         }
      ]
