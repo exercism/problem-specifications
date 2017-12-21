@@ -1,6 +1,6 @@
 {
   "exercise": "transpose",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "comments": [
     "JSON doesn't allow for multi-line strings, so all multi-line input is ",
     "presented here as arrays of strings. It's up to the test generator to join the ",
@@ -10,13 +10,19 @@
     {
       "description": "empty string",
       "property": "transpose",
-      "input": [],
+      "input": {
+        "lines": []
+      },
       "expected": []
     },
     {
       "description": "two characters in a row",
       "property": "transpose",
-      "input": ["A1"],
+      "input": {
+        "lines": [
+          "A1"
+        ]
+      },
       "expected": [
         "A",
         "1"
@@ -25,10 +31,12 @@
     {
       "description": "two characters in a column",
       "property": "transpose",
-      "input": [
-        "A",
-        "1"
-      ],
+      "input": {
+        "lines": [
+          "A",
+          "1"
+        ]
+      },
       "expected": [
         "A1"
       ]
@@ -36,10 +44,12 @@
     {
       "description": "simple",
       "property": "transpose",
-      "input": [
-        "ABC",
-        "123"
-      ],
+      "input": {
+        "lines": [
+          "ABC",
+          "123"
+        ]
+      },
       "expected": [
         "A1",
         "B2",
@@ -49,7 +59,9 @@
     {
       "description": "single line",
       "property": "transpose",
-      "input": ["Single line."],
+      "input": {
+        "lines": ["Single line."]
+      },
       "expected": [
         "S",
         "i",
@@ -68,10 +80,12 @@
     {
       "description": "first line longer than second line",
       "property": "transpose",
-      "input": [
-        "The fourth line.",
-        "The fifth line."
-      ],
+      "input": {
+        "lines": [
+          "The fourth line.",
+          "The fifth line."
+        ]
+      },
       "expected": [
         "TT",
         "hh",
@@ -94,10 +108,12 @@
     {
       "description": "second line longer than first line",
       "property": "transpose",
-      "input": [
-        "The first line.",
-        "The second line."
-      ],
+      "input": {
+        "lines": [
+          "The first line.",
+          "The second line."
+        ]
+      },
       "expected": [
         "TT",
         "hh",
@@ -120,12 +136,14 @@
     {
       "description": "mixed line length",
       "property": "transpose",
-      "input": [
-        "The longest line.",
-        "A long line.",
-        "A longer line.",
-        "A line."
-      ],
+      "input": {
+        "lines": [
+          "The longest line.",
+          "A long line.",
+          "A longer line.",
+          "A line."
+        ]
+      },
       "expected": [
         "TAAA",
         "h   ",
@@ -149,13 +167,15 @@
     {
       "description": "square",
       "property": "transpose",
-      "input": [
-        "HEART",
-        "EMBER",
-        "ABUSE",
-        "RESIN",
-        "TREND"
-      ],
+      "input": {
+        "lines": [
+          "HEART",
+          "EMBER",
+          "ABUSE",
+          "RESIN",
+          "TREND"
+        ]
+      },
       "expected": [
         "HEART",
         "EMBER",
@@ -167,12 +187,14 @@
     {
       "description": "rectangle",
       "property": "transpose",
-      "input": [
-        "FRACTURE",
-        "OUTLINED",
-        "BLOOMING",
-        "SEPTETTE"
-      ],
+      "input": {
+        "lines": [
+          "FRACTURE",
+          "OUTLINED",
+          "BLOOMING",
+          "SEPTETTE"
+        ]
+      },
       "expected": [
         "FOBS",
         "RULE",
@@ -187,14 +209,16 @@
     {
       "description": "triangle",
       "property": "transpose",
-      "input": [
-        "T",
-        "EE",
-        "AAA",
-        "SSSS",
-        "EEEEE",
-        "RRRRRR"
-      ],
+      "input": {
+        "lines": [
+          "T",
+          "EE",
+          "AAA",
+          "SSSS",
+          "EEEEE",
+          "RRRRRR"
+        ]
+      },
       "expected": [
         "TEASER",
         " EASER",
