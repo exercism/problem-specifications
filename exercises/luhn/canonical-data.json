@@ -1,6 +1,6 @@
 {
   "exercise": "luhn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "cases": [
     {
       "description": "single digit strings can not be valid",
@@ -9,7 +9,7 @@
       "expected": false
     },
     {
-      "description": "A single zero is invalid",
+      "description": "a single zero is invalid",
       "property": "valid",
       "input": "0",
       "expected": false
