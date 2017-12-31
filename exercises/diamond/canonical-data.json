@@ -1,6 +1,6 @@
 {
     "exercise": "diamond",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "comments": [
         " The tests contained within this canonical data file are suitable   ",
         " for value-based testing, in which each test case checks that the   ",
@@ -22,7 +22,9 @@
         {
             "description": "Degenerate case with a single 'A' row",
             "property": "rows",
-            "input": "A",
+            "input": {
+                "letter": "A"
+            },
             "expected": [
                 "A"
             ]
@@ -30,7 +32,9 @@
         {
             "description": "Degenerate case with no row containing 3 distinct groups of spaces",
             "property": "rows",
-            "input": "B",
+            "input": {
+                "letter": "B"
+            },
             "expected": [
                 " A ",
                 "B B",
@@ -40,7 +44,9 @@
         {
             "description": "Smallest non-degenerate case with odd diamond side length",
             "property": "rows",
-            "input": "C",
+            "input": {
+                "letter": "C"
+            },
             "expected": [
                 "  A  ",
                 " B B ",
@@ -52,7 +58,9 @@
         {
             "description": "Smallest non-degenerate case with even diamond side length",
             "property": "rows",
-            "input": "D",
+            "input": {
+                "letter": "D"
+            },
             "expected": [
                 "   A   ",
                 "  B B  ",
@@ -66,7 +74,9 @@
         {
             "description": "Largest possible diamond",
             "property": "rows",
-            "input": "Z",
+            "input": {
+                "letter": "Z"
+            },
             "expected": [
                 "                         A                         ",
                 "                        B B                        ",
