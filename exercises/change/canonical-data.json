@@ -1,6 +1,6 @@
 {
   "exercise": "change",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments": [
     "Given an infinite supply of coins with different values, ",
     "find the smallest number of coins needed to make a desired ",
@@ -10,36 +10,46 @@
     {
       "description": "single coin change",
       "property": "findFewestCoins",
-      "coins": [1, 5, 10, 25, 100],
-      "target": 25,
+      "input": {
+        "coins": [1, 5, 10, 25, 100],
+        "target": 25
+      },
       "expected": [25]
     },
     {
       "description": "multiple coin change",
       "property": "findFewestCoins",
-      "coins": [1, 5, 10, 25, 100],
-      "target": 15,
+      "input": {
+        "coins": [1, 5, 10, 25, 100],
+        "target": 15
+      },
       "expected": [5, 10]
     },
     {
       "description": "change with Lilliputian Coins",
       "property": "findFewestCoins",
-      "coins": [1, 4, 15, 20, 50],
-      "target": 23,
+      "input": {
+        "coins": [1, 4, 15, 20, 50],
+        "target": 23
+      },
       "expected": [4, 4, 15]
     },
     {
       "description": "change with Lower Elbonia Coins",
       "property": "findFewestCoins",
-      "coins": [1, 5, 10, 21, 25],
-      "target": 63,
+      "input": {
+        "coins": [1, 5, 10, 21, 25],
+        "target": 63
+      },
       "expected": [21, 21, 21]
     },
     {
       "description": "large target values",
       "property": "findFewestCoins",
-      "coins": [1, 2, 5, 10, 20, 50, 100],
-      "target": 999,
+      "input": {
+        "coins": [1, 2, 5, 10, 20, 50, 100],
+        "target": 999
+      },
       "expected": [   2,   2,   5,  20,  20
                   ,  50, 100, 100, 100, 100
                   , 100, 100, 100, 100, 100 ]
@@ -47,43 +57,55 @@
     {
       "description": "possible change without unit coins available",
       "property": "findFewestCoins",
-      "coins": [2, 5, 10, 20, 50],
-      "target": 21,
+      "input": {
+        "coins": [2, 5, 10, 20, 50],
+        "target": 21
+      },
       "expected": [2, 2, 2, 5, 10]
     },
     {
       "description": "another possible change without unit coins available",
       "property": "findFewestCoins",
-      "coins": [4, 5],
-      "target": 27,
+      "input": {
+        "coins": [4, 5],
+        "target": 27
+      },
       "expected": [4, 4, 4, 5, 5, 5]
     },
     {
       "description": "no coins make 0 change",
       "property": "findFewestCoins",
-      "coins": [1, 5, 10, 21, 25],
-      "target": 0,
+      "input": {
+        "coins": [1, 5, 10, 21, 25],
+        "target": 0
+      },
       "expected": []
     },
     {
       "description": "error testing for change smaller than the smallest of coins",
       "property": "findFewestCoins",
-      "coins": [5, 10],
-      "target": 3,
+      "input": {
+        "coins": [5, 10],
+        "target": 3
+      },
       "expected": -1
     },
     {
       "description": "error if no combination can add up to target",
       "property": "findFewestCoins",
-      "coins": [5, 10],
-      "target": 94,
+      "input": {
+        "coins": [5, 10],
+        "target": 94
+      },
       "expected": -1
     },
     {
       "description": "cannot find negative change values",
       "property": "findFewestCoins",
-      "coins": [1, 2, 5],
-      "target": -5,
+      "input": {
+        "coins": [1, 2, 5],
+        "target": -5
+      },
       "expected": -1
     }
   ]
