@@ -1,6 +1,6 @@
 {
   "exercise": "difference-of-squares",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "cases": [
     {
       "description": "Square the sum of the numbers up to the given number",
@@ -8,19 +8,25 @@
         {
           "description": "square of sum 1",
           "property": "squareOfSum",
-          "number": 1,
+          "input": {
+            "number": 1
+          },
           "expected": 1
         },
         {
           "description": "square of sum 5",
           "property": "squareOfSum",
-          "number": 5,
+          "input": {
+            "number": 5
+          },
           "expected": 225
         },
         {
           "description": "square of sum 100",
           "property": "squareOfSum",
-          "number": 100,
+          "input": {
+            "number": 100
+          },
           "expected": 25502500
         }
       ]
@@ -31,19 +37,25 @@
         {
           "description": "sum of squares 1",
           "property": "sumOfSquares",
-          "number": 1,
+          "input": {
+            "number": 1
+          },
           "expected": 1
         },
         {
           "description": "sum of squares 5",
           "property": "sumOfSquares",
-          "number": 5,
+          "input": {
+            "number": 5
+          },
           "expected": 55
         },
         {
           "description": "sum of squares 100",
           "property": "sumOfSquares",
-          "number": 100,
+          "input": {
+            "number": 100
+          },
           "expected": 338350
         }
       ]
@@ -54,19 +66,25 @@
         {
           "description": "difference of squares 1",
           "property": "differenceOfSquares",
-          "number": 1,
+          "input": {
+            "number": 1
+          },
           "expected": 0
         },
         {
           "description": "difference of squares 5",
           "property": "differenceOfSquares",
-          "number": 5,
+          "input": {
+            "number": 5
+          },
           "expected": 170
         },
         {
           "description": "difference of squares 100",
           "property": "differenceOfSquares",
-          "number": 100,
+          "input": {
+            "number": 100
+          },
           "expected": 25164150
         }
       ]
