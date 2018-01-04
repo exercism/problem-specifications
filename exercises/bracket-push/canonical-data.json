@@ -1,89 +1,117 @@
 {
   "exercise": "bracket-push",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "cases": [
     {
       "description": "paired square brackets",
       "property": "isPaired",
-      "input": "[]",
+      "input": {
+        "value": "[]"
+      },
       "expected": true
     },
     {
       "description": "empty string",
       "property": "isPaired",
-      "input": "",
+      "input": {
+        "value": ""
+      },
       "expected": true
     },
     {
       "description": "unpaired brackets",
       "property": "isPaired",
-      "input": "[[",
+      "input": {
+        "value": "[["
+      },
       "expected": false
     },
     {
       "description": "wrong ordered brackets",
       "property": "isPaired",
-      "input": "}{",
+      "input": {
+        "value": "}{"
+      },
       "expected": false
     },
     {
       "description": "wrong closing bracket",
       "property": "isPaired",
-      "input": "{]",
+      "input": {
+        "value": "{]"
+      },
       "expected": false
     },
     {
       "description": "paired with whitespace",
       "property": "isPaired",
-      "input": "{ }",
+      "input": {
+        "value": "{ }"
+      },
       "expected": true
     },
     {
       "description": "simple nested brackets",
       "property": "isPaired",
-      "input": "{[]}",
+      "input": {
+        "value": "{[]}"
+      },
       "expected": true
     },
     {
       "description": "several paired brackets",
       "property": "isPaired",
-      "input": "{}[]",
+      "input": {
+        "value": "{}[]"
+      },
       "expected": true
     },
     {
       "description": "paired and nested brackets",
       "property": "isPaired",
-      "input": "([{}({}[])])",
+      "input": {
+        "value": "([{}({}[])])"
+      },
       "expected": true
     },
     {
       "description": "unopened closing brackets",
       "property": "isPaired",
-      "input": "{[)][]}",
+      "input": {
+        "value": "{[)][]}"
+      },
       "expected": false
     },
     {
       "description": "unpaired and nested brackets",
       "property": "isPaired",
-      "input": "([{])",
+      "input": {
+        "value": "([{])"
+      },
       "expected": false
     },
     {
       "description": "paired and wrong nested brackets",
       "property": "isPaired",
-      "input": "[({]})",
+      "input": {
+        "value": "[({]})"
+      },
       "expected": false
     },
     {
       "description": "math expression",
       "property": "isPaired",
-      "input": "(((185 + 223.85) * 15) - 543)/2",
+      "input": {
+        "value": "(((185 + 223.85) * 15) - 543)/2"
+      },
       "expected": true
     },
     {
       "description": "complex latex expression",
       "property": "isPaired",
-      "input": "\\left(\\begin{array}{cc} \\frac{1}{3} & x\\\\ \\mathrm{e}^{x} &... x^2 \\end{array}\\right)",
+      "input": {
+        "value": "\\left(\\begin{array}{cc} \\frac{1}{3} & x\\\\ \\mathrm{e}^{x} &... x^2 \\end{array}\\right)"
+      },
       "expected": true
     }
   ]
