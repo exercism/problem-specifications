@@ -7,7 +7,6 @@
       "cases": [
         {
           "description": "basic",
-          "property": "abbreviate",
           "input": {
             "phrase": "Portable Network Graphics"
           },
