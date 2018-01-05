@@ -1,4 +1,5 @@
 {
+  Totally invalid JSON = true;
   "exercise": "zipper",
   "version": "1.0.0",
   "comments": [
