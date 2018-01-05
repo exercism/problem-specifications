@@ -8,9 +8,7 @@
         {
           "description": "basic",
           "property": "abbreviate",
-          "input": {
-            "phrase": "Portable Network Graphics"
-          },
+          "phrase": "Portable Network Graphics",
           "expected": "PNG"
         },
         {
