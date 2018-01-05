@@ -1,0 +1,137 @@
+{
+   "comments":
+   [ " This is a JSON Schema for 'canonical-data.json' files.     "
+   , "                                                            "
+   , " It enforces just a general structure for all exercises,    "
+   , " without specifying how the test data should be organized   "
+   , " for each type of test. We do this to keep generality and   "
+   , " allow support for tests the do not fit well in the         "
+   , " 'function (input) == output' structure, like property      "
+   , " tests.                                                     "
+   , "                                                            "
+   , " The only thing enforced regarding how test data should be  "
+   , " structured is the error encoding, because it was agreed    "
+   , " and it doesn't restrict flexibility in a significant way.  "
+   , "                                                            "
+   , " Standardized property names may help when automatically    "
+   , " deriving JSON parsers in some languages, so we followed    "
+   , " a few conventions from the 'Google JSON Style Guide'.      "
+   , "                                                            "
+   , " Additionally, this schema strictly enforces letters, in    "
+   , " lowerCamelCase, for naming the 'property' being tested. We "
+   , " expect this regularity will allow an easier automatic      "
+   , " generation of function's names in test generators,         "
+   , " slightly reducing the amount of manually generated code.   "
+   ],
+
+   "$schema": "http://json-schema.org/draft-04/schema#",
+
+   "self": { "vendor" : "io.exercism"
+           , "name"   : "canonical-data"
+           , "format" : "jsonschema"
+           , "version": "1-0-0"
+           },
+
+   "$ref": "#/definitions/canonicalData",
+
+   "definitions":{
+
+      "canonicalData":
+          { "description": "This is the top-level file structure"
+          , "type"       : "object"
+          , "required"   : ["exercise" , "version", "cases"]
+          , "properties" :
+                { "exercise" : { "$ref": "#/definitions/exercise"  }
+                , "version"  : { "$ref": "#/definitions/version"   }
+                , "comments" : { "$ref": "#/definitions/comments"  }
+                , "cases"    : { "$ref": "#/definitions/testGroup" }
+                }
+          , "additionalProperties": false
+          },
+
+      "exercise":
+          { "description": "Exercise's slug (kebab-case)"
+          , "type"       : "string"
+          , "pattern"    : "^[a-z]+(-[a-z]+)*$"
+          },
+
+      "version" :
+          { "description" : "Semantic versioning: MAJOR.MINOR.PATCH"
+          , "type"        : "string"
+          , "pattern"     : "^(0|[1-9][0-9]*)(\\.(0|[1-9][0-9]*)){2}$"
+          },
+
+      "comments":
+          { "description": "An array of strings to fake multi-line comments"
+          , "type"       : "array"
+          , "items"      : { "type": "string" }
+          , "minItems"   : 1
+          },
+
+      "testGroup":
+          { "description": "An array of labeled test items"
+          , "type"       : "array"
+          , "items"      : { "$ref": "#/definitions/labeledTestItem" }
+          , "minItems"   : 1
+          },
+
+      "labeledTestItem":
+          { "description": "A single test or group of tests with a description"
+          , "oneOf": [ { "$ref": "#/definitions/labeledTest"      }
+                     , { "$ref": "#/definitions/labeledTestGroup" }
+                     ]
+          },
+
+      "labeledTest":
+          { "description": "A single test with a description"
+          , "type"       : "object"
+          , "required"   : ["description", "property"]
+          , "properties" :
+                { "description": { "$ref": "#/definitions/description" }
+                , "comments"   : { "$ref": "#/definitions/comments"    }
+                , "property"   : { "$ref": "#/definitions/property"    }
+                , "expected"   : { "$ref": "#/definitions/expected"    }
+                }
+          },
+
+      "labeledTestGroup":
+          { "description": "A group of tests with a description"
+          , "type"       : "object"
+          , "required"   : ["description", "cases"]
+          , "properties" :
+                { "description": { "$ref": "#/definitions/description" }
+                , "comments"   : { "$ref": "#/definitions/comments"    }
+                , "cases"      : { "$ref": "#/definitions/testGroup"   }
+                }
+          , "additionalProperties": false
+          },
+
+      "description":
+          { "description": "A short, clear, one-line description"
+          , "type"       : "string"
+          },
+
+      "property":
+          { "description": "A letters-only, lowerCamelCase property name"
+          , "type"       : "string"
+          , "pattern"    : "^[a-z]+([A-Z][a-z]+)*[A-Z]?$"
+          },
+
+      "expected":
+          { "description": "The expected return value of a test case"
+          , "properties":
+               { "error": { "$ref": "#/definitions/error" }
+               }
+          , "dependencies":
+               { "error": { "maxProperties": 1 }
+               }
+          },
+
+      "error":
+          { "description": "A message describing an error condition"
+          , "type"       : "string"
+          }
+
+    }
+
+}
