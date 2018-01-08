@@ -1,6 +1,6 @@
 {
   "exercise": "triangle",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "comments": [
     " Pursuant to discussion in #202, we have decided NOT to test triangles ",
     " where all side lengths are positive but a + b = c. e.g:               ",
@@ -24,25 +24,33 @@
         {
           "description": "true if all sides are equal",
           "property": "equilateral",
-          "sides": [2, 2, 2],
+          "input": {
+            "sides": [2, 2, 2]
+          },
           "expected": true
         },
         {
           "description": "false if any side is unequal",
           "property": "equilateral",
-          "sides": [2, 3, 2],
+          "input": {
+            "sides": [2, 3, 2]
+          },
           "expected": false
         },
         {
           "description": "false if no sides are equal",
           "property": "equilateral",
-          "sides": [5, 4, 6],
+          "input": {
+            "sides": [5, 4, 6]
+          },
           "expected": false
         },
         {
           "description": "All zero sides are illegal, so the triangle is not equilateral",
           "property": "equilateral",
-          "sides": [0, 0, 0],
+          "input": {
+            "sides": [0, 0, 0]
+          },
           "expected": false
         },
         {
@@ -52,7 +60,9 @@
           ],
           "description": "sides may be floats",
           "property": "equilateral",
-          "sides": [0.5, 0.5, 0.5],
+          "input": {
+            "sides": [0.5, 0.5, 0.5]
+          },
           "expected": true
         }
       ]
@@ -63,37 +73,49 @@
         {
           "description": "true if last two sides are equal",
           "property": "isosceles",
-          "sides": [3, 4, 4],
+          "input": {
+            "sides": [3, 4, 4]
+          },
           "expected": true
         },
         {
           "description": "true if first two sides are equal",
           "property": "isosceles",
-          "sides": [4, 4, 3],
+          "input": {
+            "sides": [4, 4, 3]
+          },
           "expected": true
         },
         {
           "description": "true if first and last sides are equal",
           "property": "isosceles",
-          "sides": [4, 3, 4],
+          "input": {
+            "sides": [4, 3, 4]
+          },
           "expected": true
         },
         {
           "description": "equilateral triangles are also isosceles",
           "property": "isosceles",
-          "sides": [4, 4, 4],
+          "input": {
+            "sides": [4, 4, 4]
+          },
           "expected": true
         },
         {
           "description": "false if no sides are equal",
           "property": "isosceles",
-          "sides": [2, 3, 4],
+          "input": {
+            "sides": [2, 3, 4]
+          },
           "expected": false
         },
         {
           "description": "Sides that violate triangle inequality are not isosceles, even if two are equal",
           "property": "isosceles",
-          "sides": [1, 1, 3],
+          "input": {
+            "sides": [1, 1, 3]
+          },
           "expected": false
         },
         {
@@ -103,7 +125,9 @@
           ],
           "property": "isosceles",
           "description": "sides may be floats",
-          "sides": [0.5, 0.4, 0.5],
+          "input": {
+            "sides": [0.5, 0.4, 0.5]
+          },
           "expected": true
         }
       ]
@@ -114,25 +138,33 @@
         {
           "description": "true if no sides are equal",
           "property": "scalene",
-          "sides": [5, 4, 6],
+          "input": {
+            "sides": [5, 4, 6]
+          },
           "expected": true
         },
         {
           "description": "false if all sides are equal",
           "property": "scalene",
-          "sides": [4, 4, 4],
+          "input": {
+            "sides": [4, 4, 4]
+          },
           "expected": false
         },
         {
           "description": "false if two sides are equal",
           "property": "scalene",
-          "sides": [4, 4, 3],
+          "input": {
+            "sides": [4, 4, 3]
+          },
           "expected": false
         },
         {
           "description": "Sides that violate triangle inequality are not scalene, even if they are all different",
           "property": "scalene",
-          "sides": [7, 3, 2],
+          "input": {
+            "sides": [7, 3, 2]
+          },
           "expected": false
         },
         {
@@ -142,7 +174,9 @@
           ],
           "description": "sides may be floats",
           "property": "scalene",
-          "sides": [0.5, 0.4, 0.6],
+          "input": {
+            "sides": [0.5, 0.4, 0.6]
+          },
           "expected": true
         }
       ]
