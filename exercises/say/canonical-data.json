@@ -1,6 +1,6 @@
 {
   "exercise": "say",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "comments": [
     "Here -1 is used as expected value to indicate that the",
     "input value is out of the range described in the exercise."
@@ -9,91 +9,121 @@
     {
       "description": "zero",
       "property": "say",
-      "input": 0,
+      "input": {
+        "number": 0
+      },
       "expected": "zero"
     },
     {
       "description": "one",
       "property": "say",
-      "input": 1,
+      "input": {
+        "number": 1
+      },
       "expected": "one"
     },
     {
       "description": "fourteen",
       "property": "say",
-      "input": 14,
+      "input": {
+        "number": 14
+      },
       "expected": "fourteen"
     },
     {
       "description": "twenty",
       "property": "say",
-      "input": 20,
+      "input": {
+        "number": 20
+      },
       "expected": "twenty"
     },
     {
       "description": "twenty-two",
       "property": "say",
-      "input": 22,
+      "input": {
+        "number": 22
+      },
       "expected": "twenty-two"
     },
     {
       "description": "one hundred",
       "property": "say",
-      "input": 100,
+      "input": {
+        "number": 100
+      },
       "expected": "one hundred"
     },
     {
       "description": "one hundred twenty-three",
       "property": "say",
-      "input": 123,
+      "input": {
+        "number": 123
+      },
       "expected": "one hundred twenty-three"
     },
     {
       "description": "one thousand",
       "property": "say",
-      "input": 1000,
+      "input": {
+        "number": 1000
+      },
       "expected": "one thousand"
     },
     {
       "description": "one thousand two hundred thirty-four",
       "property": "say",
-      "input": 1234,
+      "input": {
+        "number": 1234
+      },
       "expected": "one thousand two hundred thirty-four"
     },
     {
       "description": "one million",
       "property": "say",
-      "input": 1000000,
+      "input": {
+        "number": 1000000
+      },
       "expected": "one million"
     },
     {
       "description": "one million two thousand three hundred forty-five",
       "property": "say",
-      "input": 1002345,
+      "input": {
+        "number": 1002345
+      },
       "expected": "one million two thousand three hundred forty-five"
     },
     {
       "description": "one billion",
       "property": "say",
-      "input": 1000000000,
+      "input": {
+        "number": 1000000000
+      },
       "expected": "one billion"
     },
     {
       "description": "a big number",
       "property": "say",
-      "input": 987654321123,
+      "input": {
+        "number": 987654321123
+      },
       "expected": "nine hundred eighty-seven billion six hundred fifty-four million three hundred twenty-one thousand one hundred twenty-three"
     },
     {
       "description": "numbers below zero are out of range",
       "property": "say",
-      "input": -1,
+      "input": {
+        "number": -1
+      },
       "expected": -1
     },
     {
       "description": "numbers above 999,999,999,999 are out of range",
       "property": "say",
-      "input": 1000000000000,
+      "input": {
+        "number": 1000000000000
+      },
       "expected": -1
     }
   ]
