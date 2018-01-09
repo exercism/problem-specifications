@@ -9,7 +9,8 @@
         "a single series.  There is no discount advantage for having more than ",
         "one copy of any single book in a grouping.",
         "implementors should use proper fixed-point or currency data types of the ",
-        "corresponding language and not float."
+        "corresponding language and not float.",
+        "All 'expected' amounts are in cents."
       ],
       "cases": [
         {
