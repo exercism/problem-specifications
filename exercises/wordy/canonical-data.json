@@ -1,6 +1,6 @@
 {
   "exercise": "wordy",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "comments": [
     "The tests that expect 'false' should be implemented to raise",
     "an error, or indicate a failure. Implement this in a way that",
@@ -10,97 +10,129 @@
     {
       "description": "addition",
       "property": "answer",
-      "input": "What is 1 plus 1?",
+      "input": {
+        "question": "What is 1 plus 1?"
+      },
       "expected": 2
     },
     {
       "description": "more addition",
       "property": "answer",
-      "input": "What is 53 plus 2?",
+      "input": {
+        "question": "What is 53 plus 2?"
+      },
       "expected": 55
     },
     {
       "description": "addition with negative numbers",
       "property": "answer",
-      "input": "What is -1 plus -10?",
+      "input": {
+        "question": "What is -1 plus -10?"
+      },
       "expected": -11
     },
     {
       "description": "large addition",
       "property": "answer",
-      "input": "What is 123 plus 45678?",
+      "input": {
+        "question": "What is 123 plus 45678?"
+      },
       "expected": 45801
     },
     {
       "description": "subtraction",
       "property": "answer",
-      "input": "What is 4 minus -12?",
+      "input": {
+        "question": "What is 4 minus -12?"
+      },
       "expected": 16
     },
     {
       "description": "multiplication",
       "property": "answer",
-      "input": "What is -3 multiplied by 25?",
+      "input": {
+        "question": "What is -3 multiplied by 25?"
+      },
       "expected": -75
     },
     {
       "description": "division",
       "property": "answer",
-      "input": "What is 33 divided by -3?",
+      "input": {
+        "question": "What is 33 divided by -3?"
+      },
       "expected": -11
     },
     {
       "description": "multiple additions",
       "property": "answer",
-      "input": "What is 1 plus 1 plus 1?",
+      "input": {
+        "question": "What is 1 plus 1 plus 1?"
+      },
       "expected": 3
     },
     {
       "description": "addition and subtraction",
       "property": "answer",
-      "input": "What is 1 plus 5 minus -2?",
+      "input": {
+        "question": "What is 1 plus 5 minus -2?"
+      },
       "expected": 8
     },
     {
       "description": "multiple subtraction",
       "property": "answer",
-      "input": "What is 20 minus 4 minus 13?",
+      "input": {
+        "question": "What is 20 minus 4 minus 13?"
+      },
       "expected": 3
     },
     {
       "description": "subtraction then addition",
       "property": "answer",
-      "input": "What is 17 minus 6 plus 3?",
+      "input": {
+        "question": "What is 17 minus 6 plus 3?"
+      },
       "expected": 14
     },
     {
       "description": "multiple multiplication",
       "property": "answer",
-      "input": "What is 2 multiplied by -2 multiplied by 3?",
+      "input": {
+        "question": "What is 2 multiplied by -2 multiplied by 3?"
+      },
       "expected": -12
     },
     {
       "description": "addition and multiplication",
       "property": "answer",
-      "input": "What is -3 plus 7 multiplied by -2?",
+      "input": {
+        "question": "What is -3 plus 7 multiplied by -2?"
+      },
       "expected": -8
     },
     {
       "description": "multiple division",
       "property": "answer",
-      "input": "What is -12 divided by 2 divided by -3?",
+      "input": {
+        "question": "What is -12 divided by 2 divided by -3?"
+      },
       "expected": 2
     },
     {
       "description": "unknown operation",
       "property": "answer",
-      "input": "What is 52 cubed?",
+      "input": {
+        "question": "What is 52 cubed?"
+      },
       "expected": false
     },
     {
       "description": "Non math question",
       "property": "answer",
-      "input": "Who is the President of the United States?",
+      "input": {
+        "question": "Who is the President of the United States?"
+      },
       "expected": false
     }
   ]
