@@ -1,14 +1,16 @@
 {
   "exercise": "two-bucket",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "cases": [
     {
       "description": "Measure using bucket one of size 3 and bucket two of size 5 - start with bucket one",
       "property": "measure",
-      "bucket_one": 3,
-      "bucket_two": 5,
-      "goal": 1,
-      "start_bucket": "one",
+      "input": {
+        "bucket_one": 3,
+        "bucket_two": 5,
+        "goal": 1,
+        "start_bucket": "one"
+      },
       "expected": {
         "moves": 4,
         "goal_bucket": "one",
@@ -18,10 +20,12 @@
     {
       "description": "Measure using bucket one of size 3 and bucket two of size 5 - start with bucket two",
       "property": "measure",
-      "bucket_one": 3,
-      "bucket_two": 5,
-      "goal": 1,
-      "start_bucket": "two",
+      "input": {
+        "bucket_one": 3,
+        "bucket_two": 5,
+        "goal": 1,
+        "start_bucket": "two"
+      },
       "expected": {
         "moves": 8,
         "goal_bucket": "two",
@@ -31,10 +35,12 @@
     {
       "description": "Measure using bucket one of size 7 and bucket two of size 11 - start with bucket one",
       "property": "measure",
-      "bucket_one": 7,
-      "bucket_two": 11,
-      "goal": 2,
-      "start_bucket": "one",
+      "input": {
+        "bucket_one": 7,
+        "bucket_two": 11,
+        "goal": 2,
+        "start_bucket": "one"
+      },
       "expected": {
         "moves": 14,
         "goal_bucket": "one",
@@ -44,10 +50,12 @@
     {
       "description": "Measure using bucket one of size 7 and bucket two of size 11 - start with bucket two",
       "property": "measure",
-      "bucket_one": 7,
-      "bucket_two": 11,
-      "goal": 2,
-      "start_bucket": "two",
+      "input": {
+        "bucket_one": 7,
+        "bucket_two": 11,
+        "goal": 2,
+        "start_bucket": "two"
+      },
       "expected": {
         "moves": 18,
         "goal_bucket": "two",
@@ -57,10 +65,12 @@
     {
       "description": "Measure one step using bucket one of size 1 and bucket two of size 3 - start with bucket two",
       "property": "measure",
-      "bucket_one": 1,
-      "bucket_two": 3,
-      "goal": 3,
-      "start_bucket": "two",
+      "input": {
+        "bucket_one": 1,
+        "bucket_two": 3,
+        "goal": 3,
+        "start_bucket": "two"
+      },
       "expected": {
         "moves": 1,
         "goal_bucket": "two",
@@ -70,10 +80,12 @@
     {
       "description": "Measure using bucket one of size 2 and bucket two of size 3 - start with bucket one and end with bucket two",
       "property": "measure",
-      "bucket_one": 2,
-      "bucket_two": 3,
-      "goal": 3,
-      "start_bucket": "one",
+      "input": {
+        "bucket_one": 2,
+        "bucket_two": 3,
+        "goal": 3,
+        "start_bucket": "one"
+      },
       "expected": {
         "moves": 2,
         "goal_bucket": "two",
