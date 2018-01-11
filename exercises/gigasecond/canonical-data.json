@@ -1,6 +1,6 @@
 {
   "exercise": "gigasecond",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "comments": [
     "The basic test is to add one gigasecond to a few ordinary dates.",
     "Most test programs currently check only the date and ignore the time.",
@@ -22,31 +22,41 @@
         {
           "description": "date only specification of time",
           "property": "add",
-          "input": "2011-04-25",
+          "input": {
+            "birthdate": "2011-04-25"
+          },
           "expected": "2043-01-01T01:46:40"
         },
         {
           "description": "second test for date only specification of time",
           "property": "add",
-          "input": "1977-06-13",
+          "input": {
+            "birthdate": "1977-06-13"
+          },
           "expected": "2009-02-19T01:46:40"
         },
         {
           "description": "third test for date only specification of time",
           "property": "add",
-          "input": "1959-07-19",
+          "input": {
+            "birthdate": "1959-07-19"
+          },
           "expected": "1991-03-27T01:46:40"
         },
         {
           "description": "full time specified",
           "property": "add",
-          "input": "2015-01-24T22:00:00",
+          "input": {
+            "birthdate": "2015-01-24T22:00:00"
+          },
           "expected": "2046-10-02T23:46:40"
         },
         {
           "description": "full time with day roll-over",
           "property": "add",
-          "input": "2015-01-24T23:59:59",
+          "input": {
+            "birthdate": "2015-01-24T23:59:59"
+          },
           "expected": "2046-10-03T01:46:39"
         }
       ]
