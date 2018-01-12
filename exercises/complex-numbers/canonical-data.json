@@ -323,6 +323,12 @@
             "z": [1, 0]
           },
           "expected": ["e", 0]
+        },
+        {
+          "description": "Exponential of a number with real and imaginary part",
+          "property": "exp",
+          "input": ["ln(2)", "pi"],
+          "expected": [2, 0]
         }
       ]
     }
