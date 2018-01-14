@@ -1,6 +1,6 @@
 {
   "exercise": "markdown",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments": [
     "Markdown is a shorthand for creating HTML from text strings."
   ],
@@ -8,55 +8,73 @@
     {
       "description": "parses normal text as a paragraph",
       "property": "parse",
-      "input": "This will be a paragraph",
+      "input": {
+        "markdown": "This will be a paragraph"
+      },
       "expected": "<p>This will be a paragraph</p>"
     },
     {
       "description": "parsing italics",
       "property": "parse",
-      "input": "_This will be italic_",
+      "input": {
+        "markdown": "_This will be italic_"
+      },
       "expected": "<p><em>This will be italic</em></p>"
     },
     {
       "description": "parsing bold text",
       "property": "parse",
-      "input": "__This will be bold__",
+      "input": {
+        "markdown": "__This will be bold__"
+      },
       "expected": "<p><strong>This will be bold</strong></p>"
     },
     {
       "description": "mixed normal, italics and bold text",
       "property": "parse",
-      "input": "This will _be_ __mixed__",
+      "input": {
+        "markdown": "This will _be_ __mixed__"
+      },
       "expected": "<p>This will <em>be</em> <strong>mixed</strong></p>"
     },
     {
       "description": "with h1 header level",
       "property": "parse",
-      "input": "# This will be an h1",
+      "input": {
+        "markdown": "# This will be an h1"
+      },
       "expected": "<h1>This will be an h1</h1>"
     },
     {
       "description": "with h2 header level",
       "property": "parse",
-      "input": "## This will be an h2",
+      "input": {
+        "markdown": "## This will be an h2"
+      },
       "expected": "<h2>This will be an h2</h2>"
     },
     {
       "description": "with h6 header level",
       "property": "parse",
-      "input": "###### This will be an h6",
+      "input": {
+        "markdown": "###### This will be an h6"
+      },
       "expected": "<h6>This will be an h6</h6>"
     },
     {
       "description": "unordered lists",
       "property": "parse",
-      "input": "* Item 1\n* Item 2",
+      "input": {
+        "markdown": "* Item 1\n* Item 2"
+      },
       "expected": "<ul><li>Item 1</li><li>Item 2</li></ul>"
     },
     {
       "description": "With a little bit of everything",
       "property": "parse",
-      "input": "# Header!\n* __Bold Item__\n* _Italic Item_",
+      "input": {
+        "markdown": "# Header!\n* __Bold Item__\n* _Italic Item_"
+      },
       "expected": "<h1>Header!</h1><ul><li><strong>Bold Item</strong></li><li><em>Italic Item</em></li></ul>"
     }
   ]
