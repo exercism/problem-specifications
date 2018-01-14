@@ -1,35 +1,45 @@
 {
   "exercise": "sieve",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "cases": [
     {
       "description": "no primes under two",
       "property": "primes",
-      "limit": 1,
+      "input": {
+        "limit": 1
+      },
       "expected": []
     },
     {
       "description": "find first prime",
       "property": "primes",
-      "limit": 2,
+      "input": {
+        "limit": 2
+      },
       "expected": [2]
     },
     {
       "description": "find primes up to 10",
       "property": "primes",
-      "limit": 10,
+      "input": {
+        "limit": 10
+      },
       "expected": [2, 3, 5, 7]
     },
     {
       "description": "limit is prime",
       "property": "primes",
-      "limit": 13,
+      "input": {
+        "limit": 13
+      },
       "expected": [2, 3, 5, 7, 11, 13]
     },
     {
       "description": "find primes up to 1000",
       "property": "primes",
-      "limit": 1000,
+      "input": {
+        "limit": 1000
+      },
       "expected": [
           2,   3,   5,   7,  11,  13,  17,  19,  23,  29,  31,  37,  41,  43,
          47,  53,  59,  61,  67,  71,  73,  79,  83,  89,  97, 101, 103, 107,
