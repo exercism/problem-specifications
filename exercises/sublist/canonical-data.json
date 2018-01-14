@@ -1,6 +1,6 @@
 {
   "exercise": "sublist",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "comments": [
     "Lists are ordered and sequential.",
     "https://en.wikipedia.org/wiki/List_%28abstract_data_type%29",
@@ -18,120 +18,154 @@
     {
       "description": "empty lists",
       "property": "sublist",
-      "listOne": [],
-      "listTwo": [],
+      "input": {
+        "listOne": [],
+        "listTwo": []
+      },
       "expected": "equal"
     },
     {
       "description": "empty list within non empty list",
       "property": "sublist",
-      "listOne": [],
-      "listTwo": [1, 2, 3],
+      "input": {
+        "listOne": [],
+        "listTwo": [1, 2, 3]
+      },
       "expected": "sublist"
     },
     {
       "description": "non empty list contains empty list",
       "property": "sublist",
-      "listOne": [1, 2, 3],
-      "listTwo": [],
+      "input": {
+        "listOne": [1, 2, 3],
+        "listTwo": []
+      },
       "expected": "superlist"
     },
     {
       "description": "list equals itself",
       "property": "sublist",
-      "listOne": [1, 2, 3],
-      "listTwo": [1, 2, 3],
+      "input": {
+        "listOne": [1, 2, 3],
+        "listTwo": [1, 2, 3]
+      },
       "expected": "equal"
     },
     {
       "description": "different lists",
       "property": "sublist",
-      "listOne": [1, 2, 3],
-      "listTwo": [2, 3, 4],
+      "input": {
+        "listOne": [1, 2, 3],
+        "listTwo": [2, 3, 4]
+      },
       "expected": "unequal"
     },
     {
       "description": "false start",
       "property": "sublist",
-      "listOne": [1, 2, 5],
-      "listTwo": [0, 1, 2, 3, 1, 2, 5, 6],
+      "input": {
+        "listOne": [1, 2, 5],
+        "listTwo": [0, 1, 2, 3, 1, 2, 5, 6]
+      },
       "expected": "sublist"
     },
     {
       "description": "consecutive",
       "property": "sublist",
-      "listOne": [1, 1, 2],
-      "listTwo": [0, 1, 1, 1, 2, 1, 2],
+      "input": {
+        "listOne": [1, 1, 2],
+        "listTwo": [0, 1, 1, 1, 2, 1, 2]
+      },
       "expected": "sublist"
     },
     {
       "description": "sublist at start",
       "property": "sublist",
-      "listOne": [0, 1, 2],
-      "listTwo": [0, 1, 2, 3, 4, 5],
+      "input": {
+        "listOne": [0, 1, 2],
+        "listTwo": [0, 1, 2, 3, 4, 5]
+      },
       "expected": "sublist"
     },
     {
       "description": "sublist in middle",
       "property": "sublist",
-      "listOne": [2, 3, 4],
-      "listTwo": [0, 1, 2, 3, 4, 5],
+      "input": {
+        "listOne": [2, 3, 4],
+        "listTwo": [0, 1, 2, 3, 4, 5]
+      },
       "expected": "sublist"
     },
     {
       "description": "sublist at end",
       "property": "sublist",
-      "listOne": [3, 4, 5],
-      "listTwo": [0, 1, 2, 3, 4, 5],
+      "input": {
+        "listOne": [3, 4, 5],
+        "listTwo": [0, 1, 2, 3, 4, 5]
+      },
       "expected": "sublist"
     },
     {
       "description": "at start of superlist",
       "property": "sublist",
-      "listOne": [0, 1, 2, 3, 4, 5],
-      "listTwo": [0, 1, 2],
+      "input": {
+        "listOne": [0, 1, 2, 3, 4, 5],
+        "listTwo": [0, 1, 2]
+      },
       "expected": "superlist"
     },
     {
       "description": "in middle of superlist",
       "property": "sublist",
-      "listOne": [0, 1, 2, 3, 4, 5],
-      "listTwo": [2, 3],
+      "input": {
+        "listOne": [0, 1, 2, 3, 4, 5],
+        "listTwo": [2, 3]
+      },
       "expected": "superlist"
     },
     {
       "description": "at end of superlist",
       "property": "sublist",
-      "listOne": [0, 1, 2, 3, 4, 5],
-      "listTwo": [3, 4, 5],
+      "input": {
+        "listOne": [0, 1, 2, 3, 4, 5],
+        "listTwo": [3, 4, 5]
+      },
       "expected": "superlist"
     },
     {
       "description": "first list missing element from second list",
       "property": "sublist",
-      "listOne": [1, 3],
-      "listTwo": [1, 2, 3],
+      "input": {
+        "listOne": [1, 3],
+        "listTwo": [1, 2, 3]
+      },
       "expected": "unequal"
     },
     {
       "description": "second list missing element from first list",
       "property": "sublist",
-      "listOne": [1, 2, 3],
-      "listTwo": [1, 3],
+      "input": {
+        "listOne": [1, 2, 3],
+        "listTwo": [1, 3]
+      },
       "expected": "unequal"
     },
     {
       "description": "order matters to a list",
       "property": "sublist",
-      "listOne": [1, 2, 3],
-      "listTwo": [3, 2, 1],
+      "input": {
+        "listOne": [1, 2, 3],
+        "listTwo": [3, 2, 1]
+      },
       "expected": "unequal"
     },
     {
       "description": "same digits but different numbers",
       "property": "sublist",
-      "listOne": [1, 0, 1],
-      "listTwo": [10, 1],
+      "input": {
+        "listOne": [1, 0, 1],
+        "listTwo": [10, 1]
+      },
       "expected": "unequal"
     }
   ]
