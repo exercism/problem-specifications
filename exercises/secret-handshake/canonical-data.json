@@ -1,6 +1,6 @@
 {
   "exercise": "secret-handshake",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments": [
     " In a discussion in https://github.com/exercism/problem-specifications/pull/794 and    ",
     " https://github.com/exercism/problem-specifications/issues/335 it has been decided to  ",
@@ -21,67 +21,89 @@
         {
           "description": "wink for 1",
           "property": "commands",
-          "input": 1,
+          "input": {
+            "number": 1
+          },
           "expected": ["wink"]
         },
         {
           "description": "double blink for 10",
           "property": "commands",
-          "input": 2,
+          "input": {
+            "number": 2
+          },
           "expected": ["double blink"]
         },
         {
           "description": "close your eyes for 100",
           "property": "commands",
-          "input": 4,
+          "input": {
+            "number": 4
+          },
           "expected": ["close your eyes"]
         },
         {
           "description": "jump for 1000",
           "property": "commands",
-          "input": 8,
+          "input": {
+            "number": 8
+          },
           "expected": ["jump"]
         },
         {
           "description": "combine two actions",
           "property": "commands",
-          "input": 3,
+          "input": {
+            "number": 3
+          },
           "expected": ["wink", "double blink"]
         },
         {
           "description": "reverse two actions",
           "property": "commands",
-          "input": 19,
+          "input": {
+            "number": 19
+          },
           "expected": ["double blink", "wink"]
         },
         {
           "description": "reversing one action gives the same action",
           "property": "commands",
-          "input": 24,
+          "input": {
+            "number": 24
+          },
           "expected": ["jump"]
         },
         {
           "description": "reversing no actions still gives no actions",
           "property": "commands",
-          "input": 16,
+          "input": {
+            "number": 16
+          },
           "expected": []
         },
         {
           "description": "all possible actions",
           "property": "commands",
-          "input": 15,
+          "input": {
+            "number": 15
+          },
           "expected": ["wink", "double blink", "close your eyes", "jump"]
         },
         {
           "description": "reverse all possible actions",
           "property": "commands",
-          "input": 31,
+          "input": {
+            "number": 31
+          },
           "expected": ["jump", "close your eyes", "double blink", "wink"]
         },
         {
           "description": "do nothing for zero",
           "property": "commands",
-          "input": 0,
+          "input": {
+            "number": 0
+          },
           "expected": []
         }
       ]
