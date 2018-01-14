@@ -1,30 +1,38 @@
 {
   "exercise": "spiral-matrix",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "cases": [
     {
       "description": "empty spiral",
       "property": "spiralMatrix",
-      "input": 0,
+      "input": {
+        "size": 0
+      },
       "expected": []
     },
     {
       "description": "trivial spiral",
       "property": "spiralMatrix",
-      "input": 1,
+      "input": {
+        "size": 1
+      },
       "expected": [ [1] ]
     },
     {
       "description": "spiral of size 2",
       "property": "spiralMatrix",
-      "input": 2,
+      "input": {
+        "size": 2
+      },
       "expected": [ [1, 2]
                   , [4, 3] ]
     },
     {
       "description": "spiral of size 3",
       "property": "spiralMatrix",
-      "input": 3,
+      "input": {
+        "size": 3
+      },
       "expected": [ [1, 2, 3]
                   , [8, 9, 4]
                   , [7, 6, 5] ]
@@ -32,7 +40,9 @@
     {
       "description": "spiral of size 4",
       "property": "spiralMatrix",
-      "input": 4,
+      "input": {
+        "size": 4
+      },
       "expected": [ [ 1,  2,  3, 4]
                   , [12, 13, 14, 5]
                   , [11, 16, 15, 6]
@@ -41,7 +51,9 @@
     {
       "description": "spiral of size 5",
       "property": "spiralMatrix",
-      "input": 5,
+      "input": {
+        "size": 5
+      },
       "expected": [ [ 1,  2,  3,  4, 5]
                   , [16, 17, 18, 19, 6]
                   , [15, 24, 25, 20, 7]
