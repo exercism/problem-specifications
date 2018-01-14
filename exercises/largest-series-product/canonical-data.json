@@ -1,11 +1,10 @@
 {
   "exercise": "largest-series-product",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "comments": [
     "A negative expected value means the input is invalid.",
     "Different languages may handle this differently.",
     "e.g. raise exceptions, return (int, error), return Option<int>, etc.",
-
     "Some languages specifically test the string->digits conversion",
     "and the 'slices of size N' operation.",
     "These cases *deliberately* do not cover those two operations.",
@@ -18,71 +17,91 @@
     {
       "description": "finds the largest product if span equals length",
       "property": "largestProduct",
-      "digits": "29",
-      "span": 2,
+      "input": {
+        "digits": "29",
+        "span": 2
+      },
       "expected": 18
     },
     {
       "description": "can find the largest product of 2 with numbers in order",
       "property": "largestProduct",
-      "digits": "0123456789",
-      "span": 2,
+      "input": {
+        "digits": "0123456789",
+        "span": 2
+      },
       "expected": 72
     },
     {
       "description": "can find the largest product of 2",
       "property": "largestProduct",
-      "digits": "576802143",
-      "span": 2,
+      "input": {
+        "digits": "576802143",
+        "span": 2
+      },
       "expected": 48
     },
     {
       "description": "can find the largest product of 3 with numbers in order",
       "property": "largestProduct",
-      "digits": "0123456789",
-      "span": 3,
+      "input": {
+        "digits": "0123456789",
+        "span": 3
+      },
       "expected": 504
     },
     {
       "description": "can find the largest product of 3",
       "property": "largestProduct",
-      "digits": "1027839564",
-      "span": 3,
+      "input": {
+        "digits": "1027839564",
+        "span": 3
+      },
       "expected": 270
     },
     {
       "description": "can find the largest product of 5 with numbers in order",
       "property": "largestProduct",
-      "digits": "0123456789",
-      "span": 5,
+      "input": {
+        "digits": "0123456789",
+        "span": 5
+      },
       "expected": 15120
     },
     {
       "description": "can get the largest product of a big number",
       "property": "largestProduct",
-      "digits": "73167176531330624919225119674426574742355349194934",
-      "span": 6,
+      "input": {
+        "digits": "73167176531330624919225119674426574742355349194934",
+        "span": 6
+      },
       "expected": 23520
     },
     {
       "description": "reports zero if the only digits are zero",
       "property": "largestProduct",
-      "digits": "0000",
-      "span": 2,
+      "input": {
+        "digits": "0000",
+        "span": 2
+      },
       "expected": 0
     },
     {
       "description": "reports zero if all spans include zero",
       "property": "largestProduct",
-      "digits": "99099",
-      "span": 3,
+      "input": {
+        "digits": "99099",
+        "span": 3
+      },
       "expected": 0
     },
     {
       "description": "rejects span longer than string length",
       "property": "largestProduct",
-      "digits": "123",
-      "span": 4,
+      "input": {
+        "digits": "123",
+        "span": 4
+      },
       "expected": -1
     },
     {
@@ -102,8 +121,10 @@
       ],
       "description": "reports 1 for empty string and empty product (0 span)",
       "property": "largestProduct",
-      "digits": "",
-      "span": 0,
+      "input": {
+        "digits": "",
+        "span": 0
+      },
       "expected": 1
     },
     {
@@ -113,29 +134,37 @@
       ],
       "description": "reports 1 for nonempty string and empty product (0 span)",
       "property": "largestProduct",
-      "digits": "123",
-      "span": 0,
+      "input": {
+        "digits": "123",
+        "span": 0
+      },
       "expected": 1
     },
     {
       "description": "rejects empty string and nonzero span",
       "property": "largestProduct",
-      "digits": "",
-      "span": 1,
+      "input": {
+        "digits": "",
+        "span": 1
+      },
       "expected": -1
     },
     {
       "description": "rejects invalid character in digits",
       "property": "largestProduct",
-      "digits": "1234a5",
-      "span": 2,
+      "input": {
+        "digits": "1234a5",
+        "span": 2
+      },
       "expected": -1
     },
     {
       "description": "rejects negative span",
       "property": "largestProduct",
-      "digits": "12345",
-      "span": -1,
+      "input": {
+        "digits": "12345",
+        "span": -1
+      },
       "expected": -1
     }
   ]
