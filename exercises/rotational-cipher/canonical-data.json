@@ -1,6 +1,6 @@
 {
   "exercise": "rotational-cipher",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments": [
     "The tests are a series of rotation tests: "
   ],
@@ -11,71 +11,91 @@
         {
           "description": "rotate a by 0, same output as input",
           "property": "rotate",
-          "text": "a",
-          "shiftKey": 0,
+          "input": {
+            "text": "a",
+            "shiftKey": 0
+          },
           "expected": "a"
         },
         {
           "description": "rotate a by 1",
           "property": "rotate",
-          "text": "a",
-          "shiftKey": 1,
+          "input": {
+            "text": "a",
+            "shiftKey": 1
+          },
           "expected": "b"
         },
         {
           "description": "rotate a by 26, same output as input",
           "property": "rotate",
-          "text": "a",
-          "shiftKey": 26,
+          "input": {
+            "text": "a",
+            "shiftKey": 26
+          },
           "expected": "a"
         },
         {
           "description": "rotate m by 13",
           "property": "rotate",
-          "text": "m",
-          "shiftKey": 13,
+          "input": {
+            "text": "m",
+            "shiftKey": 13
+          },
           "expected": "z"
         },
         {
           "description": "rotate n by 13 with wrap around alphabet",
           "property": "rotate",
-          "text": "n",
-          "shiftKey": 13,
+          "input": {
+            "text": "n",
+            "shiftKey": 13
+          },
           "expected": "a"
         },
         {
           "description": "rotate capital letters",
           "property": "rotate",
-          "text": "OMG",
-          "shiftKey": 5,
+          "input": {
+            "text": "OMG",
+            "shiftKey": 5
+          },
           "expected": "TRL"
         },
         {
           "description": "rotate spaces",
           "property": "rotate",
-          "text": "O M G",
-          "shiftKey": 5,
+          "input": {
+            "text": "O M G",
+            "shiftKey": 5
+          },
           "expected": "T R L"
         },
         {
           "description": "rotate numbers",
           "property": "rotate",
-          "text": "Testing 1 2 3 testing",
-          "shiftKey": 4,
+          "input": {
+            "text": "Testing 1 2 3 testing",
+            "shiftKey": 4
+          },
           "expected": "Xiwxmrk 1 2 3 xiwxmrk"
         },
         {
           "description": "rotate punctuation",
           "property": "rotate",
-          "text": "Let's eat, Grandma!",
-          "shiftKey": 21,
+          "input": {
+            "text": "Let's eat, Grandma!",
+            "shiftKey": 21
+          },
           "expected": "Gzo'n zvo, Bmviyhv!"
         },
         {
           "description": "rotate all letters",
           "property": "rotate",
-          "text": "The quick brown fox jumps over the lazy dog.",
-          "shiftKey": 13,
+          "input": {
+            "text": "The quick brown fox jumps over the lazy dog.",
+            "shiftKey": 13
+          },
           "expected": "Gur dhvpx oebja sbk whzcf bire gur ynml qbt."
         }
       ]
