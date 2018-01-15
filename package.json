@@ -11,6 +11,7 @@
   },
   "scripts": {
     "test": "ajv -s canonical-schema.json -d \"exercises/*/canonical-data.json\"",
+    "test-new-schema": "ajv -s schema-with-input.json -d \"exercises/*/canonical-data.json\"",
     "test-one": "ajv -s canonical-schema.json -d"
   }
 }

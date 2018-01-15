@@ -7,3 +7,4 @@ cache: yarn
 script:
   - bin/check_required_files_present
   - npm test
+  - npm run test-new-schema || true
