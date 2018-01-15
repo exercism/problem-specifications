@@ -27,15 +27,6 @@
       "expected": ["tan"]
     },
     {
-      "description": "does not detect false positives",
-      "property": "anagrams",
-      "input": {
-        "subject": "galea",
-        "candidates": ["eagle"]
-      },
-      "expected": []
-    },
-    {
       "description": "detects two anagrams",
       "property": "anagrams",
       "input": {
