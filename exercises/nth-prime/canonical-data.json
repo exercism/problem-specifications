@@ -1,36 +1,48 @@
 {
   "exercise": "nth-prime",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "cases": [
     {
       "description": "first prime",
       "property": "prime",
-      "input": 1,
+      "input": {
+        "number": 1
+      },
       "expected": 2
     },
     {
       "description": "second prime",
       "property": "prime",
-      "input": 2,
+      "input": {
+        "number": 2
+      },
       "expected": 3
     },
     {
       "description": "sixth prime",
       "property": "prime",
-      "input": 6,
+      "input": {
+        "number": 6
+      },
       "expected": 13
     },
     {
       "description": "big prime",
       "property": "prime",
-      "input": 10001,
+      "input": {
+        "number": 10001
+      },
       "expected": 104743
     },
     {
       "description": "there is no zeroth prime",
       "property": "prime",
-      "input": 0,
-      "expected": { "error": "there is no zeroth prime" }
+      "input": {
+        "number": 0
+      },
+      "expected": {
+        "error": "there is no zeroth prime"
+      }
     }
   ]
 }
