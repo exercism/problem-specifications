@@ -1,6 +1,6 @@
 {
   "exercise": "minesweeper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "comments": [
     " The expected outputs are represented as arrays of strings to   ",
     " improve readability in this JSON file.                         ",
@@ -11,23 +11,29 @@
     {
       "description": "no rows",
       "property": "annotate",
-      "input": [],
+      "input": {
+        "minefield": []
+      },
       "expected": []
     },
     {
       "description": "no columns",
       "property": "annotate",
-      "input": [""],
+      "input": {
+        "minefield": [""]
+      },
       "expected": [""]
     },
     {
       "description": "no mines",
       "property": "annotate",
-      "input": [
-        "   ",
-        "   ",
-        "   "
-      ],
+      "input": {
+        "minefield": [
+          "   ",
+          "   ",
+          "   "
+        ]
+      },
       "expected": [
         "   ",
         "   ",
@@ -35,13 +41,15 @@
       ]
     },
     {
-      "description": "board with only mines",
+      "description": "minefield with only mines",
       "property": "annotate",
-      "input": [
-        "***",
-        "***",
-        "***"
-      ],
+      "input": {
+        "minefield": [
+          "***",
+          "***",
+          "***"
+        ]
+      },
       "expected": [
         "***",
         "***",
@@ -51,11 +59,13 @@
     {
       "description": "mine surrounded by spaces",
       "property": "annotate",
-      "input": [
-        "   ",
-        " * ",
-        "   "
-      ],
+      "input": {
+        "minefield": [
+          "   ",
+          " * ",
+          "   "
+        ]
+      },
       "expected": [
         "111",
         "1*1",
@@ -65,11 +75,13 @@
     {
       "description": "space surrounded by mines",
       "property": "annotate",
-      "input": [
-        "***",
-        "* *",
-        "***"
-      ],
+      "input": {
+        "minefield": [
+          "***",
+          "* *",
+          "***"
+        ]
+      },
       "expected": [
         "***",
         "*8*",
@@ -79,25 +91,31 @@
     {
       "description": "horizontal line",
       "property": "annotate",
-      "input": [" * * "],
+      "input": {
+        "minefield": [" * * "]
+      },
       "expected": ["1*2*1"]
     },
     {
       "description": "horizontal line, mines at edges",
       "property": "annotate",
-      "input": ["*   *"],
+      "input": {
+        "minefield": ["*   *"]
+      },
       "expected": ["*1 1*"]
     },
     {
       "description": "vertical line",
       "property": "annotate",
-      "input": [
-        " ",
-        "*",
-        " ",
-        "*",
-        " "
-      ],
+      "input": {
+        "minefield": [
+          " ",
+          "*",
+          " ",
+          "*",
+          " "
+        ]
+      },
       "expected": [
         "1",
         "*",
@@ -109,13 +127,15 @@
     {
       "description": "vertical line, mines at edges",
       "property": "annotate",
-      "input": [
-        "*",
-        " ",
-        " ",
-        " ",
-        "*"
-      ],
+      "input": {
+        "minefield": [
+          "*",
+          " ",
+          " ",
+          " ",
+          "*"
+        ]
+      },
       "expected": [
         "*",
         "1",
@@ -127,13 +147,15 @@
     {
       "description": "cross",
       "property": "annotate",
-      "input": [
-        "  *  ",
-        "  *  ",
-        "*****",
-        "  *  ",
-        "  *  "
-      ],
+      "input": {
+        "minefield": [
+          "  *  ",
+          "  *  ",
+          "*****",
+          "  *  ",
+          "  *  "
+        ]
+      },
       "expected": [
         " 2*2 ",
         "25*52",
@@ -143,16 +165,18 @@
       ]
     },
     {
-      "description": "large board",
+      "description": "large minefield",
       "property": "annotate",
-      "input": [
-        " *  * ",
-        "  *   ",
-        "    * ",
-        "   * *",
-        " *  * ",
-        "      "
-      ],
+      "input": {
+        "minefield": [
+          " *  * ",
+          "  *   ",
+          "    * ",
+          "   * *",
+          " *  * ",
+          "      "
+        ]
+      },
       "expected": [
         "1*22*1",
         "12*322",
