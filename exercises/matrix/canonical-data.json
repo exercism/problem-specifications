@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "cases": [
     {
-      "description": "one number matrix",
-      "property": "rows",
+      "description": "extract row from one number matrix",
+      "property": "row",
       "input": {
         "string": "1",
         "index": 0
@@ -13,7 +13,7 @@
     },
     {
       "description": "can extract row",
-      "property": "rows",
+      "property": "row",
       "input": {
         "string": "1 2\n3 4",
         "index": 1
@@ -21,8 +21,8 @@
       "expected": [3,4]
     },
     {
-      "description": "numbers of different length",
-      "property": "rows",
+      "description": "extract row where numbers have different widths",
+      "property": "row",
       "input": {
         "string": "1 2\n10 20",
         "index": 1
@@ -30,8 +30,26 @@
       "expected": [10,20]
     },
     {
+      "description": "can extract row from non-square matrix",
+      "property": "row",
+      "input": {
+        "string": "1 2 3\n4 5 6\n7 8 9\n8 7 6",
+        "index": 2
+      },
+      "expected": [4, 5, 6]
+    }
+    {
+      "description": "extract column from one number matrix",
+      "property": "column",
+      "input": {
+        "string": "1",
+        "index": 0
+      },
+      "expected": [1]
+    },
+    {
       "description": "can extract column",
-      "property": "columns",
+      "property": "column",
       "input": {
         "string": "1 2 3\n4 5 6\n7 8 9",
         "index": 2
@@ -41,12 +59,21 @@
     },
     {
       "description": "can extract column from non-square matrix",
-      "property": "columns",
+      "property": "column",
       "input": {
         "string": "1 2 3\n4 5 6\n7 8 9\n8 7 6",
         "index": 2
       },
       "expected": [3, 6, 9, 6]
+    },
+    {
+      "description": "extract column where numbers have different widths",
+      "property": "column",
+      "input": {
+        "string": "89 1903 3\n18 3 1\n9 4 800",
+        "index": 1
+      },
+      "expected": [1903, 3, 4]
     }
     ]
 }
