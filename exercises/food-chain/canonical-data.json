@@ -1,6 +1,6 @@
 {
   "exercise": "food-chain",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "comments": [
     "JSON doesn't allow for multi-line strings, so all verses are presented ",
     "here as arrays of strings. It's up to the test generator to join the ",
@@ -18,8 +18,10 @@
         {
           "description": "fly",
           "property": "recite",
-          "startVerse": 1,
-          "endVerse": 1,
+          "input": {
+            "startVerse": 1,
+            "endVerse": 1
+          },
           "expected": [
             "I know an old lady who swallowed a fly.",
             "I don't know why she swallowed the fly. Perhaps she'll die."
@@ -28,8 +30,10 @@
         {
           "description": "spider",
           "property": "recite",
-          "startVerse": 2,
-          "endVerse": 2,
+          "input": {
+            "startVerse": 2,
+            "endVerse": 2
+          },
           "expected": [
             "I know an old lady who swallowed a spider.",
             "It wriggled and jiggled and tickled inside her.",
@@ -40,8 +44,10 @@
         {
           "description": "bird",
           "property": "recite",
-          "startVerse": 3,
-          "endVerse": 3,
+          "input": {
+            "startVerse": 3,
+            "endVerse": 3
+          },
           "expected": [
             "I know an old lady who swallowed a bird.",
             "How absurd to swallow a bird!",
@@ -53,8 +59,10 @@
         {
           "description": "cat",
           "property": "recite",
-          "startVerse": 4,
-          "endVerse": 4,
+          "input": {
+            "startVerse": 4,
+            "endVerse": 4
+          },
           "expected": [
             "I know an old lady who swallowed a cat.",
             "Imagine that, to swallow a cat!",
@@ -67,8 +75,10 @@
         {
           "description": "dog",
           "property": "recite",
-          "startVerse": 5,
-          "endVerse": 5,
+          "input": {
+            "startVerse": 5,
+            "endVerse": 5
+          },
           "expected": [
             "I know an old lady who swallowed a dog.",
             "What a hog, to swallow a dog!",
@@ -82,8 +92,10 @@
         {
           "description": "goat",
           "property": "recite",
-          "startVerse": 6,
-          "endVerse": 6,
+          "input": {
+            "startVerse": 6,
+            "endVerse": 6
+          },
           "expected": [
             "I know an old lady who swallowed a goat.",
             "Just opened her throat and swallowed a goat!",
@@ -98,8 +110,10 @@
         {
           "description": "cow",
           "property": "recite",
-          "startVerse": 7,
-          "endVerse": 7,
+          "input": {
+            "startVerse": 7,
+            "endVerse": 7
+          },
           "expected": [
             "I know an old lady who swallowed a cow.",
             "I don't know how she swallowed a cow!",
@@ -115,8 +129,10 @@
         {
           "description": "horse",
           "property": "recite",
-          "startVerse": 8,
-          "endVerse": 8,
+          "input": {
+            "startVerse": 8,
+            "endVerse": 8
+          },
           "expected": [
             "I know an old lady who swallowed a horse.",
             "She's dead, of course!"
@@ -125,8 +141,10 @@
         {
           "description": "multiple verses",
           "property": "recite",
-          "startVerse": 1,
-          "endVerse": 3,
+          "input": {
+            "startVerse": 1,
+            "endVerse": 3
+          },
           "expected": [
             "I know an old lady who swallowed a fly.",
             "I don't know why she swallowed the fly. Perhaps she'll die.",
@@ -146,8 +164,10 @@
         {
           "description": "full song",
           "property": "recite",
-          "startVerse": 1,
-          "endVerse": 8,
+          "input": {
+            "startVerse": 1,
+            "endVerse": 8
+          },
           "expected": [
             "I know an old lady who swallowed a fly.",
             "I don't know why she swallowed the fly. Perhaps she'll die.",
