@@ -1,6 +1,6 @@
 {
     "exercise": "perfect-numbers",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "cases": [
         {
             "description": "Perfect numbers",
@@ -8,19 +8,25 @@
                 {
                     "description": "Smallest perfect number is classified correctly",
                     "property": "classify",
-                    "input": 6,
+                    "input": {
+                        "number": 6
+                    },
                     "expected": "perfect"
                 },
                 {
                     "description": "Medium perfect number is classified correctly",
                     "property": "classify",
-                    "input": 28,
+                    "input": {
+                        "number": 28
+                    },
                     "expected": "perfect"
                 },
                 {
                     "description": "Large perfect number is classified correctly",
                     "property": "classify",
-                    "input": 33550336,
+                    "input": {
+                        "number": 33550336
+                    },
                     "expected": "perfect"
                 }
             ]
@@ -31,19 +37,25 @@
                 {
                     "description": "Smallest abundant number is classified correctly",
                     "property": "classify",
-                    "input": 12,
+                    "input": {
+                        "number": 12
+                    },
                     "expected": "abundant"
                 },
                 {
                     "description": "Medium abundant number is classified correctly",
                     "property": "classify",
-                    "input": 30,
+                    "input": {
+                        "number": 30
+                    },
                     "expected": "abundant"
                 },
                 {
                     "description": "Large abundant number is classified correctly",
                     "property": "classify",
-                    "input": 33550335,
+                    "input": {
+                        "number": 33550335
+                    },
                     "expected": "abundant"
                 }
             ]
@@ -54,31 +66,41 @@
                 {
                     "description": "Smallest prime deficient number is classified correctly",
                     "property": "classify",
-                    "input": 2,
+                    "input": {
+                        "number": 2
+                    },
                     "expected": "deficient"
                 },
                 {
                     "description": "Smallest non-prime deficient number is classified correctly",
                     "property": "classify",
-                    "input": 4,
+                    "input": {
+                        "number": 4
+                    },
                     "expected": "deficient"
                 },
                 {
                     "description": "Medium deficient number is classified correctly",
                     "property": "classify",
-                    "input": 32,
+                    "input": {
+                        "number": 32
+                    },
                     "expected": "deficient"
                 },
                 {
                     "description": "Large deficient number is classified correctly",
                     "property": "classify",
-                    "input": 33550337,
+                    "input": {
+                        "number": 33550337
+                    },
                     "expected": "deficient"
                 },
                 {
                     "description": "Edge case (no factors other than itself) is classified correctly",
                     "property": "classify",
-                    "input": 1,
+                    "input": {
+                        "number": 1
+                    },
                     "expected": "deficient"
                 }
             ]
@@ -89,7 +111,9 @@
                 {
                     "description": "Zero is rejected (not a natural number)",
                     "property": "classify",
-                    "input": 0,
+                    "input": {
+                        "number": 0
+                    },
                     "expected": {
                         "error": "Classification is only possible for natural numbers."
                     }
@@ -97,7 +121,9 @@
                 {
                     "description": "Negative integer is rejected (not a natural number)",
                     "property": "classify",
-                    "input": -1,
+                    "input": {
+                        "number": -1
+                    },
                     "expected": {
                         "error": "Classification is only possible for natural numbers."
                     }
