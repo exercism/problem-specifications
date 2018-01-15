@@ -83,9 +83,9 @@
       "property": "anagrams",
       "input": {
         "subject": "corn",
-        "candidates": ["corn", "dark", "Corn", "rank", "CORN", "cron", "park"]
+        "candidates": ["corn", "Corn", "CORN"]
       },
-      "expected": ["cron"]
+      "expected": []
     },
     {
       "description": "does not detect non-anagrams with identical checksum",
