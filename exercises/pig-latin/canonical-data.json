@@ -1,6 +1,6 @@
 {
   "exercise": "pig-latin",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "cases": [
     {
       "description": "ay is added to words that start with vowels",
@@ -8,37 +8,49 @@
         {
           "description": "word beginning with a",
           "property": "translate",
-          "input": "apple",
+          "input": {
+            "phrase": "apple"
+          },
           "expected": "appleay"
         },
         {
           "description": "word beginning with e",
           "property": "translate",
-          "input": "ear",
+          "input": {
+            "phrase": "ear"
+          },
           "expected": "earay"
         },
         {
           "description": "word beginning with i",
           "property": "translate",
-          "input": "igloo",
+          "input": {
+            "phrase": "igloo"
+          },
           "expected": "iglooay"
         },
         {
           "description": "word beginning with o",
           "property": "translate",
-          "input": "object",
+          "input": {
+            "phrase": "object"
+          },
           "expected": "objectay"
         },
         {
           "description": "word beginning with u",
           "property": "translate",
-          "input": "under",
+          "input": {
+            "phrase": "under"
+          },
           "expected": "underay"
         },
         {
           "description": "word beginning with a vowel and followed by a qu",
           "property": "translate",
-          "input": "equal",
+          "input": {
+            "phrase": "equal"
+          },
           "expected": "equalay"
         }
       ]
@@ -49,25 +61,33 @@
         {
           "description": "word beginning with p",
           "property": "translate",
-          "input": "pig",
+          "input": {
+            "phrase": "pig"
+          },
           "expected": "igpay"
         },
         {
           "description": "word beginning with k",
           "property": "translate",
-          "input": "koala",
+          "input": {
+            "phrase": "koala"
+          },
           "expected": "oalakay"
         },
         {
           "description": "word beginning with x",
           "property": "translate",
-          "input": "xenon",
+          "input": {
+            "phrase": "xenon"
+          },
           "expected": "enonxay"
         },
         {
           "description": "word beginning with q without a following u",
           "property": "translate",
-          "input": "qat",
+          "input": {
+            "phrase": "qat"
+          },
           "expected": "atqay"
         }
       ]
@@ -78,37 +98,49 @@
         {
           "description": "word beginning with ch",
           "property": "translate",
-          "input": "chair",
+          "input": {
+            "phrase": "chair"
+          },
           "expected": "airchay"
         },
         {
           "description": "word beginning with qu",
           "property": "translate",
-          "input": "queen",
+          "input": {
+            "phrase": "queen"
+          },
           "expected": "eenquay"
         },
         {
           "description": "word beginning with qu and a preceding consonant",
           "property": "translate",
-          "input": "square",
+          "input": {
+            "phrase": "square"
+          },
           "expected": "aresquay"
         },
         {
           "description": "word beginning with th",
           "property": "translate",
-          "input": "therapy",
+          "input": {
+            "phrase": "therapy"
+          },
           "expected": "erapythay"
         },
         {
           "description": "word beginning with thr",
           "property": "translate",
-          "input": "thrush",
+          "input": {
+            "phrase": "thrush"
+          },
           "expected": "ushthray"
         },
         {
           "description": "word beginning with sch",
           "property": "translate",
-          "input": "school",
+          "input": {
+            "phrase": "school"
+          },
           "expected": "oolschay"
         }
       ]
@@ -119,13 +151,17 @@
         {
           "description": "word beginning with yt",
           "property": "translate",
-          "input": "yttria",
+          "input": {
+            "phrase": "yttria"
+          },
           "expected": "yttriaay"
         },
         {
           "description": "word beginning with xr",
           "property": "translate",
-          "input": "xray",
+          "input": {
+            "phrase": "xray"
+          },
           "expected": "xrayay"
         }
       ]
@@ -136,19 +172,25 @@
         {
           "description": "y is treated like a consonant at the beginning of a word",
           "property": "translate",
-          "input": "yellow",
+          "input": {
+            "phrase": "yellow"
+          },
           "expected": "ellowyay"
         },
         {
           "description": "y is treated like a vowel at the end of a consonant cluster",
           "property": "translate",
-          "input": "rhythm",
+          "input": {
+            "phrase": "rhythm"
+          },
           "expected": "ythmrhay"
         },
         {
           "description": "y as second letter in two letter word",
           "property": "translate",
-          "input": "my",
+          "input": {
+            "phrase": "my"
+          },
           "expected": "ymay"
         }
       ]
@@ -159,7 +201,9 @@
         {
           "description": "a whole phrase",
           "property": "translate",
-          "input": "quick fast run",
+          "input": {
+            "phrase": "quick fast run"
+          },
           "expected": "ickquay astfay unray"
         }
       ]
