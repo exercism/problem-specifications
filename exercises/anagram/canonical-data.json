@@ -115,15 +115,6 @@
       "expected": ["Carthorse"]
     },
     {
-      "description": "does not detect a word as its own anagram",
-      "property": "anagrams",
-      "input": {
-        "subject": "banana",
-        "candidates": ["Banana"]
-      },
-      "expected": []
-    },
-    {
       "description": "does not detect a anagram if the original word is repeated",
       "property": "anagrams",
       "input": {
