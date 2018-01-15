@@ -1,6 +1,6 @@
 {
   "exercise": "acronym",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "cases": [
     {
       "description": "Abbreviate a phrase",
@@ -46,7 +46,7 @@
           "expected": "GIMP"
         },
         {
-          "description": "hyphenated",
+          "description": "punctuation without whitespace",
           "property": "abbreviate",
           "input": {
             "phrase": "Complementary metal-oxide semiconductor"
