@@ -1,6 +1,6 @@
 {
   "exercise": "saddle-points",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "comments": [
     "Matrix rows and columns are 0-indexed."
   ],
@@ -11,11 +11,13 @@
         "This is the README example."
       ],
       "property": "saddlePoints",
-      "input": [
-        [9, 8, 7],
-        [5, 3, 2],
-        [6, 6, 7]
-      ],
+      "input": {
+        "matrix": [
+          [9, 8, 7],
+          [5, 3, 2],
+          [6, 6, 7]
+        ]
+      },
       "expected": [
         {
           "row": 1,
@@ -26,29 +28,35 @@
     {
       "description": "Can identify that empty matrix has no saddle points",
       "property": "saddlePoints",
-      "input": [
-        []
-      ],
+      "input": {
+        "matrix": [
+          []
+        ]
+      },
       "expected": []
     },
     {
       "description": "Can identify lack of saddle points when there are none",
       "property": "saddlePoints",
-      "input": [
-        [1, 2, 3],
-        [3, 1, 2],
-        [2, 3, 1]
-      ],
+      "input": {
+        "matrix": [
+          [1, 2, 3],
+          [3, 1, 2],
+          [2, 3, 1]
+        ]
+      },
       "expected": []
     },
     {
       "description": "Can identify multiple saddle points",
       "property": "saddlePoints",
-      "input": [
-        [4, 5, 4],
-        [3, 5, 5],
-        [1, 5, 4]
-      ],
+      "input": {
+        "matrix": [
+          [4, 5, 4],
+          [3, 5, 5],
+          [1, 5, 4]
+        ]
+      },
       "expected": [
         {
           "row": 0,
@@ -71,11 +79,13 @@
         "off-by-one errors."
       ],
       "property": "saddlePoints",
-      "input": [
-        [8, 7, 9],
-        [6, 7, 6],
-        [3, 2, 5]
-      ],
+      "input": {
+        "matrix": [
+          [8, 7, 9],
+          [6, 7, 6],
+          [3, 2, 5]
+        ]
+      },
       "expected": [
         {
           "row": 2,
