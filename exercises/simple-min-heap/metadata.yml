@@ -1,0 +1,4 @@
+---
+blurb: "Write a simple simple binary min heap implementation backed by an array"
+source: "Inspired by the heap data structure used for priority queues"
+source_url: "https://en.wikipedia.org/wiki/Heap_(data_structure)#Implementation"
