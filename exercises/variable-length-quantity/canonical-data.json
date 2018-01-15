@@ -1,6 +1,6 @@
 {
   "exercise": "variable-length-quantity",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "comments": [
     "JSON doesn't allow hexadecimal literals.",
     "All numbers are given as decimal literals instead.",
@@ -13,109 +13,145 @@
         {
           "description": "zero",
           "property": "encode",
-          "input": [0],
+          "input": {
+            "integers": [0]
+          },
           "expected": [0]
         },
         {
           "description": "arbitrary single byte",
           "property": "encode",
-          "input": [64],
+          "input": {
+            "integers": [64]
+          },
           "expected": [64]
         },
         {
           "description": "largest single byte",
           "property": "encode",
-          "input": [127],
+          "input": {
+            "integers": [127]
+          },
           "expected": [127]
         },
         {
           "description": "smallest double byte",
           "property": "encode",
-          "input": [128],
+          "input": {
+            "integers": [128]
+          },
           "expected": [129,0]
         },
         {
           "description": "arbitrary double byte",
           "property": "encode",
-          "input": [8192],
+          "input": {
+            "integers": [8192]
+          },
           "expected": [192, 0]
         },
         {
           "description": "largest double byte",
           "property": "encode",
-          "input": [16383],
+          "input": {
+            "integers": [16383]
+          },
           "expected": [255, 127]
         },
         {
           "description": "smallest triple byte",
           "property": "encode",
-          "input": [16384],
+          "input": {
+            "integers": [16384]
+          },
           "expected": [129, 128, 0]
         },
         {
           "description": "arbitrary triple byte",
           "property": "encode",
-          "input": [1048576],
+          "input": {
+            "integers": [1048576]
+          },
           "expected": [192, 128, 0]
         },
         {
           "description": "largest triple byte",
           "property": "encode",
-          "input": [2097151],
+          "input": {
+            "integers": [2097151]
+          },
           "expected": [255, 255, 127]
         },
         {
           "description": "smallest quadruple byte",
           "property": "encode",
-          "input": [2097152],
+          "input": {
+            "integers": [2097152]
+          },
           "expected": [129, 128, 128, 0]
         },
         {
           "description": "arbitrary quadruple byte",
           "property": "encode",
-          "input": [134217728],
+          "input": {
+            "integers": [134217728]
+          },
           "expected": [192, 128, 128, 0]
         },
         {
           "description": "largest quadruple byte",
           "property": "encode",
-          "input": [268435455],
+          "input": {
+            "integers": [268435455]
+          },
           "expected": [255, 255, 255, 127]
         },
         {
           "description": "smallest quintuple byte",
           "property": "encode",
-          "input": [268435456],
+          "input": {
+            "integers": [268435456]
+          },
           "expected": [129, 128, 128, 128, 0]
         },
         {
           "description": "arbitrary quintuple byte",
           "property": "encode",
-          "input": [4278190080],
+          "input": {
+            "integers": [4278190080]
+          },
           "expected": [143, 248, 128, 128, 0]
         },
         {
           "description": "maximum 32-bit integer input",
           "property": "encode",
-          "input": [4294967295],
+          "input": {
+            "integers": [4294967295]
+          },
           "expected": [143, 255, 255, 255, 127]
         },
         {
           "description": "two single-byte values",
           "property": "encode",
-          "input": [64, 127],
+          "input": {
+            "integers": [64, 127]
+          },
           "expected": [64, 127]
         },
         {
           "description": "two multi-byte values",
           "property": "encode",
-          "input": [16384, 1193046],
+          "input": {
+            "integers": [16384, 1193046]
+          },
           "expected": [129, 128, 0, 200, 232, 86]
         },
         {
           "description": "many multi-byte values",
           "property": "encode",
-          "input": [8192, 1193046, 268435455, 0, 16383, 16384],
+          "input": {
+            "integers": [8192, 1193046, 268435455, 0, 16383, 16384]
+          },
           "expected": [192, 0, 200, 232, 86, 255, 255, 255, 127, 0, 255, 127, 129, 128, 0]
         }
       ]
@@ -126,49 +162,65 @@
         {
           "description": "one byte",
           "property": "decode",
-          "input": [127],
+          "input": {
+            "integers": [127]
+          },
           "expected": [127]
         },
         {
           "description": "two bytes",
           "property": "decode",
-          "input": [192, 0],
+          "input": {
+            "integers": [192, 0]
+          },
           "expected": [8192]
         },
         {
           "description": "three bytes",
           "property": "decode",
-          "input": [255, 255, 127],
+          "input": {
+            "integers": [255, 255, 127]
+          },
           "expected": [2097151]
         },
         {
           "description": "four bytes",
           "property": "decode",
-          "input": [129, 128, 128, 0],
+          "input": {
+            "integers": [129, 128, 128, 0]
+          },
           "expected": [2097152]
         },
         {
           "description": "maximum 32-bit integer",
           "property": "decode",
-          "input": [143, 255, 255, 255, 127],
+          "input": {
+            "integers": [143, 255, 255, 255, 127]
+          },
           "expected": [4294967295]
         },
         {
           "description": "incomplete sequence causes error",
           "property": "decode",
-          "input": [255],
+          "input": {
+            "integers": [255]
+          },
           "expected": null
         },
         {
           "description": "incomplete sequence causes error, even if value is zero",
           "property": "decode",
-          "input": [128],
+          "input": {
+            "integers": [128]
+          },
           "expected": null
         },
         {
           "description": "multiple values",
           "property": "decode",
-          "input": [192, 0, 200, 232, 86, 255, 255, 255, 127, 0, 255, 127, 129, 128, 0],
+          "input": {
+            "integers": [192, 0, 200, 232, 86, 255, 255, 255, 127, 0, 255, 127, 129, 128, 0] 
+          },
           "expected": [8192, 1193046, 268435455, 0, 16383, 16384]
         }
       ]
