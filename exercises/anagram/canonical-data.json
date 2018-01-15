@@ -79,15 +79,6 @@
       "expected": ["gallery", "regally", "largely"]
     },
     {
-      "description": "does not detect identical words",
-      "property": "anagrams",
-      "input": {
-        "subject": "corn",
-        "candidates": ["corn", "Corn", "CORN"]
-      },
-      "expected": []
-    },
-    {
       "description": "does not detect non-anagrams with identical checksum",
       "property": "anagrams",
       "input": {
