@@ -6,4 +6,24 @@ cache: yarn
 
 script:
   - bin/check_required_files_present
-  - npm test
+  - |
+    invalid=""
+
+    for json in exercises/*/canonical-data.json; do
+      dir=$(dirname $json)
+      ex=$(basename $dir)
+
+      schema="canonical-schema.json"
+      if [ -f "$dir/USE_OLD_SCHEMA" ]; then
+        schema="old-schema.json"
+      fi
+
+      if ! ajv -s $schema -d $json; then
+        invalid="$invalid $ex"
+      fi
+    done
+
+    if [ -n "$invalid" ]; then
+      echo "invalid exercises: $invalid"
+      exit 1
+    fi
