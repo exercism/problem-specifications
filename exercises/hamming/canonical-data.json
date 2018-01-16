@@ -101,7 +101,7 @@
     {
       "description": "large distance in off-by-one strand",
       "property": "distance",
-      "strand1":  "GGACGGATTCTG",
+      "strand1": "GGACGGATTCTG",
       "strand2": "AGGACGGATTCT",
       "expected": 9
     },
