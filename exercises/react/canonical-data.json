@@ -59,7 +59,8 @@
           "cell": "input",
           "value": 10
         }
-      ]
+      ],
+      "expected": {}
     },
     {
       "description": "an input cell's value can be set",
@@ -82,7 +83,8 @@
           "cell": "input",
           "value": 20
         }
-      ]
+      ],
+      "expected": {}
     },
     {
       "description": "compute cells calculate initial value",
@@ -106,7 +108,8 @@
           "cell": "output",
           "value": 2
         }
-      ]
+      ],
+      "expected": {}
     },
     {
       "description": "compute cells take inputs in the right order",
@@ -135,7 +138,8 @@
           "cell": "output",
           "value": 21
         }
-      ]
+      ],
+      "expected": {}
     },
     {
       "description": "compute cells update value when dependencies are changed",
@@ -164,7 +168,8 @@
           "cell": "output",
           "value": 4
         }
-      ]
+      ],
+      "expected": {}
     },
     {
       "description": "compute cells can depend on other compute cells",
@@ -210,7 +215,8 @@
           "cell": "output",
           "value": 96
         }
-      ]
+      ],
+      "expected": {}
     },
     {
       "description": "compute cells fire callbacks",
@@ -244,7 +250,8 @@
           "callback": "callback1",
           "values": [4]
         }
-      ]
+      ],
+      "expected": {}
     },
     {
       "description": "callback cells only fire on change",
@@ -288,7 +295,8 @@
           "callback": "callback1",
           "values": [222]
         }
-      ]
+      ],
+      "expected": {}
     },
     {
       "description": "callbacks can be added and removed",
@@ -352,7 +360,8 @@
           "callback": "callback3",
           "values": [42]
         }
-      ]
+      ],
+      "expected": {}
     },
     {
       "description": "removing a callback multiple times doesn't interfere with other callbacks",
@@ -416,7 +425,8 @@
           "callback": "callback2",
           "values": [3]
         }
-      ]
+      ],
+      "expected": {}
     },
     {
       "description": "callbacks should only be called once even if multiple dependencies change",
@@ -472,7 +482,8 @@
           "callback": "callback1",
           "values": [10]
         }
-      ]
+      ],
+      "expected": {}
     },
     {
       "description": "callbacks should not be called if dependencies change but output value doesn't change",
@@ -538,7 +549,8 @@
           "callback": "callback1",
           "values": []
         }
-      ]
+      ],
+      "expected": {}
     }
   ]
 }
