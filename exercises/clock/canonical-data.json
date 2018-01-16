@@ -1,6 +1,6 @@
 {
   "exercise": "clock",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "comments": [
     "Most languages require constructing a clock with initial values,",
     "adding a positive or negative number of minutes, and testing equality",
@@ -221,66 +221,66 @@
       "cases": [
         {
           "description": "subtract minutes",
-          "property": "add",
+          "property": "subtract",
           "hour": 10,
           "minute": 3,
-          "add": -3,
+          "subtract": 3,
           "expected": "10:00"
         },
         {
           "description": "subtract to previous hour",
-          "property": "add",
+          "property": "subtract",
           "hour": 10,
           "minute": 3,
-          "add": -30,
+          "subtract": 30,
           "expected": "09:33"
         },
         {
           "description": "subtract more than an hour",
-          "property": "add",
+          "property": "subtract",
           "hour": 10,
           "minute": 3,
-          "add": -70,
+          "subtract": 70,
           "expected": "08:53"
         },
         {
           "description": "subtract across midnight",
-          "property": "add",
+          "property": "subtract",
           "hour": 0,
           "minute": 3,
-          "add": -4,
+          "subtract": 4,
           "expected": "23:59"
         },
         {
           "description": "subtract more than two hours",
-          "property": "add",
+          "property": "subtract",
           "hour": 0,
           "minute": 0,
-          "add": -160,
+          "subtract": 160,
           "expected": "21:20"
         },
         {
           "description": "subtract more than two hours with borrow",
-          "property": "add",
+          "property": "subtract",
           "hour": 6,
           "minute": 15,
-          "add": -160,
+          "subtract": 160,
           "expected": "03:35"
         },
         {
           "description": "subtract more than one day (1500 min = 25 hrs)",
-          "property": "add",
+          "property": "subtract",
           "hour": 5,
           "minute": 32,
-          "add": -1500,
+          "subtract": 1500,
           "expected": "04:32"
         },
         {
           "description": "subtract more than two days",
-          "property": "add",
+          "property": "subtract",
           "hour": 2,
           "minute": 20,
-          "add": -3000,
+          "subtract": 3000,
           "expected": "00:20"
         }
       ]
