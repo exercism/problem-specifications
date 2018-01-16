@@ -18,15 +18,6 @@
       "expected": []
     },
     {
-      "description": "detects simple anagram",
-      "property": "anagrams",
-      "input": {
-        "subject": "ant",
-        "candidates": ["tan", "stand", "at"]
-      },
-      "expected": ["tan"]
-    },
-    {
       "description": "detects two anagrams",
       "property": "anagrams",
       "input": {
