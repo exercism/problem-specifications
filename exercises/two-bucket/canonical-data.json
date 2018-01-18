@@ -1,95 +1,95 @@
 {
   "exercise": "two-bucket",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "cases": [
     {
       "description": "Measure using bucket one of size 3 and bucket two of size 5 - start with bucket one",
       "property": "measure",
       "input": {
-        "bucket_one": 3,
-        "bucket_two": 5,
+        "bucketOne": 3,
+        "bucketTwo": 5,
         "goal": 1,
-        "start_bucket": "one"
+        "startBucket": "one"
       },
       "expected": {
         "moves": 4,
-        "goal_bucket": "one",
-        "other_bucket": 5
+        "goalBucket": "one",
+        "otherBucket": 5
       }
     },
     {
       "description": "Measure using bucket one of size 3 and bucket two of size 5 - start with bucket two",
       "property": "measure",
       "input": {
-        "bucket_one": 3,
-        "bucket_two": 5,
+        "bucketOne": 3,
+        "bucketTwo": 5,
         "goal": 1,
-        "start_bucket": "two"
+        "startBucket": "two"
       },
       "expected": {
         "moves": 8,
-        "goal_bucket": "two",
-        "other_bucket": 3
+        "goalBucket": "two",
+        "otherBucket": 3
       }
     },
     {
       "description": "Measure using bucket one of size 7 and bucket two of size 11 - start with bucket one",
       "property": "measure",
       "input": {
-        "bucket_one": 7,
-        "bucket_two": 11,
+        "bucketOne": 7,
+        "bucketTwo": 11,
         "goal": 2,
-        "start_bucket": "one"
+        "startBucket": "one"
       },
       "expected": {
         "moves": 14,
-        "goal_bucket": "one",
-        "other_bucket": 11
+        "goalBucket": "one",
+        "otherBucket": 11
       }
     },
     {
       "description": "Measure using bucket one of size 7 and bucket two of size 11 - start with bucket two",
       "property": "measure",
       "input": {
-        "bucket_one": 7,
-        "bucket_two": 11,
+        "bucketOne": 7,
+        "bucketTwo": 11,
         "goal": 2,
-        "start_bucket": "two"
+        "startBucket": "two"
       },
       "expected": {
         "moves": 18,
-        "goal_bucket": "two",
-        "other_bucket": 7
+        "goalBucket": "two",
+        "otherBucket": 7
       }
     },
     {
       "description": "Measure one step using bucket one of size 1 and bucket two of size 3 - start with bucket two",
       "property": "measure",
       "input": {
-        "bucket_one": 1,
-        "bucket_two": 3,
+        "bucketOne": 1,
+        "bucketTwo": 3,
         "goal": 3,
-        "start_bucket": "two"
+        "startBucket": "two"
       },
       "expected": {
         "moves": 1,
-        "goal_bucket": "two",
-        "other_bucket": 0
+        "goalBucket": "two",
+        "otherBucket": 0
       }
     },
     {
       "description": "Measure using bucket one of size 2 and bucket two of size 3 - start with bucket one and end with bucket two",
       "property": "measure",
       "input": {
-        "bucket_one": 2,
-        "bucket_two": 3,
+        "bucketOne": 2,
+        "bucketTwo": 3,
         "goal": 3,
-        "start_bucket": "one"
+        "startBucket": "one"
       },
       "expected": {
         "moves": 2,
-        "goal_bucket": "two",
-        "other_bucket": 2
+        "goalBucket": "two",
+        "otherBucket": 2
       }
     }
   ]
