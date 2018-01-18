@@ -1,6 +1,6 @@
 {
   "exercise": "anagram",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments": [
     "The string argument cases possible matches are passed in as",
     "individual arguments rather than arrays. Languages can include",
@@ -14,24 +14,6 @@
       "input": {
         "subject": "diaper",
         "candidates": ["hello", "world", "zombies", "pants"]
-      },
-      "expected": []
-    },
-    {
-      "description": "detects simple anagram",
-      "property": "anagrams",
-      "input": {
-        "subject": "ant",
-        "candidates": ["tan", "stand", "at"]
-      },
-      "expected": ["tan"]
-    },
-    {
-      "description": "does not detect false positives",
-      "property": "anagrams",
-      "input": {
-        "subject": "galea",
-        "candidates": ["eagle"]
       },
       "expected": []
     },
@@ -79,15 +61,6 @@
       "expected": ["gallery", "regally", "largely"]
     },
     {
-      "description": "does not detect identical words",
-      "property": "anagrams",
-      "input": {
-        "subject": "corn",
-        "candidates": ["corn", "dark", "Corn", "rank", "CORN", "cron", "park"]
-      },
-      "expected": ["cron"]
-    },
-    {
       "description": "does not detect non-anagrams with identical checksum",
       "property": "anagrams",
       "input": {
@@ -122,15 +95,6 @@
         "candidates": ["cashregister", "Carthorse", "radishes"]
       },
       "expected": ["Carthorse"]
-    },
-    {
-      "description": "does not detect a word as its own anagram",
-      "property": "anagrams",
-      "input": {
-        "subject": "banana",
-        "candidates": ["Banana"]
-      },
-      "expected": []
     },
     {
       "description": "does not detect a anagram if the original word is repeated",
