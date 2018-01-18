@@ -1,6 +1,6 @@
 {
   "exercise": "rna-transcription",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "cases": [
     {
       "description": "RNA complement of cytosine is guanine",
@@ -8,7 +8,7 @@
       "input": {
         "dna": "C"
       },
-      "expected": "G"
+      "expected": "C"
     },
     {
       "description": "RNA complement of guanine is cytosine",
@@ -16,7 +16,7 @@
       "input": {
         "dna": "G"
       },
-      "expected": "C"
+      "expected": "G"
     },
     {
       "description": "RNA complement of thymine is adenine",
@@ -24,7 +24,7 @@
       "input": {
         "dna": "T"
       },
-      "expected": "A"
+      "expected": "U"
     },
     {
       "description": "RNA complement of adenine is uracil",
@@ -32,7 +32,7 @@
       "input": {
         "dna": "A"
       },
-      "expected": "U"
+      "expected": "A"
     },
     {
       "description": "RNA complement",
@@ -40,7 +40,7 @@
       "input": {
         "dna": "ACGTGGTCTTAA"
       },
-      "expected": "UGCACCAGAAUU"
+      "expected": "ACGUGGUCUUAA"
     }
   ]
 }
