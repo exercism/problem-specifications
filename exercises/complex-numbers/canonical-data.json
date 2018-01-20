@@ -1,6 +1,6 @@
 {
   "exercise": "complex-numbers",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "comments": [
     " The canonical data assumes mathematically correct real   ",
     " numbers. The testsuites should consider rounding errors  ",
@@ -12,6 +12,52 @@
     " represented as \"e\".                                    "
   ],
   "cases": [
+    {
+      "description": "Real part",
+      "cases": [
+        {
+          "description": "Real part of a purely real number",
+          "property": "real",
+          "input": [1, 0],
+          "expected": 1
+        },
+        {
+          "description": "Real part of a purely imaginary number",
+          "property": "real",
+          "input": [0, 1],
+          "expected": 0
+        },
+        {
+          "description": "Real part of a number with real and imaginary part",
+          "property": "real",
+          "input": [1, 2],
+          "expected": 1
+        }
+      ]
+    },
+    {
+      "description": "Imaginary part",
+      "cases": [
+        {
+          "description": "Imaginary part of a purely real number",
+          "property": "imaginary",
+          "input": [1, 0],
+          "expected": 0
+        },
+        {
+          "description": "Imaginary part of a purely imaginary number",
+          "property": "imaginary",
+          "input": [0, 1],
+          "expected": 1
+        },
+        {
+          "description": "Imaginary part of a number with real and imaginary part",
+          "property": "imaginary",
+          "input": [1, 2],
+          "expected": 2
+        }
+      ]
+    },
     {
       "description": "Imaginary unit",
       "property": "mul",
@@ -183,52 +229,6 @@
           "property": "conjugate",
           "input": [1, 1],
           "expected": [1, -1]
-        }
-      ]
-    },
-    {
-      "description": "Real part",
-      "cases": [
-        {
-          "description": "Real part of a purely real number",
-          "property": "real",
-          "input": [1, 0],
-          "expected": 1
-        },
-        {
-          "description": "Real part of a purely imaginary number",
-          "property": "real",
-          "input": [0, 1],
-          "expected": 0
-        },
-        {
-          "description": "Real part of a number with real and imaginary part",
-          "property": "real",
-          "input": [1, 2],
-          "expected": 1
-        }
-      ]
-    },
-    {
-      "description": "Imaginary part",
-      "cases": [
-        {
-          "description": "Imaginary part of a purely real number",
-          "property": "imaginary",
-          "input": [1, 0],
-          "expected": 0
-        },
-        {
-          "description": "Imaginary part of a purely imaginary number",
-          "property": "imaginary",
-          "input": [0, 1],
-          "expected": 1
-        },
-        {
-          "description": "Imaginary part of a number with real and imaginary part",
-          "property": "imaginary",
-          "input": [1, 2],
-          "expected": 2
         }
       ]
     },
