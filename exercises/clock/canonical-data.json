@@ -1,6 +1,6 @@
 {
   "exercise": "clock",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "comments": [
     "Most languages require constructing a clock with initial values,",
     "adding a positive or negative number of minutes, and testing equality",
@@ -155,7 +155,7 @@
           "property": "add",
           "hour": 10,
           "minute": 0,
-          "add": 3,
+          "value": 3,
           "expected": "10:03"
         },
         {
@@ -163,7 +163,7 @@
           "property": "add",
           "hour": 6,
           "minute": 41,
-          "add": 0,
+          "value": 0,
           "expected": "06:41"
         },
         {
@@ -171,7 +171,7 @@
           "property": "add",
           "hour": 0,
           "minute": 45,
-          "add": 40,
+          "value": 40,
           "expected": "01:25"
         },
         {
@@ -179,7 +179,7 @@
           "property": "add",
           "hour": 10,
           "minute": 0,
-          "add": 61,
+          "value": 61,
           "expected": "11:01"
         },
         {
@@ -187,7 +187,7 @@
           "property": "add",
           "hour": 0,
           "minute": 45,
-          "add": 160,
+          "value": 160,
           "expected": "03:25"
         },
         {
@@ -195,7 +195,7 @@
           "property": "add",
           "hour": 23,
           "minute": 59,
-          "add": 2,
+          "value": 2,
           "expected": "00:01"
         },
         {
@@ -203,7 +203,7 @@
           "property": "add",
           "hour": 5,
           "minute": 32,
-          "add": 1500,
+          "value": 1500,
           "expected": "06:32"
         },
         {
@@ -211,7 +211,7 @@
           "property": "add",
           "hour": 1,
           "minute": 1,
-          "add": 3500,
+          "value": 3500,
           "expected": "11:21"
         }
       ]
@@ -224,7 +224,7 @@
           "property": "subtract",
           "hour": 10,
           "minute": 3,
-          "subtract": 3,
+          "value": 3,
           "expected": "10:00"
         },
         {
@@ -232,7 +232,7 @@
           "property": "subtract",
           "hour": 10,
           "minute": 3,
-          "subtract": 30,
+          "value": 30,
           "expected": "09:33"
         },
         {
@@ -240,7 +240,7 @@
           "property": "subtract",
           "hour": 10,
           "minute": 3,
-          "subtract": 70,
+          "value": 70,
           "expected": "08:53"
         },
         {
@@ -248,7 +248,7 @@
           "property": "subtract",
           "hour": 0,
           "minute": 3,
-          "subtract": 4,
+          "value": 4,
           "expected": "23:59"
         },
         {
@@ -256,7 +256,7 @@
           "property": "subtract",
           "hour": 0,
           "minute": 0,
-          "subtract": 160,
+          "value": 160,
           "expected": "21:20"
         },
         {
@@ -264,7 +264,7 @@
           "property": "subtract",
           "hour": 6,
           "minute": 15,
-          "subtract": 160,
+          "value": 160,
           "expected": "03:35"
         },
         {
@@ -272,7 +272,7 @@
           "property": "subtract",
           "hour": 5,
           "minute": 32,
-          "subtract": 1500,
+          "value": 1500,
           "expected": "04:32"
         },
         {
@@ -280,7 +280,7 @@
           "property": "subtract",
           "hour": 2,
           "minute": 20,
-          "subtract": 3000,
+          "value": 3000,
           "expected": "00:20"
         }
       ]
