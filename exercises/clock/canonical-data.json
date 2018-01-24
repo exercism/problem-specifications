@@ -4,9 +4,8 @@
   "comments": [
     "Most languages require constructing a clock with initial values,",
     "adding or subtracting some number of minutes, and testing equality",
-    "in some language-native way.  Some languages require separate add and",
-    "subtract functions.  Negative and out of range values are generally",
-    "expected to wrap around rather than represent errors."
+    "in some language-native way.  Negative and out of range values are",
+    "generally expected to wrap around rather than represent errors."
   ],
   "cases": [
     {
