@@ -1,9 +1,9 @@
 {
   "exercise": "clock",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "comments": [
     "Most languages require constructing a clock with initial values,",
-    "adding a positive or negative number of minutes, and testing equality",
+    "adding or subtracting some number of minutes, and testing equality",
     "in some language-native way.  Some languages require separate add and",
     "subtract functions.  Negative and out of range values are generally",
     "expected to wrap around rather than represent errors."
