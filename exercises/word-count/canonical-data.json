@@ -1,6 +1,6 @@
 {
   "exercise": "word-count",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments": [
     "For each word in the input, count the number of times it appears in the",
     "entire sentence."
@@ -8,7 +8,7 @@
   "cases": [
     {
       "description": "count one word",
-      "property": "countwords",
+      "property": "countWords",
       "input": {
         "sentence": "word"
       },
@@ -18,7 +18,7 @@
     },
     {
       "description": "count one of each word",
-      "property": "countwords",
+      "property": "countWords",
       "input": {
         "sentence": "one of each"
       },
@@ -30,7 +30,7 @@
     },
     {
       "description": "multiple occurrences of a word",
-      "property": "countwords",
+      "property": "countWords",
       "input": {
         "sentence": "one fish two fish red fish blue fish"
       },
@@ -44,7 +44,7 @@
     },
     {
       "description": "handles cramped lists",
-      "property": "countwords",
+      "property": "countWords",
       "input": {
         "sentence": "one,two,three"
       },
@@ -56,7 +56,7 @@
     },
     {
       "description": "handles expanded lists",
-      "property": "countwords",
+      "property": "countWords",
       "input": {
         "sentence": "one,\ntwo,\nthree"
       },
@@ -68,7 +68,7 @@
     },
     {
       "description": "ignore punctuation",
-      "property": "countwords",
+      "property": "countWords",
       "input": {
         "sentence": "car: carpet as java: javascript!!&@$%^&"
       },
@@ -82,7 +82,7 @@
     },
     {
       "description": "include numbers",
-      "property": "countwords",
+      "property": "countWords",
       "input": {
         "sentence": "testing, 1, 2 testing"
       },
@@ -94,7 +94,7 @@
     },
     {
       "description": "normalize case",
-      "property": "countwords",
+      "property": "countWords",
       "input": {
         "sentence": "go Go GO Stop stop"
       },
@@ -105,7 +105,7 @@
     },
     {
       "description": "with apostrophes",
-      "property": "countwords",
+      "property": "countWords",
       "input": {
         "sentence": "First: don't laugh. Then: don't cry."
       },
@@ -119,7 +119,7 @@
     },
     {
       "description": "with quotations",
-      "property": "countwords",
+      "property": "countWords",
       "input": {
         "sentence": "Joe can't tell between 'large' and large."
       },
@@ -134,7 +134,7 @@
     },
     {
       "description": "multiple spaces not detected as a word",
-      "property": "countwords",
+      "property": "countWords",
       "input": {
         "sentence": " multiple   whitespaces"
       },
