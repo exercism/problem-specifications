@@ -18,7 +18,7 @@
         "string": "1 2\n3 4",
         "index": 1
       },
-      "expected": [3,4]
+      "expected": [3, 4]
     },
     {
       "description": "extract row where numbers have different widths",
@@ -27,7 +27,7 @@
         "string": "1 2\n10 20",
         "index": 1
       },
-      "expected": [10,20]
+      "expected": [10, 20]
     },
     {
       "description": "can extract row from non-square matrix",
@@ -55,7 +55,6 @@
         "index": 2
       },
       "expected": [3, 6, 9]
-
     },
     {
       "description": "can extract column from non-square matrix",
