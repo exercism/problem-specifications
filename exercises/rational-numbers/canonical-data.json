@@ -1,0 +1,374 @@
+{
+  "exercise": "rational-numbers",
+  "version": "1.0.0",
+  "comments": [
+    " The canonical data assumes mathematically correct real   ",
+    " numbers. The testsuites should consider rounding errors  ",
+    " instead of testing for exact values for any non-integer  ",
+    " tests.                                                   ",
+    " Rational numbers r are represented as arrays [a, b] so   ",
+    " that r = a/b.                                            "
+  ],
+  "cases": [
+    {
+      "description": "Arithmetic",
+      "cases": [
+        {
+          "description": "Addition",
+          "cases": [
+            {
+              "description": "Add two positive rational numbers",
+              "property": "add",
+              "input": {
+                "r1": [1, 2],
+                "r2": [2, 3]
+              },
+              "expected": [7, 6]
+            },
+            {
+              "description": "Add a positive rational number and a negative rational number",
+              "property": "add",
+              "input": {
+                "r1": [1, 2],
+                "r2": [-2, 3]
+              },
+              "expected": [-1, 6]
+            },
+            {
+              "description": "Add two negative rational numbers",
+              "property": "add",
+              "input": {
+                "r1": [-1, 2],
+                "r2": [-2, 3]
+              },
+              "expected": [-7, 6]
+            },
+            {
+              "description": "Add a rational number to its additive inverse",
+              "property": "add",
+              "input": {
+                "r1": [1, 2],
+                "r2": [-1, 2]
+              },
+              "expected": [0, 1]
+            }
+          ]
+        },
+        {
+          "description": "Subtraction",
+          "cases": [
+            {
+              "description": "Subtract two positive rational numbers",
+              "property": "sub",
+              "input": {
+                "r1": [1, 2],
+                "r2": [2, 3]
+              },
+              "expected": [-1, 6]
+            },
+            {
+              "description": "Subtract a positive rational number and a negative rational number",
+              "property": "sub",
+              "input": {
+                "r1": [1, 2],
+                "r2": [-2, 3]
+              },
+              "expected": [7, 6]
+            },
+            {
+              "description": "Subtract two negative rational numbers",
+              "property": "sub",
+              "input": {
+                "r1": [-1, 2],
+                "r2": [-2, 3]
+              },
+              "expected": [1, 6]
+            },
+            {
+              "description": "Subtract a rational number from itself",
+              "property": "sub",
+              "input": {
+                "r1": [1, 2],
+                "r2": [1, 2]
+              },
+              "expected": [0, 1]
+            }
+          ]
+        },
+        {
+          "description": "Multiplication",
+          "cases": [
+            {
+              "description": "Multiply two positive rational numbers",
+              "property": "mul",
+              "input": {
+                "r1": [1, 2],
+                "r2": [2, 3]
+              },
+              "expected": [1, 3]
+            },
+            {
+              "description": "Multiply a negative rational number by a positive rational number",
+              "property": "mul",
+              "input": {
+                "r1": [-1, 2],
+                "r2": [2, 3]
+              },
+              "expected": [-1, 3]
+            },
+            {
+              "description": "Multiply two negative rational numbers",
+              "property": "mul",
+              "input": {
+                "r1": [-1, 2],
+                "r2": [-2, 3]
+              },
+              "expected": [1, 3]
+            },
+            {
+              "description": "Multiply a rational number by its reciprocal",
+              "property": "mul",
+              "input": {
+                "r1": [1, 2],
+                "r2": [2, 1]
+              },
+              "expected": [1, 1]
+            },
+            {
+              "description": "Multiply a rational number by 1",
+              "property": "mul",
+              "input": {
+                "r1": [1, 2],
+                "r2": [1, 1]
+              },
+              "expected": [1, 2]
+            },
+            {
+              "description": "Multiply a rational number by 0",
+              "property": "mul",
+              "input": {
+                "r1": [1, 2],
+                "r2": [0, 1]
+              },
+              "expected": [0, 1]
+            }
+          ]
+        },
+        {
+          "description": "Division",
+          "cases": [
+            {
+              "description": "Divide two positive rational numbers",
+              "property": "div",
+              "input": {
+                "r1": [1, 2],
+                "r2": [2, 3]
+              },
+              "expected": [3, 4]
+            },
+            {
+              "description": "Divide a positive rational number by a negative rational number",
+              "property": "div",
+              "input": {
+                "r1": [1, 2],
+                "r2": [-2, 3]
+              },
+              "expected": [-3, 4]
+            },
+            {
+              "description": "Divide two negative rational numbers",
+              "property": "div",
+              "input": {
+                "r1": [-1, 2],
+                "r2": [-2, 3]
+              },
+              "expected": [3, 4]
+            },
+            {
+              "description": "Divide a rational number by 1",
+              "property": "div",
+              "input": {
+                "r1": [1, 2],
+                "r2": [1, 1]
+              },
+              "expected": [1, 2]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Absolute value",
+      "cases": [
+        {
+          "description": "Absolute value of a positive rational number",
+          "property": "abs",
+          "input": {
+            "r": [1, 2]
+          },
+          "expected": [1, 2]
+        },
+        {
+          "description": "Absolute value of a negative rational number",
+          "property": "abs",
+          "input": {
+            "r": [-1, 2]
+          },
+          "expected": [1, 2]
+        },
+        {
+          "description": "Absolute value of zero",
+          "property": "abs",
+          "input": {
+            "r": [0, 1]
+          },
+          "expected": [0, 1]
+        }
+      ]
+    },
+    {
+      "description": "Exponentiation of a rational number",
+      "cases": [
+        {
+          "description": "Raise a positive rational number to a positive integer power",
+          "property": "exprational",
+          "input": {
+            "r": [1, 2],
+            "n": 3
+          },
+          "expected": [1, 8]
+        },
+        {
+          "description": "Raise a negative rational number to a positive integer power",
+          "property": "exprational",
+          "input": {
+            "r": [-1, 2],
+            "n": 3
+          },
+          "expected": [-1, 8]
+        },
+        {
+          "description": "Raise zero to an integer power",
+          "property": "exprational",
+          "input": {
+            "r": [0, 1],
+            "n": 5
+          },
+          "expected": [0, 1]
+        },
+        {
+          "description": "Raise one to an integer power",
+          "property": "exprational",
+          "input": {
+            "r": [1, 1],
+            "n": 4
+          },
+          "expected": [1, 1]
+        },
+        {
+          "description": "Raise a positive rational number to the power of zero",
+          "property": "exprational",
+          "input": {
+            "r": [1, 2],
+            "n": 0
+          },
+          "expected": [1, 1]
+        },
+        {
+          "description": "Raise a negative rational number to the power of zero",
+          "property": "exprational",
+          "input": {
+            "r": [-1, 2],
+            "n": 0
+          },
+          "expected": [1, 1]
+        }
+      ]
+    },
+    {
+      "description": "Exponentiation of a real number to a rational number",
+      "cases": [
+        {
+          "description": "Raise a real number to a positive rational number",
+          "property": "expreal",
+          "input": {
+            "x": 8,
+            "r": [4, 3]
+          },
+          "expected": 16.0
+        },
+        {
+          "description": "Raise a real number to a negative rational number",
+          "property": "expreal",
+          "input": {
+            "x": 9,
+            "r": [-1, 2]
+          },
+          "expected": 0.3333333333333333
+        },
+        {
+          "description": "Raise a real number to a zero rational number",
+          "property": "expreal",
+          "input": {
+            "x": 2,
+            "r": [0, 1]
+          },
+          "expected": 1.0
+        }
+      ]
+    },
+    {
+      "description": "Reduction to lowest terms",
+      "cases": [
+        {
+          "description": "Reduce a positive rational number to lowest terms",
+          "property": "reduce",
+          "input": {
+            "r": [2, 4]
+          },
+          "expected": [1, 2]
+        },
+        {
+          "description": "Reduce a negative rational number to lowest terms",
+          "property": "reduce",
+          "input": {
+            "r": [-4, 6]
+          },
+          "expected": [-2, 3]
+        },
+        {
+          "description": "Reduce a rational number with a negative denominator to lowest terms",
+          "property": "reduce",
+          "input": {
+            "r": [3, -9]
+          },
+          "expected": [-1, 3]
+        },
+        {
+          "description": "Reduce zero to lowest terms",
+          "property": "reduce",
+          "input": {
+            "r": [0, 6]
+          },
+          "expected": [0, 1]
+        },
+        {
+          "description": "Reduce an integer to lowest terms",
+          "property": "reduce",
+          "input": {
+            "r": [-14, 7]
+          },
+          "expected": [-2, 1]
+        },
+        {
+          "description": "Reduce one to lowest terms",
+          "property": "reduce",
+          "input": {
+            "r": [13, 13]
+          },
+          "expected": [1, 1]
+        }
+      ]
+    }
+  ]
+}
