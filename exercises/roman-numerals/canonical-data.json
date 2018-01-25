@@ -1,6 +1,6 @@
 {
   "exercise": "roman-numerals",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "cases": [
     {
       "description": "1 is a single I",
@@ -73,6 +73,14 @@
         "number": 48
       },
       "expected": "XLVIII"
+    },
+    {
+      "description": "49 is not 40 + 5 + 4 but rather 50 - 10 + 10 - 1",
+      "property": "roman",
+      "input": {
+        "number": 49
+      },
+      "expected": "XLIX"
     },
     {
       "description": "50 is a single L",
