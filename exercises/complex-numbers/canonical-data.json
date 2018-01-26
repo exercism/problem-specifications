@@ -1,6 +1,6 @@
 {
   "exercise": "complex-numbers",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "comments": [
     " The canonical data assumes mathematically correct real   ",
     " numbers. The testsuites should consider rounding errors  ",
