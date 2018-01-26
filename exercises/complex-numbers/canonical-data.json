@@ -327,7 +327,9 @@
         {
           "description": "Exponential of a number with real and imaginary part",
           "property": "exp",
-          "input": ["ln(2)", "pi"],
+          "input": {
+            "z": ["ln(2)", "pi"]
+          },
           "expected": [2, 0]
         }
       ]
