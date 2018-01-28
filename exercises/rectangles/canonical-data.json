@@ -1,6 +1,6 @@
 {
   "exercise": "rectangles",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "comments": [
     "The inputs are represented as arrays of strings to improve readability in this JSON file.",
     "Your track may choose whether to present the input as a single string (concatenating all the lines) or as the list."
@@ -9,132 +9,158 @@
     {
       "description": "no rows",
       "property": "rectangles",
-      "input": [],
+      "input": {
+        "strings": []
+      },
       "expected": 0
     },
     {
       "description": "no columns",
       "property": "rectangles",
-      "input": [""],
+      "input": {
+        "strings": [""]
+      },
       "expected": 0
     },
     {
       "description": "no rectangles",
       "property": "rectangles",
-      "input": [" "],
+      "input": {
+        "strings": [" "]
+      },
       "expected": 0
     },
     {
       "description": "one rectangle",
       "property": "rectangles",
-      "input": [
-        "+-+",
-        "| |",
-        "+-+"
-      ],
+      "input": {
+        "strings": [
+          "+-+",
+          "| |",
+          "+-+"
+        ]
+      },
       "expected": 1
     },
     {
       "description": "two rectangles without shared parts",
       "property": "rectangles",
-      "input": [
-        "  +-+",
-        "  | |",
-        "+-+-+",
-        "| |  ",
-        "+-+  "
-      ],
+      "input": {
+        "strings": [
+          "  +-+",
+          "  | |",
+          "+-+-+",
+          "| |  ",
+          "+-+  "
+        ]
+      },
       "expected": 2
     },
     {
       "description": "five rectangles with shared parts",
       "property": "rectangles",
-      "input": [
-        "  +-+",
-        "  | |",
-        "+-+-+",
-        "| | |",
-        "+-+-+"
-      ],
+      "input": {
+        "strings": [
+          "  +-+",
+          "  | |",
+          "+-+-+",
+          "| | |",
+          "+-+-+"
+        ]
+      },
       "expected": 5
     },
     {
       "description": "rectangle of height 1 is counted",
       "property": "rectangles",
-      "input": [
-        "+--+",
-        "+--+"
-      ],
+      "input": {
+        "strings": [
+          "+--+",
+          "+--+"
+        ]
+      },
       "expected": 1
     },
     {
       "description": "rectangle of width 1 is counted",
       "property": "rectangles",
-      "input": [
-        "++",
-        "||",
-        "++"
-      ],
+      "input": {
+        "strings": [
+          "++",
+          "||",
+          "++"
+        ]
+      },
       "expected": 1
     },
     {
       "description": "1x1 square is counted",
       "property": "rectangles",
-      "input": [
-        "++",
-        "++"
-      ],
+      "input": {
+        "strings": [
+          "++",
+          "++"
+        ]
+      },
       "expected": 1
     },
     {
       "description": "only complete rectangles are counted",
       "property": "rectangles",
-      "input": [
-        "  +-+",
-        "    |",
-        "+-+-+",
-        "| | -",
-        "+-+-+"
-      ],
+      "input": {
+        "strings": [
+          "  +-+",
+          "    |",
+          "+-+-+",
+          "| | -",
+          "+-+-+"
+        ]
+      },
       "expected": 1
     },
     {
       "description": "rectangles can be of different sizes",
       "property": "rectangles",
-      "input": [
-        "+------+----+",
-        "|      |    |",
-        "+---+--+    |",
-        "|   |       |",
-        "+---+-------+"
-      ],
+      "input": {
+        "strings": [
+          "+------+----+",
+          "|      |    |",
+          "+---+--+    |",
+          "|   |       |",
+          "+---+-------+"
+        ]
+      },
       "expected": 3
     },
     {
       "description": "corner is required for a rectangle to be complete",
       "property": "rectangles",
-      "input": [
-        "+------+----+",
-        "|      |    |",
-        "+------+    |",
-        "|   |       |",
-        "+---+-------+"
-      ],
+      "input": {
+        "strings": [
+          "+------+----+",
+          "|      |    |",
+          "+------+    |",
+          "|   |       |",
+          "+---+-------+"
+        ]
+      },
       "expected": 2
     },
     {
       "description": "large input with many rectangles",
       "property": "rectangles",
-      "input": [
-        "+---+--+----+",
-        "|   +--+----+",
-        "+---+--+    |",
-        "|   +--+----+",
-        "+---+--+--+-+",
-        "+---+--+--+-+",
-        "+------+  | |",
-        "          +-+"
-      ],
+      "input": {
+        "strings": [
+          "+---+--+----+",
+          "|   +--+----+",
+          "+---+--+    |",
+          "|   +--+----+",
+          "+---+--+--+-+",
+          "+---+--+--+-+",
+          "+------+  | |",
+          "          +-+"
+        ]
+      },
       "expected": 60
     }
   ]
