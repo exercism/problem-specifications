@@ -1,0 +1,181 @@
+{
+  "exercise": "scale-generator",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "comments": [
+        "These tests have no interval.",
+        "The chromatic scale is considered the default scale"
+      ],
+      "description": "Chromatic scales",
+      "cases": [
+        {
+          "description": "Chromatic scale with sharps",
+          "property": "pitches",
+          "input": {
+            "tonic": "C"
+          },
+          "expected": [ "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" ]
+        },
+        {
+          "description": "Chromatic scale with flats",
+          "property": "pitches",
+          "input": {
+            "tonic": "F"
+          },
+          "expected": [ "F", "Gb", "G", "Ab", "A", "Bb", "B", "C", "Db", "D", "Eb", "E" ]
+        }
+      ]
+    },
+    {
+      "comments": [
+        "These tests all have intervals and are explorations of different",
+        "traversals of the scale."
+      ],
+      "description": "Scales with specified intervals",
+      "cases": [
+        {
+          "description": "Simple major scale",
+          "comments": [
+            "The simplest major scale, with no sharps or flats."
+          ],
+          "property": "pitches",
+          "input": {
+            "tonic": "C",
+            "intervals": "MMmMMMm"
+          },
+          "expected": [ "C", "D", "E", "F", "G", "A", "B" ]
+        },
+        {
+          "description": "Major scale with sharps",
+          "property": "pitches",
+          "input": {
+            "tonic": "G",
+            "intervals": "MMmMMMm"
+          },
+          "expected": [ "G", "A", "B", "C", "D", "E", "F#" ]
+        },
+        {
+          "description": "Major scale with flats",
+          "property": "pitches",
+          "input": {
+            "tonic": "F",
+            "intervals": "MMmMMMm"
+          },
+          "expected": [ "F", "G", "A", "Bb", "C", "D", "E" ]
+        },
+        {
+          "description": "Minor scale with sharps",
+          "property": "pitches",
+          "input": {
+            "tonic": "f#",
+            "intervals": "MmMMmMM"
+          },
+          "expected": [ "F#", "G#", "A", "B", "C#", "D", "E" ]
+        },
+        {
+          "description": "Minor scale with flats",
+          "property": "pitches",
+          "input": {
+            "tonic": "bb",
+            "intervals": "MmMMmMM"
+          },
+          "expected": [ "Bb", "C", "Db", "Eb", "F", "Gb", "Ab" ]
+        },
+        {
+          "description": "Dorian mode",
+          "property": "pitches",
+          "input": {
+            "tonic": "d",
+            "intervals": "MmMMMmM"
+          },
+          "expected": [ "D", "E", "F", "G", "A", "B", "C" ]
+        },
+        {
+          "description": "Mixolydian mode",
+          "property": "pitches",
+          "input": {
+            "tonic": "Eb",
+            "intervals": "MMmMMmM"
+          },
+          "expected": [ "Eb", "F", "G", "Ab", "Bb", "C", "Db" ]
+        },
+        {
+          "description": "Lydian mode",
+          "property": "pitches",
+          "input": {
+            "tonic": "a",
+            "intervals": "MMMmMMm"
+          },
+          "expected": [ "A", "B", "C#", "D#", "E", "F#", "G#" ]
+        },
+        {
+          "description": "Phrygian mode",
+          "property": "pitches",
+          "input": {
+            "tonic": "e",
+            "intervals": "mMMMmMM"
+          },
+          "expected": [ "E", "F", "G", "A", "B", "C", "D" ]
+        },
+        {
+          "description": "Locrian mode",
+          "property": "pitches",
+          "input": {
+            "tonic": "g",
+            "intervals": "mMMmMMM"
+          },
+          "expected": [ "G", "Ab", "Bb", "C", "Db", "Eb", "F" ]
+        },
+        {
+          "comments": [
+            "Note that this case introduces the accidental interval (A)"
+          ],
+          "description": "Harmonic minor",
+          "property": "pitches",
+          "input": {
+            "tonic": "d",
+            "intervals": "MmMMmAm"
+          },
+          "expected": [ "D", "E", "F", "G", "A", "Bb", "Db" ]
+        },
+        {
+          "description": "Octatonic",
+          "property": "pitches",
+          "input": {
+            "tonic": "C",
+            "intervals": "MmMmMmMm"
+          },
+          "expected": [ "C", "D", "D#", "F", "F#", "G#", "A", "B" ]
+        },
+        {
+          "description": "Hexatonic",
+          "property": "pitches",
+          "input": {
+            "tonic": "Db",
+            "intervals": "MMMMMM"
+          },
+          "expected": [ "Db", "Eb", "F", "G", "A", "B" ]
+        },
+        {
+          "description": "Pentatonic",
+          "property": "pitches",
+          "input": {
+            "tonic": "A",
+            "intervals": "MMAMA"
+          },
+          "expected": [ "A", "B", "C#", "E", "F#" ]
+        },
+        {
+          "description": "Enigmatic",
+          "property": "pitches",
+          "input": {
+            "tonic": "G",
+            "intervals": "mAMMMmm"
+          },
+          "expected": [ "G", "G#", "B", "C#", "D#", "F", "F#" ]
+        }
+      ]
+    }
+  ]
+}
