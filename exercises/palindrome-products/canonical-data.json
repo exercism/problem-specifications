@@ -1,11 +1,13 @@
 {
     "exercise": "palindrome-products",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "cases": [{
             "description": "finds the smallest palindrome from single digit factors",
             "property": "smallest",
-            "input_min": 1,
-            "input_max": 9,
+            "input": {
+              "min": 1,
+              "max": 9
+            },
             "expected": {
                 "value": 1,
                 "factors": [
@@ -16,8 +18,10 @@
         {
             "description": "finds the largest palindrome from single digit factors",
             "property": "largest",
-            "input_min": 1,
-            "input_max": 9,
+            "input": {
+              "min": 1,
+              "max": 9
+            },
             "expected": {
                 "value": 9,
                 "factors": [
@@ -29,8 +33,10 @@
         {
             "description": "find the smallest palindrome from double digit factors",
             "property": "smallest",
-            "input_min": 10,
-            "input_max": 99,
+            "input": {
+              "min": 10,
+              "max": 99
+            },
             "expected": {
                 "value": 121,
                 "factors": [
@@ -41,8 +47,10 @@
         {
             "description": "find the largest palindrome from double digit factors",
             "property": "largest",
-            "input_min": 10,
-            "input_max": 99,
+            "input": {
+              "min": 10,
+              "max": 99
+            },
             "expected": {
                 "value": 9009,
                 "factors": [
@@ -53,8 +61,10 @@
         {
             "description": "find smallest palindrome from triple digit factors",
             "property": "smallest",
-            "input_min": 100,
-            "input_max": 999,
+            "input": {
+              "min": 100,
+              "max": 999
+            },
             "expected": {
                 "value": 10201,
                 "factors": [
@@ -65,8 +75,10 @@
         {
             "description": "find the largest palindrome from triple digit factors",
             "property": "largest",
-            "input_min": 100,
-            "input_max": 999,
+            "input": {
+              "min": 100,
+              "max": 999
+            },
             "expected": {
                 "value": 906609,
                 "factors": [
@@ -77,8 +89,10 @@
         {
             "description": "find smallest palindrome from four digit factors",
             "property": "smallest",
-            "input_min": 1000,
-            "input_max": 9999,
+            "input": {
+              "min": 1000,
+              "max": 9999
+            },
             "expected": {
                 "value": 1002001,
                 "factors": [
@@ -89,8 +103,10 @@
         {
             "description": "find the largest palindrome from four digit factors",
             "property": "largest",
-            "input_min": 1000,
-            "input_max": 9999,
+            "input": {
+              "min": 1000,
+              "max": 9999
+            },
             "expected": {
                 "value": 99000099,
                 "factors": [
@@ -101,8 +117,10 @@
         {
             "description": "empty result for smallest if no palindrome in the range",
             "property": "smallest",
-            "input_min": 1002,
-            "input_max": 1003,
+            "input": {
+              "min": 1002,
+              "max": 1003
+            },
             "expected": {
                 "error": "no palindrome with factors in the range 1002 to 1003"
             }
@@ -110,8 +128,10 @@
         {
             "description": "empty result for largest if no palindrome in the range",
             "property": "largest",
-            "input_min": 15,
-            "input_max": 15,
+            "input": {
+              "min": 15,
+              "max": 15
+            },
             "expected": {
                 "error": "no palindrome with factors in the range 15 to 15"
             }
@@ -119,8 +139,10 @@
         {
             "description": "error result for smallest if min is more than max",
             "property": "smallest",
-            "input_min": 10000,
-            "input_max": 1,
+            "input": {
+              "min": 10000,
+              "max": 1
+            },
             "expected": {
                 "error": "invalid input: min is 10000 and max is 1"
             }
@@ -128,8 +150,10 @@
         {
             "description": "error result for largest if min is more than max",
             "property": "largest",
-            "input_min": 2,
-            "input_max": 1,
+            "input": {
+              "min": 2,
+              "max": 1
+            },
             "expected": {
                 "error": "invalid input: min is 2 and max is 1"
             }
