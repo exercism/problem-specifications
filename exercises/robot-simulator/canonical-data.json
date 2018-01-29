@@ -1,6 +1,6 @@
 {
   "exercise": "robot-simulator",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "comments": [
     "Some tests have two expectations: one for the position, one for the direction",
     "Optionally, you can also test",
@@ -15,12 +15,14 @@
         {
           "description": "Robots are created with a position and direction",
           "property": "create",
-          "robot": {
-            "position": {
-              "x": 0,
-              "y": 0
-            },
-            "direction": "north"
+          "input": {
+            "robot": {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "direction": "north"
+            }
           },
           "expected": {
             "position": {
@@ -33,12 +35,14 @@
         {
           "description": "Negative positions are allowed",
           "property": "create",
-          "robot": {
-            "position": {
-              "x": -1,
-              "y": -1
-            },
-            "direction": "south"
+          "input": {
+            "robot": {
+              "position": {
+                "x": -1,
+                "y": -1
+              },
+              "direction": "south"
+            }
           },
           "expected": {
             "position": {
@@ -56,12 +60,14 @@
         {
           "description": "does not change the position",
           "property": "turnRight",
-          "robot": {
-            "position": {
-              "x": 0,
-              "y": 0
-            },
-            "direction": "north"
+          "input": {
+            "robot": {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "direction": "north"
+            }
           },
           "expected": {
             "position": {
@@ -73,12 +79,14 @@
         {
           "description": "changes the direction from north to east",
           "property": "turnRight",
-          "robot": {
-            "position": {
-              "x": 0,
-              "y": 0
-            },
-            "direction": "north"
+          "input": {
+            "robot": {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "direction": "north"
+            }
           },
           "expected": {
             "direction": "east"
@@ -87,12 +95,14 @@
         {
           "description": "changes the direction from east to south",
           "property": "turnRight",
-          "robot": {
-            "position": {
-              "x": 0,
-              "y": 0
-            },
-            "direction": "east"
+          "input": {
+            "robot": {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "direction": "east"
+            }
           },
           "expected": {
             "direction": "south"
@@ -101,12 +111,14 @@
         {
           "description": "changes the direction from south to west",
           "property": "turnRight",
-          "robot": {
-            "position": {
-              "x": 0,
-              "y": 0
-            },
-            "direction": "south"
+          "input": {
+            "robot": {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "direction": "south"
+            }
           },
           "expected": {
             "direction": "west"
@@ -115,12 +127,14 @@
         {
           "description": "changes the direction from west to north",
           "property": "turnRight",
-          "robot": {
-            "position": {
-              "x": 0,
-              "y": 0
-            },
-            "direction": "west"
+          "input": {
+            "robot": {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "direction": "west"
+            }
           },
           "expected": {
             "direction": "north"
@@ -134,12 +148,14 @@
         {
           "description": "does not change the position",
           "property": "turnLeft",
-          "robot": {
-            "position": {
-              "x": 0,
-              "y": 0
-            },
-            "direction": "north"
+          "input": {
+            "robot": {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "direction": "north"
+            }
           },
           "expected": {
             "position": {
@@ -151,12 +167,14 @@
         {
           "description": "changes the direction from north to west",
           "property": "turnLeft",
-          "robot": {
-            "position": {
-              "x": 0,
-              "y": 0
-            },
-            "direction": "north"
+          "input": {
+            "robot": {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "direction": "north"
+            }
           },
           "expected": {
             "direction": "west"
@@ -165,12 +183,14 @@
         {
           "description": "changes the direction from west to south",
           "property": "turnLeft",
-          "robot": {
-            "position": {
-              "x": 0,
-              "y": 0
-            },
-            "direction": "west"
+          "input": {
+            "robot": {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "direction": "west"
+            }
           },
           "expected": {
             "direction": "south"
@@ -179,12 +199,14 @@
         {
           "description": "changes the direction from south to east",
           "property": "turnLeft",
-          "robot": {
-            "position": {
-              "x": 0,
-              "y": 0
-            },
-            "direction": "south"
+          "input": {
+            "robot": {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "direction": "south"
+            }
           },
           "expected": {
             "direction": "east"
@@ -193,12 +215,14 @@
         {
           "description": "changes the direction from east to north",
           "property": "turnLeft",
-          "robot": {
-            "position": {
-              "x": 0,
-              "y": 0
-            },
-            "direction": "east"
+          "input": {
+            "robot": {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "direction": "east"
+            }
           },
           "expected": {
             "direction": "north"
@@ -212,12 +236,14 @@
         {
           "description": "does not change the direction",
           "property": "advance",
-          "robot": {
-            "position": {
-              "x": 0,
-              "y": 0
-            },
-            "direction": "north"
+          "input": {
+            "robot": {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "direction": "north"
+            }
           },
           "expected": {
             "direction": "north"
@@ -226,12 +252,14 @@
         {
           "description": "increases the y coordinate one when facing north",
           "property": "advance",
-          "robot": {
-            "position": {
-              "x": 0,
-              "y": 0
-            },
-            "direction": "north"
+          "input": {
+            "robot": {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "direction": "north"
+            }
           },
           "expected": {
             "position": {
@@ -243,12 +271,14 @@
         {
           "description": "decreases the y coordinate by one when facing south",
           "property": "advance",
-          "robot": {
-            "position": {
-              "x": 0,
-              "y": 0
-            },
-            "direction": "south"
+          "input": {
+            "robot": {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "direction": "south"
+            }
           },
           "expected": {
             "position": {
@@ -260,12 +290,14 @@
         {
           "description": "increases the x coordinate by one when facing east",
           "property": "advance",
-          "robot": {
-            "position": {
-              "x": 0,
-              "y": 0
-            },
-            "direction": "east"
+          "input": {
+            "robot": {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "direction": "east"
+            }
           },
           "expected": {
             "position": {
@@ -277,12 +309,14 @@
         {
           "description": "decreases the x coordinate by one when facing west",
           "property": "advance",
-          "robot": {
-            "position": {
-              "x": 0,
-              "y": 0
-            },
-            "direction": "west"
+          "input": {
+            "robot": {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "direction": "west"
+            }
           },
           "expected": {
             "position": {
@@ -299,12 +333,14 @@
         {
           "description": "instructions to move west and north",
           "property": "instructions",
-          "robot": {
-            "position": {
-              "x": 0,
-              "y": 0
-            },
-            "direction": "north"
+          "input": {
+            "robot": {
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "direction": "north"
+            }
           },
           "instructions": "LAAARALA",
           "expected": {
@@ -318,12 +354,14 @@
         {
           "description": "instructions to move west and south",
           "property": "instructions",
-          "robot": {
-            "position": {
-              "x": 2,
-              "y": -7
-            },
-            "direction": "east"
+          "input": {
+            "robot": {
+              "position": {
+                "x": 2,
+                "y": -7
+              },
+              "direction": "east"
+            }
           },
           "instructions": "RRAAAAALA",
           "expected": {
@@ -337,12 +375,14 @@
         {
           "description": "instructions to move east and north",
           "property": "instructions",
-          "robot": {
-            "position": {
-              "x": 8,
-              "y": 4
-            },
-            "direction": "south"
+          "input": {
+            "robot": {
+              "position": {
+                "x": 8,
+                "y": 4
+              },
+              "direction": "south"
+            }
           },
           "instructions": "LAAARRRALLLL",
           "expected": {
