@@ -1,6 +1,6 @@
 {
     "exercise": "proverb",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "comments": [
         "JSON doesn't allow for multi-line strings, so all expected outputs are presented ",
         "here as arrays of strings. It's up to the test generator to join the ",
@@ -10,15 +10,19 @@
         {
             "description": "zero pieces",
             "property": "recite",
-            "input": [],
+            "input": {
+              "strings": []
+            },
             "expected": []
         },
         {
             "description": "one piece",
             "property": "recite",
-            "input": [
+            "input": {
+              "strings": [
                 "nail"
-            ],
+              ]
+            },
             "expected": [
                 "And all for the want of a nail."
             ]
@@ -26,10 +30,12 @@
         {
             "description": "two pieces",
             "property": "recite",
-            "input": [
+            "input": {
+              "strings": [
                 "nail",
                 "shoe"
-            ],
+              ]
+            },
             "expected": [
                 "For want of a nail the shoe was lost.",
                 "And all for the want of a nail."
@@ -38,11 +44,13 @@
         {
             "description": "three pieces",
             "property": "recite",
-            "input": [
+            "input": {
+              "strings": [
                 "nail",
                 "shoe",
                 "horse"
-            ],
+              ]
+            },
             "expected": [
                 "For want of a nail the shoe was lost.",
                 "For want of a shoe the horse was lost.",
@@ -52,7 +60,8 @@
         {
             "description": "full proverb",
             "property": "recite",
-            "input": [
+            "input": {
+              "strings": [
                 "nail",
                 "shoe",
                 "horse",
@@ -60,7 +69,8 @@
                 "message",
                 "battle",
                 "kingdom"
-            ],
+              ]
+            },
             "expected": [
                 "For want of a nail the shoe was lost.",
                 "For want of a shoe the horse was lost.",
@@ -74,12 +84,14 @@
         {
             "description": "four pieces modernized",
             "property": "recite",
-            "input": [
+            "input": {
+              "strings": [
                 "pin",
                 "gun",
                 "soldier",
                 "battle"
-            ],
+              ]
+            },
             "expected": [
                 "For want of a pin the gun was lost.",
                 "For want of a gun the soldier was lost.",
