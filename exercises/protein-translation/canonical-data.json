@@ -1,6 +1,6 @@
 {
   "exercise": "protein-translation",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "cases": [
     {
       "description": "Translate input RNA sequences into proteins",
@@ -12,139 +12,185 @@
         {
           "description": "Methionine RNA sequence",
           "property": "proteins",
-          "strand": "AUG",
+          "input": {
+            "strand": "AUG"
+          },
           "expected": ["Methionine"]
         },
         {
           "description": "Phenylalanine RNA sequence 1",
           "property": "proteins",
-          "strand": "UUU",
+          "input": {
+            "strand": "UUU"
+          },
           "expected": ["Phenylalanine"]
         },
         {
           "description": "Phenylalanine RNA sequence 2",
           "property": "proteins",
-          "strand": "UUC",
+          "input": {
+            "strand": "UUC"
+          },
           "expected": ["Phenylalanine"]
         },
         {
           "description": "Leucine RNA sequence 1",
           "property": "proteins",
-          "strand": "UUA",
+          "input": {
+            "strand": "UUA"
+          },
           "expected": ["Leucine"]
         },
         {
           "description": "Leucine RNA sequence 2",
           "property": "proteins",
-          "strand": "UUG",
+          "input": {
+            "strand": "UUG"
+          },
           "expected": ["Leucine"]
         },
         {
           "description": "Serine RNA sequence 1",
           "property": "proteins",
-          "strand": "UCU",
+          "input": {
+            "strand": "UCU"
+          },
           "expected": ["Serine"]
         },
         {
           "description": "Serine RNA sequence 2",
           "property": "proteins",
-          "strand": "UCC",
+          "input": {
+            "strand": "UCC"
+          },
           "expected": ["Serine"]
         },
         {
           "description": "Serine RNA sequence 3",
           "property": "proteins",
-          "strand": "UCA",
+          "input": {
+            "strand": "UCA"
+          },
           "expected": ["Serine"]
         },
         {
           "description": "Serine RNA sequence 4",
           "property": "proteins",
-          "strand": "UCG",
+          "input": {
+            "strand": "UCG"
+          },
           "expected": ["Serine"]
         },
         {
           "description": "Tyrosine RNA sequence 1",
           "property": "proteins",
-          "strand": "UAU",
+          "input": {
+            "strand": "UAU"
+          },
           "expected": ["Tyrosine"]
         },
         {
           "description": "Tyrosine RNA sequence 2",
           "property": "proteins",
-          "strand": "UAC",
+          "input": {
+            "strand": "UAC"
+          },
           "expected": ["Tyrosine"]
         },
         {
           "description": "Cysteine RNA sequence 1",
           "property": "proteins",
-          "strand": "UGU",
+          "input": {
+            "strand": "UGU"
+          },
           "expected": ["Cysteine"]
         },
         {
           "description": "Cysteine RNA sequence 2",
           "property": "proteins",
-          "strand": "UGC",
+          "input": {
+            "strand": "UGC"
+          },
           "expected": ["Cysteine"]
         },
         {
           "description": "Tryptophan RNA sequence",
           "property": "proteins",
-          "strand": "UGG",
+          "input": {
+            "strand": "UGG"
+          },
           "expected": ["Tryptophan"]
         },
         {
           "description": "STOP codon RNA sequence 1",
           "property": "proteins",
-          "strand": "UAA",
+          "input": {
+            "strand": "UAA"
+          },
           "expected": []
         },
         {
           "description": "STOP codon RNA sequence 2",
           "property": "proteins",
-          "strand": "UAG",
+          "input": {
+            "strand": "UAG"
+          },
           "expected": []
         },
         {
           "description": "STOP codon RNA sequence 3",
           "property": "proteins",
-          "strand": "UGA",
+          "input": {
+            "strand": "UGA"
+          },
           "expected": []
         },
         {
           "description": "Translate RNA strand into correct protein list",
           "property": "proteins",
-          "strand": "AUGUUUUGG",
+          "input": {
+            "strand": "AUGUUUUGG"
+          },
           "expected": ["Methionine","Phenylalanine","Tryptophan"]
         },
         {
           "description": "Translation stops if STOP codon at beginning of sequence",
           "property": "proteins",
-          "strand": "UAGUGG",
+          "input": {
+            "strand": "UAGUGG"
+          },
           "expected": []
         },
         {
           "description": "Translation stops if STOP codon at end of two-codon sequence",
           "property": "proteins",
-          "strand": "UGGUAG",
+          "input": {
+            "strand": "UGGUAG"
+          },
           "expected": ["Tryptophan"]
         },
         {
           "description": "Translation stops if STOP codon at end of three-codon sequence",
           "property": "proteins",
-          "strand": "AUGUUUUAA",
+          "input": {
+            "strand": "AUGUUUUAA"
+          },
           "expected": ["Methionine","Phenylalanine"]
         },
         {
           "description": "Translation stops if STOP codon in middle of three-codon sequence",
           "property": "proteins",
-          "strand": "UGGUAGUGG",
+          "input": {
+            "strand": "UGGUAGUGG"
+          },
           "expected": ["Tryptophan"]
         },
         {
           "description": "Translation stops if STOP codon in middle of six-codon sequence",
           "property": "proteins",
-          "strand": "UGGUGUUAUUAAUGGUUU",
+          "input": {
+            "strand": "UGGUGUUAUUAAUGGUUU"
+          },
           "expected": ["Tryptophan","Cysteine","Tyrosine"]
         }
       ]
