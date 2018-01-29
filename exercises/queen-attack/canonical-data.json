@@ -1,6 +1,6 @@
 {
   "exercise": "queen-attack",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "comments": [
     "Testing invalid positions will vary by language. The expected",
     "value of -1 is there to indicate some sort of failure should",
@@ -17,10 +17,12 @@
         {
           "description": "queen with a valid position",
           "property": "create",
-          "queen": {
-            "position": {
-              "row": 2,
-              "column": 2
+          "input": {
+            "queen": {
+              "position": {
+                "row": 2,
+                "column": 2
+              }
             }
           },
           "expected": 0
@@ -28,10 +30,12 @@
         {
           "description": "queen must have positive row",
           "property": "create",
-          "queen": {
-            "position": {
-              "row": -2,
-              "column": 2
+          "input": {
+            "queen": {
+              "position": {
+                "row": -2,
+                "column": 2
+              }
             }
           },
           "expected": -1
@@ -39,10 +43,12 @@
         {
           "description": "queen must have row on board",
           "property": "create",
-          "queen": {
-            "position": {
-              "row": 8,
-              "column": 4
+          "input": {
+            "queen": {
+              "position": {
+                "row": 8,
+                "column": 4
+              }
             }
           },
           "expected": -1
@@ -50,10 +56,12 @@
         {
           "description": "queen must have positive column",
           "property": "create",
-          "queen": {
-            "position": {
-              "row": 2,
-              "column": -2
+          "input": {
+            "queen": {
+              "position": {
+                "row": 2,
+                "column": -2
+              }
             }
           },
           "expected": -1
@@ -61,10 +69,12 @@
         {
           "description": "queen must have column on board",
           "property": "create",
-          "queen": {
-            "position": {
-              "row": 4,
-              "column": 8
+          "input": {
+            "queen": {
+              "position": {
+                "row": 4,
+                "column": 8
+              }
             }
           },
           "expected": -1
@@ -77,16 +87,18 @@
         {
           "description": "can not attack",
           "property": "canAttack",
-          "white_queen": {
-            "position": {
-              "row": 2,
-              "column": 4
-            }
-          },
-          "black_queen": {
-            "position": {
-              "row": 6,
-              "column": 6
+          "input": {
+            "white_queen": {
+              "position": {
+                "row": 2,
+                "column": 4
+              }
+            },
+            "black_queen": {
+              "position": {
+                "row": 6,
+                "column": 6
+              }
             }
           },
           "expected": false
@@ -94,16 +106,18 @@
         {
           "description": "can attack on same row",
           "property": "canAttack",
-          "white_queen": {
-            "position": {
-              "row": 2,
-              "column": 4
-            }
-          },
-          "black_queen": {
-            "position": {
-              "row": 2,
-              "column": 6
+          "input": {
+            "white_queen": {
+              "position": {
+                "row": 2,
+                "column": 4
+              }
+            },
+            "black_queen": {
+              "position": {
+                "row": 2,
+                "column": 6
+              }
             }
           },
           "expected": true
@@ -111,16 +125,18 @@
         {
           "description": "can attack on same column",
           "property": "canAttack",
-          "white_queen": {
-            "position": {
-              "row": 4,
-              "column": 5
-            }
-          },
-          "black_queen": {
-            "position": {
-              "row": 2,
-              "column": 5
+          "input": {
+            "white_queen": {
+              "position": {
+                "row": 4,
+                "column": 5
+              }
+            },
+            "black_queen": {
+              "position": {
+                "row": 2,
+                "column": 5
+              }
             }
           },
           "expected": true
@@ -128,16 +144,18 @@
         {
           "description": "can attack on first diagonal",
           "property": "canAttack",
-          "white_queen": {
-            "position": {
-              "row": 2,
-              "column": 2
-            }
-          },
-          "black_queen": {
-            "position": {
-              "row": 0,
-              "column": 4
+          "input": {
+            "white_queen": {
+              "position": {
+                "row": 2,
+                "column": 2
+              }
+            },
+            "black_queen": {
+              "position": {
+                "row": 0,
+                "column": 4
+              }
             }
           },
           "expected": true
@@ -145,16 +163,18 @@
         {
           "description": "can attack on second diagonal",
           "property": "canAttack",
-          "white_queen": {
-            "position": {
-              "row": 2,
-              "column": 2
-            }
-          },
-          "black_queen": {
-            "position": {
-              "row": 3,
-              "column": 1
+          "input": {
+            "white_queen": {
+              "position": {
+                "row": 2,
+                "column": 2
+              }
+            },
+            "black_queen": {
+              "position": {
+                "row": 3,
+                "column": 1
+              }
             }
           },
           "expected": true
@@ -162,16 +182,18 @@
         {
           "description": "can attack on third diagonal",
           "property": "canAttack",
-          "white_queen": {
-            "position": {
-              "row": 2,
-              "column": 2
-            }
-          },
-          "black_queen": {
-            "position": {
-              "row": 1,
-              "column": 1
+          "input": {
+            "white_queen": {
+              "position": {
+                "row": 2,
+                "column": 2
+              }
+            },
+            "black_queen": {
+              "position": {
+                "row": 1,
+                "column": 1
+              }
             }
           },
           "expected": true
@@ -179,16 +201,18 @@
         {
           "description": "can attack on fourth diagonal",
           "property": "canAttack",
-          "white_queen": {
-            "position": {
-              "row": 2,
-              "column": 2
-            }
-          },
-          "black_queen": {
-            "position": {
-              "row": 5,
-              "column": 5
+          "input": {
+            "white_queen": {
+              "position": {
+                "row": 2,
+                "column": 2
+              }
+            },
+            "black_queen": {
+              "position": {
+                "row": 5,
+                "column": 5
+              }
             }
           },
           "expected": true
