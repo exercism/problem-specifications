@@ -1,6 +1,6 @@
 {
   "exercise": "reverse-string",
-  "version": "1.0.1",      
+  "version": "1.1.0",      
   "comments": [
         "If property based testing tools are available, a good property to test is reversing a string twice: reverse(reverse(string)) == string"
       ],
@@ -8,31 +8,41 @@
     {
       "description": "an empty string",
       "property": "reverse",
-      "input": "",
+      "input": {
+        "value": ""
+      },
       "expected": ""
     },
     {
       "description": "a word",
       "property": "reverse",
-      "input": "robot",
+      "input": {
+        "value": "robot"
+      },
       "expected": "tobor"
     },
     {
       "description": "a capitalized word",
       "property": "reverse",
-      "input": "Ramen",
+      "input": {
+        "value": "Ramen"
+      },
       "expected": "nemaR"
     },
     {
       "description": "a sentence with punctuation",
       "property": "reverse",  
-      "input": "I'm hungry!",
+      "input": {
+        "value": "I'm hungry!"
+      },
       "expected": "!yrgnuh m'I"
     },
     {
       "description": "a palindrome",
       "property": "reverse",
-      "input": "racecar",
+      "input": {
+        "value": "racecar"
+      },
       "expected": "racecar"
     }
   ]
