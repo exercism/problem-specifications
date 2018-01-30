@@ -1,6 +1,6 @@
 {
   "exercise": "run-length-encoding",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "cases": [
     {
       "description": "run-length encode a string",
@@ -8,37 +8,49 @@
         {
           "description": "empty string",
           "property": "encode",
-          "input": "",
+          "input": {
+            "string": ""
+          },
           "expected": ""
         },
         {
           "description": "single characters only are encoded without count",
           "property": "encode",
-          "input": "XYZ",
+          "input": {
+            "string": "XYZ"
+          },
           "expected": "XYZ"
         },
         {
           "description": "string with no single characters",
           "property": "encode",
-          "input": "AABBBCCCC",
+          "input": {
+            "string": "AABBBCCCC"
+          },
           "expected": "2A3B4C"
         },
         {
           "description": "single characters mixed with repeated characters",
           "property": "encode",
-          "input": "WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB",
+          "input": {
+            "string": "WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB"
+          },
           "expected": "12WB12W3B24WB"
         },
         {
           "description": "multiple whitespace mixed in string",
           "property": "encode",
-          "input": "  hsqq qww  ",
+          "input": {
+            "string": "  hsqq qww  "
+          },
           "expected": "2 hs2q q2w2 "
         },
         {
           "description": "lowercase characters",
           "property": "encode",
-          "input": "aabbbcccc",
+          "input": {
+            "string": "aabbbcccc"
+          },
           "expected": "2a3b4c"
         }
       ]
@@ -49,37 +61,49 @@
         {
           "description": "empty string",
           "property": "decode",
-          "input": "",
+          "input": {
+            "string": ""
+          },
           "expected": ""
         },
         {
           "description": "single characters only",
           "property": "decode",
-          "input": "XYZ",
+          "input": {
+            "string": "XYZ"
+          },
           "expected": "XYZ"
         },
         {
           "description": "string with no single characters",
           "property": "decode",
-          "input": "2A3B4C",
+          "input": {
+            "string": "2A3B4C"
+          },
           "expected": "AABBBCCCC"
         },
         {
           "description": "single characters with repeated characters",
           "property": "decode",
-          "input": "12WB12W3B24WB",
+          "input": {
+            "string": "12WB12W3B24WB"
+          },
           "expected": "WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB"
         },
         {
           "description": "multiple whitespace mixed in string",
           "property": "decode",
-          "input": "2 hs2q q2w2 ",
+          "input": {
+            "string": "2 hs2q q2w2 "
+          },
           "expected": "  hsqq qww  "
         },
         {
           "description": "lower case string",
           "property": "decode",
-          "input": "2a3b4c",
+          "input": {
+            "string": "2a3b4c"
+          },
           "expected": "aabbbcccc"
         }
       ]
@@ -90,7 +114,9 @@
         {
           "description": "encode followed by decode gives original string",
           "property": "consistency",
-          "input": "zzz ZZ  zZ",
+          "input": {
+            "string": "zzz ZZ  zZ"
+          },
           "expected": "zzz ZZ  zZ"
         }
       ]
