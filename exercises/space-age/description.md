@@ -1,4 +1,4 @@
- Given an age in seconds, calculate that age in terms of years of the different planets. Here is a list of the length of one 'year' on each planet:
+Given a person's age in seconds, calculate their age in terms of years of the different planets.
 
    - Earth: orbital period 365.25 Earth days, or 31557600 seconds
    - Mercury: orbital period 0.2408467 Earth years
