@@ -1,6 +1,6 @@
 {
   "exercise": "robot-simulator",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "comments": [
     "Some tests have two expectations: one for the position, one for the direction",
     "Optionally, you can also test",
@@ -15,7 +15,7 @@
         {
           "description": "Robots are created with a position and direction",
           "property": "create",
-          "robot": {
+          "input": {
             "position": {
               "x": 0,
               "y": 0
@@ -33,7 +33,7 @@
         {
           "description": "Negative positions are allowed",
           "property": "create",
-          "robot": {
+          "input": {
             "position": {
               "x": -1,
               "y": -1
@@ -56,7 +56,7 @@
         {
           "description": "does not change the position",
           "property": "turnRight",
-          "robot": {
+          "input": {
             "position": {
               "x": 0,
               "y": 0
@@ -73,7 +73,7 @@
         {
           "description": "changes the direction from north to east",
           "property": "turnRight",
-          "robot": {
+          "input": {
             "position": {
               "x": 0,
               "y": 0
@@ -87,7 +87,7 @@
         {
           "description": "changes the direction from east to south",
           "property": "turnRight",
-          "robot": {
+          "input": {
             "position": {
               "x": 0,
               "y": 0
@@ -101,7 +101,7 @@
         {
           "description": "changes the direction from south to west",
           "property": "turnRight",
-          "robot": {
+          "input": {
             "position": {
               "x": 0,
               "y": 0
@@ -115,7 +115,7 @@
         {
           "description": "changes the direction from west to north",
           "property": "turnRight",
-          "robot": {
+          "input": {
             "position": {
               "x": 0,
               "y": 0
@@ -134,7 +134,7 @@
         {
           "description": "does not change the position",
           "property": "turnLeft",
-          "robot": {
+          "input": {
             "position": {
               "x": 0,
               "y": 0
@@ -151,7 +151,7 @@
         {
           "description": "changes the direction from north to west",
           "property": "turnLeft",
-          "robot": {
+          "input": {
             "position": {
               "x": 0,
               "y": 0
@@ -165,7 +165,7 @@
         {
           "description": "changes the direction from west to south",
           "property": "turnLeft",
-          "robot": {
+          "input": {
             "position": {
               "x": 0,
               "y": 0
@@ -179,7 +179,7 @@
         {
           "description": "changes the direction from south to east",
           "property": "turnLeft",
-          "robot": {
+          "input": {
             "position": {
               "x": 0,
               "y": 0
@@ -193,7 +193,7 @@
         {
           "description": "changes the direction from east to north",
           "property": "turnLeft",
-          "robot": {
+          "input": {
             "position": {
               "x": 0,
               "y": 0
@@ -212,7 +212,7 @@
         {
           "description": "does not change the direction",
           "property": "advance",
-          "robot": {
+          "input": {
             "position": {
               "x": 0,
               "y": 0
@@ -226,7 +226,7 @@
         {
           "description": "increases the y coordinate one when facing north",
           "property": "advance",
-          "robot": {
+          "input": {
             "position": {
               "x": 0,
               "y": 0
@@ -243,7 +243,7 @@
         {
           "description": "decreases the y coordinate by one when facing south",
           "property": "advance",
-          "robot": {
+          "input": {
             "position": {
               "x": 0,
               "y": 0
@@ -260,7 +260,7 @@
         {
           "description": "increases the x coordinate by one when facing east",
           "property": "advance",
-          "robot": {
+          "input": {
             "position": {
               "x": 0,
               "y": 0
@@ -277,7 +277,7 @@
         {
           "description": "decreases the x coordinate by one when facing west",
           "property": "advance",
-          "robot": {
+          "input": {
             "position": {
               "x": 0,
               "y": 0
@@ -299,7 +299,7 @@
         {
           "description": "instructions to move west and north",
           "property": "instructions",
-          "robot": {
+          "input": {
             "position": {
               "x": 0,
               "y": 0
@@ -318,7 +318,7 @@
         {
           "description": "instructions to move west and south",
           "property": "instructions",
-          "robot": {
+          "input": {
             "position": {
               "x": 2,
               "y": -7
@@ -337,7 +337,7 @@
         {
           "description": "instructions to move east and north",
           "property": "instructions",
-          "robot": {
+          "input": {
             "position": {
               "x": 8,
               "y": 4
