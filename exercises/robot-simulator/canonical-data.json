@@ -1,6 +1,6 @@
 {
   "exercise": "robot-simulator",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "comments": [
     "Some tests have two expectations: one for the position, one for the direction",
     "Optionally, you can also test",
@@ -304,9 +304,9 @@
               "x": 0,
               "y": 0
             },
-            "direction": "north"
+            "direction": "north",
+            "instructions": "LAAARALA"
           },
-          "instructions": "LAAARALA",
           "expected": {
             "position": {
               "x": -4,
@@ -323,9 +323,9 @@
               "x": 2,
               "y": -7
             },
-            "direction": "east"
+            "direction": "east",
+            "instructions": "RRAAAAALA"
           },
-          "instructions": "RRAAAAALA",
           "expected": {
             "position": {
               "x": -3,
@@ -342,9 +342,9 @@
               "x": 8,
               "y": 4
             },
-            "direction": "south"
+            "direction": "south",
+            "instructions": "LAAARRRALLLL"
           },
-          "instructions": "LAAARRRALLLL",
           "expected": {
             "position": {
               "x": 11,
