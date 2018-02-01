@@ -330,7 +330,7 @@
           "input": {
             "z": ["ln(2)", "pi"]
           },
-          "expected": [2, 0]
+          "expected": [-2, 0]
         }
       ]
     }
