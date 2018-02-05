@@ -1,60 +1,60 @@
 {
   "exercise": "crypto-square",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "cases": [
     {
       "description": "empty plaintext results in an empty ciphertext",
-      "property": "ciphertext",
+      "property": "cipherText",
       "input": {
-        "plaintext": ""
+        "plainText": ""
       },
       "expected": ""
     },
     {
       "description": "Lowercase",
-      "property": "ciphertext",
+      "property": "cipherText",
       "input": {
-        "plaintext": "A"
+        "plainText": "A"
       },
       "expected": "a"
     },
     {
       "description": "Remove spaces",
-      "property": "ciphertext",
+      "property": "cipherText",
       "input": {
-        "plaintext": "  b "
+        "plainText": "  b "
       },
       "expected": "b"
     },
     {
       "description": "Remove punctuation",
-      "property": "ciphertext",
+      "property": "cipherText",
       "input": {
-        "plaintext": "@1,%!"
+        "plainText": "@1,%!"
       },
       "expected": "1"
     },
     {
       "description": "9 character plaintext results in 3 chunks of 3 characters",
-      "property": "ciphertext",
+      "property": "cipherText",
       "input": {
-        "plaintext": "This is fun!"
+        "plainText": "This is fun!"
       },
       "expected": "tsf hiu isn"
     },
     {
       "description": "8 character plaintext results in 3 chunks, the last one with a trailing space",
-      "property": "ciphertext",
+      "property": "cipherText",
       "input": {
-        "plaintext": "Chill out."
+        "plainText": "Chill out."
       },
       "expected": "clu hlt io "
     },
     {
       "description": "54 character plaintext results in 7 chunks, the last two with trailing spaces",
-      "property": "ciphertext",
+      "property": "cipherText",
       "input": {
-        "plaintext": "If man was meant to stay on the ground, god would have given us roots."
+        "plainText": "If man was meant to stay on the ground, god would have given us roots."
       },
       "expected": "imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn  sseoau "
     }
