@@ -5,7 +5,7 @@
    , " It enforces just a general structure for all exercises,    "
    , " without specifying how the test data should be organized   "
    , " for each type of test. We do this to keep generality and   "
-   , " allow support for tests the do not fit well in the         "
+   , " allow support for tests that do not fit well in the        "
    , " 'function (input) == output' structure, like property      "
    , " tests.                                                     "
    , "                                                            "
