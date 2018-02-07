@@ -170,25 +170,25 @@ PATCH changes would never break well-designed test generators, because the test 
 ## Automated Tests
 
 `canonical-data.json` for each exercise is checked for compliance against the [canonical-schema.json](canonical-schema.json).
-In order to run these tests, you will need to have `node` and `npm` installed on your system.
-Install them from [here](https://nodejs.org/en/). (`npm` comes bundled with most installations of `node`).
+In order to run these tests, you will need to have `yarn` installed on your system.
+Install them from [here](https://yarnpkg.com/en/docs/install).
 
 Install the required packages:
 
 ```shell
-npm install
+yarn install
 ```
 
 Run for all exercises:
 
 ```shell
-npm test
+yarn test
 ```
 
 Run for single exercise:
 
 ```shell
-npm run test-one exercises/<exercise>/canonical-data.json
+yarn run test-one exercises/<exercise>/canonical-data.json
 ```
 
 Replace `<exercise>` by the name of exercise which you want to check.
