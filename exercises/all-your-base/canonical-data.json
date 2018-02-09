@@ -138,7 +138,7 @@
       "property": "rebase",
       "input": {
         "inputBase": 1,
-        "digits": [],
+        "digits": [0],
         "outputBase": 10
       },
       "expected": {"error": "input base must be >= 2"}
