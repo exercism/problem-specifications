@@ -6,4 +6,44 @@ cache: yarn
 
 script:
   - bin/check_required_files_present
-  - yarn test
+  - |
+    invalid_old=""
+    invalid_new=""
+    forgotten=""
+
+    for json in exercises/*/canonical-data.json; do
+      dir=$(dirname $json)
+      ex=$(basename $dir)
+
+      if [ -f "$dir/USE_OLD_SCHEMA" ]; then
+        if ! ajv -s old-schema.json -d $json; then
+          invalid_old="$invalid_old $ex"
+        fi
+        # If we have converted to new,
+        # make sure we don't forget to remove USE_OLD_SCHEMA file!
+        if ajv -s canonical-schema.json -d $json 2>/dev/null; then
+          forgotten="$forgotten $ex"
+        fi
+      else
+        if ! ajv -s canonical-schema.json -d $json; then
+          invalid_new="$invalid_new $ex"
+        fi
+      fi
+    done
+
+    stat=0
+
+    if [ -n "$invalid_old" ]; then
+      echo "Exercises using old schema, but invalid: $invalid_old"
+      stat=1
+    fi
+    if [ -n "$invalid_new" ]; then
+      echo "Exercises using new schema, but invalid: $invalid_new"
+      stat=1
+    fi
+    if [ -n "$forgotten" ]; then
+      echo "Exercises using new schema, but forgot to remove USE_OLD_SCHEMA file: $forgotten"
+      stat=1
+    fi
+
+    exit $stat
