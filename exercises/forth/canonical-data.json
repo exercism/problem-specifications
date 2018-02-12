@@ -1,6 +1,6 @@
 {
   "exercise": "forth",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "comments": [
     "The cases are split into multiple sections, all with the same structure.",
     "In all cases, the `expected` key is the resulting stack",
@@ -13,7 +13,9 @@
         {
           "description": "numbers just get pushed onto the stack",
           "property": "evaluate",
-          "input": ["1 2 3 4 5"],
+          "input": {
+            "instructions": ["1 2 3 4 5"]
+          },
           "expected": [1, 2, 3, 4, 5]
         }
       ]
@@ -24,19 +26,25 @@
         {
           "description": "can add two numbers",
           "property": "evaluate",
-          "input": ["1 2 +"],
+          "input": {
+            "instructions": ["1 2 +"]
+          },
           "expected": [3]
         },
         {
           "description": "errors if there is nothing on the stack",
           "property": "evaluate",
-          "input": ["+"],
+          "input": {
+            "instructions": ["+"]
+          },
           "expected": null
         },
         {
           "description": "errors if there is only one value on the stack",
           "property": "evaluate",
-          "input": ["1 +"],
+          "input": {
+            "instructions": ["1 +"]
+          },
           "expected": null
         }
       ]
@@ -47,19 +55,25 @@
         {
           "description": "can subtract two numbers",
           "property": "evaluate",
-          "input": ["3 4 -"],
+          "input": {
+            "instructions": ["3 4 -"]
+          },
           "expected": [-1]
         },
         {
           "description": "errors if there is nothing on the stack",
           "property": "evaluate",
-          "input": ["-"],
+          "input": {
+            "instructions": ["-"]
+          },
           "expected": null
         },
         {
           "description": "errors if there is only one value on the stack",
           "property": "evaluate",
-          "input": ["1 -"],
+          "input": {
+            "instructions": ["1 -"]
+          },
           "expected": null
         }
       ]
@@ -70,19 +84,25 @@
         {
           "description": "can multiply two numbers",
           "property": "evaluate",
-          "input": ["2 4 *"],
+          "input": {
+            "instructions": ["2 4 *"]
+          },
           "expected": [8]
         },
         {
           "description": "errors if there is nothing on the stack",
           "property": "evaluate",
-          "input": ["*"],
+          "input": {
+            "instructions": ["*"]
+          },
           "expected": null
         },
         {
           "description": "errors if there is only one value on the stack",
           "property": "evaluate",
-          "input": ["1 *"],
+          "input": {
+            "instructions": ["1 *"]
+          },
           "expected": null
         }
       ]
@@ -93,31 +113,41 @@
         {
           "description": "can divide two numbers",
           "property": "evaluate",
-          "input": ["12 3 /"],
+          "input": {
+            "instructions": ["12 3 /"]
+          },
           "expected": [4]
         },
         {
           "description": "performs integer division",
           "property": "evaluate",
-          "input": ["8 3 /"],
+          "input": {
+            "instructions": ["8 3 /"]
+          },
           "expected": [2]
         },
         {
           "description": "errors if dividing by zero",
           "property": "evaluate",
-          "input": ["4 0 /"],
+          "input": {
+            "instructions": ["4 0 /"]
+          },
           "expected": null
         },
         {
           "description": "errors if there is nothing on the stack",
           "property": "evaluate",
-          "input": ["/"],
+          "input": {
+            "instructions": ["/"]
+          },
           "expected": null
         },
         {
           "description": "errors if there is only one value on the stack",
           "property": "evaluate",
-          "input": ["1 /"],
+          "input": {
+            "instructions": ["1 /"]
+          },
           "expected": null
         }
       ]
@@ -128,13 +158,17 @@
         {
           "description": "addition and subtraction",
           "property": "evaluate",
-          "input": ["1 2 + 4 -"],
+          "input": {
+            "instructions": ["1 2 + 4 -"]
+          },
           "expected": [-1]
         },
         {
           "description": "multiplication and division",
           "property": "evaluate",
-          "input": ["2 4 * 3 /"],
+          "input": {
+            "instructions": ["2 4 * 3 /"]
+          },
           "expected": [2]
         }
       ]
@@ -145,19 +179,25 @@
         {
           "description": "copies a value on the stack",
           "property": "evaluate",
-          "input": ["1 dup"],
+          "input": {
+            "instructions": ["1 dup"]
+          },
           "expected": [1, 1]
         },
         {
           "description": "copies the top value on the stack",
           "property": "evaluate",
-          "input": ["1 2 dup"],
+          "input": {
+            "instructions": ["1 2 dup"]
+          },
           "expected": [1, 2, 2]
         },
         {
           "description": "errors if there is nothing on the stack",
           "property": "evaluate",
-          "input": ["dup"],
+          "input": {
+            "instructions": ["dup"]
+          },
           "expected": null
         }
       ]
@@ -168,19 +208,25 @@
         {
           "description": "removes the top value on the stack if it is the only one",
           "property": "evaluate",
-          "input": ["1 drop"],
+          "input": {
+            "instructions": ["1 drop"]
+          },
           "expected": []
         },
         {
           "description": "removes the top value on the stack if it is not the only one",
           "property": "evaluate",
-          "input": ["1 2 drop"],
+          "input": {
+            "instructions": ["1 2 drop"]
+          },
           "expected": [1]
         },
         {
           "description": "errors if there is nothing on the stack",
           "property": "evaluate",
-          "input": ["drop"],
+          "input": {
+            "instructions": ["drop"]
+          },
           "expected": null
         }
       ]
@@ -191,25 +237,33 @@
         {
           "description": "swaps the top two values on the stack if they are the only ones",
           "property": "evaluate",
-          "input": ["1 2 swap"],
+          "input": {
+            "instructions": ["1 2 swap"]
+          },
           "expected": [2, 1]
         },
         {
           "description": "swaps the top two values on the stack if they are not the only ones",
           "property": "evaluate",
-          "input": ["1 2 3 swap"],
+          "input": {
+            "instructions": ["1 2 3 swap"]
+          },
           "expected": [1, 3, 2]
         },
         {
           "description": "errors if there is nothing on the stack",
           "property": "evaluate",
-          "input": ["swap"],
+          "input": {
+            "instructions": ["swap"]
+          },
           "expected": null
         },
         {
           "description": "errors if there is only one value on the stack",
           "property": "evaluate",
-          "input": ["1 swap"],
+          "input": {
+            "instructions": ["1 swap"]
+          },
           "expected": null
         }
       ]
@@ -220,25 +274,33 @@
         {
           "description": "copies the second element if there are only two",
           "property": "evaluate",
-          "input": ["1 2 over"],
+          "input": {
+            "instructions": ["1 2 over"]
+          },
           "expected": [1, 2, 1]
         },
         {
           "description": "copies the second element if there are more than two",
           "property": "evaluate",
-          "input": ["1 2 3 over"],
+          "input": {
+            "instructions": ["1 2 3 over"]
+          },
           "expected": [1, 2, 3, 2]
         },
         {
           "description": "errors if there is nothing on the stack",
           "property": "evaluate",
-          "input": ["over"],
+          "input": {
+            "instructions": ["over"]
+          },
           "expected": null
         },
         {
           "description": "errors if there is only one value on the stack",
           "property": "evaluate",
-          "input": ["1 over"],
+          "input": {
+            "instructions": ["1 over"]
+          },
           "expected": null
         }
       ]
@@ -249,59 +311,73 @@
         {
           "description": "can consist of built-in words",
           "property": "evaluate",
-          "input": [
-            ": dup-twice dup dup ;",
-            "1 dup-twice"
-          ],
+          "input": {
+            "instructions": [
+              ": dup-twice dup dup ;",
+              "1 dup-twice"
+            ]
+          },
           "expected": [1, 1, 1]
         },
         {
           "description": "execute in the right order",
           "property": "evaluate",
-          "input": [
-            ": countup 1 2 3 ;",
-            "countup"
-          ],
+          "input": {
+            "instructions": [
+              ": countup 1 2 3 ;",
+              "countup"
+            ]
+          },
           "expected": [1, 2, 3]
         },
         {
           "description": "can override other user-defined words",
           "property": "evaluate",
-          "input": [
-            ": foo dup ;",
-            ": foo dup dup ;",
-            "1 foo"
-          ],
+          "input": {
+            "instructions": [
+              ": foo dup ;",
+              ": foo dup dup ;",
+              "1 foo"
+            ]
+          },
           "expected": [1, 1, 1]
         },
         {
           "description": "can override built-in words",
           "property": "evaluate",
-          "input": [
-            ": swap dup ;",
-            "1 swap"
-          ],
+          "input": {
+            "instructions": [
+              ": swap dup ;",
+              "1 swap"
+            ]
+          },
           "expected": [1, 1]
         },
         {
           "description": "can override built-in operators",
           "property": "evaluate",
-          "input": [
-            ": + * ;",
-            "3 4 +"
-          ],
+          "input": {
+            "instructions": [
+              ": + * ;",
+              "3 4 +"
+            ]
+          },
           "expected": [12]
         },
         {
           "description": "cannot redefine numbers",
           "property": "evaluate",
-          "input": [": 1 2 ;"],
+          "input": {
+            "instructions": [": 1 2 ;"]
+          },
           "expected": null
         },
         {
           "description": "errors if executing a non-existent word",
           "property": "evaluate",
-          "input": ["foo"],
+          "input": {
+            "instructions": ["foo"]
+          },
           "expected": null
         }
       ]
@@ -312,43 +388,55 @@
         {
           "description": "DUP is case-insensitive",
           "property": "evaluate",
-          "input": ["1 DUP Dup dup"],
+          "input": {
+            "instructions": ["1 DUP Dup dup"]
+          },
           "expected": [1, 1, 1, 1]
         },
         {
           "description": "DROP is case-insensitive",
           "property": "evaluate",
-          "input": ["1 2 3 4 DROP Drop drop"],
+          "input": {
+            "instructions": ["1 2 3 4 DROP Drop drop"]
+          },
           "expected": [1]
         },
         {
           "description": "SWAP is case-insensitive",
           "property": "evaluate",
-          "input": ["1 2 SWAP 3 Swap 4 swap"],
+          "input": {
+            "instructions": ["1 2 SWAP 3 Swap 4 swap"]
+          },
           "expected": [2, 3, 4, 1]
         },
         {
           "description": "OVER is case-insensitive",
           "property": "evaluate",
-          "input": ["1 2 OVER Over over"],
+          "input": {
+            "instructions": ["1 2 OVER Over over"]
+          },
           "expected": [1, 2, 1, 2, 1]
         },
         {
           "description": "user-defined words are case-insensitive",
           "property": "evaluate",
-          "input": [
-            ": foo dup ;",
-            "1 FOO Foo foo"
-          ],
+          "input": {
+            "instructions": [
+              ": foo dup ;",
+              "1 FOO Foo foo"
+            ]
+          },
           "expected": [1, 1, 1, 1]
         },
         {
           "description": "definitions are case-insensitive",
           "property": "evaluate",
-          "input": [
-            ": SWAP DUP Dup dup ;",
-            "1 swap"
-          ],
+          "input": {
+            "instructions": [
+              ": SWAP DUP Dup dup ;",
+              "1 swap"
+            ]
+          },
           "expected": [1, 1, 1, 1]
         }
       ]
