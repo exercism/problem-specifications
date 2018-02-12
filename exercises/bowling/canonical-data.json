@@ -1,6 +1,6 @@
 {
   "exercise": "bowling",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments": [
     "Students should implement roll and score methods.",
     "Roll should accept a single integer.",
@@ -224,5 +224,21 @@
       "previousRolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 3]
     },
     "expected": {"error": "Score cannot be taken until the end of the game"}
+  }, {
+    "description": "cannot roll after bonus roll for spare",
+    "property": "roll",
+    "input": {
+      "previousRolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 3, 2],
+      "roll": 2
+    },
+    "expected": {"error": "Cannot roll after game is over"}
+  }, {
+    "description": "cannot roll after bonus rolls for strike",
+    "property": "roll",
+    "input": {
+      "previousRolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 3, 2],
+      "roll": 2
+    },
+    "expected": {"error": "Cannot roll after game is over"}
   }]
 }
