@@ -1,6 +1,6 @@
 {
   "exercise": "zipper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "comments": [
     " The test cases for this exercise include an initial tree and a     ",
     " series of operations to perform on the initial tree.               ",
@@ -20,28 +20,30 @@
     {
       "description": "data is retained",
       "property": "expectedValue",
-      "initialTree": {
-        "value": 1,
-        "left": {
-          "value": 2,
-          "left": null,
+      "input": {
+        "initialTree": {
+          "value": 1,
+          "left": {
+            "value": 2,
+            "left": null,
+            "right": {
+              "value": 3,
+              "left": null,
+              "right": null
+            }
+          },
           "right": {
-            "value": 3,
+            "value": 4,
             "left": null,
             "right": null
           }
         },
-        "right": {
-          "value": 4,
-          "left": null,
-          "right": null
-        }
+        "operations": [
+          {
+            "operation": "to_tree"
+          }
+        ]
       },
-      "operations": [
-        {
-          "operation": "to_tree"
-        }
-      ],
       "expected": {
         "type": "tree",
         "value": {
@@ -66,34 +68,36 @@
     {
       "description": "left, right and value",
       "property": "expectedValue",
-      "initialTree": {
-        "value": 1,
-        "left": {
-          "value": 2,
-          "left": null,
+      "input": {
+        "initialTree": {
+          "value": 1,
+          "left": {
+            "value": 2,
+            "left": null,
+            "right": {
+              "value": 3,
+              "left": null,
+              "right": null
+            }
+          },
           "right": {
-            "value": 3,
+            "value": 4,
             "left": null,
             "right": null
           }
         },
-        "right": {
-          "value": 4,
-          "left": null,
-          "right": null
-        }
+        "operations": [
+          {
+            "operation": "left"
+          },
+          {
+            "operation": "right"
+          },
+          {
+            "operation": "value"
+          }
+        ]
       },
-      "operations": [
-        {
-          "operation": "left"
-        },
-        {
-          "operation": "right"
-        },
-        {
-          "operation": "value"
-        }
-      ],
       "expected": {
         "type": "int",
         "value": 3
@@ -102,31 +106,33 @@
     {
       "description": "dead end",
       "property": "expectedValue",
-      "initialTree": {
-        "value": 1,
-        "left": {
-          "value": 2,
-          "left": null,
+      "input": {
+        "initialTree": {
+          "value": 1,
+          "left": {
+            "value": 2,
+            "left": null,
+            "right": {
+              "value": 3,
+              "left": null,
+              "right": null
+            }
+          },
           "right": {
-            "value": 3,
+            "value": 4,
             "left": null,
             "right": null
           }
         },
-        "right": {
-          "value": 4,
-          "left": null,
-          "right": null
-        }
+        "operations": [
+          {
+            "operation": "left"
+          },
+          {
+            "operation": "left"
+          }
+        ]
       },
-      "operations": [
-        {
-          "operation": "left"
-        },
-        {
-          "operation": "left"
-        }
-      ],
       "expected": {
         "type": "zipper",
         "value": null
@@ -135,34 +141,36 @@
     {
       "description": "tree from deep focus",
       "property": "expectedValue",
-      "initialTree": {
-        "value": 1,
-        "left": {
-          "value": 2,
-          "left": null,
+      "input": {
+        "initialTree": {
+          "value": 1,
+          "left": {
+            "value": 2,
+            "left": null,
+            "right": {
+              "value": 3,
+              "left": null,
+              "right": null
+            }
+          },
           "right": {
-            "value": 3,
+            "value": 4,
             "left": null,
             "right": null
           }
         },
-        "right": {
-          "value": 4,
-          "left": null,
-          "right": null
-        }
+        "operations": [
+          {
+            "operation": "left"
+          },
+          {
+            "operation": "right"
+          },
+          {
+            "operation": "to_tree"
+          }
+        ]
       },
-      "operations": [
-        {
-          "operation": "left"
-        },
-        {
-          "operation": "right"
-        },
-        {
-          "operation": "to_tree"
-        }
-      ],
       "expected": {
         "type": "tree",
         "value": {
@@ -187,28 +195,30 @@
     {
       "description": "traversing up from top",
       "property": "expectedValue",
-      "initialTree": {
-        "value": 1,
-        "left": {
-          "value": 2,
-          "left": null,
+      "input": {
+        "initialTree": {
+          "value": 1,
+          "left": {
+            "value": 2,
+            "left": null,
+            "right": {
+              "value": 3,
+              "left": null,
+              "right": null
+            }
+          },
           "right": {
-            "value": 3,
+            "value": 4,
             "left": null,
             "right": null
           }
         },
-        "right": {
-          "value": 4,
-          "left": null,
-          "right": null
-        }
+        "operations": [
+          {
+            "operation": "up"
+          }
+        ]
       },
-      "operations": [
-        {
-          "operation": "up"
-        }
-      ],
       "expected": {
         "type": "zipper",
         "value": null
@@ -217,46 +227,48 @@
     {
       "description": "left, right, and up",
       "property": "expectedValue",
-      "initialTree": {
-        "value": 1,
-        "left": {
-          "value": 2,
-          "left": null,
+      "input": {
+        "initialTree": {
+          "value": 1,
+          "left": {
+            "value": 2,
+            "left": null,
+            "right": {
+              "value": 3,
+              "left": null,
+              "right": null
+            }
+          },
           "right": {
-            "value": 3,
+            "value": 4,
             "left": null,
             "right": null
           }
         },
-        "right": {
-          "value": 4,
-          "left": null,
-          "right": null
-        }
+        "operations": [
+          {
+            "operation": "left"
+          },
+          {
+            "operation": "up"
+          },
+          {
+            "operation": "right"
+          },
+          {
+            "operation": "up"
+          },
+          {
+            "operation": "left"
+          },
+          {
+            "operation": "right"
+          },
+          {
+            "operation": "value"
+          }
+        ]
       },
-      "operations": [
-        {
-          "operation": "left"
-        },
-        {
-          "operation": "up"
-        },
-        {
-          "operation": "right"
-        },
-        {
-          "operation": "up"
-        },
-        {
-          "operation": "left"
-        },
-        {
-          "operation": "right"
-        },
-        {
-          "operation": "value"
-        }
-      ],
       "expected": {
         "type": "int",
         "value": 3
@@ -265,35 +277,37 @@
     {
       "description": "set_value",
       "property": "expectedValue",
-      "initialTree": {
-        "value": 1,
-        "left": {
-          "value": 2,
-          "left": null,
+      "input": {
+        "initialTree": {
+          "value": 1,
+          "left": {
+            "value": 2,
+            "left": null,
+            "right": {
+              "value": 3,
+              "left": null,
+              "right": null
+            }
+          },
           "right": {
-            "value": 3,
+            "value": 4,
             "left": null,
             "right": null
           }
         },
-        "right": {
-          "value": 4,
-          "left": null,
-          "right": null
-        }
+        "operations": [
+          {
+            "operation": "left"
+          },
+          {
+            "operation": "set_value",
+            "item": 5
+          },
+          {
+            "operation": "to_tree"
+          }
+        ]
       },
-      "operations": [
-        {
-          "operation": "left"
-        },
-        {
-          "operation": "set_value",
-          "item": 5
-        },
-        {
-          "operation": "to_tree"
-        }
-      ],
       "expected": {
         "type": "tree",
         "value": {
@@ -318,41 +332,43 @@
     {
       "description": "set_value after traversing up",
       "property": "expectedValue",
-      "initialTree": {
-        "value": 1,
-        "left": {
-          "value": 2,
-          "left": null,
+      "input": {
+        "initialTree": {
+          "value": 1,
+          "left": {
+            "value": 2,
+            "left": null,
+            "right": {
+              "value": 3,
+              "left": null,
+              "right": null
+            }
+          },
           "right": {
-            "value": 3,
+            "value": 4,
             "left": null,
             "right": null
           }
         },
-        "right": {
-          "value": 4,
-          "left": null,
-          "right": null
-        }
+        "operations": [
+          {
+            "operation": "left"
+          },
+          {
+            "operation": "right"
+          },
+          {
+            "operation": "up"
+          },
+          {
+            "operation": "set_value",
+            "item": 5
+          },
+          {
+            "operation": "to_tree"
+          }
+        ]
       },
-      "operations": [
-        {
-          "operation": "left"
-        },
-        {
-          "operation": "right"
-        },
-        {
-          "operation": "up"
-        },
-        {
-          "operation": "set_value",
-          "item": 5
-        },
-        {
-          "operation": "to_tree"
-        }
-      ],
       "expected": {
         "type": "tree",
         "value": {
@@ -377,39 +393,41 @@
     {
       "description": "set_left with leaf",
       "property": "expectedValue",
-      "initialTree": {
-        "value": 1,
-        "left": {
-          "value": 2,
-          "left": null,
+      "input": {
+        "initialTree": {
+          "value": 1,
+          "left": {
+            "value": 2,
+            "left": null,
+            "right": {
+              "value": 3,
+              "left": null,
+              "right": null
+            }
+          },
           "right": {
-            "value": 3,
+            "value": 4,
             "left": null,
             "right": null
           }
         },
-        "right": {
-          "value": 4,
-          "left": null,
-          "right": null
-        }
+        "operations": [
+          {
+            "operation": "left"
+          },
+          {
+            "operation": "set_left",
+            "item": {
+              "value": 5,
+              "left": null,
+              "right": null
+            }
+          },
+          {
+            "operation": "to_tree"
+          }
+        ]
       },
-      "operations": [
-        {
-          "operation": "left"
-        },
-        {
-          "operation": "set_left",
-          "item": {
-            "value": 5,
-            "left": null,
-            "right": null
-          }
-        },
-        {
-          "operation": "to_tree"
-        }
-      ],
       "expected": {
         "type": "tree",
         "value": {
@@ -438,35 +456,37 @@
     {
       "description": "set_right with null",
       "property": "expectedValue",
-      "initialTree": {
-        "value": 1,
-        "left": {
-          "value": 2,
-          "left": null,
+      "input": {
+        "initialTree": {
+          "value": 1,
+          "left": {
+            "value": 2,
+            "left": null,
+            "right": {
+              "value": 3,
+              "left": null,
+              "right": null
+            }
+          },
           "right": {
-            "value": 3,
+            "value": 4,
             "left": null,
             "right": null
           }
         },
-        "right": {
-          "value": 4,
-          "left": null,
-          "right": null
-        }
+        "operations": [
+          {
+            "operation": "left"
+          },
+          {
+            "operation": "set_right",
+            "item": null
+          },
+          {
+            "operation": "to_tree"
+          }
+        ]
       },
-      "operations": [
-        {
-          "operation": "left"
-        },
-        {
-          "operation": "set_right",
-          "item": null
-        },
-        {
-          "operation": "to_tree"
-        }
-      ],
       "expected": {
         "type": "tree",
         "value": {
@@ -487,44 +507,46 @@
     {
       "description": "set_right with subtree",
       "property": "expectedValue",
-      "initialTree": {
-        "value": 1,
-        "left": {
-          "value": 2,
-          "left": null,
+      "input": {
+        "initialTree": {
+          "value": 1,
+          "left": {
+            "value": 2,
+            "left": null,
+            "right": {
+              "value": 3,
+              "left": null,
+              "right": null
+            }
+          },
           "right": {
-            "value": 3,
+            "value": 4,
             "left": null,
             "right": null
           }
         },
-        "right": {
-          "value": 4,
-          "left": null,
-          "right": null
-        }
-      },
-      "operations": [
-        {
-          "operation": "set_right",
-          "item": {
-            "value": 6,
-            "left": {
-              "value": 7,
-              "left": null,
-              "right": null
-            },
-            "right": {
-              "value": 8,
-              "left": null,
-              "right": null
+        "operations": [
+          {
+            "operation": "set_right",
+            "item": {
+              "value": 6,
+              "left": {
+                "value": 7,
+                "left": null,
+                "right": null
+              },
+              "right": {
+                "value": 8,
+                "left": null,
+                "right": null
+              }
             }
+          },
+          {
+            "operation": "to_tree"
           }
-        },
-        {
-          "operation": "to_tree"
-        }
-      ],
+        ]
+      },
       "expected": {
         "type": "tree",
         "value": {
@@ -557,38 +579,40 @@
     {
       "description": "set_value on deep focus",
       "property": "expectedValue",
-      "initialTree": {
-        "value": 1,
-        "left": {
-          "value": 2,
-          "left": null,
+      "input": {
+        "initialTree": {
+          "value": 1,
+          "left": {
+            "value": 2,
+            "left": null,
+            "right": {
+              "value": 3,
+              "left": null,
+              "right": null
+            }
+          },
           "right": {
-            "value": 3,
+            "value": 4,
             "left": null,
             "right": null
           }
         },
-        "right": {
-          "value": 4,
-          "left": null,
-          "right": null
-        }
+        "operations": [
+          {
+            "operation": "left"
+          },
+          {
+            "operation": "right"
+          },
+          {
+            "operation": "set_value",
+            "item": 5
+          },
+          {
+            "operation": "to_tree"
+          }
+        ]
       },
-      "operations": [
-        {
-          "operation": "left"
-        },
-        {
-          "operation": "right"
-        },
-        {
-          "operation": "set_value",
-          "item": 5
-        },
-        {
-          "operation": "to_tree"
-        }
-      ],
       "expected": {
         "type": "tree",
         "value": {
@@ -613,34 +637,36 @@
     {
       "description": "different paths to same zipper",
       "property": "sameResultFromOperations",
-      "initialTree": {
-        "value": 1,
-        "left": {
-          "value": 2,
-          "left": null,
+      "input": {
+        "initialTree": {
+          "value": 1,
+          "left": {
+            "value": 2,
+            "left": null,
+            "right": {
+              "value": 3,
+              "left": null,
+              "right": null
+            }
+          },
           "right": {
-            "value": 3,
+            "value": 4,
             "left": null,
             "right": null
           }
         },
-        "right": {
-          "value": 4,
-          "left": null,
-          "right": null
-        }
+        "operations": [
+          {
+            "operation": "left"
+          },
+          {
+            "operation": "up"
+          },
+          {
+            "operation": "right"
+          }
+        ]
       },
-      "operations": [
-        {
-          "operation": "left"
-        },
-        {
-          "operation": "up"
-        },
-        {
-          "operation": "right"
-        }
-      ],
       "expected": {
         "type": "zipper",
         "initialTree": {
