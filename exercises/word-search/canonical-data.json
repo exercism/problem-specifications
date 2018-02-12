@@ -1,6 +1,6 @@
 {
   "exercise": "word-search",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments": [
     "Grid rows and columns are 1-indexed.",
     "An expected value of -1 indicates that some sort of failure should occur."
@@ -9,12 +9,14 @@
     {
       "description": "Should accept an initial game grid and a target search word",
       "property": "search",
-      "grid": [
-        "jefblpepre"
-      ],
-      "wordsToSearchFor": [
-        "clojure"
-      ],
+      "input": {
+        "grid": [
+          "jefblpepre"
+        ],
+        "wordsToSearchFor": [
+          "clojure"
+        ]
+      },
       "expected": {
         "clojure": null
       }
@@ -22,12 +24,14 @@
     {
       "description": "Should locate one word written left to right",
       "property": "search",
-      "grid": [
-        "clojurermt"
-      ],
-      "wordsToSearchFor": [
-        "clojure"
-      ],
+      "input": {
+        "grid": [
+          "clojurermt"
+        ],
+        "wordsToSearchFor": [
+          "clojure"
+        ]
+      },
       "expected": {
         "clojure": {
           "start": {
@@ -44,12 +48,14 @@
     {
       "description": "Should locate the same word written left to right in a different position",
       "property": "search",
-      "grid": [
-        "mtclojurer"
-      ],
-      "wordsToSearchFor": [
-        "clojure"
-      ],
+      "input": {
+        "grid": [
+          "mtclojurer"
+        ],
+        "wordsToSearchFor": [
+          "clojure"
+        ]
+      },
       "expected": {
         "clojure": {
           "start": {
@@ -66,12 +72,14 @@
     {
       "description": "Should locate a different left to right word",
       "property": "search",
-      "grid": [
-        "coffeelplx"
-      ],
-      "wordsToSearchFor": [
-        "coffee"
-      ],
+      "input": {
+        "grid": [
+          "coffeelplx"
+        ],
+        "wordsToSearchFor": [
+          "coffee"
+        ]
+      },
       "expected": {
         "coffee": {
           "start": {
@@ -88,12 +96,14 @@
     {
       "description": "Should locate that different left to right word in a different position",
       "property": "search",
-      "grid": [
-        "xcoffeezlp"
-      ],
-      "wordsToSearchFor": [
-        "coffee"
-      ],
+      "input": {
+        "grid": [
+          "xcoffeezlp"
+        ],
+        "wordsToSearchFor": [
+          "coffee"
+        ]
+      },
       "expected": {
         "coffee": {
           "start": {
@@ -110,13 +120,15 @@
     {
       "description": "Should locate a left to right word in two line grid",
       "property": "search",
-      "grid": [
-        "jefblpepre",
-        "tclojurerm"
-      ],
-      "wordsToSearchFor": [
-        "clojure"
-      ],
+      "input": {
+        "grid": [
+          "jefblpepre",
+          "tclojurerm"
+        ],
+        "wordsToSearchFor": [
+          "clojure"
+        ]
+      },
       "expected": {
         "clojure": {
           "start": {
@@ -133,14 +145,16 @@
     {
       "description": "Should locate a left to right word in three line grid",
       "property": "search",
-      "grid": [
-        "camdcimgtc",
-        "jefblpepre",
-        "clojurermt"
-      ],
-      "wordsToSearchFor": [
-        "clojure"
-      ],
+      "input": {
+        "grid": [
+          "camdcimgtc",
+          "jefblpepre",
+          "clojurermt"
+        ],
+        "wordsToSearchFor": [
+          "clojure"
+        ]
+      },
       "expected": {
         "clojure": {
           "start": {
@@ -157,21 +171,23 @@
     {
       "description": "Should locate a left to right word in ten line grid",
       "property": "search",
-      "grid": [
-        "jefblpepre",
-        "camdcimgtc",
-        "oivokprjsm",
-        "pbwasqroua",
-        "rixilelhrs",
-        "wolcqlirpc",
-        "screeaumgr",
-        "alxhpburyi",
-        "jalaycalmp",
-        "clojurermt"
-      ],
-      "wordsToSearchFor": [
-        "clojure"
-      ],
+      "input": {
+        "grid": [
+          "jefblpepre",
+          "camdcimgtc",
+          "oivokprjsm",
+          "pbwasqroua",
+          "rixilelhrs",
+          "wolcqlirpc",
+          "screeaumgr",
+          "alxhpburyi",
+          "jalaycalmp",
+          "clojurermt"
+        ],
+        "wordsToSearchFor": [
+          "clojure"
+        ]
+      },
       "expected": {
         "clojure": {
           "start": {
@@ -188,21 +204,23 @@
     {
       "description": "Should locate that left to right word in a different position in a ten line grid",
       "property": "search",
-      "grid": [
-        "jefblpepre",
-        "camdcimgtc",
-        "oivokprjsm",
-        "pbwasqroua",
-        "rixilelhrs",
-        "wolcqlirpc",
-        "screeaumgr",
-        "alxhpburyi",
-        "clojurermt",
-        "jalaycalmp"
-      ],
-      "wordsToSearchFor": [
-        "clojure"
-      ],
+      "input": {
+        "grid": [
+          "jefblpepre",
+          "camdcimgtc",
+          "oivokprjsm",
+          "pbwasqroua",
+          "rixilelhrs",
+          "wolcqlirpc",
+          "screeaumgr",
+          "alxhpburyi",
+          "clojurermt",
+          "jalaycalmp"
+        ],
+        "wordsToSearchFor": [
+          "clojure"
+        ]
+      },
       "expected": {
         "clojure": {
           "start": {
@@ -219,21 +237,23 @@
     {
       "description": "Should locate a different left to right word in a ten line grid",
       "property": "search",
-      "grid": [
-        "jefblpepre",
-        "camdcimgtc",
-        "oivokprjsm",
-        "pbwasqroua",
-        "rixilelhrs",
-        "wolcqlirpc",
-        "fortranftw",
-        "alxhpburyi",
-        "clojurermt",
-        "jalaycalmp"
-      ],
-      "wordsToSearchFor": [
-        "fortran"
-      ],
+      "input": {
+        "grid": [
+          "jefblpepre",
+          "camdcimgtc",
+          "oivokprjsm",
+          "pbwasqroua",
+          "rixilelhrs",
+          "wolcqlirpc",
+          "fortranftw",
+          "alxhpburyi",
+          "clojurermt",
+          "jalaycalmp"
+        ],
+        "wordsToSearchFor": [
+          "fortran"
+        ]
+      },
       "expected": {
         "fortran": {
           "start": {
@@ -250,22 +270,24 @@
     {
       "description": "Should locate multiple words",
       "property": "search",
-      "grid": [
-        "jefblpepre",
-        "camdcimgtc",
-        "oivokprjsm",
-        "pbwasqroua",
-        "rixilelhrs",
-        "wolcqlirpc",
-        "fortranftw",
-        "alxhpburyi",
-        "jalaycalmp",
-        "clojurermt"
-      ],
-      "wordsToSearchFor": [
-        "fortran",
-        "clojure"
-      ],
+      "input": {
+        "grid": [
+          "jefblpepre",
+          "camdcimgtc",
+          "oivokprjsm",
+          "pbwasqroua",
+          "rixilelhrs",
+          "wolcqlirpc",
+          "fortranftw",
+          "alxhpburyi",
+          "jalaycalmp",
+          "clojurermt"
+        ],
+        "wordsToSearchFor": [
+          "fortran",
+          "clojure"
+        ]
+      },
       "expected": {
         "clojure": {
           "start": {
@@ -292,12 +314,14 @@
     {
       "description": "Should locate a single word written right to left",
       "property": "search",
-      "grid": [
-        "rixilelhrs"
-      ],
-      "wordsToSearchFor": [
-        "elixir"
-      ],
+      "input": {
+        "grid": [
+          "rixilelhrs"
+        ],
+        "wordsToSearchFor": [
+          "elixir"
+        ]
+      },
       "expected": {
         "elixir": {
           "start": {
@@ -314,22 +338,24 @@
     {
       "description": "Should locate multiple words written in different horizontal directions",
       "property": "search",
-      "grid": [
-        "jefblpepre",
-        "camdcimgtc",
-        "oivokprjsm",
-        "pbwasqroua",
-        "rixilelhrs",
-        "wolcqlirpc",
-        "screeaumgr",
-        "alxhpburyi",
-        "jalaycalmp",
-        "clojurermt"
-      ],
-      "wordsToSearchFor": [
-        "elixir",
-        "clojure"
-      ],
+      "input": {
+        "grid": [
+          "jefblpepre",
+          "camdcimgtc",
+          "oivokprjsm",
+          "pbwasqroua",
+          "rixilelhrs",
+          "wolcqlirpc",
+          "screeaumgr",
+          "alxhpburyi",
+          "jalaycalmp",
+          "clojurermt"
+        ],
+        "wordsToSearchFor": [
+          "elixir",
+          "clojure"
+        ]
+      },
       "expected": {
         "clojure": {
           "start": {
@@ -356,23 +382,25 @@
     {
       "description": "Should locate words written top to bottom",
       "property": "search",
-      "grid": [
-        "jefblpepre",
-        "camdcimgtc",
-        "oivokprjsm",
-        "pbwasqroua",
-        "rixilelhrs",
-        "wolcqlirpc",
-        "screeaumgr",
-        "alxhpburyi",
-        "jalaycalmp",
-        "clojurermt"
-      ],
-      "wordsToSearchFor": [
-        "clojure",
-        "elixir",
-        "ecmascript"
-      ],
+      "input": {
+        "grid": [
+          "jefblpepre",
+          "camdcimgtc",
+          "oivokprjsm",
+          "pbwasqroua",
+          "rixilelhrs",
+          "wolcqlirpc",
+          "screeaumgr",
+          "alxhpburyi",
+          "jalaycalmp",
+          "clojurermt"
+        ],
+        "wordsToSearchFor": [
+          "clojure",
+          "elixir",
+          "ecmascript"
+        ]
+      },
       "expected": {
         "clojure": {
           "start": {
@@ -409,24 +437,26 @@
     {
       "description": "Should locate words written bottom to top",
       "property": "search",
-      "grid": [
-        "jefblpepre",
-        "camdcimgtc",
-        "oivokprjsm",
-        "pbwasqroua",
-        "rixilelhrs",
-        "wolcqlirpc",
-        "screeaumgr",
-        "alxhpburyi",
-        "jalaycalmp",
-        "clojurermt"
-      ],
-      "wordsToSearchFor": [
-        "clojure",
-        "elixir",
-        "ecmascript",
-        "rust"
-      ],
+      "input": {
+        "grid": [
+          "jefblpepre",
+          "camdcimgtc",
+          "oivokprjsm",
+          "pbwasqroua",
+          "rixilelhrs",
+          "wolcqlirpc",
+          "screeaumgr",
+          "alxhpburyi",
+          "jalaycalmp",
+          "clojurermt"
+        ],
+        "wordsToSearchFor": [
+          "clojure",
+          "elixir",
+          "ecmascript",
+          "rust"
+        ]
+      },
       "expected": {
         "clojure": {
           "start": {
@@ -473,25 +503,27 @@
     {
       "description": "Should locate words written top left to bottom right",
       "property": "search",
-      "grid": [
-        "jefblpepre",
-        "camdcimgtc",
-        "oivokprjsm",
-        "pbwasqroua",
-        "rixilelhrs",
-        "wolcqlirpc",
-        "screeaumgr",
-        "alxhpburyi",
-        "jalaycalmp",
-        "clojurermt"
-      ],
-      "wordsToSearchFor": [
-        "clojure",
-        "elixir",
-        "ecmascript",
-        "rust",
-        "java"
-      ],
+      "input": {
+        "grid": [
+          "jefblpepre",
+          "camdcimgtc",
+          "oivokprjsm",
+          "pbwasqroua",
+          "rixilelhrs",
+          "wolcqlirpc",
+          "screeaumgr",
+          "alxhpburyi",
+          "jalaycalmp",
+          "clojurermt"
+        ],
+        "wordsToSearchFor": [
+          "clojure",
+          "elixir",
+          "ecmascript",
+          "rust",
+          "java"
+        ]
+      },
       "expected": {
         "clojure": {
           "start": {
@@ -548,26 +580,28 @@
     {
       "description": "Should locate words written bottom right to top left",
       "property": "search",
-      "grid": [
-        "jefblpepre",
-        "camdcimgtc",
-        "oivokprjsm",
-        "pbwasqroua",
-        "rixilelhrs",
-        "wolcqlirpc",
-        "screeaumgr",
-        "alxhpburyi",
-        "jalaycalmp",
-        "clojurermt"
-      ],
-      "wordsToSearchFor": [
-        "clojure",
-        "elixir",
-        "ecmascript",
-        "rust",
-        "java",
-        "lua"
-      ],
+      "input": {
+        "grid": [
+          "jefblpepre",
+          "camdcimgtc",
+          "oivokprjsm",
+          "pbwasqroua",
+          "rixilelhrs",
+          "wolcqlirpc",
+          "screeaumgr",
+          "alxhpburyi",
+          "jalaycalmp",
+          "clojurermt"
+        ],
+        "wordsToSearchFor": [
+          "clojure",
+          "elixir",
+          "ecmascript",
+          "rust",
+          "java",
+          "lua"
+        ]
+      },
       "expected": {
         "clojure": {
           "start": {
@@ -634,27 +668,29 @@
     {
       "description": "Should locate words written bottom left to top right",
       "property": "search",
-      "grid": [
-        "jefblpepre",
-        "camdcimgtc",
-        "oivokprjsm",
-        "pbwasqroua",
-        "rixilelhrs",
-        "wolcqlirpc",
-        "screeaumgr",
-        "alxhpburyi",
-        "jalaycalmp",
-        "clojurermt"
-      ],
-      "wordsToSearchFor": [
-        "clojure",
-        "elixir",
-        "ecmascript",
-        "rust",
-        "java",
-        "lua",
-        "lisp"
-      ],
+      "input": {
+        "grid": [
+          "jefblpepre",
+          "camdcimgtc",
+          "oivokprjsm",
+          "pbwasqroua",
+          "rixilelhrs",
+          "wolcqlirpc",
+          "screeaumgr",
+          "alxhpburyi",
+          "jalaycalmp",
+          "clojurermt"
+        ],
+        "wordsToSearchFor": [
+          "clojure",
+          "elixir",
+          "ecmascript",
+          "rust",
+          "java",
+          "lua",
+          "lisp"
+        ]
+      },
       "expected": {
         "clojure": {
           "start": {
@@ -731,28 +767,30 @@
     {
       "description": "Should locate words written top right to bottom left",
       "property": "search",
-      "grid": [
-        "jefblpepre",
-        "camdcimgtc",
-        "oivokprjsm",
-        "pbwasqroua",
-        "rixilelhrs",
-        "wolcqlirpc",
-        "screeaumgr",
-        "alxhpburyi",
-        "jalaycalmp",
-        "clojurermt"
-      ],
-      "wordsToSearchFor": [
-        "clojure",
-        "elixir",
-        "ecmascript",
-        "rust",
-        "java",
-        "lua",
-        "lisp",
-        "ruby"
-      ],
+      "input": {
+        "grid": [
+          "jefblpepre",
+          "camdcimgtc",
+          "oivokprjsm",
+          "pbwasqroua",
+          "rixilelhrs",
+          "wolcqlirpc",
+          "screeaumgr",
+          "alxhpburyi",
+          "jalaycalmp",
+          "clojurermt"
+        ],
+        "wordsToSearchFor": [
+          "clojure",
+          "elixir",
+          "ecmascript",
+          "rust",
+          "java",
+          "lua",
+          "lisp",
+          "ruby"
+        ]
+      },
       "expected": {
         "clojure": {
           "start": {
@@ -839,29 +877,31 @@
     {
       "description": "Should fail to locate a word that is not in the puzzle",
       "property": "search",
-      "grid": [
-        "jefblpepre",
-        "camdcimgtc",
-        "oivokprjsm",
-        "pbwasqroua",
-        "rixilelhrs",
-        "wolcqlirpc",
-        "screeaumgr",
-        "alxhpburyi",
-        "jalaycalmp",
-        "clojurermt"
-      ],
-      "wordsToSearchFor": [
-        "clojure",
-        "elixir",
-        "ecmascript",
-        "rust",
-        "java",
-        "lua",
-        "lisp",
-        "ruby",
-        "haskell"
-      ],
+      "input": {
+        "grid": [
+          "jefblpepre",
+          "camdcimgtc",
+          "oivokprjsm",
+          "pbwasqroua",
+          "rixilelhrs",
+          "wolcqlirpc",
+          "screeaumgr",
+          "alxhpburyi",
+          "jalaycalmp",
+          "clojurermt"
+        ],
+        "wordsToSearchFor": [
+          "clojure",
+          "elixir",
+          "ecmascript",
+          "rust",
+          "java",
+          "lua",
+          "lisp",
+          "ruby",
+          "haskell"
+        ]
+      },
       "expected": {
         "clojure": {
           "start": {
