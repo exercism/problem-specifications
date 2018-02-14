@@ -60,9 +60,9 @@
           "description": "One file, one match, no flags",
           "property": "grep",
           "input": {
-              "pattern": "Agamemnon",
-              "flags": [],
-              "files": ["iliad.txt"]
+            "pattern": "Agamemnon",
+            "flags": [],
+            "files": ["iliad.txt"]
           },
           "expected": [
             "Of Atreus, Agamemnon, King of men."
@@ -72,9 +72,9 @@
           "description": "One file, one match, print line numbers flag",
           "property": "grep",
           "input": {
-              "pattern": "Forbidden",
-              "flags": ["-n"],
-              "files": ["paradise-lost.txt"]
+            "pattern": "Forbidden",
+            "flags": ["-n"],
+            "files": ["paradise-lost.txt"]
           },
           "expected": [
             "2:Of that Forbidden Tree, whose mortal tast"
@@ -84,9 +84,9 @@
           "description": "One file, one match, case-insensitive flag",
           "property": "grep",
           "input": {
-              "pattern": "FORBIDDEN",
-              "flags": ["-i"],
-              "files": ["paradise-lost.txt"]
+            "pattern": "FORBIDDEN",
+            "flags": ["-i"],
+            "files": ["paradise-lost.txt"]
           },
           "expected": [
             "Of that Forbidden Tree, whose mortal tast"
@@ -96,9 +96,9 @@
           "description": "One file, one match, print file names flag",
           "property": "grep",
           "input": {
-              "pattern": "Forbidden",
-              "flags": ["-l"],
-              "files": ["paradise-lost.txt"]
+            "pattern": "Forbidden",
+            "flags": ["-l"],
+            "files": ["paradise-lost.txt"]
           },
           "expected": [
             "paradise-lost.txt"
@@ -108,9 +108,9 @@
           "description": "One file, one match, match entire lines flag",
           "property": "grep",
           "input": {
-              "pattern": "With loss of Eden, till one greater Man",
-              "flags": ["-x"],
-              "files": ["paradise-lost.txt"]
+            "pattern": "With loss of Eden, till one greater Man",
+            "flags": ["-x"],
+            "files": ["paradise-lost.txt"]
           },
           "expected": [
             "With loss of Eden, till one greater Man"
@@ -120,9 +120,9 @@
           "description": "One file, one match, multiple flags",
           "property": "grep",
           "input": {
-              "pattern": "OF ATREUS, Agamemnon, KIng of MEN.",
-              "flags": ["-n", "-i", "-x"],
-              "files": ["iliad.txt"]
+            "pattern": "OF ATREUS, Agamemnon, KIng of MEN.",
+            "flags": ["-n", "-i", "-x"],
+            "files": ["iliad.txt"]
           },
           "expected": [
             "9:Of Atreus, Agamemnon, King of men."
@@ -132,9 +132,9 @@
           "description": "One file, several matches, no flags",
           "property": "grep",
           "input": {
-              "pattern": "may",
-              "flags": [],
-              "files": ["midsummer-night.txt"]
+            "pattern": "may",
+            "flags": [],
+            "files": ["midsummer-night.txt"]
           },
           "expected": [
             "Nor how it may concern my modesty,",
@@ -146,9 +146,9 @@
           "description": "One file, several matches, print line numbers flag",
           "property": "grep",
           "input": {
-              "pattern": "may",
-              "flags": ["-n"],
-              "files": ["midsummer-night.txt"]
+            "pattern": "may",
+            "flags": ["-n"],
+            "files": ["midsummer-night.txt"]
           },
           "expected": [
             "3:Nor how it may concern my modesty,",
@@ -160,9 +160,9 @@
           "description": "One file, several matches, match entire lines flag",
           "property": "grep",
           "input": {
-              "pattern": "may",
-              "flags": ["-x"],
-              "files": ["midsummer-night.txt"]
+            "pattern": "may",
+            "flags": ["-x"],
+            "files": ["midsummer-night.txt"]
           },
           "expected": []
         },
@@ -170,9 +170,9 @@
           "description": "One file, several matches, case-insensitive flag",
           "property": "grep",
           "input": {
-              "pattern": "ACHILLES",
-              "flags": ["-i"],
-              "files": ["iliad.txt"]
+            "pattern": "ACHILLES",
+            "flags": ["-i"],
+            "files": ["iliad.txt"]
           },
           "expected": [
             "Achilles sing, O Goddess! Peleus' son;",
@@ -183,9 +183,9 @@
           "description": "One file, several matches, inverted flag",
           "property": "grep",
           "input": {
-              "pattern": "Of",
-              "flags": ["-v"],
-              "files": ["paradise-lost.txt"]
+            "pattern": "Of",
+            "flags": ["-v"],
+            "files": ["paradise-lost.txt"]
           },
           "expected": [
             "Brought Death into the World, and all our woe,",
@@ -199,9 +199,9 @@
           "description": "One file, no matches, various flags",
           "property": "grep",
           "input": {
-              "pattern": "Gandalf",
-              "flags": ["-n", "-l", "-x", "-i"],
-              "files": ["iliad.txt"]
+            "pattern": "Gandalf",
+            "flags": ["-n", "-l", "-x", "-i"],
+            "files": ["iliad.txt"]
           },
           "expected": []
         }
@@ -214,9 +214,9 @@
           "description": "Multiple files, one match, no flags",
           "property": "grep",
           "input": {
-              "pattern": "Agamemnon",
-              "flags": [],
-              "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
+            "pattern": "Agamemnon",
+            "flags": [],
+            "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
           },
           "expected": [
             "iliad.txt:Of Atreus, Agamemnon, King of men."
@@ -226,9 +226,9 @@
           "description": "Multiple files, several matches, no flags",
           "property": "grep",
           "input": {
-              "pattern": "may",
-              "flags": [],
-              "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
+            "pattern": "may",
+            "flags": [],
+            "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
           },
           "expected": [
             "midsummer-night.txt:Nor how it may concern my modesty,",
@@ -240,9 +240,9 @@
           "description": "Multiple files, several matches, print line numbers flag",
           "property": "grep",
           "input": {
-              "pattern": "that",
-              "flags": ["-n"],
-              "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
+            "pattern": "that",
+            "flags": ["-n"],
+            "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
           },
           "expected": [
             "midsummer-night.txt:5:But I beseech your grace that I may know",
@@ -255,9 +255,9 @@
           "description": "Multiple files, one match, print file names flag",
           "property": "grep",
           "input": {
-              "pattern": "who",
-              "flags": ["-l"],
-              "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
+            "pattern": "who",
+            "flags": ["-l"],
+            "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
           },
           "expected": [
             "iliad.txt",
@@ -268,9 +268,9 @@
           "description": "Multiple files, several matches, case-insensitive flag",
           "property": "grep",
           "input": {
-              "pattern": "TO",
-              "flags": ["-i"],
-              "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
+            "pattern": "TO",
+            "flags": ["-i"],
+            "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
           },
           "expected": [
             "iliad.txt:Caused to Achaia's host, sent many a soul",
@@ -289,9 +289,9 @@
           "description": "Multiple files, several matches, inverted flag",
           "property": "grep",
           "input": {
-              "pattern": "a",
-              "flags": ["-v"],
-              "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
+            "pattern": "a",
+            "flags": ["-v"],
+            "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
           },
           "expected": [
             "iliad.txt:Achilles sing, O Goddess! Peleus' son;",
@@ -303,9 +303,9 @@
           "description": "Multiple files, one match, match entire lines flag",
           "property": "grep",
           "input": {
-              "pattern": "But I beseech your grace that I may know",
-              "flags": ["-x"],
-              "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
+            "pattern": "But I beseech your grace that I may know",
+            "flags": ["-x"],
+            "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
           },
           "expected": [
             "midsummer-night.txt:But I beseech your grace that I may know"
@@ -315,9 +315,9 @@
           "description": "Multiple files, one match, multiple flags",
           "property": "grep",
           "input": {
-              "pattern": "WITH LOSS OF EDEN, TILL ONE GREATER MAN",
-              "flags": ["-n", "-i", "-x"],
-              "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
+            "pattern": "WITH LOSS OF EDEN, TILL ONE GREATER MAN",
+            "flags": ["-n", "-i", "-x"],
+            "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
           },
           "expected": [
             "paradise-lost.txt:4:With loss of Eden, till one greater Man"
@@ -327,9 +327,9 @@
           "description": "Multiple files, no matches, various flags",
           "property": "grep",
           "input": {
-              "pattern": "Frodo",
-              "flags": ["-n", "-l", "-x", "-i"],
-              "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
+            "pattern": "Frodo",
+            "flags": ["-n", "-l", "-x", "-i"],
+            "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
           },
           "expected": []
         }
