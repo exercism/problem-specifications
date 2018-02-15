@@ -1,6 +1,6 @@
 {
   "exercise": "grains",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "comments": [
     "The final tests of square test error conditions",
     "The expectation for these tests is -1, indicating an error",
@@ -13,61 +13,81 @@
         {
           "description": "1",
           "property": "square",
-          "input": 1,
+          "input": {
+            "square": 1
+          },
           "expected": 1
         },
         {
           "description": "2",
           "property": "square",
-          "input": 2,
+          "input": {
+            "square": 2
+          },
           "expected": 2
         },
         {
           "description": "3",
           "property": "square",
-          "input": 3,
+          "input": {
+            "square": 3
+          },
           "expected": 4
         },
         {
           "description": "4",
           "property": "square",
-          "input": 4,
+          "input": {
+            "square": 4
+          },
           "expected": 8
         },
         {
           "description": "16",
           "property": "square",
-          "input": 16,
+          "input": {
+            "square": 16
+          },
           "expected": 32768
         },
         {
           "description": "32",
           "property": "square",
-          "input": 32,
+          "input": {
+            "square": 32
+          },
           "expected": 2147483648
         },
         {
           "description": "64",
           "property": "square",
-          "input": 64,
+          "input": {
+            "square": 64
+          },
           "expected": 9223372036854775808
         },
         {
           "description": "square 0 raises an exception",
           "property": "square",
-          "input": 0,
+          "input": {
+            "square": 0
+          },
           "expected": -1
         },
         {
           "description": "negative square raises an exception",
           "property": "square",
-          "input": -1,
+          "input": {
+            "square": -1
+          },
           "expected": -1
         },
         {
           "description": "square greater than 64 raises an exception",
           "property": "square",
-          "input": 65,
+          "input": {
+            "square": 65
+          },
           "expected": -1
         }
       ]
@@ -75,6 +95,7 @@
     {
       "description": "returns the total number of grains on the board",
       "property": "total",
+      "input": {},
       "expected": 18446744073709551615
     }
   ]
