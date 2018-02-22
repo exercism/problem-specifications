@@ -315,6 +315,53 @@
       "expected": {}
     },
     {
+      "description": "callbacks only contain the latest values",
+      "property": "react",
+      "input": {
+        "cells": [
+          {
+            "name": "input",
+            "type": "input",
+            "initial_value": 1
+          },
+          {
+            "name": "output",
+            "type": "compute",
+            "inputs": ["input"],
+            "compute_function": "inputs[0] + 1"
+          }
+        ],
+        "operations": [
+          {
+            "type": "add_callback",
+            "cell": "output",
+            "name": "callback1"
+          },
+          {
+            "type": "set_value",
+            "cell": "input",
+            "value": 2
+          },
+          {
+            "type": "expect_callback_values",
+            "callback": "callback1",
+            "values": [3]
+          },
+          {
+            "type": "set_value",
+            "cell": "input",
+            "value": 3
+          },
+          {
+            "type": "expect_callback_values",
+            "callback": "callback1",
+            "values": [4]
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
       "description": "callbacks can be added and removed",
       "property": "react",
       "input": {
