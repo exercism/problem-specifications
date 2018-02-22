@@ -1,0 +1,200 @@
+{
+  "exercise": "go-counting",
+  "version": "1.0.0",
+  "comments": [
+    "Territory consists of [x, y] coordinate pairs."
+  ],
+  "cases": [
+    {
+      "description": "Black corner territory on 5x5 board",
+      "property": "territory",
+      "input": {
+        "board": [
+          "  B  ",
+          " B B ",
+          "B W B",
+          " W W ",
+          "  W  "
+        ],
+        "x": 0,
+        "y": 1
+      },
+      "expected": {
+        "owner": "BLACK",
+        "territory": [[0, 0], [0, 1], [1, 0]]
+      }
+    },
+    {
+      "description": "White center territory on 5x5 board",
+      "property": "territory",
+      "input": {
+        "board": [
+          "  B  ",
+          " B B ",
+          "B W B",
+          " W W ",
+          "  W  "
+        ],
+        "x": 2,
+        "y": 3
+      },
+      "expected": {
+        "owner": "WHITE",
+        "territory": [[2, 3]]
+      }
+    },
+    {
+      "description": "Open corner territory on 5x5 board",
+      "property": "territory",
+      "input": {
+        "board": [
+          "  B  ",
+          " B B ",
+          "B W B",
+          " W W ",
+          "  W  "
+        ],
+        "x": 1,
+        "y": 4
+      },
+      "expected": {
+        "owner": "NONE",
+        "territory": [[0, 3], [0, 4], [1, 4]]
+      }
+    },
+    {
+      "description": "A stone and not a territory on 5x5 board",
+      "property": "territory",
+      "input": {
+        "board": [
+          "  B  ",
+          " B B ",
+          "B W B",
+          " W W ",
+          "  W  "
+        ],
+        "x": 1,
+        "y": 1
+      },
+      "expected": {
+        "owner": "NONE",
+        "territory": []
+      }
+    },
+    {
+      "description": "Invalid because X is too low for 5x5 board",
+      "property": "territory",
+      "input": {
+        "board": [
+          "  B  ",
+          " B B ",
+          "B W B",
+          " W W ",
+          "  W  "
+        ],
+        "x": -1,
+        "y": 1
+      },
+      "expected": {
+        "error": "Invalid coordinate"
+      }
+    },
+    {
+      "description": "Invalid because X is too high for 5x5 board",
+      "property": "territory",
+      "input": {
+        "board": [
+          "  B  ",
+          " B B ",
+          "B W B",
+          " W W ",
+          "  W  "
+        ],
+        "x": 5,
+        "y": 1
+      },
+      "expected": {
+        "error": "Invalid coordinate"
+      }
+    },
+    {
+      "description": "Invalid because Y is too low for 5x5 board",
+      "property": "territory",
+      "input": {
+        "board": [
+          "  B  ",
+          " B B ",
+          "B W B",
+          " W W ",
+          "  W  "
+        ],
+        "x": 1,
+        "y": -1
+      },
+      "expected": {
+        "error": "Invalid coordinate"
+      }
+    },
+    {
+      "description": "Invalid because Y is too high for 5x5 board",
+      "property": "territory",
+      "input": {
+        "board": [
+          "  B  ",
+          " B B ",
+          "B W B",
+          " W W ",
+          "  W  "
+        ],
+        "x": 1,
+        "y": 5
+      },
+      "expected": {
+        "error": "Invalid coordinate"
+      }
+    },
+    {
+      "description": "One territory is the whole board",
+      "property": "territories",
+      "input": {
+        "board": [
+          " "
+        ]
+      },
+      "expected": {
+        "territoryBlack": [],
+        "territoryWhite": [],
+        "territoryNone": [[0, 0]]
+      }
+    },
+    {
+      "description": "Two territory rectangular board",
+      "property": "territories",
+      "input": {
+        "board": [
+          " BW ",
+          " BW "
+        ]
+      },
+      "expected": {
+        "territoryBlack": [[0, 0], [0, 1]],
+        "territoryWhite": [[3, 0], [3, 1]],
+        "territoryNone": []
+      }
+    },
+    {
+      "description": "Two region rectangular board",
+      "property": "territories",
+      "input": {
+        "board": [
+          " B "
+        ]
+      },
+      "expected": {
+        "territoryBlack": [[0, 0], [2, 0]],
+        "territoryWhite": [],
+        "territoryNone": []
+      }
+    }
+  ]
+}
