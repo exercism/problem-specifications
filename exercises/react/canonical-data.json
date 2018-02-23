@@ -1,6 +1,6 @@
 {
   "exercise": "react",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "comments": [
     "Note that, due to the nature of this exercise,",
     "the tests are specified using their cells and a series of operations to perform on the cells.",
@@ -356,6 +356,59 @@
             "type": "expect_callback_values",
             "callback": "callback1",
             "values": [4]
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "description": "callbacks can fire from multiple cells",
+      "property": "react",
+      "input": {
+        "cells": [
+          {
+            "name": "input",
+            "type": "input",
+            "initial_value": 1
+          },
+          {
+            "name": "plus_one",
+            "type": "compute",
+            "inputs": ["input"],
+            "compute_function": "inputs[0] + 1"
+          },
+          {
+            "name": "minus_one",
+            "type": "compute",
+            "inputs": ["input"],
+            "compute_function": "inputs[0] - 1"
+          }
+        ],
+        "operations": [
+          {
+            "type": "add_callback",
+            "cell": "plus_one",
+            "name": "callback1"
+          },
+          {
+            "type": "add_callback",
+            "cell": "minus_one",
+            "name": "callback2"
+          },
+          {
+            "type": "set_value",
+            "cell": "input",
+            "value": 10
+          },
+          {
+            "type": "expect_callback_values",
+            "callback": "callback1",
+            "values": [11]
+          },
+          {
+            "type": "expect_callback_values",
+            "callback": "callback2",
+            "values": [9]
           }
         ]
       },
