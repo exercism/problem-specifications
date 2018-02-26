@@ -1,6 +1,6 @@
 {
   "exercise": "react",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments": [
     "Note that, due to the nature of this exercise,",
     "the tests are specified using their cells and a series of operations to perform on the cells.",
@@ -17,7 +17,7 @@
     "* add_callback (`cell`, `name`): Adds a callback to cell `cell`. Store the callback ID in a variable named `name`.",
     "  all callbacks are assumed to simply store the values they're called with in some array.",
     "* remove_callback (`cell`, `name`): Removes the callback `name` from cell `cell`.",
-    "* expect_callback_values (`callback`, `values`): Expects callback `callback` to have been called with values `values`.",
+    "* expect_callback_values (`callback`, `values`): Expects callback `callback` to have been called with values `values` since the last `expect_callback_values` operation.",
     "",
     "Additional notes:",
     "",
@@ -309,6 +309,53 @@
             "type": "expect_callback_values",
             "callback": "callback1",
             "values": [222]
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "description": "callbacks do not report already reported values",
+      "property": "react",
+      "input": {
+        "cells": [
+          {
+            "name": "input",
+            "type": "input",
+            "initial_value": 1
+          },
+          {
+            "name": "output",
+            "type": "compute",
+            "inputs": ["input"],
+            "compute_function": "inputs[0] + 1"
+          }
+        ],
+        "operations": [
+          {
+            "type": "add_callback",
+            "cell": "output",
+            "name": "callback1"
+          },
+          {
+            "type": "set_value",
+            "cell": "input",
+            "value": 2
+          },
+          {
+            "type": "expect_callback_values",
+            "callback": "callback1",
+            "values": [3]
+          },
+          {
+            "type": "set_value",
+            "cell": "input",
+            "value": 3
+          },
+          {
+            "type": "expect_callback_values",
+            "callback": "callback1",
+            "values": [4]
           }
         ]
       },
