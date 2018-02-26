@@ -17,7 +17,7 @@
     "* add_callback (`cell`, `name`): Adds a callback to cell `cell`. Store the callback ID in a variable named `name`.",
     "  all callbacks are assumed to simply store the values they're called with in some array.",
     "* remove_callback (`cell`, `name`): Removes the callback `name` from cell `cell`.",
-    "* expect_callback_values (`callback`, `values`): Expects callback `callback` to have been called with values `values`.",
+    "* expect_callback_values (`callback`, `values`): Expects callback `callback` to have been called with values `values` since the last `expect_callback_values` operation.",
     "",
     "Additional notes:",
     "",
