@@ -315,7 +315,7 @@
       "expected": {}
     },
     {
-      "description": "callbacks only contain the latest values",
+      "description": "callbacks do not report already reported values",
       "property": "react",
       "input": {
         "cells": [
