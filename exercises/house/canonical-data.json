@@ -2,6 +2,9 @@
   "exercise": "house",
   "version": "2.2.0",
   "comments": [
+    "JSON doesn't allow for multi-line strings, so all verses are presented ",
+    "here as arrays of strings. It's up to the test generator to join the ",
+    "lines together with line breaks.",
     "Some languages test for the verse() method, which takes a start verse ",
     "and optional end verse, but other languages have only tested for the full poem.",
     "For those languages in the latter category, you may wish to only ",
