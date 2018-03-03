@@ -1,6 +1,6 @@
 {
   "exercise": "house",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "comments": [
     "JSON doesn't allow for multi-line strings, so all verses are presented ",
     "here as arrays of strings. It's up to the test generator to join the ",
@@ -34,8 +34,7 @@
             "endVerse": 2
           },
           "expected": [
-            "This is the malt",
-            "that lay in the house that Jack built."
+            "This is the malt that lay in the house that Jack built."
           ]
         },
         {
@@ -46,9 +45,7 @@
             "endVerse": 3
           },
           "expected": [
-            "This is the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built."
+            "This is the rat that ate the malt that lay in the house that Jack built."
           ]
         },
         {
@@ -59,10 +56,7 @@
             "endVerse": 4
           },
           "expected": [
-            "This is the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built."
+            "This is the cat that killed the rat that ate the malt that lay in the house that Jack built."
           ]
         },
         {
@@ -73,11 +67,7 @@
             "endVerse": 5
           },
           "expected": [
-            "This is the dog",
-            "that worried the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built."
+            "This is the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built."
           ]
         },
         {
@@ -88,12 +78,7 @@
             "endVerse": 6
           },
           "expected": [
-            "This is the cow with the crumpled horn",
-            "that tossed the dog",
-            "that worried the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built."
+            "This is the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built."
           ]
         },
         {
@@ -104,13 +89,7 @@
             "endVerse": 7
           },
           "expected": [
-            "This is the maiden all forlorn",
-            "that milked the cow with the crumpled horn",
-            "that tossed the dog",
-            "that worried the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built."
+            "This is the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built."
           ]
         },
         {
@@ -121,14 +100,7 @@
             "endVerse": 8
           },
           "expected": [
-            "This is the man all tattered and torn",
-            "that kissed the maiden all forlorn",
-            "that milked the cow with the crumpled horn",
-            "that tossed the dog",
-            "that worried the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built."
+            "This is the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built."
           ]
         },
         {
@@ -139,15 +111,7 @@
             "endVerse": 9
           },
           "expected": [
-            "This is the priest all shaven and shorn",
-            "that married the man all tattered and torn",
-            "that kissed the maiden all forlorn",
-            "that milked the cow with the crumpled horn",
-            "that tossed the dog",
-            "that worried the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built."
+            "This is the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built."
           ]
         },
         {
@@ -158,16 +122,7 @@
             "endVerse": 10
           },
           "expected": [
-            "This is the rooster that crowed in the morn",
-            "that woke the priest all shaven and shorn",
-            "that married the man all tattered and torn",
-            "that kissed the maiden all forlorn",
-            "that milked the cow with the crumpled horn",
-            "that tossed the dog",
-            "that worried the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built."
+            "This is the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built."
           ]
         },
         {
@@ -178,17 +133,7 @@
             "endVerse": 11
           },
           "expected": [
-            "This is the farmer sowing his corn",
-            "that kept the rooster that crowed in the morn",
-            "that woke the priest all shaven and shorn",
-            "that married the man all tattered and torn",
-            "that kissed the maiden all forlorn",
-            "that milked the cow with the crumpled horn",
-            "that tossed the dog",
-            "that worried the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built."
+            "This is the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built."
           ]
         },
         {
@@ -199,18 +144,7 @@
             "endVerse": 12
           },
           "expected": [
-            "This is the horse and the hound and the horn",
-            "that belonged to the farmer sowing his corn",
-            "that kept the rooster that crowed in the morn",
-            "that woke the priest all shaven and shorn",
-            "that married the man all tattered and torn",
-            "that kissed the maiden all forlorn",
-            "that milked the cow with the crumpled horn",
-            "that tossed the dog",
-            "that worried the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built."
+            "This is the horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built."
           ]
         },
         {
@@ -221,40 +155,11 @@
             "endVerse": 8
           },
           "expected": [
-            "This is the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built.",
-            "",
-            "This is the dog",
-            "that worried the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built.",
-            "",
-            "This is the cow with the crumpled horn",
-            "that tossed the dog",
-            "that worried the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built.",
-            "",
-            "This is the maiden all forlorn",
-            "that milked the cow with the crumpled horn",
-            "that tossed the dog",
-            "that worried the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built.",
-            "",
-            "This is the man all tattered and torn",
-            "that kissed the maiden all forlorn",
-            "that milked the cow with the crumpled horn",
-            "that tossed the dog",
-            "that worried the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built."
+            "This is the cat that killed the rat that ate the malt that lay in the house that Jack built.",
+            "This is the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.",
+            "This is the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.",
+            "This is the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.",
+            "This is the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built."
           ]
         },
         {
@@ -266,94 +171,17 @@
           },
           "expected": [
             "This is the house that Jack built.",
-            "",
-            "This is the malt",
-            "that lay in the house that Jack built.",
-            "",
-            "This is the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built.",
-            "",
-            "This is the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built.",
-            "",
-            "This is the dog",
-            "that worried the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built.",
-            "",
-            "This is the cow with the crumpled horn",
-            "that tossed the dog",
-            "that worried the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built.",
-            "",
-            "This is the maiden all forlorn",
-            "that milked the cow with the crumpled horn",
-            "that tossed the dog",
-            "that worried the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built.",
-            "",
-            "This is the man all tattered and torn",
-            "that kissed the maiden all forlorn",
-            "that milked the cow with the crumpled horn",
-            "that tossed the dog",
-            "that worried the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built.",
-            "",
-            "This is the priest all shaven and shorn",
-            "that married the man all tattered and torn",
-            "that kissed the maiden all forlorn",
-            "that milked the cow with the crumpled horn",
-            "that tossed the dog",
-            "that worried the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built.",
-            "",
-            "This is the rooster that crowed in the morn",
-            "that woke the priest all shaven and shorn",
-            "that married the man all tattered and torn",
-            "that kissed the maiden all forlorn",
-            "that milked the cow with the crumpled horn",
-            "that tossed the dog",
-            "that worried the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built.",
-            "",
-            "This is the farmer sowing his corn",
-            "that kept the rooster that crowed in the morn",
-            "that woke the priest all shaven and shorn",
-            "that married the man all tattered and torn",
-            "that kissed the maiden all forlorn",
-            "that milked the cow with the crumpled horn",
-            "that tossed the dog",
-            "that worried the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built.",
-            "",
-            "This is the horse and the hound and the horn",
-            "that belonged to the farmer sowing his corn",
-            "that kept the rooster that crowed in the morn",
-            "that woke the priest all shaven and shorn",
-            "that married the man all tattered and torn",
-            "that kissed the maiden all forlorn",
-            "that milked the cow with the crumpled horn",
-            "that tossed the dog",
-            "that worried the cat",
-            "that killed the rat",
-            "that ate the malt",
-            "that lay in the house that Jack built."
+            "This is the malt that lay in the house that Jack built.",
+            "This is the rat that ate the malt that lay in the house that Jack built.",
+            "This is the cat that killed the rat that ate the malt that lay in the house that Jack built.",
+            "This is the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.",
+            "This is the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.",
+            "This is the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.",
+            "This is the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.",
+            "This is the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.",
+            "This is the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.",
+            "This is the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.",
+            "This is the horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built."
           ]
         }
       ]
