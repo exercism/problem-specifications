@@ -66,7 +66,9 @@ is easier to understand with an example:
           ]
       , "description": "Foo'ing a word returns it reversed"
       , "property"   : "foo"
-      , "input"      : "lion"
+      , "input"      : {
+          "word"       : "lion"
+        }
       , "expected"   : "noil"
       }
     , { "description": "Bar'ing a name returns its parts combined"
@@ -85,7 +87,9 @@ is easier to understand with an example:
       , "cases":
           [ { "description": "Foo'ing a number returns nothing"
             , "property"   : "foo"
-            , "input"      : "42"
+            , "input"      : {
+                "word"       : "42"
+              }
             , "expected"   : null
             }
           , { "description": "Bar'ing a name with numbers gives an error"
