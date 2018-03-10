@@ -163,7 +163,7 @@
         "property":    "Score",
         "input":       {
 		    "dice":    [1, 2, 3, 4, 5],
-		    "category":8,
+		    "category":8
 	},
 		"expected":    30
 	},
