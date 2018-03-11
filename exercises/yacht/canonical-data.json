@@ -1,261 +1,260 @@
-{
-    "exercise" : "yacht",
-    "version" : "1.0.0",
-    "comments" : [
+{  
+    "exercise":"yacht",
+    "version":"1.0.0",
+    "comments":[  
         "The dice are represented always as a list of exactly five integers",
-        "with values beteen 1 and 6 inclusive. The category is an integer.",
-        "the numbers 0 to 5 represent the categories 'ones' to 'sixes'",
-        "Then 6 is full house,",
-        "     7 is four of a kind",
-        "     8 is a little straight 1-5",
-        "     9 is b big straight 2-6",
-        "    10 is Choise, sometimes called Chance",
-        "    11 is Yacht, or five of a kind"
-    ],
-    "cases": [
-	{
-	
-        "description": "Yacht",
-        "property":    "score",
-        "input":       {
-		    "dice":    [5, 5, 5, 5, 5],
-		    "category":11
+        "with values beteen 1 and 6 inclusive. The category is an string.",
+        "the categories are 'ones' to 'sixes' then",
+        "Then 'full house',",
+        "     'four of a kind'",
+        "     'little straight' 1-5",
+        "     'big straight' 2-6",
+        "     'choice', sometimes called Chance",
+        "     'yacht', or five of a kind"
+   ],
+    "cases":[  
+        {  
+            "description":"Yacht",
+            "property":"score",
+            "input":{  
+                "dice":[5, 5, 5, 5, 5],
+                "category":"yacht"
+            },
+            "expected":50
         },
-		"expected":    50
-	},
-	{
-		"description": "Not Yacht",
-        "property":    "score",
-        "input":       {
-		    "dice":    [1, 3, 3, 2, 5],
-		    "category":11
+        {  
+            "description":"Not Yacht",
+            "property":"score",
+            "input":{  
+                "dice":[1, 3, 3, 2, 5],
+                "category":"yacht"
+            },
+            "expected":0
         },
-		"expected":    0
-	},
-	{
-		"description": "Ones",
-        "property":    "score",
-        "input":       {
-		    "dice":    [1, 1, 1, 3, 5],
-		    "category":0
+        {  
+            "description":"Ones",
+            "property":"score",
+            "input":{  
+                "dice":[1, 1, 1, 3, 5],
+                "category":"ones"
+            },
+            "expected":3
         },
-		"expected":    3
-	},
-	{
-		"description": "Ones, out of order",
-        "property":    "score",
-        "input":       {
-		    "dice":    [3, 1, 1, 5, 1],
-		    "category":0
+        {  
+            "description":"Ones, out of order",
+            "property":"score",
+            "input":{  
+                "dice":[3, 1, 1, 5, 1],
+                "category":"ones"
+            },
+            "expected":3
         },
-		"expected":    3
-	},
-	{
-		"description": "No ones",
-        "property":    "score",
-        "input":       {
-		    "dice":    [4, 3, 6, 5, 5],
-		    "category":0
+        {  
+            "description":"No ones",
+            "property":"score",
+            "input":{  
+                "dice":[4, 3, 6, 5, 5],
+                "category":"ones"
+            },
+            "expected":0
         },
-		"expected":    0
-	},
-	{
-		"description": "Fours",
-        "property":    "score",
-        "input":       {
-		    "dice":    [1, 4, 1, 4, 1],
-		    "category":3
+        {  
+            "description":"Fours",
+            "property":"score",
+            "input":{  
+                "dice":[1, 4, 1, 4, 1],
+                "category":"fours"
+            },
+            "expected":8
         },
-		"expected":    8
-	},
-	{
-		"description": "Yacht counted as threes",
-        "property":    "score",
-        "input":       {
-		    "dice":    [3, 3, 3, 3, 3],
-		    "category":2
+        {  
+            "description":"Yacht counted as threes",
+            "property":"score",
+            "input":{  
+                "dice":[3, 3, 3, 3, 3],
+                "category":"threes"
+            },
+            "expected":15
         },
-		"expected":    15
-	},
-	{
-		"description": "Yacht of 3s counted as fives",
-        "property":    "score",
-        "input":       {
-		    "dice":    [3, 3, 3, 3, 3],
-		    "category":4
+        {  
+            "description":"Yacht of 3s counted as fives",
+            "property":"score",
+            "input":{  
+                "dice":[3, 3, 3, 3, 3],
+                "category":"fives"
+            },
+            "expected":0
         },
-		"expected":    0
-	},
-	{
-		"description": "Full house",
-        "property":    "score",
-        "input":       {
-		    "dice":    [2, 2, 4, 4, 4],
-		    "category":6
+        {  
+            "description":"Full house",
+            "property":"score",
+            "input":{  
+                "dice":[2, 2, 4, 4, 4],
+                "category":"full house"
+            },
+            "expected":16
         },
-		"expected":    16
-	},
-	{
-		"description": "Full house unsorted",
-        "property":    "score",
-        "input":       {
-		    "dice":    [5, 3, 3, 5, 3],
-		    "category":6
+        {  
+            "description":"Full house unsorted",
+            "property":"score",
+            "input":{  
+                "dice":[5, 3, 3, 5, 3],
+                "category":"full house"
+            },
+            "expected":19
         },
-		"expected":    19
-	},
-	{
-		"description": "Not a full house",
-        "property":    "score",
-        "input":       {
-		    "dice":    [2, 2, 4, 4, 5],
-		    "category":6
+        {  
+            "description":"Not a full house",
+            "property":"score",
+            "input":{  
+                "dice":[2, 2, 4, 4, 5],
+                "category":"full house"
+            },
+            "expected":0
         },
-		"expected":    0
-	},
-	{
-		"description": "Yacht is not a full house",
-        "property":    "score",
-        "input":       {
-		    "dice":    [2, 2, 2, 2, 2],
-		    "category":6
+        {  
+            "description":"Yacht is not a full house",
+            "property":"score",
+            "input":{  
+                "dice":[2, 2, 2, 2, 2],
+                "category":"full house"
+            },
+            "expected":0
         },
-		"expected":    0
-	},
-	{
-		"description": "Four of a Kind",
-        "property":    "score",
-        "input":       {
-		    "dice":    [1, 2, 2, 2, 2],
-		    "category":7
+        {  
+            "description":"Four of a Kind",
+            "property":"score",
+            "input":{  
+                "dice":[1, 2, 2, 2, 2],
+                "category":"four of a kind"
+            },
+            "expected":8
         },
-		"expected":    8
-	},
-	{
-		"description": "Four of a Kind unsorted",
-        "property":    "score",
-        "input":       {
-		    "dice":    [6, 6, 4, 6, 6],
-		    "category":7
+        {  
+            "description":"Four of a Kind unsorted",
+            "property":"score",
+            "input":{  
+                "dice":[6, 6, 4, 6, 6],
+                "category":"four of a kind"
+            },
+            "expected":24
         },
-		"expected":    24
-	},
-	{
-		"description": "Yacht can be scored as Four of a Kind",
-        "property":    "score",
-        "input":       {
-		    "dice":    [3, 3, 3, 3, 3],
-		    "category":7
+        {  
+            "description":"Yacht can be scored as Four of a Kind",
+            "property":"score",
+            "input":{  
+                "dice":[3, 3, 3, 3, 3],
+                "category":"four of a kind"
+            },
+            "expected":12
         },
-		"expected":    12
-	},
-	{
-		"description": "Not Four of a Kind",
-        "property":    "score",
-        "input":       {
-		    "dice":    [3, 3, 3, 5, 5],
-		    "category":7
+        {  
+            "description":"Not Four of a Kind",
+            "property":"score",
+            "input":{  
+                "dice":[3, 3, 3, 5, 5],
+                "category":"four of a kind"
+            },
+            "expected":0
         },
-		"expected":    0
-	},
-	{
-		"description": "Little Straight",
-        "property":    "score",
-        "input":       {
-		    "dice":    [1, 2, 3, 4, 5],
-		    "category":8
+        {  
+            "description":"Little Straight",
+            "property":"score",
+            "input":{  
+                "dice":[1, 2, 3, 4, 5],
+                "category":"little straight"
+            },
+            "expected":30
         },
-		"expected":    30
-	},
-	{
-		"description": "Little Straight unsorted",
-        "property":    "score",
-        "input":       {
-		    "dice":    [3, 5, 4, 1, 2],
-		    "category":8
+        {  
+            "description":"Little Straight unsorted",
+            "property":"score",
+            "input":{  
+                "dice":[3, 5, 4, 1, 2],
+                "category":"little straight"
+            },
+            "expected":30
         },
-		"expected":    30
-	},
-	{
-		"description": "Little Straight as Big Straight",
-        "property":    "score",
-        "input":       {
-		    "dice":    [1, 2, 3, 4, 5],
-		    "category":9
+        {  
+            "description":"Little Straight as Big Straight",
+            "property":"score",
+            "input":{  
+                "dice":[1, 2, 3, 4, 5],
+                "category":"big straight"
+            },
+            "expected":0
         },
-		"expected":    0
-	},
-	{
-		"description": "Not a little straight",
-        "property":    "score",
-        "input":       {
-		    "dice":[1, 2, 3, 4, 6],
-		    "category":8
+        {  
+            "description":"Not a little straight",
+            "property":"score",
+            "input":{  
+                "dice":[1, 2, 3, 4, 6],
+                "category":"little straight"
+            },
+            "expected":0
         },
-		"expected":    0
-	},
-	{
-		"description": "Big Straight",
-        "property":    "score",
-        "input":       {
-		    "dice":    [2, 3, 4, 5, 6],
-		    "category":9
+        {  
+            "description":"Big Straight",
+            "property":"score",
+            "input":{  
+                "dice":[2, 3, 4, 5, 6],
+                "category":"big straight"
+            },
+            "expected":30
         },
-		"expected":    30
-	},
-	{
-		"description": "Big Straight unsorted",
-        "property":    "score",
-        "input":       {
-		    "dice":    [4, 6, 2, 5, 3],
-		    "category":9
+        {  
+            "description":"Big Straight unsorted",
+            "property":"score",
+            "input":{  
+                "dice":[4, 6, 2, 5, 3],
+                "category":"big straight"
+            },
+            "expected":30
         },
-		"expected":    30
-	},
-	{
-		"description": "Big Straight as little straight",
-        "property":    "score",
-        "input":       {
-		    "dice":    [6, 5, 4, 3, 2],
-		    "category":8
+        {  
+            "description":"Big Straight as little straight",
+            "property":"score",
+            "input":{  
+                "dice":[6, 5, 4, 3, 2],
+                "category":"big straight"
+            },
+            "expected":0
         },
-		"expected":    0
-	},
-	{
-		"description": "Choice",
-        "property":    "score",
-        "input":       {
-		    "dice":    [3, 3, 5, 6, 6],
-		    "category":10
+        {  
+            "description":"Choice",
+            "property":"score",
+            "input":{  
+                "dice":[3, 3, 5, 6, 6],
+                "category":"choice"
+            },
+            "expected":23
         },
-		"expected":    23
-	},
-	{
-		"description": "Yacht as choice",
-        "property":    "score",
-        "input":       {
-		    "dice":    [2, 2, 2, 2, 2],
-		    "category":10
+        {  
+            "description":"Yacht as choice",
+            "property":"score",
+            "input":{  
+                "dice":[2, 2, 2, 2, 2],
+                "category":"choice"
+            },
+            "expected":10
         },
-		"expected":    10
-	},
-	{
-		"description": "Big Straight as Choice",
-        "property":    "score",
-        "input":       {
-		    "dice":    [2, 3, 4, 5, 6],
-		    "category":10
+        {  
+            "description":"Big Straight as Choice",
+            "property":"score",
+            "input":{  
+                "dice":[2, 3, 4, 5, 6],
+                "category":"choice"
+            },
+            "expected":20
         },
-		"expected":    20
-	},
-	{
-		"description": "Full House as choice",
-        "property":    "score",
-        "input":       {
-		    "dice":    [1, 1, 1, 6, 6],
-		    "category":10
-        },
-		"expected":    15
-	}
+        {  
+            "description":"Full House as choice",
+            "property":"score",
+            "input":{  
+                "dice":[1, 1, 1, 6, 6],
+                "category":"choice"
+            },
+            "expected":15
+        }
     ]
 }
