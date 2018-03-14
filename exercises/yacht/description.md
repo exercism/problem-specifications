@@ -22,13 +22,13 @@ category chosen.
     Choice          Sum of the dice         2 3 3 4 6 scores 18
     Yacht           50 points               4 4 4 4 4 scores 50
 
-If the dice to not satisfy the requirements of a category, the score is zero.
+If the dice do not satisfy the requirements of a category, the score is zero.
 If, for example, *Four Of A Kind* is entered in the *Yacht* category, zero
 points are scored. A *Yacht* scores zero if entered in the *Full House* category.
 
 ## Task 
-Given a list of values of the dice and a category you should return the
-score of the dice in that category. If the dice don't satify the requirements
-of the category you should return 0. You can assume that you will receive the
-values of five dice, and the value of each will be between one and six. You
-should not assume that the dice are ordered.
+Given a list of values for five dice and a category, your solution should return
+the score of the dice for that category. If the dice do not satisfy the requirements
+of the category your solution should return 0. You can assume that five values
+will always be presented, and the value of each will be between one and six
+inclusively. You should not assume that the dice are ordered.
