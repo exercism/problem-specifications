@@ -185,6 +185,15 @@
             "expected":0
         },
         {
+            "description":"Four in order but not a little straight",
+            "property":"score",
+            "input":{
+                "dice":[1, 1, 2, 3, 4],
+                "category":"little straight"
+            },
+            "expected":0
+        },
+        {
             "description":"No pairs but not a little straight",
             "property":"score",
             "input":{
