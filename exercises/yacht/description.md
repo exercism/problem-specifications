@@ -15,7 +15,7 @@ category chosen.
     Fours           4 × number of fours     1 2 3 3 5 scores 0
     Fives           5 × number of fives     5 1 5 2 5 scores 15
     Sixes           6 × number of sixes     2 3 4 5 6 scores 6
-    Full House      Total of the dice       3 3 3 5 5 scores 25
+    Full House      Total of the dice       3 3 3 5 5 scores 19
     Four of a Kind  Total of the four dice  4 4 4 4 6 scores 16
     Little Straight 30 points               1 2 3 4 5 scores 30 
     Big Straight    30 points               2 3 4 5 6 scores 30
