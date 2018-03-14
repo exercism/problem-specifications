@@ -104,7 +104,7 @@
             "expected":6
         },
         {
-            "description":"Full house",
+            "description":"Full house two small, three big",
             "property":"score",
             "input":{
                 "dice":[2, 2, 4, 4, 4],
@@ -113,7 +113,7 @@
             "expected":16
         },
         {
-            "description":"Full house unsorted",
+            "description":"Full house three small, two big, unsorted",
             "property":"score",
             "input":{
                 "dice":[5, 3, 3, 5, 3],
@@ -122,7 +122,7 @@
             "expected":19
         },
         {
-            "description":"Not a full house",
+            "description":"Two pair is not a full house",
             "property":"score",
             "input":{
                 "dice":[2, 2, 4, 4, 5],
@@ -138,15 +138,6 @@
                 "category":"full house"
             },
             "expected":0
-        },
-        {
-            "description":"Four of a Kind",
-            "property":"score",
-            "input":{
-                "dice":[1, 2, 2, 2, 2],
-                "category":"four of a kind"
-            },
-            "expected":8
         },
         {
             "description":"Four of a Kind unsorted",
@@ -176,15 +167,6 @@
             "expected":0
         },
         {
-            "description":"Little Straight",
-            "property":"score",
-            "input":{
-                "dice":[1, 2, 3, 4, 5],
-                "category":"little straight"
-            },
-            "expected":30
-        },
-        {
             "description":"Little Straight unsorted",
             "property":"score",
             "input":{
@@ -210,15 +192,6 @@
                 "category":"little straight"
             },
             "expected":0
-        },
-        {
-            "description":"Big Straight",
-            "property":"score",
-            "input":{
-                "dice":[2, 3, 4, 5, 6],
-                "category":"big straight"
-            },
-            "expected":30
         },
         {
             "description":"Big Straight unsorted",
@@ -255,24 +228,6 @@
                 "category":"choice"
             },
             "expected":10
-        },
-        {
-            "description":"Big Straight as Choice",
-            "property":"score",
-            "input":{
-                "dice":[2, 3, 4, 5, 6],
-                "category":"choice"
-            },
-            "expected":20
-        },
-        {
-            "description":"Full House as choice",
-            "property":"score",
-            "input":{
-                "dice":[1, 1, 1, 6, 6],
-                "category":"choice"
-            },
-            "expected":15
         }
     ]
 }
