@@ -113,7 +113,7 @@
             "expected":16
         },
         {
-            "description":"Full house three small, two big, unsorted",
+            "description":"Full house three small, two big",
             "property":"score",
             "input":{
                 "dice":[5, 3, 3, 5, 3],
@@ -140,7 +140,7 @@
             "expected":0
         },
         {
-            "description":"Four of a Kind unsorted",
+            "description":"Four of a Kind",
             "property":"score",
             "input":{
                 "dice":[6, 6, 4, 6, 6],
@@ -158,7 +158,7 @@
             "expected":12
         },
         {
-            "description":"Not Four of a Kind",
+            "description":"Full house is not Four of a Kind",
             "property":"score",
             "input":{
                 "dice":[3, 3, 3, 5, 5],
@@ -167,7 +167,7 @@
             "expected":0
         },
         {
-            "description":"Little Straight unsorted",
+            "description":"Little Straight",
             "property":"score",
             "input":{
                 "dice":[3, 5, 4, 1, 2],
@@ -185,7 +185,7 @@
             "expected":0
         },
         {
-            "description":"Not a little straight",
+            "description":"No pairs but not a little straight",
             "property":"score",
             "input":{
                 "dice":[1, 2, 3, 4, 6],
@@ -194,7 +194,7 @@
             "expected":0
         },
         {
-            "description":"Big Straight unsorted",
+            "description":"Big Straight",
             "property":"score",
             "input":{
                 "dice":[4, 6, 2, 5, 3],
