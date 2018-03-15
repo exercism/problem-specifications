@@ -203,6 +203,15 @@
             "expected":0
         },
         {
+            "description":"Minimum is 1, maximum is 5, but not a little straight",
+            "property":"score",
+            "input":{
+                "dice":[1, 1, 3, 4, 5],
+                "category":"little straight"
+            },
+            "expected":0
+        },
+        {
             "description":"Big Straight",
             "property":"score",
             "input":{
