@@ -46,7 +46,7 @@ imtgdvsfearwermayoogoanouuiontnnlvtwttddesaohghnsseoau
 Output the encoded text in chunks that fill perfect rectangles `(r X c)`,
 with `c` chunks of `r` length, separated by spaces. For phrases that are
 `n` characters short of the perfect rectangle, pad each of the last `n`
-chunks with an extra space.
+chunks with a single trailing space.
 
 ```text
 imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn  sseoau 
