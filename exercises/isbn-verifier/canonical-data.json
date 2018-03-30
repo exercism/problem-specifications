@@ -42,7 +42,7 @@
             "description": "invalid character in isbn",
             "property": "isValid",
             "input": {
-              "isbn": "3-598-2K507-0"
+              "isbn": "3-598-P1581-X"
             },
             "expected": false
         },
