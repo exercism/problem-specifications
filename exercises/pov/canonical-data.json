@@ -435,7 +435,7 @@
           ]
         },
         {
-          "description": "Can find path below root",
+          "description": "Can find path not involving root",
           "property": "pathTo",
           "input": {
             "from": "x",
