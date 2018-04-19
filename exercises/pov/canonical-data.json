@@ -439,7 +439,7 @@
           "property": "pathTo",
           "input": {
             "from": "x",
-            "to": "cousin-1",
+            "to": "sibling-1",
             "tree": {
               "label": "grandparent",
               "children": [
@@ -447,24 +447,13 @@
                   "label": "parent",
                   "children": [
                     {
+                      "label": "x"
+                    },
+                    {
                       "label": "sibling-0"
                     },
                     {
                       "label": "sibling-1"
-                    }
-                  ]
-                },
-                {
-                  "label": "uncle",
-                  "children": [
-                    {
-                      "label": "x"
-                    },
-                    {
-                      "label": "cousin-0"
-                    },
-                    {
-                      "label": "cousin-1"
                     }
                   ]
                 }
@@ -473,8 +462,8 @@
           },
           "expected": [
             "x",
-            "uncle",
-            "cousin-1"
+            "parent",
+            "sibling-1"
           ]
         },
         {
