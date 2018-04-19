@@ -1,0 +1,105 @@
+{
+  "exercise": "series",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "description": "slices of one from one",
+      "property": "slices",
+      "input": {
+        "series": "1",
+        "sliceLength": 1
+      },
+      "expected": ["1"]
+    },
+    {
+      "description": "slices of one from two",
+      "property": "slices",
+      "input": {
+        "series": "12",
+        "sliceLength": 1
+      },
+      "expected": ["1", "2"]
+    },
+    {
+      "description": "slices of two",
+      "property": "slices",
+      "input": {
+        "series": "35",
+        "sliceLength": 2
+      },
+      "expected": ["35"]
+    },
+    {
+      "description": "slices of two overlap",
+      "property": "slices",
+      "input": {
+        "series": "9142",
+        "sliceLength": 2
+      },
+      "expected": ["91", "14", "42"]
+    },
+    {
+      "description": "slices can include duplicates",
+      "property": "slices",
+      "input": {
+        "series": "777777",
+        "sliceLength": 3
+      },
+      "expected": ["777", "777", "777", "777"]
+    },
+    {
+      "description": "slices of a long series",
+      "property": "slices",
+      "input": {
+        "series": "918493904243",
+        "sliceLength": 5
+      },
+      "expected": ["91849", "18493", "84939", "49390",
+                   "93904", "39042", "90424", "04243"]
+    },
+    {
+      "description": "slice length is too large",
+      "property": "slices",
+      "input": {
+        "series": "12345",
+        "sliceLength": 6
+      },
+      "expected": {
+        "error": "slice length cannot be greater than series length"
+      }
+    },
+    {
+      "description": "slice length cannot be zero",
+      "property": "slices",
+      "input": {
+        "series": "12345",
+        "sliceLength": 0
+      },
+      "expected": {
+        "error": "slice length cannot be zero"
+      }
+    },
+    {
+      "description": "slice length cannot be negative",
+      "property": "slices",
+      "input": {
+        "series": "123",
+        "sliceLength": -1
+      },
+      "expected": {
+        "error": "slice length cannot be negative"
+      }
+    },
+    {
+      "description": "empty series is invalid",
+      "property": "slices",
+      "input": {
+        "series": "",
+        "sliceLength": 1
+      },
+      "expected": {
+        "error": "series cannot be empty"
+      }
+    }
+  ]
+}
