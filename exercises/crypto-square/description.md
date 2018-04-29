@@ -35,7 +35,7 @@ Our normalized text is 54 characters long, dictating a rectangle with
 "groundgo"
 "dwouldha"
 "vegivenu"
-"sroots"
+"sroots  "
 ```
 
 The coded message is obtained by reading down the columns going left to
@@ -66,6 +66,6 @@ cyphertext back in to the original message:
 "anouuio"
 "ntnnlvt"
 "wttddes"
-"aohghn"
-"sseoau"
+"aohghn "
+"sseoau "
 ```
