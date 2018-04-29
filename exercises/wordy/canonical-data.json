@@ -1,6 +1,6 @@
 {
   "exercise": "wordy",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments": [
     "The tests that expect 'false' should be implemented to raise",
     "an error, or indicate a failure. Implement this in a way that",
@@ -109,7 +109,7 @@
       "input": {
         "question": "What is -3 plus 7 multiplied by -2?"
       },
-      "expected": -8
+      "expected": -17
     },
     {
       "description": "multiple division",
