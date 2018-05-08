@@ -376,7 +376,7 @@ Optional keys:
 * `solution_pattern` - A (case sensitive) regex pattern that matches solution files in the track repository. Used by [configlet](https://github.com/exercism/configlet) to check for the presence of an example solution for each problem implemented by the track.  The default value used if this key is not present is `[Ee]xample`.
 
 ### Git Basics
-See [Git Basics](https://github.com/exercism/docs/blob/master/contributing-to-language-tracks/git-basics.md) in [docs](https://github.com/exercism/docs) repository.
+See [Git Basics](https://github.com/exercism/docs/blob/master/contributing/git-basics.md) in [docs](https://github.com/exercism/docs) repository.
 
 ### et cetera
 
