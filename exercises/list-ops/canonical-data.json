@@ -40,7 +40,7 @@
       ]
     },
     {
-      "description": "concat lists and lists of list into a new list",
+      "description": "given a list of lists, concatenate each list to the previous list",
       "cases": [
         {
           "description": "empty list",
