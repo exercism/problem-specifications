@@ -40,7 +40,7 @@
       ]
     },
     {
-      "description": "given a list of lists, concatenate each list to the previous list",
+      "description": "concatenate a list of lists",
       "cases": [
         {
           "description": "empty list",
