@@ -1,0 +1,141 @@
+{
+  "exercise": "simple-cipher",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "description": "Random key cipher",
+      "cases": [
+        {
+          "description": "Key is made only of lowercase letters",
+          "property": "key",
+          "matches": "^[a-z]+$"
+        },
+        {
+          "description": "It can encode",
+          "property": "encode",
+          "input": {
+            "plaintext": "aaaaaaaaaa"
+          },
+          "expected": "cipher.key"
+        },
+        {
+          "description": "It can decode",
+          "property": "decode",
+          "input": {
+            "ciphertext": "cipher.key"
+          },
+          "expected": "aaaaaaaaaa"
+        },
+        {
+          "description": "It is reversible. I.e., if you apply decode in a encoded result, you must see the same plaintext encode parameter as a result of the decode method",
+          "property": "decode",
+          "input": {
+            "plaintext": "abcdefghij",
+            "ciphertext": "cipher.encode"
+          },
+          "expected": "abcdefghij"
+        }
+      ]
+    },
+    {
+      "description": "Incorrect key cipher",
+      "cases": [
+        {
+          "description": "It throws an error with an all uppercase key",
+          "property": "new",
+          "input": {
+            "key": "ABCDEF"
+          },
+          "expected": { "error": "Bad key" }
+        },
+        {
+          "description": "It throws an error with a numeric key",
+          "property": "new",
+          "input": {
+            "key": "12345"
+          },
+          "expected": { "error": "Bad key" }
+        },
+        {
+          "description": "It throws an error with empty key",
+          "property": "new",
+          "input": {
+            "key": ""
+          },
+          "expected": { "error": "Bad key" }
+        }
+      ]
+    },
+    {
+      "description": "Substitution cipher",
+      "cases": [
+        {
+          "description": "It keeps submitted key",
+          "property": "key",
+          "input": {
+            "key": "abcdefghij"
+          },
+          "expected": "abcdefghij"
+        },
+        {
+          "description": "It can encode",
+          "property": "encode",
+          "input": { 
+            "plaintext": "aaaaaaaaaa"
+          },
+          "expected": "abcdefghij"
+        },
+        {
+          "description": "It can decode",
+          "property": "decode",
+          "input": { 
+            "ciphertext": "abcdefghij"
+          },
+          "expected": "aaaaaaaaaa"
+        },
+        {
+          "description": "It is reversible. I.e., if you apply decode in a encoded result, you must see the same plaintext encode parameter as a result of the decode method",
+          "property": "decode",
+          "input": {
+            "plaintext": "abcdefghij",
+            "ciphertext": "cipher.encode"
+          },
+          "expected": "abcdefghij"
+        },
+        {
+          "description": "It can double shift encode",
+          "input": {
+            "key": "iamapandabear",
+            "plaintext": "iamapandabear"
+          },
+          "expected": "qayaeaagaciai"
+        },
+        {
+          "description": "It can wrap on encode", 
+          "property": "encode",
+          "input": {
+            "plaintext": "zzzzzzzzzz"
+          },
+          "expected": "zabcdefghi"
+        },
+        {
+          "description": "It can wrap on decode",
+          "property": "decode",
+          "input": {
+            "ciphertext": "zabcdefghi"
+          },
+          "expected": "zzzzzzzzzz"
+        },
+        {
+          "description": "It can handle messages longer than the key",
+          "property": "encode",
+          "input": {
+            "key": "abc",
+            "plaintext": "iamapandabear"
+          },
+          "expected": "iboaqcnecbfcr"
+        }
+      ]
+    }
+  ]
+}
