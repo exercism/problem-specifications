@@ -57,6 +57,14 @@
             "lists": [[1, 2], [3], [], [4, 5, 6]]
           },
           "expected": [1, 2, 3, 4, 5, 6]
+        },
+        {
+          "description": "list of nested lists",
+          "property": "concat",
+          "input": {
+            "lists": [[[1, 2]], [[3]], [[]], [[4, 5, 6]]]
+          },
+          "expected": [[1, 2], [3], [], [4, 5, 6]]
         }
       ]
     },
