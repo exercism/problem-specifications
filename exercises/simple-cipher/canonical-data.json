@@ -8,7 +8,10 @@
         {
           "description": "Key is made only of lowercase letters",
           "property": "key",
-          "matches": "^[a-z]+$"
+          "input": {},
+          "expected": {
+            "match": "^[a-z]+$"
+          }
         },
         {
           "description": "It can encode",
@@ -104,6 +107,7 @@
         },
         {
           "description": "It can double shift encode",
+          "property": "encode",
           "input": {
             "key": "iamapandabear",
             "plaintext": "iamapandabear"
