@@ -365,16 +365,29 @@
           "expected": [12]
         },
         {
-          "description": "can override words multiple times",
+          "description": "can use different words with the same name",
           "property": "evaluate",
           "input": {
             "instructions": [
-              ": add_x 1 + ; 5 add_x",
-              ": add_x add_x 1 + ; 5 add_x",
-              ": add_x add_x 1 + ; 5 add_x"
+              ": foo 5 ;",
+              ": bar foo ;",
+              ": foo 6 ;",
+              "bar foo"
             ]
           },
-          "expected": [6, 7, 8]
+          "expected": [5, 6]
+        },
+        {
+          "description": "can define word that use word with the same name",
+          "property": "evaluate",
+          "input": {
+            "instructions": [
+              ": foo 10 ;",
+              ": foo foo 1 + ;",
+              "foo"
+            ]
+          },
+          "expected": [11]
         },
         {
           "description": "cannot redefine numbers",
