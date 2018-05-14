@@ -1,2 +1,3 @@
-Given a string containing brackets `[]`, braces `{}` and parentheses `()`,
-verify that all the pairs are matched and nested correctly.
+Given a string containing brackets `[]`, braces `{}`, parentheses `()`,
+or any combination thereof, verify that any and all pairs are matched
+and nested correctly.
