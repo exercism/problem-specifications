@@ -1,6 +1,6 @@
 {
   "exercise": "forth",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "comments": [
     "The cases are split into multiple sections, all with the same structure.",
     "In all cases, the `expected` key is the resulting stack",
@@ -363,6 +363,31 @@
             ]
           },
           "expected": [12]
+        },
+        {
+          "description": "can use different words with the same name",
+          "property": "evaluate",
+          "input": {
+            "instructions": [
+              ": foo 5 ;",
+              ": bar foo ;",
+              ": foo 6 ;",
+              "bar foo"
+            ]
+          },
+          "expected": [5, 6]
+        },
+        {
+          "description": "can define word that uses word with the same name",
+          "property": "evaluate",
+          "input": {
+            "instructions": [
+              ": foo 10 ;",
+              ": foo foo 1 + ;",
+              "foo"
+            ]
+          },
+          "expected": [11]
         },
         {
           "description": "cannot redefine numbers",
