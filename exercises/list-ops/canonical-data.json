@@ -1,6 +1,6 @@
 {
   "exercise": "list-ops",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "comments": [
     "Though there are no specifications here for dealing with large lists,",
     "implementers may add tests for handling large lists to ensure that the",
@@ -40,7 +40,7 @@
       ]
     },
     {
-      "description": "concat lists and lists of list into a new list",
+      "description": "concatenate a list of lists",
       "cases": [
         {
           "description": "empty list",
@@ -57,6 +57,14 @@
             "lists": [[1, 2], [3], [], [4, 5, 6]]
           },
           "expected": [1, 2, 3, 4, 5, 6]
+        },
+        {
+          "description": "list of nested lists",
+          "property": "concat",
+          "input": {
+            "lists": [[[1], [2]], [[3]], [[]], [[4, 5, 6]]]
+          },
+          "expected": [[1], [2], [3], [], [4, 5, 6]]
         }
       ]
     },
