@@ -125,6 +125,14 @@
                 "isbn": "134456729"
             },
             "expected": false
+        },
+        {
+            "description": "invalid characters are not ignored",
+            "property": "isValid",
+            "input": {
+                "isbn": "3132P34035",
+            },
+            "expected": false
         }
     ]
 }
