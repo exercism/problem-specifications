@@ -1,6 +1,6 @@
 {
     "exercise": "isbn-verifier",
-    "version": "2.4.0",
+    "version": "2.5.0",
     "comments": [
         "An expected value of true indicates a valid ISBN-10, ",
         "whereas false means the ISBN-10 is invalid."
