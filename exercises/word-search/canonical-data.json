@@ -1,9 +1,8 @@
 {
   "exercise": "word-search",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "comments": [
-    "Grid rows and columns are 1-indexed.",
-    "An expected value of -1 indicates that some sort of failure should occur."
+    "Grid rows and columns are 1-indexed."
   ],
   "cases": [
     {
