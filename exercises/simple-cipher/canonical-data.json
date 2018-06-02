@@ -1,6 +1,11 @@
 {
   "exercise": "simple-cipher",
   "version": "1.0.0",
+  "comments":
+    ["Some of the strings used in this file are symbolic and doesn't represent their literal value. They are:",
+      "cipher.key - Represents the Cipher key",
+      "cipher.encode - Represents the output of the Cipher encode method",
+      "new - Represents the Cipher initialization"],
   "cases": [
     {
       "description": "Random key cipher",
