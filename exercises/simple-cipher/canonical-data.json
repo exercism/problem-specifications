@@ -1,0 +1,147 @@
+{
+  "exercise": "simple-cipher",
+  "version": "1.0.0",
+  "comments":
+    ["Some of the strings used in this file are symbolic and do not represent their literal value. They are:",
+      "cipher.key - Represents the Cipher key",
+      "cipher.encode - Represents the output of the Cipher encode method",
+      "new - Represents the Cipher initialization"],
+  "cases": [
+    {
+      "description": "Random key cipher",
+      "cases": [
+        {
+          "description": "Can encode",
+          "property": "encode",
+          "input": {
+            "plaintext": "aaaaaaaaaa"
+          },
+          "expected": "cipher.key"
+        },
+        {
+          "description": "Can decode",
+          "property": "decode",
+          "input": {
+            "ciphertext": "cipher.key"
+          },
+          "expected": "aaaaaaaaaa"
+        },
+        {
+          "description": "Is reversible. I.e., if you apply decode in a encoded result, you must see the same plaintext encode parameter as a result of the decode method",
+          "property": "decode",
+          "input": {
+            "plaintext": "abcdefghij",
+            "ciphertext": "cipher.encode"
+          },
+          "expected": "abcdefghij"
+        },
+        {
+          "description": "Key is made only of lowercase letters",
+          "property": "key",
+          "input": {},
+          "expected": {
+            "match": "^[a-z]+$"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Substitution cipher",
+      "cases": [
+        {
+          "description": "Can encode",
+          "property": "encode",
+          "input": {
+            "key": "abcdefghij",
+            "plaintext": "aaaaaaaaaa"
+          },
+          "expected": "abcdefghij"
+        },
+        {
+          "description": "Can decode",
+          "property": "decode",
+          "input": {
+            "key": "abcdefghij",
+            "ciphertext": "abcdefghij"
+          },
+          "expected": "aaaaaaaaaa"
+        },
+        {
+          "description": "Is reversible. I.e., if you apply decode in a encoded result, you must see the same plaintext encode parameter as a result of the decode method",
+          "property": "decode",
+          "input": {
+            "key": "abcdefghij",
+            "plaintext": "abcdefghij",
+            "ciphertext": "cipher.encode"
+          },
+          "expected": "abcdefghij"
+        },
+        {
+          "description": "Can double shift encode",
+          "property": "encode",
+          "input": {
+            "key": "iamapandabear",
+            "plaintext": "iamapandabear"
+          },
+          "expected": "qayaeaagaciai"
+        },
+        {
+          "description": "Can wrap on encode", 
+          "property": "encode",
+          "input": {
+            "key": "abcdefghij",
+            "plaintext": "zzzzzzzzzz"
+          },
+          "expected": "zabcdefghi"
+        },
+        {
+          "description": "Can wrap on decode",
+          "property": "decode",
+          "input": {
+            "key": "abcdefghij",
+            "ciphertext": "zabcdefghi"
+          },
+          "expected": "zzzzzzzzzz"
+        },
+        {
+          "description": "Can handle messages longer than the key",
+          "property": "encode",
+          "input": {
+            "key": "abc",
+            "plaintext": "iamapandabear"
+          },
+          "expected": "iboaqcnecbfcr"
+        }
+      ]
+    },
+    {
+      "description": "Incorrect key cipher",
+      "cases": [
+        {
+          "description": "Throws an error with an all uppercase key",
+          "property": "new",
+          "input": {
+            "key": "ABCDEF"
+          },
+          "expected": { "error": "Bad key" }
+        },
+        {
+          "description": "Throws an error with a numeric key",
+          "property": "new",
+          "input": {
+            "key": "12345"
+          },
+          "expected": { "error": "Bad key" }
+        },
+        {
+          "description": "Throws an error with empty key",
+          "property": "new",
+          "input": {
+            "key": ""
+          },
+          "expected": { "error": "Bad key" }
+        }
+      ]
+    }
+  ]
+}
