@@ -87,6 +87,14 @@
             "expected": false
         },
         {
+            "description": "too short isbn",
+            "property": "isValid",
+            "input": {
+              "isbn": "00"
+            },
+            "expected": false
+        },
+        {
             "description": "isbn without check digit",
             "property": "isValid",
             "input": {
