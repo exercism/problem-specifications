@@ -5,7 +5,8 @@
     ["Some of the strings used in this file are symbolic and do not represent their literal value. They are:",
       "cipher.key - Represents the Cipher key",
       "cipher.encode - Represents the output of the Cipher encode method",
-      "new - Represents the Cipher initialization"],
+      "new - Represents the Cipher initialization"
+      "string.substring(start, length) - Represents a substring of 'string' that begins at index 'start' and is 'length' characters long],
   "cases": [
     {
       "description": "Random key cipher",
@@ -16,13 +17,13 @@
           "input": {
             "plaintext": "aaaaaaaaaa"
           },
-          "expected": "cipher.key"
+          "expected": "cipher.key.substring(0, 10)"
         },
         {
           "description": "Can decode",
           "property": "decode",
           "input": {
-            "ciphertext": "cipher.key"
+            "ciphertext": "cipher.key.substring(0, 10)"
           },
           "expected": "aaaaaaaaaa"
         },
