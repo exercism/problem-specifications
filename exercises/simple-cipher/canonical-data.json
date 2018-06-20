@@ -17,13 +17,13 @@
           "input": {
             "plaintext": "aaaaaaaaaa"
           },
-          "expected": "cipher.key.substring(0, 10)"
+          "expected": "cipher.key.substring(0, plaintext.length)"
         },
         {
           "description": "Can decode",
           "property": "decode",
           "input": {
-            "ciphertext": "cipher.key.substring(0, 10)"
+            "ciphertext": "cipher.key.substring(0, expected.length)"
           },
           "expected": "aaaaaaaaaa"
         },
