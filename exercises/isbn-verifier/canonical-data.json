@@ -103,14 +103,6 @@
             "expected": false
         },
         {
-            "description": "too long isbn",
-            "property": "isValid",
-            "input": {
-              "isbn": "3-598-21507-XX"
-            },
-            "expected": false
-        },
-        {
             "description": "check digit of X should not be used for 0",
             "property": "isValid",
             "input": {
