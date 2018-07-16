@@ -11,29 +11,30 @@ because it has many more keys.
 the encryption function is:
  
   **E(x) = (ax + b) % m**
-  -  where x is the letters' index from 0 - length of alphabet - 1
-  -  m is the length of the alphabet - roman alphabet = 26
-  -  and a and b make the key
+  -  where `x` is the letter's index from 0 - length of alphabet - 1
+  -  `m` is the length of the alphabet - roman alphabet = 26
+  -  and `a` and `b` make the key
  
 the decryption function is:
  
   **D(y) = a^-1(y - b) % m**
-  -  where y is the numeric value of an encrypted letter, ie. y = E(x)
+  -  where `y` is the numeric value of an encrypted letter, ie. y = E(x)
   -  it is important to note that a^-1 is the modal multiplicative inverse
-  -  the modal multiplicative inverse of a only exists is a and m are
+  -  the modal multiplicative inverse of a only exists if `a` and `m` are
   -  coprime.
  
-To find the MMI of a:
+To find the MMI of `a`:
 
-  **1 = an % m** # where n is the modal multiplicative inverse of a mod m
+  **1 = an % m**
+  -  where `n` is the modal multiplicative inverse of `a` mod `m`
  
-Because automatice decryption, fails if a is not coprime to m your
-program should return status 1 and "Error: a and m must be coprime."
+Because automatic decryption fails if a is not coprime to m your
+program should return status 1 and `"Error: a and m must be coprime."`
 if they are not.  Otherwise it should encode or decode with the
 provided key.
  
-The Caesar (shift) cipher is a simple affine cipher where a is 1 and
-b as the magnitude results in a static displacement of the letters.
+The Caesar (shift) cipher is a simple affine cipher where `a` is 1 and
+`b` as the magnitude results in a static displacement of the letters.
 This is much less secure than a full implementation of the affine cipher.
 
 Ciphertext is written out in groups of fixed length, the traditional group
