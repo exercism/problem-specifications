@@ -105,7 +105,7 @@
     },
     {
       "description": "decode",
-      "comments": [ "Test decoding from ciphertext to English with keys" ]
+      "comments": [ "Test decoding from ciphertext to English with keys" ],
       "cases": [ 
         {
           "description": "decode exercism",
