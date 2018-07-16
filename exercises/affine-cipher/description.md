@@ -28,7 +28,7 @@ To find the MMI of `a`:
   **1 = an % m**
   -  where `n` is the modal multiplicative inverse of `a` mod `m`
  
-Because automatic decryption fails if a is not coprime to m your
+Because automatic decryption fails if `a` is not coprime to `m` your
 program should return status 1 and `"Error: a and m must be coprime."`
 if they are not.  Otherwise it should encode or decode with the
 provided key.
