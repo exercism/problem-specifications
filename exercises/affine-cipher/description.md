@@ -12,7 +12,7 @@ the encryption function is:
  
   **E(x) = (ax + b) % m**
   -  where `x` is the letter's index from 0 - length of alphabet - 1
-  -  `m` is the length of the alphabet - roman alphabet = 26
+  -  `m` is the length of the alphabet. For the roman alphabet `m == 26`.
   -  and `a` and `b` make the key
  
 the decryption function is:
