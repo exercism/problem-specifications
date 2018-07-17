@@ -10,14 +10,14 @@ because it has many more keys.
  
 the encryption function is:
  
-  **E(x) = (ax + b) % m**
+  `E(x) = (ax + b) mod m`
   -  where `x` is the letter's index from 0 - length of alphabet - 1
   -  `m` is the length of the alphabet. For the roman alphabet `m == 26`.
   -  and `a` and `b` make the key
  
 the decryption function is:
  
-  **D(y) = a^-1(y - b) % m**
+  `D(y) = a^-1(y - b) mod m`
   -  where `y` is the numeric value of an encrypted letter, ie. y = E(x)
   -  it is important to note that a^-1 is the modal multiplicative inverse
   -  the modal multiplicative inverse of a only exists if `a` and `m` are
@@ -25,7 +25,7 @@ the decryption function is:
  
 To find the MMI of `a`:
 
-  **1 = an % m**
+  `1 = an mod m`
   -  where `n` is the modal multiplicative inverse of `a` mod `m`
  
 Because automatic decryption fails if `a` is not coprime to `m` your
