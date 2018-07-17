@@ -18,16 +18,20 @@ the encryption function is:
 the decryption function is:
  
   `D(y) = a^-1(y - b) mod m`
-  -  where `y` is the numeric value of an encrypted letter, ie. y = E(x)
-  -  it is important to note that a^-1 is the modal multiplicative inverse
-  -  the modal multiplicative inverse of a only exists if `a` and `m` are
-  -  coprime.
+  -  where `y` is the numeric value of an encrypted letter, ie. `y = E(x)`
+  -  it is important to note that `a^-1` is the modular multiplicative inverse
+     of `a mod m`
+  -  the modular multiplicative inverse of `a` only exists if `a` and `m` are
+     coprime.
  
 To find the MMI of `a`:
 
-  `1 = an mod m`
-  -  where `n` is the modal multiplicative inverse of `a` mod `m`
- 
+  `an mod m = 1`
+  -  where `n` is the modular multiplicative inverse of `a mod m`
+
+More information regarding how to find a Modular Multiplicative Inverse
+and what it means can be found [here.](https://en.wikipedia.org/wiki/Modular_multiplicative_inverse) 
+
 Because automatic decryption fails if `a` is not coprime to `m` your
 program should return status 1 and `"Error: a and m must be coprime."`
 if they are not.  Otherwise it should encode or decode with the
@@ -52,3 +56,13 @@ harder to guess things based on word boundaries.
    - gives `Error: a and m must be coprime.`
    - because a and m are not relatively prime
 
+### Examples of finding a Modular Multiplicative Inverse (MMI)
+
+  - simple example:
+    - `9 mod 26 = 9`
+    - `9 * 3 mod 26 = 27 mod 26 = 1`
+    - `3` is the MMI of `9 mod 26`
+  - a more complicated example:
+    - `15 mod 26 = 15`
+    - `15 * 7 mod 26 = 105 mod 26 = 1`
+    - `7` is the MMI of `15 mod 26`
