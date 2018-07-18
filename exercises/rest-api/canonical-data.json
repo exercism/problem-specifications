@@ -341,9 +341,7 @@
                         "users": [
                             {
                                 "name": "Adam",
-                                "owes": {
-                                    "Bob": 0.0
-                                },
+                                "owes": {},
                                 "owed_by": {
                                     "Bob": 1.0
                                 },
@@ -354,9 +352,7 @@
                                 "owes": {
                                     "Adam": 1.0
                                 },
-                                "owed_by": {
-                                    "Adam": 0.0
-                                },
+                                "owed_by": {},
                                 "balance": -1.0
                             }
                         ]
