@@ -5,12 +5,9 @@
       "The state of the API database before the request is represented",
       "by the input->database object. Your track may determine how this",
       "initial state is set.",
-      "The input->payload object and the output are represented as arrays",
-      "of strings to improve readability in this JSON file. However, in ",
-      "track implementations, it seems to make sense to expect them as a ",
-      "single string.",
-      "Additionally, your track may choose whether to enforce or ignore",
-      "whitespace in JSON strings."
+      "The input->payload and expected objects should be marshalled as",
+      "strings in track implementation, as parsing and validating text",
+      "payloads is an integral part of implementing a REST API."
     ],
     "cases": [
         {
@@ -25,11 +22,9 @@
                         },
                         "url": "/users"
                     },
-                    "expected": [
-                        "{",
-                        "  \"users\": []",
-                        "}"
-                    ]
+                    "expected": {
+                        "users": []
+                    }
                 },
                 {
                     "description": "add user",
@@ -39,20 +34,16 @@
                             "users": []
                         },
                         "url": "/add",
-                        "payload": [
-                            "{",
-                            "  \"user\": \"Adam\"",
-                            "}"
-                        ]
+                        "payload": {
+                            "user": "Adam"
+                        }
                     },
-                    "expected": [
-                        "{",
-                        "  \"name\": \"Adam\",",
-                        "  \"owes\": {},",
-                        "  \"owed_by\": {},",
-                        "  \"balance\": 0.0",
-                        "}"
-                    ]
+                    "expected": {
+                        "name": "Adam",
+                        "owes": {},
+                        "owed_by": {},
+                        "balance": 0.0
+                    }
                 },
                 {
                     "description": "get single user",
@@ -75,24 +66,20 @@
                             ]
                         },
                         "url": "/users",
-                        "payload": [
-                            "{",
-                            "  \"users\": [\"Bob\"]",
-                            "}"
-                        ]
+                        "payload": {
+                            "users": ["Bob"]
+                        }
                     },
-                    "expected": [
-                        "{",
-                        "  \"users\": [",
-                        "    {",
-                        "      \"name\": \"Bob\",",
-                        "      \"owes\": {},",
-                        "      \"owed_by\": {}",
-                        "      \"balance\": 0.0",
-                        "    }",
-                        "  ]",
-                        "}"
-                    ]
+                    "expected": {
+                        "users": [
+                            {
+                                "name": "Bob",
+                                "owes": {},
+                                "owed_by": {},
+                                "balance": 0.0
+                            }
+                        ]
+                    }
                 }
 
             ]
@@ -121,36 +108,32 @@
                             ]
                         },
                         "url": "/iou",
-                        "payload": [
-                            "{",
-                            "  \"lender\": \"Adam\",",
-                            "  \"borrower\": \"Bob\",",
-                            "  \"amount\": 3.0",
-                            "}"
-                        ]
+                        "payload": {
+                            "lender": "Adam",
+                            "borrower": "Bob",
+                            "amount": 3.0
+                        }
                     },
-                    "expected": [
-                        "{",
-                        "  \"users\": [",
-                        "    {",
-                        "      \"name\": \"Adam\",",
-                        "      \"owes\": {},",
-                        "      \"owed_by\": {",
-                        "        \"Bob\": 3.0",
-                        "      },",
-                        "      \"balance\": 3.0",
-                        "    },",
-                        "    {",
-                        "      \"name\": \"Bob\",",
-                        "      \"owes\": {},",
-                        "        \"Adam\": 3.0",
-                        "      },",
-                        "      \"owed_by\": {}",
-                        "      \"balance\": -3.0",
-                        "    },",
-                        "  ]",
-                        "}"
-                    ]
+                    "expected": {
+                        "users": [
+                            {
+                                "name": "Adam",
+                                "owes": {},
+                                "owed_by": {
+                                    "Bob": 3.0
+                                },
+                                "balance": 3.0
+                            },
+                            {
+                                "name": "Bob",
+                                "owes": {
+                                    "Adam": 3.0
+                                },
+                                "owed_by": {},
+                                "balance": -3.0
+                            }
+                        ]
+                    }
                 },
                 {
                     "description": "borrower has negative balance",
@@ -183,37 +166,33 @@
                             ]
                         },
                         "url": "/iou",
-                        "payload": [
-                            "{",
-                            "  \"lender\": \"Adam\",",
-                            "  \"borrower\": \"Bob\",",
-                            "  \"amount\": 3.0",
-                            "}"
-                        ]
+                        "payload": {
+                            "lender": "Adam",
+                            "borrower": "Bob",
+                            "amount": 3.0
+                        }
                     },
-                    "expected": [
-                        "{",
-                        "  \"users\": [",
-                        "    {",
-                        "      \"name\": \"Adam\",",
-                        "      \"owes\": {},",
-                        "      \"owed_by\": {",
-                        "        \"Bob\": 3.0",
-                        "      },",
-                        "      \"balance\": 3.0",
-                        "    },",
-                        "    {",
-                        "      \"name\": \"Bob\",",
-                        "      \"owes\": {},",
-                        "        \"Adam\": 3.0",
-                        "        \"Chuck\": 3.0",
-                        "      },",
-                        "      \"owed_by\": {}",
-                        "      \"balance\": -6.0",
-                        "    },",
-                        "  ]",
-                        "}"
-                    ]
+                    "expected": {
+                        "users": [
+                            {
+                                "name": "Adam",
+                                "owes": {},
+                                "owed_by": {
+                                    "Bob": 3.0
+                                },
+                                "balance": 3.0
+                            },
+                            {
+                                "name": "Bob",
+                                "owes": {
+                                    "Adam": 3.0,
+                                    "Chuck": 3.0
+                                },
+                                "owed_by": {},
+                                "balance": -6
+                            }
+                        ]
+                    }
                 },
                 {
                     "description": "lender has negative balance",
@@ -246,38 +225,34 @@
                             ]
                         },
                         "url": "/iou",
-                        "payload": [
-                            "{",
-                            "  \"lender\": \"Bob\",",
-                            "  \"borrower\": \"Adam\",",
-                            "  \"amount\": 3.0",
-                            "}"
-                        ]
+                        "payload": {
+                            "lender": "Bob",
+                            "borrower": "Adam",
+                            "amount": 3.0
+                        }
                     },
-                    "expected": [
-                        "{",
-                        "  \"users\": [",
-                        "    {",
-                        "      \"name\": \"Adam\",",
-                        "      \"owes\": {",
-                        "        \"Bob\": 3.0",
-                        "      },",
-                        "      \"owed_by\": {}",
-                        "      \"balance\": -3.0",
-                        "    },",
-                        "    {",
-                        "      \"name\": \"Bob\",",
-                        "      \"owes\": {},",
-                        "        \"Chuck\": 3.0",
-                        "      },",
-                        "      \"owed_by\": {",
-                        "        \"Adam\": 3.0",
-                        "      }",
-                        "      \"balance\": 0.0",
-                        "    },",
-                        "  ]",
-                        "}"
-                    ]
+                    "expected": {
+                        "users": [
+                            {
+                                "name": "Adam",
+                                "owes": {
+                                    "Bob": 3.0
+                                },
+                                "owed_by": {},
+                                "balance": -3.0
+                            },
+                            {
+                                "name": "Bob",
+                                "owes": {
+                                    "Chuck": 3.0
+                                },
+                                "owed_by": {
+                                    "Adam": 3.0
+                                },
+                                "balance": 0.0
+                            }
+                        ]
+                    }
                 }
             ]
         }
