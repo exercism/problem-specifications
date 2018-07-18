@@ -4,7 +4,7 @@
     "comments": [
       "The state of the API database before the request is represented",
       "by the input->database object. Your track may determine how this",
-      "initial state is set",
+      "initial state is set.",
       "The inputs and outputs are represented as arrays of strings to",
       "improve readability in this JSON file.",
       "Your track may choose whether to present the input as a single",
