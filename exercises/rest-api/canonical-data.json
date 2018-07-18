@@ -20,12 +20,12 @@
             "cases": [
                 {
                     "description": "no users",
-                    "property": "request",
+                    "property": "get",
                     "input": {
                         "database": {
                             "users": []
                         },
-                        "request_body": ["GET /users"]
+                        "url": "/users"
                     },
                     "expected": [
                         "{",
@@ -35,14 +35,13 @@
                 },
                 {
                     "description": "add user",
-                    "property": "request",
+                    "property": "post",
                     "input": {
                         "database": {
                             "users": []
                         },
-                        "request_body": [
-                            "POST /add",
-                            "",
+                        "url": "/add",
+                        "payload": [
                             "{",
                             "  \"user\": \"Adam\"",
                             "}"
@@ -59,7 +58,7 @@
                 },
                 {
                     "description": "get single user",
-                    "property": "request",
+                    "property": "get",
                     "input": {
                         "database": {
                             "users": [
@@ -77,9 +76,8 @@
                                 }
                             ]
                         },
-                        "request_body": [
-                            "GET /users",
-                            "",
+                        "url": "/users",
+                        "payload": [
                             "{",
                             "  \"users\": [\"Bob\"]",
                             "}"
@@ -106,7 +104,7 @@
             "cases": [
                 {
                     "description": "both users have 0 balance",
-                    "property": "request",
+                    "property": "post",
                     "input": {
                         "database": {
                             "users": [
@@ -124,9 +122,8 @@
                                 }
                             ]
                         },
-                        "request_body": [
-                            "POST /iou",
-                            "",
+                        "url": "/iou",
+                        "payload": [
                             "{",
                             "  \"lender\": \"Adam\",",
                             "  \"borrower\": \"Bob\",",
@@ -159,7 +156,7 @@
                 },
                 {
                     "description": "borrower has negative balance",
-                    "property": "request",
+                    "property": "post",
                     "input": {
                         "database": {
                             "users": [
@@ -187,9 +184,8 @@
                                 }
                             ]
                         },
-                        "request_body": [
-                            "POST /iou",
-                            "",
+                        "url": "/iou",
+                        "payload": [
                             "{",
                             "  \"lender\": \"Adam\",",
                             "  \"borrower\": \"Bob\",",
@@ -223,7 +219,7 @@
                 },
                 {
                     "description": "lender has negative balance",
-                    "property": "request",
+                    "property": "post",
                     "input": {
                         "database": {
                             "users": [
@@ -251,9 +247,8 @@
                                 }
                             ]
                         },
-                        "request_body": [
-                            "POST /iou",
-                            "",
+                        "url": "/iou",
+                        "payload": [
                             "{",
                             "  \"lender\": \"Bob\",",
                             "  \"borrower\": \"Adam\",",
