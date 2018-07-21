@@ -1,13 +1,9 @@
 {
   "exercise": "protein-translation",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "cases": [
     {
       "description": "Translate input RNA sequences into proteins",
-      "comments": [
-        "Returns the name of the protein if given RNA is valid, "
-      , "else throws an error. "
-      ],
       "cases": [
         {
           "description": "Methionine RNA sequence",
