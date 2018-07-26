@@ -1,6 +1,6 @@
 {
   "exercise": "saddle-points",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments": [
     "Matrix rows and columns are 0-indexed."
   ],
@@ -48,7 +48,7 @@
       "expected": []
     },
     {
-      "description": "Can identify multiple saddle points",
+      "description": "Can identify multiple saddle points in a column",
       "property": "saddlePoints",
       "input": {
         "matrix": [
@@ -69,6 +69,31 @@
         {
           "row": 2,
           "column": 1
+        }
+      ]
+    },
+    {
+      "description": "Can identify multiple saddle points in a row",
+      "property": "saddlePoints",
+      "input": {
+        "matrix": [
+          [6, 7, 8],
+          [5, 5, 5],
+          [7, 5, 6]
+        ]
+      },
+      "expected": [
+        {
+          "row": 1,
+          "column": 0
+        },
+        {
+          "row": 1,
+          "column": 1
+        },
+        {
+          "row": 1,
+          "column": 2
         }
       ]
     },
