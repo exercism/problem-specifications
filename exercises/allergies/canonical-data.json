@@ -1,6 +1,6 @@
 {
   "exercise": "allergies",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "cases": [
     {
       "description": "allergicTo",
@@ -64,6 +64,31 @@
             {
               "substance": "strawberries",
               "result": false
+            }
+          ]
+        },
+        {
+          "description": "allergic to strawberries but not peanuts",
+          "property": "allergicTo",
+          "input": {
+            "score": 9
+          },
+          "expected": [
+            {
+              "substance": "eggs",
+              "result": true
+            },
+            {
+              "substance": "peanuts",
+              "result": false
+            },  
+            {
+              "substance": "shellfish",
+              "result": false
+            },
+            {
+              "substance": "strawberries",
+              "result": true
             }
           ]
         }
