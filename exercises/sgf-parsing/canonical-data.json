@@ -19,7 +19,7 @@
                 "encoded": "()"
             },
             "expected": {
-                "error": "tree no nodes"
+                "error": "tree with no nodes"
             }
         },
         {
@@ -59,7 +59,7 @@
             "description": "properties without delimiter",
             "property": "parse",
             "input": {
-                "encoded": "(;a)"
+                "encoded": "(;A)"
             },
             "expected": {
                 "error": "properties without delimiter"
@@ -72,7 +72,7 @@
                 "encoded": "(;a[b])"
             },
             "expected": {
-                "error": "property must be all uppercase"
+                "error": "property must be in uppercase"
             }
         },
         {
@@ -82,7 +82,7 @@
                 "encoded": "(;Aa[b])"
             },
             "expected": {
-                "error": "property must be all uppercase"
+                "error": "property must be in uppercase"
             }
         },
         {
