@@ -1,6 +1,6 @@
 {
   "exercise": "atbash-cipher",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments": [
     "The tests are divided into two groups: ",
     "* Encoding from English to atbash cipher",
@@ -112,6 +112,22 @@
             "phrase": "gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt"
           },
           "expected": "thequickbrownfoxjumpsoverthelazydog"
+        },
+        {
+          "description": "decode with too many spaces",
+          "property": "decode",
+          "input": {
+            "phrase": "vc vix    r hn"
+          },
+          "expected": "exercism"
+        },
+        {
+          "description": "decode with no spaces",
+          "property": "decode",
+          "input": {
+            "phrase": "zmlyhgzxovrhlugvmzhgvkkrmthglmv"
+          },
+          "expected": "anobstacleisoftenasteppingstone"
         }
       ]
     }
