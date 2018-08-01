@@ -1,12 +1,6 @@
 {
   "exercise": "anagram",
-  "version": "1.2.0",
-  "comments": [
-    "The string argument cases possible matches are passed in as",
-    "individual arguments rather than arrays. Languages can include",
-    "these string argument cases if passing individual arguments is",
-    "idiomatic in that language."
-  ],
+  "version": "1.2.1",
   "cases": [
     {
       "description": "no matches",
