@@ -1,6 +1,6 @@
 {
   "exercise": "bob",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "cases": [
     {
       "description": "stating something",
@@ -83,7 +83,7 @@
       "expected": "Whoa, chill out!"
     },
     {
-      "description": "only numbers",
+      "description": "no letters",
       "property": "response",
       "input": {
         "heyBob": "1, 2, 3"
@@ -91,7 +91,7 @@
       "expected": "Whatever."
     },
     {
-      "description": "question with only numbers",
+      "description": "question with no letters",
       "property": "response",
       "input": {
         "heyBob": "4?"
