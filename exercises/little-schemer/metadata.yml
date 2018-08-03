@@ -1,0 +1,4 @@
+---
+blurb: "Given a list, recursively determine whether the list contains only atoms."
+source: "The Little Schemer"
+source_url: "https://mitpress.mit.edu/books/little-schemer-fourth-edition"
