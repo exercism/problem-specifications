@@ -1,6 +1,6 @@
 {
   "exercise": "acronym",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "cases": [
     {
       "description": "Abbreviate a phrase",
@@ -44,6 +44,14 @@
             "phrase": "Complementary metal-oxide semiconductor"
           },
           "expected": "CMOS"
+        },
+        {
+          "description": "very long abbreviation",
+          "property": "abbreviate",
+          "input": {
+            "phrase": "Rolling On The Floor Laughing So Hard That My Dogs Came Over And Licked Me"
+          },
+          "expected": "ROTFLSHTMDCOALM"
         }
       ]
     }
