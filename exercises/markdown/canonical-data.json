@@ -81,25 +81,25 @@
         "description": "with markdown symbols in the header text that should not be interpreted",
         "property": "parse",
         "input": {
-            "markdown": "# This is a header with # and *** in the text"
+            "markdown": "# This is a header with # and * in the text"
         },
-        "expected": "<h1>This is a header with # and *** in the text</h1>"
+        "expected": "<h1>This is a header with # and * in the text</h1>"
     },
     {
         "description": "with markdown symbols in the list item text that should not be interpreted",
         "property": "parse",
         "input": {
-            "markdown": "* Item 1 with a # in the text\n* Item 2 with *** in the text"
+            "markdown": "* Item 1 with a # in the text\n* Item 2 with * in the text"
         },
-        "expected": "<ul><li>Item 1 with a # in the text</li><li>Item 2 with *** in the text</li></ul>"
+        "expected": "<ul><li>Item 1 with a # in the text</li><li>Item 2 with * in the text</li></ul>"
     },
     {
         "description": "with markdown symbols in the paragraph text that should not be interpreted",
         "property": "parse",
         "input": {
-            "markdown": "This is a paragraph with # and *** in the text"
+            "markdown": "This is a paragraph with # and * in the text"
         },
-        "expected": "<p>This is a paragraph with # and *** in the text</p>"
+        "expected": "<p>This is a paragraph with # and * in the text</p>"
     }
   ]
 }
