@@ -1,6 +1,6 @@
 {
   "exercise": "collatz-conjecture",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "cases": [
     {
       "description": "zero steps for one",
@@ -27,7 +27,7 @@
       "expected": 9
     },
     {
-      "description": "Large number of even and odd steps",
+      "description": "large number of even and odd steps",
       "property": "steps",
       "input": {
         "number": 1000000
