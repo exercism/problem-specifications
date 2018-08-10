@@ -117,14 +117,14 @@
               "b": 17
             }
          },
-          "expected": "Error: a and m must be coprime."
+          "expected": { "error": "Error: a and m must be coprime." }
         }
       ]
     },
     {
       "description": "decode",
       "comments": [ "Test decoding from ciphertext to English with keys" ],
-      "cases": [ 
+      "cases": [
         {
           "description": "decode exercism",
           "property": "decode",
@@ -207,7 +207,7 @@
               "b": 5
             }
           },
-          "expected": "Error: a and m must be coprime."
+          "expected": { "error": "Error: a and m must be coprime." }
         }
       ]
     }
