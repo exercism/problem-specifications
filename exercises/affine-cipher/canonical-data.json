@@ -117,7 +117,7 @@
               "b": 17
             }
          },
-          "expected": { "error": "Error: a and m must be coprime." }
+          "expected": { "error": "a and m must be coprime." }
         }
       ]
     },
@@ -207,7 +207,7 @@
               "b": 5
             }
           },
-          "expected": { "error": "Error: a and m must be coprime." }
+          "expected": { "error": "a and m must be coprime." }
         }
       ]
     }
