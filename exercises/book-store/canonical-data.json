@@ -87,7 +87,7 @@
         },
         {
          "property": "total",
-         "description": "Two groups of four is cheaper than group of five plus group of three, regardless of order",
+         "description": "Two groups of four is cheaper than group of five and three",
          "comments": ["Suggested grouping, [[1,2,4,5],[1,3,4,5]]. This differs from the other 'two groups of four' test in that it will fail for solutions that add books to groups in the order in which they appear in the list."],
          "input": {
            "basket": [1,1,2,3,4,4,5,5]
