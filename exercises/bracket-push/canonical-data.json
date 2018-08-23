@@ -1,6 +1,6 @@
 {
   "exercise": "bracket-push",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "cases": [
     {
       "description": "paired square brackets",
@@ -103,6 +103,14 @@
       "property": "isPaired",
       "input": {
         "value": "[({]})"
+      },
+      "expected": false
+    },
+    {
+      "description": "paired and incomplete brackets",
+      "property": "isPaired",
+      "input": {
+        "value": "{}["
       },
       "expected": false
     },
