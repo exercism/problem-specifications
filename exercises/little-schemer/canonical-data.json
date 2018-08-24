@@ -1,0 +1,215 @@
+{
+  "exercise": "little-schemer",
+  "version": "1.0.0",
+  "comments": [
+    "Tests are ordered to allow sequential build up of primitives",
+    "for use in writing the final recursive function lat?."
+  ],
+  "cases": [
+    {
+      "description": "Test null? of a list",
+      "cases": [
+        {
+          "description": "null of non-empty list",
+          "property": "boolean",
+          "input": {
+            "function": "null?",
+            "list": [1]
+          },
+          "expected": false
+        },
+        {
+          "description": "null of empty list",
+          "property": "boolean",
+          "input": {
+            "function": "null?",
+            "list": []
+          },
+          "expected": true
+        },
+        {
+          "description": "null of non-list",
+          "property": "exception",
+          "input": {
+            "function": "null?",
+            "list": "'Zang'"
+          },
+          "comments": [
+            "The primitive null? is defined only for lists."
+          ],
+          "expected": -1
+        }
+      ]
+    },
+    {
+      "description": "Test car of a list",
+      "cases": [
+        {
+          "description": "car of simple list",
+          "property": "equality",
+          "input": {
+            "function": "car",
+            "list": [1]
+          },
+          "expected": 1
+        },
+        {
+          "description": "car of small list",
+          "property": "equality",
+          "input": {
+            "function": "car",
+            "list": ["Immaculate", 23, "G.O.A.T"]
+          },
+          "expected": "'Immaculate'"
+        },
+        {
+          "description": "car of nested list",
+          "property": "equality",
+          "input": {
+            "function": "car",
+            "list": [[4, 5], 6, 7, [8, 9]]
+          },
+          "expected": [4, 5]
+        },
+        {
+          "description": "car of null list",
+          "property": "exception",
+          "input": {
+            "function": "car",
+            "list": []
+          },
+          "comments": [
+            "The primitive car is defined only for non-empty lists."
+          ],
+          "expected": -1
+        }
+      ]
+    },
+    {
+      "description": "Test cdr of a list",
+      "cases": [
+        {
+          "description": "cdr of simple list",
+          "property": "equality",
+          "input": {
+            "function": "cdr",
+            "list": [1]
+          },
+          "expected": []
+        },
+        {
+          "description": "cdr of small list",
+          "property": "equality",
+          "input": {
+            "function": "cdr",
+            "list": ["Immaculate", 23, "G.O.A.T"]
+          },
+          "expected": [23, "G.O.A.T"]
+        },
+        {
+          "description": "cdr of nested list",
+          "property": "equality",
+          "input": {
+            "function": "cdr",
+            "list": [[4, 5], 6, 7, [8, 9]]
+          },
+          "expected": [6, 7, [8, 9]]
+        },
+        {
+          "description": "cdr of null list",
+          "property": "exception",
+          "input": {
+            "function": "cdr",
+            "list": []
+          },
+          "comments": [
+            "The primitive cdr is defined only for non-empty lists. The cdr of any non-empty list is always another list"
+          ],
+          "expected": -1
+        }
+      ]
+    },
+    {
+      "description": "Test atom of a list",
+      "cases": [
+        {
+          "description": "atom of a list",
+          "property": "boolean",
+          "input": {
+            "function": "atom?",
+            "list": ["Immaculate", 23]
+          },
+          "expected": false
+        },
+        {
+          "description": "atom of a string",
+          "property": "boolean",
+          "input": {
+            "function": "atom?",
+            "list": "'Immaculate'"
+          },
+          "expected": true
+        },
+        {
+          "description": "atom of an integer",
+          "property": "boolean",
+          "input": {
+            "function": "atom?",
+            "list": 23
+          },
+          "expected": true
+        },
+        {
+          "description": "atom of null list",
+          "property": "boolean",
+          "input": {
+            "function": "atom?",
+            "list": []
+          },
+          "expected": false
+        }
+      ]
+    },
+    {
+      "description": "Test lat of a list",
+      "cases": [
+        {
+          "description": "lat of a simple list",
+          "property": "boolean",
+          "input": {
+            "function": "lat?",
+            "list": ["Immaculate", 23]
+          },
+          "expected": true
+        },
+        {
+          "description": "lat of another list",
+          "property": "boolean",
+          "input": {
+            "function": "lat?",
+            "list": ["Immaculate", "Bicycle"]
+          },
+          "expected": true
+        },
+        {
+          "description": "lat of nested list",
+          "property": "boolean",
+          "input": {
+            "function": "lat?",
+            "list": ["Help", "I", "am", ["nested"]]
+          },
+          "expected": false
+        },
+        {
+          "description": "lat of null list",
+          "property": "boolean",
+          "input": {
+            "function": "lat?",
+            "list": []
+          },
+          "expected": true
+        }
+      ]
+    }
+  ]
+}
