@@ -1,6 +1,6 @@
 {
   "exercise": "clock",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "comments": [
     "Most languages require constructing a clock with initial values,",
     "adding or subtracting some number of minutes, and testing equality",
@@ -578,6 +578,21 @@
             "clock2": {
               "hour": -54,
               "minute": -11513
+            }
+          },
+          "expected": true
+        },
+        {
+          "description": "full clock and zeroed clock",
+          "property": "equal",
+          "input": {
+            "clock1": {
+              "hour": 24,
+              "minute": 0
+            },
+            "clock2": {
+              "hour": 0,
+              "minute": 0
             }
           },
           "expected": true
