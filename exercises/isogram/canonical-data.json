@@ -103,7 +103,7 @@
           "description": "same first and last characters",
           "property": "isIsogram",
           "input": {
-            "phrase": "Angola"
+            "phrase": "angola"
           },
           "expected": false
         }
