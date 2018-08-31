@@ -475,7 +475,7 @@
                   "operation":"value",
                   "affectTo":"actual",
                   "applyOn":"tmp"
-               },
+               }
             ]
          },
          "expected":{
@@ -528,7 +528,7 @@
                   "operation":"value",
                   "affectTo":"actual",
                   "applyOn":"zipper"
-               },
+               }
             ]
          },
          "expected":{
