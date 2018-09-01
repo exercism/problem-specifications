@@ -1,6 +1,6 @@
 {
   "exercise": "simple-cipher",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments":
     ["Some of the strings used in this file are symbolic and do not represent their literal value. They are:",
       "cipher.key - Represents the Cipher key",
@@ -87,7 +87,7 @@
           "expected": "qayaeaagaciai"
         },
         {
-          "description": "Can wrap on encode", 
+          "description": "Can wrap on encode",
           "property": "encode",
           "input": {
             "key": "abcdefghij",
@@ -127,10 +127,34 @@
           "expected": { "error": "Bad key" }
         },
         {
+          "description": "Throws an error with a key mixing upper and lower case letters",
+          "property": "new",
+          "input": {
+            "key": "abcdeFghij"
+          },
+          "expected": { "error": "Bad key" }
+        },
+        {
           "description": "Throws an error with a numeric key",
           "property": "new",
           "input": {
             "key": "12345"
+          },
+          "expected": { "error": "Bad key" }
+        },
+        {
+          "description": "Throws an error with a key containg a space",
+          "property": "new",
+          "input": {
+            "key": "abcde fghij"
+          },
+          "expected": { "error": "Bad key" }
+        },
+        {
+          "description": "Throws an error with a key containing a punctuation mark",
+          "property": "new",
+          "input": {
+            "key": "abcde:fghij"
           },
           "expected": { "error": "Bad key" }
         },
