@@ -90,6 +90,14 @@
             "sentence": "the quick brown fox jumps over with lazy FX"
           },
           "expected": false
+        },
+        {
+          "description": "can handle diacritics and ligatures",
+          "property": "isPangram",
+          "input": {
+            "sentence": "àbçdfghîjklmnpqrßtÛvWxyzœ"
+          },
+          "expected": true
         }
       ]
     }
