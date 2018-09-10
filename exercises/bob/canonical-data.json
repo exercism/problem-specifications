@@ -1,6 +1,6 @@
 {
   "exercise": "bob",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "cases": [
     {
       "description": "stating something",
@@ -166,7 +166,7 @@
       "description": "multiple line question",
       "property": "response",
       "input": {
-        "heyBob": "\nDoes this cryogenic chamber make me look fat?\nno"
+        "heyBob": "\nDoes this cryogenic chamber make me look fat?\nNo."
       },
       "expected": "Whatever."
     },
