@@ -2,9 +2,8 @@
    "exercise":"zipper",
    "version":"2.0.0",
    "comments":[
-      " The test cases for this exercise verifies that a tree can be build ",
-      " from recursive applications of one of the following atomic         ",
-      " operations:                                                        ",
+      " Verifies that a tree can be build from recursive applications of   ",
+      " one of the following atomic operations:                            ",
       "    - cursor moving: left, right, up                                ",
       "    - node insertion/modification and reading                       ",
       "                                                                    ",
@@ -24,12 +23,29 @@
       "                                                                    ",
       " The second part of the test for un-authorized moves operations,    ",
       " like inserting on non-empty spots, or going in a direction where   ",
-      " cursor is not allowed to go (eg., up from the root)                "
+      " cursor is not allowed to go (eg., up from the root)                ",
+      "                                                                    ",
+      " Lets consider the following affectation:                           ",
+      "                    y <- f(x, value)                                ",
+      " The following notation will be used to represent this operation:   ",
+      "  {                                                                 ",
+      "     'operation': 'f',                                              ",
+      "     'affectTo': 'y',                                               ",
+      "     'applyOn': 'x',                                                ",
+      "     'item': 'value'                                                ",
+      "  }                                                                 ",
+      "                                                                    ",
+      " Each test should start with the initialisation of an empty zipper  ",
+      " named 'zipper':                                                    ",
+      "  'initialZipper': {                                                ",
+      "      'name': 'zipper'                                              ",
+      "   }                                                                ",
+      "                                                                    "
    ],
    "cases":[
       {
          "description":"Zipper is empty.",
-         "property":"testEmpty",
+         "property":"zipper",
          "input":{
             "initialZipper":{
                "name":"zipper"
@@ -44,7 +60,7 @@
       },
       {
          "description":"Insert method shouldn't mutate the object.",
-         "property":"testInsertNonMutating",
+         "property":"insert",
          "input":{
             "initialZipper":{
                "name":"zipper"
@@ -64,7 +80,7 @@
       },
       {
          "description":"Insert method actually set the right value at the right place.",
-         "property":"testInsertAndGetValue",
+         "property":"getValue",
          "input":{
             "initialZipper":{
                "name":"zipper"
@@ -88,8 +104,8 @@
          }
       },
       {
-         "description":"Tests that left move arrives to a zipper that is empty support insertion.",
-         "property":"testLeft",
+         "description":"Left move and an empty spot insertion.",
+         "property":"left",
          "input":{
             "initialZipper":{
                "name":"zipper"
@@ -125,8 +141,8 @@
          }
       },
       {
-         "description":"Tests that right move arrives to a zipper that is empty support insertion.",
-         "property":"testLeft",
+         "description":"Right move and an empty spot insertion.",
+         "property":"right",
          "input":{
             "initialZipper":{
                "name":"zipper"
@@ -162,8 +178,8 @@
          }
       },
       {
-         "description":"Tests that both left and right moves do not mutate the initialZipper.",
-         "property":"testLeftAndRightInsertNonMutating",
+         "description":"Left move do not mutate initialZipper.",
+         "property":"left",
          "input":{
             "initialZipper":{
                "name":"zipper"
@@ -181,9 +197,96 @@
                   "applyOn":"zipper"
                },
                {
+                  "operation":"value",
+                  "affectTo":"actual",
+                  "applyOn":"zipper"
+               }
+            ]
+         },
+         "expected":{
+            "type":"int",
+            "value":1
+         }
+      },
+      {
+         "description":"Right move do not mutate initialZipper.",
+         "property":"right",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
                   "operation":"insert",
-                  "affectTo":null,
-                  "applyOn":"tmp",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":1
+               },
+               {
+                  "operation":"right",
+                  "affectTo":"tmp",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"value",
+                  "affectTo":"actual",
+                  "applyOn":"zipper"
+               }
+            ]
+         },
+         "expected":{
+            "type":"int",
+            "value":1
+         }
+      },
+      {
+         "description":"Going left then up is equivalent to staying put.",
+         "property":"left",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":1
+               },
+               {
+                  "operation":"left",
+                  "affectTo":"tmp",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"up",
+                  "affectTo":"tmp",
+                  "applyOn":"tmp"
+               },
+               {
+                  "operation":"value",
+                  "affectTo":"actual",
+                  "applyOn":"tmp"
+               }
+            ]
+         },
+         "expected":{
+            "type":"int",
+            "value":1
+         }
+      },
+      {
+         "description":"Going right then up is equivalent to staying put.",
+         "property":"right",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
                   "item":2
                },
                {
@@ -192,79 +295,6 @@
                   "applyOn":"zipper"
                },
                {
-                  "operation":"insert",
-                  "affectTo":null,
-                  "applyOn":"tmp",
-                  "item":3
-               },
-               {
-                  "operation":"value",
-                  "affectTo":"actual",
-                  "applyOn":"zipper"
-               }
-            ]
-         },
-         "expected":{
-            "type":"int",
-            "value":1
-         }
-      },
-      {
-         "description":"Tests that going left then up is equivalent to staying put.",
-         "property":"testLeftUpCancels",
-         "input":{
-            "initialZipper":{
-               "name":"zipper"
-            },
-            "operations":[
-               {
-                  "operation":"insert",
-                  "affectTo":"zipper",
-                  "applyOn":"zipper",
-                  "item":1
-               },
-               {
-                  "operation":"left",
-                  "affectTo":"tmp",
-                  "applyOn":"zipper"
-               },
-               {
-                  "operation":"up",
-                  "affectTo":"tmp",
-                  "applyOn":"tmp"
-               },
-               {
-                  "operation":"value",
-                  "affectTo":"actual",
-                  "applyOn":"tmp"
-               }
-            ]
-         },
-         "expected":{
-            "type":"int",
-            "value":1
-         }
-      },
-      {
-         "description":"Tests that going left then up is equivalent to staying put.",
-         "property":"testLeftUpCancels",
-         "input":{
-            "initialZipper":{
-               "name":"zipper"
-            },
-            "operations":[
-               {
-                  "operation":"insert",
-                  "affectTo":"zipper",
-                  "applyOn":"zipper",
-                  "item":2
-               },
-               {
-                  "operation":"left",
-                  "affectTo":"tmp",
-                  "applyOn":"zipper"
-               },
-               {
                   "operation":"up",
                   "affectTo":"tmp",
                   "applyOn":"tmp"
@@ -282,8 +312,8 @@
          }
       },
       {
-         "description":"Tests that up moves do not mutate the initialZipper",
-         "property":"testUpNonMutating",
+         "description":"Moving up do not mutate initialZipper.",
+         "property":"up",
          "input":{
             "initialZipper":{
                "name":"zipper"
@@ -324,8 +354,8 @@
          }
       },
       {
-         "description":"Test seting value (modifying an existing node)",
-         "property":"testSetValue",
+         "description":"Seting value (modifying an existing node)",
+         "property":"setValue",
          "input":{
             "initialZipper":{
                "name":"zipper"
@@ -399,8 +429,8 @@
          }
       },
       {
-         "description":"Test that setValue do not mutate the initialZipper.",
-         "property":"testSetValueNonMutating",
+         "description":"Setting value do not mutate initialZipper.",
+         "property":"setValue",
          "input":{
             "initialZipper":{
                "name":"zipper"
@@ -431,8 +461,8 @@
          }
       },
       {
-         "description":"Tests the root shortcut.",
-         "property":"testRoot",
+         "description":"Going back to root shortcut.",
+         "property":"root",
          "input":{
             "initialZipper":{
                "name":"zipper"
@@ -484,8 +514,8 @@
          }
       },
       {
-         "description":"Tests the root shortcut.",
-         "property":"testRoot",
+         "description":"Going back to root shortcut.",
+         "property":"root",
          "input":{
             "initialZipper":{
                "name":"zipper"
@@ -521,7 +551,7 @@
                },
                {
                   "operation":"root",
-                  "affectTo":null,
+                  "affectTo": null,
                   "applyOn":"zipper"
                },
                {
@@ -534,6 +564,132 @@
          "expected":{
             "type":"int",
             "value":5
+         }
+      },
+      {
+         "description":"Inserting a zipper.",
+         "property":"insertZipper",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":1
+               },
+               {
+                  "operation":"right",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":3
+               },
+               {
+                  "operation":"left",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":5
+               },
+               {
+                  "operation":"createEmptyZipper",
+                  "affectTo": "newZipper"
+               },
+               {
+                  "operation":"insertZipper",
+                  "affectTo": "newZipper",
+                  "applyOn":"newZipper",
+                  "item":"zipper"
+               },
+               {
+                  "operation":"right",
+                  "affectTo": "newZipper",
+                  "applyOn":"newZipper"
+               },
+               {
+                  "operation":"value",
+                  "affectTo":"actual",
+                  "applyOn":"newZipper"
+               }
+            ]
+         },
+         "expected":{
+            "type":"int",
+            "value":3
+         }
+      },
+      {
+         "description":"Can't go left from empty location",
+         "property":"left",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"left",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper"
+               }
+            ]
+         },
+         "expected":{
+            "error":"Moving left is not allowed from this location."
+         }
+      },
+      {
+         "description":"Can't go right from empty location",
+         "property":"right",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"right",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper"
+               }
+            ]
+         },
+         "expected":{
+            "error":"Moving right is not allowed from this location."
+         }
+      },
+      {
+         "description":"Can't go top from root",
+         "property":"top",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":1
+               },
+               {
+                  "operation":"top",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper"
+               }
+            ]
+         },
+         "expected":{
+            "error":"There's nothing up here (current location is the root)."
          }
       }
    ]
