@@ -1,6 +1,6 @@
 {
   "exercise": "acronym",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "cases": [
     {
       "description": "Abbreviate a phrase",
@@ -52,6 +52,14 @@
             "phrase": "Rolling On The Floor Laughing So Hard That My Dogs Came Over And Licked Me"
           },
           "expected": "ROTFLSHTMDCOALM"
+        },
+        {
+          "description": "consecutive delimiters",
+          "property": "abbreviate",
+          "input": {
+            "phrase": "Something - I made up from thin air"
+          },
+          "expected": "SIMUFTA"
         }
       ]
     }
