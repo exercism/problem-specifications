@@ -1,6 +1,6 @@
 {
   "exercise": "phone-number",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "cases": [
     {
       "description": "Cleanup user-entered phone numbers",
