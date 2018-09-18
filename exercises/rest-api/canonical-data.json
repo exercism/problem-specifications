@@ -1,13 +1,14 @@
 {
     "exercise": "rest-api",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "comments": [
       "The state of the API database before the request is represented",
       "by the input->database object. Your track may determine how this",
       "initial state is set.",
       "The input->payload and expected objects should be marshalled as",
       "strings in track implementation, as parsing and validating text",
-      "payloads is an integral part of implementing a REST API."
+      "payloads is an integral part of implementing a REST API.",
+      "All arrays are ordered."
     ],
     "cases": [
         {
