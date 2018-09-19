@@ -1,0 +1,86 @@
+{
+    "exercise": "pythagorean-triplet",
+    "version": "1.0.0",
+    "cases": [
+        {
+            "description": "triplets whose sum is 12",
+            "property": "tripletsWithSum",
+            "input": {
+                "n": 12
+            },
+            "expected": [
+                [3, 4, 5]
+            ]
+        },
+        {
+            "description": "triplets whose sum is 108",
+            "property": "tripletsWithSum",
+            "input": {
+                "n": 108
+            },
+            "expected": [
+                [27, 36, 45]
+            ]
+        },
+        {
+            "description": "triplets whose sum is 1000",
+            "property": "tripletsWithSum",
+            "input": {
+                "n": 1000
+            },
+            "expected": [
+                [200, 375, 425]
+            ]
+        },
+        {
+            "description": "no matching triplets for 1001",
+            "property": "tripletsWithSum",
+            "input": {
+                "n": 1001
+            },
+            "expected": []
+        },
+        {
+            "description": "returns all matching triplets",
+            "property": "tripletsWithSum",
+            "input": {
+                "n": 90
+            },
+            "expected": [
+                [15, 36, 39],
+                [9, 40, 41]
+            ]
+        },
+        {
+            "description": "several matching triplets",
+            "property": "tripletsWithSum",
+            "input": {
+                "n": 840
+            },
+            "expected": [
+                [40, 399, 401],
+                [120, 350, 370],
+                [56, 390, 394],
+                [168, 315, 357],
+                [140, 336, 364],
+                [240, 252, 348],
+                [105, 360, 375],
+                [210, 280, 350]
+            ]
+        },
+        {
+            "description": "triplets for large number",
+            "property": "tripletsWithSum",
+            "input": {
+                "n": 30000
+            },
+            "expected": [
+                [1875, 14000, 14125],
+                [5000, 12000, 13000],
+                [1200, 14375, 14425],
+                [6000, 11250, 12750],
+                [7500, 10000, 12500]
+            ]
+        }
+    ]
+}
