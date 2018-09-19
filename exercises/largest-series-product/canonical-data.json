@@ -1,9 +1,8 @@
 {
   "exercise": "largest-series-product",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments": [
-    "A negative expected value means the input is invalid.",
-    "Different languages may handle this differently.",
+    "Different languages may handle errors differently.",
     "e.g. raise exceptions, return (int, error), return Option<int>, etc.",
     "Some languages specifically test the string->digits conversion",
     "and the 'slices of size N' operation.",
@@ -102,7 +101,7 @@
         "digits": "123",
         "span": 4
       },
-      "expected": -1
+      "expected": {"error": "span must be smaller than string length"}
     },
     {
       "comments": [
@@ -147,7 +146,7 @@
         "digits": "",
         "span": 1
       },
-      "expected": -1
+      "expected": {"error": "span must be smaller than string length"}
     },
     {
       "description": "rejects invalid character in digits",
@@ -156,7 +155,7 @@
         "digits": "1234a5",
         "span": 2
       },
-      "expected": -1
+      "expected": {"error": "digits input must only contain digits"}
     },
     {
       "description": "rejects negative span",
@@ -165,7 +164,7 @@
         "digits": "12345",
         "span": -1
       },
-      "expected": -1
+      "expected": {"error": "span must be greater than zero"}
     }
   ]
 }
