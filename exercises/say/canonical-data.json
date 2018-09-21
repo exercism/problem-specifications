@@ -1,6 +1,6 @@
 {
   "exercise": "say",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments": [
     "Here -1 is used as expected value to indicate that the",
     "input value is out of the range described in the exercise."
@@ -116,7 +116,7 @@
       "input": {
         "number": -1
       },
-      "expected": -1
+      "expected": {"error": "input out of range"}
     },
     {
       "description": "numbers above 999,999,999,999 are out of range",
@@ -124,7 +124,7 @@
       "input": {
         "number": 1000000000000
       },
-      "expected": -1
+      "expected": {"error": "input out of range"}
     }
   ]
 }
