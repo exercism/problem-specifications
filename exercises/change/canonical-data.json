@@ -1,6 +1,6 @@
 {
   "exercise": "change",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "comments": [
     "Given an infinite supply of coins with different values, ",
     "find the smallest number of coins needed to make a desired ",
@@ -88,7 +88,7 @@
         "coins": [5, 10],
         "target": 3
       },
-      "expected": -1
+      "expected": {"error": "can't make target with given coins"}
     },
     {
       "description": "error if no combination can add up to target",
@@ -97,7 +97,7 @@
         "coins": [5, 10],
         "target": 94
       },
-      "expected": -1
+      "expected": {"error": "can't make target with given coins"}
     },
     {
       "description": "cannot find negative change values",
@@ -106,7 +106,7 @@
         "coins": [1, 2, 5],
         "target": -5
       },
-      "expected": -1
+      "expected": {"error": "target can't be negative"}
     }
   ]
 }
