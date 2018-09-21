@@ -1,6 +1,6 @@
 {
   "exercise": "variable-length-quantity",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments": [
     "JSON doesn't allow hexadecimal literals.",
     "All numbers are given as decimal literals instead.",
@@ -205,7 +205,7 @@
           "input": {
             "integers": [255]
           },
-          "expected": null
+          "expected": {"error": "incomplete sequence"}
         },
         {
           "description": "incomplete sequence causes error, even if value is zero",
@@ -213,7 +213,7 @@
           "input": {
             "integers": [128]
           },
-          "expected": null
+          "expected": {"error": "incomplete sequence"}
         },
         {
           "description": "multiple values",
