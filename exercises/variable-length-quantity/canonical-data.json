@@ -4,6 +4,7 @@
   "comments": [
     "JSON doesn't allow hexadecimal literals.",
     "All numbers are given as decimal literals instead.",
+    "An error should be expected for incomplete sequences.",
     "It is highly recommended that your track's test generator display all numbers as hexadecimal literals."
   ],
   "cases": [
