@@ -6,7 +6,7 @@
       "description": "Cleanup user-entered phone numbers",
       "comments": [
         " Returns the cleaned phone number if given number is valid, "
-      , " else returns nil. Note that number is not formatted,       "
+      , " else returns error object. Note that number is not formatted,"
       , " just a 10-digit number is returned.                        "
       ],
       "cases": [
