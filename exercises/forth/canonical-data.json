@@ -4,7 +4,7 @@
   "comments": [
     "The cases are split into multiple sections, all with the same structure.",
     "In all cases, the `expected` key is the resulting stack",
-    "after executing the Forth program contained in the `input` key."
+    "after executing the Forth program contained in the `input` key, unless an 'error' exists."
   ],
   "cases": [
     {
