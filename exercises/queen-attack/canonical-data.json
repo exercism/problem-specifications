@@ -51,7 +51,7 @@
               }
             }
           },
-          "expected": {"error": "row not board"}
+          "expected": {"error": "row not on board"}
         },
         {
           "description": "queen must have positive column",
