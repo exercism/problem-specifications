@@ -1,9 +1,6 @@
 {
   "exercise": "ocr-numbers",
-  "version": "1.1.0",
-  "comments": [
-    "An expectation of  -1 indicates that a failure should be raised"
-  ],
+  "version": "1.2.0",
   "cases": [
     {
       "description": "Converts lines of OCR Numbers to a string of integers",
@@ -57,7 +54,7 @@
               "   "
             ]
           },
-          "expected": -1
+          "expected": {"error": "Number of input lines is not a multiple of four"}
         },
         {
           "description": "Input with a number of columns that is not a multiple of three raises an error",
@@ -70,7 +67,7 @@
               "    "
             ]
           },
-          "expected": -1
+          "expected": {"error": "Number of input columns is not a multiple of three"}
         },
         {
           "description": "Recognizes 110101100",
