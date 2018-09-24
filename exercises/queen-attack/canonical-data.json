@@ -1,9 +1,9 @@
 {
   "exercise": "queen-attack",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "comments": [
     "Testing invalid positions will vary by language. The expected",
-    "value of -1 is there to indicate some sort of failure should",
+    "value of 'error' is there to indicate some sort of failure should",
     "occur, while a 0 means no failure.",
     "Some languages implement tests beyond this set, such as checking",
     "for two pieces being placed on the same position, representing",
@@ -38,7 +38,7 @@
               }
             }
           },
-          "expected": -1
+          "expected": {"error": "row not positive"}
         },
         {
           "description": "queen must have row on board",
@@ -51,7 +51,7 @@
               }
             }
           },
-          "expected": -1
+          "expected": {"error": "row not on board"}
         },
         {
           "description": "queen must have positive column",
@@ -64,7 +64,7 @@
               }
             }
           },
-          "expected": -1
+          "expected": {"error": "column not positive"}
         },
         {
           "description": "queen must have column on board",
@@ -77,7 +77,7 @@
               }
             }
           },
-          "expected": -1
+          "expected": {"error": "column not on board"}
         }
       ]
     },

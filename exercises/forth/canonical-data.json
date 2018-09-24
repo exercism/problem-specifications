@@ -1,10 +1,10 @@
 {
   "exercise": "forth",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "comments": [
     "The cases are split into multiple sections, all with the same structure.",
     "In all cases, the `expected` key is the resulting stack",
-    "after executing the Forth program contained in the `input` key."
+    "after executing the Forth program contained in the `input` key, unless an 'error' exists."
   ],
   "cases": [
     {
@@ -37,7 +37,7 @@
           "input": {
             "instructions": ["+"]
           },
-          "expected": null
+          "expected": {"error": "empty stack"}
         },
         {
           "description": "errors if there is only one value on the stack",
@@ -45,7 +45,7 @@
           "input": {
             "instructions": ["1 +"]
           },
-          "expected": null
+          "expected": {"error": "only one value on stack"}
         }
       ]
     },
@@ -66,7 +66,7 @@
           "input": {
             "instructions": ["-"]
           },
-          "expected": null
+          "expected": {"error": "empty stack"}
         },
         {
           "description": "errors if there is only one value on the stack",
@@ -74,7 +74,7 @@
           "input": {
             "instructions": ["1 -"]
           },
-          "expected": null
+          "expected": {"error": "only one value on the stack"}
         }
       ]
     },
@@ -95,7 +95,7 @@
           "input": {
             "instructions": ["*"]
           },
-          "expected": null
+          "expected": {"error": "empty stack"}
         },
         {
           "description": "errors if there is only one value on the stack",
@@ -103,7 +103,7 @@
           "input": {
             "instructions": ["1 *"]
           },
-          "expected": null
+          "expected": {"error": "only one value on the stack"}
         }
       ]
     },
@@ -132,7 +132,7 @@
           "input": {
             "instructions": ["4 0 /"]
           },
-          "expected": null
+          "expected": {"error": "divide by zero"}
         },
         {
           "description": "errors if there is nothing on the stack",
@@ -140,7 +140,7 @@
           "input": {
             "instructions": ["/"]
           },
-          "expected": null
+          "expected": {"error": "empty stack"}
         },
         {
           "description": "errors if there is only one value on the stack",
@@ -148,7 +148,7 @@
           "input": {
             "instructions": ["1 /"]
           },
-          "expected": null
+          "expected": {"error": "only one value on the stack"}
         }
       ]
     },
@@ -198,7 +198,7 @@
           "input": {
             "instructions": ["dup"]
           },
-          "expected": null
+          "expected": {"error": "empty stack"}
         }
       ]
     },
@@ -227,7 +227,7 @@
           "input": {
             "instructions": ["drop"]
           },
-          "expected": null
+          "expected": {"error": "empty stack"}
         }
       ]
     },
@@ -256,7 +256,7 @@
           "input": {
             "instructions": ["swap"]
           },
-          "expected": null
+          "expected": {"error": "empty stack"}
         },
         {
           "description": "errors if there is only one value on the stack",
@@ -264,7 +264,7 @@
           "input": {
             "instructions": ["1 swap"]
           },
-          "expected": null
+          "expected": {"error": "only one value on the stack"}
         }
       ]
     },
@@ -293,7 +293,7 @@
           "input": {
             "instructions": ["over"]
           },
-          "expected": null
+          "expected": {"error": "empty stack"}
         },
         {
           "description": "errors if there is only one value on the stack",
@@ -301,7 +301,7 @@
           "input": {
             "instructions": ["1 over"]
           },
-          "expected": null
+          "expected": {"error": "only one value on the stack stack"}
         }
       ]
     },
@@ -395,7 +395,7 @@
           "input": {
             "instructions": [": 1 2 ;"]
           },
-          "expected": null
+          "expected": {"error": "illegal operation"}
         },
         {
           "description": "errors if executing a non-existent word",
@@ -403,7 +403,7 @@
           "input": {
             "instructions": ["foo"]
           },
-          "expected": null
+          "expected": {"error": "undefined operation"}
         }
       ]
     },
