@@ -134,6 +134,14 @@
           },
           "expected": { "error": "Bad key" }
         },
+         {
+          "description": "Throws an error with a non-alphanumeric key",
+          "property": "new",
+          "input": {
+            "key": "!@#$%"
+          },
+          "expected": { "error": "Bad key" }
+        },
         {
           "description": "Throws an error with empty key",
           "property": "new",
