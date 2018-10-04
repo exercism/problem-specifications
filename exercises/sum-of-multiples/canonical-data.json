@@ -39,6 +39,15 @@
       "expected": 23
     },
     {
+      "description": "multiples of 3 or 5 up to 20",
+      "property": "sum",
+      "input": {
+        "factors": [3, 5],
+        "limit": 10
+      },
+      "expected": 78
+    },
+    {
       "description": "multiples of 3 or 5 up to 100",
       "property": "sum",
       "input": {
