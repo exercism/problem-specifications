@@ -1,6 +1,6 @@
 {
   "exercise": "anagram",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "cases": [
     {
       "description": "no matches",
@@ -109,11 +109,11 @@
       "expected": []
     },
     {
-      "description": "capital word is not own anagram",
+      "description": "words are not anagrams of themselves (case-insensitive)",
       "property": "findAnagrams",
       "input": {
         "subject": "BANANA",
-        "candidates": ["Banana"]
+        "candidates": ["BANANA", "Banana", "banana"]
       },
       "expected": []
     }
