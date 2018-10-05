@@ -1,6 +1,6 @@
 {
   "exercise": "triangle",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments": [
     " Pursuant to discussion in #202, we have decided NOT to test triangles ",
     " where all side lengths are positive but a + b = c. e.g:               ",
@@ -111,10 +111,26 @@
           "expected": false
         },
         {
-          "description": "Sides that violate triangle inequality are not isosceles, even if two are equal",
+          "description": "Sides that violate triangle inequality are not isosceles, even if two are equal (1)",
           "property": "isosceles",
           "input": {
             "sides": [1, 1, 3]
+          },
+          "expected": false
+        },
+        {
+          "description": "Sides that violate triangle inequality are not isosceles, even if two are equal (2)",
+          "property": "isosceles",
+          "input": {
+            "sides": [1, 3, 1]
+          },
+          "expected": false
+        },
+        {
+          "description": "Sides that violate triangle inequality are not isosceles, even if two are equal (3)",
+          "property": "isosceles",
+          "input": {
+            "sides": [3, 1, 1]
           },
           "expected": false
         },
