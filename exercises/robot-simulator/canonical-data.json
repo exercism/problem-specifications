@@ -1,6 +1,6 @@
 {
   "exercise": "robot-simulator",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "comments": [
     "Some tests have two expectations: one for the position, one for the direction",
     "Optionally, you can also test",
@@ -297,7 +297,7 @@
       "description": "Where R = Turn Right, L = Turn Left and A = Advance, the robot can follow a series of instructions and end up with the correct position and direction",
       "cases": [
         {
-          "description": "instructions to move east and north",
+          "description": "instructions to move east and north from README",
           "property": "move",
           "input": {
             "position": {
