@@ -1,6 +1,6 @@
 {
     "exercise": "rest-api",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "comments": [
       "The state of the API database before the request is represented",
       "by the input->database object. Your track may determine how this",
@@ -190,7 +190,7 @@
                                     "Chuck": 3.0
                                 },
                                 "owed_by": {},
-                                "balance": -6
+                                "balance": -6.0
                             }
                         ]
                     }
