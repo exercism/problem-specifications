@@ -10,7 +10,7 @@ We read DNA using the letters C,A,G and T. Two strands might look like this:
     CATCGTAATGACGGCCT
     ^ ^ ^  ^ ^    ^^
 
-The have 7 differences, and therefore the Hamming Difference is 7.
+They have 7 differences, and therefore the Hamming Difference is 7.
 
 The Hamming Difference is useful for lots of things in science, not just biology, so it's a nice phrase to be familiar with :)
 
