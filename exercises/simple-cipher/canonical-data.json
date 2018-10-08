@@ -127,6 +127,14 @@
           "expected": { "error": "Bad key" }
         },
         {
+          "description": "Throws an error with a mixed-case key",
+          "property": "new",
+          "input": {
+            "key": "ABcdEF"
+          },
+          "expected": { "error": "Bad key" }
+        },
+        {
           "description": "Throws an error with a numeric key",
           "property": "new",
           "input": {
