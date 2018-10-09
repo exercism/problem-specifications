@@ -1,6 +1,6 @@
 {
   "exercise": "phone-number",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "cases": [
     {
       "description": "Cleanup user-entered phone numbers",
@@ -112,7 +112,7 @@
           "input": {
             "phrase": "(223) 056-7890"
           },
-          "expected": {"error": "exchange cannot start with zero"}
+          "expected": {"error": "exchange code cannot start with zero"}
         },
         {
           "description": "invalid if exchange code starts with 1",
@@ -120,7 +120,7 @@
           "input": {
             "phrase": "(223) 156-7890"
           },
-          "expected": {"error": "exchange cannot start with one"}
+          "expected": {"error": "exchange code cannot start with one"}
         },
         {
           "description": "invalid if area code starts with 0 on valid 11-digit number",
