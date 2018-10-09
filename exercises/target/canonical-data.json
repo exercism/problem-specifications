@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "cases": [
     {
-      "description": "Retun the correct amount earnt by a dart landing in a given point in the target problem.",
+      "description": "Return the correct amount earned by a dart landing in a given point in the target problem.",
       "cases": [
         {
          "property": "result",
-         "description": "A dart lands outside the targetOnly a single book",
+         "description": "A dart lands outside the target",
          "input": {
-           "x":15.3,
-           "y":13.2
+           "x": 15.3,
+           "y": 13.2
          },
          "expected": 0
         },
@@ -18,7 +18,7 @@
          "property": "result",
          "description": "A dart lands just in the border of the target",
          "input": {
-           "x":10,
+           "x": 10,
            "y": 0
          },
          "expected": 1
@@ -27,8 +27,8 @@
          "property": "result",
          "description": "Input is not a number",
          "input": {
-           "x":"WRONG",
-           "y":10
+           "x": "WRONG",
+           "y": 10
          },
          "expected": null
         },
@@ -36,8 +36,8 @@
          "property": "result",
          "description": "A dart lands in the middle circle",
          "input": {
-           "x":3,
-           "y":3.7
+           "x": 3,
+           "y": 3.7
          },
          "expected": 5
         },
@@ -45,8 +45,8 @@
          "property": "result",
          "description": "A dart lands right in the border between outside and middle circles",
          "input": {
-           "x":0,
-           "y":5
+           "x": 0,
+           "y": 5
          },
          "expected": 5
         },
@@ -54,8 +54,8 @@
          "property": "result",
          "description": "A dart arrives in the inner circle",
          "input": {
-           "x":0,
-           "y":0
+           "x": 0,
+           "y": 0
          },
          "expected": 10
         }
