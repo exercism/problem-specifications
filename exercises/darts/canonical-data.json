@@ -6,7 +6,7 @@
       "description": "Return the correct amount earned by a dart landing in a given point in the target problem.",
       "cases": [
         {
-         "property": "result",
+         "property": "score",
          "description": "A dart lands outside the target",
          "input": {
            "x": 15.3,
@@ -15,7 +15,7 @@
          "expected": 0
         },
         {
-         "property": "result",
+         "property": "score",
          "description": "A dart lands just in the border of the target",
          "input": {
            "x": 10,
@@ -24,16 +24,16 @@
          "expected": 1
         },
         {
-         "property": "result",
+         "property": "score",
          "description": "Input is not a number",
          "input": {
            "x": "WRONG",
            "y": 10
          },
-         "expected": null
+         "expected": {"error": "Every input should be a number"}
         },
         {
-         "property": "result",
+         "property": "score",
          "description": "A dart lands in the middle circle",
          "input": {
            "x": 3,
@@ -42,7 +42,7 @@
          "expected": 5
         },
         {
-         "property": "result",
+         "property": "score",
          "description": "A dart lands right in the border between outside and middle circles",
          "input": {
            "x": 0,
@@ -51,7 +51,7 @@
          "expected": 5
         },
         {
-         "property": "result",
+         "property": "score",
          "description": "A dart arrives in the inner circle",
          "input": {
            "x": 0,
