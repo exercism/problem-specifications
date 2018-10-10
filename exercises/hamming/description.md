@@ -1,4 +1,4 @@
-Calculate the Hamming difference between two DNA strands.
+Calculate the Hamming Distance between two DNA strands.
 
 Your body is made up of cells that contain DNA. Those cells regularly wear out and need replacing, which they achieve by dividing into daughter cells. In fact, the average human body experiences about 10 quadrillion cell divisions in a lifetime!
 
@@ -10,9 +10,9 @@ We read DNA using the letters C,A,G and T. Two strands might look like this:
     CATCGTAATGACGGCCT
     ^ ^ ^  ^ ^    ^^
 
-They have 7 differences, and therefore the Hamming Difference is 7.
+They have 7 differences, and therefore the Hamming Distance is 7.
 
-The Hamming Difference is useful for lots of things in science, not just biology, so it's a nice phrase to be familiar with :)
+The Hamming Distance is useful for lots of things in science, not just biology, so it's a nice phrase to be familiar with :)
 
 # Implementation notes
 
