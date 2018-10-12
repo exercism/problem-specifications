@@ -11,7 +11,7 @@
       "cases": [
         {
           "description": "Chromatic scale with sharps",
-          "property": "pitches",
+          "property": "chromatic",
           "input": {
             "tonic": "C"
           },
@@ -19,7 +19,7 @@
         },
         {
           "description": "Chromatic scale with flats",
-          "property": "pitches",
+          "property": "chromatic",
           "input": {
             "tonic": "F"
           },
@@ -39,7 +39,7 @@
           "comments": [
             "The simplest major scale, with no sharps or flats."
           ],
-          "property": "pitches",
+          "property": "interval",
           "input": {
             "tonic": "C",
             "intervals": "MMmMMMm"
@@ -48,7 +48,7 @@
         },
         {
           "description": "Major scale with sharps",
-          "property": "pitches",
+          "property": "interval",
           "input": {
             "tonic": "G",
             "intervals": "MMmMMMm"
@@ -57,7 +57,7 @@
         },
         {
           "description": "Major scale with flats",
-          "property": "pitches",
+          "property": "interval",
           "input": {
             "tonic": "F",
             "intervals": "MMmMMMm"
@@ -66,7 +66,7 @@
         },
         {
           "description": "Minor scale with sharps",
-          "property": "pitches",
+          "property": "interval",
           "input": {
             "tonic": "f#",
             "intervals": "MmMMmMM"
@@ -75,7 +75,7 @@
         },
         {
           "description": "Minor scale with flats",
-          "property": "pitches",
+          "property": "interval",
           "input": {
             "tonic": "bb",
             "intervals": "MmMMmMM"
@@ -84,7 +84,7 @@
         },
         {
           "description": "Dorian mode",
-          "property": "pitches",
+          "property": "interval",
           "input": {
             "tonic": "d",
             "intervals": "MmMMMmM"
@@ -93,7 +93,7 @@
         },
         {
           "description": "Mixolydian mode",
-          "property": "pitches",
+          "property": "interval",
           "input": {
             "tonic": "Eb",
             "intervals": "MMmMMmM"
@@ -102,7 +102,7 @@
         },
         {
           "description": "Lydian mode",
-          "property": "pitches",
+          "property": "interval",
           "input": {
             "tonic": "a",
             "intervals": "MMMmMMm"
@@ -111,7 +111,7 @@
         },
         {
           "description": "Phrygian mode",
-          "property": "pitches",
+          "property": "interval",
           "input": {
             "tonic": "e",
             "intervals": "mMMMmMM"
@@ -120,7 +120,7 @@
         },
         {
           "description": "Locrian mode",
-          "property": "pitches",
+          "property": "interval",
           "input": {
             "tonic": "g",
             "intervals": "mMMmMMM"
@@ -132,7 +132,7 @@
             "Note that this case introduces the accidental interval (A)"
           ],
           "description": "Harmonic minor",
-          "property": "pitches",
+          "property": "interval",
           "input": {
             "tonic": "d",
             "intervals": "MmMMmAm"
@@ -141,7 +141,7 @@
         },
         {
           "description": "Octatonic",
-          "property": "pitches",
+          "property": "interval",
           "input": {
             "tonic": "C",
             "intervals": "MmMmMmMm"
@@ -150,7 +150,7 @@
         },
         {
           "description": "Hexatonic",
-          "property": "pitches",
+          "property": "interval",
           "input": {
             "tonic": "Db",
             "intervals": "MMMMMM"
@@ -159,7 +159,7 @@
         },
         {
           "description": "Pentatonic",
-          "property": "pitches",
+          "property": "interval",
           "input": {
             "tonic": "A",
             "intervals": "MMAMA"
@@ -168,7 +168,7 @@
         },
         {
           "description": "Enigmatic",
-          "property": "pitches",
+          "property": "interval",
           "input": {
             "tonic": "G",
             "intervals": "mAMMMmm"
