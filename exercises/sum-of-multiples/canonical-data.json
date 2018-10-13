@@ -1,6 +1,6 @@
 {
   "exercise": "sum-of-multiples",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "cases": [
     {
       "description": "multiples of 3 or 5 up to 1",
@@ -118,6 +118,24 @@
         "limit": 10000
       },
       "expected": 0
+    },
+    {
+      "description": "the only multiple of 0 is 0",
+      "property": "sum",
+      "input": {
+        "factors": [0],
+        "limit": 1
+      },
+      "expected": 0
+    },
+    {
+      "description": "multiples of 5 primes up to 100",
+      "property": "sum",
+      "input": {
+        "factors": [2, 3, 5, 7, 11],
+        "limit": 100
+      },
+      "expected": 3917
     }
   ]
 }
