@@ -129,7 +129,7 @@
       "expected": 0
     },
     {
-      "description": "multiples of 5 primes up to 100",
+      "description": "solutions using include-exclude must extend to cardinality greater than 3",
       "property": "sum",
       "input": {
         "factors": [2, 3, 5, 7, 11],
