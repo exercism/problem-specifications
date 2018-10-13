@@ -133,9 +133,9 @@
       "property": "sum",
       "input": {
         "factors": [2, 3, 5, 7, 11],
-        "limit": 100
+        "limit": 10000
       },
-      "expected": 3917
+      "expected": 39614537
     }
   ]
 }
