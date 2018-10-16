@@ -43,7 +43,7 @@
         },
         {
          "property": "score",
-         "description": "A dart arrives in the inner circle",
+         "description": "A dart lands in the inner circle",
          "input": {
            "x": 0,
            "y": 0
