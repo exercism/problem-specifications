@@ -25,15 +25,6 @@
         },
         {
          "property": "score",
-         "description": "Input is not a number",
-         "input": {
-           "x": "WRONG",
-           "y": 10
-         },
-         "expected": {"error": "Every input should be a number"}
-        },
-        {
-         "property": "score",
          "description": "A dart lands in the middle circle",
          "input": {
            "x": 3,
