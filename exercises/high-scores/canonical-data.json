@@ -1,0 +1,107 @@
+{
+  "exercise": "high-scores",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "description": "List of scores",
+      "property": "scores",
+      "input": {
+        "scores": [30, 50, 20, 70]
+      },
+      "expected": [30, 50, 20, 70]
+    },
+    {
+      "description": "Latest score",
+      "property": "latest",
+      "input": {
+        "scores": [100, 0, 90, 30]
+      },
+      "expected": 30
+    },
+    {
+      "description": "Highest score",
+      "property": "highest",
+      "input": {
+        "scores": [40, 100, 70]
+      },
+      "expected": 100
+    },
+    {
+      "description": "Top 3 scores",
+      "cases": [
+        {
+          "description": "Personal bests",
+          "property": "top",
+          "input": {
+            "scores": [50, 30, 10]
+          },
+          "expected": [50, 30, 10]
+        },
+        {
+          "description": "Personal bests highest to lowest",
+          "property": "top",
+          "input": {
+            "scores": [20, 10, 30]
+          },
+          "expected": [30, 20, 10]
+        },
+        {
+          "description": "Personal bests when there is a tie",
+          "property": "top",
+          "input": {
+            "scores": [40, 20, 40, 30]
+          },
+          "expected": [40, 40, 30]
+        },
+        {
+          "description": "Personal bests when there are less than 3",
+          "property": "top",
+          "input": {
+            "scores": [30, 70]
+          },
+          "expected": [70, 30]
+        },
+        {
+          "description": "Personal bests when there is only one",
+          "property": "top",
+          "input": {
+            "scores": [40]
+          },
+          "expected": [40]
+        },
+        {
+          "description": "Personal bests from a long list",
+          "property": "top",
+          "input": {
+            "scores": [10, 30, 90, 30, 100, 20, 10, 0, 30, 40, 40, 70, 70]
+          },
+          "expected": [100, 90, 70]
+        }
+      ]
+    },
+    {
+      "description": "Message for new personal best",
+      "property": "report",
+      "input": {
+        "scores": [20, 40, 0, 30, 70]
+      },
+      "expected": "Your latest score was 70. That's your personal best!"
+    },
+    {
+      "description": "Message when latest score is not the highest score",
+      "property": "report",
+      "input": {
+        "scores": [20, 100, 0, 30, 70]
+      },
+      "expected": "Your latest score was 70. That's 30 short of your personal best!"
+    },
+    {
+      "description": "Message for repeated personal best",
+      "property": "report",
+      "input": {
+        "scores": [20, 70, 50, 70, 30]
+      },
+      "expected": "Your latest score was 30. That's 40 short of your personal best!"
+    }
+  ]
+}
