@@ -60,6 +60,14 @@
             "phrase": "Something - I made up from thin air"
           },
           "expected": "SIMUFTA"
+        },
+        {
+          "description": "apostrophes",
+          "property": "abbreviate",
+          "input": {
+            "phrase": "Haley's Comet"
+          },
+          "expected": "HC"
         }
       ]
     }
