@@ -1,6 +1,6 @@
 {
   "exercise": "simple-cipher",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments":
     ["Some of the strings used in this file are symbolic and do not represent their literal value. They are:",
       "cipher.key - Represents the Cipher key",
@@ -112,35 +112,6 @@
             "plaintext": "iamapandabear"
           },
           "expected": "iboaqcnecbfcr"
-        }
-      ]
-    },
-    {
-      "description": "Incorrect key cipher",
-      "cases": [
-        {
-          "description": "Throws an error with an all uppercase key",
-          "property": "new",
-          "input": {
-            "key": "ABCDEF"
-          },
-          "expected": { "error": "Bad key" }
-        },
-        {
-          "description": "Throws an error with a numeric key",
-          "property": "new",
-          "input": {
-            "key": "12345"
-          },
-          "expected": { "error": "Bad key" }
-        },
-        {
-          "description": "Throws an error with empty key",
-          "property": "new",
-          "input": {
-            "key": ""
-          },
-          "expected": { "error": "Bad key" }
         }
       ]
     }
