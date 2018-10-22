@@ -64,7 +64,7 @@ email Katrina at kytrinyx@exercism.io.
 ## Code of Conduct
 
 Help us keep Exercism welcoming. Please read and abide by the
-[Code of Conduct](https://github.com/exercism/exercism.io/blob/master/CODE_OF_CONDUCT.md).
+[Code of Conduct](https://github.com/exercism/website-copy/blob/master/pages/code_of_conduct.md).
 
 ## Overview
 
