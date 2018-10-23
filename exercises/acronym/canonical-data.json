@@ -1,6 +1,6 @@
 {
   "exercise": "acronym",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "cases": [
     {
       "description": "Abbreviate a phrase",
@@ -60,6 +60,14 @@
             "phrase": "Something - I made up from thin air"
           },
           "expected": "SIMUFTA"
+        },
+        {
+          "description": "apostrophes",
+          "property": "abbreviate",
+          "input": {
+            "phrase": "Haley's Comet"
+          },
+          "expected": "HC"
         }
       ]
     }
