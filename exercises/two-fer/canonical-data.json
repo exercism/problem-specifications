@@ -1,12 +1,20 @@
 {
   "exercise": "two-fer",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "cases": [
     {
       "description": "no name given",
       "property": "twoFer",
       "input": {
         "name": null
+      },
+      "expected": "One for you, one for me."
+    },
+    {
+      "description": "blank name given",
+      "property": "twoFer",
+      "input": {
+        "name": ""
       },
       "expected": "One for you, one for me."
     },
