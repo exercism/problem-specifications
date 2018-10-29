@@ -65,7 +65,7 @@
           "description": "apostrophes",
           "property": "abbreviate",
           "input": {
-            "phrase": "Haley's Comet"
+            "phrase": "Halley's Comet"
           },
           "expected": "HC"
         }
