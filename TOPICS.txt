@@ -55,7 +55,7 @@ filtering
 games
 globalization
 logic
-mathematics
+math
 memory_management
 networking
 parallelism
