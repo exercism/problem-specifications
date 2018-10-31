@@ -19,8 +19,8 @@
       "expected": 30
     },
     {
-      "description": "Highest score",
-      "property": "highest",
+      "description": "Personal best",
+      "property": "personalBest",
       "input": {
         "scores": [40, 100, 70]
       },
