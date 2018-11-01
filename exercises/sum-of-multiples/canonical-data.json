@@ -1,6 +1,6 @@
 {
   "exercise": "sum-of-multiples",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "cases": [
     {
       "description": "no multiples within limit",
@@ -127,6 +127,15 @@
         "limit": 1
       },
       "expected": 0
+    },
+    {
+      "description": "the factor 0 does not affect the sum of multiples of other factors",
+      "property": "sum",
+      "input": {
+        "factors": [3, 0],
+        "limit": 4
+      },
+      "expected": 3
     },
     {
       "description": "solutions using include-exclude must extend to cardinality greater than 3",
