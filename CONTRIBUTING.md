@@ -235,7 +235,7 @@ A problem must have a unique slug. This slug is used as
 * Do the same as when [porting an
   exercise](#porting-an-exercise-to-another-language-track).
   Reference the PR in problem-specifications if it hasn't been merged yet,
-  this **must not** be merged until the exercism/problem-specifications PR is merged.
+  this **must not** be merged until the exercism/problem-specifications PR is merged. (That's to prevent problems when regenerating all the test. If you do merge the track PR before the problem-specifications PR is merged, make sure to regenerate the tests for the track once again.)  
 
 ## Track Anatomy
 
