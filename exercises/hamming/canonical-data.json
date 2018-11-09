@@ -1,17 +1,14 @@
 {
 "exercise": "hamming",
-"version": "2.1.0",
+"version": "2.1.1",
   "comments": [
     "Language implementations vary on the issue of unequal length strands.",
     "A language may elect to simplify this task by only presenting equal",
     "length test cases.  For languages handling unequal length strands as",
     "error condition, unequal length test cases are included here and are",
-    "indicated with an expected value of -1.  Note however that -1 is",
-    "simply an indication here in the JSON.  Actually returning -1 from",
-    "a hamming distance function may or may not be idiomatic in a language.",
-    "Language idioms of errors or exceptions should be followed.",
-    "Alternative interpretations such as ignoring excess length at the end",
-    "are not represented here."
+    "indicated with an error object.  Language idioms of errors or exceptions",
+    "should be followed.  Alternative interpretations such as ignoring excess",
+    "length at the end are not represented here."
   ],
   "cases": [
     {
