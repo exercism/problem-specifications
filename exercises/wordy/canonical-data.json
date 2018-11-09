@@ -1,12 +1,20 @@
 {
   "exercise": "wordy",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "comments": [
     "The tests that expect an 'error' should be implemented to raise",
     "an error, or indicate a failure. Implement this in a way that",
     "makes sense for your language."
   ],
   "cases": [
+    {
+      "description": "just a number",
+      "property": "answer",
+      "input": {
+        "question": "What is 5?"
+      },
+      "expected": 5
+    },
     {
       "description": "addition",
       "property": "answer",
