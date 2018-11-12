@@ -3,7 +3,7 @@
   "comments": [
     "An isogram is a word or phrase without a repeating letter."
   ],
-  "version": "1.6.0",
+  "version": "1.7.0",
   "cases": [
     {
       "description": "Check if the given string is an isogram",
@@ -74,6 +74,14 @@
             "phrase": "thumbscrew-japingly"
           },
           "expected": true
+        },
+        {
+          "description": "hypothetical word with duplicated character following hyphen",
+          "property": "isIsogram",
+          "input": {
+            "phrase": "thumbscrew-jappingly"
+          },
+          "expected": false
         },
         {
           "description": "isogram with duplicated hyphen",
