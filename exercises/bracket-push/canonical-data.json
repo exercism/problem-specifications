@@ -1,6 +1,6 @@
 {
   "exercise": "bracket-push",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "cases": [
     {
       "description": "paired square brackets",
@@ -114,6 +114,14 @@
       },
       "expected": false
     },
+    {
+      "description": "too many closing brackets",
+      "property": "isPaired",
+      "input": {
+        "value": "[]]"
+      },
+      "expected": false
+    },    
     {
       "description": "math expression",
       "property": "isPaired",
