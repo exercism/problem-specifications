@@ -1,6 +1,14 @@
 {
   "exercise": "high-scores",
   "version": "2.0.0",
+  "comments": [
+    "This is meant to be an easy exercise to practise: ",
+    "* arrays as simple lists",
+    "* instantiating a class",
+    "Consider adding a track specific recommendation in the track's hint.md.",
+    "Consider linking to a explanatory blogpost or beginner level tutorials for both topics.",
+    "See Ruby Track hint.md for an example."
+  ],
   "cases": [
     {
       "description": "List of scores",
