@@ -1,0 +1,176 @@
+{
+  "exercise": "dnd-character",
+  "version": "1.0.0",
+  "comments": [
+    "The random generator 'ability' can be property-tested.",
+    "The pure function 'modifier' can be tested totally.",
+    "The random generator 'character' should return some",
+    "kind of structure with six random abilities and a",
+    "hitpoint score. This structure can be property-tested",
+    "in the same way as 'ability' and 'modifier'.",
+    "",
+    "It may be fun to provide a 'name' property for characters",
+    "that may or may not be randomly generated but not tested.",
+    "",
+    "Many programming languages feature property-based test",
+    "frameworks. For a language-agnostic introduction to",
+    "property-based testing, see:",
+    "",
+    "https://hypothesis.works/articles/what-is-property-based-testing/"
+  ],
+  "cases": [
+    {
+      "description": "ability modifier",
+      "cases": [
+        {
+          "description": "ability modifier for score 3 is -4",
+          "property": "modifier",
+          "input": {
+            "score": 3
+          },
+          "expected": -4
+        },
+        {
+          "description": "ability modifier for score 4 is -3",
+          "property": "modifier",
+          "input": {
+            "score": 4
+          },
+          "expected": -3
+        },
+        {
+          "description": "ability modifier for score 5 is -3",
+          "property": "modifier",
+          "input": {
+            "score": 5
+          },
+          "expected": -3
+        },
+        {
+          "description": "ability modifier for score 6 is -2",
+          "property": "modifier",
+          "input": {
+            "score": 6
+          },
+          "expected": -2
+        },
+        {
+          "description": "ability modifier for score 7 is -2",
+          "property": "modifier",
+          "input": {
+            "score": 7
+          },
+          "expected": -2
+        },
+        {
+          "description": "ability modifier for score 8 is -1",
+          "property": "modifier",
+          "input": {
+            "score": 8
+          },
+          "expected": -1
+        },
+        {
+          "description": "ability modifier for score 9 is -1",
+          "property": "modifier",
+          "input": {
+            "score": 9
+          },
+          "expected": -1
+        },
+        {
+          "description": "ability modifier for score 10 is 0",
+          "property": "modifier",
+          "input": {
+            "score": 10
+          },
+          "expected": 0
+        },
+        {
+          "description": "ability modifier for score 11 is 0",
+          "property": "modifier",
+          "input": {
+            "score": 11
+          },
+          "expected": 0
+        },
+        {
+          "description": "ability modifier for score 12 is +1",
+          "property": "modifier",
+          "input": {
+            "score": 12
+          },
+          "expected": 1
+        },
+        {
+          "description": "ability modifier for score 13 is +1",
+          "property": "modifier",
+          "input": {
+            "score": 13
+          },
+          "expected": 1
+        },
+        {
+          "description": "ability modifier for score 14 is +2",
+          "property": "modifier",
+          "input": {
+            "score": 14
+          },
+          "expected": 2
+        },
+        {
+          "description": "ability modifier for score 15 is +2",
+          "property": "modifier",
+          "input": {
+            "score": 15
+          },
+          "expected": 2
+        },
+        {
+          "description": "ability modifier for score 16 is +3",
+          "property": "modifier",
+          "input": {
+            "score": 16
+          },
+          "expected": 3
+        },
+        {
+          "description": "ability modifier for score 17 is +3",
+          "property": "modifier",
+          "input": {
+            "score": 17
+          },
+          "expected": 3
+        },
+        {
+          "description": "ability modifier for score 18 is +4",
+          "property": "modifier",
+          "input": {
+            "score": 18
+          },
+          "expected": 4
+        }
+      ]
+    },
+    {
+      "description": "random ability is within range",
+      "property": "ability",
+      "input": {},
+      "expected": "score >= 3 && score <= 18"
+    },
+    {
+      "description": "random character is valid",
+      "property": "character",
+      "input": {},
+      "expected": {
+        "strength": "strength >= 3 && strength <= 18",
+        "dexterity": "dexterity >= 3 && dexterity <= 18",
+        "constitution": "constitution >= 3 && constitution <= 18",
+        "intelligence": "intelligence >= 3 && intelligence <= 18",
+        "wisdom": "wisdom >= 3 && wisdom <= 18",
+        "charisma": "charisma >= 3 && charisma <= 18",
+        "hitpoints": "hitpoints == 10 + modifier(constitution)"
+      }
+    }
+  ]
+}
