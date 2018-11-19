@@ -1,4 +1,4 @@
-Given a `start` value, write a function that returns what the date will
-be after 10^9 seconds have elapsed.
+Given a moment, determine the moment that would be after a gigasecond
+(10^9 seconds) has passed.
 
 A gigasecond is 10^9 (1,000,000,000) seconds.
