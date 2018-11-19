@@ -1,6 +1,6 @@
 {
   "exercise": "clock",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "comments": [
     "Most languages require constructing a clock with initial values,",
     "adding or subtracting some number of minutes, and testing equality",
@@ -163,6 +163,15 @@
             "minute": -4820
           },
           "expected": "16:40"
+        },
+        {
+          "description": "negative sixty minutes is previous hour",
+          "property": "create",
+          "input": {
+            "hour": 2,
+            "minute": -60
+          },
+          "expected": "01:00"
         },
         {
           "description": "negative hour and minutes both roll over",
