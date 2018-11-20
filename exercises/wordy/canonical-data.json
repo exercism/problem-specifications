@@ -1,6 +1,6 @@
 {
   "exercise": "wordy",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "comments": [
     "The tests that expect an 'error' should be implemented to raise",
     "an error, or indicate a failure. Implement this in a way that",
@@ -144,7 +144,7 @@
       "expected": {"error": "unknown operation"}
     },
     {
-      "description": "reject incomplete problem",
+      "description": "reject problem missing an operand",
       "property": "answer",
       "input": {
         "question": "What is 1 plus?"
