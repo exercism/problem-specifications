@@ -234,8 +234,11 @@ A problem must have a unique slug. This slug is used as
 
 * Do the same as when [porting an
   exercise](#porting-an-exercise-to-another-language-track).
-  Reference the PR in problem-specifications if it hasn't been merged yet,
-  this **must not** be merged until the exercism/problem-specifications PR is merged.
+  Reference the PR in problem-specifications.
+  It's suggested, but not required, to wait until the problem-specifications PR is merged before merging the track-specific PR, for the following reasons:
+    * If changes are suggested to the problem-specifications PR, it is likely that they will be applicable to the track-specific PR as well.
+    * Only applicable if the exercise needs a custom `title` in metadata.yml (as described in https://github.com/exercism/docs/blob/master/you-can-help/make-up-new-exercises.md#problem-specification): The title of the exercise as displayed on the website will use the default algorithm instead of the correct title until the problem-specifications PR is merged.
+    * Only applicable to tracks that have specific tools that depend on exercises being present in problem-specifications (see the track-specific documentation for whether any such tools exist): Such tools may operate unexpectedly if the exercise does not yet exist in problem-specifications. Try checking out the branch on a local copy of problem-specifications or rerunning the tool after the problem-specifications PR is merged if applicable.
 
 ## Track Anatomy
 
