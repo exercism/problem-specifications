@@ -171,6 +171,12 @@ There are examples of changes requiring a PATCH version change:
 
 PATCH changes would never break well-designed test generators, because the test data remains exactly the same.
 
+## New Exercises Require a Glyph
+
+When creating a new exercise the design team needs to be informed so that a new glyph can be created.
+- An issue should be opened in [exercism/website-icons](https://github.com/exercism/website-icons/issues) after a PR has been opened in problem-specifications.
+- This issue should reference the PR in problem-specifications.
+
 ## Automated Tests
 
 `canonical-data.json` for each exercise is checked for compliance against the [canonical-schema.json](canonical-schema.json).
