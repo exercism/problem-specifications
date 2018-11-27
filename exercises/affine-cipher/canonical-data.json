@@ -2,6 +2,7 @@
   "exercise": "affine-cipher",
   "version": "2.0.0",
   "comments": [
+    "Changed this file but forgot to change the version.",
     "The test are divided into two groups: ",
     "* Encoding from English to affine cipher",
     "* Decoding from affine cipher to all-lowercase-mashed-together English"
