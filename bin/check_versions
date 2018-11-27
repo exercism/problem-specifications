@@ -1,0 +1,20 @@
+#!/bin/sh
+
+need_version=0
+
+for json_file in $(git diff --name-only master HEAD | grep '^exercises/.*\.json$'); do
+  old_version=$(git show master:$json_file | jq .version)
+  new_version=$(jq .version $json_file)
+
+  if [ "$old_version" = "$new_version" ]; then
+    echo "ERR This PR changed $json_file, so you should change the version as well."
+    need_version=1
+  else
+    echo "OK  This PR changed $json_file and changed the version."
+  fi
+done
+
+if [ $need_version -ne 0 ]; then
+  echo 'You can see the versioning policy at https://github.com/exercism/problem-specifications#test-data-versioning'
+  exit 1
+fi
