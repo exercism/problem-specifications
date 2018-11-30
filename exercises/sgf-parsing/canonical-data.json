@@ -1,6 +1,6 @@
 {
     "exercise": "sgf-parsing",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "cases": [
         {
             "description": "empty input",
@@ -39,7 +39,8 @@
                 "encoded": "(;)"
             },
             "expected": {
-                "properties": {}
+                "properties": {},
+                "children": []
             }
         },
         {
