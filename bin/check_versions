@@ -1,5 +1,18 @@
 #!/bin/sh
 
+override_message="I have confirmed that no JSON version change is needed"
+commit_message=$(git log --format=%B -n 1 HEAD)
+
+# If *any* commit message contains the override message:
+# (Note that TRAVIS_COMMIT_MESSAGE for PRs is usually "merge commit abc123 into def456"
+# which is not useful. Just search all commit messages between master and HEAD)
+
+if git log master..HEAD | grep -q "$override_message"; then
+  echo "WARNING: You've overridden the JSON version check, which applies to ALL commits in this PR."
+  echo "No JSON file in this PR will be checked for changes."
+  exit 0
+fi
+
 need_version=0
 
 for json_file in $(git diff --name-only master HEAD | grep '^exercises/.*\.json$'); do
