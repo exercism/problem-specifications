@@ -1,7 +1,6 @@
 #!/bin/sh
 
 override_message="I have confirmed that no JSON version change is needed"
-commit_message=$(git log --format=%B -n 1 HEAD)
 
 # If *any* commit message contains the override message:
 # (Note that TRAVIS_COMMIT_MESSAGE for PRs is usually "merge commit abc123 into def456"
