@@ -3,7 +3,7 @@
   "comments": [
     "An isogram is a word or phrase without a repeating letter."
   ],
-  "version": "1.7.0",
+  "version": "1.8.0",
   "cases": [
     {
       "description": "Check if the given string is an isogram",
@@ -114,6 +114,14 @@
             "phrase": "angola"
           },
           "expected": false
+        },
+        {
+          "description": "string contains duplicate numbers",
+          "property": "isIsogram",
+          "input":{
+            "phrase": "123123abc"
+          },
+          "expected": true
         }
       ]
     }
