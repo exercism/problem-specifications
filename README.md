@@ -171,6 +171,17 @@ There are examples of changes requiring a PATCH version change:
 
 PATCH changes would never break well-designed test generators, because the test data remains exactly the same.
 
+#### Automatic verification of versioning changes
+
+Travis CI will automatically verify that all changed JSON files have their version changed, via [bin/check_versions](https://github.com/exercism/problem-specifications/blob/master/bin/check_versions).
+
+This helps avoid the mistake of forgetting to change the version when a change is made to the tests.
+
+Although this is desired most of the time, there are instances (e.g. formatting change) where no version change is desired.
+In such instances, see [bin/check_versions](https://github.com/exercism/problem-specifications/blob/master/bin/check_versions) for the override string.
+Place the string inside a commit message to skip the version check.
+Note that as the override applies to the entire PR, it's highly advised that changes that do not require a version change should not be in the same PR as changes that do require a version change.
+
 ## New Exercises Require a Glyph
 
 When creating a new exercise the design team needs to be informed so that a new glyph can be created.
