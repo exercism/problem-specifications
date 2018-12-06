@@ -119,7 +119,7 @@
           "description": "string contains duplicate numbers",
           "property": "isIsogram",
           "input":{
-            "phrase": "123123abc"
+            "phrase": "66-year-old"
           },
           "expected": true
         }
