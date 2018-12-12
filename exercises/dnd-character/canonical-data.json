@@ -1,6 +1,6 @@
 {
   "exercise": "dnd-character",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "comments": [
     "The random generator 'ability' can be property-tested.",
     "The pure function 'modifier' can be tested totally.",
@@ -171,6 +171,12 @@
         "charisma": "charisma >= 3 && charisma <= 18",
         "hitpoints": "hitpoints == 10 + modifier(constitution)"
       }
+    },
+    {
+      "description": "each ability is only calculated once",
+      "property": "strength",
+      "input": {},
+      "expected": "strength == strength"
     }
   ]
 }
