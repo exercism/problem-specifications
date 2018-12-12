@@ -171,6 +171,12 @@
         "charisma": "charisma >= 3 && charisma <= 18",
         "hitpoints": "hitpoints == 10 + modifier(constitution)"
       }
+    },
+    {
+      "description": "each ability is only calculated once",
+      "property": "strength",
+      "input": {},
+      "expected": "strength == strength"
     }
   ]
 }
