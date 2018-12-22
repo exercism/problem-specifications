@@ -1,6 +1,6 @@
 {
   "exercise": "luhn",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "cases": [
     {
       "description": "single digit strings can not be valid",
@@ -71,6 +71,14 @@
       "property": "valid",
       "input": {
         "value": "055a 444 285"
+      },
+      "expected": false
+    },
+    {
+      "description": "valid strings with a non-digit added at the end become invalid",
+      "property": "valid",
+      "input": {
+        "value": "059a"
       },
       "expected": false
     },
