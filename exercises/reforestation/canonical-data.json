@@ -1,0 +1,93 @@
+{
+    "exercise": "reforestation",
+    "version": "1.0.0",
+    "cases": [
+      {
+        "description": "Base case: empty tree",
+        "property": "treeTraversals",
+        "input": {
+          "preorder": [],
+          "inorder": []
+        },
+        "expected": {}
+      },
+      {
+        "description": "1 more step than base case",
+        "property": "treeTraversals",
+        "input": {
+            "preorder": ["a"],
+            "inorder": ["a"]
+        },
+        "expected": {"v":"a", "l": {}, "r": {}}
+      },
+      {
+        "description": "Core functionality w/ realistic size traversal",
+        "property": "treeTraversals",
+        "input": {
+            "preorder": ["a","i","x","f","r"],
+            "inorder": ["i","a","f","x","r"]
+        },
+        "expected": {"v": "a",
+            "l": {"v": "i", "l": {}, "r": {}},
+            "r": {"v": "x",
+                "l": {"v": "f", "l": {}, "r": {}},
+                "r": {"v": "r", "l": {}, "r": {}}
+            }
+        }
+      },
+      {
+        "description": "Traversals must be fully consumed. No extra values.",
+        "property": "treeTraversals",
+        "input": {
+          "preorder": ["a", "b"],
+          "inorder": ["b", "a", "r"]
+        },
+        "expected": {"error": "invalid traversal"}
+      },
+      {
+          "description": "Reject inconsistent traversals of same length",
+          "property": "treeTraversals",
+          "input": {
+              "preorder": ["x","y","z"],
+              "inorder": ["a","b","c"]
+          },
+          "expected": {"error": "traversals are not consistent"}
+      },
+      {
+        "description": "BonusPoints: generate multiple trees",
+        "property": "treeTraversals",
+        "input": {
+            "preorder": ["p","r","o","l","o","g"],
+            "inorder": ["o","l","o","r","p","g"]
+        },
+        "expected": [
+            {"v":"p",
+                "l": {"v": "r",
+                    "l": {"v": "o",
+                        "l": {"v": "l",
+                            "l": {"v": "o", "l": {}, "r": {}},
+                            "r": {}
+                        },
+                        "r": {}
+                    },
+                    "r": {}
+                },
+                "r": {"v": "g", "l": {}, "r": {}}
+            },
+            {"v": "p",
+                "l": {"v": "r",
+                    "l": {"v": "o",
+                        "l": {},
+                        "r": {"v": "l",
+                            "l": {},
+                            "r": {"v": "o", "l": {}, "r": {}}
+                        }
+                    },
+                    "r": {}
+                },
+                "r": {"v": "g", "l": {}, "r": {}}
+            }
+        ]
+      }
+    ]
+  }
