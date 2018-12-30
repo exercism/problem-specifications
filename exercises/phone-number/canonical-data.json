@@ -1,6 +1,6 @@
 {
   "exercise": "phone-number",
-  "version": "1.6.1",
+  "version": "1.7.0",
   "cases": [
     {
       "description": "Cleanup user-entered phone numbers",
@@ -80,7 +80,7 @@
           "input": {
             "phrase": "123-abc-7890"
           },
-          "expected": {"error": "alphanumerics not permitted"}
+          "expected": {"error": "letters not permitted"}
         },
         {
           "description": "invalid with punctuations",
