@@ -21,7 +21,7 @@
         "expected": {"v":"a", "l": {}, "r": {}}
       },
       {
-        "description": "Core functionality w/ realistic size traversal",
+        "description": "Core functionality with realistic size traversal",
         "property": "treeTraversals",
         "input": {
             "preorder": ["a","i","x","f","r"],
