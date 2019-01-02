@@ -42,7 +42,7 @@
           "property": "interval",
           "input": {
             "tonic": "C",
-            "intervals": "MMmMMMm"
+            "intervals": "MMmMMM"
           },
           "expected": [ "C", "D", "E", "F", "G", "A", "B" ]
         },
@@ -51,7 +51,7 @@
           "property": "interval",
           "input": {
             "tonic": "G",
-            "intervals": "MMmMMMm"
+            "intervals": "MMmMMM"
           },
           "expected": [ "G", "A", "B", "C", "D", "E", "F#" ]
         },
@@ -60,7 +60,7 @@
           "property": "interval",
           "input": {
             "tonic": "F",
-            "intervals": "MMmMMMm"
+            "intervals": "MMmMMM"
           },
           "expected": [ "F", "G", "A", "Bb", "C", "D", "E" ]
         },
@@ -69,7 +69,7 @@
           "property": "interval",
           "input": {
             "tonic": "f#",
-            "intervals": "MmMMmMM"
+            "intervals": "MmMMmM"
           },
           "expected": [ "F#", "G#", "A", "B", "C#", "D", "E" ]
         },
@@ -78,7 +78,7 @@
           "property": "interval",
           "input": {
             "tonic": "bb",
-            "intervals": "MmMMmMM"
+            "intervals": "MmMMmM"
           },
           "expected": [ "Bb", "C", "Db", "Eb", "F", "Gb", "Ab" ]
         },
@@ -87,7 +87,7 @@
           "property": "interval",
           "input": {
             "tonic": "d",
-            "intervals": "MmMMMmM"
+            "intervals": "MmMMMm"
           },
           "expected": [ "D", "E", "F", "G", "A", "B", "C" ]
         },
@@ -96,7 +96,7 @@
           "property": "interval",
           "input": {
             "tonic": "Eb",
-            "intervals": "MMmMMmM"
+            "intervals": "MMmMMm"
           },
           "expected": [ "Eb", "F", "G", "Ab", "Bb", "C", "Db" ]
         },
@@ -105,7 +105,7 @@
           "property": "interval",
           "input": {
             "tonic": "a",
-            "intervals": "MMMmMMm"
+            "intervals": "MMMmMM"
           },
           "expected": [ "A", "B", "C#", "D#", "E", "F#", "G#" ]
         },
@@ -114,7 +114,7 @@
           "property": "interval",
           "input": {
             "tonic": "e",
-            "intervals": "mMMMmMM"
+            "intervals": "mMMMmM"
           },
           "expected": [ "E", "F", "G", "A", "B", "C", "D" ]
         },
@@ -123,7 +123,7 @@
           "property": "interval",
           "input": {
             "tonic": "g",
-            "intervals": "mMMmMMM"
+            "intervals": "mMMmMM"
           },
           "expected": [ "G", "Ab", "Bb", "C", "Db", "Eb", "F" ]
         },
@@ -135,7 +135,7 @@
           "property": "interval",
           "input": {
             "tonic": "d",
-            "intervals": "MmMMmAm"
+            "intervals": "MmMMmA"
           },
           "expected": [ "D", "E", "F", "G", "A", "Bb", "Db" ]
         },
@@ -144,7 +144,7 @@
           "property": "interval",
           "input": {
             "tonic": "C",
-            "intervals": "MmMmMmMm"
+            "intervals": "MmMmMmM"
           },
           "expected": [ "C", "D", "D#", "F", "F#", "G#", "A", "B" ]
         },
@@ -153,7 +153,7 @@
           "property": "interval",
           "input": {
             "tonic": "Db",
-            "intervals": "MMMMMM"
+            "intervals": "MMMMM"
           },
           "expected": [ "Db", "Eb", "F", "G", "A", "B" ]
         },
@@ -162,7 +162,7 @@
           "property": "interval",
           "input": {
             "tonic": "A",
-            "intervals": "MMAMA"
+            "intervals": "MMAM"
           },
           "expected": [ "A", "B", "C#", "E", "F#" ]
         },
@@ -171,7 +171,7 @@
           "property": "interval",
           "input": {
             "tonic": "G",
-            "intervals": "mAMMMmm"
+            "intervals": "mAMMMm"
           },
           "expected": [ "G", "G#", "B", "C#", "D#", "F", "F#" ]
         }
