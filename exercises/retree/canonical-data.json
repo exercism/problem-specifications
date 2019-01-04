@@ -52,6 +52,15 @@
               "inorder": ["a", "b", "c"]
           },
           "expected": {"error": "traversals must have the same elements"}
+      },
+      {
+        "description": "Reject traversals with repeated items",
+        "property": "treeFromTraversals",
+        "input": {
+          "preorder": ["a", "b", "a"],
+          "inorder": ["b", "a", "a"]
+        },
+        "expected": {"error": "traversals must contain unique items"}
       }
     ]
   }
