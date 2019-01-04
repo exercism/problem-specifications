@@ -1,6 +1,6 @@
 Imagine you need to transmit a binary tree to a satellite approaching Alpha
 Centauri and you have limited bandwidth. Since the tree has no repeating
-items it can be uniquely represented by its pre-order and in-order traversals.
+items it can be uniquely represented by its [pre-order and in-order traversals][wiki].
 
 Write the software for the satellite to rebuild the tree from the traversals.
 
@@ -22,4 +22,6 @@ i   x
   f   r
 ```
 
-(note: the first item in the pre-order traversal is always the root)
+Note: the first item in the pre-order traversal is always the root.
+
+[wiki]: https://en.wikipedia.org/wiki/Tree_traversal
