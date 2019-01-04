@@ -1,6 +1,6 @@
 {
     "exercise": "palindrome-products",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "cases": [{
             "description": "finds the smallest palindrome from single digit factors",
             "property": "smallest",
@@ -121,9 +121,7 @@
               "min": 1002,
               "max": 1003
             },
-            "expected": {
-                "error": "no palindrome with factors in the range 1002 to 1003"
-            }
+            "expected": []
         },
         {
             "description": "empty result for largest if no palindrome in the range",
@@ -132,9 +130,7 @@
               "min": 15,
               "max": 15
             },
-            "expected": {
-                "error": "no palindrome with factors in the range 15 to 15"
-            }
+            "expected": []
         },
         {
             "description": "error result for smallest if min is more than max",
@@ -144,7 +140,7 @@
               "max": 1
             },
             "expected": {
-                "error": "invalid input: min is 10000 and max is 1"
+                "error": "min must be <= max"
             }
         },
         {
@@ -155,7 +151,7 @@
               "max": 1
             },
             "expected": {
-                "error": "invalid input: min is 2 and max is 1"
+                "error": "min must be <= max"
             }
         }
     ]
