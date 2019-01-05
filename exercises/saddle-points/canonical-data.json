@@ -1,8 +1,8 @@
 {
   "exercise": "saddle-points",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "comments": [
-    "Matrix rows and columns are 0-indexed."
+    "Matrix rows and columns are 1-indexed."
   ],
   "cases": [
     {
@@ -20,8 +20,8 @@
       },
       "expected": [
         {
-          "row": 1,
-          "column": 0
+          "row": 2,
+          "column": 1
         }
       ]
     },
@@ -59,16 +59,16 @@
       },
       "expected": [
         {
-          "row": 0,
-          "column": 1
-        },
-        {
           "row": 1,
-          "column": 1
+          "column": 2
         },
         {
           "row": 2,
-          "column": 1
+          "column": 2
+        },
+        {
+          "row": 3,
+          "column": 2
         }
       ]
     },
@@ -84,16 +84,16 @@
       },
       "expected": [
         {
-          "row": 1,
-          "column": 0
-        },
-        {
-          "row": 1,
+          "row": 2,
           "column": 1
         },
         {
-          "row": 1,
+          "row": 2,
           "column": 2
+        },
+        {
+          "row": 2,
+          "column": 3
         }
       ]
     },
@@ -113,8 +113,8 @@
       },
       "expected": [
         {
-          "row": 2,
-          "column": 2
+          "row": 3,
+          "column": 3
         }
       ]
     },
@@ -129,12 +129,12 @@
       },
       "expected": [
         {
-          "row": 0,
-          "column": 2
+          "row": 1,
+          "column": 3
         },
         {
-          "row": 0,
-          "column": 0
+          "row": 1,
+          "column": 1
         }
       ]
     },
@@ -151,12 +151,12 @@
       },
       "expected": [
         {
-          "row": 1,
-          "column": 0
+          "row": 2,
+          "column": 1
         },
         {
-          "row": 3,
-          "column": 0
+          "row": 2,
+          "column": 1
         }
       ]
     },
@@ -170,12 +170,12 @@
       },
       "expected": [
         {
-          "row": 0,
-          "column": 1
+          "row": 1,
+          "column": 2
         },
         {
-          "row": 0,
-          "column": 3
+          "row": 1,
+          "column": 4
         }
       ]
     }
