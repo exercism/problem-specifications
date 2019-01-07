@@ -18,7 +18,7 @@
           "preorder": ["a"],
           "inorder": ["a"]
       },
-      "expected": {"v":"a", "l": {}, "r": {}}
+      "expected": {"v": "a", "l": {}, "r": {}}
     },
     {
       "description": "Tree with many items",
