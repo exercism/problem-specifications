@@ -54,6 +54,24 @@
           "expected": "a"
         },
         {
+          "description": "rotate m by negative 1",
+          "property": "rotate",
+          "input": {
+            "text": "m",
+            "shiftKey": -1
+          },
+          "expected": "l"
+        },
+        {
+          "description": "rotate letters by negative 26",
+          "property": "rotate",
+          "input": {
+            "text": "omg",
+            "shiftKey": -26
+          },
+          "expected": "omg"
+        },
+        {
           "description": "rotate capital letters",
           "property": "rotate",
           "input": {
