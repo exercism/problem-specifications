@@ -1,6 +1,6 @@
 {
   "exercise": "acronym",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "cases": [
     {
       "description": "Abbreviate a phrase",
@@ -68,6 +68,14 @@
             "phrase": "Halley's Comet"
           },
           "expected": "HC"
+        },
+        {
+          "description": "underscore emphasis",
+          "property": "abbreviate",
+          "input": {
+            "phrase": "The Road _Not_ Taken"
+          },
+          "expected": "TRNT"
         }
       ]
     }
