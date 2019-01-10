@@ -1,6 +1,6 @@
 {
     "exercise": "rest-api",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "comments": [
       "The state of the API database before the request is represented",
       "by the input->database object. Your track may determine how this",
@@ -355,6 +355,54 @@
                                 },
                                 "owed_by": {},
                                 "balance": -1.0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "description": "lender owes borrower same as new loan",
+                    "property": "post",
+                    "input": {
+                        "database": {
+                            "users": [
+                                {
+                                    "name": "Adam",
+                                    "owes": {
+                                        "Bob": 3.0
+                                    },
+                                    "owed_by": {},
+                                    "balance": -3.0
+                                },
+                                {
+                                    "name": "Bob",
+                                    "owes": {},
+                                    "owed_by": {
+                                        "Adam": 3.0
+                                    },
+                                    "balance": 3.0
+                                }
+                            ]
+                        },
+                        "url": "/iou",
+                        "payload": {
+                            "lender": "Adam",
+                            "borrower": "Bob",
+                            "amount": 3.0
+                        }
+                    },
+                    "expected": {
+                        "users": [
+                            {
+                                "name": "Adam",
+                                "owes": {},
+                                "owed_by": {},
+                                "balance": 0
+                            },
+                            {
+                                "name": "Bob",
+                                "owes": {},
+                                "owed_by": {},
+                                "balance": 0
                             }
                         ]
                     }
