@@ -1,6 +1,6 @@
 {
   "exercise": "space-age",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "cases": [
     {
       "description": "age on Earth",
@@ -34,9 +34,9 @@
       "property": "age",
       "input": {
         "planet": "Mars",
-        "seconds": 2329871239
+        "seconds": 2129871239
       },
-      "expected": 39.25
+      "expected": 35.88
     },
     {
       "description": "age on Jupiter",
@@ -52,27 +52,27 @@
       "property": "age",
       "input": {
         "planet": "Saturn",
-        "seconds": 3000000000
+        "seconds": 2000000000
       },
-      "expected": 3.23
+      "expected": 2.15
     },
     {
       "description": "age on Uranus",
       "property": "age",
       "input": {
         "planet": "Uranus",
-        "seconds": 3210123456
+        "seconds": 1210123456
       },
-      "expected": 1.21
+      "expected": 0.46
     },
     {
       "description": "age on Neptune",
       "property": "age",
       "input": {
         "planet": "Neptune",
-        "seconds": 8210123456
+        "seconds": 1821023456
       },
-      "expected": 1.58
+      "expected": 0.35
     }
   ]
 }
