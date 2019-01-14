@@ -396,13 +396,13 @@
                                 "name": "Adam",
                                 "owes": {},
                                 "owed_by": {},
-                                "balance": 0
+                                "balance": 0.0
                             },
                             {
                                 "name": "Bob",
                                 "owes": {},
                                 "owed_by": {},
-                                "balance": 0
+                                "balance": 0.0
                             }
                         ]
                     }
