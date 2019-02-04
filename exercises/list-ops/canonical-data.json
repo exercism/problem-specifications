@@ -212,7 +212,7 @@
           "description": "empty list",
           "property": "reverse",
           "input": {
-            "list": []-patch-1
+            "list": []
           },
           "expected": []
         },
