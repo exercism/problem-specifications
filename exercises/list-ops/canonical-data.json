@@ -228,9 +228,9 @@
           "description": "list of nested lists",
           "property": "reverse",
           "input": {
-            "list": [0, [1], [2, 3], [4, [5, 6]]]
+            "list": [[1, 2], [3], [], [4, 5, 6]]
           },
-          "expected": [[4, [5, 6]], [2, 3], [1], 0]
+          "expected": [[4, 5, 6], [], [3], [1, 2]]
         }
       ]
     }
