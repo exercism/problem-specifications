@@ -225,7 +225,7 @@
           "expected": [7, 5, 3, 1]
         },
         {
-          "description": "list of nested lists",
+          "description": "list of lists",
           "property": "reverse",
           "input": {
             "list": [[1, 2], [3], [], [4, 5, 6]]
