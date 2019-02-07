@@ -1,6 +1,6 @@
 {
 "exercise": "hamming",
-"version": "2.2.0",
+"version": "2.3.0",
   "comments": [
     "Language implementations vary on the issue of unequal length strands.",
     "A language may elect to simplify this task by only presenting equal",
@@ -73,6 +73,24 @@
         "strand2": "AGTG"
       },
       "expected": {"error": "left and right strands must be of equal length"}
+    },
+    {
+      "description": "disallow left empty strand",
+      "property": "distance",
+      "input": {
+        "strand1": "",
+        "strand2": "G"
+      },
+      "expected": {"error": "left strand must not be empty"}
+    },
+    {
+      "description": "disallow right empty strand",
+      "property": "distance",
+      "input": {
+        "strand1": "G",
+        "strand2": ""
+      },
+      "expected": {"error": "right strand must not be empty"}
     }
   ]
 }
