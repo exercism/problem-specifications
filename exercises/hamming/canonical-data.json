@@ -81,7 +81,7 @@
         "strand1": "",
         "strand2": "G"
       },
-      "expected": {"error": "left and right strands must be of equal length"}
+      "expected": {"error": "left strand must not be empty"}
     },
     {
       "description": "disallow right empty strand",
