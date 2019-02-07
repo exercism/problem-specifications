@@ -90,7 +90,7 @@
         "strand1": "G",
         "strand2": ""
       },
-      "expected": {"error": "left and right strands must be of equal length"}
+      "expected": {"error": "right strand must not be empty"}
     }
   ]
 }
