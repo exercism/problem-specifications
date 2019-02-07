@@ -75,13 +75,22 @@
       "expected": {"error": "left and right strands must be of equal length"}
     },
     {
-  "description": "disallow only one empty strand",
-  "property": "distance",
-  "input": {
-    "strand1": "",
-    "strand2": "G"
-  },
-  "expected": {"error": "left and right strands must be of equal length"}
-}
+      "description": "disallow left empty strand",
+      "property": "distance",
+      "input": {
+        "strand1": "",
+        "strand2": "G"
+      },
+      "expected": {"error": "left and right strands must be of equal length"}
+    },
+    {
+      "description": "disallow right empty strand",
+      "property": "distance",
+      "input": {
+        "strand1": "G",
+        "strand2": ""
+      },
+      "expected": {"error": "left and right strands must be of equal length"}
+    }
   ]
 }
