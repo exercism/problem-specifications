@@ -1,6 +1,6 @@
 {
   "exercise": "high-scores",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "comments": [
     "This is meant to be an easy exercise to practise: ",
     "* arrays as simple lists",
@@ -38,16 +38,16 @@
       "description": "Top 3 scores",
       "cases": [
         {
-          "description": "Personal top",
-          "property": "personalTop",
+          "description": "Personal top three from a list of scores",
+          "property": "personalTopThree",
           "input": {
-            "scores": [50, 30, 10]
+            "scores": [10, 30, 90, 30, 100, 20, 10, 0, 30, 40, 40, 70, 70]
           },
-          "expected": [50, 30, 10]
+          "expected": [100, 90, 70]
         },
         {
           "description": "Personal top highest to lowest",
-          "property": "personalTop",
+          "property": "personalTopThree",
           "input": {
             "scores": [20, 10, 30]
           },
@@ -55,7 +55,7 @@
         },
         {
           "description": "Personal top when there is a tie",
-          "property": "personalTop",
+          "property": "personalTopThree",
           "input": {
             "scores": [40, 20, 40, 30]
           },
@@ -63,7 +63,7 @@
         },
         {
           "description": "Personal top when there are less than 3",
-          "property": "personalTop",
+          "property": "personalTopThree",
           "input": {
             "scores": [30, 70]
           },
@@ -71,19 +71,11 @@
         },
         {
           "description": "Personal top when there is only one",
-          "property": "personalTop",
+          "property": "personalTopThree",
           "input": {
             "scores": [40]
           },
           "expected": [40]
-        },
-        {
-          "description": "Personal top from a long list",
-          "property": "personalTop",
-          "input": {
-            "scores": [10, 30, 90, 30, 100, 20, 10, 0, 30, 40, 40, 70, 70]
-          },
-          "expected": [100, 90, 70]
         }
       ]
     },
