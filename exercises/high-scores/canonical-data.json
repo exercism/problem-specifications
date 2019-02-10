@@ -1,6 +1,6 @@
 {
   "exercise": "high-scores",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "comments": [
     "This is meant to be an easy exercise to practise: ",
     "* arrays as simple lists",
@@ -78,30 +78,6 @@
           "expected": [40]
         }
       ]
-    },
-    {
-      "description": "Message for new personal best",
-      "property": "report",
-      "input": {
-        "scores": [20, 40, 0, 30, 70]
-      },
-      "expected": "Your latest score was 70. That's your personal best!"
-    },
-    {
-      "description": "Message when latest score is not the highest score",
-      "property": "report",
-      "input": {
-        "scores": [20, 100, 0, 30, 70]
-      },
-      "expected": "Your latest score was 70. That's 30 short of your personal best!"
-    },
-    {
-      "description": "Message for repeated personal best",
-      "property": "report",
-      "input": {
-        "scores": [20, 70, 50, 70, 30]
-      },
-      "expected": "Your latest score was 30. That's 40 short of your personal best!"
     }
   ]
 }
