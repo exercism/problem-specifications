@@ -118,7 +118,7 @@
           "property": "decode",
           "input": {
             "key": "abc",
-            "plaintext": "iboaqcnecbfcr"
+            "ciphertext": "iboaqcnecbfcr"
           },
           "expected": "iamapandabear"
         }
