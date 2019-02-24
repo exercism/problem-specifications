@@ -1,4 +1,4 @@
 ---
-blurb: "Convert the colors of a resistor's first two bands to the significant figures of its value in Ohm."
+blurb: "Convert the colors of a resistor's first two bands to the significant figures of its value in Ohms."
 source: "Maud de Vries, Erik Schierboom"
 source_url: "https://github.com/exercism/problem-specifications/issues/1464"

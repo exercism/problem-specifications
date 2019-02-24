@@ -1,4 +1,4 @@
-Resistors have color coded bands that encode their value in Ohm. The bands have a simple encoding scheme: each color maps to a single number. The first 2 bands represent the significant figures of a resistor's value in Ohm. 
+Resistors have color coded bands that encode their value in Ohms. The bands have a simple encoding scheme: each color maps to a single number. The first 2 bands represent the significant figures of a resistor's value in Ohms. 
 [Significant figures](https://en.wikipedia.org/wiki/Significant_figures) or significant digits is a concept used in measurements to indicate the numbers without trailing zero's.
 
 The band colors are encoded as follows:
