@@ -14,6 +14,6 @@ The band colors are encoded as follows:
 - Grey: 8
 - White: 9
 
-Combining the numbers of the first two bands gives one the significant figures of its value in Ohm. As an example, if the first band is blue (6) and the second band is grey (8), the combined significant figures in Ohm equal the number 68. 
+Combining the numbers of the first two bands gives one the significant figures of its value in Ohms. As an example, if the first band is blue (6) and the second band is grey (8), the combined significant figures' value is the number 68. 
 
 More information on the color encoding of resistors can be found in the [Electronic color code Wikipedia article](https://en.wikipedia.org/wiki/Electronic_color_code)
