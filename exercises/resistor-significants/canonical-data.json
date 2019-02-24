@@ -4,7 +4,7 @@
   "cases": [
     {
       "description": "Brown and black",
-      "property": "significantValue",
+      "property": "significantFigures",
       "input": {
         "firstColor": "brown",
         "secondColor": "black"
@@ -13,7 +13,7 @@
     },
     {
       "description": "Blue and grey",
-      "property": "significantValue",
+      "property": "significantFigures",
       "input": {
         "firstColor": "blue",
         "secondColor": "grey"
@@ -22,7 +22,7 @@
     },
     {
       "description": "Yellow and violet",
-      "property": "significantValue",
+      "property": "significantFigures",
       "input": {
         "firstColor": "yellow",
         "secondColor": "violet"
@@ -31,7 +31,7 @@
     },
     {
       "description": "Orange and orange",
-      "property": "significantValue",
+      "property": "significantFigures",
       "input": {
         "firstColor": "orange",
         "secondColor": "orange"
