@@ -1,0 +1,42 @@
+{
+  "exercise": "resistor-significants",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "description": "Brown and black",
+      "property": "significantValue",
+      "input": {
+        "firstColor": "brown",
+        "secondColor": "black"
+      },
+      "expected": 10
+    },
+    {
+      "description": "Blue and grey",
+      "property": "significantValue",
+      "input": {
+        "firstColor": "blue",
+        "secondColor": "grey"
+      },
+      "expected": 68
+    },
+    {
+      "description": "Yellow and violet",
+      "property": "significantValue",
+      "input": {
+        "firstColor": "yellow",
+        "secondColor": "violet"
+      },
+      "expected": 47
+    },
+    {
+      "description": "Orange and orange",
+      "property": "significantValue",
+      "input": {
+        "firstColor": "orange",
+        "secondColor": "orange"
+      },
+      "expected": 33
+    }
+  ]
+}
