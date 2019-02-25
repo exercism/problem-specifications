@@ -6,8 +6,7 @@
       "description": "Brown and black",
       "property": "value",
       "input": {
-        "firstColor": "brown",
-        "secondColor": "black"
+        "colors": ["brown", "black"]
       },
       "expected": 10
     },
@@ -15,8 +14,7 @@
       "description": "Blue and grey",
       "property": "value",
       "input": {
-        "firstColor": "blue",
-        "secondColor": "grey"
+        "colors": ["blue", "grey"]
       },
       "expected": 68
     },
@@ -24,8 +22,7 @@
       "description": "Yellow and violet",
       "property": "value",
       "input": {
-        "firstColor": "yellow",
-        "secondColor": "violet"
+        "colors": ["yellow", "violet"]
       },
       "expected": 47
     },
@@ -33,8 +30,7 @@
       "description": "Orange and orange",
       "property": "value",
       "input": {
-        "firstColor": "orange",
-        "secondColor": "orange"
+        "colors": ["orange", "orange"]
       },
       "expected": 33
     }
