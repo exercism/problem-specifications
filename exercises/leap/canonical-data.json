@@ -1,6 +1,6 @@
 {
   "exercise": "leap",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "cases": [
     {
       "description": "year not divisible by 4 in common year",
@@ -11,7 +11,7 @@
       "expected": false
     },
     {
-      "description": "year divisible by 2, not divisible by 4: common year",
+      "description": "year divisible by 2, not divisible by 4 in common year",
       "property": "leapYear",
       "input": {
         "year": 1970
