@@ -1,6 +1,6 @@
 {
   "exercise": "collatz-conjecture",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "cases": [
     {
       "description": "zero steps for one",
@@ -40,7 +40,7 @@
       "input": {
         "number": 0
       },
-      "expected": { "error": "Only positive numbers are allowed" }
+      "expected": { "error": "Only positive integers are allowed" }
     },
     {
       "description": "negative value is an error",
@@ -48,7 +48,15 @@
       "input": {
         "number": -15
       },
-      "expected": { "error": "Only positive numbers are allowed" }
+      "expected": { "error": "Only positive integers are allowed" }
+    },
+    {
+      "description": "float value is an error",
+      "property": "steps",
+      "input": {
+        "number": 1.5
+      },
+      "expected": { "error": "Only positive integers are allowed" }
     }
   ]
 }
