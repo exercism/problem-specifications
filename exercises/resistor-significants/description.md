@@ -1,5 +1,6 @@
-Resistors have color coded bands that encode their value in Ohms. The bands have a simple encoding scheme: each color maps to a single number. The first 2 bands represent the significant figures of a resistor's value in Ohms. 
-[Significant figures](https://en.wikipedia.org/wiki/Significant_figures) or significant digits is a concept used in measurements to indicate the numbers without trailing zero's.
+If you would build anything with a Raspberry Pi or an Arduino, one of the first components you need are resistors. In this exercise, it doesn't matter what a resistor is or does, the only thing that matters is that they come with different values. And that they are tiny. So tiny, that it's hard to read such a value if it were printed on the thing. To solve that, fabricators use color codes that reveal their value. Which is great, but it makes it hard to see the actual value.
+
+You are going to solve this with a program that you can feed two colors, and it will translate the color to a number. For instance "brown" and "black" are code for `1` and `0`, and together they represent the value `10`.
 
 The band colors are encoded as follows:
 
@@ -13,7 +14,3 @@ The band colors are encoded as follows:
 - Violet: 7
 - Grey: 8
 - White: 9
-
-Combining the numbers of the first two bands gives one the significant figures of its value in Ohms. As an example, if the first band is blue (6) and the second band is grey (8), the combined significant figures' value is the number 68. 
-
-More information on the color encoding of resistors can be found in the [Electronic color code Wikipedia article](https://en.wikipedia.org/wiki/Electronic_color_code)
