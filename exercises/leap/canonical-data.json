@@ -1,9 +1,9 @@
 {
   "exercise": "leap",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "cases": [
     {
-      "description": "year not divisible by 4: common year",
+      "description": "year not divisible by 4 in common year",
       "property": "leapYear",
       "input": {
         "year": 2015
@@ -11,7 +11,7 @@
       "expected": false
     },
     {
-      "description": "year divisible by 2, not divisible by 4: common year",
+      "description": "year divisible by 2, not divisible by 4 in common year",
       "property": "leapYear",
       "input": {
         "year": 1970
@@ -19,7 +19,7 @@
       "expected": false
     },
     {
-      "description": "year divisible by 4, not divisible by 100: leap year",
+      "description": "year divisible by 4, not divisible by 100 in leap year",
       "property": "leapYear",
       "input": {
         "year": 1996
@@ -27,7 +27,7 @@
       "expected": true
     },
     {
-      "description": "year divisible by 100, not divisible by 400: common year",
+      "description": "year divisible by 100, not divisible by 400 in common year",
       "property": "leapYear",
       "input": {
         "year": 2100
@@ -35,7 +35,7 @@
       "expected": false
     },
     {
-      "description": "year divisible by 400: leap year",
+      "description": "year divisible by 400 in leap year",
       "property": "leapYear",
       "input": {
         "year": 2000
@@ -43,7 +43,7 @@
       "expected": true
     },
     {
-      "description": "year divisible by 200, not divisible by 400: common year",
+      "description": "year divisible by 200, not divisible by 400 in common year",
       "property": "leapYear",
       "input": {
         "year": 1800
