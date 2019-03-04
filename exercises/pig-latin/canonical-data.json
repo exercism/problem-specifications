@@ -1,6 +1,6 @@
 {
   "exercise": "pig-latin",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "cases": [
     {
       "description": "ay is added to words that start with vowels",
@@ -52,6 +52,14 @@
             "phrase": "equal"
           },
           "expected": "equalay"
+        },
+        {
+          "description": "word beginning with xr",
+          "property": "translate",
+          "input": {
+            "phrase": "xray"
+          },
+          "expected": "xrayay"
         }
       ]
     },
