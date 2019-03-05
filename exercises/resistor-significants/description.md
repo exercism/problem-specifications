@@ -1,16 +1,20 @@
-If you would build anything with a Raspberry Pi or an Arduino, one of the components you will likely use are resistors. In this exercise, it doesn't matter what a resistor is or how it works, the only thing that matters is that a resistor has a 'value'. And that they are small. So small, that it's hard to read such a value if it were to be actually printed on it. To solve that, fabricators use color codes that denotes the resistor's value. Which is great, but it makes it hard to see the actual value.
+If you want to build something using a Raspberry Pi, you'll probably use _resistors_. For this exercise, you need to know two things about them:
 
-You are going to solve this with a program that you can feed two colors, and it will translate the color to a number. For instance "brown" and "black" are code for `1` and `0`, and together they represent the value `10`.
+* Each resistor has a resistance value.
+* Resistors are small - so small in fact that if you printed the resistance value on them, it would be hard to read.
+To get around this problem, manufacturers print color-coded bands onto the resistors to denote their resistance values. Each band acts as a digit of a number. For example, if they printed a brown strip (value 1) followed by a green strip (value 5), it would translate to the number 15.
+
+In this exercise, you are going to create a helpful program so that you don't have to remember the values of the bands. The program will take two colors as input, and output the correct number.
 
 The band colors are encoded as follows:
 
-- Black: 0
-- Brown: 1
-- Red: 2
-- Orange: 3
-- Yellow: 4
-- Green: 5
-- Blue: 6
-- Violet: 7
-- Grey: 8
-- White: 9
+Black: 0
+Brown: 1
+Red: 2
+Orange: 3
+Yellow: 4
+Green: 5
+Blue: 6
+Violet: 7
+Grey: 8
+White: 9
