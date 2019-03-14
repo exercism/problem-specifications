@@ -209,6 +209,14 @@
           "expected": [1, 2]
         },
         {
+          "description": "Absolute value of a positive rational number with negative numerator and denominator",
+          "property": "abs",
+          "input": {
+            "r": [-1, -2]
+          },
+          "expected": [1, 2]
+        },
+        {
           "description": "Absolute value of a negative rational number",
           "property": "abs",
           "input": {
