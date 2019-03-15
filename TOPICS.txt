@@ -10,6 +10,7 @@ generics
 inheritance
 interfaces
 loops
+operator_overloading
 pattern_matching
 polymorphism
 recursion
