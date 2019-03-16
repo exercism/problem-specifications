@@ -1,6 +1,6 @@
 {
   "exercise": "rational-numbers",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "comments": [
     " The canonical data assumes mathematically correct real   ",
     " numbers. The testsuites should consider rounding errors  ",
@@ -209,10 +209,26 @@
           "expected": [1, 2]
         },
         {
+          "description": "Absolute value of a positive rational number with negative numerator and denominator",
+          "property": "abs",
+          "input": {
+            "r": [-1, -2]
+          },
+          "expected": [1, 2]
+        },
+        {
           "description": "Absolute value of a negative rational number",
           "property": "abs",
           "input": {
             "r": [-1, 2]
+          },
+          "expected": [1, 2]
+        },
+        {
+          "description": "Absolute value of a negative rational number with negative denominator",
+          "property": "abs",
+          "input": {
+            "r": [1, -2]
           },
           "expected": [1, 2]
         },
