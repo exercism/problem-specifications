@@ -67,14 +67,6 @@
       "expected": true
     },
     {
-      "description": "valid strings with a non-digit included become invalid",
-      "property": "valid",
-      "input": {
-        "value": "055b 444 285"
-      },
-      "expected": false
-    },
-    {
       "description": "valid strings with a non-digit added at the end become invalid",
       "property": "valid",
       "input": {
@@ -123,7 +115,23 @@
       "expected": true
     },
     {
-      "description": "strings with non-digits is invalid",
+      "comments": [
+        "Convert non-digits to their ascii value and then offset them by 48 sometimes accidently return the correct result.",
+        "This test is designed to avoid that solution."
+      ],
+      "description": "using ascii value for doubled non-digit isn't allow",
+      "property": "valid",
+      "input": {
+        "value": "055b 444 285"
+      },
+      "expected": false
+    },
+    {
+      "comments": [
+        "Convert non-digits to their ascii value and then offset them by 48 sometimes accidently return the correct result.",
+        "This test is designed to avoid that solution."
+      ],
+      "description": "using ascii value for non-doubled non-digit isn't allow",
       "property": "valid",
       "input": {
         "value": ":9"
