@@ -9,7 +9,7 @@
     " triangles have zero area, however.                                    ",
     " They're degenerate triangles with all three vertices collinear.       ",
     " (In contrast, we will test (0, 0, 0, Illegal), as it is a point)      ",
-    " The tests assert properities of the triangle are true or false.       ",
+    " The tests assert properties of the triangle are true or false.        ",
     " See: https://github.com/exercism/problem-specifications/issues/379 for disscussion  ",
     " of this approach                                                      ",
     " How you handle invalid triangles is up to you. These tests suggest a  ",
@@ -19,10 +19,10 @@
   ],
   "cases": [
     {
-      "description": "returns true if the triangle is equilateral",
+      "description": "equilateral triangle",
       "cases": [
         {
-          "description": "true if all sides are equal",
+          "description": "returns true if all sides are equal",
           "property": "equilateral",
           "input": {
             "sides": [2, 2, 2]
@@ -30,7 +30,7 @@
           "expected": true
         },
         {
-          "description": "false if any side is unequal",
+          "description": "returns false if any side is unequal",
           "property": "equilateral",
           "input": {
             "sides": [2, 3, 2]
@@ -38,7 +38,7 @@
           "expected": false
         },
         {
-          "description": "false if no sides are equal",
+          "description": "returns false if no sides are equal",
           "property": "equilateral",
           "input": {
             "sides": [5, 4, 6]
@@ -46,7 +46,7 @@
           "expected": false
         },
         {
-          "description": "All zero sides are illegal, so the triangle is not equilateral",
+          "description": "returns false if equilateral triangle has all zero sides",
           "property": "equilateral",
           "input": {
             "sides": [0, 0, 0]
@@ -68,10 +68,10 @@
       ]
     },
     {
-      "description": "returns true if the triangle is isosceles",
+      "description": "isosceles triangle",
       "cases": [
         {
-          "description": "true if last two sides are equal",
+          "description": "returns true if last two sides are equal",
           "property": "isosceles",
           "input": {
             "sides": [3, 4, 4]
@@ -79,7 +79,7 @@
           "expected": true
         },
         {
-          "description": "true if first two sides are equal",
+          "description": "returns true if first two sides are equal",
           "property": "isosceles",
           "input": {
             "sides": [4, 4, 3]
@@ -87,7 +87,7 @@
           "expected": true
         },
         {
-          "description": "true if first and last sides are equal",
+          "description": "returns true if first and last sides are equal",
           "property": "isosceles",
           "input": {
             "sides": [4, 3, 4]
@@ -103,7 +103,7 @@
           "expected": true
         },
         {
-          "description": "false if no sides are equal",
+          "description": "returns false if no sides are equal",
           "property": "isosceles",
           "input": {
             "sides": [2, 3, 4]
@@ -149,10 +149,10 @@
       ]
     },
     {
-      "description": "returns true if the triangle is scalene",
+      "description": "scalene triangle",
       "cases": [
         {
-          "description": "true if no sides are equal",
+          "description": "returns true if no sides are equal",
           "property": "scalene",
           "input": {
             "sides": [5, 4, 6]
@@ -160,7 +160,7 @@
           "expected": true
         },
         {
-          "description": "false if all sides are equal",
+          "description": "returns false if all sides are equal",
           "property": "scalene",
           "input": {
             "sides": [4, 4, 4]
@@ -168,7 +168,7 @@
           "expected": false
         },
         {
-          "description": "false if two sides are equal",
+          "description": "returns false if two sides are equal",
           "property": "scalene",
           "input": {
             "sides": [4, 4, 3]
