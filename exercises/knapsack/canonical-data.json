@@ -1,0 +1,20 @@
+{
+  "exercise": "knapsack",
+  "version": "1.0.0",
+  "comments": [
+    "Depending on the language, the input type can be modified"
+  ],
+  "cases": [
+    {
+      "description": "simple knapsack",
+      "property": "maximum value",
+      "input": {
+        "W": 10,
+        "N": 4,
+        "w": [10, 40, 30, 50],
+        "v": [5, 4, 6, 3]
+      },
+      "expected": 90
+    },
+  ]
+}
