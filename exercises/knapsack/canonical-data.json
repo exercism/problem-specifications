@@ -7,11 +7,11 @@
   "cases": [
     {
       "description": "simple knapsack",
-      "property": "maximum value",
+      "property": "maximumValue",
       "input": {
-        "Maximum Weight": 10,
-        "Item Weight": [10, 40, 30, 50],
-        "Item Value": [5, 4, 6, 3]
+        "maximumWeight": 10,
+        "itemWeight": [10, 40, 30, 50],
+        "itemValue": [5, 4, 6, 3]
       },
       "expected": 90
     }
