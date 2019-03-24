@@ -6,7 +6,7 @@ In front of him are many items, each with a value (v) and weight (w). Bob of cou
 maximize the total value he can get; he would gladly take all of the items if he could. 
 However, to his horror, he realized that the knapsack he carried with him can only hold so much weight(W).
 
-Given a knapsack with a specific capacity (W), can you help Bob determine the maximum value he can get from the items in the house? Note, Bob can only take only one of each item. 
+Given a knapsack with a specific capacity (W), help Bob determine the maximum value he can get from the items in the house. Note, Bob can only take only one of each item. 
 
 All values given will be strictly positive integers.Items will be represented as a list of pairs, 
 [wi, vi] where the first element `wi` is the weight of the ith item and `vi` is the value for 
