@@ -9,7 +9,7 @@ However, to his horror, he realized that the knapsack he carried with him can on
 Given a knapsack with a specific capacity (W), can you help Bob determine the maximum value he can get from the items in the house? Note, Bob can only take only one of each item. 
 
 All values given will be strictly positive integers.Items will be represented as a list of pairs, 
-[wi, vi] where the first element (wi) is the weight of the ith item and vi is the value for 
+[wi, vi] where the first element `wi` is the weight of the ith item and `vi` is the value for 
 that item.
 
 For example:
