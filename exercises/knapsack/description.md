@@ -17,7 +17,6 @@ For example:
 Items: [[5, 10], [4, 40], [6, 30], [4, 50]]
 Knapsack Limit: 10
 
-
 For the above, item 1 has weight 5 and value 10, items 2 has weight 4 and value 40, and so on...
 
 Bob should take item 2 and 4 to maximize his value which in this case is 90. He cannot get more 
