@@ -10,10 +10,88 @@
       "property": "maximumValue",
       "input": {
         "maximumWeight": 10,
-        "itemWeight": [10, 40, 30, 50],
-        "itemValue": [5, 4, 6, 3]
+        "items": [[5, 10], [4, 40], [6, 30], [4, 50]]
       },
       "expected": 90
+    },
+    {
+      "description": "no items",
+      "property": "maximumValue",
+      "input": {
+        "maximumWeight": 100,
+        "items": []
+      },
+      "expected": 0
+    },
+    {
+      "description": "one item, too heavy",
+      "property": "maximumValue",
+      "input": {
+        "maximumWeight": 10,
+        "items": [[100, 1]]
+      },
+      "expected": 0
+    },
+    {
+      "description": "five items (cannot be greedy by weight)",
+      "property": "maximumValue",
+      "input": {
+        "maximumWeight": 10,
+        "items": [[2, 5], [2, 5], [2, 5], [2, 5], [10, 21]]
+      },
+      "expected": 90
+    },
+    {
+      "description": "five items (cannot be greedy by price)",
+      "property": "maximumValue",
+      "input": {
+        "maximumWeight": 10,
+        "items": [[2, 20], [2, 20], [2, 20], [2, 20], [10, 50]]
+      },
+      "expected": 90
+    },
+    {
+      "description": "8 items",
+      "property": "maximumValue",
+      "input": {
+        "maximumWeight": 104,
+        "items": [
+            [25, 350],
+            [35, 400],
+            [45, 450],
+            [5, 20],
+            [25, 70],
+            [3, 8],
+            [2, 5],
+            [2, 5]
+        ]
+      },
+      "expected": 900
+    }, 
+    {
+      "description": "15 items",
+      "property": "maximumValue",
+      "input": {
+        "maximumWeight": 750,
+        "items": [
+            [70, 135],
+            [73, 139],
+            [77, 149],
+            [80, 150],
+            [82, 156],
+            [87, 163],
+            [90, 173],
+            [94, 184],
+            [98, 192],
+            [106, 201],
+            [110, 210],
+            [113, 214],
+            [115, 221],
+            [118, 229],
+            [120, 240]
+        ]
+      },
+      "expected": 1458
     }
   ]
 }

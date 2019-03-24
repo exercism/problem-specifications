@@ -1,4 +1,4 @@
 ---
-blurb: "Given a knapsack of weight W, determine the maximum value that you are able to get from a set of items each  with a weight and value. You can only take one of each item."
+blurb: "Given a knapsack that can only carry a certain weight, determine which items to put in the knapsack in order to maximize their combined value."
 source: "Wikipedia"
 source_url: "https://en.wikipedia.org/wiki/Knapsack_problem"
