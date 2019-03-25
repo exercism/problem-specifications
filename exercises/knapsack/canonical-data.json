@@ -6,20 +6,6 @@
   ],
   "cases": [
     {
-      "description": "simple knapsack",
-      "property": "maximumValue",
-      "input": {
-        "maximumWeight": 10,
-        "items": [
-          [5, 10], 
-          [4, 40], 
-          [6, 30], 
-          [4, 50]
-        ]
-      },
-      "expected": 90
-    },
-    {
       "description": "no items",
       "property": "maximumValue",
       "input": {
@@ -59,14 +45,28 @@
       "input": {
         "maximumWeight": 10,
         "items": [
-          [2, 20], 
-          [2, 20], 
-          [2, 20], 
-          [2, 20], 
+          [2, 20],
+          [2, 20],
+          [2, 20],
+          [2, 20],
           [10, 50]
         ]
       },
       "expected": 80
+    },
+    {
+      "description": "example knapsack",
+      "property": "maximumValue",
+      "input": {
+        "maximumWeight": 10,
+        "items": [
+          [5, 10],
+          [4, 40],
+          [6, 30],
+          [4, 50]
+        ]
+      },
+      "expected": 90
     },
     {
       "description": "8 items",
