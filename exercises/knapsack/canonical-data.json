@@ -31,10 +31,10 @@
       "input": {
         "maximumWeight": 10,
         "items": [
-          [2, 5], 
-          [2, 5], 
-          [2, 5], 
-          [2, 5], 
+          [2, 5],
+          [2, 5],
+          [2, 5],
+          [2, 5],
           [10, 21]]
       },
       "expected": 21
@@ -85,7 +85,7 @@
         ]
       },
       "expected": 900
-    }, 
+    },
     {
       "description": "15 items",
       "property": "maximumValue",
