@@ -1,6 +1,6 @@
 {
   "exercise": "armstrong-numbers",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "cases": [
     {
       "description": "Single digit numbers are Armstrong numbers",
@@ -65,6 +65,14 @@
         "number": 9926314
       },
       "expected": false
+    },
+    {
+      "description": "Seventeen digit number that is an Armstrong number",
+      "property": "isArmstrongNumber",
+      "input": {
+        "number": 21897142587612075
+      },
+      "expected": true
     }
   ]
 }
