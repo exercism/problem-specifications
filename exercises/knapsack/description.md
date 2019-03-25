@@ -10,7 +10,7 @@ the knapsack he carries with him can only hold so much weight (W).
 
 Given a knapsack with a specific carrying capacity (W), help Bob determine
 the maximum value he can get from the items in the house. Note that Bob can
-only take only one of each item.
+only take one of each item.
 
 All values given will be strictly positive. Items will be represented as a
 list of pairs, `wi` and `vi`, where the first element `wi` is the weight of
@@ -18,7 +18,13 @@ the *i*th item and `vi` is the value for that item.
 
 For example:
 
-Items: [[5, 10], [4, 40], [6, 30], [4, 50]]
+Items: [
+  { "weight": 5, "value": 10 },
+  { "weight": 4, "value": 40 },
+  { "weight": 6, "value": 30 },
+  { "weight": 4, "value": 50 }
+]
+
 Knapsack Limit: 10
 
 For the above, the first item has weight 5 and value 10, the second item has
