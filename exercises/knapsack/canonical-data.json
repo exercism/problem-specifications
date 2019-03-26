@@ -41,7 +41,7 @@
       "expected": 21
     },
     {
-      "description": "five items (cannot be greedy by price)",
+      "description": "five items (cannot be greedy by value)",
       "property": "maximumValue",
       "input": {
         "maximumWeight": 10,

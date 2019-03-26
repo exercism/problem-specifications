@@ -1,4 +1,4 @@
-In this exercise, lets try to solve a classic problem.
+In this exercise, let's try to solve a classic problem.
 
 Bob is a thief. After months of careful planning, he finally manages to
 crack the security systems of a high-class apartment.
@@ -10,7 +10,7 @@ the knapsack he carries with him can only hold so much weight (W).
 
 Given a knapsack with a specific carrying capacity (W), help Bob determine
 the maximum value he can get from the items in the house. Note that Bob can
-only take one of each item.
+take only one of each item.
 
 All values given will be strictly positive. Items will be represented as a
 list of pairs, `wi` and `vi`, where the first element `wi` is the weight of
