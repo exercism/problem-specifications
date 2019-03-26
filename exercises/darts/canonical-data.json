@@ -1,6 +1,6 @@
 {
   "exercise": "darts",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "cases": [
     {
       "description": "Return the correct amount earned by a dart landing in a given point in the target problem.",
