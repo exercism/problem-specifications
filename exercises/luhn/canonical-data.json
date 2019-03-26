@@ -119,7 +119,7 @@
         "Convert non-digits to their ascii values and then offset them by 48 sometimes accidentally declare an invalid string to be valid.",
         "This test is designed to avoid that solution."
       ],
-      "description": "using ascii value for doubled non-digit isn't allowed",
+      "description": "using ascii value for non-doubled non-digit isn't allowed",
       "property": "valid",
       "input": {
         "value": "055b 444 285"
@@ -131,7 +131,7 @@
         "Convert non-digits to their ascii values and then offset them by 48 sometimes accidentally declare an invalid string to be valid.",
         "This test is designed to avoid that solution."
       ],
-      "description": "using ascii value for non-doubled non-digit isn't allowed",
+      "description": "using ascii value for doubled non-digit isn't allowed",
       "property": "valid",
       "input": {
         "value": ":9"
