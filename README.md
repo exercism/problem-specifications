@@ -1,5 +1,10 @@
 # problem-specifications
 
+# Start a list
+* Item 1
+* Item 2
+End a list
+
 Shared metadata for Exercism exercises.
 
 ## Contributing Guide
