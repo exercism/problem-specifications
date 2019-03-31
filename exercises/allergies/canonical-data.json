@@ -3,14 +3,11 @@
   "version": "1.2.1",
   "comments": [
     "Given a number and a substance, indicate whether Tom is allergic ",
-    "to that substance.",
-    "Test cases for this method involve more than one assertion.",
-    "Each case in 'expected' specifies what the method should return for",
-    "the given substance."
+    "to that substance."
   ],
   "cases": [
     {
-      "description": "no allergies means not allergic with:",
+      "description": "no allergies means not allergic to:",
       "cases": [
         {
           "description": "peanuts",
@@ -52,10 +49,9 @@
     },
     {
       "description": "allergic to eggs in addition to other stuff like:",
-      "property": "allergicTo",
       "cases": [
         {
-          "description": "eggs",
+          "description": "eggs repeated",
           "property": "allergicTo",
           "input": {
             "item": "eggs",
