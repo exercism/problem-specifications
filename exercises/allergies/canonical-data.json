@@ -1,48 +1,43 @@
 {
   "exercise": "allergies",
   "version": "1.2.1",
+  "comments": [
+    "Given a number and a substance, indicate whether Tom is allergic ",
+    "to that substance.",
+    "Test cases for this method involve more than one assertion.",
+    "Each case in 'expected' specifies what the method should return for",
+    "the given substance."
+  ],
   "cases": [
     {
-      "description": "allergicTo",
-      "comments": [
-        "Given a number and a substance, indicate whether Tom is allergic ",
-        "to that substance.",
-        "Test cases for this method involve more than one assertion.",
-        "Each case in 'expected' specifies what the method should return for",
-        "the given substance."
-      ],
+      "description": "no allergies means not allergic with:",
       "cases": [
         {
-          "description": "no allergies means not allergic with:",
-          "cases": [
-            {
-              "description": "peanuts",
-              "property": "allergicTo",
-              "input": {
-                "item": "peanuts",
-                "score": 0
-              },
-              "expected": false
-            },
-            {
-              "description": "cats",
-              "property": "allergicTo",
-              "input": {
-                "item": "cats",
-                "score": 0
-              },
-              "expected": false
-            },
-            {
-              "description": "strawberries",
-              "property": "allergicTo",
-              "input": {
-                "item": "strawberries",
-                "score": 0
-              },
-              "expected": false
-            }
-          ]
+          "description": "peanuts",
+          "property": "allergicTo",
+          "input": {
+            "item": "peanuts",
+            "score": 0
+          },
+          "expected": false
+        },
+        {
+          "description": "cats",
+          "property": "allergicTo",
+          "input": {
+            "item": "cats",
+            "score": 0
+          },
+          "expected": false
+        },
+        {
+          "description": "strawberries",
+          "property": "allergicTo",
+          "input": {
+            "item": "strawberries",
+            "score": 0
+          },
+          "expected": false
         }
       ]
     },
@@ -60,7 +55,7 @@
       "property": "allergicTo",
       "cases": [
         {
-          "description": "strawberries",
+          "description": "eggs",
           "property": "allergicTo",
           "input": {
             "item": "eggs",
@@ -81,10 +76,10 @@
           "description": "strawberries",
           "property": "allergicTo",
           "input": {
-            "item": "eggs",
+            "item": "strawberries",
             "score": 5
           },
-          "expected": true
+          "expected": false
         }
       ]
     },
