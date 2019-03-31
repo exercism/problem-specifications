@@ -80,21 +80,8 @@
       ]
     },
     {
-      "description": "allergic to strawberries but not peanuts with:",
-      "property": "allergicTo",
-      "input": {
-        "score": 9
-      },
+      "description": "allergic to strawberries but not:",
       "cases": [
-        {
-          "description": "eggs",
-          "property": "allergicTo",
-          "input": {
-            "item": "eggs",
-            "score": 9
-          },
-          "expected": true
-        },
         {
           "description": "peanuts",
           "property": "allergicTo",
@@ -112,9 +99,23 @@
             "score": 9
           },
           "expected": false
+        }
+      ]
+    },
+    {
+      "description": "allergic to strawberries and also:",
+      "cases": [
+        {
+          "description": "eggs",
+          "property": "allergicTo",
+          "input": {
+            "item": "eggs",
+            "score": 9
+          },
+          "expected": true
         },
         {
-          "description": "strawberries",
+          "description": "strawberries repeated",
           "property": "allergicTo",
           "input": {
             "item": "strawberries",
