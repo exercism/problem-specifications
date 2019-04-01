@@ -34,7 +34,7 @@
             "item": "eggs",
             "score": 3
           },
-          "expected": false
+          "expected": true
         },
         {
           "description": "allergic to something, but not eggs",
@@ -84,7 +84,7 @@
             "item": "peanuts",
             "score": 7
           },
-          "expected": false
+          "expected": true
         },
         {
           "description": "allergic to something, but not peanuts",
@@ -134,7 +134,7 @@
             "item": "shellfish",
             "score": 14
           },
-          "expected": false
+          "expected": true
         },
         {
           "description": "allergic to something, but not shellfish",
@@ -184,7 +184,7 @@
             "item": "strawberries",
             "score": 28
           },
-          "expected": false
+          "expected": true
         },
         {
           "description": "allergic to something, but not strawberries",
@@ -234,7 +234,7 @@
             "item": "tomatoes",
             "score": 56
           },
-          "expected": false
+          "expected": true
         },
         {
           "description": "allergic to something, but not tomatoes",
@@ -284,7 +284,7 @@
             "item": "chocolate",
             "score": 112
           },
-          "expected": false
+          "expected": true
         },
         {
           "description": "allergic to something, but not chocolate",
@@ -334,7 +334,7 @@
             "item": "pollen",
             "score": 224
           },
-          "expected": false
+          "expected": true
         },
         {
           "description": "allergic to something, but not pollen",
@@ -384,7 +384,7 @@
             "item": "cats",
             "score": 192
           },
-          "expected": false
+          "expected": true
         },
         {
           "description": "allergic to something, but not cats",
