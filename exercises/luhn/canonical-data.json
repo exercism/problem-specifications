@@ -67,6 +67,14 @@
       "expected": true
     },
     {
+      "description": "valid number with an odd number of spaces",
+      "property": "valid",
+      "input": {
+        "value": "234 567 891 234"
+      },
+      "expected": true
+    },
+    {
       "description": "valid strings with a non-digit added at the end become invalid",
       "property": "valid",
       "input": {
