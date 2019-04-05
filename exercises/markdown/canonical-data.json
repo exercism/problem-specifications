@@ -1,6 +1,6 @@
 {
   "exercise": "markdown",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "comments": [
     "Markdown is a shorthand for creating HTML from text strings."
   ],
@@ -100,6 +100,14 @@
             "markdown": "This is a paragraph with # and * in the text"
         },
         "expected": "<p>This is a paragraph with # and * in the text</p>"
+    },
+    {
+        "description": "unordered lists close properly with preceding and following lines",
+        "property": "parse",
+        "input": {
+            "markdown": "# Start a list\n* Item 1\n* Item 2\nEnd a list"
+        },
+        "expected": "<h1>Start a list</h1><ul><li>Item 1</li><li>Item 2</li></ul><p>End a list</p>"
     }
   ]
 }
