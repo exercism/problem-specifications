@@ -1,6 +1,6 @@
 {
-  "exercise": "bracket-push",
-  "version": "1.5.0",
+  "exercise": "matching-brackets",
+  "version": "2.0.0",
   "cases": [
     {
       "description": "paired square brackets",
