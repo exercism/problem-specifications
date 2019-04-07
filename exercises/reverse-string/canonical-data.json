@@ -1,9 +1,9 @@
 {
   "exercise": "reverse-string",
-  "version": "1.1.0",      
+  "version": "1.2.0",
   "comments": [
-        "If property based testing tools are available, a good property to test is reversing a string twice: reverse(reverse(string)) == string"
-      ],
+    "If property based testing tools are available, a good property to test is reversing a string twice: reverse(reverse(string)) == string"
+  ],
   "cases": [
     {
       "description": "an empty string",
@@ -31,7 +31,7 @@
     },
     {
       "description": "a sentence with punctuation",
-      "property": "reverse",  
+      "property": "reverse",
       "input": {
         "value": "I'm hungry!"
       },
@@ -44,6 +44,63 @@
         "value": "racecar"
       },
       "expected": "racecar"
+    },
+    {
+      "comments": [
+        "Track Maintainers:",
+        "Please remove this example if your language has poor unicode support.",
+        "This will probably work immediately in languages that use UTF-16 for",
+        "their strings."
+      ],
+      "description": "wide characters",
+      "property": "reverse",
+      "input": {
+        "value": "子猫"
+      },
+      "expected": "猫子"
+    },
+    {
+      "comments": [
+        "Track Maintainers:",
+        "Please remove this example if your language has poor unicode support.",
+        "If you chose to use this exercise, consider marking it as a bonus.",
+        "",
+        "Students:",
+        "You may find you have been splitting on Unicode code units. If this",
+        "isn't passing, look into splitting on Unicode characters."
+      ],
+      "description": "ultra wide characters",
+      "property": "reverse",
+      "input": {
+        "value": "😀☕"
+      },
+      "expected": "☕😀"
+    },
+    {
+      "comments": [
+        "Track Maintainers:",
+        "Please remove this example if your language does not support Unicode",
+        "Text Segmentation (Grapheme Clusters) or have good third party",
+        "libraries for it. If not natively supported by the language, please",
+        "encourage students to use a library.",
+        "If you chose to use this exercise, consider marking it as a bonus.",
+        "",
+        "Students:",
+        "Some printed characters are actually made up of multiple unicode",
+        "characters. For example, the Latin Small Letter U with Diaeresis (ü),",
+        "is made up of Latin Small Letter U (u) followed by the Diaeresis",
+        "modifier. Together they make up a Grapheme cluster (user-perceived",
+        "character).",
+        "",
+        "When reversing a string, we want to keep the order of the characters",
+        "within the grapheme."
+      ],
+      "description": "grapheme clusters",
+      "property": "reverse",
+      "input": {
+        "value": "uüu"
+      },
+      "expected": "uüu"
     }
   ]
 }
