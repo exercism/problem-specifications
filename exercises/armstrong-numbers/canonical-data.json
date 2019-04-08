@@ -1,6 +1,6 @@
 {
   "exercise": "armstrong-numbers",
-  "version": "2.0.0",
+  "version": "1.1.0",
   "cases": [
     {
       "description": "Zero is an Armstrong number",
