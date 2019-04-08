@@ -204,14 +204,14 @@
           "input": {
             "white_queen": {
               "position": {
-                "row": 0,
-                "column": 6
+                "row": 1,
+                "column": 7
               }
             },
             "black_queen": {
               "position": {
-                "row": 1,
-                "column": 7
+                "row": 0,
+                "column": 6
               }
             }
           },
