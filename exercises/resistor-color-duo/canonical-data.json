@@ -1,6 +1,6 @@
 {
-  "exercise": "resistor-colors",
-  "version": "1.0.0",
+  "exercise": "resistor-color-duo",
+  "version": "2.0.0",
   "cases": [
     {
       "description": "Brown and black",
