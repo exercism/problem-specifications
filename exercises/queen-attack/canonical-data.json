@@ -1,6 +1,6 @@
 {
   "exercise": "queen-attack",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "comments": [
     "Testing invalid positions will vary by language. The expected",
     "value of 'error' is there to indicate some sort of failure should",
@@ -204,14 +204,14 @@
           "input": {
             "white_queen": {
               "position": {
-                "row": 2,
-                "column": 2
+                "row": 1,
+                "column": 7
               }
             },
             "black_queen": {
               "position": {
-                "row": 5,
-                "column": 5
+                "row": 0,
+                "column": 6
               }
             }
           },
