@@ -39,7 +39,7 @@
       "expected": 8.3
     },
     {
-      "description": "6 Earth years  in Venus years",
+      "description": "6 Earth years in Venus years",
       "property": "age",
       "input": {
         "planet": "Venus",
