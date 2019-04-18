@@ -1,6 +1,6 @@
 {
   "exercise": "space-age",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "cases": [
     {
       "description": "age on Earth",
@@ -73,6 +73,78 @@
         "seconds": 1821023456
       },
       "expected": 0.35
+    },
+    {
+      "description": "2 earth years in earth years",
+      "property": "age",
+      "input": {
+        "planet": "Earth",
+        "seconds": 63072000
+      },
+      "expected": 2
+    },
+    {
+      "description": "2 earth years in mercury years",
+      "property": "age",
+      "input": {
+        "planet": "Mercury",
+        "seconds": 63072000
+      },
+      "expected": 8.3
+    },
+    {
+      "description": "2 earth years in venus years",
+      "property": "age",
+      "input": {
+        "planet": "Venus",
+        "seconds": 63072000
+      },
+      "expected": 3.25
+    },
+    {
+      "description": "2 earth years on mars",
+      "property": "age",
+      "input": {
+        "planet": "Mars",
+        "seconds": 63072000
+      },
+      "expected": 1.06
+    },
+    {
+      "description": "2 earth years on jupiter",
+      "property": "age",
+      "input": {
+        "planet": "Jupiter",
+        "seconds": 63072000
+      },
+      "expected": 0.17
+    },
+    {
+      "description": "2 earth years on saturn",
+      "property": "age",
+      "input": {
+        "planet": "Saturn",
+        "seconds": 63072000
+      },
+      "expected": 0.07
+    },
+    {
+      "description": "2 earth years on uranus",
+      "property": "age",
+      "input": {
+        "planet": "Uranus",
+        "seconds": 63072000
+      },
+      "expected": 0.02
+    },
+    {
+      "description": "2 earth years on neptune",
+      "property": "age",
+      "input": {
+        "planet": "Neptune",
+        "seconds": 63072000
+      },
+      "expected": 0.01
     }
   ]
 }
