@@ -3,43 +3,7 @@
   "version": "1.3.0",
   "cases": [
     {
-      "description": "age on Mercury",
-      "property": "age",
-      "input": {
-        "planet": "Mercury",
-        "seconds": 2134835688
-      },
-      "expected": 280.88
-    },
-    {
-      "description": "2 earth years in mercury years",
-      "property": "age",
-      "input": {
-        "planet": "Mercury",
-        "seconds": 63072000
-      },
-      "expected": 8.3
-    },
-    {
-      "description": "age on Venus",
-      "property": "age",
-      "input": {
-        "planet": "Venus",
-        "seconds": 189839836
-      },
-      "expected": 9.78
-    },
-    {
-      "description": "2 earth years in venus years",
-      "property": "age",
-      "input": {
-        "planet": "Venus",
-        "seconds": 63072000
-      },
-      "expected": 3.25
-    },
-    {
-      "description": "age on Earth",
+      "description": "31.7 Earth years in Earth years",
       "property": "age",
       "input": {
         "planet": "Earth",
@@ -48,16 +12,52 @@
       "expected": 31.69
     },
     {
-      "description": "2 earth years in earth years",
+      "description": "2 Earth years in Earth years",
       "property": "age",
       "input": {
         "planet": "Earth",
-        "seconds": 63072000
+        "seconds": 63115200
       },
       "expected": 2
     },
     {
-      "description": "age on Mars",
+      "description": "67.6 Earth years in Mercury years",
+      "property": "age",
+      "input": {
+        "planet": "Mercury",
+        "seconds": 2134835688
+      },
+      "expected": 280.88
+    },
+    {
+      "description": "2 Earth years in Mercury years",
+      "property": "age",
+      "input": {
+        "planet": "Mercury",
+        "seconds": 63115200
+      },
+      "expected": 8.3
+    },
+    {
+      "description": "6 Earth years  in Venus years",
+      "property": "age",
+      "input": {
+        "planet": "Venus",
+        "seconds": 189839836
+      },
+      "expected": 9.78
+    },
+    {
+      "description": "2 Earth years in Venus years",
+      "property": "age",
+      "input": {
+        "planet": "Venus",
+        "seconds": 63115200
+      },
+      "expected": 3.25
+    },
+    {
+      "description": "67.6 Earth years in Mars years",
       "property": "age",
       "input": {
         "planet": "Mars",
@@ -66,16 +66,16 @@
       "expected": 35.88
     },
     {
-      "description": "2 earth years on mars",
+      "description": "2 Earth years in Mars years",
       "property": "age",
       "input": {
         "planet": "Mars",
-        "seconds": 63072000
+        "seconds": 63115200
       },
       "expected": 1.06
     },
     {
-      "description": "age on Jupiter",
+      "description": "28.6 Earth years in Jupiter years",
       "property": "age",
       "input": {
         "planet": "Jupiter",
@@ -84,16 +84,16 @@
       "expected": 2.41
     },
     {
-      "description": "2 earth years on jupiter",
+      "description": "2 Earth years in Jupiter years",
       "property": "age",
       "input": {
         "planet": "Jupiter",
-        "seconds": 63072000
+        "seconds": 63115200
       },
       "expected": 0.17
     },
     {
-      "description": "age on Saturn",
+      "description": "63.5 Earth years in Saturn years",
       "property": "age",
       "input": {
         "planet": "Saturn",
@@ -102,16 +102,16 @@
       "expected": 2.15
     },
     {
-      "description": "2 earth years on saturn",
+      "description": "2 Earth years in saturn years",
       "property": "age",
       "input": {
         "planet": "Saturn",
-        "seconds": 63072000
+        "seconds": 63115200
       },
       "expected": 0.07
     },
     {
-      "description": "age on Uranus",
+      "description": "38.3 Earth years in Uranus years",
       "property": "age",
       "input": {
         "planet": "Uranus",
@@ -120,16 +120,16 @@
       "expected": 0.46
     },
     {
-      "description": "2 earth years on uranus",
+      "description": "2 Earth years in uranus years",
       "property": "age",
       "input": {
         "planet": "Uranus",
-        "seconds": 63072000
+        "seconds": 63115200
       },
       "expected": 0.02
     },
     {
-      "description": "age on Neptune",
+      "description": "57.7 Earth years in Neptune years",
       "property": "age",
       "input": {
         "planet": "Neptune",
@@ -138,11 +138,11 @@
       "expected": 0.35
     },
     {
-      "description": "2 earth years on neptune",
+      "description": "2 Earth years in Neptune years",
       "property": "age",
       "input": {
         "planet": "Neptune",
-        "seconds": 63072000
+        "seconds": 63115200
       },
       "expected": 0.01
     }
