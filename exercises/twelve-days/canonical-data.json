@@ -1,14 +1,40 @@
 {
   "exercise": "twelve-days",
-  "version": "1.2.0",
-  "comments": [
-    "JSON doesn't allow for multi-line strings, so all verses are presented ",
-    "here as arrays of strings. It's up to the test generator to join the ",
-    "lines together with line breaks."
-  ],
+  "version": "2.0.0",
   "cases": [
     {
+      "description" : "A list of gifts",
+      "comments": [
+        "Generate a list of gifts from input numbers"
+      ],
+      "cases" : [
+        {
+          "description" : "all the gifts",
+          "property" : "gifts",
+          "input" : {
+            "startGift" : 12,
+            "endGift" :  1
+          },
+          "expected" : "twelve Drummers Drumming, eleven Pipers Piping, ten Lords-a-Leaping, nine Ladies Dancing, eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree"
+        },
+        {
+          "description" : "some gifts",
+          "property" : "gifts",
+          "input" : {
+            "startGift" : 8,
+            "endGift" : 5
+          },
+          "expected" :  "eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, and five Gold Rings"
+        }
+      ]
+    },
+    {
       "description": "verse",
+      "comments": [
+        "JSON doesn't allow for multi-line strings, so all verses are presented ",
+        "here as arrays of strings. It's up to the test generator to join the ",
+        "lines together with line breaks."
+      ],
       "cases": [
         {
           "description": "first day a partridge in a pear tree",
