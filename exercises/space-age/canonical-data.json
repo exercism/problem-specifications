@@ -18,7 +18,7 @@
         "planet": "Earth",
         "seconds": 63115200
       },
-      "expected": 2
+      "expected": 2.0
     },
     {
       "description": "67.6 Earth years in Mercury years",
