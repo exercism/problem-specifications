@@ -25,8 +25,7 @@ and 4 bytes.
 
 UTF-8 and UTF-16 are both Unicode encodings which means they're capable of
 representing a massive range of characters including:
-* English language text
-* Foreign language text
+* Text in most of the world's languages and scripts
 * Historic text
 * Emoji
 
