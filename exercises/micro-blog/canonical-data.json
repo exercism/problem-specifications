@@ -9,8 +9,9 @@
     "This exercise is probably too easy in languages that use Unicode aware",
     "string slicing.",
     "",
-    "When adding additional tests to the problem specification, prefer tests",
-    "that pass and fail the same for UTF-8 and UTF-16.",
+    "When adding additional tests to the problem specification, consider that",
+    "in progress solutions might not fail due to UTF-8 and UTF-16",
+    "differences.",
     "",
     "Avoid adding tests that involve characters (graphemes) that are made up",
     "of multiple characters, or introduce them as a more advanced step.",
@@ -39,6 +40,38 @@
           "expected": "Hello"
         },
         {
+          "description": "German language short (broth)",
+          "property": "truncate",
+          "input": {
+            "phrase": "brühe"
+          },
+          "expected": "brühe"
+        },
+        {
+          "description": "Bulgarian language short (good)",
+          "property": "truncate",
+          "input": {
+            "phrase": "Добър"
+          },
+          "expected": "Добър"
+        },
+        {
+          "description": "Greek language short (health)",
+          "property": "truncate",
+          "input": {
+            "phrase": "υγειά"
+          },
+          "expected": "υγειά"
+        },
+        {
+          "description": "Maths short",
+          "property": "truncate",
+          "input": {
+            "phrase": "a=πr²"
+          },
+          "expected": "a=πr²"
+        },
+        {
           "description": "English and emoji short",
           "property": "truncate",
           "input": {
@@ -61,6 +94,14 @@
             "phrase": "❄🌡🤧🤒🏥🕰😀"
           },
           "expected": "❄🌡🤧🤒🏥"
+        },
+        {
+          "description": "Royal Flush?",
+          "property": "truncate",
+          "input": {
+            "phrase": "🃎🂸🃅🃋🃍🃁🃊"
+          },
+          "expected": "🃎🂸🃅🃋🃍"
         }
       ]
     }
