@@ -80,6 +80,14 @@
           "expected": "a=πr²"
         },
         {
+          "description": "Maths long",
+          "property": "truncate",
+          "input": {
+            "phrase": "∅⊊ℕ⊊ℤ⊊ℚ⊊ℝ⊊ℂ"
+          },
+          "expected": "∅⊊ℕ⊊ℤ"
+        },
+        {
           "description": "English and emoji short",
           "property": "truncate",
           "input": {
