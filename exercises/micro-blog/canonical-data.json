@@ -48,6 +48,14 @@
           "expected": "brühe"
         },
         {
+          "description": "German language long (bear carpet → beards)",
+          "property": "truncate",
+          "input": {
+            "phrase": "Bärteppich"
+          },
+          "expected": "Bärte"
+        },
+        {
           "description": "Bulgarian language short (good)",
           "property": "truncate",
           "input": {
