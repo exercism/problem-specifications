@@ -1,6 +1,6 @@
 {
   "exercise": "forth",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "comments": [
     "The cases are split into multiple sections, all with the same structure.",
     "In all cases, the `expected` key is the resulting stack",
@@ -45,7 +45,7 @@
           "input": {
             "instructions": ["1 +"]
           },
-          "expected": {"error": "only one value on stack"}
+          "expected": {"error": "only one value on the stack"}
         }
       ]
     },
@@ -301,7 +301,7 @@
           "input": {
             "instructions": ["1 over"]
           },
-          "expected": {"error": "only one value on the stack stack"}
+          "expected": {"error": "only one value on the stack"}
         }
       ]
     },
