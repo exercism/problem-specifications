@@ -239,7 +239,7 @@
             "expected":0
         },
         {
-            "description":"Only consecutive numbers form a straight",
+            "description":"No pairs but not a big straight",
             "property":"score",
             "input":{
                 "dice":[6, 5, 4, 3, 1],
