@@ -1,6 +1,6 @@
 {
   "exercise": "luhn",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "cases": [
     {
       "description": "single digit strings can not be valid",
@@ -63,6 +63,14 @@
       "property": "valid",
       "input": {
         "value": "095 245 88"
+      },
+      "expected": true
+    },
+    {
+      "description": "valid number with an odd number of spaces",
+      "property": "valid",
+      "input": {
+        "value": "234 567 891 234"
       },
       "expected": true
     },
