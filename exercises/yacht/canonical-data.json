@@ -1,6 +1,6 @@
 {
     "exercise":"yacht",
-    "version":"1.1.0",
+    "version":"1.2.0",
     "comments":[
         "The dice are represented always as a list of exactly five integers",
         "with values between 1 and 6 inclusive. The category is an string.",
@@ -235,6 +235,15 @@
             "input":{
                 "dice":[6, 5, 4, 3, 2],
                 "category":"little straight"
+            },
+            "expected":0
+        },
+        {
+            "description":"No pairs but not a big straight",
+            "property":"score",
+            "input":{
+                "dice":[6, 5, 4, 3, 1],
+                "category":"big straight"
             },
             "expected":0
         },
