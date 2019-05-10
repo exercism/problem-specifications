@@ -40,7 +40,7 @@ is easier to understand with an example:
 
 ```json
 { "exercise": "foobar"
-, "version" : "1.0.0"
+, "version" : "1.1.0"
 , "comments":
     [ " Comments are always optional and can be used almost anywhere.      "
     , "                                                                    "
@@ -92,6 +92,15 @@ is easier to understand with an example:
               }
             , "expected"   : null
             }
+            { "description": "Foo'ing a very big number returns nothing"
+            , "optional"   : "big-ints"
+            , "comments"   : [ "Making this test case pass requires using BigInts." ]
+            , "property"   : "foo"
+            , "input"      : {
+                "word"       : "28948022309329048855892746252171976962977213799489202546401021394546514198529"
+              }
+            , "expected"   : null
+            }
           , { "description": "Bar'ing a name with numbers gives an error"
             , "property"   : "bar"
             , "input"      : {
@@ -118,6 +127,7 @@ There are also some conventions that must be followed:
   - If an error is expected (because the input is invalid, or any other reason), the value at `"expected"` should be an object containing exactly one property, `"error"`, whose value is a string.
     - The string should explain why the error would occur.
     - A particular track's implementation of the exercise **need not** necessarily check that the error includes that exact string as the cause, depending on what is idiomatic in the language (it may not be idiomatic to check strings for error messages).
+  - Test cases that only some tracks should implement, for example because it would unnecessarily increase the complexity of the exercise in some but not all languages, mark it with an `optional`-key. Multiple cases related to the same reason for optionality should have the same key. The decision that a test case is optional will often be made in the PR discussion, so don't worry about it too much while creating a PR.
 
 ### Test Data Versioning
 

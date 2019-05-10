@@ -27,7 +27,7 @@
    "self": { "vendor" : "io.exercism"
            , "name"   : "canonical-data"
            , "format" : "jsonschema"
-           , "version": "1-0-0"
+           , "version": "1-1-0"
            },
 
    "$ref": "#/definitions/canonicalData",
@@ -86,6 +86,7 @@
           , "required"   : ["description", "property", "input", "expected"]
           , "properties" :
                 { "description": { "$ref": "#/definitions/description" }
+                , "optional"   : { "$ref": "#/definitions/optional"    }
                 , "comments"   : { "$ref": "#/definitions/comments"    }
                 , "property"   : { "$ref": "#/definitions/property"    }
                 , "input"      : { "$ref": "#/definitions/input"       }
@@ -100,6 +101,7 @@
           , "required"   : ["description", "cases"]
           , "properties" :
                 { "description": { "$ref": "#/definitions/description" }
+                , "optional"   : { "$ref": "#/definitions/optional"    }
                 , "comments"   : { "$ref": "#/definitions/comments"    }
                 , "cases"      : { "$ref": "#/definitions/testGroup"   }
                 }
@@ -109,6 +111,12 @@
       "description":
           { "description": "A short, clear, one-line description"
           , "type"       : "string"
+          },
+
+      "optional":
+          { "description": "An identifier for similar optional test cases (kebab-case)"
+          , "type"       : "string"
+          , "pattern"    : "^[a-z]+(-[a-z]+)*$"
           },
 
       "property":
