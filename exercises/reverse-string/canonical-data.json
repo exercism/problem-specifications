@@ -1,6 +1,6 @@
 {
   "exercise": "reverse-string",
-  "version": "1.1.0",      
+  "version": "1.2.0",
   "comments": [
         "If property based testing tools are available, a good property to test is reversing a string twice: reverse(reverse(string)) == string"
       ],
@@ -44,6 +44,14 @@
         "value": "racecar"
       },
       "expected": "racecar"
+    },
+    {
+      "description": "an even-sized word",
+      "property": "reverse",
+      "input": {
+        "value": "drawer"
+      },
+      "expected": "reward"
     }
   ]
 }
