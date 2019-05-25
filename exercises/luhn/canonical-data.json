@@ -1,6 +1,6 @@
 {
   "exercise": "luhn",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "cases": [
     {
       "description": "single digit strings can not be valid",
@@ -94,7 +94,7 @@
       "description": "valid strings with symbols included become invalid",
       "property": "valid",
       "input": {
-        "value": "055£ 444$ 285"
+        "value": "055# 444$ 285"
       },
       "expected": false
     },
