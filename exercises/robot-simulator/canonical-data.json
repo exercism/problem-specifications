@@ -10,11 +10,11 @@
   ],
   "cases": [
     {
-      "description": "Create",
+      "description": "Creation",
       "comments": [ "A robot is created with a position and a direction" ],
       "cases": [
         {
-          "description": "at origin facing north",
+          "description": "At origin",
           "comments": [ "Robots are created with a position and direction" ],
           "property": "create",
           "input": {
@@ -33,7 +33,7 @@
           }
         },
         {
-          "description": "at negative position facing South",
+          "description": "Allows negative positions",
           "comments": [ "Negative positions allowed" ],
           "property": "create",
           "input": {
