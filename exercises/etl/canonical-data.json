@@ -10,10 +10,7 @@
         "such that keys are integers. e.g. in JavaScript, it might look ",
         "like `transform( { 1: ['A'] } );`"
       ],
-      "description": "Transform",
-      "comments": [ "Transforms the a set of scrabble data previously indexed by the tile score",
-                    "to a set of data indexed by the tile letter"
-      ],
+      "description": "transforms the a set of scrabble data previously indexed by the tile score to a set of data indexed by the tile letter",
       "cases": [
         {
           "description": "a single letter",
