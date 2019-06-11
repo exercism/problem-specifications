@@ -1,6 +1,6 @@
 {
   "exercise": "robot-simulator",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "comments": [
     "Some tests have two expectations: one for the position, one for the direction",
     "Optionally, you can also test",
@@ -10,12 +10,10 @@
   ],
   "cases": [
     {
-      "description": "Creation",
-      "comments": [ "A robot is created with a position and a direction" ],
+      "description": "Create robot",
       "cases": [
         {
-          "description": "At origin",
-          "comments": [ "Robots are created with a position and direction" ],
+          "description": "at origin facing north",
           "property": "create",
           "input": {
             "position": {
@@ -33,8 +31,7 @@
           }
         },
         {
-          "description": "Allows negative positions",
-          "comments": [ "Negative positions allowed" ],
+          "description": "at negative position facing south",
           "property": "create",
           "input": {
             "position": {
@@ -54,12 +51,10 @@
       ]
     },
     {
-      "description": "Rotate clockwise",
-      "comments": [ "rotates the robot's direction 90 degrees clockwise" ],
+      "description": "Rotating clockwise",
       "cases": [
         {
-          "description": "north to east",
-          "comments": [ "changes the direction from north to east" ],
+          "description": "changes north to east",
           "property": "move",
           "input": {
             "position": {
@@ -78,8 +73,7 @@
           }
         },
         {
-          "description": "east to south",
-          "comments": [ "changes the direction from east to south" ],
+          "description": "changes east to south",
           "property": "move",
           "input": {
             "position": {
@@ -98,8 +92,7 @@
           }
         },
         {
-          "description": "south to west",
-          "comments": [ "changes the direction from south to west" ],
+          "description": "changes south to west",
           "property": "move",
           "input": {
             "position": {
@@ -118,8 +111,7 @@
           }
         },
         {
-          "description": "west to north",
-          "comments": [ "changes the direction from west to north" ],
+          "description": "changes west to north",
           "property": "move",
           "input": {
             "position": {
@@ -140,12 +132,10 @@
       ]
     },
     {
-      "description": "Rotates counter-clockwise",
-      "comments": [ "rotates the robot's direction 90 degrees counter-clockwise" ],
+      "description": "Rotating counter-clockwise",
       "cases": [
         {
-          "description": "north to west",
-          "comments": [ "changes the direction from north to west" ],
+          "description": "changes north to west",
           "property": "move",
           "input": {
             "position": {
@@ -164,8 +154,7 @@
           }
         },
         {
-          "description": "west to south",
-          "comments": [ "changes the direction from west to south" ],
+          "description": "changes west to south",
           "property": "move",
           "input": {
             "position": {
@@ -184,8 +173,7 @@
           }
         },
         {
-          "description": "south to east",
-          "comments": [ "changes the direction from south to east" ],
+          "description": "changes south to east",
           "property": "move",
           "input": {
             "position": {
@@ -204,8 +192,7 @@
           }
         },
         {
-          "description": "east to north",
-          "comments": [ "changes the direction from east to north" ],
+          "description": "changes east to north",
           "property": "move",
           "input": {
             "position": {
@@ -226,12 +213,10 @@
       ]
     },
     {
-      "description": "Forward One",
-      "comments": [ "moves the robot forward 1 space in the direction it is pointing" ],
+      "description": "Moving forward one",
       "cases": [
         {
-          "description": "facing north",
-          "comments": [ "increases the y coordinate one when facing north" ],
+          "description": "facing north increments Y",
           "property": "move",
           "input": {
             "position": {
@@ -250,8 +235,7 @@
           }
         },
         {
-          "description": "facing south",
-          "comments": [ "decreases the y coordinate by one when facing south" ],
+          "description": "facing south decrements Y",
           "property": "move",
           "input": {
             "position": {
@@ -270,8 +254,7 @@
           }
         },
         {
-          "description": "facing east",
-          "comments": [ "increases the x coordinate by one when facing east" ],
+          "description": "facing east increments X",
           "property": "move",
           "input": {
             "position": {
@@ -290,8 +273,7 @@
           }
         },
         {
-          "description": "facing west",
-          "comments": [ "decreases the x coordinate by one when facing west" ],
+          "description": "facing west decrements X",
           "property": "move",
           "input": {
             "position": {
@@ -312,14 +294,13 @@
       ]
     },
     {
-      "description": "Series of instructions",
+      "description": "Follow series of instructions",
       "comments": [ "The robot can follow a series of instructions and end up with the correct position and direction.",
                     "Where R = Turn Right, L = Turn Left and A = Advance"
       ],
       "cases": [
         {
-          "description": "moving east and north",
-          "comments": [ "instructions to move east and north from README" ],
+          "description": "moving east and north from README",
           "property": "move",
           "input": {
             "position": {
@@ -339,7 +320,6 @@
         },
         {
           "description": "moving west and north",
-          "comments": [ "instructions to move west and north" ],
           "property": "move",
           "input": {
             "position": {
@@ -359,7 +339,6 @@
         },
         {
           "description": "moving west and south",
-          "comments": [ "instructions to move west and south" ],
           "property": "move",
           "input": {
             "position": {
@@ -379,7 +358,6 @@
         },
         {
           "description": "moving east and north",
-          "comments": [ "instructions to move east and north" ],
           "property": "move",
           "input": {
             "position": {
