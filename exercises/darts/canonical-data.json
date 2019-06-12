@@ -2,12 +2,12 @@
   "exercise": "darts",
   "version": "2.0.0",
   "comments": [
-    "Return the correct amount earned by a dart landing in a given point in the target problem"
+    "Return the correct amount earned by a dart landing in a given point in the target."
   ],
   "cases": [
     {
       "property": "score",
-      "description": "A dart lands outside the target",
+      "description": "Dart missed target",
       "input": {
         "x": -9,
         "y": 9
@@ -16,7 +16,7 @@
     },
     {
       "property": "score",
-      "description": "A dart lands just in the border of the target",
+      "description": "Outer region, dart on border",
       "input": {
         "x": 0,
         "y": 10
@@ -25,34 +25,16 @@
     },
     {
       "property": "score",
-      "description": "A dart lands in the outer circle",
+      "description": "Middle region, dart on border",
       "input": {
-        "x": 4,
-        "y": 4
-      },
-      "expected": 1
-    },
-    {
-      "property": "score",
-      "description": "A dart lands right in the border between outer and middle circles",
-      "input": {
-        "x": 5,
+        "x": -5,
         "y": 0
       },
       "expected": 5
     },
     {
       "property": "score",
-      "description": "A dart lands in the middle circle",
-      "input": {
-        "x": 0.8,
-        "y": -0.8
-      },
-      "expected": 5
-    },
-    {
-      "property": "score",
-      "description": "A dart lands right in the border between middle and inner circles",
+      "description": "Inner region, dart on border",
       "input": {
         "x": 0,
         "y": -1
@@ -61,7 +43,7 @@
     },
     {
       "property": "score",
-      "description": "A dart lands in the inner circle",
+      "description": "Inner region, dart far inside",
       "input": {
         "x": -0.1,
         "y": -0.1
@@ -70,7 +52,61 @@
     },
     {
       "property": "score",
-      "description": "A dart whose coordinates sum to > 1 but whose radius to origin is <= 1 is scored in the inner circle",
+      "description": "Inner-Middle border, dart just inside",
+      "input": {
+        "x": 0.7,
+        "y": 0.7
+      },
+      "expected": 1
+    },
+    {
+      "property": "score",
+      "description": "Inner-Middle border, dart just outside",
+      "input": {
+        "x": 0.8,
+        "y": -0.8
+      },
+      "expected": 5
+    },
+    {
+      "property": "score",
+      "description": "Middle-Outer border, dart just inside",
+      "input": {
+        "x": -3.5,
+        "y": 3.5
+      },
+      "expected": 5
+    },   
+    {
+      "property": "score",
+      "description": "Middle-Outer border, dart just outside",
+      "input": {
+        "x": -3.6,
+        "y": -3.6
+      },
+      "expected": 1
+    },     
+    {
+      "property": "score",
+      "description": "Outer border, dart just inside",
+      "input": {
+        "x": -7.0,
+        "y": 7.0
+      },
+      "expected": 1
+    },     
+    {
+      "property": "score",
+      "description": "Outer border, dart just outside",
+      "input": {
+        "x": 7.1,
+        "y": -7.1
+      },
+      "expected": 0
+    },    
+    {
+      "property": "score",
+      "description": "Inner region dart, asymmetric position",
       "input": {
         "x": 0.4,
         "y": 0.8
@@ -79,19 +115,19 @@
     },
     {
       "property": "score",
-      "description": "A dart whose coordinates sum to > 5 but whose radius to origin is <= 5 is scored in the middle circle",
+      "description": "Middle region dart, asymmetric position",
       "input": {
-        "x": 2,
+        "x": -2,
         "y": 4
       },
       "expected": 5
     },
     {
       "property": "score",
-      "description": "A dart whose coordinates sum to > 10 but whose radius to origin is <= 10 is scored in the outer circle",
+      "description": "Outer region dart, asymmetric position",
       "input": {
         "x": 4,
-        "y": 8
+        "y": -8
       },
       "expected": 1
     }
