@@ -13,7 +13,6 @@
         "like `transform( { 1: ['A'] } );`"
       ],
       "description": "Transform legacy to new",
-      ],
       "cases": [
         {
           "description": "single letter",
