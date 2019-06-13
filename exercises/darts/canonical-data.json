@@ -79,7 +79,7 @@
     },   
     {
       "property": "score",
-      "description": "Middle-Outer border, dart just outside",
+      "description": "Middle-outer border, dart just outside",
       "input": {
         "x": -3.6,
         "y": -3.6
