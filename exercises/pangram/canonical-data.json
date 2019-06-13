@@ -7,7 +7,7 @@
   "version": "1.5.0",
   "cases": [
     {
-      "description": "sentence empty",
+      "description": "empty sentence",
       "property": "isPangram",
       "input": {
         "sentence": ""
@@ -15,7 +15,7 @@
       "expected": false
     },
     {
-      "description": "recognizes a perfect lower case pangram",
+      "description": "perfect lower case",
       "property": "isPangram",
       "input": {
         "sentence": "abcdefghijklmnopqrstuvwxyz"
@@ -23,7 +23,7 @@
       "expected": true
     },
     {
-      "description": "pangram with only lower case",
+      "description": "only lower case",
       "property": "isPangram",
       "input": {
         "sentence": "the quick brown fox jumps over the lazy dog"
@@ -39,7 +39,7 @@
       "expected": false
     },
     {
-      "description": "another missing character, e.g. 'h'",
+      "description": "missing character 'h'",
       "property": "isPangram",
       "input": {
         "sentence": "five boxing wizards jump quickly at it"
@@ -47,7 +47,7 @@
       "expected": false
     },
     {
-      "description": "pangram with underscores",
+      "description": "with underscores",
       "property": "isPangram",
       "input": {
         "sentence": "the_quick_brown_fox_jumps_over_the_lazy_dog"
@@ -55,7 +55,7 @@
       "expected": true
     },
     {
-      "description": "pangram with numbers",
+      "description": "with numbers",
       "property": "isPangram",
       "input": {
         "sentence": "the 1 quick brown fox jumps over the 2 lazy dogs"
@@ -71,7 +71,7 @@
       "expected": false
     },
     {
-      "description": "pangram with mixed case and punctuation",
+      "description": "mixed case and punctuation",
       "property": "isPangram",
       "input": {
         "sentence": "\"Five quacking Zephyrs jolt my wax bed.\""
@@ -79,7 +79,7 @@
       "expected": true
     },
     {
-      "description": "upper and lower case versions of the same character should not be counted separately",
+      "description": "case insensitive",
       "property": "isPangram",
       "input": {
         "sentence": "the quick brown fox jumps over with lazy FX"
