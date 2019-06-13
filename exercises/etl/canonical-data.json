@@ -1,19 +1,21 @@
 {
   "exercise": "etl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "cases": [
     {
       "comments": [
+        "Transforms a set of legacy scrabble data stored as letters per score",
+        "to a set of data stored score per letter.",
         "Note:  The expected input data for these tests should have",
         "integer keys (not stringified numbers as shown in the JSON below",
         "Unless the language prohibits that, please implement these tests",
         "such that keys are integers. e.g. in JavaScript, it might look ",
         "like `transform( { 1: ['A'] } );`"
       ],
-      "description": "transforms the a set of scrabble data previously indexed by the tile score to a set of data indexed by the tile letter",
+      "description": "Transform legacy to new",
       "cases": [
         {
-          "description": "a single letter",
+          "description": "single letter",
           "property": "transform",
           "input": {
             "1": ["A"]
