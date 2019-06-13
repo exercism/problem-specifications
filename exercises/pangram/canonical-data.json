@@ -31,7 +31,7 @@
       "expected": true
     },
     {
-      "description": "missing character 'x'",
+      "description": "missing an 'x'",
       "property": "isPangram",
       "input": {
         "sentence": "a quick movement of the enemy will jeopardize five gunboats"
