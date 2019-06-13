@@ -16,7 +16,7 @@
     },
     {
       "property": "score",
-      "description": "On outer border",
+      "description": "On outer circle",
       "input": {
         "x": 0,
         "y": 10
@@ -25,7 +25,7 @@
     },
     {
       "property": "score",
-      "description": "On middle-outer border",
+      "description": "On middle circle",
       "input": {
         "x": -5,
         "y": 0
@@ -34,7 +34,7 @@
     },
     {
       "property": "score",
-      "description": "On inner-middle border",
+      "description": "On inner circle",
       "input": {
         "x": 0,
         "y": -1
@@ -52,16 +52,16 @@
     },
     {
       "property": "score",
-      "description": "Just within inner-middle border",
+      "description": "Just within inner circle",
       "input": {
         "x": 0.7,
         "y": 0.7
       },
-      "expected": 1
+      "expected": 10
     },
     {
       "property": "score",
-      "description": "Just beyond inner-middle border",
+      "description": "Just beyond inner circle",
       "input": {
         "x": 0.8,
         "y": -0.8
@@ -70,7 +70,7 @@
     },
     {
       "property": "score",
-      "description": "Just within middle-outer border",
+      "description": "Just within middle circle",
       "input": {
         "x": -3.5,
         "y": 3.5
@@ -79,7 +79,7 @@
     },   
     {
       "property": "score",
-      "description": "Just beyond middle-outer border",
+      "description": "Just beyond middle circle",
       "input": {
         "x": -3.6,
         "y": -3.6
@@ -88,7 +88,7 @@
     },     
     {
       "property": "score",
-      "description": "Just within outer border",
+      "description": "Just within outer circle",
       "input": {
         "x": -7.0,
         "y": 7.0
@@ -97,7 +97,7 @@
     },     
     {
       "property": "score",
-      "description": "Just beyond outer border",
+      "description": "Just beyond outer circle",
       "input": {
         "x": 7.1,
         "y": -7.1
@@ -106,7 +106,7 @@
     },    
     {
       "property": "score",
-      "description": "Asymetric position within inner region",
+      "description": "Asymetric position within inner circle",
       "input": {
         "x": 0.4,
         "y": 0.8
@@ -115,7 +115,7 @@
     },
     {
       "property": "score",
-      "description": "Asymetric position within middle region",
+      "description": "Asymetric position between inner and middle circles",
       "input": {
         "x": -2,
         "y": 4
@@ -124,7 +124,7 @@
     },
     {
       "property": "score",
-      "description": "Asymmetric position within outer region",
+      "description": "Asymmetric position between middle and outer circles",
       "input": {
         "x": 4,
         "y": -8
