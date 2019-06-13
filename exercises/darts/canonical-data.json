@@ -52,7 +52,7 @@
     },
     {
       "property": "score",
-      "description": "Inner-Middle border, dart just inside",
+      "description": "Inner-middle border, dart just inside",
       "input": {
         "x": 0.7,
         "y": 0.7
