@@ -43,7 +43,7 @@
     },
     {
       "property": "score",
-      "description": "Far inside inner region",
+      "description": "Near centre",
       "input": {
         "x": -0.1,
         "y": -0.1
