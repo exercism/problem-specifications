@@ -35,7 +35,7 @@ There are three metadata files:
 ## Test Data Format (canonical-data.json)
 
 This data can be incorporated into test programs manually or extracted by a
-program.  The file format is described in `canonical-schema.json`, but it
+program.  The file format is described in [canonical-schema.json](https://github.com/exercism/problem-specifications/blob/master/canonical-schema.json), but it
 is easier to understand with an example:
 
 ```json
@@ -118,6 +118,14 @@ There are also some conventions that must be followed:
   - If an error is expected (because the input is invalid, or any other reason), the value at `"expected"` should be an object containing exactly one property, `"error"`, whose value is a string.
     - The string should explain why the error would occur.
     - A particular track's implementation of the exercise **need not** necessarily check that the error includes that exact string as the cause, depending on what is idiomatic in the language (it may not be idiomatic to check strings for error messages).
+
+The `canonical.json` file can be validated against its schema prior to commiting using https://www.jsonschemavalidator.net/ with...
+```
+{
+	"$schema": "https://github.com/exercism/problem-specifications/blob/master/canonical-schema.json"
+}
+```
+
 
 ### Test Data Versioning
 
