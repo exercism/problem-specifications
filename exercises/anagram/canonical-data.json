@@ -1,6 +1,6 @@
 {
   "exercise": "anagram",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "cases": [
     {
       "description": "no matches",
@@ -91,7 +91,7 @@
       "expected": ["Carthorse"]
     },
     {
-      "description": "does not detect a anagram if the original word is repeated",
+      "description": "does not detect an anagram if the original word is repeated",
       "property": "findAnagrams",
       "input": {
         "subject": "go",
