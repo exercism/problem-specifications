@@ -7,7 +7,7 @@
   "cases": [
     {
       "property": "score",
-      "description": "Dart missed target",
+      "description": "Missed target",
       "input": {
         "x": -9,
         "y": 9
@@ -106,7 +106,7 @@
     },    
     {
       "property": "score",
-      "description": "Asymetric position within inner circle",
+      "description": "Asymmetric position within inner circle",
       "input": {
         "x": 0.4,
         "y": 0.8
@@ -115,7 +115,7 @@
     },
     {
       "property": "score",
-      "description": "Asymetric position between inner and middle circles",
+      "description": "Asymmetric position between inner and middle circles",
       "input": {
         "x": -2,
         "y": 4
