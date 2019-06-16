@@ -18,7 +18,9 @@
           "description": "single letter",
           "property": "transform",
           "input": {
-            "1": ["A"]
+            "legacy": { 
+              "1": ["A"] 
+            }
           },
           "expected": {
             "a": 1
@@ -28,7 +30,9 @@
           "description": "single score with multiple letters",
           "property": "transform",
           "input": {
-            "1": ["A", "E", "I", "O", "U"]
+            "legacy": { 
+              "1": ["A", "E", "I", "O", "U"]
+            }
           },
           "expected": {
             "a": 1,
@@ -42,8 +46,10 @@
           "description": "multiple scores with multiple letters",
           "property": "transform",
           "input": {
-            "1": ["A", "E"],
-            "2": ["D", "G"]
+            "legacy": { 
+              "1": ["A", "E"],
+              "2": ["D", "G"]
+            }
           },
           "expected": {
             "a": 1,
@@ -56,13 +62,15 @@
           "description": "multiple scores with differing numbers of letters",
           "property": "transform",
           "input": {
-             "1": ["A", "E", "I", "O", "U", "L", "N", "R", "S", "T"],
-             "2": ["D", "G"],
-             "3": ["B", "C", "M", "P"],
-             "4": ["F", "H", "V", "W", "Y"],
-             "5": ["K"],
-             "8": ["J", "X"],
-            "10": ["Q", "Z"]
+            "legacy": { 
+               "1": ["A", "E", "I", "O", "U", "L", "N", "R", "S", "T"],
+               "2": ["D", "G"],
+               "3": ["B", "C", "M", "P"],
+               "4": ["F", "H", "V", "W", "Y"],
+               "5": ["K"],
+               "8": ["J", "X"],
+              "10": ["Q", "Z"]
+            }
           },
           "expected": {
             "a":  1, "b":  3, "c": 3, "d": 2, "e": 1,
