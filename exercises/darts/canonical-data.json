@@ -106,30 +106,12 @@
     },    
     {
       "property": "score",
-      "description": "Asymmetric position within inner circle",
-      "input": {
-        "x": 0.4,
-        "y": 0.8
-      },
-      "expected": 10
-    },
-    {
-      "property": "score",
       "description": "Asymmetric position between inner and middle circles",
       "input": {
-        "x": -2,
-        "y": 4
+        "x": 0.5,
+        "y": -4
       },
       "expected": 5
-    },
-    {
-      "property": "score",
-      "description": "Asymmetric position between middle and outer circles",
-      "input": {
-        "x": 4,
-        "y": -8
-      },
-      "expected": 1
     }
   ]
 }
