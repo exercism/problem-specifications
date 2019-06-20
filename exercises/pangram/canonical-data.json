@@ -31,7 +31,7 @@
       "expected": true
     },
     {
-      "description": "missing character 'x'",
+      "description": "missing the letter 'x'",
       "property": "isPangram",
       "input": {
         "sentence": "a quick movement of the enemy will jeopardize five gunboats"
@@ -39,7 +39,7 @@
       "expected": false
     },
     {
-      "description": "missing character 'h'",
+      "description": "missing the letter 'h'",
       "property": "isPangram",
       "input": {
         "sentence": "five boxing wizards jump quickly at it"
