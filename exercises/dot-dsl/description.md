@@ -27,5 +27,5 @@ Our DSL is similar to the Graphviz dot language in that our DSL will be used
 to create graph data structures. However, unlike the DOT Language, our DSL will
 be an internal DSL for use only in our language. 
 
-More information about the difference between internal and external DSL can be
+More information about the difference between internal and external DSLs can be
 found [here](https://martinfowler.com/bliki/DomainSpecificLanguage.html).
