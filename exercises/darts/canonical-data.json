@@ -79,6 +79,15 @@
     },
     {
       "property": "score",
+      "description": "A dart lands right in the center of the dart board is scored in the inner circle",
+      "input": {
+        "x": 0,
+        "y": 0
+      },
+      "expected": 10
+    },
+    {
+      "property": "score",
       "description": "A dart whose coordinates sum to > 5 but whose radius to origin is <= 5 is scored in the middle circle",
       "input": {
         "x": 2,
