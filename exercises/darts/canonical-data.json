@@ -1,6 +1,6 @@
 {
   "exercise": "darts",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "comments": [
     "Return the correct amount earned by a dart landing in a given point in the target problem"
   ],
@@ -74,6 +74,15 @@
       "input": {
         "x": 0.4,
         "y": 0.8
+      },
+      "expected": 10
+    },
+    {
+      "property": "score",
+      "description": "A dart lands right in the center of the dart board is scored in the inner circle",
+      "input": {
+        "x": 0,
+        "y": 0
       },
       "expected": 10
     },
