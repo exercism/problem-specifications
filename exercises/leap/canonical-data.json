@@ -13,6 +13,7 @@
     {
       "description": "year divisible by 2, not divisible by 4 in common year",
       "property": "leapYear",
+      "optional": "unicode",
       "input": {
         "year": 1970
       },
@@ -24,7 +25,8 @@
       "input": {
         "year": 1996
       },
-      "expected": true
+      "expected": true,
+      "optional": "medium-sized-int"
     },
     {
       "description": "year divisible by 100, not divisible by 400 in common year",
@@ -48,7 +50,8 @@
       "input": {
         "year": 1800
       },
-      "expected": false
+      "expected": false,
+      "optional": "dont-mention-the-war"
     }
   ]
 }

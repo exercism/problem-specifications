@@ -7,4 +7,5 @@ cache: yarn
 script:
   - bin/check_required_files_present
   - sh bin/check_versions
+  - bin/check_optional
   - yarn test

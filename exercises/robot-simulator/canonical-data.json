@@ -28,7 +28,8 @@
               "y": 0
             },
             "direction": "north"
-          }
+          },
+          "optional": "floating-point"
         },
         {
           "description": "at negative position facing south",
@@ -46,7 +47,8 @@
               "y": -1
             },
             "direction": "south"
-          }
+          },
+          "optional": "unicode"
         }
       ]
     },
@@ -83,6 +85,7 @@
             "direction": "east",
             "instructions": "R"
           },
+          "optional": "wat",
           "expected": {
             "position": {
               "x": 0,
@@ -189,7 +192,8 @@
               "y": 0
             },
             "direction": "east"
-          }
+          },
+          "optional": "wat"
         },
         {
           "description": "changes east to north",
@@ -208,7 +212,8 @@
               "y": 0
             },
             "direction": "north"
-          }
+          },
+          "optional": "sugar"
         }
       ]
     },

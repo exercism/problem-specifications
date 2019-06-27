@@ -1,0 +1,39 @@
+#!/bin/sh
+
+# This script checks that 'optional' fields in canonical-data.json are listed.
+
+optional_keys_file=OPTIONAL-KEYS.txt
+allowed_optional=$(jq -nR '[inputs]' $optional_keys_file)
+
+failed=0
+
+check_optional_for_file() {
+    json_file=$1
+    echo "Checking 'optional' fields in $json_file"
+
+    present_optional=$(jq '[ .cases[] | recurse(.cases[]?) | .optional | select(. != null) ]' $json_file)
+    invalid_optional=$(jq --null-input \
+                          --argjson allowed "$allowed_optional" \
+                          --argjson present "$present_optional" \
+                          --raw-output '$present - $allowed | join("\n")')
+
+    if [ ! -z "$invalid_optional" ]; then
+        echo "Invalid optional fields:"
+        echo "$invalid_optional" | perl -pe 's/^/ - /'
+        echo
+
+        failed=1
+    fi
+}
+
+for json_file in $(git diff --name-only master HEAD | grep '^exercises/.*/canonical-data\.json$'); do
+    check_optional_for_file $json_file
+done
+
+if [ $failed -gt 0 ]; then
+    echo "Allowed optional fields (see $optional_keys_file) are:"
+    cat $optional_keys_file | perl -pe 's/^/ - /'
+    exit 1
+fi
+
+exit 0
