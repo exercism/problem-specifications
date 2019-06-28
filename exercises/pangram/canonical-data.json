@@ -1,97 +1,90 @@
 {
   "exercise": "pangram",
   "comments": [
-    "A pangram is a sentence using every letter of the alphabet at least once."
+    "A pangram is a sentence using every letter of the alphabet at least once.",
+    "Output should be a boolean denoting if the string is a pangram or not."
   ],
-  "version": "1.4.1",
+  "version": "2.0.0",
   "cases": [
     {
-      "description": "Check if the given string is a pangram",
-      "comments": [
-        "Output should be a boolean denoting if the string is a pangram or not."
-      ],
-      "cases": [
-        {
-          "description": "sentence empty",
-          "property": "isPangram",
-          "input": {
-            "sentence": ""
-          },
-          "expected": false
-        },
-        {
-          "description": "recognizes a perfect lower case pangram",
-          "property": "isPangram",
-          "input": {
-            "sentence": "abcdefghijklmnopqrstuvwxyz"
-          },
-          "expected": true
-        },
-        {
-          "description": "pangram with only lower case",
-          "property": "isPangram",
-          "input": {
-            "sentence": "the quick brown fox jumps over the lazy dog"
-          },
-          "expected": true
-        },
-        {
-          "description": "missing character 'x'",
-          "property": "isPangram",
-          "input": {
-            "sentence": "a quick movement of the enemy will jeopardize five gunboats"
-          },
-          "expected": false
-        },
-        {
-          "description": "another missing character, e.g. 'h'",
-          "property": "isPangram",
-          "input": {
-            "sentence": "five boxing wizards jump quickly at it"
-          },
-          "expected": false
-        },
-        {
-          "description": "pangram with underscores",
-          "property": "isPangram",
-          "input": {
-            "sentence": "the_quick_brown_fox_jumps_over_the_lazy_dog"
-          },
-          "expected": true
-        },
-        {
-          "description": "pangram with numbers",
-          "property": "isPangram",
-          "input": {
-            "sentence": "the 1 quick brown fox jumps over the 2 lazy dogs"
-          },
-          "expected": true
-        },
-        {
-          "description": "missing letters replaced by numbers",
-          "property": "isPangram",
-          "input": {
-            "sentence": "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"
-          },
-          "expected": false
-        },
-        {
-          "description": "pangram with mixed case and punctuation",
-          "property": "isPangram",
-          "input": {
-            "sentence": "\"Five quacking Zephyrs jolt my wax bed.\""
-          },
-          "expected": true
-        },
-        {
-          "description": "upper and lower case versions of the same character should not be counted separately",
-          "property": "isPangram",
-          "input": {
-            "sentence": "the quick brown fox jumps over with lazy FX"
-          },
-          "expected": false
-        }
-      ]
+      "description": "empty sentence",
+      "property": "isPangram",
+      "input": {
+        "sentence": ""
+      },
+      "expected": false
+    },
+    {
+      "description": "perfect lower case",
+      "property": "isPangram",
+      "input": {
+        "sentence": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected": true
+    },
+    {
+      "description": "only lower case",
+      "property": "isPangram",
+      "input": {
+        "sentence": "the quick brown fox jumps over the lazy dog"
+      },
+      "expected": true
+    },
+    {
+      "description": "missing the letter 'x'",
+      "property": "isPangram",
+      "input": {
+        "sentence": "a quick movement of the enemy will jeopardize five gunboats"
+      },
+      "expected": false
+    },
+    {
+      "description": "missing the letter 'h'",
+      "property": "isPangram",
+      "input": {
+        "sentence": "five boxing wizards jump quickly at it"
+      },
+      "expected": false
+    },
+    {
+      "description": "with underscores",
+      "property": "isPangram",
+      "input": {
+        "sentence": "the_quick_brown_fox_jumps_over_the_lazy_dog"
+      },
+      "expected": true
+    },
+    {
+      "description": "with numbers",
+      "property": "isPangram",
+      "input": {
+        "sentence": "the 1 quick brown fox jumps over the 2 lazy dogs"
+      },
+      "expected": true
+    },
+    {
+      "description": "missing letters replaced by numbers",
+      "property": "isPangram",
+      "input": {
+        "sentence": "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"
+      },
+      "expected": false
+    },
+    {
+      "description": "mixed case and punctuation",
+      "property": "isPangram",
+      "input": {
+        "sentence": "\"Five quacking Zephyrs jolt my wax bed.\""
+      },
+      "expected": true
+    },
+    {
+      "description": "case insensitive",
+      "property": "isPangram",
+      "input": {
+        "sentence": "the quick brown fox jumps over with lazy FX"
+      },
+      "expected": false
     }
   ]
 }
