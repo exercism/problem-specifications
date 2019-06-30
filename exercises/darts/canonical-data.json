@@ -2,7 +2,7 @@
   "exercise": "darts",
   "version": "2.1.0",
   "comments": [
-    "Return the correct amount earned by a dart landing in a given point in the target."
+    "Return the correct amount earned by a dart's landing position."
   ],
   "cases": [
     {
@@ -16,7 +16,7 @@
     },
     {
       "property": "score",
-      "description": "On outer circle",
+      "description": "On the outer circle",
       "input": {
         "x": 0,
         "y": 10
@@ -25,7 +25,7 @@
     },
     {
       "property": "score",
-      "description": "On middle circle",
+      "description": "On the middle circle",
       "input": {
         "x": -5,
         "y": 0
@@ -34,7 +34,7 @@
     },
     {
       "property": "score",
-      "description": "On inner circle",
+      "description": "On the inner circle",
       "input": {
         "x": 0,
         "y": -1
@@ -43,7 +43,7 @@
     },
     {
       "property": "score",
-      "description": "Near centre",
+      "description": "Near the centre",
       "input": {
         "x": -0.1,
         "y": -0.1
@@ -52,7 +52,7 @@
     },
     {
       "property": "score",
-      "description": "Just within inner circle",
+      "description": "Just within the inner circle",
       "input": {
         "x": 0.7,
         "y": 0.7
@@ -61,7 +61,7 @@
     },
     {
       "property": "score",
-      "description": "Just beyond inner circle",
+      "description": "Just outside the inner circle",
       "input": {
         "x": 0.8,
         "y": -0.8
@@ -70,7 +70,7 @@
     },
     {
       "property": "score",
-      "description": "Just within middle circle",
+      "description": "Just within the middle circle",
       "input": {
         "x": -3.5,
         "y": 3.5
@@ -79,7 +79,7 @@
     },   
     {
       "property": "score",
-      "description": "Just beyond middle circle",
+      "description": "Just outside the middle circle",
       "input": {
         "x": -3.6,
         "y": -3.6
@@ -88,7 +88,7 @@
     },     
     {
       "property": "score",
-      "description": "Just within outer circle",
+      "description": "Just within the outer circle",
       "input": {
         "x": -7.0,
         "y": 7.0
@@ -97,7 +97,7 @@
     },     
     {
       "property": "score",
-      "description": "Just beyond outer circle",
+      "description": "Just outside the outer circle",
       "input": {
         "x": 7.1,
         "y": -7.1
@@ -106,7 +106,7 @@
     },    
     {
       "property": "score",
-      "description": "Asymmetric position between inner and middle circles",
+      "description": "Asymmetric position between the inner and middle circles",
       "input": {
         "x": 0.5,
         "y": -4
