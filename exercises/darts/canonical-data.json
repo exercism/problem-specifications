@@ -42,6 +42,7 @@
       "expected": 10
     },
     {
+      "property": "score",
       "description": "Exactly on centre",
       "input": {
         "x": 0,
