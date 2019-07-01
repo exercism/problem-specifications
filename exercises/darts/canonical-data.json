@@ -1,13 +1,13 @@
 {
   "exercise": "darts",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "comments": [
-    "Return the correct amount earned by a dart landing in a given point in the target problem"
+    "Return the correct amount earned by a dart's landing position."
   ],
   "cases": [
     {
       "property": "score",
-      "description": "A dart lands outside the target",
+      "description": "Missed target",
       "input": {
         "x": -9,
         "y": 9
@@ -16,7 +16,7 @@
     },
     {
       "property": "score",
-      "description": "A dart lands just in the border of the target",
+      "description": "On the outer circle",
       "input": {
         "x": 0,
         "y": 10
@@ -25,34 +25,16 @@
     },
     {
       "property": "score",
-      "description": "A dart lands in the outer circle",
+      "description": "On the middle circle",
       "input": {
-        "x": 4,
-        "y": 4
-      },
-      "expected": 1
-    },
-    {
-      "property": "score",
-      "description": "A dart lands right in the border between outer and middle circles",
-      "input": {
-        "x": 5,
+        "x": -5,
         "y": 0
       },
       "expected": 5
     },
     {
       "property": "score",
-      "description": "A dart lands in the middle circle",
-      "input": {
-        "x": 0.8,
-        "y": -0.8
-      },
-      "expected": 5
-    },
-    {
-      "property": "score",
-      "description": "A dart lands right in the border between middle and inner circles",
+      "description": "On the inner circle",
       "input": {
         "x": 0,
         "y": -1
@@ -61,25 +43,7 @@
     },
     {
       "property": "score",
-      "description": "A dart lands in the inner circle",
-      "input": {
-        "x": -0.1,
-        "y": -0.1
-      },
-      "expected": 10
-    },
-    {
-      "property": "score",
-      "description": "A dart whose coordinates sum to > 1 but whose radius to origin is <= 1 is scored in the inner circle",
-      "input": {
-        "x": 0.4,
-        "y": 0.8
-      },
-      "expected": 10
-    },
-    {
-      "property": "score",
-      "description": "A dart lands right in the center of the dart board is scored in the inner circle",
+      "description": "Exactly on centre",
       "input": {
         "x": 0,
         "y": 0
@@ -88,21 +52,75 @@
     },
     {
       "property": "score",
-      "description": "A dart whose coordinates sum to > 5 but whose radius to origin is <= 5 is scored in the middle circle",
+      "description": "Near the centre",
       "input": {
-        "x": 2,
-        "y": 4
+        "x": -0.1,
+        "y": -0.1
+      },
+      "expected": 10
+    },
+    {
+      "property": "score",
+      "description": "Just within the inner circle",
+      "input": {
+        "x": 0.7,
+        "y": 0.7
+      },
+      "expected": 10
+    },
+    {
+      "property": "score",
+      "description": "Just outside the inner circle",
+      "input": {
+        "x": 0.8,
+        "y": -0.8
       },
       "expected": 5
     },
     {
       "property": "score",
-      "description": "A dart whose coordinates sum to > 10 but whose radius to origin is <= 10 is scored in the outer circle",
+      "description": "Just within the middle circle",
       "input": {
-        "x": 4,
-        "y": 8
+        "x": -3.5,
+        "y": 3.5
+      },
+      "expected": 5
+    },   
+    {
+      "property": "score",
+      "description": "Just outside the middle circle",
+      "input": {
+        "x": -3.6,
+        "y": -3.6
       },
       "expected": 1
+    },     
+    {
+      "property": "score",
+      "description": "Just within the outer circle",
+      "input": {
+        "x": -7.0,
+        "y": 7.0
+      },
+      "expected": 1
+    },     
+    {
+      "property": "score",
+      "description": "Just outside the outer circle",
+      "input": {
+        "x": 7.1,
+        "y": -7.1
+      },
+      "expected": 0
+    },    
+    {
+      "property": "score",
+      "description": "Asymmetric position between the inner and middle circles",
+      "input": {
+        "x": 0.5,
+        "y": -4
+      },
+      "expected": 5
     }
   ]
 }
