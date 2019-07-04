@@ -13,8 +13,8 @@ check_keys() {
     allowed_keys=$(jq '[ .cases[] | recurse(.cases[]?) | .input | keys[] ] | unique + ["expected"]' $json_file)
 
     invalid_keys=$(jq --null-input \
-                      --argjson allowed "$valid_keys" \
-                      --argjson present "$used_keys" \
+                      --argjson allowed "$allowed_keys" \
+                      --argjson present "$present_keys" \
                       --raw-output '$present - $allowed | join("\n")')
 
     if [ ! -z "$invalid_keys" ]; then
