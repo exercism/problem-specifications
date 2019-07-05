@@ -10,7 +10,7 @@ check_keys() {
 
     present_keys=$(jq '[ .cases[] | ."multi-line-string-array" | select(. != null)[] ] | unique' $json_file)
 
-    allowed_keys=$(jq '[ .cases[] | recurse(.cases[]?) | .input | keys[] ] | unique + ["expected"]' $json_file)
+    allowed_keys=$(jq '[ .cases[] | recurse(.cases[]?) | .input | select(. != null) | keys[] ] + ["expected"] | unique' $json_file)
 
     invalid_keys=$(jq --null-input \
                       --argjson allowed "$allowed_keys" \
