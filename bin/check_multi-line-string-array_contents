@@ -18,7 +18,7 @@ check_keys() {
                       --raw-output '$present - $allowed | join("\n")')
 
     if [ ! -z "$invalid_keys" ]; then
-        echo "Invalid multi-line-string-array entries:"
+        echo "The following multi-line-string-array input parameters did not occur in any tests:"
         echo "$invalid_keys" | perl -pe 's/^/ - /'
         echo
 
