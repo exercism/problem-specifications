@@ -123,6 +123,9 @@
       "multi-line-string-array":
           { "description": "Arrays of strings in the specified properties represent a multiline string"
           , "type"       : "array"
+          , "items"      : {
+              "type": "string"
+            }
           },
 
       "property":
