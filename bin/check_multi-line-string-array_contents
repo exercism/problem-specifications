@@ -8,7 +8,7 @@ check_keys() {
     json_file=$1
     echo "Checking 'multi-line-string-array' contents in $json_file"
 
-    present_keys=$(jq '[ .cases[] | recurse(.cases[]?) | ."multi-line-string-array" | select(. != null)[] ] | unique ' $json_file)
+    present_keys=$(jq '[ .cases[] | ."multi-line-string-array" | select(. != null)[] ] | unique' $json_file)
 
     allowed_keys=$(jq '[ .cases[] | recurse(.cases[]?) | .input | keys[] ] | unique + ["expected"]' $json_file)
 
