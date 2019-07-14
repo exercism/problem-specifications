@@ -1,6 +1,6 @@
 {
   "exercise": "circular-buffer",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comments": [
     "In general, these circular buffers are expected to be stateful,",
     "and each language will operate on them differently.",
@@ -388,6 +388,51 @@
             "operation": "read",
             "should_succeed": true,
             "expected": 5
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "description": "initial clear does not affect wrapping around",
+      "property": "run",
+      "input": {
+        "capacity": 2,
+        "operations": [
+          {
+            "operation": "clear"
+          },
+          {
+            "operation": "write",
+            "item": 1,
+            "should_succeed": true
+          },
+          {
+            "operation": "write",
+            "item": 2,
+            "should_succeed": true
+          },
+          {
+            "operation": "overwrite",
+            "item": 3
+          },
+          {
+            "operation": "overwrite",
+            "item": 4
+          },
+          {
+            "operation": "read",
+            "should_succeed": true,
+            "expected": 3
+          },
+          {
+            "operation": "read",
+            "should_succeed": true,
+            "expected": 4
+          },
+          {
+            "operation": "read",
+            "should_succeed": false
           }
         ]
       },
