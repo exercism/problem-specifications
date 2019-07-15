@@ -1,6 +1,6 @@
 {
   "exercise": "anagram",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "cases": [
     {
       "description": "no matches",
@@ -53,6 +53,15 @@
         ]
       },
       "expected": ["gallery", "regally", "largely"]
+    },
+    {
+      "description": "detects multiple anagrams with different case",
+      "property": "findAnagrams",
+      "input": {
+        "subject": "nose",
+        "candidates": ["Eons", "ONES"]
+      },
+      "expected": ["Eons", "ONES"]
     },
     {
       "description": "does not detect non-anagrams with identical checksum",
@@ -116,6 +125,15 @@
         "candidates": ["BANANA", "Banana", "banana"]
       },
       "expected": []
+    },
+    {
+      "description": "words other than themselves can be anagrams",
+      "property": "findAnagrams",
+      "input": {
+        "subject": "LISTEN",
+        "candidates": ["Listen", "Silent", "LISTEN"]
+      },
+      "expected": ["Silent"]
     }
   ]
 }
