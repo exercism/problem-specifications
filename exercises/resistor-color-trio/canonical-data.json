@@ -8,7 +8,7 @@
       "input": {
         "colors": ["orange", "orange", "black"]
       },
-      "expected": "The value of this resistor is 33 Ohms."
+      "expected": "This is a 33 Ohms resistor."
     },
     {
       "description": "Blue and grey and brown",
@@ -16,7 +16,7 @@
       "input": {
         "colors": ["blue", "grey", "brown"]
       },
-      "expected": "The value of this resistor is 680 Ohms."
+      "expected": "This is a 680 Ohms resistor."
     },
     {
       "description": "Red and black and red",
@@ -24,7 +24,7 @@
       "input": {
         "colors": ["red", "black", "red"]
       },
-      "expected": "The value of this resistor is 2 kilo Ohms."
+      "expected": "This is a 2 kilo Ohms resistor."
     },
     {
       "description": "Green and brown and orange",
@@ -32,7 +32,7 @@
       "input": {
         "colors": ["green", "brown", "orange"]
       },
-      "expected": "The value of this resistor is 51 kilo Ohms."
+      "expected": "This is a 51 kilo Ohms resistor."
     },
     {
       "description": "Yellow and violet and yellow",
@@ -40,7 +40,7 @@
       "input": {
         "colors": ["yellow", "violet", "yellow"]
       },
-      "expected": "The value of this resistor is 470 kilo Ohms."
+      "expected": "This is a 470 kilo Ohms resistor."
     }
   ]
 }
