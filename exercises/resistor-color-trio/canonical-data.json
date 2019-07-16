@@ -24,7 +24,7 @@
       "input": {
         "colors": ["red", "black", "red"]
       },
-      "expected": "The value of this resistor is 2 kOhms."
+      "expected": "The value of this resistor is 2 kilo Ohms."
     },
     {
       "description": "Green and brown and orange",
@@ -32,7 +32,7 @@
       "input": {
         "colors": ["green", "brown", "orange"]
       },
-      "expected": "The value of this resistor is 51 kOhms."
+      "expected": "The value of this resistor is 51 kilo Ohms."
     },
     {
       "description": "Yellow and violet and yellow",
@@ -40,7 +40,7 @@
       "input": {
         "colors": ["yellow", "violet", "yellow"]
       },
-      "expected": "The value of this resistor is 470 kOhms."
+      "expected": "The value of this resistor is 470 kilo Ohms."
     }
   ]
 }
