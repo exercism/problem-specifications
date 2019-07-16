@@ -33,9 +33,9 @@ This exercise is about translating the colors into a sentence:
 
 > "The value of this resistor is … Ohms."
 
-So an input of `“orange”, “orange”, “black”` should return
+So an input of `"orange”, "orange”, "black”` should return
 
-> “The value of this resistor is 33 Ohms.”
+> "The value of this resistor is 33 Ohms.”
 
 The trick is that when we talk about Ohms, as soon as we get more than a thousand, we say "kilo", in the same way that we say "kilograms" (kg) and "kilometers" (km). In the same way, we get "kilo-ohms" (kilo Ohms).
 So an input of `"orange", "orange", "orange"` should return
