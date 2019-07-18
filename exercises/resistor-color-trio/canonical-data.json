@@ -4,51 +4,43 @@
   "cases": [
     {
       "description": "Orange and orange and black",
-      "property": "value",
+      "property": "label",
       "input": {
         "colors": ["orange", "orange", "black"]
       },
-      "expected": 33
+      "expected": "33 Ohms"
     },
     {
-      "description": "Green and brown and brown",
-      "property": "value",
+      "description": "Blue and grey and brown",
+      "property": "label",
       "input": {
-        "colors": ["green", "brown", "orange"]
+        "colors": ["blue", "grey", "brown"]
       },
-      "expected": 510
-    },
-    {
-      "description": "Blue and grey and yellow",
-      "property": "value",
-      "input": {
-        "colors": ["blue", "grey", "yellow"]
-      },
-      "expected": 680000
-    },
-    {
-      "description": "Brown and black and black",
-      "property": "description",
-      "input": {
-        "colors": ["brown", "black", "black"]
-      },
-      "expected": "This is a 1O Ohms resistor."
+      "expected": "680 Ohms"
     },
     {
       "description": "Red and black and red",
-      "property": "description",
+      "property": "label",
       "input": {
         "colors": ["red", "black", "red"]
       },
-      "expected": "This is a 2 kilo Ohms resistor."
+      "expected": "2 kilo Ohms"
+    },
+    {
+      "description": "Green and brown and orange",
+      "property": "label",
+      "input": {
+        "colors": ["green", "brown", "orange"]
+      },
+      "expected": "51 kilo Ohms"
     },
     {
       "description": "Yellow and violet and yellow",
-      "property": "description",
+      "property": "label",
       "input": {
         "colors": ["yellow", "violet", "yellow"]
       },
-      "expected": "This is a 470 kilo Ohms resistor."
+      "expected": "470 kilo Ohms"
     }
   ]
 }
