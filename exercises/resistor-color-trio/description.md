@@ -37,7 +37,7 @@ So an input of `"orange", "orange", "black"` should return:
 
 > "The value of this resistor is 33 Ohms."
 
-The trick is that when we talk about Ohms, as soon as we get more than a thousand, we say "kilo", in the same way that we say "kilograms" (kg) and "kilometers" (km). In the same way, we get "kilo-ohms" (kilo Ohms).
+When we get more than a thousand Ohms, we say "kilo Ohms". That's similar to saying "kilometer" for 1000 meters, and "kilograms" for 1000 grams. 
 So an input of `"orange", "orange", "orange"` should return:
 
 > "The value of this resistor is 33 kOhms."
