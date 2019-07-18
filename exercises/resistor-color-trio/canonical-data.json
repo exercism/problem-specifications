@@ -8,7 +8,7 @@
       "input": {
         "colors": ["orange", "orange", "black"]
       },
-      "expected": "33 Ohms"
+      "expected": "33 ohms"
     },
     {
       "description": "Blue and grey and brown",
@@ -16,7 +16,7 @@
       "input": {
         "colors": ["blue", "grey", "brown"]
       },
-      "expected": "680 Ohms"
+      "expected": "680 ohms"
     },
     {
       "description": "Red and black and red",
@@ -24,7 +24,7 @@
       "input": {
         "colors": ["red", "black", "red"]
       },
-      "expected": "2 kilo Ohms"
+      "expected": "2 kiloohms"
     },
     {
       "description": "Green and brown and orange",
@@ -32,7 +32,7 @@
       "input": {
         "colors": ["green", "brown", "orange"]
       },
-      "expected": "51 kilo Ohms"
+      "expected": "51 kiloohms"
     },
     {
       "description": "Yellow and violet and yellow",
@@ -40,7 +40,7 @@
       "input": {
         "colors": ["yellow", "violet", "yellow"]
       },
-      "expected": "470 kilo Ohms"
+      "expected": "470 kiloohms"
     }
   ]
 }
