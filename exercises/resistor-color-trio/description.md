@@ -31,7 +31,7 @@ For example:
 
 This exercise is about translating the colors into a sentence:
 
-> "The value of this resistor is … Ohms."
+> "The value of this resistor is ... Ohms."
 
 So an input of `"orange", "orange", "black"` should return:
 
