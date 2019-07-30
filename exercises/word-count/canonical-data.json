@@ -1,6 +1,6 @@
 {
   "exercise": "word-count",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "comments": [
     "For each word in the input, count the number of times it appears in the",
     "entire sentence."
@@ -130,6 +130,23 @@
         "between": 1,
         "large": 2,
         "and": 1
+      }
+    },
+    {
+      "description": "substrings from the beginning",
+      "property": "countWords",
+      "input": {
+        "sentence": "Joe can't tell between app, apple and a."
+      },
+      "expected": {
+        "joe": 1,
+        "can't": 1,
+        "tell": 1,
+        "between": 1,
+        "app": 1,
+        "apple": 1,
+        "and": 1,
+        "a": 1
       }
     },
     {
