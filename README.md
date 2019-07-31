@@ -92,7 +92,7 @@ is easier to understand with an example:
               }
             , "expected"   : null
             }
-            { "description": "Foo'ing a very big number returns nothing"
+          , { "description": "Foo'ing a very big number returns nothing"
             , "optional"   : "big-ints"
             , "comments"   : [ "Making this test case pass requires using BigInts." ]
             , "property"   : "foo"
