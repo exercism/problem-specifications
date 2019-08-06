@@ -1,4 +1,4 @@
-In this variant of the children's game [Fizz Buzz](https://en.wikipedia.org/wiki/Fizz_buzz) -- which has often been used as a screening exercise in technical job interviews -- your task is to convert an number into a string that contains raindrop sounds corresponding to certain potential factors. A factor is a number that evenly divides into another number, leaving no remainder. The simplest way to test if a one number is a factor of another is to use the [modulo operation](https://en.wikipedia.org/wiki/Modulo_operation).
+Your task is to convert a number into a string that contains raindrop sounds corresponding to certain potential factors. A factor is a number that evenly divides into another number, leaving no remainder. The simplest way to test if a one number is a factor of another is to use the [modulo operation](https://en.wikipedia.org/wiki/Modulo_operation).
 
 The rules of `raindrops` are that if a given number:
 
