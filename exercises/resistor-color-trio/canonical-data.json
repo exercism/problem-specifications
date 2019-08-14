@@ -1,6 +1,6 @@
 {
   "exercise": "resistor-color-trio",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "cases": [
     {
       "description": "Orange and orange and black",
@@ -56,6 +56,15 @@
         "value": 470,
         "unit": "kiloohms"
       }
+    },
+    {
+      "description": "Invalid color",
+      "property": "label",
+      "optional": "error",
+      "input": {
+        "colors": ["yellow", "purple", "black"]
+      },
+      "expected": { "error": "invalid color" }
     }
   ]
 }
