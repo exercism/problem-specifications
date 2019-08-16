@@ -11,4 +11,4 @@ Black - Brown - Red - Orange - Yellow - Green - Blue - Violet - Grey - White
 
 From the example above:
 brown-green should return 15
-brown-green-violet should return 15 too, ignoring the third color.  
+brown-green-violet should return 15 too, ignoring the third color.
