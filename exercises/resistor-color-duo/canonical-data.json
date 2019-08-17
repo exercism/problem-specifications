@@ -1,6 +1,6 @@
 {
   "exercise": "resistor-color-duo",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "cases": [
     {
       "description": "Brown and black",
@@ -33,6 +33,14 @@
         "colors": ["orange", "orange"]
       },
       "expected": 33
+    },
+    {
+      "description": "Ignore additional colors",
+      "property": "value",
+      "input": {
+        "colors": ["green", "brown", "orange"]
+      },
+      "expected": 51
     }
   ]
 }
