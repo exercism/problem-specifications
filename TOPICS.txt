@@ -50,6 +50,7 @@ algorithms
 bitwise_operations
 concurrency
 cryptography
+data_structures
 domain_specific_languages
 files
 filtering
