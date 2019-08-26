@@ -1,10 +1,10 @@
 {
   "exercise": "etl",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "cases": [
     {
       "comments": [
-        "Transforms a set of legacy scrabble data stored as letters per score",
+        "Transforms a set of legacy Scrabble data stored as letters per score",
         "to a set of data stored score per letter.",
         "Note:  The expected input data for these tests should have",
         "integer keys (not stringified numbers as shown in the JSON below",
@@ -18,8 +18,8 @@
           "description": "single letter",
           "property": "transform",
           "input": {
-            "legacy": { 
-              "1": ["A"] 
+            "legacy": {
+              "1": ["A"]
             }
           },
           "expected": {
@@ -30,7 +30,7 @@
           "description": "single score with multiple letters",
           "property": "transform",
           "input": {
-            "legacy": { 
+            "legacy": {
               "1": ["A", "E", "I", "O", "U"]
             }
           },
@@ -46,7 +46,7 @@
           "description": "multiple scores with multiple letters",
           "property": "transform",
           "input": {
-            "legacy": { 
+            "legacy": {
               "1": ["A", "E"],
               "2": ["D", "G"]
             }
@@ -62,7 +62,7 @@
           "description": "multiple scores with differing numbers of letters",
           "property": "transform",
           "input": {
-            "legacy": { 
+            "legacy": {
                "1": ["A", "E", "I", "O", "U", "L", "N", "R", "S", "T"],
                "2": ["D", "G"],
                "3": ["B", "C", "M", "P"],
