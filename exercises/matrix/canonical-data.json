@@ -1,6 +1,6 @@
 {
   "exercise": "matrix",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "cases": [
     {
       "description": "extract row from one number matrix",
@@ -64,6 +64,15 @@
         "index": 3
       },
       "expected": [3, 6, 9, 6]
+    },
+    {
+      "description": "can extract column from non-square matrix with more columns than rows",
+      "property": "column",
+      "input": {
+        "string": "1 2 3\n4 5 6",
+        "index": 3
+      },
+      "expected": [3, 6]
     },
     {
       "description": "extract column where numbers have different widths",
