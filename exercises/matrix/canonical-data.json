@@ -1,6 +1,6 @@
 {
   "exercise": "matrix",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "cases": [
     {
       "description": "extract row from one number matrix",
@@ -30,13 +30,13 @@
       "expected": [10, 20]
     },
     {
-      "description": "can extract row from non-square matrix",
+      "description": "can extract row from non-square matrix with no corresponding column",
       "property": "row",
       "input": {
         "string": "1 2 3\n4 5 6\n7 8 9\n8 7 6",
-        "index": 3
+        "index": 4
       },
-      "expected": [7, 8, 9]
+      "expected": [8, 7, 6]
     },
     {
       "description": "extract column from one number matrix",
@@ -57,13 +57,13 @@
       "expected": [3, 6, 9]
     },
     {
-      "description": "can extract column from non-square matrix",
+      "description": "can extract column from non-square matrix with no corresponding row",
       "property": "column",
       "input": {
-        "string": "1 2 3\n4 5 6\n7 8 9\n8 7 6",
-        "index": 3
+        "string": "1 2 3 4\n 5 6 7 8\n 9 8 7 6",
+        "index": 4
       },
-      "expected": [3, 6, 9, 6]
+      "expected": [4, 8, 6]
     },
     {
       "description": "extract column where numbers have different widths",
