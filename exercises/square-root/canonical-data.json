@@ -1,0 +1,54 @@
+{
+  "exercise": "square-root",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "description": "root of 1",
+      "property": "squareRoot",
+      "input": {
+        "radicand": 1
+      },
+      "expected": 1
+    },
+    {
+      "description": "root of 4",
+      "property": "squareRoot",
+      "input": {
+        "radicand": 4
+      },
+      "expected": 2
+    },
+    {
+      "description": "root of 25",
+      "property": "squareRoot",
+      "input": {
+        "radicand": 25
+      },
+      "expected": 5
+    },
+    {
+      "description": "root of 81",
+      "property": "squareRoot",
+      "input": {
+        "radicand": 81
+      },
+      "expected": 9
+    },
+    {
+      "description": "root of 196",
+      "property": "squareRoot",
+      "input": {
+        "radicand": 196
+      },
+      "expected": 14
+    },
+    {
+      "description": "root of 65025",
+      "property": "squareRoot",
+      "input": {
+        "radicand": 65025
+      },
+      "expected": 255
+    }
+  ]
+}
