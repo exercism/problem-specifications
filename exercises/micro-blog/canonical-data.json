@@ -1,0 +1,125 @@
+{
+  "exercise": "micro-blog",
+  "version": "1.0.0",
+  "comments": [
+    "This exercise is only applicable to languages that use UTF-8, UTF-16",
+    "or other variable width Unicode compatible encoding as their internal",
+    "string representation.",
+    "",
+    "This exercise is probably too easy in languages that use Unicode aware",
+    "string slicing.",
+    "",
+    "When adding additional tests to the problem specification, consider that",
+    "in progress solutions might not fail due to UTF-8 and UTF-16",
+    "differences.",
+    "",
+    "Avoid adding tests that involve characters (graphemes) that are made up",
+    "of multiple characters, or introduce them as a more advanced step.",
+    "",
+    "Consider adding a track specific hint.md about if your language uses",
+    "UTF-8, UTF-16 or other for its internal string representation."
+  ],
+  "cases": [
+    {
+      "description": "Truncate a micro blog post",
+      "cases": [
+        {
+          "description": "English language short",
+          "property": "truncate",
+          "input": {
+            "phrase": "Hi"
+          },
+          "expected": "Hi"
+        },
+        {
+          "description": "English language long",
+          "property": "truncate",
+          "input": {
+            "phrase": "Hello there"
+          },
+          "expected": "Hello"
+        },
+        {
+          "description": "German language short (broth)",
+          "property": "truncate",
+          "input": {
+            "phrase": "brühe"
+          },
+          "expected": "brühe"
+        },
+        {
+          "description": "German language long (bear carpet → beards)",
+          "property": "truncate",
+          "input": {
+            "phrase": "Bärteppich"
+          },
+          "expected": "Bärte"
+        },
+        {
+          "description": "Bulgarian language short (good)",
+          "property": "truncate",
+          "input": {
+            "phrase": "Добър"
+          },
+          "expected": "Добър"
+        },
+        {
+          "description": "Greek language short (health)",
+          "property": "truncate",
+          "input": {
+            "phrase": "υγειά"
+          },
+          "expected": "υγειά"
+        },
+        {
+          "description": "Maths short",
+          "property": "truncate",
+          "input": {
+            "phrase": "a=πr²"
+          },
+          "expected": "a=πr²"
+        },
+        {
+          "description": "Maths long",
+          "property": "truncate",
+          "input": {
+            "phrase": "∅⊊ℕ⊊ℤ⊊ℚ⊊ℝ⊊ℂ"
+          },
+          "expected": "∅⊊ℕ⊊ℤ"
+        },
+        {
+          "description": "English and emoji short",
+          "property": "truncate",
+          "input": {
+            "phrase": "Fly 🛫"
+          },
+          "expected": "Fly 🛫"
+        },
+        {
+          "description": "Emoji short",
+          "property": "truncate",
+          "input": {
+            "phrase": "💇"
+          },
+          "expected": "💇"
+        },
+        {
+          "description": "Emoji long",
+          "property": "truncate",
+          "input": {
+            "phrase": "❄🌡🤧🤒🏥🕰😀"
+          },
+          "expected": "❄🌡🤧🤒🏥"
+        },
+        {
+          "description": "Royal Flush?",
+          "property": "truncate",
+          "input": {
+            "phrase": "🃎🂸🃅🃋🃍🃁🃊"
+          },
+          "expected": "🃎🂸🃅🃋🃍"
+        }
+      ]
+    }
+  ]
+}
