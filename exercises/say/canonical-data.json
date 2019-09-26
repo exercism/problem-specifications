@@ -100,7 +100,7 @@
       "input": {
         "number": 1002345
       },
-      "expected": "one million twenty-three thousand forty-five"
+      "expected": "one million two thousand three hundred forty-five"
     },
     {
       "description": "one billion",
