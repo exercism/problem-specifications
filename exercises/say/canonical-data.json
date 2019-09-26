@@ -71,6 +71,14 @@
       "expected": "one thousand"
     },
     {
+      "description": "one thousand twenty-three",
+      "property": "say",
+      "input": {
+        "number": 1023
+      },
+      "expected": "one thousand twenty-three"
+    },
+    {
       "description": "one thousand two hundred thirty-four",
       "property": "say",
       "input": {
@@ -87,10 +95,10 @@
       "expected": "one million"
     },
     {
-      "description": "one million twenty-three thousand forty-five",
+      "description": "one million two thousand three hundred forty-five",
       "property": "say",
       "input": {
-        "number": 1023045
+        "number": 1002345
       },
       "expected": "one million twenty-three thousand forty-five"
     },
