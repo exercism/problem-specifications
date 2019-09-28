@@ -1,6 +1,6 @@
 {
   "exercise": "triangle",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "comments": [
     " Pursuant to discussion in #202, we have decided NOT to test triangles ",
     " where all side lengths are positive but a + b = c. e.g:               ",
@@ -12,10 +12,11 @@
     " The tests assert properties of the triangle are true or false.        ",
     " See: https://github.com/exercism/problem-specifications/issues/379 for disscussion  ",
     " of this approach                                                      ",
-    " How you handle invalid triangles is up to you. These tests suggest a  ",
-    " triangle is returned, but all of its properties are false. But you    ",
-    " could also have the creation of an invalid triangle return an error   ",
-    " or exception. Choose what is idiomatic for your language.             "
+    " How you handle invalid triangles is up to you. These tests explicitly ",
+    " mark triangles with invalid side lengths with an error object. Your   ",
+    " track should decide whether that means such inputs result in an error ",
+    " or not (instead considering such inputs valid, with an expected result",
+    " of `false`). Choose what is idiomatic for your language.              "
   ],
   "cases": [
     {
@@ -51,7 +52,7 @@
           "input": {
             "sides": [0, 0, 0]
           },
-          "expected": false
+          "expected": {"error": "side lengths must be > 0"}
         },
         {
           "comments": [
@@ -116,7 +117,7 @@
           "input": {
             "sides": [1, 1, 3]
           },
-          "expected": false
+          "expected": {"error": "triangle inequality violated"}
         },
         {
           "description": "second triangle inequality violation",
@@ -124,7 +125,7 @@
           "input": {
             "sides": [1, 3, 1]
           },
-          "expected": false
+          "expected": {"error": "triangle inequality violated"}
         },
         {
           "description": "third triangle inequality violation",
@@ -132,7 +133,7 @@
           "input": {
             "sides": [3, 1, 1]
           },
-          "expected": false
+          "expected": {"error": "triangle inequality violated"}
         },
         {
           "comments": [
@@ -181,7 +182,7 @@
           "input": {
             "sides": [7, 3, 2]
           },
-          "expected": false
+          "expected": {"error": "triangle inequality violated"}
         },
         {
           "comments": [
