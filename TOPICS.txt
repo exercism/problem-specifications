@@ -26,6 +26,7 @@ classes
 dates
 discriminated_unions
 enumerations
+errors
 floating_point_numbers
 graphs
 integers
