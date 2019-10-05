@@ -6,6 +6,7 @@ conditionals
 events
 equality
 exception_handling
+error_handling
 generics
 inheritance
 interfaces
@@ -26,7 +27,6 @@ classes
 dates
 discriminated_unions
 enumerations
-errors
 floating_point_numbers
 graphs
 integers
