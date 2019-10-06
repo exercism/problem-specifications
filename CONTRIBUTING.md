@@ -17,7 +17,7 @@ This guide covers several common scenarios pertaining to **improving the languag
 themselves. There are other guides about contributing to other parts of the Exercism ecosystem.
 
 * [The Command-Line Client](https://github.com/exercism/cli/blob/master/README.md)
-* [The Website](https://github.com/exercism/exercism.io/blob/master/CONTRIBUTING.md)
+* [The Website](https://github.com/exercism/website/blob/master/CONTRIBUTING.md)
 * [The Exercises API](https://github.com/exercism/x-api/blob/master/CONTRIBUTING.md) (used by both the command-line client and the website)
 
 ## Table of Contents
