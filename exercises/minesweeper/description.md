@@ -1,4 +1,4 @@
-Add the score totals to a completed Minesweeper board.
+Add the mine counts to a completed Minesweeper board.
 
 Minesweeper is a popular game where the user has to find the mines using
 numeric hints that indicate how many mines are directly adjacent
