@@ -247,7 +247,7 @@
       "cases": [
         {
           "description": "Raise a positive rational number to a positive integer power",
-          "property": "exprational",
+          "property": "expRational",
           "input": {
             "r": [1, 2],
             "n": 3
@@ -256,7 +256,7 @@
         },
         {
           "description": "Raise a negative rational number to a positive integer power",
-          "property": "exprational",
+          "property": "expRational",
           "input": {
             "r": [-1, 2],
             "n": 3
@@ -265,7 +265,7 @@
         },
         {
           "description": "Raise zero to an integer power",
-          "property": "exprational",
+          "property": "expRational",
           "input": {
             "r": [0, 1],
             "n": 5
@@ -274,7 +274,7 @@
         },
         {
           "description": "Raise one to an integer power",
-          "property": "exprational",
+          "property": "expRational",
           "input": {
             "r": [1, 1],
             "n": 4
@@ -283,7 +283,7 @@
         },
         {
           "description": "Raise a positive rational number to the power of zero",
-          "property": "exprational",
+          "property": "expRational",
           "input": {
             "r": [1, 2],
             "n": 0
@@ -292,7 +292,7 @@
         },
         {
           "description": "Raise a negative rational number to the power of zero",
-          "property": "exprational",
+          "property": "expRational",
           "input": {
             "r": [-1, 2],
             "n": 0
@@ -306,7 +306,7 @@
       "cases": [
         {
           "description": "Raise a real number to a positive rational number",
-          "property": "expreal",
+          "property": "expReal",
           "input": {
             "x": 8,
             "r": [4, 3]
@@ -315,7 +315,7 @@
         },
         {
           "description": "Raise a real number to a negative rational number",
-          "property": "expreal",
+          "property": "expReal",
           "input": {
             "x": 9,
             "r": [-1, 2]
@@ -324,7 +324,7 @@
         },
         {
           "description": "Raise a real number to a zero rational number",
-          "property": "expreal",
+          "property": "expReal",
           "input": {
             "x": 2,
             "r": [0, 1]
