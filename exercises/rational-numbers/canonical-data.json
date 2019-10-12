@@ -26,7 +26,7 @@
               "expected": [7, 6]
             },
             {
-              "description": "Add a positive rational number and a negative rational number",
+              "description": "Add a positive and a negative rational number",
               "property": "add",
               "input": {
                 "r1": [1, 2],
@@ -67,7 +67,7 @@
               "expected": [-1, 6]
             },
             {
-              "description": "Subtract a positive rational number and a negative rational number",
+              "description": "Subtract a positive and a negative rational number",
               "property": "subtract",
               "input": {
                 "r1": [1, 2],
@@ -108,7 +108,7 @@
               "expected": [1, 3]
             },
             {
-              "description": "Multiply a negative rational number by a positive rational number",
+              "description": "Multiply a negative by a positive rational number",
               "property": "multiply",
               "input": {
                 "r1": [-1, 2],
@@ -167,7 +167,7 @@
               "expected": [3, 4]
             },
             {
-              "description": "Divide a positive rational number by a negative rational number",
+              "description": "Divide a positive by a negative rational number",
               "property": "divide",
               "input": {
                 "r1": [1, 2],
