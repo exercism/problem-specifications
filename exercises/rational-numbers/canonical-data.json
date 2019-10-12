@@ -59,7 +59,7 @@
           "cases": [
             {
               "description": "Subtract two positive rational numbers",
-              "property": "sub",
+              "property": "subtract",
               "input": {
                 "r1": [1, 2],
                 "r2": [2, 3]
@@ -68,7 +68,7 @@
             },
             {
               "description": "Subtract a positive rational number and a negative rational number",
-              "property": "sub",
+              "property": "subtract",
               "input": {
                 "r1": [1, 2],
                 "r2": [-2, 3]
@@ -77,7 +77,7 @@
             },
             {
               "description": "Subtract two negative rational numbers",
-              "property": "sub",
+              "property": "subtract",
               "input": {
                 "r1": [-1, 2],
                 "r2": [-2, 3]
@@ -86,7 +86,7 @@
             },
             {
               "description": "Subtract a rational number from itself",
-              "property": "sub",
+              "property": "subtract",
               "input": {
                 "r1": [1, 2],
                 "r2": [1, 2]
@@ -100,7 +100,7 @@
           "cases": [
             {
               "description": "Multiply two positive rational numbers",
-              "property": "mul",
+              "property": "multiply",
               "input": {
                 "r1": [1, 2],
                 "r2": [2, 3]
@@ -109,7 +109,7 @@
             },
             {
               "description": "Multiply a negative rational number by a positive rational number",
-              "property": "mul",
+              "property": "multiply",
               "input": {
                 "r1": [-1, 2],
                 "r2": [2, 3]
@@ -118,7 +118,7 @@
             },
             {
               "description": "Multiply two negative rational numbers",
-              "property": "mul",
+              "property": "multiply",
               "input": {
                 "r1": [-1, 2],
                 "r2": [-2, 3]
@@ -127,7 +127,7 @@
             },
             {
               "description": "Multiply a rational number by its reciprocal",
-              "property": "mul",
+              "property": "multiply",
               "input": {
                 "r1": [1, 2],
                 "r2": [2, 1]
@@ -136,7 +136,7 @@
             },
             {
               "description": "Multiply a rational number by 1",
-              "property": "mul",
+              "property": "multiply",
               "input": {
                 "r1": [1, 2],
                 "r2": [1, 1]
@@ -145,7 +145,7 @@
             },
             {
               "description": "Multiply a rational number by 0",
-              "property": "mul",
+              "property": "multiply",
               "input": {
                 "r1": [1, 2],
                 "r2": [0, 1]
@@ -159,7 +159,7 @@
           "cases": [
             {
               "description": "Divide two positive rational numbers",
-              "property": "div",
+              "property": "divide",
               "input": {
                 "r1": [1, 2],
                 "r2": [2, 3]
@@ -168,7 +168,7 @@
             },
             {
               "description": "Divide a positive rational number by a negative rational number",
-              "property": "div",
+              "property": "divide",
               "input": {
                 "r1": [1, 2],
                 "r2": [-2, 3]
@@ -177,7 +177,7 @@
             },
             {
               "description": "Divide two negative rational numbers",
-              "property": "div",
+              "property": "divide",
               "input": {
                 "r1": [-1, 2],
                 "r2": [-2, 3]
@@ -186,7 +186,7 @@
             },
             {
               "description": "Divide a rational number by 1",
-              "property": "div",
+              "property": "divide",
               "input": {
                 "r1": [1, 2],
                 "r2": [1, 1]
@@ -202,7 +202,7 @@
       "cases": [
         {
           "description": "Absolute value of a positive rational number",
-          "property": "abs",
+          "property": "absolute",
           "input": {
             "r": [1, 2]
           },
@@ -210,7 +210,7 @@
         },
         {
           "description": "Absolute value of a positive rational number with negative numerator and denominator",
-          "property": "abs",
+          "property": "absolute",
           "input": {
             "r": [-1, -2]
           },
@@ -218,7 +218,7 @@
         },
         {
           "description": "Absolute value of a negative rational number",
-          "property": "abs",
+          "property": "absolute",
           "input": {
             "r": [-1, 2]
           },
@@ -226,7 +226,7 @@
         },
         {
           "description": "Absolute value of a negative rational number with negative denominator",
-          "property": "abs",
+          "property": "absolute",
           "input": {
             "r": [1, -2]
           },
@@ -234,7 +234,7 @@
         },
         {
           "description": "Absolute value of zero",
-          "property": "abs",
+          "property": "absolute",
           "input": {
             "r": [0, 1]
           },
