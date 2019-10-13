@@ -35,6 +35,14 @@
       "expected": 33
     },
     {
+      "description": "Black and brown",
+      "property": "value",
+      "input": {
+        "colors": ["black", "brown"]
+      },
+      "expected": 1
+    },
+    {
       "description": "Ignore additional colors",
       "property": "value",
       "input": {
