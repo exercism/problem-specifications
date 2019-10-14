@@ -3,7 +3,7 @@
 Given a name, return a string with the message:
 
 ```text
-One for [name], one for me.
+One for name, one for me.
 ```
 
 Where "name" is the given name.
