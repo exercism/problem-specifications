@@ -3,7 +3,7 @@ If you want to build something using a Raspberry Pi, you'll probably use _resist
 * Each resistor has a resistance value.
 * Resistors are small - so small in fact that if you printed the resistance value on them, it would be hard to read.
 
-To get around this problem, manufacturers print color-coded bands onto the resistors to denote their resistance values. Each band has a numeric and a positional value. For example, if they printed a brown band (value 1) followed by a green band (value 5), it would translate to the numeric value 10 + 5 = 15, as if the colors were digits.
+To get around this problem, manufacturers print color-coded bands onto the resistors to denote their resistance values. Each band has a numeric and a positional value. For example, if they printed a brown band (value 1) followed by a green band (value 5), it would translate to the numeric value.
 
 In this exercise you are going to create a helpful program so that you don't have to remember the numeric values of the bands. The program will take color names as input and output a numeric value of at most two digits.
 
