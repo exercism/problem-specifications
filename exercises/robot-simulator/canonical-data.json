@@ -1,6 +1,6 @@
 {
   "exercise": "robot-simulator",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "comments": [
     "Some tests have two expectations: one for the position, one for the direction",
     "Optionally, you can also test",
@@ -51,7 +51,7 @@
       ]
     },
     {
-      "description": "Rotating clockwise",
+      "description": "Turning right",
       "cases": [
         {
           "description": "changes north to east",
@@ -132,7 +132,7 @@
       ]
     },
     {
-      "description": "Rotating counter-clockwise",
+      "description": "Turning left",
       "cases": [
         {
           "description": "changes north to west",
