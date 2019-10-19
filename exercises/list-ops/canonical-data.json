@@ -20,7 +20,7 @@
           "expected": []
         },
         {
-          "description": "empty list to list",
+          "description": "list to empty list",
           "property": "append",
           "input": {
             "list1": [],
