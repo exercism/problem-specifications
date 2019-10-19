@@ -1,6 +1,6 @@
 {
   "exercise": "list-ops",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "comments": [
     "Though there are no specifications here for dealing with large lists,",
     "implementers may add tests for handling large lists to ensure that the",
