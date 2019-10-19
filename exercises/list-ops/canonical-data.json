@@ -30,6 +30,15 @@
           "expected": [1, 2, 3, 4]
         },
         {
+          "description": "empty list to list",
+          "property": "append",
+          "input": {
+            "list1": [1, 2, 3, 4],
+            "list2": []
+          },
+          "expected": [1, 2, 3, 4]
+        },
+        {
           "uuid": "71dcf5eb-73ae-4a0e-b744-a52ee387922f",
           "description": "non-empty lists",
           "property": "append",
