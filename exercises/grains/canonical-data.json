@@ -1,6 +1,6 @@
 {
   "exercise": "grains",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "comments": [
     "The final tests of square test error conditions",
     "In these cases you should expect an error as is idiomatic for your language"
@@ -94,7 +94,9 @@
     {
       "description": "returns the total number of grains on the board",
       "property": "total",
-      "input": {},
+      "input": {
+        "square": 64
+      },
       "expected": 18446744073709551615
     }
   ]
