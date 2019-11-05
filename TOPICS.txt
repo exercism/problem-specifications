@@ -8,7 +8,7 @@ may vary freely without necessarily imposing requirements on the surrounding
 tracks.
 
 Within a given track, however, consistency is paramount. A given name for a
-hing should remain exactly consistent due to how the track data is parsed,
+thing should remain exactly consistent due to how the track data is parsed,
 i.e. you can technically use "string" but it must always be "string", not
 "strings", so for simplicity's sake a track should favor pluralization or
 innumerable words. The snake_case form should always be favored, also,
