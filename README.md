@@ -76,7 +76,7 @@ is easier to understand with an example:
       , "input"      : {
           "firstName"  : "Alan",
           "lastName"   : "Smithee"
-        }  
+        }
       , "expected"   : "ASlmainthee"
       }
     , { "comments":
@@ -106,7 +106,7 @@ is easier to understand with an example:
             , "input"      : {
                 "firstName"  : "HAL",
                 "lastName"   : "9000"
-              }  
+              }
             , "expected"   : { "error": "You should never bar a number" }
             }
           ]
@@ -150,8 +150,8 @@ Test data should be versioned according to [Semantic Version 2.0](http://semver.
 
 #### MAJOR version changes
 
-The MAJOR version should be changed when the test suite is modified in a 
-fundamentally incompatible way. 
+The MAJOR version should be changed when the test suite is modified in a
+fundamentally incompatible way.
 
 There are examples of changes requiring a MAJOR version change:
 
@@ -164,7 +164,7 @@ MAJOR changes should be expected to break even well-behaved test generators.
 
 #### MINOR version changes
 
-The MINOR version should change when you add functionality in a backwards-compatible manner, make 
+The MINOR version should change when you add functionality in a backwards-compatible manner, make
 non-breaking changes that alter the meaning of the test suite, make previously
 passing solutions possibly fail, or failing solutions fail at a different spot.
 
@@ -185,7 +185,7 @@ There are examples of changes requiring a PATCH version change:
 
 - Regrouping/"Renesting" test cases without changing test case ordering.
 - Changing descriptions or comments.
-- Changing keys' ordering or formatting (would result in an equivalent JSON file).    
+- Changing keys' ordering or formatting (would result in an equivalent JSON file).
 
 PATCH changes would never break well-designed test generators, because the test data remains exactly the same.
 
