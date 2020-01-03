@@ -85,7 +85,7 @@
         "y": 3.5
       },
       "expected": 5
-    },   
+    },
     {
       "property": "score",
       "description": "Just outside the middle circle",
@@ -94,7 +94,7 @@
         "y": -3.6
       },
       "expected": 1
-    },     
+    },
     {
       "property": "score",
       "description": "Just within the outer circle",
@@ -103,7 +103,7 @@
         "y": 7.0
       },
       "expected": 1
-    },     
+    },
     {
       "property": "score",
       "description": "Just outside the outer circle",
@@ -112,7 +112,7 @@
         "y": -7.1
       },
       "expected": 0
-    },    
+    },
     {
       "property": "score",
       "description": "Asymmetric position between the inner and middle circles",

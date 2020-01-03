@@ -31,7 +31,7 @@ function check_directory {
 
 }
 
-while : 
+while :
 do
 	case "$1" in
 		-p | --progress)
@@ -41,7 +41,7 @@ do
 		*)
 			check_directory 'exercises'
 			if [ $SHOW_PROGRESS == 'true' ]; then
-				echo 
+				echo
 				echo Done: $MISSING_FILES files missing.
 			fi
 			if (( $MISSING_FILES > 0 )); then

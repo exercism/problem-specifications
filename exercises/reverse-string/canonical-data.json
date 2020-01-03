@@ -31,7 +31,7 @@
     },
     {
       "description": "a sentence with punctuation",
-      "property": "reverse",  
+      "property": "reverse",
       "input": {
         "value": "I'm hungry!"
       },

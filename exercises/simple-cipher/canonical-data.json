@@ -87,7 +87,7 @@
           "expected": "qayaeaagaciai"
         },
         {
-          "description": "Can wrap on encode", 
+          "description": "Can wrap on encode",
           "property": "encode",
           "input": {
             "key": "abcdefghij",

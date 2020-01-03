@@ -121,7 +121,7 @@
         "value": "[]]"
       },
       "expected": false
-    },    
+    },
     {
       "description": "math expression",
       "property": "isPaired",
