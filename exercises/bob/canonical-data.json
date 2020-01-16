@@ -1,6 +1,6 @@
 {
   "exercise": "bob",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "cases": [
     {
       "description": "stating something",
@@ -54,7 +54,7 @@
       "description": "talking forcefully",
       "property": "response",
       "input": {
-        "heyBob": "Let's go make out behind the gym!"
+        "heyBob": "Hi there!"
       },
       "expected": "Whatever."
     },
@@ -70,7 +70,7 @@
       "description": "forceful question",
       "property": "response",
       "input": {
-        "heyBob": "WHAT THE HELL WERE YOU THINKING?"
+        "heyBob": "WHAT'S GOING ON?"
       },
       "expected": "Calm down, I know what I'm doing!"
     },
