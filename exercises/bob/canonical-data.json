@@ -1,6 +1,6 @@
 {
   "exercise": "bob",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "cases": [
     {
       "description": "stating something",
@@ -62,7 +62,7 @@
       "description": "using acronyms in regular speech",
       "property": "response",
       "input": {
-        "heyBob": "It's OK if you don't want to go to the DMV."
+        "heyBob": "It's OK if you don't want to go to the dentist."
       },
       "expected": "Whatever."
     },
@@ -110,7 +110,7 @@
       "description": "shouting with no exclamation mark",
       "property": "response",
       "input": {
-        "heyBob": "I HATE THE DMV"
+        "heyBob": "I HATE THE DENTIST"
       },
       "expected": "Whoa, chill out!"
     },
