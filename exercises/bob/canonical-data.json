@@ -62,7 +62,7 @@
       "description": "using acronyms in regular speech",
       "property": "response",
       "input": {
-        "heyBob": "It's OK if you don't want to go to the dentist."
+        "heyBob": "It's OK if you don't want to go work for NASA."
       },
       "expected": "Whatever."
     },
