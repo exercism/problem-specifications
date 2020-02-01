@@ -1,0 +1,65 @@
+{
+  "exercise": "levenshtein-distance",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "description": "Calculate Levenshtein distance",
+      "cases": [
+        {
+          "description": "mine_to_times",
+          "property": "distance",
+          "input": {
+            "phrase": "mine",
+			"phrase": "times"
+          },
+          "expected": "3"
+        },
+		{
+          "description": "_to_abcd",
+          "property": "distance",
+          "input": {
+            "phrase": "",
+			"phrase": "abcd"
+          },
+          "expected": "4"
+        },
+		{
+          "description": "12345_to_",
+          "property": "distance",
+          "input": {
+            "phrase": "12345",
+			"phrase": ""
+          },
+          "expected": "5"
+        },
+		{
+          "description": "lifo_to_fifo",
+          "property": "distance",
+          "input": {
+            "phrase": "lifo",
+			"phrase": "fifo"
+          },
+          "expected": "1"
+        },
+		{
+          "description": "Hello-World!_to_hello-world",
+          "property": "distance",
+          "input": {
+            "phrase": "Hello World!",
+			"phrase": "hello world"
+          },
+          "expected": "3"
+        },
+		{
+          "description": "oxygenO2_to_carbondioxideCO2",
+          "property": "distance",
+          "input": {
+            "phrase": "oxygenO2",
+			"phrase": "carbondioxideCO2"
+          },
+          "expected": "11"
+        }
+      ]
+    }
+  ]
+}
