@@ -1,6 +1,6 @@
 {
   "exercise": "luhn",
-  "version": "1.6.2",
+  "version": "1.7.0",
   "cases": [
     {
       "description": "single digit strings can not be valid",
