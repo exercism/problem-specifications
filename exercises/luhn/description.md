@@ -24,7 +24,7 @@ The first step of the Luhn algorithm is to double every second digit,
 starting from the right. We will be doubling
 
 ```text
-4_3_ 6_9_ 0_4_ 6_6_
+4_3_ 3_9_ 0_4_ 6_6_
 ```
 
 If doubling the number results in a number greater than 9 then subtract 9
