@@ -55,7 +55,8 @@
       "expected": {
         "value": 470,
         "unit": "kiloohms"
-      },
+      }
+    },
      {
       "description": "Orange and orange and red",
       "property": "label",
