@@ -10,11 +10,11 @@ The product (multiplication) of two rational numbers `r₁ = a₁/b₁` and `r�
 
 Dividing a rational number `r₁ = a₁/b₁` by another `r₂ = a₂/b₂` is `r₁ / r₂ = (a₁ * b₂) / (a₂ * b₁)` if `a₂ * b₁` is not zero.
 
-Exponentiation of a rational number `r = a/b` to a non-negative integer power `n` is `r^n = a^n/b^n`.
+Exponentiation of a rational number `r = a/b` to a non-negative integer power `n` is `r^n = (a^n)/(b^n)`.
 
-Exponentiation of a rational number `r = a/b` to a negative integer power `n` is `r^n = b^m/a^m`, where `m = |n|`.
+Exponentiation of a rational number `r = a/b` to a negative integer power `n` is `r^n = (b^m)/(a^m)`, where `m = |n|`.
 
-Exponentiation of a rational number `r = a/b` to a real (floating-point) number `x` is the quotient `a^x/b^x`, which is a real number.
+Exponentiation of a rational number `r = a/b` to a real (floating-point) number `x` is the quotient `(a^x)/(b^x)`, which is a real number.
 
 Exponentiation of a real number `x` to a rational number `r = a/b` is `x^(a/b) = root(x^a, b)`, where `root(p, q)` is the `q`th root of `p`.
 
