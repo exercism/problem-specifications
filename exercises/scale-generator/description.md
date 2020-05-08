@@ -16,7 +16,7 @@ A, Bb, B, C, Db, D, Eb, E, F, Gb, G, Ab
 The major and minor scale and modes are subsets of this twelve-pitch
 collection. They have seven pitches, and are called diatonic scales.
 The collection of notes in these scales is written with either sharps or
-flats, depending on the tonic. Here is a list of which use sharps, flats, or neither:
+flats, depending on the tonic:
 
 No sharps or flats:
 - C major
