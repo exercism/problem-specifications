@@ -94,6 +94,15 @@
         "sentence": "the quick brown fox jumps over with lazy FX"
       },
       "expected": false
+    },
+    {
+      "uuid": "7138e389-83e4-4c6e-8413-1e40a0076951",
+      "description": "a-m and A-M are 26 different letters but not a pangram",
+      "property": "isPangram",
+      "input": {
+        "sentence": "abcdefghijklm ABCDEFGHIJKLM"
+      },
+      "expected": false
     }
   ]
 }
