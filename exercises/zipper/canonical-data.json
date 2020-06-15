@@ -1,697 +1,696 @@
 {
-  "exercise": "zipper",
-  "version": "1.1.0",
-  "comments": [
-    " The test cases for this exercise include an initial tree and a     ",
-    " series of operations to perform on the initial tree.               ",
-    "                                                                    ",
-    " Trees are encoded as nested objects. Each node in the tree has     ",
-    " three members: 'value', 'left', and 'right'. Each value is a       ",
-    " number (for simplicity). Left and right are trees. An empty node   ",
-    " is encoded as null.                                                ",
-    "                                                                    ",
-    " Each operation in the operations list is an object. The function   ",
-    " name is listed under 'operation'. If the function requires         ",
-    " arguments, the argument is listed under 'item'. Some functions     ",
-    " require values (i.e.  numbers), while others require trees.        ",
-    " Comments are always optional and can be used almost anywhere.      "
-  ],
-  "cases": [
-    {
-      "description": "data is retained",
-      "property": "expectedValue",
-      "input": {
-        "initialTree": {
-          "value": 1,
-          "left": {
-            "value": 2,
-            "left": null,
-            "right": {
-              "value": 3,
-              "left": null,
-              "right": null
-            }
-          },
-          "right": {
-            "value": 4,
-            "left": null,
-            "right": null
-          }
-        },
-        "operations": [
-          {
-            "operation": "to_tree"
-          }
-        ]
-      },
-      "expected": {
-        "type": "tree",
-        "value": {
-          "value": 1,
-          "left": {
-            "value": 2,
-            "left": null,
-            "right": {
-              "value": 3,
-              "left": null,
-              "right": null
-            }
-          },
-          "right": {
-            "value": 4,
-            "left": null,
-            "right": null
-          }
-        }
-      }
-    },
-    {
-      "description": "left, right and value",
-      "property": "expectedValue",
-      "input": {
-        "initialTree": {
-          "value": 1,
-          "left": {
-            "value": 2,
-            "left": null,
-            "right": {
-              "value": 3,
-              "left": null,
-              "right": null
-            }
-          },
-          "right": {
-            "value": 4,
-            "left": null,
-            "right": null
-          }
-        },
-        "operations": [
-          {
-            "operation": "left"
-          },
-          {
-            "operation": "right"
-          },
-          {
-            "operation": "value"
-          }
-        ]
-      },
-      "expected": {
-        "type": "int",
-        "value": 3
-      }
-    },
-    {
-      "description": "dead end",
-      "property": "expectedValue",
-      "input": {
-        "initialTree": {
-          "value": 1,
-          "left": {
-            "value": 2,
-            "left": null,
-            "right": {
-              "value": 3,
-              "left": null,
-              "right": null
-            }
-          },
-          "right": {
-            "value": 4,
-            "left": null,
-            "right": null
-          }
-        },
-        "operations": [
-          {
-            "operation": "left"
-          },
-          {
-            "operation": "left"
-          }
-        ]
-      },
-      "expected": {
-        "type": "zipper",
-        "value": null
-      }
-    },
-    {
-      "description": "tree from deep focus",
-      "property": "expectedValue",
-      "input": {
-        "initialTree": {
-          "value": 1,
-          "left": {
-            "value": 2,
-            "left": null,
-            "right": {
-              "value": 3,
-              "left": null,
-              "right": null
-            }
-          },
-          "right": {
-            "value": 4,
-            "left": null,
-            "right": null
-          }
-        },
-        "operations": [
-          {
-            "operation": "left"
-          },
-          {
-            "operation": "right"
-          },
-          {
-            "operation": "to_tree"
-          }
-        ]
-      },
-      "expected": {
-        "type": "tree",
-        "value": {
-          "value": 1,
-          "left": {
-            "value": 2,
-            "left": null,
-            "right": {
-              "value": 3,
-              "left": null,
-              "right": null
-            }
-          },
-          "right": {
-            "value": 4,
-            "left": null,
-            "right": null
-          }
-        }
-      }
-    },
-    {
-      "description": "traversing up from top",
-      "property": "expectedValue",
-      "input": {
-        "initialTree": {
-          "value": 1,
-          "left": {
-            "value": 2,
-            "left": null,
-            "right": {
-              "value": 3,
-              "left": null,
-              "right": null
-            }
-          },
-          "right": {
-            "value": 4,
-            "left": null,
-            "right": null
-          }
-        },
-        "operations": [
-          {
-            "operation": "up"
-          }
-        ]
-      },
-      "expected": {
-        "type": "zipper",
-        "value": null
-      }
-    },
-    {
-      "description": "left, right, and up",
-      "property": "expectedValue",
-      "input": {
-        "initialTree": {
-          "value": 1,
-          "left": {
-            "value": 2,
-            "left": null,
-            "right": {
-              "value": 3,
-              "left": null,
-              "right": null
-            }
-          },
-          "right": {
-            "value": 4,
-            "left": null,
-            "right": null
-          }
-        },
-        "operations": [
-          {
-            "operation": "left"
-          },
-          {
-            "operation": "up"
-          },
-          {
-            "operation": "right"
-          },
-          {
-            "operation": "up"
-          },
-          {
-            "operation": "left"
-          },
-          {
-            "operation": "right"
-          },
-          {
-            "operation": "value"
-          }
-        ]
-      },
-      "expected": {
-        "type": "int",
-        "value": 3
-      }
-    },
-    {
-      "description": "set_value",
-      "property": "expectedValue",
-      "input": {
-        "initialTree": {
-          "value": 1,
-          "left": {
-            "value": 2,
-            "left": null,
-            "right": {
-              "value": 3,
-              "left": null,
-              "right": null
-            }
-          },
-          "right": {
-            "value": 4,
-            "left": null,
-            "right": null
-          }
-        },
-        "operations": [
-          {
-            "operation": "left"
-          },
-          {
-            "operation": "set_value",
-            "item": 5
-          },
-          {
-            "operation": "to_tree"
-          }
-        ]
-      },
-      "expected": {
-        "type": "tree",
-        "value": {
-          "value": 1,
-          "left": {
-            "value": 5,
-            "left": null,
-            "right": {
-              "value": 3,
-              "left": null,
-              "right": null
-            }
-          },
-          "right": {
-            "value": 4,
-            "left": null,
-            "right": null
-          }
-        }
-      }
-    },
-    {
-      "description": "set_value after traversing up",
-      "property": "expectedValue",
-      "input": {
-        "initialTree": {
-          "value": 1,
-          "left": {
-            "value": 2,
-            "left": null,
-            "right": {
-              "value": 3,
-              "left": null,
-              "right": null
-            }
-          },
-          "right": {
-            "value": 4,
-            "left": null,
-            "right": null
-          }
-        },
-        "operations": [
-          {
-            "operation": "left"
-          },
-          {
-            "operation": "right"
-          },
-          {
-            "operation": "up"
-          },
-          {
-            "operation": "set_value",
-            "item": 5
-          },
-          {
-            "operation": "to_tree"
-          }
-        ]
-      },
-      "expected": {
-        "type": "tree",
-        "value": {
-          "value": 1,
-          "left": {
-            "value": 5,
-            "left": null,
-            "right": {
-              "value": 3,
-              "left": null,
-              "right": null
-            }
-          },
-          "right": {
-            "value": 4,
-            "left": null,
-            "right": null
-          }
-        }
-      }
-    },
-    {
-      "description": "set_left with leaf",
-      "property": "expectedValue",
-      "input": {
-        "initialTree": {
-          "value": 1,
-          "left": {
-            "value": 2,
-            "left": null,
-            "right": {
-              "value": 3,
-              "left": null,
-              "right": null
-            }
-          },
-          "right": {
-            "value": 4,
-            "left": null,
-            "right": null
-          }
-        },
-        "operations": [
-          {
-            "operation": "left"
-          },
-          {
-            "operation": "set_left",
-            "item": {
-              "value": 5,
-              "left": null,
-              "right": null
-            }
-          },
-          {
-            "operation": "to_tree"
-          }
-        ]
-      },
-      "expected": {
-        "type": "tree",
-        "value": {
-          "value": 1,
-          "left": {
-            "value": 2,
-            "left": {
-              "value": 5,
-              "left": null,
-              "right": null
+   "exercise":"zipper",
+   "version":"2.0.0",
+   "comments":[
+      " Verifies that a tree can be build from recursive applications of   ",
+      " one of the following atomic operations:                            ",
+      "    - cursor moving: left, right, up                                ",
+      "    - node insertion/modification and reading                       ",
+      "                                                                    ",
+      " A zipper binary tree, is a binary tree with a cursor placed on any ",
+      " of its nodes.                                                      ",
+      "                                                                    ",
+      " Any zipper tree construction always start from an empty zipper:    ",
+      "     - an empty tree (not even a root node).                        ",
+      "     - a cursor on the place where a root node coulb be inserted.   ",
+      "                                                                    ",
+      " The first part of the test consists in building a unique tree,     ",
+      " checking at each steps that:                                       ",
+      "     - values inside the tree are correct,                          ",
+      "     - and all operation are non mutating                           ",
+      "     (reading is by definition non mutating, therefore we wont      ",
+      "      test this operation)                                          ",
+      "                                                                    ",
+      " The second part of the test for un-authorized moves operations,    ",
+      " like inserting on non-empty spots, or going in a direction where   ",
+      " cursor is not allowed to go (eg., up from the root)                ",
+      "                                                                    ",
+      " Lets consider the following affectation:                           ",
+      "                    y <- f(x, value)                                ",
+      " The following notation will be used to represent this operation:   ",
+      "  {                                                                 ",
+      "     'operation': 'f',                                              ",
+      "     'affectTo': 'y',                                               ",
+      "     'applyOn': 'x',                                                ",
+      "     'item': 'value'                                                ",
+      "  }                                                                 ",
+      "                                                                    ",
+      " Each test should start with the initialisation of an empty zipper  ",
+      " named 'zipper':                                                    ",
+      "  'initialZipper': {                                                ",
+      "      'name': 'zipper'                                              ",
+      "   }                                                                ",
+      "                                                                    "
+   ],
+   "cases":[
+      {
+         "description":"Zipper is empty.",
+         "property":"zipper",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
             },
-            "right": {
-              "value": 3,
-              "left": null,
-              "right": null
-            }
-          },
-          "right": {
-            "value": 4,
-            "left": null,
-            "right": null
-          }
-        }
-      }
-    },
-    {
-      "description": "set_right with null",
-      "property": "expectedValue",
-      "input": {
-        "initialTree": {
-          "value": 1,
-          "left": {
-            "value": 2,
-            "left": null,
-            "right": {
-              "value": 3,
-              "left": null,
-              "right": null
-            }
-          },
-          "right": {
-            "value": 4,
-            "left": null,
-            "right": null
-          }
-        },
-        "operations": [
-          {
-            "operation": "left"
-          },
-          {
-            "operation": "set_right",
-            "item": null
-          },
-          {
-            "operation": "to_tree"
-          }
-        ]
+            "operations":[
+
+            ]
+         },
+         "expected":{
+            "error":"There is no value here, but you can insert a node here."
+         }
       },
-      "expected": {
-        "type": "tree",
-        "value": {
-          "value": 1,
-          "left": {
-            "value": 2,
-            "left": null,
-            "right": null
-          },
-          "right": {
-            "value": 4,
-            "left": null,
-            "right": null
-          }
-        }
-      }
-    },
-    {
-      "description": "set_right with subtree",
-      "property": "expectedValue",
-      "input": {
-        "initialTree": {
-          "value": 1,
-          "left": {
-            "value": 2,
-            "left": null,
-            "right": {
-              "value": 3,
-              "left": null,
-              "right": null
-            }
-          },
-          "right": {
-            "value": 4,
-            "left": null,
-            "right": null
-          }
-        },
-        "operations": [
-          {
-            "operation": "set_right",
-            "item": {
-              "value": 6,
-              "left": {
-                "value": 7,
-                "left": null,
-                "right": null
-              },
-              "right": {
-                "value": 8,
-                "left": null,
-                "right": null
-              }
-            }
-          },
-          {
-            "operation": "to_tree"
-          }
-        ]
-      },
-      "expected": {
-        "type": "tree",
-        "value": {
-          "value": 1,
-          "left": {
-            "value": 2,
-            "left": null,
-            "right": {
-              "value": 3,
-              "left": null,
-              "right": null
-            }
-          },
-          "right": {
-            "value": 6,
-            "left": {
-              "value": 7,
-              "left": null,
-              "right": null
+      {
+         "description":"Insert method shouldn't mutate the object.",
+         "property":"insert",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
             },
-            "right": {
-              "value": 8,
-              "left": null,
-              "right": null
-            }
-          }
-        }
-      }
-    },
-    {
-      "description": "set_value on deep focus",
-      "property": "expectedValue",
-      "input": {
-        "initialTree": {
-          "value": 1,
-          "left": {
-            "value": 2,
-            "left": null,
-            "right": {
-              "value": 3,
-              "left": null,
-              "right": null
-            }
-          },
-          "right": {
-            "value": 4,
-            "left": null,
-            "right": null
-          }
-        },
-        "operations": [
-          {
-            "operation": "left"
-          },
-          {
-            "operation": "right"
-          },
-          {
-            "operation": "set_value",
-            "item": 5
-          },
-          {
-            "operation": "to_tree"
-          }
-        ]
+            "operations":[
+               {
+                  "operation":"insert",
+                  "affectTo":null,
+                  "applyOn":"zipper",
+                  "item":1
+               }
+            ]
+         },
+         "expected":{
+            "error":"There is no value here, but you can insert a node here."
+         }
       },
-      "expected": {
-        "type": "tree",
-        "value": {
-          "value": 1,
-          "left": {
-            "value": 2,
-            "left": null,
-            "right": {
-              "value": 5,
-              "left": null,
-              "right": null
-            }
-          },
-          "right": {
-            "value": 4,
-            "left": null,
-            "right": null
-          }
-        }
-      }
-    },
-    {
-      "description": "different paths to same zipper",
-      "property": "sameResultFromOperations",
-      "input": {
-        "initialTree": {
-          "value": 1,
-          "left": {
-            "value": 2,
-            "left": null,
-            "right": {
-              "value": 3,
-              "left": null,
-              "right": null
-            }
-          },
-          "right": {
-            "value": 4,
-            "left": null,
-            "right": null
-          }
-        },
-        "operations": [
-          {
-            "operation": "left"
-          },
-          {
-            "operation": "up"
-          },
-          {
-            "operation": "right"
-          }
-        ]
+      {
+         "description":"Insert method actually set the right value at the right place.",
+         "property":"getValue",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":1
+               },
+               {
+                  "operation":"value",
+                  "affectTo":"actual"
+               }
+            ]
+         },
+         "expected":{
+            "type":"int",
+            "value":1
+         }
       },
-      "expected": {
-        "type": "zipper",
-        "initialTree": {
-          "value": 1,
-          "left": {
-            "value": 2,
-            "left": null,
-            "right": {
-              "value": 3,
-              "left": null,
-              "right": null
-            }
-          },
-          "right": {
-            "value": 4,
-            "left": null,
-            "right": null
-          }
-        },
-        "operations": [
-          {
-            "operation": "right"
-          }
-        ]
+      {
+         "description":"Left move and an empty spot insertion.",
+         "property":"left",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":1
+               },
+               {
+                  "operation":"left",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":2
+               },
+               {
+                  "operation":"value",
+                  "affectTo":"actual",
+                  "applyOn":"zipper"
+               }
+            ]
+         },
+         "expected":{
+            "type":"int",
+            "value":2
+         }
+      },
+      {
+         "description":"Right move and an empty spot insertion.",
+         "property":"right",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":1
+               },
+               {
+                  "operation":"right",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":3
+               },
+               {
+                  "operation":"value",
+                  "affectTo":"actual",
+                  "applyOn":"zipper"
+               }
+            ]
+         },
+         "expected":{
+            "type":"int",
+            "value":3
+         }
+      },
+      {
+         "description":"Left move do not mutate initialZipper.",
+         "property":"left",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":1
+               },
+               {
+                  "operation":"left",
+                  "affectTo":"tmp",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"value",
+                  "affectTo":"actual",
+                  "applyOn":"zipper"
+               }
+            ]
+         },
+         "expected":{
+            "type":"int",
+            "value":1
+         }
+      },
+      {
+         "description":"Right move do not mutate initialZipper.",
+         "property":"right",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":1
+               },
+               {
+                  "operation":"right",
+                  "affectTo":"tmp",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"value",
+                  "affectTo":"actual",
+                  "applyOn":"zipper"
+               }
+            ]
+         },
+         "expected":{
+            "type":"int",
+            "value":1
+         }
+      },
+      {
+         "description":"Going left then up is equivalent to staying put.",
+         "property":"left",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":1
+               },
+               {
+                  "operation":"left",
+                  "affectTo":"tmp",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"up",
+                  "affectTo":"tmp",
+                  "applyOn":"tmp"
+               },
+               {
+                  "operation":"value",
+                  "affectTo":"actual",
+                  "applyOn":"tmp"
+               }
+            ]
+         },
+         "expected":{
+            "type":"int",
+            "value":1
+         }
+      },
+      {
+         "description":"Going right then up is equivalent to staying put.",
+         "property":"right",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":2
+               },
+               {
+                  "operation":"right",
+                  "affectTo":"tmp",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"up",
+                  "affectTo":"tmp",
+                  "applyOn":"tmp"
+               },
+               {
+                  "operation":"value",
+                  "affectTo":"actual",
+                  "applyOn":"tmp"
+               }
+            ]
+         },
+         "expected":{
+            "type":"int",
+            "value":2
+         }
+      },
+      {
+         "description":"Moving up do not mutate initialZipper.",
+         "property":"up",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":1
+               },
+               {
+                  "operation":"left",
+                  "affectTo":"tmp",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":2
+               },
+               {
+                  "operation":"up",
+                  "affectTo":null,
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"value",
+                  "affectTo":"actual",
+                  "applyOn":"zipper"
+               }
+            ]
+         },
+         "expected":{
+            "type":"int",
+            "value":2
+         }
+      },
+      {
+         "description":"Seting value (modifying an existing node)",
+         "property":"setValue",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":1
+               },
+               {
+                  "operation":"right",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":3
+               },
+               {
+                  "operation":"up",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"left",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":2
+               },
+               {
+                  "operation":"value",
+                  "affectTo":"z_value",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"multiply",
+                  "affectTo":"tmp",
+                  "applyOn":[
+                     "z_value",
+                     2
+                  ]
+               },
+               {
+                  "operation":"setValue",
+                  "affectTo":"tmp",
+                  "applyOn":"zipper",
+                  "item":"tmp"
+               },
+               {
+                  "operation":"floorDivide",
+                  "affectTo":"actual",
+                  "applyOn":[
+                     "tmp",
+                     "z_value"
+                  ]
+               }
+            ]
+         },
+         "expected":{
+            "type":"int",
+            "value":2
+         }
+      },
+      {
+         "description":"Setting value do not mutate initialZipper.",
+         "property":"setValue",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":4
+               },
+               {
+                  "operation":"setValue",
+                  "affectTo":null,
+                  "applyOn":"zipper",
+                  "item":8
+               },
+               {
+                  "operation":"value",
+                  "affectTo":"actual",
+                  "applyOn":"zipper"
+               }
+            ]
+         },
+         "expected":{
+            "type":"int",
+            "value":4
+         }
+      },
+      {
+         "description":"Going back to root shortcut.",
+         "property":"root",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":1
+               },
+               {
+                  "operation":"right",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":3
+               },
+               {
+                  "operation":"left",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":5
+               },
+               {
+                  "operation":"root",
+                  "affectTo":"tmp",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"value",
+                  "affectTo":"actual",
+                  "applyOn":"tmp"
+               }
+            ]
+         },
+         "expected":{
+            "type":"int",
+            "value":1
+         }
+      },
+      {
+         "description":"Going back to root shortcut.",
+         "property":"root",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":1
+               },
+               {
+                  "operation":"right",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":3
+               },
+               {
+                  "operation":"left",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":5
+               },
+               {
+                  "operation":"root",
+                  "affectTo": null,
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"value",
+                  "affectTo":"actual",
+                  "applyOn":"zipper"
+               }
+            ]
+         },
+         "expected":{
+            "type":"int",
+            "value":5
+         }
+      },
+      {
+         "description":"Inserting a zipper.",
+         "property":"insertZipper",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":1
+               },
+               {
+                  "operation":"right",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":3
+               },
+               {
+                  "operation":"left",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper"
+               },
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":5
+               },
+               {
+                  "operation":"createEmptyZipper",
+                  "affectTo": "newZipper"
+               },
+               {
+                  "operation":"insertZipper",
+                  "affectTo": "newZipper",
+                  "applyOn":"newZipper",
+                  "item":"zipper"
+               },
+               {
+                  "operation":"right",
+                  "affectTo": "newZipper",
+                  "applyOn":"newZipper"
+               },
+               {
+                  "operation":"value",
+                  "affectTo":"actual",
+                  "applyOn":"newZipper"
+               }
+            ]
+         },
+         "expected":{
+            "type":"int",
+            "value":3
+         }
+      },
+      {
+         "description":"Can't go left from empty location",
+         "property":"left",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"left",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper"
+               }
+            ]
+         },
+         "expected":{
+            "error":"Moving left is not allowed from this location."
+         }
+      },
+      {
+         "description":"Can't go right from empty location",
+         "property":"right",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"right",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper"
+               }
+            ]
+         },
+         "expected":{
+            "error":"Moving right is not allowed from this location."
+         }
+      },
+      {
+         "description":"Can't go top from root",
+         "property":"top",
+         "input":{
+            "initialZipper":{
+               "name":"zipper"
+            },
+            "operations":[
+               {
+                  "operation":"insert",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper",
+                  "item":1
+               },
+               {
+                  "operation":"top",
+                  "affectTo":"zipper",
+                  "applyOn":"zipper"
+               }
+            ]
+         },
+         "expected":{
+            "error":"There's nothing up here (current location is the root)."
+         }
       }
-    }
-  ]
+   ]
 }
