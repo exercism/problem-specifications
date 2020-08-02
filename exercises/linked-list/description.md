@@ -9,10 +9,11 @@ A linked list is a collection of data elements called *nodes*. In a
 In a *doubly linked list* each node also holds a link to the previous
 node.
 
-You will write an implementation of a doubly linked list. Implement a
-Node to hold a value and pointers to the next and previous nodes. Then
-implement a List which holds references to the first and last node and
-offers an array-like interface for adding and removing items:
+You will write an implementation of a doubly linked list without using 
+existing functions. Implement a Node to hold a value and pointers to 
+the next and previous nodes. Then implement a List which holds references 
+to the first and last node and offers an array-like interface for 
+adding and removing items:
 
 * `push` (*insert value at back*);
 * `pop` (*remove value at back*);
