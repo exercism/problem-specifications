@@ -116,7 +116,7 @@
       "input": {
         "number": -1
       },
-      "expected": {"error": "input out of range"}
+      "expected": { "error": "input out of range" }
     },
     {
       "description": "numbers above 999,999,999,999 are out of range",
@@ -124,7 +124,7 @@
       "input": {
         "number": 1000000000000
       },
-      "expected": {"error": "input out of range"}
+      "expected": { "error": "input out of range" }
     }
   ]
 }

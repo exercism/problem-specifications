@@ -38,7 +38,7 @@
               }
             }
           },
-          "expected": {"error": "row not positive"}
+          "expected": { "error": "row not positive" }
         },
         {
           "description": "queen must have row on board",
@@ -51,7 +51,7 @@
               }
             }
           },
-          "expected": {"error": "row not on board"}
+          "expected": { "error": "row not on board" }
         },
         {
           "description": "queen must have positive column",
@@ -64,7 +64,7 @@
               }
             }
           },
-          "expected": {"error": "column not positive"}
+          "expected": { "error": "column not positive" }
         },
         {
           "description": "queen must have column on board",
@@ -77,7 +77,7 @@
               }
             }
           },
-          "expected": {"error": "column not on board"}
+          "expected": { "error": "column not on board" }
         }
       ]
     },

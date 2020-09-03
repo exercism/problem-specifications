@@ -15,7 +15,20 @@
           "input": {
             "tonic": "C"
           },
-          "expected": [ "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" ]
+          "expected": [
+            "C",
+            "C#",
+            "D",
+            "D#",
+            "E",
+            "F",
+            "F#",
+            "G",
+            "G#",
+            "A",
+            "A#",
+            "B"
+          ]
         },
         {
           "description": "Chromatic scale with flats",
@@ -23,7 +36,20 @@
           "input": {
             "tonic": "F"
           },
-          "expected": [ "F", "Gb", "G", "Ab", "A", "Bb", "B", "C", "Db", "D", "Eb", "E" ]
+          "expected": [
+            "F",
+            "Gb",
+            "G",
+            "Ab",
+            "A",
+            "Bb",
+            "B",
+            "C",
+            "Db",
+            "D",
+            "Eb",
+            "E"
+          ]
         }
       ]
     },
@@ -36,15 +62,13 @@
       "cases": [
         {
           "description": "Simple major scale",
-          "comments": [
-            "The simplest major scale, with no sharps or flats."
-          ],
+          "comments": ["The simplest major scale, with no sharps or flats."],
           "property": "interval",
           "input": {
             "tonic": "C",
             "intervals": "MMmMMMm"
           },
-          "expected": [ "C", "D", "E", "F", "G", "A", "B" ]
+          "expected": ["C", "D", "E", "F", "G", "A", "B"]
         },
         {
           "description": "Major scale with sharps",
@@ -53,7 +77,7 @@
             "tonic": "G",
             "intervals": "MMmMMMm"
           },
-          "expected": [ "G", "A", "B", "C", "D", "E", "F#" ]
+          "expected": ["G", "A", "B", "C", "D", "E", "F#"]
         },
         {
           "description": "Major scale with flats",
@@ -62,7 +86,7 @@
             "tonic": "F",
             "intervals": "MMmMMMm"
           },
-          "expected": [ "F", "G", "A", "Bb", "C", "D", "E" ]
+          "expected": ["F", "G", "A", "Bb", "C", "D", "E"]
         },
         {
           "description": "Minor scale with sharps",
@@ -71,7 +95,7 @@
             "tonic": "f#",
             "intervals": "MmMMmMM"
           },
-          "expected": [ "F#", "G#", "A", "B", "C#", "D", "E" ]
+          "expected": ["F#", "G#", "A", "B", "C#", "D", "E"]
         },
         {
           "description": "Minor scale with flats",
@@ -80,7 +104,7 @@
             "tonic": "bb",
             "intervals": "MmMMmMM"
           },
-          "expected": [ "Bb", "C", "Db", "Eb", "F", "Gb", "Ab" ]
+          "expected": ["Bb", "C", "Db", "Eb", "F", "Gb", "Ab"]
         },
         {
           "description": "Dorian mode",
@@ -89,7 +113,7 @@
             "tonic": "d",
             "intervals": "MmMMMmM"
           },
-          "expected": [ "D", "E", "F", "G", "A", "B", "C" ]
+          "expected": ["D", "E", "F", "G", "A", "B", "C"]
         },
         {
           "description": "Mixolydian mode",
@@ -98,7 +122,7 @@
             "tonic": "Eb",
             "intervals": "MMmMMmM"
           },
-          "expected": [ "Eb", "F", "G", "Ab", "Bb", "C", "Db" ]
+          "expected": ["Eb", "F", "G", "Ab", "Bb", "C", "Db"]
         },
         {
           "description": "Lydian mode",
@@ -107,7 +131,7 @@
             "tonic": "a",
             "intervals": "MMMmMMm"
           },
-          "expected": [ "A", "B", "C#", "D#", "E", "F#", "G#" ]
+          "expected": ["A", "B", "C#", "D#", "E", "F#", "G#"]
         },
         {
           "description": "Phrygian mode",
@@ -116,7 +140,7 @@
             "tonic": "e",
             "intervals": "mMMMmMM"
           },
-          "expected": [ "E", "F", "G", "A", "B", "C", "D" ]
+          "expected": ["E", "F", "G", "A", "B", "C", "D"]
         },
         {
           "description": "Locrian mode",
@@ -125,7 +149,7 @@
             "tonic": "g",
             "intervals": "mMMmMMM"
           },
-          "expected": [ "G", "Ab", "Bb", "C", "Db", "Eb", "F" ]
+          "expected": ["G", "Ab", "Bb", "C", "Db", "Eb", "F"]
         },
         {
           "comments": [
@@ -137,7 +161,7 @@
             "tonic": "d",
             "intervals": "MmMMmAm"
           },
-          "expected": [ "D", "E", "F", "G", "A", "Bb", "Db" ]
+          "expected": ["D", "E", "F", "G", "A", "Bb", "Db"]
         },
         {
           "description": "Octatonic",
@@ -146,7 +170,7 @@
             "tonic": "C",
             "intervals": "MmMmMmMm"
           },
-          "expected": [ "C", "D", "D#", "F", "F#", "G#", "A", "B" ]
+          "expected": ["C", "D", "D#", "F", "F#", "G#", "A", "B"]
         },
         {
           "description": "Hexatonic",
@@ -155,7 +179,7 @@
             "tonic": "Db",
             "intervals": "MMMMMM"
           },
-          "expected": [ "Db", "Eb", "F", "G", "A", "B" ]
+          "expected": ["Db", "Eb", "F", "G", "A", "B"]
         },
         {
           "description": "Pentatonic",
@@ -164,7 +188,7 @@
             "tonic": "A",
             "intervals": "MMAMA"
           },
-          "expected": [ "A", "B", "C#", "E", "F#" ]
+          "expected": ["A", "B", "C#", "E", "F#"]
         },
         {
           "description": "Enigmatic",
@@ -173,7 +197,7 @@
             "tonic": "G",
             "intervals": "mAMMMmm"
           },
-          "expected": [ "G", "G#", "B", "C#", "D#", "F", "F#" ]
+          "expected": ["G", "G#", "B", "C#", "D#", "F", "F#"]
         }
       ]
     }

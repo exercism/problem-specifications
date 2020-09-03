@@ -346,10 +346,7 @@
               ]
             }
           },
-          "expected": [
-            "x",
-            "parent"
-          ]
+          "expected": ["x", "parent"]
         },
         {
           "description": "Can find path to sibling",
@@ -375,11 +372,7 @@
               ]
             }
           },
-          "expected": [
-            "x",
-            "parent",
-            "b"
-          ]
+          "expected": ["x", "parent", "b"]
         },
         {
           "description": "Can find path to cousin",
@@ -426,13 +419,7 @@
               ]
             }
           },
-          "expected": [
-            "x",
-            "parent",
-            "grandparent",
-            "uncle",
-            "cousin-1"
-          ]
+          "expected": ["x", "parent", "grandparent", "uncle", "cousin-1"]
         },
         {
           "description": "Can find path not involving root",
@@ -460,11 +447,7 @@
               ]
             }
           },
-          "expected": [
-            "x",
-            "parent",
-            "sibling-1"
-          ]
+          "expected": ["x", "parent", "sibling-1"]
         },
         {
           "description": "Can find path from nodes other than x",
@@ -490,11 +473,7 @@
               ]
             }
           },
-          "expected": [
-            "a",
-            "parent",
-            "c"
-          ]
+          "expected": ["a", "parent", "c"]
         },
         {
           "description": "Errors if destination does not exist",

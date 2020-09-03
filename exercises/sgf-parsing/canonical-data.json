@@ -1,176 +1,176 @@
 {
-    "exercise": "sgf-parsing",
-    "version": "1.2.0",
-    "cases": [
-        {
-            "description": "empty input",
-            "property": "parse",
-            "input": {
-                "encoded": ""
-            },
-            "expected": {
-                "error": "tree missing"
-            }
+  "exercise": "sgf-parsing",
+  "version": "1.2.0",
+  "cases": [
+    {
+      "description": "empty input",
+      "property": "parse",
+      "input": {
+        "encoded": ""
+      },
+      "expected": {
+        "error": "tree missing"
+      }
+    },
+    {
+      "description": "tree with no nodes",
+      "property": "parse",
+      "input": {
+        "encoded": "()"
+      },
+      "expected": {
+        "error": "tree with no nodes"
+      }
+    },
+    {
+      "description": "node without tree",
+      "property": "parse",
+      "input": {
+        "encoded": ";"
+      },
+      "expected": {
+        "error": "tree missing"
+      }
+    },
+    {
+      "description": "node without properties",
+      "property": "parse",
+      "input": {
+        "encoded": "(;)"
+      },
+      "expected": {
+        "properties": {},
+        "children": []
+      }
+    },
+    {
+      "description": "single node tree",
+      "property": "parse",
+      "input": {
+        "encoded": "(;A[B])"
+      },
+      "expected": {
+        "properties": {
+          "A": ["B"]
         },
-        {
-            "description": "tree with no nodes",
-            "property": "parse",
-            "input": {
-                "encoded": "()"
-            },
-            "expected": {
-                "error": "tree with no nodes"
-            }
+        "children": []
+      }
+    },
+    {
+      "description": "multiple properties",
+      "property": "parse",
+      "input": {
+        "encoded": "(;A[b]C[d])"
+      },
+      "expected": {
+        "properties": {
+          "A": ["b"],
+          "C": ["d"]
         },
-        {
-            "description": "node without tree",
-            "property": "parse",
-            "input": {
-                "encoded": ";"
-            },
-            "expected": {
-                "error": "tree missing"
-            }
+        "children": []
+      }
+    },
+    {
+      "description": "properties without delimiter",
+      "property": "parse",
+      "input": {
+        "encoded": "(;A)"
+      },
+      "expected": {
+        "error": "properties without delimiter"
+      }
+    },
+    {
+      "description": "all lowercase property",
+      "property": "parse",
+      "input": {
+        "encoded": "(;a[b])"
+      },
+      "expected": {
+        "error": "property must be in uppercase"
+      }
+    },
+    {
+      "description": "upper and lowercase property",
+      "property": "parse",
+      "input": {
+        "encoded": "(;Aa[b])"
+      },
+      "expected": {
+        "error": "property must be in uppercase"
+      }
+    },
+    {
+      "description": "two nodes",
+      "property": "parse",
+      "input": {
+        "encoded": "(;A[B];B[C])"
+      },
+      "expected": {
+        "properties": {
+          "A": ["B"]
         },
-        {
-            "description": "node without properties",
-            "property": "parse",
-            "input": {
-                "encoded": "(;)"
+        "children": [
+          {
+            "properties": {
+              "B": ["C"]
             },
-            "expected": {
-                "properties": {},
-                "children": []
-            }
+            "children": []
+          }
+        ]
+      }
+    },
+    {
+      "description": "two child trees",
+      "property": "parse",
+      "input": {
+        "encoded": "(;A[B](;B[C])(;C[D]))"
+      },
+      "expected": {
+        "properties": {
+          "A": ["B"]
         },
-        {
-            "description": "single node tree",
-            "property": "parse",
-            "input": {
-                "encoded": "(;A[B])"
+        "children": [
+          {
+            "properties": {
+              "B": ["C"]
             },
-            "expected": {
-                "properties": {
-                    "A": ["B"]
-                },
-                "children": []
-            }
+            "children": []
+          },
+          {
+            "properties": {
+              "C": ["D"]
+            },
+            "children": []
+          }
+        ]
+      }
+    },
+    {
+      "description": "multiple property values",
+      "property": "parse",
+      "input": {
+        "encoded": "(;A[b][c][d])"
+      },
+      "expected": {
+        "properties": {
+          "A": ["b", "c", "d"]
         },
-        {
-            "description": "multiple properties",
-            "property": "parse",
-            "input": {
-                "encoded": "(;A[b]C[d])"
-            },
-            "expected": {
-                "properties": {
-                    "A": ["b"],
-                    "C": ["d"]
-                },
-                "children": []
-            }
+        "children": []
+      }
+    },
+    {
+      "description": "escaped property",
+      "property": "parse",
+      "input": {
+        "encoded": "(;A[\\]b\\nc\\nd\\t\\te \\n\\]])"
+      },
+      "expected": {
+        "properties": {
+          "A": ["]b\\nc\\nd  e \\n]"]
         },
-        {
-            "description": "properties without delimiter",
-            "property": "parse",
-            "input": {
-                "encoded": "(;A)"
-            },
-            "expected": {
-                "error": "properties without delimiter"
-            }
-        },
-        {
-            "description": "all lowercase property",
-            "property": "parse",
-            "input": {
-                "encoded": "(;a[b])"
-            },
-            "expected": {
-                "error": "property must be in uppercase"
-            }
-        },
-        {
-            "description": "upper and lowercase property",
-            "property": "parse",
-            "input": {
-                "encoded": "(;Aa[b])"
-            },
-            "expected": {
-                "error": "property must be in uppercase"
-            }
-        },
-        {
-            "description": "two nodes",
-            "property": "parse",
-            "input": {
-                "encoded": "(;A[B];B[C])"
-            },
-            "expected": {
-                "properties": {
-                    "A": ["B"]
-                },
-                "children": [
-                    {
-                        "properties": {
-                            "B": ["C"]
-                        },
-                        "children": []
-                    }
-                ]
-            }
-        },
-        {
-            "description": "two child trees",
-            "property": "parse",
-            "input": {
-                "encoded": "(;A[B](;B[C])(;C[D]))"
-            },
-            "expected": {
-                "properties": {
-                    "A": ["B"]
-                },
-                "children": [
-                    {
-                        "properties": {
-                            "B": ["C"]
-                        },
-                        "children": []
-                    },
-                    {
-                        "properties": {
-                            "C": ["D"]
-                        },
-                        "children": []
-                    }
-                ]
-            }
-        },
-        {
-            "description": "multiple property values",
-            "property": "parse",
-            "input": {
-                "encoded": "(;A[b][c][d])"
-            },
-            "expected": {
-                "properties": {
-                    "A": ["b", "c", "d"]
-                },
-                "children": []
-            }
-        },
-        {
-            "description": "escaped property",
-            "property": "parse",
-            "input": {
-                "encoded": "(;A[\\]b\\nc\\nd\\t\\te \\n\\]])"
-            },
-            "expected": {
-                "properties": {
-                    "A": ["]b\\nc\\nd  e \\n]"]
-                },
-                "children": []
-            }
-        }
-    ]
+        "children": []
+      }
+    }
+  ]
 }

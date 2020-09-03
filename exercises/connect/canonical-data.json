@@ -20,9 +20,7 @@
       "description": "X can win on a 1x1 board",
       "property": "winner",
       "input": {
-        "board": [
-          "X"
-        ]
+        "board": ["X"]
       },
       "expected": "X"
     },
@@ -30,9 +28,7 @@
       "description": "O can win on a 1x1 board",
       "property": "winner",
       "input": {
-        "board": [
-          "O"
-        ]
+        "board": ["O"]
       },
       "expected": "O"
     },

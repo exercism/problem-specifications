@@ -71,7 +71,7 @@
           "input": {
             "square": 0
           },
-          "expected": {"error": "square must be between 1 and 64"}
+          "expected": { "error": "square must be between 1 and 64" }
         },
         {
           "description": "negative square raises an exception",
@@ -79,7 +79,7 @@
           "input": {
             "square": -1
           },
-          "expected": {"error": "square must be between 1 and 64"}
+          "expected": { "error": "square must be between 1 and 64" }
         },
         {
           "description": "square greater than 64 raises an exception",
@@ -87,7 +87,7 @@
           "input": {
             "square": 65
           },
-          "expected": {"error": "square must be between 1 and 64"}
+          "expected": { "error": "square must be between 1 and 64" }
         }
       ]
     },

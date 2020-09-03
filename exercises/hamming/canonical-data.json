@@ -1,6 +1,6 @@
 {
-"exercise": "hamming",
-"version": "2.3.0",
+  "exercise": "hamming",
+  "version": "2.3.0",
   "comments": [
     "Language implementations vary on the issue of unequal length strands.",
     "A language may elect to simplify this task by only presenting equal",
@@ -63,7 +63,7 @@
         "strand1": "AATG",
         "strand2": "AAA"
       },
-      "expected": {"error": "left and right strands must be of equal length"}
+      "expected": { "error": "left and right strands must be of equal length" }
     },
     {
       "description": "disallow second strand longer",
@@ -72,7 +72,7 @@
         "strand1": "ATA",
         "strand2": "AGTG"
       },
-      "expected": {"error": "left and right strands must be of equal length"}
+      "expected": { "error": "left and right strands must be of equal length" }
     },
     {
       "description": "disallow left empty strand",
@@ -81,7 +81,7 @@
         "strand1": "",
         "strand2": "G"
       },
-      "expected": {"error": "left strand must not be empty"}
+      "expected": { "error": "left strand must not be empty" }
     },
     {
       "description": "disallow right empty strand",
@@ -90,7 +90,7 @@
         "strand1": "G",
         "strand2": ""
       },
-      "expected": {"error": "right strand must not be empty"}
+      "expected": { "error": "right strand must not be empty" }
     }
   ]
 }

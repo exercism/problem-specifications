@@ -50,9 +50,23 @@
         "coins": [1, 2, 5, 10, 20, 50, 100],
         "target": 999
       },
-      "expected": [   2,   2,   5,  20,  20
-                  ,  50, 100, 100, 100, 100
-                  , 100, 100, 100, 100, 100 ]
+      "expected": [
+        2,
+        2,
+        5,
+        20,
+        20,
+        50,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
     },
     {
       "description": "possible change without unit coins available",
@@ -88,7 +102,7 @@
         "coins": [5, 10],
         "target": 3
       },
-      "expected": {"error": "can't make target with given coins"}
+      "expected": { "error": "can't make target with given coins" }
     },
     {
       "description": "error if no combination can add up to target",
@@ -97,7 +111,7 @@
         "coins": [5, 10],
         "target": 94
       },
-      "expected": {"error": "can't make target with given coins"}
+      "expected": { "error": "can't make target with given coins" }
     },
     {
       "description": "cannot find negative change values",
@@ -106,7 +120,7 @@
         "coins": [1, 2, 5],
         "target": -5
       },
-      "expected": {"error": "target can't be negative"}
+      "expected": { "error": "target can't be negative" }
     }
   ]
 }

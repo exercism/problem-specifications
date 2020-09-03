@@ -63,7 +63,7 @@
         {
           "description": "Imaginary part of a number with real and imaginary part",
           "property": "imaginary",
-          "input":  {
+          "input": {
             "z": [1, 2]
           },
           "expected": 2
@@ -303,7 +303,7 @@
         {
           "description": "Euler's identity/formula",
           "property": "exp",
-          "input":  {
+          "input": {
             "z": [0, "pi"]
           },
           "expected": [-1, 0]

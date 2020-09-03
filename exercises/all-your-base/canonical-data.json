@@ -141,7 +141,7 @@
         "digits": [0],
         "outputBase": 10
       },
-      "expected": {"error": "input base must be >= 2"}
+      "expected": { "error": "input base must be >= 2" }
     },
     {
       "description": "input base is zero",
@@ -151,7 +151,7 @@
         "digits": [],
         "outputBase": 10
       },
-      "expected": {"error": "input base must be >= 2"}
+      "expected": { "error": "input base must be >= 2" }
     },
     {
       "description": "input base is negative",
@@ -161,7 +161,7 @@
         "digits": [1],
         "outputBase": 10
       },
-      "expected": {"error": "input base must be >= 2"}
+      "expected": { "error": "input base must be >= 2" }
     },
     {
       "description": "negative digit",
@@ -171,7 +171,7 @@
         "digits": [1, -1, 1, 0, 1, 0],
         "outputBase": 10
       },
-      "expected": {"error": "all digits must satisfy 0 <= d < input base"}
+      "expected": { "error": "all digits must satisfy 0 <= d < input base" }
     },
     {
       "description": "invalid positive digit",
@@ -181,7 +181,7 @@
         "digits": [1, 2, 1, 0, 1, 0],
         "outputBase": 10
       },
-      "expected": {"error": "all digits must satisfy 0 <= d < input base"}
+      "expected": { "error": "all digits must satisfy 0 <= d < input base" }
     },
     {
       "description": "output base is one",
@@ -191,7 +191,7 @@
         "digits": [1, 0, 1, 0, 1, 0],
         "outputBase": 1
       },
-      "expected": {"error": "output base must be >= 2"}
+      "expected": { "error": "output base must be >= 2" }
     },
     {
       "description": "output base is zero",
@@ -201,7 +201,7 @@
         "digits": [7],
         "outputBase": 0
       },
-      "expected": {"error": "output base must be >= 2"}
+      "expected": { "error": "output base must be >= 2" }
     },
     {
       "description": "output base is negative",
@@ -211,7 +211,7 @@
         "digits": [1],
         "outputBase": -7
       },
-      "expected": {"error": "output base must be >= 2"}
+      "expected": { "error": "output base must be >= 2" }
     },
     {
       "description": "both bases are negative",
@@ -221,7 +221,7 @@
         "digits": [1],
         "outputBase": -7
       },
-      "expected": {"error": "input base must be >= 2"}
+      "expected": { "error": "input base must be >= 2" }
     }
   ]
 }

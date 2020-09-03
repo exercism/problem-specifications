@@ -1,8 +1,6 @@
 {
   "exercise": "isogram",
-  "comments": [
-    "An isogram is a word or phrase without a repeating letter."
-  ],
+  "comments": ["An isogram is a word or phrase without a repeating letter."],
   "version": "1.7.0",
   "cases": [
     {

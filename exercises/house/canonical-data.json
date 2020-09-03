@@ -22,9 +22,7 @@
             "startVerse": 1,
             "endVerse": 1
           },
-          "expected": [
-            "This is the house that Jack built."
-          ]
+          "expected": ["This is the house that Jack built."]
         },
         {
           "description": "verse two - the malt that lay",

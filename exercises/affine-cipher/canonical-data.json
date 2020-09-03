@@ -9,7 +9,7 @@
   "cases": [
     {
       "description": "encode",
-      "comments": [ "Test encoding from English to ciphertext with keys" ],
+      "comments": ["Test encoding from English to ciphertext with keys"],
       "cases": [
         {
           "description": "encode yes",
@@ -116,14 +116,14 @@
               "a": 6,
               "b": 17
             }
-         },
+          },
           "expected": { "error": "a and m must be coprime." }
         }
       ]
     },
     {
       "description": "decode",
-      "comments": [ "Test decoding from ciphertext to English with keys" ],
+      "comments": ["Test decoding from ciphertext to English with keys"],
       "cases": [
         {
           "description": "decode exercism",

@@ -64,9 +64,7 @@
             "flags": [],
             "files": ["iliad.txt"]
           },
-          "expected": [
-            "Of Atreus, Agamemnon, King of men."
-          ]
+          "expected": ["Of Atreus, Agamemnon, King of men."]
         },
         {
           "description": "One file, one match, print line numbers flag",
@@ -76,9 +74,7 @@
             "flags": ["-n"],
             "files": ["paradise-lost.txt"]
           },
-          "expected": [
-            "2:Of that Forbidden Tree, whose mortal tast"
-          ]
+          "expected": ["2:Of that Forbidden Tree, whose mortal tast"]
         },
         {
           "description": "One file, one match, case-insensitive flag",
@@ -88,9 +84,7 @@
             "flags": ["-i"],
             "files": ["paradise-lost.txt"]
           },
-          "expected": [
-            "Of that Forbidden Tree, whose mortal tast"
-          ]
+          "expected": ["Of that Forbidden Tree, whose mortal tast"]
         },
         {
           "description": "One file, one match, print file names flag",
@@ -100,9 +94,7 @@
             "flags": ["-l"],
             "files": ["paradise-lost.txt"]
           },
-          "expected": [
-            "paradise-lost.txt"
-          ]
+          "expected": ["paradise-lost.txt"]
         },
         {
           "description": "One file, one match, match entire lines flag",
@@ -112,9 +104,7 @@
             "flags": ["-x"],
             "files": ["paradise-lost.txt"]
           },
-          "expected": [
-            "With loss of Eden, till one greater Man"
-          ]
+          "expected": ["With loss of Eden, till one greater Man"]
         },
         {
           "description": "One file, one match, multiple flags",
@@ -124,9 +114,7 @@
             "flags": ["-n", "-i", "-x"],
             "files": ["iliad.txt"]
           },
-          "expected": [
-            "9:Of Atreus, Agamemnon, King of men."
-          ]
+          "expected": ["9:Of Atreus, Agamemnon, King of men."]
         },
         {
           "description": "One file, several matches, no flags",
@@ -213,9 +201,7 @@
             "flags": ["-n", "-l"],
             "files": ["iliad.txt"]
           },
-          "expected": [
-            "iliad.txt"
-          ]
+          "expected": ["iliad.txt"]
         },
         {
           "description": "One file, several matches, inverted and match entire lines flags",
@@ -249,9 +235,7 @@
             "flags": [],
             "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
           },
-          "expected": [
-            "iliad.txt:Of Atreus, Agamemnon, King of men."
-          ]
+          "expected": ["iliad.txt:Of Atreus, Agamemnon, King of men."]
         },
         {
           "description": "Multiple files, several matches, no flags",
@@ -290,10 +274,7 @@
             "flags": ["-l"],
             "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
           },
-          "expected": [
-            "iliad.txt",
-            "paradise-lost.txt"
-          ]
+          "expected": ["iliad.txt", "paradise-lost.txt"]
         },
         {
           "description": "Multiple files, several matches, case-insensitive flag",
@@ -372,10 +353,7 @@
             "flags": ["-n", "-l"],
             "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
           },
-          "expected": [
-            "iliad.txt",
-            "paradise-lost.txt"
-          ]
+          "expected": ["iliad.txt", "paradise-lost.txt"]
         },
         {
           "description": "Multiple files, several matches, inverted and match entire lines flags",

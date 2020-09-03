@@ -408,9 +408,7 @@
     },
     {
       "description": "list when:",
-      "comments": [
-        "Given a number, list all things Tom is allergic to"
-      ],
+      "comments": ["Given a number, list all things Tom is allergic to"],
       "cases": [
         {
           "description": "no allergies",
@@ -426,9 +424,7 @@
           "input": {
             "score": 1
           },
-          "expected": [
-            "eggs"
-          ]
+          "expected": ["eggs"]
         },
         {
           "description": "just peanuts",
@@ -436,9 +432,7 @@
           "input": {
             "score": 2
           },
-          "expected": [
-            "peanuts"
-          ]
+          "expected": ["peanuts"]
         },
         {
           "description": "just strawberries",
@@ -446,9 +440,7 @@
           "input": {
             "score": 8
           },
-          "expected": [
-            "strawberries"
-          ]
+          "expected": ["strawberries"]
         },
         {
           "description": "eggs and peanuts",
@@ -456,10 +448,7 @@
           "input": {
             "score": 3
           },
-          "expected": [
-            "eggs",
-            "peanuts"
-          ]
+          "expected": ["eggs", "peanuts"]
         },
         {
           "description": "more than eggs but not peanuts",
@@ -467,10 +456,7 @@
           "input": {
             "score": 5
           },
-          "expected": [
-            "eggs",
-            "shellfish"
-          ]
+          "expected": ["eggs", "shellfish"]
         },
         {
           "description": "lots of stuff",

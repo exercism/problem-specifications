@@ -1,1 +1,10 @@
 bin/
+
+# canonical-data requiring custom formatting
+exercises/connect/canonical-data.json
+exercises/diamond/canonical-data.json
+exercises/go-counting/canonical-data.json
+exercises/minesweeper/canonical-data.json
+exercises/ocr-numbers/canonical-data.json
+exercises/rectangles/canonical-data.json
+exercises/transpose/canonical-data.json

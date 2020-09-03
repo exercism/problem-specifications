@@ -1,146 +1,146 @@
 {
-    "exercise": "isbn-verifier",
-    "version": "2.7.0",
-    "comments": [
-        "An expected value of true indicates a valid ISBN-10, ",
-        "whereas false means the ISBN-10 is invalid."
-    ],
-    "cases": [
-        {
-            "description": "valid isbn number",
-            "property": "isValid",
-            "input": {
-              "isbn": "3-598-21508-8"
-            },
-            "expected": true
-        },
-        {
-            "description": "invalid isbn check digit",
-            "property": "isValid",
-            "input": {
-              "isbn": "3-598-21508-9"
-            },
-            "expected": false
-        },
-        {
-            "description": "valid isbn number with a check digit of 10",
-            "property": "isValid",
-            "input": {
-              "isbn": "3-598-21507-X"
-            },
-            "expected": true
-        },
-        {
-            "description": "check digit is a character other than X",
-            "property": "isValid",
-            "input": {
-              "isbn": "3-598-21507-A"
-            },
-            "expected": false
-        },
-        {
-            "description": "invalid character in isbn",
-            "property": "isValid",
-            "input": {
-              "isbn": "3-598-P1581-X"
-            },
-            "expected": false
-        },
-        {
-            "description": "X is only valid as a check digit",
-            "property": "isValid",
-            "input": {
-              "isbn": "3-598-2X507-9"
-            },
-            "expected": false
-        },
-        {
-            "description": "valid isbn without separating dashes",
-            "property": "isValid",
-            "input": {
-              "isbn": "3598215088"
-            },
-            "expected": true
-        },
-        {
-            "description": "isbn without separating dashes and X as check digit",
-            "property": "isValid",
-            "input": {
-              "isbn": "359821507X"
-            },
-            "expected": true
-        },
-        {
-            "description": "isbn without check digit and dashes",
-            "property": "isValid",
-            "input": {
-              "isbn": "359821507"
-            },
-            "expected": false
-        },
-        {
-            "description": "too long isbn and no dashes",
-            "property": "isValid",
-            "input": {
-              "isbn": "3598215078X"
-            },
-            "expected": false
-        },
-        {
-            "description": "too short isbn",
-            "property": "isValid",
-            "input": {
-              "isbn": "00"
-            },
-            "expected": false
-        },
-        {
-            "description": "isbn without check digit",
-            "property": "isValid",
-            "input": {
-              "isbn": "3-598-21507"
-            },
-            "expected": false
-        },
-        {
-            "description": "check digit of X should not be used for 0",
-            "property": "isValid",
-            "input": {
-              "isbn": "3-598-21515-X"
-            },
-            "expected": false
-        },
-        {
-            "description": "empty isbn",
-            "property": "isValid",
-            "input": {
-              "isbn": ""
-            },
-            "expected": false
-        },
-        {
-            "description": "input is 9 characters",
-            "property": "isValid",
-            "input": {
-                "isbn": "134456729"
-            },
-            "expected": false
-        },
-        {
-            "description": "invalid characters are not ignored",
-            "property": "isValid",
-            "input": {
-                "isbn": "3132P34035"
-            },
-            "expected": false
-        },
-        {
-            "description": "input is too long but contains a valid isbn",
-            "property": "isValid",
-            "input": {
-                "isbn": "98245726788"
-            },
-            "expected": false
-        }
-    ]
+  "exercise": "isbn-verifier",
+  "version": "2.7.0",
+  "comments": [
+    "An expected value of true indicates a valid ISBN-10, ",
+    "whereas false means the ISBN-10 is invalid."
+  ],
+  "cases": [
+    {
+      "description": "valid isbn number",
+      "property": "isValid",
+      "input": {
+        "isbn": "3-598-21508-8"
+      },
+      "expected": true
+    },
+    {
+      "description": "invalid isbn check digit",
+      "property": "isValid",
+      "input": {
+        "isbn": "3-598-21508-9"
+      },
+      "expected": false
+    },
+    {
+      "description": "valid isbn number with a check digit of 10",
+      "property": "isValid",
+      "input": {
+        "isbn": "3-598-21507-X"
+      },
+      "expected": true
+    },
+    {
+      "description": "check digit is a character other than X",
+      "property": "isValid",
+      "input": {
+        "isbn": "3-598-21507-A"
+      },
+      "expected": false
+    },
+    {
+      "description": "invalid character in isbn",
+      "property": "isValid",
+      "input": {
+        "isbn": "3-598-P1581-X"
+      },
+      "expected": false
+    },
+    {
+      "description": "X is only valid as a check digit",
+      "property": "isValid",
+      "input": {
+        "isbn": "3-598-2X507-9"
+      },
+      "expected": false
+    },
+    {
+      "description": "valid isbn without separating dashes",
+      "property": "isValid",
+      "input": {
+        "isbn": "3598215088"
+      },
+      "expected": true
+    },
+    {
+      "description": "isbn without separating dashes and X as check digit",
+      "property": "isValid",
+      "input": {
+        "isbn": "359821507X"
+      },
+      "expected": true
+    },
+    {
+      "description": "isbn without check digit and dashes",
+      "property": "isValid",
+      "input": {
+        "isbn": "359821507"
+      },
+      "expected": false
+    },
+    {
+      "description": "too long isbn and no dashes",
+      "property": "isValid",
+      "input": {
+        "isbn": "3598215078X"
+      },
+      "expected": false
+    },
+    {
+      "description": "too short isbn",
+      "property": "isValid",
+      "input": {
+        "isbn": "00"
+      },
+      "expected": false
+    },
+    {
+      "description": "isbn without check digit",
+      "property": "isValid",
+      "input": {
+        "isbn": "3-598-21507"
+      },
+      "expected": false
+    },
+    {
+      "description": "check digit of X should not be used for 0",
+      "property": "isValid",
+      "input": {
+        "isbn": "3-598-21515-X"
+      },
+      "expected": false
+    },
+    {
+      "description": "empty isbn",
+      "property": "isValid",
+      "input": {
+        "isbn": ""
+      },
+      "expected": false
+    },
+    {
+      "description": "input is 9 characters",
+      "property": "isValid",
+      "input": {
+        "isbn": "134456729"
+      },
+      "expected": false
+    },
+    {
+      "description": "invalid characters are not ignored",
+      "property": "isValid",
+      "input": {
+        "isbn": "3132P34035"
+      },
+      "expected": false
+    },
+    {
+      "description": "input is too long but contains a valid isbn",
+      "property": "isValid",
+      "input": {
+        "isbn": "98245726788"
+      },
+      "expected": false
+    }
+  ]
 }

@@ -9,7 +9,7 @@
   "cases": [
     {
       "description": "encode",
-      "comments": [ "Test encoding from English to atbash" ],
+      "comments": ["Test encoding from English to atbash"],
       "cases": [
         {
           "description": "encode yes",
@@ -79,7 +79,7 @@
     },
     {
       "description": "decode",
-      "comments": [ "Test decoding from atbash to English" ],
+      "comments": ["Test decoding from atbash to English"],
       "cases": [
         {
           "description": "decode exercism",

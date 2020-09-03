@@ -1,9 +1,7 @@
 {
   "exercise": "knapsack",
   "version": "1.0.0",
-  "comments": [
-    "Depending on the language, the input type can be modified"
-  ],
+  "comments": ["Depending on the language, the input type can be modified"],
   "cases": [
     {
       "description": "no items",
@@ -19,9 +17,7 @@
       "property": "maximumValue",
       "input": {
         "maximumWeight": 10,
-        "items": [
-          { "weight": 100, "value": 1 }
-        ]
+        "items": [{ "weight": 100, "value": 1 }]
       },
       "expected": 0
     },

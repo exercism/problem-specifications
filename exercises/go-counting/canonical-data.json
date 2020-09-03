@@ -1,9 +1,7 @@
 {
   "exercise": "go-counting",
   "version": "1.0.0",
-  "comments": [
-    "Territory consists of [x, y] coordinate pairs."
-  ],
+  "comments": ["Territory consists of [x, y] coordinate pairs."],
   "cases": [
     {
       "description": "Black corner territory on 5x5 board",
@@ -21,7 +19,11 @@
       },
       "expected": {
         "owner": "BLACK",
-        "territory": [[0, 0], [0, 1], [1, 0]]
+        "territory": [
+          [0, 0],
+          [0, 1],
+          [1, 0]
+        ]
       }
     },
     {
@@ -59,7 +61,11 @@
       },
       "expected": {
         "owner": "NONE",
-        "territory": [[0, 3], [0, 4], [1, 4]]
+        "territory": [
+          [0, 3],
+          [0, 4],
+          [1, 4]
+        ]
       }
     },
     {
@@ -177,8 +183,14 @@
         ]
       },
       "expected": {
-        "territoryBlack": [[0, 0], [0, 1]],
-        "territoryWhite": [[3, 0], [3, 1]],
+        "territoryBlack": [
+          [0, 0],
+          [0, 1]
+        ],
+        "territoryWhite": [
+          [3, 0],
+          [3, 1]
+        ],
         "territoryNone": []
       }
     },
@@ -191,7 +203,10 @@
         ]
       },
       "expected": {
-        "territoryBlack": [[0, 0], [2, 0]],
+        "territoryBlack": [
+          [0, 0],
+          [2, 0]
+        ],
         "territoryWhite": [],
         "territoryNone": []
       }

@@ -133,7 +133,7 @@
       "input": {
         "question": "What is 52 cubed?"
       },
-      "expected": {"error": "unknown operation"}
+      "expected": { "error": "unknown operation" }
     },
     {
       "description": "Non math question",
@@ -141,7 +141,7 @@
       "input": {
         "question": "Who is the President of the United States?"
       },
-      "expected": {"error": "unknown operation"}
+      "expected": { "error": "unknown operation" }
     },
     {
       "description": "reject problem missing an operand",
@@ -149,7 +149,7 @@
       "input": {
         "question": "What is 1 plus?"
       },
-      "expected": {"error": "syntax error"}
+      "expected": { "error": "syntax error" }
     },
     {
       "description": "reject problem with no operands or operators",
@@ -157,7 +157,7 @@
       "input": {
         "question": "What is?"
       },
-      "expected": {"error": "syntax error"}
+      "expected": { "error": "syntax error" }
     },
     {
       "description": "reject two operations in a row",
@@ -165,7 +165,7 @@
       "input": {
         "question": "What is 1 plus plus 2?"
       },
-      "expected": {"error": "syntax error"}
+      "expected": { "error": "syntax error" }
     },
     {
       "description": "reject two numbers in a row",
@@ -173,7 +173,7 @@
       "input": {
         "question": "What is 1 plus 2 1?"
       },
-      "expected": {"error": "syntax error"}
+      "expected": { "error": "syntax error" }
     },
     {
       "description": "reject postfix notation",
@@ -181,7 +181,7 @@
       "input": {
         "question": "What is 1 2 plus?"
       },
-      "expected": {"error": "syntax error"}
+      "expected": { "error": "syntax error" }
     },
     {
       "description": "reject prefix notation",
@@ -189,7 +189,7 @@
       "input": {
         "question": "What is plus 1 2?"
       },
-      "expected": {"error": "syntax error"}
+      "expected": { "error": "syntax error" }
     }
   ]
 }
