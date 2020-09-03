@@ -19,10 +19,10 @@ the *i*th item and `vi` is the value for that item.
 For example:
 
 Items: [
-  { "weight": 5, "value": 10 },
-  { "weight": 4, "value": 40 },
-  { "weight": 6, "value": 30 },
-  { "weight": 4, "value": 50 }
+{ "weight": 5, "value": 10 },
+{ "weight": 4, "value": 40 },
+{ "weight": 6, "value": 30 },
+{ "weight": 4, "value": 50 }
 ]
 
 Knapsack Limit: 10

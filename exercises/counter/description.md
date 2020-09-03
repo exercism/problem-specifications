@@ -3,7 +3,8 @@
 Please see the discussion in https://github.com/exercism/problem-specifications/issues/80
 for more context.
 
---------
+---
+
 Design a test suite for a line/letter/character counter tool.
 
 This is a special exercise. Instead of creating code that works with

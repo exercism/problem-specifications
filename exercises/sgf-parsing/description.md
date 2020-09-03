@@ -21,7 +21,7 @@ This is a tree with three nodes:
   "SZ", value = "19"). (FF indicates the version of SGF, C is a
   comment and SZ is the size of the board.)
   - The top level node has a single child which has a single property:
-    B\[aa\].  (Black plays on the point encoded as "aa", which is the
+    B\[aa\]. (Black plays on the point encoded as "aa", which is the
     1-1 point (which is a stupid place to play)).
     - The B\[aa\] node has a single child which has a single property:
       W\[ab\].

@@ -28,5 +28,5 @@ language.
 ## Restrictions
 
 Keep your hands off that filter/reject/whatchamacallit functionality
-provided by your standard library!  Solve this one yourself using other
+provided by your standard library! Solve this one yourself using other
 basic tools instead.

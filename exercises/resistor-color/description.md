@@ -14,6 +14,7 @@ These colors are encoded as follows:
 - White: 9
 
 The goal of this exercise is to create a way:
+
 - to look up the numerical value associated with a particular color band
 - to list the different band colors
 
