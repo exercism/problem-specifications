@@ -64,6 +64,7 @@ is easier to understand with an example:
           , " most of them also have an 'expected' one, defining the   "
           , " value a test should return.                              "
           ]
+      , "uuid"       : "31e9db74-86b9-4b14-a320-9ea910337289"
       , "description": "Foo'ing a word returns it reversed"
       , "property"   : "foo"
       , "input"      : {
@@ -71,7 +72,8 @@ is easier to understand with an example:
         }
       , "expected"   : "noil"
       }
-    , { "description": "Bar'ing a name returns its parts combined"
+    , { "uuid"       : "09113ce5-b008-45d0-98af-c0378b64966b"
+      , "description": "Bar'ing a name returns its parts combined"
       , "property"   : "bar"
       , "input"      : {
           "firstName"  : "Alan",
@@ -85,14 +87,16 @@ is easier to understand with an example:
           ]
       , "description": "Abnormal inputs: numbers"
       , "cases":
-          [ { "description": "Foo'ing a number returns nothing"
+          [ { "uuid"       : "f22d7a03-e752-4f14-9231-4eae9f128cef"
+            , "description": "Foo'ing a number returns nothing"
             , "property"   : "foo"
             , "input"      : {
                 "word"       : "42"
               }
             , "expected"   : null
             }
-          , { "description": "Foo'ing a very big number returns nothing"
+          , { "uuid"       : "8790a635-e8a8-4343-a29f-7da2929b9378"
+            , "description": "Foo'ing a very big number returns nothing"
             , "optional"   : "big-ints"
             , "comments"   : [ "Making this test case pass requires using BigInts." ]
             , "property"   : "foo"
@@ -101,7 +105,8 @@ is easier to understand with an example:
               }
             , "expected"   : null
             }
-          , { "description": "Bar'ing a name with numbers gives an error"
+          , { "uuid"       : "c7b6f24a-553f-475a-8a40-dba854fe1bff"
+            , "description": "Bar'ing a name with numbers gives an error"
             , "property"   : "bar"
             , "input"      : {
                 "firstName"  : "HAL",
@@ -128,6 +133,7 @@ There are also some conventions that must be followed:
     - The string should explain why the error would occur.
     - A particular track's implementation of the exercise **need not** necessarily check that the error includes that exact string as the cause, depending on what is idiomatic in the language (it may not be idiomatic to check strings for error messages).
   - Test cases that only some tracks should implement, for example because it would unnecessarily increase the complexity of the exercise in some but not all languages, mark it with an `optional`-key. Multiple cases related to the same reason for optionality should have the same key. The decision that a test case is optional will often be made in the PR discussion, so don't worry about it too much while creating a PR.
+  - Each test case must have a unique UUID specified in its `"uuid"` key. A UUID can be randomly generated using the [UUID Generator](https://www.uuidgenerator.net/version4).
 
 The `canonical.json` file can be validated against its schema prior to commiting using https://www.jsonschemavalidator.net/ with...
 ```
