@@ -6,6 +6,7 @@
   ],
   "cases": [
     {
+      "uuid": "e75c8103-a6b8-45d9-84ad-e68520545f6e",
       "description": "parses normal text as a paragraph",
       "property": "parse",
       "input": {
@@ -14,6 +15,7 @@
       "expected": "<p>This will be a paragraph</p>"
     },
     {
+      "uuid": "69a4165d-9bf8-4dd7-bfdc-536eaca80a6a",
       "description": "parsing italics",
       "property": "parse",
       "input": {
@@ -22,6 +24,7 @@
       "expected": "<p><em>This will be italic</em></p>"
     },
     {
+      "uuid": "ec345a1d-db20-4569-a81a-172fe0cad8a1",
       "description": "parsing bold text",
       "property": "parse",
       "input": {
@@ -30,6 +33,7 @@
       "expected": "<p><strong>This will be bold</strong></p>"
     },
     {
+      "uuid": "51164ed4-5641-4909-8fab-fbaa9d37d5a8",
       "description": "mixed normal, italics and bold text",
       "property": "parse",
       "input": {
@@ -38,6 +42,7 @@
       "expected": "<p>This will <em>be</em> <strong>mixed</strong></p>"
     },
     {
+      "uuid": "ad85f60d-0edd-4c6a-a9b1-73e1c4790d15",
       "description": "with h1 header level",
       "property": "parse",
       "input": {
@@ -46,6 +51,7 @@
       "expected": "<h1>This will be an h1</h1>"
     },
     {
+      "uuid": "d0f7a31f-6935-44ac-8a9a-1e8ab16af77f",
       "description": "with h2 header level",
       "property": "parse",
       "input": {
@@ -54,6 +60,7 @@
       "expected": "<h2>This will be an h2</h2>"
     },
     {
+      "uuid": "13b5f410-33f5-44f0-a6a7-cfd4ab74b5d5",
       "description": "with h6 header level",
       "property": "parse",
       "input": {
@@ -62,6 +69,7 @@
       "expected": "<h6>This will be an h6</h6>"
     },
     {
+      "uuid": "25288a2b-8edc-45db-84cf-0b6c6ee034d6",
       "description": "unordered lists",
       "property": "parse",
       "input": {
@@ -70,6 +78,7 @@
       "expected": "<ul><li>Item 1</li><li>Item 2</li></ul>"
     },
     {
+      "uuid": "7bf92413-df8f-4de8-9184-b724f363c3da",
       "description": "With a little bit of everything",
       "property": "parse",
       "input": {
@@ -78,6 +87,7 @@
       "expected": "<h1>Header!</h1><ul><li><strong>Bold Item</strong></li><li><em>Italic Item</em></li></ul>"
     },
     {
+        "uuid": "0b3ed1ec-3991-4b8b-8518-5cb73d4a64fe",
         "description": "with markdown symbols in the header text that should not be interpreted",
         "property": "parse",
         "input": {
@@ -86,6 +96,7 @@
         "expected": "<h1>This is a header with # and * in the text</h1>"
     },
     {
+        "uuid": "113a2e58-78de-4efa-90e9-20972224d759",
         "description": "with markdown symbols in the list item text that should not be interpreted",
         "property": "parse",
         "input": {
@@ -94,6 +105,7 @@
         "expected": "<ul><li>Item 1 with a # in the text</li><li>Item 2 with * in the text</li></ul>"
     },
     {
+        "uuid": "e65e46e2-17b7-4216-b3ac-f44a1b9bcdb4",
         "description": "with markdown symbols in the paragraph text that should not be interpreted",
         "property": "parse",
         "input": {
@@ -102,6 +114,7 @@
         "expected": "<p>This is a paragraph with # and * in the text</p>"
     },
     {
+        "uuid": "f0bbbbde-0f52-4c0c-99ec-be4c60126dd4",
         "description": "unordered lists close properly with preceding and following lines",
         "property": "parse",
         "input": {

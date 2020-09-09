@@ -12,6 +12,7 @@
       "comments": [ "Test encoding from English to atbash" ],
       "cases": [
         {
+          "uuid": "2f47ebe1-eab9-4d6b-b3c6-627562a31c77",
           "description": "encode yes",
           "property": "encode",
           "input": {
@@ -20,6 +21,7 @@
           "expected": "bvh"
         },
         {
+          "uuid": "b4ffe781-ea81-4b74-b268-cc58ba21c739",
           "description": "encode no",
           "property": "encode",
           "input": {
@@ -28,6 +30,7 @@
           "expected": "ml"
         },
         {
+          "uuid": "10e48927-24ab-4c4d-9d3f-3067724ace00",
           "description": "encode OMG",
           "property": "encode",
           "input": {
@@ -36,6 +39,7 @@
           "expected": "lnt"
         },
         {
+          "uuid": "d59b8bc3-509a-4a9a-834c-6f501b98750b",
           "description": "encode spaces",
           "property": "encode",
           "input": {
@@ -44,6 +48,7 @@
           "expected": "lnt"
         },
         {
+          "uuid": "31d44b11-81b7-4a94-8b43-4af6a2449429",
           "description": "encode mindblowingly",
           "property": "encode",
           "input": {
@@ -52,6 +57,7 @@
           "expected": "nrmwy oldrm tob"
         },
         {
+          "uuid": "d503361a-1433-48c0-aae0-d41b5baa33ff",
           "description": "encode numbers",
           "property": "encode",
           "input": {
@@ -60,6 +66,7 @@
           "expected": "gvhgr mt123 gvhgr mt"
         },
         {
+          "uuid": "79c8a2d5-0772-42d4-b41b-531d0b5da926",
           "description": "encode deep thought",
           "property": "encode",
           "input": {
@@ -68,6 +75,7 @@
           "expected": "gifgs rhurx grlm"
         },
         {
+          "uuid": "9ca13d23-d32a-4967-a1fd-6100b8742bab",
           "description": "encode all the letters",
           "property": "encode",
           "input": {
@@ -82,6 +90,7 @@
       "comments": [ "Test decoding from atbash to English" ],
       "cases": [
         {
+          "uuid": "bb50e087-7fdf-48e7-9223-284fe7e69851",
           "description": "decode exercism",
           "property": "decode",
           "input": {
@@ -90,6 +99,7 @@
           "expected": "exercism"
         },
         {
+          "uuid": "ac021097-cd5d-4717-8907-b0814b9e292c",
           "description": "decode a sentence",
           "property": "decode",
           "input": {
@@ -98,6 +108,7 @@
           "expected": "anobstacleisoftenasteppingstone"
         },
         {
+          "uuid": "18729de3-de74-49b8-b68c-025eaf77f851",
           "description": "decode numbers",
           "property": "decode",
           "input": {
@@ -106,6 +117,7 @@
           "expected": "testing123testing"
         },
         {
+          "uuid": "0f30325f-f53b-415d-ad3e-a7a4f63de034",
           "description": "decode all the letters",
           "property": "decode",
           "input": {
@@ -114,6 +126,7 @@
           "expected": "thequickbrownfoxjumpsoverthelazydog"
         },
         {
+          "uuid": "39640287-30c6-4c8c-9bac-9d613d1a5674",
           "description": "decode with too many spaces",
           "property": "decode",
           "input": {
@@ -122,6 +135,7 @@
           "expected": "exercism"
         },
         {
+          "uuid": "b34edf13-34c0-49b5-aa21-0768928000d5",
           "description": "decode with no spaces",
           "property": "decode",
           "input": {

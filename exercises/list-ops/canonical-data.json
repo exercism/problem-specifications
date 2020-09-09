@@ -11,6 +11,7 @@
       "description": "append entries to a list and return the new list",
       "cases": [
         {
+          "uuid": "485b9452-bf94-40f7-a3db-c3cf4850066a",
           "description": "empty lists",
           "property": "append",
           "input": {
@@ -20,6 +21,7 @@
           "expected": []
         },
         {
+          "uuid": "2c894696-b609-4569-b149-8672134d340a",
           "description": "list to empty list",
           "property": "append",
           "input": {
@@ -29,6 +31,7 @@
           "expected": [1, 2, 3, 4]
         },
         {
+          "uuid": "71dcf5eb-73ae-4a0e-b744-a52ee387922f",
           "description": "non-empty lists",
           "property": "append",
           "input": {
@@ -43,6 +46,7 @@
       "description": "concatenate a list of lists",
       "cases": [
         {
+          "uuid": "28444355-201b-4af2-a2f6-5550227bde21",
           "description": "empty list",
           "property": "concat",
           "input": {
@@ -51,6 +55,7 @@
           "expected": []
         },
         {
+          "uuid": "331451c1-9573-42a1-9869-2d06e3b389a9",
           "description": "list of lists",
           "property": "concat",
           "input": {
@@ -59,6 +64,7 @@
           "expected": [1, 2, 3, 4, 5, 6]
         },
         {
+          "uuid": "d6ecd72c-197f-40c3-89a4-aa1f45827e09",
           "description": "list of nested lists",
           "property": "concat",
           "input": {
@@ -72,6 +78,7 @@
       "description": "filter list returning only values that satisfy the filter function",
       "cases": [
         {
+          "uuid": "0524fba8-3e0f-4531-ad2b-f7a43da86a16",
           "description": "empty list",
           "property": "filter",
           "input": {
@@ -81,6 +88,7 @@
           "expected": []
         },
         {
+          "uuid": "88494bd5-f520-4edb-8631-88e415b62d24",
           "description": "non-empty list",
           "property": "filter",
           "input": {
@@ -95,6 +103,7 @@
       "description": "returns the length of a list",
       "cases": [
         {
+          "uuid": "1cf0b92d-8d96-41d5-9c21-7b3c37cb6aad",
           "description": "empty list",
           "property": "length",
           "input": {
@@ -103,6 +112,7 @@
           "expected": 0
         },
         {
+          "uuid": "d7b8d2d9-2d16-44c4-9a19-6e5f237cb71e",
           "description": "non-empty list",
           "property": "length",
           "input": {
@@ -116,6 +126,7 @@
       "description": "return a list of elements whose values equal the list value transformed by the mapping function",
       "cases": [
         {
+          "uuid": "c0bc8962-30e2-4bec-9ae4-668b8ecd75aa",
           "description": "empty list",
           "property": "map",
           "input": {
@@ -125,6 +136,7 @@
           "expected": []
         },
         {
+          "uuid": "11e71a95-e78b-4909-b8e4-60cdcaec0e91",
           "description": "non-empty list",
           "property": "map",
           "input": {
@@ -139,6 +151,7 @@
       "description": "folds (reduces) the given list from the left with a function",
       "cases": [
         {
+          "uuid": "613b20b7-1873-4070-a3a6-70ae5f50d7cc",
           "description": "empty list",
           "property": "foldl",
           "input": {
@@ -149,6 +162,7 @@
           "expected": 2
         },
         {
+          "uuid": "e56df3eb-9405-416a-b13a-aabb4c3b5194",
           "description": "direction independent function applied to non-empty list",
           "property": "foldl",
           "input": {
@@ -159,6 +173,7 @@
           "expected": 15
         },
         {
+          "uuid": "d2cf5644-aee1-4dfc-9b88-06896676fe27",
           "description": "direction dependent function applied to non-empty list",
           "property": "foldl",
           "input": {
@@ -174,6 +189,7 @@
       "description": "folds (reduces) the given list from the right with a function",
       "cases": [
         {
+          "uuid": "aeb576b9-118e-4a57-a451-db49fac20fdc",
           "description": "empty list",
           "property": "foldr",
           "input": {
@@ -184,6 +200,7 @@
           "expected": 2
         },
         {
+          "uuid": "c4b64e58-313e-4c47-9c68-7764964efb8e",
           "description": "direction independent function applied to non-empty list",
           "property": "foldr",
           "input": {
@@ -194,6 +211,7 @@
           "expected": 15
         },
         {
+          "uuid": "be396a53-c074-4db3-8dd6-f7ed003cce7c",
           "description": "direction dependent function applied to non-empty list",
           "property": "foldr",
           "input": {
@@ -209,6 +227,7 @@
       "description": "reverse the elements of the list",
       "cases": [
         {
+          "uuid": "94231515-050e-4841-943d-d4488ab4ee30",
           "description": "empty list",
           "property": "reverse",
           "input": {
@@ -217,6 +236,7 @@
           "expected": []
         },
         {
+          "uuid": "fcc03d1e-42e0-4712-b689-d54ad761f360",
           "description": "non-empty list",
           "property": "reverse",
           "input": {
@@ -225,6 +245,7 @@
           "expected": [7, 5, 3, 1]
         },
         {
+          "uuid": "40872990-b5b8-4cb8-9085-d91fc0d05d26",
           "description": "list of lists is not flattened",
           "property": "reverse",
           "input": {

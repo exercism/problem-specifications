@@ -6,6 +6,7 @@
       "description": "Converts lines of OCR Numbers to a string of integers",
       "cases": [
         {
+          "uuid": "5ee54e1a-b554-4bf3-a056-9a7976c3f7e8",
           "description": "Recognizes 0",
           "property": "convert",
           "input": {
@@ -19,6 +20,7 @@
           "expected": "0"
         },
         {
+          "uuid": "027ada25-17fd-4d78-aee6-35a19623639d",
           "description": "Recognizes 1",
           "property": "convert",
           "input": {
@@ -32,6 +34,7 @@
           "expected": "1"
         },
         {
+          "uuid": "3cce2dbd-01d9-4f94-8fae-419a822e89bb",
           "description": "Unreadable but correctly sized inputs return ?",
           "property": "convert",
           "input": {
@@ -45,6 +48,7 @@
           "expected": "?"
         },
         {
+          "uuid": "cb19b733-4e36-4cf9-a4a1-6e6aac808b9a",
           "description": "Input with a number of lines that is not a multiple of four raises an error",
           "property": "convert",
           "input": {
@@ -57,6 +61,7 @@
           "expected": {"error": "Number of input lines is not a multiple of four"}
         },
         {
+          "uuid": "235f7bd1-991b-4587-98d4-84206eec4cc6",
           "description": "Input with a number of columns that is not a multiple of three raises an error",
           "property": "convert",
           "input": {
@@ -70,6 +75,7 @@
           "expected": {"error": "Number of input columns is not a multiple of three"}
         },
         {
+          "uuid": "4a841794-73c9-4da9-a779-1f9837faff66",
           "description": "Recognizes 110101100",
           "property": "convert",
           "input": {
@@ -83,6 +89,7 @@
           "expected": "110101100"
         },
         {
+          "uuid": "70c338f9-85b1-4296-a3a8-122901cdfde8",
           "description": "Garbled numbers in a string are replaced with ?",
           "property": "convert",
           "input": {
@@ -96,6 +103,7 @@
           "expected": "11?10?1?0"
         },
         {
+          "uuid": "ea494ff4-3610-44d7-ab7e-72fdef0e0802",
           "description": "Recognizes 2",
           "property": "convert",
           "input": {
@@ -109,6 +117,7 @@
           "expected": "2"
         },
         {
+          "uuid": "1acd2c00-412b-4268-93c2-bd7ff8e05a2c",
           "description": "Recognizes 3",
           "property": "convert",
           "input": {
@@ -122,6 +131,7 @@
           "expected": "3"
         },
         {
+          "uuid": "eaec6a15-be17-4b6d-b895-596fae5d1329",
           "description": "Recognizes 4",
           "property": "convert",
           "input": {
@@ -135,6 +145,7 @@
           "expected": "4"
         },
         {
+          "uuid": "440f397a-f046-4243-a6ca-81ab5406c56e",
           "description": "Recognizes 5",
           "property": "convert",
           "input": {
@@ -148,6 +159,7 @@
           "expected": "5"
         },
         {
+          "uuid": "f4c9cf6a-f1e2-4878-bfc3-9b85b657caa0",
           "description": "Recognizes 6",
           "property": "convert",
           "input": {
@@ -161,6 +173,7 @@
           "expected": "6"
         },
         {
+          "uuid": "e24ebf80-c611-41bb-a25a-ac2c0f232df5",
           "description": "Recognizes 7",
           "property": "convert",
           "input": {
@@ -174,6 +187,7 @@
           "expected": "7"
         },
         {
+          "uuid": "b79cad4f-e264-4818-9d9e-77766792e233",
           "description": "Recognizes 8",
           "property": "convert",
           "input": {
@@ -187,6 +201,7 @@
           "expected": "8"
         },
         {
+          "uuid": "5efc9cfc-9227-4688-b77d-845049299e66",
           "description": "Recognizes 9",
           "property": "convert",
           "input": {
@@ -200,6 +215,7 @@
           "expected": "9"
         },
         {
+          "uuid": "f60cb04a-42be-494e-a535-3451c8e097a4",
           "description": "Recognizes string of decimal numbers",
           "property": "convert",
           "input": {
@@ -213,6 +229,7 @@
           "expected": "1234567890"
         },
         {
+          "uuid": "b73ecf8b-4423-4b36-860d-3710bdb8a491",
           "description": "Numbers separated by empty lines are recognized. Lines are joined by commas.",
           "property": "convert",
           "input": {

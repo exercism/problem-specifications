@@ -10,6 +10,7 @@
       "description": "Chromatic scales",
       "cases": [
         {
+          "uuid": "10ea7b14-8a49-40be-ac55-7c62b55f9b47",
           "description": "Chromatic scale with sharps",
           "property": "chromatic",
           "input": {
@@ -18,6 +19,7 @@
           "expected": [ "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" ]
         },
         {
+          "uuid": "af8381de-9a72-4efd-823a-48374dbfe76f",
           "description": "Chromatic scale with flats",
           "property": "chromatic",
           "input": {
@@ -35,6 +37,7 @@
       "description": "Scales with specified intervals",
       "cases": [
         {
+          "uuid": "6f5b1410-1dd7-4c6c-b410-6b7e986f6f1e",
           "description": "Simple major scale",
           "comments": [
             "The simplest major scale, with no sharps or flats."
@@ -47,6 +50,7 @@
           "expected": [ "C", "D", "E", "F", "G", "A", "B" ]
         },
         {
+          "uuid": "13a92f89-a83e-40b5-b9d4-01136931ba02",
           "description": "Major scale with sharps",
           "property": "interval",
           "input": {
@@ -56,6 +60,7 @@
           "expected": [ "G", "A", "B", "C", "D", "E", "F#" ]
         },
         {
+          "uuid": "aa3320f6-a761-49a1-bcf6-978e0c81080a",
           "description": "Major scale with flats",
           "property": "interval",
           "input": {
@@ -65,6 +70,7 @@
           "expected": [ "F", "G", "A", "Bb", "C", "D", "E" ]
         },
         {
+          "uuid": "63daeb2f-c3f9-4c45-92be-5bf97f61ff94",
           "description": "Minor scale with sharps",
           "property": "interval",
           "input": {
@@ -74,6 +80,7 @@
           "expected": [ "F#", "G#", "A", "B", "C#", "D", "E" ]
         },
         {
+          "uuid": "616594d0-9c48-4301-949e-af1d4fad16fd",
           "description": "Minor scale with flats",
           "property": "interval",
           "input": {
@@ -83,6 +90,7 @@
           "expected": [ "Bb", "C", "Db", "Eb", "F", "Gb", "Ab" ]
         },
         {
+          "uuid": "390bd12c-5ac7-4ec7-bdde-4e58d5c78b0a",
           "description": "Dorian mode",
           "property": "interval",
           "input": {
@@ -92,6 +100,7 @@
           "expected": [ "D", "E", "F", "G", "A", "B", "C" ]
         },
         {
+          "uuid": "846d0862-0f3e-4f3b-8a2d-9cc74f017848",
           "description": "Mixolydian mode",
           "property": "interval",
           "input": {
@@ -101,6 +110,7 @@
           "expected": [ "Eb", "F", "G", "Ab", "Bb", "C", "Db" ]
         },
         {
+          "uuid": "7d49a8bb-b5f7-46ad-a207-83bd5032291a",
           "description": "Lydian mode",
           "property": "interval",
           "input": {
@@ -110,6 +120,7 @@
           "expected": [ "A", "B", "C#", "D#", "E", "F#", "G#" ]
         },
         {
+          "uuid": "a4e4dac5-1891-4160-a19f-bb06d653d4d0",
           "description": "Phrygian mode",
           "property": "interval",
           "input": {
@@ -119,6 +130,7 @@
           "expected": [ "E", "F", "G", "A", "B", "C", "D" ]
         },
         {
+          "uuid": "ef3650af-90f8-4ad9-9ef6-fdbeae07dcaa",
           "description": "Locrian mode",
           "property": "interval",
           "input": {
@@ -131,6 +143,7 @@
           "comments": [
             "Note that this case introduces the accidental interval (A)"
           ],
+          "uuid": "70517400-12b7-4530-b861-fa940ae69ee8",
           "description": "Harmonic minor",
           "property": "interval",
           "input": {
@@ -140,6 +153,7 @@
           "expected": [ "D", "E", "F", "G", "A", "Bb", "Db" ]
         },
         {
+          "uuid": "37114c0b-c54d-45da-9f4b-3848201470b0",
           "description": "Octatonic",
           "property": "interval",
           "input": {
@@ -149,6 +163,7 @@
           "expected": [ "C", "D", "D#", "F", "F#", "G#", "A", "B" ]
         },
         {
+          "uuid": "496466e7-aa45-4bbd-a64d-f41030feed9c",
           "description": "Hexatonic",
           "property": "interval",
           "input": {
@@ -158,6 +173,7 @@
           "expected": [ "Db", "Eb", "F", "G", "A", "B" ]
         },
         {
+          "uuid": "bee5d9ec-e226-47b6-b62b-847a9241f3cc",
           "description": "Pentatonic",
           "property": "interval",
           "input": {
@@ -167,6 +183,7 @@
           "expected": [ "A", "B", "C#", "E", "F#" ]
         },
         {
+          "uuid": "dbee06a6-7535-4ab7-98e8-d8a36c8402d1",
           "description": "Enigmatic",
           "property": "interval",
           "input": {

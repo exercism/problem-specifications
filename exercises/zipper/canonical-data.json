@@ -18,6 +18,7 @@
   ],
   "cases": [
     {
+      "uuid": "771c652e-0754-4ef0-945c-0675d12ef1f5",
       "description": "data is retained",
       "property": "expectedValue",
       "input": {
@@ -66,6 +67,7 @@
       }
     },
     {
+      "uuid": "d7dcbb92-47fc-4d01-b81a-df3353bc09ff",
       "description": "left, right and value",
       "property": "expectedValue",
       "input": {
@@ -104,6 +106,7 @@
       }
     },
     {
+      "uuid": "613d8286-b05c-4453-b205-e6f9c5966339",
       "description": "dead end",
       "property": "expectedValue",
       "input": {
@@ -139,6 +142,7 @@
       }
     },
     {
+      "uuid": "dda31af7-1c68-4e29-933a-c9d198d94284",
       "description": "tree from deep focus",
       "property": "expectedValue",
       "input": {
@@ -193,6 +197,7 @@
       }
     },
     {
+      "uuid": "1e3072a6-f85b-430b-b014-cdb4087e3577",
       "description": "traversing up from top",
       "property": "expectedValue",
       "input": {
@@ -225,6 +230,7 @@
       }
     },
     {
+      "uuid": "b8505f6a-aed4-4c2e-824f-a0ed8570d74b",
       "description": "left, right, and up",
       "property": "expectedValue",
       "input": {
@@ -275,6 +281,7 @@
       }
     },
     {
+      "uuid": "47df1a27-b709-496e-b381-63a03b82ea5f",
       "description": "set_value",
       "property": "expectedValue",
       "input": {
@@ -330,6 +337,7 @@
       }
     },
     {
+      "uuid": "16a1f1a8-dbed-456d-95ac-1cbb6093e0ab",
       "description": "set_value after traversing up",
       "property": "expectedValue",
       "input": {
@@ -391,6 +399,7 @@
       }
     },
     {
+      "uuid": "535a91af-a02e-49cd-8d2c-ecb6e4647174",
       "description": "set_left with leaf",
       "property": "expectedValue",
       "input": {
@@ -454,6 +463,7 @@
       }
     },
     {
+      "uuid": "b3f60c4b-a788-4ffd-be5d-1e69aee61de3",
       "description": "set_right with null",
       "property": "expectedValue",
       "input": {
@@ -505,6 +515,7 @@
       }
     },
     {
+      "uuid": "e91c221d-7b90-4604-b4ec-46638a673a12",
       "description": "set_right with subtree",
       "property": "expectedValue",
       "input": {
@@ -577,6 +588,7 @@
       }
     },
     {
+      "uuid": "c246be85-6648-4e9c-866f-b08cd495149a",
       "description": "set_value on deep focus",
       "property": "expectedValue",
       "input": {
@@ -635,6 +647,7 @@
       }
     },
     {
+      "uuid": "47aa85a0-5240-48a4-9f42-e2ac636710ea",
       "description": "different paths to same zipper",
       "property": "sameResultFromOperations",
       "input": {
