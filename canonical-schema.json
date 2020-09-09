@@ -83,9 +83,10 @@
       "labeledTest":
           { "description": "A single test with a description"
           , "type"       : "object"
-          , "required"   : ["description", "property", "input", "expected"]
+          , "required"   : ["uuid", "description", "property", "input", "expected"]
           , "properties" :
-                { "description": { "$ref": "#/definitions/description" }
+                { "uuid"       : { "$ref": "#/definitions/uuid" }
+                , "description": { "$ref": "#/definitions/description" }
                 , "optional"   : { "$ref": "#/definitions/optional"    }
                 , "comments"   : { "$ref": "#/definitions/comments"    }
                 , "property"   : { "$ref": "#/definitions/property"    }
@@ -111,6 +112,12 @@
       "description":
           { "description": "A short, clear, one-line description"
           , "type"       : "string"
+          },
+
+      "uuid":
+          { "description": "A unique identifier"
+          , "type"       : "string"
+          , "pattern"    : "^[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}$"
           },
 
       "optional":
