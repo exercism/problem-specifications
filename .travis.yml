@@ -5,6 +5,6 @@ node_js:
 cache: yarn
 
 script:
+  # TODO: add automation to check the "scenario" field
   - bin/check_required_files_present
-  - bin/check_optional
   - yarn test

@@ -95,8 +95,8 @@ is easier to understand with an example:
             , "expected"   : null
             }
           , { "uuid"       : "8790a635-e8a8-4343-a29f-7da2929b9378"
-            , "description": "Foo'ing a very big number returns nothing"
-            , "optional"   : "big-ints"
+            , "description": "Foo'ing a very big number returns nothing"            
+            , "scenarios"  : ["big-ints"]
             , "comments"   : [ "Making this test case pass requires using BigInts." ]
             , "property"   : "foo"
             , "input"      : {
@@ -131,7 +131,7 @@ There are also some conventions that must be followed:
   - If an error is expected (because the input is invalid, or any other reason), the value at `"expected"` should be an object containing exactly one property, `"error"`, whose value is a string.
     - The string should explain why the error would occur.
     - A particular track's implementation of the exercise **need not** necessarily check that the error includes that exact string as the cause, depending on what is idiomatic in the language (it may not be idiomatic to check strings for error messages).
-  - Test cases that only some tracks should implement, for example because it would unnecessarily increase the complexity of the exercise in some but not all languages, mark it with an `optional`-key. Multiple cases related to the same reason for optionality should have the same key. The decision that a test case is optional will often be made in the PR discussion, so don't worry about it too much while creating a PR.
+  - The [`SCENARIOS.txt`](./SCENARIOS.txt) file contains a set of scenarios. If one or more of these scenarios apply to a test case, they should be included in its `scenarios` field.
   - Each test case must have a unique UUID specified in its `"uuid"` key. A UUID can be randomly generated using the [UUID Generator](https://www.uuidgenerator.net/version4).
 
 The `canonical.json` file can be validated against its schema prior to commiting using https://www.jsonschemavalidator.net/ with...
