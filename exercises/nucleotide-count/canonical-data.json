@@ -1,6 +1,5 @@
 {
   "exercise": "nucleotide-count",
-  "version": "1.3.0",
   "cases": [
     {
       "description": "count all nucleotides in a strand",

@@ -1,6 +1,5 @@
 {
   "exercise": "difference-of-squares",
-  "version": "1.2.0",
   "cases": [
     {
       "description": "Square the sum of the numbers up to the given number",

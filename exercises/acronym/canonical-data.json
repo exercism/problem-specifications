@@ -1,6 +1,5 @@
 {
   "exercise": "acronym",
-  "version": "1.7.0",
   "cases": [
     {
       "description": "Abbreviate a phrase",

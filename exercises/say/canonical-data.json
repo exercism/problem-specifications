@@ -1,6 +1,5 @@
 {
   "exercise": "say",
-  "version": "1.2.0",
   "comments": [
     "An 'error' object is used as expected value to indicate that the",
     "input value is out of the range described in the exercise."

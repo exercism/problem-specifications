@@ -1,6 +1,5 @@
 {
     "exercise": "proverb",
-    "version": "1.1.0",
     "comments": [
         "JSON doesn't allow for multi-line strings, so all expected outputs are presented ",
         "here as arrays of strings. It's up to the test generator to join the ",

@@ -1,6 +1,5 @@
 {
     "exercise": "perfect-numbers",
-    "version": "1.1.0",
     "cases": [
         {
             "description": "Perfect numbers",

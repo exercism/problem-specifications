@@ -1,6 +1,5 @@
 {
   "exercise": "minesweeper",
-  "version": "1.1.0",
   "comments": [
     " The expected outputs are represented as arrays of strings to   ",
     " improve readability in this JSON file.                         ",

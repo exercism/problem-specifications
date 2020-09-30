@@ -1,6 +1,5 @@
 {
     "exercise":"yacht",
-    "version":"1.2.0",
     "comments":[
         "The dice are represented always as a list of exactly five integers",
         "with values between 1 and 6 inclusive. The category is an string.",

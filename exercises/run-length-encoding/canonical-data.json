@@ -1,6 +1,5 @@
 {
   "exercise": "run-length-encoding",
-  "version": "1.1.0",
   "cases": [
     {
       "description": "run-length encode a string",

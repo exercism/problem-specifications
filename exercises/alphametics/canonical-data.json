@@ -1,6 +1,5 @@
 {
   "exercise": "alphametics",
-  "version": "1.3.0",
   "cases": [
     {
       "description": "Solve the alphametics puzzle",

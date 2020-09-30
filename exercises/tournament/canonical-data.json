@@ -1,6 +1,5 @@
 {
   "exercise": "tournament",
-  "version": "1.4.0",
   "comments": [
     "The inputs and outputs are represented as arrays of strings to",
     "improve readability in this JSON file.",

@@ -1,6 +1,5 @@
 {
   "exercise": "house",
-  "version": "2.2.0",
   "comments": [
     "JSON doesn't allow for multi-line strings, so all verses are presented ",
     "here as arrays of strings. It's up to the test generator to join the ",

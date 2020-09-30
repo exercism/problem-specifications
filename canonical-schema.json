@@ -37,10 +37,9 @@
       "canonicalData":
           { "description": "This is the top-level file structure"
           , "type"       : "object"
-          , "required"   : ["exercise" , "version", "cases"]
+          , "required"   : ["exercise", "cases"]
           , "properties" :
                 { "exercise" : { "$ref": "#/definitions/exercise"  }
-                , "version"  : { "$ref": "#/definitions/version"   }
                 , "comments" : { "$ref": "#/definitions/comments"  }
                 , "cases"    : { "$ref": "#/definitions/testGroup" }
                 }
@@ -51,12 +50,6 @@
           { "description": "Exercise's slug (kebab-case)"
           , "type"       : "string"
           , "pattern"    : "^[a-z]+(-[a-z]+)*$"
-          },
-
-      "version" :
-          { "description" : "Semantic versioning: MAJOR.MINOR.PATCH"
-          , "type"        : "string"
-          , "pattern"     : "^(0|[1-9][0-9]*)(\\.(0|[1-9][0-9]*)){2}$"
           },
 
       "comments":

@@ -1,6 +1,5 @@
 {
   "exercise": "knapsack",
-  "version": "1.0.0",
   "comments": [
     "Depending on the language, the input type can be modified"
   ],

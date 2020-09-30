@@ -1,6 +1,5 @@
 {
   "exercise": "triangle",
-  "version": "1.2.1",
   "comments": [
     " Pursuant to discussion in #202, we have decided NOT to test triangles ",
     " where all side lengths are positive but a + b = c. e.g:               ",

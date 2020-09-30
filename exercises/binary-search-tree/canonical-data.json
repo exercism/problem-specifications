@@ -1,6 +1,5 @@
 {
     "exercise": "binary-search-tree",
-    "version": "1.0.0",
     "comments": [
         "Each test case assumes an empty/new tree.",
         "As per exercism/problem-specifications#996 key 'treeData' counts as an input",

@@ -1,6 +1,5 @@
 {
     "exercise": "rest-api",
-    "version": "1.1.1",
     "comments": [
       "The state of the API database before the request is represented",
       "by the input->database object. Your track may determine how this",

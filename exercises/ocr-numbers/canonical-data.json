@@ -1,6 +1,5 @@
 {
   "exercise": "ocr-numbers",
-  "version": "1.2.0",
   "cases": [
     {
       "description": "Converts lines of OCR Numbers to a string of integers",

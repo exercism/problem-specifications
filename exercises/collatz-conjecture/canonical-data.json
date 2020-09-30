@@ -1,6 +1,5 @@
 {
   "exercise": "collatz-conjecture",
-  "version": "1.2.1",
   "cases": [
     {
       "uuid": "540a3d51-e7a6-47a5-92a3-4ad1838f0bfd",

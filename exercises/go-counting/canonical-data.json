@@ -1,6 +1,5 @@
 {
   "exercise": "go-counting",
-  "version": "1.0.0",
   "comments": [
     "Territory consists of [x, y] coordinate pairs."
   ],

@@ -1,6 +1,5 @@
 {
   "exercise": "dominoes",
-  "version": "2.1.0",
   "comments": [
     "Inputs are given as lists of two-element lists.",
     "Feel free to convert the input to a sensible type in the specific language",

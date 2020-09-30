@@ -1,6 +1,5 @@
 {
   "exercise": "pov",
-  "version": "1.3.0",
   "cases": [
     {
       "description": "Reroot a tree so that its root is the specified node.",

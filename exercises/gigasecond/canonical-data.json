@@ -1,6 +1,5 @@
 {
   "exercise": "gigasecond",
-  "version": "2.0.0",
   "comments": [
     "The basic test is to add one gigasecond to a few ordinary dates.",
     "Most test programs currently check only the date and ignore the time.",

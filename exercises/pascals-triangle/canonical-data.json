@@ -1,6 +1,5 @@
 {
   "exercise": "pascals-triangle",
-  "version": "1.5.0",
   "comments": [
     "Expectations are represented here as an array of arrays.",
     "How you represent this idiomatically in your language is up to you."

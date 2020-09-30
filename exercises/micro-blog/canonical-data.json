@@ -1,6 +1,5 @@
 {
   "exercise": "micro-blog",
-  "version": "1.0.0",
   "comments": [
     "This exercise is only applicable to languages that use UTF-8, UTF-16",
     "or other variable width Unicode compatible encoding as their internal",
