@@ -115,7 +115,7 @@
           },
 
       "uuid":
-          { "description": "A unique identifier"
+          { "description": "A universally unique identifier in the v4 format"
           , "type"       : "string"
           , "pattern"    : "^[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}$"
           },
