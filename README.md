@@ -53,8 +53,8 @@ is easier to understand with an example:
     ]
 , "cases":
     [ { "comments":
-          [ " A test case must have a 'description' and a 'property'.  "
-          , " Anything else is optional.                               "
+          [ " A test case must have 'uuid', 'description', 'property', "
+          , " 'input' and 'expected' properties. The rest is optional. "
           , "                                                          "
           , " The 'property' is a string in lowerCamelCase identifying "
           , " the type of test, but most of the times it is just the   "
