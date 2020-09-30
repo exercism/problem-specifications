@@ -4,7 +4,7 @@ Shared metadata for Exercism exercises.
 
 ## Contributing Guide
 
-Please see the [contributing guide](https://github.com/exercism/problem-specifications/blob/master/CONTRIBUTING.md)
+Please see the [contributing guide](./CONTRIBUTING.md)
 
 ## Problem metadata
 
@@ -32,11 +32,27 @@ There are three metadata files:
 * `metadata.yml` - additional information about the problem, such as where it came from
 * `canonical-data.json` - standardized test inputs and outputs that can be used to implement the problem
 
-## Test Data Format (canonical-data.json)
+## Exercises
 
-This data can be incorporated into test programs manually or extracted by a
-program.  The file format is described in [canonical-schema.json](https://github.com/exercism/problem-specifications/blob/master/canonical-schema.json), but it
-is easier to understand with an example:
+The following must apply to all exercise:
+
+- Exercises must contain tests that cover the public interface of the exercise (also thought of as "application tests").
+- Exercises may contain tests that cover the private or lower-level interface of the exercise (sometimes refered to as "library tests").
+
+## Test Data (canonical-data.json)
+
+This data can be incorporated into test programs manually or extracted by a program. 
+
+- Test cases are immutable, which means that once a test case has been added, it never changes. There are two exceptions:
+  - The `comments` field _can_ be mutated and thus does not require adding a new test case when changing its value.
+  - The `scenarios` field _can_ be mutated additively, by adding new scenarios. Existing scenarios must not be changed or removed. Adding new scenarios thus does not require adding a new test case.
+- Test cases must all be considered optional, insomuch that a track should determine per test case whether to implement it or not.
+- Each test case has a [UUID (v4)](https://en.wikipedia.org/wiki/Universally_unique_identifier) to uniquely identify it.
+- If tracks automatically generate test suites from test data, they must do that based on an explicit list of test cases to include/exclude. Test cases are to be identified by their UUID, and we'll provide tooling to help keep track of which test cases to include/exclude.
+
+## Test Data Format
+
+The file format is described in [canonical-schema.json](./canonical-schema.json), but it is easier to understand with an example:
 
 ```json
 { "exercise": "foobar"
@@ -117,24 +133,28 @@ is easier to understand with an example:
       }
   ]
 }
-
 ```
 
-Keep in mind that the description should not simply explain **what** each case
-is (that is redundant information) but also **why** each case is there. For
-example, what kinds of implementation mistakes might this case help us find?
+## Scenarios
+
+- The `scenarios` field can use one or more of a predefined set of values, which are defined in a [`SCENARIOS.txt`](./SCENARIOS.txt) file.
+- The `scenarios` field can be mutated additively, by adding new scenarios. Existing scenarios must not be changed or removed. Adding new scenarios does therefore does not mean adding a new test case.
+- Library tests will have a `library-test` scenario added to allow for easy including/excluding of library tests. Application tests won't have their own scenario, as they must be included and should not be filtered on.
+
+## Conventions 
 
 There are also some conventions that must be followed:
 
+  - Descriptions should not simply explain **what** each case is (that is redundant information) but also **why** each case is there. For example, what kinds of implementation mistakes might this case help us find?
   - All keys should follow the [lowerCamelCase](http://wiki.c2.com/?LowerCamelCase) convention.
   - If the input is valid but there is no result for the input, the value at `"expected"` should be `null`.
   - If an error is expected (because the input is invalid, or any other reason), the value at `"expected"` should be an object containing exactly one property, `"error"`, whose value is a string.
     - The string should explain why the error would occur.
     - A particular track's implementation of the exercise **need not** necessarily check that the error includes that exact string as the cause, depending on what is idiomatic in the language (it may not be idiomatic to check strings for error messages).
-  - The [`SCENARIOS.txt`](./SCENARIOS.txt) file contains a set of scenarios. If one or more of these scenarios apply to a test case, they should be included in its `scenarios` field.
-  - Each test case must have a unique UUID specified in its `"uuid"` key. A UUID can be randomly generated using the [UUID Generator](https://www.uuidgenerator.net/version4).
 
-The `canonical.json` file can be validated against its schema prior to commiting using https://www.jsonschemavalidator.net/ with...
+## Validation
+
+`canonical.json` files can be validated against its schema using https://www.jsonschemavalidator.net/ with...
 ```
 {
 	"$schema": "https://github.com/exercism/problem-specifications/blob/master/canonical-schema.json"
