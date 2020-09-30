@@ -28,20 +28,20 @@ exercises/
 
 There are three metadata files:
 
-* `description.md` - the basic problem description
-* `metadata.yml` - additional information about the problem, such as where it came from
-* `canonical-data.json` - standardized test inputs and outputs that can be used to implement the problem
+- `description.md` - the basic problem description
+- `metadata.yml` - additional information about the problem, such as where it came from
+- `canonical-data.json` - standardized test inputs and outputs that can be used to implement the problem
 
 ## Exercises
 
-The following must apply to all exercise:
+The following applies to all exercise:
 
-- Exercises must contain tests that cover the public interface of the exercise (also thought of as "application tests").
-- Exercises may contain tests that cover the private or lower-level interface of the exercise (sometimes refered to as "library tests").
+- Exercises _must_ contain tests that cover the public interface of the exercise (also thought of as "application tests").
+- Exercises _may_ contain tests that cover the private or lower-level interface of the exercise (sometimes refered to as "library tests").
 
 ## Test Data (canonical-data.json)
 
-This data can be incorporated into test programs manually or extracted by a program. 
+This data can be incorporated into test programs manually or extracted by a program.
 
 - Test cases are immutable, which means that once a test case has been added, it never changes. There are two exceptions:
   - The `comments` field _can_ be mutated and thus does not require adding a new test case when changing its value.
@@ -94,43 +94,8 @@ The file format is described in [canonical-schema.json](./canonical-schema.json)
           "firstName"  : "Alan",
           "lastName"   : "Smithee"
         }
-      , "expected"   : "ASlmainthee"
-      }
-    , { "comments":
-          [ " Test cases can be arbitrarily grouped with a description "
-          , " to make organization easier.                             "
-          ]
-      , "description": "Abnormal inputs: numbers"
-      , "cases":
-          [ { "uuid"       : "f22d7a03-e752-4f14-9231-4eae9f128cef"
-            , "description": "Foo'ing a number returns nothing"
-            , "property"   : "foo"
-            , "input"      : {
-                "word"       : "42"
-              }
-            , "expected"   : null
-            }
-          , { "uuid"       : "8790a635-e8a8-4343-a29f-7da2929b9378"
-            , "description": "Foo'ing a very big number returns nothing"            
-            , "scenarios"  : ["big-ints"]
-            , "comments"   : [ "Making this test case pass requires using BigInts." ]
-            , "property"   : "foo"
-            , "input"      : {
-                "word"       : "28948022309329048855892746252171976962977213799489202546401021394546514198529"
-              }
-            , "expected"   : null
-            }
-          , { "uuid"       : "c7b6f24a-553f-475a-8a40-dba854fe1bff"
-            , "description": "Bar'ing a name with numbers gives an error"
-            , "property"   : "bar"
-            , "input"      : {
-                "firstName"  : "HAL",
-                "lastName"   : "9000"
-              }
-            , "expected"   : { "error": "You should never bar a number" }
-            }
-          ]
-      }
+      ]
+    }
   ]
 }
 ```
@@ -141,20 +106,21 @@ The file format is described in [canonical-schema.json](./canonical-schema.json)
 - The `scenarios` field can be mutated additively, by adding new scenarios. Existing scenarios must not be changed or removed. Adding new scenarios does therefore does not mean adding a new test case.
 - Library tests will have a `library-test` scenario added to allow for easy including/excluding of library tests. Application tests won't have their own scenario, as they must be included and should not be filtered on.
 
-## Conventions 
+## Conventions
 
 There are also some conventions that must be followed:
 
-  - Descriptions should not simply explain **what** each case is (that is redundant information) but also **why** each case is there. For example, what kinds of implementation mistakes might this case help us find?
-  - All keys should follow the [lowerCamelCase](http://wiki.c2.com/?LowerCamelCase) convention.
-  - If the input is valid but there is no result for the input, the value at `"expected"` should be `null`.
-  - If an error is expected (because the input is invalid, or any other reason), the value at `"expected"` should be an object containing exactly one property, `"error"`, whose value is a string.
-    - The string should explain why the error would occur.
-    - A particular track's implementation of the exercise **need not** necessarily check that the error includes that exact string as the cause, depending on what is idiomatic in the language (it may not be idiomatic to check strings for error messages).
+- Descriptions should not simply explain **what** each case is (that is redundant information) but also **why** each case is there. For example, what kinds of implementation mistakes might this case help us find?
+- All keys should follow the [lowerCamelCase](http://wiki.c2.com/?LowerCamelCase) convention.
+- If the input is valid but there is no result for the input, the value at `"expected"` should be `null`.
+- If an error is expected (because the input is invalid, or any other reason), the value at `"expected"` should be an object containing exactly one property, `"error"`, whose value is a string.
+  - The string should explain why the error would occur.
+  - A particular track's implementation of the exercise **need not** necessarily check that the error includes that exact string as the cause, depending on what is idiomatic in the language (it may not be idiomatic to check strings for error messages).
 
 ## Validation
 
 `canonical.json` files can be validated against its schema using https://www.jsonschemavalidator.net/ with...
+
 ```
 {
 	"$schema": "https://github.com/exercism/problem-specifications/blob/master/canonical-schema.json"
@@ -164,6 +130,7 @@ There are also some conventions that must be followed:
 ## New Exercises Require a Glyph
 
 When creating a new exercise the design team needs to be informed so that a new glyph can be created.
+
 - An issue should be opened in [exercism/website-icons](https://github.com/exercism/website-icons/issues) after a PR has been opened in problem-specifications.
 - This issue should reference the PR in problem-specifications.
 
