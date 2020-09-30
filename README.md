@@ -4,11 +4,11 @@ Shared metadata for Exercism exercises.
 
 ## Contributing Guide
 
-Please see the [contributing guide](./CONTRIBUTING.md)
+Please see the [contributing guide](./CONTRIBUTING.md).
 
-## Problem metadata
+## Exercise Metadata
 
-Each problem's data lives in a directory under `exercises/`
+Each exercise's data lives in a directory under `exercises/` .
 
 ```text
 exercises/
@@ -26,29 +26,25 @@ exercises/
     └── metadata.yml
 ```
 
-There are three metadata files:
+There are three metadata files per exercise:
 
 - `description.md` - the basic problem description
-- `metadata.yml` - additional information about the problem, such as where it came from
-- `canonical-data.json` - standardized test inputs and outputs that can be used to implement the problem
+- `metadata.yml` - additional information about the exercise, such as where it came from
+- `canonical-data.json` (optional) - standardized test inputs and outputs that can be used to implement the exercise
 
-## Exercises
+## Test Data (canonical-data.json)
 
-The following applies to all exercise:
+Test data can be incorporated into a track's test suites manually or extracted by a program (a.k.a. a _test generator_).
 
 - Exercises _must_ contain tests that cover the public interface of the exercise (also thought of as "application tests").
 - Exercises _may_ contain tests that cover the private or lower-level interface of the exercise (sometimes refered to as "library tests").
 
-## Test Data (canonical-data.json)
-
-This data can be incorporated into test programs manually or extracted by a program.
-
 - Test cases are immutable, which means that once a test case has been added, it never changes. There are two exceptions:
   - The `comments` field _can_ be mutated and thus does not require adding a new test case when changing its value.
   - The `scenarios` field _can_ be mutated additively, by adding new scenarios. Existing scenarios must not be changed or removed. Adding new scenarios thus does not require adding a new test case.
-- Test cases must all be considered optional, insomuch that a track should determine per test case whether to implement it or not.
+- Test cases _must_ all be considered optional, insomuch that a track should determine per test case whether to implement it or not.
 - Each test case has a [UUID (v4)](https://en.wikipedia.org/wiki/Universally_unique_identifier) to uniquely identify it.
-- If tracks automatically generate test suites from test data, they must do that based on an explicit list of test cases to include/exclude. Test cases are to be identified by their UUID, and we'll provide tooling to help keep track of which test cases to include/exclude.
+- If tracks automatically generate test suites from test data, they _must_ do that based on an explicit list of test cases to include/exclude. Test cases must be identified by their UUID, and we'll provide tooling to help keep track of which test cases to include/exclude.
 
 ## Test Data Format
 
