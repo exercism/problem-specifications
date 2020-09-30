@@ -8,7 +8,7 @@ Please see the [contributing guide](./CONTRIBUTING.md).
 
 ## Exercise Metadata
 
-Each exercise's data lives in a directory under `exercises/` .
+Each exercise's metadata lives in a directory under `exercises/` .
 
 ```text
 exercises/
@@ -100,7 +100,42 @@ The file format is described in [canonical-schema.json](./canonical-schema.json)
 
 - The `scenarios` field can use one or more of a predefined set of values, which are defined in a [`SCENARIOS.txt`](./SCENARIOS.txt) file.
 - The `scenarios` field can be mutated additively, by adding new scenarios. Existing scenarios must not be changed or removed. Adding new scenarios does therefore does not mean adding a new test case.
-- Library tests will have a `library-test` scenario added to allow for easy including/excluding of library tests. Application tests won't have their own scenario, as they must be included and should not be filtered on.
+- Library tests should have a `library-test` scenario added to allow for easy including/excluding of library tests. Application tests won't have their own scenario, as they must be included and should not be filtered on.
+
+## Changing Tests
+
+As test cases are immutable, a "bug fix" requires adding a new test case. We'll add metadata to test cases to link a re-implementation of a test case to the re-implemented test case.
+
+- Re-implemented test cases _must_ have a `reimplements` field which contains the UUID of the test case that was re-implemented.
+- Re-implemented test cases _must_ use the `comments` field to explain why a test case was re-implemented (e.g. "Expected value is changed to 2").
+- Track generators _should not_ automatically select the "latest" version of a test case by looking at the "reimplements" hierarchy. We recommend each track to make this a manual action, as the re-implemented test case might actually make less sense for a track.
+
+This is an example of what a re-implementation looks like:
+
+```json
+[
+  {
+    "uuid": "e46c542b-31fc-4506-bcae-6b62b3268537",
+    "description": "two times one is two",
+    "property": "twice",
+    "input": {
+      "number": 1
+    },
+    "expected": 3
+  },
+  {
+    "uuid": "82d32c2e-07b5-42d9-9b1c-19af72bae860",
+    "description": "two times one is two",
+    "comments": ["Expected value is changed to 2"],
+    "reimplements": "e46c542b-31fc-4506-bcae-6b62b3268537",
+    "property": "twice",
+    "input": {
+      "number": 1
+    },
+    "expected": 2
+  }
+]
+```
 
 ## Conventions
 
