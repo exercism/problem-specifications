@@ -116,7 +116,7 @@
       "scenario":
           { "description": "An identifier for a specific scenario (kebab-case)"          
           , "type": "string"
-          , "pattern": "^[a-z]+(-[a-z]+)*$"
+          , "enum": ["big-integer", "floating-point", "library-test", "unicode"]
           },
 
       "scenarios":
