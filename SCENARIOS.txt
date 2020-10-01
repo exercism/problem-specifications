@@ -1,4 +1,4 @@
-floating-point
 big-integer
-unicode
+floating-point
 library-test
+unicode
