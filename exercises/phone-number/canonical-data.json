@@ -11,6 +11,7 @@
       ],
       "cases": [
         {
+          "uuid": "79666dce-e0f1-46de-95a1-563802913c35",
           "description": "cleans the number",
           "property": "clean",
           "input": {
@@ -19,6 +20,7 @@
           "expected": "2234567890"
         },
         {
+          "uuid": "c360451f-549f-43e4-8aba-fdf6cb0bf83f",
           "description": "cleans numbers with dots",
           "property": "clean",
           "input": {
@@ -27,6 +29,7 @@
           "expected": "2234567890"
         },
         {
+          "uuid": "08f94c34-9a37-46a2-a123-2a8e9727395d",
           "description": "cleans numbers with multiple spaces",
           "property": "clean",
           "input": {
@@ -35,6 +38,7 @@
           "expected": "2234567890"
         },
         {
+          "uuid": "598d8432-0659-4019-a78b-1c6a73691d21",
           "description": "invalid when 9 digits",
           "property": "clean",
           "input": {
@@ -43,6 +47,7 @@
           "expected": {"error": "incorrect number of digits"}
         },
         {
+          "uuid": "57061c72-07b5-431f-9766-d97da7c4399d",
           "description": "invalid when 11 digits does not start with a 1",
           "property": "clean",
           "input": {
@@ -51,6 +56,7 @@
           "expected": {"error": "11 digits must start with 1"}
         },
         {
+          "uuid": "9962cbf3-97bb-4118-ba9b-38ff49c64430",
           "description": "valid when 11 digits and starting with 1",
           "property": "clean",
           "input": {
@@ -59,6 +65,7 @@
           "expected": "2234567890"
         },
         {
+          "uuid": "fa724fbf-054c-4d91-95da-f65ab5b6dbca",
           "description": "valid when 11 digits and starting with 1 even with punctuation",
           "property": "clean",
           "input": {
@@ -67,6 +74,7 @@
           "expected": "2234567890"
         },
         {
+          "uuid": "c6a5f007-895a-4fc5-90bc-a7e70f9b5cad",
           "description": "invalid when more than 11 digits",
           "property": "clean",
           "input": {
@@ -75,6 +83,7 @@
           "expected": {"error": "more than 11 digits"}
         },
         {
+          "uuid": "63f38f37-53f6-4a5f-bd86-e9b404f10a60",
           "description": "invalid with letters",
           "property": "clean",
           "input": {
@@ -83,6 +92,7 @@
           "expected": {"error": "letters not permitted"}
         },
         {
+          "uuid": "4bd97d90-52fd-45d3-b0db-06ab95b1244e",
           "description": "invalid with punctuations",
           "property": "clean",
           "input": {
@@ -91,6 +101,7 @@
           "expected": {"error": "punctuations not permitted"}
         },
         {
+          "uuid": "d77d07f8-873c-4b17-8978-5f66139bf7d7",
           "description": "invalid if area code starts with 0",
           "property": "clean",
           "input": {
@@ -99,6 +110,7 @@
           "expected": {"error": "area code cannot start with zero"}
         },
         {
+          "uuid": "c7485cfb-1e7b-4081-8e96-8cdb3b77f15e",
           "description": "invalid if area code starts with 1",
           "property": "clean",
           "input": {
@@ -107,6 +119,7 @@
           "expected": {"error": "area code cannot start with one"}
         },
         {
+          "uuid": "4d622293-6976-413d-b8bf-dd8a94d4e2ac",
           "description": "invalid if exchange code starts with 0",
           "property": "clean",
           "input": {
@@ -115,6 +128,7 @@
           "expected": {"error": "exchange code cannot start with zero"}
         },
         {
+          "uuid": "4cef57b4-7d8e-43aa-8328-1e1b89001262",
           "description": "invalid if exchange code starts with 1",
           "property": "clean",
           "input": {
@@ -123,6 +137,7 @@
           "expected": {"error": "exchange code cannot start with one"}
         },
         {
+          "uuid": "9925b09c-1a0d-4960-a197-5d163cbe308c",
           "description": "invalid if area code starts with 0 on valid 11-digit number",
           "property": "clean",
           "input": {
@@ -131,6 +146,7 @@
           "expected": {"error": "area code cannot start with zero"}
         },
         {
+          "uuid": "3f809d37-40f3-44b5-ad90-535838b1a816",
           "description": "invalid if area code starts with 1 on valid 11-digit number",
           "property": "clean",
           "input": {
@@ -139,6 +155,7 @@
           "expected": {"error": "area code cannot start with one"}
         },
         {
+          "uuid": "e08e5532-d621-40d4-b0cc-96c159276b65",
           "description": "invalid if exchange code starts with 0 on valid 11-digit number",
           "property": "clean",
           "input": {
@@ -147,6 +164,7 @@
           "expected": {"error": "exchange code cannot start with zero"}
         },
         {
+          "uuid": "57b32f3d-696a-455c-8bf1-137b6d171cdf",
           "description": "invalid if exchange code starts with 1 on valid 11-digit number",
           "property": "clean",
           "input": {

@@ -12,6 +12,7 @@
       "comments": [ "Test encoding from English to ciphertext with keys" ],
       "cases": [
         {
+          "uuid": "2ee1d9af-1c43-416c-b41b-cefd7d4d2b2a",
           "description": "encode yes",
           "property": "encode",
           "input": {
@@ -24,6 +25,7 @@
           "expected": "xbt"
         },
         {
+          "uuid": "785bade9-e98b-4d4f-a5b0-087ba3d7de4b",
           "description": "encode no",
           "property": "encode",
           "input": {
@@ -36,6 +38,7 @@
           "expected": "fu"
         },
         {
+          "uuid": "2854851c-48fb-40d8-9bf6-8f192ed25054",
           "description": "encode OMG",
           "property": "encode",
           "input": {
@@ -48,6 +51,7 @@
           "expected": "lvz"
         },
         {
+          "uuid": "bc0c1244-b544-49dd-9777-13a770be1bad",
           "description": "encode O M G",
           "property": "encode",
           "input": {
@@ -60,6 +64,7 @@
           "expected": "hjp"
         },
         {
+          "uuid": "381a1a20-b74a-46ce-9277-3778625c9e27",
           "description": "encode mindblowingly",
           "property": "encode",
           "input": {
@@ -72,6 +77,7 @@
           "expected": "rzcwa gnxzc dgt"
         },
         {
+          "uuid": "6686f4e2-753b-47d4-9715-876fdc59029d",
           "description": "encode numbers",
           "property": "encode",
           "input": {
@@ -84,6 +90,7 @@
           "expected": "jqgjc rw123 jqgjc rw"
         },
         {
+          "uuid": "ae23d5bd-30a8-44b6-afbe-23c8c0c7faa3",
           "description": "encode deep thought",
           "property": "encode",
           "input": {
@@ -96,6 +103,7 @@
           "expected": "iynia fdqfb ifje"
         },
         {
+          "uuid": "c93a8a4d-426c-42ef-9610-76ded6f7ef57",
           "description": "encode all the letters",
           "property": "encode",
           "input": {
@@ -108,6 +116,7 @@
           "expected": "swxtj npvyk lruol iejdc blaxk swxmh qzglf"
         },
         {
+          "uuid": "0673638a-4375-40bd-871c-fb6a2c28effb",
           "description": "encode with a not coprime to m",
           "property": "encode",
           "input": {
@@ -126,6 +135,7 @@
       "comments": [ "Test decoding from ciphertext to English with keys" ],
       "cases": [
         {
+          "uuid": "3f0ac7e2-ec0e-4a79-949e-95e414953438",
           "description": "decode exercism",
           "property": "decode",
           "input": {
@@ -138,6 +148,7 @@
           "expected": "exercism"
         },
         {
+          "uuid": "241ee64d-5a47-4092-a5d7-7939d259e077",
           "description": "decode a sentence",
           "property": "decode",
           "input": {
@@ -150,6 +161,7 @@
           "expected": "anobstacleisoftenasteppingstone"
         },
         {
+          "uuid": "33fb16a1-765a-496f-907f-12e644837f5e",
           "description": "decode numbers",
           "property": "decode",
           "input": {
@@ -162,6 +174,7 @@
           "expected": "testing123testing"
         },
         {
+          "uuid": "20bc9dce-c5ec-4db6-a3f1-845c776bcbf7",
           "description": "decode all the letters",
           "property": "decode",
           "input": {
@@ -174,6 +187,7 @@
           "expected": "thequickbrownfoxjumpsoverthelazydog"
         },
         {
+          "uuid": "623e78c0-922d-49c5-8702-227a3e8eaf81",
           "description": "decode with no spaces in input",
           "property": "decode",
           "input": {
@@ -186,6 +200,7 @@
           "expected": "thequickbrownfoxjumpsoverthelazydog"
         },
         {
+          "uuid": "58fd5c2a-1fd9-4563-a80a-71cff200f26f",
           "description": "decode with too many spaces",
           "property": "decode",
           "input": {
@@ -198,6 +213,7 @@
           "expected": "jollygreengiant"
         },
         {
+          "uuid": "b004626f-c186-4af9-a3f4-58f74cdb86d5",
           "description": "decode with a not coprime to m",
           "property": "decode",
           "input": {

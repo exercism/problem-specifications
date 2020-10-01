@@ -14,6 +14,7 @@
       ],
       "cases": [
         {
+         "uuid": "17146bd5-2e80-4557-ab4c-05632b6b0d01",
          "property": "total",
          "description": "Only a single book",
          "comments": ["Suggested grouping, [[1]]."],
@@ -23,6 +24,7 @@
          "expected": 800
         },
         {
+         "uuid": "cc2de9ac-ff2a-4efd-b7c7-bfe0f43271ce",
          "property": "total",
          "description": "Two of the same book",
          "comments": ["Suggested grouping, [[2],[2]]."],
@@ -32,6 +34,7 @@
          "expected": 1600
         },
         {
+         "uuid": "5a86eac0-45d2-46aa-bbf0-266b94393a1a",
          "property": "total",
          "description": "Empty basket",
          "comments": ["Suggested grouping, []."],
@@ -41,6 +44,7 @@
          "expected": 0
         },
         {
+         "uuid": "158bd19a-3db4-4468-ae85-e0638a688990",
          "property": "total",
          "description": "Two different books",
          "comments": ["Suggested grouping, [[1,2]]."],
@@ -50,6 +54,7 @@
          "expected": 1520
         },
         {
+         "uuid": "f3833f6b-9332-4a1f-ad98-6c3f8e30e163",
          "property": "total",
          "description": "Three different books",
          "comments": ["Suggested grouping, [[1,2,3]]."],
@@ -59,6 +64,7 @@
          "expected": 2160
         },
         {
+         "uuid": "1951a1db-2fb6-4cd1-a69a-f691b6dd30a2",
          "property": "total",
          "description": "Four different books",
          "comments": ["Suggested grouping, [[1,2,3,4]]."],
@@ -68,6 +74,7 @@
          "expected": 2560
         },
         {
+         "uuid": "d70f6682-3019-4c3f-aede-83c6a8c647a3",
          "property": "total",
          "description": "Five different books",
          "comments": ["Suggested grouping, [[1,2,3,4,5]]."],
@@ -77,6 +84,7 @@
          "expected": 3000
         },
         {
+         "uuid": "78cacb57-911a-45f1-be52-2a5bd428c634",
          "property": "total",
          "description": "Two groups of four is cheaper than group of five plus group of three",
          "comments": ["Suggested grouping, [[1,2,3,4],[1,2,3,5]]."],
@@ -86,6 +94,7 @@
          "expected": 5120
         },
         {
+         "uuid": "f808b5a4-e01f-4c0d-881f-f7b90d9739da",
          "property": "total",
          "description": "Two groups of four is cheaper than groups of five and three",
          "comments": ["Suggested grouping, [[1,2,4,5],[1,3,4,5]]. This differs from the other 'two groups of four' test in that it will fail for solutions that add books to groups in the order in which they appear in the list."],
@@ -95,6 +104,7 @@
          "expected": 5120
         },
         {
+         "uuid": "fe96401c-5268-4be2-9d9e-19b76478007c",
          "property": "total",
          "description": "Group of four plus group of two is cheaper than two groups of three",
          "comments": ["Suggested grouping, [[1,2,3,4],[1,2]]."],
@@ -104,6 +114,7 @@
          "expected": 4080
         },
         {
+         "uuid": "68ea9b78-10ad-420e-a766-836a501d3633",
          "property": "total",
          "description": "Two each of first 4 books and 1 copy each of rest",
          "comments": ["Suggested grouping, [[1,2,3,4,5],[1,2,3,4]]."],
@@ -113,6 +124,7 @@
          "expected": 5560
         },
         {
+         "uuid": "c0a779d5-a40c-47ae-9828-a340e936b866",
          "property": "total",
          "description": "Two copies of each book",
          "comments": ["Suggested grouping, [[1,2,3,4,5],[1,2,3,4,5]]."],
@@ -122,6 +134,7 @@
          "expected": 6000
         },
         {
+         "uuid": "18fd86fe-08f1-4b68-969b-392b8af20513",
          "property": "total",
          "description": "Three copies of first book and 2 each of remaining",
          "comments": ["Suggested grouping, [[1,2,3,4,5],[1,2,3,4,5],[1]]."],
@@ -131,6 +144,7 @@
          "expected": 6800
         },
         {
+         "uuid": "0b19a24d-e4cf-4ec8-9db2-8899a41af0da",
          "property": "total",
          "description": "Three each of first 2 books and 2 each of remaining books",
          "comments": ["Suggested grouping, [[1,2,3,4,5],[1,2,3,4,5],[1,2]]."],
@@ -140,6 +154,7 @@
          "expected": 7520
         },
         {
+         "uuid": "bb376344-4fb2-49ab-ab85-e38d8354a58d",
          "property": "total",
          "description": "Four groups of four are cheaper than two groups each of five and three",
          "comments": ["Suggested grouping, [[1,2,3,4],[1,2,3,5],[1,2,3,4],[1,2,3,5]]."],

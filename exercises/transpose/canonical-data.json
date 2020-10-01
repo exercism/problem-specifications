@@ -8,6 +8,7 @@
   ],
   "cases": [
     {
+      "uuid": "404b7262-c050-4df0-a2a2-0cb06cd6a821",
       "description": "empty string",
       "property": "transpose",
       "input": {
@@ -16,6 +17,7 @@
       "expected": []
     },
     {
+      "uuid": "a89ce8a3-c940-4703-a688-3ea39412fbcb",
       "description": "two characters in a row",
       "property": "transpose",
       "input": {
@@ -29,6 +31,7 @@
       ]
     },
     {
+      "uuid": "855bb6ae-4180-457c-abd0-ce489803ce98",
       "description": "two characters in a column",
       "property": "transpose",
       "input": {
@@ -42,6 +45,7 @@
       ]
     },
     {
+      "uuid": "5ceda1c0-f940-441c-a244-0ced197769c8",
       "description": "simple",
       "property": "transpose",
       "input": {
@@ -57,6 +61,7 @@
       ]
     },
     {
+      "uuid": "a54675dd-ae7d-4a58-a9c4-0c20e99a7c1f",
       "description": "single line",
       "property": "transpose",
       "input": {
@@ -78,6 +83,7 @@
       ]
     },
     {
+      "uuid": "0dc2ec0b-549d-4047-aeeb-8029fec8d5c5",
       "description": "first line longer than second line",
       "property": "transpose",
       "input": {
@@ -106,6 +112,7 @@
       ]
     },
     {
+      "uuid": "984e2ec3-b3d3-4b53-8bd6-96f5ef404102",
       "description": "second line longer than first line",
       "property": "transpose",
       "input": {
@@ -134,6 +141,7 @@
       ]
     },
     {
+      "uuid": "eccd3784-45f0-4a3f-865a-360cb323d314",
       "description": "mixed line length",
       "property": "transpose",
       "input": {
@@ -165,6 +173,7 @@
       ]
     },
     {
+      "uuid": "85b96b3f-d00c-4f80-8ca2-c8a5c9216c2d",
       "description": "square",
       "property": "transpose",
       "input": {
@@ -185,6 +194,7 @@
       ]
     },
     {
+      "uuid": "b9257625-7a53-4748-8863-e08e9d27071d",
       "description": "rectangle",
       "property": "transpose",
       "input": {
@@ -207,6 +217,7 @@
       ]
     },
     {
+      "uuid": "b80badc9-057e-4543-bd07-ce1296a1ea2c",
       "description": "triangle",
       "property": "transpose",
       "input": {

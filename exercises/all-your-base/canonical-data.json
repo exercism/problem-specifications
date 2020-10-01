@@ -14,6 +14,7 @@
   ],
   "cases": [
     {
+      "uuid": "5ce422f9-7a4b-4f44-ad29-49c67cb32d2c",
       "description": "single bit one to decimal",
       "property": "rebase",
       "input": {
@@ -24,6 +25,7 @@
       "expected": [1]
     },
     {
+      "uuid": "0cc3fea8-bb79-46ac-a2ab-5a2c93051033",
       "description": "binary to single decimal",
       "property": "rebase",
       "input": {
@@ -34,6 +36,7 @@
       "expected": [5]
     },
     {
+      "uuid": "f12db0f9-0d3d-42c2-b3ba-e38cb375a2b8",
       "description": "single decimal to binary",
       "property": "rebase",
       "input": {
@@ -44,6 +47,7 @@
       "expected": [1, 0, 1]
     },
     {
+      "uuid": "2c45cf54-6da3-4748-9733-5a3c765d925b",
       "description": "binary to multiple decimal",
       "property": "rebase",
       "input": {
@@ -54,6 +58,7 @@
       "expected": [4, 2]
     },
     {
+      "uuid": "65ddb8b4-8899-4fcc-8618-181b2cf0002d",
       "description": "decimal to binary",
       "property": "rebase",
       "input": {
@@ -64,6 +69,7 @@
       "expected": [1, 0, 1, 0, 1, 0]
     },
     {
+      "uuid": "8d418419-02a7-4824-8b7a-352d33c6987e",
       "description": "trinary to hexadecimal",
       "property": "rebase",
       "input": {
@@ -74,6 +80,7 @@
       "expected": [2, 10]
     },
     {
+      "uuid": "d3901c80-8190-41b9-bd86-38d988efa956",
       "description": "hexadecimal to trinary",
       "property": "rebase",
       "input": {
@@ -84,6 +91,7 @@
       "expected": [1, 1, 2, 0]
     },
     {
+      "uuid": "5d42f85e-21ad-41bd-b9be-a3e8e4258bbf",
       "description": "15-bit integer",
       "property": "rebase",
       "input": {
@@ -94,6 +102,7 @@
       "expected": [6, 10, 45]
     },
     {
+      "uuid": "d68788f7-66dd-43f8-a543-f15b6d233f83",
       "description": "empty list",
       "property": "rebase",
       "input": {
@@ -104,6 +113,7 @@
       "expected": [0]
     },
     {
+      "uuid": "5e27e8da-5862-4c5f-b2a9-26c0382b6be7",
       "description": "single zero",
       "property": "rebase",
       "input": {
@@ -114,6 +124,7 @@
       "expected": [0]
     },
     {
+      "uuid": "2e1c2573-77e4-4b9c-8517-6c56c5bcfdf2",
       "description": "multiple zeros",
       "property": "rebase",
       "input": {
@@ -124,6 +135,7 @@
       "expected": [0]
     },
     {
+      "uuid": "3530cd9f-8d6d-43f5-bc6e-b30b1db9629b",
       "description": "leading zeros",
       "property": "rebase",
       "input": {
@@ -134,6 +146,7 @@
       "expected": [4, 2]
     },
     {
+      "uuid": "a6b476a1-1901-4f2a-92c4-4d91917ae023",
       "description": "input base is one",
       "property": "rebase",
       "input": {
@@ -144,6 +157,7 @@
       "expected": {"error": "input base must be >= 2"}
     },
     {
+      "uuid": "e21a693a-7a69-450b-b393-27415c26a016",
       "description": "input base is zero",
       "property": "rebase",
       "input": {
@@ -154,6 +168,7 @@
       "expected": {"error": "input base must be >= 2"}
     },
     {
+      "uuid": "54a23be5-d99e-41cc-88e0-a650ffe5fcc2",
       "description": "input base is negative",
       "property": "rebase",
       "input": {
@@ -164,6 +179,7 @@
       "expected": {"error": "input base must be >= 2"}
     },
     {
+      "uuid": "9eccf60c-dcc9-407b-95d8-c37b8be56bb6",
       "description": "negative digit",
       "property": "rebase",
       "input": {
@@ -174,6 +190,7 @@
       "expected": {"error": "all digits must satisfy 0 <= d < input base"}
     },
     {
+      "uuid": "232fa4a5-e761-4939-ba0c-ed046cd0676a",
       "description": "invalid positive digit",
       "property": "rebase",
       "input": {
@@ -184,6 +201,7 @@
       "expected": {"error": "all digits must satisfy 0 <= d < input base"}
     },
     {
+      "uuid": "14238f95-45da-41dc-95ce-18f860b30ad3",
       "description": "output base is one",
       "property": "rebase",
       "input": {
@@ -194,6 +212,7 @@
       "expected": {"error": "output base must be >= 2"}
     },
     {
+      "uuid": "73dac367-da5c-4a37-95fe-c87fad0a4047",
       "description": "output base is zero",
       "property": "rebase",
       "input": {
@@ -204,6 +223,7 @@
       "expected": {"error": "output base must be >= 2"}
     },
     {
+      "uuid": "13f81f42-ff53-4e24-89d9-37603a48ebd9",
       "description": "output base is negative",
       "property": "rebase",
       "input": {
@@ -214,6 +234,7 @@
       "expected": {"error": "output base must be >= 2"}
     },
     {
+      "uuid": "0e6c895d-8a5d-4868-a345-309d094cfe8d",
       "description": "both bases are negative",
       "property": "rebase",
       "input": {

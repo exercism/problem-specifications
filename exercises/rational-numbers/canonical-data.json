@@ -17,6 +17,7 @@
           "description": "Addition",
           "cases": [
             {
+              "uuid": "0ba4d988-044c-4ed5-9215-4d0bb8d0ae9f",
               "description": "Add two positive rational numbers",
               "property": "add",
               "input": {
@@ -26,6 +27,7 @@
               "expected": [7, 6]
             },
             {
+              "uuid": "88ebc342-a2ac-4812-a656-7b664f718b6a",
               "description": "Add a positive rational number and a negative rational number",
               "property": "add",
               "input": {
@@ -35,6 +37,7 @@
               "expected": [-1, 6]
             },
             {
+              "uuid": "92ed09c2-991e-4082-a602-13557080205c",
               "description": "Add two negative rational numbers",
               "property": "add",
               "input": {
@@ -44,6 +47,7 @@
               "expected": [-7, 6]
             },
             {
+              "uuid": "6e58999e-3350-45fb-a104-aac7f4a9dd11",
               "description": "Add a rational number to its additive inverse",
               "property": "add",
               "input": {
@@ -58,6 +62,7 @@
           "description": "Subtraction",
           "cases": [
             {
+              "uuid": "47bba350-9db1-4ab9-b412-4a7e1f72a66e",
               "description": "Subtract two positive rational numbers",
               "property": "sub",
               "input": {
@@ -67,6 +72,7 @@
               "expected": [-1, 6]
             },
             {
+              "uuid": "93926e2a-3e82-4aee-98a7-fc33fb328e87",
               "description": "Subtract a positive rational number and a negative rational number",
               "property": "sub",
               "input": {
@@ -76,6 +82,7 @@
               "expected": [7, 6]
             },
             {
+              "uuid": "a965ba45-9b26-442b-bdc7-7728e4b8d4cc",
               "description": "Subtract two negative rational numbers",
               "property": "sub",
               "input": {
@@ -85,6 +92,7 @@
               "expected": [1, 6]
             },
             {
+              "uuid": "0df0e003-f68e-4209-8c6e-6a4e76af5058",
               "description": "Subtract a rational number from itself",
               "property": "sub",
               "input": {
@@ -99,6 +107,7 @@
           "description": "Multiplication",
           "cases": [
             {
+              "uuid": "34fde77a-75f4-4204-8050-8d3a937958d3",
               "description": "Multiply two positive rational numbers",
               "property": "mul",
               "input": {
@@ -108,6 +117,7 @@
               "expected": [1, 3]
             },
             {
+              "uuid": "6d015cf0-0ea3-41f1-93de-0b8e38e88bae",
               "description": "Multiply a negative rational number by a positive rational number",
               "property": "mul",
               "input": {
@@ -117,6 +127,7 @@
               "expected": [-1, 3]
             },
             {
+              "uuid": "d1bf1b55-954e-41b1-8c92-9fc6beeb76fa",
               "description": "Multiply two negative rational numbers",
               "property": "mul",
               "input": {
@@ -126,6 +137,7 @@
               "expected": [1, 3]
             },
             {
+              "uuid": "a9b8f529-9ec7-4c79-a517-19365d779040",
               "description": "Multiply a rational number by its reciprocal",
               "property": "mul",
               "input": {
@@ -135,6 +147,7 @@
               "expected": [1, 1]
             },
             {
+              "uuid": "d89d6429-22fa-4368-ab04-9e01a44d3b48",
               "description": "Multiply a rational number by 1",
               "property": "mul",
               "input": {
@@ -144,6 +157,7 @@
               "expected": [1, 2]
             },
             {
+              "uuid": "0d95c8b9-1482-4ed7-bac9-b8694fa90145",
               "description": "Multiply a rational number by 0",
               "property": "mul",
               "input": {
@@ -158,6 +172,7 @@
           "description": "Division",
           "cases": [
             {
+              "uuid": "1de088f4-64be-4e6e-93fd-5997ae7c9798",
               "description": "Divide two positive rational numbers",
               "property": "div",
               "input": {
@@ -167,6 +182,7 @@
               "expected": [3, 4]
             },
             {
+              "uuid": "7d7983db-652a-4e66-981a-e921fb38d9a9",
               "description": "Divide a positive rational number by a negative rational number",
               "property": "div",
               "input": {
@@ -176,6 +192,7 @@
               "expected": [-3, 4]
             },
             {
+              "uuid": "1b434d1b-5b38-4cee-aaf5-b9495c399e34",
               "description": "Divide two negative rational numbers",
               "property": "div",
               "input": {
@@ -185,6 +202,7 @@
               "expected": [3, 4]
             },
             {
+              "uuid": "d81c2ebf-3612-45a6-b4e0-f0d47812bd59",
               "description": "Divide a rational number by 1",
               "property": "div",
               "input": {
@@ -201,6 +219,7 @@
       "description": "Absolute value",
       "cases": [
         {
+          "uuid": "5fee0d8e-5955-4324-acbe-54cdca94ddaa",
           "description": "Absolute value of a positive rational number",
           "property": "abs",
           "input": {
@@ -209,6 +228,7 @@
           "expected": [1, 2]
         },
         {
+          "uuid": "3cb570b6-c36a-4963-a380-c0834321bcaa",
           "description": "Absolute value of a positive rational number with negative numerator and denominator",
           "property": "abs",
           "input": {
@@ -217,6 +237,7 @@
           "expected": [1, 2]
         },
         {
+          "uuid": "6a05f9a0-1f6b-470b-8ff7-41af81773f25",
           "description": "Absolute value of a negative rational number",
           "property": "abs",
           "input": {
@@ -225,6 +246,7 @@
           "expected": [1, 2]
         },
         {
+          "uuid": "5d0f2336-3694-464f-8df9-f5852fda99dd",
           "description": "Absolute value of a negative rational number with negative denominator",
           "property": "abs",
           "input": {
@@ -233,6 +255,7 @@
           "expected": [1, 2]
         },
         {
+          "uuid": "f8e1ed4b-9dca-47fb-a01e-5311457b3118",
           "description": "Absolute value of zero",
           "property": "abs",
           "input": {
@@ -246,6 +269,7 @@
       "description": "Exponentiation of a rational number",
       "cases": [
         {
+          "uuid": "ea2ad2af-3dab-41e7-bb9f-bd6819668a84",
           "description": "Raise a positive rational number to a positive integer power",
           "property": "exprational",
           "input": {
@@ -255,6 +279,7 @@
           "expected": [1, 8]
         },
         {
+          "uuid": "8168edd2-0af3-45b1-b03f-72c01332e10a",
           "description": "Raise a negative rational number to a positive integer power",
           "property": "exprational",
           "input": {
@@ -264,6 +289,7 @@
           "expected": [-1, 8]
         },
         {
+          "uuid": "e2f25b1d-e4de-4102-abc3-c2bb7c4591e4",
           "description": "Raise zero to an integer power",
           "property": "exprational",
           "input": {
@@ -273,6 +299,7 @@
           "expected": [0, 1]
         },
         {
+          "uuid": "431cac50-ab8b-4d58-8e73-319d5404b762",
           "description": "Raise one to an integer power",
           "property": "exprational",
           "input": {
@@ -282,6 +309,7 @@
           "expected": [1, 1]
         },
         {
+          "uuid": "7d164739-d68a-4a9c-b99f-dd77ce5d55e6",
           "description": "Raise a positive rational number to the power of zero",
           "property": "exprational",
           "input": {
@@ -291,6 +319,7 @@
           "expected": [1, 1]
         },
         {
+          "uuid": "eb6bd5f5-f880-4bcd-8103-e736cb6e41d1",
           "description": "Raise a negative rational number to the power of zero",
           "property": "exprational",
           "input": {
@@ -305,6 +334,7 @@
       "description": "Exponentiation of a real number to a rational number",
       "cases": [
         {
+          "uuid": "30b467dd-c158-46f5-9ffb-c106de2fd6fa",
           "description": "Raise a real number to a positive rational number",
           "property": "expreal",
           "input": {
@@ -314,6 +344,7 @@
           "expected": 16.0
         },
         {
+          "uuid": "6e026bcc-be40-4b7b-ae22-eeaafc5a1789",
           "description": "Raise a real number to a negative rational number",
           "property": "expreal",
           "input": {
@@ -323,6 +354,7 @@
           "expected": 0.3333333333333333
         },
         {
+          "uuid": "9f866da7-e893-407f-8cd2-ee85d496eec5",
           "description": "Raise a real number to a zero rational number",
           "property": "expreal",
           "input": {
@@ -337,6 +369,7 @@
       "description": "Reduction to lowest terms",
       "cases": [
         {
+          "uuid": "0a63fbde-b59c-4c26-8237-1e0c73354d0a",
           "description": "Reduce a positive rational number to lowest terms",
           "property": "reduce",
           "input": {
@@ -345,6 +378,7 @@
           "expected": [1, 2]
         },
         {
+          "uuid": "f87c2a4e-d29c-496e-a193-318c503e4402",
           "description": "Reduce a negative rational number to lowest terms",
           "property": "reduce",
           "input": {
@@ -353,6 +387,7 @@
           "expected": [-2, 3]
         },
         {
+          "uuid": "3b92ffc0-5b70-4a43-8885-8acee79cdaaf",
           "description": "Reduce a rational number with a negative denominator to lowest terms",
           "property": "reduce",
           "input": {
@@ -361,6 +396,7 @@
           "expected": [-1, 3]
         },
         {
+          "uuid": "c9dbd2e6-5ac0-4a41-84c1-48b645b4f663",
           "description": "Reduce zero to lowest terms",
           "property": "reduce",
           "input": {
@@ -369,6 +405,7 @@
           "expected": [0, 1]
         },
         {
+          "uuid": "297b45ad-2054-4874-84d4-0358dc1b8887",
           "description": "Reduce an integer to lowest terms",
           "property": "reduce",
           "input": {
@@ -377,6 +414,7 @@
           "expected": [-2, 1]
         },
         {
+          "uuid": "a73a17fe-fe8c-4a1c-a63b-e7579e333d9e",
           "description": "Reduce one to lowest terms",
           "property": "reduce",
           "input": {

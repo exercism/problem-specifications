@@ -3,6 +3,7 @@
   "version": "2.1.0",
   "cases": [
     {
+      "uuid": "ce11995a-5b93-4950-a5e9-93423693b2fc",
       "description": "Brown and black",
       "property": "value",
       "input": {
@@ -11,6 +12,7 @@
       "expected": 10
     },
     {
+      "uuid": "7bf82f7a-af23-48ba-a97d-38d59406a920",
       "description": "Blue and grey",
       "property": "value",
       "input": {
@@ -19,6 +21,7 @@
       "expected": 68
     },
     {
+      "uuid": "f1886361-fdfd-4693-acf8-46726fe24e0c",
       "description": "Yellow and violet",
       "property": "value",
       "input": {
@@ -27,6 +30,7 @@
       "expected": 47
     },
     {
+      "uuid": "77a8293d-2a83-4016-b1af-991acc12b9fe",
       "description": "Orange and orange",
       "property": "value",
       "input": {
@@ -35,6 +39,7 @@
       "expected": 33
     },
     {
+      "uuid": "0c4fb44f-db7c-4d03-afa8-054350f156a8",
       "description": "Ignore additional colors",
       "property": "value",
       "input": {

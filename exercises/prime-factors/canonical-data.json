@@ -6,6 +6,7 @@
       "description": "returns prime factors for the given input number",
       "cases": [
         {
+          "uuid": "924fc966-a8f5-4288-82f2-6b9224819ccd",
           "description": "no factors",
           "property": "factors",
           "input": {
@@ -14,6 +15,7 @@
           "expected": []
         },
         {
+          "uuid": "17e30670-b105-4305-af53-ddde182cb6ad",
           "description": "prime number",
           "property": "factors",
           "input": {
@@ -22,6 +24,7 @@
           "expected": [2]
         },
         {
+          "uuid": "f59b8350-a180-495a-8fb1-1712fbee1158",
           "description": "square of a prime",
           "property": "factors",
           "input": {
@@ -30,6 +33,7 @@
           "expected": [3, 3]
         },
         {
+          "uuid": "bc8c113f-9580-4516-8669-c5fc29512ceb",
           "description": "cube of a prime",
           "property": "factors",
           "input": {
@@ -38,6 +42,7 @@
           "expected": [2, 2, 2]
         },
         {
+          "uuid": "00485cd3-a3fe-4fbe-a64a-a4308fc1f870",
           "description": "product of primes and non-primes",
           "property": "factors",
           "input": {
@@ -46,6 +51,7 @@
           "expected": [2, 2, 3]
         },
         {
+          "uuid": "02251d54-3ca1-4a9b-85e1-b38f4b0ccb91",
           "description": "product of primes",
           "property": "factors",
           "input": {
@@ -54,6 +60,7 @@
           "expected": [5, 17, 23, 461]
         },
         {
+          "uuid": "070cf8dc-e202-4285-aa37-8d775c9cd473",
           "description": "factors include a large prime",
           "property": "factors",
           "input": {
