@@ -90,8 +90,41 @@ The file format is described in [canonical-schema.json](./canonical-schema.json)
           "firstName"  : "Alan",
           "lastName"   : "Smithee"
         }
-      ]
-    }
+      , "expected"   : "ASlmainthee", { "comments":	
+          [ " Test cases can be arbitrarily grouped with a description "	
+          , " to make organization easier.                             "	
+          ]	
+      , "description": "Abnormal inputs: numbers"	
+      , "cases":	
+          [ { "uuid"       : "f22d7a03-e752-4f14-9231-4eae9f128cef"	
+            , "description": "Foo'ing a number returns nothing"	
+            , "property"   : "foo"	
+            , "input"      : {	
+                "word"       : "42"	
+              }	
+            , "expected"   : null	
+            }	
+          , { "uuid"       : "8790a635-e8a8-4343-a29f-7da2929b9378"	
+            , "description": "Foo'ing a very big number returns nothing"	
+            , "optional"   : "big-ints"	
+            , "comments"   : [ "Making this test case pass requires using BigInts." ]	
+            , "property"   : "foo"	
+            , "input"      : {	
+                "word"       : "28948022309329048855892746252171976962977213799489202546401021394546514198529"	
+              }	
+            , "expected"   : null	
+            }	
+          , { "uuid"       : "c7b6f24a-553f-475a-8a40-dba854fe1bff"	
+            , "description": "Bar'ing a name with numbers gives an error"	
+            , "property"   : "bar"	
+            , "input"      : {	
+                "firstName"  : "HAL",	
+                "lastName"   : "9000"	
+              }	
+            , "expected"   : { "error": "You should never bar a number" }	
+            }	
+          ]	
+      }
   ]
 }
 ```
