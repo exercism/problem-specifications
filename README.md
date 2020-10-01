@@ -90,7 +90,9 @@ The file format is described in [canonical-schema.json](./canonical-schema.json)
           "firstName"  : "Alan",
           "lastName"   : "Smithee"
         }
-      , "expected"   : "ASlmainthee", { "comments":	
+      , "expected"   : "ASlmainthee",
+      }
+    , { "comments":	
           [ " Test cases can be arbitrarily grouped with a description "	
           , " to make organization easier.                             "	
           ]	
