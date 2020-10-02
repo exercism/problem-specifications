@@ -8,7 +8,7 @@ Please see the [contributing guide](./CONTRIBUTING.md).
 
 ## Exercise Metadata
 
-Each exercise's metadata lives in a directory under `exercises/` .
+Each exercise's metadata lives in a directory under `exercises/`.
 
 ```text
 exercises/
