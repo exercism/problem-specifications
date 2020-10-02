@@ -1,6 +1,5 @@
 {
   "exercise": "rotational-cipher",
-  "version": "1.2.0",
   "comments": [
     "The tests are a series of rotation tests: "
   ],

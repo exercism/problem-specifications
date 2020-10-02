@@ -1,6 +1,5 @@
 {
   "exercise": "forth",
-  "version": "1.7.1",
   "comments": [
     "The cases are split into multiple sections, all with the same structure.",
     "In all cases, the `expected` key is the resulting stack",

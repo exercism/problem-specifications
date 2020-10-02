@@ -1,6 +1,5 @@
 {
   "exercise": "book-store",
-  "version": "1.4.0",
   "cases": [
     {
       "description": "Return the total basket price after applying the best discount.",

@@ -1,6 +1,5 @@
 {
   "exercise": "clock",
-  "version": "2.4.0",
   "comments": [
     "Most languages require constructing a clock with initial values,",
     "adding or subtracting some number of minutes, and testing equality",

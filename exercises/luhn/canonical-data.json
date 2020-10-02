@@ -1,6 +1,5 @@
 {
   "exercise": "luhn",
-  "version": "1.7.0",
   "cases": [
     {
       "uuid": "792a7082-feb7-48c7-b88b-bbfec160865e",

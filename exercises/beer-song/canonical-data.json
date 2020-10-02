@@ -1,6 +1,5 @@
 {
   "exercise": "beer-song",
-  "version": "2.1.0",
   "cases": [
     {
       "description": "verse",

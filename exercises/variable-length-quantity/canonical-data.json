@@ -1,6 +1,5 @@
 {
   "exercise": "variable-length-quantity",
-  "version": "1.2.0",
   "comments": [
     "JSON doesn't allow hexadecimal literals.",
     "All numbers are given as decimal literals instead.",

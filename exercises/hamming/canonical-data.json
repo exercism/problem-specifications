@@ -1,6 +1,5 @@
 {
 "exercise": "hamming",
-"version": "2.3.0",
   "comments": [
     "Language implementations vary on the issue of unequal length strands.",
     "A language may elect to simplify this task by only presenting equal",

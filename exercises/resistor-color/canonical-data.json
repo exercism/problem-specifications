@@ -1,6 +1,5 @@
 {
   "exercise": "resistor-color",
-  "version": "1.0.0",
   "cases": [
     {
       "description": "Color codes",

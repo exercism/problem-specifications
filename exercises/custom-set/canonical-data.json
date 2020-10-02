@@ -1,6 +1,5 @@
 {
   "exercise": "custom-set",
-  "version": "1.3.0",
   "comments": [
     "These tests cover the core components of a set data structure: checking",
     "presence, adding, comparing and basic set operations. Other features",

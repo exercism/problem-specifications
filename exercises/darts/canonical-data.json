@@ -1,6 +1,5 @@
 {
   "exercise": "darts",
-  "version": "2.2.0",
   "comments": [
     "Return the correct amount earned by a dart's landing position."
   ],

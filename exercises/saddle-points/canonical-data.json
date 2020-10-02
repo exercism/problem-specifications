@@ -1,6 +1,5 @@
 {
   "exercise": "saddle-points",
-  "version": "1.5.0",
   "comments": [
     "Matrix rows and columns are 1-indexed."
   ],

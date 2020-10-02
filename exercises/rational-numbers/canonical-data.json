@@ -1,6 +1,5 @@
 {
   "exercise": "rational-numbers",
-  "version": "1.1.0",
   "comments": [
     " The canonical data assumes mathematically correct real   ",
     " numbers. The testsuites should consider rounding errors  ",

@@ -1,6 +1,5 @@
 {
   "exercise": "allergies",
-  "version": "2.0.0",
   "comments": [
     "Given a number and a substance, indicate whether Tom is allergic ",
     "to that substance."

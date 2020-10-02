@@ -1,6 +1,5 @@
 {
   "exercise": "trinary",
-  "version": "1.1.0",
   "cases": [
     {
       "description": "returns the decimal representation of the input trinary value",

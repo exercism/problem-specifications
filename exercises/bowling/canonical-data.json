@@ -1,6 +1,5 @@
 {
   "exercise": "bowling",
-  "version": "1.2.0",
   "comments": [
     "Students should implement roll and score methods.",
     "Roll should accept a single integer.",

@@ -1,6 +1,5 @@
 {
   "exercise": "grains",
-  "version": "1.2.0",
   "comments": [
     "The final tests of square test error conditions",
     "In these cases you should expect an error as is idiomatic for your language"

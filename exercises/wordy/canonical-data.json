@@ -1,6 +1,5 @@
 {
   "exercise": "wordy",
-  "version": "1.5.0",
   "comments": [
     "The tests that expect an 'error' should be implemented to raise",
     "an error, or indicate a failure. Implement this in a way that",

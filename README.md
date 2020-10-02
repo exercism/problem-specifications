@@ -40,7 +40,6 @@ is easier to understand with an example:
 
 ```json
 { "exercise": "foobar"
-, "version" : "1.1.0"
 , "comments":
     [ " Comments are always optional and can be used almost anywhere.      "
     , "                                                                    "
@@ -141,70 +140,6 @@ The `canonical.json` file can be validated against its schema prior to commiting
 	"$schema": "https://github.com/exercism/problem-specifications/blob/master/canonical-schema.json"
 }
 ```
-
-
-### Test Data Versioning
-
-Test data should be versioned according to [Semantic Version 2.0](http://semver.org/), which is defined as follows:
-
-> Given a version number MAJOR.MINOR.PATCH, increment the:
->
-> MAJOR version when you make incompatible API changes,
-> MINOR version when you add functionality in a backwards-compatible manner, and
-> PATCH version when you make backwards-compatible bug fixes.
-> Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
-
-#### MAJOR version changes
-
-The MAJOR version should be changed when the test suite is modified in a
-fundamentally incompatible way.
-
-There are examples of changes requiring a MAJOR version change:
-
-- A new "property" (test type).
-- Renaming a "property".
-- Insertion, deletion or renaming of keys in the test data object.
-- Changing the type of one of the test data keys.
-
-MAJOR changes should be expected to break even well-behaved test generators.
-
-#### MINOR version changes
-
-The MINOR version should change when you add functionality in a backwards-compatible manner, make
-non-breaking changes that alter the meaning of the test suite, make previously
-passing solutions possibly fail, or failing solutions fail at a different spot.
-
-There are examples of changes requiring a MINOR version change:
-
-- Adding or deleting test cases.
-- Changing the test cases inputs and/or outputs.
-- Changing the test cases ordering.
-
-MINOR changes would never break well-designed test generators, because the test-generation logic remains exactly the same.
-
-#### PATCH version changes
-
-The PATCH version should change when you make backwards-compatible bug fixes or
- whenever the meaning of the tests does not change.
-
-There are examples of changes requiring a PATCH version change:
-
-- Regrouping/"Renesting" test cases without changing test case ordering.
-- Changing descriptions or comments.
-- Changing keys' ordering or formatting (would result in an equivalent JSON file).
-
-PATCH changes would never break well-designed test generators, because the test data remains exactly the same.
-
-#### Automatic verification of versioning changes
-
-Travis CI will automatically verify that all changed JSON files have their version changed, via [bin/check_versions](https://github.com/exercism/problem-specifications/blob/master/bin/check_versions).
-
-This helps avoid the mistake of forgetting to change the version when a change is made to the tests.
-
-Although this is desired most of the time, there are instances (e.g. formatting change) where no version change is desired.
-In such instances, see [bin/check_versions](https://github.com/exercism/problem-specifications/blob/master/bin/check_versions) for the override string.
-Place the string inside a commit message to skip the version check.
-Note that as the override applies to the entire PR, it's highly advised that changes that do not require a version change should not be in the same PR as changes that do require a version change.
 
 ## New Exercises Require a Glyph
 

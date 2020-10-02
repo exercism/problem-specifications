@@ -1,6 +1,5 @@
 {
   "exercise": "all-your-base",
-  "version": "2.3.0",
   "comments": [
     "This canonical data makes the following choices:",
     "1. Zero is always represented in outputs as [0] instead of [].",

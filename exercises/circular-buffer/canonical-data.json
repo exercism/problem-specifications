@@ -1,6 +1,5 @@
 {
   "exercise": "circular-buffer",
-  "version": "1.2.0",
   "comments": [
     "In general, these circular buffers are expected to be stateful,",
     "and each language will operate on them differently.",

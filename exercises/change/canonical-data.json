@@ -1,6 +1,5 @@
 {
   "exercise": "change",
-  "version": "1.3.0",
   "comments": [
     "Given an infinite supply of coins with different values, ",
     "find the smallest number of coins needed to make a desired ",

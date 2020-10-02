@@ -1,6 +1,5 @@
 {
   "exercise": "grep",
-  "version": "1.2.0",
   "comments": [
     " JSON doesn't allow for multi-line strings, so all   ",
     " outputs are presented here as arrays of strings.    ",

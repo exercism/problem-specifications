@@ -1,6 +1,5 @@
 {
   "exercise": "secret-handshake",
-  "version": "1.2.0",
   "comments": [
     " In a discussion in https://github.com/exercism/problem-specifications/pull/794 and    ",
     " https://github.com/exercism/problem-specifications/issues/335 it has been decided to  ",

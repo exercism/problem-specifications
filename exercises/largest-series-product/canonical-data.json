@@ -1,10 +1,8 @@
 {
   "exercise": "largest-series-product",
-  "version": "1.2.0",
   "comments": [
     "Different languages may handle errors differently.",
     "e.g. raise exceptions, return (int, error), return Option<int>, etc.",
-    "Some languages specifically test the string->digits conversion",
     "and the 'slices of size N' operation.",
     "These cases *deliberately* do not cover those two operations.",
     "Those are implementation details.",

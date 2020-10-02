@@ -1,6 +1,5 @@
 {
   "exercise": "atbash-cipher",
-  "version": "1.2.0",
   "comments": [
     "The tests are divided into two groups: ",
     "* Encoding from English to atbash cipher",

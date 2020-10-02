@@ -1,6 +1,5 @@
 {
   "exercise": "diffie-hellman",
-  "version": "1.0.0",
   "comments": [
     "Optional tests to consider:",
     "* Validation of parameters:",

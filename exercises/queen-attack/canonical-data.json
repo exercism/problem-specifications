@@ -1,6 +1,5 @@
 {
   "exercise": "queen-attack",
-  "version": "2.3.0",
   "comments": [
     "Testing invalid positions will vary by language. The expected",
     "value of 'error' is there to indicate some sort of failure should",

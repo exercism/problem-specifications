@@ -1,6 +1,5 @@
 {
     "exercise": "palindrome-products",
-    "version": "1.2.0",
     "cases": [{
             "uuid": "5cff78fe-cf02-459d-85c2-ce584679f887",
             "description": "finds the smallest palindrome from single digit factors",

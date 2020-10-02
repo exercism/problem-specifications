@@ -1,6 +1,5 @@
 {
     "exercise": "diamond",
-    "version": "1.1.0",
     "comments": [
         " The tests contained within this canonical data file are suitable   ",
         " for value-based testing, in which each test case checks that the   ",

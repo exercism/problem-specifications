@@ -33,7 +33,6 @@ themselves. There are other guides about contributing to other parts of the Exer
     * [Beta-Testing a Language Track](#beta-testing-a-language-track)
 * [Useful Tidbits](#useful-tidbits)
     * [Pull Request Guidelines](#pull-request-guidelines)
-    * [Exercise Versioning](#exercise-versioning)
     * [Anatomy of an Exercise](#anatomy-of-an-exercise)
     * [Track configuration file (config.json)](#track-configuration-file)
     * [Track-Level Linting With Configlet](#track-level-linting-with-configlet)
@@ -148,9 +147,6 @@ If you're unsure where to make the change, ask us, and we'll help you figure it 
 Once you've updated the test suite, there are a few things you'll want to check.
 
 - Make sure the [reference solution](#reference-solution) is still passing.
-- If the exercise is [versioned](#exercise-versioning), and the change will
-  mean that existing solutions on the site will not pass the new tests, then
-  increment the version number, both in the test and in the reference solution.
 - Run the full, track-level test suite, if available.
   If the track has a way to automatically run all the tests against their
   reference solutions, it will be documented in the README.
@@ -187,10 +183,7 @@ needs to be made in the [exercism/problem-specifications repository](https://git
 not directly to the test suite itself.
 
 Find the JSON file for the problem in question. For example, if you want to change
-the Clock problem, then look for `exercises/clock/canonical-data.json`. Each
-change should also bump the version of the test data. For more information,
-see the [test data versioning](README.md#test-data-versioning) section of the
-README.
+the Clock problem, then look for `exercises/clock/canonical-data.json`.
 
 Submit a pull request with the change.
 
@@ -321,32 +314,6 @@ scenarios in this guide.
 ### Pull Request Guidelines
 
 See the [pull request guidelines](https://github.com/exercism/docs/blob/master/contributing/pull-request-guidelines.md) in the docs repository.
-
-### Exercise Versioning
-
-It's only when we get a bunch of people having conversations about the
-solutions that we really discover what makes a problem interesting, and
-in what way it can be improved.
-
-Some changes to the test suites will invalidate existing solutions that people
-have submitted.
-
-We think this is totally fine, however sometimes people start leaving feedback
-saying _this doesn't pass the tests_. This is technically true, but since the
-solution passed the tests at the time it was written, it's generally more
-useful to just discuss the code as it is, rather than enforce strict
-adherence to the most recent version of the tests.
-
-Some language tracks have implemented a simple, manual versioning system to
-help avoid unnecessary discussions about failing the current test suites.
-
-If the exercise is versioned, then the test suite will probably have a
-_book-keeping_ type test at the very bottom that asserts against a value in
-the reference solution. If the change you're making is backwards-incompatible,
-then please increment the version in both the test suite and the reference
-solution.
-
-Please review the details in [README.md](https://github.com/exercism/problem-specifications#test-data-versioning) and bump the version number accordingly.
 
 ### Anatomy of an Exercise
 
