@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  pull_request:
+  push: 
+    branches: 
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node_version: '6'
+      - run: bin/check_required_files_present
+      - run: bin/check_optional
+      - run: yarn test
