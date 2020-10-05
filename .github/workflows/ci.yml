@@ -14,6 +14,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node_version: '6'
+      - run: yarn
       - run: bin/check_required_files_present
       - run: bin/check_optional
       - run: yarn test
