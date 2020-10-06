@@ -80,7 +80,7 @@
           , "properties" :
                 { "uuid"       : { "$ref": "#/definitions/uuid" }
                 , "description": { "$ref": "#/definitions/description" }
-                , "optional"   : { "$ref": "#/definitions/optional"    }
+                , "scenarios"  : { "$ref": "#/definitions/scenarios"   }
                 , "comments"   : { "$ref": "#/definitions/comments"    }
                 , "property"   : { "$ref": "#/definitions/property"    }
                 , "input"      : { "$ref": "#/definitions/input"       }
@@ -95,7 +95,7 @@
           , "required"   : ["description", "cases"]
           , "properties" :
                 { "description": { "$ref": "#/definitions/description" }
-                , "optional"   : { "$ref": "#/definitions/optional"    }
+                , "scenarios"  : { "$ref": "#/definitions/scenarios"   }
                 , "comments"   : { "$ref": "#/definitions/comments"    }
                 , "cases"      : { "$ref": "#/definitions/testGroup"   }
                 }
@@ -113,10 +113,17 @@
           , "pattern"    : "^[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}$"
           },
 
-      "optional":
-          { "description": "An identifier for similar optional test cases (kebab-case)"
-          , "type"       : "string"
-          , "pattern"    : "^[a-z]+(-[a-z]+)*$"
+      "scenario":
+          { "description": "An identifier for a specific scenario (kebab-case)"          
+          , "type": "string"
+          , "enum": ["big-integer", "floating-point", "library-test", "unicode"]
+          },
+
+      "scenarios":
+          { "description": "An array of scenarios that can be used to include/exclude test cases"          
+          , "type"       : "array"
+          , "items"      : { "$ref": "#/definitions/scenario" }
+          , "minItems"   : 0
           },
 
       "property":
