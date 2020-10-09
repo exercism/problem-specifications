@@ -172,6 +172,35 @@ This is an example of what a re-implementation looks like:
 ]
 ```
 
+## Track Test Data
+
+If a track implements an exercise for which test data exists, the exercise _must_ contain a `.meta/tests.toml` file. The goal of this file is to keep track of which tests are implemented by the exercise. Tests in this file are identified by their UUID and each test has a boolean value that indicates if it is implemented by that exercise.
+
+A `tests.toml` file for a track's `two-fer` exercise looks like this:
+
+```toml
+[canonical-tests]
+
+# no name given
+"19709124-b82e-4e86-a722-9e5c5ebf3952" = true
+
+# a name given
+"3451eebd-123f-4256-b667-7b109affce32" = true
+
+# another name given
+"653611c6-be9f-4935-ab42-978e25fe9a10" = false
+```
+
+In this case, the track has chosen to implement two of the three available tests.
+
+If a track uses a _test generator_ to generate an exercise's test suite, it _must_ use the contents of the `tests.toml` file to determine which tests to include in the generated test suite.
+
+### Track Test Data Tooling
+
+To make it easy to keep the `tests.toml` up to date, tracks can use the [`canonical_data_syncer` application](https://github.com/exercism/canonical-data-syncer). This application is a small, standalone binary that will compare the tests specified in the `tests.toml` files against the tests that are defined in the exercise's canonical data. It then interactively gives the maintainer the option to include or exclude test cases that are currently missing, updating the `tests.toml` file accordingly.
+
+To use the canonical data syncer tool, tracks should copying the [`fetch-canonical_data_syncer`](https://github.com/exercism/canonical-data-syncer/blob/master/scripts/fetch-canonical_data_syncer) and/or [`fetch-canonical_data_syncer.ps1`](https://github.com/exercism/canonical-data-syncer/blob/master/scripts/fetch-canonical_data_syncer.ps1) scripts into their repository. Then, running either of these scripts will download the latest version of the tool to the track's `bin` directory. The tool can be run using `./bin/canonical_data_syncer` or `.\bin\canonical_data_syncer.exe`, depending on your operating system.
+
 ## Conventions
 
 There are also some conventions that must be followed:

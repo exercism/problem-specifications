@@ -254,6 +254,8 @@ Each track should have the following structure:
 │   └── TESTS.md
 └── exercises
     └── hello-world
+        └── .meta        
+        │   └── tests.toml (only if the exercise is based on canonical data)
         ├── hello-world_example.file
         ├── hello-world.file
         └── hello-world_test.file
@@ -277,7 +279,7 @@ The example template for a track can be found in the [request-new-language-track
     - `LEARNING.md` - a few notes about where people might want to go to learn the track's language from scratch. These are the the resources you need only when first getting up to speed with a language (tutorials, blog posts, etc.).
     - `RESOURCES.md` - references and other useful resources. These resources are those that would commonly be used by a developer on an ongoing basis (core language docs, api docs, etc.).
 
-* `exercises` - all exercises for the track should live in subdirectories of this directory. Each exercise should have a test file, an example file that should pass all tests, and a template file that is a stub to help the user get started with the exercise. The example file should be used for the CI build.
+* `exercises` - all exercises for the track should live in subdirectories of this directory. Each exercise should have a test file, an example file that should pass all tests, and a template file that is a stub to help the user get started with the exercise. The example file should be used for the CI build. If the exercise is based on canonical data, a `tests.toml` file should be created which contains a mapping from a canonical test case's UUID to a boolean value that indicates if the test case was implemented by the exercise
 
 ## Starting a New Track
 
