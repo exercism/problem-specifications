@@ -30,6 +30,7 @@
           "expected": [1, 2, 3, 4]
         },
         {
+          "uuid": "e842efed-3bf6-4295-b371-4d67a4fdf19c",
           "description": "empty list to list",
           "property": "append",
           "input": {
