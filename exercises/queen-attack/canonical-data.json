@@ -90,7 +90,7 @@
       "cases": [
         {
           "uuid": "33ae4113-d237-42ee-bac1-e1e699c0c007",
-          "description": "can not attack",
+          "description": "cannot attack",
           "property": "canAttack",
           "input": {
             "white_queen": {
