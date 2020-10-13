@@ -79,6 +79,7 @@
           , "required"   : ["uuid", "description", "property", "input", "expected"]
           , "properties" :
                 { "uuid"       : { "$ref": "#/definitions/uuid" }
+                , "reimplements": { "$ref": "#/definitions/uuid" }
                 , "description": { "$ref": "#/definitions/description" }
                 , "scenarios"  : { "$ref": "#/definitions/scenarios"   }
                 , "comments"   : { "$ref": "#/definitions/comments"    }
