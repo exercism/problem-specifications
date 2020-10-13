@@ -16,7 +16,7 @@ jobs:
       - name: All required files are present
         run: bin/check_required_files_present
 
-  schema-tests:
+  schema-validation:
     name: Schema validation
     runs-on: ubuntu-latest
     steps:
