@@ -48,6 +48,7 @@
       "cases": [
         {
           "uuid": "9b3fddef-4c12-4a99-b8f8-e3a42c7ccef6",
+          "reimplements": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
           "description": "Imaginary part of a purely real number",
           "property": "imaginary",
           "input": {
