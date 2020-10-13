@@ -131,7 +131,7 @@
                 },
                 {
                     "uuid": "16a621fe-bbd8-4fdd-b861-d5332cf95c02",
-                    "description": "Zero is rejected (not a positive number)",
+                    "description": "Zero is rejected (not a positive integer)",
                     "comments": ["'natural' -> 'positive'"],
                     "reimplements": "72445cee-660c-4d75-8506-6c40089dc302",
                     "property": "classify",
@@ -139,7 +139,7 @@
                         "number": 0
                     },
                     "expected": {
-                        "error": "Classification is only possible for positive numbers."
+                        "error": "Classification is only possible for positive integers."
                     }
                 },
                 {
@@ -155,7 +155,7 @@
                 },
                 {
                     "uuid": "008de030-ce51-4e0d-8b70-2ea980f17953",
-                    "description": "Negative integer is rejected (not a positive number)",
+                    "description": "Negative integer is rejected (not a positive integer)",
                     "comments": ["'natural' -> 'positive'"],
                     "reimplements": "2d72ce2c-6802-49ac-8ece-c790ba3dae13",
                     "property": "classify",
@@ -163,7 +163,7 @@
                         "number": -1
                     },
                     "expected": {
-                        "error": "Classification is only possible for positive numbers."
+                        "error": "Classification is only possible for positive integers."
                     }
                 }
             ]
