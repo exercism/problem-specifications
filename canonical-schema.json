@@ -78,13 +78,14 @@
           , "type"       : "object"
           , "required"   : ["uuid", "description", "property", "input", "expected"]
           , "properties" :
-                { "uuid"       : { "$ref": "#/definitions/uuid" }
-                , "description": { "$ref": "#/definitions/description" }
-                , "scenarios"  : { "$ref": "#/definitions/scenarios"   }
-                , "comments"   : { "$ref": "#/definitions/comments"    }
-                , "property"   : { "$ref": "#/definitions/property"    }
-                , "input"      : { "$ref": "#/definitions/input"       }
-                , "expected"   : { "$ref": "#/definitions/expected"    }
+                { "uuid"        : { "$ref": "#/definitions/uuid" }
+                , "reimplements": { "$ref": "#/definitions/uuid" }
+                , "description" : { "$ref": "#/definitions/description" }
+                , "scenarios"   : { "$ref": "#/definitions/scenarios"   }
+                , "comments"    : { "$ref": "#/definitions/comments"    }
+                , "property"    : { "$ref": "#/definitions/property"    }
+                , "input"       : { "$ref": "#/definitions/input"       }
+                , "expected"    : { "$ref": "#/definitions/expected"    }
                 }
           , "additionalProperties": false
           },
