@@ -17,7 +17,7 @@
       "expected": ""
     },
     {
-      "uuid": "298b94c0-b46d-45d8-b34b-0fa2ea71f0a4",
+      "uuid": "0f998f19-69ee-4c64-80ef-01b086feab80",
       "description": "X can win on a 1x1 board",
       "property": "winner",
       "input": {
