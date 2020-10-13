@@ -115,6 +115,7 @@ The file format is described in [canonical-schema.json](./canonical-schema.json)
                 "word"       : "28948022309329048855892746252171976962977213799489202546401021394546514198529"
               }
             , "expected"   : null
+            , "scenarios"  : [ "big-integers" ]
             }
           , { "uuid"       : "c7b6f24a-553f-475a-8a40-dba854fe1bff"
             , "description": "Bar'ing a name with numbers gives an error"
@@ -132,6 +133,8 @@ The file format is described in [canonical-schema.json](./canonical-schema.json)
 ```
 
 ## Scenarios
+
+An optional field to allow for selectively including/excluding test cases based on a property of the test case (such as using big integers).
 
 - The `scenarios` field can use one or more of a predefined set of values, which are defined in a [`SCENARIOS.txt`](./SCENARIOS.txt) file.
 - The `scenarios` field can be mutated additively, by adding new scenarios. Existing scenarios must not be changed or removed. Adding new scenarios does therefore does not mean adding a new test case.
