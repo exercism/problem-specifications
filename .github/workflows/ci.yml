@@ -45,3 +45,16 @@ jobs:
 
       - name: Verify that canonical-data.json files adhere to canonical-schema.json
         run: yarn test
+      
+      - name: Verify that all UUIDs are indeed unique
+        run: |
+          duplicate_uuids=$(cat exercises/*/canonical-data.json |
+              grep '"uuid":' |                                    # select UUID line
+              sed -E 's/.*"([^"]+)".*/\1/' |                      # extract JSON value
+              sort | uniq -d)                                     # check for repeated UUIDs
+          if [ -n "$duplicate_uuids" ]; then
+              echo "The following UUIDs are not unique:"
+              echo "$duplicate_uuids"
+              exit 1
+          fi
+          
