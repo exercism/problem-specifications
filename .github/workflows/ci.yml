@@ -8,6 +8,7 @@ on:
 
 jobs:
   required-files:
+    name: All required files are present
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -16,6 +17,7 @@ jobs:
         run: bin/check_required_files_present
 
   schema-tests:
+    name: Schema validation
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -41,5 +43,5 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Run JS tests
+      - name: Verify that canonical-data.json files adhere to canonical-schema.json
         run: yarn test
