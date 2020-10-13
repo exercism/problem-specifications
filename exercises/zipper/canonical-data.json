@@ -18,7 +18,6 @@
   "cases": [
     {
       "uuid": "771c652e-0754-4ef0-945c-0675d12ef1f5",
-      "reimplements": "d7dcbb92-47fc-4d01-b81a-df3353bc09fx",
       "description": "data is retained",
       "property": "expectedValue",
       "input": {
