@@ -110,7 +110,7 @@
         },
         {
           "uuid": "29f721de-9aad-435f-ba37-7662df4fb551",
-          "description": "lower case string",
+          "description": "lowercase string",
           "property": "decode",
           "input": {
             "string": "2a3b4c"
