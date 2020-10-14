@@ -12,5 +12,8 @@
   "scripts": {
     "test": "ajv -s canonical-schema.json -d \"exercises/*/canonical-data.json\"",
     "test-one": "ajv -s canonical-schema.json -d"
+  },
+  "resolutions": {
+    "minimist": "^1.2.3"
   }
 }
