@@ -10,7 +10,7 @@
       "cases": [
         {
           "uuid": "9fbde8de-36b2-49de-baf2-cd42d6f28405",
-          "description": "1",
+          "description": "grains on square 1",
           "property": "square",
           "input": {
             "square": 1
@@ -19,7 +19,7 @@
         },
         {
           "uuid": "ee1f30c2-01d8-4298-b25d-c677331b5e6d",
-          "description": "2",
+          "description": "grains on square 2",
           "property": "square",
           "input": {
             "square": 2
@@ -28,7 +28,7 @@
         },
         {
           "uuid": "10f45584-2fc3-4875-8ec6-666065d1163b",
-          "description": "3",
+          "description": "grains on square 3",
           "property": "square",
           "input": {
             "square": 3
@@ -37,7 +37,7 @@
         },
         {
           "uuid": "a7cbe01b-36f4-4601-b053-c5f6ae055170",
-          "description": "4",
+          "description": "grains on square 4",
           "property": "square",
           "input": {
             "square": 4
@@ -46,7 +46,7 @@
         },
         {
           "uuid": "c50acc89-8535-44e4-918f-b848ad2817d4",
-          "description": "16",
+          "description": "grains on square 16",
           "property": "square",
           "input": {
             "square": 16
@@ -55,7 +55,7 @@
         },
         {
           "uuid": "acd81b46-c2ad-4951-b848-80d15ed5a04f",
-          "description": "32",
+          "description": "grains on square 32",
           "property": "square",
           "input": {
             "square": 32
@@ -64,7 +64,7 @@
         },
         {
           "uuid": "c73b470a-5efb-4d53-9ac6-c5f6487f227b",
-          "description": "64",
+          "description": "grains on square 64",
           "property": "square",
           "input": {
             "square": 64
