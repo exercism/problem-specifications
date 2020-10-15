@@ -13,23 +13,21 @@ immutable_keys = ('property', 'input', 'expected')
 old = json.loads(subprocess.run([f"jq -r '[.. | objects | select(.uuid != null)]' {oldf}"], stdout=subprocess.PIPE, shell=True).stdout.decode('utf-8'))
 new = json.loads(subprocess.run([f"jq -r '[.. | objects | select(.uuid != null)]' {newf}"], stdout=subprocess.PIPE, shell=True).stdout.decode('utf-8'))
 
-# Convert old to dict uuid => case
-old = {c['uuid']: c for c in old}
+# Convert new to dict uuid => case
+new = {c['uuid']: c for c in new}
 
 fails = set()
 
-for case in new:
-    if case['uuid'] not in old.keys(): # case is a new test case
-        continue
-    
+# Iterate through old cases as only those could potentially be mutated
+for case in old:
     for k in immutable_keys:
-        if case[k] != old[case['uuid']][k]:
+        if case[k] != new[case['uuid']][k]:
             fails.add(case['uuid'])
 
 if len(fails) == 0:
     exit(0)
 
-print('The following test cases have been illegally mutated:')
+print('The following test contain illegal mutations:')
 for f in fails:
-    print(f" - {f} ({old[f]['description']})")
+    print(f" - {f} ({new[f]['description']})")
 exit(1)
