@@ -9,9 +9,9 @@
           "description": "basic",
           "property": "abbreviate",
           "input": {
-            "phrase": "Portable Network Graphics"
+            "phrase": "Portable Work Graphics"
           },
-          "expected": "PNG"
+          "expected": "PWG"
         },
         {
           "uuid": "79ae3889-a5c0-4b01-baf0-232d31180c08",
