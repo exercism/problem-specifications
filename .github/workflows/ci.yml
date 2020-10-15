@@ -69,7 +69,7 @@ jobs:
               # Abort early if the exercise doesn't have reimplemented test cases
               [[ -e $reimplements ]] && continue
               
-              uuids=$(grep '"uuid":' "$f" | sed -E 's/.*"([^"]+)".*/\1/')
+              uuids=$(jq -r '.. |."uuid"? | select(. != null)' "$f")
               for reimplemented_uuid in $reimplements; do
                   if [[ $uuids != *"$reimplemented_uuid"* ]]; then
                       echo "$f: reimplemented value refers to a test case with UUID $reimplemented_uuid, but the file does not contain any test cases with that UUID."
