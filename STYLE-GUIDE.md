@@ -5,7 +5,7 @@ This document acts as a Style Guide for the language and wording used in exercis
 ## General principle
 
 All content should be written in US english. 
-In the future other translations may occur, but the "official" Exercism natural langauge is US English.
+In the future other translations may occur, but the "official" Exercism language is US English.
 
 ## Explain or substitude mathematical and esotoric terms.
 
