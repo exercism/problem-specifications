@@ -42,7 +42,7 @@ jobs:
       
       - name: Check that no test has been mutated
         run: |
-          for oldf in exercises/*/canonical-data.json; do
+          for oldf in old/exercises/*/canonical-data.json; do
             newf=${oldf//old/new}
             ./new/bin/check-immutability.py "$oldf" "$newf"
           done
