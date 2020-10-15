@@ -7,7 +7,7 @@
     "cases": [
         {
             "uuid": "0caa3eac-d2e3-4c29-8df8-b188bc8c9292",
-            "description": "valid isbn number",
+            "description": "valid isbn",
             "property": "isValid",
             "input": {
               "isbn": "3-598-21508-8"
@@ -25,7 +25,7 @@
         },
         {
             "uuid": "4164bfee-fb0a-4a1c-9f70-64c6a1903dcd",
-            "description": "valid isbn number with a check digit of 10",
+            "description": "valid isbn with a check digit of 10",
             "property": "isValid",
             "input": {
               "isbn": "3-598-21507-X"
