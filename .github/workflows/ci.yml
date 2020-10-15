@@ -49,8 +49,7 @@ jobs:
       - name: Verify that all UUIDs are indeed unique
         run: |
           duplicate_uuids=$(cat exercises/*/canonical-data.json |
-              grep '"uuid":' |                                    # select UUID line
-              sed -E 's/.*"([^"]+)".*/\1/' |                      # extract JSON value
+              jq -r '.. |."uuid"? | select(. != null)' |          # select all UUIDs
               sort | uniq -d)                                     # check for repeated UUIDs
           if [ -n "$duplicate_uuids" ]; then
               echo "The following UUIDs are not unique:"
