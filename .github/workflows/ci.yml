@@ -57,3 +57,25 @@ jobs:
               echo "$duplicate_uuids"
               exit 1
           fi
+
+      - name: Verify that reimplements-values refer to existing UUID
+        run: |
+          fail=0
+
+          for f in exercises/*/canonical-data.json; do
+              # Search for reimplemented test cases
+              reimplements=$(jq -r '.. |."reimplements"? | select(. != null)' "$f")
+          
+              # Abort early if the exercise doesn't have reimplemented test cases
+              [[ -e $reimplements ]] && continue
+              
+              uuids=$(jq -r '.. |."uuid"? | select(. != null)' "$f")
+              for reimplemented_uuid in $reimplements; do
+                  if [[ $uuids != *"$reimplemented_uuid"* ]]; then
+                      echo "$f: reimplemented value refers to a test case with UUID $reimplemented_uuid, but the file does not contain any test cases with that UUID."
+                      fail=1
+                  fi
+              done
+          done
+          
+          exit "$fail"
