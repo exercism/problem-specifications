@@ -120,24 +120,24 @@
             "cases": [
                 {
                     "uuid": "72445cee-660c-4d75-8506-6c40089dc302",
-                    "description": "Zero is rejected (not a natural number)",
+                    "description": "Zero is rejected (as it is not a positive integer)",
                     "property": "classify",
                     "input": {
                         "number": 0
                     },
                     "expected": {
-                        "error": "Classification is only possible for natural numbers."
+                        "error": "Classification is only possible for positive integers."
                     }
                 },
                 {
                     "uuid": "2d72ce2c-6802-49ac-8ece-c790ba3dae13",
-                    "description": "Negative integer is rejected (not a natural number)",
+                    "description": "Negative integer is rejected (as it is not a positive integer)",
                     "property": "classify",
                     "input": {
                         "number": -1
                     },
                     "expected": {
-                        "error": "Classification is only possible for natural numbers."
+                        "error": "Classification is only possible for positive integers."
                     }
                 }
             ]
