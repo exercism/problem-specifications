@@ -4,7 +4,8 @@ This document acts as a Style Guide for the language and wording used in exercis
 
 ## General principle
 
-All content should be written in US english. 
+All content should be written in US English.
+All units of measurement must be [SI](https://en.wikipedia.org/wiki/International_System_of_Units) or [SI-derived](https://en.wikipedia.org/wiki/SI_derived_unit) units.
 In the future other translations may occur, but the "official" Exercism language is US English.
 
 ## Explain or substitute mathematical and esoteric terms.
