@@ -13,7 +13,7 @@ In the future other translations may occur, but the "official" Exercism language
 In any place that mathematical terms are used they should be explained or substituted out for terms that require less domain knowledge.
 
 Examples:
-- Rather than using "natural numbers", we should use "positive integers" or "zero and positive integers". 
+- Rather than using "natural numbers", we should use "positive whole numbers".
 - If we want to use the phrase "rational numbers", it must be explained in the introduction to the exercise.
 - Rather than using the word range (which can have different meanings in different contexts) use "greater than x and less than y".
 
