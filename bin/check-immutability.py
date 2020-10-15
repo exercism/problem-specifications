@@ -28,7 +28,7 @@ for case in old:
 if len(fails) == 0:
     exit(0)
 
-print('The following test contain illegal mutations:')
+print('The following tests contain illegal mutations:')
 for f in fails:
     print(f" - {f} ({new[f]['description']})")
 exit(1)
