@@ -44,7 +44,7 @@ jobs:
         run: |
           for oldf in exercises/*/canonical-data.json; do
             newf=${oldf//old/new}
-            ./bin/check-immutability.py "$oldf" "$newf"
+            ./new/bin/check-immutability.py "$oldf" "$newf"
           done
 
   schema-validation:
