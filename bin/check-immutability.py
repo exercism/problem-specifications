@@ -23,6 +23,7 @@ for case in old:
     for k in immutable_keys:
         if case[k] != new[case['uuid']][k]:
             fails.add(case['uuid'])
+            break
 
 if len(fails) == 0:
     exit(0)
