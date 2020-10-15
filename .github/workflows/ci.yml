@@ -35,7 +35,7 @@ jobs:
       # Pushes
       - name: Checkout the previous commit (Pushes)
         uses: actions/checkout@v2
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         with:
           ref: '${{ github.sha }}~'
           path: 'old'
