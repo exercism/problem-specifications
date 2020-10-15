@@ -7,7 +7,7 @@ This document acts as a Style Guide for the language and wording used in exercis
 All content should be written in US english. 
 In the future other translations may occur, but the "official" Exercism language is US English.
 
-## Explain or substitude mathematical and esotoric terms.
+## Explain or substitute mathematical and esoteric terms.
 
 In any place that mathematical terms are used they should be explained or substituted out for terms that require less domain knowledge.
 
