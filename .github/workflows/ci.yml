@@ -15,6 +15,37 @@ jobs:
 
       - name: All required files are present
         run: bin/check_required_files_present
+  
+  immutability:
+    name: No test has been mutated
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          path: 'new'
+
+      # Pull Requests
+      - name: Checkout the target branch (PRs)
+        uses: actions/checkout@v2
+        if: github.event_name == 'pull_request'
+        with:
+          ref: '${{ github.base_ref }}'
+          path: 'old'
+      
+      # Pushes
+      - name: Checkout the previous commit (Pushes)
+        uses: actions/checkout@v2
+        if: github.event_name == 'push'
+        with:
+          ref: '${{ github.sha }}~'
+          path: 'old'
+      
+      - name: Check that no test has been mutated
+        run: |
+          for oldf in exercises/*/canonical-data.json; do
+            newf=${oldf//old/new}
+            ./bin/check-immutability.py "$oldf" "$newf"
+          done
 
   schema-validation:
     name: Schema validation
