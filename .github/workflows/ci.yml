@@ -64,7 +64,7 @@ jobs:
 
           for f in exercises/*/canonical-data.json; do
               # Search for reimplemented test cases
-              reimplements=$(grep '"reimplements":' "$f" | sed -E 's/.*"([^"]+)".*/\1/')
+              reimplements=$(jq -r '.. |."reimplements"? | select(. != null)' "$f")
           
               # Abort early if the exercise doesn't have reimplemented test cases
               [[ -e $reimplements ]] && continue
