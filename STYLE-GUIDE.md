@@ -2,12 +2,20 @@
 
 This document acts as a Style Guide for the language and wording used in exercises.
 
-## Consistency
+## Application
+
+These rules should be followed in all exercises. 
+Existing descriptions and test-cases can be updated to adhere to them without requiring "replacement" test cases.
 
 ### Consistency within an exercise.
 
 There are some terms that have multiple valid spellings (e.g. "lower case" vs "lowercase"). 
 Where a consistent style has not been agreed within this document, these must be consistent within an exercise.
+
+### Exceptions
+
+Exercises may vary from these rules if there is general consensus across maintainers that this is reasonable. 
+For example, an exercise about converting between different units might choose not to use SI measurements.
 
 ## Language
 
@@ -16,7 +24,7 @@ All content should be written in US English. In the future other translations ma
 ### Measurements
 All units of measurement must be [SI](https://en.wikipedia.org/wiki/International_System_of_Units) or [SI-derived](https://en.wikipedia.org/wiki/SI_derived_unit) units.
 
-## Abbreviations, acronyms and initialisms
+### Abbreviations, acronyms and initialisms
 > All abbreviations, acronyms and initialisms should be defined. 
 > - If the unabbreviated term is clear, always include the full wording at first use (e.g. "Domain-specific language (DSL)");
 > - If the term needs more explaination to be clear to someone unfamiliar, explain it: (e.g. "The four basic types of SQL commands are Create, Read, Update, Delete. The initials of these come together to form the word CRUD.");
