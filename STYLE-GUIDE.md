@@ -16,6 +16,7 @@ Examples:
 - Rather than using "natural numbers", we should use "positive whole numbers".
 - If we want to use the phrase "rational numbers", it must be explained in the introduction to the exercise.
 - Rather than using the word range (which can have different meanings in different contexts) use "x < ? < y (greater than x and less than y)".
+- Rather than using "esoteric terms", use the phrase "terms not understood by the majority of people".
 
 ## Use consistency within an exercise.
 
