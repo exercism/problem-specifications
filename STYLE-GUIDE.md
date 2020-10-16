@@ -25,14 +25,31 @@ All content should be written in US English. In the future other translations ma
 All units of measurement must be [SI](https://en.wikipedia.org/wiki/International_System_of_Units) or [SI-derived](https://en.wikipedia.org/wiki/SI_derived_unit) units.
 
 ### Abbreviations, acronyms and initialisms
-> All abbreviations, acronyms and initialisms should be defined. 
-> - If the unabbreviated term is clear, always include the full wording at first use (e.g. "Domain-specific language (DSL)");
-> - If the term needs more explaination to be clear to someone unfamiliar, explain it: (e.g. "The four basic types of SQL commands are Create, Read, Update, Delete. The initials of these come together to form the word CRUD.");
-> - If explaining the acryonm adds no tangible value to the student, simply introduce the acryonm as if it were a "proper noun" (e.g. "People's inherit DNA, a set of chemical instructions that influence how their bodies are constructed")
+
+Abbreviations, acronyms and initialisms are often more difficult to understand than other phrasing options, and can alienate people trying to learn.
+
+Many abbreviations are jargon. Avoid jargon where possible by using alternative language. Don't use abbreviations unless either:
+- The abbreviated term is better known than the unabbreviated term
+- The text will be excessively verbose without abbreviation
+
+When using abbreviations always explain what the term means on its first use. This will often, but not always, include expanding the abbreviation. It will rarely be sufficient to only expand the abbreviation.
+
+Here are some example rules:
+- Prefer "if I recall correctly" to "IIRC"
+- Prefer "as far as I know" to "AFAIK"
+- Prefer "queue" to "FIFO" and "stack" to "FILO"
+- Instead of describing an interface as "RESTful", describe it's specific properties
+- If you must use CRUD, explain that it stands for Create, Read, Update, Delete and that these are the basic SQL actions
+
+An some examples of good usage:
+- "HyperText Markup Language (HTML) is the language used to describe document structure and content on the web" _(expanded and explained)_
+- "DNA, a set of chemical instructions that influence how our bodies are constructed" _(DNA is not expanded because "deoxyribonucleic acid" is unlikely to help explain what DNA is to our audience)_
+- "NASA, the United States' space agency, launched the Mariner 2 space probe in..." _(NASA is not expanded because the "National Aerospace and Space Administration" is much better known by its acronym than by its expanded name)_
+- "The Department of Motor Vehicles (DMV) is filled with sloths. That's why everything takes forever at the DMV" _(Define DMV the first time it is used)_
 
 ## Choice of words
 
-### Mathematical and esoteric terms.
+### Mathematical and jargon terms.
 
 In any place that mathematical terms are used they should be explained or substituted out for terms that require less domain knowledge.
 
