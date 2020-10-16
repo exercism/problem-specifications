@@ -39,7 +39,7 @@ Here are some example rules:
 - Prefer "as far as I know" to "AFAIK"
 - Prefer "queue" to "FIFO" and "stack" to "FILO"
 - Instead of describing an interface as "RESTful", describe it's specific properties
-- If you must use CRUD, explain that it stands for Create, Read, Update, Delete and that these are the basic SQL actions
+- If you must use "CRUD", explain that it stands for Create, Read, Update, Delete and that these are the basic actions in standard databases
 
 An some examples of good usage:
 - "HyperText Markup Language (HTML) is the language used to describe document structure and content on the web" _(expanded and explained)_
