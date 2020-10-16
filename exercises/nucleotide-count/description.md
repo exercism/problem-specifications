@@ -1,4 +1,7 @@
-Most people inherit not only their socioeconomic class from their parents, but also DNA (deoxyribonucleic acid), a set of chemical instructions that influence how their bodies are constructed!
+Most people inherit not only their socioeconomic class from their parents, but also DNA, a set of chemical instructions that influence how their bodies are constructed!
+
+> Note: You do not need to understand anything about nucleotides or DNA to complete this exercise.
+
 DNA is a long chain of other chemicals and the most important are the four nucleotides, adenine, cytosine, guanine and thymine. A single DNA chain can contain billions of these four nucleotides and the order in which they occur is important!
 We call the order of these nucleotides in a bit of DNA a "DNA sequence".
 
@@ -14,5 +17,3 @@ For example:
 "GATTACA" -> 'A': 3, 'C': 1, 'G': 1, 'T': 2
 "INVALID" -> error
 ```
-
-You do not need to understand anything about nucleotides or DNA to complete this exercise.
