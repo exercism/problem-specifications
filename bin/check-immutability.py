@@ -28,6 +28,11 @@ for case in old:
         deleted.add(uuid)
         continue
 
+    # Check that scenarios are only updated additively
+    if 'scenarios' in case and not set(case['scenarios']).issubset(set(new[uuid]['scenarios'])):
+        fails.add(uuid)
+
+    # Check for changes to immutable keys
     for k in immutable_keys:
         if case[k] != new[uuid][k]:
             fails.add(uuid)
