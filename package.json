@@ -7,10 +7,13 @@
   "author": "Tejas Bubane <tejasbubane@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "ajv-cli": "^2.1.0"
+    "ajv-cli": "^3.3.0"
   },
   "scripts": {
     "test": "ajv -s canonical-schema.json -d \"exercises/*/canonical-data.json\"",
     "test-one": "ajv -s canonical-schema.json -d"
+  },
+  "resolutions": {
+    "minimist": "^1.2.3"
   }
 }
