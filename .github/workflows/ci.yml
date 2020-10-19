@@ -2,8 +2,8 @@ name: CI
 
 on:
   pull_request:
-  push: 
-    branches: 
+  push:
+    branches:
       - master
   workflow_dispatch:
 
@@ -46,7 +46,7 @@ jobs:
 
       - name: Verify that canonical-data.json files adhere to canonical-schema.json
         run: yarn test
-      
+
       - name: Verify that all UUIDs are indeed unique
         run: |
           duplicate_uuids=$(cat exercises/*/canonical-data.json |
@@ -65,10 +65,10 @@ jobs:
           for f in exercises/*/canonical-data.json; do
               # Search for reimplemented test cases
               reimplements=$(jq -r '.. |."reimplements"? | select(. != null)' "$f")
-          
+
               # Abort early if the exercise doesn't have reimplemented test cases
               [[ -e $reimplements ]] && continue
-              
+
               uuids=$(jq -r '.. |."uuid"? | select(. != null)' "$f")
               for reimplemented_uuid in $reimplements; do
                   if [[ $uuids != *"$reimplemented_uuid"* ]]; then
@@ -77,5 +77,5 @@ jobs:
                   fi
               done
           done
-          
+
           exit "$fail"

@@ -115,13 +115,13 @@
           },
 
       "scenario":
-          { "description": "An identifier for a specific scenario (kebab-case)"          
+          { "description": "An identifier for a specific scenario (kebab-case)"
           , "type": "string"
           , "enum": ["big-integer", "floating-point", "library-test", "unicode"]
           },
 
       "scenarios":
-          { "description": "An array of scenarios that can be used to include/exclude test cases"          
+          { "description": "An array of scenarios that can be used to include/exclude test cases"
           , "type"       : "array"
           , "items"      : { "$ref": "#/definitions/scenario" }
           , "minItems"   : 0

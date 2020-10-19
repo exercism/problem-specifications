@@ -254,7 +254,7 @@ Each track should have the following structure:
 │   └── TESTS.md
 └── exercises
     └── hello-world
-        └── .meta        
+        └── .meta
         │   └── tests.toml (only if the exercise is based on canonical data)
         ├── hello-world_example.file
         ├── hello-world.file
