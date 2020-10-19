@@ -14,7 +14,7 @@ old = json.loads(subprocess.run([f"jq -r '[.. | objects | select(.uuid != null)]
 new = json.loads(subprocess.run([f"jq -r '[.. | objects | select(.uuid != null)]' {newf}"], stdout=subprocess.PIPE, shell=True).stdout.decode('utf-8'))
 
 # Convert new to dict uuid => case
-new = {c['uuid']: c for c in new}
+new = {case['uuid']: case for case in new}
 
 fails = set()
 deleted = set()
@@ -33,22 +33,22 @@ for case in old:
         fails.add(uuid)
         continue
     # Check for changes to immutable keys
-    for k in immutable_keys:
-        if case[k] != new[uuid][k]:
+    for key in immutable_keys:
+        if case[key] != new[uuid][key]:
             fails.add(uuid)
             break
 
 if len(fails) == 0 and len(deleted) == 0:
-    exit(0)
+    sys.exit(0)
 
 if len(fails) > 0:
     print('The following tests contain illegal mutations:')
-    for f in fails:
-        print(f" - {f} ({new[f]['description']})")
+    for failure in fails:
+        print(f" - {failure} ({new[failure]['description']})")
 
 if len(deleted) > 0:
     print('The following tests have been deleted illegally:')
-    for d in deleted:
-        print(f" - {d}")
+    for deletion in deleted:
+        print(f" - {deletion}")
 
-exit(1)
+sys.exit(1)
