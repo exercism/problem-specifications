@@ -47,6 +47,16 @@ An some examples of good usage:
 - "NASA, the United States' space agency, launched the Mariner 2 space probe in..." _(NASA is not expanded because the "National Aerospace and Space Administration" is much better known by its acronym than by its expanded name)_
 - "The Department of Motor Vehicles (DMV) is filled with sloths. That's why everything takes forever at the DMV" _(Define DMV the first time it is used)_
 
+#### Exceptions
+
+Some abbreviations are considered common, useful, and non-technical enough that we have decided to permit them:
+- `e.g.` or `eg`
+- `i.e.` or `ie`
+- `etc.` or `etc`
+- `docs`
+
+Contractions (e.g. "won't", "I'm", "that's") should be used sparingly if at all in exercise descriptions, but are not restricted in other language around the site (e.g. website copy, mentoring).
+
 ## Choice of words
 
 ### Mathematical and jargon terms.
