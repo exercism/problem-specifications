@@ -6,7 +6,7 @@ Example implementation of these workflow files [can be found in `exercism/javasc
 
 ## **HELP**: this looks like _a lot_ of work :sweat:
 
-The rest of the document is really to explain what's going on in the workflows. If you're in a hurry, and you really want to drop `.travis.yml`, but you can't invest right now in making the PR scripts are optimized, scroll down to the **~10 minute guide** on **Migrating from Travis**.
+The rest of the document is really to explain what's going on in the workflows. If you're in a hurry, and you really want to drop `.travis.yml`, but you can't invest right now in making the PR scripts are optimized, scroll down to the **~10 minute guide** on [**Migrating from Travis**](#migrating-from-travis).
 
 ## Track CI actions
 
