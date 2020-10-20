@@ -1,0 +1,368 @@
+{
+  "exercise": "complex-numbers",
+  "comments": [
+    " The canonical data assumes mathematically correct real   ",
+    " numbers. The testsuites should consider rounding errors  ",
+    " instead of testing for exact values for any non-integer  ",
+    " tests.                                                   ",
+    " Complex numbers z are represented as arrays [x, y] so    ",
+    " that z = x + i * y.                                      ",
+    " Pi is represented as a string \"pi\", euler's number is  ",
+    " represented as \"e\".                                    "
+  ],
+  "cases": [
+    {
+      "description": "Real part",
+      "cases": [
+        {
+          "uuid": "9f98e133-eb7f-45b0-9676-cce001cd6f7a",
+          "description": "Real part of a purely real number",
+          "property": "real",
+          "input": {
+            "z": [2, 0]
+          },
+          "expected": 2
+        },
+        {
+          "uuid": "07988e20-f287-4bb7-90cf-b32c4bffe0f3",
+          "description": "Real part of a purely imaginary number",
+          "property": "real",
+          "input": {
+            "z": [0, 2]
+          },
+          "expected": 0
+        },
+        {
+          "uuid": "4a370e86-939e-43de-a895-a00ca32da60a",
+          "description": "Real part of a number with real and imaginary part",
+          "property": "real",
+          "input": {
+            "z": [1, 2]
+          },
+          "expected": 1
+        }
+      ]
+    },
+    {
+      "description": "Imaginary part",
+      "cases": [
+        {
+          "uuid": "9b3fddef-4c12-4a99-b8f8-e3a42c7ccef6",
+          "description": "Imaginary part of a purely real number",
+          "property": "imaginary",
+          "input": {
+            "z": [1, 0]
+          },
+          "expected": 0
+        },
+        {
+          "uuid": "a8dafedd-535a-4ed3-8a39-fda103a2b01e",
+          "description": "Imaginary part of a purely imaginary number",
+          "property": "imaginary",
+          "input": {
+            "z": [0, 1]
+          },
+          "expected": 1
+        },
+        {
+          "uuid": "0f998f19-69ee-4c64-80ef-01b086feab80",
+          "description": "Imaginary part of a number with real and imaginary part",
+          "property": "imaginary",
+          "input":  {
+            "z": [1, 2]
+          },
+          "expected": 2
+        }
+      ]
+    },
+    {
+      "uuid": "a39b7fd6-6527-492f-8c34-609d2c913879",
+      "description": "Imaginary unit",
+      "property": "mul",
+      "input": {
+        "z1": [0, 1],
+        "z2": [0, 1]
+      },
+      "expected": [-1, 0]
+    },
+    {
+      "description": "Arithmetic",
+      "cases": [
+        {
+          "description": "Addition",
+          "cases": [
+            {
+              "uuid": "9a2c8de9-f068-4f6f-b41c-82232cc6c33e",
+              "description": "Add purely real numbers",
+              "property": "add",
+              "input": {
+                "z1": [1, 0],
+                "z2": [2, 0]
+              },
+              "expected": [3, 0]
+            },
+            {
+              "uuid": "657c55e1-b14b-4ba7-bd5c-19db22b7d659",
+              "description": "Add purely imaginary numbers",
+              "property": "add",
+              "input": {
+                "z1": [0, 1],
+                "z2": [0, 2]
+              },
+              "expected": [0, 3]
+            },
+            {
+              "uuid": "4e1395f5-572b-4ce8-bfa9-9a63056888da",
+              "description": "Add numbers with real and imaginary part",
+              "property": "add",
+              "input": {
+                "z1": [1, 2],
+                "z2": [3, 4]
+              },
+              "expected": [4, 6]
+            }
+          ]
+        },
+        {
+          "description": "Subtraction",
+          "cases": [
+            {
+              "uuid": "1155dc45-e4f7-44b8-af34-a91aa431475d",
+              "description": "Subtract purely real numbers",
+              "property": "sub",
+              "input": {
+                "z1": [1, 0],
+                "z2": [2, 0]
+              },
+              "expected": [-1, 0]
+            },
+            {
+              "uuid": "f95e9da8-acd5-4da4-ac7c-c861b02f774b",
+              "description": "Subtract purely imaginary numbers",
+              "property": "sub",
+              "input": {
+                "z1": [0, 1],
+                "z2": [0, 2]
+              },
+              "expected": [0, -1]
+            },
+            {
+              "uuid": "f876feb1-f9d1-4d34-b067-b599a8746400",
+              "description": "Subtract numbers with real and imaginary part",
+              "property": "sub",
+              "input": {
+                "z1": [1, 2],
+                "z2": [3, 4]
+              },
+              "expected": [-2, -2]
+            }
+          ]
+        },
+        {
+          "description": "Multiplication",
+          "cases": [
+            {
+              "uuid": "8a0366c0-9e16-431f-9fd7-40ac46ff4ec4",
+              "description": "Multiply purely real numbers",
+              "property": "mul",
+              "input": {
+                "z1": [1, 0],
+                "z2": [2, 0]
+              },
+              "expected": [2, 0]
+            },
+            {
+              "uuid": "e560ed2b-0b80-4b4f-90f2-63cefc911aaf",
+              "description": "Multiply purely imaginary numbers",
+              "property": "mul",
+              "input": {
+                "z1": [0, 1],
+                "z2": [0, 2]
+              },
+              "expected": [-2, 0]
+            },
+            {
+              "uuid": "4d1d10f0-f8d4-48a0-b1d0-f284ada567e6",
+              "description": "Multiply numbers with real and imaginary part",
+              "property": "mul",
+              "input": {
+                "z1": [1, 2],
+                "z2": [3, 4]
+              },
+              "expected": [-5, 10]
+            }
+          ]
+        },
+        {
+          "description": "Division",
+          "cases": [
+            {
+              "uuid": "b0571ddb-9045-412b-9c15-cd1d816d36c1",
+              "description": "Divide purely real numbers",
+              "property": "div",
+              "input": {
+                "z1": [1, 0],
+                "z2": [2, 0]
+              },
+              "expected": [0.5, 0]
+            },
+            {
+              "uuid": "5bb4c7e4-9934-4237-93cc-5780764fdbdd",
+              "description": "Divide purely imaginary numbers",
+              "property": "div",
+              "input": {
+                "z1": [0, 1],
+                "z2": [0, 2]
+              },
+              "expected": [0.5, 0]
+            },
+            {
+              "uuid": "c4e7fef5-64ac-4537-91c2-c6529707701f",
+              "description": "Divide numbers with real and imaginary part",
+              "property": "div",
+              "input": {
+                "z1": [1, 2],
+                "z2": [3, 4]
+              },
+              "expected": [0.44, 0.08]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Absolute value",
+      "cases": [
+        {
+          "uuid": "c56a7332-aad2-4437-83a0-b3580ecee843",
+          "description": "Absolute value of a positive purely real number",
+          "property": "abs",
+          "input": {
+            "z": [5, 0]
+          },
+          "expected": 5
+        },
+        {
+          "uuid": "cf88d7d3-ee74-4f4e-8a88-a1b0090ecb0c",
+          "description": "Absolute value of a negative purely real number",
+          "property": "abs",
+          "input": {
+            "z": [-5, 0]
+          },
+          "expected": 5
+        },
+        {
+          "uuid": "bbe26568-86c1-4bb4-ba7a-da5697e2b994",
+          "description": "Absolute value of a purely imaginary number with positive imaginary part",
+          "property": "abs",
+          "input": {
+            "z": [0, 5]
+          },
+          "expected": 5
+        },
+        {
+          "uuid": "3b48233d-468e-4276-9f59-70f4ca1f26f3",
+          "description": "Absolute value of a purely imaginary number with negative imaginary part",
+          "property": "abs",
+          "input": {
+            "z": [0, -5]
+          },
+          "expected": 5
+        },
+        {
+          "uuid": "fe400a9f-aa22-4b49-af92-51e0f5a2a6d3",
+          "description": "Absolute value of a number with real and imaginary part",
+          "property": "abs",
+          "input": {
+            "z": [3, 4]
+          },
+          "expected": 5
+        }
+      ]
+    },
+    {
+      "description": "Complex conjugate",
+      "cases": [
+        {
+          "uuid": "fb2d0792-e55a-4484-9443-df1eddfc84a2",
+          "description": "Conjugate a purely real number",
+          "property": "conjugate",
+          "input": {
+            "z": [5, 0]
+          },
+          "expected": [5, 0]
+        },
+        {
+          "uuid": "e37fe7ac-a968-4694-a460-66cb605f8691",
+          "description": "Conjugate a purely imaginary number",
+          "property": "conjugate",
+          "input": {
+            "z": [0, 5]
+          },
+          "expected": [0, -5]
+        },
+        {
+          "uuid": "f7704498-d0be-4192-aaf5-a1f3a7f43e68",
+          "description": "Conjugate a number with real and imaginary part",
+          "property": "conjugate",
+          "input": {
+            "z": [1, 1]
+          },
+          "expected": [1, -1]
+        }
+      ]
+    },
+    {
+      "description": "Complex exponential function",
+      "comments": [
+        " Defining the exponential function can be optional.       ",
+        " If the language used does not have sine and cosine       ",
+        " functions in the standard library, this will be          ",
+        " significantly more difficult than the rest of the exer-  ",
+        " cise and should probably not be part of the problem.     ",
+        " The recommended implementation uses Euler's formula      ",
+        " exp(ix) = cos(x) + i * sin(x). This is not an ideal sol- ",
+        " ution but works for the purpose of teaching complex      ",
+        " numbers.                                                 "
+      ],
+      "cases": [
+        {
+          "uuid": "6d96d4c6-2edb-445b-94a2-7de6d4caaf60",
+          "description": "Euler's identity/formula",
+          "property": "exp",
+          "input":  {
+            "z": [0, "pi"]
+          },
+          "expected": [-1, 0]
+        },
+        {
+          "uuid": "2d2c05a0-4038-4427-a24d-72f6624aa45f",
+          "description": "Exponential of 0",
+          "property": "exp",
+          "input": {
+            "z": [0, 0]
+          },
+          "expected": [1, 0]
+        },
+        {
+          "uuid": "ed87f1bd-b187-45d6-8ece-7e331232c809",
+          "description": "Exponential of a purely real number",
+          "property": "exp",
+          "input": {
+            "z": [1, 0]
+          },
+          "expected": ["e", 0]
+        },
+        {
+          "uuid": "08eedacc-5a95-44fc-8789-1547b27a8702",
+          "description": "Exponential of a number with real and imaginary part",
+          "property": "exp",
+          "input": {
+            "z": ["ln(2)", "pi"]
+          },
+          "expected": [-2, 0]
+        }
+      ]
+    }
+  ]
+}
