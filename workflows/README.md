@@ -89,13 +89,13 @@ In order to convert this quickly to GitHub Actions, take the following steps:
 
 ### Determine the template variables
 
-| variable                        | value                                |
-| ------------------------------- | ------------------------------------ |
-| `<track>`                       | `elm`                                |
-| `<image-name>`: `ubuntu-latest` |
-| `<action to setup tooling>`     | `actions/setup-node@v1`              |
-| `<install dependencies>`        | `npm ci` (happens inside `build.sh`) |
-| `<code-extensions>`             | `.elm`                               |
+| variable                    | value                                |
+| --------------------------- | ------------------------------------ |
+| `<track>`                   | `elm`                                |
+| `<image-name>`              | `ubuntu-latest`                      |
+| `<action to setup tooling>` | `actions/setup-node@v1`              |
+| `<install dependencies>`    | `npm ci` (happens inside `build.sh`) |
+| `<code-extensions>`         | `.elm`                               |
 
 > Found the setup action via [this search](https://github.com/actions/?q=setup+node&type=&language=).
 > Found the image name by looking at [default distribution for Travis](https://blog.travis-ci.com/2019-04-15-xenial-default-build-environment).
