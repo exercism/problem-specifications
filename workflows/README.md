@@ -130,12 +130,14 @@ bin/build.sh
 echo "No checks yet"
 ```
 
+Creating these as _separate_ binaries will allow for optimisation later. No need to in-line anything right now.
+
 ### Fill in the templates
 
 Here is the diff for `workflows/ci.yml`.
 
 ```diff
-  # .github/workflows/ci.yml
+# # .github/workflows/ci.yml
 
   # This workflow will do a clean install of node dependencies and run tests across different versions
   #
@@ -151,8 +153,10 @@ Here is the diff for `workflows/ci.yml`.
 - # - https://github.com/marketplace?type=actions&query=setup
 - #
   # Requires scripts:
-  # - scripts/ci-check
-  # - scripts/ci
+- # - scripts/ci-check
+- # - scripts/ci
++ # - bin/ci-check
++ # - bin/ci
 
 - name: <track> / master
 + name: elm / master
@@ -221,9 +225,9 @@ Here is the diff for `workflows/ci.yml`.
 `workflows/pr.yml` has the same changes, with the notable exception of the bash-fu that calls the `pr-check` and `pr` scripts with each changed file as argument:
 
 ```diff
-  # .github/workflows/pr.yml
+# # .github/workflows/pr.yml
 
-  # ...
+# # ...
 
 -       - name: Run exercism/<track> ci pre-check (stub files, config integrity) for changed exercises
 +       - name: Run exercism/elm ci pre-check (stub files, config integrity) for changed exercises
@@ -242,11 +246,14 @@ Here is the diff for `workflows/ci.yml`.
 
 This is enough to convert to GitHub Actions, with the possibility to optimise your scripts.
 
-1. From `build.sh`, remove steps that should run only once, and extract them to the `-check.sh` files.
+1. From `build.sh`, remove steps that should run only once, and extract them to the `ci-check.sh` and `pre-check.sh` files (hint, you can create `lint.sh`, and call that from both "scripts")
 2. To `pr.sh` and `pr-check.sh`, add optimisations that use the input arguments to determine which files or exercises to check.
 3. Add additional checks
+4. Add documentation how to run checks locally, and what each one tries to accomplish.
 
 ## Troubleshooting
+
+If you run into any issues or want someone to review your workflows, please ping the `@exercism/github-actions` team.
 
 > **Changed a top-level file that should trigger a CI run on all exercises**
 
