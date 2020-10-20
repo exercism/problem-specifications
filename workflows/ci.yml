@@ -6,6 +6,11 @@
 # Replace <install dependencies> with a cli command to install the dependencies
 # Replace <code-extensions> with file extensions that should trigger the workflow
 #
+# Find Github Actions to setup tooling here:
+# - https://github.com/actions/?q=setup&type=&language=
+# - https://github.com/actions/starter-workflows/tree/main/ci
+# - https://github.com/marketplace?type=actions&query=setup
+#
 # Requires scripts:
 # - scripts/ci-check
 # - scripts/ci

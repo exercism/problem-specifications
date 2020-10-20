@@ -37,7 +37,13 @@ For each action think about how often it should run.
 
 It can be very helpful to make the actions that should run, available locally as well. This means that the scripts that do the actual work are also manually runnable. **Do not inline** the action inside the workflow files. For example, checking for stubs can be completely bashed out inside the workflow file, but the recommendation here is to create a new executable script `scripts/ci-check` instead.
 
+> "But the command is very short, e.g. `eslint . --ext ts --ext tsx`".
+>
+> When this command needs to be updated, it now needs to update in all the places in the documentation, the workflow files, ánd in the _minds of the maintainers_. Extracting this to a script resolves all that. Reading a workflow file can also be **very** daunting.
+
 If the track has a single "top-level" dependency file and/or other configuration files, add an integrity step (to exist alongside a `scripts/sync` or `bin/sync`) that ensures the top-level/base files are the same as the one copied to the exercise directories. Now dependencies can be updates, synced across the repository, and ensures that all exercises have the same configuration.
+
+If the track uses additional workflows that require access to the GitHub token or other secrets, it's best practice to pin **all** actions used in the workflow to a specific commit. See [GitHub's security hardening guide][github-actions-security] for details. For example, instead of `uses: julia-actions/setup-julia@v1`, use `uses: julia-actions/setup-julia@d26d1111976eae5f00db04f0515ab744ec9cd79e # 1.3.1`.
 
 ## Templates
 
@@ -79,4 +85,5 @@ git commit -m "Make scripts/xxx executable"
 [git-index]: https://www.git-scm.com/docs/git-update-index
 [git-javascript]: https://github.com/exercism/javascript/tree/f49ac022d3a55cbbb48dadbc6dbf1d407de72187/.github/workflows
 [github-workflow-dispatch]: https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/
+[github-security-guide]: https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/security-hardening-for-github-actions#using-third-party-actions
 [wiki-integrity]: https://en.wikipedia.org/wiki/File_verification
