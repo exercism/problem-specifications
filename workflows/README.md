@@ -45,6 +45,16 @@ It can be very helpful to make the actions that should run, available locally as
 >
 > When this command needs to be updated, it now needs to update in all the places in the documentation, the workflow files, ánd in the _minds of the maintainers_. Extracting this to a script resolves all that. Reading a workflow file can also be **very** daunting.
 
+### PR exercises changed
+
+The `scripts/pr` and `scripts/pr-check` scripts are ran with arguments: each file that has been changed or added in this PR. For example, if `two-fer` has been updated, a call might look like this:
+
+```bash
+scripts/pr exercises/two-fer/README.md exercises/two-fer/.meta/example.ext
+```
+
+It's recommended to run any actions against the changed _exercise_ and not the changed _file_. This is because changing a file is likely to trigger changes for the entire exercise (think: configuration, packages).
+
 ### Integrity
 
 If the track has a single "top-level" dependency file and/or other configuration files, add an [integrity][wiki-integrity] step (to exist alongside a `scripts/sync` or `bin/sync`, which would copy all configuration files to all exercises) that ensures the top-level/base files are the same as the one copied to the exercise directories. Now dependencies can be updates, synced across the repository, and ensures that all exercises have the same configuration.
