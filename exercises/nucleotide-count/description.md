@@ -1,4 +1,4 @@
-Most people inherit not only their socioeconomic class from their parents, but also DNA, a set of chemical instructions that influence how their bodies are constructed!
+Each of us inherits from our biological parents a set of chemical instructions known as DNA that influence how our bodies are constructed. All known life depends on DNA or something very similar!
 
 > Note: You do not need to understand anything about nucleotides or DNA to complete this exercise.
 
