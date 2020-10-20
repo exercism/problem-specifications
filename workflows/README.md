@@ -45,9 +45,29 @@ It can be very helpful to make the actions that should run, available locally as
 >
 > When this command needs to be updated, it now needs to update in all the places in the documentation, the workflow files, ánd in the _minds of the maintainers_. Extracting this to a script resolves all that. Reading a workflow file can also be **very** daunting.
 
-If the track has a single "top-level" dependency file and/or other configuration files, add an integrity step (to exist alongside a `scripts/sync` or `bin/sync`) that ensures the top-level/base files are the same as the one copied to the exercise directories. Now dependencies can be updates, synced across the repository, and ensures that all exercises have the same configuration.
+### Integrity
 
-If the track uses additional workflows that require access to the GitHub token or other secrets, it's best practice to pin **all** actions used in the workflow to a specific commit. See [GitHub's security hardening guide][github-actions-security] for details. For example, instead of `uses: julia-actions/setup-julia@v1`, use `uses: julia-actions/setup-julia@d26d1111976eae5f00db04f0515ab744ec9cd79e # 1.3.1`.
+If the track has a single "top-level" dependency file and/or other configuration files, add an [integrity][wiki-integrity] step (to exist alongside a `scripts/sync` or `bin/sync`, which would copy all configuration files to all exercises) that ensures the top-level/base files are the same as the one copied to the exercise directories. Now dependencies can be updates, synced across the repository, and ensures that all exercises have the same configuration.
+
+A common way to accomplish this is to use a checksum. Ubuntu (and various other Linux distributions) comes with a tool called `sha1sum`, but using _whichever_ method to hash or reduce the configuration file (md5, sha1, crc32) to a checksum value, would work:
+
+```bash
+$ sha1sum README.md
+cd58091c5043bf21f00d39ff1740d8b2976deeff *README.md
+```
+
+### Security
+
+If the track uses additional workflows that require access to the GitHub token or other secrets, it's best practice to pin **all** actions used in the workflow to a specific commit. See [GitHub's security hardening guide][github-actions-security] for details.
+
+For example:
+
+```diff
+- uses: julia-actions/setup-julia@v1
++ uses: julia-actions/setup-julia@d26d1111976eae5f00db04f0515ab744ec9cd79e # 1.3.1
+```
+
+If the tooling has lockfiles for dependency management, consider checking it into the repository and use a "frozen lockfile" inside the workflow files. For example: `npm ci`, `yarn install --frozen-lockfile` and `bundle install --frozen`. This ensures that the lockfile is up-to-date when changing dependencies and prevents malicious packages to come in.
 
 ## Templates
 
