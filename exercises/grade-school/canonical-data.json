@@ -16,7 +16,7 @@
         },
         {
             "uuid": "233be705-dd58-4968-889d-fb3c7954c9cc",
-            "description": "Adding more student adds them to the sorted roster",
+            "description": "Adding more students adds them to the sorted roster",
             "property": "roster",
             "input": {
               "students": [["Blair", 2], ["James", 2], ["Paul", 2]]
