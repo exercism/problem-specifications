@@ -4,9 +4,9 @@ The content in this folder doesn't _necessarily_ belong in this repository, but 
 
 Example implementation of these workflow files [can be found in `exercism/javascript`][git-javascript].
 
-## **HELP** this looks like a lot of work
+## **HELP**: this looks like _a lot_ of work :sweat:
 
-The rest of the document is really to explain what's going on in the workflows. If you're in a hurry, and you really want to drop `.travis.yml`, but you can't invest right now in making the PR scripts are optimized, scroll down to **Migrating from Travis**.
+The rest of the document is really to explain what's going on in the workflows. If you're in a hurry, and you really want to drop `.travis.yml`, but you can't invest right now in making the PR scripts are optimized, scroll down to the **~10 minute guide** on **Migrating from Travis**.
 
 ## Track CI actions
 
@@ -272,5 +272,5 @@ git commit -m "Make scripts/xxx executable"
 [git-index]: https://www.git-scm.com/docs/git-update-index
 [git-javascript]: https://github.com/exercism/javascript/tree/f49ac022d3a55cbbb48dadbc6dbf1d407de72187/.github/workflows
 [github-workflow-dispatch]: https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/
-[github-security-guide]: https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/security-hardening-for-github-actions#using-third-party-actions
+[github-actions-security]: https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/security-hardening-for-github-actions#using-third-party-actions
 [wiki-integrity]: https://en.wikipedia.org/wiki/File_verification
