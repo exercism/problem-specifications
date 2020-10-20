@@ -1,4 +1,4 @@
-# This workflow will do a clean install of node dependencies and run tests across different versions
+# This workflow will do a clean install of the dependencies and run tests across different versions
 #
 # Replace <track> with the track name
 # Replace <image-name> with an image to run the jobs on
@@ -31,7 +31,7 @@ jobs:
       - name: Use <setup tooling>
         uses: <action to setup tooling>
         with:
-          # here, use the LTS/stable version of the track's tooling
+          # Here, use the LTS/stable version of the track's tooling, e.g.:
           # node-version: 12.x
 
       - name: Install project dependencies
@@ -45,15 +45,16 @@ jobs:
 
     strategy:
       matrix:
-        # here, add all SUPPORTED versions only
+        # Here, add all SUPPORTED versions only, e.g.:
         # version: [10.x, 12.x, 14.x]
+        # Optionally, add more matrix variables, such as os or arch
 
     steps:
       - uses: actions/checkout@v2
       - name: Use <setup tooling> ${{ matrix.version }}
         uses: <action to setup tooling>
         with:
-          # below: see how to inject the version
+          # Use the ${{ matrix.x }} format to inject variables into commands
           # node-version: ${{ matrix.version }}
 
       - name: Install project dependencies
