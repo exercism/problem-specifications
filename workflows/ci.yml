@@ -1,0 +1,58 @@
+# This workflow will do a clean install of node dependencies and run tests across different versions
+#
+# Replace <track> with the track name
+# Replace <image-name> with an image to run the jobs on
+# Replace <action to setup tooling> with a github action to setup tooling on the image
+# Replace <install dependencies> with a cli command to install the dependencies
+# Replace <code-extensions> with file extensions that should trigger the workflow
+#
+# Requires scripts:
+# - scripts/ci-check
+# - scripts/ci
+
+name: <track> / master
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  precheck:
+    runs-on: <image-name>
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use <setup tooling>
+        uses: <action to setup tooling>
+        with:
+          # here, use the LTS/stable version of the track's tooling
+          # node-version: 12.x
+
+      - name: Install project dependencies
+        run: <install dependencies>
+
+      - name: Run exercism/<track> ci pre-check (checks config, lint code) for all exercises
+        run: scripts/ci-check
+
+  ci:
+    runs-on: <image-name>
+
+    strategy:
+      matrix:
+        # here, add all SUPPORTED versions only
+        # version: [10.x, 12.x, 14.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use <setup tooling> ${{ matrix.version }}
+        uses: <action to setup tooling>
+        with:
+          # below: see how to inject the version
+          # node-version: ${{ matrix.version }}
+
+      - name: Install project dependencies
+        run: <install dependencies>
+
+      - name: Run exercism/<track> ci (runs tests) for all exercises
+        run: scripts/ci
