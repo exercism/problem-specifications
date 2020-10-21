@@ -1,0 +1,64 @@
+# This workflow will do a clean install of the dependencies and run tests across different versions
+#
+# Replace <track> with the track name
+# Replace <image-name> with an image to run the jobs on
+# Replace <action to setup tooling> with a github action to setup tooling on the image
+# Replace <install dependencies> with a cli command to install the dependencies
+# Replace <code-extensions> with file extensions that should trigger the workflow
+#
+# Find Github Actions to setup tooling here:
+# - https://github.com/actions/?q=setup&type=&language=
+# - https://github.com/actions/starter-workflows/tree/main/ci
+# - https://github.com/marketplace?type=actions&query=setup
+#
+# Requires scripts:
+# - scripts/ci-check
+# - scripts/ci
+
+name: <track> / main
+
+on:
+  push:
+    branches: [master, main]
+  workflow_dispatch:
+
+jobs:
+  precheck:
+    runs-on: <image-name>
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use <setup tooling>
+        uses: <action to setup tooling>
+        with:
+          # Here, use the LTS/stable version of the track's tooling, e.g.:
+          # node-version: 12.x
+
+      - name: Install project dependencies
+        run: <install dependencies>
+
+      - name: Run exercism/<track> ci pre-check (checks config, lint code) for all exercises
+        run: scripts/ci-check
+
+  ci:
+    runs-on: <image-name>
+
+    strategy:
+      matrix:
+        # Here, add all SUPPORTED versions only, e.g.:
+        # version: [10.x, 12.x, 14.x]
+        # Optionally, add more matrix variables, such as os or arch
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use <setup tooling> ${{ matrix.version }}
+        uses: <action to setup tooling>
+        with:
+          # Use the ${{ matrix.x }} format to inject variables into commands
+          # node-version: ${{ matrix.version }}
+
+      - name: Install project dependencies
+        run: <install dependencies>
+
+      - name: Run exercism/<track> ci (runs tests) for all exercises
+        run: scripts/ci
