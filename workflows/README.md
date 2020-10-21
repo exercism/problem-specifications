@@ -1,16 +1,24 @@
 # Workflow templates
 
-The content in this folder doesn't _necessarily_ belong in this repository, but we don't have a great place to put it that allows for good discoverability. The GitHub Actions workflows in this folder can be adapted to work with any CI, because the base structure will remain the same.
+This document explains how to set up Continuous Integration (CI) workflows for an Exercism Language Track using GitHub Actions (GHA). It provides best practices and examples for you to use to make your own fast, reliable and robust CI workflows. The GHA workflows in this folder can be adapted to work with any CI, because the base structure will remain the same.
+
+It will:
+- Outline the ideal CI workflow
+- Discuss considerations and recommendations
+- Provide you with some templates to use
+- Leave you with a guide to migrating from Travis
+
+_Note: The content in this folder doesn't **necessarily** belong in this repository, but we don't have a great place to put it that allows for good discoverability. _
 
 Example implementation of these workflow files [can be found in `exercism/javascript`][git-javascript].
 
 ## **HELP**: this looks like _a lot_ of work :sweat:
 
-The rest of the document is really to explain what's going on in the workflows. If you're in a hurry, and you really want to drop `.travis.yml`, but you can't invest right now in making the PR scripts are optimized, scroll down to the **~10 minute guide** on [**Migrating from Travis**](#migrating-from-travis).
+The rest of the document is designed to explain how the workflows work. If you're in a hurry, and you just want to switch from Travis or Circle to GHA without optimizing the PR scripts, scroll down to the **~10 minute guide** on [**Migrating from Travis**](#migrating-from-travis).
 
 ## Track CI actions
 
-The recommended actions are as follows:
+The recommended actions for checking the content of your repository has integrity are as follows:
 
 1. [`configlet` linting][git-configlet] in order to check `config.json`
 2. check for stubs
@@ -18,7 +26,7 @@ The recommended actions are as follows:
 4. lint the exercises using a "maintainers" configuration
 5. test the exercises using the example/examplar files (can include build step)
 
-There can be track-specific actions, for example:
+There can also be track-specific actions. For example:
 
 1. check the [integrity][wiki-integrity] of the exercise configurations
 2. check the formatting of the exercise files
@@ -32,22 +40,24 @@ And perhaps you'd want more Quality Of Life checks, such as:
 
 ## Recommendations
 
+### Frequency of running checks
+
 For each action think about how often it should run.
 
-- The `configlet` linting is something that's so important (because a track can break if the `config.json` breaks), that it probably should run, always, **but** only needs to run once per commit.
+- The `configlet` linting is something that's so important (because a track can break if the `config.json` breaks) that it should probably always run, **but** only needs to run once per commit.
 - The existence or integrity of files only needs to run once per commit.
 - If a track is supposed to run under multiple runtime-versions or compiler-versions, building/testing exercises should be ran against each supported version
 - PRs _probably_ only need to run actions on files _added_ or _changed_, but since a file can influence an exercise, it's safer to run the actions for the _exercise_, if one of its files changes.
 
-It can be very helpful to make the actions that should run, available locally as well. This means that the scripts that do the actual work are also manually runnable. **Do not inline** the action inside the workflow files. For example, checking for stubs can be completely bashed out inside the workflow file, but the recommendation here is to create a new executable script `scripts/ci-check` instead.
+It can be very helpful to make the actions that should run, available locally as well. This means that the scripts that do the actual work are also manually runnable. To achieve this **do not inline** the action inside the workflow files., but create a standalone script. For example, checking for stubs can be completely bashed out inside the workflow file, but the recommendation here is to create a new executable script `scripts/ci-check` instead.
 
 > "But the command is very short, e.g. `eslint . --ext ts --ext tsx`".
 >
 > When this command needs to be updated, it now needs to update in all the places in the documentation, the workflow files, ánd in the _minds of the maintainers_. Extracting this to a script resolves all that. Reading a workflow file can also be **very** daunting.
 
-### PR exercises changed
+### Checks on PRs where exercises change
 
-The `scripts/pr` and `scripts/pr-check` scripts are ran with arguments: each file that has been changed or added in this PR. For example, if `two-fer` has been updated, a call might look like this:
+The `scripts/pr` and `scripts/pr-check` scripts (see [templates](#templates)) are run with multiple arguments, one for each file that has been changed or added in this PR. For example, if `two-fer` has been updated, a call might look like this:
 
 ```bash
 scripts/pr exercises/two-fer/README.md exercises/two-fer/.meta/example.ext
@@ -57,11 +67,11 @@ It's recommended to run any actions against the changed _exercise_ and not the c
 
 > **Not ready?** / **Complex?**
 >
-> Before implementing this optimization, it may be ignored! The migration guide hints at adding at a later stage. If the input arguments are ignored, all the checks are running on all the exercises. **This is perfectly fine**. It will just take longer.
+> Before implementing this optimization, it may be safely ignored! The migration guide hints at adding at a later stage. If the input arguments are ignored, all the checks will run on all the exercises. **This is perfectly fine**. It will just take longer.
 
-### Integrity
+### Integrity checks
 
-If the track has a single "top-level" dependency file and/or other configuration files, add an [integrity][wiki-integrity] step (to exist alongside a `scripts/sync` or `bin/sync`, which would copy all configuration files to all exercises) that ensures the top-level/base files are the same as the one copied to the exercise directories. Now dependencies can be updates, synced across the repository, and ensures that all exercises have the same configuration.
+If the track has a single "top-level" dependency file and/or other configuration files, add an [integrity][wiki-integrity] step (that exists alongside a `scripts/sync` or `bin/sync`, which would copy all configuration files to all exercises), which ensures that the top-level/base files are the same as the one copied to the exercise directories. Now dependencies can be updated, synced across the repository, and we can ensure that all exercises have the same configuration.
 
 A common way to accomplish this is to use a checksum. Ubuntu (and various other Linux distributions) comes with a tool called `sha1sum`, but using _whichever_ method to hash or reduce the configuration file (md5, sha1, crc32) to a checksum value, would work:
 
@@ -70,7 +80,7 @@ $ sha1sum README.md
 cd58091c5043bf21f00d39ff1740d8b2976deeff *README.md
 ```
 
-### Security
+### Security checks
 
 If the track uses additional workflows that require access to the GitHub token or other secrets, it's best practice to pin **all** actions used in the workflow to a specific commit. See [GitHub's security hardening guide][github-actions-security] for details.
 
@@ -88,7 +98,7 @@ If the tooling has lockfiles for dependency management, consider checking it int
 In this directory at minimum there are the following templates:
 
 - `configlet.yml`: This workflow will do a fetch the latest configlet binary and lint this repository. Run on every commit. For PRs, runs on the actual commit and a "after merge" tree.
-- `ci.yml`: This workflow **only runs on `master`**, once on each commit.
+- `ci.yml`: This workflow **only runs on the main branch (`master` or `main` by default)**, once on each commit.
   1. Run a 'pre-check' command (check for stubs, lint, docs, etc.) for all exercises
   2. Run a 'ci' command (build and test) for multiple versions, for all exercises
 - `pr.ci.yml`: This workflow **only runs on PRs**, once on each commit.
@@ -197,7 +207,7 @@ Here is the diff for `workflows/ci.yml`.
 
   on:
     push:
-      branches: [master]
+      branches: [master, main]
     workflow_dispatch:
 
   jobs:

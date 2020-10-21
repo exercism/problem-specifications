@@ -15,11 +15,11 @@
 # - scripts/ci-check
 # - scripts/ci
 
-name: <track> / master
+name: <track> / main
 
 on:
   push:
-    branches: [master]
+    branches: [master, main]
   workflow_dispatch:
 
 jobs:
