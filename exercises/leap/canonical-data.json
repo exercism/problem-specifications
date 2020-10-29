@@ -57,7 +57,7 @@
     },
     {
       "uuid": "42ee56ad-d3e6-48f1-8e3f-c84078d916fc",
-      "description": "year divisible by 400 in leap year",
+      "description": "year divisible by 400 is leap year",
       "property": "leapYear",
       "input": {
         "year": 2000
