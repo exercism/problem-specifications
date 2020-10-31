@@ -96,6 +96,50 @@
         "goalBucket": "two",
         "otherBucket": 2
       }
+    },
+    {
+      "uuid": "449be72d-b10a-4f4b-a959-ca741e333b72",
+      "description": "Not possible to reach the goal",
+      "property": "measure",
+      "input": {
+        "bucketOne": 6,
+        "bucketTwo": 15,
+        "goal": 5,
+        "startBucket": "one"
+      },
+      "expected": {
+        "error": "impossible"
+      }
+    },
+    {
+      "uuid": "aac38b7a-77f4-4d62-9b91-8846d533b054",
+      "description": "With the same buckets but a different goal, then it is possible",
+      "property": "measure",
+      "input": {
+        "bucketOne": 6,
+        "bucketTwo": 15,
+        "goal": 9,
+        "startBucket": "one"
+      },
+      "expected": {
+        "moves": 10,
+        "goalBucket": "two",
+        "otherBucket": 0
+      }
+    },
+    {
+      "uuid": "74633132-0ccf-49de-8450-af4ab2e3b299",
+      "description": "Goal larger than both buckets is impossible",
+      "property": "measure",
+      "input": {
+        "bucketOne": 5,
+        "bucketTwo": 7,
+        "goal": 8,
+        "startBucket": "one"
+      },
+      "expected": {
+        "error": "impossible"
+      }
     }
   ]
 }
