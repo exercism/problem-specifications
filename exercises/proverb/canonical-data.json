@@ -103,6 +103,21 @@
                 "For want of a soldier the battle was lost.",
                 "And all for the want of a pin."
             ]
+        },
+        {
+          "uuid": "4da2d184-a631-4f31-b770-52cccca54dd1",
+          "description": "five pieces modernized",
+          "property": "recite",
+          "input": {
+            "strings": ["apple", "pin", "gun", "soldier", "battle"]
+          },
+          "expected": [
+            "For want of an apple the pin was lost.",
+            "For want of a pin the gun was lost.",
+            "For want of a gun the soldier was lost.",
+            "For want of a soldier the battle was lost.",
+            "And all for the want of an apple."
+          ]
         }
     ]
 }
