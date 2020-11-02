@@ -106,7 +106,7 @@
         },
         {
           "uuid": "4da2d184-a631-4f31-b770-52cccca54dd1",
-          "description": "five pieces modernized",
+          "description": "item beginning with vowel",
           "property": "recite",
           "input": {
             "strings": ["apple", "pin", "gun", "soldier", "battle"]
