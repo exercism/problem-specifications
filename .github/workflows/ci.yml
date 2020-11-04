@@ -2,10 +2,6 @@ name: CI
 
 on:
   pull_request:
-  push:
-    branches:
-      - master
-  workflow_dispatch:
 
 jobs:
   required-files:
@@ -26,21 +22,12 @@ jobs:
           path: 'new'
 
       # Pull Requests
-      - name: Checkout the target branch (PRs)
+      - name: Checkout the target branch
         uses: actions/checkout@v2
-        if: github.event_name == 'pull_request'
         with:
           ref: '${{ github.base_ref }}'
           path: 'old'
-      
-      # Pushes
-      - name: Checkout the previous commit (Pushes)
-        uses: actions/checkout@v2
-        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-        with:
-          ref: '${{ github.sha }}~'
-          path: 'old'
-      
+
       - name: Check that no test has been mutated
         run: |
           for oldf in old/exercises/*/canonical-data.json; do
