@@ -146,11 +146,11 @@ If you're unsure where to make the change, ask us, and we'll help you figure it 
 
 Once you've updated the test suite, there are a few things you'll want to check.
 
-- Make sure the [reference solution](#reference-solution) is still passing.
+- Make sure the reference solution is still passing.
 - Run the full, track-level test suite, if available.
   If the track has a way to automatically run all the tests against their
   reference solutions, it will be documented in the README.
-- Run [configlet](#track-level-linting-with-configlet), the track-level linter.
+- Run configlet, the track-level linter.
 
 You can also take a look at the `.travis.yml` file to see what the continuous
 integration system will do to verify the track.
