@@ -1,1 +1,20 @@
+# OS specific auto-generated folders and files
+*.swp
+.DS_Store
+
+# Platform specific tools (use fetch-configlet)
+bin/configlet
+bin/configlet.exe
+
+# IDE folders and files
+.idea
+
+# package.json generated content
 node_modules
+
+# Ignore npm error/log
+npm-debug.log
+
+# Ignore yarn lockfile and error, in case someone accidentally runs yarn
+yarn.lock
+yarn-error.log
