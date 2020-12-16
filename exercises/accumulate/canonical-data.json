@@ -1,6 +1,6 @@
 {
   "exercise": "accumulate",
-  "description": [
+  "comments": [
     " JSON doesn't allow for functions, and this exercise ",
     " passes in a function as one of the inputs. These    ",
     " inputs are represented using pseudocode (string).   ",
