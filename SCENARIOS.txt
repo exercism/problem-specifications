@@ -2,6 +2,7 @@ big-integer
 floating-point
 immutable
 library-test
+local-scope
 unicode
 input-validation
 runtime-validation
