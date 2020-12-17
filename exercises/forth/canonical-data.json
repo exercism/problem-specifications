@@ -343,10 +343,7 @@
           "description": "can consist of built-in words",
           "property": "evaluate",
           "input": {
-            "instructions": [
-              ": dup-twice dup dup ;",
-              "1 dup-twice"
-            ]
+            "instructions": [": dup-twice dup dup ;", "1 dup-twice"]
           },
           "expected": [1, 1, 1]
         },
@@ -355,10 +352,7 @@
           "description": "execute in the right order",
           "property": "evaluate",
           "input": {
-            "instructions": [
-              ": countup 1 2 3 ;",
-              "countup"
-            ]
+            "instructions": [": countup 1 2 3 ;", "countup"]
           },
           "expected": [1, 2, 3]
         },
@@ -367,11 +361,7 @@
           "description": "can override other user-defined words",
           "property": "evaluate",
           "input": {
-            "instructions": [
-              ": foo dup ;",
-              ": foo dup dup ;",
-              "1 foo"
-            ]
+            "instructions": [": foo dup ;", ": foo dup dup ;", "1 foo"]
           },
           "expected": [1, 1, 1]
         },
@@ -380,10 +370,7 @@
           "description": "can override built-in words",
           "property": "evaluate",
           "input": {
-            "instructions": [
-              ": swap dup ;",
-              "1 swap"
-            ]
+            "instructions": [": swap dup ;", "1 swap"]
           },
           "expected": [1, 1]
         },
@@ -392,10 +379,7 @@
           "description": "can override built-in operators",
           "property": "evaluate",
           "input": {
-            "instructions": [
-              ": + * ;",
-              "3 4 +"
-            ]
+            "instructions": [": + * ;", "3 4 +"]
           },
           "expected": [12]
         },
@@ -404,12 +388,7 @@
           "description": "can use different words with the same name",
           "property": "evaluate",
           "input": {
-            "instructions": [
-              ": foo 5 ;",
-              ": bar foo ;",
-              ": foo 6 ;",
-              "bar foo"
-            ]
+            "instructions": [": foo 5 ;", ": bar foo ;", ": foo 6 ;", "bar foo"]
           },
           "expected": [5, 6]
         },
@@ -418,11 +397,7 @@
           "description": "can define word that uses word with the same name",
           "property": "evaluate",
           "input": {
-            "instructions": [
-              ": foo 10 ;",
-              ": foo foo 1 + ;",
-              "foo"
-            ]
+            "instructions": [": foo 10 ;", ": foo foo 1 + ;", "foo"]
           },
           "expected": [11]
         },
@@ -499,10 +474,7 @@
           "description": "user-defined words are case-insensitive",
           "property": "evaluate",
           "input": {
-            "instructions": [
-              ": foo dup ;",
-              "1 FOO Foo foo"
-            ]
+            "instructions": [": foo dup ;", "1 FOO Foo foo"]
           },
           "expected": [1, 1, 1, 1]
         },
@@ -511,10 +483,7 @@
           "description": "definitions are case-insensitive",
           "property": "evaluate",
           "input": {
-            "instructions": [
-              ": SWAP DUP Dup dup ;",
-              "1 swap"
-            ]
+            "instructions": [": SWAP DUP Dup dup ;", "1 swap"]
           },
           "expected": [1, 1, 1, 1]
         }
