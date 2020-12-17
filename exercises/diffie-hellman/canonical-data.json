@@ -1,18 +1,20 @@
 {
   "exercise": "diffie-hellman",
   "comments": [
-    "Optional tests to consider:",
-    "* Validation of parameters:",
-    "  Validate that `p`, `g` are valid.",
-    "  Validate that keys given as inputs are valid.",
-    "  Resources that show what happens if parameters are not validated:",
-    "  http://cryptopals.com/sets/5/challenges/34",
-    "  http://cryptopals.com/sets/5/challenges/35",
-    "* Large numbers:",
-    "  Although the calculations fundamentally do not require large numbers,",
-    "  this is a reasonable real-world use for them",
-    "  and it may be instructive to have an exercise on their use.",
-    "  Consult tracks with this exercise (such as the Go track) for possible inputs to use."
+    "Optional tests to consider:                                              ",
+    "                                                                         ",
+    "* Validation of parameters:                                              ",
+    "  - Validate that `p`, `g` are valid.                                    ",
+    "  - Validate that keys given as inputs are valid.                        ",
+    "  Resources that show what happens if parameters are not validated:      ",
+    "  http://cryptopals.com/sets/5/challenges/34                             ",
+    "  http://cryptopals.com/sets/5/challenges/35                             ",
+    "                                                                         ",
+    "* Large numbers:                                                         ",
+    "  Although the calculations fundamentally do not require large numbers,  ",
+    "  this is a reasonable real-world use for them and it may be instructive ",
+    "  to have an exercise on their use. Consult tracks with this exercise    ",
+    "  (such as the Go track) for possible inputs to use.                     "
   ],
   "cases": [
     {
