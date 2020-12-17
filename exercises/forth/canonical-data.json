@@ -17,6 +17,15 @@
             "instructions": ["1 2 3 4 5"]
           },
           "expected": [1, 2, 3, 4, 5]
+        },
+        {
+          "uuid": "fd7a8da2-6818-4203-a866-fed0714e7aa0",
+          "description": "pushes negative numbers onto the stack",
+          "property": "evaluate",
+          "input": {
+            "instructions": ["-1 -2 -3 -4 -5"]
+          },
+          "expected": [-1, -2, -3, -4, -5]
         }
       ]
     },
