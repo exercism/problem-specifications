@@ -497,6 +497,22 @@
           "expected": {
             "error": "undefined operation"
           }
+        },
+        {
+          "uuid": "3c8bfef3-edbb-49c1-9993-21d4030043cb",
+          "description": "only defines locally",
+          "comments": [
+            "This test is meant to determine if instructions that define words are executed in the state of the program or locally.",
+            "For example, in OOP-based approaches, the words should be defined in the same scope,",
+            "or local to the instance the instructions were evaluated in."
+          ],
+          "scenarios": ["local-scope"],
+          "property": "evaluateBoth",
+          "input": {
+            "instructionsFirst": [": + - ;", "1 1 +"],
+            "instructionsSecond": ["1 1 +"]
+          },
+          "expected": [[0], [2]]
         }
       ]
     },
