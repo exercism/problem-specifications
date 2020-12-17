@@ -48,6 +48,26 @@
       "expected": 8
     },
     {
+      "uuid": "0d25f8d7-4897-4338-a033-2d3d7a9af688",
+      "description": "can calculate public key when given a different private key",
+      "comments": [
+        "As this test is intended to test the immutability / purity           ",
+        "of the underlying structure, when implemented, it should first get a ",
+        "public key from different values, for example from the test with     ",
+        "uuid (b4161d8e-53a1-4241-ae8f-48cc86527f22).                         "
+      ],
+      "property": "publicKey",
+      "input": {
+        "p": 23,
+        "g": 5,
+        "privateKey": 15
+      },
+      "expected": 19,
+      "scenarios": [
+        "immutable"
+      ]
+    },
+    {
       "uuid": "cd02ad45-3f52-4510-99cc-5161dad948a8",
       "description": "can calculate secret using other party's public key",
       "property": "secret",
