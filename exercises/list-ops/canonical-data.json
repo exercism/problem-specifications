@@ -278,6 +278,9 @@
     },
     {
       "description": "folds (reduces) the given list from the left with a function",
+      "comments": [
+        "For function: acc is the accumulator and el is the current element"
+      ],
       "cases": [
         {
           "uuid": "36549237-f765-4a4c-bfd9-5d3a8f7b07d2",
@@ -329,6 +332,9 @@
     },
     {
       "description": "folds (reduces) the given list from the right with a function",
+      "comments": [
+        "For function: acc is the accumulator and el is the current element"
+      ],
       "cases": [
         {
           "uuid": "17214edb-20ba-42fc-bda8-000a5ab525b0",
