@@ -39,7 +39,8 @@ Test data can be incorporated into a track's test suites manually or extracted b
 - Exercises _must_ contain tests that cover the public interface of the exercise (also thought of as "application tests").
 - Exercises _may_ contain tests that cover the private or lower-level interface of the exercise (sometimes refered to as "library tests").
 
-- Test cases are immutable, which means that once a test case has been added, it never changes. There are two exceptions:
+- Test cases are immutable, which means that once a test case has been added, it never changes. There are a couple of exceptions:
+  - The `description` field _can_ be mutated and thus does not require adding a new test case when changing its value.
   - The `comments` field _can_ be mutated and thus does not require adding a new test case when changing its value.
   - The `description` field _can_ be mutated and thus does not require adding a new test case when changing its value.
   - The `scenarios` field _can_ be mutated additively, by adding new scenarios. Existing scenarios must not be changed or removed. Adding new scenarios thus does not require adding a new test case.
