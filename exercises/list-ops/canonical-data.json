@@ -280,18 +280,20 @@
       "description": "folds (reduces) the given list from the left with a function",
       "cases": [
         {
-          "uuid": "613b20b7-1873-4070-a3a6-70ae5f50d7cc",
+          "uuid": "36549237-f765-4a4c-bfd9-5d3a8f7b07d2",
+          "reimplements": "613b20b7-1873-4070-a3a6-70ae5f50d7cc",
           "description": "empty list",
           "property": "foldl",
           "input": {
             "list": [],
             "initial": 2,
-            "function": "(x, y) -> x * y"
+            "function": "(acc, el) -> el * acc"
           },
           "expected": 2
         },
         {
-          "uuid": "e56df3eb-9405-416a-b13a-aabb4c3b5194",
+          "uuid": "7a626a3c-03ec-42bc-9840-53f280e13067",
+          "reimplements": "e56df3eb-9405-416a-b13a-aabb4c3b5194",
           "description": "direction independent function applied to non-empty list",
           "property": "foldl",
           "input": {
@@ -302,23 +304,26 @@
               4
             ],
             "initial": 5,
-            "function": "(x, y) -> x + y"
+            "function": "(acc, el) -> el + acc"
           },
           "expected": 15
         },
         {
-          "uuid": "d2cf5644-aee1-4dfc-9b88-06896676fe27",
+          "uuid": "d7fcad99-e88e-40e1-a539-4c519681f390",
+          "reimplements": "d2cf5644-aee1-4dfc-9b88-06896676fe27",
           "description": "direction dependent function applied to non-empty list",
           "property": "foldl",
           "input": {
             "list": [
+              1,
               2,
-              5
+              3,
+              4
             ],
-            "initial": 5,
-            "function": "(x, y) -> x / y"
+            "initial": 24,
+            "function": "(acc, el) -> el / acc"
           },
-          "expected": 0
+          "expected": 64
         }
       ]
     },
@@ -326,18 +331,20 @@
       "description": "folds (reduces) the given list from the right with a function",
       "cases": [
         {
-          "uuid": "aeb576b9-118e-4a57-a451-db49fac20fdc",
+          "uuid": "17214edb-20ba-42fc-bda8-000a5ab525b0",
+          "reimplements": "aeb576b9-118e-4a57-a451-db49fac20fdc",
           "description": "empty list",
           "property": "foldr",
           "input": {
             "list": [],
             "initial": 2,
-            "function": "(x, y) -> x * y"
+            "function": "(acc, el) -> el * acc"
           },
           "expected": 2
         },
         {
-          "uuid": "c4b64e58-313e-4c47-9c68-7764964efb8e",
+          "uuid": "e1c64db7-9253-4a3d-a7c4-5273b9e2a1bd",
+          "reimplements": "c4b64e58-313e-4c47-9c68-7764964efb8e",
           "description": "direction independent function applied to non-empty list",
           "property": "foldr",
           "input": {
@@ -348,23 +355,26 @@
               4
             ],
             "initial": 5,
-            "function": "(x, y) -> x + y"
+            "function": "(acc, el) -> el + acc"
           },
           "expected": 15
         },
         {
-          "uuid": "be396a53-c074-4db3-8dd6-f7ed003cce7c",
+          "uuid": "8066003b-f2ff-437e-9103-66e6df474844",
+          "reimplements": "be396a53-c074-4db3-8dd6-f7ed003cce7c",
           "description": "direction dependent function applied to non-empty list",
           "property": "foldr",
           "input": {
             "list": [
+              1,
               2,
-              5
+              3,
+              4
             ],
-            "initial": 5,
-            "function": "(x, y) -> x / y"
+            "initial": 24,
+            "function": "(acc, el) -> el / acc"
           },
-          "expected": 2
+          "expected": 64
         }
       ]
     },
