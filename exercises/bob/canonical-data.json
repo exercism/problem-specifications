@@ -29,11 +29,31 @@
       "expected": "Whoa, chill out!"
     },
     {
+      "uuid": "c10699d2-7a89-40c8-9cd3-ed277fe1c14a",
+      "description": "shouting multilingual gibberish",
+      "scenarios": ["unicode"],
+      "property": "response",
+      "input": {
+        "heyBob": "FCÄEÜCÖDFCẞAB"
+      },
+      "expected": "Whoa, chill out!"
+    },
+    {
       "uuid": "8a2e771d-d6f1-4e3f-b6c6-b41495556e37",
       "description": "asking a question",
       "property": "response",
       "input": {
         "heyBob": "Does this cryogenic chamber make me look fat?"
+      },
+      "expected": "Sure."
+    },
+    {
+      "uuid": "cd4b490b-b78a-4eac-beeb-70fd99353b1b",
+      "description": "asking a question in German",
+      "scenarios": ["unicode"],
+      "property": "response",
+      "input": {
+        "heyBob": "Hä?"
       },
       "expected": "Sure."
     },
@@ -74,11 +94,31 @@
       "expected": "Whatever."
     },
     {
+      "uuid": "98cc5157-4346-4ce1-8a0d-6833574337a1",
+      "description": "using acronyms in regular German speech",
+      "scenarios": ["unicode"],
+      "property": "response",
+      "input": {
+        "heyBob": "Es ist okay, wenn du nicht für den BND arbeiten möchtest."
+      },
+      "expected": "Whatever."
+    },
+    {
       "uuid": "a5193c61-4a92-4f68-93e2-f554eb385ec6",
       "description": "forceful question",
       "property": "response",
       "input": {
         "heyBob": "WHAT'S GOING ON?"
+      },
+      "expected": "Calm down, I know what I'm doing!"
+    },
+    {
+      "uuid": "7cb1a4f2-2a01-4972-b306-f995c94530b8",
+      "description": "forceful question in German",
+      "scenarios": ["unicode"],
+      "property": "response",
+      "input": {
+        "heyBob": "WAS ZUR HÖLLE GEHT HIER VOR?"
       },
       "expected": "Calm down, I know what I'm doing!"
     },
