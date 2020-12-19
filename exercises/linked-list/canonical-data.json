@@ -19,6 +19,12 @@
     {
       "uuid": "7f7e3987-b954-41b8-8084-99beca08752c",
       "description": "pop gets element from the list",
+      "comments": [
+        "This test does not confirm that pop gets the last element from the   ",
+        "list. The next test (push/pop respectively add/remove at the end of  ",
+        "the list) does check that behaviour. This test provides a stepping   ",
+        "stone."
+      ],
       "property": "list",
       "input": {
         "operations": [
@@ -62,7 +68,12 @@
     },
     {
       "uuid": "00ea24ce-4f5c-4432-abb4-cc6e85462657",
-      "description": "shift gets element from the list",
+      "description": "shift gets an element from the list",
+      "comments": [
+        "This test does not confirm that shift gets the first element from the",
+        "list. The next test (shift gets first element from the list) does    ",
+        "check that behaviour. This test provides a stepping stone.           "
+      ],
       "property": "list",
       "input": {
         "operations": [
