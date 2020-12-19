@@ -123,6 +123,15 @@
       "expected": "Calm down, I know what I'm doing!"
     },
     {
+      "uuid": "e90bb162-bbfd-438c-820f-a6b09f5cdf99",
+      "description": "Bob in Vienna",
+      "property": "response",
+      "input": {
+        "heyBob": "OIDA?"
+      },
+      "expected": "Calm down, I know what I'm doing!"
+    },
+    {
       "uuid": "a20e0c54-2224-4dde-8b10-bd2cdd4f61bc",
       "description": "shouting numbers",
       "property": "response",
@@ -164,6 +173,15 @@
       "property": "response",
       "input": {
         "heyBob": "I HATE THE DENTIST"
+      },
+      "expected": "Whoa, chill out!"
+    },
+    {
+      "uuid": "2a6431bd-43e3-495d-9fff-8834a387329a",
+      "description": "Bob in Vienna",
+      "property": "response",
+      "input": {
+        "heyBob": "OIDA!"
       },
       "expected": "Whoa, chill out!"
     },
@@ -249,6 +267,15 @@
       "expected": "Sure."
     },
     {
+      "uuid": "452ac3a1-daf2-473f-9ace-3de3a41dbdf8",
+      "description": "Bob in Vienna",
+      "property": "response",
+      "input": {
+        "heyBob": "Oida?"
+      },
+      "expected": "Sure."
+    },
+    {
       "uuid": "72bd5ad3-9b2f-4931-a988-dce1f5771de2",
       "description": "other whitespace",
       "property": "response",
@@ -263,6 +290,15 @@
       "property": "response",
       "input": {
         "heyBob": "This is a statement ending with whitespace      "
+      },
+      "expected": "Whatever."
+    },
+    {
+      "uuid": "16f43a00-acbe-4e36-a323-d7f48d9f29c0",
+      "description": "Bob in Vienna",
+      "property": "response",
+      "input": {
+        "heyBob": "Oida."
       },
       "expected": "Whatever."
     }
