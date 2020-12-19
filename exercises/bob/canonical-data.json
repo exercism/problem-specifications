@@ -74,6 +74,17 @@
       "expected": "Whatever."
     },
     {
+      "uuid": "13930064-7e58-43c8-a04b-95d9e851f66a",
+      "reimplements": "153c0e25-9bb5-4ec5-966e-598463658bcd",
+      "comments": ["Alternative option in case one doesn't understand why one wouldn't want to work for NASA"],
+      "description": "using acronyms in regular speech",
+      "property": "response",
+      "input": {
+        "heyBob": "It's OK if you don't want to go work for the NSA."
+      },
+      "expected": "Whatever."
+    },
+    {
       "uuid": "a5193c61-4a92-4f68-93e2-f554eb385ec6",
       "description": "forceful question",
       "property": "response",
