@@ -308,8 +308,9 @@
     },
     {
       "description": "Follow series of instructions",
-      "comments": [ "The robot can follow a series of instructions and end up with the correct position and direction.",
-                    "Where R = Turn Right, L = Turn Left and A = Advance"
+      "comments": [
+        "The robot can follow a series of instructions and end up with the correct position and direction.",
+        "Where R = Turn Right, L = Turn Left and A = Advance"
       ],
       "cases": [
         {

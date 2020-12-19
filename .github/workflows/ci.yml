@@ -12,7 +12,7 @@ jobs:
 
       - name: All required files are present
         run: bin/check_required_files_present
-  
+
   immutability:
     name: No test has been mutated
     runs-on: ubuntu-20.04

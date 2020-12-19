@@ -354,10 +354,7 @@
               ]
             }
           },
-          "expected": [
-            "x",
-            "parent"
-          ]
+          "expected": ["x", "parent"]
         },
         {
           "uuid": "d0002674-fcfb-4cdc-9efa-bfc54e3c31b5",
@@ -384,11 +381,7 @@
               ]
             }
           },
-          "expected": [
-            "x",
-            "parent",
-            "b"
-          ]
+          "expected": ["x", "parent", "b"]
         },
         {
           "uuid": "c9877cd1-0a69-40d4-b362-725763a5c38f",
@@ -436,13 +429,7 @@
               ]
             }
           },
-          "expected": [
-            "x",
-            "parent",
-            "grandparent",
-            "uncle",
-            "cousin-1"
-          ]
+          "expected": ["x", "parent", "grandparent", "uncle", "cousin-1"]
         },
         {
           "uuid": "9fb17a82-2c14-4261-baa3-2f3f234ffa03",
@@ -471,11 +458,7 @@
               ]
             }
           },
-          "expected": [
-            "x",
-            "parent",
-            "sibling-1"
-          ]
+          "expected": ["x", "parent", "sibling-1"]
         },
         {
           "uuid": "5124ed49-7845-46ad-bc32-97d5ac7451b2",
@@ -502,11 +485,7 @@
               ]
             }
           },
-          "expected": [
-            "a",
-            "parent",
-            "c"
-          ]
+          "expected": ["a", "parent", "c"]
         },
         {
           "uuid": "f52a183c-25cc-4c87-9fc9-0e7f81a5725c",

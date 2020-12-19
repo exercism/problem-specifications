@@ -22,9 +22,7 @@
             "startVerse": 1,
             "endVerse": 1
           },
-          "expected": [
-            "This is the house that Jack built."
-          ]
+          "expected": ["This is the house that Jack built."]
         },
         {
           "uuid": "ebc825ac-6e2b-4a5e-9afd-95732191c8da",

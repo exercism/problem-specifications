@@ -11,33 +11,33 @@ unstuck.
 
 We are grateful for any help in making Exercism better!
 
------
+---
 
 This guide covers several common scenarios pertaining to **improving the language tracks**
 themselves. There are other guides about contributing to other parts of the Exercism ecosystem.
 
-* [The Command-Line Client](https://github.com/exercism/cli/blob/master/README.md)
-* [The Website](https://github.com/exercism/website/blob/master/CONTRIBUTING.md)
-* [The Exercises API](https://github.com/exercism/x-api/blob/master/CONTRIBUTING.md) (used by both the command-line client and the website)
+- [The Command-Line Client](https://github.com/exercism/cli/blob/master/README.md)
+- [The Website](https://github.com/exercism/website/blob/master/CONTRIBUTING.md)
+- [The Exercises API](https://github.com/exercism/x-api/blob/master/CONTRIBUTING.md) (used by both the command-line client and the website)
 
 ## Table of Contents
 
-* [We Will Gladly Help You Help Us](#we-will-gladly-help-you-help-us)
-* [Code of Conduct](#code-of-conduct)
-* [Overview](#overview)
-* [Updating an Exercise Test Suite](#updating-an-exercise-test-suite)
-    * [Updating a Generated Test Suite](#updating-a-generated-test-suite)
-* [Implementing a Completely New Exercise](#implementing-a-completely-new-exercise)
-* [Track Anatomy](#track-anatomy)
-* [Starting a New Track](#starting-a-new-track)
-    * [Beta-Testing a Language Track](#beta-testing-a-language-track)
-* [Useful Tidbits](#useful-tidbits)
-    * [Pull Request Guidelines](#pull-request-guidelines)
-    * [Anatomy of an Exercise](#anatomy-of-an-exercise)
-    * [Track configuration file (config.json)](#track-configuration-file)
-    * [Track-Level Linting With Configlet](#track-level-linting-with-configlet)
-    * [Git Basics](#git-basics)
-    * [Improving Consistency By Extracting Shared Test Data](#improving-consistency-by-extracting-shared-test-data)
+- [We Will Gladly Help You Help Us](#we-will-gladly-help-you-help-us)
+- [Code of Conduct](#code-of-conduct)
+- [Overview](#overview)
+- [Updating an Exercise Test Suite](#updating-an-exercise-test-suite)
+  - [Updating a Generated Test Suite](#updating-a-generated-test-suite)
+- [Implementing a Completely New Exercise](#implementing-a-completely-new-exercise)
+- [Track Anatomy](#track-anatomy)
+- [Starting a New Track](#starting-a-new-track)
+  - [Beta-Testing a Language Track](#beta-testing-a-language-track)
+- [Useful Tidbits](#useful-tidbits)
+  - [Pull Request Guidelines](#pull-request-guidelines)
+  - [Anatomy of an Exercise](#anatomy-of-an-exercise)
+  - [Track configuration file (config.json)](#track-configuration-file)
+  - [Track-Level Linting With Configlet](#track-level-linting-with-configlet)
+  - [Git Basics](#git-basics)
+  - [Improving Consistency By Extracting Shared Test Data](#improving-consistency-by-extracting-shared-test-data)
 
 ## We Will Gladly Help You Help Us
 
@@ -49,8 +49,8 @@ We'll do everything we can to help you get started.
 
 The two best ways to get help are to
 
-* jump into the [support chat](https://gitter.im/exercism/support).
-* open a [GitHub issue](https://github.com/exercism/exercism.io/issues).
+- jump into the [support chat](https://gitter.im/exercism/support).
+- open a [GitHub issue](https://github.com/exercism/exercism.io/issues).
 
 We are happy to help out with all sorts of things, including figuring
 out the whole git and pull request thing.
@@ -70,20 +70,20 @@ Help us keep Exercism welcoming. Please read and abide by the
 Each language track is implemented in its own repository. This has several
 benefits:
 
-* It's easier to get started contributing, since you don't need to wade through
+- It's easier to get started contributing, since you don't need to wade through
   setup instructions for 20 different languages.
-* There's less noise for people who are maintaining a language track, since they
+- There's less noise for people who are maintaining a language track, since they
   won't be seeing pull requests and issues about languages they're not maintaining.
-* Build tools can be tailored to each language.
-* Continuous integration runs more quickly, since it only needs to install a single
+- Build tools can be tailored to each language.
+- Continuous integration runs more quickly, since it only needs to install a single
   language environment, and run the tests for one single track.
 
 We use the following terminology:
 
-* **Language** - A programming language.
-* **Track** - A collection of exercises in a programming language.
-* **Problem** - A generic problem description.
-* **Exercise** - A language-specific implementation of a problem description.
+- **Language** - A programming language.
+- **Track** - A collection of exercises in a programming language.
+- **Problem** - A generic problem description.
+- **Exercise** - A language-specific implementation of a problem description.
 
 ### Language Track Repositories
 
@@ -213,25 +213,25 @@ exercise test suite](#updating-an-exercise-test-suite).
 
 A problem must have a unique slug. This slug is used as
 
-* the directory name within each language-specific repository
-* the directory name for the folder that contains the metadata files (in this repository)
-* to identify the exercise in `config.json`
+- the directory name within each language-specific repository
+- the directory name for the folder that contains the metadata files (in this repository)
+- to identify the exercise in `config.json`
 
 ### In exercism/problem-specifications
 
-* Create `exercises/<slug>/description.md` and `exercises/<slug>/metadata.yml`.
-* Bonus: `exercises/<slug>/canonical-data.json` with inputs/outputs for the test suite.
-* Submit a pull request.
+- Create `exercises/<slug>/description.md` and `exercises/<slug>/metadata.yml`.
+- Bonus: `exercises/<slug>/canonical-data.json` with inputs/outputs for the test suite.
+- Submit a pull request.
 
 ### In exercism/<TRACK_ID>
 
-* Do the same as when [porting an
+- Do the same as when [porting an
   exercise](#porting-an-exercise-to-another-language-track).
   Reference the PR in problem-specifications.
   It's suggested, but not required, to wait until the problem-specifications PR is merged before merging the track-specific PR, for the following reasons:
-    * If changes are suggested to the problem-specifications PR, it is likely that they will be applicable to the track-specific PR as well.
-    * Only applicable if the exercise needs a custom `title` in metadata.yml (as described in https://github.com/exercism/docs/blob/master/you-can-help/make-up-new-exercises.md#problem-specification): The title of the exercise as displayed on the website will use the default algorithm instead of the correct title until the problem-specifications PR is merged.
-    * Only applicable to tracks that have specific tools that depend on exercises being present in problem-specifications (see the track-specific documentation for whether any such tools exist): Such tools may operate unexpectedly if the exercise does not yet exist in problem-specifications. Try checking out the branch on a local copy of problem-specifications or rerunning the tool after the problem-specifications PR is merged if applicable.
+  - If changes are suggested to the problem-specifications PR, it is likely that they will be applicable to the track-specific PR as well.
+  - Only applicable if the exercise needs a custom `title` in metadata.yml (as described in https://github.com/exercism/docs/blob/master/you-can-help/make-up-new-exercises.md#problem-specification): The title of the exercise as displayed on the website will use the default algorithm instead of the correct title until the problem-specifications PR is merged.
+  - Only applicable to tracks that have specific tools that depend on exercises being present in problem-specifications (see the track-specific documentation for whether any such tools exist): Such tools may operate unexpectedly if the exercise does not yet exist in problem-specifications. Try checking out the branch on a local copy of problem-specifications or rerunning the tool after the problem-specifications PR is merged if applicable.
 
 ## Track Anatomy
 
@@ -263,23 +263,23 @@ Each track should have the following structure:
 
 The example template for a track can be found in the [request-new-language-track repository](https://github.com/exercism/request-new-language-track).
 
-* `LICENSE` - The MIT License (MIT)
-* `README.md` - a thorough explanation of how to contribute to the track.
-* `SETUP.md` - this should contain any track specific, problem agnostic information that will be included in the README.md of every exercise when fetched. Include information on how to run tests, how to get help, etc.
-* `bin` - scripts and other files related to running the track's tests, etc.
-* `config.json` - the track-level configuration. It contains configuration for which exercises (and in which order) are a part of the track, which exercises are deprecated, the track id, name of the language, and the location of the repository. Optionally, it may include a regex to recognize what files are part of the test suite (usually `/test/i`, but sometimes `/spec/i` or other things). If the test pattern is not included, then `/test/i` is assumed.
-* `docs` - the documentation for the track.These files are served to the exercism.io help site via the x-api. It should contain at minimum:
+- `LICENSE` - The MIT License (MIT)
+- `README.md` - a thorough explanation of how to contribute to the track.
+- `SETUP.md` - this should contain any track specific, problem agnostic information that will be included in the README.md of every exercise when fetched. Include information on how to run tests, how to get help, etc.
+- `bin` - scripts and other files related to running the track's tests, etc.
+- `config.json` - the track-level configuration. It contains configuration for which exercises (and in which order) are a part of the track, which exercises are deprecated, the track id, name of the language, and the location of the repository. Optionally, it may include a regex to recognize what files are part of the test suite (usually `/test/i`, but sometimes `/spec/i` or other things). If the test pattern is not included, then `/test/i` is assumed.
+- `docs` - the documentation for the track.These files are served to the exercism.io help site via the x-api. It should contain at minimum:
 
-    - `INSTALLATION.md` - about how to get the track's language set up locally.
-    - `TESTS.md` - how to run the tests for the track's individual exercises.
+  - `INSTALLATION.md` - about how to get the track's language set up locally.
+  - `TESTS.md` - how to run the tests for the track's individual exercises.
 
-    Some nice to haves:
+  Some nice to haves:
 
-    - `ABOUT.md` - a short, friendly blurb about the track's language. What types of problems does it solve really well? What is it typically used for?
-    - `LEARNING.md` - a few notes about where people might want to go to learn the track's language from scratch. These are the the resources you need only when first getting up to speed with a language (tutorials, blog posts, etc.).
-    - `RESOURCES.md` - references and other useful resources. These resources are those that would commonly be used by a developer on an ongoing basis (core language docs, api docs, etc.).
+  - `ABOUT.md` - a short, friendly blurb about the track's language. What types of problems does it solve really well? What is it typically used for?
+  - `LEARNING.md` - a few notes about where people might want to go to learn the track's language from scratch. These are the the resources you need only when first getting up to speed with a language (tutorials, blog posts, etc.).
+  - `RESOURCES.md` - references and other useful resources. These resources are those that would commonly be used by a developer on an ongoing basis (core language docs, api docs, etc.).
 
-* `exercises` - all exercises for the track should live in subdirectories of this directory. Each exercise should have a test file, an example file that should pass all tests, and a template file that is a stub to help the user get started with the exercise. The example file should be used for the CI build. If the exercise is based on canonical data, a `tests.toml` file should be created which contains a mapping from a canonical test case's UUID to a boolean value that indicates if the test case was implemented by the exercise
+- `exercises` - all exercises for the track should live in subdirectories of this directory. Each exercise should have a test file, an example file that should pass all tests, and a template file that is a stub to help the user get started with the exercise. The example file should be used for the CI build. If the exercise is based on canonical data, a `tests.toml` file should be created which contains a mapping from a canonical test case's UUID to a boolean value that indicates if the test case was implemented by the exercise
 
 ## Starting a New Track
 
@@ -287,6 +287,7 @@ If you're interested in adding problems for a language that we don't yet have,
 open an issue in the https://github.com/exercism/request-new-language-track repository.
 
 ### Beta-Testing a Language Track
+
 ---
 
 For a track that is set as `"active": false` in the `config.json`, `exercism fetch`
@@ -326,9 +327,10 @@ See the [anatomy of an exercise](https://github.com/exercism/docs/tree/master/la
 Each language track has a configuration file called `config.json`.
 
 Important keys are:
-* `problems` - actively served via `exercism fetch`
-* `deprecated` - implemented, but aren't served anymore
-* `foregone` - will not be implemented in the track
+
+- `problems` - actively served via `exercism fetch`
+- `deprecated` - implemented, but aren't served anymore
+- `foregone` - will not be implemented in the track
 
 The `configlet` tool uses those categories to ensure that
 
@@ -343,11 +345,13 @@ A problem might be foregone for a number of reasons, typically because it's a
 bad exercise for the language.
 
 Optional keys:
-* `test_pattern` - A (case sensitive) regex pattern that test filenames will match. It is used to determine which files will be visible on a problem's test-suite page on the exercism.io site. The default value used if this key is not present is `test` (note: this is case _insensitive_)
-* `ignore_pattern` - A (case insensitive) regex pattern that will cause files matching it to not be served to the student by `exercism fetch`. The default value used if this key is not present is `example`
-* `solution_pattern` - A (case sensitive) regex pattern that matches solution files in the track repository. Used by [configlet](https://github.com/exercism/configlet) to check for the presence of an example solution for each problem implemented by the track.  The default value used if this key is not present is `[Ee]xample`.
+
+- `test_pattern` - A (case sensitive) regex pattern that test filenames will match. It is used to determine which files will be visible on a problem's test-suite page on the exercism.io site. The default value used if this key is not present is `test` (note: this is case _insensitive_)
+- `ignore_pattern` - A (case insensitive) regex pattern that will cause files matching it to not be served to the student by `exercism fetch`. The default value used if this key is not present is `example`
+- `solution_pattern` - A (case sensitive) regex pattern that matches solution files in the track repository. Used by [configlet](https://github.com/exercism/configlet) to check for the presence of an example solution for each problem implemented by the track. The default value used if this key is not present is `[Ee]xample`.
 
 ### Git Basics
+
 See [Git Basics](https://github.com/exercism/docs/blob/master/contributing/git-basics.md) in [docs](https://github.com/exercism/docs) repository.
 
 ### et cetera
@@ -356,7 +360,6 @@ TODO: add more sections:
 
 - how to merge something locally (for example when there are conflicts, or
   if you want to fix a small thing without nagging the contributor about it)
-
 
 ## Improving Consistency By Extracting Shared Test Data
 

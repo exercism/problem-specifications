@@ -1,8 +1,6 @@
 {
   "exercise": "markdown",
-  "comments": [
-    "Markdown is a shorthand for creating HTML from text strings."
-  ],
+  "comments": ["Markdown is a shorthand for creating HTML from text strings."],
   "cases": [
     {
       "uuid": "e75c8103-a6b8-45d9-84ad-e68520545f6e",
@@ -86,40 +84,40 @@
       "expected": "<h1>Header!</h1><ul><li><strong>Bold Item</strong></li><li><em>Italic Item</em></li></ul>"
     },
     {
-        "uuid": "0b3ed1ec-3991-4b8b-8518-5cb73d4a64fe",
-        "description": "with markdown symbols in the header text that should not be interpreted",
-        "property": "parse",
-        "input": {
-            "markdown": "# This is a header with # and * in the text"
-        },
-        "expected": "<h1>This is a header with # and * in the text</h1>"
+      "uuid": "0b3ed1ec-3991-4b8b-8518-5cb73d4a64fe",
+      "description": "with markdown symbols in the header text that should not be interpreted",
+      "property": "parse",
+      "input": {
+        "markdown": "# This is a header with # and * in the text"
+      },
+      "expected": "<h1>This is a header with # and * in the text</h1>"
     },
     {
-        "uuid": "113a2e58-78de-4efa-90e9-20972224d759",
-        "description": "with markdown symbols in the list item text that should not be interpreted",
-        "property": "parse",
-        "input": {
-            "markdown": "* Item 1 with a # in the text\n* Item 2 with * in the text"
-        },
-        "expected": "<ul><li>Item 1 with a # in the text</li><li>Item 2 with * in the text</li></ul>"
+      "uuid": "113a2e58-78de-4efa-90e9-20972224d759",
+      "description": "with markdown symbols in the list item text that should not be interpreted",
+      "property": "parse",
+      "input": {
+        "markdown": "* Item 1 with a # in the text\n* Item 2 with * in the text"
+      },
+      "expected": "<ul><li>Item 1 with a # in the text</li><li>Item 2 with * in the text</li></ul>"
     },
     {
-        "uuid": "e65e46e2-17b7-4216-b3ac-f44a1b9bcdb4",
-        "description": "with markdown symbols in the paragraph text that should not be interpreted",
-        "property": "parse",
-        "input": {
-            "markdown": "This is a paragraph with # and * in the text"
-        },
-        "expected": "<p>This is a paragraph with # and * in the text</p>"
+      "uuid": "e65e46e2-17b7-4216-b3ac-f44a1b9bcdb4",
+      "description": "with markdown symbols in the paragraph text that should not be interpreted",
+      "property": "parse",
+      "input": {
+        "markdown": "This is a paragraph with # and * in the text"
+      },
+      "expected": "<p>This is a paragraph with # and * in the text</p>"
     },
     {
-        "uuid": "f0bbbbde-0f52-4c0c-99ec-be4c60126dd4",
-        "description": "unordered lists close properly with preceding and following lines",
-        "property": "parse",
-        "input": {
-            "markdown": "# Start a list\n* Item 1\n* Item 2\nEnd a list"
-        },
-        "expected": "<h1>Start a list</h1><ul><li>Item 1</li><li>Item 2</li></ul><p>End a list</p>"
+      "uuid": "f0bbbbde-0f52-4c0c-99ec-be4c60126dd4",
+      "description": "unordered lists close properly with preceding and following lines",
+      "property": "parse",
+      "input": {
+        "markdown": "# Start a list\n* Item 1\n* Item 2\nEnd a list"
+      },
+      "expected": "<h1>Start a list</h1><ul><li>Item 1</li><li>Item 2</li></ul><p>End a list</p>"
     }
   ]
 }

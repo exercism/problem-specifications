@@ -1,8 +1,6 @@
 {
   "exercise": "isogram",
-  "comments": [
-    "An isogram is a word or phrase without a repeating letter."
-  ],
+  "comments": ["An isogram is a word or phrase without a repeating letter."],
   "cases": [
     {
       "description": "Check if the given string is an isogram",

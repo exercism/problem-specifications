@@ -3,6 +3,7 @@
 This document explains how to set up Continuous Integration (CI) workflows for an Exercism Language Track using GitHub Actions (GHA). It provides best practices and examples for you to use to make your own fast, reliable and robust CI workflows. The GHA workflows in this folder can be adapted to work with any CI, because the base structure will remain the same.
 
 It will:
+
 - Outline the ideal CI workflow
 - Discuss considerations and recommendations
 - Provide you with some templates to use

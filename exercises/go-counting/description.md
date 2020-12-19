@@ -14,7 +14,7 @@ Write a function that determines the territory which includes a specified coordi
 Multiple empty intersections may be encircled at once and for encircling
 only horizontal and vertical neighbours count. In the following diagram
 the stones which matter are marked "O" and the stones that don't are
-marked "I" (ignored).  Empty spaces represent empty intersections.
+marked "I" (ignored). Empty spaces represent empty intersections.
 
 ```text
 +----+

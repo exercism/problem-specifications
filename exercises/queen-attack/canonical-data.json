@@ -39,7 +39,7 @@
               }
             }
           },
-          "expected": {"error": "row not positive"}
+          "expected": { "error": "row not positive" }
         },
         {
           "uuid": "f07b7536-b66b-4f08-beb9-4d70d891d5c8",
@@ -53,7 +53,7 @@
               }
             }
           },
-          "expected": {"error": "row not on board"}
+          "expected": { "error": "row not on board" }
         },
         {
           "uuid": "15a10794-36d9-4907-ae6b-e5a0d4c54ebe",
@@ -67,7 +67,7 @@
               }
             }
           },
-          "expected": {"error": "column not positive"}
+          "expected": { "error": "column not positive" }
         },
         {
           "uuid": "6907762d-0e8a-4c38-87fb-12f2f65f0ce4",
@@ -81,7 +81,7 @@
               }
             }
           },
-          "expected": {"error": "column not on board"}
+          "expected": { "error": "column not on board" }
         }
       ]
     },

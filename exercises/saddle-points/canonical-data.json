@@ -1,15 +1,11 @@
 {
   "exercise": "saddle-points",
-  "comments": [
-    "Matrix rows and columns are 1-indexed."
-  ],
+  "comments": ["Matrix rows and columns are 1-indexed."],
   "cases": [
     {
       "uuid": "3e374e63-a2e0-4530-a39a-d53c560382bd",
       "description": "Can identify single saddle point",
-      "comments": [
-        "This is the README example."
-      ],
+      "comments": ["This is the README example."],
       "property": "saddlePoints",
       "input": {
         "matrix": [
@@ -30,9 +26,7 @@
       "description": "Can identify that empty matrix has no saddle points",
       "property": "saddlePoints",
       "input": {
-        "matrix": [
-          []
-        ]
+        "matrix": [[]]
       },
       "expected": []
     },
@@ -149,12 +143,7 @@
       "description": "Can identify that saddle points in a single column matrix are those with the minimum value",
       "property": "saddlePoints",
       "input": {
-        "matrix": [
-          [2],
-          [1],
-          [4],
-          [1]
-        ]
+        "matrix": [[2], [1], [4], [1]]
       },
       "expected": [
         {
@@ -172,9 +161,7 @@
       "description": "Can identify that saddle points in a single row matrix are those with the maximum value",
       "property": "saddlePoints",
       "input": {
-        "matrix": [
-          [2, 5, 3, 5]
-        ]
+        "matrix": [[2, 5, 3, 5]]
       },
       "expected": [
         {

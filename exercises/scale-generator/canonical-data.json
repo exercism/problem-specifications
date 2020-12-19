@@ -15,7 +15,20 @@
           "input": {
             "tonic": "C"
           },
-          "expected": [ "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" ]
+          "expected": [
+            "C",
+            "C#",
+            "D",
+            "D#",
+            "E",
+            "F",
+            "F#",
+            "G",
+            "G#",
+            "A",
+            "A#",
+            "B"
+          ]
         },
         {
           "uuid": "af8381de-9a72-4efd-823a-48374dbfe76f",
@@ -24,7 +37,20 @@
           "input": {
             "tonic": "F"
           },
-          "expected": [ "F", "Gb", "G", "Ab", "A", "Bb", "B", "C", "Db", "D", "Eb", "E" ]
+          "expected": [
+            "F",
+            "Gb",
+            "G",
+            "Ab",
+            "A",
+            "Bb",
+            "B",
+            "C",
+            "Db",
+            "D",
+            "Eb",
+            "E"
+          ]
         }
       ]
     },
@@ -38,15 +64,13 @@
         {
           "uuid": "6f5b1410-1dd7-4c6c-b410-6b7e986f6f1e",
           "description": "Simple major scale",
-          "comments": [
-            "The simplest major scale, with no sharps or flats."
-          ],
+          "comments": ["The simplest major scale, with no sharps or flats."],
           "property": "interval",
           "input": {
             "tonic": "C",
             "intervals": "MMmMMMm"
           },
-          "expected": [ "C", "D", "E", "F", "G", "A", "B" ]
+          "expected": ["C", "D", "E", "F", "G", "A", "B"]
         },
         {
           "uuid": "13a92f89-a83e-40b5-b9d4-01136931ba02",
@@ -56,7 +80,7 @@
             "tonic": "G",
             "intervals": "MMmMMMm"
           },
-          "expected": [ "G", "A", "B", "C", "D", "E", "F#" ]
+          "expected": ["G", "A", "B", "C", "D", "E", "F#"]
         },
         {
           "uuid": "aa3320f6-a761-49a1-bcf6-978e0c81080a",
@@ -66,7 +90,7 @@
             "tonic": "F",
             "intervals": "MMmMMMm"
           },
-          "expected": [ "F", "G", "A", "Bb", "C", "D", "E" ]
+          "expected": ["F", "G", "A", "Bb", "C", "D", "E"]
         },
         {
           "uuid": "63daeb2f-c3f9-4c45-92be-5bf97f61ff94",
@@ -76,7 +100,7 @@
             "tonic": "f#",
             "intervals": "MmMMmMM"
           },
-          "expected": [ "F#", "G#", "A", "B", "C#", "D", "E" ]
+          "expected": ["F#", "G#", "A", "B", "C#", "D", "E"]
         },
         {
           "uuid": "616594d0-9c48-4301-949e-af1d4fad16fd",
@@ -86,7 +110,7 @@
             "tonic": "bb",
             "intervals": "MmMMmMM"
           },
-          "expected": [ "Bb", "C", "Db", "Eb", "F", "Gb", "Ab" ]
+          "expected": ["Bb", "C", "Db", "Eb", "F", "Gb", "Ab"]
         },
         {
           "uuid": "390bd12c-5ac7-4ec7-bdde-4e58d5c78b0a",
@@ -96,7 +120,7 @@
             "tonic": "d",
             "intervals": "MmMMMmM"
           },
-          "expected": [ "D", "E", "F", "G", "A", "B", "C" ]
+          "expected": ["D", "E", "F", "G", "A", "B", "C"]
         },
         {
           "uuid": "846d0862-0f3e-4f3b-8a2d-9cc74f017848",
@@ -106,7 +130,7 @@
             "tonic": "Eb",
             "intervals": "MMmMMmM"
           },
-          "expected": [ "Eb", "F", "G", "Ab", "Bb", "C", "Db" ]
+          "expected": ["Eb", "F", "G", "Ab", "Bb", "C", "Db"]
         },
         {
           "uuid": "7d49a8bb-b5f7-46ad-a207-83bd5032291a",
@@ -116,7 +140,7 @@
             "tonic": "a",
             "intervals": "MMMmMMm"
           },
-          "expected": [ "A", "B", "C#", "D#", "E", "F#", "G#" ]
+          "expected": ["A", "B", "C#", "D#", "E", "F#", "G#"]
         },
         {
           "uuid": "a4e4dac5-1891-4160-a19f-bb06d653d4d0",
@@ -126,7 +150,7 @@
             "tonic": "e",
             "intervals": "mMMMmMM"
           },
-          "expected": [ "E", "F", "G", "A", "B", "C", "D" ]
+          "expected": ["E", "F", "G", "A", "B", "C", "D"]
         },
         {
           "uuid": "ef3650af-90f8-4ad9-9ef6-fdbeae07dcaa",
@@ -136,7 +160,7 @@
             "tonic": "g",
             "intervals": "mMMmMMM"
           },
-          "expected": [ "G", "Ab", "Bb", "C", "Db", "Eb", "F" ]
+          "expected": ["G", "Ab", "Bb", "C", "Db", "Eb", "F"]
         },
         {
           "comments": [
@@ -149,7 +173,7 @@
             "tonic": "d",
             "intervals": "MmMMmAm"
           },
-          "expected": [ "D", "E", "F", "G", "A", "Bb", "Db" ]
+          "expected": ["D", "E", "F", "G", "A", "Bb", "Db"]
         },
         {
           "uuid": "37114c0b-c54d-45da-9f4b-3848201470b0",
@@ -159,7 +183,7 @@
             "tonic": "C",
             "intervals": "MmMmMmMm"
           },
-          "expected": [ "C", "D", "D#", "F", "F#", "G#", "A", "B" ]
+          "expected": ["C", "D", "D#", "F", "F#", "G#", "A", "B"]
         },
         {
           "uuid": "496466e7-aa45-4bbd-a64d-f41030feed9c",
@@ -169,7 +193,7 @@
             "tonic": "Db",
             "intervals": "MMMMMM"
           },
-          "expected": [ "Db", "Eb", "F", "G", "A", "B" ]
+          "expected": ["Db", "Eb", "F", "G", "A", "B"]
         },
         {
           "uuid": "bee5d9ec-e226-47b6-b62b-847a9241f3cc",
@@ -179,7 +203,7 @@
             "tonic": "A",
             "intervals": "MMAMA"
           },
-          "expected": [ "A", "B", "C#", "E", "F#" ]
+          "expected": ["A", "B", "C#", "E", "F#"]
         },
         {
           "uuid": "dbee06a6-7535-4ab7-98e8-d8a36c8402d1",
@@ -189,7 +213,7 @@
             "tonic": "G",
             "intervals": "mAMMMmm"
           },
-          "expected": [ "G", "G#", "B", "C#", "D#", "F", "F#" ]
+          "expected": ["G", "G#", "B", "C#", "D#", "F", "F#"]
         }
       ]
     }

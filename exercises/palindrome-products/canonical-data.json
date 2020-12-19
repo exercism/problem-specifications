@@ -1,175 +1,162 @@
 {
-    "exercise": "palindrome-products",
-    "cases": [{
-            "uuid": "5cff78fe-cf02-459d-85c2-ce584679f887",
-            "description": "finds the smallest palindrome from single digit factors",
-            "property": "smallest",
-            "input": {
-              "min": 1,
-              "max": 9
-            },
-            "expected": {
-                "value": 1,
-                "factors": [
-                    [1, 1]
-                ]
-            }
-        },
-        {
-            "uuid": "0853f82c-5fc4-44ae-be38-fadb2cced92d",
-            "description": "finds the largest palindrome from single digit factors",
-            "property": "largest",
-            "input": {
-              "min": 1,
-              "max": 9
-            },
-            "expected": {
-                "value": 9,
-                "factors": [
-                    [1, 9],
-                    [3, 3]
-                ]
-            }
-        },
-        {
-            "uuid": "66c3b496-bdec-4103-9129-3fcb5a9063e1",
-            "description": "find the smallest palindrome from double digit factors",
-            "property": "smallest",
-            "input": {
-              "min": 10,
-              "max": 99
-            },
-            "expected": {
-                "value": 121,
-                "factors": [
-                    [11, 11]
-                ]
-            }
-        },
-        {
-            "uuid": "a10682ae-530a-4e56-b89d-69664feafe53",
-            "description": "find the largest palindrome from double digit factors",
-            "property": "largest",
-            "input": {
-              "min": 10,
-              "max": 99
-            },
-            "expected": {
-                "value": 9009,
-                "factors": [
-                    [91, 99]
-                ]
-            }
-        },
-        {
-            "uuid": "cecb5a35-46d1-4666-9719-fa2c3af7499d",
-            "description": "find smallest palindrome from triple digit factors",
-            "property": "smallest",
-            "input": {
-              "min": 100,
-              "max": 999
-            },
-            "expected": {
-                "value": 10201,
-                "factors": [
-                    [101, 101]
-                ]
-            }
-        },
-        {
-            "uuid": "edab43e1-c35f-4ea3-8c55-2f31dddd92e5",
-            "description": "find the largest palindrome from triple digit factors",
-            "property": "largest",
-            "input": {
-              "min": 100,
-              "max": 999
-            },
-            "expected": {
-                "value": 906609,
-                "factors": [
-                    [913, 993]
-                ]
-            }
-        },
-        {
-            "uuid": "4f802b5a-9d74-4026-a70f-b53ff9234e4e",
-            "description": "find smallest palindrome from four digit factors",
-            "property": "smallest",
-            "input": {
-              "min": 1000,
-              "max": 9999
-            },
-            "expected": {
-                "value": 1002001,
-                "factors": [
-                    [1001, 1001]
-                ]
-            }
-        },
-        {
-            "uuid": "787525e0-a5f9-40f3-8cb2-23b52cf5d0be",
-            "description": "find the largest palindrome from four digit factors",
-            "property": "largest",
-            "input": {
-              "min": 1000,
-              "max": 9999
-            },
-            "expected": {
-                "value": 99000099,
-                "factors": [
-                    [9901, 9999]
-                ]
-            }
-        },
-        {
-            "uuid": "58fb1d63-fddb-4409-ab84-a7a8e58d9ea0",
-            "description": "empty result for smallest if no palindrome in the range",
-            "property": "smallest",
-            "input": {
-              "min": 1002,
-              "max": 1003
-            },
-            "expected": {
-                "value": null,
-                "factors": []
-            }
-        },
-        {
-            "uuid": "9de9e9da-f1d9-49a5-8bfc-3d322efbdd02",
-            "description": "empty result for largest if no palindrome in the range",
-            "property": "largest",
-            "input": {
-              "min": 15,
-              "max": 15
-            },
-            "expected": {
-                "value": null,
-                "factors": []
-            }
-        },
-        {
-            "uuid": "12e73aac-d7ee-4877-b8aa-2aa3dcdb9f8a",
-            "description": "error result for smallest if min is more than max",
-            "property": "smallest",
-            "input": {
-              "min": 10000,
-              "max": 1
-            },
-            "expected": {
-                "error": "min must be <= max"
-            }
-        },
-        {
-            "uuid": "eeeb5bff-3f47-4b1e-892f-05829277bd74",
-            "description": "error result for largest if min is more than max",
-            "property": "largest",
-            "input": {
-              "min": 2,
-              "max": 1
-            },
-            "expected": {
-                "error": "min must be <= max"
-            }
-        }
-    ]
+  "exercise": "palindrome-products",
+  "cases": [
+    {
+      "uuid": "5cff78fe-cf02-459d-85c2-ce584679f887",
+      "description": "finds the smallest palindrome from single digit factors",
+      "property": "smallest",
+      "input": {
+        "min": 1,
+        "max": 9
+      },
+      "expected": {
+        "value": 1,
+        "factors": [[1, 1]]
+      }
+    },
+    {
+      "uuid": "0853f82c-5fc4-44ae-be38-fadb2cced92d",
+      "description": "finds the largest palindrome from single digit factors",
+      "property": "largest",
+      "input": {
+        "min": 1,
+        "max": 9
+      },
+      "expected": {
+        "value": 9,
+        "factors": [
+          [1, 9],
+          [3, 3]
+        ]
+      }
+    },
+    {
+      "uuid": "66c3b496-bdec-4103-9129-3fcb5a9063e1",
+      "description": "find the smallest palindrome from double digit factors",
+      "property": "smallest",
+      "input": {
+        "min": 10,
+        "max": 99
+      },
+      "expected": {
+        "value": 121,
+        "factors": [[11, 11]]
+      }
+    },
+    {
+      "uuid": "a10682ae-530a-4e56-b89d-69664feafe53",
+      "description": "find the largest palindrome from double digit factors",
+      "property": "largest",
+      "input": {
+        "min": 10,
+        "max": 99
+      },
+      "expected": {
+        "value": 9009,
+        "factors": [[91, 99]]
+      }
+    },
+    {
+      "uuid": "cecb5a35-46d1-4666-9719-fa2c3af7499d",
+      "description": "find smallest palindrome from triple digit factors",
+      "property": "smallest",
+      "input": {
+        "min": 100,
+        "max": 999
+      },
+      "expected": {
+        "value": 10201,
+        "factors": [[101, 101]]
+      }
+    },
+    {
+      "uuid": "edab43e1-c35f-4ea3-8c55-2f31dddd92e5",
+      "description": "find the largest palindrome from triple digit factors",
+      "property": "largest",
+      "input": {
+        "min": 100,
+        "max": 999
+      },
+      "expected": {
+        "value": 906609,
+        "factors": [[913, 993]]
+      }
+    },
+    {
+      "uuid": "4f802b5a-9d74-4026-a70f-b53ff9234e4e",
+      "description": "find smallest palindrome from four digit factors",
+      "property": "smallest",
+      "input": {
+        "min": 1000,
+        "max": 9999
+      },
+      "expected": {
+        "value": 1002001,
+        "factors": [[1001, 1001]]
+      }
+    },
+    {
+      "uuid": "787525e0-a5f9-40f3-8cb2-23b52cf5d0be",
+      "description": "find the largest palindrome from four digit factors",
+      "property": "largest",
+      "input": {
+        "min": 1000,
+        "max": 9999
+      },
+      "expected": {
+        "value": 99000099,
+        "factors": [[9901, 9999]]
+      }
+    },
+    {
+      "uuid": "58fb1d63-fddb-4409-ab84-a7a8e58d9ea0",
+      "description": "empty result for smallest if no palindrome in the range",
+      "property": "smallest",
+      "input": {
+        "min": 1002,
+        "max": 1003
+      },
+      "expected": {
+        "value": null,
+        "factors": []
+      }
+    },
+    {
+      "uuid": "9de9e9da-f1d9-49a5-8bfc-3d322efbdd02",
+      "description": "empty result for largest if no palindrome in the range",
+      "property": "largest",
+      "input": {
+        "min": 15,
+        "max": 15
+      },
+      "expected": {
+        "value": null,
+        "factors": []
+      }
+    },
+    {
+      "uuid": "12e73aac-d7ee-4877-b8aa-2aa3dcdb9f8a",
+      "description": "error result for smallest if min is more than max",
+      "property": "smallest",
+      "input": {
+        "min": 10000,
+        "max": 1
+      },
+      "expected": {
+        "error": "min must be <= max"
+      }
+    },
+    {
+      "uuid": "eeeb5bff-3f47-4b1e-892f-05829277bd74",
+      "description": "error result for largest if min is more than max",
+      "property": "largest",
+      "input": {
+        "min": 2,
+        "max": 1
+      },
+      "expected": {
+        "error": "min must be <= max"
+      }
+    }
+  ]
 }

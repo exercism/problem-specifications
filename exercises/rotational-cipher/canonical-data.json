@@ -1,8 +1,6 @@
 {
   "exercise": "rotational-cipher",
-  "comments": [
-    "The tests are a series of rotation tests: "
-  ],
+  "comments": ["The tests are a series of rotation tests: "],
   "cases": [
     {
       "description": "Test rotation from English to ROTn",
