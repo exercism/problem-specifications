@@ -22,22 +22,29 @@ themselves. There are other guides about contributing to other parts of the Exer
 
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [We Will Gladly Help You Help Us](#we-will-gladly-help-you-help-us)
 - [Code of Conduct](#code-of-conduct)
 - [Overview](#overview)
+  - [Language Track Repositories](#language-track-repositories)
+  - [Problem Metadata](#problem-metadata)
 - [Updating an Exercise Test Suite](#updating-an-exercise-test-suite)
   - [Updating a Generated Test Suite](#updating-a-generated-test-suite)
 - [Implementing a Completely New Exercise](#implementing-a-completely-new-exercise)
+  - [In exercism/problem-specifications](#in-exercismproblem-specifications)
+  - [In exercism/<TRACK_ID>](#in-exercismtrack_id)
 - [Track Anatomy](#track-anatomy)
 - [Starting a New Track](#starting-a-new-track)
   - [Beta-Testing a Language Track](#beta-testing-a-language-track)
 - [Useful Tidbits](#useful-tidbits)
   - [Pull Request Guidelines](#pull-request-guidelines)
   - [Anatomy of an Exercise](#anatomy-of-an-exercise)
-  - [Track configuration file (config.json)](#track-configuration-file)
-  - [Track-Level Linting With Configlet](#track-level-linting-with-configlet)
+  - [Track configuration file](#track-configuration-file)
   - [Git Basics](#git-basics)
-  - [Improving Consistency By Extracting Shared Test Data](#improving-consistency-by-extracting-shared-test-data)
+  - [et cetera](#et-cetera)
+- [Improving Consistency By Extracting Shared Test Data](#improving-consistency-by-extracting-shared-test-data)
+- [Auto formatting](#auto-formatting)
+  - [Using prettier to format Markdown and JSON documents](#using-prettier-to-format-markdown-and-json-documents)
 
 ## We Will Gladly Help You Help Us
 
@@ -366,3 +373,48 @@ TODO: add more sections:
 This documentation has moved [to the docs repository](https://github.com/exercism/docs/blob/master/you-can-help/improve-exercise-metadata.md).
 
 We are maintaining this section, since many open issues link to it.
+
+## Auto formatting
+
+We're using [prettier][prettier] to ensure that Markdown and JSON documents are consistently formatted. This gives us the following benefits:
+
+- No formatting discussions.
+- Great editor/IDE integration so files can be formatted on save.
+- Easy to add CI checks for formatting.
+- Easy to automatically format files using a script.
+
+All the above will greatly help reduce churn in reviews, whch is frustrating for both the reviewer and the reviewee.
+
+### Using prettier to format Markdown and JSON documents
+
+There are a couple of ways in which you can format Markdown documents using prettier:
+
+#### 1. Using a GitHub comment
+
+If you add a comment to a GitHub PR that contains the text `/format`, a GitHub workflow will format all Markdown and JSON documents using prettier. Any formatting changes made by prettier will automatically be committed to the PR's branch. This also works for forks that have [enabled maintainers to edit the fork's PR][allowing-fork-pr-changes].
+
+**This is by far the most stable and painless way to format documents.** It is guaranteed that `/format` will format your files in a way that makes the required CI checks pass. This guarantee is **not** given when running prettier locally.
+
+#### 2. Using editor integration
+
+Prettier can be integrated with many [editors][prettier-editor]. This works especially well if the editor supports automatic formatting on save.
+
+#### 3. Using a script
+
+Open a command prompt at the root of the repository and then
+
+1. set an environment variable called `EXERCISM_PRETTIER_VERSION` with the prettier version used in [`format-code.yml`][format-code-yml], e.g. `EXERCISM_PRETTIER_VERSION=2.1.2`;
+2. run `./bin/format.sh`.
+
+Note: this requires [Node.js][nodejs] and bash to be installed on your machine. On windows, you can use [WSL][wsl] or [Git BASH][git-bash]
+
+**Warning:** Running prettier locally is not always reliable. There have been cases where running the formatting script locally does not properly format all files. It is strongly recommended to use `/format` instead.
+
+[prettier]: https://prettier.io/
+[prettier-cli]: https://prettier.io/docs/en/cli.html
+[prettier-editor]: https://prettier.io/docs/en/editors.html
+[nodejs]: https://nodejs.org/en/
+[allowing-fork-pr-changes]: https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/allowing-changes-to-a-pull-request-branch-created-from-a-fork
+[format-code-yml]: https://github.com/exercism/v3/blob/master/.github/workflows/format-code.yml#L53
+[wsl]: https://docs.microsoft.com/en-gb/windows/wsl/install-win10
+[git-bash]: https://gitforwindows.org/

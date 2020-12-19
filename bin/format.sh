@@ -2,7 +2,7 @@
 
 if [ -z "$EXERCISM_PRETTIER_VERSION" ]; then
 	echo "This script requires the EXERCISM_PRETTIER_VERSION variable to work."
-	echo "Please see v3/docs/maintainers/style-guide.md for guidance."
+	echo "Please see CONTRIBUTING.md for guidance."
 	exit 1
 fi
 
