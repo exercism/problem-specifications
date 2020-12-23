@@ -25,64 +25,29 @@
           "property": "append",
           "input": {
             "list1": [],
-            "list2": [
-              1,
-              2,
-              3,
-              4
-            ]
+            "list2": [1, 2, 3, 4]
           },
-          "expected": [
-            1,
-            2,
-            3,
-            4
-          ]
+          "expected": [1, 2, 3, 4]
         },
         {
           "uuid": "e842efed-3bf6-4295-b371-4d67a4fdf19c",
           "description": "empty list to list",
           "property": "append",
           "input": {
-            "list1": [
-              1,
-              2,
-              3,
-              4
-            ],
+            "list1": [1, 2, 3, 4],
             "list2": []
           },
-          "expected": [
-            1,
-            2,
-            3,
-            4
-          ]
+          "expected": [1, 2, 3, 4]
         },
         {
           "uuid": "71dcf5eb-73ae-4a0e-b744-a52ee387922f",
           "description": "non-empty lists",
           "property": "append",
           "input": {
-            "list1": [
-              1,
-              2
-            ],
-            "list2": [
-              2,
-              3,
-              4,
-              5
-            ]
+            "list1": [1, 2],
+            "list2": [2, 3, 4, 5]
           },
-          "expected": [
-            1,
-            2,
-            2,
-            3,
-            4,
-            5
-          ]
+          "expected": [1, 2, 2, 3, 4, 5]
         }
       ]
     },
@@ -103,79 +68,18 @@
           "description": "list of lists",
           "property": "concat",
           "input": {
-            "lists": [
-              [
-                1,
-                2
-              ],
-              [
-                3
-              ],
-              [],
-              [
-                4,
-                5,
-                6
-              ]
-            ]
+            "lists": [[1, 2], [3], [], [4, 5, 6]]
           },
-          "expected": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6
-          ]
+          "expected": [1, 2, 3, 4, 5, 6]
         },
         {
           "uuid": "d6ecd72c-197f-40c3-89a4-aa1f45827e09",
           "description": "list of nested lists",
           "property": "concat",
           "input": {
-            "lists": [
-              [
-                [
-                  1
-                ],
-                [
-                  2
-                ]
-              ],
-              [
-                [
-                  3
-                ]
-              ],
-              [
-                []
-              ],
-              [
-                [
-                  4,
-                  5,
-                  6
-                ]
-              ]
-            ]
+            "lists": [[[1], [2]], [[3]], [[]], [[4, 5, 6]]]
           },
-          "expected": [
-            [
-              1
-            ],
-            [
-              2
-            ],
-            [
-              3
-            ],
-            [],
-            [
-              4,
-              5,
-              6
-            ]
-          ]
+          "expected": [[1], [2], [3], [], [4, 5, 6]]
         }
       ]
     },
@@ -197,19 +101,10 @@
           "description": "non-empty list",
           "property": "filter",
           "input": {
-            "list": [
-              1,
-              2,
-              3,
-              5
-            ],
+            "list": [1, 2, 3, 5],
             "function": "(x) -> x modulo 2 == 1"
           },
-          "expected": [
-            1,
-            3,
-            5
-          ]
+          "expected": [1, 3, 5]
         }
       ]
     },
@@ -230,12 +125,7 @@
           "description": "non-empty list",
           "property": "length",
           "input": {
-            "list": [
-              1,
-              2,
-              3,
-              4
-            ]
+            "list": [1, 2, 3, 4]
           },
           "expected": 4
         }
@@ -259,20 +149,10 @@
           "description": "non-empty list",
           "property": "map",
           "input": {
-            "list": [
-              1,
-              3,
-              5,
-              7
-            ],
+            "list": [1, 3, 5, 7],
             "function": "(x) -> x + 1"
           },
-          "expected": [
-            2,
-            4,
-            6,
-            8
-          ]
+          "expected": [2, 4, 6, 8]
         }
       ]
     },
@@ -298,12 +178,7 @@
           "description": "direction independent function applied to non-empty list",
           "property": "foldl",
           "input": {
-            "list": [
-              1,
-              2,
-              3,
-              4
-            ],
+            "list": [1, 2, 3, 4],
             "initial": 5,
             "function": "(x, y) -> x + y"
           },
@@ -312,12 +187,12 @@
         {
           "uuid": "d2cf5644-aee1-4dfc-9b88-06896676fe27",
           "description": "direction dependent function applied to non-empty list",
+          "comments": [
+            "Expects integer division (expects / to discard fractions).       "
+          ],
           "property": "foldl",
           "input": {
-            "list": [
-              2,
-              5
-            ],
+            "list": [2, 5],
             "initial": 5,
             "function": "(x, y) -> x / y"
           },
@@ -349,12 +224,7 @@
           "description": "direction independent function applied to non-empty list",
           "property": "foldl",
           "input": {
-            "list": [
-              1,
-              2,
-              3,
-              4
-            ],
+            "list": [1, 2, 3, 4],
             "initial": 5,
             "function": "(acc, el) -> el + acc"
           },
@@ -365,17 +235,15 @@
           "reimplements": "d2cf5644-aee1-4dfc-9b88-06896676fe27",
           "comments": [
             "Reimplemented to remove ambiguity about the parameters of the    ",
-            "function input."
+            "function input. Expects / to preserve fractions. Integer division",
+            "will not work here, since it would compute 1 / 24 = 0. Use the   ",
+            "original test values (d2cf5644-aee1-4dfc-9b88-06896676fe27) if   ",
+            "integer division is expected / required.                         "
           ],
           "description": "direction dependent function applied to non-empty list",
           "property": "foldl",
           "input": {
-            "list": [
-              1,
-              2,
-              3,
-              4
-            ],
+            "list": [1, 2, 3, 4],
             "initial": 24,
             "function": "(acc, el) -> el / acc"
           },
@@ -405,12 +273,7 @@
           "description": "direction independent function applied to non-empty list",
           "property": "foldr",
           "input": {
-            "list": [
-              1,
-              2,
-              3,
-              4
-            ],
+            "list": [1, 2, 3, 4],
             "initial": 5,
             "function": "(x, y) -> x + y"
           },
@@ -419,12 +282,12 @@
         {
           "uuid": "be396a53-c074-4db3-8dd6-f7ed003cce7c",
           "description": "direction dependent function applied to non-empty list",
+          "comments": [
+            "Expects integer division (expects / to discard fractions).       "
+          ],
           "property": "foldr",
           "input": {
-            "list": [
-              2,
-              5
-            ],
+            "list": [2, 5],
             "initial": 5,
             "function": "(x, y) -> x / y"
           },
@@ -456,12 +319,7 @@
           "description": "direction independent function applied to non-empty list",
           "property": "foldr",
           "input": {
-            "list": [
-              1,
-              2,
-              3,
-              4
-            ],
+            "list": [1, 2, 3, 4],
             "initial": 5,
             "function": "(acc, el) -> el + acc"
           },
@@ -472,21 +330,19 @@
           "reimplements": "be396a53-c074-4db3-8dd6-f7ed003cce7c",
           "comments": [
             "Reimplemented to remove ambiguity about the parameters of the    ",
-            "function input."
+            "function input. Expects / to preserve fractions. Integer division",
+            "will not work here, since it would compute 4 / 24 = 1 / 6. Use   ",
+            "the original test values (be396a53-c074-4db3-8dd6-f7ed003cce7c)  ",
+            "if integer division is expected / required."
           ],
           "description": "direction dependent function applied to non-empty list",
           "property": "foldr",
           "input": {
-            "list": [
-              1,
-              2,
-              3,
-              4
-            ],
+            "list": [1, 2, 3, 4],
             "initial": 24,
             "function": "(acc, el) -> el / acc"
           },
-          "expected": 64
+          "expected": 9
         }
       ]
     },
@@ -507,56 +363,18 @@
           "description": "non-empty list",
           "property": "reverse",
           "input": {
-            "list": [
-              1,
-              3,
-              5,
-              7
-            ]
+            "list": [1, 3, 5, 7]
           },
-          "expected": [
-            7,
-            5,
-            3,
-            1
-          ]
+          "expected": [7, 5, 3, 1]
         },
         {
           "uuid": "40872990-b5b8-4cb8-9085-d91fc0d05d26",
           "description": "list of lists is not flattened",
           "property": "reverse",
           "input": {
-            "list": [
-              [
-                1,
-                2
-              ],
-              [
-                3
-              ],
-              [],
-              [
-                4,
-                5,
-                6
-              ]
-            ]
+            "list": [[1, 2], [3], [], [4, 5, 6]]
           },
-          "expected": [
-            [
-              4,
-              5,
-              6
-            ],
-            [],
-            [
-              3
-            ],
-            [
-              1,
-              2
-            ]
-          ]
+          "expected": [[4, 5, 6], [], [3], [1, 2]]
         }
       ]
     }
