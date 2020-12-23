@@ -330,10 +330,10 @@
             "value": 59
           },
           {
-            "operation": "pop"
+            "operation": "shift"
           },
           {
-            "operation": "pop"
+            "operation": "shift"
           },
           {
             "operation": "push",
@@ -344,7 +344,7 @@
             "expected": 1
           },
           {
-            "operation": "pop",
+            "operation": "shift",
             "value": 47
           }
         ]
@@ -406,6 +406,92 @@
           {
             "operation": "shift",
             "expected": 71
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "59db191a-b17f-4ab7-9c5c-60711ec1d013",
+      "description": "deletes the element with the specified value from the list, re-assigns tail",
+      "comments": [
+        "Depending on the implementation, a previous test (fd65e422) may pass ",
+        "if the tail is not correctly re-assigned. This test checks if the    ",
+        "tail is correctly assigned.                                          "
+      ],
+      "property": "list",
+      "input": {
+        "operations": [
+          {
+            "operation": "push",
+            "value": 71
+          },
+          {
+            "operation": "push",
+            "value": 83
+          },
+          {
+            "operation": "push",
+            "value": 79
+          },
+          {
+            "operation": "delete",
+            "value": 83
+          },
+          {
+            "operation": "count",
+            "expected": 2
+          },
+          {
+            "operation": "pop",
+            "expected": 79
+          },
+          {
+            "operation": "pop",
+            "expected": 71
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "58242222-5d39-415b-951d-8128247f8993",
+      "description": "deletes the element with the specified value from the list, re-assigns head",
+      "comments": [
+        "Depending on the implementation, a previous test (fd65e422) may pass ",
+        "if the head is not correctly re-assigned. This test checks if the    ",
+        "head is correctly assigned.                                          "
+      ],
+      "property": "list",
+      "input": {
+        "operations": [
+          {
+            "operation": "push",
+            "value": 71
+          },
+          {
+            "operation": "push",
+            "value": 83
+          },
+          {
+            "operation": "push",
+            "value": 79
+          },
+          {
+            "operation": "delete",
+            "value": 83
+          },
+          {
+            "operation": "count",
+            "expected": 2
+          },
+          {
+            "operation": "shift",
+            "expected": 71
+          },
+          {
+            "operation": "shift",
+            "expected": 79
           }
         ]
       },
@@ -495,7 +581,14 @@
     },
     {
       "uuid": "7e04828f-6082-44e3-a059-201c63252a76",
-      "description": "deletes only the first occurence",
+      "description": "deletes only the first occurrence",
+      "comments": [
+        "It's not defined nor tested whether the element closer to the head or",
+        "to the tail should be deleted, because different languages have      ",
+        "different standards of what is considered first or last. If a track  ",
+        "wants to test that it's always the element closer to the head or tail",
+        "that is deleted, it is free to implement such a test.                "
+      ],
       "property": "list",
       "input": {
         "operations": [
