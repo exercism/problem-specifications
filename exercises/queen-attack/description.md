@@ -6,18 +6,19 @@ row, column, or diagonal.
 
 A chessboard can be represented by an 8 by 8 array.
 
-So if you're told the white queen is at (2, 3) and the black queen at
-(5, 6), then you'd know you've got a set-up like so:
+So if you're told the white queen is at `c4` (zero-indexed at 2, 3) and the black queen at `f7` (zero-indexed at 5, 6), then you'd know you've got a set-up like so:
 
 ```text
-_ _ _ _ _ _ _ _
-_ _ _ _ _ _ _ _
-_ _ _ W _ _ _ _
-_ _ _ _ _ _ _ _
-_ _ _ _ _ _ _ _
-_ _ _ _ _ _ B _
-_ _ _ _ _ _ _ _
-_ _ _ _ _ _ _ _
+  a b c d e f g h
+8 _ _ _ _ _ _ _ _ 8
+7 _ _ _ _ _ _ _ _ 7
+6 _ _ _ _ _ _ _ _ 6
+5 _ _ W _ _ _ _ _ 5
+4 _ _ _ _ _ _ _ _ 4
+3 _ _ _ _ _ _ _ _ 3
+2 _ _ _ _ _ B _ _ 2
+1 _ _ _ _ _ _ _ _ 1
+  a b c d e f g h
 ```
 
 You'd also be able to answer whether the queens can attack each other.
