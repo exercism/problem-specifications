@@ -159,7 +159,10 @@
     {
       "description": "folds (reduces) the given list from the left with a function",
       "comments": [
-        "For function: acc is the accumulator and el is the current element"
+        "For function: acc is the accumulator and el is the current element.  ",
+        "The order of the arguments (ie. acc, el or el, acc) should match the ",
+        "conventions common to the language of the track implementing this.   ",
+        "See https://github.com/exercism/problem-specifications/pull/1746#discussion_r548303995 for further advice."
       ],
       "cases": [
         {
@@ -254,7 +257,10 @@
     {
       "description": "folds (reduces) the given list from the right with a function",
       "comments": [
-        "For function: acc is the accumulator and el is the current element"
+        "For function: acc is the accumulator and el is the current element   ",
+        "The order of the arguments (ie. acc, el or el, acc) should match the ",
+        "conventions common to the language of the track implementing this.   ",
+        "See https://github.com/exercism/problem-specifications/pull/1746#discussion_r548303995 for further advice."
       ],
       "cases": [
         {
