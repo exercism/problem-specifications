@@ -5,6 +5,19 @@
       "description": "Translate input RNA sequences into proteins",
       "cases": [
         {
+          "uuid": "2c44f7bf-ba20-43f7-a3bf-f2219c0c3f98",
+          "description": "Empty RNA sequence results in no proteins",
+          "comments": [
+            "Tracks may choose to expect an error when an empty RNA sequence  ",
+            "is given, or use this test to expect an empty result.            "
+          ],
+          "property": "proteins",
+          "input": {
+            "strand": ""
+          },
+          "expected": []
+        },
+        {
           "uuid": "96d3d44f-34a2-4db4-84cd-fff523e069be",
           "description": "Methionine RNA sequence",
           "property": "proteins",
@@ -200,6 +213,9 @@
         {
           "uuid": "dd22eef3-b4f1-4ad6-bb0b-27093c090a9d",
           "description": "Sequence of two different protein codons translates into proteins",
+          "comments": [
+            "The codons are different, the proteins they translate into are not."
+          ],
           "property": "proteins",
           "input": {
             "strand": "UUAUUG"
@@ -276,6 +292,77 @@
             "Tryptophan",
             "Cysteine",
             "Tyrosine"
+          ]
+        },
+        {
+          "uuid": "1e75ea2a-f907-4994-ae5c-118632a1cb0f",
+          "description": "Non-existing codon can't translate",
+          "comments": [
+            "It's up to a track how to behave when a non-existing codon is    ",
+            "passed; to simplify the exercise, this test may be excluded in   ",
+            "order to remove the requirement for input validation.            "
+          ],
+          "scenarios": ["input-validation"],
+          "property": "proteins",
+          "input": {
+            "strand": "AAA"
+          },
+          "expected": {
+            "error": "Invalid codon"
+          }
+        },
+        {
+          "uuid": "9eac93f3-627a-4c90-8653-6d0a0595bc6f",
+          "description": "Unknown amino acids, not part of a codon, can't translate",
+          "comments": [
+            "It's up to a track how to behave when a character is encountered ",
+            "that doesn't represent one of the amino acids part of one of the ",
+            "codons. To simplify the exercise, this test may be excluded in   ",
+            "order to remove the requirement for input validation.            "
+          ],
+          "scenarios": ["input-validation"],
+          "property": "proteins",
+          "input": {
+            "strand": "XYZ"
+          },
+          "expected": {
+            "error": "Invalid codon"
+          }
+        },
+        {
+          "uuid": "9d73899f-e68e-4291-b1e2-7bf87c00f024",
+          "description": "Incomplete RNA sequence can't translate",
+          "comments": [
+            "It's up to a track how to behave when a sequence is incomplete.  ",
+            "To simplify the exercise, this test may be excluded in order to  ",
+            "remove the requirement for input validation.                     "
+          ],
+          "scenarios": ["input-validation"],
+          "property": "proteins",
+          "input": {
+            "strand": "AUGU"
+          },
+          "expected": {
+            "error": "Invalid codon"
+          }
+        },
+        {
+          "uuid": "43945cf7-9968-402d-ab9f-b8a28750b050",
+          "description": "Incomplete RNA sequence can translate if valid until a STOP codon",
+          "comments": [
+            "It's up to a track how to behave when a sequence is incomplete.  ",
+            "To simplify the exercise, this test may be excluded in order to  ",
+            "allow implementations to validate the strand before translating  ",
+            "it into proteins.                                                "
+          ],
+          "scenarios": ["input-validation", "runtime-validation"],
+          "property": "proteins",
+          "input": {
+            "strand": "UUCUUCUAAUGGU"
+          },
+          "expected": [
+            "Phenylalanine",
+            "Phenylalanine"
           ]
         }
       ]
