@@ -2,3 +2,4 @@ big-integer
 floating-point
 library-test
 unicode
+error
