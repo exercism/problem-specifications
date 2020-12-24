@@ -1,8 +1,6 @@
-Given the position of two queens on a chess board, indicate whether or not they
-are positioned so that they can attack each other.
+Given the position of two queens on a chess board, indicate whether or not they are positioned so that they can attack each other.
 
-In the game of chess, a queen can attack pieces which are on the same
-row, column, or diagonal.
+In the game of chess, a queen can attack pieces which are on the same row, column, or diagonal.
 
 A chessboard can be represented by an 8 by 8 array.
 
@@ -21,6 +19,4 @@ So if you're told the white queen is at `c4` (zero-indexed at 2, 3) and the blac
   a b c d e f g h
 ```
 
-You'd also be able to answer whether the queens can attack each other.
-In this case, that answer would be yes, they can, because both pieces
-share a diagonal.
+You'd also be able to answer whether the queens can attack each other. In this case, that answer would be yes, they can, because both pieces share a diagonal.
