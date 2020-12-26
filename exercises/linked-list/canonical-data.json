@@ -303,7 +303,7 @@
           },
           {
             "operation": "pop",
-            "value": 47
+            "expected": 47
           }
         ]
       },
@@ -345,7 +345,7 @@
           },
           {
             "operation": "shift",
-            "value": 47
+            "expected": 47
           }
         ]
       },
