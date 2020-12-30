@@ -79,26 +79,6 @@
         "strand2": "AGTG"
       },
       "expected": {"error": "left and right strands must be of equal length"}
-    },
-    {
-      "uuid": "5dce058b-28d4-4ca7-aa64-adfe4e17784c",
-      "description": "disallow left empty strand",
-      "property": "distance",
-      "input": {
-        "strand1": "",
-        "strand2": "G"
-      },
-      "expected": {"error": "left strand must not be empty"}
-    },
-    {
-      "uuid": "38826d4b-16fb-4639-ac3e-ba027dec8b5f",
-      "description": "disallow right empty strand",
-      "property": "distance",
-      "input": {
-        "strand1": "G",
-        "strand2": ""
-      },
-      "expected": {"error": "right strand must not be empty"}
     }
   ]
 }
