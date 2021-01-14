@@ -83,6 +83,24 @@
             "scores": [40]
           },
           "expected": [40]
+        },
+        {
+          "uuid": "",
+          "description": "Latest score after personal top scores",
+          "property": "latestAfterTopThree",
+          "input": {
+            "scores": [30, 50, 20, 70]
+          },
+          "expected": 70
+        },
+        {
+          "uuid": "",
+          "description": "Scores after personal top scores",
+          "property": "scoresAfterTopThree",
+          "input": {
+            "scores": [30, 50, 20, 70]
+          },
+          "expected": [30, 50, 20, 70]
         }
       ]
     }
