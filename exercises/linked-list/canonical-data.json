@@ -1,0 +1,636 @@
+{
+  "exercise": "linked-list",
+  "comments": [
+    "In order to keep the interface for the exercise close or equal to the     ",
+    "description.md and also satisfying the canonical-schema.json, the only   ",
+    "properties are pop, push, shift, unshift. Some tracks also implement     ",
+    "delete and count, via Track-Inserted hints.                              ",
+    "                                                                         ",
+    "It is hard to have interesting tests using the property based approach so",
+    "this canonical data uses the following approach:                         ",
+    "- Each test input is an array of { operation, value?, expected? }        ",
+    "- If operation is push, unshift, delete, then value is given             ",
+    "- If operation is pop, shift, count, the expected value can be given     ",
+    "                                                                         ",
+    "Encoding tests and operations using the same field is necessary to have  ",
+    "tests that don't just initialize the list, and then have one operation.  "
+  ],
+  "cases": [
+    {
+      "uuid": "7f7e3987-b954-41b8-8084-99beca08752c",
+      "description": "pop gets element from the list",
+      "comments": [
+        "This test does not confirm that pop gets the last element from the   ",
+        "list. The next test (push/pop respectively add/remove at the end of  ",
+        "the list) does check that behaviour. This test provides a stepping   ",
+        "stone."
+      ],
+      "property": "list",
+      "input": {
+        "operations": [
+          {
+            "operation": "push",
+            "value": 7
+          },
+          {
+            "operation": "pop",
+            "expected": 7
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "c3f67e5d-cfa2-4c3e-a18f-7ce999c3c885",
+      "description": "push/pop respectively add/remove at the end of the list",
+      "property": "list",
+      "input": {
+        "operations": [
+          {
+            "operation": "push",
+            "value": 11
+          },
+          {
+            "operation": "push",
+            "value": 13
+          },
+          {
+            "operation": "pop",
+            "expected": 13
+          },
+          {
+            "operation": "pop",
+            "expected": 11
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "00ea24ce-4f5c-4432-abb4-cc6e85462657",
+      "description": "shift gets an element from the list",
+      "comments": [
+        "This test does not confirm that shift gets the first element from the",
+        "list. The next test (shift gets first element from the list) does    ",
+        "check that behaviour. This test provides a stepping stone.           "
+      ],
+      "property": "list",
+      "input": {
+        "operations": [
+          {
+            "operation": "push",
+            "value": 17
+          },
+          {
+            "operation": "shift",
+            "expected": 17
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "37962ee0-3324-4a29-b588-5a4c861e6564",
+      "description": "shift gets first element from the list",
+      "property": "list",
+      "input": {
+        "operations": [
+          {
+            "operation": "push",
+            "value": 23
+          },
+          {
+            "operation": "push",
+            "value": 5
+          },
+          {
+            "operation": "shift",
+            "expected": 23
+          },
+          {
+            "operation": "shift",
+            "expected": 5
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "30a3586b-e9dc-43fb-9a73-2770cec2c718",
+      "description": "unshift adds element at start of the list",
+      "property": "list",
+      "input": {
+        "operations": [
+          {
+            "operation": "unshift",
+            "value": 23
+          },
+          {
+            "operation": "unshift",
+            "value": 5
+          },
+          {
+            "operation": "shift",
+            "expected": 5
+          },
+          {
+            "operation": "shift",
+            "expected": 23
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "042f71e4-a8a7-4cf0-8953-7e4f3a21c42d",
+      "description": "pop, push, shift, and unshift can be used in any order",
+      "property": "list",
+      "input": {
+        "operations": [
+          {
+            "operation": "push",
+            "value": 1
+          },
+          {
+            "operation": "push",
+            "value": 2
+          },
+          {
+            "operation": "pop",
+            "expected": 2
+          },
+          {
+            "operation": "push",
+            "value": 3
+          },
+          {
+            "operation": "shift",
+            "expected": 1
+          },
+          {
+            "operation": "unshift",
+            "value": 4
+          },
+          {
+            "operation": "push",
+            "value": 5
+          },
+          {
+            "operation": "shift",
+            "expected": 4
+          },
+          {
+            "operation": "pop",
+            "expected": 5
+          },
+          {
+            "operation": "shift",
+            "expected": 3
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "88f65c0c-4532-4093-8295-2384fb2f37df",
+      "description": "count an empty list",
+      "property": "list",
+      "input": {
+        "operations": [
+          {
+            "operation": "count",
+            "expected": 0
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "fc055689-5cbe-4cd9-b994-02e2abbb40a5",
+      "description": "count a list with items",
+      "property": "list",
+      "input": {
+        "operations": [
+          {
+            "operation": "push",
+            "value": 37
+          },
+          {
+            "operation": "push",
+            "value": 1
+          },
+          {
+            "operation": "count",
+            "expected": 2
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "8272cef5-130d-40ea-b7f6-5ffd0790d650",
+      "description": "count is correct after mutation",
+      "property": "list",
+      "input": {
+        "operations": [
+          {
+            "operation": "push",
+            "value": 31
+          },
+          {
+            "operation": "count",
+            "expected": 1
+          },
+          {
+            "operation": "unshift",
+            "value": 43
+          },
+          {
+            "operation": "count",
+            "expected": 2
+          },
+          {
+            "operation": "shift"
+          },
+          {
+            "operation": "count",
+            "expected": 1
+          },
+          {
+            "operation": "pop"
+          },
+          {
+            "operation": "count",
+            "expected": 0
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "229b8f7a-bd8a-4798-b64f-0dc0bb356d95",
+      "description": "popping to empty doesn't break the list",
+      "comments": [
+        "When not implemented correctly, head/tail reference will break when  ",
+        "the last item of the list is removed. This test adds an item after a ",
+        "list with at least two elements (different head than tail) has been  ",
+        "emptied out. If done correctly, the list will still work."
+      ],
+      "property": "list",
+      "input": {
+        "operations": [
+          {
+            "operation": "push",
+            "value": 41
+          },
+          {
+            "operation": "push",
+            "value": 59
+          },
+          {
+            "operation": "pop"
+          },
+          {
+            "operation": "pop"
+          },
+          {
+            "operation": "push",
+            "value": 47
+          },
+          {
+            "operation": "count",
+            "expected": 1
+          },
+          {
+            "operation": "pop",
+            "expected": 47
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "4e1948b4-514e-424b-a3cf-a1ebbfa2d1ad",
+      "description": "shifting to empty doesn't break the list",
+      "comments": [
+        "When not implemented correctly, head/tail reference will break when  ",
+        "the last item of the list is removed. This test adds an item after a ",
+        "list with at least two elements (different head than tail) has been  ",
+        "emptied out. If done correctly, the list will still work."
+      ],
+      "property": "list",
+      "input": {
+        "operations": [
+          {
+            "operation": "push",
+            "value": 41
+          },
+          {
+            "operation": "push",
+            "value": 59
+          },
+          {
+            "operation": "shift"
+          },
+          {
+            "operation": "shift"
+          },
+          {
+            "operation": "push",
+            "value": 47
+          },
+          {
+            "operation": "count",
+            "expected": 1
+          },
+          {
+            "operation": "shift",
+            "expected": 47
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "e8f7c600-d597-4f79-949d-8ad8bae895a6",
+      "description": "deletes the only element",
+      "property": "list",
+      "input": {
+        "operations": [
+          {
+            "operation": "push",
+            "value": 61
+          },
+          {
+            "operation": "delete",
+            "value": 61
+          },
+          {
+            "operation": "count",
+            "expected": 0
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "fd65e422-51f3-45c0-9fd0-c33da638f89b",
+      "description": "deletes the element with the specified value from the list",
+      "property": "list",
+      "input": {
+        "operations": [
+          {
+            "operation": "push",
+            "value": 71
+          },
+          {
+            "operation": "push",
+            "value": 83
+          },
+          {
+            "operation": "push",
+            "value": 79
+          },
+          {
+            "operation": "delete",
+            "value": 83
+          },
+          {
+            "operation": "count",
+            "expected": 2
+          },
+          {
+            "operation": "pop",
+            "expected": 79
+          },
+          {
+            "operation": "shift",
+            "expected": 71
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "59db191a-b17f-4ab7-9c5c-60711ec1d013",
+      "description": "deletes the element with the specified value from the list, re-assigns tail",
+      "comments": [
+        "Depending on the implementation, a previous test (fd65e422) may pass ",
+        "if the tail is not correctly re-assigned. This test checks if the    ",
+        "tail is correctly assigned.                                          "
+      ],
+      "property": "list",
+      "input": {
+        "operations": [
+          {
+            "operation": "push",
+            "value": 71
+          },
+          {
+            "operation": "push",
+            "value": 83
+          },
+          {
+            "operation": "push",
+            "value": 79
+          },
+          {
+            "operation": "delete",
+            "value": 83
+          },
+          {
+            "operation": "count",
+            "expected": 2
+          },
+          {
+            "operation": "pop",
+            "expected": 79
+          },
+          {
+            "operation": "pop",
+            "expected": 71
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "58242222-5d39-415b-951d-8128247f8993",
+      "description": "deletes the element with the specified value from the list, re-assigns head",
+      "comments": [
+        "Depending on the implementation, a previous test (fd65e422) may pass ",
+        "if the head is not correctly re-assigned. This test checks if the    ",
+        "head is correctly assigned.                                          "
+      ],
+      "property": "list",
+      "input": {
+        "operations": [
+          {
+            "operation": "push",
+            "value": 71
+          },
+          {
+            "operation": "push",
+            "value": 83
+          },
+          {
+            "operation": "push",
+            "value": 79
+          },
+          {
+            "operation": "delete",
+            "value": 83
+          },
+          {
+            "operation": "count",
+            "expected": 2
+          },
+          {
+            "operation": "shift",
+            "expected": 71
+          },
+          {
+            "operation": "shift",
+            "expected": 79
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "ee3729ee-3405-4bd2-9bad-de0d4aa5d647",
+      "description": "deletes the first of two elements",
+      "property": "list",
+      "input": {
+        "operations": [
+          {
+            "operation": "push",
+            "value": 97
+          },
+          {
+            "operation": "push",
+            "value": 101
+          },
+          {
+            "operation": "delete",
+            "value": 97
+          },
+          {
+            "operation": "count",
+            "expected": 1
+          },
+          {
+            "operation": "pop",
+            "expected": 101
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "47e3b3b4-b82c-4c23-8c1a-ceb9b17cb9fb",
+      "description": "deletes the second of two elements",
+      "property": "list",
+      "input": {
+        "operations": [
+          {
+            "operation": "push",
+            "value": 97
+          },
+          {
+            "operation": "push",
+            "value": 101
+          },
+          {
+            "operation": "delete",
+            "value": 101
+          },
+          {
+            "operation": "count",
+            "expected": 1
+          },
+          {
+            "operation": "pop",
+            "expected": 97
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "7b420958-f285-4922-b8f9-10d9dcab5179",
+      "description": "delete does not modify the list if the element is not found",
+      "property": "list",
+      "input": {
+        "operations": [
+          {
+            "operation": "push",
+            "value": 89
+          },
+          {
+            "operation": "delete",
+            "value": 103
+          },
+          {
+            "operation": "count",
+            "expected": 1
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "7e04828f-6082-44e3-a059-201c63252a76",
+      "description": "deletes only the first occurrence",
+      "comments": [
+        "It's not defined nor tested whether the element closer to the head or",
+        "to the tail should be deleted, because different languages have      ",
+        "different standards of what is considered first or last. If a track  ",
+        "wants to test that it's always the element closer to the head or tail",
+        "that is deleted, it is free to implement such a test.                "
+      ],
+      "property": "list",
+      "input": {
+        "operations": [
+          {
+            "operation": "push",
+            "value": 73
+          },
+          {
+            "operation": "push",
+            "value": 9
+          },
+          {
+            "operation": "push",
+            "value": 9
+          },
+          {
+            "operation": "push",
+            "value": 107
+          },
+          {
+            "operation": "delete",
+            "value": 9
+          },
+          {
+            "operation": "count",
+            "expected": 3
+          },
+          {
+            "operation": "pop",
+            "expected": 107
+          },
+          {
+            "operation": "pop",
+            "expected": 9
+          },
+          {
+            "operation": "pop",
+            "expected": 73
+          }
+        ]
+      },
+      "expected": {}
+    }
+  ]
+}
