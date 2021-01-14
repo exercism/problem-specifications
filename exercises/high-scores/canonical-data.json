@@ -89,9 +89,9 @@
           "description": "Latest score after personal top scores",
           "property": "latestAfterTopThree",
           "input": {
-            "scores": [30, 50, 20, 70]
+            "scores": [70, 50, 20, 30]
           },
-          "expected": 70
+          "expected": 30
         },
         {
           "uuid": "",
