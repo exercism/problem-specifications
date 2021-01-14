@@ -85,7 +85,7 @@
           "expected": [40]
         },
         {
-          "uuid": "",
+          "uuid": "2df075f9-fec9-4756-8f40-98c52a11504f",
           "description": "Latest score after personal top scores",
           "property": "latestAfterTopThree",
           "input": {
