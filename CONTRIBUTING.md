@@ -323,29 +323,9 @@ See the [anatomy of an exercise](https://github.com/exercism/docs/tree/master/la
 
 ### Track configuration file
 
-Each language track has a configuration file called `config.json`.
+Each language track has a configuration file called `config.json`. Its structure is defined in [this spec](https://github.com/exercism/docs/blob/main/anatomy/tracks/config-json.md). The `config.json` file's key feature is that it defines which exercises the language track has implemented.
 
-Important keys are:
-* `problems` - actively served via `exercism fetch`
-* `deprecated` - implemented, but aren't served anymore
-* `foregone` - will not be implemented in the track
-
-The `configlet` tool uses those categories to ensure that
-
-1. all the `problems` are implemented,
-2. `deprecated` problems are not actively served as problems, and
-3. `foregone` problems are not implemented.
-
-In addition, it will complain about problems that are implemented but are not
-listed in the config under the `problems` key.
-
-A problem might be foregone for a number of reasons, typically because it's a
-bad exercise for the language.
-
-Optional keys:
-* `test_pattern` - A (case sensitive) regex pattern that test filenames will match. It is used to determine which files will be visible on a problem's test-suite page on the exercism.io site. The default value used if this key is not present is `test` (note: this is case _insensitive_)
-* `ignore_pattern` - A (case insensitive) regex pattern that will cause files matching it to not be served to the student by `exercism fetch`. The default value used if this key is not present is `example`
-* `solution_pattern` - A (case sensitive) regex pattern that matches solution files in the track repository. Used by [configlet](https://github.com/exercism/configlet) to check for the presence of an example solution for each problem implemented by the track.  The default value used if this key is not present is `[Ee]xample`.
+The [configlet](https://github.com/exercism/docs/blob/main/anatomy/tracks/configlet/README.md) tool can verify (lint) the track's configuration file.
 
 ### Git Basics
 See [Git Basics](https://github.com/exercism/docs/blob/master/contributing/git-basics.md) in [docs](https://github.com/exercism/docs) repository.
