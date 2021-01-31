@@ -374,7 +374,7 @@
         "number": 3000
       },
       "expected": "MMM"
-    }
+    },
     {
       "uuid": "a271054b-714d-4840-ab13-7ea68f3ff334",
       "reimplements": "bb550038-d4eb-4be2-a9ce-f21961ac3bc6",
