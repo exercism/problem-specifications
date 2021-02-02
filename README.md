@@ -41,6 +41,7 @@ Test data can be incorporated into a track's test suites manually or extracted b
 
 - Test cases are immutable, which means that once a test case has been added, it never changes. There are two exceptions:
   - The `comments` field _can_ be mutated and thus does not require adding a new test case when changing its value.
+  - The `description` field _can_ be mutated and thus does not require adding a new test case when changing its value.
   - The `scenarios` field _can_ be mutated additively, by adding new scenarios. Existing scenarios must not be changed or removed. Adding new scenarios thus does not require adding a new test case.
 - Test cases _must_ all be considered optional, insomuch that a track should determine per test case whether to implement it or not.
 - Each test case has a [UUID (v4)](https://en.wikipedia.org/wiki/Universally_unique_identifier) to uniquely identify it.
