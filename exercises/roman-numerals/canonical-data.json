@@ -3,18 +3,7 @@
   "cases": [
     {
       "uuid": "19828a3a-fbf7-4661-8ddd-cbaeee0e2178",
-      "description": "1 is a single I",
-      "property": "roman",
-      "input": {
-        "number": 1
-      },
-      "expected": "I"
-    },
-    {
-      "uuid": "61797ec8-10dd-48fd-b55f-c106e21d1457",
-      "reimplements": "19828a3a-fbf7-4661-8ddd-cbaeee0e2178",
       "description": "1 is I",
-      "comments": ["Improve description"],
       "property": "roman",
       "input": {
         "number": 1
@@ -23,18 +12,7 @@
     },
     {
       "uuid": "f088f064-2d35-4476-9a41-f576da3f7b03",
-      "description": "2 is two I's",
-      "property": "roman",
-      "input": {
-        "number": 2
-      },
-      "expected": "II"
-    },
-    {
-      "uuid": "c1894cb6-b251-420a-b9b8-151f8e0e24fa",
-      "reimplements": "f088f064-2d35-4476-9a41-f576da3f7b03",
       "description": "2 is II",
-      "comments": ["Improve description"],
       "property": "roman",
       "input": {
         "number": 2
@@ -43,18 +21,7 @@
     },
     {
       "uuid": "b374a79c-3bea-43e6-8db8-1286f79c7106",
-      "description": "3 is three I's",
-      "property": "roman",
-      "input": {
-        "number": 3
-      },
-      "expected": "III"
-    },
-    {
-      "uuid": "5c26d6bf-40d6-47a0-998f-55d9af33a9dc",
-      "reimplements": "b374a79c-3bea-43e6-8db8-1286f79c7106",
       "description": "3 is III",
-      "comments": ["Improve description"],
       "property": "roman",
       "input": {
         "number": 3
@@ -63,18 +30,8 @@
     },
     {
       "uuid": "05a0a1d4-a140-4db1-82e8-fcc21fdb49bb",
-      "description": "4, being 5 - 1, is IV",
-      "property": "roman",
-      "input": {
-        "number": 4
-      },
-      "expected": "IV"
-    },
-    {
-      "uuid": "65fe71b5-90b6-403f-b74e-de83f49c42bb",
-      "reimplements": "05a0a1d4-a140-4db1-82e8-fcc21fdb49bb",
       "description": "4 is IV",
-      "comments": ["Improve description"],
+      "comments": ["Because 4 is 5 - 1"],
       "property": "roman",
       "input": {
         "number": 4
@@ -83,18 +40,7 @@
     },
     {
       "uuid": "57c0f9ad-5024-46ab-975d-de18c430b290",
-      "description": "5 is a single V",
-      "property": "roman",
-      "input": {
-        "number": 5
-      },
-      "expected": "V"
-    },
-    {
-      "uuid": "31318f55-f9df-466e-a12e-6de2a64b379a",
-      "reimplements": "57c0f9ad-5024-46ab-975d-de18c430b290",
       "description": "5 is V",
-      "comments": ["Improve description"],
       "property": "roman",
       "input": {
         "number": 5
@@ -103,18 +49,8 @@
     },
     {
       "uuid": "20a2b47f-e57f-4797-a541-0b3825d7f249",
-      "description": "6, being 5 + 1, is VI",
-      "property": "roman",
-      "input": {
-        "number": 6
-      },
-      "expected": "VI"
-    },
-    {
-      "uuid": "eaf1264e-a220-4f82-b79f-3ae62bf0d60b",
-      "reimplements": "20a2b47f-e57f-4797-a541-0b3825d7f249",
-      "comments": ["Improve description"],
       "description": "6 is VI",
+      "comments": ["Because 6 is 5 + 1"],
       "property": "roman",
       "input": {
         "number": 6
@@ -123,18 +59,8 @@
     },
     {
       "uuid": "ff3fb08c-4917-4aab-9f4e-d663491d083d",
-      "description": "9, being 10 - 1, is IX",
-      "property": "roman",
-      "input": {
-        "number": 9
-      },
-      "expected": "IX"
-    },
-    {
-      "uuid": "1ca952c8-d135-4666-ab75-d1b649d154bc",
-      "reimplements": "ff3fb08c-4917-4aab-9f4e-d663491d083d",
       "description": "9 is IX",
-      "comments": ["Improve description"],
+      "comments": ["Because 9 is 10 - 1"],
       "property": "roman",
       "input": {
         "number": 9
@@ -143,18 +69,7 @@
     },
     {
       "uuid": "2bda64ca-7d28-4c56-b08d-16ce65716cf6",
-      "description": "20 is two X's",
-      "property": "roman",
-      "input": {
-        "number": 27
-      },
-      "expected": "XXVII"
-    },
-    {
-      "uuid": "d5883793-f7e4-4f20-aa46-991a8bea4bef",
-      "reimplements": "2bda64ca-7d28-4c56-b08d-16ce65716cf6",
       "description": "27 is XXVII",
-      "comments": ["Improve description"],
       "property": "roman",
       "input": {
         "number": 27
@@ -163,20 +78,8 @@
     },
     {
       "uuid": "a1f812ef-84da-4e02-b4f0-89c907d0962c",
-      "description": "48 is not 50 - 2 but rather 40 + 8",
-      "property": "roman",
-      "input": {
-        "number": 48
-      },
-      "expected": "XLVIII"
-    },
-    {
-      "uuid": "1947d249-ff49-446d-85b2-7cee60a462c3",
-      "reimplements": "a1f812ef-84da-4e02-b4f0-89c907d0962c",
       "description": "48 is XLVIII",
-      "comments": [
-        "Improve description",
-        "Note that 48 is not 50 - 2, but rather 40 + 8"],
+      "comments": ["Because 48 is not 50 - 2, but rather 40 + 8"],
       "property": "roman",
       "input": {
         "number": 48
@@ -185,20 +88,8 @@
     },
     {
       "uuid": "607ead62-23d6-4c11-a396-ef821e2e5f75",
-      "description": "49 is not 40 + 5 + 4 but rather 50 - 10 + 10 - 1",
-      "property": "roman",
-      "input": {
-        "number": 49
-      },
-      "expected": "XLIX"
-    },
-    {
-      "uuid": "ca1f68a1-1b64-4f42-a5b8-f2b74beb93c3",
-      "reimplements": "607ead62-23d6-4c11-a396-ef821e2e5f75",
       "description": "49 is XLIX",
-      "comments": [
-        "Improve description",
-        "Note that 49 is not 40 + 5 + 4, but rather (50 - 10) + (10 - 1)"],
+      "comments": ["Because 49 is not 40 + 5 + 4, but rather (50 - 10) + (10 - 1)"],
       "property": "roman",
       "input": {
         "number": 49
@@ -207,18 +98,7 @@
     },
     {
       "uuid": "d5b283d4-455d-4e68-aacf-add6c4b51915",
-      "description": "50 is a single L",
-      "property": "roman",
-      "input": {
-        "number": 59
-      },
-      "expected": "LIX"
-    },
-    {
-      "uuid": "0b15c896-23ad-4c9f-bb9b-b711f7911b0e",
-      "reimplements": "d5b283d4-455d-4e68-aacf-add6c4b51915",
-      "description": "59 is LIX",
-      "comments": ["Improve description"],
+      "description": "59 is a single LIX",
       "property": "roman",
       "input": {
         "number": 59
@@ -227,18 +107,8 @@
     },
     {
       "uuid": "46b46e5b-24da-4180-bfe2-2ef30b39d0d0",
-      "description": "90, being 100 - 10, is XC",
-      "property": "roman",
-      "input": {
-        "number": 93
-      },
-      "expected": "XCIII"
-    },
-    {
-      "uuid": "d989792c-43de-41f3-b1bd-d339dcdb34e0",
-      "reimplements": "46b46e5b-24da-4180-bfe2-2ef30b39d0d0",
       "description": "93 is XCIII",
-      "comments": ["Improve description"],
+      "comments": ["Because 90 is 100 - 10"],
       "property": "roman",
       "input": {
         "number": 93
@@ -247,18 +117,7 @@
     },
     {
       "uuid": "30494be1-9afb-4f84-9d71-db9df18b55e3",
-      "description": "100 is a single C",
-      "property": "roman",
-      "input": {
-        "number": 141
-      },
-      "expected": "CXLI"
-    },
-    {
-      "uuid": "41474a19-d116-4145-bf7c-38b56015896c",
-      "reimplements": "30494be1-9afb-4f84-9d71-db9df18b55e3",
       "description": "141 is CXLI",
-      "comments": ["Improve description"],
       "property": "roman",
       "input": {
         "number": 141
@@ -267,18 +126,8 @@
     },
     {
       "uuid": "267f0207-3c55-459a-b81d-67cec7a46ed9",
-      "description": "60, being 50 + 10, is LX",
-      "property": "roman",
-      "input": {
-        "number": 163
-      },
-      "expected": "CLXIII"
-    },
-    {
-      "uuid": "48437fd7-920a-4be0-ab4c-1550c1e4e8d9",
-      "reimplements": "267f0207-3c55-459a-b81d-67cec7a46ed9",
       "description": "163 is CLXIII",
-      "comments": ["Improve description"],
+      "comments": ["Because 60 is 50 + 10"],
       "property": "roman",
       "input": {
         "number": 163
@@ -287,18 +136,8 @@
     },
     {
       "uuid": "cdb06885-4485-4d71-8bfb-c9d0f496b404",
-      "description": "400, being 500 - 100, is CD",
-      "property": "roman",
-      "input": {
-        "number": 402
-      },
-      "expected": "CDII"
-    },
-    {
-      "uuid": "ce24e94d-43d5-40bc-8df8-731a4f381a24",
-      "reimplements": "cdb06885-4485-4d71-8bfb-c9d0f496b404",
       "description": "402 is CDII",
-      "comments": ["Improve description"],
+      "comments": ["Because 400 is 500 - 100"],
       "property": "roman",
       "input": {
         "number": 402
@@ -307,18 +146,7 @@
     },
     {
       "uuid": "6b71841d-13b2-46b4-ba97-dec28133ea80",
-      "description": "500 is a single D",
-      "property": "roman",
-      "input": {
-        "number": 575
-      },
-      "expected": "DLXXV"
-    },
-    {
-      "uuid": "8480951d-7e7b-40c9-8a3b-cbdbf34db9f8",
-      "reimplements": "6b71841d-13b2-46b4-ba97-dec28133ea80",
       "description": "575 is DLXXV",
-      "comments": ["Improve description"],
       "property": "roman",
       "input": {
         "number": 575
@@ -327,18 +155,8 @@
     },
     {
       "uuid": "432de891-7fd6-4748-a7f6-156082eeca2f",
-      "description": "900, being 1000 - 100, is CM",
-      "property": "roman",
-      "input": {
-        "number": 911
-      },
-      "expected": "CMXI"
-    },
-    {
-      "uuid": "c70db391-0dce-4894-ac6a-994b4670073b",
-      "reimplements": "432de891-7fd6-4748-a7f6-156082eeca2f",
       "description": "911 is CMXI",
-      "comments": ["Improve description"],
+      "comments":["Because 900 is 1000 - 100"],
       "property": "roman",
       "input": {
         "number": 911
@@ -347,19 +165,7 @@
     },
     {
       "uuid": "e6de6d24-f668-41c0-88d7-889c0254d173",
-      "description": "1000 is a single M",
-      "property": "roman",
-      "input": {
-        "number": 1024
-      },
-      "expected": "MXXIV"
-    },
-
-    {
-      "uuid": "4649bef7-c17d-4a93-bbd1-91d94119585f",
-      "reimplements": "e6de6d24-f668-41c0-88d7-889c0254d173",
       "description": "1024 is MXXIV",
-      "comments": ["Improve description"],
       "property": "roman",
       "input": {
         "number": 1024
@@ -368,18 +174,7 @@
     },
     {
       "uuid": "bb550038-d4eb-4be2-a9ce-f21961ac3bc6",
-      "description": "3000 is three M's",
-      "property": "roman",
-      "input": {
-        "number": 3000
-      },
-      "expected": "MMM"
-    },
-    {
-      "uuid": "a271054b-714d-4840-ab13-7ea68f3ff334",
-      "reimplements": "bb550038-d4eb-4be2-a9ce-f21961ac3bc6",
       "description": "3000 is MMM",
-      "comments": ["Improve description"],
       "property": "roman",
       "input": {
         "number": 3000
