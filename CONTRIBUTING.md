@@ -325,7 +325,7 @@ See the [anatomy of an exercise](https://github.com/exercism/docs/tree/master/la
 
 Each language track has a configuration file called `config.json`. Its structure is defined in [this spec](https://github.com/exercism/docs/blob/main/anatomy/tracks/config-json.md). The `config.json` file's key feature is that it defines which exercises the language track has implemented.
 
-The [configlet](https://github.com/exercism/docs/blob/main/anatomy/tracks/configlet/README.md) tool can verify (lint) the track's configuration file.
+The [configlet](https://github.com/exercism/docs/blob/main/anatomy/tracks/configlet/README.md) tool can verify (lint) a track's configuration file.
 
 ### Git Basics
 See [Git Basics](https://github.com/exercism/docs/blob/master/contributing/git-basics.md) in [docs](https://github.com/exercism/docs) repository.
