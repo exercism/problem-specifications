@@ -31,7 +31,7 @@ hello
 hello again
 ```
 
-### Flags
+## Flags
 
 As said earlier, the `grep` command should also support the following flags:
 

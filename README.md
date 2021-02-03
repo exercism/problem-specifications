@@ -1,4 +1,4 @@
-# problem-specifications
+# Problem Specifications
 
 Shared metadata for Exercism exercises.
 
