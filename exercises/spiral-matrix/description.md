@@ -13,7 +13,7 @@ like these examples:
 7 6 5
 ```
 
-**Spiral matrix of size 4:*
+### Spiral matrix of size 4
 
 ```text
  1  2  3 4
