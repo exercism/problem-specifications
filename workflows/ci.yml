@@ -19,7 +19,7 @@ name: <track> / main
 
 on:
   push:
-    branches: [master, main]
+    branches: [main]
   workflow_dispatch:
 
 jobs:

@@ -210,7 +210,7 @@ If a track uses a _test generator_ to generate an exercise's test suite, it _mus
 
 To make it easy to keep the `tests.toml` up to date, tracks can use the [`canonical_data_syncer` application](https://github.com/exercism/canonical-data-syncer). This application is a small, standalone binary that will compare the tests specified in the `tests.toml` files against the tests that are defined in the exercise's canonical data. It then interactively gives the maintainer the option to include or exclude test cases that are currently missing, updating the `tests.toml` file accordingly.
 
-To use the canonical data syncer tool, tracks should copying the [`fetch-canonical_data_syncer`](https://github.com/exercism/canonical-data-syncer/blob/master/scripts/fetch-canonical_data_syncer) and/or [`fetch-canonical_data_syncer.ps1`](https://github.com/exercism/canonical-data-syncer/blob/master/scripts/fetch-canonical_data_syncer.ps1) scripts into their repository. Then, running either of these scripts will download the latest version of the tool to the track's `bin` directory. The tool can be run using `./bin/canonical_data_syncer` or `.\bin\canonical_data_syncer.exe`, depending on your operating system.
+To use the canonical data syncer tool, tracks should copying the [`fetch-canonical_data_syncer`](https://github.com/exercism/canonical-data-syncer/blob/main/scripts/fetch-canonical_data_syncer) and/or [`fetch-canonical_data_syncer.ps1`](https://github.com/exercism/canonical-data-syncer/blob/main/scripts/fetch-canonical_data_syncer.ps1) scripts into their repository. Then, running either of these scripts will download the latest version of the tool to the track's `bin` directory. The tool can be run using `./bin/canonical_data_syncer` or `.\bin\canonical_data_syncer.exe`, depending on your operating system.
 
 ## Conventions
 
@@ -229,7 +229,7 @@ There are also some conventions that must be followed:
 
 ```
 {
-"$schema": "https://github.com/exercism/problem-specifications/blob/master/canonical-schema.json"
+"$schema": "https://github.com/exercism/problem-specifications/blob/main/canonical-schema.json"
 }
 ```
 

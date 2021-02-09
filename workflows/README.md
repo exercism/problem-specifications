@@ -3,6 +3,7 @@
 This document explains how to set up Continuous Integration (CI) workflows for an Exercism Language Track using GitHub Actions (GHA). It provides best practices and examples for you to use to make your own fast, reliable and robust CI workflows. The GHA workflows in this folder can be adapted to work with any CI, because the base structure will remain the same.
 
 It will:
+
 - Outline the ideal CI workflow
 - Discuss considerations and recommendations
 - Provide you with some templates to use
@@ -98,7 +99,7 @@ If the tooling has lockfiles for dependency management, consider checking it int
 In this directory at minimum there are the following templates:
 
 - `configlet.yml`: This workflow will do a fetch the latest configlet binary and lint this repository. Run on every commit. For PRs, runs on the actual commit and a "after merge" tree.
-- `ci.yml`: This workflow **only runs on the main branch (`master` or `main` by default)**, once on each commit.
+- `ci.yml`: This workflow **only runs on the main branch**, once on each commit.
   1. Run a 'pre-check' command (check for stubs, lint, docs, etc.) for all exercises
   2. Run a 'ci' command (build and test) for multiple versions, for all exercises
 - `pr.ci.yml`: This workflow **only runs on PRs**, once on each commit.
@@ -202,12 +203,12 @@ Here is the diff for `workflows/ci.yml`.
 + # - bin/ci-check
 + # - bin/ci
 
-- name: <track> / master
-+ name: elm / master
+- name: <track> / main
++ name: elm / main
 
   on:
     push:
-      branches: [master, main]
+      branches: [main]
     workflow_dispatch:
 
   jobs:
@@ -301,7 +302,7 @@ If you run into any issues or want someone to review your workflows, please ping
 
 > **Changed a top-level file that should trigger a CI run on all exercises**
 
-At moment of writing, `pr.ci.yml` only allows for "extension" testing. Ideally this is updated to trigger always when certain files are changed (for example the binary to run the tests). However, these changes are often infrequent and done by maintainers, that the fact that `ci.yml` runs on master, always, for everything, is probably safe enough.
+At moment of writing, `pr.ci.yml` only allows for "extension" testing. Ideally this is updated to trigger always when certain files are changed (for example the binary to run the tests). However, these changes are often infrequent and done by maintainers, that the fact that `ci.yml` runs on main, always, for everything, is probably safe enough.
 
 > **Created a scripts/xxx file on Windows and now it doesn't work on {other OS}**
 
