@@ -1,3 +1,5 @@
+# Description
+
 Write a function to solve alphametics puzzles.
 
 [Alphametics](https://en.wikipedia.org/wiki/Alphametics) is a puzzle where

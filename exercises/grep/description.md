@@ -1,3 +1,5 @@
+# Description
+
 Search a file for lines matching a regular expression pattern. Return the line
 number and contents of each matching line.
 

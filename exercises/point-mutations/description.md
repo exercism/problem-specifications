@@ -1,3 +1,5 @@
+# Description
+
 Calculate the Hamming difference between two DNA strands.
 
 A mutation is simply a mistake that occurs during the creation or

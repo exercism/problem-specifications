@@ -1,3 +1,5 @@
+# Description
+
 Given a diagram, determine which plants each child in the kindergarten class is
 responsible for.
 

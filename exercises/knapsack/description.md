@@ -1,3 +1,5 @@
+# Description
+
 In this exercise, let's try to solve a classic problem.
 
 Bob is a thief. After months of careful planning, he finally manages to
