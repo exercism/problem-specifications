@@ -125,7 +125,7 @@ node_js:
   - lts/*
 script:
   - bin/fetch-configlet
-  - bin/configlet lint .
+  - bin/configlet lint
   - bin/build.sh
 ```
 
@@ -147,7 +147,7 @@ In order to convert this quickly to GitHub Actions, take the following steps:
 ### Determine the steps
 
 - `bin/fetch-configlet`: don't need this anymore when using `configlet.yml` workflow
-- `bin/configlet lint .`: don't need this anymore when using `configlet.yml` workflow
+- `bin/configlet lint`: don't need this anymore when using `configlet.yml` workflow
 - `bin/build.sh`: single script that does everything
 
 ### Prepare the "scripts"
