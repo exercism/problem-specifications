@@ -1,3 +1,5 @@
+# Description
+
 Given a phrase, count the occurrences of each _word_ in that phrase.
 
 For the purposes of this exercise you can expect that a _word_ will always be one of:

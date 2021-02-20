@@ -1,3 +1,5 @@
+# Description
+
 Count the frequency of letters in texts using parallel computation.
 
 Parallelism is about doing things in parallel that can also be done

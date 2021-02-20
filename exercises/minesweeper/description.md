@@ -1,3 +1,5 @@
+# Description
+
 Add the mine counts to a completed Minesweeper board.
 
 Minesweeper is a popular game where the user has to find the mines using

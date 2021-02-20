@@ -1,3 +1,5 @@
+# Description
+
 Determine if a triangle is equilateral, isosceles, or scalene.
 
 An _equilateral_ triangle has all three sides the same length.

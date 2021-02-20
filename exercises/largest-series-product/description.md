@@ -1,3 +1,5 @@
+# Description
+
 Given a string of digits, calculate the largest product for a contiguous
 substring of digits of length n.
 

@@ -1,3 +1,5 @@
+# Description
+
 Count the rectangles in an ASCII diagram like the one below.
 
 ```text
