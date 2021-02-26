@@ -436,6 +436,15 @@
           "expected": {"error": "illegal operation"}
         },
         {
+          "uuid": "df5b2815-3843-4f55-b16c-c3ed507292a7",
+          "description": "cannot redefine negative numbers",
+          "property": "evaluate",
+          "input": {
+            "instructions": [": -1 2 ;"]
+          },
+          "expected": {"error": "illegal operation"}
+        },
+        {
           "uuid": "5180f261-89dd-491e-b230-62737e09806f",
           "description": "errors if executing a non-existent word",
           "property": "evaluate",
