@@ -148,7 +148,7 @@
       ],
       "comments": [
         "If your tests depend on the order of the saddle points,",
-        "note that this case breaks the sorting convention used in other cases (row asc, column asc),",
+        "note that this case breaks the sorting convention used in other cases (row ascending, column ascencding),",
         "so you might want to swap the two points in the expected output."
       ]
     },
