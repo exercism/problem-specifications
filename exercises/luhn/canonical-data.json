@@ -170,7 +170,7 @@
         "value": ":9"
       },
       "expected": false
-    }
+    },
     {
       "uuid": "401a68ba-98d4-11eb-a8b3-0242ac130003",
       "description": "non-numeric, non-space char in the middle with a sum that's divisible by 10 isn't allowed",
