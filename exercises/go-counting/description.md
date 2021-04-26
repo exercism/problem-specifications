@@ -1,3 +1,5 @@
+# Description
+
 Count the scored points on a Go board.
 
 In the game of go (also known as baduk, igo, cờ vây and wéiqí) points

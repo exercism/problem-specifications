@@ -1,3 +1,5 @@
+# Description
+
 Calculate the Hamming Distance between two DNA strands.
 
 Your body is made up of cells that contain DNA. Those cells regularly wear out and need replacing, which they achieve by dividing into daughter cells. In fact, the average human body experiences about 10 quadrillion cell divisions in a lifetime!
@@ -18,5 +20,4 @@ The Hamming Distance is useful for lots of things in science, not just biology, 
 
 The Hamming distance is only defined for sequences of equal length, so
 an attempt to calculate it between sequences of different lengths should
-not work. The general handling of this situation (e.g., raising an
-exception vs returning a special value) may differ between languages.
+not work.

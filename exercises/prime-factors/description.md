@@ -1,3 +1,5 @@
+# Description
+
 Compute the prime factors of a given natural number.
 
 A prime number is only evenly divisible by itself and 1.

@@ -1,3 +1,5 @@
+# Description
+
 Create an implementation of the affine cipher,
 an ancient encryption system created in the Middle East.
 
@@ -8,14 +10,14 @@ its new numeric value. Although all monoalphabetic ciphers are weak,
 the affine cypher is much stronger than the atbash cipher,
 because it has many more keys.
 
-the encryption function is:
+The encryption function is:
 
   `E(x) = (ax + b) mod m`
   -  where `x` is the letter's index from 0 - length of alphabet - 1
   -  `m` is the length of the alphabet. For the roman alphabet `m == 26`.
   -  and `a` and `b` make the key
 
-the decryption function is:
+The decryption function is:
 
   `D(y) = a^-1(y - b) mod m`
   -  where `y` is the numeric value of an encrypted letter, ie. `y = E(x)`
@@ -45,7 +47,7 @@ Ciphertext is written out in groups of fixed length, the traditional group
 size being 5 letters, and punctuation is excluded. This is to make it
 harder to guess things based on word boundaries.
 
-## Examples
+## General Examples
 
  - Encoding `test` gives `ybty` with the key a=5 b=7
  - Decoding `ybty` gives `test` with the key a=5 b=7
@@ -56,7 +58,7 @@ harder to guess things based on word boundaries.
    - gives `Error: a and m must be coprime.`
    - because a and m are not relatively prime
 
-### Examples of finding a Modular Multiplicative Inverse (MMI)
+## Examples of finding a Modular Multiplicative Inverse (MMI)
 
   - simple example:
     - `9 mod 26 = 9`

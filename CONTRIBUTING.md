@@ -16,9 +16,9 @@ We are grateful for any help in making Exercism better!
 This guide covers several common scenarios pertaining to **improving the language tracks**
 themselves. There are other guides about contributing to other parts of the Exercism ecosystem.
 
-* [The Command-Line Client](https://github.com/exercism/cli/blob/master/README.md)
-* [The Website](https://github.com/exercism/website/blob/master/CONTRIBUTING.md)
-* [The Exercises API](https://github.com/exercism/x-api/blob/master/CONTRIBUTING.md) (used by both the command-line client and the website)
+* [The Command-Line Client](https://github.com/exercism/cli/blob/main/README.md)
+* [The Website](https://github.com/exercism/website/blob/main/CONTRIBUTING.md)
+* [The Exercises API](https://github.com/exercism/x-api/blob/main/CONTRIBUTING.md) (used by both the command-line client and the website)
 
 ## Table of Contents
 
@@ -230,7 +230,7 @@ A problem must have a unique slug. This slug is used as
   Reference the PR in problem-specifications.
   It's suggested, but not required, to wait until the problem-specifications PR is merged before merging the track-specific PR, for the following reasons:
     * If changes are suggested to the problem-specifications PR, it is likely that they will be applicable to the track-specific PR as well.
-    * Only applicable if the exercise needs a custom `title` in metadata.yml (as described in https://github.com/exercism/docs/blob/master/you-can-help/make-up-new-exercises.md#problem-specification): The title of the exercise as displayed on the website will use the default algorithm instead of the correct title until the problem-specifications PR is merged.
+    * Only applicable if the exercise needs a custom `title` in metadata.yml (as described in https://github.com/exercism/docs/blob/main/you-can-help/make-up-new-exercises.md#problem-specification): The title of the exercise as displayed on the website will use the default algorithm instead of the correct title until the problem-specifications PR is merged.
     * Only applicable to tracks that have specific tools that depend on exercises being present in problem-specifications (see the track-specific documentation for whether any such tools exist): Such tools may operate unexpectedly if the exercise does not yet exist in problem-specifications. Try checking out the branch on a local copy of problem-specifications or rerunning the tool after the problem-specifications PR is merged if applicable.
 
 ## Track Anatomy
@@ -315,40 +315,20 @@ scenarios in this guide.
 
 ### Pull Request Guidelines
 
-See the [pull request guidelines](https://github.com/exercism/docs/blob/master/contributing/pull-request-guidelines.md) in the docs repository.
+See the [pull request guidelines](https://github.com/exercism/docs/blob/main/contributing/pull-request-guidelines.md) in the docs repository.
 
 ### Anatomy of an Exercise
 
-See the [anatomy of an exercise](https://github.com/exercism/docs/tree/master/language-tracks/exercises/anatomy) in the docs repository.
+See the [anatomy of an exercise](https://github.com/exercism/docs/tree/main/language-tracks/exercises/anatomy) in the docs repository.
 
 ### Track configuration file
 
-Each language track has a configuration file called `config.json`.
+Each language track has a configuration file called `config.json`. Its structure is defined in [this spec](https://github.com/exercism/docs/blob/main/anatomy/tracks/config-json.md). The `config.json` file's key feature is that it defines which exercises the language track has implemented.
 
-Important keys are:
-* `problems` - actively served via `exercism fetch`
-* `deprecated` - implemented, but aren't served anymore
-* `foregone` - will not be implemented in the track
-
-The `configlet` tool uses those categories to ensure that
-
-1. all the `problems` are implemented,
-2. `deprecated` problems are not actively served as problems, and
-3. `foregone` problems are not implemented.
-
-In addition, it will complain about problems that are implemented but are not
-listed in the config under the `problems` key.
-
-A problem might be foregone for a number of reasons, typically because it's a
-bad exercise for the language.
-
-Optional keys:
-* `test_pattern` - A (case sensitive) regex pattern that test filenames will match. It is used to determine which files will be visible on a problem's test-suite page on the exercism.io site. The default value used if this key is not present is `test` (note: this is case _insensitive_)
-* `ignore_pattern` - A (case insensitive) regex pattern that will cause files matching it to not be served to the student by `exercism fetch`. The default value used if this key is not present is `example`
-* `solution_pattern` - A (case sensitive) regex pattern that matches solution files in the track repository. Used by [configlet](https://github.com/exercism/configlet) to check for the presence of an example solution for each problem implemented by the track.  The default value used if this key is not present is `[Ee]xample`.
+The [configlet](https://github.com/exercism/docs/blob/main/anatomy/tracks/configlet/README.md) tool can verify (lint) a track's configuration file.
 
 ### Git Basics
-See [Git Basics](https://github.com/exercism/docs/blob/master/contributing/git-basics.md) in [docs](https://github.com/exercism/docs) repository.
+See [Git Basics](https://github.com/exercism/docs/blob/main/contributing/git-basics.md) in [docs](https://github.com/exercism/docs) repository.
 
 ### et cetera
 
@@ -360,6 +340,6 @@ TODO: add more sections:
 
 ## Improving Consistency By Extracting Shared Test Data
 
-This documentation has moved [to the docs repository](https://github.com/exercism/docs/blob/master/you-can-help/improve-exercise-metadata.md).
+This documentation has moved [to the docs repository](https://github.com/exercism/docs/blob/main/you-can-help/improve-exercise-metadata.md).
 
 We are maintaining this section, since many open issues link to it.

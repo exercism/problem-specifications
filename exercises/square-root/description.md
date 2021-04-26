@@ -1,3 +1,5 @@
+# Description
+
 Given a natural radicand, return its square root.
 
 Note that the term "radicand" refers to the number for which the root is to be determined. That is, it is the number under the root symbol.

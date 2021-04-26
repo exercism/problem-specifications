@@ -12,21 +12,21 @@ jobs:
 
       - name: All required files are present
         run: bin/check_required_files_present
-  
+
   immutability:
     name: No test has been mutated
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
         with:
-          path: 'new'
+          path: "new"
 
       # Pull Requests
       - name: Checkout the target branch
         uses: actions/checkout@v2
         with:
-          ref: '${{ github.base_ref }}'
-          path: 'old'
+          ref: "${{ github.base_ref }}"
+          path: "old"
 
       - name: Check that no test has been mutated
         run: |
@@ -43,9 +43,9 @@ jobs:
 
       - uses: actions/setup-node@v1
         with:
-          node-version: '12'
+          node-version: "12"
 
-      # https://github.com/actions/cache/blob/master/examples.md#node---yarn
+      # https://github.com/actions/cache/blob/main/examples.md#node---yarn
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
@@ -95,5 +95,23 @@ jobs:
                   fi
               done
           done
+
+          exit "$fail"
+
+      - name: Verify that all scenarios are defined in the schema
+        run: |
+          canonical_schema_file="canonical-schema.json"
+          scenarios_file="SCENARIOS.txt"
+
+          fail=0
+
+          while read -r scenario; do
+              jq -e ".definitions.scenario.enum | index(\"$scenario\")" $canonical_schema_file > /dev/null
+
+              if [ $? -eq 1 ]; then
+                  echo "$canonical_schema_file: scenario '$scenario' is missing from the '.definitions.scenario.enum' field."
+                  fail=1
+              fi
+          done < $scenarios_file
 
           exit "$fail"

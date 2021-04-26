@@ -15,7 +15,7 @@
             "expected": ["Aimee"]
         },
         {
-          "uuid": "dece43c8-3ba5-11eb-8fdf-7f8daeaeb5f2",
+          "uuid": "c125dab7-2a53-492f-a99a-56ad511940d8",
           "description": "A student can't be in two different grades",
           "property": "roster",
           "input": {

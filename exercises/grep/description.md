@@ -1,3 +1,5 @@
+# Description
+
 Search a file for lines matching a regular expression pattern. Return the line
 number and contents of each matching line.
 
@@ -31,7 +33,7 @@ hello
 hello again
 ```
 
-### Flags
+## Flags
 
 As said earlier, the `grep` command should also support the following flags:
 

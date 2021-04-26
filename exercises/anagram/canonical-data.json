@@ -22,6 +22,20 @@
       "expected": ["stream", "maters"]
     },
     {
+      "uuid": "03eb9bbe-8906-4ea0-84fa-ffe711b52c8b",
+      "reimplements": "b3cca662-f50a-489e-ae10-ab8290a09bdc",
+      "comments": [
+        "Reimplemented to be consistent about removing references to 'master'"
+      ],
+      "description": "detects two anagrams",
+      "property": "findAnagrams",
+      "input": {
+        "subject": "solemn",
+        "candidates": ["lemons", "cherry", "melons"]
+      },
+      "expected": ["lemons", "melons"]
+    },
+    {
       "uuid": "a27558ee-9ba0-4552-96b1-ecf665b06556",
       "description": "does not detect anagram subsets",
       "property": "findAnagrams",
