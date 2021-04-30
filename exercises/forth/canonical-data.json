@@ -428,10 +428,19 @@
         },
         {
           "uuid": "35958cee-a976-4a0f-9378-f678518fa322",
-          "description": "cannot redefine numbers",
+          "description": "cannot redefine non-negative numbers",
           "property": "evaluate",
           "input": {
             "instructions": [": 1 2 ;"]
+          },
+          "expected": {"error": "illegal operation"}
+        },
+        {
+          "uuid": "df5b2815-3843-4f55-b16c-c3ed507292a7",
+          "description": "cannot redefine negative numbers",
+          "property": "evaluate",
+          "input": {
+            "instructions": [": -1 2 ;"]
           },
           "expected": {"error": "illegal operation"}
         },
