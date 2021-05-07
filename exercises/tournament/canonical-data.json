@@ -198,17 +198,17 @@
       "property": "tally",
       "input": {
         "rows": [
-          "A;B;win",
-          "A;B;win",
-          "A;B;win",
-          "A;B;win",
-          "A;B;loss"
+          "Penticton Pigeons;Medicine Hat Milliners;win",
+          "Penticton Pigeons;Medicine Hat Milliners;win",
+          "Penticton Pigeons;Medicine Hat Milliners;win",
+          "Penticton Pigeons;Medicine Hat Milliners;win",
+          "Medicine Hat Milliners;Penticton Pigeons;win"
         ]
       },
       "expected": [
         "Team                           | MP |  W |  D |  L |  P",
-        "A                              |  5 |  4 |  0 |  1 | 12",
-        "B                              |  5 |  1 |  0 |  4 |  3"
+        "Penticton Pigeons              |  5 |  4 |  0 |  1 | 12",
+        "Medicine Hat Milliners         |  5 |  1 |  0 |  4 |  3"
       ]
     }
   ]
