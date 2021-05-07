@@ -191,6 +191,25 @@
         "Blithering Badgers             |  3 |  0 |  1 |  2 |  1",
         "Devastating Donkeys            |  3 |  0 |  1 |  2 |  1"
       ]
+    },
+    {
+      "uuid": "f9e20931-8a65-442a-81f6-503c0205b17a",
+      "description": "ensure points sorted numerically",
+      "property": "tally",
+      "input": {
+        "rows": [
+          "A;B;win",
+          "A;B;win",
+          "A;B;win",
+          "A;B;win",
+          "A;B;loss"
+        ]
+      },
+      "expected": [
+        "Team                           | MP |  W |  D |  L |  P",
+        "A                              |  5 |  4 |  0 |  1 | 12",
+        "B                              |  5 |  1 |  0 |  4 |  3"
+      ]
     }
   ]
 }
