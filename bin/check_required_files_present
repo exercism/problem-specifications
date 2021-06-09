@@ -26,7 +26,7 @@ function check_directory {
 	for exercise_directory in $directory/* ; do
 		show_progress
 		require_file "$exercise_directory/description.md"
-		require_file "$exercise_directory/metadata.yml"
+		require_file "$exercise_directory/metadata.toml"
 	done
 
 }

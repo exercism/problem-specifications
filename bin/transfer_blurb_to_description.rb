@@ -33,6 +33,7 @@ class Exercise
   end
 
   def metadata
+    # TODO: Update to parse TOML instead
     metadata_filename = File.join(path, 'metadata.yml')
     YAML.load_file(metadata_filename)
   end
