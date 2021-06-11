@@ -207,7 +207,11 @@ If a track uses a _test generator_ to generate an exercise's test suite, it _mus
 
 ### Track Test Data Tooling
 
-To make it easy to keep the `tests.toml` up to date, tracks can use the [`configlet` application](https://github.com/exercism/configlet)'s `sync` command. This command will compare the tests specified in the `tests.toml` files against the tests that are defined in the exercise's canonical data. It then interactively gives the maintainer the option to include or exclude test cases that are currently missing, updating the `tests.toml` file accordingly.
+To make it easy to keep the `tests.toml` up to date, tracks can use the [`configlet` application](https://github.com/exercism/configlet)'s `sync` command.
+A plain `configlet sync` performs no changes, and just compares the tests specified in the `tests.toml` files against the tests that are defined in the exercise's canonical data - if there are tests defined only in the latter, it prints a summary and exits with a non-zero exit code.
+
+To interactively update the `tests.toml` files, use `configlet sync --update`.
+For each missing test, this prompts the user to choose whether to include/exclude/skip it, and updates the corresponding `tests.toml` file accordingly.
 
 To download the latest version of the `configlet` tool, please run the [`fetch-configlet`](https://github.com/exercism/configlet/blob/main/scripts/fetch-configlet) script or the [`fetch-configlet.ps1`](https://github.com/exercism/configlet/blob/main/scripts/fetch-configlet.ps1) script. At least one of these scripts should already exist in every track repo's `bin` directory - the script will also download `configlet` to this location. You can then sync the tests by running `./bin/configlet sync` (on Linux or macOS) or `.\bin\configlet.exe sync` (on Windows).
 
