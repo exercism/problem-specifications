@@ -213,6 +213,17 @@ A plain `configlet sync` performs no changes, and just compares the tests specif
 To interactively update the `tests.toml` files, use `configlet sync --update`.
 For each missing test, this prompts the user to choose whether to include/exclude/skip it, and updates the corresponding `tests.toml` file accordingly.
 
+To non-interactively include every missing test for an exercise `foo`, use:
+
+```
+configlet sync --exercise foo --update --mode include
+```
+
+or the short form `configlet sync -e foo -u -mi`.
+
+The `sync` command operates on Practice Exercises that are in the track-level `config.json` file.
+If you are adding an exercise that has canonical data to a track, first add that exercise to the track-level `config.json`, and then run a `configlet sync` command to create the corresponding `tests.toml` file.
+
 To download the latest version of the `configlet` tool, please run the [`fetch-configlet`](https://github.com/exercism/configlet/blob/main/scripts/fetch-configlet) script or the [`fetch-configlet.ps1`](https://github.com/exercism/configlet/blob/main/scripts/fetch-configlet.ps1) script. At least one of these scripts should already exist in every track repo's `bin` directory - the script will also download `configlet` to this location. You can then sync the tests by running `./bin/configlet sync` (on Linux or macOS) or `.\bin\configlet.exe sync` (on Windows).
 
 ## Conventions
