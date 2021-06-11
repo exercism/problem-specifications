@@ -187,7 +187,7 @@ This is an example of what a re-implementation looks like:
 
 If a track implements an exercise for which test data exists, the exercise _must_ contain a `.meta/tests.toml` file. The goal of this file is to keep track of which tests are implemented by the exercise. Tests in this file are identified by their UUID and each test has a boolean value that indicates if it is implemented by that exercise.
 
-A `tests.toml` file for a track's `two-fer` exercise looks like this:
+A `tests.toml` file for a track's `two-fer` exercise might contain:
 
 ```toml
 [19709124-b82e-4e86-a722-9e5c5ebf3952]
