@@ -199,6 +199,7 @@ include = false
 
 [653611c6-be9f-4935-ab42-978e25fe9a10]
 description = "another name given"
+comment = "comments like this will persist across syncs"
 ```
 
 In this case, the track has chosen to implement two of the three available tests (`include = true` is the default and is omitted).
