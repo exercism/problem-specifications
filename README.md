@@ -208,7 +208,7 @@ If a track uses a _test generator_ to generate an exercise's test suite, it _mus
 
 ### Track Test Data Tooling
 
-To make it easy to keep the `tests.toml` up to date, tracks can use the [`configlet` application](https://github.com/exercism/configlet)'s `sync` command.
+To make it easy to keep the `tests.toml` up to date, tracks should use the [`configlet` application](https://github.com/exercism/configlet)'s `sync` command.
 A plain `configlet sync` performs no changes, and just compares the tests specified in the `tests.toml` files against the tests that are defined in the exercise's canonical data - if there are tests defined only in the latter, it prints a summary and exits with a non-zero exit code.
 
 To interactively update the `tests.toml` files, use `configlet sync --update`.
