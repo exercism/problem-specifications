@@ -44,7 +44,7 @@
       "input": {
         "number": 0
       },
-      "expected": { "error": "Only positive numbers are allowed" }
+      "expected": { "error": "Only positive integers are allowed" }
     },
     {
       "uuid": "c6c795bf-a288-45e9-86a1-841359ad426d",
@@ -53,7 +53,16 @@
       "input": {
         "number": -15
       },
-      "expected": { "error": "Only positive numbers are allowed" }
+      "expected": { "error": "Only positive integers are allowed" }
+    },
+    {
+      "uuid": "f7176864-e35d-11eb-ba80-0242ac130004",
+      "description": "non-integer value is an error",
+      "property": "steps",
+      "input": {
+        "number": 3.1415
+      },
+      "expected": { "error": "Only positive integers are allowed" }
     }
   ]
 }
