@@ -33,7 +33,7 @@
           "comments": [
             "Reimplemented to be logically consistent"
           ],
-          "description": "A student can only be added to the same grade in the sorted roster more than once",
+          "description": "A student can only be added to the same grade in the roster once",
           "property": "roster",
           "input": {
             "students": [["Aimee", 2], ["Aimee", 2]]
