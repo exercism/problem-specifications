@@ -28,6 +28,19 @@
           "expected": []
         },
         {
+          "uuid": "a0c7b9b8-0e89-47f8-8b4a-c50f885e79d1",
+          "reimplements": "c125dab7-2a53-492f-a99a-56ad511940d8",
+          "comments": [
+            "Reimplemented to be logically consistent"
+          ],
+          "description": "A student can only be added to the same grade in the roster once",
+          "property": "roster",
+          "input": {
+            "students": [["Aimee", 2], ["Aimee", 2]]
+          },
+          "expected": ["Aimee"]
+        },
+        {
             "uuid": "233be705-dd58-4968-889d-fb3c7954c9cc",
             "description": "Adding more students adds them to the sorted roster",
             "property": "roster",
@@ -44,6 +57,19 @@
               "students": [["Chelsea", 3], ["Logan", 7]]
             },
             "expected": ["Chelsea", "Logan"]
+        },
+        {
+          "uuid": "6a03b61e-1211-4783-a3cc-fc7f773fba3f",
+          "reimplements": "c125dab7-2a53-492f-a99a-56ad511940d8",
+          "comments": [
+            "Reimplemented to be logically consistent"
+          ],
+          "description": "A student cannot be added to more than one grade in the sorted roster",
+          "property": "roster",
+          "input": {
+            "students": [["Aimee", 2], ["Aimee", 1]]
+          },
+          "expected": ["Aimee"]
         },
         {
             "uuid": "a3f0fb58-f240-4723-8ddc-e644666b85cc",
