@@ -78,7 +78,7 @@
       "expected": { "error": "Only positive integers are allowed" }
     },
     {
-      "uuid": "f7176864-e35d-11eb-ba80-0242ac130004",
+      "uuid": "f7176864-e35d-41eb-ba80-0242ac130004",
       "description": "non-integer value is an error",
       "property": "steps",
       "input": {
