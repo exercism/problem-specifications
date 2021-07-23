@@ -101,7 +101,7 @@
        "input": {
          "markdown": "####### This will not be an h7"
        },
-       "expected": "####### This will not be an h7"
+       "expected": "<p>####### This will not be an h7</p>"
     },
     {
       "uuid": "25288a2b-8edc-45db-84cf-0b6c6ee034d6",
