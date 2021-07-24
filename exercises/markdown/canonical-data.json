@@ -104,6 +104,16 @@
        "expected": "####### This will not be an h7"
     },
     {
+       "uuid": "81c0c4db-435e-4d77-860d-45afacdad810", 
+       "reimplements": "6dca5d10-5c22-4e2a-ac2b-bd6f21e61939",
+       "description": "h7 header level is a paragraph",
+       "property": "parse",
+       "input": {
+         "markdown": "####### This will not be an h7"
+       },
+       "expected": "<p>####### This will not be an h7</p>"
+    },
+    {
       "uuid": "25288a2b-8edc-45db-84cf-0b6c6ee034d6",
       "description": "unordered lists",
       "property": "parse",
