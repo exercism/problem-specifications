@@ -63,6 +63,76 @@
         "plaintext": "If man was meant to stay on the ground, god would have given us roots."
       },
       "expected": "imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn  sseoau "
+    },
+    {
+      "uuid": "e4e98736-e397-4ae8-bda4-7c6e890cc6fe",
+      "reimplements": "407c3837-9aa7-4111-ab63-ec54b58e8e9f",
+      "description": "empty plaintext results in an empty ciphertext",
+      "property": "ciphertext",
+      "input": {
+        "plaintext": ""
+      },
+      "expected": []
+    },
+    {
+      "uuid": "93597ef0-9a4d-46eb-ac82-3080b60f4bde",
+      "reimplements": "64131d65-6fd9-4f58-bdd8-4a2370fb481d",
+      "description": "Lowercase",
+      "property": "ciphertext",
+      "input": {
+        "plaintext": "A"
+      },
+      "expected": ["a"]
+    },
+    {
+      "uuid": "544b1ce7-ce63-46fa-b754-d6dc1a0902fb",
+      "reimplements": "63a4b0ed-1e3c-41ea-a999-f6f26ba447d6",
+      "description": "Remove spaces",
+      "property": "ciphertext",
+      "input": {
+        "plaintext": "  b "
+      },
+      "expected": ["b"]
+    },
+    {
+      "uuid": "3237fd3f-4b5e-452b-bd18-888a5499ee42",
+      "reimplements": "1b5348a1-7893-44c1-8197-42d48d18756c",
+      "description": "Remove punctuation",
+      "property": "ciphertext",
+      "input": {
+        "plaintext": "@1,%!"
+      },
+      "expected": ["1"]
+    },
+    {
+      "uuid": "cee9fe5e-6fcf-408b-827e-76a25b58e282",
+      "reimplements": "8574a1d3-4a08-4cec-a7c7-de93a164f41a",
+      "description": "9 character plaintext results in 3 chunks of 3 characters",
+      "property": "ciphertext",
+      "input": {
+        "plaintext": "This is fun!"
+      },
+      "expected": ["tsf", "hiu", "isn"]
+    },
+    {
+      "uuid": "5b3151c7-d17d-453e-a81f-7c6e0f41740b",
+      "reimplements": "a65d3fa1-9e09-43f9-bcec-7a672aec3eae",
+      "description": "8 character plaintext results in 3 chunks, the last one with a trailing space",
+      "property": "ciphertext",
+      "input": {
+        "plaintext": "Chill out."
+      },
+      "expected": ["clu", "hlt", "io "]
+    },
+    {
+      "uuid": "794446d7-1b34-47d2-bba9-2fe4f6d6de71",
+      "reimplements": "fbcb0c6d-4c39-4a31-83f6-c473baa6af80",
+      "description": "54 character plaintext results in 7 chunks, the last two with trailing spaces",
+      "property": "ciphertext",
+      "input": {
+        "plaintext": "If man was meant to stay on the ground, god would have given us roots."
+      },
+      "expected": ["imtgdvs", "fearwer", "mayoogo", "anouuio", "ntnnlvt", "wttddes", "aohghn ", "sseoau "]
     }
   ]
 }
