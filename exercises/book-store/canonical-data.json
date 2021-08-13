@@ -158,6 +158,16 @@
         "basket": [1,1,2,2,3,3,4,5,1,1,2,2,3,3,4,5]
       },
       "expected": 10240
+    },
+	{
+      "uuid": "5260ddde-2703-4915-b45a-e54dbbac4303",
+      "property": "total",
+      "description": "Check that groups of four are created properly even when there are more groups of three than groups of five.",
+      "comments": ["Suggested grouping, [[1,2,3,4],[1,2,3,5],[1,2,3,4],[1,2,3,5],[1,2,3],[1,2,3]]."],
+      "input": {
+        "basket": [1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,4,4,5,5]
+      },
+      "expected": 14560
     }
   ]
 }
