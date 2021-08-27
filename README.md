@@ -37,7 +37,7 @@ There are three metadata files per exercise:
 Test data can be incorporated into a track's test suites manually or extracted by a program (a.k.a. a _test generator_).
 
 - Exercises _must_ contain tests that cover the public interface of the exercise (also thought of as "application tests").
-- Exercises _may_ contain tests that cover the private or lower-level interface of the exercise (sometimes refered to as "library tests").
+- Exercises _may_ contain tests that cover the private or lower-level interface of the exercise (sometimes referred to as "library tests").
 
 - Test cases are immutable, which means that once a test case has been added, it never changes. There are two exceptions:
   - The `comments` field _can_ be mutated and thus does not require adding a new test case when changing its value.

@@ -164,7 +164,7 @@ get the patch merged.
 Some language tracks are experimenting with generating test suites from shared
 test data. This is because various interesting edge cases are discovered as
 people discuss solutions, but these edge cases are usually then only added
-to a single language track. By standardising the inputs and outputs, it becomes
+to a single language track. By standardizing the inputs and outputs, it becomes
 easier to improve the exercises across all the languages.
 
 There are two possible scenarios, described below.
@@ -330,7 +330,7 @@ The [configlet](https://github.com/exercism/docs/blob/main/anatomy/tracks/config
 ### Git Basics
 See [Git Basics](https://github.com/exercism/docs/blob/main/contributing/git-basics.md) in [docs](https://github.com/exercism/docs) repository.
 
-### et cetera
+### etcetera
 
 TODO: add more sections:
 

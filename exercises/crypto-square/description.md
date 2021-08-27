@@ -5,7 +5,7 @@ Implement the classic method for composing secret messages called a square code.
 Given an English text, output the encoded version of that text.
 
 First, the input is normalized: the spaces and punctuation are removed
-from the English text and the message is downcased.
+from the English text and the message is down-cased.
 
 Then, the normalized characters are broken into rows.  These rows can be
 regarded as forming a rectangle when printed with intervening newlines.
