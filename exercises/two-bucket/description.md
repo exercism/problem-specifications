@@ -1,12 +1,12 @@
 # Description
 
-Given two buckets of different size and which bucket to fill first, determine how many actions are required to measure an exact number of liters by strategically transferring fluid between the buckets. Since this mathematical problem is subject to a fair amount of interpretation and an individual's approach, the tests have been written specifically to expect one overarching solution.
+Given two buckets of different size and which bucket to fill first, determine how many actions are required to measure an exact number of liters by strategically transferring fluid between the buckets.
 
 There are some rules that your solution must follow:
 
 - You can only do one action at a time.
 - There are only 3 possible actions:
-  1. Pouring one bucket into the other bucket until:
+  1. Pouring one bucket into the other bucket until either:
      a) the first bucket is empty
      b) the second bucket is full
   2. Emptying a bucket and doing nothing to the other.
@@ -29,6 +29,6 @@ Your program should determine:
 Note: any time a change is made to either or both buckets counts as one (1) action.
 
 Example:
-Bucket one can hold up to 7 liters, and bucket two can hold up to 11 liters. Let's say at a given step, bucket one is holding 7 liters and bucket two is holding 8 liters (7,8). If you empty bucket one and make no change to bucket two, leaving you with 0 liters and 8 liters respectively (0,8), that counts as one "move". Instead, if you had poured from bucket one into bucket two until bucket two was full, resulting in 4 liters in bucket one and 11 liters in bucket two (4,11), that would also only count as one "move".
+Bucket one can hold up to 7 liters, and bucket two can hold up to 11 liters. Let's say at a given step, bucket one is holding 7 liters and bucket two is holding 8 liters (7,8). If you empty bucket one and make no change to bucket two, leaving you with 0 liters and 8 liters respectively (0,8), that counts as one action. Instead, if you had poured from bucket one into bucket two until bucket two was full, resulting in 4 liters in bucket one and 11 liters in bucket two (4,11), that would also only count as one action.
 
 Written with <3 at [Fullstack Academy](http://www.fullstackacademy.com/) by Lindsay Levine.
