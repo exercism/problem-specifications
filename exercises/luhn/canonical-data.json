@@ -146,6 +146,15 @@
       "expected": true
     },
     {
+      "uuid": "ab56fa80-5de8-4735-8a4a-14dae588663e",
+      "description": "valid luhn with an odd number of digits and non zero first digit",
+      "property": "valid",
+      "input": {
+        "value": "109"
+      },
+      "expected": true
+    },
+    {
       "comments": [
         "Convert non-digits to their ascii values and then offset them by 48 sometimes accidentally declare an invalid string to be valid.",
         "This test is designed to avoid that solution."
