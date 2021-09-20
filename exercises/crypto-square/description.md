@@ -22,10 +22,10 @@ is normalized to:
 "ifmanwasmeanttostayonthegroundgodwouldhavegivenusroots"
 ```
 
-The plaintext should be organized in to a rectangle.  The size of the
+The plaintext should be organized in to a rectangle or square.  The size of the
 rectangle (`r x c`) should be decided by the length of the message,
 such that `c >= r` and `c - r <= 1`, where `c` is the number of columns
-and `r` is the number of rows.
+and `r` is the number of rows. c and r should be as small as possible. 
 
 Our normalized text is 54 characters long, dictating a rectangle with
 `c = 8` and `r = 7`:
