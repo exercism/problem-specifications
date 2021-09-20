@@ -146,6 +146,15 @@
       "expected": true
     },
     {
+      "uuid": "b9887ee8-8337-46c5-bc45-3bcab51bc36f",
+      "description": "very long input isn't converted to a single number to validate all digits",
+      "property": "valid",
+      "input": {
+        "value": "9999999999 9999999999 9999999999 9999999999"
+      },
+      "expected": true
+    },
+    {
       "comments": [
         "Convert non-digits to their ascii values and then offset them by 48 sometimes accidentally declare an invalid string to be valid.",
         "This test is designed to avoid that solution."
@@ -179,6 +188,6 @@
         "value": "59%59"
       },
       "expected": false
-    }    
+    }
   ]
 }
