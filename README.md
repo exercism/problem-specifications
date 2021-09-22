@@ -216,7 +216,7 @@ For each missing test, this prompts the user to choose whether to include/exclud
 
 To non-interactively include every missing test for an exercise `foo`, use:
 
-```
+```console
 configlet sync --exercise foo --update --mode include
 ```
 
@@ -240,9 +240,9 @@ There are also some conventions that must be followed:
 
 ## Validation
 
-`canonical.json` files can be validated against its schema using https://www.jsonschemavalidator.net/ with...
+`canonical.json` files can be validated against its schema using [https://www.jsonschemavalidator.net/](https://www.jsonschemavalidator.net/) with...
 
-```
+```json
 {
 "$schema": "https://github.com/exercism/problem-specifications/blob/main/canonical-schema.json"
 }
