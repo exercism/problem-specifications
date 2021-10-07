@@ -11,7 +11,7 @@
 # It will NOT update the description if it already begins with the blurb.
 # Thus this script will not add multiple blurbs if it is run multiple times.
 
-require 'yaml'
+require 'toml'
 
 class Exercise
   attr_reader :path
@@ -33,9 +33,8 @@ class Exercise
   end
 
   def metadata
-    # TODO: Update to parse TOML instead
-    metadata_filename = File.join(path, 'metadata.yml')
-    YAML.load_file(metadata_filename)
+    metadata_filename = File.join(path, 'metadata.toml')
+    TOML.load_file(metadata_filename)
   end
 
   def description
