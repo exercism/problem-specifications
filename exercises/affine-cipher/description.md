@@ -20,7 +20,7 @@ The encryption function is:
   -  `a` and `b` are integers which make the encryption key
 
 Values `a` and `m` must be *coprime* (or, *relatively prime*) for automatic decryption to succeed,
-ie. they have number `1` as their only common factor (more information can be found
+ie. they have number `1` as their only common factor (more information can be found in the
 [Wikipedia article about coprime integers](https://en.wikipedia.org/wiki/Coprime_integers)). In case `a` is
 not coprime to `m`, your program should return `"Error: a and m must be coprime."`. Otherwise it should
 encrypt or decrypt with the provided key.
