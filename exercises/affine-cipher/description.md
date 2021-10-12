@@ -22,7 +22,7 @@ The encryption function is:
 Values `a` and `m` must be *coprime* (or, *relatively prime*) for automatic decryption to succeed,
 ie. they have number `1` as their only common factor (more information can be found
 [Wikipedia article about coprime integers](https://en.wikipedia.org/wiki/Coprime_integers)). In case `a` is
-not coprime to `m` your program should return `"Error: a and m must be coprime."`. Otherwise it should
+not coprime to `m`, your program should return `"Error: a and m must be coprime."`. Otherwise it should
 encrypt or decrypt with the provided key.
 
 For the purpose of this exercise, digits are valid input but they are not encrypted. Spaces and punctuation
