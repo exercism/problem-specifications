@@ -53,7 +53,7 @@ and what it means can be found in the [related Wikipedia article](https://en.wik
  - Decrypting `"ybty"` gives `"test"` with the key `a = 5`, `b = 7`
  - Decrypting `"ybty"` gives `"lqul"` with the wrong key `a = 11`, `b = 7`
  - Decrypting `"kqlfd jzvgy tpaet icdhm rtwly kqlon ubstx"` gives `"thequickbrownfoxjumpsoverthelazydog"` with the key `a = 19`, `b = 13`
- - Encrypting `"test"` with the key `a = 18`, `b = 13` gives `"Error: a and m must be coprime."` because `18` and `26` are not coprime
+ - Encrypting `"test"` with the key `a = 18`, `b = 13` is an error because `18` and `26` are not coprime
 
 ## Example of finding a Modular Multiplicative Inverse (MMI)
 
