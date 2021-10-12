@@ -6,7 +6,7 @@ In the game of chess, a queen can attack pieces which are on the same row, colum
 
 A chessboard can be represented by an 8 by 8 array.
 
-So if you're told the white queen is at `c5` (zero-indexed at column 2, row 3) and the black queen at `f2` (zero-indexed at column 5, row 6), then you'd know you've got a set-up like so:
+So if you are told the white queen is at `c5` (zero-indexed at column 2, row 3) and the black queen at `f2` (zero-indexed at column 5, row 6), then you know that the set-up is like so:
 
 ```text
   a b c d e f g h
