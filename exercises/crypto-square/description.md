@@ -23,15 +23,14 @@ is normalized to:
 ```
 
 The plaintext should be organized in to a rectangle. The size of the
-rectangle (`r x c`) should be decided by the length of the message.
+rectangle should be decided by the length of the message.
 
-Find the smallest possible integer `c` such that:
+If `c` is the number of columns and `r` is the number of rows, then for
+the rectangle `r x c` find the smallest possible integer `c` such that:
 
 - `r x c >= length(message)`,
 - and `c >= r`,
 - and `c - r <= 1`.
-
-`c` is the number of columns and `r` is the number of rows in the rectangle. 
 
 Our normalized text is 54 characters long, dictating a rectangle with
 `c = 8` and `r = 7`:
