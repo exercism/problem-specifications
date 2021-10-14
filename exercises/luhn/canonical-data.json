@@ -147,7 +147,10 @@
     },
     {
       "uuid": "b9887ee8-8337-46c5-bc45-3bcab51bc36f",
-      "description": "very long input isn't converted to a single number to validate all digits",
+      "description": "very long input is valid",
+      "comments": [
+        "Designed to prevent converting input to a single number as this approach can risk an overflow"
+        ],
       "property": "valid",
       "input": {
         "value": "9999999999 9999999999 9999999999 9999999999"
