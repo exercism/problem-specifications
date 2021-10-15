@@ -377,6 +377,15 @@
           "expected": [1, 2]
         },
         {
+          "uuid": "5ed6f248-ad8d-4d4e-a545-9146c6727f33",
+          "description": "Reduce places the minus sign on the numerator",
+          "property": "reduce",
+          "input": {
+            "r": [3, -4]
+          },
+          "expected": [-3, 4]
+        },
+        {
           "uuid": "f87c2a4e-d29c-496e-a193-318c503e4402",
           "description": "Reduce a negative rational number to lowest terms",
           "property": "reduce",
@@ -420,15 +429,6 @@
             "r": [13, 13]
           },
           "expected": [1, 1]
-        },
-        {
-          "uuid": "5ed6f248-ad8d-4d4e-a545-9146c6727f33",
-          "description": "Reduce places the minus sign on the numerator",
-          "property": "reduce",
-          "input": {
-            "r": [3, -4]
-          },
-          "expected": [-3, 4]
         }
       ]
     }
