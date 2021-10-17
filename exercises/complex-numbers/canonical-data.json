@@ -446,6 +446,16 @@
             "z2": 10
           },
           "expected": [1, 10]
+        },
+        {
+          "uuid": "9a867d1b-d736-4c41-a41e-90bd148e9d5e",
+          "description": "Divide real number by complex number",
+          "property": "div",
+          "input": {
+            "z1": 5,
+            "z2": [1, 1]
+          },
+          "expected": [2.5, -2.5]
         }
       ]
     }
