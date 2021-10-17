@@ -368,29 +368,24 @@
       "description": "Operations between real numbers and complex numbers",
       "cases": [
         {
-          "description": "Add real number and complex number",
-          "cases": [
-            {
-              "uuid": "06d793bf-73bd-4b02-b015-3030b2c952ec",
-              "description": "Complex number on left, real number on right",
-              "property": "add",
-              "input": {
-                "z1": [1, 2],
-                "z2": 5
-              },
-              "expected": [6, 2]
-            },
-            {
-              "uuid": "d77dbbdf-b8df-43f6-a58d-3acb96765328",
-              "description": "Real number on left, complex number on right",
-              "property": "add",
-              "input": {
-                "z1": 5,
-                "z2": [1, 2]
-              },
-              "expected": [6, 2]
-            }
-          ]
+          "uuid": "06d793bf-73bd-4b02-b015-3030b2c952ec",
+          "description": "Add real number to complex number",
+          "property": "add",
+          "input": {
+            "z1": [1, 2],
+            "z2": 5
+          },
+          "expected": [6, 2]
+        },
+        {
+          "uuid": "d77dbbdf-b8df-43f6-a58d-3acb96765328",
+          "description": "Add complex number to real number",
+          "property": "add",
+          "input": {
+            "z1": 5,
+            "z2": [1, 2]
+          },
+          "expected": [6, 2]
         },
         {
           "uuid": "20432c8e-8960-4c40-ba83-c9d910ff0a0f",
@@ -413,29 +408,24 @@
           "expected": [-1, -7]
         },
         {
+          "uuid": "dabe1c8c-b8f4-44dd-879d-37d77c4d06bd",
           "description": "Multiply complex number by real number",
-          "cases": [
-            {
-              "uuid": "dabe1c8c-b8f4-44dd-879d-37d77c4d06bd",
-              "description": "Complex number on left, real number on right",
-              "property": "mul",
-              "input": {
-                "z1": [2, 5],
-                "z2": 5
-              },
-              "expected": [10, 25]
-            },
-            {
-              "uuid": "6c81b8c8-9851-46f0-9de5-d96d314c3a28",
-              "description": "Real number on left, complex number on right",
-              "property": "mul",
-              "input": {
-                "z1": 5,
-                "z2": [2, 5]
-              },
-              "expected": [10, 25]
-            }
-          ]
+          "property": "mul",
+          "input": {
+            "z1": [2, 5],
+            "z2": 5
+          },
+          "expected": [10, 25]
+        },
+        {
+          "uuid": "6c81b8c8-9851-46f0-9de5-d96d314c3a28",
+          "description": "Multiply real number by complex number",
+          "property": "mul",
+          "input": {
+            "z1": 5,
+            "z2": [2, 5]
+          },
+          "expected": [10, 25]
         },
         {
           "uuid": "8a400f75-710e-4d0c-bcb4-5e5a00c78aa0",
