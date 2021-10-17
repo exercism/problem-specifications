@@ -365,7 +365,7 @@
       ]
     },
     {
-      "description": "Operations between real numbers (int/float) and complex numbers",
+      "description": "Operations between real numbers and complex numbers",
       "cases": [
         {
           "uuid": "06d793bf-73bd-4b02-b015-3030b2c952ec",
