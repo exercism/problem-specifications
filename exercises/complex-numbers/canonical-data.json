@@ -363,6 +363,51 @@
           "expected": [-2, 0]
         }
       ]
+    },
+    {
+      "description": "Operations between real numbers (int/float) and complex numbers",
+      "cases": [
+        {
+          "uuid": "06d793bf-73bd-4b02-b015-3030b2c952ec",
+          "description": "Add real number and complex number",
+          "property": "add",
+          "input": {
+            "z1": [1, 2],
+            "z2": 5
+          },
+          "expected": [6, 2]
+        },
+        {
+          "uuid": "20432c8e-8960-4c40-ba83-c9d910ff0a0f",
+          "description": "Subtract real number from complex number",
+          "property": "sub",
+          "input": {
+            "z1": [5, 7],
+            "z2": 4
+          },
+          "expected": [1, 7]
+        },
+        {
+          "uuid": "dabe1c8c-b8f4-44dd-879d-37d77c4d06bd",
+          "description": "Multiply complex number by real number",
+          "property": "mul",
+          "input": {
+            "z1": [2, 5],
+            "z2": 5
+          },
+          "expected": [10, 25]
+        },
+        {
+          "uuid": "8a400f75-710e-4d0c-bcb4-5e5a00c78aa0",
+          "description": "Divide complex number by real number",
+          "property": "div",
+          "input": {
+            "z1": [10, 100],
+            "z2": 10
+          },
+          "expected": [1, 10]
+        }
+      ]
     }
   ]
 }
