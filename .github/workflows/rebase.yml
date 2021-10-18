@@ -1,6 +1,6 @@
 name: Rebase command
 
-on: 
+on:
   issue_comment:
     types: [created]
 
@@ -11,11 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@1e204e9a9253d643386038d443f96446fa156a97
       with:
         fetch-depth: 0
 
     - name: Automatic Rebase
-      uses: cirrus-actions/rebase@7cea12ac34ab078fa37e87798d8986185afa7bf2 # 1.4
+      uses: cirrus-actions/rebase@c473b716e3fcde0c6bf67416e2c2882830ad40f6
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
