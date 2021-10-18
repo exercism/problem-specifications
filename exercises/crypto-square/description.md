@@ -26,9 +26,9 @@ The plaintext should be organized in to a rectangle. The size of the
 rectangle should be decided by the length of the message.
 
 If `c` is the number of columns and `r` is the number of rows, then for
-the rectangle `r x c` find the smallest possible integer `c` such that:
+the rectangle `r` x `c` find the smallest possible integer `c` such that:
 
-- `r x c >= length(message)`,
+- `r * c >= length(message)`,
 - and `c >= r`,
 - and `c - r <= 1`.
 
