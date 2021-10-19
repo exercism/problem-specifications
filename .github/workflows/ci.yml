@@ -8,7 +8,7 @@ jobs:
     name: All required files are present
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@1e204e9a9253d643386038d443f96446fa156a97
 
       - name: All required files are present
         run: bin/check_required_files_present
@@ -17,13 +17,13 @@ jobs:
     name: No test has been mutated
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@1e204e9a9253d643386038d443f96446fa156a97
         with:
           path: "new"
 
       # Pull Requests
       - name: Checkout the target branch
-        uses: actions/checkout@v2
+        uses: actions/checkout@1e204e9a9253d643386038d443f96446fa156a97
         with:
           ref: "${{ github.base_ref }}"
           path: "old"
@@ -39,9 +39,9 @@ jobs:
     name: Schema validation
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@1e204e9a9253d643386038d443f96446fa156a97
 
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@270253e841af726300e85d718a5f606959b2903c
         with:
           node-version: "12"
 
@@ -51,7 +51,7 @@ jobs:
         run: echo "::set-output name=dir::$(yarn cache dir)"
 
       - name: Cache yarn
-        uses: actions/cache@v2
+        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353
         id: yarn-cache
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
