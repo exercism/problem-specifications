@@ -19,6 +19,6 @@ Examples:
 * If `A = [1, 2, 3]` and `B = [1, 2, 3, 4, 5]`, then `A` is a sublist of `B`
 * If `A = [3, 4, 5]` and `B = [1, 2, 3, 4, 5]`, then `A` is a sublist of `B`
 * If `A = [3, 4]` and `B = [1, 2, 3, 4, 5]`, then `A` is a sublist of `B`
-* If `A = [1, 2, 3]` and `B = [1, 2, 3]`, then `A` is equal to `B`
+* If `A = [1, 2, 3]` and `B = [1, 2, 3]`, then `A` and `B` are equal
 * If `A = [1, 2, 3, 4, 5]` and `B = [2, 3, 4]`, then `A` is a superlist of `B`
 * If `A = [1, 2, 4]` and `B = [1, 2, 3, 4, 5]`, then `A` and `B` are unequal
