@@ -7,7 +7,7 @@ Given any two lists `A` and `B`, determine if:
 * List `B` contains list `A` (`A` is a sublist of `B`); or
 * None of the above is true, thus lists `A` and `B` are unequal
 
-Specifically, a list `A` is equal to list `B` if both contain only the same sequence of values.
+Specifically, list `A` is equal to list `B` if both contain only the same sequence of values.
 List `A` is a superlist of `B` if `A` contains a sub-sequence of values equal to `B`.
 Analogously, `A` is a sublist of `B` if `B` contains a sub-sequence of values equal to `A`.
 
