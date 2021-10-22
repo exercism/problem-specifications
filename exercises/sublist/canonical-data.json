@@ -165,6 +165,16 @@
       "expected": "unequal"
     },
     {
+      "uuid": "7bc76cb8-5003-49ca-bc47-cdfbe6c2bb89",
+      "description": "first list missing additional digits from second list",
+      "property": "sublist",
+      "input": {
+        "listOne": [1, 2],
+        "listTwo": [1, 22]
+      },
+      "expected": "unequal"
+    },
+    {
       "uuid": "0d7ee7c1-0347-45c8-9ef5-b88db152b30b",
       "description": "order matters to a list",
       "property": "sublist",
