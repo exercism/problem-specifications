@@ -22,11 +22,11 @@ flats, depending on the tonic. Here is a table indicating whether the
 flat expression or sharp expression of the scale would be used for a given
 note:
 
-Key Signature | Major | Minor
--- | -- | --
-Natural | C | a
-Sharp | G, D, A, E, B, F# | e, b, f#, c#, g#, d#
-Flat | F, Bb, Eb, Ab, Db, Gb | d, g, c, f, bb, eb
+| Key Signature | Major                 | Minor                |
+| ------------- | --------------------- | -------------------- |
+| Natural       | C                     | a                    |
+| Sharp         | G, D, A, E, B, F#     | e, b, f#, c#, g#, d# |
+| Flat          | F, Bb, Eb, Ab, Db, Gb | d, g, c, f, bb, eb   |
 
 Note that by common music theory convention the natural notes "C" and "a" 
 follow the sharps scale when ascending and the flats scale when descending. 
