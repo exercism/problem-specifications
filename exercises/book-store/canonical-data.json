@@ -159,7 +159,7 @@
       },
       "expected": 10240
     },
-	{
+	  {
       "uuid": "5260ddde-2703-4915-b45a-e54dbbac4303",
       "property": "total",
       "description": "Check that groups of four are created properly even when there are more groups of three than groups of five",
@@ -168,6 +168,26 @@
         "basket": [1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,4,4,5,5]
       },
       "expected": 14560
+    },
+    {
+      "uuid": "b0478278-c551-4747-b0fc-7e0be3158b1f",
+      "property": "total",
+      "description": "Test one group of one following of another group of four",
+      "comments": ["Suggested grouping, [[1],[1,2,3,4]]."],
+      "input": {
+        "basket": [1,1,2,3,4]
+      },
+      "expected": 3360
+    },
+    {
+      "uuid": "cf868453-6484-4ae1-9dfc-f8ee85bbde01",
+      "property": "total",
+      "description": "Test one one, two twos, three threes, four fours, five fives",
+      "comments": ["Suggested grouping, [[5],[5,4],[5,4,3,2],[5,4,3,2],[5,4,3,1]]."],
+      "input": {
+        "basket": [1,2,2,3,3,3,4,4,4,4,5,5,5,5,5]
+      },
+      "expected": 10000
     }
   ]
 }
