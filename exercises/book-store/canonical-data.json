@@ -159,7 +159,7 @@
       },
       "expected": 10240
     },
-	  {
+    {
       "uuid": "5260ddde-2703-4915-b45a-e54dbbac4303",
       "property": "total",
       "description": "Check that groups of four are created properly even when there are more groups of three than groups of five",
