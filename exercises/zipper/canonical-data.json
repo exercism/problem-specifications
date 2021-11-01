@@ -281,7 +281,7 @@
     },
     {
       "uuid": "b9aa8d54-07b7-4bfd-ab6b-7ff7f35930b6",
-      "description": "left, right, up, and up",
+      "description": "test ability to descend multiple levels and return",
       "property": "expectedValue",
       "input": {
         "initialTree": {
