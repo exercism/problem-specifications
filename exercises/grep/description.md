@@ -33,6 +33,17 @@ hello
 hello again
 ```
 
+If given multiple files, `grep` should prefix each found line with the file it was found in.
+As an example:
+
+```text
+input.txt:hello
+input.txt:hello again
+greeting.txt:hello world
+```
+
+If given just one file, this prefix is not present.
+
 ## Flags
 
 As said earlier, the `grep` command should also support the following flags:
