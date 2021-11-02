@@ -48,7 +48,8 @@ If given just one file, this prefix is not present.
 
 As said earlier, the `grep` command should also support the following flags:
 
-- `-n` Print the line numbers of each matching line.
+- `-n` Prefix each matching line with its line number within its file.
+  When multiple files are present, this prefix goes *after* the filename prefix.
 - `-l` Print only the names of files that contain at least one matching line.
 - `-i` Match line using a case-insensitive comparison.
 - `-v` Invert the program -- collect all lines that fail to match the pattern.
