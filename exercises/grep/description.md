@@ -12,11 +12,11 @@ The `grep` command takes three arguments:
 2. Zero or more flags to customize the matching behavior.
 3. One or more files in which to search for matching lines.
 
-Your task is to implement the `grep` function, which should read the contents
-of the specified files, find the lines that match the specified pattern
-and then output those lines as a single string. Note that the lines should
-be output in the order in which they were found, with the first matching line
-in the first file being output first.
+Your task is to implement the `grep` function: given a list of files, find all
+lines that match the specified pattern.
+Return the lines in the order they appear in the files.
+You'll also have to handle options (given as flags), which control how matching
+is done and how the results are to be reported.
 
 As an example, suppose there is a file named "input.txt" with the following contents:
 
@@ -26,7 +26,7 @@ world
 hello again
 ```
 
-If we were to call `grep "hello" input.txt`, the returned string should be:
+If we were to call `grep "hello" input.txt`, the result should be:
 
 ```text
 hello
