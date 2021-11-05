@@ -14,7 +14,7 @@ Pull Requests to this repo require three approving reviews to be merged.
 - Please also use the **Request Changes** button if you are unsure about how a concern of yours could be resolved.
   - This will block the PR from being merged until the change request has been addressed / overruled by an admin.
   - It ensures that your thoughts will be heard and can be addressed rather than being overruled by a majority.
-- When a discussion goes stale or there are several opposing views and a compromise cannot be reached, ping [@ErikSchierboom](https://github.com/ErikSchierboom/) to resolve the discussion.
+- When a discussion goes stale or there are several opposing views and a compromise cannot be reached, ping [@exercism/maintainers-admin](https://github.com/orgs/exercism/teams/maintainers-admin/members) to resolve the discussion.
 
 ## Exercise Metadata
 
