@@ -11,9 +11,9 @@ Please see the [contributing guide](./CONTRIBUTING.md).
 Pull Requests to this repo require three approving reviews to be merged.
 
 - If you think that a PR should not be merged, either as is or in general, please leave a review **requesting changes**.
-  - This will block the PR from being merged until the change request has been addressed or overruled by an admin.
-  - Please also use the Request Changes button if you are unsure about how a concern of yours could be resolved.
-  - This ensures that your thoughts will be heard and can be addressed rather than being overruled by a majority.
+- Please also use the **Request Changes** button if you are unsure about how a concern of yours could be resolved.
+  - This will block the PR from being merged until the change request has been addressed / overruled by an admin.
+  - It ensures that your thoughts will be heard and can be addressed rather than being overruled by a majority.
 - When a discussion goes stale or there are several opposing views and a compromise cannot be reached, ping [@ErikSchierboom](https://github.com/ErikSchierboom/) to resolve the discussion.
 
 ## Exercise Metadata
