@@ -86,6 +86,7 @@
                 , "property"    : { "$ref": "#/definitions/property"    }
                 , "input"       : { "$ref": "#/definitions/input"       }
                 , "expected"    : { "$ref": "#/definitions/expected"    }
+                , "timeout"     : { "$ref": "#/definitions/timeout"     }
                 }
           , "additionalProperties": false
           },
