@@ -157,6 +157,11 @@
                }
           },
 
+     "timeout":
+          { "description": "Test timeout in milliseconds"
+          , "type"       : "integer"
+          },
+
       "error":
           { "description": "A message describing an error condition"
           , "type"       : "string"
