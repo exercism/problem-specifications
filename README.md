@@ -149,6 +149,69 @@ The file format is described in [canonical-schema.json](./canonical-schema.json)
   ]
 }
 ```
+### Test Data Format for Tests with Timeout constraints
+
+This example shows the possible use of the optional timeout constraint for a test, not all tests need a timeout and the timeout can vary from test to test:
+```json
+{
+  "exercise": "alphametics",
+  "cases": [
+    {
+      "uuid": "e0c08b07-9028-4d5f-91e1-d178fead8e1a",
+      "description": "puzzle with three letters",
+      "property": "solve",
+      "input": {
+        "puzzle": "I + BB == ILL"
+      },
+      "expected": {
+        "I": 1,
+        "B": 9,
+        "L": 0
+      }
+    },
+    {
+      "uuid": "12125a75-7284-4f9a-a5fa-191471e0d44f",
+      "description": "puzzle with eight letters",
+      "property": "solve",
+      "input": {
+        "puzzle": "SEND + MORE == MONEY"
+      },
+      "expected": {
+        "S": 9,
+        "E": 5,
+        "N": 6,
+        "D": 7,
+        "M": 1,
+        "O": 0,
+        "R": 8,
+        "Y": 2
+      },
+      "timeout": 2000      
+    },
+    {
+      "uuid": "fb05955f-38dc-477a-a0b6-5ef78969fffa",
+      "description": "puzzle with ten letters",
+      "property": "solve",
+      "input": {
+        "puzzle": "AND + A + STRONG + OFFENSE + AS + A + GOOD == DEFENSE"
+      },
+      "expected": {
+        "A": 5,
+        "D": 3,
+        "E": 4,
+        "F": 7,
+        "G": 8,
+        "N": 0,
+        "O": 2,
+        "R": 1,
+        "S": 6,
+        "T": 9
+      },
+      "timeout": 5000
+    }
+  ]
+}
+```
 
 ## Scenarios
 
