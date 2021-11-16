@@ -64,6 +64,6 @@ intervals, but they will not figure into this exercise.
 Given a tonic and a set of intervals, generate the musical scale starting with
 the tonic and following the specified interval pattern.
 
-This is similar generating chromatic scales except that instead of returning 12
-notes you need to return one note for each interval in the given pattern
+This is similar to generating chromatic scales except that instead of returning
+12 notes you need to return one note for each interval in the given pattern by
 skipping the number of notes indicated by each interval in the pattern.
