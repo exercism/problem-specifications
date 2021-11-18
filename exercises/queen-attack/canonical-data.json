@@ -242,7 +242,7 @@
           "expected": true
         },
         {
-          "uuid": "33ae4113-d237-42ee-bac1-e1e699c0c007",
+          "uuid": "543f8fd4-2597-4aad-8d77-cbdab63619f8",
           "description": "cannot attack with equal difference",
           "property": "canAttack",
           "input": {
