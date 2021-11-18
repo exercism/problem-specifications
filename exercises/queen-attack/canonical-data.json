@@ -240,6 +240,26 @@
             }
           },
           "expected": true
+        },
+        {
+          "uuid": "33ae4113-d237-42ee-bac1-e1e699c0c007",
+          "description": "cannot attack with equal difference",
+          "property": "canAttack",
+          "input": {
+            "white_queen": {
+              "position": {
+                "row": 4,
+                "column": 1
+              }
+            },
+            "black_queen": {
+              "position": {
+                "row": 2,
+                "column": 5
+              }
+            }
+          },
+          "expected": false
         }
       ]
     }
