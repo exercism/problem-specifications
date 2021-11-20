@@ -32,7 +32,7 @@ For the scope of this exercise the scale is only ascending.
 
 ### Task
 
-Given a tonic, generate the 12 note musical scale starting with the tonic.
+Given a tonic, generate the 12 note chromatic scale starting with the tonic.
 
 - Shift the base scale appropriately so that all 12 notes are returned
 starting with the given tonic.
