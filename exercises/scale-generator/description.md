@@ -38,8 +38,8 @@ Given a tonic, generate the 12 note chromatic scale starting with the tonic.
 starting with the given tonic.
 - For the given tonic, determine if the scale is to be returned with flats
 or sharps.
-- Return the major scale (i.e. uppercase notes) irrespective of if the
-given tonic is a major or minor note (i.e. uppercase or lowercase respectively).
+- Return all notes in uppercase letters (except fo the `b` for flats)
+irrespective of the casing of the given tonic.
 
 ## Diatonic Scales
 
