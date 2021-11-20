@@ -243,7 +243,7 @@
         },
         {
           "uuid": "543f8fd4-2597-4aad-8d77-cbdab63619f8",
-          "description": "cannot attack with equal difference",
+          "description": "cannot attack if falling diagonals are only the same when reflected across the longest falling diagonal",
           "property": "canAttack",
           "input": {
             "white_queen": {
