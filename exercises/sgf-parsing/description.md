@@ -53,6 +53,13 @@ A key can have multiple values associated with it. For example:
 
 Here `AB` (add black) is used to add three black stones to the board.
 
+Being that parentheses, square brackets and semicolons are integral parts of
+the SGF format they must be escaped by preceding the character with a backslash
+(i.e. `\(`, `\;` and etc.) when found in text. Some other characters that
+require escaping are new lines, tabs and backslashes (`\n`, `\t`, `\\`).
+In addition, aside from line-breaks any whitespace character found in text
+should be converted to a space character.
+
 There are a few more complexities to SGF (and parsing in general), which
 you can mostly ignore. You should assume that the input is encoded in
 UTF-8, the tests won't contain a charset property, so don't worry about

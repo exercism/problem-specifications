@@ -179,7 +179,7 @@
             },
             "expected": {
                 "properties": {
-                    "A": ["]b\\nc\\nd\\t\\te \\n]"]
+                    "A": ["]b\\nc\\nd  e \\n]"]
                 },
                 "children": []
             }
