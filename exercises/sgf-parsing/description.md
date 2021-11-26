@@ -53,7 +53,7 @@ A key can have multiple values associated with it. For example:
 
 Here `AB` (add black) is used to add three black stones to the board.
 
-According the the SGF specification `\` is the escape character. When `/` is
+According the the SGF specification `\` is the escape character. When `\` is
 encountered during parsing it indicates that the following character should be
 printed as is. The exception to this is whitespace, as is common with many
 encoding schemas the character sequences `"\n"`, `"\r"` and `"\t"` are the
