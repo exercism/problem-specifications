@@ -63,7 +63,7 @@ square brackets, semicolons and colons.
 When parsing SGF files whitespace gets special handling, with the exception of
 newlines any whitespace character encountered is replaced with a single space
 character irrespective of if the original character is found in its escaped
-from or its unescaped form.
+from or its unescaped from.
 
 There are a few more complexities to SGF (and parsing in general), which
 you can mostly ignore. You should assume that the input is encoded in
