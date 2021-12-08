@@ -13,7 +13,7 @@ from your character's constitution, divide by 2 and round down.
 
 Write a random character generator that follows the rules above.
 
-For example, the six throws of four dice may look like:
+For example, the four throws of 6-sided dice may look like:
 
 * 5, 3, 1, 6: You discard the 1 and sum 5 + 3 + 6 = 14, which you assign to strength.
 * 3, 2, 5, 3: You discard the 2 and sum 3 + 5 + 3 = 11, which you assign to dexterity.
