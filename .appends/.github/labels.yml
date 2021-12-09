@@ -1,0 +1,88 @@
+# ----------------------------------------------------------------------------------------- #
+# These are the repository-specific labels that augment the Exercise-wide labels defined in #
+# https://github.com/exercism/org-wide-files/blob/main/global-files/.github/labels.yml.     #
+# ----------------------------------------------------------------------------------------- #
+
+- name: "CI"
+  description: ""
+  color: "bfdadc"
+
+- name: "Track Anatomy Project"
+  description: "Related to or helpful to the Track Anatomy Project"
+  color: "009CAB"
+
+- name: "abandoned?"
+  description: ""
+  color: "cc8eac"
+
+- name: "correctness"
+  description: ""
+  color: "efefef"
+
+- name: "cross-track consistency"
+  description: ""
+  color: "efefef"
+
+- name: "dependencies"
+  description: "Pull requests that update a dependency file"
+  color: "0366d6"
+
+- name: "design-research"
+  description: ""
+  color: "888888"
+
+- name: "discussion"
+  description: ""
+  color: "5BF500"
+
+- name: "documentation"
+  description: ""
+  color: "efefef"
+
+- name: "good first issue"
+  description: ""
+  color: "0e8a16"
+
+- name: "hacktoberfest-accepted"
+  description: ""
+  color: "e171e2"
+
+- name: "hold"
+  description: ""
+  color: "c94473"
+
+- name: "metadata"
+  description: ""
+  color: "efefef"
+
+- name: "new exercise idea"
+  description: ""
+  color: "006b75"
+
+- name: "new test case idea"
+  description: ""
+  color: "cab1ed"
+
+- name: "policy"
+  description: ""
+  color: "5319e7"
+
+- name: "question"
+  description: ""
+  color: "E800C3"
+
+- name: "ready"
+  description: ""
+  color: "ededed"
+
+- name: "todo"
+  description: ""
+  color: "C6FC00"
+
+- name: "waiting on other tracks"
+  description: ""
+  color: "1d76db"
+
+- name: "won't fix"
+  description: ""
+  color: "d88b34"

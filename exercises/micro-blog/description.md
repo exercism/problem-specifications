@@ -1,3 +1,5 @@
+# Description
+
 You have identified a gap in the social media market for very very short
 posts. Now that Twitter allows 280 character posts, people wanting quick
 social media updates aren't being served. You decide to create your own
@@ -16,6 +18,7 @@ The task is to truncate input strings to 5 characters.
 
 Text stored digitally has to be converted to a series of bytes.
 There are 3 ways to map characters to bytes in common use.
+
 * **ASCII** can encode English language characters. All
 characters are precisely 1 byte long.
 * **UTF-8** is a Unicode text encoding. Characters take between 1
@@ -25,6 +28,7 @@ and 4 bytes.
 
 UTF-8 and UTF-16 are both Unicode encodings which means they're capable of
 representing a massive range of characters including:
+
 * Text in most of the world's languages and scripts
 * Historic text
 * Emoji

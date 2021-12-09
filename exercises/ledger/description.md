@@ -1,3 +1,5 @@
+# Description
+
 Refactor a ledger printer.
 
 The ledger exercise is a refactoring exercise. There is code that prints a

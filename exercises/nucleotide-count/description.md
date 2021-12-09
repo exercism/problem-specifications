@@ -1,3 +1,5 @@
+# Description
+
 Each of us inherits from our biological parents a set of chemical instructions known as DNA that influence how our bodies are constructed. All known life depends on DNA!
 
 > Note: You do not need to understand anything about nucleotides or DNA to complete this exercise.
@@ -13,7 +15,7 @@ If the string contains characters that aren't A, C, G, or T then it is invalid a
 
 For example:
 
-```
+```text
 "GATTACA" -> 'A': 3, 'C': 1, 'G': 1, 'T': 2
 "INVALID" -> error
 ```

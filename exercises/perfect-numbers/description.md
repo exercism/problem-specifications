@@ -1,3 +1,5 @@
+# Description
+
 Determine if a number is perfect, abundant, or deficient based on
 Nicomachus' (60 - 120 CE) classification scheme for positive integers.
 

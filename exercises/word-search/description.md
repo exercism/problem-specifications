@@ -1,3 +1,5 @@
+# Description
+
 In word search puzzles you get a square of letters and have to find specific
 words in them.
 

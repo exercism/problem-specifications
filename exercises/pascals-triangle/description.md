@@ -1,3 +1,5 @@
+# Description
+
 Compute Pascal's triangle up to a given number of rows.
 
 In Pascal's Triangle each number is computed by adding the numbers to

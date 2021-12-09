@@ -5,129 +5,131 @@
   ],
   "cases": [
     {
-      "description": "Check if the given string is an isogram",
-      "comments": [
-        "Output should be a boolean denoting if the string is a isogram or not."
-      ],
-      "cases": [
-        {
-          "uuid": "a0e97d2d-669e-47c7-8134-518a1e2c4555",
-          "description": "empty string",
-          "property": "isIsogram",
-          "input": {
-            "phrase": ""
-          },
-          "expected": true
-        },
-        {
-          "uuid": "9a001b50-f194-4143-bc29-2af5ec1ef652",
-          "description": "isogram with only lower case characters",
-          "property": "isIsogram",
-          "input": {
-            "phrase": "isogram"
-          },
-          "expected": true
-        },
-        {
-          "uuid": "8ddb0ca3-276e-4f8b-89da-d95d5bae78a4",
-          "description": "word with one duplicated character",
-          "property": "isIsogram",
-          "input": {
-            "phrase": "eleven"
-          },
-          "expected": false
-        },
-        {
-          "uuid": "6450b333-cbc2-4b24-a723-0b459b34fe18",
-          "description": "word with one duplicated character from the end of the alphabet",
-          "property": "isIsogram",
-          "input": {
-            "phrase": "zzyzx"
-          },
-          "expected": false
-        },
-        {
-          "uuid": "a15ff557-dd04-4764-99e7-02cc1a385863",
-          "description": "longest reported english isogram",
-          "property": "isIsogram",
-          "input": {
-            "phrase": "subdermatoglyphic"
-          },
-          "expected": true
-        },
-        {
-          "uuid": "f1a7f6c7-a42f-4915-91d7-35b2ea11c92e",
-          "description": "word with duplicated character in mixed case",
-          "property": "isIsogram",
-          "input": {
-            "phrase": "Alphabet"
-          },
-          "expected": false
-        },
-        {
-          "uuid": "14a4f3c1-3b47-4695-b645-53d328298942",
-          "description": "word with duplicated character in mixed case, lowercase first",
-          "property": "isIsogram",
-          "input": {
-            "phrase": "alphAbet"
-          },
-          "expected": false
-        },
-        {
-          "uuid": "423b850c-7090-4a8a-b057-97f1cadd7c42",
-          "description": "hypothetical isogrammic word with hyphen",
-          "property": "isIsogram",
-          "input": {
-            "phrase": "thumbscrew-japingly"
-          },
-          "expected": true
-        },
-        {
-          "uuid": "93dbeaa0-3c5a-45c2-8b25-428b8eacd4f2",
-          "description": "hypothetical word with duplicated character following hyphen",
-          "property": "isIsogram",
-          "input": {
-            "phrase": "thumbscrew-jappingly"
-          },
-          "expected": false
-        },
-        {
-          "uuid": "36b30e5c-173f-49c6-a515-93a3e825553f",
-          "description": "isogram with duplicated hyphen",
-          "property": "isIsogram",
-          "input": {
-            "phrase": "six-year-old"
-          },
-          "expected": true
-        },
-        {
-          "uuid": "cdabafa0-c9f4-4c1f-b142-689c6ee17d93",
-          "description": "made-up name that is an isogram",
-          "property": "isIsogram",
-          "input": {
-            "phrase": "Emily Jung Schwartzkopf"
-          },
-          "expected": true
-        },
-        {
-          "uuid": "5fc61048-d74e-48fd-bc34-abfc21552d4d",
-          "description": "duplicated character in the middle",
-          "property": "isIsogram",
-          "input": {
-            "phrase": "accentor"
-          },
-          "expected": false
-        },
-        {
-          "uuid": "310ac53d-8932-47bc-bbb4-b2b94f25a83e",
-          "description": "same first and last characters",
-          "property": "isIsogram",
-          "input": {
-            "phrase": "angola"
-          },
-          "expected": false
-        }
-      ]
+      "uuid": "a0e97d2d-669e-47c7-8134-518a1e2c4555",
+      "description": "empty string",
+      "property": "isIsogram",
+      "input": {
+        "phrase": ""
+      },
+      "expected": true
+    },
+    {
+      "uuid": "9a001b50-f194-4143-bc29-2af5ec1ef652",
+      "description": "isogram with only lower case characters",
+      "property": "isIsogram",
+      "input": {
+        "phrase": "isogram"
+      },
+      "expected": true
+    },
+    {
+      "uuid": "8ddb0ca3-276e-4f8b-89da-d95d5bae78a4",
+      "description": "word with one duplicated character",
+      "property": "isIsogram",
+      "input": {
+        "phrase": "eleven"
+      },
+      "expected": false
+    },
+    {
+      "uuid": "6450b333-cbc2-4b24-a723-0b459b34fe18",
+      "description": "word with one duplicated character from the end of the alphabet",
+      "property": "isIsogram",
+      "input": {
+        "phrase": "zzyzx"
+      },
+      "expected": false
+    },
+    {
+      "uuid": "a15ff557-dd04-4764-99e7-02cc1a385863",
+      "description": "longest reported english isogram",
+      "property": "isIsogram",
+      "input": {
+        "phrase": "subdermatoglyphic"
+      },
+      "expected": true
+    },
+    {
+      "uuid": "f1a7f6c7-a42f-4915-91d7-35b2ea11c92e",
+      "description": "word with duplicated character in mixed case",
+      "property": "isIsogram",
+      "input": {
+        "phrase": "Alphabet"
+      },
+      "expected": false
+    },
+    {
+      "uuid": "14a4f3c1-3b47-4695-b645-53d328298942",
+      "description": "word with duplicated character in mixed case, lowercase first",
+      "property": "isIsogram",
+      "input": {
+        "phrase": "alphAbet"
+      },
+      "expected": false
+    },
+    {
+      "uuid": "423b850c-7090-4a8a-b057-97f1cadd7c42",
+      "description": "hypothetical isogrammic word with hyphen",
+      "property": "isIsogram",
+      "input": {
+        "phrase": "thumbscrew-japingly"
+      },
+      "expected": true
+    },
+    {
+      "uuid": "93dbeaa0-3c5a-45c2-8b25-428b8eacd4f2",
+      "description": "hypothetical word with duplicated character following hyphen",
+      "property": "isIsogram",
+      "input": {
+        "phrase": "thumbscrew-jappingly"
+      },
+      "expected": false
+    },
+    {
+      "uuid": "36b30e5c-173f-49c6-a515-93a3e825553f",
+      "description": "isogram with duplicated hyphen",
+      "property": "isIsogram",
+      "input": {
+        "phrase": "six-year-old"
+      },
+      "expected": true
+    },
+    {
+      "uuid": "cdabafa0-c9f4-4c1f-b142-689c6ee17d93",
+      "description": "made-up name that is an isogram",
+      "property": "isIsogram",
+      "input": {
+        "phrase": "Emily Jung Schwartzkopf"
+      },
+      "expected": true
+    },
+    {
+      "uuid": "5fc61048-d74e-48fd-bc34-abfc21552d4d",
+      "description": "duplicated character in the middle",
+      "property": "isIsogram",
+      "input": {
+        "phrase": "accentor"
+      },
+      "expected": false
+    },
+    {
+      "uuid": "310ac53d-8932-47bc-bbb4-b2b94f25a83e",
+      "description": "same first and last characters",
+      "property": "isIsogram",
+      "input": {
+        "phrase": "angola"
+      },
+      "expected": false
+    },
+    {
+      "uuid": "0d0b8644-0a1e-4a31-a432-2b3ee270d847",
+      "description": "word with duplicated character and with two hyphens",
+      "comments": ["This test aims to catch buggy implementations that check for duplicate spaces or hyphens."],
+      "property": "isIsogram",
+      "input": {
+        "phrase": "up-to-date"
+      },
+      "expected": false
     }
   ]
 }

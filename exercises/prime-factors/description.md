@@ -1,3 +1,5 @@
+# Description
+
 Compute the prime factors of a given natural number.
 
 A prime number is only evenly divisible by itself and 1.
@@ -22,7 +24,7 @@ factors of 60: 2, 2, 3, and 5.
 
 You can check this yourself:
 
-- 2 * 2 * 3 * 5
+- 2 \* 2 \* 3 * 5
 - = 4 * 15
 - = 60
 - Success!

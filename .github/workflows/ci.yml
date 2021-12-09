@@ -8,7 +8,7 @@ jobs:
     name: All required files are present
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579
 
       - name: All required files are present
         run: bin/check_required_files_present
@@ -17,13 +17,13 @@ jobs:
     name: No test has been mutated
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579
         with:
           path: "new"
 
       # Pull Requests
       - name: Checkout the target branch
-        uses: actions/checkout@v2
+        uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579
         with:
           ref: "${{ github.base_ref }}"
           path: "old"
@@ -39,19 +39,19 @@ jobs:
     name: Schema validation
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579
 
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458
         with:
           node-version: "12"
 
-      # https://github.com/actions/cache/blob/master/examples.md#node---yarn
+      # https://github.com/actions/cache/blob/main/examples.md#node---yarn
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
 
       - name: Cache yarn
-        uses: actions/cache@v2
+        uses: actions/cache@937d24475381cd9c75ae6db12cb4e79714b926ed
         id: yarn-cache
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}

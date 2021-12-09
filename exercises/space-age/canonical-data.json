@@ -80,6 +80,16 @@
         "seconds": 1821023456
       },
       "expected": 0.35
+    },
+    {
+      "uuid": "57b96e2a-1178-40b7-b34d-f3c9c34e4bf4",
+      "description": "invalid planet causes error",
+      "property": "age",
+      "input": {
+        "planet": "Sun",
+        "seconds": 680804807
+      },
+      "expected": {"error": "not a planet"}
     }
   ]
 }

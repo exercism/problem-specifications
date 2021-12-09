@@ -280,6 +280,51 @@
       }
     },
     {
+      "uuid": "b9aa8d54-07b7-4bfd-ab6b-7ff7f35930b6",
+      "description": "test ability to descend multiple levels and return",
+      "property": "expectedValue",
+      "input": {
+        "initialTree": {
+          "value": 1,
+          "left": {
+            "value": 2,
+            "left": null,
+            "right": {
+              "value": 3,
+              "left": null,
+              "right": null
+            }
+          },
+          "right": {
+            "value": 4,
+            "left": null,
+            "right": null
+          }
+        },
+        "operations": [
+          {
+            "operation": "left"
+          },
+          {
+            "operation": "right"
+          },
+          {
+            "operation": "up"
+          },
+          {
+            "operation": "up"
+          },
+          {
+            "operation": "value"
+          }
+        ]
+      },
+      "expected": {
+        "type": "int",
+        "value": 1
+      }
+    },
+    {
       "uuid": "47df1a27-b709-496e-b381-63a03b82ea5f",
       "description": "set_value",
       "property": "expectedValue",

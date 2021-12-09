@@ -1,3 +1,5 @@
+# Description
+
 Write a function that returns the earned points in a single toss of a Darts game.
 
 [Darts](https://en.wikipedia.org/wiki/Darts) is a game where players
