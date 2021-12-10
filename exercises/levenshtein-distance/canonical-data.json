@@ -1,6 +1,5 @@
 {
   "exercise": "levenshtein-distance",
-  "version": "1.0.0",
   "cases": [
     {
       "description": "empty strings",
