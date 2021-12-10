@@ -137,6 +137,24 @@
       "expected": false
     },
     {
+      "uuid": "a345a753-d889-4b7e-99ae-34ac85910d1a",
+      "description": "early unexpected brackets",
+      "property": "isPaired",
+      "input": {
+        "value": ")()"
+      },
+      "expected": false
+    },
+    {
+      "uuid": "21f81d61-1608-465a-b850-baa44c5def83",
+      "description": "early mismatched brackets",
+      "property": "isPaired",
+      "input": {
+        "value": "{)()"
+      },
+      "expected": false
+    },
+    {
       "uuid": "99255f93-261b-4435-a352-02bdecc9bdf2",
       "description": "math expression",
       "property": "isPaired",
