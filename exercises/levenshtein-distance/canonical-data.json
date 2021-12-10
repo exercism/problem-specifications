@@ -2,6 +2,7 @@
   "exercise": "levenshtein-distance",
   "cases": [
     {
+      "uuid": "50ea379b-8caa-4c97-9afc-44ff69ffe1ea",
       "description": "empty strings",
       "property": "distance",
       "input": {
@@ -11,6 +12,7 @@
       "expected": 0
     },
     {
+      "uuid": "332b4b48-8de6-4f3f-90d6-509c1dd9a515",
       "description": "identical strings",
       "property": "distance",
       "input": {
@@ -20,6 +22,7 @@
       "expected": 0
     },
     {
+      "uuid": "7f59a483-afe9-4525-9985-ca01d0f2caf7",
       "description": "only insertions",
       "property": "distance",
       "input": {
@@ -29,6 +32,7 @@
       "expected": 4
     },
     {
+      "uuid": "9eefb030-0e7f-4923-92af-0cac41584cab",
       "description": "only deletions",
       "property": "distance",
       "input": {
@@ -38,6 +42,7 @@
       "expected": 4
     },
     {
+      "uuid": "c0f4dc49-53d7-43d6-b4cc-5e4b32f0c547",
       "description": "only substitution",
       "property": "distance",
       "input": {
@@ -47,6 +52,7 @@
       "expected": 1
     },
     {
+      "uuid": "874206ae-bc7a-4ad0-89ac-c636060c7b6",
       "description": "substitution and insertion",
       "property": "distance",
       "input": {
@@ -56,6 +62,7 @@
       "expected": 3
     },
     {
+      "uuid": "219f2d7c-1a8c-4879-8ebd-3e232e3dd916",
       "description": "substitution and deletion",
       "property": "distance",
       "input": {
@@ -65,6 +72,7 @@
       "expected": 3
     },
     {
+      "uuid": "028f1a01-59f9-494d-8864-468a6ee3a607",
       "description": "with numbers",
       "property": "distance",
       "input": {
@@ -74,6 +82,7 @@
       "expected": 3
     },
     {
+      "uuid": "bc65fa53-2621-407a-988e-cb586e47198c",
       "description": "with special characters",
       "property": "distance",
       "input": {
@@ -83,6 +92,7 @@
       "expected": 2
     },
     {
+      "uuid": "510dde09-83f9-4986-a689-d899be5fd7a7",
       "description": "with capital letters",
       "property": "distance",
       "input": {
