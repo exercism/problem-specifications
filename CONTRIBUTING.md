@@ -8,8 +8,8 @@ We are grateful for any help in making Exercism better!
 
 -----
 
-This guide covers several common scenarios pertaining to **improving the language tracks**
-themselves. [There are other guides about contributing to other parts of the Exercism ecosystem](https://exercism.org/contributing).
+This guide covers several common scenarios pertaining to **improving the language tracks** themselves.
+[There are other guides about contributing to other parts of the Exercism ecosystem][contributing].
 
 ## Table of Contents
 
@@ -17,18 +17,18 @@ themselves. [There are other guides about contributing to other parts of the Exe
 * [Code of Conduct](#code-of-conduct)
 * [Overview](#overview)
 * [Updating an Exercise Test Suite](#updating-an-exercise-test-suite)
-    * [Updating a Generated Test Suite](#updating-a-generated-test-suite)
+  * [Updating a Generated Test Suite](#updating-a-generated-test-suite)
 * [Implementing a Completely New Exercise](#implementing-a-completely-new-exercise)
 * [Track Anatomy](#track-anatomy)
 * [Starting a New Track](#starting-a-new-track)
-    * [Beta-Testing a Language Track](#beta-testing-a-language-track)
+  * [Beta-Testing a Language Track](#beta-testing-a-language-track)
 * [Useful Tidbits](#useful-tidbits)
-    * [Pull Request Guidelines](#pull-request-guidelines)
-    * [Anatomy of an Exercise](#anatomy-of-an-exercise)
-    * [Track configuration file (config.json)](#track-configuration-file)
-    * [Track-Level Linting With Configlet](#track-level-linting-with-configlet)
-    * [Git Basics](#git-basics)
-    * [Improving Consistency By Extracting Shared Test Data](#improving-consistency-by-extracting-shared-test-data)
+  * [Pull Request Guidelines](#pull-request-guidelines)
+  * [Anatomy of an Exercise](#anatomy-of-an-exercise)
+  * [Track configuration file (config.json)](#track-configuration-file)
+  * [Track-Level Linting With Configlet](#track-level-linting-with-configlet)
+  * [Git Basics](#git-basics)
+  * [Improving Consistency By Extracting Shared Test Data](#improving-consistency-by-extracting-shared-test-data)
 
 ## We Will Gladly Help You Help Us
 
@@ -38,8 +38,8 @@ We will do everything we can to help you get started.
 
 The two best ways to get help are to
 
-* jump into the [support chat](https://gitter.im/exercism/support).
-* open a [GitHub issue](https://github.com/exercism/exercism/issues).
+* jump into the [support chat][support-chat].
+* open a [GitHub issue][exercism-issues].
 
 We are happy to help out with all sorts of things, including figuring out the whole git and pull request thing.
 
@@ -50,7 +50,7 @@ If you have questions that you're not comfortable asking out in the open, email 
 ## Code of Conduct
 
 Help us keep Exercism welcoming.
-Please read and abide by the [Code of Conduct](https://exercism.io/code-of-conduct).
+Please read and abide by the [Code of Conduct][code-of-conduct].
 
 ## Overview
 
@@ -81,7 +81,7 @@ Each language-specific repository can be found under the Exercism GitHub organiz
 https://github.com/exercism/{TRACK_ID}
 ```
 
-For example, the C++ repository is [exercism/cpp](https://github.com/exercism/cpp).
+For example, the C++ repository is [exercism/cpp][cpp-track-repo].
 
 ### Problem Metadata
 
@@ -96,11 +96,11 @@ The README of each exercise is pieced together from various bits and pieces of t
 Some of the problems also have a JSON file containing canonical test cases.
 These are used to hand-craft a test suite generator, allowing us to quickly regenerate test suites when edge cases or errors are discovered.
 
-The generic problem descriptions live in the `exercises` [folder](https://github.com/exercism/problem-specifications/tree/main/exercises) in the [exercism/problem-specifications repository](https://github.com/exercism/problem-specifications).
+The generic problem descriptions live in the `exercises` [folder][problem-specs-tree] in the [exercism/problem-specifications repository][problem-specs-repo].
 
 ## Updating an Exercise Test Suite
 
-Once you [find the correct repository](#language-track-repositories), you can [fork it](https://help.github.com/articles/fork-a-repo/) and then [clone it](https://help.github.com/articles/cloning-a-repository/).
+Once you [find the correct repository](#language-track-repositories), you can [fork it][fork-a-repo] and then [clone it][clone-a-repo].
 
 The README in each individual language track repository covers how to set up the development environment for that language.
 
@@ -140,7 +140,7 @@ Once you have made the change, then follow the instructions about verifying your
 #### Changing Inputs and Outputs
 
 If you want to add a new test or change some inputs or outputs, then the change
-needs to be made in the [exercism/problem-specifications repository](https://github.com/exercism/problem-specifications),
+needs to be made in the [exercism/problem-specifications repository][problem-specs-repo],
 not directly to the test suite itself.
 
 Find the JSON file for the problem in question. For example, if you want to change the Clock problem, then look for `exercises/clock/canonical-data.json`.
@@ -181,10 +181,10 @@ A problem must have a unique slug. This slug is used as
   exercise](https://github.com/exercism/legacy-docs/blob/main/you-can-help/implement-an-exercise-from-specification.md).
   Reference the PR in problem-specifications.
   It's suggested, but not required, to wait until the problem-specifications PR is merged before merging the track-specific PR, for the following reasons:
-    * If changes are suggested to the problem-specifications PR, it is likely that they will be applicable to the track-specific PR as well.
-    * Only applicable if the exercise needs a custom `title` in metadata.toml (as described in [you can help make up new exercises](https://github.com/exercism/docs/blob/main/you-can-help/make-up-new-exercises.md#problem-specification)): The title of the exercise as displayed on the website will use the default algorithm instead of the correct title until the problem-specifications PR is merged.
-    * Only applicable to tracks that have specific tools that depend on exercises being present in problem-specifications (see the track-specific documentation for whether any such tools exist): Such tools may operate unexpectedly if the exercise does not yet exist in problem-specifications.
-      Try checking out the branch on a local copy of problem-specifications or rerunning the tool after the problem-specifications PR is merged if applicable.
+  * If changes are suggested to the problem-specifications PR, it is likely that they will be applicable to the track-specific PR as well.
+  * Only applicable if the exercise needs a custom `title` in metadata.toml (as described in [you can help make up new exercises][problem-specification]): The title of the exercise as displayed on the website will use the default algorithm instead of the correct title until the problem-specifications PR is merged.
+  * Only applicable to tracks that have specific tools that depend on exercises being present in problem-specifications (see the track-specific documentation for whether any such tools exist): Such tools may operate unexpectedly if the exercise does not yet exist in problem-specifications.
+    Try checking out the branch on a local copy of problem-specifications or rerunning the tool after the problem-specifications PR is merged if applicable.
 
 ## Track Anatomy
 
@@ -214,7 +214,7 @@ Each track should have the following structure:
         └── hello-world_test.file
 ```
 
-The example template for a track can be found in the [request-new-language-track repository](https://github.com/exercism/request-new-language-track).
+The example template for a track can be found in the [request-new-language-track repository][request-new-track-repo].
 
 * `LICENSE` - The MIT License (MIT)
 * `README.md` - a thorough explanation of how to contribute to the track.
@@ -228,14 +228,14 @@ The example template for a track can be found in the [request-new-language-track
   These files are served to the exercism.io help site via the x-api.
   It should contain at minimum:
 
-    - `INSTALLATION.md` - about how to get the track's language set up locally.
-    - `TESTS.md` - how to run the tests for the track's individual exercises.
+  * `INSTALLATION.md` - about how to get the track's language set up locally.
+  * `TESTS.md` - how to run the tests for the track's individual exercises.
 
-    Some nice to haves:
+  Some nice to haves:
 
-    - `ABOUT.md` - a short, friendly blurb about the track's language. What types of problems does it solve really well? What is it typically used for?
-    - `LEARNING.md` - a few notes about where people might want to go to learn the track's language from scratch. These are the the resources you need only when first getting up to speed with a language (tutorials, blog posts, etc.).
-    - `RESOURCES.md` - references and other useful resources. These resources are those that would commonly be used by a developer on an ongoing basis (core language docs, api docs, etc.).
+  * `ABOUT.md` - a short, friendly blurb about the track's language. What types of problems does it solve really well? What is it typically used for?
+  * `LEARNING.md` - a few notes about where people might want to go to learn the track's language from scratch. These are the the resources you need only when first getting up to speed with a language (tutorials, blog posts, etc.).
+  * `RESOURCES.md` - references and other useful resources. These resources are those that would commonly be used by a developer on an ongoing basis (core language docs, api docs, etc.).
 
 * `exercises` - all exercises for the track should live in subdirectories of this directory.
   Each exercise should have a test file, an example file that should pass all tests, and a template file that is a stub to help the user get started with the exercise.
@@ -244,7 +244,7 @@ The example template for a track can be found in the [request-new-language-track
 
 ## Starting a New Track
 
-If you're interested in adding problems for a language that we don't yet have, open an issue in the [request new language track](https://github.com/exercism/request-new-language-track repository).
+If you're interested in adding problems for a language that we don't yet have, open an issue in the [request-new-language-track repository][request-new-track-repo].
 
 ### Beta-Testing a Language Track
 
@@ -257,7 +257,7 @@ exercism fetch cpp bob
 
 This will allow you to do some dry-run tests of fetching exercises, double checking the instructions for each problem and submitting the problem solution for peer review.
 
-It is recommended that you configure a [Travis continuous integration build](http://travis-ci.org) with your language track to verify that your example problem solutions satisfy the tests provided for each problem.
+It is recommended that you configure a [Travis continuous integration build][travis] with your language track to verify that your example problem solutions satisfy the tests provided for each problem.
 
 You can include advice and helpful links for your language track in the `SETUP.md` file.
 
@@ -267,37 +267,58 @@ Here are a few bits and pieces that are referenced from some of the scenarios in
 
 ### Pull Request Guidelines
 
-See the [pull request guidelines](https://github.com/exercism/legacy-docs/blob/main/contributing/pull-request-guidelines.md) in the [legacy-docs](https://github.com/exercism/legacy-docs) repository.
+See the [pull request guidelines][pull-request-guidelines] in the [legacy-docs repository][legacy-docs-repo].
 
 ### Anatomy of an Exercise
 
-See the [Practice Exercises](https://exercism.org/docs/building/tracks/practice-exercises) page for more information on how to structure an exercise.
+See the [Practice Exercises][practice-exercises] page for more information on how to structure an exercise.
 
 ### Track configuration file
 
-Each language track has a configuration file called `config.json`. Its structure is defined in [this spec](https://github.com/exercism/docs/blob/main/anatomy/tracks/config-json.md).
+Each language track has a configuration file called `config.json`.
+Its structure is defined in [this spec][config-json].
 The `config.json` file's key feature is that it defines which exercises the language track has implemented.
 
-The [configlet](https://github.com/exercism/docs/blob/main/anatomy/tracks/configlet/README.md) tool can verify (lint) a track's configuration file.
+The [configlet][configlet-guide] tool can verify (lint) a track's configuration file.
 
 ### Track-level Linting with configlet
 
-For more details on how to have the [configlet tool](https://exercism.org/docs/building/configlet) verify your track via its linting functionality, see [this guide](https://exercism.org/docs/building/configlet/lint).
+For more details on how to have the [configlet tool][configlet-guide] verify your track via its linting functionality, see [this guide][configlet-lint-guide].
 
 ### Git Basics
 
-For help with Git, see [Git Basics](https://github.com/exercism/legacy-docs/blob/main/contributing/git-basics.md) in the [legacy-docs](https://github.com/exercism/legacy-docs) repository.
+For help with Git, see [Git Basics][git-basics] in the [legacy-docs][legacy-docs-repo] repository.
 
 ### Etcetera
 
 TODO: add more sections:
 
-- how to merge something locally (for example when there are conflicts, or if you want to fix a small thing without nagging the contributor about it)
-
+* how to merge something locally (for example when there are conflicts, or if you want to fix a small thing without nagging the contributor about it)
 
 ## Improving Consistency By Extracting Shared Test Data
 
-[This documentation](https://github.com/exercism/legacy-docs/blob/main/you-can-help/improve-exercise-metadata.md) has moved to the [legacy-docs](https://github.com/exercism/legacy-docs) repository.
+[This documentation][improve-exercise-metadata] has moved to the [legacy-docs][legacy-docs] repository.
 
 We are maintaining this section, since many open issues link to it.
 
+[contributing]: https://exercism.org/contributing
+[support-chat]: https://gitter.im/exercism/support
+[exercism-issues]: https://github.com/exercism/exercism/issues
+[code-of-conduct]: https://exercism.io/code-of-conduct
+[cpp-track-repo]: https://github.com/exercism/cpp
+[problem-specs-tree]: https://github.com/exercism/problem-specifications/tree/
+[problem-specs-repo]: https://github.com/exercism/problem-specifications
+[fork-a-repo]: https://help.github.com/articles/fork-a-repo/
+[clone-a-repo]: https://help.github.com/articles/cloning-a-repository/
+[problem-specification]: https://github.com/exercism/legacy-docs/blob/main/you-can-help/make-up-new-exercises.md#problem-specification
+[request-new-track-repo]: https://github.com/exercism/request-new-language-track
+[travis]: http://travis-ci.org
+[pull-request-guidelines]: https://github.com/exercism/legacy-docs/blob/main/contributing/pull-request-guidelines.md
+[legacy-docs-repo]: https://github.com/exercism/legacy-docs
+[practice-exercises]: https://exercism.org/docs/building/tracks/practice-exercises
+[config-json]: https://github.com/exercism/docs/blob/main/building/tracks/config-json.md
+[configlet-guide]: https://exercism.org/docs/building/configlet
+[configlet-lint-guide]: https://exercism.org/docs/building/configlet/lint
+[git-basics]: https://github.com/exercism/legacy-docs/blob/main/contributing/git-basics.md
+[improve-exercise-metadata]: https://github.com/exercism/legacy-docs/blob/main/you-can-help/improve-exercise-metadata.md
+[legacy-docs]: https://github.com/exercism/legacy-docs
