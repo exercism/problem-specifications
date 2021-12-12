@@ -21,7 +21,8 @@ jobs:
 
       - uses: DavidAnson/markdownlint-cli2-action@75ca8bd12ca0eba81ae8ebdb07b6609632c2e025
         with:
-          globs: **/*.md
+          globs: |
+            **/*.md
 
   immutability:
     name: No test has been mutated
