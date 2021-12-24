@@ -46,7 +46,7 @@ We'll do everything we can to help you get started.
 The two best ways to get help are to
 
 * jump into the [support chat](https://gitter.im/exercism/support).
-* open a [GitHub issue](https://github.com/exercism/exercism.io/issues).
+* open a [GitHub issue](https://github.com/exercism/exercism/issues).
 
 We are happy to help out with all sorts of things, including figuring
 out the whole git and pull request thing.
@@ -116,8 +116,9 @@ Some of the problems also have a JSON file containing canonical test cases. Thes
 are used to hand-craft a test suite generator, allowing us to quickly regenerate
 test suites when edge cases or errors are discovered.
 
-The generic problem descriptions live in the `exercises` folder in this repository
-([exercism/problem-specifications](https://github.com/exercism/problem-specifications)).
+The generic problem descriptions live in the `exercises`
+[folder](https://github.com/exercism/problem-specifications/tree/main/exercises)
+in the [exercism/problem-specifications repository](https://github.com/exercism/problem-specifications).
 
 ## Updating an Exercise Test Suite
 
@@ -222,7 +223,7 @@ A problem must have a unique slug. This slug is used as
 ### In exercism/<TRACK_ID>
 
 * Do the same as when [porting an
-  exercise](#porting-an-exercise-to-another-language-track).
+  exercise](https://github.com/exercism/legacy-docs/blob/main/you-can-help/implement-an-exercise-from-specification.md).
   Reference the PR in problem-specifications.
   It's suggested, but not required, to wait until the problem-specifications PR is merged before merging the track-specific PR, for the following reasons:
     * If changes are suggested to the problem-specifications PR, it is likely that they will be applicable to the track-specific PR as well.
@@ -311,11 +312,11 @@ scenarios in this guide.
 
 ### Pull Request Guidelines
 
-See the [pull request guidelines](https://github.com/exercism/docs/blob/main/contributing/pull-request-guidelines.md) in the docs repository.
+See the [pull request guidelines](https://github.com/exercism/legacy-docs/blob/main/contributing/pull-request-guidelines.md) in the [legacy-docs](https://github.com/exercism/legacy-docs) repository.
 
 ### Anatomy of an Exercise
 
-See the [anatomy of an exercise](https://github.com/exercism/docs/tree/main/language-tracks/exercises/anatomy) in the docs repository.
+See the [Practice Exercises](https://exercism.org/docs/building/tracks/practice-exercises) page for more information on how to structure an exercise.
 
 ### Track configuration file
 
@@ -323,8 +324,14 @@ Each language track has a configuration file called `config.json`. Its structure
 
 The [configlet](https://github.com/exercism/docs/blob/main/anatomy/tracks/configlet/README.md) tool can verify (lint) a track's configuration file.
 
+### Track-level Linting with configlet
+
+For more details on how to have the [configlet tool](https://exercism.org/docs/building/configlet) verify your track via its linting functionality, see [this guide](https://exercism.org/docs/building/configlet/lint).
+
 ### Git Basics
-See [Git Basics](https://github.com/exercism/docs/blob/main/contributing/git-basics.md) in [docs](https://github.com/exercism/docs) repository.
+
+For help with Git, see [Git Basics](https://github.com/exercism/legacy-docs/blob/main/contributing/git-basics.md)
+in the [legacy-docs](https://github.com/exercism/legacy-docs) repository.
 
 ### etcetera
 
@@ -336,6 +343,7 @@ TODO: add more sections:
 
 ## Improving Consistency By Extracting Shared Test Data
 
-This documentation has moved [to the docs repository](https://github.com/exercism/docs/blob/main/you-can-help/improve-exercise-metadata.md).
+[This documentation](https://github.com/exercism/legacy-docs/blob/main/you-can-help/improve-exercise-metadata.md)
+has moved to the [legacy-docs](https://github.com/exercism/legacy-docs) repository.
 
 We are maintaining this section, since many open issues link to it.
