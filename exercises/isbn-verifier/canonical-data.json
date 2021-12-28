@@ -142,7 +142,7 @@
         },
         {
             "uuid": "ed6e8d1b-382c-4081-8326-8b772c581fec",
-            "description": "invalid characters are not ignored",
+            "description": "invalid characters are not ignored after checking length",
             "property": "isValid",
             "input": {
                 "isbn": "3132P34035"
@@ -151,9 +151,8 @@
         },
         {
             "uuid": "daad3e58-ce00-4395-8a8e-e3eded1cdc86",
-            "description": "invalid characters are not ignored",
+            "description": "invalid characters are not ignored before checking length",
             "comments": ["Catch invalid characters in an otherwise valid isbn"],
-            "reimplements": "ed6e8d1b-382c-4081-8326-8b772c581fec",
             "property": "isValid",
             "input": {
                 "isbn": "3598P215088"
