@@ -43,7 +43,7 @@
         },
         {
             "uuid": "c19ba0c4-014f-4dc3-a63f-ff9aefc9b5ec",
-            "description": "invalid character in isbn",
+            "description": "invalid character in isbn is not treated as zero",
             "property": "isValid",
             "input": {
               "isbn": "3-598-P1581-X"
