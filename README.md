@@ -59,7 +59,7 @@ Test data can be incorporated into a track's test suites manually or extracted b
 
 ## Test Data Format
 
-The file format is described in [canonical-schema.json](./canonical-schema.json), but it is easier to understand with an example:
+The file format is described in [canonical-data.schema.json](./canonical-data.schema.json), but it is easier to understand with an example:
 
 ```json
 {
@@ -254,7 +254,7 @@ There are also some conventions that must be followed:
 
 ```json
 {
-"$schema": "https://github.com/exercism/problem-specifications/blob/main/canonical-schema.json"
+  "$schema": "https://github.com/exercism/problem-specifications/blob/main/canonical-data.schema.json"
 }
 ```
 
@@ -267,7 +267,7 @@ When creating a new exercise the design team needs to be informed so that a new 
 
 ## Automated Tests
 
-`canonical-data.json` for each exercise is checked for compliance against the [canonical-schema.json](canonical-schema.json).
+`canonical-data.json` for each exercise is checked for compliance against the [canonical-data.schema.json](canonical-data.schema.json).
 In order to run these tests, you will need to have `yarn` installed on your system.
 Install them from [here](https://yarnpkg.com/en/docs/install).
 
