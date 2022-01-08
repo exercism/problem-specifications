@@ -288,6 +288,26 @@
           "expected": [-1, 8]
         },
         {
+          "uuid": "c291cfae-cfd8-44f5-aa6c-b175c148a492",
+          "description": "Raise a positive rational number to a negative integer power",
+          "property": "exprational",
+          "input": {
+            "r": [3, 5],
+            "n": -2
+          },
+          "expected": [25, 9]
+        },
+        {
+          "uuid": "45cb3288-4ae4-4465-9ae5-c129de4fac8e",
+          "description": "Raise a negative rational number to a negative integer power",
+          "property": "exprational",
+          "input": {
+            "r": [-3, 5],
+            "n": -2
+          },
+          "expected": [-25, 9]
+        },
+        {
           "uuid": "e2f25b1d-e4de-4102-abc3-c2bb7c4591e4",
           "description": "Raise zero to an integer power",
           "property": "exprational",
