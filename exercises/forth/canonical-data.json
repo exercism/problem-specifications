@@ -39,7 +39,9 @@
           "input": {
             "instructions": ["+"]
           },
-          "expected": {"error": "empty stack"}
+          "expected": {
+            "error": "empty stack"
+          }
         },
         {
           "uuid": "06efb9a4-817a-435e-b509-06166993c1b8",
@@ -48,7 +50,9 @@
           "input": {
             "instructions": ["1 +"]
           },
-          "expected": {"error": "only one value on the stack"}
+          "expected": {
+            "error": "only one value on the stack"
+          }
         }
       ]
     },
@@ -71,7 +75,9 @@
           "input": {
             "instructions": ["-"]
           },
-          "expected": {"error": "empty stack"}
+          "expected": {
+            "error": "empty stack"
+          }
         },
         {
           "uuid": "b3cee1b2-9159-418a-b00d-a1bb3765c23b",
@@ -80,7 +86,9 @@
           "input": {
             "instructions": ["1 -"]
           },
-          "expected": {"error": "only one value on the stack"}
+          "expected": {
+            "error": "only one value on the stack"
+          }
         }
       ]
     },
@@ -103,7 +111,9 @@
           "input": {
             "instructions": ["*"]
           },
-          "expected": {"error": "empty stack"}
+          "expected": {
+            "error": "empty stack"
+          }
         },
         {
           "uuid": "8ba4b432-9f94-41e0-8fae-3b3712bd51b3",
@@ -112,7 +122,9 @@
           "input": {
             "instructions": ["1 *"]
           },
-          "expected": {"error": "only one value on the stack"}
+          "expected": {
+            "error": "only one value on the stack"
+          }
         }
       ]
     },
@@ -144,7 +156,9 @@
           "input": {
             "instructions": ["4 0 /"]
           },
-          "expected": {"error": "divide by zero"}
+          "expected": {
+            "error": "divide by zero"
+          }
         },
         {
           "uuid": "1d5bb6b3-6749-4e02-8a79-b5d4d334cb8a",
@@ -153,7 +167,9 @@
           "input": {
             "instructions": ["/"]
           },
-          "expected": {"error": "empty stack"}
+          "expected": {
+            "error": "empty stack"
+          }
         },
         {
           "uuid": "d5547f43-c2ff-4d5c-9cb0-2a4f6684c20d",
@@ -162,7 +178,9 @@
           "input": {
             "instructions": ["1 /"]
           },
-          "expected": {"error": "only one value on the stack"}
+          "expected": {
+            "error": "only one value on the stack"
+          }
         }
       ]
     },
@@ -217,7 +235,9 @@
           "input": {
             "instructions": ["dup"]
           },
-          "expected": {"error": "empty stack"}
+          "expected": {
+            "error": "empty stack"
+          }
         }
       ]
     },
@@ -249,7 +269,9 @@
           "input": {
             "instructions": ["drop"]
           },
-          "expected": {"error": "empty stack"}
+          "expected": {
+            "error": "empty stack"
+          }
         }
       ]
     },
@@ -281,7 +303,9 @@
           "input": {
             "instructions": ["swap"]
           },
-          "expected": {"error": "empty stack"}
+          "expected": {
+            "error": "empty stack"
+          }
         },
         {
           "uuid": "dd52e154-5d0d-4a5c-9e5d-73eb36052bc8",
@@ -290,7 +314,9 @@
           "input": {
             "instructions": ["1 swap"]
           },
-          "expected": {"error": "only one value on the stack"}
+          "expected": {
+            "error": "only one value on the stack"
+          }
         }
       ]
     },
@@ -322,7 +348,9 @@
           "input": {
             "instructions": ["over"]
           },
-          "expected": {"error": "empty stack"}
+          "expected": {
+            "error": "empty stack"
+          }
         },
         {
           "uuid": "ee574dc4-ef71-46f6-8c6a-b4af3a10c45f",
@@ -331,7 +359,9 @@
           "input": {
             "instructions": ["1 over"]
           },
-          "expected": {"error": "only one value on the stack"}
+          "expected": {
+            "error": "only one value on the stack"
+          }
         }
       ]
     },
@@ -433,7 +463,9 @@
           "input": {
             "instructions": [": 1 2 ;"]
           },
-          "expected": {"error": "illegal operation"}
+          "expected": {
+            "error": "illegal operation"
+          }
         },
         {
           "uuid": "df5b2815-3843-4f55-b16c-c3ed507292a7",
@@ -442,7 +474,9 @@
           "input": {
             "instructions": [": -1 2 ;"]
           },
-          "expected": {"error": "illegal operation"}
+          "expected": {
+            "error": "illegal operation"
+          }
         },
         {
           "uuid": "5180f261-89dd-491e-b230-62737e09806f",
@@ -451,7 +485,9 @@
           "input": {
             "instructions": ["foo"]
           },
-          "expected": {"error": "undefined operation"}
+          "expected": {
+            "error": "undefined operation"
+          }
         }
       ]
     },
