@@ -25,7 +25,11 @@
           "description": "all sides are equal",
           "property": "equilateral",
           "input": {
-            "sides": [2, 2, 2]
+            "sides": [
+              2,
+              2,
+              2
+            ]
           },
           "expected": true
         },
@@ -34,7 +38,11 @@
           "description": "any side is unequal",
           "property": "equilateral",
           "input": {
-            "sides": [2, 3, 2]
+            "sides": [
+              2,
+              3,
+              2
+            ]
           },
           "expected": false
         },
@@ -43,7 +51,11 @@
           "description": "no sides are equal",
           "property": "equilateral",
           "input": {
-            "sides": [5, 4, 6]
+            "sides": [
+              5,
+              4,
+              6
+            ]
           },
           "expected": false
         },
@@ -52,7 +64,11 @@
           "description": "all zero sides is not a triangle",
           "property": "equilateral",
           "input": {
-            "sides": [0, 0, 0]
+            "sides": [
+              0,
+              0,
+              0
+            ]
           },
           "expected": false
         },
@@ -65,7 +81,11 @@
           "description": "sides may be floats",
           "property": "equilateral",
           "input": {
-            "sides": [0.5, 0.5, 0.5]
+            "sides": [
+              0.5,
+              0.5,
+              0.5
+            ]
           },
           "expected": true
         }
@@ -79,7 +99,11 @@
           "description": "last two sides are equal",
           "property": "isosceles",
           "input": {
-            "sides": [3, 4, 4]
+            "sides": [
+              3,
+              4,
+              4
+            ]
           },
           "expected": true
         },
@@ -88,7 +112,11 @@
           "description": "first two sides are equal",
           "property": "isosceles",
           "input": {
-            "sides": [4, 4, 3]
+            "sides": [
+              4,
+              4,
+              3
+            ]
           },
           "expected": true
         },
@@ -97,7 +125,11 @@
           "description": "first and last sides are equal",
           "property": "isosceles",
           "input": {
-            "sides": [4, 3, 4]
+            "sides": [
+              4,
+              3,
+              4
+            ]
           },
           "expected": true
         },
@@ -106,7 +138,11 @@
           "description": "equilateral triangles are also isosceles",
           "property": "isosceles",
           "input": {
-            "sides": [4, 4, 4]
+            "sides": [
+              4,
+              4,
+              4
+            ]
           },
           "expected": true
         },
@@ -115,7 +151,11 @@
           "description": "no sides are equal",
           "property": "isosceles",
           "input": {
-            "sides": [2, 3, 4]
+            "sides": [
+              2,
+              3,
+              4
+            ]
           },
           "expected": false
         },
@@ -124,7 +164,11 @@
           "description": "first triangle inequality violation",
           "property": "isosceles",
           "input": {
-            "sides": [1, 1, 3]
+            "sides": [
+              1,
+              1,
+              3
+            ]
           },
           "expected": false
         },
@@ -133,7 +177,11 @@
           "description": "second triangle inequality violation",
           "property": "isosceles",
           "input": {
-            "sides": [1, 3, 1]
+            "sides": [
+              1,
+              3,
+              1
+            ]
           },
           "expected": false
         },
@@ -142,7 +190,11 @@
           "description": "third triangle inequality violation",
           "property": "isosceles",
           "input": {
-            "sides": [3, 1, 1]
+            "sides": [
+              3,
+              1,
+              1
+            ]
           },
           "expected": false
         },
@@ -155,7 +207,11 @@
           "property": "isosceles",
           "description": "sides may be floats",
           "input": {
-            "sides": [0.5, 0.4, 0.5]
+            "sides": [
+              0.5,
+              0.4,
+              0.5
+            ]
           },
           "expected": true
         }
@@ -169,7 +225,11 @@
           "description": "no sides are equal",
           "property": "scalene",
           "input": {
-            "sides": [5, 4, 6]
+            "sides": [
+              5,
+              4,
+              6
+            ]
           },
           "expected": true
         },
@@ -178,7 +238,11 @@
           "description": "all sides are equal",
           "property": "scalene",
           "input": {
-            "sides": [4, 4, 4]
+            "sides": [
+              4,
+              4,
+              4
+            ]
           },
           "expected": false
         },
@@ -187,7 +251,11 @@
           "description": "two sides are equal",
           "property": "scalene",
           "input": {
-            "sides": [4, 4, 3]
+            "sides": [
+              4,
+              4,
+              3
+            ]
           },
           "expected": false
         },
@@ -196,7 +264,11 @@
           "description": "may not violate triangle inequality",
           "property": "scalene",
           "input": {
-            "sides": [7, 3, 2]
+            "sides": [
+              7,
+              3,
+              2
+            ]
           },
           "expected": false
         },
@@ -209,7 +281,11 @@
           "description": "sides may be floats",
           "property": "scalene",
           "input": {
-            "sides": [0.5, 0.4, 0.6]
+            "sides": [
+              0.5,
+              0.4,
+              0.6
+            ]
           },
           "expected": true
         }

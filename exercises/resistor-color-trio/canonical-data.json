@@ -6,7 +6,11 @@
       "description": "Orange and orange and black",
       "property": "label",
       "input": {
-        "colors": ["orange", "orange", "black"]
+        "colors": [
+          "orange",
+          "orange",
+          "black"
+        ]
       },
       "expected": {
         "value": 33,
@@ -18,7 +22,11 @@
       "description": "Blue and grey and brown",
       "property": "label",
       "input": {
-        "colors": ["blue", "grey", "brown"]
+        "colors": [
+          "blue",
+          "grey",
+          "brown"
+        ]
       },
       "expected": {
         "value": 680,
@@ -30,7 +38,11 @@
       "description": "Red and black and red",
       "property": "label",
       "input": {
-        "colors": ["red", "black", "red"]
+        "colors": [
+          "red",
+          "black",
+          "red"
+        ]
       },
       "expected": {
         "value": 2,
@@ -42,7 +54,11 @@
       "description": "Green and brown and orange",
       "property": "label",
       "input": {
-        "colors": ["green", "brown", "orange"]
+        "colors": [
+          "green",
+          "brown",
+          "orange"
+        ]
       },
       "expected": {
         "value": 51,
@@ -54,7 +70,11 @@
       "description": "Yellow and violet and yellow",
       "property": "label",
       "input": {
-        "colors": ["yellow", "violet", "yellow"]
+        "colors": [
+          "yellow",
+          "violet",
+          "yellow"
+        ]
       },
       "expected": {
         "value": 470,

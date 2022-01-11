@@ -109,8 +109,8 @@
       "property": "score",
       "description": "Just within the outer circle",
       "input": {
-        "x": -7.0,
-        "y": 7.0
+        "x": -7,
+        "y": 7
       },
       "expected": 1
     },

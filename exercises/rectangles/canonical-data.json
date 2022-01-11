@@ -19,7 +19,9 @@
       "description": "no columns",
       "property": "rectangles",
       "input": {
-        "strings": [""]
+        "strings": [
+          ""
+        ]
       },
       "expected": 0
     },
@@ -28,7 +30,9 @@
       "description": "no rectangles",
       "property": "rectangles",
       "input": {
-        "strings": [" "]
+        "strings": [
+          " "
+        ]
       },
       "expected": 0
     },

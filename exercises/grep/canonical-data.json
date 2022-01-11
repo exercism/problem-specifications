@@ -62,7 +62,9 @@
           "input": {
             "pattern": "Agamemnon",
             "flags": [],
-            "files": ["iliad.txt"]
+            "files": [
+              "iliad.txt"
+            ]
           },
           "expected": [
             "Of Atreus, Agamemnon, King of men."
@@ -74,8 +76,12 @@
           "property": "grep",
           "input": {
             "pattern": "Forbidden",
-            "flags": ["-n"],
-            "files": ["paradise-lost.txt"]
+            "flags": [
+              "-n"
+            ],
+            "files": [
+              "paradise-lost.txt"
+            ]
           },
           "expected": [
             "2:Of that Forbidden Tree, whose mortal tast"
@@ -87,8 +93,12 @@
           "property": "grep",
           "input": {
             "pattern": "FORBIDDEN",
-            "flags": ["-i"],
-            "files": ["paradise-lost.txt"]
+            "flags": [
+              "-i"
+            ],
+            "files": [
+              "paradise-lost.txt"
+            ]
           },
           "expected": [
             "Of that Forbidden Tree, whose mortal tast"
@@ -100,8 +110,12 @@
           "property": "grep",
           "input": {
             "pattern": "Forbidden",
-            "flags": ["-l"],
-            "files": ["paradise-lost.txt"]
+            "flags": [
+              "-l"
+            ],
+            "files": [
+              "paradise-lost.txt"
+            ]
           },
           "expected": [
             "paradise-lost.txt"
@@ -113,8 +127,12 @@
           "property": "grep",
           "input": {
             "pattern": "With loss of Eden, till one greater Man",
-            "flags": ["-x"],
-            "files": ["paradise-lost.txt"]
+            "flags": [
+              "-x"
+            ],
+            "files": [
+              "paradise-lost.txt"
+            ]
           },
           "expected": [
             "With loss of Eden, till one greater Man"
@@ -126,8 +144,14 @@
           "property": "grep",
           "input": {
             "pattern": "OF ATREUS, Agamemnon, KIng of MEN.",
-            "flags": ["-n", "-i", "-x"],
-            "files": ["iliad.txt"]
+            "flags": [
+              "-n",
+              "-i",
+              "-x"
+            ],
+            "files": [
+              "iliad.txt"
+            ]
           },
           "expected": [
             "9:Of Atreus, Agamemnon, King of men."
@@ -140,7 +164,9 @@
           "input": {
             "pattern": "may",
             "flags": [],
-            "files": ["midsummer-night.txt"]
+            "files": [
+              "midsummer-night.txt"
+            ]
           },
           "expected": [
             "Nor how it may concern my modesty,",
@@ -154,8 +180,12 @@
           "property": "grep",
           "input": {
             "pattern": "may",
-            "flags": ["-n"],
-            "files": ["midsummer-night.txt"]
+            "flags": [
+              "-n"
+            ],
+            "files": [
+              "midsummer-night.txt"
+            ]
           },
           "expected": [
             "3:Nor how it may concern my modesty,",
@@ -169,8 +199,12 @@
           "property": "grep",
           "input": {
             "pattern": "may",
-            "flags": ["-x"],
-            "files": ["midsummer-night.txt"]
+            "flags": [
+              "-x"
+            ],
+            "files": [
+              "midsummer-night.txt"
+            ]
           },
           "expected": []
         },
@@ -180,8 +214,12 @@
           "property": "grep",
           "input": {
             "pattern": "ACHILLES",
-            "flags": ["-i"],
-            "files": ["iliad.txt"]
+            "flags": [
+              "-i"
+            ],
+            "files": [
+              "iliad.txt"
+            ]
           },
           "expected": [
             "Achilles sing, O Goddess! Peleus' son;",
@@ -194,8 +232,12 @@
           "property": "grep",
           "input": {
             "pattern": "Of",
-            "flags": ["-v"],
-            "files": ["paradise-lost.txt"]
+            "flags": [
+              "-v"
+            ],
+            "files": [
+              "paradise-lost.txt"
+            ]
           },
           "expected": [
             "Brought Death into the World, and all our woe,",
@@ -211,8 +253,15 @@
           "property": "grep",
           "input": {
             "pattern": "Gandalf",
-            "flags": ["-n", "-l", "-x", "-i"],
-            "files": ["iliad.txt"]
+            "flags": [
+              "-n",
+              "-l",
+              "-x",
+              "-i"
+            ],
+            "files": [
+              "iliad.txt"
+            ]
           },
           "expected": []
         },
@@ -222,8 +271,13 @@
           "property": "grep",
           "input": {
             "pattern": "ten",
-            "flags": ["-n", "-l"],
-            "files": ["iliad.txt"]
+            "flags": [
+              "-n",
+              "-l"
+            ],
+            "files": [
+              "iliad.txt"
+            ]
           },
           "expected": [
             "iliad.txt"
@@ -235,8 +289,13 @@
           "property": "grep",
           "input": {
             "pattern": "Illustrious into Ades premature,",
-            "flags": ["-x", "-v"],
-            "files": ["iliad.txt"]
+            "flags": [
+              "-x",
+              "-v"
+            ],
+            "files": [
+              "iliad.txt"
+            ]
           },
           "expected": [
             "Achilles sing, O Goddess! Peleus' son;",
@@ -261,7 +320,11 @@
           "input": {
             "pattern": "Agamemnon",
             "flags": [],
-            "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
+            "files": [
+              "iliad.txt",
+              "midsummer-night.txt",
+              "paradise-lost.txt"
+            ]
           },
           "expected": [
             "iliad.txt:Of Atreus, Agamemnon, King of men."
@@ -274,7 +337,11 @@
           "input": {
             "pattern": "may",
             "flags": [],
-            "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
+            "files": [
+              "iliad.txt",
+              "midsummer-night.txt",
+              "paradise-lost.txt"
+            ]
           },
           "expected": [
             "midsummer-night.txt:Nor how it may concern my modesty,",
@@ -288,8 +355,14 @@
           "property": "grep",
           "input": {
             "pattern": "that",
-            "flags": ["-n"],
-            "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
+            "flags": [
+              "-n"
+            ],
+            "files": [
+              "iliad.txt",
+              "midsummer-night.txt",
+              "paradise-lost.txt"
+            ]
           },
           "expected": [
             "midsummer-night.txt:5:But I beseech your grace that I may know",
@@ -304,8 +377,14 @@
           "property": "grep",
           "input": {
             "pattern": "who",
-            "flags": ["-l"],
-            "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
+            "flags": [
+              "-l"
+            ],
+            "files": [
+              "iliad.txt",
+              "midsummer-night.txt",
+              "paradise-lost.txt"
+            ]
           },
           "expected": [
             "iliad.txt",
@@ -318,8 +397,14 @@
           "property": "grep",
           "input": {
             "pattern": "TO",
-            "flags": ["-i"],
-            "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
+            "flags": [
+              "-i"
+            ],
+            "files": [
+              "iliad.txt",
+              "midsummer-night.txt",
+              "paradise-lost.txt"
+            ]
           },
           "expected": [
             "iliad.txt:Caused to Achaia's host, sent many a soul",
@@ -340,8 +425,14 @@
           "property": "grep",
           "input": {
             "pattern": "a",
-            "flags": ["-v"],
-            "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
+            "flags": [
+              "-v"
+            ],
+            "files": [
+              "iliad.txt",
+              "midsummer-night.txt",
+              "paradise-lost.txt"
+            ]
           },
           "expected": [
             "iliad.txt:Achilles sing, O Goddess! Peleus' son;",
@@ -355,8 +446,14 @@
           "property": "grep",
           "input": {
             "pattern": "But I beseech your grace that I may know",
-            "flags": ["-x"],
-            "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
+            "flags": [
+              "-x"
+            ],
+            "files": [
+              "iliad.txt",
+              "midsummer-night.txt",
+              "paradise-lost.txt"
+            ]
           },
           "expected": [
             "midsummer-night.txt:But I beseech your grace that I may know"
@@ -368,8 +465,16 @@
           "property": "grep",
           "input": {
             "pattern": "WITH LOSS OF EDEN, TILL ONE GREATER MAN",
-            "flags": ["-n", "-i", "-x"],
-            "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
+            "flags": [
+              "-n",
+              "-i",
+              "-x"
+            ],
+            "files": [
+              "iliad.txt",
+              "midsummer-night.txt",
+              "paradise-lost.txt"
+            ]
           },
           "expected": [
             "paradise-lost.txt:4:With loss of Eden, till one greater Man"
@@ -381,8 +486,17 @@
           "property": "grep",
           "input": {
             "pattern": "Frodo",
-            "flags": ["-n", "-l", "-x", "-i"],
-            "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
+            "flags": [
+              "-n",
+              "-l",
+              "-x",
+              "-i"
+            ],
+            "files": [
+              "iliad.txt",
+              "midsummer-night.txt",
+              "paradise-lost.txt"
+            ]
           },
           "expected": []
         },
@@ -392,8 +506,15 @@
           "property": "grep",
           "input": {
             "pattern": "who",
-            "flags": ["-n", "-l"],
-            "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
+            "flags": [
+              "-n",
+              "-l"
+            ],
+            "files": [
+              "iliad.txt",
+              "midsummer-night.txt",
+              "paradise-lost.txt"
+            ]
           },
           "expected": [
             "iliad.txt",
@@ -406,8 +527,15 @@
           "property": "grep",
           "input": {
             "pattern": "Illustrious into Ades premature,",
-            "flags": ["-x", "-v"],
-            "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
+            "flags": [
+              "-x",
+              "-v"
+            ],
+            "files": [
+              "iliad.txt",
+              "midsummer-night.txt",
+              "paradise-lost.txt"
+            ]
           },
           "expected": [
             "iliad.txt:Achilles sing, O Goddess! Peleus' son;",

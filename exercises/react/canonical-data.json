@@ -106,7 +106,9 @@
           {
             "name": "output",
             "type": "compute",
-            "inputs": ["input"],
+            "inputs": [
+              "input"
+            ],
             "compute_function": "inputs[0] + 1"
           }
         ],
@@ -139,7 +141,10 @@
           {
             "name": "output",
             "type": "compute",
-            "inputs": ["one", "two"],
+            "inputs": [
+              "one",
+              "two"
+            ],
             "compute_function": "inputs[0] + inputs[1] * 10"
           }
         ],
@@ -167,7 +172,9 @@
           {
             "name": "output",
             "type": "compute",
-            "inputs": ["input"],
+            "inputs": [
+              "input"
+            ],
             "compute_function": "inputs[0] + 1"
           }
         ],
@@ -200,19 +207,26 @@
           {
             "name": "times_two",
             "type": "compute",
-            "inputs": ["input"],
+            "inputs": [
+              "input"
+            ],
             "compute_function": "inputs[0] * 2"
           },
           {
             "name": "times_thirty",
             "type": "compute",
-            "inputs": ["input"],
+            "inputs": [
+              "input"
+            ],
             "compute_function": "inputs[0] * 30"
           },
           {
             "name": "output",
             "type": "compute",
-            "inputs": ["times_two", "times_thirty"],
+            "inputs": [
+              "times_two",
+              "times_thirty"
+            ],
             "compute_function": "inputs[0] + inputs[1]"
           }
         ],
@@ -250,7 +264,9 @@
           {
             "name": "output",
             "type": "compute",
-            "inputs": ["input"],
+            "inputs": [
+              "input"
+            ],
             "compute_function": "inputs[0] + 1"
           }
         ],
@@ -286,7 +302,9 @@
           {
             "name": "output",
             "type": "compute",
-            "inputs": ["input"],
+            "inputs": [
+              "input"
+            ],
             "compute_function": "if inputs[0] < 3 then 111 else 222"
           }
         ],
@@ -300,7 +318,9 @@
             "type": "set_value",
             "cell": "input",
             "value": 2,
-            "expect_callbacks_not_to_be_called": ["callback1"]
+            "expect_callbacks_not_to_be_called": [
+              "callback1"
+            ]
           },
           {
             "type": "set_value",
@@ -328,7 +348,9 @@
           {
             "name": "output",
             "type": "compute",
-            "inputs": ["input"],
+            "inputs": [
+              "input"
+            ],
             "compute_function": "inputs[0] + 1"
           }
         ],
@@ -372,13 +394,17 @@
           {
             "name": "plus_one",
             "type": "compute",
-            "inputs": ["input"],
+            "inputs": [
+              "input"
+            ],
             "compute_function": "inputs[0] + 1"
           },
           {
             "name": "minus_one",
             "type": "compute",
-            "inputs": ["input"],
+            "inputs": [
+              "input"
+            ],
             "compute_function": "inputs[0] - 1"
           }
         ],
@@ -420,7 +446,9 @@
           {
             "name": "output",
             "type": "compute",
-            "inputs": ["input"],
+            "inputs": [
+              "input"
+            ],
             "compute_function": "inputs[0] + 1"
           }
         ],
@@ -462,7 +490,9 @@
               "callback2": 42,
               "callback3": 42
             },
-            "expect_callbacks_not_to_be_called": ["callback1"]
+            "expect_callbacks_not_to_be_called": [
+              "callback1"
+            ]
           }
         ]
       },
@@ -487,7 +517,9 @@
           {
             "name": "output",
             "type": "compute",
-            "inputs": ["input"],
+            "inputs": [
+              "input"
+            ],
             "compute_function": "inputs[0] + 1"
           }
         ],
@@ -524,7 +556,9 @@
             "expect_callbacks": {
               "callback2": 3
             },
-            "expect_callbacks_not_to_be_called": ["callback1"]
+            "expect_callbacks_not_to_be_called": [
+              "callback1"
+            ]
           }
         ]
       },
@@ -548,25 +582,34 @@
           {
             "name": "plus_one",
             "type": "compute",
-            "inputs": ["input"],
+            "inputs": [
+              "input"
+            ],
             "compute_function": "inputs[0] + 1"
           },
           {
             "name": "minus_one1",
             "type": "compute",
-            "inputs": ["input"],
+            "inputs": [
+              "input"
+            ],
             "compute_function": "inputs[0] - 1"
           },
           {
             "name": "minus_one2",
             "type": "compute",
-            "inputs": ["minus_one1"],
+            "inputs": [
+              "minus_one1"
+            ],
             "compute_function": "inputs[0] - 1"
           },
           {
             "name": "output",
             "type": "compute",
-            "inputs": ["plus_one", "minus_one2"],
+            "inputs": [
+              "plus_one",
+              "minus_one2"
+            ],
             "compute_function": "inputs[0] * inputs[1]"
           }
         ],
@@ -607,19 +650,26 @@
           {
             "name": "plus_one",
             "type": "compute",
-            "inputs": ["input"],
+            "inputs": [
+              "input"
+            ],
             "compute_function": "inputs[0] + 1"
           },
           {
             "name": "minus_one",
             "type": "compute",
-            "inputs": ["input"],
+            "inputs": [
+              "input"
+            ],
             "compute_function": "inputs[0] - 1"
           },
           {
             "name": "always_two",
             "type": "compute",
-            "inputs": ["plus_one", "minus_one"],
+            "inputs": [
+              "plus_one",
+              "minus_one"
+            ],
             "compute_function": "inputs[0] - inputs[1]"
           }
         ],
@@ -633,25 +683,33 @@
             "type": "set_value",
             "cell": "input",
             "value": 2,
-            "expect_callbacks_not_to_be_called": ["callback1"]
+            "expect_callbacks_not_to_be_called": [
+              "callback1"
+            ]
           },
           {
             "type": "set_value",
             "cell": "input",
             "value": 3,
-            "expect_callbacks_not_to_be_called": ["callback1"]
+            "expect_callbacks_not_to_be_called": [
+              "callback1"
+            ]
           },
           {
             "type": "set_value",
             "cell": "input",
             "value": 4,
-            "expect_callbacks_not_to_be_called": ["callback1"]
+            "expect_callbacks_not_to_be_called": [
+              "callback1"
+            ]
           },
           {
             "type": "set_value",
             "cell": "input",
             "value": 5,
-            "expect_callbacks_not_to_be_called": ["callback1"]
+            "expect_callbacks_not_to_be_called": [
+              "callback1"
+            ]
           }
         ]
       },

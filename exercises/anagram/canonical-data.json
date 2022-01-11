@@ -7,7 +7,12 @@
       "property": "findAnagrams",
       "input": {
         "subject": "diaper",
-        "candidates": ["hello", "world", "zombies", "pants"]
+        "candidates": [
+          "hello",
+          "world",
+          "zombies",
+          "pants"
+        ]
       },
       "expected": []
     },
@@ -17,9 +22,16 @@
       "property": "findAnagrams",
       "input": {
         "subject": "master",
-        "candidates": ["stream", "pigeon", "maters"]
+        "candidates": [
+          "stream",
+          "pigeon",
+          "maters"
+        ]
       },
-      "expected": ["stream", "maters"]
+      "expected": [
+        "stream",
+        "maters"
+      ]
     },
     {
       "uuid": "03eb9bbe-8906-4ea0-84fa-ffe711b52c8b",
@@ -31,9 +43,16 @@
       "property": "findAnagrams",
       "input": {
         "subject": "solemn",
-        "candidates": ["lemons", "cherry", "melons"]
+        "candidates": [
+          "lemons",
+          "cherry",
+          "melons"
+        ]
       },
-      "expected": ["lemons", "melons"]
+      "expected": [
+        "lemons",
+        "melons"
+      ]
     },
     {
       "uuid": "a27558ee-9ba0-4552-96b1-ecf665b06556",
@@ -41,7 +60,10 @@
       "property": "findAnagrams",
       "input": {
         "subject": "good",
-        "candidates": ["dog", "goody"]
+        "candidates": [
+          "dog",
+          "goody"
+        ]
       },
       "expected": []
     },
@@ -51,9 +73,16 @@
       "property": "findAnagrams",
       "input": {
         "subject": "listen",
-        "candidates": ["enlists", "google", "inlets", "banana"]
+        "candidates": [
+          "enlists",
+          "google",
+          "inlets",
+          "banana"
+        ]
       },
-      "expected": ["inlets"]
+      "expected": [
+        "inlets"
+      ]
     },
     {
       "uuid": "99c91beb-838f-4ccd-b123-935139917283",
@@ -70,7 +99,11 @@
           "leading"
         ]
       },
-      "expected": ["gallery", "regally", "largely"]
+      "expected": [
+        "gallery",
+        "regally",
+        "largely"
+      ]
     },
     {
       "uuid": "78487770-e258-4e1f-a646-8ece10950d90",
@@ -78,9 +111,15 @@
       "property": "findAnagrams",
       "input": {
         "subject": "nose",
-        "candidates": ["Eons", "ONES"]
+        "candidates": [
+          "Eons",
+          "ONES"
+        ]
       },
-      "expected": ["Eons", "ONES"]
+      "expected": [
+        "Eons",
+        "ONES"
+      ]
     },
     {
       "uuid": "1d0ab8aa-362f-49b7-9902-3d0c668d557b",
@@ -88,7 +127,9 @@
       "property": "findAnagrams",
       "input": {
         "subject": "mass",
-        "candidates": ["last"]
+        "candidates": [
+          "last"
+        ]
       },
       "expected": []
     },
@@ -98,9 +139,15 @@
       "property": "findAnagrams",
       "input": {
         "subject": "Orchestra",
-        "candidates": ["cashregister", "Carthorse", "radishes"]
+        "candidates": [
+          "cashregister",
+          "Carthorse",
+          "radishes"
+        ]
       },
-      "expected": ["Carthorse"]
+      "expected": [
+        "Carthorse"
+      ]
     },
     {
       "uuid": "b248e49f-0905-48d2-9c8d-bd02d8c3e392",
@@ -108,9 +155,15 @@
       "property": "findAnagrams",
       "input": {
         "subject": "Orchestra",
-        "candidates": ["cashregister", "carthorse", "radishes"]
+        "candidates": [
+          "cashregister",
+          "carthorse",
+          "radishes"
+        ]
       },
-      "expected": ["carthorse"]
+      "expected": [
+        "carthorse"
+      ]
     },
     {
       "uuid": "f367325c-78ec-411c-be76-e79047f4bd54",
@@ -118,9 +171,15 @@
       "property": "findAnagrams",
       "input": {
         "subject": "orchestra",
-        "candidates": ["cashregister", "Carthorse", "radishes"]
+        "candidates": [
+          "cashregister",
+          "Carthorse",
+          "radishes"
+        ]
       },
-      "expected": ["Carthorse"]
+      "expected": [
+        "Carthorse"
+      ]
     },
     {
       "uuid": "7cc195ad-e3c7-44ee-9fd2-d3c344806a2c",
@@ -128,7 +187,9 @@
       "property": "findAnagrams",
       "input": {
         "subject": "go",
-        "candidates": ["go Go GO"]
+        "candidates": [
+          "go Go GO"
+        ]
       },
       "expected": []
     },
@@ -138,7 +199,9 @@
       "property": "findAnagrams",
       "input": {
         "subject": "tapper",
-        "candidates": ["patter"]
+        "candidates": [
+          "patter"
+        ]
       },
       "expected": []
     },
@@ -148,7 +211,11 @@
       "property": "findAnagrams",
       "input": {
         "subject": "BANANA",
-        "candidates": ["BANANA", "Banana", "banana"]
+        "candidates": [
+          "BANANA",
+          "Banana",
+          "banana"
+        ]
       },
       "expected": []
     },
@@ -158,9 +225,15 @@
       "property": "findAnagrams",
       "input": {
         "subject": "LISTEN",
-        "candidates": ["Listen", "Silent", "LISTEN"]
+        "candidates": [
+          "Listen",
+          "Silent",
+          "LISTEN"
+        ]
       },
-      "expected": ["Silent"]
+      "expected": [
+        "Silent"
+      ]
     }
   ]
 }

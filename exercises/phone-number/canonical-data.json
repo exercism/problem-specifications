@@ -1,9 +1,9 @@
 {
   "exercise": "phone-number",
   "comments": [
-    " Returns the cleaned phone number if given number is valid, "
-  , " else returns error object. Note that number is not formatted,"
-  , " just a 10-digit number is returned.                        "
+    " Returns the cleaned phone number if given number is valid, ",
+    " else returns error object. Note that number is not formatted,",
+    " just a 10-digit number is returned.                        "
   ],
   "cases": [
     {
@@ -40,7 +40,9 @@
       "input": {
         "phrase": "123456789"
       },
-      "expected": {"error": "incorrect number of digits"}
+      "expected": {
+        "error": "incorrect number of digits"
+      }
     },
     {
       "uuid": "57061c72-07b5-431f-9766-d97da7c4399d",
@@ -49,7 +51,9 @@
       "input": {
         "phrase": "22234567890"
       },
-      "expected": {"error": "11 digits must start with 1"}
+      "expected": {
+        "error": "11 digits must start with 1"
+      }
     },
     {
       "uuid": "9962cbf3-97bb-4118-ba9b-38ff49c64430",
@@ -76,7 +80,9 @@
       "input": {
         "phrase": "321234567890"
       },
-      "expected": {"error": "more than 11 digits"}
+      "expected": {
+        "error": "more than 11 digits"
+      }
     },
     {
       "uuid": "63f38f37-53f6-4a5f-bd86-e9b404f10a60",
@@ -85,7 +91,9 @@
       "input": {
         "phrase": "123-abc-7890"
       },
-      "expected": {"error": "letters not permitted"}
+      "expected": {
+        "error": "letters not permitted"
+      }
     },
     {
       "uuid": "4bd97d90-52fd-45d3-b0db-06ab95b1244e",
@@ -94,7 +102,9 @@
       "input": {
         "phrase": "123-@:!-7890"
       },
-      "expected": {"error": "punctuations not permitted"}
+      "expected": {
+        "error": "punctuations not permitted"
+      }
     },
     {
       "uuid": "d77d07f8-873c-4b17-8978-5f66139bf7d7",
@@ -103,7 +113,9 @@
       "input": {
         "phrase": "(023) 456-7890"
       },
-      "expected": {"error": "area code cannot start with zero"}
+      "expected": {
+        "error": "area code cannot start with zero"
+      }
     },
     {
       "uuid": "c7485cfb-1e7b-4081-8e96-8cdb3b77f15e",
@@ -112,7 +124,9 @@
       "input": {
         "phrase": "(123) 456-7890"
       },
-      "expected": {"error": "area code cannot start with one"}
+      "expected": {
+        "error": "area code cannot start with one"
+      }
     },
     {
       "uuid": "4d622293-6976-413d-b8bf-dd8a94d4e2ac",
@@ -121,7 +135,9 @@
       "input": {
         "phrase": "(223) 056-7890"
       },
-      "expected": {"error": "exchange code cannot start with zero"}
+      "expected": {
+        "error": "exchange code cannot start with zero"
+      }
     },
     {
       "uuid": "4cef57b4-7d8e-43aa-8328-1e1b89001262",
@@ -130,7 +146,9 @@
       "input": {
         "phrase": "(223) 156-7890"
       },
-      "expected": {"error": "exchange code cannot start with one"}
+      "expected": {
+        "error": "exchange code cannot start with one"
+      }
     },
     {
       "uuid": "9925b09c-1a0d-4960-a197-5d163cbe308c",
@@ -139,7 +157,9 @@
       "input": {
         "phrase": "1 (023) 456-7890"
       },
-      "expected": {"error": "area code cannot start with zero"}
+      "expected": {
+        "error": "area code cannot start with zero"
+      }
     },
     {
       "uuid": "3f809d37-40f3-44b5-ad90-535838b1a816",
@@ -148,7 +168,9 @@
       "input": {
         "phrase": "1 (123) 456-7890"
       },
-      "expected": {"error": "area code cannot start with one"}
+      "expected": {
+        "error": "area code cannot start with one"
+      }
     },
     {
       "uuid": "e08e5532-d621-40d4-b0cc-96c159276b65",
@@ -157,7 +179,9 @@
       "input": {
         "phrase": "1 (223) 056-7890"
       },
-      "expected": {"error": "exchange code cannot start with zero"}
+      "expected": {
+        "error": "exchange code cannot start with zero"
+      }
     },
     {
       "uuid": "57b32f3d-696a-455c-8bf1-137b6d171cdf",
@@ -166,7 +190,9 @@
       "input": {
         "phrase": "1 (223) 156-7890"
       },
-      "expected": {"error": "exchange code cannot start with one"}
+      "expected": {
+        "error": "exchange code cannot start with one"
+      }
     }
   ]
 }

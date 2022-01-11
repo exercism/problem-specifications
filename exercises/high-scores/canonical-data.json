@@ -14,16 +14,31 @@
       "description": "List of scores",
       "property": "scores",
       "input": {
-        "scores": [30, 50, 20, 70]
+        "scores": [
+          30,
+          50,
+          20,
+          70
+        ]
       },
-      "expected": [30, 50, 20, 70]
+      "expected": [
+        30,
+        50,
+        20,
+        70
+      ]
     },
     {
       "uuid": "6aa5dbf5-78fa-4375-b22c-ffaa989732d2",
       "description": "Latest score",
       "property": "latest",
       "input": {
-        "scores": [100, 0, 90, 30]
+        "scores": [
+          100,
+          0,
+          90,
+          30
+        ]
       },
       "expected": 30
     },
@@ -32,7 +47,11 @@
       "description": "Personal best",
       "property": "personalBest",
       "input": {
-        "scores": [40, 100, 70]
+        "scores": [
+          40,
+          100,
+          70
+        ]
       },
       "expected": 100
     },
@@ -44,52 +63,102 @@
           "description": "Personal top three from a list of scores",
           "property": "personalTopThree",
           "input": {
-            "scores": [10, 30, 90, 30, 100, 20, 10, 0, 30, 40, 40, 70, 70]
+            "scores": [
+              10,
+              30,
+              90,
+              30,
+              100,
+              20,
+              10,
+              0,
+              30,
+              40,
+              40,
+              70,
+              70
+            ]
           },
-          "expected": [100, 90, 70]
+          "expected": [
+            100,
+            90,
+            70
+          ]
         },
         {
           "uuid": "1084ecb5-3eb4-46fe-a816-e40331a4e83a",
           "description": "Personal top highest to lowest",
           "property": "personalTopThree",
           "input": {
-            "scores": [20, 10, 30]
+            "scores": [
+              20,
+              10,
+              30
+            ]
           },
-          "expected": [30, 20, 10]
+          "expected": [
+            30,
+            20,
+            10
+          ]
         },
         {
           "uuid": "e6465b6b-5a11-4936-bfe3-35241c4f4f16",
           "description": "Personal top when there is a tie",
           "property": "personalTopThree",
           "input": {
-            "scores": [40, 20, 40, 30]
+            "scores": [
+              40,
+              20,
+              40,
+              30
+            ]
           },
-          "expected": [40, 40, 30]
+          "expected": [
+            40,
+            40,
+            30
+          ]
         },
         {
           "uuid": "f73b02af-c8fd-41c9-91b9-c86eaa86bce2",
           "description": "Personal top when there are less than 3",
           "property": "personalTopThree",
           "input": {
-            "scores": [30, 70]
+            "scores": [
+              30,
+              70
+            ]
           },
-          "expected": [70, 30]
+          "expected": [
+            70,
+            30
+          ]
         },
         {
           "uuid": "16608eae-f60f-4a88-800e-aabce5df2865",
           "description": "Personal top when there is only one",
           "property": "personalTopThree",
           "input": {
-            "scores": [40]
+            "scores": [
+              40
+            ]
           },
-          "expected": [40]
+          "expected": [
+            40
+          ]
         },
         {
           "uuid": "2df075f9-fec9-4756-8f40-98c52a11504f",
           "description": "Latest score after personal top scores",
           "property": "latestAfterTopThree",
           "input": {
-            "scores": [70, 50, 20, 30]
+            "scores": [
+              70,
+              50,
+              20,
+              30
+            ]
           },
           "expected": 30,
           "scenarios": [
@@ -101,9 +170,19 @@
           "description": "Scores after personal top scores",
           "property": "scoresAfterTopThree",
           "input": {
-            "scores": [30, 50, 20, 70]
+            "scores": [
+              30,
+              50,
+              20,
+              70
+            ]
           },
-          "expected": [30, 50, 20, 70],
+          "expected": [
+            30,
+            50,
+            20,
+            70
+          ],
           "scenarios": [
             "immutable"
           ]

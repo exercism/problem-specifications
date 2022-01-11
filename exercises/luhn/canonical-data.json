@@ -150,7 +150,7 @@
       "description": "very long input is valid",
       "comments": [
         "Designed to prevent converting input to a single number as this approach can risk an overflow"
-        ],
+      ],
       "property": "valid",
       "input": {
         "value": "9999999999 9999999999 9999999999 9999999999"

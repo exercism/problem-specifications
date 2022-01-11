@@ -21,7 +21,20 @@
       },
       "expected": {
         "owner": "BLACK",
-        "territory": [[0, 0], [0, 1], [1, 0]]
+        "territory": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
       }
     },
     {
@@ -41,7 +54,12 @@
       },
       "expected": {
         "owner": "WHITE",
-        "territory": [[2, 3]]
+        "territory": [
+          [
+            2,
+            3
+          ]
+        ]
       }
     },
     {
@@ -61,7 +79,20 @@
       },
       "expected": {
         "owner": "NONE",
-        "territory": [[0, 3], [0, 4], [1, 4]]
+        "territory": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ]
+        ]
       }
     },
     {
@@ -172,7 +203,12 @@
       "expected": {
         "territoryBlack": [],
         "territoryWhite": [],
-        "territoryNone": [[0, 0]]
+        "territoryNone": [
+          [
+            0,
+            0
+          ]
+        ]
       }
     },
     {
@@ -186,8 +222,26 @@
         ]
       },
       "expected": {
-        "territoryBlack": [[0, 0], [0, 1]],
-        "territoryWhite": [[3, 0], [3, 1]],
+        "territoryBlack": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "territoryWhite": [
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            1
+          ]
+        ],
         "territoryNone": []
       }
     },
@@ -201,7 +255,16 @@
         ]
       },
       "expected": {
-        "territoryBlack": [[0, 0], [2, 0]],
+        "territoryBlack": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
         "territoryWhite": [],
         "territoryNone": []
       }

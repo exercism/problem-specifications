@@ -356,7 +356,7 @@
     },
     {
       "uuid": "892ca75d-5474-495d-9f64-a6ce2dcdb7e1",
-      "description": "with multiple decks, both hands with identical four of a kind, tie determined by kicker" ,
+      "description": "with multiple decks, both hands with identical four of a kind, tie determined by kicker",
       "property": "bestHands",
       "input": {
         "hands": [

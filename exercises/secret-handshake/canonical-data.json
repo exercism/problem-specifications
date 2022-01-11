@@ -21,7 +21,9 @@
       "input": {
         "number": 1
       },
-      "expected": ["wink"]
+      "expected": [
+        "wink"
+      ]
     },
     {
       "uuid": "83ec6c58-81a9-4fd1-bfaf-0160514fc0e3",
@@ -30,7 +32,9 @@
       "input": {
         "number": 2
       },
-      "expected": ["double blink"]
+      "expected": [
+        "double blink"
+      ]
     },
     {
       "uuid": "0e20e466-3519-4134-8082-5639d85fef71",
@@ -39,7 +43,9 @@
       "input": {
         "number": 4
       },
-      "expected": ["close your eyes"]
+      "expected": [
+        "close your eyes"
+      ]
     },
     {
       "uuid": "b339ddbb-88b7-4b7d-9b19-4134030d9ac0",
@@ -48,7 +54,9 @@
       "input": {
         "number": 8
       },
-      "expected": ["jump"]
+      "expected": [
+        "jump"
+      ]
     },
     {
       "uuid": "40499fb4-e60c-43d7-8b98-0de3ca44e0eb",
@@ -57,7 +65,10 @@
       "input": {
         "number": 3
       },
-      "expected": ["wink", "double blink"]
+      "expected": [
+        "wink",
+        "double blink"
+      ]
     },
     {
       "uuid": "9730cdd5-ef27-494b-afd3-5c91ad6c3d9d",
@@ -66,7 +77,10 @@
       "input": {
         "number": 19
       },
-      "expected": ["double blink", "wink"]
+      "expected": [
+        "double blink",
+        "wink"
+      ]
     },
     {
       "uuid": "0b828205-51ca-45cd-90d5-f2506013f25f",
@@ -75,7 +89,9 @@
       "input": {
         "number": 24
       },
-      "expected": ["jump"]
+      "expected": [
+        "jump"
+      ]
     },
     {
       "uuid": "9949e2ac-6c9c-4330-b685-2089ab28b05f",
@@ -93,7 +109,12 @@
       "input": {
         "number": 15
       },
-      "expected": ["wink", "double blink", "close your eyes", "jump"]
+      "expected": [
+        "wink",
+        "double blink",
+        "close your eyes",
+        "jump"
+      ]
     },
     {
       "uuid": "ae8fe006-d910-4d6f-be00-54b7c3799e79",
@@ -102,7 +123,12 @@
       "input": {
         "number": 31
       },
-      "expected": ["jump", "close your eyes", "double blink", "wink"]
+      "expected": [
+        "jump",
+        "close your eyes",
+        "double blink",
+        "wink"
+      ]
     },
     {
       "uuid": "3d36da37-b31f-4cdb-a396-d93a2ee1c4a5",

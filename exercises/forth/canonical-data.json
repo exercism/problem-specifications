@@ -14,18 +14,34 @@
           "description": "numbers just get pushed onto the stack",
           "property": "evaluate",
           "input": {
-            "instructions": ["1 2 3 4 5"]
+            "instructions": [
+              "1 2 3 4 5"
+            ]
           },
-          "expected": [1, 2, 3, 4, 5]
+          "expected": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
         },
         {
           "uuid": "fd7a8da2-6818-4203-a866-fed0714e7aa0",
           "description": "pushes negative numbers onto the stack",
           "property": "evaluate",
           "input": {
-            "instructions": ["-1 -2 -3 -4 -5"]
+            "instructions": [
+              "-1 -2 -3 -4 -5"
+            ]
           },
-          "expected": [-1, -2, -3, -4, -5]
+          "expected": [
+            -1,
+            -2,
+            -3,
+            -4,
+            -5
+          ]
         }
       ]
     },
@@ -37,16 +53,22 @@
           "description": "can add two numbers",
           "property": "evaluate",
           "input": {
-            "instructions": ["1 2 +"]
+            "instructions": [
+              "1 2 +"
+            ]
           },
-          "expected": [3]
+          "expected": [
+            3
+          ]
         },
         {
           "uuid": "52336dd3-30da-4e5c-8523-bdf9a3427657",
           "description": "errors if there is nothing on the stack",
           "property": "evaluate",
           "input": {
-            "instructions": ["+"]
+            "instructions": [
+              "+"
+            ]
           },
           "expected": {
             "error": "empty stack"
@@ -57,7 +79,9 @@
           "description": "errors if there is only one value on the stack",
           "property": "evaluate",
           "input": {
-            "instructions": ["1 +"]
+            "instructions": [
+              "1 +"
+            ]
           },
           "expected": {
             "error": "only one value on the stack"
@@ -73,16 +97,22 @@
           "description": "can subtract two numbers",
           "property": "evaluate",
           "input": {
-            "instructions": ["3 4 -"]
+            "instructions": [
+              "3 4 -"
+            ]
           },
-          "expected": [-1]
+          "expected": [
+            -1
+          ]
         },
         {
           "uuid": "5d63eee2-1f7d-4538-b475-e27682ab8032",
           "description": "errors if there is nothing on the stack",
           "property": "evaluate",
           "input": {
-            "instructions": ["-"]
+            "instructions": [
+              "-"
+            ]
           },
           "expected": {
             "error": "empty stack"
@@ -93,7 +123,9 @@
           "description": "errors if there is only one value on the stack",
           "property": "evaluate",
           "input": {
-            "instructions": ["1 -"]
+            "instructions": [
+              "1 -"
+            ]
           },
           "expected": {
             "error": "only one value on the stack"
@@ -109,16 +141,22 @@
           "description": "can multiply two numbers",
           "property": "evaluate",
           "input": {
-            "instructions": ["2 4 *"]
+            "instructions": [
+              "2 4 *"
+            ]
           },
-          "expected": [8]
+          "expected": [
+            8
+          ]
         },
         {
           "uuid": "9e004339-15ac-4063-8ec1-5720f4e75046",
           "description": "errors if there is nothing on the stack",
           "property": "evaluate",
           "input": {
-            "instructions": ["*"]
+            "instructions": [
+              "*"
+            ]
           },
           "expected": {
             "error": "empty stack"
@@ -129,7 +167,9 @@
           "description": "errors if there is only one value on the stack",
           "property": "evaluate",
           "input": {
-            "instructions": ["1 *"]
+            "instructions": [
+              "1 *"
+            ]
           },
           "expected": {
             "error": "only one value on the stack"
@@ -145,25 +185,35 @@
           "description": "can divide two numbers",
           "property": "evaluate",
           "input": {
-            "instructions": ["12 3 /"]
+            "instructions": [
+              "12 3 /"
+            ]
           },
-          "expected": [4]
+          "expected": [
+            4
+          ]
         },
         {
           "uuid": "54f6711c-4b14-4bb0-98ad-d974a22c4620",
           "description": "performs integer division",
           "property": "evaluate",
           "input": {
-            "instructions": ["8 3 /"]
+            "instructions": [
+              "8 3 /"
+            ]
           },
-          "expected": [2]
+          "expected": [
+            2
+          ]
         },
         {
           "uuid": "a5df3219-29b4-4d2f-b427-81f82f42a3f1",
           "description": "errors if dividing by zero",
           "property": "evaluate",
           "input": {
-            "instructions": ["4 0 /"]
+            "instructions": [
+              "4 0 /"
+            ]
           },
           "expected": {
             "error": "divide by zero"
@@ -174,7 +224,9 @@
           "description": "errors if there is nothing on the stack",
           "property": "evaluate",
           "input": {
-            "instructions": ["/"]
+            "instructions": [
+              "/"
+            ]
           },
           "expected": {
             "error": "empty stack"
@@ -185,7 +237,9 @@
           "description": "errors if there is only one value on the stack",
           "property": "evaluate",
           "input": {
-            "instructions": ["1 /"]
+            "instructions": [
+              "1 /"
+            ]
           },
           "expected": {
             "error": "only one value on the stack"
@@ -201,18 +255,26 @@
           "description": "addition and subtraction",
           "property": "evaluate",
           "input": {
-            "instructions": ["1 2 + 4 -"]
+            "instructions": [
+              "1 2 + 4 -"
+            ]
           },
-          "expected": [-1]
+          "expected": [
+            -1
+          ]
         },
         {
           "uuid": "40b197da-fa4b-4aca-a50b-f000d19422c1",
           "description": "multiplication and division",
           "property": "evaluate",
           "input": {
-            "instructions": ["2 4 * 3 /"]
+            "instructions": [
+              "2 4 * 3 /"
+            ]
           },
-          "expected": [2]
+          "expected": [
+            2
+          ]
         }
       ]
     },
@@ -224,25 +286,38 @@
           "description": "copies a value on the stack",
           "property": "evaluate",
           "input": {
-            "instructions": ["1 dup"]
+            "instructions": [
+              "1 dup"
+            ]
           },
-          "expected": [1, 1]
+          "expected": [
+            1,
+            1
+          ]
         },
         {
           "uuid": "f6889006-5a40-41e7-beb3-43b09e5a22f4",
           "description": "copies the top value on the stack",
           "property": "evaluate",
           "input": {
-            "instructions": ["1 2 dup"]
+            "instructions": [
+              "1 2 dup"
+            ]
           },
-          "expected": [1, 2, 2]
+          "expected": [
+            1,
+            2,
+            2
+          ]
         },
         {
           "uuid": "40b7569c-8401-4bd4-a30d-9adf70d11bc4",
           "description": "errors if there is nothing on the stack",
           "property": "evaluate",
           "input": {
-            "instructions": ["dup"]
+            "instructions": [
+              "dup"
+            ]
           },
           "expected": {
             "error": "empty stack"
@@ -258,7 +333,9 @@
           "description": "removes the top value on the stack if it is the only one",
           "property": "evaluate",
           "input": {
-            "instructions": ["1 drop"]
+            "instructions": [
+              "1 drop"
+            ]
           },
           "expected": []
         },
@@ -267,16 +344,22 @@
           "description": "removes the top value on the stack if it is not the only one",
           "property": "evaluate",
           "input": {
-            "instructions": ["1 2 drop"]
+            "instructions": [
+              "1 2 drop"
+            ]
           },
-          "expected": [1]
+          "expected": [
+            1
+          ]
         },
         {
           "uuid": "6dd31873-6dd7-4cb8-9e90-7daa33ba045c",
           "description": "errors if there is nothing on the stack",
           "property": "evaluate",
           "input": {
-            "instructions": ["drop"]
+            "instructions": [
+              "drop"
+            ]
           },
           "expected": {
             "error": "empty stack"
@@ -292,25 +375,38 @@
           "description": "swaps the top two values on the stack if they are the only ones",
           "property": "evaluate",
           "input": {
-            "instructions": ["1 2 swap"]
+            "instructions": [
+              "1 2 swap"
+            ]
           },
-          "expected": [2, 1]
+          "expected": [
+            2,
+            1
+          ]
         },
         {
           "uuid": "8ce869d5-a503-44e4-ab55-1da36816ff1c",
           "description": "swaps the top two values on the stack if they are not the only ones",
           "property": "evaluate",
           "input": {
-            "instructions": ["1 2 3 swap"]
+            "instructions": [
+              "1 2 3 swap"
+            ]
           },
-          "expected": [1, 3, 2]
+          "expected": [
+            1,
+            3,
+            2
+          ]
         },
         {
           "uuid": "74ba5b2a-b028-4759-9176-c5c0e7b2b154",
           "description": "errors if there is nothing on the stack",
           "property": "evaluate",
           "input": {
-            "instructions": ["swap"]
+            "instructions": [
+              "swap"
+            ]
           },
           "expected": {
             "error": "empty stack"
@@ -321,7 +417,9 @@
           "description": "errors if there is only one value on the stack",
           "property": "evaluate",
           "input": {
-            "instructions": ["1 swap"]
+            "instructions": [
+              "1 swap"
+            ]
           },
           "expected": {
             "error": "only one value on the stack"
@@ -337,25 +435,40 @@
           "description": "copies the second element if there are only two",
           "property": "evaluate",
           "input": {
-            "instructions": ["1 2 over"]
+            "instructions": [
+              "1 2 over"
+            ]
           },
-          "expected": [1, 2, 1]
+          "expected": [
+            1,
+            2,
+            1
+          ]
         },
         {
           "uuid": "c5b51097-741a-4da7-8736-5c93fa856339",
           "description": "copies the second element if there are more than two",
           "property": "evaluate",
           "input": {
-            "instructions": ["1 2 3 over"]
+            "instructions": [
+              "1 2 3 over"
+            ]
           },
-          "expected": [1, 2, 3, 2]
+          "expected": [
+            1,
+            2,
+            3,
+            2
+          ]
         },
         {
           "uuid": "6e1703a6-5963-4a03-abba-02e77e3181fd",
           "description": "errors if there is nothing on the stack",
           "property": "evaluate",
           "input": {
-            "instructions": ["over"]
+            "instructions": [
+              "over"
+            ]
           },
           "expected": {
             "error": "empty stack"
@@ -366,7 +479,9 @@
           "description": "errors if there is only one value on the stack",
           "property": "evaluate",
           "input": {
-            "instructions": ["1 over"]
+            "instructions": [
+              "1 over"
+            ]
           },
           "expected": {
             "error": "only one value on the stack"
@@ -387,7 +502,11 @@
               "1 dup-twice"
             ]
           },
-          "expected": [1, 1, 1]
+          "expected": [
+            1,
+            1,
+            1
+          ]
         },
         {
           "uuid": "2726ea44-73e4-436b-bc2b-5ff0c6aa014b",
@@ -399,7 +518,11 @@
               "countup"
             ]
           },
-          "expected": [1, 2, 3]
+          "expected": [
+            1,
+            2,
+            3
+          ]
         },
         {
           "uuid": "9e53c2d0-b8ef-4ad8-b2c9-a559b421eb33",
@@ -412,7 +535,11 @@
               "1 foo"
             ]
           },
-          "expected": [1, 1, 1]
+          "expected": [
+            1,
+            1,
+            1
+          ]
         },
         {
           "uuid": "669db3f3-5bd6-4be0-83d1-618cd6e4984b",
@@ -424,7 +551,10 @@
               "1 swap"
             ]
           },
-          "expected": [1, 1]
+          "expected": [
+            1,
+            1
+          ]
         },
         {
           "uuid": "588de2f0-c56e-4c68-be0b-0bb1e603c500",
@@ -436,7 +566,9 @@
               "3 4 +"
             ]
           },
-          "expected": [12]
+          "expected": [
+            12
+          ]
         },
         {
           "uuid": "ac12aaaf-26c6-4a10-8b3c-1c958fa2914c",
@@ -450,7 +582,10 @@
               "bar foo"
             ]
           },
-          "expected": [5, 6]
+          "expected": [
+            5,
+            6
+          ]
         },
         {
           "uuid": "53f82ef0-2750-4ccb-ac04-5d8c1aefabb1",
@@ -463,14 +598,18 @@
               "foo"
             ]
           },
-          "expected": [11]
+          "expected": [
+            11
+          ]
         },
         {
           "uuid": "35958cee-a976-4a0f-9378-f678518fa322",
           "description": "cannot redefine non-negative numbers",
           "property": "evaluate",
           "input": {
-            "instructions": [": 1 2 ;"]
+            "instructions": [
+              ": 1 2 ;"
+            ]
           },
           "expected": {
             "error": "illegal operation"
@@ -481,7 +620,9 @@
           "description": "cannot redefine negative numbers",
           "property": "evaluate",
           "input": {
-            "instructions": [": -1 2 ;"]
+            "instructions": [
+              ": -1 2 ;"
+            ]
           },
           "expected": {
             "error": "illegal operation"
@@ -492,7 +633,9 @@
           "description": "errors if executing a non-existent word",
           "property": "evaluate",
           "input": {
-            "instructions": ["foo"]
+            "instructions": [
+              "foo"
+            ]
           },
           "expected": {
             "error": "undefined operation"
@@ -506,13 +649,27 @@
             "For example, in OOP-based approaches, the words should be defined in the same scope,",
             "or local to the instance the instructions were evaluated in."
           ],
-          "scenarios": ["local-scope"],
+          "scenarios": [
+            "local-scope"
+          ],
           "property": "evaluateBoth",
           "input": {
-            "instructionsFirst": [": + - ;", "1 1 +"],
-            "instructionsSecond": ["1 1 +"]
+            "instructionsFirst": [
+              ": + - ;",
+              "1 1 +"
+            ],
+            "instructionsSecond": [
+              "1 1 +"
+            ]
           },
-          "expected": [[0], [2]]
+          "expected": [
+            [
+              0
+            ],
+            [
+              2
+            ]
+          ]
         }
       ]
     },
@@ -524,36 +681,62 @@
           "description": "DUP is case-insensitive",
           "property": "evaluate",
           "input": {
-            "instructions": ["1 DUP Dup dup"]
+            "instructions": [
+              "1 DUP Dup dup"
+            ]
           },
-          "expected": [1, 1, 1, 1]
+          "expected": [
+            1,
+            1,
+            1,
+            1
+          ]
         },
         {
           "uuid": "339ed30b-f5b4-47ff-ab1c-67591a9cd336",
           "description": "DROP is case-insensitive",
           "property": "evaluate",
           "input": {
-            "instructions": ["1 2 3 4 DROP Drop drop"]
+            "instructions": [
+              "1 2 3 4 DROP Drop drop"
+            ]
           },
-          "expected": [1]
+          "expected": [
+            1
+          ]
         },
         {
           "uuid": "ee1af31e-1355-4b1b-bb95-f9d0b2961b87",
           "description": "SWAP is case-insensitive",
           "property": "evaluate",
           "input": {
-            "instructions": ["1 2 SWAP 3 Swap 4 swap"]
+            "instructions": [
+              "1 2 SWAP 3 Swap 4 swap"
+            ]
           },
-          "expected": [2, 3, 4, 1]
+          "expected": [
+            2,
+            3,
+            4,
+            1
+          ]
         },
         {
           "uuid": "acdc3a49-14c8-4cc2-945d-11edee6408fa",
           "description": "OVER is case-insensitive",
           "property": "evaluate",
           "input": {
-            "instructions": ["1 2 OVER Over over"]
+            "instructions": [
+              "1 2 OVER Over over"
+            ]
           },
-          "expected": [1, 2, 1, 2, 1]
+          "expected": [
+            1,
+            2,
+            1,
+            2,
+            1
+          ]
         },
         {
           "uuid": "5934454f-a24f-4efc-9fdd-5794e5f0c23c",
@@ -565,7 +748,12 @@
               "1 FOO Foo foo"
             ]
           },
-          "expected": [1, 1, 1, 1]
+          "expected": [
+            1,
+            1,
+            1,
+            1
+          ]
         },
         {
           "uuid": "037d4299-195f-4be7-a46d-f07ca6280a06",
@@ -577,7 +765,12 @@
               "1 swap"
             ]
           },
-          "expected": [1, 1, 1, 1]
+          "expected": [
+            1,
+            1,
+            1,
+            1
+          ]
         }
       ]
     }

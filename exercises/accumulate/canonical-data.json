@@ -23,43 +23,85 @@
       "description": "accumulate squares",
       "property": "accumulate",
       "input": {
-        "list": [1, 2, 3],
+        "list": [
+          1,
+          2,
+          3
+        ],
         "accumulator": "(x) => x * x"
       },
-      "expected": [1, 4, 9]
+      "expected": [
+        1,
+        4,
+        9
+      ]
     },
     {
       "uuid": "551016da-4396-4cae-b0ec-4c3a1a264125",
       "description": "accumulate upcases",
       "property": "accumulate",
       "input": {
-        "list": ["Hello", "world"],
+        "list": [
+          "Hello",
+          "world"
+        ],
         "accumulator": "(x) => upcase(x)"
       },
-      "expected": ["HELLO", "WORLD"]
+      "expected": [
+        "HELLO",
+        "WORLD"
+      ]
     },
     {
       "uuid": "cdf95597-b6ec-4eac-a838-3480d13d0d05",
       "description": "accumulate reversed strings",
       "property": "accumulate",
       "input": {
-        "list": ["the", "quick", "brown", "fox", "etc"],
+        "list": [
+          "the",
+          "quick",
+          "brown",
+          "fox",
+          "etc"
+        ],
         "accumulator": "(x) => reverse(x)"
       },
-      "expected": ["eht", "kciuq", "nworb", "xof", "cte"]
+      "expected": [
+        "eht",
+        "kciuq",
+        "nworb",
+        "xof",
+        "cte"
+      ]
     },
     {
       "uuid": "bee8e9b6-b16f-4cd2-be3b-ccf7457e50bb",
       "description": "accumulate recursively",
       "property": "accumulate",
       "input": {
-        "list": ["a", "b", "c"],
+        "list": [
+          "a",
+          "b",
+          "c"
+        ],
         "accumulator": "(x) => accumulate([\"1\", \"2\", \"3\"], (y) => x + y))"
       },
       "expected": [
-        ["a1", "a2", "a3"],
-        ["b1", "b2", "b3"],
-        ["c1", "c2", "c3"]
+        [
+          "a1",
+          "a2",
+          "a3"
+        ],
+        [
+          "b1",
+          "b2",
+          "b3"
+        ],
+        [
+          "c1",
+          "c2",
+          "c3"
+        ]
       ]
     }
   ]

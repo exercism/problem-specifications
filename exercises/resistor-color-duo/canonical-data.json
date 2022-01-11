@@ -6,7 +6,10 @@
       "description": "Brown and black",
       "property": "value",
       "input": {
-        "colors": ["brown", "black"]
+        "colors": [
+          "brown",
+          "black"
+        ]
       },
       "expected": 10
     },
@@ -15,7 +18,10 @@
       "description": "Blue and grey",
       "property": "value",
       "input": {
-        "colors": ["blue", "grey"]
+        "colors": [
+          "blue",
+          "grey"
+        ]
       },
       "expected": 68
     },
@@ -24,7 +30,10 @@
       "description": "Yellow and violet",
       "property": "value",
       "input": {
-        "colors": ["yellow", "violet"]
+        "colors": [
+          "yellow",
+          "violet"
+        ]
       },
       "expected": 47
     },
@@ -33,7 +42,10 @@
       "description": "White and red",
       "property": "value",
       "input": {
-        "colors": ["white", "red"]
+        "colors": [
+          "white",
+          "red"
+        ]
       },
       "expected": 92
     },
@@ -42,7 +54,10 @@
       "description": "Orange and orange",
       "property": "value",
       "input": {
-        "colors": ["orange", "orange"]
+        "colors": [
+          "orange",
+          "orange"
+        ]
       },
       "expected": 33
     },
@@ -51,7 +66,11 @@
       "description": "Ignore additional colors",
       "property": "value",
       "input": {
-        "colors": ["green", "brown", "orange"]
+        "colors": [
+          "green",
+          "brown",
+          "orange"
+        ]
       },
       "expected": 51
     },
@@ -60,7 +79,10 @@
       "description": "Black and brown, one-digit",
       "property": "value",
       "input": {
-        "colors": ["black", "brown"]
+        "colors": [
+          "black",
+          "brown"
+        ]
       },
       "expected": 1
     }

@@ -6,7 +6,10 @@
       "description": "no multiples within limit",
       "property": "sum",
       "input": {
-        "factors": [3, 5],
+        "factors": [
+          3,
+          5
+        ],
         "limit": 1
       },
       "expected": 0
@@ -16,7 +19,10 @@
       "description": "one factor has multiples within limit",
       "property": "sum",
       "input": {
-        "factors": [3, 5],
+        "factors": [
+          3,
+          5
+        ],
         "limit": 4
       },
       "expected": 3
@@ -26,7 +32,9 @@
       "description": "more than one multiple within limit",
       "property": "sum",
       "input": {
-        "factors": [3],
+        "factors": [
+          3
+        ],
         "limit": 7
       },
       "expected": 9
@@ -36,7 +44,10 @@
       "description": "more than one factor with multiples within limit",
       "property": "sum",
       "input": {
-        "factors": [3, 5],
+        "factors": [
+          3,
+          5
+        ],
         "limit": 10
       },
       "expected": 23
@@ -46,7 +57,10 @@
       "description": "each multiple is only counted once",
       "property": "sum",
       "input": {
-        "factors": [3, 5],
+        "factors": [
+          3,
+          5
+        ],
         "limit": 100
       },
       "expected": 2318
@@ -56,7 +70,10 @@
       "description": "a much larger limit",
       "property": "sum",
       "input": {
-        "factors": [3, 5],
+        "factors": [
+          3,
+          5
+        ],
         "limit": 1000
       },
       "expected": 233168
@@ -66,7 +83,11 @@
       "description": "three factors",
       "property": "sum",
       "input": {
-        "factors": [7, 13, 17],
+        "factors": [
+          7,
+          13,
+          17
+        ],
         "limit": 20
       },
       "expected": 51
@@ -76,7 +97,10 @@
       "description": "factors not relatively prime",
       "property": "sum",
       "input": {
-        "factors": [4, 6],
+        "factors": [
+          4,
+          6
+        ],
         "limit": 15
       },
       "expected": 30
@@ -86,7 +110,11 @@
       "description": "some pairs of factors relatively prime and some not",
       "property": "sum",
       "input": {
-        "factors": [5, 6, 8],
+        "factors": [
+          5,
+          6,
+          8
+        ],
         "limit": 150
       },
       "expected": 4419
@@ -96,7 +124,10 @@
       "description": "one factor is a multiple of another",
       "property": "sum",
       "input": {
-        "factors": [5, 25],
+        "factors": [
+          5,
+          25
+        ],
         "limit": 51
       },
       "expected": 275
@@ -106,7 +137,10 @@
       "description": "much larger factors",
       "property": "sum",
       "input": {
-        "factors": [43, 47],
+        "factors": [
+          43,
+          47
+        ],
         "limit": 10000
       },
       "expected": 2203160
@@ -116,7 +150,9 @@
       "description": "all numbers are multiples of 1",
       "property": "sum",
       "input": {
-        "factors": [1],
+        "factors": [
+          1
+        ],
         "limit": 100
       },
       "expected": 4950
@@ -136,7 +172,9 @@
       "description": "the only multiple of 0 is 0",
       "property": "sum",
       "input": {
-        "factors": [0],
+        "factors": [
+          0
+        ],
         "limit": 1
       },
       "expected": 0
@@ -146,7 +184,10 @@
       "description": "the factor 0 does not affect the sum of multiples of other factors",
       "property": "sum",
       "input": {
-        "factors": [3, 0],
+        "factors": [
+          3,
+          0
+        ],
         "limit": 4
       },
       "expected": 3
@@ -156,7 +197,13 @@
       "description": "solutions using include-exclude must extend to cardinality greater than 3",
       "property": "sum",
       "input": {
-        "factors": [2, 3, 5, 7, 11],
+        "factors": [
+          2,
+          3,
+          5,
+          7,
+          11
+        ],
         "limit": 10000
       },
       "expected": 39614537

@@ -21,7 +21,9 @@
       "input": {
         "strand": "AUG"
       },
-      "expected": ["Methionine"]
+      "expected": [
+        "Methionine"
+      ]
     },
     {
       "uuid": "1b4c56d8-d69f-44eb-be0e-7b17546143d9",
@@ -30,7 +32,9 @@
       "input": {
         "strand": "UUU"
       },
-      "expected": ["Phenylalanine"]
+      "expected": [
+        "Phenylalanine"
+      ]
     },
     {
       "uuid": "81b53646-bd57-4732-b2cb-6b1880e36d11",
@@ -39,7 +43,9 @@
       "input": {
         "strand": "UUC"
       },
-      "expected": ["Phenylalanine"]
+      "expected": [
+        "Phenylalanine"
+      ]
     },
     {
       "uuid": "42f69d4f-19d2-4d2c-a8b0-f0ae9ee1b6b4",
@@ -48,7 +54,9 @@
       "input": {
         "strand": "UUA"
       },
-      "expected": ["Leucine"]
+      "expected": [
+        "Leucine"
+      ]
     },
     {
       "uuid": "ac5edadd-08ed-40a3-b2b9-d82bb50424c4",
@@ -57,7 +65,9 @@
       "input": {
         "strand": "UUG"
       },
-      "expected": ["Leucine"]
+      "expected": [
+        "Leucine"
+      ]
     },
     {
       "uuid": "8bc36e22-f984-44c3-9f6b-ee5d4e73f120",
@@ -66,7 +76,9 @@
       "input": {
         "strand": "UCU"
       },
-      "expected": ["Serine"]
+      "expected": [
+        "Serine"
+      ]
     },
     {
       "uuid": "5c3fa5da-4268-44e5-9f4b-f016ccf90131",
@@ -75,7 +87,9 @@
       "input": {
         "strand": "UCC"
       },
-      "expected": ["Serine"]
+      "expected": [
+        "Serine"
+      ]
     },
     {
       "uuid": "00579891-b594-42b4-96dc-7ff8bf519606",
@@ -84,7 +98,9 @@
       "input": {
         "strand": "UCA"
       },
-      "expected": ["Serine"]
+      "expected": [
+        "Serine"
+      ]
     },
     {
       "uuid": "08c61c3b-fa34-4950-8c4a-133945570ef6",
@@ -93,7 +109,9 @@
       "input": {
         "strand": "UCG"
       },
-      "expected": ["Serine"]
+      "expected": [
+        "Serine"
+      ]
     },
     {
       "uuid": "54e1e7d8-63c0-456d-91d2-062c72f8eef5",
@@ -102,7 +120,9 @@
       "input": {
         "strand": "UAU"
       },
-      "expected": ["Tyrosine"]
+      "expected": [
+        "Tyrosine"
+      ]
     },
     {
       "uuid": "47bcfba2-9d72-46ad-bbce-22f7666b7eb1",
@@ -111,7 +131,9 @@
       "input": {
         "strand": "UAC"
       },
-      "expected": ["Tyrosine"]
+      "expected": [
+        "Tyrosine"
+      ]
     },
     {
       "uuid": "3a691829-fe72-43a7-8c8e-1bd083163f72",
@@ -120,7 +142,9 @@
       "input": {
         "strand": "UGU"
       },
-      "expected": ["Cysteine"]
+      "expected": [
+        "Cysteine"
+      ]
     },
     {
       "uuid": "1b6f8a26-ca2f-43b8-8262-3ee446021767",
@@ -129,7 +153,9 @@
       "input": {
         "strand": "UGC"
       },
-      "expected": ["Cysteine"]
+      "expected": [
+        "Cysteine"
+      ]
     },
     {
       "uuid": "1e91c1eb-02c0-48a0-9e35-168ad0cb5f39",
@@ -138,7 +164,9 @@
       "input": {
         "strand": "UGG"
       },
-      "expected": ["Tryptophan"]
+      "expected": [
+        "Tryptophan"
+      ]
     },
     {
       "uuid": "e547af0b-aeab-49c7-9f13-801773a73557",
@@ -174,7 +202,10 @@
       "input": {
         "strand": "UUUUUU"
       },
-      "expected": ["Phenylalanine","Phenylalanine"]
+      "expected": [
+        "Phenylalanine",
+        "Phenylalanine"
+      ]
     },
     {
       "uuid": "dd22eef3-b4f1-4ad6-bb0b-27093c090a9d",
@@ -186,7 +217,10 @@
       "input": {
         "strand": "UUAUUG"
       },
-      "expected": ["Leucine","Leucine"]
+      "expected": [
+        "Leucine",
+        "Leucine"
+      ]
     },
     {
       "uuid": "d0f295df-fb70-425c-946c-ec2ec185388e",
@@ -195,7 +229,11 @@
       "input": {
         "strand": "AUGUUUUGG"
       },
-      "expected": ["Methionine","Phenylalanine","Tryptophan"]
+      "expected": [
+        "Methionine",
+        "Phenylalanine",
+        "Tryptophan"
+      ]
     },
     {
       "uuid": "e30e8505-97ec-4e5f-a73e-5726a1faa1f4",
@@ -213,7 +251,9 @@
       "input": {
         "strand": "UGGUAG"
       },
-      "expected": ["Tryptophan"]
+      "expected": [
+        "Tryptophan"
+      ]
     },
     {
       "uuid": "ba16703a-1a55-482f-bb07-b21eef5093a3",
@@ -222,7 +262,10 @@
       "input": {
         "strand": "AUGUUUUAA"
       },
-      "expected": ["Methionine","Phenylalanine"]
+      "expected": [
+        "Methionine",
+        "Phenylalanine"
+      ]
     },
     {
       "uuid": "4089bb5a-d5b4-4e71-b79e-b8d1f14a2911",
@@ -231,7 +274,9 @@
       "input": {
         "strand": "UGGUAGUGG"
       },
-      "expected": ["Tryptophan"]
+      "expected": [
+        "Tryptophan"
+      ]
     },
     {
       "uuid": "2c2a2a60-401f-4a80-b977-e0715b23b93d",
@@ -240,7 +285,11 @@
       "input": {
         "strand": "UGGUGUUAUUAAUGGUUU"
       },
-      "expected": ["Tryptophan","Cysteine","Tyrosine"]
+      "expected": [
+        "Tryptophan",
+        "Cysteine",
+        "Tyrosine"
+      ]
     },
     {
       "uuid": "1e75ea2a-f907-4994-ae5c-118632a1cb0f",
@@ -250,7 +299,9 @@
         "passed; to simplify the exercise, this test may be excluded in   ",
         "order to remove the requirement for input validation.            "
       ],
-      "scenarios": ["input-validation"],
+      "scenarios": [
+        "input-validation"
+      ],
       "property": "proteins",
       "input": {
         "strand": "AAA"
@@ -268,7 +319,9 @@
         "codons. To simplify the exercise, this test may be excluded in   ",
         "order to remove the requirement for input validation.            "
       ],
-      "scenarios": ["input-validation"],
+      "scenarios": [
+        "input-validation"
+      ],
       "property": "proteins",
       "input": {
         "strand": "XYZ"
@@ -285,7 +338,9 @@
         "To simplify the exercise, this test may be excluded in order to  ",
         "remove the requirement for input validation.                     "
       ],
-      "scenarios": ["input-validation"],
+      "scenarios": [
+        "input-validation"
+      ],
       "property": "proteins",
       "input": {
         "strand": "AUGU"
@@ -303,12 +358,18 @@
         "allow implementations to validate the strand before translating  ",
         "it into proteins.                                                "
       ],
-      "scenarios": ["input-validation", "runtime-validation"],
+      "scenarios": [
+        "input-validation",
+        "runtime-validation"
+      ],
       "property": "proteins",
       "input": {
         "strand": "UUCUUCUAAUGGU"
       },
-      "expected": ["Phenylalanine","Phenylalanine"]
+      "expected": [
+        "Phenylalanine",
+        "Phenylalanine"
+      ]
     }
   ]
 }
