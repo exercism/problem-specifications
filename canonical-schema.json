@@ -86,6 +86,7 @@
                 , "property"    : { "$ref": "#/definitions/property"    }
                 , "input"       : { "$ref": "#/definitions/input"       }
                 , "expected"    : { "$ref": "#/definitions/expected"    }
+                , "timeout"     : { "$ref": "#/definitions/timeout"     }
                 }
           , "additionalProperties": false
           },
@@ -155,6 +156,11 @@
           , "dependencies":
                { "error": { "maxProperties": 1 }
                }
+          },
+
+     "timeout":
+          { "description": "Test timeout in milliseconds"
+          , "type"       : "integer"
           },
 
       "error":
