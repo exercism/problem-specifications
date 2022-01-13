@@ -8,7 +8,7 @@
   "cases": [
     {
       "description": "encode",
-      "comments": [ "Test encoding from English to atbash" ],
+      "comments": ["Test encoding from English to atbash"],
       "cases": [
         {
           "uuid": "2f47ebe1-eab9-4d6b-b3c6-627562a31c77",
@@ -86,7 +86,7 @@
     },
     {
       "description": "decode",
-      "comments": [ "Test decoding from atbash to English" ],
+      "comments": ["Test decoding from atbash to English"],
       "cases": [
         {
           "uuid": "bb50e087-7fdf-48e7-9223-284fe7e69851",
