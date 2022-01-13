@@ -174,7 +174,7 @@
       "input": {
         "strand": "UUUUUU"
       },
-      "expected": ["Phenylalanine","Phenylalanine"]
+      "expected": ["Phenylalanine", "Phenylalanine"]
     },
     {
       "uuid": "dd22eef3-b4f1-4ad6-bb0b-27093c090a9d",
@@ -186,7 +186,7 @@
       "input": {
         "strand": "UUAUUG"
       },
-      "expected": ["Leucine","Leucine"]
+      "expected": ["Leucine", "Leucine"]
     },
     {
       "uuid": "d0f295df-fb70-425c-946c-ec2ec185388e",
@@ -195,7 +195,7 @@
       "input": {
         "strand": "AUGUUUUGG"
       },
-      "expected": ["Methionine","Phenylalanine","Tryptophan"]
+      "expected": ["Methionine", "Phenylalanine", "Tryptophan"]
     },
     {
       "uuid": "e30e8505-97ec-4e5f-a73e-5726a1faa1f4",
@@ -222,7 +222,7 @@
       "input": {
         "strand": "AUGUUUUAA"
       },
-      "expected": ["Methionine","Phenylalanine"]
+      "expected": ["Methionine", "Phenylalanine"]
     },
     {
       "uuid": "4089bb5a-d5b4-4e71-b79e-b8d1f14a2911",
@@ -240,7 +240,7 @@
       "input": {
         "strand": "UGGUGUUAUUAAUGGUUU"
       },
-      "expected": ["Tryptophan","Cysteine","Tyrosine"]
+      "expected": ["Tryptophan", "Cysteine", "Tyrosine"]
     },
     {
       "uuid": "1e75ea2a-f907-4994-ae5c-118632a1cb0f",
@@ -308,7 +308,7 @@
       "input": {
         "strand": "UUCUUCUAAUGGU"
       },
-      "expected": ["Phenylalanine","Phenylalanine"]
+      "expected": ["Phenylalanine", "Phenylalanine"]
     }
   ]
 }
