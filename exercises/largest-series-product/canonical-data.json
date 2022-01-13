@@ -109,7 +109,9 @@
         "digits": "123",
         "span": 4
       },
-      "expected": {"error": "span must be smaller than string length"}
+      "expected": {
+        "error": "span must be smaller than string length"
+      }
     },
     {
       "comments": [
@@ -157,7 +159,9 @@
         "digits": "",
         "span": 1
       },
-      "expected": {"error": "span must be smaller than string length"}
+      "expected": {
+        "error": "span must be smaller than string length"
+      }
     },
     {
       "uuid": "7a38f2d6-3c35-45f6-8d6f-12e6e32d4d74",
@@ -167,7 +171,9 @@
         "digits": "1234a5",
         "span": 2
       },
-      "expected": {"error": "digits input must only contain digits"}
+      "expected": {
+        "error": "digits input must only contain digits"
+      }
     },
     {
       "uuid": "5fe3c0e5-a945-49f2-b584-f0814b4dd1ef",
@@ -177,7 +183,9 @@
         "digits": "12345",
         "span": -1
       },
-      "expected": {"error": "span must be greater than zero"}
+      "expected": {
+        "error": "span must be greater than zero"
+      }
     },
     {
       "uuid": "c859f34a-9bfe-4897-9c2f-6d7f8598e7f0",
@@ -189,7 +197,9 @@
         "digits": "12345",
         "span": -1
       },
-      "expected": {"error": "span must not be negative"}
+      "expected": {
+        "error": "span must not be negative"
+      }
     }
   ]
 }
