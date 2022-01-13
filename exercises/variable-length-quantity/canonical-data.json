@@ -44,7 +44,7 @@
           "input": {
             "integers": [128]
           },
-          "expected": [129,0]
+          "expected": [129, 0]
         },
         {
           "uuid": "63955a49-2690-4e22-a556-0040648d6b2d",
@@ -170,7 +170,9 @@
           "input": {
             "integers": [8192, 1193046, 268435455, 0, 16383, 16384]
           },
-          "expected": [192, 0, 200, 232, 86, 255, 255, 255, 127, 0, 255, 127, 129, 128, 0]
+          "expected": [
+            192, 0, 200, 232, 86, 255, 255, 255, 127, 0, 255, 127, 129, 128, 0
+          ]
         }
       ]
     },
@@ -229,7 +231,9 @@
           "input": {
             "integers": [255]
           },
-          "expected": {"error": "incomplete sequence"}
+          "expected": {
+            "error": "incomplete sequence"
+          }
         },
         {
           "uuid": "aa378291-9043-4724-bc53-aca1b4a3fcb6",
@@ -238,14 +242,18 @@
           "input": {
             "integers": [128]
           },
-          "expected": {"error": "incomplete sequence"}
+          "expected": {
+            "error": "incomplete sequence"
+          }
         },
         {
           "uuid": "a91e6f5a-c64a-48e3-8a75-ce1a81e0ebee",
           "description": "multiple values",
           "property": "decode",
           "input": {
-            "integers": [192, 0, 200, 232, 86, 255, 255, 255, 127, 0, 255, 127, 129, 128, 0]
+            "integers": [
+              192, 0, 200, 232, 86, 255, 255, 255, 127, 0, 255, 127, 129, 128, 0
+            ]
           },
           "expected": [8192, 1193046, 268435455, 0, 16383, 16384]
         }
