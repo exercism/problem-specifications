@@ -89,7 +89,9 @@
         "planet": "Sun",
         "seconds": 680804807
       },
-      "expected": {"error": "not a planet"}
+      "expected": {
+        "error": "not a planet"
+      }
     }
   ]
 }
