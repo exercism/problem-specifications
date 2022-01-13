@@ -1,92 +1,92 @@
 {
-    "exercise": "pythagorean-triplet",
-    "cases": [
-        {
-            "uuid": "a19de65d-35b8-4480-b1af-371d9541e706",
-            "description": "triplets whose sum is 12",
-            "property": "tripletsWithSum",
-            "input": {
-                "n": 12
-            },
-            "expected": [
-                [3, 4, 5]
-            ]
-        },
-        {
-            "uuid": "48b21332-0a3d-43b2-9a52-90b2a6e5c9f5",
-            "description": "triplets whose sum is 108",
-            "property": "tripletsWithSum",
-            "input": {
-                "n": 108
-            },
-            "expected": [
-                [27, 36, 45]
-            ]
-        },
-        {
-            "uuid": "dffc1266-418e-4daa-81af-54c3e95c3bb5",
-            "description": "triplets whose sum is 1000",
-            "property": "tripletsWithSum",
-            "input": {
-                "n": 1000
-            },
-            "expected": [
-                [200, 375, 425]
-            ]
-        },
-        {
-            "uuid": "5f86a2d4-6383-4cce-93a5-e4489e79b186",
-            "description": "no matching triplets for 1001",
-            "property": "tripletsWithSum",
-            "input": {
-                "n": 1001
-            },
-            "expected": []
-        },
-        {
-            "uuid": "bf17ba80-1596-409a-bb13-343bdb3b2904",
-            "description": "returns all matching triplets",
-            "property": "tripletsWithSum",
-            "input": {
-                "n": 90
-            },
-            "expected": [
-                [9, 40, 41],
-                [15, 36, 39]
-            ]
-        },
-        {
-            "uuid": "9d8fb5d5-6c6f-42df-9f95-d3165963ac57",
-            "description": "several matching triplets",
-            "property": "tripletsWithSum",
-            "input": {
-                "n": 840
-            },
-            "expected": [
-                [40, 399, 401],
-                [56, 390, 394],
-                [105, 360, 375],
-                [120, 350, 370],
-                [140, 336, 364],
-                [168, 315, 357],
-                [210, 280, 350],
-                [240, 252, 348]
-            ]
-        },
-        {
-            "uuid": "f5be5734-8aa0-4bd1-99a2-02adcc4402b4",
-            "description": "triplets for large number",
-            "property": "tripletsWithSum",
-            "input": {
-                "n": 30000
-            },
-            "expected": [
-                [1200, 14375, 14425],
-                [1875, 14000, 14125],
-                [5000, 12000, 13000],
-                [6000, 11250, 12750],
-                [7500, 10000, 12500]
-            ]
-        }
-    ]
+  "exercise": "pythagorean-triplet",
+  "cases": [
+    {
+      "uuid": "a19de65d-35b8-4480-b1af-371d9541e706",
+      "description": "triplets whose sum is 12",
+      "property": "tripletsWithSum",
+      "input": {
+        "n": 12
+      },
+      "expected": [
+        [3, 4, 5]
+      ]
+    },
+    {
+      "uuid": "48b21332-0a3d-43b2-9a52-90b2a6e5c9f5",
+      "description": "triplets whose sum is 108",
+      "property": "tripletsWithSum",
+      "input": {
+        "n": 108
+      },
+      "expected": [
+        [27, 36, 45]
+      ]
+    },
+    {
+      "uuid": "dffc1266-418e-4daa-81af-54c3e95c3bb5",
+      "description": "triplets whose sum is 1000",
+      "property": "tripletsWithSum",
+      "input": {
+        "n": 1000
+      },
+      "expected": [
+        [200, 375, 425]
+      ]
+    },
+    {
+      "uuid": "5f86a2d4-6383-4cce-93a5-e4489e79b186",
+      "description": "no matching triplets for 1001",
+      "property": "tripletsWithSum",
+      "input": {
+        "n": 1001
+      },
+      "expected": []
+    },
+    {
+      "uuid": "bf17ba80-1596-409a-bb13-343bdb3b2904",
+      "description": "returns all matching triplets",
+      "property": "tripletsWithSum",
+      "input": {
+        "n": 90
+      },
+      "expected": [
+        [9, 40, 41],
+        [15, 36, 39]
+      ]
+    },
+    {
+      "uuid": "9d8fb5d5-6c6f-42df-9f95-d3165963ac57",
+      "description": "several matching triplets",
+      "property": "tripletsWithSum",
+      "input": {
+        "n": 840
+      },
+      "expected": [
+        [40, 399, 401],
+        [56, 390, 394],
+        [105, 360, 375],
+        [120, 350, 370],
+        [140, 336, 364],
+        [168, 315, 357],
+        [210, 280, 350],
+        [240, 252, 348]
+      ]
+    },
+    {
+      "uuid": "f5be5734-8aa0-4bd1-99a2-02adcc4402b4",
+      "description": "triplets for large number",
+      "property": "tripletsWithSum",
+      "input": {
+        "n": 30000
+      },
+      "expected": [
+        [1200, 14375, 14425],
+        [1875, 14000, 14125],
+        [5000, 12000, 13000],
+        [6000, 11250, 12750],
+        [7500, 10000, 12500]
+      ]
+    }
+  ]
 }
