@@ -25,7 +25,7 @@
       "description": "Two of the same book",
       "comments": ["Suggested grouping, [[2],[2]]."],
       "input": {
-        "basket": [2,2]
+        "basket": [2, 2]
       },
       "expected": 1600
     },
@@ -45,7 +45,7 @@
       "description": "Two different books",
       "comments": ["Suggested grouping, [[1,2]]."],
       "input": {
-        "basket": [1,2]
+        "basket": [1, 2]
       },
       "expected": 1520
     },
@@ -55,7 +55,7 @@
       "description": "Three different books",
       "comments": ["Suggested grouping, [[1,2,3]]."],
       "input": {
-        "basket": [1,2,3]
+        "basket": [1, 2, 3]
       },
       "expected": 2160
     },
@@ -65,7 +65,7 @@
       "description": "Four different books",
       "comments": ["Suggested grouping, [[1,2,3,4]]."],
       "input": {
-        "basket": [1,2,3,4]
+        "basket": [1, 2, 3, 4]
       },
       "expected": 2560
     },
@@ -75,7 +75,7 @@
       "description": "Five different books",
       "comments": ["Suggested grouping, [[1,2,3,4,5]]."],
       "input": {
-        "basket": [1,2,3,4,5]
+        "basket": [1, 2, 3, 4, 5]
       },
       "expected": 3000
     },
@@ -85,7 +85,7 @@
       "description": "Two groups of four is cheaper than group of five plus group of three",
       "comments": ["Suggested grouping, [[1,2,3,4],[1,2,3,5]]."],
       "input": {
-        "basket": [1,1,2,2,3,3,4,5]
+        "basket": [1, 1, 2, 2, 3, 3, 4, 5]
       },
       "expected": 5120
     },
@@ -93,9 +93,11 @@
       "uuid": "f808b5a4-e01f-4c0d-881f-f7b90d9739da",
       "property": "total",
       "description": "Two groups of four is cheaper than groups of five and three",
-      "comments": ["Suggested grouping, [[1,2,4,5],[1,3,4,5]]. This differs from the other 'two groups of four' test in that it will fail for solutions that add books to groups in the order in which they appear in the list."],
+      "comments": [
+        "Suggested grouping, [[1,2,4,5],[1,3,4,5]]. This differs from the other 'two groups of four' test in that it will fail for solutions that add books to groups in the order in which they appear in the list."
+      ],
       "input": {
-        "basket": [1,1,2,3,4,4,5,5]
+        "basket": [1, 1, 2, 3, 4, 4, 5, 5]
       },
       "expected": 5120
     },
@@ -105,7 +107,7 @@
       "description": "Group of four plus group of two is cheaper than two groups of three",
       "comments": ["Suggested grouping, [[1,2,3,4],[1,2]]."],
       "input": {
-        "basket": [1,1,2,2,3,4]
+        "basket": [1, 1, 2, 2, 3, 4]
       },
       "expected": 4080
     },
@@ -115,7 +117,7 @@
       "description": "Two each of first 4 books and 1 copy each of rest",
       "comments": ["Suggested grouping, [[1,2,3,4,5],[1,2,3,4]]."],
       "input": {
-        "basket": [1,1,2,2,3,3,4,4,5]
+        "basket": [1, 1, 2, 2, 3, 3, 4, 4, 5]
       },
       "expected": 5560
     },
@@ -125,7 +127,7 @@
       "description": "Two copies of each book",
       "comments": ["Suggested grouping, [[1,2,3,4,5],[1,2,3,4,5]]."],
       "input": {
-        "basket": [1,1,2,2,3,3,4,4,5,5]
+        "basket": [1, 1, 2, 2, 3, 3, 4, 4, 5, 5]
       },
       "expected": 6000
     },
@@ -135,7 +137,7 @@
       "description": "Three copies of first book and 2 each of remaining",
       "comments": ["Suggested grouping, [[1,2,3,4,5],[1,2,3,4,5],[1]]."],
       "input": {
-        "basket": [1,1,2,2,3,3,4,4,5,5,1]
+        "basket": [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 1]
       },
       "expected": 6800
     },
@@ -145,7 +147,7 @@
       "description": "Three each of first 2 books and 2 each of remaining books",
       "comments": ["Suggested grouping, [[1,2,3,4,5],[1,2,3,4,5],[1,2]]."],
       "input": {
-        "basket": [1,1,2,2,3,3,4,4,5,5,1,2]
+        "basket": [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 1, 2]
       },
       "expected": 7520
     },
@@ -153,9 +155,11 @@
       "uuid": "bb376344-4fb2-49ab-ab85-e38d8354a58d",
       "property": "total",
       "description": "Four groups of four are cheaper than two groups each of five and three",
-      "comments": ["Suggested grouping, [[1,2,3,4],[1,2,3,5],[1,2,3,4],[1,2,3,5]]."],
+      "comments": [
+        "Suggested grouping, [[1,2,3,4],[1,2,3,5],[1,2,3,4],[1,2,3,5]]."
+      ],
       "input": {
-        "basket": [1,1,2,2,3,3,4,5,1,1,2,2,3,3,4,5]
+        "basket": [1, 1, 2, 2, 3, 3, 4, 5, 1, 1, 2, 2, 3, 3, 4, 5]
       },
       "expected": 10240
     },
@@ -163,9 +167,13 @@
       "uuid": "5260ddde-2703-4915-b45a-e54dbbac4303",
       "property": "total",
       "description": "Check that groups of four are created properly even when there are more groups of three than groups of five",
-      "comments": ["Suggested grouping, [[1,2,3,4],[1,2,3,5],[1,2,3,4],[1,2,3,5],[1,2,3],[1,2,3]]."],
+      "comments": [
+        "Suggested grouping, [[1,2,3,4],[1,2,3,5],[1,2,3,4],[1,2,3,5],[1,2,3],[1,2,3]]."
+      ],
       "input": {
-        "basket": [1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,4,4,5,5]
+        "basket": [
+          1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 5, 5
+        ]
       },
       "expected": 14560
     },
@@ -175,7 +183,7 @@
       "description": "One group of one and four is cheaper than one group of two and three",
       "comments": ["Suggested grouping, [[1],[1,2,3,4]]."],
       "input": {
-        "basket": [1,1,2,3,4]
+        "basket": [1, 1, 2, 3, 4]
       },
       "expected": 3360
     },
@@ -183,9 +191,11 @@
       "uuid": "cf868453-6484-4ae1-9dfc-f8ee85bbde01",
       "property": "total",
       "description": "One group of one and two plus three groups of four is cheaper than one group of each size",
-      "comments": ["Suggested grouping, [[5],[5,4],[5,4,3,2],[5,4,3,2],[5,4,3,1]]."],
+      "comments": [
+        "Suggested grouping, [[5],[5,4],[5,4,3,2],[5,4,3,2],[5,4,3,1]]."
+      ],
       "input": {
-        "basket": [1,2,2,3,3,3,4,4,4,4,5,5,5,5,5]
+        "basket": [1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5]
       },
       "expected": 10000
     }
