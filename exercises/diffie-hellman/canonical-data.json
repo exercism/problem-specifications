@@ -63,9 +63,7 @@
         "privateKey": 15
       },
       "expected": 19,
-      "scenarios": [
-        "immutable"
-      ]
+      "scenarios": ["immutable"]
     },
     {
       "uuid": "cd02ad45-3f52-4510-99cc-5161dad948a8",
