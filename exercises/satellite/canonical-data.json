@@ -16,25 +16,27 @@
       "description": "Tree with one item",
       "property": "treeFromTraversals",
       "input": {
-          "preorder": ["a"],
-          "inorder": ["a"]
+        "preorder": ["a"],
+        "inorder": ["a"]
       },
-      "expected": {"v": "a", "l": {}, "r": {}}
+      "expected": { "v": "a", "l": {}, "r": {} }
     },
     {
       "uuid": "a0121d5f-37b0-48dd-9c64-cba4c4464135",
       "description": "Tree with many items",
       "property": "treeFromTraversals",
       "input": {
-          "preorder": ["a", "i", "x", "f", "r"],
-          "inorder": ["i", "a", "f", "x", "r"]
+        "preorder": ["a", "i", "x", "f", "r"],
+        "inorder": ["i", "a", "f", "x", "r"]
       },
-      "expected": {"v": "a",
-          "l": {"v": "i", "l": {}, "r": {}},
-          "r": {"v": "x",
-              "l": {"v": "f", "l": {}, "r": {}},
-              "r": {"v": "r", "l": {}, "r": {}}
-          }
+      "expected": {
+        "v": "a",
+        "l": { "v": "i", "l": {}, "r": {} },
+        "r": {
+          "v": "x",
+          "l": { "v": "f", "l": {}, "r": {} },
+          "r": { "v": "r", "l": {}, "r": {} }
+        }
       }
     },
     {
@@ -45,17 +47,21 @@
         "preorder": ["a", "b"],
         "inorder": ["b", "a", "r"]
       },
-      "expected": {"error": "traversals must have the same length"}
+      "expected": {
+        "error": "traversals must have the same length"
+      }
     },
     {
       "uuid": "27916ce4-45f3-4d8b-8528-496fedc157ca",
       "description": "Reject inconsistent traversals of same length",
       "property": "treeFromTraversals",
       "input": {
-          "preorder": ["x", "y", "z"],
-          "inorder": ["a", "b", "c"]
+        "preorder": ["x", "y", "z"],
+        "inorder": ["a", "b", "c"]
       },
-      "expected": {"error": "traversals must have the same elements"}
+      "expected": {
+        "error": "traversals must have the same elements"
+      }
     },
     {
       "uuid": "d86a3d72-76a9-43b5-9d3a-e64cb1216035",
@@ -65,7 +71,9 @@
         "preorder": ["a", "b", "a"],
         "inorder": ["b", "a", "a"]
       },
-      "expected": {"error": "traversals must contain unique items"}
+      "expected": {
+        "error": "traversals must contain unique items"
+      }
     }
   ]
 }
