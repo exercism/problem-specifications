@@ -1,1 +1,3 @@
-Check [Exercism's Style Guide](https://exercism.org/docs/building/markdown/style-guide) for more information.
+# Moved
+
+This file has now moved to the [docs repository](https://github.com/exercism/docs/blob/main/contributing/standards/style-guide.md).

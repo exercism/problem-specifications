@@ -115,3 +115,14 @@ jobs:
           done < $scenarios_file
 
           exit "$fail"
+
+  markdown-lint:
+    name: Lint markdown files
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579
+
+      - uses: DavidAnson/markdownlint-cli2-action@75ca8bd12ca0eba81ae8ebdb07b6609632c2e025
+        with:
+          globs: |
+            **/*.md
