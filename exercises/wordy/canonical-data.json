@@ -148,7 +148,9 @@
       "input": {
         "question": "What is 52 cubed?"
       },
-      "expected": {"error": "unknown operation"}
+      "expected": {
+        "error": "unknown operation"
+      }
     },
     {
       "uuid": "8a7e85a8-9e7b-4d46-868f-6d759f4648f8",
@@ -157,7 +159,9 @@
       "input": {
         "question": "Who is the President of the United States?"
       },
-      "expected": {"error": "unknown operation"}
+      "expected": {
+        "error": "unknown operation"
+      }
     },
     {
       "uuid": "42d78b5f-dbd7-4cdb-8b30-00f794bb24cf",
@@ -166,7 +170,9 @@
       "input": {
         "question": "What is 1 plus?"
       },
-      "expected": {"error": "syntax error"}
+      "expected": {
+        "error": "syntax error"
+      }
     },
     {
       "uuid": "c2c3cbfc-1a72-42f2-b597-246e617e66f5",
@@ -175,7 +181,9 @@
       "input": {
         "question": "What is?"
       },
-      "expected": {"error": "syntax error"}
+      "expected": {
+        "error": "syntax error"
+      }
     },
     {
       "uuid": "4b3df66d-6ed5-4c95-a0a1-d38891fbdab6",
@@ -184,7 +192,9 @@
       "input": {
         "question": "What is 1 plus plus 2?"
       },
-      "expected": {"error": "syntax error"}
+      "expected": {
+        "error": "syntax error"
+      }
     },
     {
       "uuid": "6abd7a50-75b4-4665-aa33-2030fd08bab1",
@@ -193,7 +203,9 @@
       "input": {
         "question": "What is 1 plus 2 1?"
       },
-      "expected": {"error": "syntax error"}
+      "expected": {
+        "error": "syntax error"
+      }
     },
     {
       "uuid": "10a56c22-e0aa-405f-b1d2-c642d9c4c9de",
@@ -202,7 +214,9 @@
       "input": {
         "question": "What is 1 2 plus?"
       },
-      "expected": {"error": "syntax error"}
+      "expected": {
+        "error": "syntax error"
+      }
     },
     {
       "uuid": "0035bc63-ac43-4bb5-ad6d-e8651b7d954e",
@@ -211,7 +225,9 @@
       "input": {
         "question": "What is plus 1 2?"
       },
-      "expected": {"error": "syntax error"}
+      "expected": {
+        "error": "syntax error"
+      }
     }
   ]
 }
