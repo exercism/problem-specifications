@@ -38,7 +38,18 @@
       "description": "Colors",
       "property": "colors",
       "input": {},
-      "expected": ["black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white"]
+      "expected": [
+        "black",
+        "brown",
+        "red",
+        "orange",
+        "yellow",
+        "green",
+        "blue",
+        "violet",
+        "grey",
+        "white"
+      ]
     }
   ]
 }
