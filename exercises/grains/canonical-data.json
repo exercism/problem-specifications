@@ -78,7 +78,9 @@
           "input": {
             "square": 0
           },
-          "expected": {"error": "square must be between 1 and 64"}
+          "expected": {
+            "error": "square must be between 1 and 64"
+          }
         },
         {
           "uuid": "61974483-eeb2-465e-be54-ca5dde366453",
@@ -87,7 +89,9 @@
           "input": {
             "square": -1
           },
-          "expected": {"error": "square must be between 1 and 64"}
+          "expected": {
+            "error": "square must be between 1 and 64"
+          }
         },
         {
           "uuid": "a95e4374-f32c-45a7-a10d-ffec475c012f",
@@ -96,7 +100,9 @@
           "input": {
             "square": 65
           },
-          "expected": {"error": "square must be between 1 and 64"}
+          "expected": {
+            "error": "square must be between 1 and 64"
+          }
         }
       ]
     },
