@@ -1,5 +1,5 @@
 {
-"exercise": "hamming",
+  "exercise": "hamming",
   "comments": [
     "Language implementations vary on the issue of unequal length strands.",
     "A language may elect to simplify this task by only presenting equal",
@@ -68,7 +68,9 @@
         "strand1": "AATG",
         "strand2": "AAA"
       },
-      "expected": {"error": "left and right strands must be of equal length"}
+      "expected": {
+        "error": "left and right strands must be of equal length"
+      }
     },
     {
       "uuid": "b9228bb1-465f-4141-b40f-1f99812de5a8",
@@ -80,7 +82,9 @@
         "strand1": "AATG",
         "strand2": "AAA"
       },
-      "expected": {"error": "strands must be of equal length"}
+      "expected": {
+        "error": "strands must be of equal length"
+      }
     },
     {
       "uuid": "8a2d4ed0-ead5-4fdd-924d-27c4cf56e60e",
@@ -90,7 +94,9 @@
         "strand1": "ATA",
         "strand2": "AGTG"
       },
-      "expected": {"error": "left and right strands must be of equal length"}
+      "expected": {
+        "error": "left and right strands must be of equal length"
+      }
     },
     {
       "uuid": "dab38838-26bb-4fff-acbe-3b0a9bfeba2d",
@@ -102,7 +108,9 @@
         "strand1": "ATA",
         "strand2": "AGTG"
       },
-      "expected": {"error": "strands must be of equal length"}
+      "expected": {
+        "error": "strands must be of equal length"
+      }
     },
     {
       "uuid": "5dce058b-28d4-4ca7-aa64-adfe4e17784c",
@@ -112,7 +120,9 @@
         "strand1": "",
         "strand2": "G"
       },
-      "expected": {"error": "left strand must not be empty"}
+      "expected": {
+        "error": "left strand must not be empty"
+      }
     },
     {
       "uuid": "db92e77e-7c72-499d-8fe6-9354d2bfd504",
@@ -124,7 +134,9 @@
         "strand1": "",
         "strand2": "G"
       },
-      "expected": {"error": "left and right strands must be of equal length"}
+      "expected": {
+        "error": "left and right strands must be of equal length"
+      }
     },
     {
       "uuid": "b764d47c-83ff-4de2-ab10-6cfe4b15c0f3",
@@ -136,7 +148,9 @@
         "strand1": "",
         "strand2": "G"
       },
-      "expected": {"error": "strands must be of equal length"}
+      "expected": {
+        "error": "strands must be of equal length"
+      }
     },
     {
       "uuid": "38826d4b-16fb-4639-ac3e-ba027dec8b5f",
@@ -146,7 +160,9 @@
         "strand1": "G",
         "strand2": ""
       },
-      "expected": {"error": "right strand must not be empty"}
+      "expected": {
+        "error": "right strand must not be empty"
+      }
     },
     {
       "uuid": "920cd6e3-18f4-4143-b6b8-74270bb8f8a3",
@@ -158,7 +174,9 @@
         "strand1": "G",
         "strand2": ""
       },
-      "expected": {"error": "left and right strands must be of equal length"}
+      "expected": {
+        "error": "left and right strands must be of equal length"
+      }
     },
     {
       "uuid": "9ab9262f-3521-4191-81f5-0ed184a5aa89",
@@ -170,7 +188,9 @@
         "strand1": "G",
         "strand2": ""
       },
-      "expected": {"error": "strands must be of equal length"}
+      "expected": {
+        "error": "strands must be of equal length"
+      }
     }
   ]
 }
