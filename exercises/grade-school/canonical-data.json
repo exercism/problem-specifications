@@ -37,7 +37,11 @@
       "description": "Adding multiple students in the same grade in the roster",
       "property": "add",
       "input": {
-        "students": [["Blair", 2], ["James", 2], ["Paul", 2]]
+        "students": [
+          ["Blair", 2],
+          ["James", 2],
+          ["Paul", 2]
+        ]
       },
       "expected": [true, true, true]
     },
@@ -46,7 +50,11 @@
       "description": "Multiple students in the same grade are added to the roster",
       "property": "roster",
       "input": {
-        "students": [["Blair", 2], ["James", 2], ["Paul", 2]]
+        "students": [
+          ["Blair", 2],
+          ["James", 2],
+          ["Paul", 2]
+        ]
       },
       "expected": ["Blair", "James", "Paul"]
     },
@@ -55,7 +63,12 @@
       "description": "Cannot add student to same grade in the roster more than once",
       "property": "add",
       "input": {
-        "students": [["Blair", 2], ["James", 2], ["James", 2], ["Paul", 2]]
+        "students": [
+          ["Blair", 2],
+          ["James", 2],
+          ["James", 2],
+          ["Paul", 2]
+        ]
       },
       "expected": [true, true, false, true]
     },
@@ -64,7 +77,10 @@
       "description": "A student can't be in two different grades",
       "property": "roster",
       "input": {
-        "students": [["Aimee", 2], ["Aimee", 1]],
+        "students": [
+          ["Aimee", 2],
+          ["Aimee", 1]
+        ],
         "desiredGrade": 2
       },
       "expected": []
@@ -72,13 +88,14 @@
     {
       "uuid": "a0c7b9b8-0e89-47f8-8b4a-c50f885e79d1",
       "reimplements": "c125dab7-2a53-492f-a99a-56ad511940d8",
-      "comments": [
-        "Reimplemented to be logically consistent"
-      ],
+      "comments": ["Reimplemented to be logically consistent"],
       "description": "A student can only be added to the same grade in the roster once",
       "property": "roster",
       "input": {
-        "students": [["Aimee", 2], ["Aimee", 2]]
+        "students": [
+          ["Aimee", 2],
+          ["Aimee", 2]
+        ]
       },
       "expected": ["Aimee"]
     },
@@ -92,7 +109,12 @@
       ],
       "property": "roster",
       "input": {
-        "students": [["Blair", 2], ["James", 2], ["James", 2], ["Paul", 2]]
+        "students": [
+          ["Blair", 2],
+          ["James", 2],
+          ["James", 2],
+          ["Paul", 2]
+        ]
       },
       "expected": ["Blair", "James", "Paul"]
     },
@@ -101,7 +123,10 @@
       "description": "Adding students in multiple grades",
       "property": "add",
       "input": {
-        "students": [["Chelsea", 3], ["Logan", 7]]
+        "students": [
+          ["Chelsea", 3],
+          ["Logan", 7]
+        ]
       },
       "expected": [true, true]
     },
@@ -110,7 +135,10 @@
       "description": "Students in multiple grades are added to the roster",
       "property": "roster",
       "input": {
-        "students": [["Chelsea", 3], ["Logan", 7]]
+        "students": [
+          ["Chelsea", 3],
+          ["Logan", 7]
+        ]
       },
       "expected": ["Chelsea", "Logan"]
     },
@@ -119,20 +147,26 @@
       "description": "Cannot add same student to multiple grades in the roster",
       "property": "add",
       "input": {
-        "students": [["Blair", 2], ["James", 2], ["James", 3], ["Paul", 3]]
+        "students": [
+          ["Blair", 2],
+          ["James", 2],
+          ["James", 3],
+          ["Paul", 3]
+        ]
       },
       "expected": [true, true, false, true]
     },
     {
       "uuid": "6a03b61e-1211-4783-a3cc-fc7f773fba3f",
       "reimplements": "c125dab7-2a53-492f-a99a-56ad511940d8",
-      "comments": [
-        "Reimplemented to be logically consistent"
-      ],
+      "comments": ["Reimplemented to be logically consistent"],
       "description": "A student cannot be added to more than one grade in the sorted roster",
       "property": "roster",
       "input": {
-        "students": [["Aimee", 2], ["Aimee", 1]]
+        "students": [
+          ["Aimee", 2],
+          ["Aimee", 1]
+        ]
       },
       "expected": ["Aimee"]
     },
@@ -146,7 +180,12 @@
       "description": "Student not added to multiple grades in the roster",
       "property": "roster",
       "input": {
-        "students": [["Blair", 2], ["James", 2], ["James", 3], ["Paul", 3]]
+        "students": [
+          ["Blair", 2],
+          ["James", 2],
+          ["James", 3],
+          ["Paul", 3]
+        ]
       },
       "expected": ["Blair", "James", "Paul"]
     },
@@ -155,7 +194,11 @@
       "description": "Students are sorted by grades in the roster",
       "property": "roster",
       "input": {
-        "students": [["Jim", 3], ["Peter", 2], ["Anna", 1]]
+        "students": [
+          ["Jim", 3],
+          ["Peter", 2],
+          ["Anna", 1]
+        ]
       },
       "expected": ["Anna", "Peter", "Jim"]
     },
@@ -164,7 +207,11 @@
       "description": "Students are sorted by name in the roster",
       "property": "roster",
       "input": {
-        "students": [["Peter", 2], ["Zoe", 2], ["Alex", 2]]
+        "students": [
+          ["Peter", 2],
+          ["Zoe", 2],
+          ["Alex", 2]
+        ]
       },
       "expected": ["Alex", "Peter", "Zoe"]
     },
@@ -173,7 +220,15 @@
       "description": "Students are sorted by grades and then by name in the roster",
       "property": "roster",
       "input": {
-        "students": [["Peter", 2], ["Anna", 1], ["Barb", 1], ["Zoe", 2], ["Alex", 2], ["Jim", 3], ["Charlie", 1]]
+        "students": [
+          ["Peter", 2],
+          ["Anna", 1],
+          ["Barb", 1],
+          ["Zoe", 2],
+          ["Alex", 2],
+          ["Jim", 3],
+          ["Charlie", 1]
+        ]
       },
       "expected": ["Anna", "Barb", "Charlie", "Alex", "Peter", "Zoe", "Jim"]
     },
@@ -192,7 +247,12 @@
       "description": "Grade is empty if no students in that grade",
       "property": "grade",
       "input": {
-        "students": [["Peter", 2], ["Zoe", 2], ["Alex", 2], ["Jim", 3]],
+        "students": [
+          ["Peter", 2],
+          ["Zoe", 2],
+          ["Alex", 2],
+          ["Jim", 3]
+        ],
         "desiredGrade": 1
       },
       "expected": []
@@ -202,7 +262,12 @@
       "description": "Student not added to same grade more than once",
       "property": "grade",
       "input": {
-        "students": [["Blair", 2], ["James", 2], ["James", 2], ["Paul", 2]],
+        "students": [
+          ["Blair", 2],
+          ["James", 2],
+          ["James", 2],
+          ["Paul", 2]
+        ],
         "desiredGrade": 2
       },
       "expected": ["Blair", "James", "Paul"]
@@ -212,7 +277,12 @@
       "description": "Student not added to multiple grades",
       "property": "grade",
       "input": {
-        "students": [["Blair", 2], ["James", 2], ["James", 3], ["Paul", 3]],
+        "students": [
+          ["Blair", 2],
+          ["James", 2],
+          ["James", 3],
+          ["Paul", 3]
+        ],
         "desiredGrade": 2
       },
       "expected": ["Blair", "James"]
@@ -222,7 +292,12 @@
       "description": "Student not added to other grade for multiple grades",
       "property": "grade",
       "input": {
-        "students": [["Blair", 2], ["James", 2], ["James", 3], ["Paul", 3]],
+        "students": [
+          ["Blair", 2],
+          ["James", 2],
+          ["James", 3],
+          ["Paul", 3]
+        ],
         "desiredGrade": 3
       },
       "expected": ["Paul"]
@@ -232,7 +307,11 @@
       "description": "Students are sorted by name in a grade",
       "property": "grade",
       "input": {
-        "students": [["Franklin", 5], ["Bradley", 5], ["Jeff", 1]],
+        "students": [
+          ["Franklin", 5],
+          ["Bradley", 5],
+          ["Jeff", 1]
+        ],
         "desiredGrade": 5
       },
       "expected": ["Bradley", "Franklin"]
