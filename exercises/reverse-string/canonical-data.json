@@ -1,8 +1,6 @@
 {
   "exercise": "reverse-string",
-  "comments": [
-    "If property based testing tools are available, a good property to test is reversing a string twice: reverse(reverse(string)) == string"
-  ],
+  "comments": ["If property based testing tools are available, a good property to test is reversing a string twice: reverse(reverse(string)) == string"],
   "cases": [
     {
       "uuid": "c3b7d806-dced-49ee-8543-933fd1719b1c",
