@@ -61,6 +61,22 @@
         ["b1", "b2", "b3"],
         ["c1", "c2", "c3"]
       ]
+    },
+    {
+      "uuid": "0b357334-4cad-49e1-a741-425202edfc7c",
+      "description": "accumulate recursively",
+      "property": "accumulate",
+      "reimplements": "bee8e9b6-b16f-4cd2-be3b-ccf7457e50bb",
+      "comments": ["Removes the trailing `)` at the end of the expression"],
+      "input": {
+        "list": ["a", "b", "c"],
+        "accumulator": "(x) => accumulate([\"1\", \"2\", \"3\"], (y) => x + y)"
+      },
+      "expected": [
+        ["a1", "a2", "a3"],
+        ["b1", "b2", "b3"],
+        ["c1", "c2", "c3"]
+      ]
     }
   ]
 }
