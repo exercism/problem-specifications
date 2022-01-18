@@ -290,7 +290,3 @@ yarn run test-one exercises/<exercise>/canonical-data.json
 ```
 
 Replace `<exercise>` by the name of exercise which you want to check.
-
-## Github Action Workflows
-
-See [`workflows/README.md`](./workflows/README.md)
