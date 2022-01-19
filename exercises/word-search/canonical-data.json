@@ -7,8 +7,12 @@
       "description": "Should accept an initial game grid and a target search word",
       "property": "search",
       "input": {
-        "grid": ["jefblpepre"],
-        "wordsToSearchFor": ["clojure"]
+        "grid": [
+          "jefblpepre"
+        ],
+        "wordsToSearchFor": [
+          "clojure"
+        ]
       },
       "expected": {
         "clojure": null
@@ -19,8 +23,12 @@
       "description": "Should locate one word written left to right",
       "property": "search",
       "input": {
-        "grid": ["clojurermt"],
-        "wordsToSearchFor": ["clojure"]
+        "grid": [
+          "clojurermt"
+        ],
+        "wordsToSearchFor": [
+          "clojure"
+        ]
       },
       "expected": {
         "clojure": {
@@ -40,8 +48,12 @@
       "description": "Should locate the same word written left to right in a different position",
       "property": "search",
       "input": {
-        "grid": ["mtclojurer"],
-        "wordsToSearchFor": ["clojure"]
+        "grid": [
+          "mtclojurer"
+        ],
+        "wordsToSearchFor": [
+          "clojure"
+        ]
       },
       "expected": {
         "clojure": {
@@ -61,8 +73,12 @@
       "description": "Should locate a different left to right word",
       "property": "search",
       "input": {
-        "grid": ["coffeelplx"],
-        "wordsToSearchFor": ["coffee"]
+        "grid": [
+          "coffeelplx"
+        ],
+        "wordsToSearchFor": [
+          "coffee"
+        ]
       },
       "expected": {
         "coffee": {
@@ -82,8 +98,12 @@
       "description": "Should locate that different left to right word in a different position",
       "property": "search",
       "input": {
-        "grid": ["xcoffeezlp"],
-        "wordsToSearchFor": ["coffee"]
+        "grid": [
+          "xcoffeezlp"
+        ],
+        "wordsToSearchFor": [
+          "coffee"
+        ]
       },
       "expected": {
         "coffee": {
@@ -103,8 +123,13 @@
       "description": "Should locate a left to right word in two line grid",
       "property": "search",
       "input": {
-        "grid": ["jefblpepre", "tclojurerm"],
-        "wordsToSearchFor": ["clojure"]
+        "grid": [
+          "jefblpepre",
+          "tclojurerm"
+        ],
+        "wordsToSearchFor": [
+          "clojure"
+        ]
       },
       "expected": {
         "clojure": {
@@ -124,8 +149,14 @@
       "description": "Should locate a left to right word in three line grid",
       "property": "search",
       "input": {
-        "grid": ["camdcimgtc", "jefblpepre", "clojurermt"],
-        "wordsToSearchFor": ["clojure"]
+        "grid": [
+          "camdcimgtc",
+          "jefblpepre",
+          "clojurermt"
+        ],
+        "wordsToSearchFor": [
+          "clojure"
+        ]
       },
       "expected": {
         "clojure": {
@@ -157,7 +188,9 @@
           "jalaycalmp",
           "clojurermt"
         ],
-        "wordsToSearchFor": ["clojure"]
+        "wordsToSearchFor": [
+          "clojure"
+        ]
       },
       "expected": {
         "clojure": {
@@ -189,7 +222,9 @@
           "clojurermt",
           "jalaycalmp"
         ],
-        "wordsToSearchFor": ["clojure"]
+        "wordsToSearchFor": [
+          "clojure"
+        ]
       },
       "expected": {
         "clojure": {
@@ -221,7 +256,9 @@
           "clojurermt",
           "jalaycalmp"
         ],
-        "wordsToSearchFor": ["fortran"]
+        "wordsToSearchFor": [
+          "fortran"
+        ]
       },
       "expected": {
         "fortran": {
@@ -253,7 +290,10 @@
           "jalaycalmp",
           "clojurermt"
         ],
-        "wordsToSearchFor": ["fortran", "clojure"]
+        "wordsToSearchFor": [
+          "fortran",
+          "clojure"
+        ]
       },
       "expected": {
         "clojure": {
@@ -283,8 +323,12 @@
       "description": "Should locate a single word written right to left",
       "property": "search",
       "input": {
-        "grid": ["rixilelhrs"],
-        "wordsToSearchFor": ["elixir"]
+        "grid": [
+          "rixilelhrs"
+        ],
+        "wordsToSearchFor": [
+          "elixir"
+        ]
       },
       "expected": {
         "elixir": {
@@ -316,7 +360,10 @@
           "jalaycalmp",
           "clojurermt"
         ],
-        "wordsToSearchFor": ["elixir", "clojure"]
+        "wordsToSearchFor": [
+          "elixir",
+          "clojure"
+        ]
       },
       "expected": {
         "clojure": {
@@ -358,7 +405,11 @@
           "jalaycalmp",
           "clojurermt"
         ],
-        "wordsToSearchFor": ["clojure", "elixir", "ecmascript"]
+        "wordsToSearchFor": [
+          "clojure",
+          "elixir",
+          "ecmascript"
+        ]
       },
       "expected": {
         "clojure": {
@@ -410,7 +461,12 @@
           "jalaycalmp",
           "clojurermt"
         ],
-        "wordsToSearchFor": ["clojure", "elixir", "ecmascript", "rust"]
+        "wordsToSearchFor": [
+          "clojure",
+          "elixir",
+          "ecmascript",
+          "rust"
+        ]
       },
       "expected": {
         "clojure": {
@@ -472,7 +528,13 @@
           "jalaycalmp",
           "clojurermt"
         ],
-        "wordsToSearchFor": ["clojure", "elixir", "ecmascript", "rust", "java"]
+        "wordsToSearchFor": [
+          "clojure",
+          "elixir",
+          "ecmascript",
+          "rust",
+          "java"
+        ]
       },
       "expected": {
         "clojure": {
