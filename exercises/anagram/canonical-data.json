@@ -161,6 +161,16 @@
         "candidates": ["Listen", "Silent", "LISTEN"]
       },
       "expected": ["Silent"]
+    },
+    {
+      "uuid": "a0705568-628c-4b55-9798-82e4acde51cb",
+      "description": "schema test",
+      "property": "findAnagrams",
+      "input": {
+        "subject": "LISTEN",
+        "a weird key like this doesn't violate the schema!!!": ["Listen", "Silent", "LISTEN"]
+      },
+      "expected": ["Silent"]
     }
   ]
 }
