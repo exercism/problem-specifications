@@ -111,7 +111,7 @@
       "uuid":
           { "description": "A version 4 UUID (compliant with RFC 4122) in the canonical textual representation"
           , "type"       : "string"
-          , "pattern"    : "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+          , "format"     : "uuid"
           },
 
       "scenario":
