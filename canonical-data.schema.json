@@ -27,12 +27,44 @@
    "self": { "vendor" : "io.exercism"
            , "name"   : "canonical-data"
            , "format" : "jsonschema"
-           , "version": "1-1-0"
+           , "version": "1-2-0"
            },
 
-   "$ref": "#/definitions/canonicalData",
+   "$ref": "#/definitions/lowerCamelCaseCanonicalData",
 
    "definitions":{
+
+      "lowerCamelCaseArray":
+          { "type" : "array"
+          , "items": { "$ref": "#/definitions/lowerCamelCaseValue" }
+          },
+
+      "lowerCamelCaseObject":
+          { "type": "object"
+          , "patternProperties":
+              { "^[a-z]+([A-Z][a-z]+)*[A-Z]?$":
+                  { "$ref": "#/definitions/lowerCamelCaseValue" }
+              }
+          , "additionalProperties": false
+          },
+
+      "lowerCamelCaseValue":
+          { "anyOf":
+              [ { "type": "boolean"                            }
+              , { "type": "null"                               }
+              , { "type": "number"                             }
+              , { "type": "string"                             }
+              , { "$ref": "#/definitions/lowerCamelCaseArray"  }
+              , { "$ref": "#/definitions/lowerCamelCaseObject" }
+              ]
+          },
+
+      "lowerCamelCaseCanonicalData":
+          { "allOf":
+              [ { "$ref": "#/definitions/lowerCamelCaseObject" }
+              , { "$ref": "#/definitions/canonicalData"        }
+              ]
+          },
 
       "canonicalData":
           { "description": "This is the top-level file structure"
