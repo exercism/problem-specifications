@@ -69,7 +69,7 @@
           "uuid": "0f998f19-69ee-4c64-80ef-01b086feab80",
           "description": "Imaginary part of a number with real and imaginary part",
           "property": "imaginary",
-          "input":  {
+          "input": {
             "z": [1, 2]
           },
           "expected": 2
@@ -331,7 +331,7 @@
           "uuid": "6d96d4c6-2edb-445b-94a2-7de6d4caaf60",
           "description": "Euler's identity/formula",
           "property": "exp",
-          "input":  {
+          "input": {
             "z": [0, "pi"]
           },
           "expected": [-1, 0]
