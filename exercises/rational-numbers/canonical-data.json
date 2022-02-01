@@ -261,6 +261,15 @@
             "r": [0, 1]
           },
           "expected": [0, 1]
+        },
+        {
+          "uuid": "4a8c939f-f958-473b-9f88-6ad0f83bb4c4",
+          "description": "Absolute value of a rational number is reduced to lowest terms",
+          "property": "abs",
+          "input": {
+            "r": [2, 4]
+          },
+          "expected": [1, 2]
         }
       ]
     },
