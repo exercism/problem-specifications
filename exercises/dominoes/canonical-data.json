@@ -162,11 +162,8 @@
       "uuid": "44704c7c-3adb-4d98-bd30-f45527cf8b49",
       "description": "separate three-domino loops",
       "comments": [
-        "Some solutions use nessecary but not sufficient condition:",
-        "'every stone has at least two other neighbors'.           ",
-        "It is counterexample:                                     ",
-        "one cannot chain these dominoes,                          ",
-        "but all of them satisfies stated condition.               "
+        "Some solutions only check if each stone has at least two other neighbors,       ",
+        "but this test case should still fail due to the separate loops not being linked."
       ],
       "property": "canChain",
       "input": {
