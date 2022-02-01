@@ -1005,23 +1005,6 @@
     {
       "uuid": "fda5b937-6774-4a52-8f89-f64ed833b175",
       "description": "Should fail to locate words that are not on horizontal, vertical, or diagonal lines",
-      "comments": [
-        "This test case filters out solutions,",
-        "those are give false positive results,",
-        "that are likely to achieve by considering linear paths other than horizontal, vertical or diagonal, e.g.",
-        "",
-        "```",
-        "[a][ ][ ]",
-        "[ ][e][f]",
-        "```",
-        "",
-        "or",
-        "",
-        "```",
-        "[a][b][ ]",
-        "[ ][ ][f]",
-        "```"
-      ],
       "property": "search",
       "input": {
         "grid": [
