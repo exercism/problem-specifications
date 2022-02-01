@@ -129,7 +129,9 @@
       "input": {
         "number": -1
       },
-      "expected": {"error": "input out of range"}
+      "expected": {
+        "error": "input out of range"
+      }
     },
     {
       "uuid": "4d6492eb-5853-4d16-9d34-b0f61b261fd9",
@@ -138,7 +140,9 @@
       "input": {
         "number": 1000000000000
       },
-      "expected": {"error": "input out of range"}
+      "expected": {
+        "error": "input out of range"
+      }
     }
   ]
 }

@@ -142,7 +142,9 @@ The file format is described in [canonical-data.schema.json](./canonical-data.sc
             "firstName": "HAL",
             "lastName": "9000"
           },
-          "expected": { "error": "You should never bar a number" }
+          "expected": {
+            "error": "You should never bar a number"
+          }
         }
       ]
     }

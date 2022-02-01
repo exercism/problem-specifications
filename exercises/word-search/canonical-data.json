@@ -1,8 +1,6 @@
 {
   "exercise": "word-search",
-  "comments": [
-    "Grid rows and columns are 1-indexed."
-  ],
+  "comments": ["Grid rows and columns are 1-indexed."],
   "cases": [
     {
       "uuid": "b4057815-0d01-41f0-9119-6a91f54b2a0a",

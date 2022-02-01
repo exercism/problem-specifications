@@ -156,7 +156,7 @@
     {
       "uuid": "432de891-7fd6-4748-a7f6-156082eeca2f",
       "description": "911 is CMXI",
-      "comments":["Because 900 is 1000 - 100"],
+      "comments": ["Because 900 is 1000 - 100"],
       "property": "roman",
       "input": {
         "number": 911

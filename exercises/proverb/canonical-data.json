@@ -1,108 +1,92 @@
 {
-    "exercise": "proverb",
-    "comments": [
-        "JSON doesn't allow for multi-line strings, so all expected outputs are presented ",
-        "here as arrays of strings. It's up to the test generator to join the ",
-        "lines together with line breaks. "
-    ],
-    "cases": [
-        {
-            "uuid": "e974b73e-7851-484f-8d6d-92e07fe742fc",
-            "description": "zero pieces",
-            "property": "recite",
-            "input": {
-              "strings": []
-            },
-            "expected": []
-        },
-        {
-            "uuid": "2fcd5f5e-8b82-4e74-b51d-df28a5e0faa4",
-            "description": "one piece",
-            "property": "recite",
-            "input": {
-              "strings": [
-                "nail"
-              ]
-            },
-            "expected": [
-                "And all for the want of a nail."
-            ]
-        },
-        {
-            "uuid": "d9d0a8a1-d933-46e2-aa94-eecf679f4b0e",
-            "description": "two pieces",
-            "property": "recite",
-            "input": {
-              "strings": [
-                "nail",
-                "shoe"
-              ]
-            },
-            "expected": [
-                "For want of a nail the shoe was lost.",
-                "And all for the want of a nail."
-            ]
-        },
-        {
-            "uuid": "c95ef757-5e94-4f0d-a6cb-d2083f5e5a83",
-            "description": "three pieces",
-            "property": "recite",
-            "input": {
-              "strings": [
-                "nail",
-                "shoe",
-                "horse"
-              ]
-            },
-            "expected": [
-                "For want of a nail the shoe was lost.",
-                "For want of a shoe the horse was lost.",
-                "And all for the want of a nail."
-            ]
-        },
-        {
-            "uuid": "433fb91c-35a2-4d41-aeab-4de1e82b2126",
-            "description": "full proverb",
-            "property": "recite",
-            "input": {
-              "strings": [
-                "nail",
-                "shoe",
-                "horse",
-                "rider",
-                "message",
-                "battle",
-                "kingdom"
-              ]
-            },
-            "expected": [
-                "For want of a nail the shoe was lost.",
-                "For want of a shoe the horse was lost.",
-                "For want of a horse the rider was lost.",
-                "For want of a rider the message was lost.",
-                "For want of a message the battle was lost.",
-                "For want of a battle the kingdom was lost.",
-                "And all for the want of a nail."
-            ]
-        },
-        {
-            "uuid": "c1eefa5a-e8d9-41c7-91d4-99fab6d6b9f7",
-            "description": "four pieces modernized",
-            "property": "recite",
-            "input": {
-              "strings": [
-                "pin",
-                "gun",
-                "soldier",
-                "battle"
-              ]
-            },
-            "expected": [
-                "For want of a pin the gun was lost.",
-                "For want of a gun the soldier was lost.",
-                "For want of a soldier the battle was lost.",
-                "And all for the want of a pin."
-            ]
-        }
-    ]
+  "exercise": "proverb",
+  "comments": [
+    "JSON doesn't allow for multi-line strings, so all expected outputs are presented ",
+    "here as arrays of strings. It's up to the test generator to join the ",
+    "lines together with line breaks. "
+  ],
+  "cases": [
+    {
+      "uuid": "e974b73e-7851-484f-8d6d-92e07fe742fc",
+      "description": "zero pieces",
+      "property": "recite",
+      "input": {
+        "strings": []
+      },
+      "expected": []
+    },
+    {
+      "uuid": "2fcd5f5e-8b82-4e74-b51d-df28a5e0faa4",
+      "description": "one piece",
+      "property": "recite",
+      "input": {
+        "strings": ["nail"]
+      },
+      "expected": ["And all for the want of a nail."]
+    },
+    {
+      "uuid": "d9d0a8a1-d933-46e2-aa94-eecf679f4b0e",
+      "description": "two pieces",
+      "property": "recite",
+      "input": {
+        "strings": ["nail", "shoe"]
+      },
+      "expected": [
+        "For want of a nail the shoe was lost.",
+        "And all for the want of a nail."
+      ]
+    },
+    {
+      "uuid": "c95ef757-5e94-4f0d-a6cb-d2083f5e5a83",
+      "description": "three pieces",
+      "property": "recite",
+      "input": {
+        "strings": ["nail", "shoe", "horse"]
+      },
+      "expected": [
+        "For want of a nail the shoe was lost.",
+        "For want of a shoe the horse was lost.",
+        "And all for the want of a nail."
+      ]
+    },
+    {
+      "uuid": "433fb91c-35a2-4d41-aeab-4de1e82b2126",
+      "description": "full proverb",
+      "property": "recite",
+      "input": {
+        "strings": [
+          "nail",
+          "shoe",
+          "horse",
+          "rider",
+          "message",
+          "battle",
+          "kingdom"
+        ]
+      },
+      "expected": [
+        "For want of a nail the shoe was lost.",
+        "For want of a shoe the horse was lost.",
+        "For want of a horse the rider was lost.",
+        "For want of a rider the message was lost.",
+        "For want of a message the battle was lost.",
+        "For want of a battle the kingdom was lost.",
+        "And all for the want of a nail."
+      ]
+    },
+    {
+      "uuid": "c1eefa5a-e8d9-41c7-91d4-99fab6d6b9f7",
+      "description": "four pieces modernized",
+      "property": "recite",
+      "input": {
+        "strings": ["pin", "gun", "soldier", "battle"]
+      },
+      "expected": [
+        "For want of a pin the gun was lost.",
+        "For want of a gun the soldier was lost.",
+        "For want of a soldier the battle was lost.",
+        "And all for the want of a pin."
+      ]
+    }
+  ]
 }

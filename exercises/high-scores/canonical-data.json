@@ -92,9 +92,7 @@
             "scores": [70, 50, 20, 30]
           },
           "expected": 30,
-          "scenarios": [
-            "immutable"
-          ]
+          "scenarios": ["immutable"]
         },
         {
           "uuid": "809c4058-7eb1-4206-b01e-79238b9b71bc",
@@ -104,9 +102,7 @@
             "scores": [30, 50, 20, 70]
           },
           "expected": [30, 50, 20, 70],
-          "scenarios": [
-            "immutable"
-          ]
+          "scenarios": ["immutable"]
         }
       ]
     }

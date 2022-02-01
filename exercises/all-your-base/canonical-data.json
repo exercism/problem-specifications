@@ -153,7 +153,9 @@
         "digits": [0],
         "outputBase": 10
       },
-      "expected": {"error": "input base must be >= 2"}
+      "expected": {
+        "error": "input base must be >= 2"
+      }
     },
     {
       "uuid": "e21a693a-7a69-450b-b393-27415c26a016",
@@ -164,7 +166,9 @@
         "digits": [],
         "outputBase": 10
       },
-      "expected": {"error": "input base must be >= 2"}
+      "expected": {
+        "error": "input base must be >= 2"
+      }
     },
     {
       "uuid": "54a23be5-d99e-41cc-88e0-a650ffe5fcc2",
@@ -175,7 +179,9 @@
         "digits": [1],
         "outputBase": 10
       },
-      "expected": {"error": "input base must be >= 2"}
+      "expected": {
+        "error": "input base must be >= 2"
+      }
     },
     {
       "uuid": "9eccf60c-dcc9-407b-95d8-c37b8be56bb6",
@@ -186,7 +192,9 @@
         "digits": [1, -1, 1, 0, 1, 0],
         "outputBase": 10
       },
-      "expected": {"error": "all digits must satisfy 0 <= d < input base"}
+      "expected": {
+        "error": "all digits must satisfy 0 <= d < input base"
+      }
     },
     {
       "uuid": "232fa4a5-e761-4939-ba0c-ed046cd0676a",
@@ -197,7 +205,9 @@
         "digits": [1, 2, 1, 0, 1, 0],
         "outputBase": 10
       },
-      "expected": {"error": "all digits must satisfy 0 <= d < input base"}
+      "expected": {
+        "error": "all digits must satisfy 0 <= d < input base"
+      }
     },
     {
       "uuid": "14238f95-45da-41dc-95ce-18f860b30ad3",
@@ -208,7 +218,9 @@
         "digits": [1, 0, 1, 0, 1, 0],
         "outputBase": 1
       },
-      "expected": {"error": "output base must be >= 2"}
+      "expected": {
+        "error": "output base must be >= 2"
+      }
     },
     {
       "uuid": "73dac367-da5c-4a37-95fe-c87fad0a4047",
@@ -219,7 +231,9 @@
         "digits": [7],
         "outputBase": 0
       },
-      "expected": {"error": "output base must be >= 2"}
+      "expected": {
+        "error": "output base must be >= 2"
+      }
     },
     {
       "uuid": "13f81f42-ff53-4e24-89d9-37603a48ebd9",
@@ -230,7 +244,9 @@
         "digits": [1],
         "outputBase": -7
       },
-      "expected": {"error": "output base must be >= 2"}
+      "expected": {
+        "error": "output base must be >= 2"
+      }
     },
     {
       "uuid": "0e6c895d-8a5d-4868-a345-309d094cfe8d",
@@ -241,7 +257,9 @@
         "digits": [1],
         "outputBase": -7
       },
-      "expected": {"error": "input base must be >= 2"}
+      "expected": {
+        "error": "input base must be >= 2"
+      }
     }
   ]
 }

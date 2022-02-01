@@ -22,13 +22,14 @@ This guide covers several common scenarios pertaining to **improving the languag
 * [Track Anatomy](#track-anatomy)
 * [Starting a New Track](#starting-a-new-track)
   * [Beta-Testing a Language Track](#beta-testing-a-language-track)
-* [Useful Tidbits](#useful-tidbits)
+* [Useful Tidbits](#useful-tidbits)  
   * [Pull Request Guidelines](#pull-request-guidelines)
   * [Anatomy of an Exercise](#anatomy-of-an-exercise)
   * [Track configuration file (config.json)](#track-configuration-file)
   * [Track-Level Linting With Configlet](#track-level-linting-with-configlet)
   * [Git Basics](#git-basics)
   * [Improving Consistency By Extracting Shared Test Data](#improving-consistency-by-extracting-shared-test-data)
+  * [Formatting](#formatting)
 
 ## We Will Gladly Help You Help Us
 
@@ -301,6 +302,18 @@ TODO: add more sections:
 
 We are maintaining this section, since many open issues link to it.
 
+## Formatting
+
+This repository uses [prettier][prettier] to automatically format its JSON files.
+If you've added or modified a JSON file, you can format it using:
+
+```shell
+yarn install
+yarn format-json
+```
+
+Note: if you use VS Code as your editor, you can install the [prettier plugin][prettier-vs-code] to automatically handle formatting for you.
+
 [contributing]: https://exercism.org/contributing
 [support-chat]: https://gitter.im/exercism/support
 [exercism-issues]: https://github.com/exercism/exercism/issues
@@ -322,3 +335,5 @@ We are maintaining this section, since many open issues link to it.
 [git-basics]: https://github.com/exercism/legacy-docs/blob/main/contributing/git-basics.md
 [improve-exercise-metadata]: https://github.com/exercism/legacy-docs/blob/main/you-can-help/improve-exercise-metadata.md
 [legacy-docs]: https://github.com/exercism/legacy-docs
+[prettier]: https://prettier.io/
+[prettier-vs-code]: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode

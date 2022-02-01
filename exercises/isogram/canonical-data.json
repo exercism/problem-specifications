@@ -1,8 +1,6 @@
 {
   "exercise": "isogram",
-  "comments": [
-    "An isogram is a word or phrase without a repeating letter."
-  ],
+  "comments": ["An isogram is a word or phrase without a repeating letter."],
   "cases": [
     {
       "uuid": "a0e97d2d-669e-47c7-8134-518a1e2c4555",
@@ -124,7 +122,9 @@
     {
       "uuid": "0d0b8644-0a1e-4a31-a432-2b3ee270d847",
       "description": "word with duplicated character and with two hyphens",
-      "comments": ["This test aims to catch buggy implementations that check for duplicate spaces or hyphens."],
+      "comments": [
+        "This test aims to catch buggy implementations that check for duplicate spaces or hyphens."
+      ],
       "property": "isIsogram",
       "input": {
         "phrase": "up-to-date"

@@ -44,7 +44,9 @@
       "input": {
         "number": 0
       },
-      "expected": { "error": "Only positive numbers are allowed" }
+      "expected": {
+        "error": "Only positive numbers are allowed"
+      }
     },
     {
       "uuid": "2187673d-77d6-4543-975e-66df6c50e2da",
@@ -55,7 +57,9 @@
       "input": {
         "number": 0
       },
-      "expected": { "error": "Only positive integers are allowed" }
+      "expected": {
+        "error": "Only positive integers are allowed"
+      }
     },
     {
       "uuid": "c6c795bf-a288-45e9-86a1-841359ad426d",
@@ -64,7 +68,9 @@
       "input": {
         "number": -15
       },
-      "expected": { "error": "Only positive numbers are allowed" }
+      "expected": {
+        "error": "Only positive numbers are allowed"
+      }
     },
     {
       "uuid": "ec11f479-56bc-47fd-a434-bcd7a31a7a2e",
@@ -75,7 +81,9 @@
       "input": {
         "number": -15
       },
-      "expected": { "error": "Only positive integers are allowed" }
+      "expected": {
+        "error": "Only positive integers are allowed"
+      }
     }
   ]
 }
