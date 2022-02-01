@@ -157,6 +157,22 @@
         "dominoes": [[1, 2], [5, 3], [3, 1], [1, 2], [2, 4], [1, 6], [2, 3], [3, 4], [5, 6]]
       },
       "expected": true
+    },
+    {
+      "uuid": "44704c7c-3adb-4d98-bd30-f45527cf8b49",
+      "description": "separate three-domino loops",
+      "comments": [
+        "Some solutions use nessecary but not sufficient condition:",
+        "'every stone has at least two other neighbors'.           ",
+        "It is counterexample:                                     ",
+        "one cannot chain these dominoes,                          ",
+        "but all of them satisfies stated condition.               "
+      ],
+      "property": "canChain",
+      "input": {
+        "dominoes": [[1, 2], [2, 3], [3, 1], [4, 5], [5, 6], [6, 4]]
+      },
+      "expected": false
     }
   ]
 }
