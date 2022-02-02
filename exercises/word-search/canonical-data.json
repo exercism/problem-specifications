@@ -1024,6 +1024,61 @@
         "abf": null,
         "cbd": null
       }
+    },
+    {
+      "uuid": "5b6198eb-2847-4e2f-8efe-65045df16bd3",
+      "description": "Should not concatenate different lines to find a horizontal word",
+      "property": "search",
+      "input": {
+        "grid": [
+          "abceli",
+          "xirdfg"
+        ],
+        "wordsToSearchFor": [
+          "elixir"
+        ]
+      },
+      "expected": {
+        "elixir": null
+      }
+    },
+    {
+      "uuid": "eba44139-a34f-4a92-98e1-bd5f259e5769",
+      "description": "Should not wrap around horizontally to find a word",
+      "property": "search",
+      "input": {
+        "grid": [
+          "silabcdefp"
+        ],
+        "wordsToSearchFor": [
+          "lisp"
+        ]
+      },
+      "expected": {
+        "lisp": null
+      }
+    },
+    {
+      "uuid": "cd1f0fa8-76af-4167-b105-935f78364dac",
+      "description": "Should not wrap around vertically to find a word",
+      "property": "search",
+      "input": {
+        "grid": [
+          "s",
+          "u",
+          "r",
+          "a",
+          "b",
+          "c",
+          "t"
+        ],
+        "wordsToSearchFor": [
+          "rust"
+        ]
+      },
+      "expected": {
+        "rust": null
+      }
     }
   ]
 }
