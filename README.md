@@ -252,7 +252,6 @@ If you are adding an exercise that has canonical data to a track, first add that
 
 To download the latest version of the `configlet` tool, please run the [`fetch-configlet`](https://github.com/exercism/configlet/blob/main/scripts/fetch-configlet) bash script or the [`fetch-configlet.ps1`](https://github.com/exercism/configlet/blob/main/scripts/fetch-configlet.ps1) PowerShell script (Windows only). At least one of these scripts should already exist in every track repo's `bin` directory - the script will also download `configlet` to this location. You can then sync the tests by running `./bin/configlet sync` (on macOS/Linux/similar) or `.\bin\configlet.exe sync` (on Windows).
 
-
 ## Conventions
 
 There are also some conventions that must be followed:
