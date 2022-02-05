@@ -195,7 +195,12 @@ This is an example of what a re-implementation looks like:
 ]
 ```
 
-## Track Test Data
+## Track Data
+
+Exercism deliberately requires that every exercise has its own copy of certain files (like `.docs/instructions.md`).
+There is a tool called [configlet](https://github.com/exercism/configlet), which can check that Practice Exercises on a track are in sync with the problem-specification source, and can update them when updates are available.
+
+### Track Test Data
 
 If a track implements an exercise for which test data exists, the exercise _must_ contain a `.meta/tests.toml` file. The goal of this file is to keep track of which tests are implemented by the exercise. Tests in this file are identified by their UUID and each test has a boolean value that indicates if it is implemented by that exercise.
 
@@ -218,26 +223,35 @@ In this case, the track has chosen to implement two of the three available tests
 
 If a track uses a _test generator_ to generate an exercise's test suite, it _must_ use the contents of the `tests.toml` file to determine which tests to include in the generated test suite.
 
-### Track Test Data Tooling
+### Track Data Tooling
 
-To make it easy to keep the `tests.toml` up to date, tracks should use the [`configlet` application](https://github.com/exercism/configlet)'s `sync` command.
-A plain `configlet sync` performs no changes, and just compares the tests specified in the `tests.toml` files against the tests that are defined in the exercise's canonical data - if there are tests defined only in the latter, it prints a summary and exits with a non-zero exit code.
+To make it easy to keep the data in the track exercises up to date, the [`configlet` application](https://github.com/exercism/configlet)'s provides a `sync` command.
+There are three kinds of data that can be updated from `problem-specifications`: documentation, metadata, and tests.
 
-To interactively update the `tests.toml` files, use `configlet sync --update`.
-For each missing test, this prompts the user to choose whether to include/exclude/skip it, and updates the corresponding `tests.toml` file accordingly.
+A plain `configlet sync` makes no changes to the track, and checks every data kind for every exercise.
+For example, it compares the tests specified in the `tests.toml` files against the tests that are defined in the exercise's canonical data - if there are tests defined only in the latter, it prints a summary and exits with a non-zero exit code.
+
+To interactively update the `instructions.md`, `tests.toml` and metadata files, use `configlet sync --update`.
+
+For documentation and metadata, this prompts the user whether to sync the data with the latest version in problem-specifications.
+For each missing test, there is a prompt to choose whether to include/exclude/skip it.
+Configlet then updates the corresponding `tests.toml` file accordingly.
 
 To non-interactively include every missing test for an exercise `foo`, use:
 
 ```console
-configlet sync --exercise foo --update --mode include
+configlet sync --tests include --exercise foo --update
 ```
 
-or the short form `configlet sync -e foo -u -mi`.
+or the short form `configlet sync --tests include -e foo -u`.
+
+Refer to the [documentation for configlet sync](https://exercism.org/docs/building/configlet/sync) for more details on the various command options.
 
 The `sync` command operates on Practice Exercises that are in the track-level `config.json` file.
 If you are adding an exercise that has canonical data to a track, first add that exercise to the track-level `config.json`, and then run a `configlet sync` command to create the corresponding `tests.toml` file.
 
 To download the latest version of the `configlet` tool, please run the [`fetch-configlet`](https://github.com/exercism/configlet/blob/main/scripts/fetch-configlet) bash script or the [`fetch-configlet.ps1`](https://github.com/exercism/configlet/blob/main/scripts/fetch-configlet.ps1) PowerShell script (Windows only). At least one of these scripts should already exist in every track repo's `bin` directory - the script will also download `configlet` to this location. You can then sync the tests by running `./bin/configlet sync` (on macOS/Linux/similar) or `.\bin\configlet.exe sync` (on Windows).
+
 
 ## Conventions
 
