@@ -1107,7 +1107,7 @@
     },
     {
       "uuid": "fe0936de-7eee-4a48-88dd-66c07ab1fefc",
-      "description": "last Wednesday in December that also happens to be the last day of the year",
+      "description": "last Wednesday in December that is also the last day of the year",
       "property": "meetup",
       "input": {
         "year": 2014,
