@@ -185,7 +185,7 @@
     },
     {
       "uuid": "382c5242-587e-4577-b8ce-a5fb51e385a1",
-      "description": "consecutive null values at the middle of the list are omitted from the final result",
+      "description": "consecutive null values in the middle of the list are omitted from the final result",
       "property": "flatten",
       "input": {
         "array": [
