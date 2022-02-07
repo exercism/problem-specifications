@@ -169,6 +169,38 @@
       ]
     },
     {
+      "uuid": "c6cf26de-8ccd-4410-84bd-b9efd88fd2bc",
+      "description": "consecutive null values at the front of the list are omitted from the final result",
+      "property": "flatten",
+      "input": {
+        "array": [
+          null,
+          null,
+          3
+        ]
+      },
+      "expected": [
+        3
+      ]
+    },
+    {
+      "uuid": "382c5242-587e-4577-b8ce-a5fb51e385a1",
+      "description": "consecutive null values at the middle of the list are omitted from the final result",
+      "property": "flatten",
+      "input": {
+        "array": [
+          1,
+          null,
+          null,
+          4
+        ]
+      },
+      "expected": [
+        1,
+        4
+      ]
+    },
+    {
       "uuid": "ef1d4790-1b1e-4939-a179-51ace0829dbd",
       "description": "6 level nest list with null values",
       "property": "flatten",
