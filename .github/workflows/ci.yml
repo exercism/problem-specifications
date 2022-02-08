@@ -122,7 +122,7 @@ jobs:
     steps:
       - uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579
 
-      - uses: DavidAnson/markdownlint-cli2-action@b3c3b40b95c18bfa5363f6821764398c7149ad04
+      - uses: DavidAnson/markdownlint-cli2-action@744f913a124058ee903768d3adb92a4847e5d132
         with:
           globs: |
             **/*.md
