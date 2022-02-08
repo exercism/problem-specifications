@@ -1,0 +1,130 @@
+name: Format
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  format:
+    name: 'Format JSON'
+    runs-on: ubuntu-latest
+    if: github.event.issue.pull_request != '' && contains(github.event.comment.body, '/format')
+    steps:
+      - name: 'Post acknowledgement that it will format code'
+        continue-on-error: true # Never fail the build if this fails
+        uses: actions/github-script@e3cbab99d3a9b271e1b79fc96d103a4a5534998c
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'The "Format code" action has started running.'
+            })
+
+      - name: 'Download PR data'
+        run: |
+          PR_DATA="/tmp/pr.json"
+
+          jq -r ".issue.pull_request.url" "$GITHUB_EVENT_PATH" | \
+            xargs curl --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' -o "$PR_DATA" --url
+
+      - name: 'Check fork status'
+        id: fork_status
+        run: |
+          IS_FORK="$(jq '.head.repo.fork' "/tmp/pr.json")"
+          echo "::set-output name=fork::$IS_FORK"
+
+      - name: 'Setup SSH deploy key'
+        if: steps.fork_status.outputs.fork == 'false'
+        run: |
+          mkdir ~/.ssh
+          echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+
+      - name: 'Checkout code'
+        run: |
+          PR_DATA="/tmp/pr.json"
+
+          HEAD_REF=$(jq -r ".head.ref" "$PR_DATA")
+
+          if [ ${{ steps.fork_status.outputs.fork }} == "false" ]; then
+            echo "::debug::Setting up repo using SSH"
+            HEAD_REPO=$(jq -r '.head.repo.ssh_url' "$PR_DATA")
+          else
+            echo "::debug::Setting up repo using HTTPS"
+            HEAD_REPO=$(jq -r '.head.repo.clone_url | sub("https://"; "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@")' "$PR_DATA")
+          fi
+
+          git clone $HEAD_REPO .
+          git checkout -b "$HEAD_REF" "origin/$HEAD_REF"
+
+      - name: Use Node.js LTS (16.x)
+        uses: actions/setup-node@1f8c6b94b26d0feae1e387ca63ccbdc44d27b561
+        with:
+          node-version: '16'
+
+      # https://github.com/actions/cache/blob/main/examples.md#node---yarn
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Cache yarn
+        uses: actions/cache@937d24475381cd9c75ae6db12cb4e79714b926ed
+        id: yarn-cache
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install dependencies
+        run: yarn install --pure-lockfile
+
+      - name: Format JSON files
+        run: yarn format-json
+
+      - name: 'Commit formatted code'
+        run: |
+          # Check if there is nothing to commit (i.e. no formatting changes made)
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Code is already formatted correctly"
+            exit 0
+          fi
+
+          # Setup the git user (required to commit anything)
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+          # Commit the changes made by prettier
+          git add .
+          git commit -m "[CI] Format code"
+          git push
+
+      - name: 'Post acknowledgement that it has formatted the code'
+        continue-on-error: true # Never fail the build if this fails
+        uses: actions/github-script@e3cbab99d3a9b271e1b79fc96d103a4a5534998c
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'The "Format code" action has finished running.'
+            })
+
+      - name: 'Post reminder to trigger build manually'
+        continue-on-error: true # Never fail the build if this fails
+        if: steps.fork_status.outputs.fork == 'true'
+        uses: actions/github-script@e3cbab99d3a9b271e1b79fc96d103a4a5534998c
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'For security reasons, `/format` does not trigger CI builds when the PR has been submitted from a fork. If checks were not passing due to code format, trigger a build to make the required checks pass, through one of the following ways:\n\n- Push an empty commit to this branch: `git commit --allow-empty -m "Trigger builds"`.\n- Close and reopen the PR.\n- Push a regular commit to this branch.'
+            })
