@@ -2,7 +2,10 @@
   "exercise": "bob",
   "cases": [
     {
-      "uuid": "e162fead-606f-437a-a166-d051915cea8e",
+      "uuid":       "e162fead-606f-437a-a166-d051915cea8e",
+      
+      
+      
       "description": "stating something",
       "property": "response",
       "input": {
@@ -30,7 +33,7 @@
     },
     {
       "uuid": "8a2e771d-d6f1-4e3f-b6c6-b41495556e37",
-      "description": "asking a question",
+      "description": "asking a question"        ,
       "property": "response",
       "input": {
         "heyBob": "Does this cryogenic chamber make me look fat?"
@@ -48,8 +51,7 @@
     },
     {
       "uuid": "2a02716d-685b-4e2e-a804-2adaf281c01e",
-      "description": "asking gibberish",
-      "property": "response",
+      "description": "asking gibberish","property": "response",
       "input": {
         "heyBob": "fffbbcbeab?"
       },
