@@ -116,6 +116,9 @@ jobs:
 
           exit "$fail"
 
+      - name: Verify that all keys are in the correct order
+        run: ./bin/check_key_order.rb
+
   markdown-lint:
     name: Lint markdown files
     runs-on: ubuntu-latest
