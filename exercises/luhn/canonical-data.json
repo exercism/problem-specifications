@@ -167,12 +167,12 @@
       "expected": true
     },
     {
+      "uuid": "39a06a5a-5bad-4e0f-b215-b042d46209b1",
+      "description": "using ascii value for non-doubled non-digit isn't allowed",
       "comments": [
         "Convert non-digits to their ascii values and then offset them by 48 sometimes accidentally declare an invalid string to be valid.",
         "This test is designed to avoid that solution."
       ],
-      "uuid": "39a06a5a-5bad-4e0f-b215-b042d46209b1",
-      "description": "using ascii value for non-doubled non-digit isn't allowed",
       "property": "valid",
       "input": {
         "value": "055b 444 285"
@@ -180,12 +180,12 @@
       "expected": false
     },
     {
+      "uuid": "f94cf191-a62f-4868-bc72-7253114aa157",
+      "description": "using ascii value for doubled non-digit isn't allowed",
       "comments": [
         "Convert non-digits to their ascii values and then offset them by 48 sometimes accidentally declare an invalid string to be valid.",
         "This test is designed to avoid that solution."
       ],
-      "uuid": "f94cf191-a62f-4868-bc72-7253114aa157",
-      "description": "using ascii value for doubled non-digit isn't allowed",
       "property": "valid",
       "input": {
         "value": ":9"
