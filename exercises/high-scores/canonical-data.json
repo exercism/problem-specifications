@@ -112,6 +112,30 @@
           },
           "expected": [25]
         }
+        {
+          "uuid": "ddb0efc0-9a86-4f82-bc30-21ae0bdc6418",
+          "description": "Latest score after personal best",
+          "property": "latestAfterBest",
+          "input": {
+            "scores": [20, 70, 15, 25, 30]
+          },
+          "expected": 30,
+          "scenarios": [
+            "immutable"
+          ]
+        },
+        {
+          "uuid": "6a0fd2d1-4cc4-46b9-a5bb-2fb667ca2364",
+          "description": "Scores after personal best",
+          "property": "scoresAfterBest",
+          "input": {
+            "scores": [20, 70, 15, 25, 30]
+          },
+          "expected": [20, 70, 15, 25, 30],
+          "scenarios": [
+            "immutable"
+          ]
+        }
       ]
     }
   ]
