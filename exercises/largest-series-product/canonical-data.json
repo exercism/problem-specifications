@@ -114,6 +114,8 @@
       }
     },
     {
+      "uuid": "06bc8b90-0c51-4c54-ac22-3ec3893a079e",
+      "description": "reports 1 for empty string and empty product (0 span)",
       "comments": [
         "There may be some confusion about whether this should be 1 or error.",
         "The reasoning for it being 1 is this:",
@@ -128,8 +130,6 @@
         "So LSP('123', 4) really DOES take the max of an empty list.",
         "So LSP('123', 4) errors and LSP('', 0) does NOT."
       ],
-      "uuid": "06bc8b90-0c51-4c54-ac22-3ec3893a079e",
-      "description": "reports 1 for empty string and empty product (0 span)",
       "property": "largestProduct",
       "input": {
         "digits": "",
@@ -138,12 +138,12 @@
       "expected": 1
     },
     {
+      "uuid": "3ec0d92e-f2e2-4090-a380-70afee02f4c0",
+      "description": "reports 1 for nonempty string and empty product (0 span)",
       "comments": [
         "As above, there is one 0-character string in '123'.",
         "So again no error. It's the empty product, 1."
       ],
-      "uuid": "3ec0d92e-f2e2-4090-a380-70afee02f4c0",
-      "description": "reports 1 for nonempty string and empty product (0 span)",
       "property": "largestProduct",
       "input": {
         "digits": "123",
@@ -189,8 +189,8 @@
     },
     {
       "uuid": "c859f34a-9bfe-4897-9c2f-6d7f8598e7f0",
-      "description": "rejects negative span",
       "reimplements": "5fe3c0e5-a945-49f2-b584-f0814b4dd1ef",
+      "description": "rejects negative span",
       "comments": ["Previous error message was incorrect"],
       "property": "largestProduct",
       "input": {
