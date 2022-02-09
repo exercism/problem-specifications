@@ -198,7 +198,7 @@ This is an example of what a re-implementation looks like:
 ## Track Data
 
 Exercism deliberately requires that every exercise has its own copy of certain files (like `.docs/instructions.md`).
-There is a tool called [configlet](https://github.com/exercism/configlet), which can check that Practice Exercises on a track are in sync with the problem-specification source, and can update them when updates are available.
+There is a tool called [configlet](https://github.com/exercism/configlet), which can check that Practice Exercises on a track are in sync with the `problem-specifications` source, and can update them when updates are available.
 
 ### Track Test Data
 
@@ -225,7 +225,7 @@ If a track uses a _test generator_ to generate an exercise's test suite, it _mus
 
 ### Track Data Tooling
 
-To make it easy to keep the data in the track exercises up to date, the [`configlet` application](https://github.com/exercism/configlet)'s provides a `sync` command.
+To make it easy to keep the data in the track exercises up to date, the [`configlet` application](https://github.com/exercism/configlet) provides a `sync` command.
 There are three kinds of data that can be updated from `problem-specifications`: documentation, metadata, and tests.
 
 A plain `configlet sync` makes no changes to the track, and checks every data kind for every exercise.
