@@ -87,42 +87,42 @@
         {
           "uuid": "2df075f9-fec9-4756-8f40-98c52a11504f",
           "description": "Latest score after personal top scores",
+          "scenarios": ["immutable"],
           "property": "latestAfterTopThree",
           "input": {
             "scores": [70, 50, 20, 30]
           },
-          "expected": 30,
-          "scenarios": ["immutable"]
+          "expected": 30
         },
         {
           "uuid": "809c4058-7eb1-4206-b01e-79238b9b71bc",
           "description": "Scores after personal top scores",
+          "scenarios": ["immutable"],
           "property": "scoresAfterTopThree",
           "input": {
             "scores": [30, 50, 20, 70]
           },
-          "expected": [30, 50, 20, 70],
-          "scenarios": ["immutable"]
+          "expected": [30, 50, 20, 70]
         },
         {
           "uuid": "ddb0efc0-9a86-4f82-bc30-21ae0bdc6418",
           "description": "Latest score after personal best",
+          "scenarios": ["immutable"],
           "property": "latestAfterBest",
           "input": {
             "scores": [20, 70, 15, 25, 30]
           },
-          "expected": 30,
-          "scenarios": ["immutable"]
+          "expected": 30
         },
         {
           "uuid": "6a0fd2d1-4cc4-46b9-a5bb-2fb667ca2364",
           "description": "Scores after personal best",
+          "scenarios": ["immutable"],
           "property": "scoresAfterBest",
           "input": {
             "scores": [20, 70, 15, 25, 30]
           },
-          "expected": [20, 70, 15, 25, 30],
-          "scenarios": ["immutable"]
+          "expected": [20, 70, 15, 25, 30]
         }
       ]
     }
