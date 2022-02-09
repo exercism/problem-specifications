@@ -1,0 +1,6 @@
+// For information on writing markdownlint configuration see:
+//  https://github.com/DavidAnson/markdownlint/blob/main/README.md#optionsconfig
+{
+    "MD013": false,  // Exercism tends to break lines at sentence ends rather than at a column limit
+    "MD024": false   // The format for instructions.md requires  repeated headings, e.g. "Task"
+}

@@ -1,8 +1,8 @@
 {
   "exercise": "hello-world",
-  "version": "1.1.0",
   "cases": [
     {
+      "uuid": "af9ffe10-dc13-42d8-a742-e7bdafac449d",
       "description": "Say Hi!",
       "property": "hello",
       "input": {},

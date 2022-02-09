@@ -1,8 +1,8 @@
 {
   "exercise": "space-age",
-  "version": "1.2.0",
   "cases": [
     {
+      "uuid": "84f609af-5a91-4d68-90a3-9e32d8a5cd34",
       "description": "age on Earth",
       "property": "age",
       "input": {
@@ -12,6 +12,7 @@
       "expected": 31.69
     },
     {
+      "uuid": "ca20c4e9-6054-458c-9312-79679ffab40b",
       "description": "age on Mercury",
       "property": "age",
       "input": {
@@ -21,6 +22,7 @@
       "expected": 280.88
     },
     {
+      "uuid": "502c6529-fd1b-41d3-8fab-65e03082b024",
       "description": "age on Venus",
       "property": "age",
       "input": {
@@ -30,6 +32,7 @@
       "expected": 9.78
     },
     {
+      "uuid": "9ceadf5e-a0d5-4388-9d40-2c459227ceb8",
       "description": "age on Mars",
       "property": "age",
       "input": {
@@ -39,6 +42,7 @@
       "expected": 35.88
     },
     {
+      "uuid": "42927dc3-fe5e-4f76-a5b5-f737fc19bcde",
       "description": "age on Jupiter",
       "property": "age",
       "input": {
@@ -48,6 +52,7 @@
       "expected": 2.41
     },
     {
+      "uuid": "8469b332-7837-4ada-b27c-00ee043ebcad",
       "description": "age on Saturn",
       "property": "age",
       "input": {
@@ -57,6 +62,7 @@
       "expected": 2.15
     },
     {
+      "uuid": "999354c1-76f8-4bb5-a672-f317b6436743",
       "description": "age on Uranus",
       "property": "age",
       "input": {
@@ -66,6 +72,7 @@
       "expected": 0.46
     },
     {
+      "uuid": "80096d30-a0d4-4449-903e-a381178355d8",
       "description": "age on Neptune",
       "property": "age",
       "input": {
@@ -73,6 +80,18 @@
         "seconds": 1821023456
       },
       "expected": 0.35
+    },
+    {
+      "uuid": "57b96e2a-1178-40b7-b34d-f3c9c34e4bf4",
+      "description": "invalid planet causes error",
+      "property": "age",
+      "input": {
+        "planet": "Sun",
+        "seconds": 680804807
+      },
+      "expected": {
+        "error": "not a planet"
+      }
     }
   ]
 }

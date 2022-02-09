@@ -26,12 +26,12 @@ function check_directory {
 	for exercise_directory in $directory/* ; do
 		show_progress
 		require_file "$exercise_directory/description.md"
-		require_file "$exercise_directory/metadata.yml"
+		require_file "$exercise_directory/metadata.toml"
 	done
 
 }
 
-while : 
+while :
 do
 	case "$1" in
 		-p | --progress)
@@ -41,7 +41,7 @@ do
 		*)
 			check_directory 'exercises'
 			if [ $SHOW_PROGRESS == 'true' ]; then
-				echo 
+				echo
 				echo Done: $MISSING_FILES files missing.
 			fi
 			if (( $MISSING_FILES > 0 )); then

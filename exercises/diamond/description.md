@@ -1,3 +1,5 @@
+# Description
+
 The diamond kata takes as its input a letter, and outputs it in a diamond
 shape. Given a letter, it prints a diamond starting with 'A', with the
 supplied letter at the widest point.

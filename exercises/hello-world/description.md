@@ -1,3 +1,5 @@
+# Description
+
 The classical introductory exercise. Just say "Hello, World!".
 
 ["Hello, World!"](http://en.wikipedia.org/wiki/%22Hello,_world!%22_program) is
@@ -6,7 +8,7 @@ or environment.
 
 The objectives are simple:
 
-- Write a function that returns the string "Hello, World!".
+- Modify the provided code so that it produces the string "Hello, World!".
 - Run the test suite and make sure that it succeeds.
 - Submit your solution and check it at the website.
 

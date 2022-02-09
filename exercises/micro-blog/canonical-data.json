@@ -1,0 +1,131 @@
+{
+  "exercise": "micro-blog",
+  "comments": [
+    "This exercise is only applicable to languages that use UTF-8, UTF-16",
+    "or other variable width Unicode compatible encoding as their internal",
+    "string representation.",
+    "",
+    "This exercise is probably too easy in languages that use Unicode aware",
+    "string slicing.",
+    "",
+    "When adding additional tests to the problem specification, consider that",
+    "in progress solutions might not fail due to UTF-8 and UTF-16",
+    "differences.",
+    "",
+    "Avoid adding tests that involve characters (graphemes) that are made up",
+    "of multiple characters, or introduce them as a more advanced step.",
+    "",
+    "Consider adding a track specific hint.md about if your language uses",
+    "UTF-8, UTF-16 or other for its internal string representation."
+  ],
+  "cases": [
+    {
+      "uuid": "b927b57f-7c98-42fd-8f33-fae091dc1efc",
+      "description": "English language short",
+      "property": "truncate",
+      "input": {
+        "phrase": "Hi"
+      },
+      "expected": "Hi"
+    },
+    {
+      "uuid": "a3fcdc5b-0ed4-4f49-80f5-b1a293eac2a0",
+      "description": "English language long",
+      "property": "truncate",
+      "input": {
+        "phrase": "Hello there"
+      },
+      "expected": "Hello"
+    },
+    {
+      "uuid": "01910864-8e15-4007-9c7c-ac956c686e60",
+      "description": "German language short (broth)",
+      "property": "truncate",
+      "input": {
+        "phrase": "brühe"
+      },
+      "expected": "brühe"
+    },
+    {
+      "uuid": "f263e488-aefb-478f-a671-b6ba99722543",
+      "description": "German language long (bear carpet → beards)",
+      "property": "truncate",
+      "input": {
+        "phrase": "Bärteppich"
+      },
+      "expected": "Bärte"
+    },
+    {
+      "uuid": "0916e8f1-41d7-4402-a110-b08aa000342c",
+      "description": "Bulgarian language short (good)",
+      "property": "truncate",
+      "input": {
+        "phrase": "Добър"
+      },
+      "expected": "Добър"
+    },
+    {
+      "uuid": "bed6b89c-03df-4154-98e6-a61a74f61b7d",
+      "description": "Greek language short (health)",
+      "property": "truncate",
+      "input": {
+        "phrase": "υγειά"
+      },
+      "expected": "υγειά"
+    },
+    {
+      "uuid": "485a6a70-2edb-424d-b999-5529dbc8e002",
+      "description": "Maths short",
+      "property": "truncate",
+      "input": {
+        "phrase": "a=πr²"
+      },
+      "expected": "a=πr²"
+    },
+    {
+      "uuid": "8b4b7b51-8f48-4fbe-964e-6e4e6438be28",
+      "description": "Maths long",
+      "property": "truncate",
+      "input": {
+        "phrase": "∅⊊ℕ⊊ℤ⊊ℚ⊊ℝ⊊ℂ"
+      },
+      "expected": "∅⊊ℕ⊊ℤ"
+    },
+    {
+      "uuid": "71f4a192-0566-4402-a512-fe12878be523",
+      "description": "English and emoji short",
+      "property": "truncate",
+      "input": {
+        "phrase": "Fly 🛫"
+      },
+      "expected": "Fly 🛫"
+    },
+    {
+      "uuid": "6f0f71f3-9806-4759-a844-fa182f7bc203",
+      "description": "Emoji short",
+      "property": "truncate",
+      "input": {
+        "phrase": "💇"
+      },
+      "expected": "💇"
+    },
+    {
+      "uuid": "ce71fb92-5214-46d0-a7f8-d5ba56b4cc6e",
+      "description": "Emoji long",
+      "property": "truncate",
+      "input": {
+        "phrase": "❄🌡🤧🤒🏥🕰😀"
+      },
+      "expected": "❄🌡🤧🤒🏥"
+    },
+    {
+      "uuid": "5dee98d2-d56e-468a-a1f2-121c3f7c5a0b",
+      "description": "Royal Flush?",
+      "property": "truncate",
+      "input": {
+        "phrase": "🃎🂸🃅🃋🃍🃁🃊"
+      },
+      "expected": "🃎🂸🃅🃋🃍"
+    }
+  ]
+}

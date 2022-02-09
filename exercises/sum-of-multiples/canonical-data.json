@@ -1,8 +1,8 @@
 {
   "exercise": "sum-of-multiples",
-  "version": "1.5.0",
   "cases": [
     {
+      "uuid": "54aaab5a-ce86-4edc-8b40-d3ab2400a279",
       "description": "no multiples within limit",
       "property": "sum",
       "input": {
@@ -12,6 +12,7 @@
       "expected": 0
     },
     {
+      "uuid": "361e4e50-c89b-4f60-95ef-5bc5c595490a",
       "description": "one factor has multiples within limit",
       "property": "sum",
       "input": {
@@ -21,6 +22,7 @@
       "expected": 3
     },
     {
+      "uuid": "e644e070-040e-4ae0-9910-93c69fc3f7ce",
       "description": "more than one multiple within limit",
       "property": "sum",
       "input": {
@@ -30,6 +32,7 @@
       "expected": 9
     },
     {
+      "uuid": "607d6eb9-535c-41ce-91b5-3a61da3fa57f",
       "description": "more than one factor with multiples within limit",
       "property": "sum",
       "input": {
@@ -39,6 +42,7 @@
       "expected": 23
     },
     {
+      "uuid": "f47e8209-c0c5-4786-b07b-dc273bf86b9b",
       "description": "each multiple is only counted once",
       "property": "sum",
       "input": {
@@ -48,6 +52,7 @@
       "expected": 2318
     },
     {
+      "uuid": "28c4b267-c980-4054-93e9-07723db615ac",
       "description": "a much larger limit",
       "property": "sum",
       "input": {
@@ -57,6 +62,7 @@
       "expected": 233168
     },
     {
+      "uuid": "09c4494d-ff2d-4e0f-8421-f5532821ee12",
       "description": "three factors",
       "property": "sum",
       "input": {
@@ -66,6 +72,7 @@
       "expected": 51
     },
     {
+      "uuid": "2d0d5faa-f177-4ad6-bde9-ebb865083751",
       "description": "factors not relatively prime",
       "property": "sum",
       "input": {
@@ -75,6 +82,7 @@
       "expected": 30
     },
     {
+      "uuid": "ece8f2e8-96aa-4166-bbb7-6ce71261e354",
       "description": "some pairs of factors relatively prime and some not",
       "property": "sum",
       "input": {
@@ -84,6 +92,7 @@
       "expected": 4419
     },
     {
+      "uuid": "624fdade-6ffb-400e-8472-456a38c171c0",
       "description": "one factor is a multiple of another",
       "property": "sum",
       "input": {
@@ -93,6 +102,7 @@
       "expected": 275
     },
     {
+      "uuid": "949ee7eb-db51-479c-b5cb-4a22b40ac057",
       "description": "much larger factors",
       "property": "sum",
       "input": {
@@ -102,6 +112,7 @@
       "expected": 2203160
     },
     {
+      "uuid": "41093673-acbd-482c-ab80-d00a0cbedecd",
       "description": "all numbers are multiples of 1",
       "property": "sum",
       "input": {
@@ -111,6 +122,7 @@
       "expected": 4950
     },
     {
+      "uuid": "1730453b-baaa-438e-a9c2-d754497b2a76",
       "description": "no factors means an empty sum",
       "property": "sum",
       "input": {
@@ -120,6 +132,7 @@
       "expected": 0
     },
     {
+      "uuid": "214a01e9-f4bf-45bb-80f1-1dce9fbb0310",
       "description": "the only multiple of 0 is 0",
       "property": "sum",
       "input": {
@@ -129,6 +142,7 @@
       "expected": 0
     },
     {
+      "uuid": "c423ae21-a0cb-4ec7-aeb1-32971af5b510",
       "description": "the factor 0 does not affect the sum of multiples of other factors",
       "property": "sum",
       "input": {
@@ -138,6 +152,7 @@
       "expected": 3
     },
     {
+      "uuid": "17053ba9-112f-4ac0-aadb-0519dd836342",
       "description": "solutions using include-exclude must extend to cardinality greater than 3",
       "property": "sum",
       "input": {

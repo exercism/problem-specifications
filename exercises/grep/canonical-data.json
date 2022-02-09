@@ -1,6 +1,5 @@
 {
   "exercise": "grep",
-  "version": "1.2.0",
   "comments": [
     " JSON doesn't allow for multi-line strings, so all   ",
     " outputs are presented here as arrays of strings.    ",
@@ -57,6 +56,7 @@
       "description": "Test grepping a single file",
       "cases": [
         {
+          "uuid": "9049fdfd-53a7-4480-a390-375203837d09",
           "description": "One file, one match, no flags",
           "property": "grep",
           "input": {
@@ -69,6 +69,7 @@
           ]
         },
         {
+          "uuid": "76519cce-98e3-46cd-b287-aac31b1d77d6",
           "description": "One file, one match, print line numbers flag",
           "property": "grep",
           "input": {
@@ -81,6 +82,7 @@
           ]
         },
         {
+          "uuid": "af0b6d3c-e0e8-475e-a112-c0fc10a1eb30",
           "description": "One file, one match, case-insensitive flag",
           "property": "grep",
           "input": {
@@ -93,6 +95,7 @@
           ]
         },
         {
+          "uuid": "ff7af839-d1b8-4856-a53e-99283579b672",
           "description": "One file, one match, print file names flag",
           "property": "grep",
           "input": {
@@ -105,6 +108,7 @@
           ]
         },
         {
+          "uuid": "8625238a-720c-4a16-81f2-924ec8e222cb",
           "description": "One file, one match, match entire lines flag",
           "property": "grep",
           "input": {
@@ -117,6 +121,7 @@
           ]
         },
         {
+          "uuid": "2a6266b3-a60f-475c-a5f5-f5008a717d3e",
           "description": "One file, one match, multiple flags",
           "property": "grep",
           "input": {
@@ -129,6 +134,7 @@
           ]
         },
         {
+          "uuid": "842222da-32e8-4646-89df-0d38220f77a1",
           "description": "One file, several matches, no flags",
           "property": "grep",
           "input": {
@@ -143,6 +149,7 @@
           ]
         },
         {
+          "uuid": "4d84f45f-a1d8-4c2e-a00e-0b292233828c",
           "description": "One file, several matches, print line numbers flag",
           "property": "grep",
           "input": {
@@ -157,6 +164,7 @@
           ]
         },
         {
+          "uuid": "0a483b66-315b-45f5-bc85-3ce353a22539",
           "description": "One file, several matches, match entire lines flag",
           "property": "grep",
           "input": {
@@ -167,6 +175,7 @@
           "expected": []
         },
         {
+          "uuid": "3d2ca86a-edd7-494c-8938-8eeed1c61cfa",
           "description": "One file, several matches, case-insensitive flag",
           "property": "grep",
           "input": {
@@ -180,6 +189,7 @@
           ]
         },
         {
+          "uuid": "1f52001f-f224-4521-9456-11120cad4432",
           "description": "One file, several matches, inverted flag",
           "property": "grep",
           "input": {
@@ -196,6 +206,7 @@
           ]
         },
         {
+          "uuid": "7a6ede7f-7dd5-4364-8bf8-0697c53a09fe",
           "description": "One file, no matches, various flags",
           "property": "grep",
           "input": {
@@ -206,6 +217,7 @@
           "expected": []
         },
         {
+          "uuid": "3d3dfc23-8f2a-4e34-abd6-7b7d140291dc",
           "description": "One file, one match, file flag takes precedence over line flag",
           "property": "grep",
           "input": {
@@ -218,6 +230,7 @@
           ]
         },
         {
+          "uuid": "87b21b24-b788-4d6e-a68b-7afe9ca141fe",
           "description": "One file, several matches, inverted and match entire lines flags",
           "property": "grep",
           "input": {
@@ -242,6 +255,7 @@
       "description": "Test grepping multiples files at once",
       "cases": [
         {
+          "uuid": "ba496a23-6149-41c6-a027-28064ed533e5",
           "description": "Multiple files, one match, no flags",
           "property": "grep",
           "input": {
@@ -254,6 +268,7 @@
           ]
         },
         {
+          "uuid": "4539bd36-6daa-4bc3-8e45-051f69f5aa95",
           "description": "Multiple files, several matches, no flags",
           "property": "grep",
           "input": {
@@ -268,6 +283,7 @@
           ]
         },
         {
+          "uuid": "9fb4cc67-78e2-4761-8e6b-a4b57aba1938",
           "description": "Multiple files, several matches, print line numbers flag",
           "property": "grep",
           "input": {
@@ -283,6 +299,7 @@
           ]
         },
         {
+          "uuid": "aeee1ef3-93c7-4cd5-af10-876f8c9ccc73",
           "description": "Multiple files, one match, print file names flag",
           "property": "grep",
           "input": {
@@ -296,6 +313,7 @@
           ]
         },
         {
+          "uuid": "d69f3606-7d15-4ddf-89ae-01df198e6b6c",
           "description": "Multiple files, several matches, case-insensitive flag",
           "property": "grep",
           "input": {
@@ -317,6 +335,7 @@
           ]
         },
         {
+          "uuid": "82ef739d-6701-4086-b911-007d1a3deb21",
           "description": "Multiple files, several matches, inverted flag",
           "property": "grep",
           "input": {
@@ -331,6 +350,7 @@
           ]
         },
         {
+          "uuid": "77b2eb07-2921-4ea0-8971-7636b44f5d29",
           "description": "Multiple files, one match, match entire lines flag",
           "property": "grep",
           "input": {
@@ -343,6 +363,7 @@
           ]
         },
         {
+          "uuid": "e53a2842-55bb-4078-9bb5-04ac38929989",
           "description": "Multiple files, one match, multiple flags",
           "property": "grep",
           "input": {
@@ -355,6 +376,7 @@
           ]
         },
         {
+          "uuid": "9c4f7f9a-a555-4e32-bb06-4b8f8869b2cb",
           "description": "Multiple files, no matches, various flags",
           "property": "grep",
           "input": {
@@ -365,6 +387,7 @@
           "expected": []
         },
         {
+          "uuid": "ba5a540d-bffd-481b-bd0c-d9a30f225e01",
           "description": "Multiple files, several matches, file flag takes precedence over line number flag",
           "property": "grep",
           "input": {
@@ -378,6 +401,7 @@
           ]
         },
         {
+          "uuid": "ff406330-2f0b-4b17-9ee4-4b71c31dd6d2",
           "description": "Multiple files, several matches, inverted and match entire lines flags",
           "property": "grep",
           "input": {

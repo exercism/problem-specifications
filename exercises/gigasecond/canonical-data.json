@@ -1,6 +1,5 @@
 {
   "exercise": "gigasecond",
-  "version": "2.0.0",
   "comments": [
     "The basic test is to add one gigasecond to a few ordinary dates.",
     "Most test programs currently check only the date and ignore the time.",
@@ -17,49 +16,49 @@
   ],
   "cases": [
     {
-      "description": "Add one gigasecond to the input.",
-      "cases": [
-        {
-          "description": "date only specification of time",
-          "property": "add",
-          "input": {
-            "moment": "2011-04-25"
-          },
-          "expected": "2043-01-01T01:46:40"
-        },
-        {
-          "description": "second test for date only specification of time",
-          "property": "add",
-          "input": {
-            "moment": "1977-06-13"
-          },
-          "expected": "2009-02-19T01:46:40"
-        },
-        {
-          "description": "third test for date only specification of time",
-          "property": "add",
-          "input": {
-            "moment": "1959-07-19"
-          },
-          "expected": "1991-03-27T01:46:40"
-        },
-        {
-          "description": "full time specified",
-          "property": "add",
-          "input": {
-            "moment": "2015-01-24T22:00:00"
-          },
-          "expected": "2046-10-02T23:46:40"
-        },
-        {
-          "description": "full time with day roll-over",
-          "property": "add",
-          "input": {
-            "moment": "2015-01-24T23:59:59"
-          },
-          "expected": "2046-10-03T01:46:39"
-        }
-      ]
+      "uuid": "92fbe71c-ea52-4fac-bd77-be38023cacf7",
+      "description": "date only specification of time",
+      "property": "add",
+      "input": {
+        "moment": "2011-04-25"
+      },
+      "expected": "2043-01-01T01:46:40"
+    },
+    {
+      "uuid": "6d86dd16-6f7a-47be-9e58-bb9fb2ae1433",
+      "description": "second test for date only specification of time",
+      "property": "add",
+      "input": {
+        "moment": "1977-06-13"
+      },
+      "expected": "2009-02-19T01:46:40"
+    },
+    {
+      "uuid": "77eb8502-2bca-4d92-89d9-7b39ace28dd5",
+      "description": "third test for date only specification of time",
+      "property": "add",
+      "input": {
+        "moment": "1959-07-19"
+      },
+      "expected": "1991-03-27T01:46:40"
+    },
+    {
+      "uuid": "c9d89a7d-06f8-4e28-a305-64f1b2abc693",
+      "description": "full time specified",
+      "property": "add",
+      "input": {
+        "moment": "2015-01-24T22:00:00"
+      },
+      "expected": "2046-10-02T23:46:40"
+    },
+    {
+      "uuid": "09d4e30e-728a-4b52-9005-be44a58d9eba",
+      "description": "full time with day roll-over",
+      "property": "add",
+      "input": {
+        "moment": "2015-01-24T23:59:59"
+      },
+      "expected": "2046-10-03T01:46:39"
     }
   ]
 }

@@ -1,0 +1,65 @@
+{
+  "exercise": "resistor-color-trio",
+  "cases": [
+    {
+      "uuid": "d6863355-15b7-40bb-abe0-bfb1a25512ed",
+      "description": "Orange and orange and black",
+      "property": "label",
+      "input": {
+        "colors": ["orange", "orange", "black"]
+      },
+      "expected": {
+        "value": 33,
+        "unit": "ohms"
+      }
+    },
+    {
+      "uuid": "1224a3a9-8c8e-4032-843a-5224e04647d6",
+      "description": "Blue and grey and brown",
+      "property": "label",
+      "input": {
+        "colors": ["blue", "grey", "brown"]
+      },
+      "expected": {
+        "value": 680,
+        "unit": "ohms"
+      }
+    },
+    {
+      "uuid": "b8bda7dc-6b95-4539-abb2-2ad51d66a207",
+      "description": "Red and black and red",
+      "property": "label",
+      "input": {
+        "colors": ["red", "black", "red"]
+      },
+      "expected": {
+        "value": 2,
+        "unit": "kiloohms"
+      }
+    },
+    {
+      "uuid": "5b1e74bc-d838-4eda-bbb3-eaba988e733b",
+      "description": "Green and brown and orange",
+      "property": "label",
+      "input": {
+        "colors": ["green", "brown", "orange"]
+      },
+      "expected": {
+        "value": 51,
+        "unit": "kiloohms"
+      }
+    },
+    {
+      "uuid": "f5d37ef9-1919-4719-a90d-a33c5a6934c9",
+      "description": "Yellow and violet and yellow",
+      "property": "label",
+      "input": {
+        "colors": ["yellow", "violet", "yellow"]
+      },
+      "expected": {
+        "value": 470,
+        "unit": "kiloohms"
+      }
+    }
+  ]
+}

@@ -1,6 +1,5 @@
 {
   "exercise": "circular-buffer",
-  "version": "1.1.0",
   "comments": [
     "In general, these circular buffers are expected to be stateful,",
     "and each language will operate on them differently.",
@@ -26,6 +25,7 @@
   ],
   "cases": [
     {
+      "uuid": "28268ed4-4ff3-45f3-820e-895b44d53dfa",
       "description": "reading empty buffer should fail",
       "property": "run",
       "input": {
@@ -40,6 +40,7 @@
       "expected": {}
     },
     {
+      "uuid": "2e6db04a-58a1-425d-ade8-ac30b5f318f3",
       "description": "can read an item just written",
       "property": "run",
       "input": {
@@ -60,6 +61,7 @@
       "expected": {}
     },
     {
+      "uuid": "90741fe8-a448-45ce-be2b-de009a24c144",
       "description": "each item may only be read once",
       "property": "run",
       "input": {
@@ -84,6 +86,7 @@
       "expected": {}
     },
     {
+      "uuid": "be0e62d5-da9c-47a8-b037-5db21827baa7",
       "description": "items are read in the order they are written",
       "property": "run",
       "input": {
@@ -114,6 +117,7 @@
       "expected": {}
     },
     {
+      "uuid": "2af22046-3e44-4235-bfe6-05ba60439d38",
       "description": "full buffer can't be written to",
       "property": "run",
       "input": {
@@ -134,6 +138,7 @@
       "expected": {}
     },
     {
+      "uuid": "547d192c-bbf0-4369-b8fa-fc37e71f2393",
       "description": "a read frees up capacity for another write",
       "property": "run",
       "input": {
@@ -164,6 +169,7 @@
       "expected": {}
     },
     {
+      "uuid": "04a56659-3a81-4113-816b-6ecb659b4471",
       "description": "read position is maintained even across multiple writes",
       "property": "run",
       "input": {
@@ -204,6 +210,7 @@
       "expected": {}
     },
     {
+      "uuid": "60c3a19a-81a7-43d7-bb0a-f07242b1111f",
       "description": "items cleared out of buffer can't be read",
       "property": "run",
       "input": {
@@ -226,6 +233,7 @@
       "expected": {}
     },
     {
+      "uuid": "45f3ae89-3470-49f3-b50e-362e4b330a59",
       "description": "clear frees up capacity for another write",
       "property": "run",
       "input": {
@@ -254,6 +262,7 @@
       "expected": {}
     },
     {
+      "uuid": "e1ac5170-a026-4725-bfbe-0cf332eddecd",
       "description": "clear does nothing on empty buffer",
       "property": "run",
       "input": {
@@ -277,6 +286,7 @@
       "expected": {}
     },
     {
+      "uuid": "9c2d4f26-3ec7-453f-a895-7e7ff8ae7b5b",
       "description": "overwrite acts like write on non-full buffer",
       "property": "run",
       "input": {
@@ -306,6 +316,7 @@
       "expected": {}
     },
     {
+      "uuid": "880f916b-5039-475c-bd5c-83463c36a147",
       "description": "overwrite replaces the oldest item on full buffer",
       "property": "run",
       "input": {
@@ -340,6 +351,7 @@
       "expected": {}
     },
     {
+      "uuid": "bfecab5b-aca1-4fab-a2b0-cd4af2b053c3",
       "description": "overwrite replaces the oldest item remaining in buffer following a read",
       "property": "run",
       "input": {
@@ -388,6 +400,52 @@
             "operation": "read",
             "should_succeed": true,
             "expected": 5
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "9cebe63a-c405-437b-8b62-e3fdc1ecec5a",
+      "description": "initial clear does not affect wrapping around",
+      "property": "run",
+      "input": {
+        "capacity": 2,
+        "operations": [
+          {
+            "operation": "clear"
+          },
+          {
+            "operation": "write",
+            "item": 1,
+            "should_succeed": true
+          },
+          {
+            "operation": "write",
+            "item": 2,
+            "should_succeed": true
+          },
+          {
+            "operation": "overwrite",
+            "item": 3
+          },
+          {
+            "operation": "overwrite",
+            "item": 4
+          },
+          {
+            "operation": "read",
+            "should_succeed": true,
+            "expected": 3
+          },
+          {
+            "operation": "read",
+            "should_succeed": true,
+            "expected": 4
+          },
+          {
+            "operation": "read",
+            "should_succeed": false
           }
         ]
       },

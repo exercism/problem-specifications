@@ -1,8 +1,8 @@
 {
   "exercise": "sieve",
-  "version": "1.1.0",
   "cases": [
     {
+      "uuid": "88529125-c4ce-43cc-bb36-1eb4ddd7b44f",
       "description": "no primes under two",
       "property": "primes",
       "input": {
@@ -11,6 +11,7 @@
       "expected": []
     },
     {
+      "uuid": "4afe9474-c705-4477-9923-840e1024cc2b",
       "description": "find first prime",
       "property": "primes",
       "input": {
@@ -19,6 +20,7 @@
       "expected": [2]
     },
     {
+      "uuid": "974945d8-8cd9-4f00-9463-7d813c7f17b7",
       "description": "find primes up to 10",
       "property": "primes",
       "input": {
@@ -27,6 +29,7 @@
       "expected": [2, 3, 5, 7]
     },
     {
+      "uuid": "2e2417b7-3f3a-452a-8594-b9af08af6d82",
       "description": "limit is prime",
       "property": "primes",
       "input": {
@@ -35,6 +38,7 @@
       "expected": [2, 3, 5, 7, 11, 13]
     },
     {
+      "uuid": "92102a05-4c7c-47de-9ed0-b7d5fcd00f21",
       "description": "find primes up to 1000",
       "property": "primes",
       "input": {

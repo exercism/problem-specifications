@@ -1,3 +1,5 @@
+# Description
+
 Clean up user-entered phone numbers so that they can be sent SMS messages.
 
 The **North American Numbering Plan (NANP)** is a telephone numbering system used by many countries in North America like the United States, Canada or Bermuda. All NANP-countries share the same international country code: `1`.
@@ -15,6 +17,7 @@ where `N` is any digit from 2 through 9 and `X` is any digit from 0 through 9.
 Your task is to clean up differently formatted telephone numbers by removing punctuation and the country code (1) if present.
 
 For example, the inputs
+
 - `+1 (613)-995-0253`
 - `613-995-0253`
 - `1 613 995 0253`

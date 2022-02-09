@@ -1,6 +1,5 @@
 {
   "exercise": "beer-song",
-  "version": "2.1.0",
   "cases": [
     {
       "description": "verse",
@@ -9,6 +8,7 @@
           "description": "single verse",
           "cases": [
             {
+              "uuid": "5a02fd08-d336-4607-8006-246fe6fa9fb0",
               "description": "first generic verse",
               "property": "recite",
               "input": {
@@ -21,6 +21,7 @@
               ]
             },
             {
+              "uuid": "77299ca6-545e-4217-a9cc-606b342e0187",
               "description": "last generic verse",
               "property": "recite",
               "input": {
@@ -33,6 +34,7 @@
               ]
             },
             {
+              "uuid": "102cbca0-b197-40fd-b548-e99609b06428",
               "description": "verse with 2 bottles",
               "property": "recite",
               "input": {
@@ -45,6 +47,7 @@
               ]
             },
             {
+              "uuid": "b8ef9fce-960e-4d85-a0c9-980a04ec1972",
               "description": "verse with 1 bottle",
               "property": "recite",
               "input": {
@@ -57,6 +60,7 @@
               ]
             },
             {
+              "uuid": "c59d4076-f671-4ee3-baaa-d4966801f90d",
               "description": "verse with 0 bottles",
               "property": "recite",
               "input": {
@@ -79,6 +83,7 @@
           "description": "multiple verses",
           "cases": [
             {
+              "uuid": "7e17c794-402d-4ca6-8f96-4d8f6ee1ec7e",
               "description": "first two verses",
               "property": "recite",
               "input": {
@@ -94,6 +99,7 @@
               ]
             },
             {
+              "uuid": "949868e7-67e8-43d3-9bb4-69277fe020fb",
               "description": "last three verses",
               "property": "recite",
               "input": {
@@ -112,6 +118,7 @@
               ]
             },
             {
+              "uuid": "bc220626-126c-4e72-8df4-fddfc0c3e458",
               "description": "all verses",
               "property": "recite",
               "input": {

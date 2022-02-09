@@ -1,3 +1,5 @@
+# Description
+
 Calculate the Hamming difference between two DNA strands.
 
 A mutation is simply a mistake that occurs during the creation or
@@ -24,7 +26,7 @@ This is called the 'Hamming distance'
 
 The Hamming distance between these two DNA strands is 7.
 
-# Implementation notes
+## Implementation notes
 
 The Hamming distance is only defined for sequences of equal length. Hence you
 may assume that only sequences of equal length will be passed to your hamming

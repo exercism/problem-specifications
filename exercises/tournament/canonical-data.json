@@ -1,6 +1,5 @@
 {
   "exercise": "tournament",
-  "version": "1.4.0",
   "comments": [
     "The inputs and outputs are represented as arrays of strings to",
     "improve readability in this JSON file.",
@@ -11,14 +10,18 @@
   ],
   "cases": [
     {
+      "uuid": "67e9fab1-07c1-49cf-9159-bc8671cc7c9c",
       "description": "just the header if no input",
       "property": "tally",
       "input": {
         "rows": []
       },
-      "expected": [ "Team                           | MP |  W |  D |  L |  P" ]
+      "expected": [
+        "Team                           | MP |  W |  D |  L |  P"
+      ]
     },
     {
+      "uuid": "1b4a8aef-0734-4007-80a2-0626178c88f4",
       "description": "a win is three points, a loss is zero points",
       "property": "tally",
       "input": {
@@ -30,9 +33,10 @@
         "Team                           | MP |  W |  D |  L |  P",
         "Allegoric Alaskans             |  1 |  1 |  0 |  0 |  3",
         "Blithering Badgers             |  1 |  0 |  0 |  1 |  0"
-		]
-	},
+      ]
+    },
     {
+      "uuid": "5f45ac09-4efe-46e7-8ddb-75ad85f86e05",
       "description": "a win can also be expressed as a loss",
       "property": "tally",
       "input": {
@@ -44,9 +48,10 @@
         "Team                           | MP |  W |  D |  L |  P",
         "Allegoric Alaskans             |  1 |  1 |  0 |  0 |  3",
         "Blithering Badgers             |  1 |  0 |  0 |  1 |  0"
-		]
-	},
+      ]
+    },
     {
+      "uuid": "fd297368-efa0-442d-9f37-dd3f9a437239",
       "description": "a different team can win",
       "property": "tally",
       "input": {
@@ -58,9 +63,10 @@
         "Team                           | MP |  W |  D |  L |  P",
         "Blithering Badgers             |  1 |  1 |  0 |  0 |  3",
         "Allegoric Alaskans             |  1 |  0 |  0 |  1 |  0"
-		]
-	},
+      ]
+    },
     {
+      "uuid": "26c016f9-e753-4a93-94e9-842f7b4d70fc",
       "description": "a draw is one point each",
       "property": "tally",
       "input": {
@@ -72,9 +78,10 @@
         "Team                           | MP |  W |  D |  L |  P",
         "Allegoric Alaskans             |  1 |  0 |  1 |  0 |  1",
         "Blithering Badgers             |  1 |  0 |  1 |  0 |  1"
-		]
-	},
+      ]
+    },
     {
+      "uuid": "731204f6-4f34-4928-97eb-1c307ba83e62",
       "description": "There can be more than one match",
       "property": "tally",
       "input": {
@@ -87,9 +94,10 @@
         "Team                           | MP |  W |  D |  L |  P",
         "Allegoric Alaskans             |  2 |  2 |  0 |  0 |  6",
         "Blithering Badgers             |  2 |  0 |  0 |  2 |  0"
-		]
-	},
+      ]
+    },
     {
+      "uuid": "49dc2463-42af-4ea6-95dc-f06cc5776adf",
       "description": "There can be more than one winner",
       "property": "tally",
       "input": {
@@ -102,9 +110,10 @@
         "Team                           | MP |  W |  D |  L |  P",
         "Allegoric Alaskans             |  2 |  1 |  0 |  1 |  3",
         "Blithering Badgers             |  2 |  1 |  0 |  1 |  3"
-		]
-	},
+      ]
+    },
     {
+      "uuid": "6d930f33-435c-4e6f-9e2d-63fa85ce7dc7",
       "description": "There can be more than two teams",
       "property": "tally",
       "input": {
@@ -119,9 +128,10 @@
         "Allegoric Alaskans             |  2 |  2 |  0 |  0 |  6",
         "Blithering Badgers             |  2 |  1 |  0 |  1 |  3",
         "Courageous Californians        |  2 |  0 |  0 |  2 |  0"
-		]
-	},
+      ]
+    },
     {
+      "uuid": "97022974-0c8a-4a50-8fe7-e36bdd8a5945",
       "description": "typical input",
       "property": "tally",
       "input": {
@@ -143,6 +153,7 @@
       ]
     },
     {
+      "uuid": "fe562f0d-ac0a-4c62-b9c9-44ee3236392b",
       "description": "incomplete competition (not all pairs have played)",
       "property": "tally",
       "input": {
@@ -162,6 +173,7 @@
       ]
     },
     {
+      "uuid": "3aa0386f-150b-4f99-90bb-5195e7b7d3b8",
       "description": "ties broken alphabetically",
       "property": "tally",
       "input": {
@@ -180,6 +192,25 @@
         "Courageous Californians        |  3 |  2 |  1 |  0 |  7",
         "Blithering Badgers             |  3 |  0 |  1 |  2 |  1",
         "Devastating Donkeys            |  3 |  0 |  1 |  2 |  1"
+      ]
+    },
+    {
+      "uuid": "f9e20931-8a65-442a-81f6-503c0205b17a",
+      "description": "ensure points sorted numerically",
+      "property": "tally",
+      "input": {
+        "rows": [
+          "Devastating Donkeys;Blithering Badgers;win",
+          "Devastating Donkeys;Blithering Badgers;win",
+          "Devastating Donkeys;Blithering Badgers;win",
+          "Devastating Donkeys;Blithering Badgers;win",
+          "Blithering Badgers;Devastating Donkeys;win"
+        ]
+      },
+      "expected": [
+        "Team                           | MP |  W |  D |  L |  P",
+        "Devastating Donkeys            |  5 |  4 |  0 |  1 | 12",
+        "Blithering Badgers             |  5 |  1 |  0 |  4 |  3"
       ]
     }
   ]

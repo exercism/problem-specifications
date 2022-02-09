@@ -1,23 +1,25 @@
 {
   "exercise": "diffie-hellman",
-  "version": "1.0.0",
   "comments": [
-    "Optional tests to consider:",
-    "* Validation of parameters:",
-    "  Validate that `p`, `g` are valid.",
-    "  Validate that keys given as inputs are valid.",
-    "  Resources that show what happens if parameters are not validated:",
-    "  http://cryptopals.com/sets/5/challenges/34",
-    "  http://cryptopals.com/sets/5/challenges/35",
-    "* Large numbers:",
-    "  Although the calculations fundamentally do not require large numbers,",
-    "  this is a reasonable real-world use for them",
-    "  and it may be instructive to have an exercise on their use.",
-    "  Consult tracks with this exercise (such as the Go track) for possible inputs to use."
+    "Optional tests to consider:                                              ",
+    "                                                                         ",
+    "* Validation of parameters:                                              ",
+    "  - Validate that `p`, `g` are valid.                                    ",
+    "  - Validate that keys given as inputs are valid.                        ",
+    "  Resources that show what happens if parameters are not validated:      ",
+    "  http://cryptopals.com/sets/5/challenges/34                             ",
+    "  http://cryptopals.com/sets/5/challenges/35                             ",
+    "                                                                         ",
+    "* Large numbers:                                                         ",
+    "  Although the calculations fundamentally do not require large numbers,  ",
+    "  this is a reasonable real-world use for them and it may be instructive ",
+    "  to have an exercise on their use. Consult tracks with this exercise    ",
+    "  (such as the Go track) for possible inputs to use.                     "
   ],
   "cases": [
     {
-      "description": "private key is in range 1 .. p",
+      "uuid": "1b97bf38-4307-418e-bfd2-446ffc77588d",
+      "description": "private key is greater than 1 and less than p",
       "property": "privateKeyIsInRange",
       "input": {},
       "expected": {
@@ -26,6 +28,7 @@
       }
     },
     {
+      "uuid": "68b2a5f7-7755-44c3-97b2-d28d21f014a9",
       "description": "private key is random",
       "property": "privateKeyIsRandom",
       "input": {},
@@ -34,6 +37,7 @@
       }
     },
     {
+      "uuid": "b4161d8e-53a1-4241-ae8f-48cc86527f22",
       "description": "can calculate public key using private key",
       "property": "publicKey",
       "input": {
@@ -44,6 +48,25 @@
       "expected": 8
     },
     {
+      "uuid": "0d25f8d7-4897-4338-a033-2d3d7a9af688",
+      "description": "can calculate public key when given a different private key",
+      "comments": [
+        "As this test is intended to test the immutability / purity           ",
+        "of the underlying structure, when implemented, it should first get a ",
+        "public key from different values, for example from the test with     ",
+        "uuid (b4161d8e-53a1-4241-ae8f-48cc86527f22).                         "
+      ],
+      "property": "publicKey",
+      "input": {
+        "p": 23,
+        "g": 5,
+        "privateKey": 15
+      },
+      "expected": 19,
+      "scenarios": ["immutable"]
+    },
+    {
+      "uuid": "cd02ad45-3f52-4510-99cc-5161dad948a8",
       "description": "can calculate secret using other party's public key",
       "property": "secret",
       "input": {
@@ -54,6 +77,7 @@
       "expected": 2
     },
     {
+      "uuid": "17f13c61-a111-4075-9a1f-c2d4636dfa60",
       "description": "key exchange",
       "property": "keyExchange",
       "input": {

@@ -1,6 +1,5 @@
 {
   "exercise": "grains",
-  "version": "1.2.0",
   "comments": [
     "The final tests of square test error conditions",
     "In these cases you should expect an error as is idiomatic for your language"
@@ -10,7 +9,8 @@
       "description": "returns the number of grains on the square",
       "cases": [
         {
-          "description": "1",
+          "uuid": "9fbde8de-36b2-49de-baf2-cd42d6f28405",
+          "description": "grains on square 1",
           "property": "square",
           "input": {
             "square": 1
@@ -18,7 +18,8 @@
           "expected": 1
         },
         {
-          "description": "2",
+          "uuid": "ee1f30c2-01d8-4298-b25d-c677331b5e6d",
+          "description": "grains on square 2",
           "property": "square",
           "input": {
             "square": 2
@@ -26,7 +27,8 @@
           "expected": 2
         },
         {
-          "description": "3",
+          "uuid": "10f45584-2fc3-4875-8ec6-666065d1163b",
+          "description": "grains on square 3",
           "property": "square",
           "input": {
             "square": 3
@@ -34,7 +36,8 @@
           "expected": 4
         },
         {
-          "description": "4",
+          "uuid": "a7cbe01b-36f4-4601-b053-c5f6ae055170",
+          "description": "grains on square 4",
           "property": "square",
           "input": {
             "square": 4
@@ -42,7 +45,8 @@
           "expected": 8
         },
         {
-          "description": "16",
+          "uuid": "c50acc89-8535-44e4-918f-b848ad2817d4",
+          "description": "grains on square 16",
           "property": "square",
           "input": {
             "square": 16
@@ -50,7 +54,8 @@
           "expected": 32768
         },
         {
-          "description": "32",
+          "uuid": "acd81b46-c2ad-4951-b848-80d15ed5a04f",
+          "description": "grains on square 32",
           "property": "square",
           "input": {
             "square": 32
@@ -58,7 +63,8 @@
           "expected": 2147483648
         },
         {
-          "description": "64",
+          "uuid": "c73b470a-5efb-4d53-9ac6-c5f6487f227b",
+          "description": "grains on square 64",
           "property": "square",
           "input": {
             "square": 64
@@ -66,32 +72,42 @@
           "expected": 9223372036854775808
         },
         {
+          "uuid": "1d47d832-3e85-4974-9466-5bd35af484e3",
           "description": "square 0 raises an exception",
           "property": "square",
           "input": {
             "square": 0
           },
-          "expected": {"error": "square must be between 1 and 64"}
+          "expected": {
+            "error": "square must be between 1 and 64"
+          }
         },
         {
+          "uuid": "61974483-eeb2-465e-be54-ca5dde366453",
           "description": "negative square raises an exception",
           "property": "square",
           "input": {
             "square": -1
           },
-          "expected": {"error": "square must be between 1 and 64"}
+          "expected": {
+            "error": "square must be between 1 and 64"
+          }
         },
         {
+          "uuid": "a95e4374-f32c-45a7-a10d-ffec475c012f",
           "description": "square greater than 64 raises an exception",
           "property": "square",
           "input": {
             "square": 65
           },
-          "expected": {"error": "square must be between 1 and 64"}
+          "expected": {
+            "error": "square must be between 1 and 64"
+          }
         }
       ]
     },
     {
+      "uuid": "6eb07385-3659-4b45-a6be-9dc474222750",
       "description": "returns the total number of grains on the board",
       "property": "total",
       "input": {},

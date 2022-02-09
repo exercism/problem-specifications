@@ -1,3 +1,5 @@
+# Description
+
 Tally the results of a small football competition.
 
 Based on an input file containing which team played against which and what the
@@ -23,9 +25,7 @@ A win earns a team 3 points. A draw earns 1. A loss earns 0.
 
 The outcome should be ordered by points, descending. In case of a tie, teams are ordered alphabetically.
 
-###
-
-Input
+## Input
 
 Your tallying program will receive input that looks like:
 
@@ -38,13 +38,13 @@ Blithering Badgers;Devastating Donkeys;loss
 Allegoric Alaskans;Courageous Californians;win
 ```
 
-The result of the match refers to the first team listed. So this line
+The result of the match refers to the first team listed. So this line:
 
 ```text
 Allegoric Alaskans;Blithering Badgers;win
 ```
 
-Means that the Allegoric Alaskans beat the Blithering Badgers.
+means that the Allegoric Alaskans beat the Blithering Badgers.
 
 This line:
 
@@ -52,7 +52,7 @@ This line:
 Courageous Californians;Blithering Badgers;loss
 ```
 
-Means that the Blithering Badgers beat the Courageous Californians.
+means that the Blithering Badgers beat the Courageous Californians.
 
 And this line:
 
@@ -60,4 +60,4 @@ And this line:
 Devastating Donkeys;Courageous Californians;draw
 ```
 
-Means that the Devastating Donkeys and Courageous Californians tied.
+means that the Devastating Donkeys and Courageous Californians tied.

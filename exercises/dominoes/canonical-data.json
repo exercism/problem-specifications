@@ -1,6 +1,5 @@
 {
   "exercise": "dominoes",
-  "version": "2.1.0",
   "comments": [
     "Inputs are given as lists of two-element lists.",
     "Feel free to convert the input to a sensible type in the specific language",
@@ -38,54 +37,61 @@
   ],
   "cases": [
     {
+      "uuid": "31a673f2-5e54-49fe-bd79-1c1dae476c9c",
       "description": "empty input = empty output",
       "property": "canChain",
-      "input": { 
+      "input": {
         "dominoes": []
       },
       "expected": true
     },
     {
+      "uuid": "4f99b933-367b-404b-8c6d-36d5923ee476",
       "description": "singleton input = singleton output",
       "property": "canChain",
-      "input": { 
+      "input": {
         "dominoes": [[1, 1]]
       },
       "expected": true
     },
     {
+      "uuid": "91122d10-5ec7-47cb-b759-033756375869",
       "description": "singleton that can't be chained",
       "property": "canChain",
-      "input": { 
+      "input": {
         "dominoes": [[1, 2]]
       },
       "expected": false
     },
     {
+      "uuid": "be8bc26b-fd3d-440b-8e9f-d698a0623be3",
       "description": "three elements",
       "property": "canChain",
-      "input": { 
+      "input": {
         "dominoes": [[1, 2], [3, 1], [2, 3]]
       },
       "expected": true
     },
     {
+      "uuid": "99e615c6-c059-401c-9e87-ad7af11fea5c",
       "description": "can reverse dominoes",
       "property": "canChain",
-      "input": { 
+      "input": {
         "dominoes": [[1, 2], [1, 3], [2, 3]]
       },
       "expected": true
     },
     {
+      "uuid": "51f0c291-5d43-40c5-b316-0429069528c9",
       "description": "can't be chained",
       "property": "canChain",
-      "input": { 
+      "input": {
         "dominoes": [[1, 2], [4, 1], [2, 3]]
       },
       "expected": false
     },
     {
+      "uuid": "9a75e078-a025-4c23-8c3a-238553657f39",
       "description": "disconnected - simple",
       "comments": [
         "This meets the requirement of being possibly-Euclidean.",
@@ -95,28 +101,31 @@
         "as that is not a sufficient condition."
       ],
       "property": "canChain",
-      "input": { 
+      "input": {
         "dominoes": [[1, 1], [2, 2]]
       },
       "expected": false
     },
     {
+      "uuid": "0da0c7fe-d492-445d-b9ef-1f111f07a301",
       "description": "disconnected - double loop",
       "property": "canChain",
-      "input": { 
+      "input": {
         "dominoes": [[1, 2], [2, 1], [3, 4], [4, 3]]
       },
       "expected": false
     },
     {
+      "uuid": "b6087ff0-f555-4ea0-a71c-f9d707c5994a",
       "description": "disconnected - single isolated",
       "property": "canChain",
-      "input": { 
+      "input": {
         "dominoes": [[1, 2], [2, 3], [3, 1], [4, 4]]
       },
       "expected": false
     },
     {
+      "uuid": "2174fbdc-8b48-4bac-9914-8090d06ef978",
       "description": "need backtrack",
       "comments": [
         "Some solutions may make a chain out of (1, 2), (2, 3), (3, 1)",
@@ -132,6 +141,7 @@
       "expected": true
     },
     {
+      "uuid": "167bb480-dfd1-4318-a20d-4f90adb4a09f",
       "description": "separate loops",
       "property": "canChain",
       "input": {
@@ -140,6 +150,7 @@
       "expected": true
     },
     {
+      "uuid": "cd061538-6046-45a7-ace9-6708fe8f6504",
       "description": "nine elements",
       "property": "canChain",
       "input": {

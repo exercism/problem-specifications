@@ -17,6 +17,7 @@ recursion
 threading
 type_conversion
 variables
+closures
 
 Data Types
 ----------
@@ -33,6 +34,7 @@ lists
 maps
 matrices
 optional_values
+pointers
 queues
 records
 sequences
@@ -43,6 +45,7 @@ structs
 time
 trees
 tuples
+iterators
 
 Problem Areas
 -------------
@@ -50,6 +53,7 @@ algorithms
 bitwise_operations
 concurrency
 cryptography
+data_structures
 domain_specific_languages
 files
 filtering
@@ -71,6 +75,7 @@ security
 sorting
 text_formatting
 transforming
+unicode
 
 Programming Style
 -----------------

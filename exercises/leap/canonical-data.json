@@ -1,8 +1,8 @@
 {
   "exercise": "leap",
-  "version": "1.5.1",
   "cases": [
     {
+      "uuid": "6466b30d-519c-438e-935d-388224ab5223",
       "description": "year not divisible by 4 in common year",
       "property": "leapYear",
       "input": {
@@ -11,6 +11,7 @@
       "expected": false
     },
     {
+      "uuid": "ac227e82-ee82-4a09-9eb6-4f84331ffdb0",
       "description": "year divisible by 2, not divisible by 4 in common year",
       "property": "leapYear",
       "input": {
@@ -19,6 +20,7 @@
       "expected": false
     },
     {
+      "uuid": "4fe9b84c-8e65-489e-970b-856d60b8b78e",
       "description": "year divisible by 4, not divisible by 100 in leap year",
       "property": "leapYear",
       "input": {
@@ -27,6 +29,16 @@
       "expected": true
     },
     {
+      "uuid": "7fc6aed7-e63c-48f5-ae05-5fe182f60a5d",
+      "description": "year divisible by 4 and 5 is still a leap year",
+      "property": "leapYear",
+      "input": {
+        "year": 1960
+      },
+      "expected": true
+    },
+    {
+      "uuid": "78a7848f-9667-4192-ae53-87b30c9a02dd",
       "description": "year divisible by 100, not divisible by 400 in common year",
       "property": "leapYear",
       "input": {
@@ -35,7 +47,17 @@
       "expected": false
     },
     {
-      "description": "year divisible by 400 in leap year",
+      "uuid": "9d70f938-537c-40a6-ba19-f50739ce8bac",
+      "description": "year divisible by 100 but not by 3 is still not a leap year",
+      "property": "leapYear",
+      "input": {
+        "year": 1900
+      },
+      "expected": false
+    },
+    {
+      "uuid": "42ee56ad-d3e6-48f1-8e3f-c84078d916fc",
+      "description": "year divisible by 400 is leap year",
       "property": "leapYear",
       "input": {
         "year": 2000
@@ -43,6 +65,16 @@
       "expected": true
     },
     {
+      "uuid": "57902c77-6fe9-40de-8302-587b5c27121e",
+      "description": "year divisible by 400 but not by 125 is still a leap year",
+      "property": "leapYear",
+      "input": {
+        "year": 2400
+      },
+      "expected": true
+    },
+    {
+      "uuid": "c30331f6-f9f6-4881-ad38-8ca8c12520c1",
       "description": "year divisible by 200, not divisible by 400 in common year",
       "property": "leapYear",
       "input": {

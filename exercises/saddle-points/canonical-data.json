@@ -1,11 +1,14 @@
 {
   "exercise": "saddle-points",
-  "version": "1.5.0",
   "comments": [
-    "Matrix rows and columns are 1-indexed."
+    "Matrix rows and columns are 1-indexed.",
+    "The test cases list saddle points ordered by row ascending, then column ascending.",
+    "You can choose a different ordering logic and adjust the expected output accordingly,",
+    "or you can choose to skip asserting the order altogether."
   ],
   "cases": [
     {
+      "uuid": "3e374e63-a2e0-4530-a39a-d53c560382bd",
       "description": "Can identify single saddle point",
       "comments": [
         "This is the README example."
@@ -26,6 +29,7 @@
       ]
     },
     {
+      "uuid": "6b501e2b-6c1f-491f-b1bb-7f278f760534",
       "description": "Can identify that empty matrix has no saddle points",
       "property": "saddlePoints",
       "input": {
@@ -36,6 +40,7 @@
       "expected": []
     },
     {
+      "uuid": "8c27cc64-e573-4fcb-a099-f0ae863fb02f",
       "description": "Can identify lack of saddle points when there are none",
       "property": "saddlePoints",
       "input": {
@@ -48,6 +53,7 @@
       "expected": []
     },
     {
+      "uuid": "6d1399bd-e105-40fd-a2c9-c6609507d7a3",
       "description": "Can identify multiple saddle points in a column",
       "property": "saddlePoints",
       "input": {
@@ -73,6 +79,7 @@
       ]
     },
     {
+      "uuid": "3e81dce9-53b3-44e6-bf26-e328885fd5d1",
       "description": "Can identify multiple saddle points in a row",
       "property": "saddlePoints",
       "input": {
@@ -98,6 +105,7 @@
       ]
     },
     {
+      "uuid": "88868621-b6f4-4837-bb8b-3fad8b25d46b",
       "description": "Can identify saddle point in bottom right corner",
       "comments": [
         "This is a permutation of the README matrix designed to test",
@@ -119,6 +127,7 @@
       ]
     },
     {
+      "uuid": "5b9499ca-fcea-4195-830a-9c4584a0ee79",
       "description": "Can identify saddle points in a non square matrix",
       "property": "saddlePoints",
       "input": {
@@ -136,9 +145,15 @@
           "row": 1,
           "column": 1
         }
+      ],
+      "comments": [
+        "If your tests depend on the order of the saddle points,",
+        "note that this case breaks the sorting convention used in other cases (row ascending, column ascencding),",
+        "so you might want to swap the two points in the expected output."
       ]
     },
     {
+      "uuid": "ee99ccd2-a1f1-4283-ad39-f8c70f0cf594",
       "description": "Can identify that saddle points in a single column matrix are those with the minimum value",
       "property": "saddlePoints",
       "input": {
@@ -161,6 +176,7 @@
       ]
     },
     {
+      "uuid": "63abf709-a84b-407f-a1b3-456638689713",
       "description": "Can identify that saddle points in a single row matrix are those with the maximum value",
       "property": "saddlePoints",
       "input": {

@@ -1,11 +1,11 @@
 {
   "exercise": "resistor-color",
-  "version": "1.0.0",
   "cases": [
     {
       "description": "Color codes",
       "cases": [
         {
+          "uuid": "49eb31c5-10a8-4180-9f7f-fea632ab87ef",
           "description": "Black",
           "property": "colorCode",
           "input": {
@@ -14,6 +14,7 @@
           "expected": 0
         },
         {
+          "uuid": "0a4df94b-92da-4579-a907-65040ce0b3fc",
           "description": "White",
           "property": "colorCode",
           "input": {
@@ -22,6 +23,7 @@
           "expected": 9
         },
         {
+          "uuid": "5f81608d-f36f-4190-8084-f45116b6f380",
           "description": "Orange",
           "property": "colorCode",
           "input": {
@@ -32,10 +34,22 @@
       ]
     },
     {
+      "uuid": "581d68fa-f968-4be2-9f9d-880f2fb73cf7",
       "description": "Colors",
       "property": "colors",
       "input": {},
-      "expected": ["black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white"]
+      "expected": [
+        "black",
+        "brown",
+        "red",
+        "orange",
+        "yellow",
+        "green",
+        "blue",
+        "violet",
+        "grey",
+        "white"
+      ]
     }
   ]
 }

@@ -1,6 +1,5 @@
 {
   "exercise": "pov",
-  "version": "1.3.0",
   "cases": [
     {
       "description": "Reroot a tree so that its root is the specified node.",
@@ -18,6 +17,7 @@
       ],
       "cases": [
         {
+          "uuid": "1b3cd134-49ad-4a7d-8376-7087b7e70792",
           "description": "Results in the same tree if the input tree is a singleton",
           "property": "fromPov",
           "input": {
@@ -31,6 +31,7 @@
           }
         },
         {
+          "uuid": "0778c745-0636-40de-9edd-25a8f40426f6",
           "description": "Can reroot a tree with a parent and one sibling",
           "property": "fromPov",
           "input": {
@@ -62,6 +63,7 @@
           }
         },
         {
+          "uuid": "fdfdef0a-4472-4248-8bcf-19cf33f9c06e",
           "description": "Can reroot a tree with a parent and many siblings",
           "property": "fromPov",
           "input": {
@@ -105,6 +107,7 @@
           }
         },
         {
+          "uuid": "cbcf52db-8667-43d8-a766-5d80cb41b4bb",
           "description": "Can reroot a tree with new root deeply nested in tree",
           "property": "fromPov",
           "input": {
@@ -158,6 +161,7 @@
           }
         },
         {
+          "uuid": "e27fa4fa-648d-44cd-90af-d64a13d95e06",
           "description": "Moves children of the new root to same level as former parent",
           "property": "fromPov",
           "input": {
@@ -195,6 +199,7 @@
           }
         },
         {
+          "uuid": "09236c7f-7c83-42cc-87a1-25afa60454a3",
           "description": "Can reroot a complex tree with cousins",
           "property": "fromPov",
           "input": {
@@ -278,6 +283,7 @@
           }
         },
         {
+          "uuid": "f41d5eeb-8973-448f-a3b0-cc1e019a4193",
           "description": "Errors if target does not exist in a singleton tree",
           "property": "fromPov",
           "input": {
@@ -289,6 +295,7 @@
           "expected": null
         },
         {
+          "uuid": "9dc0a8b3-df02-4267-9a41-693b6aff75e7",
           "description": "Errors if target does not exist in a large tree",
           "property": "fromPov",
           "input": {
@@ -329,6 +336,7 @@
       ],
       "cases": [
         {
+          "uuid": "02d1f1d9-428d-4395-b026-2db35ffa8f0a",
           "description": "Can find path to parent",
           "property": "pathTo",
           "input": {
@@ -352,6 +360,7 @@
           ]
         },
         {
+          "uuid": "d0002674-fcfb-4cdc-9efa-bfc54e3c31b5",
           "description": "Can find path to sibling",
           "property": "pathTo",
           "input": {
@@ -382,6 +391,7 @@
           ]
         },
         {
+          "uuid": "c9877cd1-0a69-40d4-b362-725763a5c38f",
           "description": "Can find path to cousin",
           "property": "pathTo",
           "input": {
@@ -435,6 +445,7 @@
           ]
         },
         {
+          "uuid": "9fb17a82-2c14-4261-baa3-2f3f234ffa03",
           "description": "Can find path not involving root",
           "property": "pathTo",
           "input": {
@@ -467,6 +478,7 @@
           ]
         },
         {
+          "uuid": "5124ed49-7845-46ad-bc32-97d5ac7451b2",
           "description": "Can find path from nodes other than x",
           "property": "pathTo",
           "input": {
@@ -497,6 +509,7 @@
           ]
         },
         {
+          "uuid": "f52a183c-25cc-4c87-9fc9-0e7f81a5725c",
           "description": "Errors if destination does not exist",
           "property": "pathTo",
           "input": {
@@ -528,6 +541,7 @@
           "expected": null
         },
         {
+          "uuid": "f4fe18b9-b4a2-4bd5-a694-e179155c2149",
           "description": "Errors if source does not exist",
           "property": "pathTo",
           "input": {

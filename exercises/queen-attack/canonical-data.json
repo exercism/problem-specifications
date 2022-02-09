@@ -1,20 +1,25 @@
 {
   "exercise": "queen-attack",
-  "version": "2.2.0",
   "comments": [
-    "Testing invalid positions will vary by language. The expected",
-    "value of 'error' is there to indicate some sort of failure should",
-    "occur, while a 0 means no failure.",
-    "Some languages implement tests beyond this set, such as checking",
-    "for two pieces being placed on the same position, representing",
-    "the board graphically, or using standard chess notation. Those",
-    "tests can be offered as extra credit"
+    "Testing invalid positions will vary by language. The expected value of   ",
+    "'error' is there to indicate some sort of failure should occur, while a 0",
+    "means no failure.                                                        ",
+    "Some languages implement tests beyond this set, such as checking for two ",
+    "pieces being placed on the same position, representing the board         ",
+    "graphically, or using standard chess notation. Those tests can be offered",
+    "as extra credit.                                                         ",
+    "                                                                         ",
+    "All row and column positions are considered to be zero-indexed array     ",
+    "indices, where the first row - with index 0 - represents the top of the  ",
+    "board, and the first column - with index 0 - represents the left of the  ",
+    "board. In chess notation that is a8.                                     "
   ],
   "cases": [
     {
       "description": "Test creation of Queens with valid and invalid positions",
       "cases": [
         {
+          "uuid": "3ac4f735-d36c-44c4-a3e2-316f79704203",
           "description": "queen with a valid position",
           "property": "create",
           "input": {
@@ -28,6 +33,7 @@
           "expected": 0
         },
         {
+          "uuid": "4e812d5d-b974-4e38-9a6b-8e0492bfa7be",
           "description": "queen must have positive row",
           "property": "create",
           "input": {
@@ -38,9 +44,12 @@
               }
             }
           },
-          "expected": {"error": "row not positive"}
+          "expected": {
+            "error": "row not positive"
+          }
         },
         {
+          "uuid": "f07b7536-b66b-4f08-beb9-4d70d891d5c8",
           "description": "queen must have row on board",
           "property": "create",
           "input": {
@@ -51,9 +60,12 @@
               }
             }
           },
-          "expected": {"error": "row not on board"}
+          "expected": {
+            "error": "row not on board"
+          }
         },
         {
+          "uuid": "15a10794-36d9-4907-ae6b-e5a0d4c54ebe",
           "description": "queen must have positive column",
           "property": "create",
           "input": {
@@ -64,9 +76,12 @@
               }
             }
           },
-          "expected": {"error": "column not positive"}
+          "expected": {
+            "error": "column not positive"
+          }
         },
         {
+          "uuid": "6907762d-0e8a-4c38-87fb-12f2f65f0ce4",
           "description": "queen must have column on board",
           "property": "create",
           "input": {
@@ -77,7 +92,9 @@
               }
             }
           },
-          "expected": {"error": "column not on board"}
+          "expected": {
+            "error": "column not on board"
+          }
         }
       ]
     },
@@ -85,7 +102,8 @@
       "description": "Test the ability of one queen to attack another",
       "cases": [
         {
-          "description": "can not attack",
+          "uuid": "33ae4113-d237-42ee-bac1-e1e699c0c007",
+          "description": "cannot attack",
           "property": "canAttack",
           "input": {
             "white_queen": {
@@ -104,6 +122,7 @@
           "expected": false
         },
         {
+          "uuid": "eaa65540-ea7c-4152-8c21-003c7a68c914",
           "description": "can attack on same row",
           "property": "canAttack",
           "input": {
@@ -123,6 +142,7 @@
           "expected": true
         },
         {
+          "uuid": "bae6f609-2c0e-4154-af71-af82b7c31cea",
           "description": "can attack on same column",
           "property": "canAttack",
           "input": {
@@ -142,6 +162,7 @@
           "expected": true
         },
         {
+          "uuid": "0e1b4139-b90d-4562-bd58-dfa04f1746c7",
           "description": "can attack on first diagonal",
           "property": "canAttack",
           "input": {
@@ -161,6 +182,7 @@
           "expected": true
         },
         {
+          "uuid": "ff9b7ed4-e4b6-401b-8d16-bc894d6d3dcd",
           "description": "can attack on second diagonal",
           "property": "canAttack",
           "input": {
@@ -180,6 +202,7 @@
           "expected": true
         },
         {
+          "uuid": "0a71e605-6e28-4cc2-aa47-d20a2e71037a",
           "description": "can attack on third diagonal",
           "property": "canAttack",
           "input": {
@@ -199,23 +222,44 @@
           "expected": true
         },
         {
+          "uuid": "0790b588-ae73-4f1f-a968-dd0b34f45f86",
           "description": "can attack on fourth diagonal",
           "property": "canAttack",
           "input": {
             "white_queen": {
               "position": {
-                "row": 2,
-                "column": 2
+                "row": 1,
+                "column": 7
               }
             },
             "black_queen": {
               "position": {
-                "row": 5,
-                "column": 5
+                "row": 0,
+                "column": 6
               }
             }
           },
           "expected": true
+        },
+        {
+          "uuid": "543f8fd4-2597-4aad-8d77-cbdab63619f8",
+          "description": "cannot attack if falling diagonals are only the same when reflected across the longest falling diagonal",
+          "property": "canAttack",
+          "input": {
+            "white_queen": {
+              "position": {
+                "row": 4,
+                "column": 1
+              }
+            },
+            "black_queen": {
+              "position": {
+                "row": 2,
+                "column": 5
+              }
+            }
+          },
+          "expected": false
         }
       ]
     }

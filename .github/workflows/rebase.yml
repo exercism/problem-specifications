@@ -1,0 +1,21 @@
+name: Rebase command
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  rebase:
+    name: Rebase
+    if: github.event.issue.pull_request != '' && contains(github.event.comment.body, '/rebase')
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579
+      with:
+        fetch-depth: 0
+
+    - name: Automatic Rebase
+      uses: cirrus-actions/rebase@c473b716e3fcde0c6bf67416e2c2882830ad40f6
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

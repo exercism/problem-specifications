@@ -1,6 +1,5 @@
 {
   "exercise": "rail-fence-cipher",
-  "version": "1.1.0",
   "comments": [
     "The tests do not expect any normalization or cleaning.",
     "That trade is tested in enough other exercises."
@@ -10,6 +9,7 @@
       "description": "encode",
       "cases": [
         {
+          "uuid": "46dc5c50-5538-401d-93a5-41102680d068",
           "description": "encode with two rails",
           "property": "encode",
           "input": {
@@ -19,6 +19,7 @@
           "expected": "XXXXXXXXXOOOOOOOOO"
         },
         {
+          "uuid": "25691697-fbd8-4278-8c38-b84068b7bc29",
           "description": "encode with three rails",
           "property": "encode",
           "input": {
@@ -28,6 +29,7 @@
           "expected": "WECRLTEERDSOEEFEAOCAIVDEN"
         },
         {
+          "uuid": "384f0fea-1442-4f1a-a7c4-5cbc2044002c",
           "description": "encode with ending in the middle",
           "property": "encode",
           "input": {
@@ -42,6 +44,7 @@
       "description": "decode",
       "cases": [
         {
+          "uuid": "cd525b17-ec34-45ef-8f0e-4f27c24a7127",
           "description": "decode with three rails",
           "property": "decode",
           "input": {
@@ -51,6 +54,7 @@
           "expected": "THEDEVILISINTHEDETAILS"
         },
         {
+          "uuid": "dd7b4a98-1a52-4e5c-9499-cbb117833507",
           "description": "decode with five rails",
           "property": "decode",
           "input": {
@@ -60,6 +64,7 @@
           "expected": "EXERCISMISAWESOME"
         },
         {
+          "uuid": "93e1ecf4-fac9-45d9-9cd2-591f47d3b8d3",
           "description": "decode with six rails",
           "property": "decode",
           "input": {

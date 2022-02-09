@@ -1,3 +1,5 @@
+# Description
+
 Implement a binary search algorithm.
 
 Searching a sorted collection is a common task. A dictionary is a sorted
