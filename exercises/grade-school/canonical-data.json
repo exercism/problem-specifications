@@ -88,8 +88,8 @@
     {
       "uuid": "a0c7b9b8-0e89-47f8-8b4a-c50f885e79d1",
       "reimplements": "c125dab7-2a53-492f-a99a-56ad511940d8",
-      "comments": ["Reimplemented to be logically consistent"],
       "description": "A student can only be added to the same grade in the roster once",
+      "comments": ["Reimplemented to be logically consistent"],
       "property": "roster",
       "input": {
         "students": [
@@ -101,8 +101,8 @@
     },
     {
       "uuid": "d7982c4f-1602-49f6-a651-620f2614243a",
-      "description": "Student not added to same grade in the roster more than once",
       "reimplements": "a0c7b9b8-0e89-47f8-8b4a-c50f885e79d1",
+      "description": "Student not added to same grade in the roster more than once",
       "comments": [
         "Ensure the implementation does not affect students already added",
         "Ensure the implementation does not prevent addition of other students after preventing the error case"
@@ -159,8 +159,8 @@
     {
       "uuid": "6a03b61e-1211-4783-a3cc-fc7f773fba3f",
       "reimplements": "c125dab7-2a53-492f-a99a-56ad511940d8",
-      "comments": ["Reimplemented to be logically consistent"],
       "description": "A student cannot be added to more than one grade in the sorted roster",
+      "comments": ["Reimplemented to be logically consistent"],
       "property": "roster",
       "input": {
         "students": [
@@ -173,11 +173,11 @@
     {
       "uuid": "c7ec1c5e-9ab7-4d3b-be5c-29f2f7a237c5",
       "reimplements": "6a03b61e-1211-4783-a3cc-fc7f773fba3f",
+      "description": "Student not added to multiple grades in the roster",
       "comments": [
         "Ensure the implementation does not affect students already added",
         "Ensure the implementation does not prevent addition of other students after preventing the error case"
       ],
-      "description": "Student not added to multiple grades in the roster",
       "property": "roster",
       "input": {
         "students": [
