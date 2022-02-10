@@ -38,7 +38,7 @@
       "description": "invalid when 9 digits",
       "property": "clean",
       "input": {
-        "phrase": "123456789"
+        "phrase": "213456789"
       },
       "expected": {
         "error": "incorrect number of digits"
@@ -89,7 +89,7 @@
       "description": "invalid with letters",
       "property": "clean",
       "input": {
-        "phrase": "123-abc-7890"
+        "phrase": "523-abc-7890"
       },
       "expected": {
         "error": "letters not permitted"
@@ -100,7 +100,7 @@
       "description": "invalid with punctuations",
       "property": "clean",
       "input": {
-        "phrase": "123-@:!-7890"
+        "phrase": "523-@:!-7890"
       },
       "expected": {
         "error": "punctuations not permitted"
