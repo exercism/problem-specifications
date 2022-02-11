@@ -147,12 +147,12 @@
           "expected": ["G", "Ab", "Bb", "C", "Db", "Eb", "F", "G"]
         },
         {
+          "uuid": "87fdbcca-d3dd-46d5-9c56-ec79e25b19f4",
+          "reimplements": "70517400-12b7-4530-b861-fa940ae69ee8",
+          "description": "Harmonic minor",          
           "comments": [
             "Note that this case introduces the augmented second interval (A)"
           ],
-          "uuid": "87fdbcca-d3dd-46d5-9c56-ec79e25b19f4",
-          "reimplements": "70517400-12b7-4530-b861-fa940ae69ee8",
-          "description": "Harmonic minor",
           "property": "interval",
           "input": {
             "tonic": "d",
@@ -306,11 +306,11 @@
           "expected": ["G", "Ab", "Bb", "C", "Db", "Eb", "F"]
         },
         {
+          "uuid": "70517400-12b7-4530-b861-fa940ae69ee8",
+          "description": "Harmonic minor",
           "comments": [
             "Note that this case introduces the accidental interval (A)"
           ],
-          "uuid": "70517400-12b7-4530-b861-fa940ae69ee8",
-          "description": "Harmonic minor",
           "property": "interval",
           "input": {
             "tonic": "d",
