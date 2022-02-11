@@ -129,6 +129,11 @@
     {
       "uuid": "5b9499ca-fcea-4195-830a-9c4584a0ee79",
       "description": "Can identify saddle points in a non square matrix",
+      "comments": [
+        "If your tests depend on the order of the saddle points,",
+        "note that this case breaks the sorting convention used in other cases (row ascending, column ascencding),",
+        "so you might want to swap the two points in the expected output."
+      ],
       "property": "saddlePoints",
       "input": {
         "matrix": [
@@ -145,11 +150,6 @@
           "row": 1,
           "column": 1
         }
-      ],
-      "comments": [
-        "If your tests depend on the order of the saddle points,",
-        "note that this case breaks the sorting convention used in other cases (row ascending, column ascencding),",
-        "so you might want to swap the two points in the expected output."
       ]
     },
     {
