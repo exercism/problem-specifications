@@ -56,14 +56,14 @@
         "public key from different values, for example from the test with     ",
         "uuid (b4161d8e-53a1-4241-ae8f-48cc86527f22).                         "
       ],
+      "scenarios": ["immutable"],
       "property": "publicKey",
       "input": {
         "p": 23,
         "g": 5,
         "privateKey": 15
       },
-      "expected": 19,
-      "scenarios": ["immutable"]
+      "expected": 19
     },
     {
       "uuid": "cd02ad45-3f52-4510-99cc-5161dad948a8",
