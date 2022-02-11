@@ -64,10 +64,10 @@
     },
     {
       "uuid": "0b357334-4cad-49e1-a741-425202edfc7c",
-      "description": "accumulate recursively",
-      "property": "accumulate",
       "reimplements": "bee8e9b6-b16f-4cd2-be3b-ccf7457e50bb",
+      "description": "accumulate recursively",
       "comments": ["Removes the trailing `)` at the end of the expression"],
+      "property": "accumulate",
       "input": {
         "list": ["a", "b", "c"],
         "accumulator": "(x) => accumulate([\"1\", \"2\", \"3\"], (y) => x + y)"
