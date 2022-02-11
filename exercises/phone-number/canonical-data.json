@@ -96,11 +96,41 @@
       }
     },
     {
+      "uuid": "eb8a1fc0-64e5-46d3-b0c6-33184208e28a",
+      "reimplements": "63f38f37-53f6-4a5f-bd86-e9b404f10a60",
+      "comments": [
+        "make input invalid only due to letters; area code may not start with 1"
+      ],
+      "description": "invalid with letters",
+      "property": "clean",
+      "input": {
+        "phrase": "523-abc-7890"
+      },
+      "expected": {
+        "error": "letters not permitted"
+      }
+    },
+    {
       "uuid": "4bd97d90-52fd-45d3-b0db-06ab95b1244e",
       "description": "invalid with punctuations",
       "property": "clean",
       "input": {
         "phrase": "123-@:!-7890"
+      },
+      "expected": {
+        "error": "punctuations not permitted"
+      }
+    },
+    {
+      "uuid": "065f6363-8394-4759-b080-e6c8c351dd1f",
+      "reimplements": "4bd97d90-52fd-45d3-b0db-06ab95b1244e",
+      "comments": [
+        "make input invalid only due to punctuation; area code may not start with 1"
+      ],
+      "description": "invalid with punctuations",
+      "property": "clean",
+      "input": {
+        "phrase": "523-@:!-7890"
       },
       "expected": {
         "error": "punctuations not permitted"
