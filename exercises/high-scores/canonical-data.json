@@ -105,14 +105,6 @@
           "scenarios": ["immutable"]
         },
         {
-          "description": "Recent after a call to sort",
-          "property": "personalTopThree", "latest",
-          "input": {
-            "scores": [10, 20, 30, 40, 25]
-          },
-          "expected": [25]
-        },
-        {
           "uuid": "ddb0efc0-9a86-4f82-bc30-21ae0bdc6418",
           "description": "Latest score after personal best",
           "property": "latestAfterBest",
