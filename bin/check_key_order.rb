@@ -14,12 +14,13 @@ end
 
 exit_code = 0
 
-Dir.glob('exercises/*/canonical-data.json').each do |path|
+root_dir = "#{__dir__}/.."
+Dir.glob("#{root_dir}/exercises/*/canonical-data.json").each do |path|
   json = JSON.parse(File.read(path))
   invalid_tests = find_tests(json).select {|test| (CORRECT_ORDER & test.keys) != test.keys}
   next if invalid_tests.empty?
 
-  puts "The following tests in #{path} use the wrong key order:"
+  puts "The following tests in #{path.delete_prefix("#{root_dir}/")} use the wrong key order:"
   invalid_tests.each do |test|
     puts "- Test: #{test['uuid']} (#{test['description']})"
     puts "  Actual: #{test.keys}"
