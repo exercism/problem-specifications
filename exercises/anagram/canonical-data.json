@@ -24,10 +24,10 @@
     {
       "uuid": "03eb9bbe-8906-4ea0-84fa-ffe711b52c8b",
       "reimplements": "b3cca662-f50a-489e-ae10-ab8290a09bdc",
+      "description": "detects two anagrams",
       "comments": [
         "Reimplemented to be consistent about removing references to 'master'"
       ],
-      "description": "detects two anagrams",
       "property": "findAnagrams",
       "input": {
         "subject": "solemn",
