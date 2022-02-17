@@ -10,9 +10,7 @@
     {
       "uuid": "3e374e63-a2e0-4530-a39a-d53c560382bd",
       "description": "Can identify single saddle point",
-      "comments": [
-        "This is the README example."
-      ],
+      "comments": ["This is the README example."],
       "property": "saddlePoints",
       "input": {
         "matrix": [
