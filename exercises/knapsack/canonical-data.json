@@ -1,8 +1,6 @@
 {
   "exercise": "knapsack",
-  "comments": [
-    "Depending on the language, the input type can be modified"
-  ],
+  "comments": ["Depending on the language, the input type can be modified"],
   "cases": [
     {
       "uuid": "a4d7d2f0-ad8a-460c-86f3-88ba709d41a7",
@@ -20,9 +18,7 @@
       "property": "maximumValue",
       "input": {
         "maximumWeight": 10,
-        "items": [
-          { "weight": 100, "value": 1 }
-        ]
+        "items": [{ "weight": 100, "value": 1 }]
       },
       "expected": 0
     },

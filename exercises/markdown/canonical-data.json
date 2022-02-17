@@ -1,8 +1,6 @@
 {
   "exercise": "markdown",
-  "comments": [
-    "Markdown is a shorthand for creating HTML from text strings."
-  ],
+  "comments": ["Markdown is a shorthand for creating HTML from text strings."],
   "cases": [
     {
       "uuid": "e75c8103-a6b8-45d9-84ad-e68520545f6e",

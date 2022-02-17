@@ -64,9 +64,7 @@
             "flags": [],
             "files": ["iliad.txt"]
           },
-          "expected": [
-            "Of Atreus, Agamemnon, King of men."
-          ]
+          "expected": ["Of Atreus, Agamemnon, King of men."]
         },
         {
           "uuid": "76519cce-98e3-46cd-b287-aac31b1d77d6",
@@ -77,9 +75,7 @@
             "flags": ["-n"],
             "files": ["paradise-lost.txt"]
           },
-          "expected": [
-            "2:Of that Forbidden Tree, whose mortal tast"
-          ]
+          "expected": ["2:Of that Forbidden Tree, whose mortal tast"]
         },
         {
           "uuid": "af0b6d3c-e0e8-475e-a112-c0fc10a1eb30",
@@ -90,9 +86,7 @@
             "flags": ["-i"],
             "files": ["paradise-lost.txt"]
           },
-          "expected": [
-            "Of that Forbidden Tree, whose mortal tast"
-          ]
+          "expected": ["Of that Forbidden Tree, whose mortal tast"]
         },
         {
           "uuid": "ff7af839-d1b8-4856-a53e-99283579b672",
@@ -103,9 +97,7 @@
             "flags": ["-l"],
             "files": ["paradise-lost.txt"]
           },
-          "expected": [
-            "paradise-lost.txt"
-          ]
+          "expected": ["paradise-lost.txt"]
         },
         {
           "uuid": "8625238a-720c-4a16-81f2-924ec8e222cb",
@@ -116,9 +108,7 @@
             "flags": ["-x"],
             "files": ["paradise-lost.txt"]
           },
-          "expected": [
-            "With loss of Eden, till one greater Man"
-          ]
+          "expected": ["With loss of Eden, till one greater Man"]
         },
         {
           "uuid": "2a6266b3-a60f-475c-a5f5-f5008a717d3e",
@@ -129,9 +119,7 @@
             "flags": ["-n", "-i", "-x"],
             "files": ["iliad.txt"]
           },
-          "expected": [
-            "9:Of Atreus, Agamemnon, King of men."
-          ]
+          "expected": ["9:Of Atreus, Agamemnon, King of men."]
         },
         {
           "uuid": "842222da-32e8-4646-89df-0d38220f77a1",
@@ -225,9 +213,7 @@
             "flags": ["-n", "-l"],
             "files": ["iliad.txt"]
           },
-          "expected": [
-            "iliad.txt"
-          ]
+          "expected": ["iliad.txt"]
         },
         {
           "uuid": "87b21b24-b788-4d6e-a68b-7afe9ca141fe",
@@ -263,9 +249,7 @@
             "flags": [],
             "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
           },
-          "expected": [
-            "iliad.txt:Of Atreus, Agamemnon, King of men."
-          ]
+          "expected": ["iliad.txt:Of Atreus, Agamemnon, King of men."]
         },
         {
           "uuid": "4539bd36-6daa-4bc3-8e45-051f69f5aa95",
@@ -307,10 +291,7 @@
             "flags": ["-l"],
             "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
           },
-          "expected": [
-            "iliad.txt",
-            "paradise-lost.txt"
-          ]
+          "expected": ["iliad.txt", "paradise-lost.txt"]
         },
         {
           "uuid": "d69f3606-7d15-4ddf-89ae-01df198e6b6c",
@@ -395,10 +376,7 @@
             "flags": ["-n", "-l"],
             "files": ["iliad.txt", "midsummer-night.txt", "paradise-lost.txt"]
           },
-          "expected": [
-            "iliad.txt",
-            "paradise-lost.txt"
-          ]
+          "expected": ["iliad.txt", "paradise-lost.txt"]
         },
         {
           "uuid": "ff406330-2f0b-4b17-9ee4-4b71c31dd6d2",

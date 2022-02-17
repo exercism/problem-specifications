@@ -16,18 +16,14 @@
       "input": {
         "rows": []
       },
-      "expected": [
-        "Team                           | MP |  W |  D |  L |  P"
-      ]
+      "expected": ["Team                           | MP |  W |  D |  L |  P"]
     },
     {
       "uuid": "1b4a8aef-0734-4007-80a2-0626178c88f4",
       "description": "a win is three points, a loss is zero points",
       "property": "tally",
       "input": {
-        "rows": [
-          "Allegoric Alaskans;Blithering Badgers;win"
-        ]
+        "rows": ["Allegoric Alaskans;Blithering Badgers;win"]
       },
       "expected": [
         "Team                           | MP |  W |  D |  L |  P",
@@ -40,9 +36,7 @@
       "description": "a win can also be expressed as a loss",
       "property": "tally",
       "input": {
-        "rows": [
-          "Blithering Badgers;Allegoric Alaskans;loss"
-        ]
+        "rows": ["Blithering Badgers;Allegoric Alaskans;loss"]
       },
       "expected": [
         "Team                           | MP |  W |  D |  L |  P",
@@ -55,9 +49,7 @@
       "description": "a different team can win",
       "property": "tally",
       "input": {
-        "rows": [
-          "Blithering Badgers;Allegoric Alaskans;win"
-        ]
+        "rows": ["Blithering Badgers;Allegoric Alaskans;win"]
       },
       "expected": [
         "Team                           | MP |  W |  D |  L |  P",
@@ -70,9 +62,7 @@
       "description": "a draw is one point each",
       "property": "tally",
       "input": {
-        "rows": [
-          "Allegoric Alaskans;Blithering Badgers;draw"
-        ]
+        "rows": ["Allegoric Alaskans;Blithering Badgers;draw"]
       },
       "expected": [
         "Team                           | MP |  W |  D |  L |  P",

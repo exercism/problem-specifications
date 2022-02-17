@@ -12,12 +12,7 @@
             "diagram": "RC\nGG",
             "student": "Alice"
           },
-          "expected": [
-            "radishes",
-            "clover",
-            "grass",
-            "grass"
-          ]
+          "expected": ["radishes", "clover", "grass", "grass"]
         },
         {
           "uuid": "acd19dc1-2200-4317-bc2a-08f021276b40",
@@ -27,12 +22,7 @@
             "diagram": "VC\nRC",
             "student": "Alice"
           },
-          "expected": [
-            "violets",
-            "clover",
-            "radishes",
-            "clover"
-          ]
+          "expected": ["violets", "clover", "radishes", "clover"]
         },
         {
           "uuid": "c376fcc8-349c-446c-94b0-903947315757",
@@ -42,12 +32,7 @@
             "diagram": "VVCG\nVVRC",
             "student": "Bob"
           },
-          "expected": [
-            "clover",
-            "grass",
-            "radishes",
-            "clover"
-          ]
+          "expected": ["clover", "grass", "radishes", "clover"]
         },
         {
           "description": "multiple students for the same garden with three students",
@@ -60,12 +45,7 @@
                 "diagram": "VVCCGG\nVVCCGG",
                 "student": "Bob"
               },
-              "expected": [
-                "clover",
-                "clover",
-                "clover",
-                "clover"
-              ]
+              "expected": ["clover", "clover", "clover", "clover"]
             },
             {
               "uuid": "57712331-4896-4364-89f8-576421d69c44",
@@ -75,12 +55,7 @@
                 "diagram": "VVCCGG\nVVCCGG",
                 "student": "Charlie"
               },
-              "expected": [
-                "grass",
-                "grass",
-                "grass",
-                "grass"
-              ]
+              "expected": ["grass", "grass", "grass", "grass"]
             }
           ]
         }
@@ -97,12 +72,7 @@
             "diagram": "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV",
             "student": "Alice"
           },
-          "expected": [
-            "violets",
-            "radishes",
-            "violets",
-            "radishes"
-          ]
+          "expected": ["violets", "radishes", "violets", "radishes"]
         },
         {
           "uuid": "ba25dbbc-10bd-4a37-b18e-f89ecd098a5e",
@@ -112,12 +82,7 @@
             "diagram": "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV",
             "student": "Bob"
           },
-          "expected": [
-            "clover",
-            "grass",
-            "clover",
-            "clover"
-          ]
+          "expected": ["clover", "grass", "clover", "clover"]
         },
         {
           "uuid": "566b621b-f18e-4c5f-873e-be30544b838c",
@@ -127,12 +92,7 @@
             "diagram": "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV",
             "student": "Charlie"
           },
-          "expected": [
-            "violets",
-            "violets",
-            "clover",
-            "grass"
-          ]
+          "expected": ["violets", "violets", "clover", "grass"]
         },
         {
           "uuid": "3ad3df57-dd98-46fc-9269-1877abf612aa",
@@ -142,12 +102,7 @@
             "diagram": "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV",
             "student": "David"
           },
-          "expected": [
-            "radishes",
-            "violets",
-            "clover",
-            "radishes"
-          ]
+          "expected": ["radishes", "violets", "clover", "radishes"]
         },
         {
           "uuid": "0f0a55d1-9710-46ed-a0eb-399ba8c72db2",
@@ -157,12 +112,7 @@
             "diagram": "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV",
             "student": "Eve"
           },
-          "expected": [
-            "clover",
-            "grass",
-            "radishes",
-            "grass"
-          ]
+          "expected": ["clover", "grass", "radishes", "grass"]
         },
         {
           "uuid": "a7e80c90-b140-4ea1-aee3-f4625365c9a4",
@@ -172,12 +122,7 @@
             "diagram": "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV",
             "student": "Fred"
           },
-          "expected": [
-            "grass",
-            "clover",
-            "violets",
-            "clover"
-          ]
+          "expected": ["grass", "clover", "violets", "clover"]
         },
         {
           "uuid": "9d94b273-2933-471b-86e8-dba68694c615",
@@ -187,12 +132,7 @@
             "diagram": "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV",
             "student": "Ginny"
           },
-          "expected": [
-            "clover",
-            "grass",
-            "grass",
-            "clover"
-          ]
+          "expected": ["clover", "grass", "grass", "clover"]
         },
         {
           "uuid": "f55bc6c2-ade8-4844-87c4-87196f1b7258",
@@ -202,12 +142,7 @@
             "diagram": "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV",
             "student": "Harriet"
           },
-          "expected": [
-            "violets",
-            "radishes",
-            "radishes",
-            "violets"
-          ]
+          "expected": ["violets", "radishes", "radishes", "violets"]
         },
         {
           "uuid": "759070a3-1bb1-4dd4-be2c-7cce1d7679ae",
@@ -217,12 +152,7 @@
             "diagram": "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV",
             "student": "Ileana"
           },
-          "expected": [
-            "grass",
-            "clover",
-            "violets",
-            "clover"
-          ]
+          "expected": ["grass", "clover", "violets", "clover"]
         },
         {
           "uuid": "78578123-2755-4d4a-9c7d-e985b8dda1c6",
@@ -232,12 +162,7 @@
             "diagram": "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV",
             "student": "Joseph"
           },
-          "expected": [
-            "violets",
-            "clover",
-            "violets",
-            "grass"
-          ]
+          "expected": ["violets", "clover", "violets", "grass"]
         },
         {
           "uuid": "6bb66df7-f433-41ab-aec2-3ead6e99f65b",
@@ -247,12 +172,7 @@
             "diagram": "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV",
             "student": "Kincaid"
           },
-          "expected": [
-            "grass",
-            "clover",
-            "clover",
-            "grass"
-          ]
+          "expected": ["grass", "clover", "clover", "grass"]
         },
         {
           "uuid": "d7edec11-6488-418a-94e6-ed509e0fa7eb",
@@ -262,12 +182,7 @@
             "diagram": "VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV",
             "student": "Larry"
           },
-          "expected": [
-            "grass",
-            "violets",
-            "clover",
-            "violets"
-          ]
+          "expected": ["grass", "violets", "clover", "violets"]
         }
       ]
     }

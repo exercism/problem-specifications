@@ -447,9 +447,7 @@
     },
     {
       "description": "list when:",
-      "comments": [
-        "Given a number, list all things Tom is allergic to"
-      ],
+      "comments": ["Given a number, list all things Tom is allergic to"],
       "cases": [
         {
           "uuid": "f9c1b8e7-7dc5-4887-aa93-cebdcc29dd8f",
@@ -467,9 +465,7 @@
           "input": {
             "score": 1
           },
-          "expected": [
-            "eggs"
-          ]
+          "expected": ["eggs"]
         },
         {
           "uuid": "8851c973-805e-4283-9e01-d0c0da0e4695",
@@ -478,9 +474,7 @@
           "input": {
             "score": 2
           },
-          "expected": [
-            "peanuts"
-          ]
+          "expected": ["peanuts"]
         },
         {
           "uuid": "2c8943cb-005e-435f-ae11-3e8fb558ea98",
@@ -489,9 +483,7 @@
           "input": {
             "score": 8
           },
-          "expected": [
-            "strawberries"
-          ]
+          "expected": ["strawberries"]
         },
         {
           "uuid": "6fa95d26-044c-48a9-8a7b-9ee46ec32c5c",
@@ -500,10 +492,7 @@
           "input": {
             "score": 3
           },
-          "expected": [
-            "eggs",
-            "peanuts"
-          ]
+          "expected": ["eggs", "peanuts"]
         },
         {
           "uuid": "19890e22-f63f-4c5c-a9fb-fb6eacddfe8e",
@@ -512,10 +501,7 @@
           "input": {
             "score": 5
           },
-          "expected": [
-            "eggs",
-            "shellfish"
-          ]
+          "expected": ["eggs", "shellfish"]
         },
         {
           "uuid": "4b68f470-067c-44e4-889f-c9fe28917d2f",

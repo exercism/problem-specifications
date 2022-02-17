@@ -19,9 +19,7 @@
         "startVerse": 1,
         "endVerse": 1
       },
-      "expected": [
-        "This is the house that Jack built."
-      ]
+      "expected": ["This is the house that Jack built."]
     },
     {
       "uuid": "ebc825ac-6e2b-4a5e-9afd-95732191c8da",
@@ -31,9 +29,7 @@
         "startVerse": 2,
         "endVerse": 2
       },
-      "expected": [
-        "This is the malt that lay in the house that Jack built."
-      ]
+      "expected": ["This is the malt that lay in the house that Jack built."]
     },
     {
       "uuid": "1ed8bb0f-edb8-4bd1-b6d4-b64754fe4a60",
