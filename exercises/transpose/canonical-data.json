@@ -64,7 +64,9 @@
       "description": "single line",
       "property": "transpose",
       "input": {
-        "lines": ["Single line."]
+        "lines": [
+          "Single line."
+        ]
       },
       "expected": [
         "S",
