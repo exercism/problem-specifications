@@ -52,7 +52,7 @@ _ _ _ _ _ _ _ _     _ _ B _ _ _ _ _     _ _ _ _ _ _ B _
 _ _ _ _ _ _ _ _     _ _ _ _ _ _ _ _     _ _ _ _ _ _ _ _
 ```
 
-B and W stand for **Black** and **White**, the two sides competing
-against each other in a game of chess, which is why each queen
-is labelled B and W; though you do not need to know which side
-the queens are on to solve this challenge.
+~~~~exercism/note
+B and W are the queens, standing for Black and White.
+This is not relevant info to the puzzle.
+~~~~
