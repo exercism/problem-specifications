@@ -566,6 +566,17 @@
             "pollen",
             "cats"
           ]
+        },
+        {
+          "uuid": "93c2df3e-4f55-4fed-8116-7513092819cd",
+          "description": "no allergen score parts without highest valid score",
+          "property": "list",
+          "input": {
+            "score": 257
+          },
+          "expected": [
+            "eggs"
+          ]
         }
       ]
     }
