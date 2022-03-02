@@ -1,0 +1,23 @@
+{
+  "exercise": "simple-linked-list",
+  "cases": [
+    {
+      "uuid": "3b72d23a-4487-4632-8682-59684c875dd9",
+      "description": "Convert an array to linked list, and then from linked list back to array",
+      "property": "fromArrayAndBack",
+      "input": {
+        "array": [3, 6, 1]
+      },
+      "expected": [3, 6, 1]
+    },
+    {
+      "uuid": "70484949-cf28-4446-af05-e24f5ae8a265",
+      "description": "Convert from array, reverse the list, and covert to array",
+      "property": "convertReverseConvertBack",
+      "input": {
+        "array": [3, 6, 1]
+      },
+      "expected": [1, 6, 3]
+    }
+  ]
+}
