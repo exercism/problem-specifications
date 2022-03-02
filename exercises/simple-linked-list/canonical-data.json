@@ -18,6 +18,24 @@
         "array": [3, 6, 1]
       },
       "expected": [1, 6, 3]
+    },
+    {
+      "uuid": "02fb7cdd-ad7f-4d0b-88b7-a3e0ccfcb584",
+      "description": "Convert empty array",
+      "property": "fromArrayAndBack",
+      "input": {
+        "array": []
+      },
+      "expected": []
+    },
+    {
+      "uuid": "410ed9b3-d4cd-4969-bc5e-3909efed65d8",
+      "description": "Convert and reverse empty array",
+      "property": "convertReverseConvertBack",
+      "input": {
+        "array": []
+      },
+      "expected": []
     }
   ]
 }
