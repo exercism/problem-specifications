@@ -1,8 +1,6 @@
 {
   "exercise": "rotational-cipher",
-  "comments": [
-    "The tests are a series of rotation tests: "
-  ],
+  "comments": ["The tests are a series of rotation tests: "],
   "cases": [
     {
       "uuid": "74e58a38-e484-43f1-9466-877a7515e10f",

@@ -6,28 +6,18 @@
       "description": "single hand always wins",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "4S 5S 7H 8D JC"
-        ]
+        "hands": ["4S 5S 7H 8D JC"]
       },
-      "expected": [
-        "4S 5S 7H 8D JC"
-      ]
+      "expected": ["4S 5S 7H 8D JC"]
     },
     {
       "uuid": "370ac23a-a00f-48a9-9965-6f3fb595cf45",
       "description": "highest card out of all hands wins",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "4D 5S 6S 8D 3C",
-          "2S 4C 7S 9H 10H",
-          "3S 4S 5D 6H JH"
-        ]
+        "hands": ["4D 5S 6S 8D 3C", "2S 4C 7S 9H 10H", "3S 4S 5D 6H JH"]
       },
-      "expected": [
-        "3S 4S 5D 6H JH"
-      ]
+      "expected": ["3S 4S 5D 6H JH"]
     },
     {
       "uuid": "d94ad5a7-17df-484b-9932-c64fc26cff52",
@@ -41,360 +31,232 @@
           "3H 4H 5C 6C JD"
         ]
       },
-      "expected": [
-        "3S 4S 5D 6H JH",
-        "3H 4H 5C 6C JD"
-      ]
+      "expected": ["3S 4S 5D 6H JH", "3H 4H 5C 6C JD"]
     },
     {
       "uuid": "61ed83a9-cfaa-40a5-942a-51f52f0a8725",
       "description": "multiple hands with the same high cards, tie compares next highest ranked, down to last card",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "3S 5H 6S 8D 7H",
-          "2S 5D 6D 8C 7S"
-        ]
+        "hands": ["3S 5H 6S 8D 7H", "2S 5D 6D 8C 7S"]
       },
-      "expected": [
-        "3S 5H 6S 8D 7H"
-      ]
+      "expected": ["3S 5H 6S 8D 7H"]
     },
     {
       "uuid": "f7175a89-34ff-44de-b3d7-f6fd97d1fca4",
       "description": "one pair beats high card",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "4S 5H 6C 8D KH",
-          "2S 4H 6S 4D JH"
-        ]
+        "hands": ["4S 5H 6C 8D KH", "2S 4H 6S 4D JH"]
       },
-      "expected": [
-        "2S 4H 6S 4D JH"
-      ]
+      "expected": ["2S 4H 6S 4D JH"]
     },
     {
       "uuid": "e114fd41-a301-4111-a9e7-5a7f72a76561",
       "description": "highest pair wins",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "4S 2H 6S 2D JH",
-          "2S 4H 6C 4D JD"
-        ]
+        "hands": ["4S 2H 6S 2D JH", "2S 4H 6C 4D JD"]
       },
-      "expected": [
-        "2S 4H 6C 4D JD"
-      ]
+      "expected": ["2S 4H 6C 4D JD"]
     },
     {
       "uuid": "935bb4dc-a622-4400-97fa-86e7d06b1f76",
       "description": "two pairs beats one pair",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "2S 8H 6S 8D JH",
-          "4S 5H 4C 8C 5C"
-        ]
+        "hands": ["2S 8H 6S 8D JH", "4S 5H 4C 8C 5C"]
       },
-      "expected": [
-        "4S 5H 4C 8C 5C"
-      ]
+      "expected": ["4S 5H 4C 8C 5C"]
     },
     {
       "uuid": "c8aeafe1-6e3d-4711-a6de-5161deca91fd",
       "description": "both hands have two pairs, highest ranked pair wins",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "2S 8H 2D 8D 3H",
-          "4S 5H 4C 8S 5D"
-        ]
+        "hands": ["2S 8H 2D 8D 3H", "4S 5H 4C 8S 5D"]
       },
-      "expected": [
-        "2S 8H 2D 8D 3H"
-      ]
+      "expected": ["2S 8H 2D 8D 3H"]
     },
     {
       "uuid": "88abe1ba-7ad7-40f3-847e-0a26f8e46a60",
       "description": "both hands have two pairs, with the same highest ranked pair, tie goes to low pair",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "2S QS 2C QD JH",
-          "JD QH JS 8D QC"
-        ]
+        "hands": ["2S QS 2C QD JH", "JD QH JS 8D QC"]
       },
-      "expected": [
-        "JD QH JS 8D QC"
-      ]
+      "expected": ["JD QH JS 8D QC"]
     },
     {
       "uuid": "15a7a315-0577-47a3-9981-d6cf8e6f387b",
       "description": "both hands have two identically ranked pairs, tie goes to remaining card (kicker)",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "JD QH JS 8D QC",
-          "JS QS JC 2D QD"
-        ]
+        "hands": ["JD QH JS 8D QC", "JS QS JC 2D QD"]
       },
-      "expected": [
-        "JD QH JS 8D QC"
-      ]
+      "expected": ["JD QH JS 8D QC"]
     },
     {
       "uuid": "21e9f1e6-2d72-49a1-a930-228e5e0195dc",
       "description": "three of a kind beats two pair",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "2S 8H 2H 8D JH",
-          "4S 5H 4C 8S 4H"
-        ]
+        "hands": ["2S 8H 2H 8D JH", "4S 5H 4C 8S 4H"]
       },
-      "expected": [
-        "4S 5H 4C 8S 4H"
-      ]
+      "expected": ["4S 5H 4C 8S 4H"]
     },
     {
       "uuid": "c2fffd1f-c287-480f-bf2d-9628e63bbcc3",
       "description": "both hands have three of a kind, tie goes to highest ranked triplet",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "2S 2H 2C 8D JH",
-          "4S AH AS 8C AD"
-        ]
+        "hands": ["2S 2H 2C 8D JH", "4S AH AS 8C AD"]
       },
-      "expected": [
-        "4S AH AS 8C AD"
-      ]
+      "expected": ["4S AH AS 8C AD"]
     },
     {
       "uuid": "eb856cc2-481c-4b0d-9835-4d75d07a5d9d",
       "description": "with multiple decks, two players can have same three of a kind, ties go to highest remaining cards",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "4S AH AS 7C AD",
-          "4S AH AS 8C AD"
-        ]
+        "hands": ["4S AH AS 7C AD", "4S AH AS 8C AD"]
       },
-      "expected": [
-        "4S AH AS 8C AD"
-      ]
+      "expected": ["4S AH AS 8C AD"]
     },
     {
       "uuid": "a858c5d9-2f28-48e7-9980-b7fa04060a60",
       "description": "a straight beats three of a kind",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "4S 5H 4C 8D 4H",
-          "3S 4D 2S 6D 5C"
-        ]
+        "hands": ["4S 5H 4C 8D 4H", "3S 4D 2S 6D 5C"]
       },
-      "expected": [
-        "3S 4D 2S 6D 5C"
-      ]
+      "expected": ["3S 4D 2S 6D 5C"]
     },
     {
       "uuid": "73c9c756-e63e-4b01-a88d-0d4491a7a0e3",
       "description": "aces can end a straight (10 J Q K A)",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "4S 5H 4C 8D 4H",
-          "10D JH QS KD AC"
-        ]
+        "hands": ["4S 5H 4C 8D 4H", "10D JH QS KD AC"]
       },
-      "expected": [
-        "10D JH QS KD AC"
-      ]
+      "expected": ["10D JH QS KD AC"]
     },
     {
       "uuid": "76856b0d-35cd-49ce-a492-fe5db53abc02",
       "description": "aces can start a straight (A 2 3 4 5)",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "4S 5H 4C 8D 4H",
-          "4D AH 3S 2D 5C"
-        ]
+        "hands": ["4S 5H 4C 8D 4H", "4D AH 3S 2D 5C"]
       },
-      "expected": [
-        "4D AH 3S 2D 5C"
-      ]
+      "expected": ["4D AH 3S 2D 5C"]
     },
     {
       "uuid": "6980c612-bbff-4914-b17a-b044e4e69ea1",
       "description": "both hands with a straight, tie goes to highest ranked card",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "4S 6C 7S 8D 5H",
-          "5S 7H 8S 9D 6H"
-        ]
+        "hands": ["4S 6C 7S 8D 5H", "5S 7H 8S 9D 6H"]
       },
-      "expected": [
-        "5S 7H 8S 9D 6H"
-      ]
+      "expected": ["5S 7H 8S 9D 6H"]
     },
     {
       "uuid": "5135675c-c2fc-4e21-9ba3-af77a32e9ba4",
       "description": "even though an ace is usually high, a 5-high straight is the lowest-scoring straight",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "2H 3C 4D 5D 6H",
-          "4S AH 3S 2D 5H"
-        ]
+        "hands": ["2H 3C 4D 5D 6H", "4S AH 3S 2D 5H"]
       },
-      "expected": [
-        "2H 3C 4D 5D 6H"
-      ]
+      "expected": ["2H 3C 4D 5D 6H"]
     },
     {
       "uuid": "c601b5e6-e1df-4ade-b444-b60ce13b2571",
       "description": "flush beats a straight",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "4C 6H 7D 8D 5H",
-          "2S 4S 5S 6S 7S"
-        ]
+        "hands": ["4C 6H 7D 8D 5H", "2S 4S 5S 6S 7S"]
       },
-      "expected": [
-        "2S 4S 5S 6S 7S"
-      ]
+      "expected": ["2S 4S 5S 6S 7S"]
     },
     {
       "uuid": "4d90261d-251c-49bd-a468-896bf10133de",
       "description": "both hands have a flush, tie goes to high card, down to the last one if necessary",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "4H 7H 8H 9H 6H",
-          "2S 4S 5S 6S 7S"
-        ]
+        "hands": ["4H 7H 8H 9H 6H", "2S 4S 5S 6S 7S"]
       },
-      "expected": [
-        "4H 7H 8H 9H 6H"
-      ]
+      "expected": ["4H 7H 8H 9H 6H"]
     },
     {
       "uuid": "3a19361d-8974-455c-82e5-f7152f5dba7c",
       "description": "full house beats a flush",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "3H 6H 7H 8H 5H",
-          "4S 5H 4C 5D 4H"
-        ]
+        "hands": ["3H 6H 7H 8H 5H", "4S 5H 4C 5D 4H"]
       },
-      "expected": [
-        "4S 5H 4C 5D 4H"
-      ]
+      "expected": ["4S 5H 4C 5D 4H"]
     },
     {
       "uuid": "eb73d0e6-b66c-4f0f-b8ba-bf96bc0a67f0",
       "description": "both hands have a full house, tie goes to highest-ranked triplet",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "4H 4S 4D 9S 9D",
-          "5H 5S 5D 8S 8D"
-        ]
+        "hands": ["4H 4S 4D 9S 9D", "5H 5S 5D 8S 8D"]
       },
-      "expected": [
-        "5H 5S 5D 8S 8D"
-      ]
+      "expected": ["5H 5S 5D 8S 8D"]
     },
     {
       "uuid": "34b51168-1e43-4c0d-9b32-e356159b4d5d",
       "description": "with multiple decks, both hands have a full house with the same triplet, tie goes to the pair",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "5H 5S 5D 9S 9D",
-          "5H 5S 5D 8S 8D"
-        ]
+        "hands": ["5H 5S 5D 9S 9D", "5H 5S 5D 8S 8D"]
       },
-      "expected": [
-        "5H 5S 5D 9S 9D"
-      ]
+      "expected": ["5H 5S 5D 9S 9D"]
     },
     {
       "uuid": "d61e9e99-883b-4f99-b021-18f0ae50c5f4",
       "description": "four of a kind beats a full house",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "4S 5H 4D 5D 4H",
-          "3S 3H 2S 3D 3C"
-        ]
+        "hands": ["4S 5H 4D 5D 4H", "3S 3H 2S 3D 3C"]
       },
-      "expected": [
-        "3S 3H 2S 3D 3C"
-      ]
+      "expected": ["3S 3H 2S 3D 3C"]
     },
     {
       "uuid": "2e1c8c63-e0cb-4214-a01b-91954490d2fe",
       "description": "both hands have four of a kind, tie goes to high quad",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "2S 2H 2C 8D 2D",
-          "4S 5H 5S 5D 5C"
-        ]
+        "hands": ["2S 2H 2C 8D 2D", "4S 5H 5S 5D 5C"]
       },
-      "expected": [
-        "4S 5H 5S 5D 5C"
-      ]
+      "expected": ["4S 5H 5S 5D 5C"]
     },
     {
       "uuid": "892ca75d-5474-495d-9f64-a6ce2dcdb7e1",
-      "description": "with multiple decks, both hands with identical four of a kind, tie determined by kicker" ,
+      "description": "with multiple decks, both hands with identical four of a kind, tie determined by kicker",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "3S 3H 2S 3D 3C",
-          "3S 3H 4S 3D 3C"
-        ]
+        "hands": ["3S 3H 2S 3D 3C", "3S 3H 4S 3D 3C"]
       },
-      "expected": [
-        "3S 3H 4S 3D 3C"
-      ]
+      "expected": ["3S 3H 4S 3D 3C"]
     },
     {
       "uuid": "923bd910-dc7b-4f7d-a330-8b42ec10a3ac",
       "description": "straight flush beats four of a kind",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "4S 5H 5S 5D 5C",
-          "7S 8S 9S 6S 10S"
-        ]
+        "hands": ["4S 5H 5S 5D 5C", "7S 8S 9S 6S 10S"]
       },
-      "expected": [
-        "7S 8S 9S 6S 10S"
-      ]
+      "expected": ["7S 8S 9S 6S 10S"]
     },
     {
       "uuid": "d0927f70-5aec-43db-aed8-1cbd1b6ee9ad",
       "description": "both hands have straight flush, tie goes to highest-ranked card",
       "property": "bestHands",
       "input": {
-        "hands": [
-          "4H 6H 7H 8H 5H",
-          "5S 7S 8S 9S 6S"
-        ]
+        "hands": ["4H 6H 7H 8H 5H", "5S 7S 8S 9S 6S"]
       },
-      "expected": [
-        "5S 7S 8S 9S 6S"
-      ]
+      "expected": ["5S 7S 8S 9S 6S"]
     }
   ]
 }

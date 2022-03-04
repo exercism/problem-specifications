@@ -89,7 +89,9 @@
     {
       "uuid": "607ead62-23d6-4c11-a396-ef821e2e5f75",
       "description": "49 is XLIX",
-      "comments": ["Because 49 is not 40 + 5 + 4, but rather (50 - 10) + (10 - 1)"],
+      "comments": [
+        "Because 49 is not 40 + 5 + 4, but rather (50 - 10) + (10 - 1)"
+      ],
       "property": "roman",
       "input": {
         "number": 49
