@@ -560,9 +560,7 @@
           "input": {
             "score": 257
           },
-          "expected": [
-            "eggs"
-          ]
+          "expected": ["eggs"]
         }
       ]
     }
