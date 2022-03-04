@@ -54,7 +54,7 @@
           "   "
         ]
       },
-      "expected": {"error": "Number of input lines is not a multiple of four"}
+      "expected": { "error": "Number of input lines is not a multiple of four" }
     },
     {
       "uuid": "235f7bd1-991b-4587-98d4-84206eec4cc6",
@@ -68,7 +68,9 @@
           "    "
         ]
       },
-      "expected": {"error": "Number of input columns is not a multiple of three"}
+      "expected": {
+        "error": "Number of input columns is not a multiple of three"
+      }
     },
     {
       "uuid": "4a841794-73c9-4da9-a779-1f9837faff66",

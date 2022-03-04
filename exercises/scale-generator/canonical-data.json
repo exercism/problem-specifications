@@ -149,7 +149,7 @@
         {
           "uuid": "87fdbcca-d3dd-46d5-9c56-ec79e25b19f4",
           "reimplements": "70517400-12b7-4530-b861-fa940ae69ee8",
-          "description": "Harmonic minor",          
+          "description": "Harmonic minor",
           "comments": [
             "Note that this case introduces the augmented second interval (A)"
           ],

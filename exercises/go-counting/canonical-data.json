@@ -1,8 +1,6 @@
 {
   "exercise": "go-counting",
-  "comments": [
-    "Territory consists of [x, y] coordinate pairs."
-  ],
+  "comments": ["Territory consists of [x, y] coordinate pairs."],
   "cases": [
     {
       "uuid": "94d0c01a-17d0-424c-aab5-2736d0da3939",
@@ -21,7 +19,11 @@
       },
       "expected": {
         "owner": "BLACK",
-        "territory": [[0, 0], [0, 1], [1, 0]]
+        "territory": [
+          [0, 0],
+          [0, 1],
+          [1, 0]
+        ]
       }
     },
     {
@@ -61,7 +63,11 @@
       },
       "expected": {
         "owner": "NONE",
-        "territory": [[0, 3], [0, 4], [1, 4]]
+        "territory": [
+          [0, 3],
+          [0, 4],
+          [1, 4]
+        ]
       }
     },
     {
@@ -186,8 +192,14 @@
         ]
       },
       "expected": {
-        "territoryBlack": [[0, 0], [0, 1]],
-        "territoryWhite": [[3, 0], [3, 1]],
+        "territoryBlack": [
+          [0, 0],
+          [0, 1]
+        ],
+        "territoryWhite": [
+          [3, 0],
+          [3, 1]
+        ],
         "territoryNone": []
       }
     },
@@ -201,7 +213,10 @@
         ]
       },
       "expected": {
-        "territoryBlack": [[0, 0], [2, 0]],
+        "territoryBlack": [
+          [0, 0],
+          [2, 0]
+        ],
         "territoryWhite": [],
         "territoryNone": []
       }
