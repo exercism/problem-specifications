@@ -153,4 +153,10 @@ jobs:
         run: yarn install
 
       - name: Verify that json files are formatted correctly
-        run: yarn test-json-formatting
+        run: |
+          yarn format-json && ruby bin/format-array.rb
+          if ! git diff --quiet --exit-code; then
+            echo "please format the files with prettier and bin/format-array.rb, or apply the following changes:"
+            git diff
+            exit 1
+          fi

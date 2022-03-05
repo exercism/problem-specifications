@@ -83,7 +83,7 @@ jobs:
         run: yarn install --pure-lockfile
 
       - name: Format JSON files
-        run: yarn format-json
+        run: yarn format-json && ruby bin/format-array.rb
 
       - name: 'Commit formatted code'
         run: |
