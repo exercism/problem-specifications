@@ -304,12 +304,12 @@ We are maintaining this section, since many open issues link to it.
 
 ## Formatting
 
-This repository uses [prettier][prettier] to automatically format its JSON files.
+This repository uses [prettier][prettier] and a [custom array formatter][format-array] to automatically format its JSON files.
 If you've added or modified a JSON file, you can format it using:
 
 ```shell
 yarn install
-yarn format-json
+yarn format-json && ruby bin/format-array.rb
 ```
 
 Note: if you use VS Code as your editor, you can install the [prettier plugin][prettier-vs-code] to automatically handle formatting for you.
@@ -336,4 +336,5 @@ Note: if you use VS Code as your editor, you can install the [prettier plugin][p
 [improve-exercise-metadata]: https://github.com/exercism/legacy-docs/blob/main/you-can-help/improve-exercise-metadata.md
 [legacy-docs]: https://github.com/exercism/legacy-docs
 [prettier]: https://prettier.io/
+[format-array]: https://github.com/exercism/problem-specifications/blob/main/bin/format-array.rb
 [prettier-vs-code]: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
