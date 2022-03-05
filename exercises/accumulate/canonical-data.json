@@ -11,7 +11,7 @@
     {
       "uuid": "64d97c14-36dd-44a8-9621-2cecebd6ed23",
       "description": "accumulate empty",
-      "property": "accumulate",
+      "property":           "accumulate",
       "input": {
         "list": [],
         "accumulator": "(x) => x * x"
