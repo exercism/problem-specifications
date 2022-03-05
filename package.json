@@ -13,7 +13,6 @@
   "scripts": {
     "test": "ajv -s canonical-data.schema.json -d \"exercises/*/canonical-data.json\"",
     "test-one": "ajv -s canonical-data.schema.json -d",
-    "test-json-formatting": "prettier --check **/*.json",
     "format-json": "prettier --write **/*.json"
   },
   "resolutions": {
