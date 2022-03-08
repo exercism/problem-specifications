@@ -126,6 +126,26 @@
       }
     },
     {
+      "uuid": "4ff6c7d7-fcfc-43ef-b8e7-34ff1837a2d3",
+      "reimplements": "4185a902-bdb0-4074-864c-f416e42a0f19",
+      "description": "with apostrophes",
+      "comments": ["Added a word with multiple letters after apostrophe"],
+      "property": "countWords",
+      "input": {
+        "sentence": "'First: don't laugh. Then: don't cry. You're getting it.'"
+      },
+      "expected": {
+        "first": 1,
+        "don't": 2,
+        "laugh": 1,
+        "then": 1,
+        "cry": 1,
+        "you're": 1,
+        "getting": 1,
+        "it": 1
+      }
+    },
+    {
       "uuid": "be72af2b-8afe-4337-b151-b297202e4a7b",
       "description": "with quotations",
       "property": "countWords",
