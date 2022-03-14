@@ -10,6 +10,7 @@ The ISBN-10 format is 9 digits (0 to 9) plus one check character (either a digit
 ```text
 (d₁ * 10 + d₂ * 9 + d₃ * 8 + d₄ * 7 + d₅ * 6 + d₆ * 5 + d₇ * 4 + d₈ * 3 + d₉ * 2 + d₁₀ * 1) mod 11 == 0
 ```
+
 If the result is 0, then it is a valid ISBN-10, otherwise it is invalid.
 
 ## Example
@@ -19,6 +20,7 @@ Let's take the ISBN-10 `3-598-21508-8`. We plug it in to the formula, and get:
 ```text
 (3 * 10 + 5 * 9 + 9 * 8 + 8 * 7 + 2 * 6 + 1 * 5 + 5 * 4 + 0 * 3 + 8 * 2 + 8 * 1) mod 11 == 0
 ```
+
 Since the result is 0, this proves that our ISBN is valid.
 
 ## Task
