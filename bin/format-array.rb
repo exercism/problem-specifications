@@ -61,6 +61,9 @@ formats = {
   'ocr-numbers' => {
     'rows' => :multi_line,
   },
+  'pascals-triangle' => {
+    'expected' => :multi_line,
+  },
   'rectangles' => {
     'strings' => :multi_line_unless_single,
   },
