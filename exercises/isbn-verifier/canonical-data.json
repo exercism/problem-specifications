@@ -42,6 +42,15 @@
       "expected": false
     },
     {
+      "uuid": "9416f4a5-fe01-4b61-a07b-eb75892ef562",
+      "description": "invalid check digit in isbn is not treated as zero",
+      "property": "isValid",
+      "input": {
+        "isbn": "4-598-21507-B"
+      },
+      "expected": false
+    },
+    {
       "uuid": "c19ba0c4-014f-4dc3-a63f-ff9aefc9b5ec",
       "description": "invalid character in isbn is not treated as zero",
       "property": "isValid",
