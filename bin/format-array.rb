@@ -76,6 +76,9 @@ formats = {
   'sieve' => {
     'expected' => :padded,
   },
+  'tic-tac-toe' => {
+    'board' => :multi_line,
+  },
   'transpose' => {
     'lines' => :multi_line,
     'expected' => :multi_line,
