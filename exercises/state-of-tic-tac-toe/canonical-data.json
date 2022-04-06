@@ -285,7 +285,9 @@
           "   "
         ]
       },
-      "expected": "ERROR"
+      "expected": {
+        "error": "Wrong turn order: X went twice"
+      }
     },
     {
       "uuid": "47c048e8-b404-4bcf-9e51-8acbb3253f3b",
@@ -298,7 +300,9 @@
           "   "
         ]
       },
-      "expected": "ERROR"
+      "expected": {
+        "error": "Wrong turn order: O started"
+      }
     },
     {
       "uuid": "035a49b9-dc35-47d3-9d7c-de197161b9d4",
@@ -311,7 +315,9 @@
           "XOO"
         ]
       },
-      "expected": "ERROR"
+      "expected": {
+        "error": "Impossible board: game should have ended after X won"
+      }
     },
     {
       "uuid": "e5dfdeb0-d2bf-4b5a-b307-e673f69d4a53",
@@ -324,7 +330,9 @@
           "XOX"
         ]
       },
-      "expected": "ERROR"
+      "expected": {
+        "error": "Impossible board: game should have ended after X won"
+      }
     },
     {
       "uuid": "b1dc8b13-46c4-47db-a96d-aa90eedc4e8d",
@@ -337,7 +345,9 @@
           "   "
         ]
       },
-      "expected": "ERROR"
+      "expected": {
+        "error": "Impossible board: game should have ended after X won"
+      }
     }
   ]
 }
