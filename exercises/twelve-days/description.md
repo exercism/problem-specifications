@@ -1,12 +1,13 @@
 # Instructions
 
-Your task in this exercise is to write a method that returns the lyrics of the song: "The Twelve Days of Christmas."
+Your task in this exercise is to write code that returns the lyrics of the song: "The Twelve Days of Christmas."
 
-"The Twelve Days of Christmas" is a common Christmas carol. Each subsequent verse of the song builds on the previous verse.
+"The Twelve Days of Christmas" is a common English Christmas carol. Each subsequent verse of the song builds on the previous verse.
 
-The lyrics your method returns should _exactly_ match the text shown below.
+The lyrics your code returns should _exactly_ match the full song text shown below.
 
-# The Twelve Days Of Christmas
+## The Twelve Days Of Christmas
+
 ```text
 On the first day of Christmas my true love gave to me: a Partridge in a Pear Tree.
 
@@ -33,7 +34,7 @@ On the eleventh day of Christmas my true love gave to me: eleven Pipers Piping, 
 On the twelfth day of Christmas my true love gave to me: twelve Drummers Drumming, eleven Pipers Piping, ten Lords-a-Leaping, nine Ladies Dancing, eight Maids-a-Milking, seven Swans-a-Swimming, six Geese-a-Laying, five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.
 ```
 
-# Tips
+## Tips
 
-- Each verse of the song has several different elements that are repeated from verse to verse. You should identify these elements and try to re-use them when writing your code.
-- Remember to be "DRY" (Don't Repeat Yourself)!
+- Remember to write "DRY" code (Don't Repeat Yourself). Each verse of the song has several different elements that are repeated from verse to verse. You should identify these elements and try to re-use them when writing your code. Remove as much duplication as you can!
+- The test suite only has 1 test for this exercise. Pay attention to the output of your song in the test runner, and keep an eye out for special characters (like line breaks)
