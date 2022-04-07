@@ -22,7 +22,7 @@ If the given board is invalid, throw an appropriate error.
 If a board meets the following conditions, it is invalid:
 
 - The players took turns out of order (remember that `X` starts).
-- The game was played after it already ended, i.e. more than one row/column/diagonal contains the same symbol thrice.
+- The game was played after it already ended.
 
 ## Examples
 

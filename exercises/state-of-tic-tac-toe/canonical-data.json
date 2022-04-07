@@ -211,6 +211,32 @@
             ]
           },
           "expected": "win"
+        },
+        {
+          "uuid": "035a49b9-dc35-47d3-9d7c-de197161b9d4",
+          "description": "Finished game where X won via a row and a column victory",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "XXX",
+              "XOO",
+              "XOO"
+            ]
+          },
+          "expected": "win"
+        },
+        {
+          "uuid": "e5dfdeb0-d2bf-4b5a-b307-e673f69d4a53",
+          "description": "Finished game where X won via two diagonal victories",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "XOX",
+              "OXO",
+              "XOX"
+            ]
+          },
+          "expected": "win"
         }
       ]
     },
@@ -320,36 +346,6 @@
           },
           "expected": {
             "error": "Wrong turn order: O started"
-          }
-        },
-        {
-          "uuid": "035a49b9-dc35-47d3-9d7c-de197161b9d4",
-          "description": "Invalid board",
-          "property": "gamestate",
-          "input": {
-            "board": [
-              "XXX",
-              "XOO",
-              "XOO"
-            ]
-          },
-          "expected": {
-            "error": "Impossible board: game should have ended after X won"
-          }
-        },
-        {
-          "uuid": "e5dfdeb0-d2bf-4b5a-b307-e673f69d4a53",
-          "description": "Invalid board",
-          "property": "gamestate",
-          "input": {
-            "board": [
-              "XOX",
-              "OXO",
-              "XOX"
-            ]
-          },
-          "expected": {
-            "error": "Impossible board: game should have ended after X won"
           }
         },
         {
