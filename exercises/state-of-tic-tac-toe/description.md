@@ -29,25 +29,25 @@ If a board meets the following conditions, it is invalid:
 ### Ongoing game
 
 ```text
-   |   |   
- X |   |   
-___|___|___
-   |   |   
-   | X | O 
+   |   |
+ X |   |
 ___|___|___
    |   |
- O | X |  
+   | X | O
+___|___|___
+   |   |
+ O | X |
    |   |
 ```
 
 ### Draw
 
 ```text
-   |   |   
- X | O | X 
+   |   |
+ X | O | X
 ___|___|___
-   |   |   
- X | X | O 
+   |   |
+ X | X | O
 ___|___|___
    |   |
  O | X | O
@@ -57,13 +57,13 @@ ___|___|___
 ### Win
 
 ```text
-   |   |   
- X | X | X 
-___|___|___
-   |   |   
-   | O | O 
+   |   |
+ X | X | X
 ___|___|___
    |   |
-   |   |  
+   | O | O
+___|___|___
+   |   |
+   |   |
    |   |
 ```
