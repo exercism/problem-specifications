@@ -6,7 +6,7 @@ Your task in this exercise is to write code that returns the lyrics of the song:
 
 The lyrics your code returns should _exactly_ match the full song text shown below.
 
-## The Twelve Days Of Christmas
+## Lyrics
 
 ```text
 On the first day of Christmas my true love gave to me: a Partridge in a Pear Tree.
