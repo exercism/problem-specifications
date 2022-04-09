@@ -1,0 +1,369 @@
+{
+  "exercise": "state-of-tic-tac-toe",
+  "cases": [
+    {
+      "description": "Won games",
+      "cases": [
+        {
+          "uuid": "fe8e9fa9-37af-4d7e-aa24-2f4b8517161a",
+          "description": "Finished game where X won via column victory",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "XOO",
+              "X  ",
+              "X  "
+            ]
+          },
+          "expected": "win"
+        },
+        {
+          "uuid": "96c30df5-ae23-4cf6-bf09-5ef056dddea1",
+          "description": "Finished game where X won via column victory",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "OXO",
+              " X ",
+              " X "
+            ]
+          },
+          "expected": "win"
+        },
+        {
+          "uuid": "0d7a4b0a-2afd-4a75-8389-5fb88ab05eda",
+          "description": "Finished game where X won via column victory",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "OOX",
+              "  X",
+              "  X"
+            ]
+          },
+          "expected": "win"
+        },
+        {
+          "uuid": "bd1007c0-ec5d-4c60-bb9f-1a4f22177d51",
+          "description": "Finished game where O won via column victory",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "OXX",
+              "OX ",
+              "O  "
+            ]
+          },
+          "expected": "win"
+        },
+        {
+          "uuid": "c032f800-5735-4354-b1b9-46f14d4ee955",
+          "description": "Finished game where O won via column victory",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "XOX",
+              " OX",
+              " O "
+            ]
+          },
+          "expected": "win"
+        },
+        {
+          "uuid": "662c8902-c94a-4c4c-9d9c-e8ca513db2b4",
+          "description": "Finished game where O won via column victory",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "XXO",
+              " XO",
+              "  O"
+            ]
+          },
+          "expected": "win"
+        },
+        {
+          "uuid": "2d62121f-7e3a-44a0-9032-0d73e3494941",
+          "description": "Finished game where X won via row victory",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "XXX",
+              "XOO",
+              "O  "
+            ]
+          },
+          "expected": "win"
+        },
+        {
+          "uuid": "108a5e82-cc61-409f-aece-d7a18c1beceb",
+          "description": "Finished game where X won via row victory",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "O O",
+              "XXX",
+              " O "
+            ]
+          },
+          "expected": "win"
+        },
+        {
+          "uuid": "a013c583-75f8-4ab2-8d68-57688ff04574",
+          "description": "Finished game where X won via row victory",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              " OO",
+              "O X",
+              "XXX"
+            ]
+          },
+          "expected": "win"
+        },
+        {
+          "uuid": "2c08e7d7-7d00-487f-9442-e7398c8f1727",
+          "description": "Finished game where O won via row victory",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "OOO",
+              "XXO",
+              "XX "
+            ]
+          },
+          "expected": "win"
+        },
+        {
+          "uuid": "bb1d6c62-3e3f-4d1a-9766-f8803c8ed70f",
+          "description": "Finished game where O won via row victory",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "XX ",
+              "OOO",
+              "X  "
+            ]
+          },
+          "expected": "win"
+        },
+        {
+          "uuid": "6ef641e9-12ec-44f5-a21c-660ea93907af",
+          "description": "Finished game where O won via row victory",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "XOX",
+              " XX",
+              "OOO"
+            ]
+          },
+          "expected": "win"
+        },
+        {
+          "uuid": "ab145b7b-26a7-426c-ab71-bf418cd07f81",
+          "description": "Finished game where X won via diagonal victory",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "XOO",
+              " X ",
+              "  X"
+            ]
+          },
+          "expected": "win"
+        },
+        {
+          "uuid": "7450caab-08f5-4f03-a74b-99b98c4b7a4b",
+          "description": "Finished game where X won via diagonal victory",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "O X",
+              "OX ",
+              "X  "
+            ]
+          },
+          "expected": "win"
+        },
+        {
+          "uuid": "c2a652ee-2f93-48aa-a710-a70cd2edce61",
+          "description": "Finished game where O won via diagonal victory",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "OXX",
+              "OOX",
+              "X O"
+            ]
+          },
+          "expected": "win"
+        },
+        {
+          "uuid": "5b20ceea-494d-4f0c-a986-b99efc163bcf",
+          "description": "Finished game where O won via diagonal victory",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "  O",
+              " OX",
+              "OXX"
+            ]
+          },
+          "expected": "win"
+        },
+        {
+          "uuid": "035a49b9-dc35-47d3-9d7c-de197161b9d4",
+          "description": "Finished game where X won via a row and a column victory",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "XXX",
+              "XOO",
+              "XOO"
+            ]
+          },
+          "expected": "win"
+        },
+        {
+          "uuid": "e5dfdeb0-d2bf-4b5a-b307-e673f69d4a53",
+          "description": "Finished game where X won via two diagonal victories",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "XOX",
+              "OXO",
+              "XOX"
+            ]
+          },
+          "expected": "win"
+        }
+      ]
+    },
+    {
+      "description": "Drawn games",
+      "cases": [
+        {
+          "uuid": "b42ed767-194c-4364-b36e-efbfb3de8788",
+          "description": "Draw",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "XOX",
+              "XXO",
+              "OXO"
+            ]
+          },
+          "expected": "draw"
+        },
+        {
+          "uuid": "227a76b2-0fef-4e16-a4bd-8f9d7e4c3b13",
+          "description": "Draw",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "XXO",
+              "OXX",
+              "XOO"
+            ]
+          },
+          "expected": "draw"
+        }
+      ]
+    },
+    {
+      "description": "Ongoing games",
+      "cases": [
+        {
+          "uuid": "4d93f15c-0c40-43d6-b966-418b040012a9",
+          "description": "Ongoing game",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "   ",
+              "X  ",
+              "   "
+            ]
+          },
+          "expected": "ongoing"
+        },
+        {
+          "uuid": "c407ae32-4c44-4989-b124-2890cf531f19",
+          "description": "Ongoing game",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "O  ",
+              " X ",
+              "   "
+            ]
+          },
+          "expected": "ongoing"
+        },
+        {
+          "uuid": "199b7a8d-e2b6-4526-a85e-78b416e7a8a9",
+          "description": "Ongoing game",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "X  ",
+              " XO",
+              "OX "
+            ]
+          },
+          "expected": "ongoing"
+        }
+      ]
+    },
+    {
+      "description": "Invalid boards",
+      "cases": [
+        {
+          "uuid": "1670145b-1e3d-4269-a7eb-53cd327b302e",
+          "description": "Invalid board",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "XX ",
+              "   ",
+              "   "
+            ]
+          },
+          "expected": {
+            "error": "Wrong turn order: X went twice"
+          }
+        },
+        {
+          "uuid": "47c048e8-b404-4bcf-9e51-8acbb3253f3b",
+          "description": "Invalid board",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "OOX",
+              "   ",
+              "   "
+            ]
+          },
+          "expected": {
+            "error": "Wrong turn order: O started"
+          }
+        },
+        {
+          "uuid": "b1dc8b13-46c4-47db-a96d-aa90eedc4e8d",
+          "description": "Invalid board",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "XXX",
+              "OOO",
+              "   "
+            ]
+          },
+          "expected": {
+            "error": "Impossible board: game should have ended after X won"
+          }
+        }
+      ]
+    }
+  ]
+}
