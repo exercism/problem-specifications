@@ -21,7 +21,7 @@ If the given board is invalid, throw an appropriate error.
 
 If a board meets the following conditions, it is invalid:
 
-- The players took turns out of order (remember that `X` starts).
+- The given board cannot be reached when turns are taken in the correct order (remember that `X` starts).
 - The game was played after it already ended.
 
 ## Examples
@@ -62,6 +62,36 @@ ___|___|___
 ___|___|___
    |   |
    | O | O
+___|___|___
+   |   |
+   |   |
+   |   |
+```
+
+### Invalid
+
+#### Wrong turn order
+
+```text
+   |   |
+ O | O | X
+___|___|___
+   |   |
+   |   |
+___|___|___
+   |   |
+   |   |
+   |   |
+```
+
+#### Continued playing after win
+
+```text
+   |   |
+ X | X | X
+___|___|___
+   |   |
+ O | O | O
 ___|___|___
    |   |
    |   |
