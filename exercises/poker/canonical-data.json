@@ -97,6 +97,24 @@
       "expected": ["JD QH JS 8D QC"]
     },
     {
+      "uuid": "f761e21b-2560-4774-a02a-b3e9366a51ce",
+      "description": "both hands have two pairs that add to the same value, win goes to highest pair",
+      "property": "bestHands",
+      "input": {
+        "hands": ["6S 6H 3S 3H AS", "7H 7S 2H 2S AC"]
+      },
+      "expected": ["7H 7S 2H 2S AC"]
+    },
+    {
+      "uuid": "fc6277ac-94ac-4078-8d39-9d441bc7a79e",
+      "description": "two pairs first ranked by largest pair",
+      "property": "bestHands",
+      "input": {
+        "hands": ["5C 2S 5S 4H 4C", "6S 2S 6H 7C 2C"]
+      },
+      "expected": ["6S 2S 6H 7C 2C"]
+    },
+    {
       "uuid": "21e9f1e6-2d72-49a1-a930-228e5e0195dc",
       "description": "three of a kind beats two pair",
       "property": "bestHands",
