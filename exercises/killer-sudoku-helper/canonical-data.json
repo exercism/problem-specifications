@@ -1,0 +1,179 @@
+{
+  "exercise": "killer-sudoku-helper",
+  "cases": [
+    {
+      "description": "Trivial 1-digit cages",
+      "cases": [
+        {
+          "uuid": "2aaa8f13-11b5-4054-b95c-a906e4d79fb6",
+          "description": "1",
+          "property": "combinations",
+          "input": {
+            "cage": {
+              "sum": 1,
+              "size": 1,
+              "exclude": []
+            }
+          },
+          "expected": [[1]]
+        },
+        {
+          "uuid": "4645da19-9fdd-4087-a910-a6ed66823563",
+          "description": "2",
+          "property": "combinations",
+          "input": {
+            "cage": {
+              "sum": 2,
+              "size": 1,
+              "exclude": []
+            }
+          },
+          "expected": [[2]]
+        },
+        {
+          "uuid": "07cfc704-f8aa-41b2-8f9a-cbefb674cb48",
+          "description": "3",
+          "property": "combinations",
+          "input": {
+            "cage": {
+              "sum": 3,
+              "size": 1,
+              "exclude": []
+            }
+          },
+          "expected": [[3]]
+        },
+        {
+          "uuid": "22b8b2ba-c4fd-40b3-b1bf-40aa5e7b5f24",
+          "description": "4",
+          "property": "combinations",
+          "input": {
+            "cage": {
+              "sum": 4,
+              "size": 1,
+              "exclude": []
+            }
+          },
+          "expected": [[4]]
+        },
+        {
+          "uuid": "b75d16e2-ff9b-464d-8578-71f73094cea7",
+          "description": "5",
+          "property": "combinations",
+          "input": {
+            "cage": {
+              "sum": 5,
+              "size": 1,
+              "exclude": []
+            }
+          },
+          "expected": [[5]]
+        },
+        {
+          "uuid": "bcbf5afc-4c89-4ff6-9357-07ab4d42788f",
+          "description": "6",
+          "property": "combinations",
+          "input": {
+            "cage": {
+              "sum": 6,
+              "size": 1,
+              "exclude": []
+            }
+          },
+          "expected": [[6]]
+        },
+        {
+          "uuid": "511b3bf8-186f-4e35-844f-c804d86f4a7a",
+          "description": "7",
+          "property": "combinations",
+          "input": {
+            "cage": {
+              "sum": 7,
+              "size": 1,
+              "exclude": []
+            }
+          },
+          "expected": [[7]]
+        },
+        {
+          "uuid": "bd09a60d-3aca-43bd-b6aa-6ccad01bedda",
+          "description": "8",
+          "property": "combinations",
+          "input": {
+            "cage": {
+              "sum": 8,
+              "size": 1,
+              "exclude": []
+            }
+          },
+          "expected": [[8]]
+        },
+        {
+          "uuid": "9b539f27-44ea-4ff8-bd3d-c7e136bee677",
+          "description": "9",
+          "property": "combinations",
+          "input": {
+            "cage": {
+              "sum": 9,
+              "size": 1,
+              "exclude": []
+            }
+          },
+          "expected": [[9]]
+        }
+      ]
+    },
+    {
+      "uuid": "0a8b2078-b3a4-4dbd-be0d-b180f503d5c3",
+      "description": "Cage with sum 45 contains all digits 1:9",
+      "property": "combinations",
+      "input": {
+        "cage": {
+          "sum": 45,
+          "size": 9,
+          "exclude": []
+        }
+      },
+      "expected": [[1, 2, 3, 4, 5, 6, 7, 8, 9]]
+    },
+    {
+      "uuid": "2635d7c9-c716-4da1-84f1-c96e03900142",
+      "description": "Cage with only 1 possible combination",
+      "property": "combinations",
+      "input": {
+        "cage": {
+          "sum": 7,
+          "size": 3,
+          "exclude": []
+        }
+      },
+      "expected": [[1, 2, 4]]
+    },
+    {
+      "uuid": "a5bde743-e3a2-4a0c-8aac-e64fceea4228",
+      "description": "Cage with several combinations",
+      "property": "combinations",
+      "input": {
+        "cage": {
+          "sum": 10,
+          "size": 2,
+          "exclude": []
+        }
+      },
+      "expected": [[1, 9], [2, 8], [3, 7], [4, 6]]
+    },
+    {
+      "uuid": "dfbf411c-737d-465a-a873-ca556360c274",
+      "description": "Cage with several combinations that is restricted",
+      "property": "combinations",
+      "input": {
+        "cage": {
+          "sum": 10,
+          "size": 2,
+          "exclude": [1, 4]
+        }
+      },
+      "expected": [[2, 8], [3, 7]]
+    }
+  ]
+}

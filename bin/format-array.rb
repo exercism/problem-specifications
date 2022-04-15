@@ -54,6 +54,9 @@ formats = {
   'go-counting' => {
     'board' => :multi_line,
   },
+  'killer-sudoku-helper' => {
+    'expected' => :single_line,
+  },
   'minesweeper' => {
     'minefield' => :multi_line_unless_single,
     'expected' => :multi_line_unless_single,
