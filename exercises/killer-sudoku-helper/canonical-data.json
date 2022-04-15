@@ -24,7 +24,7 @@
           "input": {
             "cage": {
               "sum": 2,
-              "size": 2,
+              "size": 1,
               "exclude": []
             }
           },
@@ -37,7 +37,7 @@
           "input": {
             "cage": {
               "sum": 3,
-              "size": 3,
+              "size": 1,
               "exclude": []
             }
           },
@@ -50,7 +50,7 @@
           "input": {
             "cage": {
               "sum": 4,
-              "size": 4,
+              "size": 1,
               "exclude": []
             }
           },
@@ -63,7 +63,7 @@
           "input": {
             "cage": {
               "sum": 5,
-              "size": 5,
+              "size": 1,
               "exclude": []
             }
           },
@@ -76,7 +76,7 @@
           "input": {
             "cage": {
               "sum": 6,
-              "size": 6,
+              "size": 1,
               "exclude": []
             }
           },
@@ -89,7 +89,7 @@
           "input": {
             "cage": {
               "sum": 7,
-              "size": 7,
+              "size": 1,
               "exclude": []
             }
           },
@@ -102,7 +102,7 @@
           "input": {
             "cage": {
               "sum": 8,
-              "size": 8,
+              "size": 1,
               "exclude": []
             }
           },
@@ -115,7 +115,7 @@
           "input": {
             "cage": {
               "sum": 9,
-              "size": 9,
+              "size": 1,
               "exclude": []
             }
           },
