@@ -93,4 +93,4 @@
 
 - name: "github_actions"
   description: "Label used by Dependabot to indicate the ecosystem its PR affects."
-  color: "#2289fe"
+  color: "2289fe"
