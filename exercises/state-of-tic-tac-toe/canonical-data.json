@@ -360,6 +360,23 @@
             ]
           },
           "expected": {
+            "error": "Impossible board: game should have ended after X won"
+          }
+        },
+        {
+          "uuid": "6c1920f2-ab5c-4648-a0c9-997414dda5eb",
+          "reimplements": "6c1920f2-ab5c-4648-a0c9-997414dda5eb",
+          "description": "Invalid board",
+          "comments": ["Error message was changed to be more general"],
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "XXX",
+              "OOO",
+              "   "
+            ]
+          },
+          "expected": {
             "error": "Impossible board: game should have ended after the game was won"
           }
         },
