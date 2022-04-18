@@ -362,7 +362,6 @@
           "expected": {
             "error": "Impossible board: game should have ended after the game was won"
           }
-        }
         },
         {
           "uuid": "4801cda2-f5b7-4c36-8317-3cdd167ac22c",
