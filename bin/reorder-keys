@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ ! -d exercises ] ; then
-    echo "\"exercises\" directory not found, make sure you're running from the repository root" >&2
+    echo "Error: \"exercises\" directory not found, make sure you're running from the repository root" >&2
     exit 1
 fi
 
