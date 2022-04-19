@@ -113,7 +113,7 @@
     },
     {
       "uuid": "68ea9b78-10ad-420e-a766-836a501d3633",
-      "description": "Two each of first 4 books and 1 copy each of rest",
+      "description": "Two each of first four books and one copy each of rest",
       "comments": ["Suggested grouping, [[1,2,3,4,5],[1,2,3,4]]."],
       "property": "total",
       "input": {
@@ -133,7 +133,7 @@
     },
     {
       "uuid": "18fd86fe-08f1-4b68-969b-392b8af20513",
-      "description": "Three copies of first book and 2 each of remaining",
+      "description": "Three copies of first book and two each of remaining",
       "comments": ["Suggested grouping, [[1,2,3,4,5],[1,2,3,4,5],[1]]."],
       "property": "total",
       "input": {
@@ -143,7 +143,7 @@
     },
     {
       "uuid": "0b19a24d-e4cf-4ec8-9db2-8899a41af0da",
-      "description": "Three each of first 2 books and 2 each of remaining books",
+      "description": "Three each of first two books and two each of remaining books",
       "comments": ["Suggested grouping, [[1,2,3,4,5],[1,2,3,4,5],[1,2]]."],
       "property": "total",
       "input": {
