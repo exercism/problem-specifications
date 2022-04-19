@@ -82,8 +82,8 @@
         "uuid": { "$ref": "#/definitions/uuid" },
         "reimplements": { "$ref": "#/definitions/uuid" },
         "description": { "$ref": "#/definitions/description" },
-        "scenarios": { "$ref": "#/definitions/scenarios" },
         "comments": { "$ref": "#/definitions/comments" },
+        "scenarios": { "$ref": "#/definitions/scenarios" },
         "property": { "$ref": "#/definitions/property" },
         "input": { "$ref": "#/definitions/input" },
         "expected": { "$ref": "#/definitions/expected" }
@@ -97,8 +97,8 @@
       "required": ["description", "cases"],
       "properties": {
         "description": { "$ref": "#/definitions/description" },
-        "scenarios": { "$ref": "#/definitions/scenarios" },
         "comments": { "$ref": "#/definitions/comments" },
+        "scenarios": { "$ref": "#/definitions/scenarios" },
         "cases": { "$ref": "#/definitions/testGroup" }
       },
       "additionalProperties": false
