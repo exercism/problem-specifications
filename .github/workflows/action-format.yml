@@ -60,6 +60,10 @@ jobs:
           git clone $HEAD_REPO .
           git checkout -b "$HEAD_REF" "origin/$HEAD_REF"
 
+      # This needs to happen before the actual formatting using Prettier happens
+      - name: Re-order keys
+        run: ./bin/reorder-keys
+
       - name: Use Node.js LTS (16.x)
         uses: actions/setup-node@9ced9a43a244f3ac94f13bfd896db8c8f30da67a
         with:
