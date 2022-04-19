@@ -125,14 +125,13 @@ The file format is described in [canonical-data.schema.json](./canonical-data.sc
         {
           "uuid": "8790a635-e8a8-4343-a29f-7da2929b9378",
           "description": "Foo'ing a very big number returns nothing",
-          "optional": "big-ints",
           "comments": ["Making this test case pass requires using BigInts."],
+          "scenarios": ["big-integers"],
           "property": "foo",
           "input": {
             "word": "28948022309329048855892746252171976962977213799489202546401021394546514198529"
           },
-          "expected": null,
-          "scenarios": ["big-integers"]
+          "expected": null
         },
         {
           "uuid": "c7b6f24a-553f-475a-8a40-dba854fe1bff",
@@ -183,9 +182,9 @@ This is an example of what a re-implementation looks like:
   },
   {
     "uuid": "82d32c2e-07b5-42d9-9b1c-19af72bae860",
+    "reimplements": "e46c542b-31fc-4506-bcae-6b62b3268537",
     "description": "two times one is two",
     "comments": ["Expected value is changed to 2"],
-    "reimplements": "e46c542b-31fc-4506-bcae-6b62b3268537",
     "property": "twice",
     "input": {
       "number": 1
