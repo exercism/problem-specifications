@@ -362,6 +362,38 @@
           "expected": {
             "error": "Impossible board: game should have ended after X won"
           }
+        },
+        {
+          "uuid": "6c1920f2-ab5c-4648-a0c9-997414dda5eb",
+          "reimplements": "6c1920f2-ab5c-4648-a0c9-997414dda5eb",
+          "description": "Invalid board: X won and O kept playing",
+          "comments": ["Error message was changed to be more general"],
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "XXX",
+              "OOO",
+              "   "
+            ]
+          },
+          "expected": {
+            "error": "Impossible board: game should have ended after the game was won"
+          }
+        },
+        {
+          "uuid": "4801cda2-f5b7-4c36-8317-3cdd167ac22c",
+          "description": "Invalid board: players kept playing after a win",
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "XXX",
+              "OOO",
+              "XOX"
+            ]
+          },
+          "expected": {
+            "error": "Impossible board: game should have ended after the game was won"
+          }
         }
       ]
     }
