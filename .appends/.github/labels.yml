@@ -86,3 +86,11 @@
 - name: "won't fix"
   description: ""
   color: "d88b34"
+
+- name: "javascript"
+  description: "Label used by Dependabot to indicate the ecosystem its PR affects."
+  color: "f8dc3d"
+
+- name: "github_actions"
+  description: "Label used by Dependabot to indicate the ecosystem its PR affects."
+  color: "2289fe"
