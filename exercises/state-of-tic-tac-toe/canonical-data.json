@@ -245,7 +245,7 @@
       "cases": [
         {
           "uuid": "b42ed767-194c-4364-b36e-efbfb3de8788",
-          "description": "Draw (1)",
+          "description": "Draw",
           "property": "gamestate",
           "input": {
             "board": [
@@ -258,7 +258,7 @@
         },
         {
           "uuid": "227a76b2-0fef-4e16-a4bd-8f9d7e4c3b13",
-          "description": "Draw (2)",
+          "description": "Another draw",
           "property": "gamestate",
           "input": {
             "board": [
