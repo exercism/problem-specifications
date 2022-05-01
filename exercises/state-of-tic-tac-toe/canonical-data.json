@@ -109,6 +109,21 @@
           "expected": "win"
         },
         {
+          "uuid": "346527db-4db9-4a96-b262-d7023dc022b0",
+          "reimplements": "108a5e82-cc61-409f-aece-d7a18c1beceb",
+          "description": "Finished game where X won via middle row victory",
+          "comments": ["Game is now valid, previously had move made past end"],
+          "property": "gamestate",
+          "input": {
+            "board": [
+              "O  ",
+              "XXX",
+              " O "
+            ]
+          },
+          "expected": "win"
+        },
+        {
           "uuid": "a013c583-75f8-4ab2-8d68-57688ff04574",
           "description": "Finished game where X won via bottom row victory",
           "property": "gamestate",
