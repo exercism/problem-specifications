@@ -101,7 +101,7 @@
           "property": "gamestate",
           "input": {
             "board": [
-              "O 0",
+              "O O",
               "XXX",
               " O "
             ]
