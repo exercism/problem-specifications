@@ -15,7 +15,7 @@
           "description": "encode yes",
           "property": "encode",
           "input": {
-            "phrase": "yes",
+            "plaintext": "yes",
             "key": {
               "a": 5,
               "b": 7
@@ -28,7 +28,7 @@
           "description": "encode no",
           "property": "encode",
           "input": {
-            "phrase": "no",
+            "plaintext": "no",
             "key": {
               "a": 15,
               "b": 18
@@ -41,7 +41,7 @@
           "description": "encode OMG",
           "property": "encode",
           "input": {
-            "phrase": "OMG",
+            "plaintext": "OMG",
             "key": {
               "a": 21,
               "b": 3
@@ -54,7 +54,7 @@
           "description": "encode O M G",
           "property": "encode",
           "input": {
-            "phrase": "O M G",
+            "plaintext": "O M G",
             "key": {
               "a": 25,
               "b": 47
@@ -67,7 +67,7 @@
           "description": "encode mindblowingly",
           "property": "encode",
           "input": {
-            "phrase": "mindblowingly",
+            "plaintext": "mindblowingly",
             "key": {
               "a": 11,
               "b": 15
@@ -80,7 +80,7 @@
           "description": "encode numbers",
           "property": "encode",
           "input": {
-            "phrase": "Testing,1 2 3, testing.",
+            "plaintext": "Testing,1 2 3, testing.",
             "key": {
               "a": 3,
               "b": 4
@@ -93,7 +93,7 @@
           "description": "encode deep thought",
           "property": "encode",
           "input": {
-            "phrase": "Truth is fiction.",
+            "plaintext": "Truth is fiction.",
             "key": {
               "a": 5,
               "b": 17
@@ -106,7 +106,7 @@
           "description": "encode all the letters",
           "property": "encode",
           "input": {
-            "phrase": "The quick brown fox jumps over the lazy dog.",
+            "plaintext": "The quick brown fox jumps over the lazy dog.",
             "key": {
               "a": 17,
               "b": 33
@@ -119,7 +119,7 @@
           "description": "encode with a not coprime to m",
           "property": "encode",
           "input": {
-            "phrase": "This is a test.",
+            "plaintext": "This is a test.",
             "key": {
               "a": 6,
               "b": 17
@@ -140,7 +140,7 @@
           "description": "decode exercism",
           "property": "decode",
           "input": {
-            "phrase": "tytgn fjr",
+            "ciphertext": "tytgn fjr",
             "key": {
               "a": 3,
               "b": 7
@@ -153,7 +153,7 @@
           "description": "decode a sentence",
           "property": "decode",
           "input": {
-            "phrase": "qdwju nqcro muwhn odqun oppmd aunwd o",
+            "ciphertext": "qdwju nqcro muwhn odqun oppmd aunwd o",
             "key": {
               "a": 19,
               "b": 16
@@ -166,7 +166,7 @@
           "description": "decode numbers",
           "property": "decode",
           "input": {
-            "phrase": "odpoz ub123 odpoz ub",
+            "ciphertext": "odpoz ub123 odpoz ub",
             "key": {
               "a": 25,
               "b": 7
@@ -179,7 +179,7 @@
           "description": "decode all the letters",
           "property": "decode",
           "input": {
-            "phrase": "swxtj npvyk lruol iejdc blaxk swxmh qzglf",
+            "ciphertext": "swxtj npvyk lruol iejdc blaxk swxmh qzglf",
             "key": {
               "a": 17,
               "b": 33
@@ -192,7 +192,7 @@
           "description": "decode with no spaces in input",
           "property": "decode",
           "input": {
-            "phrase": "swxtjnpvyklruoliejdcblaxkswxmhqzglf",
+            "ciphertext": "swxtjnpvyklruoliejdcblaxkswxmhqzglf",
             "key": {
               "a": 17,
               "b": 33
@@ -205,7 +205,7 @@
           "description": "decode with too many spaces",
           "property": "decode",
           "input": {
-            "phrase": "vszzm    cly   yd cg    qdp",
+            "ciphertext": "vszzm    cly   yd cg    qdp",
             "key": {
               "a": 15,
               "b": 16
@@ -218,7 +218,7 @@
           "description": "decode with a not coprime to m",
           "property": "decode",
           "input": {
-            "phrase": "Test",
+            "ciphertext": "Test",
             "key": {
               "a": 13,
               "b": 5
