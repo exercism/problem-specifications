@@ -75,7 +75,7 @@
     },
     {
       "uuid": "7e7c9fc1-d994-457c-811e-d390d52fba5e",
-      "description": "invalid long number with an remainder divisible by 5",
+      "description": "invalid long number with a remainder divisible by 5",
       "property": "valid",
       "input": {
         "value": "1 2345 6789 1234 5678 9013"
