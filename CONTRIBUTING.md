@@ -178,8 +178,7 @@ A problem must have a unique slug. This slug is used as
 
 ### In exercism/\<TRACK_ID\>
 
-* Do the same as when [porting an
-  exercise](https://github.com/exercism/legacy-docs/blob/main/you-can-help/implement-an-exercise-from-specification.md).
+* Do the same as when [porting an exercise][porting and exercise].
   Reference the PR in problem-specifications.
   It's suggested, but not required, to wait until the problem-specifications PR is merged before merging the track-specific PR, for the following reasons:
   * If changes are suggested to the problem-specifications PR, it is likely that they will be applicable to the track-specific PR as well.
@@ -314,27 +313,28 @@ yarn format-json && ruby bin/format-array.rb
 
 Note: if you use VS Code as your editor, you can install the [prettier plugin][prettier-vs-code] to automatically handle formatting for you.
 
-[contributing]: https://exercism.org/contributing
-[support-chat]: https://gitter.im/exercism/support
-[exercism-issues]: https://github.com/exercism/exercism/issues
-[code-of-conduct]: https://exercism.io/code-of-conduct
-[cpp-track-repo]: https://github.com/exercism/cpp
-[problem-specs-tree]: https://github.com/exercism/problem-specifications/tree/
-[problem-specs-repo]: https://github.com/exercism/problem-specifications
-[fork-a-repo]: https://help.github.com/articles/fork-a-repo/
 [clone-a-repo]: https://help.github.com/articles/cloning-a-repository/
-[problem-specification]: https://github.com/exercism/legacy-docs/blob/main/you-can-help/make-up-new-exercises.md#problem-specification
-[request-new-track-repo]: https://github.com/exercism/request-new-language-track
-[travis]: http://travis-ci.org
-[pull-request-guidelines]: https://github.com/exercism/legacy-docs/blob/main/contributing/pull-request-guidelines.md
-[legacy-docs-repo]: https://github.com/exercism/legacy-docs
-[practice-exercises]: https://exercism.org/docs/building/tracks/practice-exercises
+[code-of-conduct]: https://exercism.io/code-of-conduct
 [config-json]: https://github.com/exercism/docs/blob/main/building/tracks/config-json.md
 [configlet-guide]: https://exercism.org/docs/building/configlet
 [configlet-lint-guide]: https://exercism.org/docs/building/configlet/lint
+[contributing]: https://exercism.org/contributing
+[cpp-track-repo]: https://github.com/exercism/cpp
+[exercism-issues]: https://github.com/exercism/exercism/issues
+[fork-a-repo]: https://help.github.com/articles/fork-a-repo/
+[format-array]: https://github.com/exercism/problem-specifications/blob/main/bin/format-array.rb
 [git-basics]: https://github.com/exercism/legacy-docs/blob/main/contributing/git-basics.md
 [improve-exercise-metadata]: https://github.com/exercism/legacy-docs/blob/main/you-can-help/improve-exercise-metadata.md
+[legacy-docs-repo]: https://github.com/exercism/legacy-docs
 [legacy-docs]: https://github.com/exercism/legacy-docs
-[prettier]: https://prettier.io/
-[format-array]: https://github.com/exercism/problem-specifications/blob/main/bin/format-array.rb
+[porting an exercise]: https://github.com/exercism/legacy-docs/blob/main/you-can-help/implement-an-exercise-from-specification.md
+[practice-exercises]: https://exercism.org/docs/building/tracks/practice-exercises
 [prettier-vs-code]: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+[prettier]: https://prettier.io/
+[problem-specification]: https://github.com/exercism/legacy-docs/blob/main/you-can-help/make-up-new-exercises.md#problem-specification
+[problem-specs-repo]: https://github.com/exercism/problem-specifications
+[problem-specs-tree]: https://github.com/exercism/problem-specifications/tree/
+[pull-request-guidelines]: https://github.com/exercism/legacy-docs/blob/main/contributing/pull-request-guidelines.md
+[request-new-track-repo]: https://github.com/exercism/request-new-language-track
+[support-chat]: https://gitter.im/exercism/support
+[travis]: http://travis-ci.org
