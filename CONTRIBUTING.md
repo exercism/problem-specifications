@@ -178,7 +178,7 @@ A problem must have a unique slug. This slug is used as
 
 ### In exercism/\<TRACK_ID\>
 
-* Do the same as when [porting an exercise][porting and exercise].
+* Do the same as when [porting an exercise][porting an exercise].
   Reference the PR in problem-specifications.
   It's suggested, but not required, to wait until the problem-specifications PR is merged before merging the track-specific PR, for the following reasons:
   * If changes are suggested to the problem-specifications PR, it is likely that they will be applicable to the track-specific PR as well.
