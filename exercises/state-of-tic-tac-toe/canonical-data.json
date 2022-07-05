@@ -380,7 +380,7 @@
         },
         {
           "uuid": "6c1920f2-ab5c-4648-a0c9-997414dda5eb",
-          "reimplements": "6c1920f2-ab5c-4648-a0c9-997414dda5eb",
+          "reimplements": "b1dc8b13-46c4-47db-a96d-aa90eedc4e8d",
           "description": "Invalid board: X won and O kept playing",
           "comments": ["Error message was changed to be more general"],
           "property": "gamestate",
