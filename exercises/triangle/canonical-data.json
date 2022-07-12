@@ -184,10 +184,19 @@
         },
         {
           "uuid": "c6e15a92-90d9-4fb3-90a2-eef64f8d3e1e",
-          "description": "two sides are equal",
+          "description": "two adjacent sides are equal",
           "property": "scalene",
           "input": {
             "sides": [4, 4, 3]
+          },
+          "expected": false
+        },
+        {
+          "uuid": "",
+          "description": "two unadjacent sides are equal",
+          "property": "scalene",
+          "input": {
+            "sides": [3, 4, 3]
           },
           "expected": false
         },
