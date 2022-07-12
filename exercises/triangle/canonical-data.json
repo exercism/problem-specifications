@@ -192,7 +192,7 @@
           "expected": false
         },
         {
-          "uuid": "",
+          "uuid": "3da23a91-a166-419a-9abf-baf4868fd985",
           "description": "two unadjacent sides are equal",
           "property": "scalene",
           "input": {
