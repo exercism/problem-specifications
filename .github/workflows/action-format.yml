@@ -65,7 +65,7 @@ jobs:
         run: ./bin/reorder-keys
 
       - name: Use Node.js LTS (16.x)
-        uses: actions/setup-node@eeb10cff27034e7acf239c5d29f62154018672fd
+        uses: actions/setup-node@2fddd8803e2f5c9604345a0b591c3020ee971a93
         with:
           node-version: '16'
 
