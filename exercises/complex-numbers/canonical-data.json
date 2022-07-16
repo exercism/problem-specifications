@@ -361,6 +361,15 @@
             "z": ["ln(2)", "pi"]
           },
           "expected": [-2, 0]
+        },
+        {
+          "uuid": "d2de4375-7537-479a-aa0e-d474f4f09859",
+          "description": "Exponential resulting in a number with real and imaginary part",
+          "property": "exp",
+          "input": {
+            "z": ["ln(2)/2", "pi/4"]
+          },
+          "expected": [1, 1]
         }
       ]
     },
