@@ -201,6 +201,15 @@
           "expected": false
         },
         {
+          "uuid": "b6a75d98-1fef-4c42-8e9a-9db854ba0a4d",
+          "description": "second and third sides are equal",
+          "property": "scalene",
+          "input": {
+            "sides": [4, 3, 4]
+          },
+          "expected": false
+        },
+        {
           "uuid": "70ad5154-0033-48b7-af2c-b8d739cd9fdc",
           "description": "may not violate triangle inequality",
           "property": "scalene",
