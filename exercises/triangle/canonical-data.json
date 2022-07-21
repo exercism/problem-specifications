@@ -205,7 +205,7 @@
           "description": "second and third sides are equal",
           "property": "scalene",
           "input": {
-            "sides": [4, 3, 4]
+            "sides": [4, 3, 3]
           },
           "expected": false
         },
