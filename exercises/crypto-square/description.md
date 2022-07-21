@@ -22,13 +22,13 @@ is normalized to:
 "ifmanwasmeanttostayonthegroundgodwouldhavegivenusroots"
 ```
 
-The plaintext should be organized in to a rectangle. The size of the
-rectangle should be decided by the length of the message.
+The plaintext should be organized into a rectangle as square as possible.
+The size of the rectangle should be decided by the length of the message.
 
 If `c` is the number of columns and `r` is the number of rows, then for
 the rectangle `r` x `c` find the smallest possible integer `c` such that:
 
-- `r * c >= length(message)`,
+- `r * c >= length of message`,
 - and `c >= r`,
 - and `c - r <= 1`.
 
