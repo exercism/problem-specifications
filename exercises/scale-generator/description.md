@@ -65,7 +65,7 @@ Given a tonic and a set of intervals, generate the musical scale starting with
 the tonic and following the specified interval pattern.
 
 This is similar to generating chromatic scales except that instead of returning
-12 notes, you will return N+1 notes for N intervals.
+12 notes, you will return N notes for N intervals (we omit the last N+1 note in the scale description, since it is the repetition of the tonic).
 The first note is always the given tonic.
 Then, for each interval in the pattern, the next note is determined by starting from the previous note and skipping the number of notes indicated by the interval.
 
