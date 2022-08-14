@@ -51,6 +51,24 @@
       "expected": "twenty-two"
     },
     {
+      "uuid": "f010d4ca-12c9-44e9-803a-27789841adb1",
+      "description": "thirty",
+      "property": "say",
+      "input": {
+        "number": 30
+      },
+      "expected": "thirty"
+    },
+    {
+      "uuid": "738ce12d-ee5c-4dfb-ad26-534753a98327",
+      "description": "ninety-nine",
+      "property": "say",
+      "input": {
+        "number": 99
+      },
+      "expected": "ninety-nine"
+    },
+    {
       "uuid": "e417d452-129e-4056-bd5b-6eb1df334dce",
       "description": "one hundred",
       "property": "say",
@@ -67,6 +85,24 @@
         "number": 123
       },
       "expected": "one hundred twenty-three"
+    },
+    {
+      "uuid": "2f061132-54bc-4fd4-b5df-0a3b778959b9",
+      "description": "two hundred",
+      "property": "say",
+      "input": {
+        "number": 200
+      },
+      "expected": "two hundred"
+    },
+    {
+      "uuid": "feed6627-5387-4d38-9692-87c0dbc55c33",
+      "description": "nine hundred ninety-nine",
+      "property": "say",
+      "input": {
+        "number": 999
+      },
+      "expected": "nine hundred ninety-nine"
     },
     {
       "uuid": "3d83da89-a372-46d3-b10d-de0c792432b3",
