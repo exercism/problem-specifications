@@ -2,7 +2,7 @@
 
 Use lenses to update nested records (specific to languages with immutable data).
 
-Updating fields of nested records is kind of annoying. One could say that the
+Updating fields of nested, immutable records is kind of annoying. One could say that the
 code for such cases is as cumbersome as the structure is deep. If you have, say,
 a Person, that contains an Address, which has a Street, that has a Number, updating
 the Number requires creating a new Street with the new Number, then a new Address
