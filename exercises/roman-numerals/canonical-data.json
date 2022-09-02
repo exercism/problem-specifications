@@ -250,7 +250,7 @@
       "input": {
         "number": 3001
       },
-      "expected":    "MMMI"
+      "expected": "MMMI"
     },
     {
       "uuid": "4e18e96b-5fbb-43df-a91b-9cb511fe0856",
@@ -259,7 +259,7 @@
       "input": {
         "number": 3999
       },
-      "expected":    "MMMCMXCIX"
+      "expected": "MMMCMXCIX"
     }
   ]
 }
