@@ -242,6 +242,24 @@
         "number": 1666
       },
       "expected": "MDCLXVI"
+    },
+    {
+      "uuid": "3bc4b41c-c2e6-49d9-9142-420691504336",
+      "description": "3001 is MMMI",
+      "property": "roman",
+      "input": {
+        "number": 3001
+      },
+      "expected": "MMMI"
+    },
+    {
+      "uuid": "4e18e96b-5fbb-43df-a91b-9cb511fe0856",
+      "description": "3999 is MMMCMXCIX",
+      "property": "roman",
+      "input": {
+        "number": 3999
+      },
+      "expected": "MMMCMXCIX"
     }
   ]
 }
