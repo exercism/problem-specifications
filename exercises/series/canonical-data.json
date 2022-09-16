@@ -83,6 +83,18 @@
       }
     },
     {
+      "uuid": "d7957455-346d-4e47-8e4b-87ed1564c6d7",
+      "description": "slice length is way too large",
+      "property": "slices",
+      "input": {
+        "series": "12345",
+        "sliceLength": 42
+      },
+      "expected": {
+        "error": "slice length cannot be greater than series length"
+      }
+    },
+    {
       "uuid": "d34004ad-8765-4c09-8ba1-ada8ce776806",
       "description": "slice length cannot be zero",
       "property": "slices",
