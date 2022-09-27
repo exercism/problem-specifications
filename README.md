@@ -2,10 +2,6 @@
 
 Shared metadata for Exercism exercises.
 
-## Contributing Guide
-
-Please see the [contributing guide](./CONTRIBUTING.md).
-
 ## Reviewing Guidelines
 
 Pull Requests to this repo require three approving reviews to be merged.
