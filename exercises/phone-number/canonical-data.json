@@ -85,6 +85,21 @@
       }
     },
     {
+      "uuid": "4a1509b7-8953-4eec-981b-c483358ff531",
+      "reimplements": "c6a5f007-895a-4fc5-90bc-a7e70f9b5cad",
+      "description": "invalid when more than 11 digits",
+      "comments": [
+        "Share incorrect number error instead of using unique error."
+      ],
+      "property": "clean",
+      "input": {
+        "phrase": "321234567890"
+      },
+      "expected": {
+        "error": "incorrect number of digits"
+      }
+    },
+    {
       "uuid": "63f38f37-53f6-4a5f-bd86-e9b404f10a60",
       "description": "invalid with letters",
       "property": "clean",
