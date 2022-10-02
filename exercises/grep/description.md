@@ -11,7 +11,7 @@ The `grep` function takes three arguments:
 3. One or more files to search in.
 
 It then reads the contents of the specified files (in the order specified),
-finds the lines that contain the search string, 
+finds the lines that contain the search string,
 and finally returns those lines (in the order in which they were found).
 
 ## Flags
