@@ -51,7 +51,7 @@ jobs:
         run: echo "::set-output name=dir::$(yarn cache dir)"
 
       - name: Cache yarn
-        uses: actions/cache@fd5de65bc895cf536527842281bea11763fefd77
+        uses: actions/cache@ac8075791e805656e71b4ba23325ace9e3421120
         id: yarn-cache
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
@@ -141,7 +141,7 @@ jobs:
         run: echo "::set-output name=dir::$(yarn cache dir)"
 
       - name: Cache yarn
-        uses: actions/cache@fd5de65bc895cf536527842281bea11763fefd77
+        uses: actions/cache@ac8075791e805656e71b4ba23325ace9e3421120
         id: yarn-cache
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
