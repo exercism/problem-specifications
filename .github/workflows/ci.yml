@@ -8,7 +8,7 @@ jobs:
     name: All required files are present
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
+      - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
 
       - name: All required files are present
         run: bin/check_required_files_present
@@ -17,13 +17,13 @@ jobs:
     name: No test has been mutated
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
+      - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
         with:
           path: "new"
 
       # Pull Requests
       - name: Checkout the target branch
-        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
+        uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
         with:
           ref: "${{ github.base_ref }}"
           path: "old"
@@ -39,7 +39,7 @@ jobs:
     name: Schema validation
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
+      - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
 
       - uses: actions/setup-node@eeb10cff27034e7acf239c5d29f62154018672fd
         with:
@@ -123,7 +123,7 @@ jobs:
     name: Lint markdown files
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
+      - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
 
       - uses: DavidAnson/markdownlint-cli2-action@744f913a124058ee903768d3adb92a4847e5d132
         with:
@@ -134,7 +134,7 @@ jobs:
     name: Lint json files
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
+      - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
