@@ -34,9 +34,3 @@ The program should be able to verify ISBN-10 both with and without separating da
 
 Converting from strings to numbers can be tricky in certain languages.
 Now, it's even trickier since the check digit of an ISBN-10 may be 'X' (representing '10'). For instance `3-598-21507-X` is a valid ISBN-10.
-
-## Bonus tasks
-
-* Generate a valid ISBN-13 from the input ISBN-10 (and maybe verify it again with a derived verifier).
-
-* Generate valid ISBN, maybe even from a given starting ISBN.
