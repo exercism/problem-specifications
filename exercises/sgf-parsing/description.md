@@ -53,6 +53,18 @@ A key can have multiple values associated with it. For example:
 
 Here `AB` (add black) is used to add three black stones to the board.
 
+According the the SGF specification `\` is the escape character. When `\` is
+encountered during parsing, it indicates that the following character should be
+printed as is. The exception to this is whitespace, with newline, carriage
+return and tab encoded as `"\n"`, `"\r"` and `"\t"` respectively. When parsing
+you can expect some characters to _always_ be escaped, including parentheses,
+square brackets, semicolons and colons.
+
+When parsing SGF files whitespace gets special handling, with the exception of
+newlines any whitespace character encountered is replaced with a single space
+character irrespective of if the original character is found in its escaped
+from or its unescaped from.
+
 There are a few more complexities to SGF (and parsing in general), which
 you can mostly ignore. You should assume that the input is encoded in
 UTF-8, the tests won't contain a charset property, so don't worry about
