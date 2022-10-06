@@ -24,4 +24,6 @@ b + c ≥ a
 a + c ≥ b
 ```
 
-See [Triangle Inequality](https://en.wikipedia.org/wiki/Triangle_inequality).
+See [Triangle Inequality][triangle-inequality]
+
+[triangle-inequality]: https://en.wikipedia.org/wiki/Triangle_inequality

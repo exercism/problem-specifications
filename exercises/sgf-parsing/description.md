@@ -2,8 +2,7 @@
 
 Parsing a Smart Game Format string.
 
-[SGF](https://en.wikipedia.org/wiki/Smart_Game_Format) is a standard format for
-storing board game files, in particular go.
+[SGF][] is a standard format for storing board game files, in particular go.
 
 SGF is a fairly simple format. An SGF file usually contains a single
 tree of nodes where each node is a property list. The property list
@@ -75,4 +74,7 @@ between properties, nodes, etc will be in the tests.
 The exercise will have you parse an SGF string and return a tree
 structure of properties. You do not need to encode knowledge about the
 data types of properties, just use the rules for the
-[text](http://www.red-bean.com/sgf/sgf4.html#text) type everywhere.
+[text][sgf-text] type everywhere.
+
+[SGF]: https://en.wikipedia.org/wiki/Smart_Game_Format
+[sgf-text]: http://www.red-bean.com/sgf/sgf4.html#text

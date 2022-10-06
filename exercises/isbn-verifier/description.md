@@ -1,6 +1,6 @@
 # Description
 
-The [ISBN-10 verification process](https://en.wikipedia.org/wiki/International_Standard_Book_Number) is used to validate book identification
+The [ISBN-10 verification process][isbn-verification] is used to validate book identification
 numbers. These normally contain dashes and look like: `3-598-21508-8`
 
 ## ISBN
@@ -34,3 +34,5 @@ The program should be able to verify ISBN-10 both with and without separating da
 
 Converting from strings to numbers can be tricky in certain languages.
 Now, it's even trickier since the check digit of an ISBN-10 may be 'X' (representing '10'). For instance `3-598-21507-X` is a valid ISBN-10.
+
+[isbn-verification]: https://en.wikipedia.org/wiki/International_Standard_Book_Number
