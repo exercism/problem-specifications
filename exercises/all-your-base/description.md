@@ -10,7 +10,7 @@ represented as a sequence of digits, convert it to base **b**.
 - Try to implement the conversion yourself.
   Do not use something else to perform the conversion for you.
 
-## About [Positional Notation](https://en.wikipedia.org/wiki/Positional_notation)
+## About [Positional Notation][positional-notation]
 
 In positional notation, a number in base **b** can be understood as a linear
 combination of powers of **b**.
@@ -30,3 +30,5 @@ The number 1120, *in base 3*, means:
 I think you got the idea!
 
 *Yes. Those three numbers above are exactly the same. Congratulations!*
+
+[positional-notation]: https://en.wikipedia.org/wiki/Positional_notation
