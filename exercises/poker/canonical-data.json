@@ -169,7 +169,7 @@
       "expected": ["4D AH 3S 2D 5C"]
     },
     {
-      "uuid": "?",
+      "uuid": "e214b7df-dcba-45d3-a2e5-342d8c46c286",
       "description": "aces cannot be in the middle of a straight (Q K A 2 3)",
       "property": "bestHands",
       "input": {
@@ -286,7 +286,7 @@
       "expected": ["5S 7S 8S 9S 6S"]
     },
     {
-      "uuid": "?",
+      "uuid": "d9629e22-c943-460b-a951-2134d1b43346",
       "description": "aces can end a straight flush (10 J Q K A)",
       "property": "bestHands",
       "input": {
@@ -295,7 +295,7 @@
       "expected": ["10C JC QC KC AC"]
     },
     {
-      "uuid": "?",
+      "uuid": "05d5ede9-64a5-4678-b8ae-cf4c595dc824",
       "description": "aces can start a straight flush (A 2 3 4 5)",
       "property": "bestHands",
       "input": {
@@ -304,7 +304,7 @@
       "expected": ["4H AH 3H 2H 5H"]
     },
     {
-      "uuid": "?",
+      "uuid": "ad655466-6d04-49e8-a50c-0043c3ac18ff",
       "description": "aces cannot be in the middle of a straight flush (Q K A 2 3)",
       "property": "bestHands",
       "input": {
@@ -313,7 +313,7 @@
       "expected": ["2C AC QC 10C KC"]
     },
     {
-      "uuid": "?",
+      "uuid": "be620e09-0397-497b-ac37-d1d7a4464cfc",
       "description": "even though an ace is usually high, a 5-high straight flush is the lowest-scoring straight flush",
       "property": "bestHands",
       "input": {
