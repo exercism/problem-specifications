@@ -68,9 +68,7 @@
         "datastructure. After running add(moment), moment should remain   ",
         "the same."
       ],
-      "scenarios": [
-        "immutable"
-      ],
+      "scenarios": ["immutable"],
       "property": "isEqual",
       "input": {
         "moment": "2015-01-24T23:59:59"
