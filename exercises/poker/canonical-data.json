@@ -169,6 +169,15 @@
       "expected": ["4D AH 3S 2D 5C"]
     },
     {
+      "uuid": "?",
+      "description": "aces cannot be in the middle of a straight (Q K A 2 3)",
+      "property": "bestHands",
+      "input": {
+        "hands": ["2C 3D 7H 5H 2S", "QS KH AC 2D 3S"]
+      },
+      "expected": ["2C 3D 7H 5H 2S"]
+    },
+    {
       "uuid": "6980c612-bbff-4914-b17a-b044e4e69ea1",
       "description": "both hands with a straight, tie goes to highest ranked card",
       "property": "bestHands",
@@ -269,12 +278,48 @@
     },
     {
       "uuid": "d0927f70-5aec-43db-aed8-1cbd1b6ee9ad",
-      "description": "both hands have straight flush, tie goes to highest-ranked card",
+      "description": "both hands have a straight flush, tie goes to highest-ranked card",
       "property": "bestHands",
       "input": {
         "hands": ["4H 6H 7H 8H 5H", "5S 7S 8S 9S 6S"]
       },
       "expected": ["5S 7S 8S 9S 6S"]
-    }
+    },
+    {
+      "uuid": "?",
+      "description": "aces can end a straight flush (10 J Q K A)",
+      "property": "bestHands",
+      "input": {
+        "hands": ["KC AH AS AD AC", "10C JC QC KC AC"]
+      },
+      "expected": ["10C JC QC KC AC"]
+    },
+    {
+      "uuid": "?",
+      "description": "aces can start a straight flush (A 2 3 4 5)",
+      "property": "bestHands",
+      "input": {
+        "hands": ["KS AH AS AD AC", "4H AH 3H 2H 5H"]
+      },
+      "expected": ["4H AH 3H 2H 5H"]
+    },
+    {
+      "uuid": "?",
+      "description": "aces cannot be in the middle of a straight flush (Q K A 2 3)",
+      "property": "bestHands",
+      "input": {
+        "hands": ["2C AC QC 10C KC", "QH KH AH 2H 3H"]
+      },
+      "expected": ["2C AC QC 10C KC"]
+    },
+    {
+      "uuid": "?",
+      "description": "even though an ace is usually high, a 5-high straight flush is the lowest-scoring straight flush",
+      "property": "bestHands",
+      "input": {
+        "hands": ["2H 3H 4H 5H 6H", "4D AD 3D 2D 5D"]
+      },
+      "expected": ["2H 3H 4H 5H 6H"]
+    },
   ]
 }
