@@ -22,4 +22,4 @@ The `grep` command should support the following flags:
 - `-l` Output only the names of the files that contain at least one matching line.
 - `-i` Match using a case-insensitive comparison.
 - `-v` Invert the program -- collect all lines that fail to match the pattern.
-- `-x` Search instead for lines matching the search string entirely, instead of merely containing it.
+- `-x` Search only for lines where the search string matches the entire line.
