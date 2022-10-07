@@ -40,8 +40,7 @@ Now, perform the other three operations.
 
 Handle a set of operations, in sequence.
 
-Since these are verbal word problems, evaluate the expression from
-left-to-right, _ignoring the typical order of operations._
+Since these are verbal word problems, evaluate the expression from left-to-right, _ignoring the typical order of operations._
 
 > What is 5 plus 13 plus 6?
 

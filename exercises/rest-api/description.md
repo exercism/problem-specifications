@@ -4,7 +4,7 @@ Implement a RESTful API for tracking IOUs.
 
 Four roommates have a habit of borrowing money from each other frequently, and have trouble remembering who owes whom, and how much.
 
-Your task is to implement a simple [RESTful API][restful-wikipedia] that receives [IOU][]s as POST requests, and can deliver specified summary information via GET requests.
+Your task is to implement a simple [RESTful API][restful-wikipedia] that receives [IOU][iou]s as POST requests, and can deliver specified summary information via GET requests.
 
 ## API Specification
 
@@ -42,7 +42,7 @@ Your task is to implement a simple [RESTful API][restful-wikipedia] that receive
   - [Reddit][reddit-rest]
 
 [restful-wikipedia]: https://en.wikipedia.org/wiki/Representational_state_transfer
-[IOU]: https://en.wikipedia.org/wiki/IOU
+[iou]: https://en.wikipedia.org/wiki/IOU
 [github-rest]: https://developer.github.com/v3/
 [reddit-rest]: https://www.reddit.com/dev/api/
 [restfulapi]: https://restfulapi.net/

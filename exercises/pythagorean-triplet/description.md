@@ -1,7 +1,6 @@
 # Description
 
-A Pythagorean triplet is a set of three natural numbers, {a, b, c}, for
-which,
+A Pythagorean triplet is a set of three natural numbers, {a, b, c}, for which,
 
 ```text
 a² + b² = c²

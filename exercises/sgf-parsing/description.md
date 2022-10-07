@@ -2,7 +2,7 @@
 
 Parsing a Smart Game Format string.
 
-[SGF][] is a standard format for storing board game files, in particular go.
+[SGF][sgf] is a standard format for storing board game files, in particular go.
 
 SGF is a fairly simple format. An SGF file usually contains a single
 tree of nodes where each node is a property list. The property list
@@ -65,6 +65,13 @@ Although you can read the [full documentation of the Text type][sgf-text], a sum
   Any whitespace character after `\` follows the above rules.
   Note that SGF does **not** have escape sequences for whitespace characters such as `\t` or `\n`.
 
+Be careful not to get confused between:
+
+- The string as it is represented in a string literal in the tests
+- The string that is passed to the SGF parser
+
+Escape sequences in the string literals may have already been processed by the programming language's parser before they are passed to the SGF parser.
+
 There are a few more complexities to SGF (and parsing in general), which
 you can mostly ignore. You should assume that the input is encoded in
 UTF-8, the tests won't contain a charset property, so don't worry about
@@ -72,5 +79,5 @@ that. Furthermore you may assume that all newlines are unix style (`\n`,
 no `\r` or `\r\n` will be in the tests) and that no optional whitespace
 between properties, nodes, etc will be in the tests.
 
-[SGF]: https://en.wikipedia.org/wiki/Smart_Game_Format
+[sgf]: https://en.wikipedia.org/wiki/Smart_Game_Format
 [sgf-text]: http://www.red-bean.com/sgf/sgf4.html#text
