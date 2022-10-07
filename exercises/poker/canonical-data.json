@@ -320,6 +320,6 @@
         "hands": ["2H 3H 4H 5H 6H", "4D AD 3D 2D 5D"]
       },
       "expected": ["2H 3H 4H 5H 6H"]
-    },
+    }
   ]
 }
