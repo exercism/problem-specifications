@@ -11,7 +11,8 @@ The `grep` command takes three arguments:
 2. Zero or more flags for customizing the command's behavior.
 3. One or more files to search in.
 
-It then reads the contents of the specified files (in the order specified), finds the lines that contain the search string, and finally returns those lines (in the order in which they were found) prepended, when searching in multiple files, by the file name and a colon (':').
+It then reads the contents of the specified files (in the order specified), finds the lines that contain the search string, and finally returns those lines in the order in which they were found.
+When searching in multiple files, each matching line should be prepended by the file name and a colon (':').
 
 ## Flags
 
