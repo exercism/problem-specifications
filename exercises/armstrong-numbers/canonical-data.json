@@ -88,9 +88,7 @@
       "comments": [
         "The numeric size of this input number is 108 bits. Consider skipping this test if appropriate."
       ],
-      "scenarios": [
-        "big-integer"
-      ],
+      "scenarios": ["big-integer"],
       "property": "isArmstrongNumber",
       "input": {
         "number": 186709961001538790100634132976990
@@ -103,9 +101,7 @@
       "comments": [
         "The numeric size of this input number is 127 bits. Consider skipping this test if appropriate."
       ],
-      "scenarios": [
-        "big-integer"
-      ],
+      "scenarios": ["big-integer"],
       "property": "isArmstrongNumber",
       "input": {
         "number": 115132219018763992565095597973971522401
