@@ -1,6 +1,6 @@
 # Description
 
-For a game of [Dungeons & Dragons][DND], each player starts by generating a
+For a game of [Dungeons & Dragons][dnd], each player starts by generating a
 character they can play with. This character has, among other things, six
 abilities; strength, dexterity, constitution, intelligence, wisdom and
 charisma. These six abilities have scores that are determined randomly. You
@@ -27,7 +27,7 @@ Because constitution is 3, the constitution modifier is -4 and the hitpoints are
 ## Notes
 
 Most programming languages feature (pseudo-)random generators, but few
-programming languages are designed to roll dice. One such language is [Troll].
+programming languages are designed to roll dice. One such language is [Troll][troll].
 
-[DND]: https://en.wikipedia.org/wiki/Dungeons_%26_Dragons
-[Troll]: http://hjemmesider.diku.dk/~torbenm/Troll/
+[dnd]: https://en.wikipedia.org/wiki/Dungeons_%26_Dragons
+[troll]: http://hjemmesider.diku.dk/~torbenm/Troll/

@@ -2,7 +2,7 @@
 
 Compute the result for a game of Hex / Polygon.
 
-The abstract boardgame known as [Hex][] / Polygon /
+The abstract boardgame known as [Hex][hex] / Polygon /
 CON-TAC-TIX is quite simple in rules, though complex in practice. Two players
 place stones on a parallelogram with hexagonal fields. The player to connect his/her
 stones to the opposite side first wins. The four sides of the parallelogram are
@@ -29,4 +29,4 @@ The boards look like this:
 the above example `O` has made a connection from left to right but nobody has
 won since `O` didn't connect top and bottom.
 
-[Hex]: https://en.wikipedia.org/wiki/Hex_%28board_game%29
+[hex]: https://en.wikipedia.org/wiki/Hex_%28board_game%29

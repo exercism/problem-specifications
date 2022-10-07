@@ -1,6 +1,6 @@
 # Description
 
-The dice game [Yacht][] is from
+The dice game [Yacht][yacht] is from
 the same family as Poker Dice, Generala and particularly Yahtzee, of which it
 is a precursor. In the game, five dice are rolled and the result can be entered
 in any of twelve categories. The score of a throw of the dice depends on
@@ -35,4 +35,4 @@ of the category your solution should return 0. You can assume that five values
 will always be presented, and the value of each will be between one and six
 inclusively. You should not assume that the dice are ordered.
 
-[Yacht]: https://en.wikipedia.org/wiki/Yacht_(dice_game)
+[yacht]: https://en.wikipedia.org/wiki/Yacht_(dice_game)

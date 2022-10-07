@@ -9,7 +9,7 @@ Recite the nursery rhyme 'This is the House that Jack Built'.
 > Furthermore, embedding also allows us to construct an infinitely long
 > structure, in theory anyway.
 
-- [papyr.com][]
+- [papyr.com][papyr]
 
 The nursery rhyme reads as follows:
 
@@ -105,4 +105,4 @@ that ate the malt
 that lay in the house that Jack built.
 ```
 
-[papyr.com]: http://papyr.com/hypertextbooks/grammar/ph_noun.htm
+[papyr]: http://papyr.com/hypertextbooks/grammar/ph_noun.htm

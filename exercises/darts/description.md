@@ -2,7 +2,7 @@
 
 Write a function that returns the earned points in a single toss of a Darts game.
 
-[Darts][] is a game where players
+[Darts][darts] is a game where players
 throw darts at a [target][darts-target].
 
 In our particular instance of the game, the target rewards 4 different amounts of points, depending on where the dart lands:
@@ -16,8 +16,8 @@ The outer circle has a radius of 10 units (this is equivalent to the total radiu
 
 Write a function that given a point in the target (defined by its [Cartesian coordinates][cartesian-coordinates] `x` and `y`, where `x` and `y` are [real][real-numbers]), returns the correct amount earned by a dart landing at that point.
 
- [Darts]: https://en.wikipedia.org/wiki/Darts
- [darts-target]: https://en.wikipedia.org/wiki/Darts#/media/File:Darts_in_a_dartboard.jpg
- [concentric]: http://mathworld.wolfram.com/ConcentricCircles.html
- [cartesian-coordinates]: https://www.mathsisfun.com/data/cartesian-coordinates.html
- [real-numbers]: https://www.mathsisfun.com/numbers/real-numbers.html
+[darts]: https://en.wikipedia.org/wiki/Darts
+[darts-target]: https://en.wikipedia.org/wiki/Darts#/media/File:Darts_in_a_dartboard.jpg
+[concentric]: http://mathworld.wolfram.com/ConcentricCircles.html
+[cartesian-coordinates]: https://www.mathsisfun.com/data/cartesian-coordinates.html
+[real-numbers]: https://www.mathsisfun.com/numbers/real-numbers.html

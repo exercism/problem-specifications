@@ -2,7 +2,7 @@
 
 Implement the logic of the hangman game using functional reactive programming.
 
-[Hangman][] is a simple word guessing game.
+[Hangman][hangman] is a simple word guessing game.
 
 [Functional Reactive Programming][frp] is a way to write interactive
 programs. It differs from the usual perspective in that instead of
@@ -14,5 +14,5 @@ Implement the basic logic behind hangman using functional reactive
 programming.  You'll need to install an FRP library for this, this will
 be described in the language/track specific files of the exercise.
 
-[Hangman]: https://en.wikipedia.org/wiki/Hangman_%28game%29
+[hangman]: https://en.wikipedia.org/wiki/Hangman_%28game%29
 [frp]: https://en.wikipedia.org/wiki/Functional_reactive_programming

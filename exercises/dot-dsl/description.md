@@ -9,7 +9,7 @@ One problem area where they are applied are complex customizations/configuration
 
 For example the [DOT language][dot-language] allows
 you to write a textual description of a graph which is then transformed into a picture by one of
-the [Graphviz][] tools (such as `dot`). A simple graph looks like this:
+the [Graphviz][graphviz] tools (such as `dot`). A simple graph looks like this:
 
     graph {
         graph [bgcolor="yellow"]
@@ -33,5 +33,5 @@ found [here][fowler-dsl].
 
 [dsl]: https://en.wikipedia.org/wiki/Domain-specific_language
 [dot-language]: https://en.wikipedia.org/wiki/DOT_(graph_description_language)
-[Graphviz]: http://graphviz.org/
+[graphviz]: http://graphviz.org/
 [fowler-dsl]: https://martinfowler.com/bliki/DomainSpecificLanguage.html
