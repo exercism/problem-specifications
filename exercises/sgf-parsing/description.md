@@ -58,17 +58,12 @@ All property values will be the [SGF Text type][sgf-text].
 You don't need to implement any other value type.
 Although you can read the [full documentation of the Text type][sgf-text], a summary of the important points is below:
 
-According the the SGF specification `\` is the escape character. When `\` is
-encountered during parsing, it indicates that the following character should be
-printed as is. The exception to this is whitespace, with newline, carriage
-return and tab encoded as `"\n"`, `"\r"` and `"\t"` respectively. When parsing
-you can expect some characters to _always_ be escaped, including parentheses,
-square brackets, semicolons and colons.
-
-When parsing SGF files whitespace gets special handling, with the exception of
-newlines any whitespace character encountered is replaced with a single space
-character irrespective of if the original character is found in its escaped
-from or its unescaped from.
+- Newlines are removed if they come immediately after a `\`, otherwise they remain as newlines.
+- All whitespace characters other than newline are converted to spaces.
+- `\` is the escape character.
+  Any non-whitespace character after `\` is inserted as-is.
+  Any whitespace character after `\` follows the above rules.
+  Note that SGF does **not** have escape sequences for whitespace characters such as `\t` or `\n`.
 
 There are a few more complexities to SGF (and parsing in general), which
 you can mostly ignore. You should assume that the input is encoded in
