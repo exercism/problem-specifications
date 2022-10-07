@@ -25,7 +25,7 @@ recognize the few words that they did know.
 Your task is to create a simple shift cipher like the Caesar Cipher.
 This image is a great example of the Caesar Cipher:
 
-![Caesar Cipher][1]
+![Caesar Cipher][img-caesar-cipher]
 
 For example:
 
@@ -75,5 +75,5 @@ If you want to go farther in this field, the questions begin to be about
 how we can exchange keys in a secure way. Take a look at [Diffie-Hellman
 on Wikipedia][dh] for one of the first implementations of this scheme.
 
-[1]: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Caesar_cipher_left_shift_of_3.svg/320px-Caesar_cipher_left_shift_of_3.svg.png
+[img-caesar-cipher]: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Caesar_cipher_left_shift_of_3.svg/320px-Caesar_cipher_left_shift_of_3.svg.png
 [dh]: http://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
