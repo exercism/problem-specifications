@@ -85,7 +85,12 @@
     {
       "uuid": "5ee2fdf8-334e-4a46-bb8d-e5c19c02c148",
       "description": "Armstrong number containing seven zeroes",
-      "comments": ["The numeric size of this input number is 108 bits. Consider skipping this test if appropriate."],
+      "comments": [
+        "The numeric size of this input number is 108 bits. Consider skipping this test if appropriate."
+      ],
+      "scenarios": [
+        "big-integers"
+      ],
       "property": "isArmstrongNumber",
       "input": {
         "number": 186709961001538790100634132976990
@@ -95,7 +100,12 @@
     {
       "uuid": "12ffbf10-307a-434e-b4ad-c925680e1dd4",
       "description": "The largest and last Armstrong number",
-      "comments": ["The numeric size of this input number is 127 bits. Consider skipping this test if appropriate."],
+      "comments": [
+        "The numeric size of this input number is 127 bits. Consider skipping this test if appropriate."
+      ],
+      "scenarios": [
+        "big-integers"
+      ],
       "property": "isArmstrongNumber",
       "input": {
         "number": 115132219018763992565095597973971522401
