@@ -21,8 +21,7 @@ The Romans wrote numbers using letters - I, V, X, L, C, D, M.
 The maximum number supported by this notation is 3,999.
 (The Romans themselves didn't tend to go any higher)
 
-Wikipedia says: Modern Roman numerals ... are written by expressing each digit separately starting with the left most digit and skipping any
-digit with a value of zero.
+Wikipedia says: Modern Roman numerals ... are written by expressing each digit separately starting with the left most digit and skipping any digit with a value of zero.
 
 To see this in practice, consider the example of 1990.
 
