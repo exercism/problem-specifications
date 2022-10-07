@@ -64,6 +64,13 @@ newlines any whitespace character encountered is replaced with a single space
 character irrespective of if the original character is found in its escaped
 from or its unescaped from.
 
+Be careful not to get confused between:
+
+- The string as it is represented in a string literal in the tests
+- The string that is passed to the SGF parser
+
+Escape sequences in the string literals may have already been processed by the programming language's parser before they are passed to the SGF parser.
+
 There are a few more complexities to SGF (and parsing in general), which
 you can mostly ignore. You should assume that the input is encoded in
 UTF-8, the tests won't contain a charset property, so don't worry about
