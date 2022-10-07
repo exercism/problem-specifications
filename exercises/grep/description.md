@@ -18,7 +18,7 @@ When searching in multiple files, each matching line should be prepended by the 
 
 The `grep` command should support the following flags:
 
-- `-n` Prepend the line number and a colon (':') to each line in the output. (Comes after possible file name.)
+- `-n` Prepend the line number and a colon (':') to each line in the output, placing the number after the filename (if present).
 - `-l` Instead of lines, only output the names of the files that contain at least one matching line.
 - `-i` Match using a case-insensitive comparison.
 - `-v` Invert the program -- collect all lines that fail to match the pattern.
