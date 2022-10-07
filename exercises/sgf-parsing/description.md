@@ -9,6 +9,8 @@ tree of nodes where each node is a property list. The property list
 contains key value pairs, each key can only occur once but may have
 multiple values.
 
+The exercise will have you parse an SGF string and return a tree structure of properties.
+
 An SGF file may look like this:
 
 ```text
@@ -52,6 +54,10 @@ A key can have multiple values associated with it. For example:
 
 Here `AB` (add black) is used to add three black stones to the board.
 
+All property values will be the [SGF Text type][sgf-text].
+You don't need to implement any other value type.
+Although you can read the [full documentation of the Text type][sgf-text], a summary of the important points is below:
+
 According the the SGF specification `\` is the escape character. When `\` is
 encountered during parsing, it indicates that the following character should be
 printed as is. The exception to this is whitespace, with newline, carriage
@@ -70,11 +76,6 @@ UTF-8, the tests won't contain a charset property, so don't worry about
 that. Furthermore you may assume that all newlines are unix style (`\n`,
 no `\r` or `\r\n` will be in the tests) and that no optional whitespace
 between properties, nodes, etc will be in the tests.
-
-The exercise will have you parse an SGF string and return a tree
-structure of properties. You do not need to encode knowledge about the
-data types of properties, just use the rules for the
-[text][sgf-text] type everywhere.
 
 [SGF]: https://en.wikipedia.org/wiki/Smart_Game_Format
 [sgf-text]: http://www.red-bean.com/sgf/sgf4.html#text
