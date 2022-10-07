@@ -89,7 +89,7 @@
         "The numeric size of this input number is 108 bits. Consider skipping this test if appropriate."
       ],
       "scenarios": [
-        "big-integers"
+        "big-integer"
       ],
       "property": "isArmstrongNumber",
       "input": {
@@ -104,7 +104,7 @@
         "The numeric size of this input number is 127 bits. Consider skipping this test if appropriate."
       ],
       "scenarios": [
-        "big-integers"
+        "big-integer"
       ],
       "property": "isArmstrongNumber",
       "input": {
