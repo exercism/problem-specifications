@@ -1,7 +1,6 @@
 # Description
 
-A [Domain Specific Language (DSL)][dsl] is a
-small language optimized for a specific domain.
+A [Domain Specific Language (DSL)][dsl] is a small language optimized for a specific domain.
 Since a DSL is targeted, it can greatly impact productivity/understanding by allowing the writer to declare *what* they want rather than *how*.
 
 One problem area where they are applied are complex customizations/configurations.
