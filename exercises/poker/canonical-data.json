@@ -277,15 +277,6 @@
       "expected": ["7S 8S 9S 6S 10S"]
     },
     {
-      "uuid": "d0927f70-5aec-43db-aed8-1cbd1b6ee9ad",
-      "description": "both hands have a straight flush, tie goes to highest-ranked card",
-      "property": "bestHands",
-      "input": {
-        "hands": ["4H 6H 7H 8H 5H", "5S 7S 8S 9S 6S"]
-      },
-      "expected": ["5S 7S 8S 9S 6S"]
-    },
-    {
       "uuid": "d9629e22-c943-460b-a951-2134d1b43346",
       "description": "aces can end a straight flush (10 J Q K A)",
       "property": "bestHands",
@@ -311,6 +302,15 @@
         "hands": ["2C AC QC 10C KC", "QH KH AH 2H 3H"]
       },
       "expected": ["2C AC QC 10C KC"]
+    },
+    {
+      "uuid": "d0927f70-5aec-43db-aed8-1cbd1b6ee9ad",
+      "description": "both hands have a straight flush, tie goes to highest-ranked card",
+      "property": "bestHands",
+      "input": {
+        "hands": ["4H 6H 7H 8H 5H", "5S 7S 8S 9S 6S"]
+      },
+      "expected": ["5S 7S 8S 9S 6S"]
     },
     {
       "uuid": "be620e09-0397-497b-ac37-d1d7a4464cfc",
