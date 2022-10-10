@@ -122,11 +122,11 @@
         "big-integer",
         "floating-point",
         "immutable",
+        "input-validation",
         "library-test",
         "local-scope",
-        "unicode",
-        "input-validation",
-        "runtime-validation"
+        "runtime-validation",
+        "unicode"
       ]
     },
 
