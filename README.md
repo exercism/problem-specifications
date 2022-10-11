@@ -1,6 +1,7 @@
 # Problem Specifications
 
-Repository for exercises to be used across tracks.  This includes both problem statements available as markdown and test data described below.
+Repository for practice exercises to be used across tracks.
+This includes both problem statements available as markdown and test data as JSON described below.
 Note that tracks are not _required_ to use these exercises and some may be more or less appropriate to the given language.
 
 See the [new track roadmap](https://exercism.org/docs/building/tracks/new) for full details on setting up a new track.
