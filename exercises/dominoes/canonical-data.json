@@ -94,7 +94,7 @@
       "uuid": "9a75e078-a025-4c23-8c3a-238553657f39",
       "description": "disconnected - simple",
       "comments": [
-        "This meets the requirement of being possibly-Euclidean.",
+        "This meets the requirement of being possibly-Eulerian.",
         "All vertices have even degree.",
         "Nevertheless, there is no chain here, as there's no way to get from 1 to 2.",
         "This test (and the two following) prevent solutions from using the even-degree test as the sole criterion,",
