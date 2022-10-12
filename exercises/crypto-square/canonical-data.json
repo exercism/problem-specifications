@@ -12,7 +12,7 @@
     },
     {
       "uuid": "aad04a25-b8bb-4304-888b-581bea8e0040",
-      "description": "empty plaintext after normalized",
+      "description": "normalization results in empty plaintext",
       "property": "ciphertext",
       "input": {
         "plaintext": "... --- ..."
