@@ -80,4 +80,4 @@ no `\r` or `\r\n` will be in the tests) and that no optional whitespace
 between properties, nodes, etc will be in the tests.
 
 [sgf]: https://en.wikipedia.org/wiki/Smart_Game_Format
-[sgf-text]: http://www.red-bean.com/sgf/sgf4.html#text
+[sgf-text]: https://www.red-bean.com/sgf/sgf4.html#text

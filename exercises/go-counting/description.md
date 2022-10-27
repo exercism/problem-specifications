@@ -28,4 +28,4 @@ To be more precise an empty intersection is part of a player's territory if all 
 For more information see [wikipedia][go-wikipedia] or [Sensei's Library][go-sensei].
 
 [go-wikipedia]: https://en.wikipedia.org/wiki/Go_%28game%29
-[go-sensei]: http://senseis.xmp.net/
+[go-sensei]: https://senseis.xmp.net/

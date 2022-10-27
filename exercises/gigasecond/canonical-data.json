@@ -6,7 +6,7 @@
     "For languages with a native date-time type though, expected times",
     "here show the correct seconds, ignoring leap seconds.",
     "The date and time formats here are per",
-    "http://www.ecma-international.org/ecma-262/5.1/#sec-15.9.1.15.",
+    "https://www.ecma-international.org/ecma-262/5.1/#sec-15.9.1.15.",
     "",
     "Finally, as a demonstration but not really a test,",
     "some languages demonstrate the add function by inviting the",
