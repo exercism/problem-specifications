@@ -26,5 +26,5 @@ More information about the difference between internal and external DSLs can be 
 
 [dsl]: https://en.wikipedia.org/wiki/Domain-specific_language
 [dot-language]: https://en.wikipedia.org/wiki/DOT_(graph_description_language)
-[graphviz]: http://graphviz.org/
+[graphviz]: https://graphviz.org/
 [fowler-dsl]: https://martinfowler.com/bliki/DomainSpecificLanguage.html

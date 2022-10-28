@@ -18,6 +18,6 @@ Write a function that given a point in the target (defined by its [Cartesian coo
 
 [darts]: https://en.wikipedia.org/wiki/Darts
 [darts-target]: https://en.wikipedia.org/wiki/Darts#/media/File:Darts_in_a_dartboard.jpg
-[concentric]: http://mathworld.wolfram.com/ConcentricCircles.html
+[concentric]: https://mathworld.wolfram.com/ConcentricCircles.html
 [cartesian-coordinates]: https://www.mathsisfun.com/data/cartesian-coordinates.html
 [real-numbers]: https://www.mathsisfun.com/numbers/real-numbers.html
