@@ -16,18 +16,18 @@ The task is to truncate input strings to 5 characters.
 Text stored digitally has to be converted to a series of bytes.
 There are 3 ways to map characters to bytes in common use.
 
-* **ASCII** can encode English language characters.
+- **ASCII** can encode English language characters.
   All characters are precisely 1 byte long.
-* **UTF-8** is a Unicode text encoding.
+- **UTF-8** is a Unicode text encoding.
   Characters take between 1 and 4 bytes.
-* **UTF-16** is a Unicode text encoding.
+- **UTF-16** is a Unicode text encoding.
   Characters are either 2 or 4 bytes long.
 
 UTF-8 and UTF-16 are both Unicode encodings which means they're capable of representing a massive range of characters including:
 
-* Text in most of the world's languages and scripts
-* Historic text
-* Emoji
+- Text in most of the world's languages and scripts
+- Historic text
+- Emoji
 
 UTF-8 and UTF-16 are both variable length encodings, which means that different characters take up different amounts of space.
 
