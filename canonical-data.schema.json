@@ -22,7 +22,7 @@
     " slightly reducing the amount of manually generated code.   "
   ],
 
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "https://json-schema.org/draft-04/schema#",
 
   "self": {
     "vendor": "io.exercism",
