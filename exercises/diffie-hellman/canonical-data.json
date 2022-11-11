@@ -20,6 +20,7 @@
     {
       "uuid": "1b97bf38-4307-418e-bfd2-446ffc77588d",
       "description": "private key is greater than 1 and less than p",
+      "scenarios": ["random"],
       "property": "privateKeyIsInRange",
       "input": {},
       "expected": {
@@ -30,6 +31,7 @@
     {
       "uuid": "68b2a5f7-7755-44c3-97b2-d28d21f014a9",
       "description": "private key is random",
+      "scenarios": ["random"],
       "property": "privateKeyIsRandom",
       "input": {},
       "expected": {
