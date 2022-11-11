@@ -9,10 +9,10 @@ In other words, you need to determine the date of the first Monday of January 20
 
 Similarly, you might be asked to find:
 
-- the third Tuesday of August 2019
-- the teenth Wednesday of May 2020
-- the fourth Sunday of July 2021
-- the last Thursday of November 2022
+- the third Tuesday of August 2019 (20 August 2019)
+- the teenth Wednesday of May 2020 (13 May 2020)
+- the fourth Sunday of July 2021 (25 July 2021)
+- the last Thursday of November 2022 (24 November 2022)
 
 The descriptors you are expected to process are: `first`, `second`, `third`, `fourth`, `last`, `teenth`.
 
