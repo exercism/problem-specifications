@@ -35,7 +35,7 @@ So there are seven numbers ending in '-teen'.
 And there are also seven weekdays (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday).
 Therefore, it is guaranteed that each day of the week (Monday, Tuesday, ...) will have exactly one numbered day ending with "teen" each month.
 
-If given the teenth Saturday of August, 1953 (or, alternately the "Saturteenth" of August, 1953), we need to look at the calendar for August 1953:
+If asked to find the teenth Saturday of August, 1953 (or, alternately the "Saturteenth" of August, 1953), we need to look at the calendar for August 1953:
 
 ```plaintext
     August 1953
@@ -48,4 +48,4 @@ Su Mo Tu We Th Fr Sa
 30 31
 ```
 
-The Saturday that has a number ending in '-teen' is August 15, 1954.
+The Saturday that has a number ending in '-teen' is August 15, 1953.
