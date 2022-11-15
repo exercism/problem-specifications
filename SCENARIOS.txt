@@ -6,5 +6,6 @@ immutable
 input-validation
 library-test
 local-scope
+random
 runtime-validation
 unicode
