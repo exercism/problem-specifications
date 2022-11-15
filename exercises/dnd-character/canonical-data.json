@@ -170,6 +170,7 @@
     {
       "uuid": "4f28f19c-2e47-4453-a46a-c0d365259c14",
       "description": "random ability is within range",
+      "scenarios": ["random"],
       "property": "ability",
       "input": {},
       "expected": "score >= 3 && score <= 18"
@@ -177,6 +178,7 @@
     {
       "uuid": "385d7e72-864f-4e88-8279-81a7d75b04ad",
       "description": "random character is valid",
+      "scenarios": ["random"],
       "property": "character",
       "input": {},
       "expected": {

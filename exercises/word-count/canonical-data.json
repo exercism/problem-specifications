@@ -203,6 +203,18 @@
         "two": 1,
         "three": 1
       }
+    },
+    {
+      "uuid": "6d00f1db-901c-4bec-9829-d20eb3044557",
+      "description": "quotation for word with apostrophe",
+      "property": "countWords",
+      "input": {
+        "sentence": "can, can't, 'can't'"
+      },
+      "expected": {
+        "can": 1,
+        "can't": 2
+      }
     }
   ]
 }

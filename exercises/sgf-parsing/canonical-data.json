@@ -171,6 +171,203 @@
       }
     },
     {
+      "uuid": "28092c06-275f-4b9f-a6be-95663e69d4db",
+      "description": "within property values, whitespace characters such as tab are converted to spaces",
+      "property": "parse",
+      "input": {
+        "encoded": "(;A[hello\t\tworld])"
+      },
+      "expected": {
+        "properties": {
+          "A": ["hello  world"]
+        },
+        "children": []
+      }
+    },
+    {
+      "uuid": "deaecb9d-b6df-4658-aa92-dcd70f4d472a",
+      "description": "within property values, newlines remain as newlines",
+      "property": "parse",
+      "input": {
+        "encoded": "(;A[hello\n\nworld])"
+      },
+      "expected": {
+        "properties": {
+          "A": ["hello\n\nworld"]
+        },
+        "children": []
+      }
+    },
+    {
+      "uuid": "8e4c970e-42d7-440e-bfef-5d7a296868ef",
+      "description": "escaped closing bracket within property value becomes just a closing bracket",
+      "property": "parse",
+      "input": {
+        "encoded": "(;A[\\]])"
+      },
+      "expected": {
+        "properties": {
+          "A": ["]"]
+        },
+        "children": []
+      }
+    },
+    {
+      "uuid": "cf371fa8-ba4a-45ec-82fb-38668edcb15f",
+      "description": "escaped backslash in property value becomes just a backslash",
+      "property": "parse",
+      "input": {
+        "encoded": "(;A[\\\\])"
+      },
+      "expected": {
+        "properties": {
+          "A": ["\\"]
+        },
+        "children": []
+      }
+    },
+    {
+      "uuid": "dc13ca67-fac0-4b65-b3fe-c584d6a2c523",
+      "description": "opening bracket within property value doesn't need to be escaped",
+      "property": "parse",
+      "input": {
+        "encoded": "(;A[x[y\\]z][foo]B[bar];C[baz])"
+      },
+      "expected": {
+        "properties": {
+          "A": ["x[y]z", "foo"],
+          "B": ["bar"]
+        },
+        "children": [
+          {
+            "properties": {
+              "C": ["baz"]
+            },
+            "children": []
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "a780b97e-8dbb-474e-8f7e-4031902190e8",
+      "description": "semicolon in property value doesn't need to be escaped",
+      "property": "parse",
+      "input": {
+        "encoded": "(;A[a;b][foo]B[bar];C[baz])"
+      },
+      "expected": {
+        "properties": {
+          "A": ["a;b", "foo"],
+          "B": ["bar"]
+        },
+        "children": [
+          {
+            "properties": {
+              "C": ["baz"]
+            },
+            "children": []
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "0b57a79e-8d89-49e5-82b6-2eaaa6b88ed7",
+      "description": "parentheses in property value don't need to be escaped",
+      "property": "parse",
+      "input": {
+        "encoded": "(;A[x(y)z][foo]B[bar];C[baz])"
+      },
+      "expected": {
+        "properties": {
+          "A": ["x(y)z", "foo"],
+          "B": ["bar"]
+        },
+        "children": [
+          {
+            "properties": {
+              "C": ["baz"]
+            },
+            "children": []
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "c72a33af-9e04-4cc5-9890-1b92262813ac",
+      "description": "escaped tab in property value is converted to space",
+      "property": "parse",
+      "input": {
+        "encoded": "(;A[hello\\\tworld])"
+      },
+      "expected": {
+        "properties": {
+          "A": ["hello world"]
+        },
+        "children": []
+      }
+    },
+    {
+      "uuid": "3a1023d2-7484-4498-8d73-3666bb386e81",
+      "description": "escaped newline in property value is converted to nothing at all",
+      "property": "parse",
+      "input": {
+        "encoded": "(;A[hello\\\nworld])"
+      },
+      "expected": {
+        "properties": {
+          "A": ["helloworld"]
+        },
+        "children": []
+      }
+    },
+    {
+      "uuid": "25abf1a4-5205-46f1-8c72-53273b94d009",
+      "description": "escaped t and n in property value are just letters, not whitespace",
+      "property": "parse",
+      "input": {
+        "encoded": "(;A[\\t = t and \\n = n])"
+      },
+      "expected": {
+        "properties": {
+          "A": ["t = t and n = n"]
+        },
+        "children": []
+      }
+    },
+    {
+      "uuid": "08e4b8ba-bb07-4431-a3d9-b1f4cdea6dab",
+      "reimplements": "11c36323-93fc-495d-bb23-c88ee5844b8c",
+      "description": "mixing various kinds of whitespace and escaped characters in property value",
+      "comments": [
+        "Keep in mind the difference between:",
+        "1. the string as it is represented in a string literal",
+        "2. the string as it will be presented to the SGF parser",
+        "In particular, the SGF parser will see a property (between the square brackets) with these characters:",
+        "Escaped closing bracket (a single backslash followed by a closing bracket): Insert closing bracket in property value",
+        "b: Insert as-is",
+        "Unescaped newline: Insert as-is",
+        "c: Insert as-is",
+        "Escaped newline (a single backslash followed by a newline): Insert nothing",
+        "d: Insert as-is",
+        "Two tabs: Insert two spaces",
+        "e: Insert as-is",
+        "Escaped backslash (two backslashes): Insert backslash",
+        "Space: Insert as-is",
+        "Escaped newline (a single backslash followed by a newline): Insert nothing",
+        "Escaped closing bracket (a single backslash followed by a closing bracket): Insert closing bracket"
+      ],
+      "property": "parse",
+      "input": {
+        "encoded": "(;A[\\]b\nc\\\nd\t\te\\\\ \\\n\\]])"
+      },
+      "expected": {
+        "properties": {
+          "A": ["]b\ncd  e\\ ]"]
+        },
+        "children": []
+      }
+    },
+    {
       "uuid": "11c36323-93fc-495d-bb23-c88ee5844b8c",
       "description": "escaped property",
       "property": "parse",

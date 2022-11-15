@@ -2,7 +2,7 @@
 
 Search files for lines matching a search string and return all matching lines.
 
-The Unix [`grep`](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/grep.html) command searches files for lines that match a regular expression.
+The Unix [`grep`][grep] command searches files for lines that match a regular expression.
 Your task is to implement a simplified `grep` command, which supports searching for fixed strings.
 
 The `grep` command takes three arguments:
@@ -23,3 +23,5 @@ The `grep` command supports the following flags:
 - `-i` Match using a case-insensitive comparison.
 - `-v` Invert the program -- collect all lines that fail to match.
 - `-x` Search only for lines where the search string matches the entire line.
+
+[grep]: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/grep.html

@@ -6,7 +6,7 @@
     "For languages with a native date-time type though, expected times",
     "here show the correct seconds, ignoring leap seconds.",
     "The date and time formats here are per",
-    "http://www.ecma-international.org/ecma-262/5.1/#sec-15.9.1.15.",
+    "https://www.ecma-international.org/ecma-262/5.1/#sec-15.9.1.15.",
     "",
     "Finally, as a demonstration but not really a test,",
     "some languages demonstrate the add function by inviting the",
@@ -18,6 +18,7 @@
     {
       "uuid": "92fbe71c-ea52-4fac-bd77-be38023cacf7",
       "description": "date only specification of time",
+      "scenarios": ["date"],
       "property": "add",
       "input": {
         "moment": "2011-04-25"
@@ -27,6 +28,7 @@
     {
       "uuid": "6d86dd16-6f7a-47be-9e58-bb9fb2ae1433",
       "description": "second test for date only specification of time",
+      "scenarios": ["date"],
       "property": "add",
       "input": {
         "moment": "1977-06-13"
@@ -36,6 +38,7 @@
     {
       "uuid": "77eb8502-2bca-4d92-89d9-7b39ace28dd5",
       "description": "third test for date only specification of time",
+      "scenarios": ["date"],
       "property": "add",
       "input": {
         "moment": "1959-07-19"
@@ -45,6 +48,7 @@
     {
       "uuid": "c9d89a7d-06f8-4e28-a305-64f1b2abc693",
       "description": "full time specified",
+      "scenarios": ["datetime"],
       "property": "add",
       "input": {
         "moment": "2015-01-24T22:00:00"
@@ -54,11 +58,27 @@
     {
       "uuid": "09d4e30e-728a-4b52-9005-be44a58d9eba",
       "description": "full time with day roll-over",
+      "scenarios": ["datetime"],
       "property": "add",
       "input": {
         "moment": "2015-01-24T23:59:59"
       },
       "expected": "2046-10-03T01:46:39"
+    },
+    {
+      "uuid": "fcec307c-7529-49ab-b0fe-20309197618a",
+      "description": "does not mutate the input",
+      "comments": [
+        "This test case is for languages with a mutable date or datetime  ",
+        "datastructure. After running add(moment), moment should remain   ",
+        "the same."
+      ],
+      "scenarios": ["immutable"],
+      "property": "isEqual",
+      "input": {
+        "moment": "2015-01-24T23:59:59"
+      },
+      "expected": "moment === moment"
     }
   ]
 }

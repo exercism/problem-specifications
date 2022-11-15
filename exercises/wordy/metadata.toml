@@ -1,3 +1,4 @@
+title = "Wordy"
 blurb = "Parse and evaluate simple math word problems returning the answer as an integer."
 source = "Inspired by one of the generated questions in the Extreme Startup game."
 source_url = "https://github.com/rchatley/extreme_startup"

@@ -7,8 +7,8 @@
     "  - Validate that `p`, `g` are valid.                                    ",
     "  - Validate that keys given as inputs are valid.                        ",
     "  Resources that show what happens if parameters are not validated:      ",
-    "  http://cryptopals.com/sets/5/challenges/34                             ",
-    "  http://cryptopals.com/sets/5/challenges/35                             ",
+    "  https://cryptopals.com/sets/5/challenges/34                             ",
+    "  https://cryptopals.com/sets/5/challenges/35                             ",
     "                                                                         ",
     "* Large numbers:                                                         ",
     "  Although the calculations fundamentally do not require large numbers,  ",
@@ -20,6 +20,7 @@
     {
       "uuid": "1b97bf38-4307-418e-bfd2-446ffc77588d",
       "description": "private key is greater than 1 and less than p",
+      "scenarios": ["random"],
       "property": "privateKeyIsInRange",
       "input": {},
       "expected": {
@@ -30,6 +31,7 @@
     {
       "uuid": "68b2a5f7-7755-44c3-97b2-d28d21f014a9",
       "description": "private key is random",
+      "scenarios": ["random"],
       "property": "privateKeyIsRandom",
       "input": {},
       "expected": {

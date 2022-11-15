@@ -94,7 +94,7 @@
       "uuid": "9a75e078-a025-4c23-8c3a-238553657f39",
       "description": "disconnected - simple",
       "comments": [
-        "This meets the requirement of being possibly-Euclidean.",
+        "This meets the requirement of being possibly-Eulerian.",
         "All vertices have even degree.",
         "Nevertheless, there is no chain here, as there's no way to get from 1 to 2.",
         "This test (and the two following) prevent solutions from using the even-degree test as the sole criterion,",
@@ -157,6 +157,19 @@
         "dominoes": [[1, 2], [5, 3], [3, 1], [1, 2], [2, 4], [1, 6], [2, 3], [3, 4], [5, 6]]
       },
       "expected": true
+    },
+    {
+      "uuid": "44704c7c-3adb-4d98-bd30-f45527cf8b49",
+      "description": "separate three-domino loops",
+      "comments": [
+        "Some solutions only check if each stone has at least two other neighbors,       ",
+        "but this test case should still fail due to the separate loops not being linked."
+      ],
+      "property": "canChain",
+      "input": {
+        "dominoes": [[1, 2], [2, 3], [3, 1], [4, 5], [5, 6], [6, 4]]
+      },
+      "expected": false
     }
   ]
 }

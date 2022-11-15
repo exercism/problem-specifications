@@ -1,6 +1,10 @@
 # Problem Specifications
 
-Shared metadata for Exercism exercises.
+Repository for practice exercises to be used across tracks.
+This includes both problem statements available as markdown and test data as JSON described below.
+Note that tracks are not _required_ to use these exercises and some may be more or less appropriate to the given language.
+
+See the [new track roadmap](https://exercism.org/docs/building/tracks/new) for full details on setting up a new track.
 
 ## Reviewing Guidelines
 
@@ -252,7 +256,7 @@ To download the latest version of the `configlet` tool, please run the [`fetch-c
 There are also some conventions that must be followed:
 
 - Descriptions should not simply explain **what** each case is (that is redundant information) but also **why** each case is there. For example, what kinds of implementation mistakes might this case help us find?
-- All keys should follow the [lowerCamelCase](http://wiki.c2.com/?LowerCamelCase) convention.
+- All keys should follow the [lowerCamelCase](https://wiki.c2.com/?LowerCamelCase) convention.
 - If the input is valid but there is no result for the input, the value at `"expected"` should be `null`.
 - If an error is expected (because the input is invalid, or any other reason), the value at `"expected"` should be an object containing exactly one property, `"error"`, whose value is a string.
   - The string should explain why the error would occur.
