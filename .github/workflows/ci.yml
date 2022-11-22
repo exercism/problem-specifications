@@ -6,7 +6,7 @@ on:
 jobs:
   required-files:
     name: All required files are present
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
 
@@ -37,7 +37,7 @@ jobs:
 
   schema-validation:
     name: Schema validation
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
 
@@ -121,7 +121,7 @@ jobs:
 
   markdown-lint:
     name: Lint markdown files
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
 
@@ -132,7 +132,7 @@ jobs:
 
   json-lint:
     name: Lint json files
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
 
