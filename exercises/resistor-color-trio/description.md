@@ -56,6 +56,4 @@ For example, an input of `"orange", "orange", "orange"` should return:
 The metric prefixes used in this exercise are "kilo", "mega", and "giga".
 Those give the units of "kiloohms", "megaohms", and "gigaohms" respectively.
 
-Note, the quantity should remain a whole number, so an input of `"orange", "orange", "green"` should return "3300 kiloohms" and not "3.3 megaohms".
-
 [metric-prefix]: https://en.wikipedia.org/wiki/Metric_prefix

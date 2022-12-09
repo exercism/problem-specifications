@@ -62,26 +62,14 @@
       }
     },
     {
-      "uuid": "ee7a1b79-8848-4b1a-bf50-498c6fab7f27",
-      "description": "Brown and red and red",
-      "property": "label",
-      "input": {
-        "colors": ["brown", "red", "red"]
-      },
-      "expected": {
-        "value": 1200,
-        "unit": "ohms"
-      }
-    },
-    {
       "uuid": "5f6404a7-5bb3-4283-877d-3d39bcc33854",
-      "description": "Blue and violet and grey",
+      "description": "Blue and violet and blue",
       "property": "label",
       "input": {
-        "colors": ["blue", "violet", "grey"]
+        "colors": ["blue", "violet", "blue"]
       },
       "expected": {
-        "value": 6700,
+        "value": 67,
         "unit": "megaohms"
       }
     },
