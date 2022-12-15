@@ -176,6 +176,33 @@
         "isbn": "98245726788"
       },
       "expected": false
+    },
+    {
+      "uuid": "67581d43-aa16-4002-b3ad-e2426cf786dc",
+      "description": "input is too short but ends with X and has valid checksum",
+      "property": "isValid",
+      "input": {
+        "isbn": "81X"
+      },
+      "expected": false
+    },
+    {
+      "uuid": "016e684f-c12c-4b9a-8735-43a3ad008b34",
+      "description": "X is only valid as a check digit even with valid checksum",
+      "property": "isValid",
+      "input": {
+        "isbn": "3-598-2X507-9"
+      },
+      "expected": false
+    },
+    {
+      "uuid": "3bf3efa0-7f08-46f5-aa0e-33572ee2f1a8",
+      "description": "X can't be skipped even if rest has valid checksum",
+      "property": "isValid",
+      "input": {
+        "isbn": "3-598-21X508-8"
+      },
+      "expected": false
     }
   ]
 }
