@@ -27,7 +27,7 @@
           },
           {
             "operation": "amount",
-            "value": 0
+            "expected": 0
           }
         ]
       }, "expected": {}
@@ -47,7 +47,7 @@
         },
         {
           "operation": "amount",
-          "value": 100
+          "expected": 100
         }
       ]
     },
@@ -72,7 +72,7 @@
           },
           {
             "operation": "amount",
-            "value": 50
+            "expected": 50
           }
         ]
       },
@@ -101,7 +101,7 @@
           },
           {
             "operation": "amount",
-            "value": 0
+            "expected": 0
           }
         ]
       },
@@ -216,7 +216,7 @@
           },
           {
             "operation": "amount",
-            "value": 0
+            "expected": 0
           }
         ]
       },
