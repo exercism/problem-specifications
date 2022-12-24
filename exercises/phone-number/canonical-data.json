@@ -45,6 +45,19 @@
       }
     },
     {
+      "uuid": "2de74156-f646-42b5-8638-0ef1d8b58bc2",
+      "reimplements": "598d8432-0659-4019-a78b-1c6a73691d21",
+      "description": "invalid when 9 digits",
+      "comments": ["Make incorrect number of digit errors consistent."],
+      "property": "clean",
+      "input": {
+        "phrase": "123456789"
+      },
+      "expected": {
+        "error": "must not be fewer than 10 digits"
+      }
+    },
+    {
       "uuid": "57061c72-07b5-431f-9766-d97da7c4399d",
       "description": "invalid when 11 digits does not start with a 1",
       "property": "clean",
@@ -82,6 +95,19 @@
       },
       "expected": {
         "error": "more than 11 digits"
+      }
+    },
+    {
+      "uuid": "4a1509b7-8953-4eec-981b-c483358ff531",
+      "reimplements": "c6a5f007-895a-4fc5-90bc-a7e70f9b5cad",
+      "description": "invalid when more than 11 digits",
+      "comments": ["Make incorrect number of digit errors consistent."],
+      "property": "clean",
+      "input": {
+        "phrase": "321234567890"
+      },
+      "expected": {
+        "error": "must not be greater than 11 digits"
       }
     },
     {
