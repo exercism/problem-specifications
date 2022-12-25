@@ -1,0 +1,4 @@
+title = "Resistor Color Master"
+blurb = "Convert color codes, as used on resistors, to a human-readable label."
+source = "Maud de Vries, Erik Schierboom, Carl(meatball), Bethany"
+source_url = "https://github.com/exercism/problem-specifications/issues/1549"
