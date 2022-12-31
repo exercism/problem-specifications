@@ -157,6 +157,19 @@
       "expected": {
         "error": "min must be <= max"
       }
+    },
+    {
+      "uuid": "16481711-26c4-42e0-9180-e2e4e8b29c23",
+      "description": "find the actual smallest palindrome",
+      "property": "smallest",
+      "input": {
+        "min": 3215,
+        "max": 4000
+      },
+      "expected": {
+        "value": 10988901,
+        "factors": [[3297, 3333]]
+      }
     }
   ]
 }
