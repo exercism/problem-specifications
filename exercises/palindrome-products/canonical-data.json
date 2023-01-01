@@ -160,7 +160,7 @@
     },
     {
       "uuid": "16481711-26c4-42e0-9180-e2e4e8b29c23",
-      "description": "find the actual smallest palindrome",
+      "description": "smallest product does not use the smallest factor",
       "property": "smallest",
       "input": {
         "min": 3215,
