@@ -157,6 +157,24 @@
       "expected": {
         "error": "min must be <= max"
       }
+    },
+    {
+      "uuid": "16481711-26c4-42e0-9180-e2e4e8b29c23",
+      "description": "smallest product does not use the smallest factor",
+      "comments": [
+        "This test catches code which assumes the smallest product is the product which uses the smallest factor.",
+        "e.g. `for x in (min_factor .. max_factor) for y in (min_factor .. max_factor) if palindrome(x, y) return [x * y, [x, y]]`",
+        "All the other tests pass when using logic like that, i.e. the other tests check for palindrome product but do not always test for the _smallest_ product"
+      ],
+      "property": "smallest",
+      "input": {
+        "min": 3215,
+        "max": 4000
+      },
+      "expected": {
+        "value": 10988901,
+        "factors": [[3297, 3333]]
+      }
     }
   ]
 }
