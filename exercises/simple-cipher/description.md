@@ -9,7 +9,7 @@ If anyone wishes to decipher these, and get at their meaning, he must substitute
 —Suetonius, Life of Julius Caesar
 
 Ciphers are very straight-forward algorithms that allow us to render text less readable while still allowing easy deciphering.
-They are vulnerable to many forms of cryptanalysis, but Caeser was lucky that his enemies were not cryptanalysts.
+They are vulnerable to many forms of cryptanalysis, but Caesar was lucky that his enemies were not cryptanalysts.
 
 The Caesar Cipher was used for some messages from Julius Caesar that were sent afield.
 Now Caesar knew that the cipher wasn't very good, but he had one ally in that respect: almost nobody could read well.
