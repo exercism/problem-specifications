@@ -29,9 +29,9 @@ When "ldpdsdqgdehdu" is put into the decode function it would return the origina
 
 ## Step 2
 
-Shift ciphers are no fun though when the opposition commander figures it out.
+Shift ciphers quickly cease to be useful when the opposition commander figures them out.
+So instead, let's try using a substitution cipher.
 Try amending the code to allow us to specify a key and use that for the shift distance.
-This is called a substitution cipher.
 
 Here's an example:
 
