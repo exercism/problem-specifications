@@ -68,6 +68,18 @@
       "expected": "IX"
     },
     {
+      "uuid": "6d1d82d5-bf3e-48af-9139-87d7165ed509",
+      "description": "16 is XVI",
+      "comments": [
+        "16 has exactly one occurence of all symbols whose value is less than 50 (L) in decreasing order"
+      ],
+      "property": "roman",
+      "input": {
+        "number": 16
+      },
+      "expected": "XVI"
+    },
+    {
       "uuid": "2bda64ca-7d28-4c56-b08d-16ce65716cf6",
       "description": "27 is XXVII",
       "property": "roman",
@@ -108,6 +120,18 @@
       "expected": "LIX"
     },
     {
+      "uuid": "4465ffd5-34dc-44f3-ada5-56f5007b6dad",
+      "description": "66 is LXVI",
+      "comments": [
+        "66 has exactly one occurence of all symbols whose value is less than 100 (C) in decreasing order"
+      ],
+      "property": "roman",
+      "input": {
+        "number": 66
+      },
+      "expected": "LXVI"
+    },
+    {
       "uuid": "46b46e5b-24da-4180-bfe2-2ef30b39d0d0",
       "description": "93 is XCIII",
       "comments": ["Because 90 is 100 - 10"],
@@ -137,6 +161,18 @@
       "expected": "CLXIII"
     },
     {
+      "uuid": "902ad132-0b4d-40e3-8597-ba5ed611dd8d",
+      "description": "166 is CLXVI",
+      "comments": [
+        "166 has exactly one occurence of all symbols whose value is less than 500 (D) in decreasing order"
+      ],
+      "property": "roman",
+      "input": {
+        "number": 166
+      },
+      "expected": "CLXVI"
+    },
+    {
       "uuid": "cdb06885-4485-4d71-8bfb-c9d0f496b404",
       "description": "402 is CDII",
       "comments": ["Because 400 is 500 - 100"],
@@ -154,6 +190,18 @@
         "number": 575
       },
       "expected": "DLXXV"
+    },
+    {
+      "uuid": "dacb84b9-ea1c-4a61-acbb-ce6b36674906",
+      "description": "666 is DCLXVI",
+      "comments": [
+        "666 has exactly one occurence of all symbols whose value is less than 1000 (M) in decreasing order"
+      ],
+      "property": "roman",
+      "input": {
+        "number": 666
+      },
+      "expected": "DCLXVI"
     },
     {
       "uuid": "432de891-7fd6-4748-a7f6-156082eeca2f",
@@ -175,63 +223,6 @@
       "expected": "MXXIV"
     },
     {
-      "uuid": "bb550038-d4eb-4be2-a9ce-f21961ac3bc6",
-      "description": "3000 is MMM",
-      "property": "roman",
-      "input": {
-        "number": 3000
-      },
-      "expected": "MMM"
-    },
-    {
-      "uuid": "6d1d82d5-bf3e-48af-9139-87d7165ed509",
-      "description": "16 is XVI",
-      "comments": [
-        "16 has exactly one occurence of all symbols whose value is less than 50 (L) in decreasing order"
-      ],
-      "property": "roman",
-      "input": {
-        "number": 16
-      },
-      "expected": "XVI"
-    },
-    {
-      "uuid": "4465ffd5-34dc-44f3-ada5-56f5007b6dad",
-      "description": "66 is LXVI",
-      "comments": [
-        "66 has exactly one occurence of all symbols whose value is less than 100 (C) in decreasing order"
-      ],
-      "property": "roman",
-      "input": {
-        "number": 66
-      },
-      "expected": "LXVI"
-    },
-    {
-      "uuid": "902ad132-0b4d-40e3-8597-ba5ed611dd8d",
-      "description": "166 is CLXVI",
-      "comments": [
-        "166 has exactly one occurence of all symbols whose value is less than 500 (D) in decreasing order"
-      ],
-      "property": "roman",
-      "input": {
-        "number": 166
-      },
-      "expected": "CLXVI"
-    },
-    {
-      "uuid": "dacb84b9-ea1c-4a61-acbb-ce6b36674906",
-      "description": "666 is DCLXVI",
-      "comments": [
-        "666 has exactly one occurence of all symbols whose value is less than 1000 (M) in decreasing order"
-      ],
-      "property": "roman",
-      "input": {
-        "number": 666
-      },
-      "expected": "DCLXVI"
-    },
-    {
       "uuid": "efbe1d6a-9f98-4eb5-82bc-72753e3ac328",
       "description": "1666 is MDCLXVI",
       "comments": [
@@ -242,6 +233,15 @@
         "number": 1666
       },
       "expected": "MDCLXVI"
+    },
+    {
+      "uuid": "bb550038-d4eb-4be2-a9ce-f21961ac3bc6",
+      "description": "3000 is MMM",
+      "property": "roman",
+      "input": {
+        "number": 3000
+      },
+      "expected": "MMM"
     },
     {
       "uuid": "3bc4b41c-c2e6-49d9-9142-420691504336",
