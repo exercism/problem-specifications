@@ -142,6 +142,16 @@
       "expected": 0
     },
     {
+      "uuid": "13345f18-8933-4dc3-81fc-1f9af040a64f",
+      "description": "a limit of 0 always returns 0",
+      "property": "sum",
+      "input": {
+        "factors": [],
+        "limit": 0
+      },
+      "expected": 0
+    },
+    {
       "uuid": "c423ae21-a0cb-4ec7-aeb1-32971af5b510",
       "description": "the factor 0 does not affect the sum of multiples of other factors",
       "property": "sum",
