@@ -4,14 +4,14 @@
     "For this exercise it is possible to implement concurrency tests",
     "but for language tracks that do not support concurrency, the tests",
     "are written to be run in a single thread.",
-    "But for language tracks that do support concurrency, so is it possible",
+    "But for language tracks that do support concurrency, it is possible",
     "to write tests that run concurrently."
   ],
   "cases": [
     {
       "uuid": "983a1528-4ceb-45e5-8257-8ce01aceb5ed",
-      "description": "Using pop raises an error if the list is empty",
-      "property": "bankAccont",
+      "description": "Newly opened account has zero balance",
+      "property": "bankAccount",
       "input": {
         "operations": [
           {
@@ -27,8 +27,8 @@
     },
     {
       "uuid": "e88d4ec3-c6bf-4752-8e59-5046c44e3ba7",
-      "description": "Can return with pop and then raise an error if empty",
-      "property": "bankAccont",
+      "description": "Can deposit money",
+      "property": "bankAccount",
       "input": {
         "operations": [
           {
@@ -47,9 +47,34 @@
       "expected": {}
     },
     {
+      "uuid": "3d9147d4-63f4-4844-8d2b-1fee2e9a2a0d",
+      "description": "Can deposit money sequentially",
+      "property": "bankAccount",
+      "input": {
+        "operations": [
+          {
+            "operation": "open"
+          },
+          {
+            "operation": "deposit",
+            "value": 100
+          },
+          {
+            "operation": "deposit",
+            "value": 50
+          },
+          {
+            "operation": "amount",
+            "expected": 150
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
       "uuid": "08f1af07-27ae-4b38-aa19-770bde558064",
-      "description": "Using shift raises an error if the list is empty",
-      "property": "bankAccont",
+      "description": "Can withdraw money",
+      "property": "bankAccount",
       "input": {
         "operations": [
           {
@@ -73,8 +98,8 @@
     },
     {
       "uuid": "6f6d242f-8c31-4ac6-8995-a90d42cad59f",
-      "description": "Can return with shift and then raise an error if empty",
-      "property": "bankAccont",
+      "description": "Can withdraw money sequentially",
+      "property": "bankAccount",
       "input": {
         "operations": [
           {
@@ -102,8 +127,8 @@
     },
     {
       "uuid": "f9facfaa-d824-486e-8381-48832c4bbffd",
-      "description": "Can return with shift and then raise an error if empty",
-      "property": "bankAccont",
+      "description": "Checking balance of closed account throws error",
+      "property": "bankAccount",
       "input": {
         "operations": [
           {
@@ -121,8 +146,8 @@
     },
     {
       "uuid": "7a65ba52-e35c-4fd2-8159-bda2bde6e59c",
-      "description": "Can return with shift and then raise an error if empty",
-      "property": "bankAccont",
+      "description": "Deposit into closed account",
+      "property": "bankAccount",
       "input": {
         "operations": [
           {
@@ -141,8 +166,8 @@
     },
     {
       "uuid": "570dfaa5-0532-4c1f-a7d3-0f65c3265608",
-      "description": "Can return with shift and then raise an error if empty",
-      "property": "bankAccont",
+      "description": "Withdraw from closed account",
+      "property": "bankAccount",
       "input": {
         "operations": [
           {
@@ -161,8 +186,8 @@
     },
     {
       "uuid": "c396d233-1c49-4272-98dc-7f502dbb9470",
-      "description": "Can return with shift and then raise an error if empty",
-      "property": "bankAccont",
+      "description": "Close already closed account",
+      "property": "bankAccount",
       "input": {
         "operations": [
           {
@@ -174,8 +199,8 @@
     },
     {
       "uuid": "c06f534f-bdc2-4a02-a388-1063400684de",
-      "description": "Can return with shift and then raise an error if empty",
-      "property": "bankAccont",
+      "description": "Open already opened account",
+      "property": "bankAccount",
       "input": {
         "operations": [
           {
@@ -190,8 +215,8 @@
     },
     {
       "uuid": "0722d404-6116-4f92-ba3b-da7f88f1669c",
-      "description": "Can return with shift and then raise an error if empty",
-      "property": "bankAccont",
+      "description": "Reopened account does not retain balance",
+      "property": "bankAccount",
       "input": {
         "operations": [
           {
@@ -217,8 +242,8 @@
     },
     {
       "uuid": "ec42245f-9361-4341-8231-a22e8d19c52f",
-      "description": "Can return with shift and then raise an error if empty",
-      "property": "bankAccont",
+      "description": "Cannot withdraw more than deposited",
+      "property": "bankAccount",
       "input": {
         "operations": [
           {
@@ -238,8 +263,8 @@
     },
     {
       "uuid": "4f381ef8-10ef-4507-8e1d-0631ecc8ee72",
-      "description": "Can return with shift and then raise an error if empty",
-      "property": "bankAccont",
+      "description": "Cannot withdraw negative",
+      "property": "bankAccount",
       "input": {
         "operations": [
           {
@@ -259,8 +284,8 @@
     },
     {
       "uuid": "d45df9ea-1db0-47f3-b18c-d365db49d938",
-      "description": "Can return with shift and then raise an error if empty",
-      "property": "bankAccont",
+      "description": "Cannot deposit negative",
+      "property": "bankAccount",
       "input": {
         "operations": [
           {
