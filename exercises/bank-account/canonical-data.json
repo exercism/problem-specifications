@@ -171,6 +171,21 @@
       "expected": {}
     },
     {
+      "uuid": "a0a1835d-faae-4ad4-a6f3-1fcc2121380b",
+      "description": "Deposit into unopened account",
+      "property": "bankAccount",
+      "input": {
+        "operations": [
+          {
+            "operation": "deposit",
+            "value": 50,
+            "expected": { "error": "account not open" }
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
       "uuid": "570dfaa5-0532-4c1f-a7d3-0f65c3265608",
       "description": "Withdraw from closed account",
       "property": "bankAccount",
