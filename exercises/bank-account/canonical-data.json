@@ -86,11 +86,11 @@
           },
           {
             "operation": "withdraw",
-            "value": 50
+            "value": 75
           },
           {
             "operation": "amount",
-            "expected": 50
+            "expected": 25
           }
         ]
       },
@@ -195,7 +195,7 @@
     },
     {
       "uuid": "c396d233-1c49-4272-98dc-7f502dbb9470",
-      "description": "Close already closed account",
+      "description": "Close an account that was not opened",
       "property": "bankAccount",
       "input": {
         "operations": [
