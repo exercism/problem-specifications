@@ -1,11 +1,11 @@
 {
   "exercise": "bank-account",
   "comments": [
-    "For this exercise it is possible to implement concurrency tests",
-    "but for language tracks that do not support concurrency, the tests",
-    "are written to be run in a single thread.",
-    "But for language tracks that do support concurrency, it is possible",
-    "to write tests that run concurrently."
+    "This exercise is a good candidate to practice concurrency, which",
+    "may not be available or possible in the implementing language track.",
+    "In this case, all tests can be executed on a single thread. If there",
+    "are tests that don't work using a single thread, these should be",
+    "marked with a concurrency scenario."
   ],
   "cases": [
     {
@@ -138,11 +138,14 @@
             "operation": "close"
           },
           {
-            "operation": "amount"
+            "operation": "amount",
+            "expected": {
+              "error": "account not open"
+            }
           }
         ]
       },
-      "expected": { "error": "account not open" }
+      "expected": {}
     },
     {
       "uuid": "7a65ba52-e35c-4fd2-8159-bda2bde6e59c",
@@ -158,11 +161,14 @@
           },
           {
             "operation": "deposit",
-            "value": 50
+            "value": 50,
+            "expected": {
+              "error": "account not open"
+            }
           }
         ]
       },
-      "expected": { "error": "account not open" }
+      "expected": {}
     },
     {
       "uuid": "570dfaa5-0532-4c1f-a7d3-0f65c3265608",
@@ -178,11 +184,14 @@
           },
           {
             "operation": "withdraw",
-            "value": 50
+            "value": 50,
+            "expected": {
+              "error": "account not open"
+            }
           }
         ]
       },
-      "expected": { "error": "account not open" }
+      "expected": {}
     },
     {
       "uuid": "c396d233-1c49-4272-98dc-7f502dbb9470",
@@ -191,11 +200,14 @@
       "input": {
         "operations": [
           {
-            "operation": "close"
+            "operation": "close",
+            "expected": {
+              "error": "account not open"
+            }
           }
         ]
       },
-      "expected": { "error": "account not open" }
+      "expected": {}
     },
     {
       "uuid": "c06f534f-bdc2-4a02-a388-1063400684de",
@@ -207,11 +219,14 @@
             "operation": "open"
           },
           {
-            "operation": "open"
+            "operation": "open",
+            "expected": {
+              "error": "account already open"
+            }
           }
         ]
       },
-      "expected": { "error": "account already open" }
+      "expected": {}
     },
     {
       "uuid": "0722d404-6116-4f92-ba3b-da7f88f1669c",
@@ -255,11 +270,14 @@
           },
           {
             "operation": "withdraw",
-            "value": 50
+            "value": 50,
+            "expected": {
+              "error": "amount must be less than balance"
+            }
           }
         ]
       },
-      "expected": { "error": "amount must be less than balance" }
+      "expected": {}
     },
     {
       "uuid": "4f381ef8-10ef-4507-8e1d-0631ecc8ee72",
@@ -276,11 +294,14 @@
           },
           {
             "operation": "withdraw",
-            "value": -50
+            "value": -50,
+            "expected": {
+              "error": "amount must be greater than 0"
+            }
           }
         ]
       },
-      "expected": { "error": "amount must be greater than 0" }
+      "expected": {}
     },
     {
       "uuid": "d45df9ea-1db0-47f3-b18c-d365db49d938",
@@ -293,11 +314,14 @@
           },
           {
             "operation": "deposit",
-            "value": -50
+            "value": -50,
+            "expected": {
+              "error": "amount must be greater than 0"
+            }
           }
         ]
       },
-      "expected": { "error": "amount must be greater than 0" }
+      "expected": {}
     }
   ]
 }
