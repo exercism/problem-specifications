@@ -148,6 +148,15 @@
         "dominoes": [[1, 2], [2, 3], [3, 1], [1, 1], [2, 2], [3, 3]]
       },
       "expected": true
+    },    
+    {
+      "uuid": "cd061538-6046-45a7-ace9-6708fe8f6504",
+      "description": "eight elements",
+      "property": "canChain",
+      "input": {
+        "dominoes": [[1, 2], [4, 4], [2, 2], [2, 3], [3, 4], [4, 1], [1, 1], [3, 3]]
+      },
+      "expected": true
     },
     {
       "uuid": "cd061538-6046-45a7-ace9-6708fe8f6504",
