@@ -262,6 +262,27 @@
         "    56",
         "    5"
       ]
+    },
+    {
+      "uuid": "1aeb65e9-00b7-4c1a-8bc5-a53ec655282d",
+      "description": "Upper-left triangle",
+      "property": "transpose",
+      "input": {
+        "lines": [
+          "ABCDE",
+          "ABCD",
+          "ABC",
+          "AB",
+          "A"
+        ]
+      },
+      "expected": [
+        "AAAAA",
+        "BBBB",
+        "CCC",
+        "DD",
+        "E"
+      ]
     }
   ]
 }
