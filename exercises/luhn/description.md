@@ -8,7 +8,7 @@ The task is to check if a given string is valid.
 
 ## Validating a Number
 
-Strings of length 1 or less are not valid.
+Strings with less than 2 digits are not valid, as it doesn't make sense to do a checksome on a single digit.
 Spaces are allowed in the input, but they should be stripped before checking.
 All other non-digit characters are disallowed.
 
