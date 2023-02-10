@@ -143,7 +143,7 @@
           }
         ]
       },
-      "expected": {"error": "account not open"}
+      "expected": { "error": "account not open" }
     },
     {
       "uuid": "7a65ba52-e35c-4fd2-8159-bda2bde6e59c",
@@ -163,7 +163,7 @@
           }
         ]
       },
-      "expected": {"error": "account not open"}
+      "expected": { "error": "account not open" }
     },
     {
       "uuid": "a0a1835d-faae-4ad4-a6f3-1fcc2121380b",
@@ -177,7 +177,7 @@
           }
         ]
       },
-      "expected": {"error": "account not open"}
+      "expected": { "error": "account not open" }
     },
     {
       "uuid": "570dfaa5-0532-4c1f-a7d3-0f65c3265608",
@@ -197,7 +197,7 @@
           }
         ]
       },
-      "expected": {"error": "account not open"}
+      "expected": { "error": "account not open" }
     },
     {
       "uuid": "c396d233-1c49-4272-98dc-7f502dbb9470",
@@ -210,7 +210,7 @@
           }
         ]
       },
-      "expected": {"error": "account not open"}
+      "expected": { "error": "account not open" }
     },
     {
       "uuid": "c06f534f-bdc2-4a02-a388-1063400684de",
@@ -226,7 +226,7 @@
           }
         ]
       },
-      "expected": {"error": "account already open"}
+      "expected": { "error": "account already open" }
     },
     {
       "uuid": "0722d404-6116-4f92-ba3b-da7f88f1669c",
@@ -273,7 +273,7 @@
           }
         ]
       },
-      "expected": {"error": "amount must be less than balance"}
+      "expected": { "error": "amount must be less than balance" }
     },
     {
       "uuid": "4f381ef8-10ef-4507-8e1d-0631ecc8ee72",
@@ -294,7 +294,7 @@
           }
         ]
       },
-      "expected": {"error": "amount must be greater than 0"}
+      "expected": { "error": "amount must be greater than 0" }
     },
     {
       "uuid": "d45df9ea-1db0-47f3-b18c-d365db49d938",
@@ -311,7 +311,7 @@
           }
         ]
       },
-      "expected": {"error": "amount must be greater than 0"}
+      "expected": { "error": "amount must be greater than 0" }
     }
   ]
 }
