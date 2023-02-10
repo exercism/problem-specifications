@@ -5,7 +5,13 @@
     "may not be available or possible in the implementing language track.",
     "In this case, all tests can be executed on a single thread. If there",
     "are tests that don't work using a single thread, these should be",
-    "marked with a concurrency scenario."
+    "marked with a concurrency scenario.",
+    "----------------------------------------------------------------",
+    "For tests which requires multiple expected values/errors",
+    "Should put the expected values/errors at each operation",
+    "And then the last expected value/error should be the case expected",
+    "For errors that are suppose to raise non fatal errors",
+    "Should have an extra field called `fatal` which holds a boolean"
   ],
   "cases": [
     {
@@ -18,12 +24,11 @@
             "operation": "open"
           },
           {
-            "operation": "amount",
-            "expected": 0
+            "operation": "amount"
           }
         ]
       },
-      "expected": {}
+      "expected": 0
     },
     {
       "uuid": "e88d4ec3-c6bf-4752-8e59-5046c44e3ba7",
@@ -39,12 +44,11 @@
             "value": 100
           },
           {
-            "operation": "amount",
-            "expected": 100
+            "operation": "amount"
           }
         ]
       },
-      "expected": {}
+      "expected": 100
     },
     {
       "uuid": "3d9147d4-63f4-4844-8d2b-1fee2e9a2a0d",
@@ -64,12 +68,11 @@
             "value": 50
           },
           {
-            "operation": "amount",
-            "expected": 150
+            "operation": "amount"
           }
         ]
       },
-      "expected": {}
+      "expected": 150
     },
     {
       "uuid": "08f1af07-27ae-4b38-aa19-770bde558064",
@@ -89,12 +92,11 @@
             "value": 75
           },
           {
-            "operation": "amount",
-            "expected": 25
+            "operation": "amount"
           }
         ]
       },
-      "expected": {}
+      "expected": 25
     },
     {
       "uuid": "6f6d242f-8c31-4ac6-8995-a90d42cad59f",
@@ -118,12 +120,11 @@
             "value": 20
           },
           {
-            "operation": "amount",
-            "expected": 0
+            "operation": "amount"
           }
         ]
       },
-      "expected": {}
+      "expected": 0
     },
     {
       "uuid": "f9facfaa-d824-486e-8381-48832c4bbffd",
@@ -138,14 +139,11 @@
             "operation": "close"
           },
           {
-            "operation": "amount",
-            "expected": {
-              "error": "account not open"
-            }
+            "operation": "amount"
           }
         ]
       },
-      "expected": {}
+      "expected": {"error": "account not open"}
     },
     {
       "uuid": "7a65ba52-e35c-4fd2-8159-bda2bde6e59c",
@@ -161,14 +159,11 @@
           },
           {
             "operation": "deposit",
-            "value": 50,
-            "expected": {
-              "error": "account not open"
-            }
+            "value": 50
           }
         ]
       },
-      "expected": {}
+      "expected": {"error": "account not open"}
     },
     {
       "uuid": "a0a1835d-faae-4ad4-a6f3-1fcc2121380b",
@@ -178,12 +173,11 @@
         "operations": [
           {
             "operation": "deposit",
-            "value": 50,
-            "expected": { "error": "account not open" }
+            "value": 50
           }
         ]
       },
-      "expected": {}
+      "expected": {"error": "account not open"}
     },
     {
       "uuid": "570dfaa5-0532-4c1f-a7d3-0f65c3265608",
@@ -199,14 +193,11 @@
           },
           {
             "operation": "withdraw",
-            "value": 50,
-            "expected": {
-              "error": "account not open"
-            }
+            "value": 50
           }
         ]
       },
-      "expected": {}
+      "expected": {"error": "account not open"}
     },
     {
       "uuid": "c396d233-1c49-4272-98dc-7f502dbb9470",
@@ -215,14 +206,11 @@
       "input": {
         "operations": [
           {
-            "operation": "close",
-            "expected": {
-              "error": "account not open"
-            }
+            "operation": "close"
           }
         ]
       },
-      "expected": {}
+      "expected": {"error": "account not open"}
     },
     {
       "uuid": "c06f534f-bdc2-4a02-a388-1063400684de",
@@ -234,14 +222,11 @@
             "operation": "open"
           },
           {
-            "operation": "open",
-            "expected": {
-              "error": "account already open"
-            }
+            "operation": "open"
           }
         ]
       },
-      "expected": {}
+      "expected": {"error": "account already open"}
     },
     {
       "uuid": "0722d404-6116-4f92-ba3b-da7f88f1669c",
@@ -263,12 +248,11 @@
             "operation": "open"
           },
           {
-            "operation": "amount",
-            "expected": 0
+            "operation": "amount"
           }
         ]
       },
-      "expected": {}
+      "expected": 0
     },
     {
       "uuid": "ec42245f-9361-4341-8231-a22e8d19c52f",
@@ -285,14 +269,11 @@
           },
           {
             "operation": "withdraw",
-            "value": 50,
-            "expected": {
-              "error": "amount must be less than balance"
-            }
+            "value": 50
           }
         ]
       },
-      "expected": {}
+      "expected": {"error": "amount must be less than balance"}
     },
     {
       "uuid": "4f381ef8-10ef-4507-8e1d-0631ecc8ee72",
@@ -309,14 +290,11 @@
           },
           {
             "operation": "withdraw",
-            "value": -50,
-            "expected": {
-              "error": "amount must be greater than 0"
-            }
+            "value": -50
           }
         ]
       },
-      "expected": {}
+      "expected": {"error": "amount must be greater than 0"}
     },
     {
       "uuid": "d45df9ea-1db0-47f3-b18c-d365db49d938",
@@ -329,14 +307,11 @@
           },
           {
             "operation": "deposit",
-            "value": -50,
-            "expected": {
-              "error": "amount must be greater than 0"
-            }
+            "value": -50
           }
         ]
       },
-      "expected": {}
+      "expected": {"error": "amount must be greater than 0"}
     }
   ]
 }
