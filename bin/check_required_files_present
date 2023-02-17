@@ -21,11 +21,20 @@ function require_file {
 	fi
 }
 
+function require_file_or_alternative {
+	filename=$1	
+	alternative_filename=$2
+	if [ ! -f $filename ] && [ ! -f $alternative_filename ]; then		
+		echo "required file missing: $filename or $alternate_filename" >&2
+		let "MISSING_FILES+=1"
+	fi
+}
+
 function check_directory {
 	directory=$1
 	for exercise_directory in $directory/* ; do
 		show_progress
-		require_file "$exercise_directory/description.md"
+		require_file_or_alternative "$exercise_directory/description.md" "$exercise_directory/instructions.md"
 		require_file "$exercise_directory/metadata.toml"
 	done
 
