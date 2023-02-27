@@ -8,8 +8,8 @@
     "marked with a concurrency scenario.",
     "----------------------------------------------------------------",
     "For tests which requires multiple expected values/errors",
-    "Should put the expected values/errors at each operation",
-    "And then the last expected value/error should be the case expected",
+    "Should put the expected values/errors as a field of each operation",
+    "And then the last expected value/error should be the overall expected value for the case",
     "For errors that are suppose to raise non fatal errors",
     "Should have an extra field called `fatal` which holds a boolean"
   ],
