@@ -1,8 +1,8 @@
 # Instructions
 
-Your task is to determine what you will say to your friend as you hand them their cookie.
+Your task is to determine what you will say as you give away the extra cookie.
 
-If your friend is named Do-yun, then you will say:
+If your friend likes cookies, and is named Do-yun, then you will say:
 
 ```text
 One for Do-yun, one for me.
