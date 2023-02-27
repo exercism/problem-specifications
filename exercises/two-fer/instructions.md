@@ -8,7 +8,8 @@ If your friend is named Do-yun, then you will say:
 One for Do-yun, one for me.
 ```
 
-On the other hand, if for some reason you can't remember your friend's name just then, you'll say _you_ instead of their name:
+If your friend doesn't like cookies, you give the cookie to the next person in line at the bakery.
+Since you don't know their name, you will say _you_ instead.
 
 ```text
 One for you, one for me.
