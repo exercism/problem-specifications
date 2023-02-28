@@ -25,7 +25,7 @@ function require_file_or_alternative {
 	filename=$1	
 	alternative_filename=$2
 	if [ ! -f $filename ] && [ ! -f $alternative_filename ]; then		
-		echo "required file missing: $filename or $alternate_filename" >&2
+		echo "required file missing: $filename or $alternative_filename" >&2
 		let "MISSING_FILES+=1"
 	fi
 }
