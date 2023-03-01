@@ -413,14 +413,14 @@
         },
         {
           "uuid": "f3734f78-91b2-4e59-905e-8c61dbf34f39",
-          "description": "Fails with a negative base if the numerator of the exponent is odd",
+          "description": "Fails with a negative real number if the numerator of the rational number is odd",
           "property": "expreal",
           "input": {
             "x": -1,
             "r": [1, 2]
           },
           "expected": {
-            "error": "impossible operation"
+            "error": "impossible to raise a negative base to an exponent with an odd numerator"
           }
         }
       ]
