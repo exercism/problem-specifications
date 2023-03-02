@@ -403,11 +403,21 @@
         },
         {
           "uuid": "da137f1c-fc94-4035-9813-94f5152a1102",
-          "description": "Raise a negative real number to a rational number",
+          "description": "Raise a negative real number to a rational number that has been reduced",
           "property": "expreal",
           "input": {
             "x": -1,
             "r": [1, 1]
+          },
+          "expected": -1.0
+        },
+        {
+          "uuid": "9abd9332-eeab-4139-afa2-2f82efdae421",
+          "description": "Raise a negative real number to a rational number that has not been reduced",
+          "property": "expreal",
+          "input": {
+            "x": -1,
+            "r": [2, 2]
           },
           "expected": -1.0
         },
