@@ -20,7 +20,7 @@
           "property": "keep",
           "input": {
             "list": [1, 3, 5],
-            "predicate": "fn(x) -> x % 2 == 1"
+            "predicate": "fn(x) -> true"
           },
           "expected": [1, 3, 5]
         },
@@ -30,7 +30,7 @@
           "property": "keep",
           "input": {
             "list": [1, 3, 5],
-            "predicate": "fn(x) -> x % 2 == 0"
+            "predicate": "fn(x) -> false"
           },
           "expected": []
         },
@@ -115,7 +115,7 @@
           "property": "discard",
           "input": {
             "list": [1, 3, 5],
-            "predicate": "fn(x) -> x % 2 == 1"
+            "predicate": "fn(x) -> true"
           },
           "expected": []
         },
@@ -125,7 +125,7 @@
           "property": "discard",
           "input": {
             "list": [1, 3, 5],
-            "predicate": "fn(x) -> x % 2 == 0"
+            "predicate": "fn(x) -> false"
           },
           "expected": [1, 3, 5]
         },
