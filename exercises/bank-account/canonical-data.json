@@ -127,6 +127,42 @@
       "expected": 0
     },
     {
+      "uuid": "45161c94-a094-4c77-9cec-998b70429bda",
+      "description": "Can do multiple operations sequentially",
+      "property": "bankAccount",
+      "input": {
+        "operations": [
+          {
+            "operation": "open"
+          },
+          {
+            "operation": "deposit",
+            "value": 100
+          },
+          {
+            "operation": "deposit",
+            "value": 110
+          },
+          {
+            "operation": "withdraw",
+            "value": 200
+          },
+          {
+            "operation": "deposit",
+            "value": 60
+          },
+          {
+            "operation": "withdraw",
+            "value": 50
+          },
+          {
+            "operation": "amount"
+          }
+        ]
+      },
+      "expected": 20
+    },
+    {
       "uuid": "f9facfaa-d824-486e-8381-48832c4bbffd",
       "description": "Cannot check balance of closed account",
       "property": "bankAccount",
