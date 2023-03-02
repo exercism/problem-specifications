@@ -59,7 +59,14 @@
           "description": "keeps strings",
           "property": "keep",
           "input": {
-            "list": ["apple", "zebra", "banana", "zombies", "cherimoya", "zealot"],
+            "list": [
+              "apple",
+              "zebra",
+              "banana",
+              "zombies",
+              "cherimoya",
+              "zealot"
+            ],
             "predicate": "fn(x) -> starts_with(x, 'z')"
           },
           "expected": ["zebra", "zombies", "zealot"]
@@ -69,10 +76,23 @@
           "description": "keeps lists",
           "property": "keep",
           "input": {
-            "list": [[1, 2, 3], [5, 5, 5], [5, 1, 2], [2, 1, 2], [1, 5, 2], [2, 2, 1], [1, 2, 5]],
+            "list": [
+              [1, 2, 3],
+              [5, 5, 5],
+              [5, 1, 2],
+              [2, 1, 2],
+              [1, 5, 2],
+              [2, 2, 1],
+              [1, 2, 5]
+            ],
             "predicate": "fn(x) -> contains(x, 5)"
           },
-          "expected": [[5, 5, 5], [5, 1, 2], [1, 5, 2], [1, 2, 5]]
+          "expected": [
+            [5, 5, 5],
+            [5, 1, 2],
+            [1, 5, 2],
+            [1, 2, 5]
+          ]
         }
       ]
     },
@@ -134,7 +154,14 @@
           "description": "discards strings",
           "property": "discard",
           "input": {
-            "list": ["apple", "zebra", "banana", "zombies", "cherimoya", "zealot"],
+            "list": [
+              "apple",
+              "zebra",
+              "banana",
+              "zombies",
+              "cherimoya",
+              "zealot"
+            ],
             "predicate": "fn(x) -> starts_with(x, 'z')"
           },
           "expected": ["apple", "banana", "cherimoya"]
@@ -144,10 +171,22 @@
           "description": "discards lists",
           "property": "discard",
           "input": {
-            "list": [[1, 2, 3], [5, 5, 5], [5, 1, 2], [2, 1, 2], [1, 5, 2], [2, 2, 1], [1, 2, 5]],
+            "list": [
+              [1, 2, 3],
+              [5, 5, 5],
+              [5, 1, 2],
+              [2, 1, 2],
+              [1, 5, 2],
+              [2, 2, 1],
+              [1, 2, 5]
+            ],
             "predicate": "fn(x) -> contains(x, 5)"
           },
-          "expected": [[1, 2, 3], [2, 1, 2], [2, 2, 1]]
+          "expected": [
+            [1, 2, 3],
+            [2, 1, 2],
+            [2, 2, 1]
+          ]
         }
       ]
     }
