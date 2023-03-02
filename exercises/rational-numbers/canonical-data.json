@@ -403,24 +403,24 @@
         },
         {
           "uuid": "da137f1c-fc94-4035-9813-94f5152a1102",
-          "description": "Raise a negative real number to a rational number with an even numerator",
+          "description": "Raise a negative real number to a rational number",
           "property": "expreal",
           "input": {
             "x": -1,
             "r": [2, 2]
           },
-          "expected": 1.0
+          "expected": -1.0
         },
         {
           "uuid": "f3734f78-91b2-4e59-905e-8c61dbf34f39",
-          "description": "Fails with a negative real number if the numerator of the rational number is odd",
+          "description": "Fails with a negative real number if the denominator of the reduced rational number is even",
           "property": "expreal",
           "input": {
             "x": -1,
-            "r": [1, 2]
+            "r": [2, 4]
           },
           "expected": {
-            "error": "impossible to raise a negative base to an exponent with an odd numerator"
+            "error": "the result of this operation is a complex number"
           }
         }
       ]
