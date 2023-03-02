@@ -407,7 +407,7 @@
           "property": "expreal",
           "input": {
             "x": -1,
-            "r": [2, 2]
+            "r": [1, 1]
           },
           "expected": -1.0
         },
@@ -417,7 +417,7 @@
           "property": "expreal",
           "input": {
             "x": -1,
-            "r": [2, 4]
+            "r": [1, 2]
           },
           "expected": {
             "error": "the result of this operation is a complex number"
