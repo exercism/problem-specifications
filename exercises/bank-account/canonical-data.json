@@ -7,9 +7,9 @@
     "are tests that don't work using a single thread, these should be",
     "marked with a concurrency scenario.",
     "----------------------------------------------------------------",
-    "For tests which requires multiple expected values/errors",
-    "Should put the expected values/errors as a field of each operation",
-    "And then the last expected value/error should be the overall expected value for the case",
+    "The overall expected value for the case should be the result of the last operation.",
+    "If any operation other than the last one also has an expected result,",
+    "that individual operation should have its expected value/error as a field.",
     "For errors that are suppose to raise non fatal errors",
     "Should have an extra field called `fatal` which holds a boolean"
   ],
