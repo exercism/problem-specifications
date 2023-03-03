@@ -160,7 +160,7 @@
         "question": "Who is the President of the United States?"
       },
       "expected": {
-        "error": "unknown operation"
+        "error": "syntax error"
       }
     },
     {
@@ -204,7 +204,7 @@
         "question": "What is 1 plus 2 1?"
       },
       "expected": {
-        "error": "syntax error"
+        "error": "unknown operation"
       }
     },
     {
@@ -215,7 +215,7 @@
         "question": "What is 1 2 plus?"
       },
       "expected": {
-        "error": "syntax error"
+        "error": "unknown operation"
       }
     },
     {
@@ -226,7 +226,7 @@
         "question": "What is plus 1 2?"
       },
       "expected": {
-        "error": "syntax error"
+        "error": "unknown operation"
       }
     }
   ]
