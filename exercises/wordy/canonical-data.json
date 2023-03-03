@@ -160,6 +160,18 @@
         "question": "Who is the President of the United States?"
       },
       "expected": {
+        "error": "unknown operation"
+      }
+    },
+    {
+      "uuid": "deb10580-72dc-477c-80ac-ce27919be913",
+      "reimplements": "8a7e85a8-9e7b-4d46-868f-6d759f4648f8",
+      "description": "Non math question",
+      "property": "answer",
+      "input": {
+        "question": "Who is the President of the United States?"
+      },
+      "expected": {
         "error": "syntax error"
       }
     },
@@ -204,6 +216,18 @@
         "question": "What is 1 plus 2 1?"
       },
       "expected": {
+        "error": "syntax error"
+      }
+    },
+    {
+      "uuid": "a3d198ba-b0f2-409e-80a9-a500c3859aad",
+      "reimplements": "6abd7a50-75b4-4665-aa33-2030fd08bab1",
+      "description": "reject two numbers in a row",
+      "property": "answer",
+      "input": {
+        "question": "What is 1 plus 2 1?"
+      },
+      "expected": {
         "error": "unknown operation"
       }
     },
@@ -215,11 +239,35 @@
         "question": "What is 1 2 plus?"
       },
       "expected": {
+        "error": "syntax error"
+      }
+    },
+    {
+      "uuid": "824b9f29-5bed-402d-b09f-a55aeb264f7c",
+      "reimplements": "10a56c22-e0aa-405f-b1d2-c642d9c4c9de",
+      "description": "reject postfix notation",
+      "property": "answer",
+      "input": {
+        "question": "What is 1 2 plus?"
+      },
+      "expected": {
         "error": "unknown operation"
       }
     },
     {
       "uuid": "0035bc63-ac43-4bb5-ad6d-e8651b7d954e",
+      "description": "reject prefix notation",
+      "property": "answer",
+      "input": {
+        "question": "What is plus 1 2?"
+      },
+      "expected": {
+        "error": "syntax error"
+      }
+    },
+    {
+      "uuid": "1ab7e9ba-4dbf-4bfc-b81d-8a7e2ea4e86a",
+      "reimplements": "0035bc63-ac43-4bb5-ad6d-e8651b7d954e",
       "description": "reject prefix notation",
       "property": "answer",
       "input": {
