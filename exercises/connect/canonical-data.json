@@ -145,6 +145,22 @@
         ]
       },
       "expected": "X"
+    },
+    {
+      "uuid": "5b27dff5-a862-4a83-a74d-35375f07cbd4",
+      "description": "X wins using the middle path with more than a starting point",
+      "property": "winner",
+      "input": {
+        "board": [
+          "O X O X",
+          " X O X O",
+          "  . X . O",
+          "   X . O .",
+          "    O O O O",
+          "     X X X ."
+        ]
+      },
+      "expected": "X"
     }
   ]
 }
