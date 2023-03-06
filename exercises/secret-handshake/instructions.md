@@ -42,6 +42,6 @@ jump, double blink
 ```
 
 ```exercism/note
-If you aren't sure what binary is or how it works, check out [this tutorial][intro-to-binary].
+If you aren't sure what binary is or how it works, check out [this binary tutorial][intro-to-binary].
 [intro-to-binary]: https://medium.com/basecs/bits-bytes-building-with-binary-13cb4289aafa
 ```
