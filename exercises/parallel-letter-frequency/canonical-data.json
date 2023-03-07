@@ -149,6 +149,7 @@
     {
       "uuid": "4727f020-df62-4dcf-99b2-a6e58319cb4f",
       "description": "large texts",
+      "scenarios": ["concurrent"],
       "property": "calculateFrequencies",
       "input": {
         "texts": [
@@ -189,6 +190,7 @@
     {
       "uuid": "adf8e57b-8e54-4483-b6b8-8b32c115884c",
       "description": "many small texts",
+      "scenarios": ["concurrent"],
       "property": "calculateFrequencies",
       "input": {
         "texts": [
