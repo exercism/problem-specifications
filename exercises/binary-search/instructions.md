@@ -15,7 +15,8 @@ The algorithm looks like this:
 - If the middle element is our item, then we're done!
 - If the middle element is greater than our item, we can eliminate that element and all the elements **after** it.
 - If the middle element is less than our item, we can eliminate that element and all the elements **before** it.
-- Repeat the process on the part of the list that has not been eliminated. If all the list has been eliminated then the item is not in the list.
+- If every element of the list has been eliminated then the item is not in the list.
+- Otherwise, repeat the process on the part of the list that has not been eliminated.
 
 Here's an example:
 
