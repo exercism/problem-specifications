@@ -1,7 +1,7 @@
 # Introduction
 
 You have stumbled upon a group of mathematicians who are also singer-songwriters.
-They have written a song for each of their favorite numbers, and, as you can imagine, they have a lot of favorite numbers.
+They have written a song for each of their favorite numbers, and, as you can imagine, they have a lot of favorite numbers (like 0 or 73 or _pi_, which starts with 3.14).
 
 You are curious to hear the song for your favorite number, but with so many songs to wade through, finding the right song could take a while.
 Fortunately, they have organized their songs in a playlist sorted by the title — which is simply the number that the song is about.
