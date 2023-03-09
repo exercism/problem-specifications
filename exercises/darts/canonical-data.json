@@ -46,7 +46,7 @@
     },
     {
       "uuid": "1c5ffd9f-ea66-462f-9f06-a1303de5a226",
-      "description": "Exactly on centre",
+      "description": "Exactly on center",
       "property": "score",
       "input": {
         "x": 0,
@@ -56,7 +56,7 @@
     },
     {
       "uuid": "b65abce3-a679-4550-8115-4b74bda06088",
-      "description": "Near the centre",
+      "description": "Near the center",
       "property": "score",
       "input": {
         "x": -0.1,
