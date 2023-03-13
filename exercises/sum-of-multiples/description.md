@@ -1,6 +1,6 @@
 # Description
 
-Given a limit and a list of factors, find the sum of all unique multiples of the factors that are less than the limit.
+Given a list of factors and a limit, add up all the unique multiples of the factors that are less than the limit.
 All inputs will be greater than or equal to zero.
 
 ## Example
