@@ -120,6 +120,7 @@
       "type": "string",
       "enum": [
         "big-integer",
+        "concurrent",
         "date",
         "datetime",
         "floating-point",

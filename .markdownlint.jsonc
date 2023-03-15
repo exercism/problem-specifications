@@ -3,5 +3,6 @@
 {
     "MD004": "dash", // Prefer hyphens for unordered lists
     "MD013": false,  // Exercism tends to break lines at sentence ends rather than at a column limit
-    "MD024": false   // The format for instructions.md requires  repeated headings, e.g. "Task"
+    "MD024": false,  // The format for instructions.md requires  repeated headings, e.g. "Task"
+    "MD048": false   // We want three backticks for codeblocks, but four tildes for special blocks.
 }

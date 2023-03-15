@@ -1,2 +1,3 @@
 # CI
 .github/**/*		@exercism/maintainers-admin
+exercises/**/*.md	@exercism/maintainers-admin
