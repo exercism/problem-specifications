@@ -348,6 +348,21 @@
         ]
       },
       "expected": { "error": "amount must be greater than 0" }
+    },
+    {
+      "scenarios": ["concurrent"],
+      "operation": "Can handle concurrent transactions",
+      "operations": [
+        {
+          "operation": "deposit",
+          "value": 1
+        },
+        {
+          "operation": "withdraw",
+          "value": 1
+        }
+      ],
+      "expected": {}
     }
   ]
 }
