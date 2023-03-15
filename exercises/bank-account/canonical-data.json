@@ -353,6 +353,7 @@
       "uuid": "ba0c1e0b-0f00-416f-8097-a7dfc97871ff",
       "description": "Can handle concurrent transactions",
       "scenarios": ["concurrent"],
+      "property": "bankAccount",
       "input": {
         "operations": [
           {
