@@ -353,16 +353,18 @@
       "uuid": "ba0c1e0b-0f00-416f-8097-a7dfc97871ff",
       "description": "Can handle concurrent transactions",
       "scenarios": ["concurrent"],
-      "operations": [
-        {
-          "operation": "deposit",
-          "value": 1
-        },
-        {
-          "operation": "withdraw",
-          "value": 1
-        }
-      ],
+      "input": {
+        "operations": [
+          {
+            "operation": "deposit",
+            "value": 1
+          },
+          {
+            "operation": "withdraw",
+            "value": 1
+          }
+        ]
+      },
       "expected": {}
     }
   ]
