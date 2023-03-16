@@ -3,15 +3,7 @@
   "comments": [
     "This exercise is a good candidate to practice concurrency, which",
     "may not be available or possible in the implementing language track.",
-    "In that case, all tests can be executed on a single thread. If there",
-    "are tests that don't work using a single thread, these should be",
-    "marked with a concurrency scenario.",
-    "----------------------------------------------------------------",
-    "The overall expected value for the case should be the result of the last operation.",
-    "If any operation other than the last one also has an expected result,",
-    "that individual operation should have its expected value/error as a field.",
-    "For errors that are suppose to raise non fatal errors",
-    "Should have an extra field called `fatal` which holds a boolean"
+    "It is possible to implement this exercise without concurrency,"
   ],
   "cases": [
     {
@@ -24,7 +16,7 @@
             "operation": "open"
           },
           {
-            "operation": "amount"
+            "operation": "balance"
           }
         ]
       },
@@ -44,7 +36,7 @@
             "value": 100
           },
           {
-            "operation": "amount"
+            "operation": "balance"
           }
         ]
       },
@@ -68,7 +60,7 @@
             "value": 50
           },
           {
-            "operation": "amount"
+            "operation": "balance"
           }
         ]
       },
@@ -92,7 +84,7 @@
             "value": 75
           },
           {
-            "operation": "amount"
+            "operation": "balance"
           }
         ]
       },
@@ -120,7 +112,7 @@
             "value": 20
           },
           {
-            "operation": "amount"
+            "operation": "balance"
           }
         ]
       },
@@ -156,7 +148,7 @@
             "value": 50
           },
           {
-            "operation": "amount"
+            "operation": "balance"
           }
         ]
       },
@@ -175,7 +167,7 @@
             "operation": "close"
           },
           {
-            "operation": "amount"
+            "operation": "balance"
           }
         ]
       },
@@ -284,7 +276,7 @@
             "operation": "open"
           },
           {
-            "operation": "amount"
+            "operation": "balance"
           }
         ]
       },
@@ -353,9 +345,15 @@
       "uuid": "ba0c1e0b-0f00-416f-8097-a7dfc97871ff",
       "description": "Can handle concurrent transactions",
       "scenarios": ["concurrent"],
+      "comments": [
+        "This test is a good candidate to practice concurrency, which",
+        "may not be available or possible in the implementing language track.",
+        "Concurrency testing is often made by running the same operations in",
+        "parallel, and then checking that the final state is as expected."
+      ],
       "property": "bankAccount",
       "input": {
-        "operations": [
+        "concurrent_operations": [
           {
             "operation": "deposit",
             "value": 1
