@@ -3,7 +3,7 @@
   "comments": [
     "This exercise is a good candidate to practice concurrency, which",
     "may not be available or possible in the implementing language track.",
-    "In this case, all tests can be executed on a single thread. If there",
+    "In that case, all tests can be executed on a single thread. If there",
     "are tests that don't work using a single thread, these should be",
     "marked with a concurrency scenario.",
     "----------------------------------------------------------------",
