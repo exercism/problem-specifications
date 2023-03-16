@@ -15,7 +15,7 @@ There are three cases for the tabulation of a frame.
   In this case the score for the frame is the number of pins knocked down.
 
 - A spare is where all ten pins are knocked down by the second throw.
-  The total value of a spare is 10 plus the number of pins knocked down in their next throw.
+  The total value of a spare is 10 plus the number of pins knocked down in the next throw.
 
 - A strike is where all ten pins are knocked down by the first throw.
   The total value of a strike is 10 plus the number of pins knocked down in the next two throws.
