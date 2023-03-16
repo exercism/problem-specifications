@@ -344,13 +344,13 @@
     {
       "uuid": "ba0c1e0b-0f00-416f-8097-a7dfc97871ff",
       "description": "Can handle concurrent transactions",
-      "scenarios": ["concurrent"],
       "comments": [
         "This test is a good candidate to practice concurrency, which",
         "may not be available or possible in the implementing language track.",
         "Concurrency testing is often made by running the same operations in",
         "parallel, and then checking that the final state is as expected."
       ],
+      "scenarios": ["concurrent"],
       "property": "bankAccount",
       "input": {
         "concurrent_operations": [
