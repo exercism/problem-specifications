@@ -19,7 +19,6 @@ There are three cases for the tabulation of a frame.
 
 - A strike is where all ten pins are knocked down by the first throw.
   The total value of a strike is 10 plus the number of pins knocked down in the next two throws.
-  If a strike is immediately followed by a second strike, then the value of the first strike cannot be determined until the ball is thrown one more time.
 
 Here is a three frame example:
 
