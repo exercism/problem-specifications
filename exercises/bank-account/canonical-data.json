@@ -3,7 +3,7 @@
   "comments": [
     "This exercise is a good candidate to practice concurrency, which",
     "may not be available or possible in the implementing language track.",
-    "It is possible to implement this exercise without concurrency,"
+    "It is possible to implement this exercise without concurrency."
   ],
   "cases": [
     {
@@ -33,7 +33,7 @@
           },
           {
             "operation": "deposit",
-            "value": 100
+            "amount": 100
           },
           {
             "operation": "balance"
@@ -53,11 +53,11 @@
           },
           {
             "operation": "deposit",
-            "value": 100
+            "amount": 100
           },
           {
             "operation": "deposit",
-            "value": 50
+            "amount": 50
           },
           {
             "operation": "balance"
@@ -77,11 +77,11 @@
           },
           {
             "operation": "deposit",
-            "value": 100
+            "amount": 100
           },
           {
             "operation": "withdraw",
-            "value": 75
+            "amount": 75
           },
           {
             "operation": "balance"
@@ -101,15 +101,15 @@
           },
           {
             "operation": "deposit",
-            "value": 100
+            "amount": 100
           },
           {
             "operation": "withdraw",
-            "value": 80
+            "amount": 80
           },
           {
             "operation": "withdraw",
-            "value": 20
+            "amount": 20
           },
           {
             "operation": "balance"
@@ -129,23 +129,23 @@
           },
           {
             "operation": "deposit",
-            "value": 100
+            "amount": 100
           },
           {
             "operation": "deposit",
-            "value": 110
+            "amount": 110
           },
           {
             "operation": "withdraw",
-            "value": 200
+            "amount": 200
           },
           {
             "operation": "deposit",
-            "value": 60
+            "amount": 60
           },
           {
             "operation": "withdraw",
-            "value": 50
+            "amount": 50
           },
           {
             "operation": "balance"
@@ -187,7 +187,7 @@
           },
           {
             "operation": "deposit",
-            "value": 50
+            "amount": 50
           }
         ]
       },
@@ -201,7 +201,7 @@
         "operations": [
           {
             "operation": "deposit",
-            "value": 50
+            "amount": 50
           }
         ]
       },
@@ -221,7 +221,7 @@
           },
           {
             "operation": "withdraw",
-            "value": 50
+            "amount": 50
           }
         ]
       },
@@ -267,7 +267,7 @@
           },
           {
             "operation": "deposit",
-            "value": 50
+            "amount": 50
           },
           {
             "operation": "close"
@@ -293,11 +293,11 @@
           },
           {
             "operation": "deposit",
-            "value": 25
+            "amount": 25
           },
           {
             "operation": "withdraw",
-            "value": 50
+            "amount": 50
           }
         ]
       },
@@ -314,11 +314,11 @@
           },
           {
             "operation": "deposit",
-            "value": 100
+            "amount": 100
           },
           {
             "operation": "withdraw",
-            "value": -50
+            "amount": -50
           }
         ]
       },
@@ -335,7 +335,7 @@
           },
           {
             "operation": "deposit",
-            "value": -50
+            "amount": -50
           }
         ]
       },
@@ -356,11 +356,11 @@
         "concurrent_operations": [
           {
             "operation": "deposit",
-            "value": 1
+            "amount": 1
           },
           {
             "operation": "withdraw",
-            "value": 1
+            "amount": 1
           }
         ]
       },
