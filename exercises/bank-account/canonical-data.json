@@ -362,9 +362,14 @@
             "operation": "withdraw",
             "amount": 1
           }
+        ],
+        "operations": [
+          {
+            "operation": "balance"
+          }
         ]
       },
-      "expected": {}
+      "expected": 0
     }
   ]
 }
