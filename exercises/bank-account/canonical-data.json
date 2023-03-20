@@ -353,17 +353,25 @@
       "scenarios": ["concurrent"],
       "property": "bankAccount",
       "input": {
-        "concurrent_operations": [
+        "initial_operations": [
           {
-            "operation": "deposit",
-            "amount": 1
-          },
-          {
-            "operation": "withdraw",
-            "amount": 1
+            "operation": "open"
           }
         ],
-        "operations": [
+        "concurrent_operations": {
+          "number": 1000,
+          "operations": [
+            {
+              "operation": "deposit",
+              "amount": 1
+            },
+            {
+              "operation": "withdraw",
+              "amount": 1
+            }
+          ]
+        },
+        "finishing_operations": [
           {
             "operation": "balance"
           }
