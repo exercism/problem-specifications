@@ -1,0 +1,73 @@
+{
+  "exercise": "leibniz-formula",
+  "comments": [
+    "The expected outputs should be the calculated π within an allowed distance, ",
+    "so for example given 10 fractions, the response should be π +/- 0.01.",
+    "The response fields below give the allowed distance given the number of fractions"
+  ],
+  "cases": [
+    {
+      "uuid": "92b94868-22c2-4dcf-85b2-e7c3788b1563",
+      "description": "no fractions at all",
+      "property": "distance",
+      "input": {
+        "value": "0"
+      },
+      "expected": 1
+    },
+    {
+      "uuid": "63d6e921-d748-4dd5-98a4-d313eba0c654",
+      "description": "one fraction",
+      "property": "distance",
+      "input": {
+        "value": "1"
+      },
+      "expected": 0.5
+    },
+    {
+      "uuid": "d9d076cf-dca0-4ee0-bea0-51d672f8d96e",
+      "description": "ten fractions",
+      "property": "distance",
+      "input": {
+        "value": "10"
+      },
+      "expected": 0.1
+    },
+    {
+      "uuid": "fa8cbcab-e99e-4c1d-b135-9b9bd44a1211",
+      "description": "hundred fractions",
+      "property": "distance",
+      "input": {
+        "value": "100"
+      },
+      "expected": 0.01
+    },
+    {
+      "uuid": "d2a93b78-9589-4c54-bef1-ea5051f42ca6",
+      "description": "thousand fractions",
+      "property": "distance",
+      "input": {
+        "value": "1000"
+      },
+      "expected": 0.001
+    },
+    {
+      "uuid": "6c6cd3f2-7047-475a-bd57-86a14c07a94c",
+      "description": "million fractions",
+      "property": "distance",
+      "input": {
+        "value": "1000000"
+      },
+      "expected": 0.000001
+    },
+    {
+      "uuid": "bdc0165b-5b18-42fd-9226-bc60fc5e6645",
+      "description": "billion fractions",
+      "property": "distance",
+      "input": {
+        "value": "1000000000"
+      },
+      "expected": 0.000000001
+    }
+  ]
+}
