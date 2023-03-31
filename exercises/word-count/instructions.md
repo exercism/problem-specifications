@@ -11,10 +11,10 @@ Words can be separated by any form of punctuation (e.g. ":", "!", or "?") or whi
 The only punctuation that does not separate words is the apostrophe in contractions.
 
 Numbers are considered words.
-If the subtitles say `It costs 100 dollars.` then `100` will be its own word.
+If the subtitles say _It costs 100 dollars._ then _100_ will be its own word.
 
 Words are case insensitive.
-For example, the word `you` occurs three times in the following sentence:
+For example, the word _you_ occurs three times in the following sentence:
 
 > You come back, you hear me? DO YOU HEAR ME?
 
