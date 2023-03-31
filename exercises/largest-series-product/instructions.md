@@ -6,10 +6,10 @@ The technique you're going to use here is called the largest series product.
 
 Let's define a few terms, first.
 
-- **input** - the sequence of digits that you need to analyze
-- **series** - a sequence of adjacent digits (those that are next to each other) that is contained within the input
-- **span** - how many digits long each series is
-- **product** - what you get when you multiply numbers together
+- **input**: the sequence of digits that you need to analyze
+- **series**: a sequence of adjacent digits (those that are next to each other) that is contained within the input
+- **span**: how many digits long each series is
+- **product**: what you get when you multiply numbers together
 
 Let's work through an example, with the input `"63915"`.
 
