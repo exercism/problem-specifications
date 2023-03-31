@@ -22,4 +22,5 @@ Let's work through an example, with the input `"63915"`.
   - The product of the series `"639"` is 162 (`6 × 3 × 9 = 162`)
   - The product of the series `"391"` is 27 (`3 × 9 × 1 = 27`)
   - The product of the series `"915"` is 45 (`9 × 1 × 5 = 45`)
-- 162 is bigger than both 27 and 45, so the largest series product of `"63915"` is from the series `"639"`. So the answer is **162**.
+- 162 is bigger than both 27 and 45, so the largest series product of `"63915"` is from the series `"639"`.
+  So the answer is **162**.
