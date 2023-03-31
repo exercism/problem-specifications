@@ -1,7 +1,7 @@
 {
   "exercise": "etl",
   "comments": [
-    "Transforms a set of legacy Scrabble data stored as letters per score",
+    "Transforms a set of legacy Lexiconia data stored as letters per score",
     "to a set of data stored score per letter.",
     "Note:  The expected input data for these tests should have",
     "integer keys (not stringified numbers as shown in the JSON below",
