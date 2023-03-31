@@ -2,7 +2,7 @@
 
 Your task is to count how many times each word occurs in a subtitle of a drama.
 
-The dramas that the subtitles are taken from use only ASCII characters.
+The subtitles from these dramas use only ASCII characters.
 
 The characters often speak in casual English, using contractions like _they're_ or _it's_.
 Though these contractions come from two words (e.g. _we are_), the contraction (_we're_) is considered a single word.
