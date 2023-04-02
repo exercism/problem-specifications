@@ -20,7 +20,7 @@ Let's look an example;
 
 To calculate the energy points earned by the player, we need to find all the unique multiples of these base values that are less than or equal to level 20.
 
-- Multiples of 3 up to 20: `{3, 6, 9, 12, 15, 18, 20}`
+- Multiples of 3 up to 20: `{3, 6, 9, 12, 15, 18}`
 - Multiples of 5 up to 20: `{5, 10, 15, 20}`
 - Combine the sets and remove duplicates: `{3, 5, 6, 9, 10, 12, 15, 18, 20}`
 - Sum the unique multiples: `3 + 5 + 6 + 9 + 10 + 12 + 15 + 18 + 20 = 98`
