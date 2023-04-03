@@ -4,7 +4,7 @@ Your task is to write the code that calculates the energy points that get awarde
 
 The points awarded depend on two things:
 
-- the number of the level that the player completed
+- the level (as number) that the player completed
 - the base value of each magical item collected by the player during that level
 
 The energy points are awarded according to the following rules:
