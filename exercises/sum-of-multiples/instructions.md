@@ -9,10 +9,10 @@ The points awarded depend on two things:
 
 The energy points are awarded according to the following rules:
 
-- For each magical item, take the base value and find all the multiples of that value that are less than or equal to the level number.
-- Combine the sets of numbers.
-- Remove any duplicates.
-- Calculate the sum of all the numbers that are left.
+1. For each magical item, take the base value and find all the multiples of that value that are less than or equal to the level number.
+2. Combine the sets of numbers.
+3. Remove any duplicates.
+4. Calculate the sum of all the numbers that are left.
 
 Let's look an example;
 
