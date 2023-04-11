@@ -1,6 +1,6 @@
 # Introduction
 
-You are planning on building a tree house in the woods near your house so that you can watch the sun rise and set.
+You plan to build a tree house in the woods near your house so that you can watch the sun rise and set.
 
 You've obtained data from a local survey company that shows the heights of all the trees in each rectangular section of the map.
 You need to analyze each grid on the map to find the perfect tree for your tree house.
