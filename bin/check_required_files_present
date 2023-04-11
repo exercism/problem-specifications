@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 MISSING_FILES=0
+UNNEEDED_FILES=0
 SHOW_PROGRESS='false'
 
 if [ ! -d exercises ] ; then
@@ -21,12 +22,23 @@ function require_file {
 	fi
 }
 
+function reject_file {
+	filename=$1
+	if [ -f "$filename" ]; then
+		echo "unneeded file should be removed: $filename" >&2
+		UNNEEDED_FILES=$((UNNEEDED_FILES + 1))
+	fi
+}
+
 function require_file_or_alternative {
 	filename=$1	
 	alternative_filename=$2
 	if [ ! -f $filename ] && [ ! -f $alternative_filename ]; then		
 		echo "required file missing: $filename or $alternative_filename" >&2
 		let "MISSING_FILES+=1"
+	elif [ -f "$filename" ] && [ -f "$alternative_filename" ]; then
+		echo "one of these two files should be removed: $filename or $alternative_filename" >&2
+		UNNEEDED_FILES=$((UNNEEDED_FILES + 1))
 	fi
 }
 
@@ -34,7 +46,21 @@ function check_directory {
 	directory=$1
 	for exercise_directory in $directory/* ; do
 		show_progress
-		require_file_or_alternative "$exercise_directory/description.md" "$exercise_directory/instructions.md"
+
+		# Only two possibilities are allowed:
+		# 1. legacy: Only description.md
+		# 2. migrated to new format: description.md is gone,
+		#    and only instructions.md and introduction.md exist.
+		desc="$exercise_directory/description.md"
+		inst="$exercise_directory/instructions.md"
+		intro="$exercise_directory/introduction.md"
+		require_file_or_alternative "$desc" "$inst"
+		if [ -f "$inst" ]; then
+			require_file "$intro"
+		elif [ -f "$desc" ]; then
+			reject_file "$intro"
+		fi
+
 		require_file "$exercise_directory/metadata.toml"
 	done
 
@@ -51,9 +77,11 @@ do
 			check_directory 'exercises'
 			if [ $SHOW_PROGRESS == 'true' ]; then
 				echo
-				echo Done: $MISSING_FILES files missing.
+				echo Done: $MISSING_FILES files missing and $UNNEEDED_FILES unneeded files.
 			fi
 			if (( $MISSING_FILES > 0 )); then
+				exit 1
+			elif (( $UNNEEDED_FILES > 0 )); then
 				exit 1
 			else
 				exit 0
