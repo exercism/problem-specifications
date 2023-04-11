@@ -3,7 +3,7 @@ missing_files=0
 unneeded_files=0
 verbose_progress='false'
 
-if [[ ! -d exercises ]] ; then
+if [[ ! -d exercises ]]; then
     echo '"exercises" directory not found, make sure you are running from the repository root' >&2
     exit 1
 fi
@@ -44,7 +44,7 @@ function require_file_or_alternative {
 
 function check_directory {
     directory=$1
-    for exercise_directory in "${directory}"/* ; do
+    for exercise_directory in "${directory}"/*; do
         show_progress
 
         # only two possibilities are allowed:

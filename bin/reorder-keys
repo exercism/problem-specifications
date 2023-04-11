@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
-if [[ ! -d exercises ]] ; then
+if [[ ! -d exercises ]]; then
     echo 'Error: "exercises" directory not found, make sure you are running from the repository root' >&2
     exit 1
 fi
 
 tmp_file='.reordered-canonical-data.json'
 
-for canonical_data_file in exercises/*/canonical-data.json ; do
+for canonical_data_file in exercises/*/canonical-data.json; do
     jq '
         walk(
             if (type == "object") and has("uuid") then
@@ -20,5 +20,5 @@ for canonical_data_file in exercises/*/canonical-data.json ; do
                 .
             end
         )
-    ' "$canonical_data_file" > "$tmp_file" && mv "$tmp_file" "$canonical_data_file"
+    ' "${canonical_data_file}" > "${tmp_file}" && mv "${tmp_file}" "${canonical_data_file}"
 done
