@@ -12,10 +12,10 @@ for canonical_data_file in exercises/*/canonical-data.json; do
         walk(
             if (type == "object") and has("uuid") then
                 . as $obj |
-            reduce ["uuid", "reimplements", "description", "comments", "scenarios", "property", "input", "expected"][] as $key (
-                {};
-                . + (if $obj | has($key) then { ($key): $obj[$key] } else {} end)
-            )
+                reduce ["uuid", "reimplements", "description", "comments", "scenarios", "property", "input", "expected"][] as $key (
+                    {};
+                    . + (if $obj | has($key) then { ($key): $obj[$key] } else {} end)
+                )
             else
                 .
             end
