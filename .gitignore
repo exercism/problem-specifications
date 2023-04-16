@@ -2,10 +2,6 @@
 *.swp
 .DS_Store
 
-# Platform specific tools (use fetch-configlet)
-bin/configlet
-bin/configlet.exe
-
 # IDE folders and files
 .idea
 
