@@ -39,7 +39,7 @@ Resulting in:
 - 5 × (100% - 25%) * $8 = 5 × $6.00 = $30.00, plus
 - 3 × (100% - 10%) * $8 = 3 × $7.20 = $21.60
 
-Which equals $51.60
+Which equals $51.60.
 
 However, a different way to group these 8 books is:
 
@@ -56,6 +56,6 @@ Resulting in:
 - 4 × (100% - 20%) * $8 = 4 × $6.40 = $25.60, plus
 - 4 × (100% - 20%) * $8 = 4 × $6.40 = $25.60
 
-Which equals $51.20
+Which equals $51.20.
 
 And $51.20 is the price with the biggest discount.
