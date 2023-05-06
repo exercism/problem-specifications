@@ -1,0 +1,75 @@
+{
+  "exercise": "game-of-life",
+  "cases": [
+    {
+      "uuid": "ae86ea7d-bd07-4357-90b3-ac7d256bd5c5",
+      "description": "empty matrix",
+      "property": "gameOfLife",
+      "input": {
+        "matrix": []
+      },
+      "expected": []
+    },
+    {
+      "uuid": "4ea5ccb7-7b73-4281-954a-bed1b0f139a5",
+      "description": "dead cells with three live neighbors become alive",
+      "property": "gameOfLife",
+      "input": {
+        "matrix": [
+          [1, 1, 0],
+          [0, 0, 0],
+          [1, 0, 0]
+        ]
+      },
+      "expected": [
+        [0, 0, 0],
+        [1, 1, 0],
+        [0, 0, 0]
+      ]
+    },
+    {
+      "uuid": "7cf0afcd-995c-4bc8-b71e-9deeef532f64",
+      "description": "overpopulated cells",
+      "property": "gameOfLife",
+      "input": {
+        "matrix": [
+          [1, 1, 1],
+          [1, 0, 1],
+          [1, 1, 1]
+        ]
+      },
+      "expected": [
+        [1, 0, 1],
+        [0, 0, 0],
+        [1, 0, 1]
+      ]
+    },
+    {
+      "uuid": "a79b42be-ed6c-4e27-9206-43da08697ef6",
+      "description": "random matrix",
+      "property": "gameOfLife",
+      "input": {
+        "matrix": [
+          [1, 1, 0, 1, 1, 0, 0, 0],
+          [1, 0, 1, 1, 0, 0, 0, 0],
+          [1, 1, 1, 0, 0, 1, 1, 1],
+          [0, 0, 0, 0, 0, 1, 1, 0],
+          [1, 0, 0, 0, 1, 1, 0, 0],
+          [1, 1, 0, 0, 0, 1, 1, 1],
+          [0, 0, 1, 0, 1, 0, 0, 1],
+          [1, 0, 0, 0, 0, 0, 1, 1]
+        ]
+      },
+      "expected": [
+        [1, 1, 0, 1, 1, 0, 0, 0],
+        [0, 0, 0, 0, 0, 1, 1, 0],
+        [1, 0, 1, 1, 1, 1, 0, 1],
+        [1, 0, 0, 0, 0, 0, 0, 1],
+        [1, 1, 0, 0, 1, 0, 0, 1],
+        [1, 1, 0, 1, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 1, 1]
+      ]
+    }
+  ]
+}
