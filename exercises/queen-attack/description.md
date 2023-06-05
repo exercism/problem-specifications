@@ -8,7 +8,7 @@ A chessboard can be represented by an 8 by 8 array.
 
 So if you are told the white queen is at `c5` (zero-indexed at column 2, row 3) and the black queen at `f2` (zero-indexed at column 5, row 6), then you know that the set-up is like so:
 
-[Queen Capture][queen capture]
+![Queen Capture][queen capture]
 
 ~~~text
   a b c d e f g h
