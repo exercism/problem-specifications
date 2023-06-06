@@ -12,3 +12,7 @@ So if you are told the white queen is at `c5` (zero-indexed at column 2, row 3) 
 
 You are also able to answer whether the queens can attack each other.
 In this case, that answer would be yes, they can, because both pieces share a diagonal.
+
+## Credit
+
+The chessboard image was made by [habere-et-dispertire](https://exercism.org/profiles/habere-et-dispertire) using LaTeX and the [chessboard package](https://github.com/u-fischer/chessboard) by Ulrike Fischer.
