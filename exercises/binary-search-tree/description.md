@@ -35,7 +35,7 @@ And if we then added 1, 5, and 7, it would look like this
 
 ## Credit
 
-The graphs are made by [habere-et-dispertire](https://exercism.org/profiles/habere-et-dispertire) using [PGF/TikZ](https://en.wikipedia.org/wiki/PGF/TikZ) by Till Tantau.
+The images were created by [habere-et-dispertire](https://exercism.org/profiles/habere-et-dispertire) using [PGF/TikZ](https://en.wikipedia.org/wiki/PGF/TikZ) by Till Tantau.
 
 [4-2]: https://exercism-v3-icons.s3.eu-west-2.amazonaws.com/images/exercises/binary-search-tree/tree-4-2.svg
 [4-2-6]: https://exercism-v3-icons.s3.eu-west-2.amazonaws.com/images/exercises/binary-search-tree/tree-4-2-6.svg
