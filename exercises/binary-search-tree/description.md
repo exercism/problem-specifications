@@ -37,7 +37,7 @@ And if we then added 1, 5, and 7, it would look like this
 
 The graphs are made by [habere-et-dispertire](https://exercism.org/profiles/habere-et-dispertire) using [PGF/TikZ](https://en.wikipedia.org/wiki/PGF/TikZ) by Till Tantau.
 
-[4-2]: https://exercism-v3-icons.s3.eu-west-2.amazonaws.com/images/exercises/binary-search-tree/4-2.svg
-[4-2-6]: https://exercism-v3-icons.s3.eu-west-2.amazonaws.com/images/exercises/binary-search-tree/4-2-6.svg
-[4-2-6-3]: https://exercism-v3-icons.s3.eu-west-2.amazonaws.com/images/exercises/binary-search-tree/4-2-6-3.svg
-[4-2-6-1-3-5-7]: https://exercism-v3-icons.s3.eu-west-2.amazonaws.com/images/exercises/binary-search-tree/4-2-6-1-3-5-7.svg
+[4-2]: https://exercism-v3-icons.s3.eu-west-2.amazonaws.com/images/exercises/binary-search-tree/tree-4-2.svg
+[4-2-6]: https://exercism-v3-icons.s3.eu-west-2.amazonaws.com/images/exercises/binary-search-tree/tree-4-2-6.svg
+[4-2-6-3]: https://exercism-v3-icons.s3.eu-west-2.amazonaws.com/images/exercises/binary-search-tree/tree-4-2-6-3.svg
+[4-2-6-1-3-5-7]: https://exercism-v3-icons.s3.eu-west-2.amazonaws.com/images/exercises/binary-search-tree/tree-4-2-6-1-3-5-7.svg
