@@ -23,7 +23,7 @@
           {
             "date": "2015-01-01",
             "description": "Buy present",
-            "amount": -1000
+            "amountInCents": -1000
           }
         ]
       },
@@ -43,12 +43,12 @@
           {
             "date": "2015-01-02",
             "description": "Get present",
-            "amount": 1000
+            "amountInCents": 1000
           },
           {
             "date": "2015-01-01",
             "description": "Buy present",
-            "amount": -1000
+            "amountInCents": -1000
           }
         ]
       },
@@ -69,12 +69,12 @@
           {
             "date": "2015-01-02",
             "description": "Get present",
-            "amount": 1000
+            "amountInCents": 1000
           },
           {
             "date": "2015-01-01",
             "description": "Buy present",
-            "amount": -1000
+            "amountInCents": -1000
           }
         ]
       },
@@ -95,17 +95,17 @@
           {
             "date": "2015-01-01",
             "description": "Something",
-            "amount": 0
+            "amountInCents": 0
           },
           {
             "date": "2015-01-01",
             "description": "Something",
-            "amount": -1
+            "amountInCents": -1
           },
           {
             "date": "2015-01-01",
             "description": "Something",
-            "amount": 1
+            "amountInCents": 1
           }
         ]
       },
@@ -118,7 +118,7 @@
     },
     {
       "uuid": "9b9712a6-f779-4f5c-a759-af65615fcbb9",
-      "description": "overlong description",
+      "description": "overlong description is truncated",
       "property": "formatEntries",
       "input": {
         "currency": "USD",
@@ -127,7 +127,7 @@
           {
             "date": "2015-01-01",
             "description": "Freude schoner Gotterfunken",
-            "amount": -123456
+            "amountInCents": -123456
           }
         ]
       },
@@ -147,7 +147,7 @@
           {
             "date": "2015-01-01",
             "description": "Buy present",
-            "amount": -1000
+            "amountInCents": -1000
           }
         ]
       },
@@ -167,7 +167,7 @@
           {
             "date": "2015-03-12",
             "description": "Buy present",
-            "amount": 123456
+            "amountInCents": 123456
           }
         ]
       },
@@ -187,7 +187,7 @@
           {
             "date": "2015-03-12",
             "description": "Buy present",
-            "amount": 123456
+            "amountInCents": 123456
           }
         ]
       },
@@ -207,7 +207,7 @@
           {
             "date": "2015-03-12",
             "description": "Buy present",
-            "amount": -12345
+            "amountInCents": -12345
           }
         ]
       },
@@ -227,7 +227,7 @@
           {
             "date": "2015-03-12",
             "description": "Buy present",
-            "amount": -12345
+            "amountInCents": -12345
           }
         ]
       },
