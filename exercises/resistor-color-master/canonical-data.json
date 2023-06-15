@@ -6,7 +6,12 @@
       "description": "Orange, orange, black, and red",
       "property": "resistorLabel",
       "input": {
-        "colors": ["orange", "orange", "black", "red"]
+        "colors": [
+          "orange",
+          "orange",
+          "black",
+          "red"
+        ]
       },
       "expected": {
         "value": 33,
@@ -19,7 +24,12 @@
       "description": "Blue, grey, brown, and violet",
       "property": "resistorLabel",
       "input": {
-        "colors": ["blue", "grey", "brown", "violet"]
+        "colors": [
+          "blue",
+          "grey",
+          "brown",
+          "violet"
+        ]
       },
       "expected": {
         "value": 680,
@@ -32,7 +42,12 @@
       "description": "Red, black, red, and green",
       "property": "resistorLabel",
       "input": {
-        "colors": ["red", "black", "red", "green"]
+        "colors": [
+          "red",
+          "black",
+          "red",
+          "green"
+        ]
       },
       "expected": {
         "value": 2,
@@ -45,7 +60,12 @@
       "description": "Green, brown, orange, and grey",
       "property": "resistorLabel",
       "input": {
-        "colors": ["green", "brown", "orange", "grey"]
+        "colors": [
+          "green",
+          "brown",
+          "orange",
+          "grey"
+        ]
       },
       "expected": {
         "value": 51,
@@ -58,7 +78,12 @@
       "description": "Yellow, violet, yellow, and blue",
       "property": "resistorLabel",
       "input": {
-        "colors": ["yellow", "violet", "yellow", "blue"]
+        "colors": [
+          "yellow",
+          "violet",
+          "yellow",
+          "blue"
+        ]
       },
       "expected": {
         "value": 470,
@@ -71,7 +96,9 @@
       "description": "One black band",
       "property": "resistorLabel",
       "input": {
-        "colors": ["black"]
+        "colors": [
+          "black"
+        ]
       },
       "expected": {
         "value": 0,
@@ -83,7 +110,13 @@
       "description": "Orange, orange, yellow, black, and brown",
       "property": "resistorLabel",
       "input": {
-        "colors": ["orange", "orange", "yellow", "black", "brown"]
+        "colors": [
+          "orange",
+          "orange",
+          "yellow",
+          "black",
+          "brown"
+        ]
       },
       "expected": {
         "value": 334,
@@ -96,7 +129,13 @@
       "description": "Red, green, yellow, yellow, and brown",
       "property": "resistorLabel",
       "input": {
-        "colors": ["red", "green", "yellow", "yellow", "brown"]
+        "colors": [
+          "red",
+          "green",
+          "yellow",
+          "yellow",
+          "brown"
+        ]
       },
       "expected": {
         "value": 2.54,
@@ -109,7 +148,13 @@
       "description": "Blue, grey, white, brown, and brown",
       "property": "resistorLabel",
       "input": {
-        "colors": ["blue", "grey", "white", "brown", "brown"]
+        "colors": [
+          "blue",
+          "grey",
+          "white",
+          "brown",
+          "brown"
+        ]
       },
       "expected": {
         "value": 6.89,
@@ -122,7 +167,12 @@
       "description": "Violet, orange, red, and grey",
       "property": "resistorLabel",
       "input": {
-        "colors": ["violet", "orange", "red", "grey"]
+        "colors": [
+          "violet",
+          "orange",
+          "red",
+          "grey"
+        ]
       },
       "expected": {
         "value": 7.3,
@@ -135,7 +185,13 @@
       "description": "Brown, red, orange, green, and blue",
       "property": "resistorLabel",
       "input": {
-        "colors": ["brown", "red", "orange", "green", "blue"]
+        "colors": [
+          "brown",
+          "red",
+          "orange",
+          "green",
+          "blue"
+        ]
       },
       "expected": {
         "value": 12.3,
