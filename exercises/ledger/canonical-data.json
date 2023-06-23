@@ -158,7 +158,7 @@
     },
     {
       "uuid": "bdc499b6-51f5-4117-95f2-43cb6737208e",
-      "description": "dutch locale",
+      "description": "Dutch locale",
       "property": "formatEntries",
       "input": {
         "currency": "USD",
@@ -178,7 +178,7 @@
     },
     {
       "uuid": "86591cd4-1379-4208-ae54-0ee2652b4670",
-      "description": "dutch locale and euros",
+      "description": "Dutch locale and euros",
       "property": "formatEntries",
       "input": {
         "currency": "EUR",
@@ -198,7 +198,7 @@
     },
     {
       "uuid": "876bcec8-d7d7-4ba4-82bd-b836ac87c5d2",
-      "description": "dutch negative number with 3 digits before decimal point",
+      "description": "Dutch negative number with 3 digits before decimal point",
       "property": "formatEntries",
       "input": {
         "currency": "USD",
@@ -218,7 +218,7 @@
     },
     {
       "uuid": "29670d1c-56be-492a-9c5e-427e4b766309",
-      "description": "american negative number with 3 digits before decimal point",
+      "description": "American negative number with 3 digits before decimal point",
       "property": "formatEntries",
       "input": {
         "currency": "USD",
