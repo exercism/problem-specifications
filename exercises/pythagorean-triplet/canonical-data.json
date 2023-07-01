@@ -81,6 +81,19 @@
         [6000, 11250, 12750],
         [7500, 10000, 12500]
       ]
+    },
+    {
+      "uuid": "270b8476-6f59-4621-bef7-70e6a3513923",
+      "description": "triplets to trigger integer overflow",
+      "property": "tripletsWithSum",
+      "input": {
+        "n": 65532
+      },
+      "expected": [
+        [1016, 32250, 32266],
+        [16383, 21844, 27305],
+        [17145, 21156, 27231]
+      ]
     }
   ]
 }
