@@ -6,6 +6,8 @@ Write a function that returns the earned points in a single toss of a Darts game
 
 In our particular instance of the game, the target rewards 4 different amounts of points, depending on where the dart lands:
 
+[Our dart scoreboard with values from a complete miss to a bullseye][darts-scoreboard]
+
 - If the dart lands outside the target, player earns no points (0 points).
 - If the dart lands in the outer circle of the target, player earns 1 point.
 - If the dart lands in the middle circle of the target, player earns 5 points.
@@ -18,6 +20,7 @@ Write a function that given a point in the target (defined by its [Cartesian coo
 
 [darts]: https://en.wikipedia.org/wiki/Darts
 [darts-target]: https://en.wikipedia.org/wiki/Darts#/media/File:Darts_in_a_dartboard.jpg
+[darts-scoreboard]: https://exercism-v3-icons.s3.eu-west-2.amazonaws.com/images/exercises/darts/darts-scoreboard.svg
 [concentric]: https://mathworld.wolfram.com/ConcentricCircles.html
 [cartesian-coordinates]: https://www.mathsisfun.com/data/cartesian-coordinates.html
 [real-numbers]: https://www.mathsisfun.com/numbers/real-numbers.html
