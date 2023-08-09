@@ -35,4 +35,7 @@ And if we then added 1, 5, and 7, it would look like this
 
 ## Credit
 
-The images were created by [habere-et-dispertire](https://exercism.org/profiles/habere-et-dispertire) using [PGF/TikZ](https://en.wikipedia.org/wiki/PGF/TikZ) by Till Tantau.
+The images were created by [habere-et-dispertire][habere-et-dispertire] using [PGF/TikZ][pgf-tikz] by Till Tantau.
+
+[habere-et-dispertire]: https://exercism.org/profiles/habere-et-dispertire
+[pgf-tikz]: https://en.wikipedia.org/wiki/PGF/TikZ
