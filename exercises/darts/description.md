@@ -20,7 +20,7 @@ Write a function that given a point in the target (defined by its [Cartesian coo
 
 ## Credit
 
-The scoreboard image was created by [habere-et-dispertire][https://exercism.org/profiles/habere-et-dispertire] using [Inkscape][inkscape].
+The scoreboard image was created by [habere-et-dispertire][habere-et-dispertire] using [Inkscape][inkscape].
 
 [darts]: https://en.wikipedia.org/wiki/Darts
 [darts-target]: https://en.wikipedia.org/wiki/Darts#/media/File:Darts_in_a_dartboard.jpg
