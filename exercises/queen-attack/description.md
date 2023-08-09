@@ -15,4 +15,7 @@ In this case, that answer would be yes, they can, because both pieces share a di
 
 ## Credit
 
-The chessboard image was made by [habere-et-dispertire](https://exercism.org/profiles/habere-et-dispertire) using LaTeX and the [chessboard package](https://github.com/u-fischer/chessboard) by Ulrike Fischer.
+The chessboard image was made by [habere-et-dispertire][habere-et-dispertire] using LaTeX and the [chessboard package][chessboard-package] by Ulrike Fischer.
+
+[habere-et-dispertire]: https://exercism.org/profiles/habere-et-dispertire
+[chessboard-package]: https://github.com/u-fischer/chessboard
