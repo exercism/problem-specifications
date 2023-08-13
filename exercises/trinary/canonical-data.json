@@ -6,7 +6,7 @@
       "description": "trinary 1 is decimal 1",
       "property": "toDecimal",
       "input": {
-        "trinary": 1
+        "trinary": "1"
       },
       "expected": 1
     },
@@ -15,7 +15,7 @@
       "description": "trinary 2 is decimal 2",
       "property": "toDecimal",
       "input": {
-        "trinary": 2
+        "trinary": "2"
       },
       "expected": 2
     },
@@ -24,7 +24,7 @@
       "description": "trinary 10 is decimal 3",
       "property": "toDecimal",
       "input": {
-        "trinary": 10
+        "trinary": "10"
       },
       "expected": 3
     },
@@ -33,7 +33,7 @@
       "description": "trinary 11 is decimal 4",
       "property": "toDecimal",
       "input": {
-        "trinary": 11
+        "trinary": "11"
       },
       "expected": 4
     },
@@ -42,7 +42,7 @@
       "description": "trinary 100 is decimal 9",
       "property": "toDecimal",
       "input": {
-        "trinary": 100
+        "trinary": "100"
       },
       "expected": 9
     },
@@ -51,7 +51,7 @@
       "description": "trinary 112 is decimal 14",
       "property": "toDecimal",
       "input": {
-        "trinary": 112
+        "trinary": "112"
       },
       "expected": 14
     },
@@ -60,7 +60,7 @@
       "description": "trinary 222 is decimal 26",
       "property": "toDecimal",
       "input": {
-        "trinary": 222
+        "trinary": "222"
       },
       "expected": 26
     },
@@ -69,7 +69,7 @@
       "description": "trinary 1122000120 is decimal 32091",
       "property": "toDecimal",
       "input": {
-        "trinary": 1122000120
+        "trinary": "1122000120"
       },
       "expected": 32091
     },
