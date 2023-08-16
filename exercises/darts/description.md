@@ -6,7 +6,7 @@ Write a function that returns the earned points in a single toss of a Darts game
 
 In our particular instance of the game, the target rewards 4 different amounts of points, depending on where the dart lands:
 
-![Our dart scoreboard with values from a complete miss to a bullseye](https://exercism-v3-icons.s3.eu-west-2.amazonaws.com/images/exercises/darts/darts-scoreboard.svg)
+![Our dart scoreboard with values from a complete miss to a bullseye](https://assets.exercism.org/images/exercises/darts/darts-scoreboard.svg)
 
 - If the dart lands outside the target, player earns no points (0 points).
 - If the dart lands in the outer circle of the target, player earns 1 point.
