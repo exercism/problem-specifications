@@ -21,10 +21,10 @@
     },
     {
       "uuid": "73c2f62b-9b10-4c9f-9a04-83cee7367965",
-      "description": "a simple valid SIN that remains valid if reversed",
+      "description": "a simple invalid SIN that remains valid if reversed",
       "property": "valid",
       "input": {
-        "value": "059"
+        "value": "509"
       },
       "expected": true
     },
@@ -42,7 +42,7 @@
       "description": "a valid Canadian SIN",
       "property": "valid",
       "input": {
-        "value": "055 444 285"
+        "value": "055 444 283"
       },
       "expected": true
     },
@@ -150,7 +150,7 @@
       "description": "input digit 9 is correctly converted to output digit 9",
       "property": "valid",
       "input": {
-        "value": "091"
+        "value": "910"
       },
       "expected": true
     },
