@@ -18,7 +18,7 @@ Each item will have a weight and value.
 
 For example:
 
-```
+```none
 Items: [
   { "weight": 5, "value": 10 },
   { "weight": 4, "value": 40 },
