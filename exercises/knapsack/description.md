@@ -13,7 +13,8 @@ Given a knapsack with a specific carrying capacity (W), help Bob determine the m
 Note that Bob can take only one of each item.
 
 All values given will be strictly positive.
-Items will be represented with a weight and value each.
+Items will be represented as a list of items.
+Each item will have a weight and value.
 
 For example:
 
