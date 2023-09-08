@@ -30,7 +30,7 @@ For example:
 - `8` is a deficient number because `1 + 2 + 4 = 7`
 - Prime numbers are deficient
 
-# Task
+## Task
 
 Implement a way to determine whether a given number is [perfect](#perfect).
 Depending on your language track, you may also need to implement a way to determine whether a given number is [abundant](#abundant) or [deficient](#deficient).
