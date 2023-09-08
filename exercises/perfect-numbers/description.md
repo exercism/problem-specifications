@@ -17,7 +17,7 @@ For example:
 ## Abundant
 
 A number is abundant when it is less than its aliquot sum.
-For examples:
+For example:
 
 - `12` is an abundant number because `1 + 2 + 3 + 4 + 6 = 16`
 - `24` is an abundant number because `1 + 2 + 3 + 4 + 6 + 8 + 12 = 36`
