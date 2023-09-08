@@ -10,6 +10,7 @@ For example, the aliquot sum of `15` is `1 + 3 + 5 = 9`.
 
 A number is perfect when it equals its aliquot sum.
 For example:
+
 - `6` is a perfect number because `1 + 2 + 3 = 6`
 - `28` is a perfect number because `1 + 2 + 4 + 7 + 14 = 28`
 
@@ -17,6 +18,7 @@ For example:
 
 A number is abundant when it is less than its aliquot sum.
 Two examples:
+
 - `12` is an abundant number because `1 + 2 + 3 + 4 + 6 = 16`
 - `24` is an abundant number because `1 + 2 + 3 + 4 + 6 + 8 + 12 = 36`
 
@@ -24,6 +26,7 @@ Two examples:
 
 A number is deficient when it is greater than its aliquot sum.
 For example:
+
 - `8` is a deficient number because `1 + 2 + 4 = 7`
 - Prime numbers are deficient
 
