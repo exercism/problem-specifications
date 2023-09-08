@@ -6,13 +6,13 @@ The Greek mathematician [Nicomachus][nicomachus] devised a classification scheme
 The aliquot sum is defined as the sum of the factors of a `number` not including the `number` itself.
 For example, the aliquot sum of `15` is `1 + 3 + 5 = 9`.
 
-- **Perfect**: aliquot sum equals `number`
+- **Perfect**: when a `number` equals its `aliquot sum`
   - `6` is a perfect number because `1 + 2 + 3 = 6`
   - `28` is a perfect number because `1 + 2 + 4 + 7 + 14 = 28`
-- **Abundant**: aliquot sum is greater than `number`
+- **Abundant**: when a `number` is less than its `aliquot sum`
   - `12` is an abundant number because `1 + 2 + 3 + 4 + 6 = 16`
   - `24` is an abundant number because `1 + 2 + 3 + 4 + 6 + 8 + 12 = 36`
-- **Deficient**: aliquot sum is less than `number`
+- **Deficient**: when a `number` is greater than its `aliquot sum`
   - `8` is a deficient number because `1 + 2 + 4 = 7`
   - Prime numbers are deficient
 
