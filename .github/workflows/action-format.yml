@@ -6,7 +6,7 @@ on:
 
 jobs:
   format:
-    name: 'Format JSON'
+    name: 'Format'
     runs-on: ubuntu-22.04
     if: github.event.issue.pull_request != '' && contains(github.event.comment.body, '/format')
     steps:
@@ -88,6 +88,9 @@ jobs:
 
       - name: Format JSON files
         run: yarn format-json && ruby bin/format-array.rb
+
+      - name: Format Markdown files
+        run: yarn format-md
 
       - name: 'Commit formatted code'
         run: |
