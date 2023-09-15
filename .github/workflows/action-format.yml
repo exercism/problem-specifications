@@ -89,6 +89,9 @@ jobs:
       - name: Format JSON files
         run: yarn format-json && ruby bin/format-array.rb
 
+      - name: Format Markdown files
+        run: yarn format-md
+
       - name: 'Commit formatted code'
         run: |
           # Check if there is nothing to commit (i.e. no formatting changes made)
