@@ -251,6 +251,16 @@
             "set2": [1, 2, 3, 4]
           },
           "expected": false
+        },
+        {
+          "uuid": "d4a1142f-09aa-4df9-8b83-4437dcf7ec24",
+          "description": "set is equal to a set with duplicate elements",
+          "property": "equal",
+          "input": {
+            "set1": [1],
+            "set2": [1, 1]
+          },
+          "expected": true
         }
       ]
     },
