@@ -18,7 +18,7 @@ It's time to create some perfect mazes for these adventurous mice!
 
 ### Examples
 
-1. The small square maze 5x5 cells (or 11x11 characters)
+The small square maze 5x5 cells (or 11x11 characters)
 
 ```text
     ┌───────┬─┐
@@ -34,7 +34,7 @@ It's time to create some perfect mazes for these adventurous mice!
     └─────────┘
 ```
 
-2. The rectangular maze 6x18 cells
+The rectangular maze 6x18 cells
 
 ```text
     ┌───────────┬─────────┬───────────┬─┐
@@ -54,13 +54,13 @@ It's time to create some perfect mazes for these adventurous mice!
 
 [Box-drawing]: https://en.wikipedia.org/wiki/Box-drawing_character
 
-# Hints
+## Hints
 
-## Maze generation
+### Maze generation
 
 You can use any algorithm to generate a perfect maze. The [recursive backtracker][recursive-backtracker] is a good choice.
 
-## Box drawing characters
+### Box drawing characters
 
 | Character | Name                                  | Unicode |
 |:---------:|:--------------------------------------|:--------|
@@ -74,6 +74,5 @@ You can use any algorithm to generate a perfect maze. The [recursive backtracker
 |     ┘     | box drawings light up and left        |  U+2518 |
 |     ├     | box drawings light vertical and right |  U+2520 |
 |     ⇨     | rightwards white arrow                |  U+21E8 |
-
 
 [recursive-backtracker]: https://en.wikipedia.org/wiki/Maze_generation_algorithm
