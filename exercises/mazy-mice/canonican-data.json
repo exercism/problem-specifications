@@ -1,7 +1,22 @@
 {
   "exercise": "maze",
   "comments": [
-    "Test cases for generating perfect mazes for Mickey and Minerva"
+    "The following checks should be considered:                          ",
+    "                                                                    ",
+    "The dimensions of the maze are correct:                             ",
+    "  - the number of lines is equal to rows * 2 + 1                    ",
+    "  - the width of each line in characters is equal to columns * 2 + 1",
+    "The maze contains only valid characters.                            ",
+    "The maze has a single entrance on the left side.                    ",
+    "The maze has a single exit on the right side.                       ",
+    "The maze is perfect:                                                ",
+    "  - there is a single path from the entrance to the exit            ",
+    "  - there are no loops in the maze                                  ",
+    "  - there are no inaccessible sections in the maze                  ",
+    "The maze is random:                                                 ",
+    "  - the maze is different each time it is generated                 ",
+    "  - the maze is the same if the same seed is used                   ",
+    "  - two mazes with different seeds should not be equal              "
   ],
   "cases": [
     {
