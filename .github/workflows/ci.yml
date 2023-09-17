@@ -12,7 +12,7 @@ jobs:
     name: All required files are present
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
+      - uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac # v4.0.0
 
       - name: All required files are present
         run: bin/check_required_files_present
@@ -21,13 +21,13 @@ jobs:
     name: No test has been mutated
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
+      - uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac # v4.0.0
         with:
           path: "new"
 
       # Pull Requests
       - name: Checkout the target branch
-        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
+        uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac # v4.0.0
         with:
           ref: "${{ github.base_ref }}"
           path: "old"
@@ -43,10 +43,10 @@ jobs:
     name: Schema validation
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
+      - uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac # v4.0.0
 
       - name: Setup nodejs
-        uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c # v3.6.0
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # v3.8.1
         with:
           node-version: 16
           cache: "yarn"
@@ -115,7 +115,7 @@ jobs:
     name: Lint markdown files
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
+      - uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac # v4.0.0
 
       - name: Lint markdown
         uses: DavidAnson/markdownlint-cli2-action@bb4bb94c73936643d73d345b48fead3e96f90a5e # v10.0.1
@@ -123,16 +123,34 @@ jobs:
           globs: |
             **/*.md
 
+      - name: Setup nodejs
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # v3.8.1
+        with:
+          node-version: 16
+          cache: "yarn"
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Verify that markdown files are formatted correctly
+        run: |
+          yarn format-md
+          if ! git diff --quiet --exit-code; then
+            echo "please format the files with prettier, or apply the following changes:"
+            git diff
+            exit 1
+          fi
+
   check-links:
     name: Check links
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
+      - uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac # v4.0.0
 
       - name: Check links
         uses: lycheeverse/lychee-action@ec3ed119d4f44ad2673a7232460dc7dff59d2421 # 1.8.0
         with:
-          args: --require-https --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" --no-progress **/*.md **/*.html
+          args: --require-https --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" --no-progress **/*.md **/*.html **/*.toml **/*.json
           fail: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
@@ -141,10 +159,10 @@ jobs:
     name: Lint json files
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
+      - uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac # v4.0.0
 
       - name: Setup nodejs
-        uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c # v3.6.0
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # v3.8.1
         with:
           node-version: 16
           cache: "yarn"

@@ -6,7 +6,7 @@ on:
 
 jobs:
   format:
-    name: 'Format JSON'
+    name: 'Format'
     runs-on: ubuntu-22.04
     if: github.event.issue.pull_request != '' && contains(github.event.comment.body, '/format')
     steps:
@@ -65,7 +65,7 @@ jobs:
         run: ./bin/reorder-keys
 
       - name: Use Node.js LTS (16.x)
-        uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d
         with:
           node-version: '16'
 
@@ -75,7 +75,7 @@ jobs:
         run: echo "::set-output name=dir::$(yarn cache dir)"
 
       - name: Cache yarn
-        uses: actions/cache@88522ab9f39a2ea568f7027eddc7d8d8bc9d59c8
+        uses: actions/cache@704facf57e6136b1bc63b828d79edcd491f0ee84
         id: yarn-cache
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
@@ -88,6 +88,9 @@ jobs:
 
       - name: Format JSON files
         run: yarn format-json && ruby bin/format-array.rb
+
+      - name: Format Markdown files
+        run: yarn format-md
 
       - name: 'Commit formatted code'
         run: |
