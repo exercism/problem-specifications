@@ -52,8 +52,6 @@ The rectangular maze 6x18 cells
     └───┴───────┴───────┴─────┴─────┴───┘
 ```
 
-[Box-drawing]: https://en.wikipedia.org/wiki/Box-drawing_character
-
 ## Hints
 
 ### Maze generation
@@ -76,3 +74,4 @@ You can use any algorithm to generate a perfect maze. The [recursive backtracker
 |     ⇨     | rightwards white arrow                |  U+21E8 |
 
 [recursive-backtracker]: https://en.wikipedia.org/wiki/Maze_generation_algorithm
+[Box-drawing]: https://en.wikipedia.org/wiki/Box-drawing_character
