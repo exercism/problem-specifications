@@ -12,7 +12,7 @@ Here's what you need to know:
 - The program should accept two parameters: rows and columns. The maze should be between 5 and 100 cells in size.
 - A maze which is `x` columns wide and `y` rows high should be `2x + 1` characters wide and `2y + 1` characters high.
 - If no seed is provided, generate a random maze. If the same seed is provided multiple times, the resulting maze should be the same each time.
-- Use [box-drawing][Box-drawing] characters to draw walls, and an arrow symbol (⇨) for the entrance on the left and exit on the right.
+- Use [box-drawing][box-drawing] characters to draw walls, and an arrow symbol (⇨) for the entrance on the left and exit on the right.
 
 It's time to create some perfect mazes for these adventurous mice!
 
@@ -60,18 +60,18 @@ You can use any algorithm to generate a perfect maze. The [recursive backtracker
 
 ### Box drawing characters
 
-| Character | Name                                  | Unicode |
-|:---------:|:--------------------------------------|:--------|
-|     ┌     | box drawings light down and right     |  U+250C |
-|     ─     | box drawings light horizontal         |  U+2500 |
-|     ┬     | box drawings light down and horizontal|  U+252C |
-|     ┐     | box drawings light down and left      |  U+2510 |
-|     │     | box drawings light vertical           |  U+2502 |
-|     └     | box drawings light up and right       |  U+2514 |
-|     ┴     | box drawings light up and horizontal  |  U+2534 |
-|     ┘     | box drawings light up and left        |  U+2518 |
-|     ├     | box drawings light vertical and right |  U+2520 |
-|     ⇨     | rightwards white arrow                |  U+21E8 |
+| Character | Name                                   | Unicode |
+| :-------: | :------------------------------------- | :------ |
+|     ┌     | box drawings light down and right      | U+250C  |
+|     ─     | box drawings light horizontal          | U+2500  |
+|     ┬     | box drawings light down and horizontal | U+252C  |
+|     ┐     | box drawings light down and left       | U+2510  |
+|     │     | box drawings light vertical            | U+2502  |
+|     └     | box drawings light up and right        | U+2514  |
+|     ┴     | box drawings light up and horizontal   | U+2534  |
+|     ┘     | box drawings light up and left         | U+2518  |
+|     ├     | box drawings light vertical and right  | U+2520  |
+|     ⇨     | rightwards white arrow                 | U+21E8  |
 
 [recursive-backtracker]: https://en.wikipedia.org/wiki/Maze_generation_algorithm
-[Box-drawing]: https://en.wikipedia.org/wiki/Box-drawing_character
+[box-drawing]: https://en.wikipedia.org/wiki/Box-drawing_character
