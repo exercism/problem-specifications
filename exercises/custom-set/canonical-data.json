@@ -134,7 +134,7 @@
         },
         {
           "uuid": "0b95204d-93fa-4b60-9499-1e34f228c336",
-          "description": "set is a subset of set with duplicates",
+          "description": "set is a subset of set constructed from array with duplicates",
           "property": "subset",
           "input": {
             "set1": [1, 2, 3],
@@ -144,7 +144,7 @@
         },
         {
           "uuid": "0bb37820-cabf-483f-901c-b278e42e4af9",
-          "description": "set with duplicates is a subset of set without duplicates",
+          "description": "set constructed from array with duplicates is a subset of set",
           "property": "subset",
           "input": {
             "set1": [1, 1, 2, 3],
@@ -274,7 +274,7 @@
         },
         {
           "uuid": "d4a1142f-09aa-4df9-8b83-4437dcf7ec24",
-          "description": "set is equal to a set with duplicate elements",
+          "description": "set is equal to a set constructed from an array with duplicates",
           "property": "equal",
           "input": {
             "set1": [1],
