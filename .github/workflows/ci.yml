@@ -134,7 +134,7 @@ jobs:
 
       - name: Verify that markdown files are formatted correctly
         run: |
-          yarn format-md
+          yarn format-md && ruby bin/format-admonitions.rb
           if ! git diff --quiet --exit-code; then
             echo "please format the files with prettier, or apply the following changes:"
             git diff

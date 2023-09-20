@@ -90,7 +90,7 @@ jobs:
         run: yarn format-json && ruby bin/format-array.rb
 
       - name: Format Markdown files
-        run: yarn format-md
+        run: yarn format-md && ruby bin/format-admonitions.rb
 
       - name: 'Commit formatted code'
         run: |
