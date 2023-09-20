@@ -1,4 +1,4 @@
-BACKTICK_MATCH_REGEX = /(?<start>`{3,})(?<type>exercism\/[a-z]+)(?<admonition>[\s\S]*?)(?<end>\k<start>)/.freeze
+BACKTICK_MATCH_REGEX = /(?<start>`{3,})(?<type>exercism\/[a-z]+)(?<admonition>.*?)(?<end>\k<start>)/.freeze
 TILDE_REPLACE = '~~~~\k<type>\k<admonition>~~~~'.freeze
 
 Dir.glob('exercises/**/*.md') do |filepath|
