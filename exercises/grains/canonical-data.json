@@ -73,7 +73,7 @@
         },
         {
           "uuid": "1d47d832-3e85-4974-9466-5bd35af484e3",
-          "description": "square 0 raises an exception",
+          "description": "square 0 is invalid",
           "property": "square",
           "input": {
             "square": 0
@@ -84,7 +84,7 @@
         },
         {
           "uuid": "61974483-eeb2-465e-be54-ca5dde366453",
-          "description": "negative square raises an exception",
+          "description": "negative square is invalid",
           "property": "square",
           "input": {
             "square": -1
@@ -95,7 +95,7 @@
         },
         {
           "uuid": "a95e4374-f32c-45a7-a10d-ffec475c012f",
-          "description": "square greater than 64 raises an exception",
+          "description": "square greater than 64 is invalid",
           "property": "square",
           "input": {
             "square": 65
