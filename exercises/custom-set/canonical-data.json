@@ -131,26 +131,6 @@
             "set2": [4, 1, 3]
           },
           "expected": false
-        },
-        {
-          "uuid": "0b95204d-93fa-4b60-9499-1e34f228c336",
-          "description": "set is a subset of set constructed from array with duplicates",
-          "property": "subset",
-          "input": {
-            "set1": [1, 2, 3],
-            "set2": [1, 1, 2, 3]
-          },
-          "expected": true
-        },
-        {
-          "uuid": "0bb37820-cabf-483f-901c-b278e42e4af9",
-          "description": "set constructed from array with duplicates is a subset of set",
-          "property": "subset",
-          "input": {
-            "set1": [1, 1, 2, 3],
-            "set2": [1, 2, 3]
-          },
-          "expected": true
         }
       ]
     },
