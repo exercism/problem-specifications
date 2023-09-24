@@ -75,7 +75,7 @@
     },
     {
       "uuid": "37ab74db-fed3-40ff-b7b9-04acdfea8edf",
-      "description": "the sound for 14 is Plong as it has a factor of 7",
+      "description": "the sound for 14 is Plong as it has a factor 7",
       "property": "convert",
       "input": {
         "number": 14
