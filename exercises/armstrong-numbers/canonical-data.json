@@ -107,6 +107,15 @@
         "number": 115132219018763992565095597973971522401
       },
       "expected": true
+    },
+    {
+      "uuid": "fbd65dc1-a0a4-4af4-9349-edef43c0808b",
+      "description": "Negative numbers are not Armstrong numbers",
+      "property": "isArmstrongNumber",
+      "input": {
+        "number": -1
+      },
+      "expected": false
     }
   ]
 }
