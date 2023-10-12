@@ -12,7 +12,7 @@ The position information encoding is calculated as follows:
 
 Example 1:
 
-```
+```text
 Chicken Coop:
  _ _ _ _ _ _ _
 |E| |E|E| | |E|
@@ -29,7 +29,7 @@ Actual eggs in the coop:
 
 Example 2:
 
-```
+```text
 Chicken Coop:
  _ _ _ _ _ _ _ _
 | | | |E| | | | |
@@ -43,7 +43,6 @@ Decimal number on the display:
 Actual eggs in the coop:
 1
 ```
-
 
 ## Restrictions
 
