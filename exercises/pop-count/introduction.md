@@ -1,6 +1,8 @@
-# Description
+# Introduction
 
-Your friend Eliud inherited a farm from her grandma Tigist. Her granny was an inventor and had a tendency to build things in an overly complicated manner. The chicken coop has a digital display showing an encoded number representing the positions of all eggs that could be picked up.
+Your friend Eliud inherited a farm from her grandma Tigist.
+Her granny was an inventor and had a tendency to build things in an overly complicated manner.
+The chicken coop has a digital display showing an encoded number representing the positions of all eggs that could be picked up.
 
 Eliud is asking you to write a program that shows the actual number of eggs in the coop.
 
@@ -43,8 +45,3 @@ Decimal number on the display:
 Actual eggs in the coop:
 1
 ```
-
-## Restrictions
-
-Keep your hands off that bit-count functionality provided by your standard library!
-Solve this one yourself using other basic tools instead.

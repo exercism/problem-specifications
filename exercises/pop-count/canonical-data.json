@@ -1,28 +1,19 @@
 {
-  "exercise": "eliuds-eggs",
+  "exercise": "pop-count",
   "cases": [
     {
       "uuid": "559e789d-07d1-4422-9004-3b699f83bca3",
-      "description": "pop-count of 0",
-      "property": "popCount",
+      "description": "all zeros",
+      "property": "eggCount",
       "input": {
         "number": 0
       },
       "expected": 0
     },
     {
-      "uuid": "2e4615f8-b90f-45db-b5b4-31b5f4a6afbe",
-      "description": "pop-count of 1",
-      "property": "popCount",
-      "input": {
-        "number": 1
-      },
-      "expected": 1
-    },
-    {
       "uuid": "97223282-f71e-490c-92f0-b3ec9e275aba",
-      "description": "pop-count of 16",
-      "property": "popCount",
+      "description": "1 egg",
+      "property": "eggCount",
       "input": {
         "number": 16
       },
@@ -30,8 +21,8 @@
     },
     {
       "uuid": "1f8fd18f-26e9-4144-9a0e-57cdfc4f4ff5",
-      "description": "pop-count of 89",
-      "property": "popCount",
+      "description": "4 eggs",
+      "property": "eggCount",
       "input": {
         "number": 89
       },
@@ -39,8 +30,8 @@
     },
     {
       "uuid": "0c18be92-a498-4ef2-bcbb-28ac4b06cb81",
-      "description": "pop-count of 2000000000",
-      "property": "popCount",
+      "description": "13 eggs",
+      "property": "eggCount",
       "input": {
         "number": 2000000000
       },
