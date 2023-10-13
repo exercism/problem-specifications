@@ -9,8 +9,8 @@ Eliud is asking you to write a program that shows the actual number of eggs in t
 The position information encoding is calculated as follows:
 
 1. Scan the potential egg-laying spots and mark down a `1` for an existing egg or a `0` for an empty spot.
-2. Convert the number from binary to decimal
-3. Show the result on the display
+2. Convert the number from binary to decimal.
+3. Show the result on the display.
 
 Example 1:
 

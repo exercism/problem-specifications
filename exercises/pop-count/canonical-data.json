@@ -3,7 +3,7 @@
   "cases": [
     {
       "uuid": "559e789d-07d1-4422-9004-3b699f83bca3",
-      "description": "all zeros",
+      "description": "0 eggs",
       "property": "eggCount",
       "input": {
         "number": 0
