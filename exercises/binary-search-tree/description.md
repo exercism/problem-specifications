@@ -1,7 +1,5 @@
 # Description
 
-Insert and search for numbers in a binary tree.
-
 When we need to represent sorted data, an array does not make a good data structure.
 
 Say we have the array `[1, 3, 4, 5]`, and we add 2 to it so it becomes `[1, 3, 4, 5, 2]`.
@@ -45,3 +43,17 @@ And if we then added 1, 5, and 7, it would look like this
       2       6
      / \     / \
     1   3   5   7
+
+# Instructions 
+
+In this exercise you will build a Binary Search Tree from an unordered list of numbers. 
+Then you will use the tree you build to return an ordered list of numbers.
+
+## 1. Build a Binary Tree
+
+Implement a `makeTree` function which takes an unordered list of numbers and places its numbers in a Binary Tree of the form `leftSubTree number rightSubTree` where every member of `leftSubTree` is equal to or less than `number` and every member of `rightSubTree` is greater than `number`.
+
+## 2. Use the Binary Tree to Sort
+
+Implement a `sort` function which takes an unordered list of numbers and returns it sorted from lesser to greater value.
+Use your binary tree and stay away from library sorting functions!
