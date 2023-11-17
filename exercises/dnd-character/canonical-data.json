@@ -197,6 +197,24 @@
       "property": "strength",
       "input": {},
       "expected": "strength == strength"
+    },
+    {
+      "uuid": "dca2b2ec-f729-4551-84b9-078876bb4808",
+      "reimplements": "2ca77b9b-c099-46c3-a02c-0d0f68ffa0fe",
+      "description": "each ability is only calculated once",
+      "comments": [
+        "Expected values were changed to cover all character abilities"
+      ],
+      "property": "character",
+      "input": {},
+      "expected": {
+        "strength": "strength == strength",
+        "dexterity": "dexterity == dexterity",
+        "constitution": "constitution == constitution",
+        "intelligence": "intelligence == intelligence",
+        "wisdom": "wisdom == wisdom",
+        "charisma": "charisma == charisma"
+      }
     }
   ]
 }
