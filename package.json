@@ -7,12 +7,12 @@
   "author": "Tejas Bubane <tejasbubane@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "ajv-cli": "^3.3.0",
+    "ajv-cli": "^5.0.0",
     "prettier": "^2.5.1"
   },
   "scripts": {
-    "test": "ajv -s canonical-data.schema.json -d \"exercises/*/canonical-data.json\"",
-    "test-one": "ajv -s canonical-data.schema.json -d",
+    "test": "ajv --strict=false -s canonical-data.schema.json -d \"exercises/*/canonical-data.json\"",
+    "test-one": "ajv --strict=false -s canonical-data.schema.json -d",
     "format-json": "prettier --write **/*.json",
     "format-md": "prettier --write **/*.md"
   },
