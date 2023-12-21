@@ -160,6 +160,16 @@
     },
     {
       "uuid": "daad3e58-ce00-4395-8a8e-e3eded1cdc86",
+      "description": "X at any position other than the last one is illegal",
+      "comments": ["Catch invalid characters in an otherwise valid isbn"],
+      "property": "isValid",
+      "input": {
+        "isbn": "XXXXXXXXXX"
+      },
+      "expected": false
+    },
+    {
+      "uuid": "daad3e58-ce00-4395-8a8e-e3eded1cdc86",
       "description": "invalid characters are not ignored before checking length",
       "comments": ["Catch invalid characters in an otherwise valid isbn"],
       "property": "isValid",
