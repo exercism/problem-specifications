@@ -1,4 +1,4 @@
 title = "Reverse String"
-blurb = "Reverse a string without using built-in functionality."
+blurb = "Reverse a string, without using built-in functionality."
 source = "Introductory challenge to reverse an input string"
 source_url = "https://medium.freecodecamp.org/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb"
