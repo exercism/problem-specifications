@@ -216,6 +216,29 @@
         "candidates": ["LISTEN", "Silent"]
       },
       "expected": ["Silent"]
+    },
+    {
+      "uuid": "a6854f66-eec1-4afd-a137-62ef2870c051",
+      "description": "handles case of greek letters",
+      "scenarios": ["unicode"],
+      "property": "findAnagrams",
+      "input": {
+        "subject": "ΑΒΓ",
+        "candidates": ["ΒΓΑ", "ΒΓΔ", "γβα", "αβγ"]
+      },
+      "expected": ["ΒΓΑ", "γβα"]
+    },
+    {
+      "uuid": "fd3509e5-e3ba-409d-ac3d-a9ac84d13296",
+      "description": "different characters may have the same bytes",
+      "comments": ["a⬂ => 61 E2 AC 82", "€a => E2 82 AC 61"],
+      "scenarios": ["unicode"],
+      "property": "findAnagrams",
+      "input": {
+        "subject": "a⬂",
+        "candidates": ["€a"]
+      },
+      "expected": []
     }
   ]
 }
