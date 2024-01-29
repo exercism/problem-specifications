@@ -21,4 +21,3 @@ The simplest way to test if one number is evenly divisible by another is to use 
 [remainder]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder
 [modulo]: https://en.wikipedia.org/wiki/Modulo_operation
 ~~~~
-
