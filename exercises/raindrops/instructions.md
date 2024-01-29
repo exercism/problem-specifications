@@ -7,7 +7,7 @@ The rules of `raindrops` are that if a given number:
 - is divisible by 3, add 'Pling' to the result.
 - is divisible by 5, add 'Plang' to the result.
 - is divisible by 7, add 'Plong' to the result.
-- **does not** is not divisible by 3, 5, or 7, the result should be the digits of the number.
+- **is not** divisible by 3, 5, or 7, the result should be the digits of the number.
 
 ~~~~exercism/note
 The simplest way to test if one number is evenly divisible by another is to use the [remainder][remainder] or [modulo][modulo] operator.
