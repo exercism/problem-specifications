@@ -18,6 +18,6 @@ If a given number:
 ~~~~exercism/note
 The simplest way to test if one number is evenly divisible by another is to use the [remainder][remainder] or [modulo][modulo] operator.
 
-[remainder]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder
+[remainder]: https://exercism.org/docs/programming/operators/remainder
 [modulo]: https://en.wikipedia.org/wiki/Modulo_operation
 ~~~~
