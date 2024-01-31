@@ -3,4 +3,4 @@ blurb = "Convert a number into its corresponding raindrop sounds - Pling, Plang 
 source = "A variation on FizzBuzz, a famous technical interview question that is intended to weed out potential candidates. That question is itself derived from Fizz Buzz, a popular children's game for teaching division."
 source_url = "https://en.wikipedia.org/wiki/Fizz_buzz"
 deep_dive_youtube_id = "mwe-9RIV39Y"
-deep_dive_blurb = "Explore 14 different ways to solve Raindrops including functional pipelines, matrix multiplication, a precalculated table-based solutions using a macro, an Object Oriented approach, some impressive use of both Python and TCL, and an enterprise edition. Kick back and enjoy 45 minutes of learning with Jeremy and Erik."
+deep_dive_blurb = "Explore solutions using functional pipelines, matrix multiplication, a precalculated table-based solutions using a macro, an Object Oriented approach, some impressive use of both Python and TCL, and an enterprise edition."
