@@ -1,44 +1,31 @@
 # Description
 
-The Romans were a clever bunch.
-They conquered most of Europe and ruled it for hundreds of years.
-They invented concrete and straight roads and even central heating.
-But one thing they never discovered though was the number zero.
+Today, most of the world use Arabic numbers.
+But if you go back two thousand years, a large proportion of Europe were using Roman numerals instead.
 
-Their numbering system, known today as "Roman Numerals" uses letters - I, V, X, L, C, D, M.
+Roman numerals used letters from the Latin alphabet (I, V, X, L, C, D, M) to represent numbers, and rather than having digits of 0 to 10 like modern Arabic numbers, they had numerals representing numbers starting with 1 and 5.
 
 | I | V | X  | L  |  C  |  D  |  M   |
 |---|---|----|----|-----|-----|------|
 | 1 | 5 | 10 | 50 | 100 | 500 | 1000 |
 
-There are four basic rules for Roman Numerals:
+To read Roman numerals you need to know a few basic rules.
 
-- When a larger letter precedes a smaller letter, the letters are added together. For example: in `VI`, `V` (5) is larger than `I` (1), so we add them together to get 6.
-- When a smaller letter precedes a larger letter, the letters are subtracted. For example: in `IV`, `I` (1) is smaller than `V` (5), so we subtract 1 from 5 to get 4.
-- When a letter is repeated multiple times, they get added. For example: with `XX` we add `X` (10) to `X` (10), to get 20.
-- The same letter cannot be used more than three times in succession.
+- We read from left-to-right.
+- When a letter is repeated multiple times (e.g. `XX`), they get added: `XX(20) = X(10) + X(10)`
+- The same letter cannot be used more than three times in succession (e.g. `IIII` is invalid - instead you would write `IV`).
+- When a larger letter precedes a smaller letter (e.g. `VI`), letters are added together: `VI(6) = (5) + I(1)`
+- When a smaller letter precedes a larger letter (e.g. `IV`), the first letter is subtracted from the second: `IV(4) = V(5) - I(1)`
+- When subtracing, we cannot have more than one number being subtracted (e.g. `IIV` is invalid) and we can only subtract the nearest two letters (e.g. `IV` and `IX` are valid, but `IL` is not)
+- Use a single letter if possible, (e.g. `VV` is invalid - use `X` instead).
 
-It is also normal to use a single letter if possible, so for example, you'd choose `X` (10) rather than `VV` (5 + 5).
-
-## Examples
-
-In Roman numerals 1990 is MCMXC:
+To look at a complete example, in Roman numerals 1996 is MCMXCVI:
 
 ```text
  1000 => M
   900 => CM
-+  90 => XC
+   90 => XC
++   6 => VI
 ----- => -----
- 1990 => MCMXC
-```
-
-MCMLXXVIII is 1978:
-
-```text
- M          => 1000
-  CM        =>  900 (1000 - 100)
-    LXX     =>   70 (50 + 10 + 10)
-+      VIII =>    8 (5 + 1 + 1 + 1)
------------ => ----
- MCMLXXVIII => 1978
+ 1996 => MCMXCVI
 ```

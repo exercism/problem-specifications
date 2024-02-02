@@ -1,4 +1,12 @@
 # Introduction
 
-Your task is to convert a number from Arabic numerals (0-9) to Roman Numerals.
+Your task is to convert a number from Arabic numerals (0-9) to Roman numerals.
 
+For this exercise, we are only concerned about traditional Roman numerals, in which the largest number is MMMCMXCIX (or 3,999).
+
+~~~~exericsm/info
+There are lots of different ways to convert between Arabic and Roman numerals.
+We recommend taking a naive approach first to familiarise yourself with the concept of Roman numerals and then search for more efficient methods.
+
+Make sure to check our our Deep Dive video at the end to explore the different approaches you can take!
+~~~~
