@@ -1,31 +1,58 @@
 # Description
 
-Today, most of the world use Arabic numbers.
-But if you go back two thousand years, a large proportion of Europe were using Roman numerals instead.
+Today, most people in the world use Arabic numbers.
+But if you travelled back two thousand years, you'd find a most cultures in Europe were using Roman numerals instead.
 
-Roman numerals used letters from the Latin alphabet (I, V, X, L, C, D, M) to represent numbers, and rather than having digits of 0 to 10 like modern Arabic numbers, they had numerals representing numbers starting with 1 and 5.
+To write a Roman numeral we use the following Latin letters, each of which has a value:
 
-| I | V | X  | L  |  C  |  D  |  M   |
-|---|---|----|----|-----|-----|------|
-| 1 | 5 | 10 | 50 | 100 | 500 | 1000 |
+| M    | D   | C   | L  | X  | V | I |
+|------|-----|-----|----|----|---|---|
+| 1000 | 500 | 100 | 50 | 10 | 5 | 1 |
 
-To read Roman numerals you need to know a few basic rules.
+A Roman numeral is a sequence of these letters, and its value is the sum of the values of its letters.
+For example, `XVIII` has the value 18 (`10 + 5 + 1 + 1 + 1 = 18`).
 
-- We read from left-to-right.
-- When a letter is repeated multiple times (e.g. `XX`), they get added: `XX(20) = X(10) + X(10)`
-- The same letter cannot be used more than three times in succession (e.g. `IIII` is invalid - instead you would write `IV`).
-- When a larger letter precedes a smaller letter (e.g. `VI`), letters are added together: `VI(6) = (5) + I(1)`
-- When a smaller letter precedes a larger letter (e.g. `IV`), the first letter is subtracted from the second: `IV(4) = V(5) - I(1)`
-- When subtracing, we cannot have more than one number being subtracted (e.g. `IIV` is invalid) and we can only subtract the nearest two letters (e.g. `IV` and `IX` are valid, but `IL` is not)
-- Use a single letter if possible, (e.g. `VV` is invalid - use `X` instead).
+There's one rule that makes things tricker though, and that's that **the same letter cannot be used more than three times in succession**.
+That means that we can't express numbers such as 4 using the seamingly natural method of `IIII`.
+Instead, for those numbers, we use a subtraction method, where we represent 5 not by `1 + 1 + 1 + 1` but instead by `4 - 1`.
+And slightly confusingly to our modern thinking, we write the smaller number first.
+This applies in the following cases: 4 (`IV`), 9 (`IX`), 40 (`XL`), 90 (`XC`), 400 (`CD`) or 900 (`CM`).
 
-To look at a complete example, in Roman numerals 1996 is MCMXCVI:
+Order matters in Roman numerals.
+Letters (and the special compounds above) must be ordered by decreasing value from left to right.
+
+Here are some examples:
+
+```text
+ 100 => C
++  5 => V
+---- => --
+ 105 => CV
+```
+
+```text
+ 100 => C
++  5 => V
++  1 => I
+---- => --
+ 106 => CVI
+```
+
+```text
+ 100 => C
++  4 => IV
+---- => --i
+ 104 => CIV
+```
+
+And a final more complex example:
 
 ```text
  1000 => M
   900 => CM
    90 => XC
-+   6 => VI
+    5 => V
++   1 => I
 ----- => -----
  1996 => MCMXCVI
 ```
