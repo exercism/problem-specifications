@@ -1,4 +1,6 @@
 title = "Roman Numerals"
-blurb = "Write a function to convert from normal numbers to Roman Numerals."
+blurb = "Convert modern Arabic numbers into Roman numerals."
 source = "The Roman Numeral Kata"
 source_url = "https://codingdojo.org/kata/RomanNumerals/"
+deep_dive_youtube_id = "6fGP5IVXTxs"
+deep_dive_blurb = "Explore a variety of different solutions to this tricky exercise, ranging from recursion to table-based lookups, one solution that makes use of mixed radix numbers, and some simplistic cheating by Common Lisp."
