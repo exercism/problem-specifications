@@ -13,7 +13,7 @@ A Roman numeral is a sequence of these letters, and its value is the sum of the 
 For example, `XVIII` has the value 18 (`10 + 5 + 1 + 1 + 1 = 18`).
 
 There's one rule that makes things trickier though, and that's that **the same letter cannot be used more than three times in succession**.
-That means that we can't express numbers such as 4 using the seamingly natural method of `IIII`.
+That means that we can't express numbers such as 4 with the seemingly natural `IIII`.
 Instead, for those numbers, we use a subtraction method between two letters.
 So we think of `4` not as `1 + 1 + 1 + 1` but instead as `5 - 1`.
 And slightly confusingly to our modern thinking, we write the smaller number first.
