@@ -5,9 +5,9 @@ But if you travelled back two thousand years, you'd find that most Europeans wer
 
 To write a Roman numeral we use the following Latin letters, each of which has a value:
 
-| M    | D   | C   | L  | X  | V | I |
-|------|-----|-----|----|----|---|---|
-| 1000 | 500 | 100 | 50 | 10 | 5 | 1 |
+| M    | D   | C   | L   | X   | V   | I   |
+| ---- | --- | --- | --- | --- | --- | --- |
+| 1000 | 500 | 100 | 50  | 10  | 5   | 1   |
 
 A Roman numeral is a sequence of these letters, and its value is the sum of the letters' values.
 For example, `XVIII` has the value 18 (`10 + 5 + 1 + 1 + 1 = 18`).
@@ -17,9 +17,9 @@ That means that we can't express numbers such as 4 with the seemingly natural `I
 Instead, for those numbers, we use a subtraction method between two letters.
 So we think of `4` not as `1 + 1 + 1 + 1` but instead as `5 - 1`.
 And slightly confusingly to our modern thinking, we write the smaller number first.
-This applies only in the following cases: 4 (`IV`), 9 (`IX`), 40 (`XL`), 90 (`XC`), 400 (`CD`) or 900 (`CM`).
+This applies only in the following cases: 4 (`IV`), 9 (`IX`), 40 (`XL`), 90 (`XC`), 400 (`CD`) and 900 (`CM`).
 
-Order matters in Roman numerals.
+Order matters in Roman numerals!
 Letters (and the special compounds above) must be ordered by decreasing value from left to right.
 
 Here are some examples:
