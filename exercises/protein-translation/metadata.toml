@@ -1,3 +1,5 @@
 title = "Protein Translation"
 blurb = "Translate RNA sequences into proteins."
 source = "Tyler Long"
+deep_dive_youtube_id = "i7SEtqVlWUU"
+deep_dive_blurb = "Explore 11 different ways to solve this exercise, including imperative approaches, functional ideas like pattern matching, recursion, and higher order functions, and some low-level coding in C++ and Assembly."
