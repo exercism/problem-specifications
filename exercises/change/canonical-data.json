@@ -87,6 +87,16 @@
       "expected": [4, 4, 4, 5, 5, 5]
     },
     {
+      "uuid": "ce0f80d5-51c3-469d-818c-3e69dbd25f75",
+      "description": "a greedy approach is not optimal",
+      "property": "findFewestCoins",
+      "input": {
+        "coins": [1, 10, 11],
+        "target": 20
+      },
+      "expected": [10, 10]
+    },
+    {
       "uuid": "bbbcc154-e9e9-4209-a4db-dd6d81ec26bb",
       "description": "no coins make 0 change",
       "property": "findFewestCoins",
