@@ -46,7 +46,7 @@ jobs:
       - uses: actions/checkout@8eb1f6a495037164bea451156472f35fdd6bafc0 # v4.0.0
 
       - name: Setup nodejs
-        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # v3.8.1
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
         with:
           node-version: 16
           cache: "yarn"
@@ -124,7 +124,7 @@ jobs:
             **/*.md
 
       - name: Setup nodejs
-        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # v3.8.1
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
         with:
           node-version: 16
           cache: "yarn"
@@ -162,7 +162,7 @@ jobs:
       - uses: actions/checkout@8eb1f6a495037164bea451156472f35fdd6bafc0 # v4.0.0
 
       - name: Setup nodejs
-        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # v3.8.1
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
         with:
           node-version: 16
           cache: "yarn"
