@@ -1,6 +1,6 @@
 # Description
 
-Write a solver for alphametics puzzles.
+Write some code to solve alphametics puzzles.
 
 [Alphametics][alphametics] is a puzzle where letters in words are replaced with numbers.
 
