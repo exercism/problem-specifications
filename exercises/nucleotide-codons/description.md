@@ -1,6 +1,6 @@
 # Description
 
-Write a function that returns the name of an amino acid a particular codon, possibly using shorthand, encodes for.
+Return the name of an amino acid encoded by a particular codon, possibly using shorthand.
 
 In DNA sequences of 3 nucleotides, called codons, encode for amino acids.
 Often several codons encode for the same amino acid.
