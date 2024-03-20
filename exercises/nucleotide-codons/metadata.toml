@@ -1,2 +1,2 @@
 title = "Nucleotide Codons"
-blurb = "Return the name of an amino acid encoded by a particular codon, possibly using shorthand."
+blurb = "Translate a given codon into the amino acid it encodes, possibly using shorthand."
