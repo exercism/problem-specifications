@@ -13,6 +13,17 @@
       "expected": 0
     },
     {
+      "uuid": "3993a824-c20e-493d-b3c9-ee8a7753ee59",
+      "reimplements": "a4d7d2f0-ad8a-460c-86f3-88ba709d41a7",
+      "description": "no items",
+      "property": "maximumValue",
+      "input": {
+        "maximumWeight": 100,
+        "items": []
+      },
+      "expected": 0
+    },
+    {
       "uuid": "1d39e98c-6249-4a8b-912f-87cb12e506b0",
       "description": "one item, too heavy",
       "property": "maximumValue",

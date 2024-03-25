@@ -133,6 +133,17 @@
       "expected": []
     },
     {
+      "uuid": "630abb71-a94e-4715-8395-179ec1df9f91",
+      "reimplements": "7cc195ad-e3c7-44ee-9fd2-d3c344806a2c",
+      "description": "does not detect an anagram if the original word is repeated",
+      "property": "findAnagrams",
+      "input": {
+        "subject": "go",
+        "candidates": ["goGoGO"]
+      },
+      "expected": []
+    },
+    {
       "uuid": "9878a1c9-d6ea-4235-ae51-3ea2befd6842",
       "description": "anagrams must use all letters exactly once",
       "property": "findAnagrams",
@@ -205,6 +216,29 @@
         "candidates": ["LISTEN", "Silent"]
       },
       "expected": ["Silent"]
+    },
+    {
+      "uuid": "a6854f66-eec1-4afd-a137-62ef2870c051",
+      "description": "handles case of greek letters",
+      "scenarios": ["unicode"],
+      "property": "findAnagrams",
+      "input": {
+        "subject": "ΑΒΓ",
+        "candidates": ["ΒΓΑ", "ΒΓΔ", "γβα", "αβγ"]
+      },
+      "expected": ["ΒΓΑ", "γβα"]
+    },
+    {
+      "uuid": "fd3509e5-e3ba-409d-ac3d-a9ac84d13296",
+      "description": "different characters may have the same bytes",
+      "comments": ["a⬂ => 61 E2 AC 82", "€a => E2 82 AC 61"],
+      "scenarios": ["unicode"],
+      "property": "findAnagrams",
+      "input": {
+        "subject": "a⬂",
+        "candidates": ["€a"]
+      },
+      "expected": []
     }
   ]
 }
