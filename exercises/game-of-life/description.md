@@ -4,8 +4,8 @@
 
 On each new generation, the following rules are applied:
 
-- Any live cell with two or three live neighbours lives on.
-- Any dead cell with three live neighbours becomes a live cell.
+- Any live cell with two or three live neighbors lives on.
+- Any dead cell with exactly three live neighbors becomes a live cell.
 - All other cells die or stay dead.
 
 Given a matrix of 1s and 0s (corresponding to live and dead cells), apply the rules to each cell, output the next generation.
