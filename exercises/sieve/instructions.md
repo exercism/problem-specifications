@@ -23,7 +23,7 @@ For example, if you're finding the primes between 2 and 10:
 3. Skip 4 as it's marked as not-prime.
 4. Mark 5 as prime.
    Mark 10 as not prime _(optional - as it's already been marked)_.
-5. Skip 6 as it's marked as not-prime.
+5. Skip 6 as it's marked as not prime.
 6. Mark 7 as prime.
 7. Skip 8 as it's marked as not-prime.
 8. Skip 9 as it's marked as not-prime.
