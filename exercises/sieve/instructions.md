@@ -33,4 +33,4 @@ You've examined all numbers and found 2, 3, 5, and 7 as the primes below 10.
 ~~~~
 
 **Note:** The tests don't check that you've implemented the algorithm, only that you've come up with the correct list of primes.
-To check for yourself, a good first test is to check that you do not use division or remainder operations.
+To check you are implementing the Sieve correctly, a good first test is to check that you do not use division or remainder operations.
