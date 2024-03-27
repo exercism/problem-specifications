@@ -19,7 +19,7 @@ For example, if you're finding the primes between 2 and 10:
 1. Mark 2 as prime.
    Mark 4, 6, 8 and 10 as not prime.
 2. Mark 3 as prime.
-   Mark 6 and 9 as not prime.
+   Mark 6 and 9 as not prime _(marking 6 is optional - as it's already been marked)_.
 3. Skip 4 as it's marked as not-prime.
 4. Mark 5 as prime.
    Mark 10 as not prime _(optional - as it's already been marked)_.
