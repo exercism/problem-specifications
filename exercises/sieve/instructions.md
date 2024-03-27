@@ -38,4 +38,3 @@ Let's say you're finding the primes below 10.
 - Skip 10 as it's marked as "not prime".
 
 You've examined all numbers and found 2, 3, 5, and 7 are still unmarked, which means they're the primes below 10.
-
