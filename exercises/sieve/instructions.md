@@ -29,7 +29,7 @@ For example, if you're finding the primes between 2 and 10:
 8. Skip 9 as it's marked as not prime.
 9. Skip 10 as it's marked as not prime.
 
-You've examined all numbers and found 2, 3, 5, and 7 as the primes below 10.
+You've examined all numbers and found 2, 3, 5, and 7 are still unmarked, which means they're the primes below 10.
 ~~~~
 
 **Note:** The tests don't check that you've implemented the algorithm, only that you've come up with the correct list of primes.
