@@ -1,6 +1,8 @@
 # Introduction
 
-[Conway's Game of Life][game-of-life] is a fascinating cellular automaton created by the British mathematician John Horton Conway in 1970. The game consists of a two-dimensional grid of cells that can either be "alive" or "dead." Each generation, the cells interact with their eight neighbors, which are cells adjacent horizontally, vertically, or diagonally.
+[Conway's Game of Life][game-of-life] is a fascinating cellular automaton created by the British mathematician John Horton Conway in 1970.
+The game consists of a two-dimensional grid of cells that can either be "alive" or "dead."
+Each generation, the cells interact with their eight neighbors, which are cells adjacent horizontally, vertically, or diagonally.
 
 On each new generation, the following rules are applied:
 
