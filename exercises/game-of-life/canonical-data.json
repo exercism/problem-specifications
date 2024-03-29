@@ -114,7 +114,7 @@
     },
     {
       "uuid": "a79b42be-ed6c-4e27-9206-43da08697ef6",
-      "description": "random matrix",
+      "description": "bigger matrix",
       "property": "tick",
       "input": {
         "matrix": [
