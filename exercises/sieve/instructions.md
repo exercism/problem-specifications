@@ -10,7 +10,7 @@ To use the Sieve of Eratosthenes, you first create a list of all the numbers bet
 Then you repeat the following steps:
 
 1. Find the next unmarked number in your list (skipping over marked numbers).
-   This must be a prime number.
+   This is a prime number.
 2. Mark all the multiples of that prime number as **not** prime.
 
 You keep repeating these steps until you've gone through every number in your list.
@@ -26,15 +26,15 @@ To check you are implementing the Sieve correctly, a good first test is to check
 Let's say you're finding the primes less than or equal to 10.
 
 - List out 2, 3, 4, 5, 6, 7, 8, 9, 10, leaving them all unmarked.
-- 2 is still unmarked, so it must be prime.
+- 2 is unmarked and is therefore a prime.
   Mark 4, 6, 8 and 10 as "not prime".
-- 3 is still unmarked, so it must be prime.
+- 3 is unmarked and is therefore a prime.
   Mark 6 and 9 as not prime _(marking 6 is optional - as it's already been marked)_.
 - 4 is marked as "not prime", so we skip over it.
-- 5 is still unmarked, so it must be prime.
+- 5 is unmarked and is therefore a prime.
   Mark 10 as not prime _(optional - as it's already been marked)_.
 - 6 is marked as "not prime", so we skip over it.
-- 7 is still unmarked, so it must be prime.
+- 7 is unmarked and is therefore a prime.
 - 8 is marked as "not prime", so we skip over it.
 - 9 is marked as "not prime", so we skip over it.
 - 10 is marked as "not prime", so we stop as there are no more numbers to check.
