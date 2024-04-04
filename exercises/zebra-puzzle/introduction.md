@@ -7,7 +7,7 @@ To help you solve the puzzle, you're given 15 statements that constrain what sol
 However, only by combining the information in _all_ statements will you be able to find the solution to the puzzle.
 
 ~~~~exercism/note
-The Zebra Puzzle is a [Constraint satisfaction problem][constraint-satisfaction-problem].
+The Zebra Puzzle is a [Constraint satisfaction problem (CSP)][constraint-satisfaction-problem].
 In such a problem, you have a set of possible values and a set of constraints that limit which values are valid.
 Another well-known Constraint satisfaction problem are Suduko puzzles.
 [constraint-satisfaction-problem]: https://en.wikipedia.org/wiki/Constraint_satisfaction_problem
