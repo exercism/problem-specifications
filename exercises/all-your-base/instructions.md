@@ -1,6 +1,6 @@
 # Instructions
 
-Convert a number, represented as a sequence of digits in one base, to a sequence of digits in another base.
+Convert a sequence of digits in one base, representing a number, into a sequence of digits in another base, representing the same number.
 
 ~~~~exercism/note
 Try to implement the conversion yourself.
