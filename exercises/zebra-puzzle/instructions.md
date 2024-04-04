@@ -28,5 +28,5 @@ The following 15 statements are all known to be true:
 Additionally, each of the five houses is painted a different color, and their inhabitants are of different national extractions, own different pets, drink different beverages and smoke different brands of cigarettes.
 
 ~~~~exercism/note
-There are 24 billion (5!^5 = 24,883,200,000) possible solutions, so try ruling out as many solutions as possible.
+There are 24 billion (5!⁵ = 24,883,200,000) possible solutions, so try ruling out as many solutions as possible.
 ~~~~
