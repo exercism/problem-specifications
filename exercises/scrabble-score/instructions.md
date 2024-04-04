@@ -16,9 +16,7 @@ The letters are valued as follows:
 | J, X                         | 8     |
 | Q, Z                         | 10    |
 
-## Examples
-
-The word "cabbage" is worth 14 points:
+For example, the word "cabbage" is worth 14 points:
 
 - 3 points for C
 - 1 point for A
