@@ -2,8 +2,6 @@
 
 Your task is to compute a word's Scrabble score by summing the values of its letters.
 
-## Letter Values
-
 The letters are valued as follows:
 
 | Letter                       | Value |
