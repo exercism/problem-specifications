@@ -1,6 +1,6 @@
 # Instructions
 
-Compute a word's Scrabble score by summing its letters' values.
+Your task is to compute a word's Scrabble score by summing the values of its letters.
 
 ## Letter Values
 
