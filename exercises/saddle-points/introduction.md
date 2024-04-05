@@ -8,4 +8,4 @@ You need to analyze each grid on the map to find good trees for your tree house.
 A good tree is both:
 
 - at least as tall as all trees to the east and west, so that you have the best possible view of the sunrises and sunsets.
-- at most as tall as all tree to the north and south, to minimize the amount of tree climbing.
+- at most as tall as all trees to the north and south, to minimize the amount of tree climbing.
