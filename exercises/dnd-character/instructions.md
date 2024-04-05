@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 For a game of [Dungeons & Dragons][dnd], each player starts by generating a character they can play with.
 This character has, among other things, six abilities; strength, dexterity, constitution, intelligence, wisdom and charisma.
