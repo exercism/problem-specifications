@@ -261,6 +261,7 @@
     },
     {
       "uuid": "9eac93f3-627a-4c90-8653-6d0a0595bc6f",
+      "reimplements": "1e75ea2a-f907-4994-ae5c-118632a1cb0f",
       "description": "Unknown amino acids, not part of a codon, can't translate",
       "comments": [
         "It's up to a track how to behave when a character is encountered ",
