@@ -1,7 +1,7 @@
 # Introduction
 
 After weeks of anticipation, you and your friends get together for your very first game of [Dungeons & Dragons][dnd] (D&D).
-It being the first game, each player has to start by generating a character to play with.
+Since this is the first session of the game, each player has to generate a character to play with.
 The character's abilities are determined by rolling 6-sided dice, but where _are_ the dice?
 With a shock, you realize that your friends are waiting for _you_ to produce the dice, after all it was your idea to play D&D!
 Panicking, you realize you forgot to bring the dice, which would mean no D&D game.
