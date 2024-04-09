@@ -4,7 +4,8 @@ Your task is to add the mine counts to empty squares in a completed Minesweeper 
 The board itself is a rectangle composed of squares that are either empty (` `) or a mine (`*`).
 
 For each empty square, count its number of adjacent mines (horizontally, vertically, diagonally).
-If the empty square has no adjacent mines, leave it empty, otherwise replace it with the adjacent mines count.
+If the empty square has no adjacent mines, leave it empty.
+Otherwise replace it with the adjacent mines count.
 
 For example, you may receive a 5 x 4 board like this (empty spaces are represented here with the '·' character for display on screen):
 
