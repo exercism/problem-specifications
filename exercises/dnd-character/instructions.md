@@ -3,7 +3,7 @@
 For a game of [Dungeons & Dragons][dnd], each player starts by generating a character they can play with.
 This character has, among other things, six abilities; strength, dexterity, constitution, intelligence, wisdom and charisma.
 These six abilities have scores that are determined randomly.
-You do this by rolling four 6-sided dice and record the sum of the largest three dice.
+You do this by rolling four 6-sided dice and recording the sum of the largest three dice.
 You do this six times, once for each ability.
 
 Your character's initial hitpoints are 10 + your character's constitution modifier.
