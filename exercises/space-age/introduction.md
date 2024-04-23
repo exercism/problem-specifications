@@ -10,7 +10,8 @@ Amused, you wait for the customs officer to start laughing, but they appear to b
 You realize that you've entered your age in _Earth years_, but the officer expected it in _Mercury years_!
 As Mercury's orbital period around the sun is significantly shorter than Earth, you're actually a lot older in Mercury years.
 After some quick calculations, you're able to provide your age in Mercury Years.
-The customs officer smiles, satisfied, and waves you through. You make a mental note to pre-calculate your planet-specific age _before_ future customs checks, to avoid such mix-ups.
+The customs officer smiles, satisfied, and waves you through.
+You make a mental note to pre-calculate your planet-specific age _before_ future customs checks, to avoid such mix-ups.
 
 ~~~~exercism/note
 If you're wondering why Pluto didn't make the cut, go watch [this YouTube video][pluto-video].
