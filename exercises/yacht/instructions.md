@@ -5,7 +5,7 @@ Given five dice and a category, calculate the score of the dice for that categor
 ~~~~exercism/note
 You'll always be presented with five dice.
 Each dice's value will be between one and six inclusively.
-The dice will be unordered.
+The dice may be unordered.
 ~~~~
 
 ## Scores in Yacht
