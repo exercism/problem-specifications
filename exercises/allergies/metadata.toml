@@ -3,4 +3,4 @@ blurb = "Given a person's allergy score, determine whether or not they're allerg
 source = "Exercise by the JumpstartLab team for students at The Turing School of Software and Design."
 source_url = "https://turing.edu"
 deep_dive_youtube_id = "OFS9sknfpkc"
-deep_dive_blurb = "We explore bit shifting, bitwise comparsion and other binary number concepts! We also take a look at a solution using pattern matching and an interesting approach in Erlang using recursion."
+deep_dive_blurb = "We explore bit shifting, bitwise comparison and other binary number concepts! We also take a look at a solution using pattern matching and an interesting approach in Erlang using recursion."
