@@ -1,0 +1,6 @@
+# Introduction
+
+The kindergarten class is learning about growing plants.
+The teacher thought it would be a good idea to give them actual seeds, plant them in actual dirt, and grow actual plants.
+To this end, the children have put little cups along the window sills and planted one type of plant in each cup.
+The children chose randomly from four available types of seeds: grass, clover, radishes, and violets.
