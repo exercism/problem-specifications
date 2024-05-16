@@ -8,7 +8,12 @@ There are 12 children in the class:
 
 Four different types of seeds are planted:
 
-- Grass ("G"), clover ("C"), radishes ("R"), and violets ("V")
+| Plant  | Diagram encoding |
+| ------ | ---------------- |
+| Grass  | G                |
+| Clover | C                |
+| Radish | R                |
+| Violet | V                |
 
 Each child gets four cups, two on each row:
 
