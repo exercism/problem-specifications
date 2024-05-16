@@ -1,6 +1,7 @@
 # Instructions
 
-Your task is to determine which items to take to maximize their value, taking into account the knapsack's carrying capacity.
+
+Your task is to determine which items to take so that the total value of his selection is maximized, taking into account the knapsack's carrying capacity.
 
 Items will be represented as a list of items.
 Each item will have a weight and value.
