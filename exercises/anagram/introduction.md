@@ -8,5 +8,5 @@ Carefully, you try again, but now it prints "spot" and "slate."
 After some experimentation, you find there is a random delay before each letter is printed, which messes up the order.
 You now understand why they sold it for so little money!
 
-You do realize you can use this quirk to generate anagrams: words formed by rearranging the letters of another word.
+You realize you can use this quirk to generate anagrams: words formed by rearranging the letters of another word.
 Pleased with your finding, you spend the rest of the day generating hundreds of anagrams.
