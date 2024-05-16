@@ -1,6 +1,5 @@
 # Instructions
 
-
 Your task is to determine which items to take so that the total value of his selection is maximized, taking into account the knapsack's carrying capacity.
 
 Items will be represented as a list of items.
