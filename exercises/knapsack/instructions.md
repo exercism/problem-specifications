@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Your task is to determine which items to take to maximize their value, taking into account the knapsack's carrying capacity.
 
