@@ -1,2 +1,4 @@
 title = "Minesweeper"
 blurb = "Add the numbers to a minesweeper board."
+deep_dive_youtube_id = "dLT2h2hODhs"
+deep_dive_blurb = "We explore nested for loops, clever use of min/max to simplify bounds checking, functional pipelines and using two-dimensional matrices."
