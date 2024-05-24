@@ -25,7 +25,7 @@ For example:
 
 - `"pig"` -> `"igp"` -> `"igpay"` (starts with single consonant)
 - `"chair"` -> `"airch"` -> `"airchay"` (starts with multiple consonants)
-- `"thrush"` -> -> `"ushthr"` `"ushthray"` (starts with multiple consonants)
+- `"thrush"` -> `"ushthr"` -> `"ushthray"` (starts with multiple consonants)
 
 ## Rule 3
 
