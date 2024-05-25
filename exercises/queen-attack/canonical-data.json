@@ -34,7 +34,7 @@
         },
         {
           "uuid": "4e812d5d-b974-4e38-9a6b-8e0492bfa7be",
-          "description": "queen must have positive row",
+          "description": "queen must have non-negative row",
           "property": "create",
           "input": {
             "queen": {
@@ -45,7 +45,7 @@
             }
           },
           "expected": {
-            "error": "row not positive"
+            "error": "row is negative"
           }
         },
         {
@@ -66,7 +66,7 @@
         },
         {
           "uuid": "15a10794-36d9-4907-ae6b-e5a0d4c54ebe",
-          "description": "queen must have positive column",
+          "description": "queen must have non-negative column",
           "property": "create",
           "input": {
             "queen": {
@@ -77,7 +77,7 @@
             }
           },
           "expected": {
-            "error": "column not positive"
+            "error": "column is negative"
           }
         },
         {
