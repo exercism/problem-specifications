@@ -49,6 +49,24 @@
           }
         },
         {
+          "uuid": "2bd3b462-94d0-44b0-92dc-4eb15e59f9d2",
+          "reimplements": "4e812d5d-b974-4e38-9a6b-8e0492bfa7be",
+          "description": "queen must have non-negative row",
+          "comments": ["Corrects language to specify that 0 is allowed"],
+          "property": "create",
+          "input": {
+            "queen": {
+              "position": {
+                "row": -2,
+                "column": 2
+              }
+            }
+          },
+          "expected": {
+            "error": "row is negative"
+          }
+        },
+        {
           "uuid": "f07b7536-b66b-4f08-beb9-4d70d891d5c8",
           "description": "queen must have row on board",
           "property": "create",
@@ -78,6 +96,24 @@
           },
           "expected": {
             "error": "column not positive"
+          }
+        },
+        {
+          "uuid": "c2d43853-85f0-4b21-af97-c8d6a934704a",
+          "reimplements": "c2d43853-85f0-4b21-af97-c8d6a934704a",
+          "description": "queen must have non-negative column",
+          "comments": ["Corrects language to specify that 0 is allowed"],
+          "property": "create",
+          "input": {
+            "queen": {
+              "position": {
+                "row": 2,
+                "column": -2
+              }
+            }
+          },
+          "expected": {
+            "error": "column is negative"
           }
         },
         {
