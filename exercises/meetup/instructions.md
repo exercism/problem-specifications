@@ -1,6 +1,6 @@
 # Instructions
 
-Your task is to find the exact date of the meetup, given a month, year, weekday and week.
+Your task is to find the exact date of a meetup, given a month, year, weekday and week.
 
 There are five week values to consider: `first`, `second`, `third`, `fourth`, `last`, `teenth`.
 
