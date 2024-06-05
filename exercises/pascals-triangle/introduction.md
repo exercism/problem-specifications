@@ -1,25 +1,24 @@
 # Introduction
 
-[Pascal's triangle][wikipedia] is a triangular array of positive integers.
+With the weather being great, you're not looking forward to spending an hour in a classroom doing math.
+Annoyed, you enter the class room, where you notice a strangely satisfying triangle shape on the blackboard.
+Whilst waiting for your math teacher to arrive, you can't help but notice some patterns in the triangle: the outer values are all ones, each subsequent row has one more value than its previous row and the triangle is symmetrical.
+Weird!
 
-Each row has N values, where N is the row number (starting at one).
-Therefore, the first row has one value, the second row has two values, and so on.
+Not long after you sit down, your teacher enters the room and explains that this triangle is the famous
+[Pascal's triangle][wikipedia].
 
-The values in rows are computed by adding the numbers directly to the right and left of the current position in the previous row.
-If the previous row does not have a value to the left or right of the current position, treat that value as zero.
+Over the next hour, your teacher reveals some amazing things hidden in this triangle:
 
-The one exception is the first (topmost) row (as it does not have a previous row) and which contains a single one.
+- It can be used to compute how many ways you can pick K elements from N values.
+- It contains the Fibonacci sequence.
+- If you color odd and even number differently, you get a beautiful pattern called the [Sierpiński triangle][wikipedia-sierpinski-triangle]
 
-## Example
+The teacher implores you and your classmates to lookup other other uses, and assures you that there are lots more!
+At that moment, the school bell rings.
+You realize that for the past hour, you were completely absorbed in learning about Pascal's triangle. Math is definitely not as boring as you thought it was!
 
-Let's look at the first 5 rows of Pascal's Triangle:
-
-```text
-    1
-   1 1
-  1 2 1
- 1 3 3 1
-1 4 6 4 1
-```
+You quickly grab your laptop from your bag and go outside, ready to enjoy both the sunshine _and_ the wonders of Pascal's triangle.
 
 [wikipedia]: https://en.wikipedia.org/wiki/Pascal%27s_triangle
+[wikipedia-sierpinski-triangle]: https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle
