@@ -16,7 +16,8 @@ Over the next hour, your teacher reveals some amazing things hidden in this tria
 
 The teacher implores you and your classmates to lookup other other uses, and assures you that there are lots more!
 At that moment, the school bell rings.
-You realize that for the past hour, you were completely absorbed in learning about Pascal's triangle. Math is definitely not as boring as you thought it was!
+You realize that for the past hour, you were completely absorbed in learning about Pascal's triangle.
+Math is definitely not as boring as you thought it was!
 
 You quickly grab your laptop from your bag and go outside, ready to enjoy both the sunshine _and_ the wonders of Pascal's triangle.
 
