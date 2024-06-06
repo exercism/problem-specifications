@@ -12,7 +12,7 @@ Over the next hour, your teacher reveals some amazing things hidden in this tria
 
 - It can be used to compute how many ways you can pick K elements from N values.
 - It contains the Fibonacci sequence.
-- If you color odd and even numbers differently, you get a beautiful pattern called the [Sierpiński triangle][wikipedia-sierpinski-triangle]
+- If you color odd and even numbers differently, you get a beautiful pattern called the [Sierpiński triangle][wikipedia-sierpinski-triangle].
 
 The teacher implores you and your classmates to lookup other uses, and assures you that there are lots more!
 At that moment, the school bell rings.
