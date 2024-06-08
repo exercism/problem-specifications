@@ -19,7 +19,7 @@ For example:
 
 ## Rule 2
 
-If a word begins with a one or more consonants, first move those consonants to the end of the word and then add an `"ay"` sound to the end of the word.
+If a word begins with one or more consonants, first move those consonants to the end of the word and then add an `"ay"` sound to the end of the word.
 
 For example:
 
