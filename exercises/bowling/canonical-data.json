@@ -338,6 +338,18 @@
       "expected": {
         "error": "Cannot roll after game is over"
       }
+    },
+    {
+      "uuid": "288f7585-ab70-4dfe-88e8-25fab199eff2",
+      "description": "second roll in the last frame cannot score more than 10 points if the first roll in the last frame is not a strike",
+      "property": "roll",
+      "input": {
+        "previousRolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7],
+        "roll": 4
+      },
+      "expected": {
+        "error": "Pin count exceeds pins on the lane"
+      }
     }
   ]
 }
