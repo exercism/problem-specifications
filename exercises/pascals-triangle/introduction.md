@@ -5,8 +5,7 @@ Annoyed, you enter the class room, where you notice a strangely satisfying trian
 Whilst waiting for your math teacher to arrive, you can't help but notice some patterns in the triangle: the outer values are all ones, each subsequent row has one more value than its previous row and the triangle is symmetrical.
 Weird!
 
-Not long after you sit down, your teacher enters the room and explains that this triangle is the famous
-[Pascal's triangle][wikipedia].
+Not long after you sit down, your teacher enters the room and explains that this triangle is the famous [Pascal's triangle][wikipedia].
 
 Over the next hour, your teacher reveals some amazing things hidden in this triangle:
 
