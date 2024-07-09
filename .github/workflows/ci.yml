@@ -12,7 +12,7 @@ jobs:
     name: All required files are present
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.0.0
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.0.0
 
       - name: All required files are present
         run: bin/check_required_files_present
@@ -21,13 +21,13 @@ jobs:
     name: No test has been mutated
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.0.0
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.0.0
         with:
           path: "new"
 
       # Pull Requests
       - name: Checkout the target branch
-        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.0.0
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.0.0
         with:
           ref: "${{ github.base_ref }}"
           path: "old"
@@ -43,7 +43,7 @@ jobs:
     name: Schema validation
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.0.0
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.0.0
 
       - name: Setup nodejs
         uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
@@ -115,7 +115,7 @@ jobs:
     name: Lint markdown files
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.0.0
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.0.0
 
       - name: Lint markdown
         uses: DavidAnson/markdownlint-cli2-action@b4c9feab76d8025d1e83c653fa3990936df0e6c8 # v16.0.0
@@ -145,7 +145,7 @@ jobs:
     name: Check links
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.0.0
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.0.0
 
       - name: Check links
         uses: lycheeverse/lychee-action@2b973e86fc7b1f6b36a93795fe2c9c6ae1118621 # 1.10.0
@@ -159,7 +159,7 @@ jobs:
     name: Lint json files
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.0.0
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.0.0
 
       - name: Setup nodejs
         uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
