@@ -19,7 +19,7 @@ All other non-digit characters are disallowed.
 ```
 
 The first step of the Luhn algorithm is to double every second digit, starting from the right.
-We will be doubling
+We will be doubling the numbers listed below. `_` will not change. 
 
 ```text
 4_3_ 3_9_ 0_4_ 6_6_
