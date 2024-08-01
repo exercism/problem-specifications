@@ -23,7 +23,7 @@ We will be doubling
 
 ```text
 4539 3195 0343 6467
-↑ ↑  ↑ ↑  ↑ ↑  ↑ ↑  (doubling)
+↑ ↑  ↑ ↑  ↑ ↑  ↑ ↑  (double these)
 ```
 
 If doubling the number results in a number greater than 9 then subtract 9 from the product.
