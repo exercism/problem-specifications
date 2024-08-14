@@ -11,7 +11,7 @@ Sometimes during this process mistakes happen and single pieces of DNA get encod
 If we compare two strands of DNA and count the differences between them we can see how many mistakes occurred.
 This is known as the "Hamming Distance".
 
-We read DNA using the letters C,A,G and T.
+We read DNA using the letters C, A, G and T.
 Two strands might look like this:
 
     GAGCCTACTAACGGGAT
