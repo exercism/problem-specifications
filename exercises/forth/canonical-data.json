@@ -215,7 +215,7 @@
           "expected": [2]
         },
         {
-          "uuid": "",
+          "uuid": "f749b540-53aa-458e-87ec-a70797eddbcb",
           "description": "multiplication and addition",
           "property": "evaluate",
           "input": {
@@ -224,7 +224,7 @@
           "expected": [13]
         },
         {
-          "uuid": "",
+          "uuid": "c8e5a4c2-f9bf-4805-9a35-3c3314e4989a",
           "description": "addition and multiplication",
           "property": "evaluate",
           "input": {
