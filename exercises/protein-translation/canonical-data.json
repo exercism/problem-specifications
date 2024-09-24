@@ -3,7 +3,7 @@
   "cases": [
     {
       "uuid": "2c44f7bf-ba20-43f7-a3bf-f2219c0c3f98",
-      "description": "Empty RNA sequence results in no amino acids",
+      "description": "Empty RNA sequence results in no proteins",
       "comments": [
         "Tracks may choose to expect an error when an empty RNA sequence  ",
         "is given, or use this test to expect an empty result.            "
