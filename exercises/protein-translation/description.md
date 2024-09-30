@@ -27,7 +27,7 @@ Protein: `"Methionine", "Phenylalanine", "Serine"`
 
 Note the stop codon `"UAA"` terminates the translation and the final methionine is not translated into the protein sequence.
 
-Below are the codons and resulting Amino Acids needed for the exercise.
+Below are the codons and resulting amino acids needed for the exercise.
 
 | Codon              | Amino Acid    |
 | :----------------- | :------------ |
