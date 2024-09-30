@@ -2,7 +2,7 @@
 
 Translate RNA sequences into proteins.
 
-RNA can be broken into three nucleotide sequences called codons, and then translated to a protein like so:
+RNA can be broken into three-nucleotide sequences called codons, and then translated to a protein like so:
 
 RNA: `"AUGUUUUCU"` => translates to
 
