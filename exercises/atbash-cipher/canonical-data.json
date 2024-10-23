@@ -2,13 +2,13 @@
   "exercise": "atbash-cipher",
   "comments": [
     "The tests are divided into two groups: ",
-    "* Encoding from English to atbash cipher",
-    "* Decoding from atbash cipher to all-lowercase-mashed-together English"
+    "* Encoding from English to Atbash cipher",
+    "* Decoding from Atbash cipher to all-lowercase-mashed-together English"
   ],
   "cases": [
     {
       "description": "encode",
-      "comments": ["Test encoding from English to atbash"],
+      "comments": ["Test encoding from English to Atbash"],
       "cases": [
         {
           "uuid": "2f47ebe1-eab9-4d6b-b3c6-627562a31c77",
@@ -86,7 +86,7 @@
     },
     {
       "description": "decode",
-      "comments": ["Test decoding from atbash to English"],
+      "comments": ["Test decoding from Atbash to English"],
       "cases": [
         {
           "uuid": "bb50e087-7fdf-48e7-9223-284fe7e69851",
