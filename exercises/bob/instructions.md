@@ -17,3 +17,5 @@ Bob only ever answers one of five things:
   The convention used for silence is nothing, or various combinations of whitespace characters.
 - **"Whatever."**
   This is what he answers to anything else.
+
+Bob always responds with a single sentence, regardless of the number of lines in the input.
