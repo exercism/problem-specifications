@@ -9,7 +9,9 @@ Check out the Wikipedia pages on [square root][square-root] and [methods of comp
 
 Recall also that natural numbers are positive real whole numbers (i.e. 1, 2, 3 and up).
 
-It is possible to compute the square root of any natural number using only natural numbers in the computation.
+Avoid using built-in functions or libraries that directly compute the square root.
+Instead, create your own approach to approximate or calculate the square root.
+It is possible to calculate the square root of any natural number using only natural numbers in the calculation.
 
 [square-root]: https://en.wikipedia.org/wiki/Square_root
 [computing-square-roots]: https://en.wikipedia.org/wiki/Methods_of_computing_square_roots
