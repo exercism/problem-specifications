@@ -8,9 +8,9 @@ Your task is to calculate the square root of a given number.
 
 Here are some approaches you could use.
 
-- Linear or binary search for a number that gives the input number when squared
-- Successive approximation using Newton's or Heron's method
-- Calculating one digit at a time or one bit at a time
+- Linear or binary search for a number that gives the input number when squared.
+- Successive approximation using Newton's or Heron's method.
+- Calculating one digit at a time or one bit at a time.
 
 You can check out the Wikipedia pages on [integer square root][integer-square-root] and [methods of computing square roots][computing-square-roots] to help with choosing a method of calculation.
 
