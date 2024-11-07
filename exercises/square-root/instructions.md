@@ -6,7 +6,7 @@ Your task is to calculate the square root of a given number.
 - As input you’ll be given a positive whole number, i.e. 1, 2, 3, 4…
 - You also only need to output a positive whole number.
 
-Here are some approaches you could use.
+Some potential approaches:
 
 - Linear or binary search for a number that gives the input number when squared.
 - Successive approximation using Newton's or Heron's method.
