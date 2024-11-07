@@ -4,7 +4,7 @@ Your task is to calculate the square root of a given number.
 
 - Try to avoid using the pre-existing math libraries of your language.
 - As input you'll be given a positive whole number, i.e. 1, 2, 3, 4…
-- You also only need to return a positive whole number.
+- You are only required to handle cases where the result is a positive whole number.
 
 Some potential approaches:
 
