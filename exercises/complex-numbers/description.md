@@ -86,10 +86,10 @@ e^(a + b * i) = e^a * e^(b * i) = e^a * (cos(b) + i * sin(b))
 
 Given that you should not use built-in support for complex numbers, implement the following operations:
 
-- **Addition** of two complex numbers.
-- **Subtraction** of two complex numbers.
-- **Multiplication** of two complex numbers.
-- **Division** of two complex numbers.
-- Calculation of the **conjugate** of a complex number.
-- Calculation of the **absolute value** of a complex number.
-- Calculation of the **exponent** of a given complex number.
+- **addition** of two complex numbers
+- **subtraction** of two complex numbers
+- **multiplication** of two complex numbers
+- **division** of two complex numbers
+- **conjugate** of a complex number
+- **absolute value** of a complex number
+- **exponent** of a complex number
