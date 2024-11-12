@@ -1,12 +1,6 @@
 # Description
 
-A **complex number** is expressed in the form:
-
-```math
-z = a + b * i
-```
-
-where:
+A **complex number** is expressed in the form `z = a + b * i`, where:
 
 - `a` is the **real part** (a real number),
 
