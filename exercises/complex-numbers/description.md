@@ -92,4 +92,4 @@ Given that you should not use built-in support for complex numbers, implement th
 - **division** of two complex numbers
 - **conjugate** of a complex number
 - **absolute value** of a complex number
-- **exponent** of a complex number
+- **exponentiation** of the base _e_ (the natural logarithm) to a complex number
