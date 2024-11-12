@@ -56,7 +56,7 @@ The difference of two complex numbers is obtained by subtracting their respectiv
 z₁ - z₂ = (a - c) + (b - d) * i
 ```
 
-### Multiplication 
+### Multiplication
 
 The product of two complex numbers is defined as:
 
