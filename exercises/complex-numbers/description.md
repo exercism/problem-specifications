@@ -64,7 +64,7 @@ z₁ * z₂ = (a + b * i) * (c + d * i) = (a * c - b * d) + (b * c + a * d) * i
 
 The reciprocal of a non-zero complex number is given by:
 
-```math
+```plaintext
 1 / z = 1 / (a + b * i) = a / (a² + b²) - b / (a² + b²) * i
 ```
 
