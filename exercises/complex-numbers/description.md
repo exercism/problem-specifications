@@ -14,7 +14,7 @@ A **complex number** is expressed in the form `z = a + b * i`, where:
 
 The conjugate of the complex number `z = a + b * i` is given by:
 
-```math
+```plaintext
 z̅ = a - b * i
 ```
 
@@ -22,13 +22,13 @@ z̅ = a - b * i
 
 The absolute value (or modulus) of `z` is defined as:
 
-```math
+```plaintext
 |z| = sqrt(a^2 + b^2)
 ```
 
 The square of the absolute value, `|z|²`, can be computed as the product of `z` and its conjugate:
 
-```math
+```plaintext
 |z|² = z * z̅ = a² + b²
 ```
 
@@ -38,7 +38,7 @@ The square of the absolute value, `|z|²`, can be computed as the product of `z`
 
 The sum of two complex numbers `z₁ = a + b * i` and `z₂ = c + d * i` is computed by adding their real and imaginary parts separately:
 
-```math
+```plaintext
 z₁ + z₂ = (a + c) + (b + d) * i
 ```
 
@@ -46,7 +46,7 @@ z₁ + z₂ = (a + c) + (b + d) * i
 
 The difference of two complex numbers is obtained by subtracting their respective parts:
 
-```math
+```plaintext
 z₁ - z₂ = (a - c) + (b - d) * i
 ```
 
@@ -54,7 +54,7 @@ z₁ - z₂ = (a - c) + (b - d) * i
 
 The product of two complex numbers is defined as:
 
-```math
+```plaintext
 z₁ * z₂ = (a + b * i) * (c + d * i) = (a * c - b * d) + (b * c + a * d) * i
 ```
 
@@ -62,23 +62,15 @@ z₁ * z₂ = (a + b * i) * (c + d * i) = (a * c - b * d) + (b * c + a * d) * i
 
 The division of one complex number by another is given by:
 
-```math
+```plaintext
 z₁ / z₂ = (a + b * i) / (c + d * i) = (a * c + b * d) / (c² + d²) + (b * c - a * d) / (c² + d²) * i
-```
-
-### Reciprocal
-
-The reciprocal of a non-zero complex number is given by:
-
-```math
-1 / z = 1 / (a + b * i) = a / (a² + b²) - b / (a² + b²) * i
 ```
 
 ### Exponentiation
 
 Raising _e_ (the base of the natural logarithm) to a complex exponent can be expressed using Euler's formula:
 
-```math
+```plaintext
 e^(a + b * i) = e^a * e^(b * i) = e^a * (cos(b) + i * sin(b))
 ```
 
