@@ -26,6 +26,8 @@ The absolute value (or modulus) of `z` is defined as:
 |z| = sqrt(a^2 + b^2)
 ```
 
+### Sqaure
+
 The square of the absolute value, `|z|²`, can be computed as the product of `z` and its conjugate:
 
 ```plaintext
@@ -58,12 +60,20 @@ The product of two complex numbers is defined as:
 z₁ * z₂ = (a + b * i) * (c + d * i) = (a * c - b * d) + (b * c + a * d) * i
 ```
 
+### Reciprocal
+
+The reciprocal of a non-zero complex number is given by:
+
+```math
+1 / z = 1 / (a + b * i) = a / (a² + b²) - b / (a² + b²) * i
+```
+
 ### Division
 
 The division of one complex number by another is given by:
 
 ```plaintext
-z₁ / z₂ = (a + b * i) / (c + d * i) = (a * c + b * d) / (c² + d²) + (b * c - a * d) / (c² + d²) * i
+z₁ / z₂ = z₁ * (1 / z₂) = (a + b * i) / (c + d * i) = (a * c + b * d) / (c² + d²) + (b * c - a * d) / (c² + d²) * i
 ```
 
 ### Exponentiation
