@@ -8,14 +8,14 @@ A **complex number** is expressed in the form `z = a + b * i`, where:
 
 - `i` is the **imaginary unit** satisfying `i^2 = -1`.
 
-## Key Properties
+## Operations on Complex Numbers
 
 ### Conjugate
 
 The conjugate of the complex number `z = a + b * i` is given by:
 
 ```text
-z̅ = a - b * i
+zc = a - b * i
 ```
 
 ### Absolute Value
@@ -26,20 +26,18 @@ The absolute value (or modulus) of `z` is defined as:
 |z| = sqrt(a^2 + b^2)
 ```
 
-The square of the absolute value, `|z|²`, can be computed as the product of `z` and its conjugate:
+The square of the absolute value is computed as the product of `z` and its conjugate `zc`:
 
 ```text
-|z|² = z * z̅ = a² + b²
+|z|^2 = z * zc = a^2 + b^2
 ```
-
-## Operations on Complex Numbers
 
 ### Addition
 
-The sum of two complex numbers `z₁ = a + b * i` and `z₂ = c + d * i` is computed by adding their real and imaginary parts separately:
+The sum of two complex numbers `z1 = a + b * i` and `z2 = c + d * i` is computed by adding their real and imaginary parts separately:
 
 ```text
-z₁ + z₂ = (a + c) + (b + d) * i
+z1 + z2 = (a + c) + (b + d) * i
 ```
 
 ### Subtraction
@@ -47,7 +45,7 @@ z₁ + z₂ = (a + c) + (b + d) * i
 The difference of two complex numbers is obtained by subtracting their respective parts:
 
 ```text
-z₁ - z₂ = (a - c) + (b - d) * i
+z1 - z2 = (a - c) + (b - d) * i
 ```
 
 ### Multiplication
@@ -55,7 +53,7 @@ z₁ - z₂ = (a - c) + (b - d) * i
 The product of two complex numbers is defined as:
 
 ```text
-z₁ * z₂ = (a + b * i) * (c + d * i) = (a * c - b * d) + (b * c + a * d) * i
+z1 * z2 = (a + b * i) * (c + d * i) = (a * c - b * d) + (b * c + a * d) * i
 ```
 
 ### Reciprocal
@@ -63,7 +61,7 @@ z₁ * z₂ = (a + b * i) * (c + d * i) = (a * c - b * d) + (b * c + a * d) * i
 The reciprocal of a non-zero complex number is given by:
 
 ```text
-1 / z = 1 / (a + b * i) = a / (a² + b²) - b / (a² + b²) * i
+1 / z = 1 / (a + b * i) = a / (a^2 + b^2) - b / (a^2 + b^2) * i
 ```
 
 ### Division
@@ -71,7 +69,7 @@ The reciprocal of a non-zero complex number is given by:
 The division of one complex number by another is given by:
 
 ```text
-z₁ / z₂ = z₁ * (1 / z₂) = (a + b * i) / (c + d * i) = (a * c + b * d) / (c² + d²) + (b * c - a * d) / (c² + d²) * i
+z1 / z2 = z1 * (1 / z2) = (a + b * i) / (c + d * i) = (a * c + b * d) / (c^2 + d^2) + (b * c - a * d) / (c^2 + d^2) * i
 ```
 
 ### Exponentiation
