@@ -37,7 +37,7 @@ The square of the absolute value is computed as the product of `z` and its conju
 The sum of two complex numbers `z1 = a + b * i` and `z2 = c + d * i` is computed by adding their real and imaginary parts separately:
 
 ```text
-z1 + z2 = (a + c) + (b + d) * i
+z1 + z2 = (a + b * i) + (c + d * i) = (a + c) + (b + d) * i
 ```
 
 ### Subtraction
@@ -45,7 +45,7 @@ z1 + z2 = (a + c) + (b + d) * i
 The difference of two complex numbers is obtained by subtracting their respective parts:
 
 ```text
-z1 - z2 = (a - c) + (b - d) * i
+z1 - z2 = (a + b * i) - (c + d * i) = (a - c) + (b - d) * i
 ```
 
 ### Multiplication
