@@ -37,7 +37,7 @@ The square of the absolute value is computed as the product of `z` and its conju
 The sum of two complex numbers `z1 = a + b * i` and `z2 = c + d * i` is computed by adding their real and imaginary parts separately:
 
 ```text
-z1 + z2 = (a + b * i) + (c + d * i) 
+z1 + z2 = (a + b * i) + (c + d * i)
         = (a + c) + (b + d) * i
 ```
 
@@ -46,7 +46,7 @@ z1 + z2 = (a + b * i) + (c + d * i)
 The difference of two complex numbers is obtained by subtracting their respective parts:
 
 ```text
-z1 - z2 = (a + b * i) - (c + d * i) 
+z1 - z2 = (a + b * i) - (c + d * i)
         = (a - c) + (b - d) * i
 ```
 
@@ -55,7 +55,7 @@ z1 - z2 = (a + b * i) - (c + d * i)
 The product of two complex numbers is defined as:
 
 ```text
-z1 * z2 = (a + b * i) * (c + d * i) 
+z1 * z2 = (a + b * i) * (c + d * i)
         = (a * c - b * d) + (b * c + a * d) * i
 ```
 
@@ -64,7 +64,7 @@ z1 * z2 = (a + b * i) * (c + d * i)
 The reciprocal of a non-zero complex number is given by:
 
 ```text
-1 / z = 1 / (a + b * i) 
+1 / z = 1 / (a + b * i)
       = a / (a^2 + b^2) - b / (a^2 + b^2) * i
 ```
 
@@ -73,8 +73,8 @@ The reciprocal of a non-zero complex number is given by:
 The division of one complex number by another is given by:
 
 ```text
-z1 / z2 = z1 * (1 / z2) 
-        = (a + b * i) / (c + d * i) 
+z1 / z2 = z1 * (1 / z2)
+        = (a + b * i) / (c + d * i)
         = (a * c + b * d) / (c^2 + d^2) + (b * c - a * d) / (c^2 + d^2) * i
 ```
 
@@ -83,7 +83,7 @@ z1 / z2 = z1 * (1 / z2)
 Raising _e_ (the base of the natural logarithm) to a complex exponent can be expressed using Euler's formula:
 
 ```text
-e^(a + b * i) = e^a * e^(b * i) 
+e^(a + b * i) = e^a * e^(b * i)
               = e^a * (cos(b) + i * sin(b))
 ```
 
