@@ -38,11 +38,9 @@ The position information encoding is calculated as follows:
 
 4
 
-
 ## Example 2
 
 ![Seven individual nest boxes arranged in a row where only the fourth nest has an egg.](https://assets.exercism.org/images/exercises/eliuds-eggs/example-2-coop.svg)
-
 
 ```text
  _ _ _ _ _ _ _
