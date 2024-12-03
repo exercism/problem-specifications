@@ -1,9 +1,44 @@
 # Description
 
-The diamond kata takes as its input a letter, and outputs it in a diamond shape.
-Given a letter, it prints a diamond starting with 'A', with the supplied letter at the widest point.
+Your objective is to draw out a diamond using letters and spaces.
+
+You're given a letter which signifies the widest point of the diamond.
+Let's look at some examples.
+
+Diamond for letter 'A':
+
+```text
+A
+```
+
+Diamond for letter 'C':
+
+```text
+  A  
+ B B 
+C   C
+ B B 
+  A  
+```
+
+Diamond for letter 'E':
+
+```text
+    A    
+   B B   
+  C   C  
+ D     D 
+E       E
+ D     D 
+  C   C  
+   B B   
+    A    
+```
+
 
 ## Requirements
+
+These are the full requirements:
 
 - The first row contains one 'A'.
 - The last row contains one 'A'.
@@ -16,37 +51,3 @@ Given a letter, it prints a diamond starting with 'A', with the supplied letter 
 - The top half has the letters in ascending order.
 - The bottom half has the letters in descending order.
 - The four corners (containing the spaces) are triangles.
-
-## Examples
-
-In the following examples, spaces are indicated by `·` characters.
-
-Diamond for letter 'A':
-
-```text
-A
-```
-
-Diamond for letter 'C':
-
-```text
-··A··
-·B·B·
-C···C
-·B·B·
-··A··
-```
-
-Diamond for letter 'E':
-
-```text
-····A····
-···B·B···
-··C···C··
-·D·····D·
-E·······E
-·D·····D·
-··C···C··
-···B·B···
-····A····
-```
