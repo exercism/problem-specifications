@@ -50,3 +50,4 @@ These are the full requirements:
 - The diamond is horizontally symmetric.
 - The diamond is vertically symmetric.
 - The four corners (containing the spaces) are triangles.
+
