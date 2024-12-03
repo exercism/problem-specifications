@@ -36,7 +36,6 @@ E       E
     A    
 ```
 
-
 ## Requirements
 
 These are the full requirements:
