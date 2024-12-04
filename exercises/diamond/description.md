@@ -39,6 +39,7 @@ E       E
 ## Requirements
 
 These are the full requirements:
+
 - The diamond has a square shape (width equals height).
 - The letters form a diamond shape.
 - The top half has the letters in ascending order.
