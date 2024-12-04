@@ -36,7 +36,7 @@ E       E
     A    
 ```
 
-## These are the full requirements:
+## These are the full requirements
 
 - The diamond has a square shape (width equals height).
 - The letters form a diamond shape.
