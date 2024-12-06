@@ -7,8 +7,8 @@ It was tied to something called the **Collatz Conjecture**, a puzzle that has ba
 The rules were deceptively simple.
 Pick any positive integer:
 
-* If it's even, divide it by 2.
-* If it's odd, multiply it by 3 and add 1.
+- If it's even, divide it by 2.
+- If it's odd, multiply it by 3 and add 1.
 
 Then, repeat these steps with the result, continuing indefinitely.
 
