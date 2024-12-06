@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Make a chain of dominoes.
 
