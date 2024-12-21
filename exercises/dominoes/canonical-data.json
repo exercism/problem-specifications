@@ -170,6 +170,21 @@
         "dominoes": [[1, 2], [2, 3], [3, 1], [4, 5], [5, 6], [6, 4]]
       },
       "expected": false
+    },
+    {
+      "uuid": "25c9ae19-cfd3-42bd-a7df-c02e512ac82a",
+      "description": "dominoes can only be used either swapped or unswapped",
+      "comments": [
+        "Solutions might just check if any of the numbers of two dominoes match",
+        "and still handle the special case of only one domino being present.",
+        "This is caught by this test since no matter if a domino is swapped or not,",
+        "they are not chainable."
+      ],
+      "property": "canChain",
+      "input": {
+        "dominoes": [[1, 2], [3, 2]]
+      },
+      "expected": false
     }
   ]
 }
