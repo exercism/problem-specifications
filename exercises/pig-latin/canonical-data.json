@@ -150,6 +150,15 @@
           "expected": "erapythay"
         },
         {
+          "uuid": ??,
+          "description": "word with y in the middle",
+          "property": "translate",
+          "input": {
+            "phrase": "mystery"
+          },
+          "expected": "ysterymay"
+        },
+        {
           "uuid": "e0b3ae65-f508-4de3-8999-19c2f8e243e1",
           "description": "word beginning with thr",
           "property": "translate",
