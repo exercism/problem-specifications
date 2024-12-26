@@ -1,6 +1,6 @@
 # Description
 
-Implement a simple shift cipher like Caesar and a more secure substitution cipher.
+Implement a simple shift cipher like Caesar and a more secure substitution cipher, know as the Vigenère Cipher.
 
 ## Step 1
 
@@ -8,10 +8,10 @@ Implement a simple shift cipher like Caesar and a more secure substitution ciphe
 If anyone wishes to decipher these, and get at their meaning, he must substitute the fourth letter of the alphabet, namely D, for A, and so with the others."
 —Suetonius, Life of Julius Caesar
 
-Ciphers are very straight-forward algorithms that allow us to render text less readable while still allowing easy deciphering.
+Shift ciphers are very straight-forward algorithms that allow us to render text less readable while still allowing easy deciphering.
 They are vulnerable to many forms of cryptanalysis, but Caesar was lucky that his enemies were not cryptanalysts.
 
-The Caesar Cipher was used for some messages from Julius Caesar that were sent afield.
+The [Caesar Cipher][cc] was used for some messages from Julius Caesar that were sent afield.
 Now Caesar knew that the cipher wasn't very good, but he had one ally in that respect: almost nobody could read well.
 So even being a couple letters off was sufficient so that people couldn't recognize the few words that they did know.
 
@@ -30,7 +30,7 @@ When "ldpdsdqgdehdu" is put into the decode function it would return the origina
 ## Step 2
 
 Shift ciphers quickly cease to be useful when the opposition commander figures them out.
-So instead, let's try using a substitution cipher.
+So instead, let's try using a substitution cipher: the [Vigènere Cipher][vc].
 Try amending the code to allow us to specify a key and use that for the shift distance.
 
 Here's an example:
@@ -45,6 +45,19 @@ In the example above, we've set a = 0 for the key value.
 So when the plaintext is added to the key, we end up with the same message coming out.
 So "aaaa" is not an ideal key.
 But if we set the key to "dddd", we would get the same thing as the Caesar Cipher.
+
+Things get interesting when the key becomes more complex than a repeating letter. For example:
+
+Given the key "adadadadadadadadad", encoding the string "iamapandabear"
+would return "idmdpdngaeedr".
+
+If the key is shorter than the message, it will be repeated. For example:
+
+Given the key "ad", encoding the string "iamapandabear"
+would return "idmdpdngaeedr" (same as the previous example).
+
+Given the key "lemon", encoding the string "attackatdawn"
+would return "lxfopvefrnhr" (the key has been expanded to "lemonlemonle").
 
 ## Step 3
 
@@ -62,5 +75,7 @@ Later on you'll see one solution to this problem in the exercise "crypto-square"
 If you want to go farther in this field, the questions begin to be about how we can exchange keys in a secure way.
 Take a look at [Diffie-Hellman on Wikipedia][dh] for one of the first implementations of this scheme.
 
+[cc]: https://en.wikipedia.org/wiki/Caesar_cipher
 [img-caesar-cipher]: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Caesar_cipher_left_shift_of_3.svg/320px-Caesar_cipher_left_shift_of_3.svg.png
+[vc]: https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher
 [dh]: https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
