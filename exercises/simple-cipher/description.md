@@ -66,13 +66,16 @@ Let's make your substitution cipher a little more fault tolerant by providing a 
 
 If someone doesn't submit a key at all, generate a truly random key of at least 100 lowercase characters in length.
 
-## Extensions
+## Perspective
 
-Shift ciphers work by making the text slightly odd, but are vulnerable to frequency analysis.
-Substitution ciphers help that, but are still very vulnerable, especially when the key is short or if spaces are preserved.
-Later on you'll see one an improvement in the exercise "crypto-square".
+Shift ciphers work by making the text slightly odd, but are very weak because
+the number of possible keys is way too small. Given a message encrypted with this cipher, you can write a program that prints all 26 possible plaintexts and look at the list to quickly identify the one that looks like English. This could even be automated, for example using a dictionary, or frequency analysis.
 
-However, all of these ciphers are considered toy ciphers by current standards. Modern alternatives include [AES][aes] and [Chacha][chacha].
+Substitution ciphers help that, but are still vulnerable to frequency analysis, especially when the key is short or if spaces are preserved. (Note: the Vigenère Cipher is only one example of a [substitution cipher][sc]; others can be found in exercises "atbash-cipher" and "affine-cipher".)
+
+You can find examples of ciphers based on an different principle, known as [transposition ciphers][tc], in exercises "crypto-square" and "rail-fence-cipher".
+
+All of these ciphers are considered toy ciphers by current standards. However, substitution and transposition (also called permutation) are two building blocks of modern ciphers like [AES][aes].
 
 If you want to go farther in this field, the questions begin to be about how we can exchange keys in a secure way.
 Take a look at [Diffie-Hellman on Wikipedia][dh] for one of the first implementations of this scheme.
@@ -82,7 +85,10 @@ For a solid foundation in modern cryptography, you can check out the [Crypto 101
 [cc]: https://en.wikipedia.org/wiki/Caesar_cipher
 [img-caesar-cipher]: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Caesar_cipher_left_shift_of_3.svg/320px-Caesar_cipher_left_shift_of_3.svg.png
 [vc]: https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher
+
+[sc]: https://en.wikipedia.org/wiki/Substitution_cipher
+[tc]: https://en.wikipedia.org/wiki/Transposition_cipher
 [aes]: https://en.wikipedia.org/wiki/Advanced_Encryption_Standard
-[chacha]: https://en.wikipedia.org/wiki/Salsa20#ChaCha_variant
+
 [dh]: https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
 [c101]: https://cryptography101.ca/crypto101-building-blocks/

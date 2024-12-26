@@ -72,3 +72,17 @@ Finding MMI for `a = 15`:
 
 [mmi]: https://en.wikipedia.org/wiki/Modular_multiplicative_inverse
 [coprime-integers]: https://en.wikipedia.org/wiki/Coprime_integers
+
+## Perspective
+
+While stronger than the atbash cipher, the affine cipher is still weak because the number of possible keys is way too small: 12 possible values for `a` (needs to be coprime to 26), 26 for `b`, so only 312 different keys. Given a ciphertext, you can write a program that prints all 312 possible plaintexts, one per line, and look at the list to quickly identify the line that looks like English. (This could even be automated using a dictionary.)
+
+The affine cipher is an example of a [substitution cipher][sc]; other examples can be found in exercises "simple-cipher", "atbash-cipher", and "rotational-cipher".
+
+You can find examples of ciphers based on an different principle, known as [transposition ciphers][tc], in exercises "crypto-square" and "rail-fence-cipher".
+
+All of these ciphers are considered toy ciphers by current standards. However, substitution and transposition (also called permutation) are two building blocks of modern ciphers like [AES][aes].
+
+[sc]: https://en.wikipedia.org/wiki/Substitution_cipher
+[tc]: https://en.wikipedia.org/wiki/Transposition_cipher
+[aes]: https://en.wikipedia.org/wiki/Advanced_Encryption_Standard

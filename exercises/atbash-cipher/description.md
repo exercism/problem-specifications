@@ -25,3 +25,17 @@ All text will be encoded as lowercase letters.
 - Encoding `x123 yes` gives `c123b vh`
 - Decoding `gvhg` gives `test`
 - Decoding `gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt` gives `thequickbrownfoxjumpsoverthelazydog`
+
+## Perspective
+
+The atbash cipher is weak because there is no secret key: as soon as you know (or guess) that the text has been encrypted with the atbash cipher, you can immediately decrypt it.
+
+The atbash cipher is an example of a [substitution cipher][sc]; other examples can be found in exercises "rotational-cipher", "simple-cipher" and "affine-cipher".
+
+You can find examples of ciphers based on an different principle, known as [transposition ciphers][tc], in exercises "crypto-square" and "rail-fence-cipher".
+
+All of these ciphers are considered toy ciphers by current standards. However, substitution and transposition (also called permutation) are two building blocks of modern ciphers like [AES][aes].
+
+[sc]: https://en.wikipedia.org/wiki/Substitution_cipher
+[tc]: https://en.wikipedia.org/wiki/Transposition_cipher
+[aes]: https://en.wikipedia.org/wiki/Advanced_Encryption_Standard

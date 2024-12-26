@@ -69,3 +69,15 @@ Notice that were we to stack these, we could visually decode the ciphertext back
 "aohghn "
 "sseoau "
 ```
+
+## Perspective
+
+This cipher is weak because there is no secret key: as soon as you know (or guess) that the text has been encrypted with this cipher, you can immediately decrypt it.
+
+It is an example of a [transposition cipher][tc], like the exercise "rail-fence-cipher". Other exercises, like "rotational-cipher", "simple-cipher", "atbash-cipher" and "affine-cipher", are examples of [substitution ciphers][sc].
+
+Substitution and transposition (also called permutation) are two building blocks of modern ciphers such as [AES][aes].
+
+[tc]: https://en.wikipedia.org/wiki/Transposition_cipher
+[sc]: https://en.wikipedia.org/wiki/Substitution_cipher
+[aes]: https://en.wikipedia.org/wiki/Advanced_Encryption_Standard

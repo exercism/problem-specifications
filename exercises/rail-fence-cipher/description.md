@@ -55,3 +55,15 @@ W . . . E . . . C . . . R . . . L . . . T . . . E
 ```
 
 If you now read along the zig-zag shape you can read the original message.
+
+## Perspective
+
+This cipher is weak because set the of possible values for the secret key (the number of rails) is very small (no more than the length of the message). Given a message encrypted with the rail fence cipher, you can write a program that tries all possible numbers of rails and prints out all possible plaintexts, one per line. It is then easy to look at the output and identify the line that looks like English. (This could even be automated, for example using a dictionary.)
+
+The rail fence cipher is an example of a [transposition cipher][tc], like the exercise "crypto-square". Other exercises, like "rotational-cipher", "simple-cipher", "atbash-cipher" and "affine-cipher", are examples of [substitution ciphers][sc].
+
+All of these ciphers are considered toy ciphers by current standards. However, substitution and transposition (also called permutation) are two building blocks of modern ciphers like [AES][aes].
+
+[tc]: https://en.wikipedia.org/wiki/Transposition_cipher
+[sc]: https://en.wikipedia.org/wiki/Substitution_cipher
+[aes]: https://en.wikipedia.org/wiki/Advanced_Encryption_Standard
