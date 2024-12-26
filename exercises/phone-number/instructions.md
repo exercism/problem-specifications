@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Clean up user-entered phone numbers so that they can be sent SMS messages.
 
