@@ -1,6 +1,6 @@
 # Instructions
 
-Given a target word and some candidate words, your task is to find the candidates that are anagrams of the target.
+Given a target word and one or more candidate words, your task is to find the candidates that are anagrams of the target.
 
 An anagram is a rearrangement of letters to form a new word: for example `"owns"` is an anagram of `"snow"`.
 A word is _not_ its own anagram: for example, `"stop"` is not an anagram of `"stop"`.
