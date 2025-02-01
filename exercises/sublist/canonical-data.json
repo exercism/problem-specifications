@@ -11,7 +11,7 @@
     "",
     "If appropriate for your track, you'll need to ensure that no pair of expected values are equal.",
     "Otherwise, an implementation that always returns a constant value may falsely pass the tests.",
-    "See https://github.com/exercism/xpython/issues/342"
+    "See https://github.com/exercism/python/issues/342"
   ],
   "cases": [
     {
