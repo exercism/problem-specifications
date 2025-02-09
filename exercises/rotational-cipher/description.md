@@ -9,7 +9,7 @@ The letter is shifted for as many values as the value of the key.
 The general notation for rotational ciphers is `ROT + <key>`.
 The most commonly used rotational cipher is `ROT13`.
 
-A `ROT13` on the Latin alphabet would be as follows:
+A `ROT13` on the English alphabet would be as follows:
 
 ```text
 Plain:  abcdefghijklmnopqrstuvwxyz
