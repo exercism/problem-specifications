@@ -103,6 +103,15 @@
           "expected": true
         },
         {
+          "uuid": "eca8ae18-e191-4795-836f-c6457e649d80",
+          "description": "two smaller sides are equal",
+          "property": "isosceles",
+          "input": {
+            "sides": [3, 4, 3]
+          },
+          "expected": true
+        },
+        {
           "uuid": "8d71e185-2bd7-4841-b7e1-71689a5491d8",
           "description": "equilateral triangles are also isosceles",
           "property": "isosceles",
