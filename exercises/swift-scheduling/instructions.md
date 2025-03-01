@@ -22,7 +22,7 @@ The following table lists how to translate them:
 | `"NOW"`     | -                            | Two hours after the meeting started |
 | `"ASAP"`    | Before 12:00                 | Today at 17:00                      |
 | `"ASAP"`    | After 12:00                  | Tomorrow at 12:00                   |
-| `"EOW"`     | Monday, Tuesday or Wednesday | Friday at 5:00                      |
+| `"EOW"`     | Monday, Tuesday, or Wednesday | Friday at 5:00                      |
 | `"EOW"`     | Thursday or Friday           | Sunday at 20:00                     |
 
 ## Variable delivery date descriptions
