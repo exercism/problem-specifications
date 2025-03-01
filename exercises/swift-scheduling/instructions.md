@@ -32,9 +32,11 @@ There are two variable delivery date description patterns:
 - `"<N>M"` (N-th month)
 - `"Q<N>"` (N-th quarter)
 
-| Description | Delivery date                                                         |
-| ----------- | --------------------------------------------------------------------- |
-| `"<N>M"`    | At 8:00 on the _first_ workday<sup>1</sup> of this year's N-th month  |
-| `"Q<N>"`    | At 8:00 on the _last_ workday<sup>1</sup> of this year's N-th quarter |
+| Description | Meeting start            | Delivery date                                                         |
+| ----------- | ------------------------ | --------------------------------------------------------------------- |
+| `"<N>M"`    | Before N-th month        | At 8:00 on the _first_ workday<sup>1</sup> of this year's N-th month  |
+| `"<N>M"`    | After or in N-th month   | At 8:00 on the _first_ workday<sup>1</sup> of next year's N-th month  |
+| `"Q<N>"`    | Before N-th quarter      | At 8:00 on the _last_ workday<sup>1</sup> of this year's N-th quarter |
+| `"Q<N>"`    | After or in N-th quarter | At 8:00 on the _last_ workday<sup>1</sup> of next year's N-th quarter |
 
 <sup>1</sup> A workday is a Monday, Tuesday, Wednesday, Thursday, or Friday.
