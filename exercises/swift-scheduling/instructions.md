@@ -15,7 +15,7 @@ There are three fixed delivery date descriptions:
 - `"ASAP"` (As Soon As Possible)
 - `"EOW"` (End Of Week)
 
-The following table lists how to translate them:
+The following table shows how to translate them:
 
 | Description | Meeting start                | Delivery date                       |
 | ----------- | ---------------------------- | ----------------------------------- |
