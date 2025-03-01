@@ -34,7 +34,7 @@ There are two variable delivery date description patterns:
 
 | Description | Delivery date                                                          |
 | ----------- | ---------------------------------------------------------------------- |
-| `"<N>M"`    | At 8:00 on the _first_ work day<sup>1</sup> of this year's N-th month  |
+| `"<N>M"`    | At 8:00 on the _first_ workday<sup>1</sup> of this year's N-th month  |
 | `"Q<N>"`    | At 8:00 on the _last_ work day<sup>1</sup> of this year's N-th quarter |
 
 <sup>1</sup> A workday is a Monday, Tuesday, Wednesday, Thursday, or Friday.
