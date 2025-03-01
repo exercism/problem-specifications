@@ -17,13 +17,13 @@ There are three fixed delivery date descriptions:
 
 The following table shows how to translate them:
 
-| Description | Meeting start                | Delivery date                       |
-| ----------- | ---------------------------- | ----------------------------------- |
-| `"NOW"`     | -                            | Two hours after the meeting started |
-| `"ASAP"`    | Before 12:00                 | Today at 17:00                      |
-| `"ASAP"`    | After 12:00                  | Tomorrow at 12:00                   |
+| Description | Meeting start                 | Delivery date                       |
+| ----------- | ----------------------------- | ----------------------------------- |
+| `"NOW"`     | -                             | Two hours after the meeting started |
+| `"ASAP"`    | Before 12:00                  | Today at 17:00                      |
+| `"ASAP"`    | After 12:00                   | Tomorrow at 12:00                   |
 | `"EOW"`     | Monday, Tuesday, or Wednesday | Friday at 5:00                      |
-| `"EOW"`     | Thursday or Friday           | Sunday at 20:00                     |
+| `"EOW"`     | Thursday or Friday            | Sunday at 20:00                     |
 
 ## Variable delivery date descriptions
 
@@ -32,8 +32,8 @@ There are two variable delivery date description patterns:
 - `"<N>M"` (N-th month)
 - `"Q<N>"` (N-th quarter)
 
-| Description | Delivery date                                                          |
-| ----------- | ---------------------------------------------------------------------- |
+| Description | Delivery date                                                         |
+| ----------- | --------------------------------------------------------------------- |
 | `"<N>M"`    | At 8:00 on the _first_ workday<sup>1</sup> of this year's N-th month  |
 | `"Q<N>"`    | At 8:00 on the _last_ workday<sup>1</sup> of this year's N-th quarter |
 
