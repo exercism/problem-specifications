@@ -13,20 +13,22 @@ Your task is to determine the degree of separation between two individuals in a 
 Given the following family tree:
 
 ```text
-      ┌──────────┐            ┌──────────┐ ┌──────────┐
-      │  Helena  │            │  Helena  │ │   Umar   │
-      └───┬───┬──┘            └─────┬────┘ └─────┬────┘
-      ┌───┘   └───────┐             └──────┬─────┘
+      ┌──────────┐            ┌──────────┐ ┌───────────┐
+      │  Helena  │            │  Helena  │ │  Shusaku  │
+      └───┬───┬──┘            └─────┬────┘ └──────┬────┘
+      ┌───┘   └───────┐             └──────┬──────┘
       ▼               ▼                    ▼
 ┌──────────┐     ┌────────┐          ┌──────────┐
-│   Isla   │     │  Tariq │          │   Kaito  │
+│   Isla   │     │  Tariq │          │   Kevin  │
 └────┬─────┘     └────┬───┘          └──────────┘
      ▼                ▼
-┌─────────┐       ┌───────┐
-│   Uma   │       │ Aditi │
-└─────────┘       └───────┘
+┌─────────┐      ┌────────┐
+│   Uma   │      │ Morphy │
+└─────────┘      └────────┘
 ```
 
 The degree of separation between Tariq and Uma is 3 (Tariq → Helena → Isla → Uma).
-The degree of separation between Isla and Kaito is not defined, as there is no visible relationship in the given data.
+The degree of separation between Isla and [Kevin][six-bacons] is not defined, as there is no visible relationship in the given data.
 The degree of separation between Uma and Isla is 1.
+
+[six-bacons]: https://en.m.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon
