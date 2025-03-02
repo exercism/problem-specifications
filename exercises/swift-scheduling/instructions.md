@@ -40,4 +40,4 @@ There are two variable delivery date description patterns:
 | `"Q<N>"`    | After N-th quarter²        | At 8:00 on the _last_ workday¹ of next year's N-th quarter² |
 
 ¹ A workday is a Monday, Tuesday, Wednesday, Thursday, or Friday.
-² A year has four quarters, each with three months: January + February + March, April + May + June, July + August + September, and October + November + December.
+² A year has four quarters, each with three months: January/February/March, April/May/June, July/August/September, and October/November/December.
