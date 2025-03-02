@@ -21,7 +21,7 @@
     },
     {
       "uuid": "93325e7b-677d-4d96-b017-2582af879dc2",
-      "description": "ASAP before noon translates to today at five in the afternoon",
+      "description": "ASAP before one in the afternoon translates to today at five in the afternoon",
       "property": "deliveryDate",
       "input": {
         "meetingStart": "1999-06-03T09:45:00",
@@ -30,14 +30,24 @@
       "expected": "1999-06-03T17:00:00"
     },
     {
-      "uuid": "6fddc1ea-2fe9-4c60-81f7-9220d2f45537",
-      "description": "ASAP after noon translates to tomorrow at noon",
+      "uuid": "cb4252a3-c4c1-41f6-8b8c-e7269733cef8",
+      "description": "ASAP at one in the afternoon translates to tomorrow at one in the afternoon",
       "property": "deliveryDate",
       "input": {
-        "meetingStart": "2008-12-21T13:30:00",
+        "meetingStart": "2008-12-21T13:00:00",
         "description": "ASAP"
       },
-      "expected": "2008-12-22T12:00:00"
+      "expected": "2008-12-22T13:00:00"
+    },
+    {
+      "uuid": "6fddc1ea-2fe9-4c60-81f7-9220d2f45537",
+      "description": "ASAP after one in the afternoon translates to tomorrow at one in the afternoon",
+      "property": "deliveryDate",
+      "input": {
+        "meetingStart": "2008-12-21T14:50:00",
+        "description": "ASAP"
+      },
+      "expected": "2008-12-22T13:00:00"
     },
     {
       "uuid": "25f46bf9-6d2a-4e95-8edd-f62dd6bc8a6e",
@@ -84,7 +94,7 @@
       "description": "EOW on Friday translates to Sunday at eight in the evening",
       "property": "deliveryDate",
       "input": {
-        "meetingStart": "2022-08-05T12:00:00",
+        "meetingStart": "2022-08-05T14:00:00",
         "description": "EOW"
       },
       "expected": "2022-08-07T20:00:00"

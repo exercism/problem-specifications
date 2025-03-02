@@ -20,8 +20,8 @@ The following table shows how to translate them:
 | Description | Meeting start                 | Delivery date                       |
 | ----------- | ----------------------------- | ----------------------------------- |
 | `"NOW"`     | -                             | Two hours after the meeting started |
-| `"ASAP"`    | Before 12:00                  | Today at 17:00                      |
-| `"ASAP"`    | After 12:00                   | Tomorrow at 12:00                   |
+| `"ASAP"`    | Before 13:00                  | Today at 17:00                      |
+| `"ASAP"`    | After or at 13:00             | Tomorrow at 13:00                   |
 | `"EOW"`     | Monday, Tuesday, or Wednesday | Friday at 17:00                     |
 | `"EOW"`     | Thursday or Friday            | Sunday at 20:00                     |
 
