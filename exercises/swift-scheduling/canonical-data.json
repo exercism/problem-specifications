@@ -74,7 +74,7 @@
       "description": "EOW on Thursday translates to Sunday at eight in the evening",
       "property": "deliveryDate",
       "input": {
-        "meetingStart": "2011-05-19T8:30:00",
+        "meetingStart": "2011-05-19T08:30:00",
         "description": "EOW"
       },
       "expected": "2011-05-22T20:00:00"
