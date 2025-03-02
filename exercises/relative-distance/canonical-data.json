@@ -11,7 +11,7 @@
           "Tomoko": ["Aditi"]
         },
         "personA": "Vera",
-        "personB": "Bob"
+        "personB": "Tomoko"
       },
       "expected": 1
     },
@@ -30,7 +30,7 @@
     },
     {
       "uuid": "8dffa27d-a8ab-496d-80b3-2f21c77648b5",
-      "description": "Two degrees of separation",
+      "description": "Two degrees of separation, grandchild",
       "property": "degreeOfSeparation",
       "input": {
         "familyTree": {
@@ -55,7 +55,7 @@
         "personB": "Kaito"
       },
       "expected": null,
-      "comment": "Some languages may return 0, -1 or similar to indicate no relation"
+      "comments": "Some languages may return 0, -1 or similar to indicate no relation"
     },
     {
       "uuid": "93ffe989-bad2-48c4-878f-3acb1ce2611b",
