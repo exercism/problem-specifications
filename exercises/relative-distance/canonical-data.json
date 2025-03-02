@@ -45,6 +45,9 @@
     {
       "uuid": "34e56ec1-d528-4a42-908e-020a4606ee60",
       "description": "Unrelated individuals",
+      "comments": [
+        "Some languages may return 0, -1 or similar to indicate no relation"
+      ],
       "property": "degreeOfSeparation",
       "input": {
         "familyTree": {
@@ -54,10 +57,7 @@
         "personA": "Priya",
         "personB": "Kaito"
       },
-      "expected": null,
-      "comments": [
-        "Some languages may return 0, -1 or similar to indicate no relation"
-      ]
+      "expected": null
     },
     {
       "uuid": "93ffe989-bad2-48c4-878f-3acb1ce2611b",
