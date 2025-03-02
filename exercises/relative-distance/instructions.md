@@ -14,7 +14,7 @@ Given the following family tree:
 
 ```text
       ┌──────────┐            ┌──────────┐ ┌───────────┐
-      │  Helena  │            │  Helena  │ │  Shusaku  │
+      │  Helena  │            │  Erdős   │ │  Shusaku  │
       └───┬───┬──┘            └─────┬────┘ └──────┬────┘
       ┌───┘   └───────┐             └──────┬──────┘
       ▼               ▼                    ▼
