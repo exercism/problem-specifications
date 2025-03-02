@@ -55,7 +55,9 @@
         "personB": "Kaito"
       },
       "expected": null,
-      "comments": ["Some languages may return 0, -1 or similar to indicate no relation"]
+      "comments": [
+        "Some languages may return 0, -1 or similar to indicate no relation"
+      ]
     },
     {
       "uuid": "93ffe989-bad2-48c4-878f-3acb1ce2611b",
