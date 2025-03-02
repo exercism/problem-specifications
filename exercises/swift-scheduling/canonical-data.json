@@ -137,15 +137,15 @@
         "meetingStart": "2001-04-09T09:00:00",
         "description": "Q4"
       },
-      "expected": "2001-12-28T08:00:00"
+      "expected": "2001-12-31T08:00:00"
     },
     {
       "uuid": "c920886c-44ad-4d34-a156-dc4176186581",
-      "description": "Q3 in the fourth quarter translates to the last workday of the third quarter of this year",
+      "description": "Q3 in the fourth quarter translates to the last workday of the third quarter of next year",
       "property": "deliveryDate",
       "input": {
         "meetingStart": "2022-10-06T11:00:00",
-        "description": "Q4"
+        "description": "Q3"
       },
       "expected": "2023-09-29T08:00:00"
     }
