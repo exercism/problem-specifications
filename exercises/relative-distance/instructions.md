@@ -5,7 +5,7 @@ Your task is to determine the degree of separation between two individuals in a 
 - You will be given an input, with all parent names and their children.
 - Each name is unique, a child _can_ have one or two parents.
 - The degree of separation is defined as the shortest number of connections from one person to another.
-- If two individuals are not connected, return a value that represents "no relation."
+- If two individuals are not connected, return a value that represents "no known relationship."
   Please see the test cases for the actual implementation.
 
 ## Example
