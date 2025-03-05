@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Take a nested array of any depth and return a fully flattened array.
 
