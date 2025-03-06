@@ -10,7 +10,7 @@ To your astonishment, after collecting just 32 birthdays, you've already found a
 Magnanimous, you hand Uncle Ted his £100, but something feels off.
 
 The next day, curiosity gets the better of you.
-A quick web search leads you to the [Birthday Problem][birthday-problem], which reveals that with just 23 people, the probability of a shared birthday exceeds 50%.
+A quick web search leads you to the [birthday paradox][birthday-problem], which reveals that with just 23 people, the probability of a shared birthday exceeds 50%.
 
 Ah. So _that's_ why Uncle Ted was so confident.
 
