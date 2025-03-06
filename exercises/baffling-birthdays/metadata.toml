@@ -1,0 +1,4 @@
+title = "Baffling Birthdays"
+blurb = "Verify the Birthday Problem's probabilities."
+source = "Erik Schierboom"
+source_url = "https://github.com/exercism/problem-specifications/pull/2539"
