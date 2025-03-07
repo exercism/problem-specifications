@@ -4,7 +4,7 @@ Fresh out of graduation, you're throwing a huge party to celebrate with friends 
 Over 70 people have shown up, including your mildly eccentric Uncle Ted.
 
 In one of his usual antics, he bets you £100 that at least two people in the room share the same birthday.
-That sounds ridiculous—there are 365 possible birthdays, so you confidently accept.
+That sounds ridiculous — there are 365 possible birthdays, so you confidently accept.
 
 To your astonishment, after collecting just 32 birthdays, you've already found a match.
 Magnanimous, you hand Uncle Ted his £100, but something feels off.
