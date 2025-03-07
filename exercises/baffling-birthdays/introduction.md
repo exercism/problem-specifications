@@ -10,14 +10,14 @@ To your astonishment, after collecting just 32 birthdays, you've already found a
 Accepting your loss, you hand Uncle Ted his £100, but something feels off.
 
 The next day, curiosity gets the better of you.
-A quick web search leads you to the [Birthday Paradox][birthday-problem], which reveals that with just 23 people, the probability of a shared birthday exceeds 50%.
+A quick web search leads you to the [birthday paradox][birthday-problem], which reveals that with just 23 people, the probability of a shared birthday exceeds 50%.
 
 Ah. So _that's_ why Uncle Ted was so confident.
 
 Determined to turn the tables, you start looking up other paradoxes; next time, _you'll_ be the one making the bets.
 
 ~~~~exercism/note
-The Birthday Paradox is a [veridical paradox][veridical-paradox]: even though it feels wrong, it is actually true.
+The birthday paradox is a [veridical paradox][veridical-paradox]: even though it feels wrong, it is actually true.
 
 [veridical-paradox]: https://en.wikipedia.org/wiki/Paradox#Quine's_classification
 ~~~~

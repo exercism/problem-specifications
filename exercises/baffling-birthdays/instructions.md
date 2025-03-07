@@ -1,6 +1,6 @@
 # Instructions
 
-Your task is to verify the Birthday Paradox's probabilities.
+Your task is to verify the birthday paradox's probabilities.
 
 To do this, you need to:
 
@@ -10,6 +10,6 @@ To do this, you need to:
 - Calculate the probability of at least one match for different group sizes.
 
 ~~~~exercism/caution
-The Birthday Paradox assumes that birthdays are uniformly distributed within a single year.
+The birthday paradox assumes that birthdays are uniformly distributed within a single year.
 While the year should vary between different random birthdate generation calls, all birthdates within a single call must share the same year.
 ~~~~
