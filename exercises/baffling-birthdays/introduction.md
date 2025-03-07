@@ -7,7 +7,7 @@ In one of his usual antics, he bets you £100 that at least two people in the ro
 That sounds ridiculous — there are 365 possible birthdays, so you confidently accept.
 
 To your astonishment, after collecting just 32 birthdays, you've already found a match.
-Magnanimous, you hand Uncle Ted his £100, but something feels off.
+Accepting your loss, you hand Uncle Ted his £100, but something feels off.
 
 The next day, curiosity gets the better of you.
 A quick web search leads you to the [Birthday Paradox][birthday-problem], which reveals that with just 23 people, the probability of a shared birthday exceeds 50%.
