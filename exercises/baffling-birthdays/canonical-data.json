@@ -13,8 +13,8 @@
       "description": "matching birthday for same date",
       "property": "matchingBirthday",
       "input": {
-        "birthday1": "2000-01-01",
-        "birthday2": "2000-01-01"
+        "birthdate1": "2000-01-01",
+        "birthdate2": "2000-01-01"
       },
       "expected": true
     },
@@ -23,8 +23,8 @@
       "description": "matching birthday for same year and month but different day",
       "property": "matchingBirthday",
       "input": {
-        "birthday1": "2012-05-09",
-        "birthday2": "2012-05-17"
+        "birthdate1": "2012-05-09",
+        "birthdate2": "2012-05-17"
       },
       "expected": false
     },
@@ -33,8 +33,8 @@
       "description": "matching birthday for same month and day but different year",
       "property": "matchingBirthday",
       "input": {
-        "birthday1": "1999-10-23",
-        "birthday2": "1988-10-23"
+        "birthdate1": "1999-10-23",
+        "birthdate2": "1988-10-23"
       },
       "expected": true
     },
@@ -43,8 +43,8 @@
       "description": "matching birthday for same year but different month and day",
       "property": "matchingBirthday",
       "input": {
-        "birthday1": "2007-12-19",
-        "birthday2": "2007-04-27"
+        "birthdate1": "2007-12-19",
+        "birthdate2": "2007-04-27"
       },
       "expected": false
     },
@@ -53,24 +53,24 @@
       "description": "matching birthday for different year month and day",
       "property": "matchingBirthday",
       "input": {
-        "birthday1": "1997-08-04",
-        "birthday2": "1963-11-23"
+        "birthdate1": "1997-08-04",
+        "birthdate2": "1963-11-23"
       },
       "expected": false
     },
     {
       "uuid": "70b38cea-d234-4697-b146-7d130cd4ee12",
-      "description": "random birthdays return specified number of birthdays",
+      "description": "random birthdates return specified number of birthdays",
       "scenarios": ["random"],
-      "property": "randomBirthdays",
+      "property": "randomBirthdates",
       "input": {},
       "expected": "length == groupsize"
     },
     {
       "uuid": "d9d5b7d3-5fea-4752-b9c1-3fcd176d1b03",
-      "description": "random birthdays have fixed year per batch",
+      "description": "random birthdates have fixed year per batch",
       "scenarios": ["random"],
-      "property": "randomBirthdays",
+      "property": "randomBirthdates",
       "input": {},
       "expected": {
         "years": {
@@ -80,9 +80,9 @@
     },
     {
       "uuid": "8da69a53-6900-4b63-897d-9f025f149fd2",
-      "description": "random birthdays have random year between batches",
+      "description": "random birthdates have random year between batches",
       "scenarios": ["random"],
-      "property": "randomBirthdays",
+      "property": "randomBirthdates",
       "input": {},
       "expected": {
         "years": {
@@ -92,9 +92,9 @@
     },
     {
       "uuid": "d1074327-f68c-4c8a-b0ff-e3730d0f0521",
-      "description": "random birthdays have random months",
+      "description": "random birthdates have random months",
       "scenarios": ["random"],
-      "property": "randomBirthdays",
+      "property": "randomBirthdates",
       "input": {},
       "expected": {
         "months": {
@@ -104,9 +104,9 @@
     },
     {
       "uuid": "7df706b3-c3f5-471d-9563-23a4d0577940",
-      "description": "random birthdays have random days",
+      "description": "random birthdates have random days",
       "scenarios": ["random"],
-      "property": "randomBirthdays",
+      "property": "randomBirthdates",
       "input": {},
       "expected": {
         "days": {
