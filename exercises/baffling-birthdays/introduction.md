@@ -1,6 +1,6 @@
 # Introduction
 
-Fresh out of graduation, you're throwing a huge party to celebrate with friends and family.
+Fresh out of college, you're throwing a huge party to celebrate with friends and family.
 Over 70 people have shown up, including your mildly eccentric Uncle Ted.
 
 In one of his usual antics, he bets you £100 that at least two people in the room share the same birthday.
