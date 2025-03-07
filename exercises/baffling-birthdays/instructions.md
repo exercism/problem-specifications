@@ -1,6 +1,6 @@
 # Instructions
 
-Your task is to implement a solution that verifies the Birthday Paradox's probabilities.
+Your task is to verify the Birthday Paradox's probabilities.
 
 To do this, you need to:
 
