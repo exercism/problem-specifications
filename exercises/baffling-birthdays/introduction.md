@@ -14,7 +14,7 @@ A quick web search leads you to the [Birthday Paradox][birthday-problem], which 
 
 Ah. So _that's_ why Uncle Ted was so confident.
 
-Determined to turn the tables, you start looking up other paradoxes—next time, _you'll_ be the one making the bets.
+Determined to turn the tables, you start looking up other paradoxes; next time, _you'll_ be the one making the bets.
 
 ~~~~exercism/note
 The Birthday Paradox is a [veridical paradox][veridical-paradox]: even though it feels wrong, it is actually true.
