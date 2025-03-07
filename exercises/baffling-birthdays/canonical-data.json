@@ -170,7 +170,7 @@
       "input": {
         "groupSize": 70
       },
-      "expected": 99.9
+      "expected": 99.915958
     }
   ]
 }
