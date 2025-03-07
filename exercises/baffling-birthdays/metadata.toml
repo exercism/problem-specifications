@@ -1,4 +1,4 @@
 title = "Baffling Birthdays"
-blurb = "Verify the birthday paradox's probabilities."
+blurb = "Estimate the birthday paradox's probabilities."
 source = "Erik Schierboom"
 source_url = "https://github.com/exercism/problem-specifications/pull/2539"

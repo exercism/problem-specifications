@@ -1,6 +1,6 @@
 # Instructions
 
-Your task is to verify the birthday paradox's probabilities.
+Your task is to estimate the birthday paradox's probabilities.
 
 To do this, you need to:
 
