@@ -4,7 +4,7 @@ Your task is to implement a solution that verifies the Birthday Paradox's probab
 
 To do this, you need to:
 
-- Determine if two birthdates match (same month and day).
+- Determine if two birthdates have the same month and day.
 - Generate random birthdates.
 - Check if a set of randomly generated birthdates contains at least one matching pair.
 - Calculate the probability of at least one match for different group sizes.
