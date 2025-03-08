@@ -7,7 +7,7 @@ To do this, you need to:
 - Determine if two birthdates have the same month and day.
 - Generate random birthdates.
 - Check if a collection of randomly generated birthdates contains any two with the same month and day.
-- Estimate the probability of at least one match for different group sizes.
+- Estimate the probability that at least two people in a group share the same birthday (month and day) for different group sizes.
 
 ~~~~exercism/caution
 The birthday paradox assumes that:
