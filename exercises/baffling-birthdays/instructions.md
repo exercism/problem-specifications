@@ -11,8 +11,9 @@ To do this, you need to:
 
 ~~~~exercism/caution
 The birthday paradox assumes that:
-- Birthdays are uniformly distributed within a single year
-- That year has 365 days (no leap years)
 
-While the year should vary between different random birthdate generation calls, all birthdates within a single call _must_ share the same year.
+- There are 365 possible birthdays (no leap years).
+- Each birthday is equally likely (uniform distribution).
+
+Your implementation must follow these assumptions.
 ~~~~
