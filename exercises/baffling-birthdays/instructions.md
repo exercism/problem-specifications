@@ -6,7 +6,7 @@ To do this, you need to:
 
 - Determine if two birthdates have the same month and day.
 - Generate random birthdates.
-- Check if a set of randomly generated birthdates contains at least one matching pair.
+- Check if a collection of randomly generated birthdates contains at least one matching pair.
 - Calculate the probability of at least one match for different group sizes.
 
 ~~~~exercism/caution
