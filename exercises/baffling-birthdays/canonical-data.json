@@ -60,7 +60,7 @@
     },
     {
       "uuid": "70b38cea-d234-4697-b146-7d130cd4ee12",
-      "description": "random birthdates return specified number of birthdays",
+      "description": "random birthdates generates requested number of birthdays",
       "scenarios": ["random"],
       "property": "randomBirthdates",
       "input": {},
@@ -68,31 +68,19 @@
     },
     {
       "uuid": "d9d5b7d3-5fea-4752-b9c1-3fcd176d1b03",
-      "description": "random birthdates have fixed year per batch",
+      "description": "random birthdates have non-leap year",
       "scenarios": ["random"],
       "property": "randomBirthdates",
       "input": {},
       "expected": {
         "years": {
-          "fixed": true
-        }
-      }
-    },
-    {
-      "uuid": "8da69a53-6900-4b63-897d-9f025f149fd2",
-      "description": "random birthdates have random year between batches",
-      "scenarios": ["random"],
-      "property": "randomBirthdates",
-      "input": {},
-      "expected": {
-        "years": {
-          "random": true
+          "leapYear": false
         }
       }
     },
     {
       "uuid": "d1074327-f68c-4c8a-b0ff-e3730d0f0521",
-      "description": "random birthdates have random months",
+      "description": "random birthdates have random month",
       "scenarios": ["random"],
       "property": "randomBirthdates",
       "input": {},
@@ -104,7 +92,7 @@
     },
     {
       "uuid": "7df706b3-c3f5-471d-9563-23a4d0577940",
-      "description": "random birthdates have random days",
+      "description": "random birthdates have random day",
       "scenarios": ["random"],
       "property": "randomBirthdates",
       "input": {},
