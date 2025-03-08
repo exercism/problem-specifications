@@ -34,7 +34,7 @@ We end up with:
 Then sum all digits, and if the sum is evenly divisible by 10, the original number is valid.
 
 ```text
-8+5+6+9+6+1+9+5+0+3+8+3+3+4+3+7 = 80
+8 + 5 + 6 + 9 + 6 + 1 + 9 + 5 + 0 + 3 + 8 + 3 + 3 + 4 + 3 + 7 = 80
 ```
 
 80 is evenly divisible by 10, so number `4539 3195 0343 6467` is valid!
@@ -55,7 +55,7 @@ We end up with:
 Sum the digits:
 
 ```text
-7+2+5+3+2+2+6+2+5+3+1+2+0+5+3+9 = 57
+7 + 2 + 5 + 3 + 2 + 2 + 6 + 2 + 5 + 3 + 1 + 2 + 0 + 5 + 3 + 9 = 57
 ```
 
 57 is not evenly divisible by 10, so number `8273 1232 7352 0569` is not valid!
