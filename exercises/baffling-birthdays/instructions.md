@@ -6,8 +6,13 @@ To do this, you need to:
 
 - Determine if two birthdates have the same month and day.
 - Generate random birthdates.
-- Check if a collection of randomly generated birthdates contains any two with the same month and day.
-- Estimate the probability that at least two people in a group share the same birthday (month and day) for different group sizes.
+- Check if a collection of randomly generated birthdates contains any two with the same birthday.
+- Estimate the probability that at least two people in a group share the same birthday for different group sizes.
+
+~~~~exercism/note
+A birthdate includes the full date of birth (year, month, and day), whereas a birthday refers only to the month and day, which repeat each year.
+Two birthdates with the same month and day correspond to the same birthday.
+~~~~
 
 ~~~~exercism/caution
 The birthday paradox assumes that:
