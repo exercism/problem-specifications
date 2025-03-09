@@ -9,12 +9,12 @@
   ],
   "cases": [
     {
-      "description": "matching birthday",
+      "description": "shared birthday",
       "cases": [
         {
           "uuid": "f7b3eb26-bcfc-4c1e-a2de-af07afc33f45",
           "description": "same year, month, and day",
-          "property": "matchingBirthday",
+          "property": "sharedBirthday",
           "input": {
             "birthdate1": "2000-01-01",
             "birthdate2": "2000-01-01"
@@ -24,7 +24,7 @@
         {
           "uuid": "7193409a-6e16-4bcb-b4cc-9ffe55f79b25",
           "description": "same year and month, but different day",
-          "property": "matchingBirthday",
+          "property": "sharedBirthday",
           "input": {
             "birthdate1": "2012-05-09",
             "birthdate2": "2012-05-17"
@@ -34,7 +34,7 @@
         {
           "uuid": "d04db648-121b-4b72-93e8-d7d2dced4495",
           "description": "same month and day, but different year",
-          "property": "matchingBirthday",
+          "property": "sharedBirthday",
           "input": {
             "birthdate1": "1999-10-23",
             "birthdate2": "1988-10-23"
@@ -44,7 +44,7 @@
         {
           "uuid": "3c8bd0f0-14c6-4d4c-975a-4c636bfdc233",
           "description": "same year, but different month and day",
-          "property": "matchingBirthday",
+          "property": "sharedBirthday",
           "input": {
             "birthdate1": "2007-12-19",
             "birthdate2": "2007-04-27"
@@ -54,7 +54,7 @@
         {
           "uuid": "df5daba6-0879-4480-883c-e855c99cdaa3",
           "description": "different year, month, and day",
-          "property": "matchingBirthday",
+          "property": "sharedBirthday",
           "input": {
             "birthdate1": "1997-08-04",
             "birthdate2": "1963-11-23"
@@ -113,12 +113,12 @@
       ]
     },
     {
-      "description": "has shared birthdays",
+      "description": "contains shared birthdays",
       "cases": [
         {
           "uuid": "ade37c87-f41d-4929-962a-286b4d1d048a",
-          "description": "with match",
-          "property": "hasSharedBirthday",
+          "description": "with shared birthday",
+          "property": "containsSharedBirthday",
           "input": {
             "birthdates": ["1970-01-19", "1975-06-03", "2003-01-19"]
           },
@@ -126,8 +126,8 @@
         },
         {
           "uuid": "1d155b33-c6e1-46b9-81fa-09123ae378ea",
-          "description": "without match",
-          "property": "hasSharedBirthday",
+          "description": "without shared birthday",
+          "property": "containsSharedBirthday",
           "input": {
             "birthdates": ["1984-04-05", "2000-09-17", "1966-10-12"]
           },

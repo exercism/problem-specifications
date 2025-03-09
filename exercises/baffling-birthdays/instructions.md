@@ -6,7 +6,7 @@ To do this, you need to:
 
 - Determine if two birthdates have the same month and day.
 - Generate random birthdates.
-- Check if a collection of randomly generated birthdates contains any two with the same birthday.
+- Check if a collection of randomly generated birthdates contains at least two with the same birthday.
 - Estimate the probability that at least two people in a group share the same birthday for different group sizes.
 
 ~~~~exercism/note
