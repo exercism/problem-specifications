@@ -9,156 +9,176 @@
   ],
   "cases": [
     {
-      "uuid": "f7b3eb26-bcfc-4c1e-a2de-af07afc33f45",
-      "description": "matching birthday for same date",
-      "property": "matchingBirthday",
-      "input": {
-        "birthdate1": "2000-01-01",
-        "birthdate2": "2000-01-01"
-      },
-      "expected": true
-    },
-    {
-      "uuid": "7193409a-6e16-4bcb-b4cc-9ffe55f79b25",
-      "description": "matching birthday for same year and month but different day",
-      "property": "matchingBirthday",
-      "input": {
-        "birthdate1": "2012-05-09",
-        "birthdate2": "2012-05-17"
-      },
-      "expected": false
-    },
-    {
-      "uuid": "d04db648-121b-4b72-93e8-d7d2dced4495",
-      "description": "matching birthday for same month and day but different year",
-      "property": "matchingBirthday",
-      "input": {
-        "birthdate1": "1999-10-23",
-        "birthdate2": "1988-10-23"
-      },
-      "expected": true
-    },
-    {
-      "uuid": "3c8bd0f0-14c6-4d4c-975a-4c636bfdc233",
-      "description": "matching birthday for same year but different month and day",
-      "property": "matchingBirthday",
-      "input": {
-        "birthdate1": "2007-12-19",
-        "birthdate2": "2007-04-27"
-      },
-      "expected": false
-    },
-    {
-      "uuid": "df5daba6-0879-4480-883c-e855c99cdaa3",
-      "description": "matching birthday for different year, month and day",
-      "property": "matchingBirthday",
-      "input": {
-        "birthdate1": "1997-08-04",
-        "birthdate2": "1963-11-23"
-      },
-      "expected": false
-    },
-    {
-      "uuid": "70b38cea-d234-4697-b146-7d130cd4ee12",
-      "description": "random birthdates generates requested number of birthdays",
-      "scenarios": ["random"],
-      "property": "randomBirthdates",
-      "input": {},
-      "expected": "length == groupsize"
-    },
-    {
-      "uuid": "d9d5b7d3-5fea-4752-b9c1-3fcd176d1b03",
-      "description": "random birthdates have non-leap year",
-      "scenarios": ["random"],
-      "property": "randomBirthdates",
-      "input": {},
-      "expected": {
-        "years": {
-          "leapYear": false
+      "description": "matching birthday",
+      "cases": [
+        {
+          "uuid": "f7b3eb26-bcfc-4c1e-a2de-af07afc33f45",
+          "description": "same year, month, and day",
+          "property": "matchingBirthday",
+          "input": {
+            "birthdate1": "2000-01-01",
+            "birthdate2": "2000-01-01"
+          },
+          "expected": true
+        },
+        {
+          "uuid": "7193409a-6e16-4bcb-b4cc-9ffe55f79b25",
+          "description": "same year and month, but different day",
+          "property": "matchingBirthday",
+          "input": {
+            "birthdate1": "2012-05-09",
+            "birthdate2": "2012-05-17"
+          },
+          "expected": false
+        },
+        {
+          "uuid": "d04db648-121b-4b72-93e8-d7d2dced4495",
+          "description": "same month and day, but different year",
+          "property": "matchingBirthday",
+          "input": {
+            "birthdate1": "1999-10-23",
+            "birthdate2": "1988-10-23"
+          },
+          "expected": true
+        },
+        {
+          "uuid": "3c8bd0f0-14c6-4d4c-975a-4c636bfdc233",
+          "description": "same year, but different month and day",
+          "property": "matchingBirthday",
+          "input": {
+            "birthdate1": "2007-12-19",
+            "birthdate2": "2007-04-27"
+          },
+          "expected": false
+        },
+        {
+          "uuid": "df5daba6-0879-4480-883c-e855c99cdaa3",
+          "description": "different year, month, and day",
+          "property": "matchingBirthday",
+          "input": {
+            "birthdate1": "1997-08-04",
+            "birthdate2": "1963-11-23"
+          },
+          "expected": false
         }
-      }
+      ]
     },
     {
-      "uuid": "d1074327-f68c-4c8a-b0ff-e3730d0f0521",
-      "description": "random birthdates have random month",
-      "scenarios": ["random"],
-      "property": "randomBirthdates",
-      "input": {},
-      "expected": {
-        "months": {
-          "random": true
+      "description": "random birthdates",
+      "cases": [
+        {
+          "uuid": "70b38cea-d234-4697-b146-7d130cd4ee12",
+          "description": "generate requested number of birthdates",
+          "scenarios": ["random"],
+          "property": "randomBirthdates",
+          "input": {},
+          "expected": "length == groupsize"
+        },
+        {
+          "uuid": "d9d5b7d3-5fea-4752-b9c1-3fcd176d1b03",
+          "description": "years are not leap years",
+          "scenarios": ["random"],
+          "property": "randomBirthdates",
+          "input": {},
+          "expected": {
+            "years": {
+              "leapYear": false
+            }
+          }
+        },
+        {
+          "uuid": "d1074327-f68c-4c8a-b0ff-e3730d0f0521",
+          "description": "months are random",
+          "scenarios": ["random"],
+          "property": "randomBirthdates",
+          "input": {},
+          "expected": {
+            "months": {
+              "random": true
+            }
+          }
+        },
+        {
+          "uuid": "7df706b3-c3f5-471d-9563-23a4d0577940",
+          "description": "days are random",
+          "scenarios": ["random"],
+          "property": "randomBirthdates",
+          "input": {},
+          "expected": {
+            "days": {
+              "random": true
+            }
+          }
         }
-      }
+      ]
     },
     {
-      "uuid": "7df706b3-c3f5-471d-9563-23a4d0577940",
-      "description": "random birthdates have random day",
-      "scenarios": ["random"],
-      "property": "randomBirthdates",
-      "input": {},
-      "expected": {
-        "days": {
-          "random": true
+      "description": "has shared birthdays",
+      "cases": [
+        {
+          "uuid": "ade37c87-f41d-4929-962a-286b4d1d048a",
+          "description": "with match",
+          "property": "hasSharedBirthday",
+          "input": {
+            "birthdates": ["1970-01-19", "1975-06-03", "2003-01-19"]
+          },
+          "expected": true
+        },
+        {
+          "uuid": "1d155b33-c6e1-46b9-81fa-09123ae378ea",
+          "description": "without match",
+          "property": "hasSharedBirthday",
+          "input": {
+            "birthdates": ["1984-04-05", "2000-09-17", "1966-10-12"]
+          },
+          "expected": false
         }
-      }
+      ]
     },
     {
-      "uuid": "ade37c87-f41d-4929-962a-286b4d1d048a",
-      "description": "has matching birthdays with matching birthday pair",
-      "property": "hasMatchingBirthdays",
-      "input": {
-        "birthdates": ["1970-01-19", "1975-06-03", "2003-01-19"]
-      },
-      "expected": true
-    },
-    {
-      "uuid": "1d155b33-c6e1-46b9-81fa-09123ae378ea",
-      "description": "has matching birthdays without matching birthday pair",
-      "property": "hasMatchingBirthdays",
-      "input": {
-        "birthdates": ["1984-04-05", "2000-09-17", "1966-10-12"]
-      },
-      "expected": false
-    },
-    {
-      "uuid": "89a462a4-4265-4912-9506-fb027913f221",
-      "description": "probability for matching birthday pair for one person",
-      "scenarios": ["random"],
-      "property": "probabilityForMatchingBirthdays",
-      "input": {
-        "groupSize": 1
-      },
-      "expected": 0.0
-    },
-    {
-      "uuid": "ec31c787-0ebb-4548-970c-5dcb4eadfb5f",
-      "description": "probability for matching birthday pair for ten people",
-      "scenarios": ["random"],
-      "property": "probabilityForMatchingBirthdays",
-      "input": {
-        "groupSize": 10
-      },
-      "expected": 11.694818
-    },
-    {
-      "uuid": "b548afac-a451-46a3-9bb0-cb1f60c48e2f",
-      "description": "probability for matching birthday pair for twenty-three people",
-      "scenarios": ["random"],
-      "property": "probabilityForMatchingBirthdays",
-      "input": {
-        "groupSize": 23
-      },
-      "expected": 50.729723
-    },
-    {
-      "uuid": "e43e6b9d-d77b-4f6c-a960-0fc0129a0bc5",
-      "description": "probability for matching birthday pair for seventy people",
-      "scenarios": ["random"],
-      "property": "probabilityForMatchingBirthdays",
-      "input": {
-        "groupSize": 70
-      },
-      "expected": 99.915958
+      "description": "probability of at least one shared birthday",
+      "cases": [
+        {
+          "uuid": "89a462a4-4265-4912-9506-fb027913f221",
+          "description": "for one person",
+          "scenarios": ["random"],
+          "property": "probabilityForSharedBirthday",
+          "input": {
+            "groupSize": 1
+          },
+          "expected": 0.0
+        },
+        {
+          "uuid": "ec31c787-0ebb-4548-970c-5dcb4eadfb5f",
+          "description": "among ten people",
+          "scenarios": ["random"],
+          "property": "probabilityForSharedBirthday",
+          "input": {
+            "groupSize": 10
+          },
+          "expected": 11.694818
+        },
+        {
+          "uuid": "b548afac-a451-46a3-9bb0-cb1f60c48e2f",
+          "description": "among twenty-three people",
+          "scenarios": ["random"],
+          "property": "probabilityForSharedBirthday",
+          "input": {
+            "groupSize": 23
+          },
+          "expected": 50.729723
+        },
+        {
+          "uuid": "e43e6b9d-d77b-4f6c-a960-0fc0129a0bc5",
+          "description": "among seventy people",
+          "scenarios": ["random"],
+          "property": "probabilityForSharedBirthday",
+          "input": {
+            "groupSize": 70
+          },
+          "expected": 99.915958
+        }
+      ]
     }
   ]
 }
