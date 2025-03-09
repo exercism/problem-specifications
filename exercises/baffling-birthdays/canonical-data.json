@@ -116,7 +116,7 @@
       "description": "has matching birthdays without matching birthday pair",
       "property": "hasMatchingBirthdays",
       "input": {
-        "birthdays": ["1984-04-05", "2000-09-17", "1966-10-12"]
+        "birthdates": ["1984-04-05", "2000-09-17", "1966-10-12"]
       },
       "expected": false
     },
