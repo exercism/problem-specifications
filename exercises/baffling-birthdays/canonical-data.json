@@ -107,7 +107,7 @@
       "description": "has matching birthdays with matching birthday pair",
       "property": "hasMatchingBirthdays",
       "input": {
-        "birthdays": ["1970-01-19", "1975-06-03", "2003-01-19"]
+        "birthdates": ["1970-01-19", "1975-06-03", "2003-01-19"]
       },
       "expected": true
     },
