@@ -20,7 +20,6 @@
           },
           "expected": false
         },
-        ,
         {
           "uuid": "f7b3eb26-bcfc-4c1e-a2de-af07afc33f45",
           "description": "two birthdates with same year, month, and day",
