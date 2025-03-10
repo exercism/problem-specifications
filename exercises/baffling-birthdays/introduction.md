@@ -3,7 +3,7 @@
 Fresh out of college, you're throwing a huge party to celebrate with friends and family.
 Over 70 people have shown up, including your mildly eccentric Uncle Ted.
 
-In one of his usual antics, he bets you £100 that at least two people in the room share their birthdays.
+In one of his usual antics, he bets you £100 that at least two people in the room share the same birthday.
 That sounds ridiculous — there are many more possible birthdays than there are guests, so you confidently accept.
 
 To your astonishment, after collecting the birthdays of just 32 guests, you've already found two guests that share the same birthday.
