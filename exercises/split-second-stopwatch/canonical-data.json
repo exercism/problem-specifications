@@ -1,0 +1,23 @@
+{
+  "exercise": "split-second-stopwatch",
+  "comments": ["Times are formatted as 'HH:mm:ss'."],
+  "cases": [
+    {
+      "uuid": "2ee1d339-e02a-4496-9fac-a5a00716f16d",
+      "description": "one birthdate",
+      "property": "time",
+      "input": {
+        "commands": [
+          {
+            "type": "new"
+          },
+          {
+            "type": "stop",
+            "time": "12:00:01"
+          }
+        ]
+      },
+      "expected": {}
+    }
+  ]
+}
