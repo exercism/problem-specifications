@@ -1,0 +1,194 @@
+{
+  "exercise": "split-second-stopwatch",
+  "comments": ["Times are formatted as 'HH:mm:ss'."],
+  "cases": [
+    {
+      "description": "new stopwatch",
+      "cases": [
+        {
+          "uuid": "ddb238ea-99d4-4eaa-a81d-3c917a525a23",
+          "description": "starts in ready state",
+          "property": "time",
+          "input": {
+            "commands": [
+              {
+                "command": "new"
+              },
+              {
+                "command": "state",
+                "expected": "ready"
+              }
+            ]
+          },
+          "expected": {}
+        },
+        {
+          "uuid": "8a892c1e-9ef7-4690-894e-e155a1fe4484",
+          "description": "new stopwatch does not have previous laps",
+          "property": "time",
+          "input": {
+            "commands": [
+              {
+                "command": "new"
+              },
+              {
+                "command": "previousLaps",
+                "expected": []
+              }
+            ]
+          },
+          "expected": {}
+        },
+        {
+          "uuid": "b19635d4-08ad-4ac3-b87f-aca10e844071",
+          "description": "current lap has no elapsed time",
+          "property": "time",
+          "input": {
+            "commands": [
+              {
+                "command": "new"
+              },
+              {
+                "command": "currentLap",
+                "expected": "00:00:00"
+              }
+            ]
+          },
+          "expected": {}
+        },
+        {
+          "uuid": "492eb532-268d-43ea-8a19-2a032067d335",
+          "description": "total has no time elapsed",
+          "property": "time",
+          "input": {
+            "commands": [
+              {
+                "command": "new"
+              },
+              {
+                "command": "total",
+                "expected": "00:00:00"
+              }
+            ]
+          },
+          "expected": {}
+        }
+      ]
+    },
+    {
+      "description": "start",
+      "cases": [
+        {
+          "uuid": "5b2705b6-a584-4042-ba3a-4ab8d0ab0281",
+          "description": "changes state to running",
+          "property": "time",
+          "input": {
+            "commands": [
+              {
+                "command": "new"
+              },
+              {
+                "command": "start"
+              },
+              {
+                "command": "state",
+                "expected": "running"
+              }
+            ]
+          },
+          "expected": {}
+        },
+        {
+          "uuid": "748235ce-1109-440b-9898-0a431ea179b6",
+          "description": "does not change previous laps",
+          "property": "time",
+          "input": {
+            "commands": [
+              {
+                "command": "new"
+              },
+              {
+                "command": "start"
+              },
+              {
+                "command": "previousLaps",
+                "expected": []
+              }
+            ]
+          },
+          "expected": {}
+        },
+        {
+          "uuid": "491487b1-593d-423e-a075-aa78d449ff1f",
+          "description": "starts time tracking in current lap",
+          "property": "time",
+          "input": {
+            "commands": [
+              {
+                "command": "new"
+              },
+              {
+                "command": "start"
+              },
+              {
+                "command": "advanceTime",
+                "seconds": 5
+              },
+              {
+                "command": "currentLap",
+                "expected": "00:00:05"
+              }
+            ]
+          },
+          "expected": {}
+        },
+        {
+          "uuid": "a0a7ba2c-8db6-412c-b1b6-cb890e9b72ed",
+          "description": "starts time tracking in total",
+          "property": "time",
+          "input": {
+            "commands": [
+              {
+                "command": "new"
+              },
+              {
+                "command": "start"
+              },
+              {
+                "command": "advanceTime",
+                "seconds": 23
+              },
+              {
+                "command": "total",
+                "expected": "00:00:23"
+              }
+            ]
+          },
+          "expected": {}
+        },
+        {
+          "uuid": "7f558a17-ef6d-4a5b-803a-f313af7c41d3",
+          "description": "cannot be called from running state",
+          "property": "time",
+          "input": {
+            "commands": [
+              {
+                "command": "new"
+              },
+              {
+                "command": "start"
+              },
+              {
+                "command": "start",
+                "expected": {
+                  "error": "cannot start an already running stopwatch"
+                }
+              }
+            ]
+          },
+          "expected": {}
+        }
+      ]
+    }
+  ]
+}
