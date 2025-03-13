@@ -121,7 +121,7 @@
         "personA": "Dimitri",
         "personB": "Fabio"
       },
-      "expected": 4
+      "expected": 9
     },
     {
       "uuid": "2cc2e76b-013a-433c-9486-1dbe29bf06e5",
@@ -185,25 +185,24 @@
         "personA": "Lucia",
         "personB": "Jun"
       },
-      "expected": 15
+      "expected": 14
     },
     {
       "uuid": "46c9fbcb-e464-455f-a718-049ea3c7400a",
-      "description": "Complex graph, some shortcuts, cross-down and cross-up, cousins three times removed",
+      "description": "Complex graph, some shortcuts, cross-down and cross-up, cousins several times removed, with unrealted family tree",
       "property": "degreeOfSeparation",
       "input": {
         "familyTree": {
           "Aiko": ["Bao", "Carlos"],
-          "Bao": ["Dalia", "Elias"],
+          "Bao": ["Dalia"],
           "Carlos": ["Fatima", "Gustavo"],
           "Dalia": ["Hassan", "Isla"],
-          "Elias": ["Javier"],
           "Fatima": ["Khadija", "Liam"],
           "Gustavo": ["Mina"],
           "Hassan": ["Noah", "Olga"],
           "Isla": ["Pedro"],
           "Javier": ["Quynh", "Ravi"],
-          "Khadija": ["Viktor"],
+          "Khadija": ["Sofia"],
           "Liam": ["Tariq", "Uma"],
           "Mina": ["Viktor", "Wang"],
           "Noah": ["Xiomara"],
@@ -246,10 +245,10 @@
           "Yassin": ["Lucia"],
           "Zara": ["Mohammed"]
         },
-        "personA": "Tomoko",
-        "personB": "Qi"
+        "personA": "Wyatt",
+        "personB": "Xia"
       },
-      "expected": 8
+      "expected": 12
     }
   ]
 }
