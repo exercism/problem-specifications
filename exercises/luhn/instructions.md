@@ -17,7 +17,6 @@ All other non-digit characters are disallowed.
 ```
 
 The first step of the Luhn algorithm is to double every second digit, starting from the rightmost (last) digit of the number and moving left.
-We will be doubling:
 
 ```text
 4539 3195 0343 6467
@@ -39,25 +38,32 @@ Then sum all digits, and if the sum is evenly divisible by 10, the original numb
 
 80 is evenly divisible by 10, so number `4539 3195 0343 6467` is valid!
 
-### Example 2: invalid credit card number
+### Example 2: invalid Canadian SIN
 
 ```text
-8273 1232 7352 0569
+066 123 468
 ```
 
-Double every second digit, and subtract 9 if the doubled digit exceeds 9.
+Double every second digit starting from the rightmost (last) digit of the number and moving left.
+
+```text
+066 123 478
+ ↑  ↑ ↑  ↑  (double these)
+```
+
+If the result of doubling a digit is greater than 9, subtract 9 from that result.
 We end up with:
 
 ```text
-7253 2262 5312 0539
+036 226 458
 ```
 
 Sum the digits:
 
 ```text
-7 + 2 + 5 + 3 + 2 + 2 + 6 + 2 + 5 + 3 + 1 + 2 + 0 + 5 + 3 + 9 = 57
+0 + 3 + 6 + 2 + 2 + 6 + 4 + 5 + 8 = 36
 ```
 
-57 is not evenly divisible by 10, so number `8273 1232 7352 0569` is not valid!
+36 is not evenly divisible by 10, so number `066 123 478` is not valid!
 
 [luhn]: https://en.wikipedia.org/wiki/Luhn_algorithm
