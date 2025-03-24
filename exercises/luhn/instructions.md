@@ -10,7 +10,9 @@ Strings of length 1 or less are not valid.
 Spaces are allowed in the input, but they should be stripped before checking.
 All other non-digit characters are disallowed.
 
-### Example 1: valid credit card number
+## Examples
+
+### Valid credit card number
 
 ```text
 4539 3195 0343 6467
@@ -38,7 +40,7 @@ Then sum all digits, and if the sum is evenly divisible by 10, the original numb
 
 80 is evenly divisible by 10, so number `4539 3195 0343 6467` is valid!
 
-### Example 2: invalid Canadian SIN
+### Invalid Canadian SIN
 
 ```text
 066 123 468
