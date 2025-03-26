@@ -31,4 +31,10 @@ The degree of separation between Tariq and Uma is 3 (Tariq → Helena → Isla �
 There's no known relationship between Isla and [Kevin][six-bacons], as there is no connection in the given data.
 The degree of separation between Uma and Isla is 1.
 
+~~~~exercism/note
+Isla and Tariq are siblings and have a separation of 1.
+For a genetic relationship analysis, you wouldn't be related to the person that married the brother of your father.
+This implementation would report a relationship distance of 2 from you to that person.
+~~~~
+
 [six-bacons]: https://en.m.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon

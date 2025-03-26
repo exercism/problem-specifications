@@ -189,7 +189,7 @@
     },
     {
       "uuid": "46c9fbcb-e464-455f-a718-049ea3c7400a",
-      "description": "Complex graph, some shortcuts, cross-down and cross-up, cousins several times removed, with unrealted family tree",
+      "description": "Complex graph, some shortcuts, cross-down and cross-up, cousins several times removed, with unrelated family tree",
       "property": "degreeOfSeparation",
       "input": {
         "familyTree": {
