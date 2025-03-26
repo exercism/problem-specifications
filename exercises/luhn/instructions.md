@@ -30,7 +30,8 @@ We end up with:
 8569 6195 0383 3437
 ```
 
-Finally, we sum all digits, and if the sum is evenly divisible by 10, the original number is valid.
+Finally, we sum all digits.
+If the sum is evenly divisible by 10, the original number is valid.
 
 ```text
 8 + 5 + 6 + 9 + 6 + 1 + 9 + 5 + 0 + 3 + 8 + 3 + 3 + 4 + 3 + 7 = 80
