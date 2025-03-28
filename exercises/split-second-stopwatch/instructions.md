@@ -8,4 +8,4 @@ The stopwatch has the following functionality:
 - Current lap: the time tracked for the current lap
 - Previous laps: the times of all previously recorded laps
 - Reset: reset the current lap and clear previous laps
-- Lap: add the current lap to the previous laps and reset the current lap
+- Lap: add the current lap time to the previous laps and start a new lap
