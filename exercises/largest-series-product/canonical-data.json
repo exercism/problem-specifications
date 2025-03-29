@@ -114,6 +114,19 @@
       }
     },
     {
+      "uuid": "0ae1ce53-d9ba-41bb-827f-2fceb64f058b",
+      "reimplements": "5d81aaf7-4f67-4125-bf33-11493cc7eab7",
+      "description": "rejects span longer than string length",
+      "property": "largestProduct",
+      "input": {
+        "digits": "123",
+        "span": 4
+      },
+      "expected": {
+        "error": "span must not exceed string length"
+      }
+    },
+    {
       "uuid": "06bc8b90-0c51-4c54-ac22-3ec3893a079e",
       "description": "reports 1 for empty string and empty product (0 span)",
       "comments": [
@@ -161,6 +174,19 @@
       },
       "expected": {
         "error": "span must be smaller than string length"
+      }
+    },
+    {
+      "uuid": "6cf66098-a6af-4223-aab1-26aeeefc7402",
+      "reimplements": "6d96c691-4374-4404-80ee-2ea8f3613dd4",
+      "description": "rejects empty string and nonzero span",
+      "property": "largestProduct",
+      "input": {
+        "digits": "",
+        "span": 1
+      },
+      "expected": {
+        "error": "span must not exceed string length"
       }
     },
     {
