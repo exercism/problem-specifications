@@ -6,7 +6,7 @@
       "description": "calculate transmit sequences",
       "cases": [
         {
-          "uuid": "0d570e11-16a6-4dc7-8dc6-bad417ecb81",
+          "uuid": "f99d4046-b429-4582-9324-f0bcac7ab51c",
           "description": "empty message",
           "property": "transmitSequence",
           "input": {
