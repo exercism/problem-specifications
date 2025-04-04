@@ -1,6 +1,6 @@
 # Introduction
 
-Trillions upon trillions of messages zip between Earth and neighboring galaxies every millisecond. 
+Trillions upon trillions of messages zip between Earth and neighboring galaxies every millisecond.
 But transmitting over such long distances is tricky.
 Pesky solar flares, temporal distortions, stray forces, and even the flap of a space butterfly's wing can cause a random bit to change during transmission.
 
@@ -10,7 +10,7 @@ Now imagine the consequences:
 - Losing contact with the Kepler Whirl system when "save new worm hole" becomes "cave new worm hole".
 - Or plunging the universe into existential horror by replacing a cowboy emoji 🤠 with a clown emoji 🤡.
 
-Detecting corrupted messages isn’t just important — it’s critical. 
+Detecting corrupted messages isn’t just important — it’s critical.
 The receiver must know when something has gone wrong before disaster strikes.
 
 But how?
