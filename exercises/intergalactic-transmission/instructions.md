@@ -1,9 +1,9 @@
 # Instructions
 
 A parity bit is simple way of detecting transmission errors.
-The transmitters and receives can only transmit and receive *exactly* eight bits at a time (including the parity bit).
-The parity bit is set so that there is an *even* number 1s in each transmission and is always the first bit from the right.
-So if the receiver receives `11000001`, `01110101` or  `01000000` (i.e. a transmission with an odd number of 1 bits), it knows there is an error.
+The transmitters and receives can only transmit and receive _exactly_ eight bits at a time (including the parity bit).
+The parity bit is set so that there is an _even_ number 1s in each transmission and is always the first bit from the right.
+So if the receiver receives `11000001`, `01110101` or `01000000` (i.e. a transmission with an odd number of 1 bits), it knows there is an error.
 
 However, messages are rarely this short.
 The message needs to be transmitted in a sequence when they are longer.
@@ -29,7 +29,7 @@ The data in the first transmission in the sequence (`1100000`) has two 1 bits (a
 The first transmission becomes `11000000` (or `C0` in hex).
 
 The data in the next transmission (`0000000`) has none (an even number again), so the parity bit is 0 again.
-The second transmission becomes  `00000000` (or `00` in hex).
+The second transmission becomes `00000000` (or `00` in hex).
 
 The data for the next two transmissions (`0111000` and `0001101`) have three 1 bits.
 Their parity bits are set to 1 so that they have an even number of 1 bits in the transmission.
