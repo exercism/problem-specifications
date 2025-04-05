@@ -1,6 +1,10 @@
 {
   "exercise": "split-second-stopwatch",
-  "comments": ["Times are formatted as 'HH:mm:ss'."],
+  "comments": [
+    "Times are formatted in '<hours>:<minutes>:<seconds>' format.",
+    "The components (hours, minutes, and seconds) use exactly two digits.",
+    "Thus 4 hours, 23 minutes, and 6 seconds is represented as '04:23:06'."
+  ],
   "cases": [
     {
       "description": "new stopwatch",
