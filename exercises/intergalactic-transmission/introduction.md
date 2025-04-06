@@ -10,8 +10,8 @@ Now imagine the consequences:
 - Losing contact with the Kepler Whirl system when "save new worm hole" becomes "cave new worm hole".
 - Or plunging the universe into existential horror by replacing a cowboy emoji 🤠 with a clown emoji 🤡.
 
-Detecting corrupted messages isn’t just important — it’s critical.
-The receiver must know when something has gone wrong before disaster strikes.
+Detecting corrupted messages isn’t just important — it's critical.
+The receiver _must_ know when something has gone wrong before disaster strikes.
 
 But how?
 Scientists and engineers from across the universe have been battling this problem for eons.
