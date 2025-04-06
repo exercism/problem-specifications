@@ -193,6 +193,139 @@
           "expected": {}
         }
       ]
+    },
+
+    {
+      "description": "stop",
+      "cases": [
+        {
+          "uuid": "32466eef-b2be-4d60-a927-e24fce52dab9",
+          "description": "changes state to ready",
+          "property": "time",
+          "input": {
+            "commands": [
+              {
+                "command": "new"
+              },
+              {
+                "command": "start"
+              },
+              {
+                "command": "stop"
+              },
+              {
+                "command": "state",
+                "expected": "ready"
+              }
+            ]
+          },
+          "expected": {}
+        },
+        {
+          "uuid": "e585ee15-3b3f-4785-976b-dd96e7cc978b",
+          "description": "does not change previous laps",
+          "property": "time",
+          "input": {
+            "commands": [
+              {
+                "command": "new"
+              },
+              {
+                "command": "start"
+              },
+              {
+                "command": "stop"
+              },
+              {
+                "command": "previousLaps",
+                "expected": []
+              }
+            ]
+          },
+          "expected": {}
+        },
+        {
+          "uuid": "621eac4c-8f43-4d99-919c-4cad776d93df",
+          "description": "stops time tracking in current lap",
+          "property": "time",
+          "input": {
+            "commands": [
+              {
+                "command": "new"
+              },
+              {
+                "command": "start"
+              },
+              {
+                "command": "advanceTime",
+                "seconds": 5
+              },
+              {
+                "command": "stop"
+              },
+              {
+                "command": "advanceTime",
+                "seconds": 8
+              },
+              {
+                "command": "currentLap",
+                "expected": "00:00:05"
+              }
+            ]
+          },
+          "expected": {}
+        },
+        {
+          "uuid": "465bcc82-7643-41f2-97ff-5e817cef8db4",
+          "description": "starts time tracking in total",
+          "property": "time",
+          "input": {
+            "commands": [
+              {
+                "command": "new"
+              },
+              {
+                "command": "start"
+              },
+              {
+                "command": "advanceTime",
+                "seconds": 13
+              },
+              {
+                "command": "stop"
+              },
+              {
+                "command": "advanceTime",
+                "seconds": 44
+              },
+              {
+                "command": "total",
+                "expected": "00:00:13"
+              }
+            ]
+          },
+          "expected": {}
+        },
+        {
+          "uuid": "b1ba7454-d627-41ee-a078-891b2ed266fc",
+          "description": "cannot be called from ready state",
+          "property": "time",
+          "input": {
+            "commands": [
+              {
+                "command": "new"
+              },
+              {
+                "command": "stop",
+                "expected": {
+                  "error": "cannot stop a stopwatch that is not running"
+                }
+              }
+            ]
+          },
+          "expected": {}
+        }
+      ]
     }
   ]
 }
