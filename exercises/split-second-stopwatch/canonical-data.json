@@ -124,7 +124,7 @@
         },
         {
           "uuid": "491487b1-593d-423e-a075-aa78d449ff1f",
-          "description": "starts time tracking in current lap",
+          "description": "starts time tracking for current lap",
           "property": "time",
           "input": {
             "commands": [
@@ -148,7 +148,7 @@
         },
         {
           "uuid": "a0a7ba2c-8db6-412c-b1b6-cb890e9b72ed",
-          "description": "starts time tracking in total",
+          "description": "starts time tracking for total",
           "property": "time",
           "input": {
             "commands": [
@@ -194,7 +194,6 @@
         }
       ]
     },
-
     {
       "description": "stop",
       "cases": [
@@ -246,7 +245,7 @@
         },
         {
           "uuid": "621eac4c-8f43-4d99-919c-4cad776d93df",
-          "description": "stops time tracking in current lap",
+          "description": "stops time tracking for current lap",
           "property": "time",
           "input": {
             "commands": [
@@ -277,7 +276,7 @@
         },
         {
           "uuid": "465bcc82-7643-41f2-97ff-5e817cef8db4",
-          "description": "starts time tracking in total",
+          "description": "starts time tracking for total",
           "property": "time",
           "input": {
             "commands": [
@@ -319,6 +318,133 @@
                 "command": "stop",
                 "expected": {
                   "error": "cannot stop a stopwatch that is not running"
+                }
+              }
+            ]
+          },
+          "expected": {}
+        }
+      ]
+    },
+    {
+      "description": "lap",
+      "cases": [
+        {
+          "uuid": "091966e3-ed25-4397-908b-8bb0330118f8",
+          "description": "adds current lap to previous laps",
+          "property": "time",
+          "input": {
+            "commands": [
+              {
+                "command": "new"
+              },
+              {
+                "command": "start"
+              },
+              {
+                "command": "advanceTime",
+                "seconds": 98
+              },
+              {
+                "command": "stop"
+              },
+              {
+                "command": "lap"
+              },
+              {
+                "command": "previousLaps",
+                "expected": ["00:01:38"]
+              }
+            ]
+          },
+          "expected": {}
+        },
+        {
+          "uuid": "091966e3-ed25-4397-908b-8bb0330118f8",
+          "description": "resets current lap and resumes time tracking",
+          "property": "time",
+          "input": {
+            "commands": [
+              {
+                "command": "new"
+              },
+              {
+                "command": "start"
+              },
+              {
+                "command": "advanceTime",
+                "seconds": 98
+              },
+              {
+                "command": "stop"
+              },
+              {
+                "command": "lap"
+              },
+              {
+                "command": "currentLap",
+                "expected": ["00:00:00"]
+              },
+              {
+                "command": "advanceTime",
+                "seconds": 15
+              },
+              {
+                "command": "currentLap",
+                "expected": ["00:00:15"]
+              }
+            ]
+          },
+          "expected": {}
+        },
+        {
+          "uuid": "091966e3-ed25-4397-908b-8bb0330118f8",
+          "description": "continues time tracking for total",
+          "property": "time",
+          "input": {
+            "commands": [
+              {
+                "command": "new"
+              },
+              {
+                "command": "start"
+              },
+              {
+                "command": "advanceTime",
+                "seconds": 22
+              },
+              {
+                "command": "stop"
+              },
+              {
+                "command": "lap"
+              },
+              ,
+              {
+                "command": "advanceTime",
+                "seconds": 33
+              },
+              {
+                "command": "total",
+                "expected": ["00:00:55"]
+              }
+            ]
+          },
+          "expected": {}
+        },
+        {
+          "uuid": "ea75d36e-63eb-4f34-97ce-8c70e620bdba",
+          "description": "cannot be called from ready state",
+          "property": "time",
+          "input": {
+            "commands": [
+              {
+                "command": "new"
+              },
+              {
+                "command": "start",
+                "expected": {
+                  "error": "cannot lap a stopwatch that is not running"
                 }
               }
             ]
