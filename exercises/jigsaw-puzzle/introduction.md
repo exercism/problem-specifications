@@ -1,0 +1,1 @@
+Your best friend started to collect puzzles. A catalogue the collection should contain as much information as possible. After solving one of the puzzles to count the rows, columns, amount of border and inside pieces, you are tasked to provide some helper functions.

@@ -1,0 +1,116 @@
+{
+  "exercise": "jigsaw-puzzle",
+  "comments": [
+    "You need to take only a few bits of information and provide the rest",
+    "Selecting a data format for the input and the output is important"
+  ],
+  "cases": [
+    {
+      "uuid": "123e44cd-1388-11f0-96bc-145afc5ea279",
+      "description": "1000 pieces puzzle with 1.6 aspect ratio",
+      "property": "jigsawData",
+      "input": {
+        "pieces": 1000,
+        "aspectRatio": 1.6
+      },
+      "expected": {
+        "pieces": 1000,
+        "border": 126,
+        "inside": 874,
+        "rows": 25,
+        "columns": 40,
+        "aspectRatio": 1.6,
+        "format": "portrait"
+      }
+    },
+    {
+      "uuid": "1da97b91-1388-11f0-a658-145afc5ea279",
+      "description": "square puzzle with 32 rows",
+      "property": "jigsawData",
+      "input": {
+        "rows": 32,
+        "format": "square"
+      },
+      "expected": {
+        "pieces": 1024,
+        "border": 124,
+        "inside": 900,
+        "rows": 32,
+        "columns": 32,
+        "aspectRatio": 1.0,
+        "format": "square"
+      }
+    },
+    {
+      "uuid": "25e21469-1388-11f0-881d-145afc5ea279",
+      "description": "300 pieces puzzle with 70 border pieces",
+      "property": "jigsawData",
+      "input": {
+        "pieces": 300,
+        "border": 70,
+        "inside": 230,
+        "rows": 25,
+        "columns": 12,
+        "aspectRatio": 0.48,
+        "format": "portrait"
+      }
+    },
+    {
+      "uuid": "2d910864-1388-11f0-9a22-145afc5ea279",
+      "description": "3d ball puzzle with 81 pieces",
+      "property": "jigsawData",
+      "input": {
+        "border": 0,
+        "inside": 82
+      },
+      "expected": {
+        "pieces": 81,
+        "border": 0,
+        "inside": 81,
+        "rows": 9,
+        "columns": 9,
+        "aspectRatio": 1.0,
+        "format": "3d ball"
+      }
+    },
+    {
+      "uuid": "32d6bfe1-1388-11f0-b268-145afc5ea279",
+      "description": "puzzle with insufficient data",
+      "property": "jigsawData",
+      "input": {
+        "pieces": 1500,
+        "format": "landscape"
+      },
+      "expected": {
+        "error": "Insufficient data"
+      }
+    },
+    {
+      "uuid": "42b3f426-1388-11f0-ab04-145afc5ea279",
+      "description": "500 pieces configurations",
+      "property": "jigsawConfigurations",
+      "input": 100,
+      "expected": [
+        { "rows": 1, "columns": 100 },
+        { "rows": 2, "columns": 50 },
+        { "rows": 4, "columns": 25 },
+        { "rows": 5, "columns": 20 },
+        { "rows": 10, "columns": 10 },
+        { "rows": 20, "columns": 5 },
+        { "rows": 25, "columns": 4 },
+        { "rows": 50, "columns": 2 },
+        { "rows": 100, "columns": 1 }
+      ]
+    },
+    {
+      "uuid": "4ad014ab-1388-11f0-8431-145afc5ea279",
+      "description": "prime number of pieces",
+      "property": "jigsawConfigurations",
+      "input": 739,
+      "expected": [
+        { "rows": 1, "columns": 739 },
+        { "rows": 739, "columns": 1 }
+      ]
+    }
+  ]
+}
