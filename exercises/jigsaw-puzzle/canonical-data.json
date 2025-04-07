@@ -43,9 +43,14 @@
     },
     {
       "uuid": "25e21469-1388-11f0-881d-145afc5ea279",
-      "description": "300 pieces puzzle with 70 border pieces",
+      "description": "300 pieces portrait puzzle with 70 border pieces",
       "property": "jigsawData",
       "input": {
+        "pieces": 300,
+        "border": 70,
+        "format": "portrait"
+      },
+      "expected": {
         "pieces": 300,
         "border": 70,
         "inside": 230,
@@ -57,7 +62,7 @@
     },
     {
       "uuid": "2d910864-1388-11f0-9a22-145afc5ea279",
-      "description": "3d ball puzzle with 81 pieces",
+      "description": "puzzle globe with 81 pieces",
       "property": "jigsawData",
       "input": {
         "border": 0,
@@ -70,7 +75,7 @@
         "rows": 9,
         "columns": 9,
         "aspectRatio": 1.0,
-        "format": "3d ball"
+        "format": "globe"
       }
     },
     {
@@ -86,8 +91,18 @@
       }
     },
     {
+      "uuid": "744de990-13bb-11f0-8731-145afc5ea279",
+      "description": "pizzle with contradictory data",
+      "property": "jigsawData",
+      "input": {
+        "rows": "100",
+        "columns": "1000",
+        "format": "square"
+      }
+    },
+    {
       "uuid": "42b3f426-1388-11f0-ab04-145afc5ea279",
-      "description": "500 pieces configurations",
+      "description": "100 pieces configurations",
       "property": "jigsawConfigurations",
       "input": 100,
       "expected": [
