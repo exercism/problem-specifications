@@ -1,33 +1,24 @@
 # Instructions
 
-Your task is to build a stopwatch that can be used to keep track of lap times.
-The stopwatch has the following functionality:
+Your task is to build a stopwatch to keep precise track of lap times.
 
-- Start: start/resume time tracking
-- Stop: stop/pause time tracking
-- Current lap: retrieve the time tracked for the current lap
-- Previous laps: retrieve the previously recorded lap times
-- Reset: stop time tracking, reset the current lap, and clear all previously recorded laps
-- Lap: add the current lap time to the previous laps, then reset the current lap time and continue tracking time
+The stopwatch uses four commands (Start, Stop, Lap, and Reset) to keep track of two things:
 
-You can think of a stopwatch as being in one of three states:
+1. The current lap's tracked time
+2. Any previously recorded lap times
 
-1. Ready
+What commands can be used depends on which state the stopwatch is in:
+
+1. Ready (initial state)
 2. Running (tracking time)
 3. Stopped (not tracking time)
 
-This is a visualization of the states (between square brackets) and the commands (between angular brackets):
+| Command | Begin state | End state | Effect                                                      |
+| ------- | ----------- | --------- | ----------------------------------------------------------- |
+| Start   | Ready       | Running   | Start tracking time                                         |
+| Start   | Stopped     | Running   | Resume tracking time                                        |
+| Stop    | Running     | Stopped   | Stop tracking time                                          |
+| Lap     | Running     | Running   | Add current lap to previous laps and then reset current lap |
+| Reset   | Stopped     | Ready     | Reset current lap and clear previous laps                   |
 
-```text
-                     <lap>
-                    +-----+
-                    |     |
-         <start>    v     |   <stop>
-[Ready] ---------> [Running] --------> [Stopped]
-   ^            ^                        |   |
-   |            |        <start>         |   |
-   |            +------------------------+   |
-   |                                         |
-   |                <reset>                  |
-   +-----------------------------------------+
-```
+TODO: add example of flow
