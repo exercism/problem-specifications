@@ -25,12 +25,12 @@
         },
         {
           "uuid": "97f27f98-8020-402d-be85-f21ba54a6df0",
-          "description": "0x02 is transmitted as 0x0100",
+          "description": "0x02 is transmitted as 0x0300",
           "property": "transmitSequence",
           "input": {
             "message": ["0x02"]
           },
-          "expected": ["0x01", "0x00"]
+          "expected": ["0x03", "0x00"]
         },
         {
           "uuid": "24712fb9-0336-4e2f-835e-d2350f29c420",

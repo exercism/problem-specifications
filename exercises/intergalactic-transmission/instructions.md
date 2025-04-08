@@ -1,16 +1,15 @@
 # Instructions
 
-Your job is to help implement the message sequencer to calculate the transmission sequence and the decoder for receiving messages.
+Your job is to help implement the message sequencer, which calculates the transmission sequence, and the decoder for receiving messages.
 
 A parity bit is simple way of detecting transmission errors.
 The transmitters and receivers can only transmit and receive _exactly_ eight bits at a time (including the parity bit).
 The parity bit is set so that there is an _even_ number 1s in each transmission and is always the first bit from the right.
 So if the receiver receives `11000001`, `01110101` or `01000000` (i.e. a transmission with an odd number of 1 bits), it knows there is an error.
 
-However, messages are rarely this short.
-The message needs to be transmitted in a sequence when they are longer.
+However, messages are rarely this short, and need to be transmitted in a sequence when they are longer.
 
-For example, consider the message `11000000 00000001 11000000 11011110` (or in `C0 01 C0 DE` hex).
+For example, consider the message `11000000 00000001 11000000 11011110` (or `C0 01 C0 DE` in hex).
 
 Since each transmission contains exactly eight bits, it can only contain seven bits of data and the parity bit.
 A parity bit must then be inserted after every seven bits of data:
