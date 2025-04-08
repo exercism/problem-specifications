@@ -104,7 +104,7 @@
       "uuid": "42b3f426-1388-11f0-ab04-145afc5ea279",
       "description": "100 pieces configurations",
       "property": "jigsawConfigurations",
-      "input": 100,
+      "input": { "pieces": 100 },
       "expected": [
         { "rows": 1, "columns": 100 },
         { "rows": 2, "columns": 50 },
@@ -121,7 +121,7 @@
       "uuid": "4ad014ab-1388-11f0-8431-145afc5ea279",
       "description": "prime number of pieces",
       "property": "jigsawConfigurations",
-      "input": 739,
+      "input": { "pieces": 739 },
       "expected": [
         { "rows": 1, "columns": 739 },
         { "rows": 739, "columns": 1 }
