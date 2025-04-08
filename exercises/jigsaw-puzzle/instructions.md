@@ -12,8 +12,10 @@ The full information about the jigsaw puzzle contains the following parts:
 
 For a puzzle in `globe` format, assume an aspect ratio of 1.0.
 
-Spoilt by the comfort of your helper, your friend now no longer wants to count border pieces.
-To help with estimating, you take the number of pieces and return a list of the possible numbers of rows and columns.
+After a short while, your friend found out that entering the number of pieces, the number of border pieces and the format was the fastest way to get all the information for their collection catalogue with the least amount of manual work.
+
+But your friend has grown tired of counting border pieces.
+To help with estimating the information of their puzzles, you should take the number of pieces and return all the possible numbers of rows and columns.
 
 Start with the lowest number of rows and work your way up from there.
 While a single-row jigsaw puzzle might be a strange novelty, it is theoretically possible, so you should include this case.
