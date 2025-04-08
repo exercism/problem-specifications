@@ -98,6 +98,9 @@
         "rows": "100",
         "columns": "1000",
         "format": "square"
+      },
+      "expected": {
+        "error": "Contradictory data"
       }
     },
     {
