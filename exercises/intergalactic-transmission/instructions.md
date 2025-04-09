@@ -19,7 +19,7 @@ A parity bit must then be inserted after every seven bits of data:
 
 ```text
 11000000 00000001 11000000 11011110
-      ↑       ↑       ↑       ↑        (7th bits)
+      ↑       ↑       ↑       ↑          (7th bits)
 ```
 
 The transmission sequence for this message looks like this:
