@@ -1,8 +1,8 @@
 {
   "exercise": "split-second-stopwatch",
   "comments": [
-    "Times are formatted in '<hours>:<minutes>:<seconds>' format.",
-    "The components (hours, minutes, and seconds) use exactly two digits.",
+    "All times are formatted in '<hours>:<minutes>:<seconds>' format.",
+    "Hours, minutes, and seconds are formatted using two digits.",
     "Thus 4 hours, 23 minutes, and 6 seconds is represented as '04:23:06'."
   ],
   "cases": [
@@ -18,23 +18,6 @@
           {
             "command": "state",
             "expected": "ready"
-          }
-        ]
-      },
-      "expected": {}
-    },
-    {
-      "uuid": "8a892c1e-9ef7-4690-894e-e155a1fe4484",
-      "description": "new stopwatch does not have previous laps",
-      "property": "time",
-      "input": {
-        "commands": [
-          {
-            "command": "new"
-          },
-          {
-            "command": "previousLaps",
-            "expected": []
           }
         ]
       },
@@ -59,7 +42,7 @@
     },
     {
       "uuid": "492eb532-268d-43ea-8a19-2a032067d335",
-      "description": "new stopwatch's total has no time elapsed",
+      "description": "new stopwatch's total has no elapsed time",
       "property": "time",
       "input": {
         "commands": [
@@ -75,8 +58,25 @@
       "expected": {}
     },
     {
+      "uuid": "8a892c1e-9ef7-4690-894e-e155a1fe4484",
+      "description": "new stopwatch does not have previous laps",
+      "property": "time",
+      "input": {
+        "commands": [
+          {
+            "command": "new"
+          },
+          {
+            "command": "previousLaps",
+            "expected": []
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
       "uuid": "5b2705b6-a584-4042-ba3a-4ab8d0ab0281",
-      "description": "start changes state to running",
+      "description": "start from ready state changes state to running",
       "property": "time",
       "input": {
         "commands": [
@@ -128,7 +128,7 @@
           },
           {
             "command": "advanceTime",
-            "seconds": 5
+            "by": "00:00:05"
           },
           {
             "command": "currentLap",
@@ -152,7 +152,7 @@
           },
           {
             "command": "advanceTime",
-            "seconds": 23
+            "by": "00:00:23"
           },
           {
             "command": "total",
@@ -186,7 +186,7 @@
     },
     {
       "uuid": "32466eef-b2be-4d60-a927-e24fce52dab9",
-      "description": "stop changes state to ready",
+      "description": "stop from running state changes state to stopped",
       "property": "time",
       "input": {
         "commands": [
@@ -201,7 +201,7 @@
           },
           {
             "command": "state",
-            "expected": "ready"
+            "expected": "stopped"
           }
         ]
       },
@@ -232,7 +232,7 @@
     },
     {
       "uuid": "621eac4c-8f43-4d99-919c-4cad776d93df",
-      "description": "stop halts time tracking for current lap",
+      "description": "stop pauses time tracking for current lap",
       "property": "time",
       "input": {
         "commands": [
@@ -244,14 +244,14 @@
           },
           {
             "command": "advanceTime",
-            "seconds": 5
+            "by": "00:00:05"
           },
           {
             "command": "stop"
           },
           {
             "command": "advanceTime",
-            "seconds": 8
+            "by": "00:00:08"
           },
           {
             "command": "currentLap",
@@ -263,7 +263,7 @@
     },
     {
       "uuid": "465bcc82-7643-41f2-97ff-5e817cef8db4",
-      "description": "stop halts time tracking for total",
+      "description": "stop pauses time tracking for total",
       "property": "time",
       "input": {
         "commands": [
@@ -275,14 +275,14 @@
           },
           {
             "command": "advanceTime",
-            "seconds": 13
+            "by": "00:00:13"
           },
           {
             "command": "stop"
           },
           {
             "command": "advanceTime",
-            "seconds": 44
+            "by": "00:00:44"
           },
           {
             "command": "total",
@@ -312,6 +312,133 @@
       "expected": {}
     },
     {
+      "uuid": "5c041078-0898-44dc-9d5b-8ebb5352626c",
+      "description": "stop cannot be called from stopped state",
+      "property": "time",
+      "input": {
+        "commands": [
+          {
+            "command": "new"
+          },
+          {
+            "command": "start"
+          },
+          {
+            "command": "stop"
+          },
+          {
+            "command": "stop",
+            "expected": {
+              "error": "cannot stop a stopwatch that is not running"
+            }
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "3f32171d-8fbf-46b6-bc2b-0810e1ec53b7",
+      "description": "start from stopped state changes state to running",
+      "property": "time",
+      "input": {
+        "commands": [
+          {
+            "command": "new"
+          },
+          {
+            "command": "start"
+          },
+          {
+            "command": "stop"
+          },
+          {
+            "command": "start"
+          },
+          {
+            "command": "state",
+            "expected": "running"
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "626997cb-78d5-4fe8-b501-29fdef804799",
+      "description": "start from stopped state resumes time tracking for current lap",
+      "property": "time",
+      "input": {
+        "commands": [
+          {
+            "command": "new"
+          },
+          {
+            "command": "start"
+          },
+          {
+            "command": "advanceTime",
+            "by": "00:00:80"
+          },
+          {
+            "command": "stop"
+          },
+          {
+            "command": "advanceTime",
+            "by": "00:00:20"
+          },
+          {
+            "command": "start"
+          },
+          {
+            "command": "advanceTime",
+            "by": "00:00:08"
+          },
+          {
+            "command": "currentLap",
+            "expected": "00:01:28"
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "58487c53-ab26-471c-a171-807ef6363319",
+      "description": "start from stopped state resumes time tracking for total",
+      "property": "time",
+      "input": {
+        "commands": [
+          {
+            "command": "new"
+          },
+          {
+            "command": "start"
+          },
+          {
+            "command": "advanceTime",
+            "by": "00:00:23"
+          },
+          {
+            "command": "stop"
+          },
+          {
+            "command": "advanceTime",
+            "by": "00:00:44"
+          },
+          {
+            "command": "start"
+          },
+          {
+            "command": "advanceTime",
+            "by": "00:00:09"
+          },
+          {
+            "command": "total",
+            "expected": "00:00:32"
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
       "uuid": "091966e3-ed25-4397-908b-8bb0330118f8",
       "description": "lap adds current lap to previous laps",
       "property": "time",
@@ -325,10 +452,7 @@
           },
           {
             "command": "advanceTime",
-            "seconds": 98
-          },
-          {
-            "command": "stop"
+            "by": "00:01:38"
           },
           {
             "command": "lap"
@@ -336,6 +460,17 @@
           {
             "command": "previousLaps",
             "expected": ["00:01:38"]
+          },
+          {
+            "command": "advanceTime",
+            "by": "00:00:44"
+          },
+          {
+            "command": "lap"
+          },
+          {
+            "command": "previousLaps",
+            "expected": ["00:01:38", "00:00:44"]
           }
         ]
       },
@@ -355,25 +490,22 @@
           },
           {
             "command": "advanceTime",
-            "seconds": 98
-          },
-          {
-            "command": "stop"
+            "by": "00:08:22"
           },
           {
             "command": "lap"
           },
           {
             "command": "currentLap",
-            "expected": ["00:00:00"]
+            "expected": "00:00:00"
           },
           {
             "command": "advanceTime",
-            "seconds": 15
+            "by": "00:00:15"
           },
           {
             "command": "currentLap",
-            "expected": ["00:00:15"]
+            "expected": "00:00:15"
           }
         ]
       },
@@ -393,22 +525,19 @@
           },
           {
             "command": "advanceTime",
-            "seconds": 22
-          },
-          {
-            "command": "stop"
+            "by": "00:00:22"
           },
           {
             "command": "lap"
           },
-          ,
+
           {
             "command": "advanceTime",
-            "seconds": 33
+            "by": "00:00:33"
           },
           {
             "command": "total",
-            "expected": ["00:00:55"]
+            "expected": "00:00:55"
           }
         ]
       },
@@ -428,6 +557,238 @@
             "expected": {
               "error": "cannot lap a stopwatch that is not running"
             }
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "63731154-a23a-412d-a13f-c562f208eb1e",
+      "description": "lap cannot be called from stopped state",
+      "property": "time",
+      "input": {
+        "commands": [
+          {
+            "command": "new"
+          },
+          {
+            "command": "start"
+          },
+          {
+            "command": "stop"
+          },
+          {
+            "command": "lap",
+            "expected": {
+              "error": "cannot lap a stopwatch that is not running"
+            }
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "fc3645e2-86cf-4d11-97c6-489f031103f6",
+      "description": "reset from stopped state changes state to ready",
+      "property": "time",
+      "input": {
+        "commands": [
+          {
+            "command": "new"
+          },
+          {
+            "command": "start"
+          },
+          {
+            "command": "stop"
+          },
+          {
+            "command": "reset"
+          },
+          {
+            "command": "state",
+            "expected": "ready"
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "fc3645e2-86cf-4d11-97c6-489f031103f6",
+      "description": "reset resets current lap",
+      "property": "time",
+      "input": {
+        "commands": [
+          {
+            "command": "new"
+          },
+          {
+            "command": "start"
+          },
+          {
+            "command": "advanceTime",
+            "by": "00:00:10"
+          },
+          {
+            "command": "stop"
+          },
+          {
+            "command": "reset"
+          },
+          {
+            "command": "currentLap",
+            "expected": "00:00:00"
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "fc3645e2-86cf-4d11-97c6-489f031103f6",
+      "description": "reset clears previous laps",
+      "property": "time",
+      "input": {
+        "commands": [
+          {
+            "command": "new"
+          },
+          {
+            "command": "start"
+          },
+          {
+            "command": "advanceTime",
+            "by": "00:00:10"
+          },
+          {
+            "command": "lap"
+          },
+          {
+            "command": "advanceTime",
+            "by": "00:00:20"
+          },
+          {
+            "command": "lap"
+          },
+          {
+            "command": "previousLaps",
+            "expected": ["00:00:10", "00:00:20"]
+          },
+          {
+            "command": "reset"
+          },
+          {
+            "command": "previousLaps",
+            "expected": []
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "76cea936-6214-4e95-b6d1-4d4edcf90499",
+      "description": "reset cannot be called from ready state",
+      "property": "time",
+      "input": {
+        "commands": [
+          {
+            "command": "new"
+          },
+          {
+            "command": "reset",
+            "expected": {
+              "error": "cannot reset a stopwatch that is not stopped"
+            }
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "ba4d8e69-f200-4721-b59e-90d8cf615153",
+      "description": "reset cannot be called from running state",
+      "property": "time",
+      "input": {
+        "commands": [
+          {
+            "command": "new"
+          },
+          {
+            "command": "start"
+          },
+          {
+            "command": "reset",
+            "expected": {
+              "error": "cannot reset a stopwatch that is not stopped"
+            }
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "0b01751a-cb57-493f-bb86-409de6e84306",
+      "description": "supports very long laps",
+      "property": "time",
+      "input": {
+        "commands": [
+          {
+            "command": "new"
+          },
+          {
+            "command": "start"
+          },
+          {
+            "command": "advanceTime",
+            "by": "01:23:45"
+          },
+          {
+            "command": "currentLap",
+            "expected": "01:23:45"
+          },
+          {
+            "command": "lap"
+          },
+          {
+            "command": "previousLaps",
+            "expected": ["01:23:45"]
+          },
+          {
+            "command": "advanceTime",
+            "by": "04:01:40"
+          },
+          {
+            "command": "currentLap",
+            "expected": "04:01:40"
+          },
+          {
+            "command": "total",
+            "expected": "05:25:25"
+          },
+          {
+            "command": "lap"
+          },
+          {
+            "command": "previousLaps",
+            "expected": ["01:23:45", "04:01:40"]
+          },
+          {
+            "command": "advanceTime",
+            "by": "08:43:05"
+          },
+          {
+            "command": "currentLap",
+            "expected": "08:43:05"
+          },
+          {
+            "command": "total",
+            "expected": "14:08:30"
+          },
+          {
+            "command": "lap"
+          },
+          {
+            "command": "previousLaps",
+            "expected": ["01:23:45", "04:01:40", "08:43:05"]
           }
         ]
       },
