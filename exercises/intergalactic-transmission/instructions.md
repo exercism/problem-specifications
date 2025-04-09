@@ -25,11 +25,8 @@ A parity bit must then be inserted after every seven bits of data:
 The transmission sequence for this message looks like this:
 
 ```text
-     1st      │     2nd      │     3rd      │     4th      │     5th
- transmission │ transmission │ transmission │ transmission │ transmission
-              │              │              │              │
-   1100000_   │   0000000_   │   0111000_   │   0001101_   │    1110
-          ↑              ↑              ↑              ↑                   (parity bit locations)
+1100000_ 0000000_ 0111000_ 0001101_ 1110
+       ↑        ↑        ↑        ↑      (parity bits)
 ```
 
 The data in the first transmission in the sequence (`1100000`) has two 1 bits (an even number), so the parity bit is 0.

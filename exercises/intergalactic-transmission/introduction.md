@@ -16,7 +16,7 @@ The receiver _must_ know when something has gone wrong before disaster strikes.
 But how?
 Scientists and engineers from across the universe have been battling this problem for eons.
 Entire cosmic AI superclusters churn through the data.
-And then, one day, a legend resurfaces - an ancient, powerful method, whispered in debugging forums, muttered by engineers who've seen too much...
+And then, one day, a legend resurfaces — an ancient, powerful method, whispered in debugging forums, muttered by engineers who've seen too much...
 
 The Parity Bit!
 
