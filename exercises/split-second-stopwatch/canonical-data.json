@@ -477,7 +477,7 @@
       "expected": {}
     },
     {
-      "uuid": "091966e3-ed25-4397-908b-8bb0330118f8",
+      "uuid": "1aa4c5ee-a7d5-4d59-9679-419deef3c88f",
       "description": "lap resets current lap and resumes time tracking",
       "property": "time",
       "input": {
@@ -512,7 +512,7 @@
       "expected": {}
     },
     {
-      "uuid": "091966e3-ed25-4397-908b-8bb0330118f8",
+      "uuid": "4b46b92e-1b3f-46f6-97d2-0082caf56e80",
       "description": "lap continues time tracking for total",
       "property": "time",
       "input": {
@@ -614,7 +614,7 @@
       "expected": {}
     },
     {
-      "uuid": "fc3645e2-86cf-4d11-97c6-489f031103f6",
+      "uuid": "20fbfbf7-68ad-4310-975a-f5f132886c4e",
       "description": "reset resets current lap",
       "property": "time",
       "input": {
@@ -644,7 +644,7 @@
       "expected": {}
     },
     {
-      "uuid": "fc3645e2-86cf-4d11-97c6-489f031103f6",
+      "uuid": "00a8f7bb-dd5c-43e5-8705-3ef124007662",
       "description": "reset clears previous laps",
       "property": "time",
       "input": {
