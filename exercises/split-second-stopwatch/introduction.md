@@ -1,5 +1,6 @@
 # Introduction
 
-As an amateur runner, you've never really felt the need to track your time precisely.
-However, having just enrolled in a local running team, you're now following precisely timed training sessions, each one tuned to the second.
-To keep up, you've bought the _split-second stopwatch_, a state-of-the-art tool for time tracking.
+You've always run for the thrill of it — no schedules, no timers, just the sound of your feet on the pavement.
+But now that you've joined a competitive running crew, things are getting serious.
+Training sessions are timed to the second, and every split counts.
+To keep pace, you've picked up the _Split-Second Stopwatch_ — a sleek, high-tech gadget that's about to become your new best friend.
