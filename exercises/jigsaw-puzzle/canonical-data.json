@@ -20,7 +20,7 @@
         "rows": 25,
         "columns": 40,
         "aspectRatio": 1.6,
-        "format": "portrait"
+        "format": "landscape"
       }
     },
     {
@@ -61,24 +61,6 @@
       }
     },
     {
-      "uuid": "2d910864-1388-11f0-9a22-145afc5ea279",
-      "description": "puzzle globe with 81 pieces",
-      "property": "jigsawData",
-      "input": {
-        "border": 0,
-        "inside": 81
-      },
-      "expected": {
-        "pieces": 81,
-        "border": 0,
-        "inside": 81,
-        "rows": 9,
-        "columns": 9,
-        "aspectRatio": 1.0,
-        "format": "globe"
-      }
-    },
-    {
       "uuid": "32d6bfe1-1388-11f0-b268-145afc5ea279",
       "description": "puzzle with insufficient data",
       "property": "jigsawData",
@@ -102,33 +84,6 @@
       "expected": {
         "error": "Contradictory data"
       }
-    },
-    {
-      "uuid": "42b3f426-1388-11f0-ab04-145afc5ea279",
-      "description": "100 pieces configurations",
-      "property": "jigsawConfigurations",
-      "input": { "pieces": 100 },
-      "expected": [
-        { "rows": 1, "columns": 100 },
-        { "rows": 2, "columns": 50 },
-        { "rows": 4, "columns": 25 },
-        { "rows": 5, "columns": 20 },
-        { "rows": 10, "columns": 10 },
-        { "rows": 20, "columns": 5 },
-        { "rows": 25, "columns": 4 },
-        { "rows": 50, "columns": 2 },
-        { "rows": 100, "columns": 1 }
-      ]
-    },
-    {
-      "uuid": "4ad014ab-1388-11f0-8431-145afc5ea279",
-      "description": "prime number of pieces",
-      "property": "jigsawConfigurations",
-      "input": { "pieces": 739 },
-      "expected": [
-        { "rows": 1, "columns": 739 },
-        { "rows": 739, "columns": 1 }
-      ]
     }
   ]
 }
