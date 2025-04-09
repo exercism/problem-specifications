@@ -376,7 +376,7 @@
           },
           {
             "command": "advanceTime",
-            "by": "00:00:80"
+            "by": "00:01:20"
           },
           {
             "command": "stop"
