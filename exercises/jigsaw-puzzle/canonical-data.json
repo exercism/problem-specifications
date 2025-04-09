@@ -77,8 +77,8 @@
       "description": "pizzle with contradictory data",
       "property": "jigsawData",
       "input": {
-        "rows": "100",
-        "columns": "1000",
+        "rows": 100,
+        "columns": 1000,
         "format": "square"
       },
       "expected": {
