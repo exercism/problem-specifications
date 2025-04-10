@@ -298,7 +298,7 @@
         },
         {
           "uuid": "6065b8b3-9dcd-45c9-918c-b427cfdb28c1",
-          "description": "last byte in seven byte message has wrong parity",
+          "description": "last byte has wrong parity",
           "property": "decodeMessage",
           "input": {
             "message": [

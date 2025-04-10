@@ -1,9 +1,9 @@
 # Instructions
 
-Your job is to help implement the following:
+Your job is to help implement
 
-- the message sequencer, which calculates the transmission sequence
-- the decoder, which decodes the messages
+- the message sequencer, which calculates the transmission sequence, and
+- the decoder, which decodes it.
 
 A parity bit is simple way of detecting transmission errors.
 The transmitters and receivers can only transmit and receive _exactly_ eight bits at a time (including the parity bit).
