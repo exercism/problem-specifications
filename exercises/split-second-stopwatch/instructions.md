@@ -2,7 +2,7 @@
 
 Your task is to build a stopwatch to keep precise track of lap times.
 
-The stopwatch uses four commands (Start, Stop, Lap, and Reset) to keep track of:
+The stopwatch uses four commands (start, stop, lap, and reset) to keep track of:
 
 1. The current lap's tracked time
 2. Previously recorded lap times
