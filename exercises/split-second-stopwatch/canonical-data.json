@@ -674,6 +674,9 @@
             "expected": ["00:00:10", "00:00:20"]
           },
           {
+            "command": "stop"
+          },
+          {
             "command": "reset"
           },
           {
