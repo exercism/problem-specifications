@@ -3,7 +3,14 @@
   "comments": [
     "All times are formatted in '<hours>:<minutes>:<seconds>' format.",
     "Hours, minutes, and seconds are formatted using two digits.",
-    "Thus 4 hours, 23 minutes, and 6 seconds is represented as '04:23:06'."
+    "Thus 4 hours, 23 minutes, and 6 seconds is represented as '04:23:06'.",
+    "Tracks are free to convert these times into a format that is the most ",
+    "appropriate for their language.",
+    "",
+    "The advanceTime command is used to simulate the passage of time. ",
+    "Some tracks might be able to mock the system time, others might need ",
+    "to provide some time-representing value, while other might need to ",
+    "pass the current time as an argument to the other commands."
   ],
   "cases": [
     {
