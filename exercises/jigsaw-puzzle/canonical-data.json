@@ -6,7 +6,7 @@
   ],
   "cases": [
     {
-      "uuid": "123e44cd-1388-11f0-96bc-145afc5ea279",
+      "uuid": "ad626f23-09a2-4f5f-ba22-eec0671fa2a9",
       "description": "1000 pieces puzzle with 1.6 aspect ratio",
       "property": "jigsawData",
       "input": {
@@ -24,7 +24,7 @@
       }
     },
     {
-      "uuid": "1da97b91-1388-11f0-a658-145afc5ea279",
+      "uuid": "3e0c5919-3561-42f5-b9ed-26d70c20214e",
       "description": "square puzzle with 32 rows",
       "property": "jigsawData",
       "input": {
@@ -42,7 +42,7 @@
       }
     },
     {
-      "uuid": "25e21469-1388-11f0-881d-145afc5ea279",
+      "uuid": "f6378369-989c-497f-a6e2-f30b1fa76cba",
       "description": "300 pieces portrait puzzle with 70 border pieces",
       "property": "jigsawData",
       "input": {
@@ -61,7 +61,7 @@
       }
     },
     {
-      "uuid": "32d6bfe1-1388-11f0-b268-145afc5ea279",
+      "uuid": "f53f82ba-5663-4c7e-9e86-57fdbb3e53d2",
       "description": "puzzle with insufficient data",
       "property": "jigsawData",
       "input": {
@@ -73,7 +73,7 @@
       }
     },
     {
-      "uuid": "744de990-13bb-11f0-8731-145afc5ea279",
+      "uuid": "a3d5c31a-cc74-44bf-b4fc-9e4d65f1ac1a",
       "description": "pizzle with contradictory data",
       "property": "jigsawData",
       "input": {
