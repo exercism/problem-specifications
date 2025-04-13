@@ -74,7 +74,7 @@
     },
     {
       "uuid": "a3d5c31a-cc74-44bf-b4fc-9e4d65f1ac1a",
-      "description": "pizzle with contradictory data",
+      "description": "puzzle with contradictory data",
       "property": "jigsawData",
       "input": {
         "rows": 100,
