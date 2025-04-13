@@ -14,6 +14,8 @@ The full information about the jigsaw puzzle contains the following parts:
 - `aspectRatio`: Aspect ratio of columns to rows
 - `format`: Puzzle format, which can be `portrait`, `square`, or `landscape`
 
-For the sake of the exercise, you may assume square pieces, so that the format can be derived from the aspect ratio.
+For this exercise, you may assume square pieces, so that the format can be derived from the aspect ratio:
 
-If it is lower than one, it is portrait, if exactly one, it is square and larger than one is landscape.
+- If the aspect ratio is less than 1, it's `portrait`
+- If it is equal to 1, it's `square`
+- If it is greater than 1, it's `landscape`
