@@ -9,7 +9,7 @@
     "",
     "The advanceTime command is used to simulate the passage of time.",
     "Some tracks might be able to mock the system time, others might need",
-    "to provide some time-representing value, while other might need to",
+    "to provide some time-representing value, while others might need to",
     "pass the current time as an argument to the other commands."
   ],
   "cases": [
