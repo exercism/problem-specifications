@@ -537,7 +537,6 @@
           {
             "command": "lap"
           },
-
           {
             "command": "advanceTime",
             "by": "00:00:33"
