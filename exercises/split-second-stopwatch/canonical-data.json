@@ -215,29 +215,6 @@
       "expected": {}
     },
     {
-      "uuid": "e585ee15-3b3f-4785-976b-dd96e7cc978b",
-      "description": "stop does not change previous laps",
-      "property": "time",
-      "input": {
-        "commands": [
-          {
-            "command": "new"
-          },
-          {
-            "command": "start"
-          },
-          {
-            "command": "stop"
-          },
-          {
-            "command": "previousLaps",
-            "expected": []
-          }
-        ]
-      },
-      "expected": {}
-    },
-    {
       "uuid": "621eac4c-8f43-4d99-919c-4cad776d93df",
       "description": "stop pauses time tracking for current lap",
       "property": "time",
@@ -588,6 +565,40 @@
             "expected": {
               "error": "cannot lap a stopwatch that is not running"
             }
+          }
+        ]
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "e585ee15-3b3f-4785-976b-dd96e7cc978b",
+      "description": "stop does not change previous laps",
+      "property": "time",
+      "input": {
+        "commands": [
+          {
+            "command": "new"
+          },
+          {
+            "command": "start"
+          },
+          {
+            "command": "advanceTime",
+            "by": "00:11:22"
+          },
+          {
+            "command": "lap"
+          },
+          {
+            "command": "previousLaps",
+            "expected": ["00:11:22"]
+          },
+          {
+            "command": "stop"
+          },
+          {
+            "command": "previousLaps",
+            "expected": ["00:11:22"]
           }
         ]
       },
