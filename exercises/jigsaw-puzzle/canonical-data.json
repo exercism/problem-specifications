@@ -42,6 +42,42 @@
       }
     },
     {
+      "uuid": "1126f160-b094-4dc2-bf37-13e36e394867",
+      "description": "400 pieces square puzzle with only inside pieces and aspec ratio",
+      "property": "jigsawData",
+      "input": {
+        "inside": 324,
+        "aspectRatio": 1.0
+      },
+      "expected": {
+        "pieces": 400,
+        "border": 76,
+        "inside": 324,
+        "rows": 20,
+        "columns": 20,
+        "aspectRatio": 1.0,
+        "format": "square"
+      }
+    },
+    {
+      "uuid": "a9743178-5642-4cc0-8fdb-00d6b031c3a0",
+      "description": "1500 pieces landscape puzzle with 30 rows and 1.6 aspect ratio",
+      "property": "jigsawData",
+      "input": {
+        "rows": 30,
+        "aspectRatio": 1.6666666666666667
+      },
+      "expected": {
+        "pieces": 1500,
+        "border": 156,
+        "inside": 1344,
+        "rows": 30,
+        "columns": 50,
+        "aspectRatio": 1.6666666666666667,
+        "format": "landscape"
+      }
+    },
+    {
       "uuid": "f6378369-989c-497f-a6e2-f30b1fa76cba",
       "description": "300 pieces portrait puzzle with 70 border pieces",
       "property": "jigsawData",
