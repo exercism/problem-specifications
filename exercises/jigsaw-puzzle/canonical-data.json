@@ -43,7 +43,7 @@
     },
     {
       "uuid": "1126f160-b094-4dc2-bf37-13e36e394867",
-      "description": "400 pieces square puzzle with only inside pieces and aspec ratio",
+      "description": "400 pieces square puzzle with only inside pieces and aspect ratio",
       "property": "jigsawData",
       "input": {
         "inside": 324,
