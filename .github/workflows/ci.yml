@@ -19,7 +19,7 @@ jobs:
 
   immutability:
     name: No test has been mutated
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.0.0
         with:
