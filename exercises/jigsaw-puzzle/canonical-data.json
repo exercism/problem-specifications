@@ -1,8 +1,8 @@
 {
   "exercise": "jigsaw-puzzle",
   "comments": [
-    "You need to take only a few bits of information and provide the rest",
-    "Selecting a data format for the input and the output is important"
+    "For the aspect ratio, rational numbers can be used for languages without IEEE-754 support",
+    "If rational numbers are used, they need to be reduced to the lowest term to avoid ambiguity"
   ],
   "cases": [
     {
