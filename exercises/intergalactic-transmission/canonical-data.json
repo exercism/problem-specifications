@@ -1,0 +1,440 @@
+{
+  "exercise": "intergalactic-transmission",
+  "comments": ["Inputs and expected data are given in hexadecimal"],
+  "cases": [
+    {
+      "description": "calculate transmit sequences",
+      "cases": [
+        {
+          "uuid": "f99d4046-b429-4582-9324-f0bcac7ab51c",
+          "description": "empty message",
+          "property": "transmitSequence",
+          "input": {
+            "message": []
+          },
+          "expected": []
+        },
+        {
+          "uuid": "ee27ea2d-8999-4f23-9275-8f6879545f86",
+          "description": "0x00 is transmitted as 0x0000",
+          "property": "transmitSequence",
+          "input": {
+            "message": ["0x00"]
+          },
+          "expected": ["0x00", "0x00"]
+        },
+        {
+          "uuid": "97f27f98-8020-402d-be85-f21ba54a6df0",
+          "description": "0x02 is transmitted as 0x0300",
+          "property": "transmitSequence",
+          "input": {
+            "message": ["0x02"]
+          },
+          "expected": ["0x03", "0x00"]
+        },
+        {
+          "uuid": "24712fb9-0336-4e2f-835e-d2350f29c420",
+          "description": "0x06 is transmitted as 0x0600",
+          "property": "transmitSequence",
+          "input": {
+            "message": ["0x06"]
+          },
+          "expected": ["0x06", "0x00"]
+        },
+        {
+          "uuid": "7630b5a9-dba1-4178-b2a0-4a376f7414e0",
+          "description": "0x05 is transmitted as 0x0581",
+          "property": "transmitSequence",
+          "input": {
+            "message": ["0x05"]
+          },
+          "expected": ["0x05", "0x81"]
+        },
+        {
+          "uuid": "ab4fe80b-ef8e-4a99-b4fb-001937af415d",
+          "description": "0x29 is transmitted as 0x2881",
+          "property": "transmitSequence",
+          "input": {
+            "message": ["0x29"]
+          },
+          "expected": ["0x28", "0x81"]
+        },
+        {
+          "uuid": "4e200d84-593b-4449-b7c0-4de1b6a0955e",
+          "description": "0xc001c0de is transmitted as 0xc000711be1",
+          "property": "transmitSequence",
+          "input": {
+            "message": ["0xc0", "0x01", "0xc0", "0xde"]
+          },
+          "expected": ["0xc0", "0x00", "0x71", "0x1b", "0xe1"]
+        },
+        {
+          "uuid": "fbc537e9-6b21-4f4a-8c2b-9cf9b702a9b7",
+          "description": "six byte message",
+          "property": "transmitSequence",
+          "input": {
+            "message": ["0x47", "0x72", "0x65", "0x61", "0x74", "0x21"]
+          },
+          "expected": ["0x47", "0xb8", "0x99", "0xac", "0x17", "0xa0", "0x84"]
+        },
+        {
+          "uuid": "d5b75adf-b5fc-4f77-b4ab-77653e30f07c",
+          "description": "seven byte message",
+          "comments": ["at 7 bytes long, no padding is required"],
+          "property": "transmitSequence",
+          "input": {
+            "message": ["0x47", "0x72", "0x65", "0x61", "0x74", "0x31", "0x21"]
+          },
+          "expected": [
+            "0x47",
+            "0xb8",
+            "0x99",
+            "0xac",
+            "0x17",
+            "0xa0",
+            "0xc5",
+            "0x42"
+          ]
+        },
+        {
+          "uuid": "6d8b297b-da1d-435e-bcd7-55fbb1400e73",
+          "description": "eight byte message",
+          "property": "transmitSequence",
+          "input": {
+            "message": [
+              "0xc0",
+              "0x01",
+              "0x13",
+              "0x37",
+              "0xc0",
+              "0xde",
+              "0x21",
+              "0x21"
+            ]
+          },
+          "expected": [
+            "0xc0",
+            "0x00",
+            "0x44",
+            "0x66",
+            "0x7d",
+            "0x06",
+            "0x78",
+            "0x42",
+            "0x21",
+            "0x81"
+          ]
+        },
+        {
+          "uuid": "54a0642a-d5aa-490c-be89-8e171a0cab6f",
+          "description": "twenty byte message",
+          "property": "transmitSequence",
+          "input": {
+            "message": [
+              "0x45",
+              "0x78",
+              "0x65",
+              "0x72",
+              "0x63",
+              "0x69",
+              "0x73",
+              "0x6d",
+              "0x20",
+              "0x69",
+              "0x73",
+              "0x20",
+              "0x61",
+              "0x77",
+              "0x65",
+              "0x73",
+              "0x6f",
+              "0x6d",
+              "0x65",
+              "0x21"
+            ]
+          },
+          "expected": [
+            "0x44",
+            "0xbd",
+            "0x18",
+            "0xaf",
+            "0x27",
+            "0x1b",
+            "0xa5",
+            "0xe7",
+            "0x6c",
+            "0x90",
+            "0x1b",
+            "0x2e",
+            "0x33",
+            "0x03",
+            "0x84",
+            "0xee",
+            "0x65",
+            "0xb8",
+            "0xdb",
+            "0xed",
+            "0xd7",
+            "0x28",
+            "0x84"
+          ]
+        }
+      ]
+    },
+    {
+      "description": "decode received messages",
+      "cases": [
+        {
+          "uuid": "9a8084dd-3336-474c-90cb-8a852524604d",
+          "description": "empty message",
+          "property": "decodeMessage",
+          "input": {
+            "message": []
+          },
+          "expected": []
+        },
+        {
+          "uuid": "879af739-0094-4736-9127-bd441b1ddbbf",
+          "description": "zero message",
+          "property": "decodeMessage",
+          "input": {
+            "message": ["0x00", "0x00"]
+          },
+          "expected": ["0x00"]
+        },
+        {
+          "uuid": "7a89eeef-96c5-4329-a246-ec181a8e959a",
+          "description": "0x0300 is decoded to 0x02",
+          "property": "decodeMessage",
+          "input": {
+            "message": ["0x03", "0x00"]
+          },
+          "expected": ["0x02"]
+        },
+        {
+          "uuid": "3e515af7-8b62-417f-960c-3454bca7f806",
+          "description": "0x0581 is decoded to 0x05",
+          "property": "decodeMessage",
+          "input": {
+            "message": ["0x05", "0x81"]
+          },
+          "expected": ["0x05"]
+        },
+        {
+          "uuid": "a1b4a3f7-9f05-4b7a-b86e-d7c6fc3f16a9",
+          "description": "0x2881 is decoded to 0x29",
+          "property": "decodeMessage",
+          "input": {
+            "message": ["0x28", "0x81"]
+          },
+          "expected": ["0x29"]
+        },
+        {
+          "uuid": "2e99d617-4c91-4ad5-9217-e4b2447d6e4a",
+          "description": "first byte has wrong parity",
+          "property": "decodeMessage",
+          "input": {
+            "message": ["0x07", "0x00"]
+          },
+          "expected": {
+            "error": "wrong parity"
+          }
+        },
+        {
+          "uuid": "507e212d-3dae-42e8-88b4-2223838ff8d2",
+          "description": "second byte has wrong parity",
+          "property": "decodeMessage",
+          "input": {
+            "message": ["0x03", "0x68"]
+          },
+          "expected": {
+            "error": "wrong parity"
+          }
+        },
+        {
+          "uuid": "b985692e-6338-46c7-8cea-bc38996d4dfd",
+          "description": "0xcf4b00 is decoded to 0xce94",
+          "property": "decodeMessage",
+          "input": {
+            "message": ["0xcf", "0x4b", "0x00"]
+          },
+          "expected": ["0xce", "0x94"]
+        },
+        {
+          "uuid": "7a1f4d48-696d-4679-917c-21b7da3ff3fd",
+          "description": "0xe2566500 is decoded to 0xe2ad90",
+          "property": "decodeMessage",
+          "input": {
+            "message": ["0xe2", "0x56", "0x65", "0x00"]
+          },
+          "expected": ["0xe2", "0xad", "0x90"]
+        },
+        {
+          "uuid": "467549dc-a558-443b-80c5-ff3d4eb305d4",
+          "description": "six byte message",
+          "property": "decodeMessage",
+          "input": {
+            "message": ["0x47", "0xb8", "0x99", "0xac", "0x17", "0xa0", "0x84"]
+          },
+          "expected": ["0x47", "0x72", "0x65", "0x61", "0x74", "0x21"]
+        },
+        {
+          "uuid": "1f3be5fb-093a-4661-9951-c1c4781c71ea",
+          "description": "seven byte message",
+          "property": "decodeMessage",
+          "input": {
+            "message": [
+              "0x47",
+              "0xb8",
+              "0x99",
+              "0xac",
+              "0x17",
+              "0xa0",
+              "0xc5",
+              "0x42"
+            ]
+          },
+          "expected": ["0x47", "0x72", "0x65", "0x61", "0x74", "0x31", "0x21"]
+        },
+        {
+          "uuid": "6065b8b3-9dcd-45c9-918c-b427cfdb28c1",
+          "description": "last byte has wrong parity",
+          "property": "decodeMessage",
+          "input": {
+            "message": [
+              "0x47",
+              "0xb8",
+              "0x99",
+              "0xac",
+              "0x17",
+              "0xa0",
+              "0xc5",
+              "0x43"
+            ]
+          },
+          "expected": {
+            "error": "wrong parity"
+          }
+        },
+        {
+          "uuid": "98af97b7-9cca-4c4c-9de3-f70e227a4cb1",
+          "description": "eight byte message",
+          "property": "decodeMessage",
+          "input": {
+            "message": [
+              "0xc0",
+              "0x00",
+              "0x44",
+              "0x66",
+              "0x7d",
+              "0x06",
+              "0x78",
+              "0x42",
+              "0x21",
+              "0x81"
+            ]
+          },
+          "expected": [
+            "0xc0",
+            "0x01",
+            "0x13",
+            "0x37",
+            "0xc0",
+            "0xde",
+            "0x21",
+            "0x21"
+          ]
+        },
+        {
+          "uuid": "aa7d4785-2bb9-43a4-a38a-203325c464fb",
+          "description": "twenty byte message",
+          "property": "decodeMessage",
+          "input": {
+            "message": [
+              "0x44",
+              "0xbd",
+              "0x18",
+              "0xaf",
+              "0x27",
+              "0x1b",
+              "0xa5",
+              "0xe7",
+              "0x6c",
+              "0x90",
+              "0x1b",
+              "0x2e",
+              "0x33",
+              "0x03",
+              "0x84",
+              "0xee",
+              "0x65",
+              "0xb8",
+              "0xdb",
+              "0xed",
+              "0xd7",
+              "0x28",
+              "0x84"
+            ]
+          },
+          "expected": [
+            "0x45",
+            "0x78",
+            "0x65",
+            "0x72",
+            "0x63",
+            "0x69",
+            "0x73",
+            "0x6d",
+            "0x20",
+            "0x69",
+            "0x73",
+            "0x20",
+            "0x61",
+            "0x77",
+            "0x65",
+            "0x73",
+            "0x6f",
+            "0x6d",
+            "0x65",
+            "0x21"
+          ]
+        },
+        {
+          "uuid": "4c86e034-b066-42ac-8497-48f9bc1723c1",
+          "description": "wrong parity on 16th byte",
+          "property": "decodeMessage",
+          "input": {
+            "message": [
+              "0x44",
+              "0xbd",
+              "0x18",
+              "0xaf",
+              "0x27",
+              "0x1b",
+              "0xa5",
+              "0xe7",
+              "0x6c",
+              "0x90",
+              "0x1b",
+              "0x2e",
+              "0x33",
+              "0x03",
+              "0x84",
+              "0xef",
+              "0x65",
+              "0xb8",
+              "0xdb",
+              "0xed",
+              "0xd7",
+              "0x28",
+              "0x84"
+            ]
+          },
+          "expected": {
+            "error": "wrong parity"
+          }
+        }
+      ]
+    }
+  ]
+}
