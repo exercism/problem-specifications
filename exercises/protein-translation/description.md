@@ -7,7 +7,7 @@ RNA can be broken into three-nucleotide sequences called codons, and then transl
 RNA: `"AUGUUUUCU"` => translates to
 
 Codons: `"AUG", "UUU", "UCU"`
-=> which become a protein with the following sequence =>
+=> which become a protein with the following sequence
 
 Protein: `"Methionine", "Phenylalanine", "Serine"`
 
@@ -15,9 +15,8 @@ There are 64 codons which in turn correspond to 20 amino acids; however, all of 
 If it works for one codon, the program should work for all of them.
 However, feel free to expand the list in the test suite to include them all.
 
-There are also three terminating codons (also known as 'STOP' codons); if any of these codons are encountered (by the ribosome), all translation ends and the protein is terminated.
-
-All subsequent codons after are ignored, like this:
+There are also three terminating codons (also known as _stop codons_); if any of these codons are encountered, all translation ends and the protein is terminated.
+All subsequent codons are ignored, like this:
 
 RNA: `"AUGUUUUCUUAAAUG"` =>
 
