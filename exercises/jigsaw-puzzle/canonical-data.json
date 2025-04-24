@@ -1,8 +1,10 @@
 {
   "exercise": "jigsaw-puzzle",
   "comments": [
-    "For the aspect ratio, rational numbers can be used for languages without IEEE-754 support",
-    "If rational numbers are used, they need to be reduced to the lowest term to avoid ambiguity"
+    "For the aspect ratio, rational numbers can be used for languages without",
+    "IEEE-754 support. Their representation depends on the track (e.g., a tuple like",
+    "[numerator, denominator], a string like '3/4', or a custom rational type).",
+    "The represented fractions should be reduced to lowest terms to avoid ambiguity."
   ],
   "cases": [
     {
