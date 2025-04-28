@@ -2,29 +2,19 @@
 
 Translate RNA sequences into proteins.
 
-RNA can be broken into three-nucleotide sequences called codons, and then translated to a protein like so:
+You can break an RNA strand into three-nucleotide sequences called codons and then translate them into amino acids to make a protein like so:
 
-RNA: `"AUGUUUUCU"` => translates to
+| RNA         | Three-letter codons | Amino acids                             |
+|-------------|---------------------|-----------------------------------------|
+| "AUGUUUUCU" | "AUG", "UUU", "UCU" | "Methionine", "Phenylalanine", "Serine" |
 
-Codons: `"AUG", "UUU", "UCU"`
-=> which become a protein with the following sequence
+There are also three STOP codons. If you encounter any of these codons, ignore the rest of the sequence — the protein is complete. For example, UAA is a STOP codon, so ignore any subsequent codons:
 
-Protein: `"Methionine", "Phenylalanine", "Serine"`
+| RNA               | Three-letter codons               | Amino acids                             |
+|-------------------|-----------------------------------|-----------------------------------------|
+| "AUGUUUUCUUAAAUG" | "AUG", "UUU", "UCU", "UAA", "AUG" | "Methionine", "Phenylalanine", "Serine" |
 
-There are 64 codons which in turn correspond to 20 amino acids; however, all of the codon sequences and resulting amino acids are not important in this exercise.
-If it works for one codon, the program should work for all of them.
-However, feel free to expand the list in the test suite to include them all.
-
-There are also three terminating codons (also known as _stop codons_); if any of these codons are encountered, all translation ends and the protein is terminated.
-All subsequent codons are ignored, like this:
-
-RNA: `"AUGUUUUCUUAAAUG"` =>
-
-Codons: `"AUG", "UUU", "UCU", "UAA", "AUG"` =>
-
-Protein: `"Methionine", "Phenylalanine", "Serine"`
-
-Note the stop codon `"UAA"` terminates the translation and the final methionine is not translated into the protein sequence.
+(Note that the latter AUG is not translated into another methionine.)
 
 Below are the codons and resulting amino acids needed for the exercise.
 
