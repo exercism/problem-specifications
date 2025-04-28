@@ -8,7 +8,7 @@ The full information about the jigsaw puzzle contains the following parts:
 
 - `pieces`: Total number of pieces
 - `border`: Number of border pieces
-- `inside`: Number of inside pieces
+- `inside`: Number of inside (non-border) pieces
 - `rows`: Number of rows
 - `columns`: Number of columns
 - `aspectRatio`: Aspect ratio of columns to rows
