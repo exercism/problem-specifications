@@ -243,6 +243,15 @@
       "expected": ["Tryptophan", "Cysteine", "Tyrosine"]
     },
     {
+      "uuid": "f6f92714-769f-4187-9524-e353e8a41a80",
+      "description": "Sequence of two non-STOP codons does not translate to a STOP codon",
+      "property": "proteins",
+      "input": {
+        "strand": "AUGAUG"
+      },
+      "expected": ["Methionine", "Methionine"]
+    },
+    {
       "uuid": "1e75ea2a-f907-4994-ae5c-118632a1cb0f",
       "description": "Non-existing codon can't translate",
       "comments": [
@@ -261,6 +270,7 @@
     },
     {
       "uuid": "9eac93f3-627a-4c90-8653-6d0a0595bc6f",
+      "reimplements": "1e75ea2a-f907-4994-ae5c-118632a1cb0f",
       "description": "Unknown amino acids, not part of a codon, can't translate",
       "comments": [
         "It's up to a track how to behave when a character is encountered ",

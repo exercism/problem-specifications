@@ -63,6 +63,7 @@
             " Your track may choose to skip this test    ",
             " and deal only with integers if appropriate "
           ],
+          "scenarios": ["floating-point"],
           "property": "equilateral",
           "input": {
             "sides": [0.5, 0.5, 0.5]
@@ -153,6 +154,7 @@
             " Your track may choose to skip this test    ",
             " and deal only with integers if appropriate "
           ],
+          "scenarios": ["floating-point"],
           "property": "isosceles",
           "input": {
             "sides": [0.5, 0.4, 0.5]
@@ -225,6 +227,7 @@
             " Your track may choose to skip this test    ",
             " and deal only with integers if appropriate "
           ],
+          "scenarios": ["floating-point"],
           "property": "scalene",
           "input": {
             "sides": [0.5, 0.4, 0.6]

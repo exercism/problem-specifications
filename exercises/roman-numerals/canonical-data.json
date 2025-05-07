@@ -253,6 +253,16 @@
       "expected": "MMMI"
     },
     {
+      "uuid": "2f89cad7-73f6-4d1b-857b-0ef531f68b7e",
+      "description": "3888 is MMMDCCCLXXXVIII",
+      "comments": ["This is the longest possible output"],
+      "property": "roman",
+      "input": {
+        "number": 3888
+      },
+      "expected": "MMMDCCCLXXXVIII"
+    },
+    {
       "uuid": "4e18e96b-5fbb-43df-a91b-9cb511fe0856",
       "description": "3999 is MMMCMXCIX",
       "property": "roman",

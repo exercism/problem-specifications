@@ -1,0 +1,41 @@
+{
+  "exercise": "eliuds-eggs",
+  "cases": [
+    {
+      "uuid": "559e789d-07d1-4422-9004-3b699f83bca3",
+      "description": "0 eggs",
+      "property": "eggCount",
+      "input": {
+        "number": 0
+      },
+      "expected": 0
+    },
+    {
+      "uuid": "97223282-f71e-490c-92f0-b3ec9e275aba",
+      "description": "1 egg",
+      "property": "eggCount",
+      "input": {
+        "number": 16
+      },
+      "expected": 1
+    },
+    {
+      "uuid": "1f8fd18f-26e9-4144-9a0e-57cdfc4f4ff5",
+      "description": "4 eggs",
+      "property": "eggCount",
+      "input": {
+        "number": 89
+      },
+      "expected": 4
+    },
+    {
+      "uuid": "0c18be92-a498-4ef2-bcbb-28ac4b06cb81",
+      "description": "13 eggs",
+      "property": "eggCount",
+      "input": {
+        "number": 2000000000
+      },
+      "expected": 13
+    }
+  ]
+}

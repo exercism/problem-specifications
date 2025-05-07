@@ -225,6 +225,17 @@
         "heyBob": "This is a statement ending with whitespace      "
       },
       "expected": "Whatever."
+    },
+    {
+      "uuid": "2c7278ac-f955-4eb4-bf8f-e33eb4116a15",
+      "reimplements": "66953780-165b-4e7e-8ce3-4bcb80b6385a",
+      "description": "multiple line question",
+      "comments": ["Use one sentence, spanning multiple lines."],
+      "property": "response",
+      "input": {
+        "heyBob": "\nDoes this cryogenic chamber make\n me look fat?"
+      },
+      "expected": "Sure."
     }
   ]
 }

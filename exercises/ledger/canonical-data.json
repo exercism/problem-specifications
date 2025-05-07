@@ -235,6 +235,34 @@
         "Date       | Description               | Change       ",
         "03/12/2015 | Buy present               |     ($123.45)"
       ]
+    },
+    {
+      "uuid": "9c70709f-cbbd-4b3b-b367-81d7c6101de4",
+      "reimplements": "502c4106-0371-4e7c-a7d8-9ce33f16ccb1",
+      "description": "multiple entries on same date ordered by description",
+      "comments": ["Input entries' dates changed to match each other"],
+      "property": "formatEntries",
+      "input": {
+        "currency": "USD",
+        "locale": "en_US",
+        "entries": [
+          {
+            "date": "2015-01-01",
+            "description": "Get present",
+            "amountInCents": 1000
+          },
+          {
+            "date": "2015-01-01",
+            "description": "Buy present",
+            "amountInCents": -1000
+          }
+        ]
+      },
+      "expected": [
+        "Date       | Description               | Change       ",
+        "01/01/2015 | Buy present               |      ($10.00)",
+        "01/01/2015 | Get present               |       $10.00 "
+      ]
     }
   ]
 }

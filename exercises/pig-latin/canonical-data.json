@@ -98,6 +98,15 @@
             "phrase": "qat"
           },
           "expected": "atqay"
+        },
+        {
+          "uuid": "e59dbbe8-ccee-4619-a8e9-ce017489bfc0",
+          "description": "word beginning with consonant and vowel containing qu",
+          "property": "translate",
+          "input": {
+            "phrase": "liquid"
+          },
+          "expected": "iquidlay"
         }
       ]
     },

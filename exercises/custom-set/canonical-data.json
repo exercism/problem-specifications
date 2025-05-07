@@ -251,6 +251,16 @@
             "set2": [1, 2, 3, 4]
           },
           "expected": false
+        },
+        {
+          "uuid": "d4a1142f-09aa-4df9-8b83-4437dcf7ec24",
+          "description": "set is equal to a set constructed from an array with duplicates",
+          "property": "equal",
+          "input": {
+            "set1": [1],
+            "set2": [1, 1]
+          },
+          "expected": true
         }
       ]
     },
@@ -386,6 +396,16 @@
             "set2": [2, 4]
           },
           "expected": [1, 3]
+        },
+        {
+          "uuid": "20d0a38f-7bb7-4c4a-ac15-90c7392ecf2b",
+          "description": "difference removes all duplicates in the first set",
+          "property": "difference",
+          "input": {
+            "set1": [1, 1],
+            "set2": [1]
+          },
+          "expected": []
         }
       ]
     },

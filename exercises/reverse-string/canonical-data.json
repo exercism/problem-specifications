@@ -57,6 +57,36 @@
         "value": "drawer"
       },
       "expected": "reward"
+    },
+    {
+      "uuid": "1bed0f8a-13b0-4bd3-9d59-3d0593326fa2",
+      "description": "wide characters",
+      "scenarios": ["unicode"],
+      "property": "reverse",
+      "input": {
+        "value": "子猫"
+      },
+      "expected": "猫子"
+    },
+    {
+      "uuid": "93d7e1b8-f60f-4f3c-9559-4056e10d2ead",
+      "description": "grapheme cluster with pre-combined form",
+      "scenarios": ["unicode"],
+      "property": "reverse",
+      "input": {
+        "value": "Würstchenstand"
+      },
+      "expected": "dnatsnehctsrüW"
+    },
+    {
+      "uuid": "1028b2c1-6763-4459-8540-2da47ca512d9",
+      "description": "grapheme clusters",
+      "scenarios": ["unicode"],
+      "property": "reverse",
+      "input": {
+        "value": "ผู้เขียนโปรแกรม"
+      },
+      "expected": "มรกแรปโนยขีเผู้"
     }
   ]
 }

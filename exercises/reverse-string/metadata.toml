@@ -1,4 +1,6 @@
 title = "Reverse String"
-blurb = "Reverse a string."
+blurb = "Reverse a given string."
 source = "Introductory challenge to reverse an input string"
 source_url = "https://medium.freecodecamp.org/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb"
+deep_dive_youtube_id = "biGAfK6OElE"
+deep_dive_blurb = "Explore 14 different ways to reverse a string, exploring a range of topics including Unicode Codepoints, Graphemes, Stack vs Heap allocations, and pointers. Kick back and enjoy 45mins of learning with Jeremy and Erik."
