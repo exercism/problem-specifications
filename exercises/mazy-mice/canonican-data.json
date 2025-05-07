@@ -1,5 +1,5 @@
 {
-  "exercise": "maze",
+  "exercise": "mazy-mice",
   "comments": [
     "The following checks should be considered:                          ",
     "                                                                    ",
@@ -16,7 +16,8 @@
     "The maze is random:                                                 ",
     "  - the maze is different each time it is generated                 ",
     "  - the maze is the same if the same seed is used                   ",
-    "  - two mazes with different seeds should not be equal              "
+    "  - two mazes with different seeds should not be equal              ",
+    "The rows and cols must be between 5 and 100                         "
   ],
   "cases": [
     {
@@ -163,6 +164,18 @@
         "seed": 123
       },
       "expected": true
+    },
+    {
+      "uuid": "b2f1a0e5-1c3a-4d5e-9f2b-8a7b6c5d4e3f",
+      "description": "Error: rows less than 5",
+      "property": "generateMaze",
+      "input": {
+        "rows": 4,
+        "cols": 10
+      },
+      "expected": {
+        "error": "rows must be between 5 and 100"
+      }
     }
   ]
 }
