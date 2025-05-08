@@ -1,5 +1,5 @@
 {
-  "exercise": "jigsaw-puzzle",
+  "exercise": "piecing-it-together",
   "comments": [
     "For the aspect ratio, rational numbers can be used for languages without",
     "IEEE-754 support. Their representation depends on the track (e.g., a tuple like",
