@@ -54,4 +54,3 @@ The rectangular maze 6x18 cells
 You can use any algorithm to generate a perfect maze. The [recursive backtracker][recursive-backtracker] is a good choice.
 
 [recursive-backtracker]: https://en.wikipedia.org/wiki/Maze_generation_algorithm
-[box-drawing]: https://en.wikipedia.org/wiki/Box-drawing_character
