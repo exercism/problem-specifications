@@ -14,8 +14,9 @@ There are also three STOP codons. If you encounter any of these codons, ignore t
 | ----------------- | --------------------------------- | --------------------------------------- |
 | "AUGUUUUCUUAAAUG" | "AUG", "UUU", "UCU", "UAA", "AUG" | "Methionine", "Phenylalanine", "Serine" |
 
-(Note that the latter AUG is not translated into another methionine.)
+In other words, the latter AUG is not translated into another methionine here because it’s preceded by a STOP codon.
 
+There are 64 codons which in turn correspond to 20 amino acids; however, not all codons will be used in this exercise.
 Below are the codons and resulting amino acids needed for the exercise.
 
 | Codon              | Amino Acid    |
