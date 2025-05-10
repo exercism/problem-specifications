@@ -39,4 +39,3 @@ A square jigsaw puzzle with 9 pieces of which all except the centre piece are bo
 A landscape jigsaw puzzle with 12 pieces of which 10 are border pieces and 2 are inside pieces. It has 3 rows and 4 columns. The aspect ratio is 1.333333... (4/3).
 
 ![A 4 by 3 jigsaw puzzle](https://camo.githubusercontent.com/45b18efc8524284928bd8cae6bd72b661e1b9a1ca8959fe5131c7985671030a0/68747470733a2f2f6173736574732e657865726369736d2e6f72672f696d616765732f6578657263697365732f70696563696e672d69742d746f6765746865722f6a69677361772d70757a7a6c652d3478332e737667)
-
