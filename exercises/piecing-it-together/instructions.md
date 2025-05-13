@@ -1,8 +1,8 @@
 # Instructions
 
-Given partial information about a jigsaw puzzle, complete the remaining details.
+Given partial information about a jigsaw puzzle, add the missing pieces.
 
-If the information is insufficient to complete the details, or if it contains contradictions, the user should be notified.
+If the information is insufficient to complete the details, or if given parts are in contradiction, the user should be notified.
 
 The full information about the jigsaw puzzle contains the following parts:
 
