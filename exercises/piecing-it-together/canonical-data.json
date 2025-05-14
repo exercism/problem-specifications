@@ -1,0 +1,127 @@
+{
+  "exercise": "piecing-it-together",
+  "comments": [
+    "For the aspect ratio, rational numbers can be used for languages without",
+    "IEEE-754 support. Their representation depends on the track (e.g., a tuple like",
+    "[numerator, denominator], a string like '3/4', or a custom rational type).",
+    "The represented fractions should be reduced to lowest terms to avoid ambiguity."
+  ],
+  "cases": [
+    {
+      "uuid": "ad626f23-09a2-4f5f-ba22-eec0671fa2a9",
+      "description": "1000 pieces puzzle with 1.6 aspect ratio",
+      "property": "jigsawData",
+      "input": {
+        "pieces": 1000,
+        "aspectRatio": 1.6
+      },
+      "expected": {
+        "pieces": 1000,
+        "border": 126,
+        "inside": 874,
+        "rows": 25,
+        "columns": 40,
+        "aspectRatio": 1.6,
+        "format": "landscape"
+      }
+    },
+    {
+      "uuid": "3e0c5919-3561-42f5-b9ed-26d70c20214e",
+      "description": "square puzzle with 32 rows",
+      "property": "jigsawData",
+      "input": {
+        "rows": 32,
+        "format": "square"
+      },
+      "expected": {
+        "pieces": 1024,
+        "border": 124,
+        "inside": 900,
+        "rows": 32,
+        "columns": 32,
+        "aspectRatio": 1.0,
+        "format": "square"
+      }
+    },
+    {
+      "uuid": "1126f160-b094-4dc2-bf37-13e36e394867",
+      "description": "400 pieces square puzzle with only inside pieces and aspect ratio",
+      "property": "jigsawData",
+      "input": {
+        "inside": 324,
+        "aspectRatio": 1.0
+      },
+      "expected": {
+        "pieces": 400,
+        "border": 76,
+        "inside": 324,
+        "rows": 20,
+        "columns": 20,
+        "aspectRatio": 1.0,
+        "format": "square"
+      }
+    },
+    {
+      "uuid": "a9743178-5642-4cc0-8fdb-00d6b031c3a0",
+      "description": "1500 pieces landscape puzzle with 30 rows and 1.6 aspect ratio",
+      "property": "jigsawData",
+      "input": {
+        "rows": 30,
+        "aspectRatio": 1.6666666666666667
+      },
+      "expected": {
+        "pieces": 1500,
+        "border": 156,
+        "inside": 1344,
+        "rows": 30,
+        "columns": 50,
+        "aspectRatio": 1.6666666666666667,
+        "format": "landscape"
+      }
+    },
+    {
+      "uuid": "f6378369-989c-497f-a6e2-f30b1fa76cba",
+      "description": "300 pieces portrait puzzle with 70 border pieces",
+      "property": "jigsawData",
+      "input": {
+        "pieces": 300,
+        "border": 70,
+        "format": "portrait"
+      },
+      "expected": {
+        "pieces": 300,
+        "border": 70,
+        "inside": 230,
+        "rows": 25,
+        "columns": 12,
+        "aspectRatio": 0.48,
+        "format": "portrait"
+      }
+    },
+    {
+      "uuid": "f53f82ba-5663-4c7e-9e86-57fdbb3e53d2",
+      "description": "puzzle with insufficient data",
+      "property": "jigsawData",
+      "input": {
+        "pieces": 1500,
+        "format": "landscape"
+      },
+      "expected": {
+        "error": "Insufficient data"
+      }
+    },
+    {
+      "uuid": "a3d5c31a-cc74-44bf-b4fc-9e4d65f1ac1a",
+      "description": "puzzle with contradictory data",
+      "property": "jigsawData",
+      "input": {
+        "rows": 100,
+        "columns": 1000,
+        "format": "square"
+      },
+      "expected": {
+        "error": "Contradictory data"
+      }
+    }
+  ]
+}
