@@ -9,7 +9,9 @@ A cipher is an algorithm used to encrypt, or encode, a string.
 The unencrypted string is called the _plaintext_ and the encrypted string is called the _ciphertext_.
 Converting plaintext to ciphertext is called _encoding_ while the reverse is called _decoding_.
 
-In a _substitution cipher_, each letter is replaced with a different letter which is computed with the help of a _key_.
+In a _substitution cipher_, each plaintext letter is replaced with a ciphertext letter which is computed with the help of a _key_.
+(Note, it is possible for replacement letter to be the same as the original letter!
+As mentioned earlier, an `"a"` in the key means there is no shift/change.)
 
 ## Encoding details
 
