@@ -1,6 +1,6 @@
 # Description
 
-Create an implementation the [Vigenère cipher][wiki].
+Create an implementation of the [Vigenère cipher][wiki].
 The Vigenère cipher is a simple substitution cipher.
 
 ## Cipher terminology
