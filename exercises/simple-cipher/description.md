@@ -1,7 +1,7 @@
 # Description
 
 Create an implementation the [Vigenère cipher][wiki].
-The Vigenère cipher is simple substitution cipher.
+The Vigenère cipher is a simple substitution cipher.
 
 ## Cipher terminology
 
