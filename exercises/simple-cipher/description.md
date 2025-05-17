@@ -29,8 +29,9 @@ For example, the plaintext `"iamapandabear"` would become `"ldpdsdqgdehdu"`.
 If the key only contains the letter `"a"` (one or more times), the shift distance is zero and the ciphertext is the same as the plaintext.
 
 Usually the key is more complicated than that, though!
-If the key is `"abcd"` then letters of the plaintext would be shifted by a distance of 0, 1, 2 then 3.
-Using that key, `"hello"` would become `"hfnoo"`.
+If the key is `"abcd"` then letters of the plaintext would be shifted by a distance of 0, 1, 2, and 3.
+If the plaintext is `"hello"`, we need 5 shifts so the key would wrap around, giving shift distances of 0, 1, 2, 3, and 0.
+Applying those shifts to the letters of `"hello"` we get `"hfnoo"`.
 
 ## Random keys
 
