@@ -1,7 +1,7 @@
 # Instructions
 
 Your task is to determine the degree of separation between two individuals in a family tree.
-This is similar to the pop culture idea that everyone is [within six degrees of Kevin Bacon][six-bacons].
+This is similar to the pop culture idea that every Hollywood actor is [within six degrees of Kevin Bacon][six-bacons].
 
 - You will be given an input, with all parent names and their children.
 - Each name is unique, a child _can_ have one or two parents.
