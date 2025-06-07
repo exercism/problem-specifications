@@ -19,7 +19,7 @@ In the real world, there are 64 codons, which in turn correspond to 20 amino aci
 
 For example, the RNA string “AUGUUUUCU” has three codons: “AUG”, “UUU” and “UCU”. These map to Methionine, Phenylalanine, and Serine.
 
-### “STOP” Codons
+## “STOP” Codons
 
 You’ll note from the table above that there are three **“STOP” codons**. If you encounter any of these codons, ignore the rest of the sequence — the protein is complete.
 
