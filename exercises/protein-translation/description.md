@@ -6,16 +6,16 @@ RNA strands are made up of three-nucleotide sequences called **codons**. Each co
 
 In the real world, there are 64 codons, which in turn correspond to 20 amino acids. However, for this exercise, you’ll only use a few of the possible 64. They are listed below:
 
-|Codon|Amino Acid|
-| --- | --- |
-|AUG|Methionine|
-|UUU, UUC|Phenylalanine|
-|UUA, UUG|Leucine|
-|UCU, UCC, UCA, UCG|Serine|
-|UAU, UAC|Tyrosine|
-|UGU, UGC|Cysteine|
-|UGG|Tryptophan|
-|UAA, UAG, UGA|STOP|
+| Codon              | Amino Acid    |
+| ------------------ | ------------- |
+| AUG                | Methionine    |
+| UUU, UUC           | Phenylalanine |
+| UUA, UUG           | Leucine       |
+| UCU, UCC, UCA, UCG | Serine        |
+| UAU, UAC           | Tyrosine      |
+| UGU, UGC           | Cysteine      |
+| UGG                | Tryptophan    |
+| UAA, UAG, UGA      | STOP          |
 
 For example, the RNA string “AUGUUUUCU” has three codons: “AUG”, “UUU” and “UCU”. These map to Methionine, Phenylalanine, and Serine.
 
