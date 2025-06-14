@@ -21,7 +21,8 @@ For example, the RNA string “AUGUUUUCU” has three codons: “AUG”, “UUU�
 
 ## “STOP” Codons
 
-You’ll note from the table above that there are three **“STOP” codons**. If you encounter any of these codons, ignore the rest of the sequence — the protein is complete.
+You’ll note from the table above that there are three **“STOP” codons**.
+If you encounter any of these codons, ignore the rest of the sequence — the protein is complete.
 
 For example, “AUGUUUUCUUAAAUG” contains a STOP codon (“UAA”). Once we reach that point, we stop processing. We therefore only consider the part before it (i.e. “AUGUUUUCU”), not any further codons after it (i.e. “AUG”).
 
