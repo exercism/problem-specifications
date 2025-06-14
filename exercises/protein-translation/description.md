@@ -17,7 +17,8 @@ In the real world, there are 64 codons, which in turn correspond to 20 amino aci
 | UGG                | Tryptophan    |
 | UAA, UAG, UGA      | STOP          |
 
-For example, the RNA string “AUGUUUUCU” has three codons: “AUG”, “UUU” and “UCU”. These map to Methionine, Phenylalanine, and Serine.
+For example, the RNA string “AUGUUUUCU” has three codons: “AUG”, “UUU” and “UCU”.
+These map to Methionine, Phenylalanine, and Serine.
 
 ## “STOP” Codons
 
