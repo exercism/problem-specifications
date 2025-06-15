@@ -16,6 +16,24 @@
       "expected": 5
     },
     {
+      "uuid": "18983214-1dfc-4ebd-ac77-c110dde699ce",
+      "description": "just a zero",
+      "property": "answer",
+      "input": {
+        "question": "What is 0?"
+      },
+      "expected": 0
+    },
+    {
+      "uuid": "607c08ee-2241-4288-916d-dae5455c87e6",
+      "description": "just a negative number",
+      "property": "answer",
+      "input": {
+        "question": "What is -123?"
+      },
+      "expected": -123
+    },
+    {
       "uuid": "bb8c655c-cf42-4dfc-90e0-152fcfd8d4e0",
       "description": "addition",
       "property": "answer",
@@ -23,6 +41,24 @@
         "question": "What is 1 plus 1?"
       },
       "expected": 2
+    },
+    {
+      "uuid": "bb9f2082-171c-46ad-ad4e-c3f72087c1b5",
+      "description": "addition with a left hand zero",
+      "property": "answer",
+      "input": {
+        "question": "What is 0 plus 2?"
+      },
+      "expected": 2
+    },
+    {
+      "uuid": "6fa05f17-405a-4742-80ae-5d1a8edb0d5d",
+      "description": "addition with a right hand zero",
+      "property": "answer",
+      "input": {
+        "question": "What is 3 plus 0?"
+      },
+      "expected": 3
     },
     {
       "uuid": "79e49e06-c5ae-40aa-a352-7a3a01f70015",
