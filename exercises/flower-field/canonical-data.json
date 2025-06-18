@@ -1,10 +1,10 @@
 {
   "exercise": "flower-field",
   "comments": [
-    " The expected outputs are represented as arrays of strings to   ",
-    " improve readability in this JSON file.                         ",
-    " Your track may choose whether to present the input as a single ",
-    " string (concatenating all the lines) or as the list.           "
+    "The expected outputs are represented as arrays of strings to",
+    "improve readability in this JSON file.",
+    "Your track may choose whether to present the input as a single",
+    "string (concatenating all the lines) or as the list."
   ],
   "cases": [
     {
