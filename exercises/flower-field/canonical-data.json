@@ -30,36 +30,68 @@
       "description": "no flowers",
       "property": "annotate",
       "input": {
-        "garden": ["   ", "   ", "   "]
+        "garden": [
+          "   ",
+          "   ",
+          "   "
+        ]
       },
-      "expected": ["   ", "   ", "   "]
+      "expected": [
+        "   ",
+        "   ",
+        "   "
+      ]
     },
     {
       "uuid": "225176a0-725e-43cd-aa13-9dced501f16e",
       "description": "garden full of flowers",
       "property": "annotate",
       "input": {
-        "garden": ["***", "***", "***"]
+        "garden": [
+          "***",
+          "***",
+          "***"
+        ]
       },
-      "expected": ["***", "***", "***"]
+      "expected": [
+        "***",
+        "***",
+        "***"
+      ]
     },
     {
       "uuid": "3f345495-f1a5-4132-8411-74bd7ca08c49",
       "description": "flower surrounded by spaces",
       "property": "annotate",
       "input": {
-        "garden": ["   ", " * ", "   "]
+        "garden": [
+          "   ",
+          " * ",
+          "   "
+        ]
       },
-      "expected": ["111", "1*1", "111"]
+      "expected": [
+        "111",
+        "1*1",
+        "111"
+      ]
     },
     {
       "uuid": "6cb04070-4199-4ef7-a6fa-92f68c660fca",
       "description": "space surrounded by flowers",
       "property": "annotate",
       "input": {
-        "garden": ["***", "* *", "***"]
+        "garden": [
+          "***",
+          "* *",
+          "***"
+        ]
       },
-      "expected": ["***", "*8*", "***"]
+      "expected": [
+        "***",
+        "*8*",
+        "***"
+      ]
     },
     {
       "uuid": "272d2306-9f62-44fe-8ab5-6b0f43a26338",
@@ -84,36 +116,86 @@
       "description": "vertical line",
       "property": "annotate",
       "input": {
-        "garden": [" ", "*", " ", "*", " "]
+        "garden": [
+          " ",
+          "*",
+          " ",
+          "*",
+          " "
+        ]
       },
-      "expected": ["1", "*", "2", "*", "1"]
+      "expected": [
+        "1",
+        "*",
+        "2",
+        "*",
+        "1"
+      ]
     },
     {
       "uuid": "b40f42f5-dec5-4abc-b167-3f08195189c1",
       "description": "vertical line, flowers at edges",
       "property": "annotate",
       "input": {
-        "garden": ["*", " ", " ", " ", "*"]
+        "garden": [
+          "*",
+          " ",
+          " ",
+          " ",
+          "*"
+        ]
       },
-      "expected": ["*", "1", " ", "1", "*"]
+      "expected": [
+        "*",
+        "1",
+        " ",
+        "1",
+        "*"
+      ]
     },
     {
       "uuid": "58674965-7b42-4818-b930-0215062d543c",
       "description": "cross",
       "property": "annotate",
       "input": {
-        "garden": ["  *  ", "  *  ", "*****", "  *  ", "  *  "]
+        "garden": [
+          "  *  ",
+          "  *  ",
+          "*****",
+          "  *  ",
+          "  *  "
+        ]
       },
-      "expected": [" 2*2 ", "25*52", "*****", "25*52", " 2*2 "]
+      "expected": [
+        " 2*2 ",
+        "25*52",
+        "*****",
+        "25*52",
+        " 2*2 "
+      ]
     },
     {
       "uuid": "dd9d4ca8-9e68-4f78-a677-a2a70fd7a7b8",
       "description": "large garden",
       "property": "annotate",
       "input": {
-        "garden": [" *  * ", "  *   ", "    * ", "   * *", " *  * ", "      "]
+        "garden": [
+          " *  * ",
+          "  *   ",
+          "    * ",
+          "   * *",
+          " *  * ",
+          "      "
+        ]
       },
-      "expected": ["1*22*1", "12*322", " 123*2", "112*4*", "1*22*2", "111111"]
+      "expected": [
+        "1*22*1",
+        "12*322",
+        " 123*2",
+        "112*4*",
+        "1*22*2",
+        "111111"
+      ]
     }
   ]
 }
