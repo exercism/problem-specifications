@@ -1,7 +1,7 @@
 # Instructions
 
-Your task is to add flower counts to empty squares in a completed Flower Field board.
-The board itself is a rectangle composed of squares that are either empty (`' '`) or a flower (`'*'`).
+Your task is to add flower counts to empty squares in a completed Flower Field garden.
+The garden itself is a rectangle board composed of squares that are either empty (`' '`) or a flower (`'*'`).
 
 For each empty square, count the number of flowers adjacent to it (horizontally, vertically, diagonally).
 If the empty square has no adjacent flowers, leave it empty.
