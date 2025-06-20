@@ -48,6 +48,10 @@ formats = {
     'array' => :multi_line_deep,
     'expected' => :multi_line,
   },
+  'flower-field' => {
+    'garden' => :multi_line_unless_single,
+    'expected' => :multi_line_unless_single,
+  },
   'forth' => {
     'instructions' => :multi_line_unless_single,
   },

@@ -1,0 +1,201 @@
+{
+  "exercise": "flower-field",
+  "comments": [
+    "The expected outputs are represented as arrays of strings to",
+    "improve readability in this JSON file.",
+    "Your track may choose whether to present the input as a single",
+    "string (concatenating all the lines) or as the list."
+  ],
+  "cases": [
+    {
+      "uuid": "237ff487-467a-47e1-9b01-8a891844f86c",
+      "description": "no rows",
+      "property": "annotate",
+      "input": {
+        "garden": []
+      },
+      "expected": []
+    },
+    {
+      "uuid": "4b4134ec-e20f-439c-a295-664c38950ba1",
+      "description": "no columns",
+      "property": "annotate",
+      "input": {
+        "garden": [""]
+      },
+      "expected": [""]
+    },
+    {
+      "uuid": "d774d054-bbad-4867-88ae-069cbd1c4f92",
+      "description": "no flowers",
+      "property": "annotate",
+      "input": {
+        "garden": [
+          "   ",
+          "   ",
+          "   "
+        ]
+      },
+      "expected": [
+        "   ",
+        "   ",
+        "   "
+      ]
+    },
+    {
+      "uuid": "225176a0-725e-43cd-aa13-9dced501f16e",
+      "description": "garden full of flowers",
+      "property": "annotate",
+      "input": {
+        "garden": [
+          "***",
+          "***",
+          "***"
+        ]
+      },
+      "expected": [
+        "***",
+        "***",
+        "***"
+      ]
+    },
+    {
+      "uuid": "3f345495-f1a5-4132-8411-74bd7ca08c49",
+      "description": "flower surrounded by spaces",
+      "property": "annotate",
+      "input": {
+        "garden": [
+          "   ",
+          " * ",
+          "   "
+        ]
+      },
+      "expected": [
+        "111",
+        "1*1",
+        "111"
+      ]
+    },
+    {
+      "uuid": "6cb04070-4199-4ef7-a6fa-92f68c660fca",
+      "description": "space surrounded by flowers",
+      "property": "annotate",
+      "input": {
+        "garden": [
+          "***",
+          "* *",
+          "***"
+        ]
+      },
+      "expected": [
+        "***",
+        "*8*",
+        "***"
+      ]
+    },
+    {
+      "uuid": "272d2306-9f62-44fe-8ab5-6b0f43a26338",
+      "description": "horizontal line",
+      "property": "annotate",
+      "input": {
+        "garden": [" * * "]
+      },
+      "expected": ["1*2*1"]
+    },
+    {
+      "uuid": "c6f0a4b2-58d0-4bf6-ad8d-ccf4144f1f8e",
+      "description": "horizontal line, flowers at edges",
+      "property": "annotate",
+      "input": {
+        "garden": ["*   *"]
+      },
+      "expected": ["*1 1*"]
+    },
+    {
+      "uuid": "a54e84b7-3b25-44a8-b8cf-1753c8bb4cf5",
+      "description": "vertical line",
+      "property": "annotate",
+      "input": {
+        "garden": [
+          " ",
+          "*",
+          " ",
+          "*",
+          " "
+        ]
+      },
+      "expected": [
+        "1",
+        "*",
+        "2",
+        "*",
+        "1"
+      ]
+    },
+    {
+      "uuid": "b40f42f5-dec5-4abc-b167-3f08195189c1",
+      "description": "vertical line, flowers at edges",
+      "property": "annotate",
+      "input": {
+        "garden": [
+          "*",
+          " ",
+          " ",
+          " ",
+          "*"
+        ]
+      },
+      "expected": [
+        "*",
+        "1",
+        " ",
+        "1",
+        "*"
+      ]
+    },
+    {
+      "uuid": "58674965-7b42-4818-b930-0215062d543c",
+      "description": "cross",
+      "property": "annotate",
+      "input": {
+        "garden": [
+          "  *  ",
+          "  *  ",
+          "*****",
+          "  *  ",
+          "  *  "
+        ]
+      },
+      "expected": [
+        " 2*2 ",
+        "25*52",
+        "*****",
+        "25*52",
+        " 2*2 "
+      ]
+    },
+    {
+      "uuid": "dd9d4ca8-9e68-4f78-a677-a2a70fd7a7b8",
+      "description": "large garden",
+      "property": "annotate",
+      "input": {
+        "garden": [
+          " *  * ",
+          "  *   ",
+          "    * ",
+          "   * *",
+          " *  * ",
+          "      "
+        ]
+      },
+      "expected": [
+        "1*22*1",
+        "12*322",
+        " 123*2",
+        "112*4*",
+        "1*22*2",
+        "111111"
+      ]
+    }
+  ]
+}
