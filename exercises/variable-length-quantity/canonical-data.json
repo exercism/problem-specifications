@@ -29,6 +29,15 @@
           "expected": [64]
         },
         {
+          "uuid": "890bc344-cb80-45af-b316-6806a6971e81",
+          "description": "asymmetric single byte",
+          "property": "encode",
+          "input": {
+            "integers": [83]
+          },
+          "expected": [83]
+        },
+        {
           "uuid": "ea399615-d274-4af6-bbef-a1c23c9e1346",
           "description": "largest single byte",
           "property": "encode",
@@ -54,6 +63,15 @@
             "integers": [8192]
           },
           "expected": [192, 0]
+        },
+        {
+          "uuid": "4977d113-251b-4d10-a3ad-2f5a7756bb58",
+          "description": "asymmetric double byte",
+          "property": "encode",
+          "input": {
+            "integers": [173]
+          },
+          "expected": [129, 45]
         },
         {
           "uuid": "29da7031-0067-43d3-83a7-4f14b29ed97a",
@@ -83,6 +101,15 @@
           "expected": [192, 128, 0]
         },
         {
+          "uuid": "6731045f-1e00-4192-b5ae-98b22e17e9f7",
+          "description": "asymmetric triple byte",
+          "property": "encode",
+          "input": {
+            "integers": [120220]
+          },
+          "expected": [135, 171, 28]
+        },
+        {
           "uuid": "f51d8539-312d-4db1-945c-250222c6aa22",
           "description": "largest triple byte",
           "property": "encode",
@@ -110,6 +137,15 @@
           "expected": [192, 128, 128, 0]
         },
         {
+          "uuid": "b45ef770-cbba-48c2-bd3c-c6362679516e",
+          "description": "asymmetric quadruple byte",
+          "property": "encode",
+          "input": {
+            "integers": [3503876]
+          },
+          "expected": [129, 213, 238, 4]
+        },
+        {
           "uuid": "d5f3f3c3-e0f1-4e7f-aad0-18a44f223d1c",
           "description": "largest quadruple byte",
           "property": "encode",
@@ -135,6 +171,15 @@
             "integers": [4278190080]
           },
           "expected": [143, 248, 128, 128, 0]
+        },
+        {
+          "uuid": "9be46731-7cd5-415c-b960-48061cbc1154",
+          "description": "asymmetric quintuple byte",
+          "property": "encode",
+          "input": {
+            "integers": [2254790917]
+          },
+          "expected": [136, 179, 149, 194, 5]
         },
         {
           "uuid": "7489694b-88c3-4078-9864-6fe802411009",
