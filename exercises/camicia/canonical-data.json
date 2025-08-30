@@ -4,7 +4,7 @@
     {
       "uuid": "dca32c31-11ed-49f6-b078-79ab912c1f7b",
       "description": "easy card combination",
-      "property": "findEndGame",
+      "property": "simulateGame",
       "input": {
         "playerA": "--------------------------",
         "playerB": "----------AAAAKKKKQQQQJJJJ"
@@ -18,7 +18,7 @@
     {
       "uuid": "1f8488d0-48d3-45ae-b819-59cedad0a5f4",
       "description": "easy card combination, inverted decks",
-      "property": "findEndGame",
+      "property": "simulateGame",
       "input": {
         "playerA": "----------AAAAKKKKQQQQJJJJ",
         "playerB": "--------------------------"
@@ -32,7 +32,7 @@
     {
       "uuid": "98878d35-623a-4d05-b81a-7bdc569eb88d",
       "description": "mirrored decks",
-      "property": "findEndGame",
+      "property": "simulateGame",
       "input": {
         "playerA": "-A-A-K-K-Q-Q-J-J----------",
         "playerB": "-A-A-K-K-Q-Q-J-J----------"
@@ -46,7 +46,7 @@
     {
       "uuid": "3e0ba597-ca10-484b-87a3-31a7df7d6da3",
       "description": "opposite decks",
-      "property": "findEndGame",
+      "property": "simulateGame",
       "input": {
         "playerA": "-A-A-K-K-Q-Q-J-J----------",
         "playerB": "----------J-J-Q-Q-K-K-A-A-"
@@ -60,7 +60,7 @@
     {
       "uuid": "92334ddb-aaa7-47fa-ab36-e928a8a6a67c",
       "description": "random decks #1",
-      "property": "findEndGame",
+      "property": "simulateGame",
       "input": {
         "playerA": "K---J----AK---J-J---------",
         "playerB": "--KAQ-A-Q-----Q-K--A-Q-J--"
@@ -74,7 +74,7 @@
     {
       "uuid": "30477523-9651-4860-84a3-e1ac461bb7fa",
       "description": "random decks #2",
-      "property": "findEndGame",
+      "property": "simulateGame",
       "input": {
         "playerA": "-A---QJ-----KA--K---K---K-",
         "playerB": "----QJA------JA-Q-JQ------"
@@ -88,7 +88,7 @@
     {
       "uuid": "20967de8-9e94-4e0e-9010-14bc1c157432",
       "description": "Kleber 1999",
-      "property": "findEndGame",
+      "property": "simulateGame",
       "input": {
         "playerA": "---JQ---K-A----A-J-K---QK-",
         "playerB": "-J-----------AJQA----K---Q"
@@ -102,7 +102,7 @@
     {
       "uuid": "9f2fdfe8-27f3-4323-816d-6bce98a9c6f7",
       "description": "Collins 2006",
-      "property": "findEndGame",
+      "property": "simulateGame",
       "input": {
         "playerA": "A-QK------Q----KA-----J---",
         "playerB": "-JAK----A--Q----J---QJ--K-"
@@ -116,7 +116,7 @@
     {
       "uuid": "c90b6f8d-7013-49f3-b5cb-14ea006cca1d",
       "description": "Mann and Wu 2007",
-      "property": "findEndGame",
+      "property": "simulateGame",
       "input": {
         "playerA": "K-KK----K-A-----JAA--Q--J-",
         "playerB": "---Q---Q-J-----J------AQ--"
@@ -130,7 +130,7 @@
     {
       "uuid": "a3f1fbc5-1d0b-499a-92a5-22932dfc6bc8",
       "description": "Nessler 2012",
-      "property": "findEndGame",
+      "property": "simulateGame",
       "input": {
         "playerA": "----Q------A--K--A-A--QJK-",
         "playerB": "-Q--J--J---QK---K----JA---"
@@ -144,7 +144,7 @@
     {
       "uuid": "9cefb1ba-e6d1-4ab7-9d8f-76d8e0976d5f",
       "description": "Anderson 2013",
-      "property": "findEndGame",
+      "property": "simulateGame",
       "input": {
         "playerA": "--A-Q--J--J---Q--AJ-K---K-",
         "playerB": "-J-------Q------A--A--QKK-"
@@ -158,7 +158,7 @@
     {
       "uuid": "d37c0318-5be6-48d0-ab72-a7aaaff86179",
       "description": "Rucklidge 2014",
-      "property": "findEndGame",
+      "property": "simulateGame",
       "input": {
         "playerA": "-J------Q------AAA-----QQ-",
         "playerB": "K----JA-----------KQ-K-JJK"
@@ -172,7 +172,7 @@
     {
       "uuid": "4305e479-ba87-432f-8a29-cd2bd75d2f05",
       "description": "Nessler 2021",
-      "property": "findEndGame",
+      "property": "simulateGame",
       "input": {
         "playerA": "----K---A--Q-A--JJA------J",
         "playerB": "-----KK---------A-JK-Q-Q-Q"
@@ -186,7 +186,7 @@
     {
       "uuid": "252f5cc3-b86d-4251-87ce-f920b7a6a559",
       "description": "Nessler 2022",
-      "property": "findEndGame",
+      "property": "simulateGame",
       "input": {
         "playerA": "---AJ--Q---------QAKQJJ-QK",
         "playerB": "-----A----KJ-K--------A---"
@@ -200,7 +200,7 @@
     {
       "uuid": "b9efcfa4-842f-4542-8112-8389c714d958",
       "description": "Casella 2024, first infinite game found",
-      "property": "findEndGame",
+      "property": "simulateGame",
       "input": {
         "playerA": "---K---Q-KQAJ-----AAJ--J--",
         "playerB": "----------Q----KQ-J-----KA"
