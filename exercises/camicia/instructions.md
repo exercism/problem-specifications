@@ -5,7 +5,8 @@ Your program will receive the initial configuration of two players’ decks and 
 
 ## Rules
 
-* The deck is split between **two players**. Each player’s cards are represented as a string (top of the deck = leftmost character).
+* The deck is split between **two players**.
+  Each player's cards are represented as a string where the leftmost character is the top of the deck.
 
 * Players take turns placing the **top card** of their deck onto a central pile.
 
