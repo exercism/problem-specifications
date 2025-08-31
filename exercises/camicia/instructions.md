@@ -51,7 +51,7 @@ Here’s a simple example of input and output.
 
 ## Your Task
 
-* Parse the two players’ decks from the input.
+* Parse the two players' decks from the input.
 * Simulate the game following the rules above.
 * Determine is the final game status is `"finished"` or `"loop"`.
 
