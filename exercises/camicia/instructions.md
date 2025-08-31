@@ -42,7 +42,7 @@ Here’s a simple example of input and output.
 }
 ```
 
-### Explanation:
+### Explanation
 
 * Player A only has number cards (`-`), so can never defend against a payment card.
 * Player B has a long sequence of Aces, Kings, Queens, and Jacks.
