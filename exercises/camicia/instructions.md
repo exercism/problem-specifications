@@ -19,7 +19,7 @@ Your program will receive the initial configuration of two players’ decks and 
   * `K` → opponent must pay 3 cards
   * `A` → opponent must pay 4 cards
 
-* While paying, if the opponent reveals another payment card, the penalty immediately switches back.
+* If the player paying a penalty reveals another payment card, that player stops paying the penalty and the other player much then pay the penalty.
 
 * If the penalty is fully paid without interruption, the player who laid the **last payment card** collects the central pile and places it at the bottom of their deck.
   That player then starts the next round.
