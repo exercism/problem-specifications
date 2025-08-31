@@ -23,7 +23,7 @@ Your program will receive the initial configuration of two players’ decks and 
   - When a player runs out of cards while paying a penalty → the game ends
   - When a player can no longer place a card in the central pile → the game ends
 - The game **ends** when one player can no longer respond by playing a card, in general.
-- The game **enters a loop** as soon as decks identical to previous ones are played during the game, ***not*** counting number cards!
+- The game **enters a loop** as soon as decks identical to previous ones are played during the game, **not** counting number cards!
 
 ## Example
 
