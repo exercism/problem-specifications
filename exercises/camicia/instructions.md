@@ -21,7 +21,8 @@ Your program will receive the initial configuration of two players’ decks and 
 
 * While paying, if the opponent reveals another payment card, the penalty immediately switches back.
 
-* If the penalty is fully paid without interruption, the player who laid the **last payment card** collects the central pile and places it at the bottom of their deck. That player also starts the next round.
+* If the penalty is fully paid without interruption, the player who laid the **last payment card** collects the central pile and places it at the bottom of their deck.
+  That player then starts the next round.
 
 * The game ends when one player has no more cards.
 
