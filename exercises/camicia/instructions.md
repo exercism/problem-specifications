@@ -5,26 +5,19 @@ Your program will receive the initial configuration of two players’ decks and 
 
 ## Rules
 
-* The deck is split between **two players**.
+- The deck is split between **two players**.
   Each player's cards are represented as a string where the leftmost character is the top of the deck.
-
-* Players take turns placing the **top card** of their deck onto a central pile.
-
-* If the card is a **number card** (`-` in this scenario), play simply passes to the other player.
-
-* If the card is a **payment card**, a price needs to be paid:
-
-  * `J` → opponent must pay 1 card
-  * `Q` → opponent must pay 2 cards
-  * `K` → opponent must pay 3 cards
-  * `A` → opponent must pay 4 cards
-
-* If the player paying a penalty reveals another payment card, that player stops paying the penalty and the other player much then pay the penalty.
-
-* If the penalty is fully paid without interruption, the player who laid the **last payment card** collects the central pile and places it at the bottom of their deck.
+- Players take turns placing the **top card** of their deck onto a central pile.
+- If the card is a **number card** (`-` in this scenario), play simply passes to the other player.
+- If the card is a **payment card**, a price needs to be paid:
+  - `J` → opponent must pay 1 card
+  - `Q` → opponent must pay 2 cards
+  - `K` → opponent must pay 3 cards
+  - `A` → opponent must pay 4 cards
+- If the player paying a penalty reveals another payment card, that player stops paying the penalty and the other player much then pay the penalty.
+- If the penalty is fully paid without interruption, the player who laid the **last payment card** collects the central pile and places it at the bottom of their deck.
   That player then starts the next round.
-
-* The game ends when one player has no more cards.
+- The game ends when one player has no more cards.
 
 ## Example
 
@@ -44,17 +37,16 @@ Here’s a simple example of input and output.
 
 ### Explanation
 
-* Player A only has number cards, so can never defend against a payment card.
-* Player B has a long sequence of payment cards: Aces, Kings, Queens, and Jacks.
-* Each payment card forces a payment, which Player A cannot counter with a payment card of their own, so Player B repeatedly wins the pile (repeatedly completes a trick).
-* In the end, player B captures their opponent's entire deck by playing 40 cards in just 4 "tricks" (turns in which a deck is collected).
+- Player A only has number cards, so can never defend against a payment card.
+- Player B has a long sequence of payment cards: Aces, Kings, Queens, and Jacks.
+- Each payment card forces a payment, which Player A cannot counter with a payment card of their own, so Player B repeatedly wins the pile (repeatedly completes a trick).
+- In the end, player B captures their opponent's entire deck by playing 40 cards in just 4 "tricks" (turns in which a deck is collected).
 
 ## Your Task
 
-* Parse the two players' decks from the input.
-* Simulate the game following the rules above.
-* Determine is the final game status is `"finished"` or `"loop"`.
-
-  * `"status"`: `"finished"` or `"loop"`
-  * `"cards"`: total number of cards played throughout the game
-  * `"tricks"`: number of times the central pile was collected
+- Parse the two players' decks from the input.
+- Simulate the game following the rules above.
+- Determine is the final game status is `"finished"` or `"loop"`.
+  - `"status"`: `"finished"` or `"loop"`
+  - `"cards"`: total number of cards played throughout the game
+  - `"tricks"`: number of times the central pile was collected
