@@ -12,12 +12,11 @@ You start to wonder.
 _Will this game ever finish?
 Or could we keep playing forever?_
 
-Later, driven by curiosity, you search online and to your surprise you discover that what happened wasn’t just bad luck.\
-You and your grandmother may have stumbled upon one of the longest possible sequences!\
-Suddenly, you’re hooked.\
-What began as a casual game has turned into a quest:\
-_How long can such a game really last?_\
-_Can you find a sequence even longer than the one you played at the kitchen table?_\
+Later, driven by curiosity, you search online and to your surprise you discover that what happened wasn’t just bad luck.
+You and your grandmother may have stumbled upon one of the longest possible sequences!
+Suddenly, you're hooked.
+What began as a casual game has turned into a quest: _how long can such a game really last?_
+_Can you find a sequence even longer than the one you played at the kitchen table?_
 _Perhaps even long enough to set a new world record?_
 
 And so, armed with nothing but a deck of cards and some algorithmic ingenuity, you decide to investigate…
