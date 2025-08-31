@@ -1,7 +1,7 @@
 # Introduction
 
 One rainy afternoon, you sit at the kitchen table playing cards with your grandmother.\
-The game is [Camica][bmn].
+The game is [Camicia][bmn].
 
 At first it feels like just another friendly match: cards slapped down, laughter across the table, the occasional victorious grin from Nonna.
 But as the game drags on, something strange happens.
