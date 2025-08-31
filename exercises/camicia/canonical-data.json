@@ -6,8 +6,8 @@
       "description": "easy card combination",
       "property": "simulateGame",
       "input": {
-        "playerA": "--------------------------",
-        "playerB": "----------AAAAKKKKQQQQJJJJ"
+        "playerA": "487541039731010682854596528109",
+        "playerB": "6947223673AAAAKKKKQQQQJJJJ"
       },
       "expected": {
         "status": "finished",
@@ -20,8 +20,8 @@
       "description": "easy card combination, inverted decks",
       "property": "simulateGame",
       "input": {
-        "playerA": "----------AAAAKKKKQQQQJJJJ",
-        "playerB": "--------------------------"
+        "playerA": "33573210767AAAAKKKKQQQQJJJJ",
+        "playerB": "51082672492610105484869859349"
       },
       "expected": {
         "status": "finished",
@@ -34,8 +34,8 @@
       "description": "mirrored decks",
       "property": "simulateGame",
       "input": {
-        "playerA": "-A-A-K-K-Q-Q-J-J----------",
-        "playerB": "-A-A-K-K-Q-Q-J-J----------"
+        "playerA": "2A3A3K4K2Q2Q10J5J610291073969",
+        "playerB": "6A4A7K4K7Q7Q5J8J45891068385"
       },
       "expected": {
         "status": "finished",
@@ -48,8 +48,8 @@
       "description": "opposite decks",
       "property": "simulateGame",
       "input": {
-        "playerA": "-A-A-K-K-Q-Q-J-J----------",
-        "playerB": "----------J-J-Q-Q-K-K-A-A-"
+        "playerA": "4A9A4K9K6Q8Q8J10J9846365243",
+        "playerB": "10732927875J7J10Q10Q3K5K6A2A5"
       },
       "expected": {
         "status": "finished",
@@ -62,8 +62,8 @@
       "description": "random decks #1",
       "property": "simulateGame",
       "input": {
-        "playerA": "K---J----AK---J-J---------",
-        "playerB": "--KAQ-A-Q-----Q-K--A-Q-J--"
+        "playerA": "K1098J8697AK544J5J435867749",
+        "playerB": "63KAQ10A2Q8210102Q3K97A3Q5J26"
       },
       "expected": {
         "status": "finished",
@@ -76,8 +76,8 @@
       "description": "random decks #2",
       "property": "simulateGame",
       "input": {
-        "playerA": "-A---QJ-----KA--K---K---K-",
-        "playerB": "----QJA------JA-Q-JQ------"
+        "playerA": "8A485QJ26297KA810K8109K673K9",
+        "playerB": "10526QJA955373JA2Q3JQ4104746"
       },
       "expected": {
         "status": "finished",
@@ -90,8 +90,8 @@
       "description": "Kleber 1999",
       "property": "simulateGame",
       "input": {
-        "playerA": "---JQ---K-A----A-J-K---QK-",
-        "playerB": "-J-----------AJQA----K---Q"
+        "playerA": "489JQ855K2A98510A4J3K692QK7",
+        "playerB": "10J324104753667AJQA72103K968Q"
       },
       "expected": {
         "status": "finished",
@@ -104,8 +104,8 @@
       "description": "Collins 2006",
       "property": "simulateGame",
       "input": {
-        "playerA": "A-QK------Q----KA-----J---",
-        "playerB": "-JAK----A--Q----J---QJ--K-"
+        "playerA": "A8QK9103742Q32109KA87745J9210",
+        "playerB": "4JAK8566A65Q46108J257QJ33K9"
       },
       "expected": {
         "status": "finished",
@@ -118,8 +118,8 @@
       "description": "Mann and Wu 2007",
       "property": "simulateGame",
       "input": {
-        "playerA": "K-KK----K-A-----JAA--Q--J-",
-        "playerB": "---Q---Q-J-----J------AQ--"
+        "playerA": "K2KK33610K6A25579JAA34Q48J6",
+        "playerB": "452Q799Q7J9810310J4108687AQ52"
       },
       "expected": {
         "status": "finished",
@@ -132,8 +132,8 @@
       "description": "Nessler 2012",
       "property": "simulateGame",
       "input": {
-        "playerA": "----Q------A--K--A-A--QJK-",
-        "playerB": "-Q--J--J---QK---K----JA---"
+        "playerA": "10367Q298284A106K210A5A24QJK4",
+        "playerB": "10Q46J93J933QK595K6578JA787"
       },
       "expected": {
         "status": "finished",
@@ -146,8 +146,8 @@
       "description": "Anderson 2013",
       "property": "simulateGame",
       "input": {
-        "playerA": "--A-Q--J--J---Q--AJ-K---K-",
-        "playerB": "-J-------Q------A--A--QKK-"
+        "playerA": "67A3Q35J32J745Q105AJ2K899K3",
+        "playerB": "4J69851079Q27108410A64A68QKK2"
       },
       "expected": {
         "status": "finished",
@@ -160,8 +160,8 @@
       "description": "Rucklidge 2014",
       "property": "simulateGame",
       "input": {
-        "playerA": "-J------Q------AAA-----QQ-",
-        "playerB": "K----JA-----------KQ-K-JJK"
+        "playerA": "8J294458Q393628AAA94725QQ3",
+        "playerB": "K71063JA7655810910427KQ10K6JJK"
       },
       "expected": {
         "status": "finished",
@@ -174,8 +174,8 @@
       "description": "Nessler 2021",
       "property": "simulateGame",
       "input": {
-        "playerA": "----K---A--Q-A--JJA------J",
-        "playerB": "-----KK---------A-JK-Q-Q-Q"
+        "playerA": "7234K9610A89Q7A48JJA432566J",
+        "playerB": "310898KK255764357A9JK2Q10Q10Q"
       },
       "expected": {
         "status": "finished",
@@ -188,8 +188,8 @@
       "description": "Nessler 2022",
       "property": "simulateGame",
       "input": {
-        "playerA": "---AJ--Q---------QAKQJJ-QK",
-        "playerB": "-----A----KJ-K--------A---"
+        "playerA": "21010AJ38Q2555924310QAKQJJ9QK",
+        "playerB": "107636A8943KJ6K49785782A746"
       },
       "expected": {
         "status": "finished",
@@ -202,8 +202,8 @@
       "description": "Casella 2024, first infinite game found",
       "property": "simulateGame",
       "input": {
-        "playerA": "---K---Q-KQAJ-----AAJ--J--",
-        "playerB": "----------Q----KQ-J-----KA"
+        "playerA": "284K523Q6KQAJ35983AAJ44J75",
+        "playerB": "7786101061072Q6324KQ10J59899KA"
       },
       "expected": {
         "status": "loop",
