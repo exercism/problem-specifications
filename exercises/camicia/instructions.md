@@ -57,4 +57,4 @@ Here’s a simple example of input and output.
 
   * `"status"`: `"finished"` or `"loop"`
   * `"cards"`: total number of cards played throughout the game
-   * `"tricks"`: number of times the central pile was collected
+  * `"tricks"`: number of times the central pile was collected
