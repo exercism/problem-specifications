@@ -55,6 +55,6 @@ Here’s a simple example of input and output.
 * Simulate the game following the rules above.
 * Determine is the final game status is `"finished"` or `"loop"`.
 
-   * `"status"`: `"finished"` or `"loop"`
+  * `"status"`: `"finished"` or `"loop"`
    * `"cards"`: total number of cards played throughout the game
    * `"tricks"`: number of times the central pile was collected
