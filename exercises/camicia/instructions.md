@@ -12,7 +12,7 @@ Your program will receive the initial configuration of two players’ decks and 
 
 * If the card is a **number card** (`-` in this scenario), play simply passes to the other player.
 
-* If the card is a **payment card**:
+* If the card is a **payment card**, a price needs to be paid:
 
   * `J` → opponent must pay 1 card
   * `Q` → opponent must pay 2 cards
