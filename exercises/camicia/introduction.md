@@ -8,8 +8,9 @@ But as the game drags on, something strange happens.
 The pile keeps growing.
 You play card after card, yet the end never seems to come.
 
-You start to wonder:\
-_Will this game ever finish? Or could we keep playing forever?_
+You start to wonder.
+_Will this game ever finish?
+Or could we keep playing forever?_
 
 Later, driven by curiosity, you search online and to your surprise you discover that what happened wasn’t just bad luck.\
 You and your grandmother may have stumbled upon one of the longest possible sequences!\
