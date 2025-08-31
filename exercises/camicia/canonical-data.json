@@ -11,7 +11,7 @@
       },
       "expected": {
         "status": "finished",
-        "cards": 40, 
+        "cards": 40,
         "tricks": 4
       }
     },
@@ -25,7 +25,7 @@
       },
       "expected": {
         "status": "finished",
-        "cards": 40, 
+        "cards": 40,
         "tricks": 4
       }
     },
@@ -39,7 +39,7 @@
       },
       "expected": {
         "status": "finished",
-        "cards": 59, 
+        "cards": 59,
         "tricks": 4
       }
     },
@@ -53,7 +53,7 @@
       },
       "expected": {
         "status": "finished",
-        "cards": 151, 
+        "cards": 151,
         "tricks": 21
       }
     },
@@ -67,7 +67,7 @@
       },
       "expected": {
         "status": "finished",
-        "cards": 542, 
+        "cards": 542,
         "tricks": 76
       }
     },
@@ -81,7 +81,7 @@
       },
       "expected": {
         "status": "finished",
-        "cards": 327, 
+        "cards": 327,
         "tricks": 42
       }
     },
@@ -95,7 +95,7 @@
       },
       "expected": {
         "status": "finished",
-        "cards": 5790, 
+        "cards": 5790,
         "tricks": 805
       }
     },
@@ -109,7 +109,7 @@
       },
       "expected": {
         "status": "finished",
-        "cards": 6913, 
+        "cards": 6913,
         "tricks": 960
       }
     },
@@ -123,7 +123,7 @@
       },
       "expected": {
         "status": "finished",
-        "cards": 7157, 
+        "cards": 7157,
         "tricks": 1007
       }
     },
@@ -137,7 +137,7 @@
       },
       "expected": {
         "status": "finished",
-        "cards": 7207, 
+        "cards": 7207,
         "tricks": 1015
       }
     },
@@ -151,7 +151,7 @@
       },
       "expected": {
         "status": "finished",
-        "cards": 7225, 
+        "cards": 7225,
         "tricks": 1016
       }
     },
@@ -179,7 +179,7 @@
       },
       "expected": {
         "status": "finished",
-        "cards": 7972, 
+        "cards": 7972,
         "tricks": 1106
       }
     },
@@ -193,7 +193,7 @@
       },
       "expected": {
         "status": "finished",
-        "cards": 8344, 
+        "cards": 8344,
         "tricks": 1164
       }
     },
@@ -207,7 +207,7 @@
       },
       "expected": {
         "status": "loop",
-        "cards": 474, 
+        "cards": 474,
         "tricks": 66
       }
     }
