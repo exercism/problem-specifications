@@ -45,7 +45,7 @@ Here’s a simple example of input and output.
 ### Explanation
 
 * Player A only has number cards, so can never defend against a payment card.
-* Player B has a long sequence of Aces, Kings, Queens, and Jacks.
+* Player B has a long sequence of payment cards: Aces, Kings, Queens, and Jacks.
 * Each court card forces penalties, which Player A cannot counterattack, so Player B repeatedly wins the pile.
 * In the end, player B captures his opponent's entire deck by playing 40 cards in just 4 "tricks" (turns in which a deck is collected).
 
