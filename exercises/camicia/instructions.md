@@ -51,7 +51,7 @@ Here’s a simple example of input and output.
 
 * Parse the two players’ decks from the input.
 * Simulate the game following the rules above.
-* Return the result as an object with:
+* Determine is the final game status is `"finished"` or `"loop"`.
 
    * `"status"`: `"finished"` or `"loop"`
    * `"cards"`: total number of cards played throughout the game
