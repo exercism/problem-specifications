@@ -3,10 +3,9 @@
 One rainy afternoon, you sit at the kitchen table playing cards with your grandmother.\
 The game is [Camica][bmn].
 
-At first it feels like just another friendly match:\
-cards slapped down, laughter across the table, the occasional victorious grin from Nonna.\
-But as the game drags on, something strange happens.\
-The pile keeps growing.\
+At first it feels like just another friendly match: cards slapped down, laughter across the table, the occasional victorious grin from Nonna.
+But as the game drags on, something strange happens.
+The pile keeps growing.
 You play card after card, yet the end never seems to come.
 
 You start to wonder:\
