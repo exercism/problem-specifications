@@ -2,6 +2,188 @@
   "exercise": "camicia",
   "cases": [
     {
+      "uuid": "0b7f737c-3ecd-4a55-b34d-e65c62a85c28",
+      "description": "two cards, one trick",
+      "property": "simulateGame",
+      "input": {
+        "playerA": "2",
+        "playerB": "3"
+      },
+      "expected": {
+        "status": "finished",
+        "cards": 2,
+        "tricks": 1
+      }
+    },
+    {
+      "uuid": "27c19d75-53a5-48e5-b33b-232c3884d4f3",
+      "description": "three cards, one trick",
+      "property": "simulateGame",
+      "input": {
+        "playerA": "24",
+        "playerB": "3"
+      },
+      "expected": {
+        "status": "finished",
+        "cards": 3,
+        "tricks": 1
+      }
+    },
+    {
+      "uuid": "9b02dd49-efaf-4b71-adca-a05c18a7c5b0",
+      "description": "four cards, one trick",
+      "property": "simulateGame",
+      "input": {
+        "playerA": "24",
+        "playerB": "356"
+      },
+      "expected": {
+        "status": "finished",
+        "cards": 4,
+        "tricks": 1
+      }
+    },
+    {
+      "uuid": "fa3f4479-466a-4734-a001-ab79bfe27260",
+      "description": "the ace reigns supreme",
+      "property": "simulateGame",
+      "input": {
+        "playerA": "2A",
+        "playerB": "34567"
+      },
+      "expected": {
+        "status": "finished",
+        "cards": 7,
+        "tricks": 1
+      }
+    },
+    {
+      "uuid": "07629689-f589-4f54-a6d1-8ce22776ce72",
+      "description": "the king beats ace",
+      "property": "simulateGame",
+      "input": {
+        "playerA": "2A",
+        "playerB": "3456K"
+      },
+      "expected": {
+        "status": "finished",
+        "cards": 7,
+        "tricks": 1
+      }
+    },
+    {
+      "uuid": "54d4a1c5-76fb-4d1e-8358-0e0296ac0601",
+      "description": "the queen seduces the king",
+      "property": "simulateGame",
+      "input": {
+        "playerA": "2A78Q",
+        "playerB": "3456K"
+      },
+      "expected": {
+        "status": "finished",
+        "cards": 10,
+        "tricks": 1
+      }
+    },
+    {
+      "uuid": "c875500c-ff3d-47a4-bd1e-b60b90da80aa",
+      "description": "the jack betrays the queen",
+      "property": "simulateGame",
+      "input": {
+        "playerA": "2A78Q",
+        "playerB": "3456K9J"
+      },
+      "expected": {
+        "status": "finished",
+        "cards": 12,
+        "tricks": 1
+      }
+    },
+    {
+      "uuid": "436875da-96ca-4149-be22-0b78173b8125",
+      "description": "the 10 just wants to put on a show",
+      "property": "simulateGame",
+      "input": {
+        "playerA": "2A78Q10",
+        "playerB": "3456K9J"
+      },
+      "expected": {
+        "status": "finished",
+        "cards": 13,
+        "tricks": 1
+      }
+    },
+    {
+      "uuid": "2795dc21-0a2a-4c38-87c2-5a42e1ff15eb",
+      "description": "the story is starting to get a bit complicated",
+      "property": "simulateGame",
+      "input": {
+        "playerA": "266J4KQ10KJQ23K56QQAA69KA8K2A9AQ4KKK35K8Q3Q7JKJ9J33KKQAK710AQ710J45J910QJJK610J6QJ5JQQ838A269K7JKK8KQ610J10JQJ1038KA69K2AA10J6A4JAJJ62J3K259J96KA5QJ2QKA3KJK256QJQQJ2J9Q77AQ7QJKJA778Q10J10JJ92A2",
+        "playerB": "7210K82J9A56JQ6K65A4Q7J7102Q822KJA55A4Q6QK108Q210JAQ8QQJJAA910JK4Q1010JK102J7AKKJAJ108KA7QQJ3Q4A3AQQQ54KJ10AQJ6JA10A583K59Q877J7QQQA789AQAK8AAJ848KJA10Q8J8610QJJAAJ5Q6JKQ8K4QQ6JK47JJ99AQQKA65K"
+      },
+      "expected": {
+        "status": "finished",
+        "cards": 361,
+        "tricks": 1
+      }
+    },
+    {
+      "uuid": "6999dfac-3fdc-41e2-b64b-38f4be228712",
+      "description": "two tricks",
+      "property": "simulateGame",
+      "input": {
+        "playerA": "J",
+        "playerB": "3J"
+      },
+      "expected": {
+        "status": "finished",
+        "cards": 5,
+        "tricks": 2
+      }
+    },
+    {
+      "uuid": "83dcd4f3-e089-4d54-855a-73f5346543a3",
+      "description": "more tricks",
+      "property": "simulateGame",
+      "input": {
+        "playerA": "J24",
+        "playerB": "3JA"
+      },
+      "expected": {
+        "status": "finished",
+        "cards": 12,
+        "tricks": 4
+      }
+    },
+    {
+      "uuid": "5be39bb6-1b34-4ce6-a1cd-0fcc142bb272",
+      "description": "simple loop with decks of 3 cards",
+      "property": "simulateGame",
+      "input": {
+        "playerA": "J23",
+        "playerB": "4J5"
+      },
+      "expected": {
+        "status": "loop",
+        "cards": 8,
+        "tricks": 3
+      }
+    },
+    {
+      "uuid": "3107985a-f43e-486a-9ce8-db51547a9941",
+      "description": "simple loop with decks of 4 cards",
+      "property": "simulateGame",
+      "input": {
+        "playerA": "23J6",
+        "playerB": "K5J7"
+      },
+      "expected": {
+        "status": "loop",
+        "cards": 16,
+        "tricks": 4
+      }
+    },
+    {
       "uuid": "dca32c31-11ed-49f6-b078-79ab912c1f7b",
       "description": "easy card combination",
       "property": "simulateGame",
