@@ -1,7 +1,7 @@
 # Instructions
 
 In this exercise, you will simulate the classic card game **Camicia**.
-Your program will receive the initial configuration of two players’ decks and must simulate the game until it ends (or detect if it never does).
+Your program will receive the initial configuration of two players’ decks and must simulate the game until it ends (or detect that it will never end).
 
 ## Rules
 
