@@ -19,6 +19,6 @@ What began as a casual game has turned into a quest: _how long can such a game r
 _Can you find a sequence even longer than the one you played at the kitchen table?_
 _Perhaps even long enough to set a new world record?_
 
-And so, armed with nothing but a deck of cards and some algorithmic ingenuity, you decide to investigate…
+And so, armed with nothing but a deck of cards and some algorithmic ingenuity, you decide to investigate...
 
 [bmn]: https://en.wikipedia.org/wiki/Beggar-my-neighbour
