@@ -37,7 +37,7 @@ Pile: 2 → 3 → A → 4 → 5 → 6 → K → 7 → 8 → Q → 9 → J → 10
 (status: "finished", cards: 13, tricks: 1)
 ```
 
-A small example of a match that goes into a loop:
+This is a small example of a match that loops.
 
 ```text
 Player A: "J23"
