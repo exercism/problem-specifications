@@ -22,7 +22,8 @@ Your program will receive the initial configuration of two players' decks and mu
 - A **trick** can occur in two ways:
   - When a player finishes paying their penalty.
   - When a player runs out of cards, either at the start of their turn or while paying a penalty.
-- The game **ends** when one player can no longer respond by playing a card, in general.
+- The game **ends** when one player can no longer play a card.
+  This can occur at the start of a turn or while paying a penalty.
 - The game **enters a loop** as soon as decks identical to previous ones are played during the game, **not** counting number cards!
 
 ## Examples
