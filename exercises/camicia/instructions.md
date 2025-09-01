@@ -62,10 +62,6 @@ Payment card configuration already viewed!
 (status: "loop", cards: 8, tricks: 3)
 ```
 
-~~~~exercism/caution
-When players are at the beginning of one of the rounds and have not yet played a payment card, if one of them runs out of cards, the opposing player must play another card before collecting the cards from the central pile and completing the trick.
-~~~~
-
 ## Your Task
 
 - Parse the two players' decks from the input.
