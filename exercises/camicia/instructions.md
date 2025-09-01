@@ -60,6 +60,10 @@ Payment card configuration already viewed!
 (status: "loop", cards: 8, tricks: 3)
 ```
 
+~~~~exercism/caution
+When players are at the beginning of one of the rounds and have not yet played a payment card, if one of them runs out of cards, the opposing player must play another card before collecting the cards from the central pile and completing the trick.
+~~~~
+
 ## Your Task
 
 - Parse the two players' decks from the input.
@@ -68,3 +72,8 @@ Payment card configuration already viewed!
   - `"status"`: `"finished"` or `"loop"`
   - `"cards"`: total number of cards played throughout the game
   - `"tricks"`: number of times the central pile was collected
+
+~~~~exercism/advanced
+For those who want to take on a more exciting challenge, the hunt for other records for the longest game with an end is still open.
+There are 653,534,134,886,878,245,000 (approximately 654 quintillion) possibilities, and we haven't calculated them all yet!
+~~~~
