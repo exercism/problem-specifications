@@ -29,7 +29,7 @@ Your program will receive the initial configuration of two players' decks and mu
 
 ## Examples
 
-A small example of a match that ends:
+A small example of a match that ends.
 
 ```text
 Player A: "2A78Q10"
