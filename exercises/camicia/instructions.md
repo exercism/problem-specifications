@@ -71,9 +71,9 @@ When players are at the beginning of one of the rounds and have not yet played a
 - Parse the two players' decks from the input.
 - Simulate the game following the rules above.
 - Determine the following information regarding the game:
-  - `"status"`: `"finished"` or `"loop"`
-  - `"cards"`: total number of cards played throughout the game
-  - `"tricks"`: number of times the central pile was collected
+  - `status`: `"finished"` or `"loop"`
+  - `cards`: total number of cards played throughout the game
+  - `tricks`: number of times the central pile was collected
 
 ~~~~exercism/advanced
 For those who want to take on a more exciting challenge, the hunt for other records for the longest game with an end is still open.
