@@ -29,7 +29,7 @@ Your program will receive the initial configuration of two players’ decks and 
 
 A small example of a match that ends:
 
-```
+```text
 Player A: "2A78Q10"
 Player B: "3456K9J"
 Pile: 2 → 3 → A → 4 → 5 → 6 → K → 7 → 8 → Q → 9 → J → 10
@@ -38,7 +38,7 @@ Pile: 2 → 3 → A → 4 → 5 → 6 → K → 7 → 8 → Q → 9 → J → 10
 
 A small example of a match that goes into a loop:
 
-```
+```text
 Player A: "J23"
 Player B: "4J5"
 Pile: J → 4
