@@ -9,7 +9,7 @@ Your program will receive the initial configuration of two players' decks and mu
   Each player's cards are represented as a string where the leftmost character is the top of the deck.
 - Players take turns placing the **top card** of their deck onto a central pile.
 - If the card is a **number card** (2-10), play simply passes to the other player.
-- If the card is a **payment card**, a price needs to be paid:
+- If the card is a **payment card**, a penalty must be paid:
   - `J` → opponent must pay 1 card
   - `Q` → opponent must pay 2 cards
   - `K` → opponent must pay 3 cards
