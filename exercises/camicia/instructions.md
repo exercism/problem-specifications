@@ -19,10 +19,9 @@ Your program will receive the initial configuration of two players' decks and mu
 - If the penalty is fully paid without interruption, the player who laid the **last payment card** collects the central pile and places it at the bottom of their deck.
   That player then starts the next round.
 - The moment when the winner of the round collects the cards from the central pile is called a **trick**.
-- A **trick** can occur in several ways:
-  - When a player finishes paying their penalty → the game continues
-  - When a player runs out of cards while paying a penalty → the game ends
-  - When a player can no longer place a card in the central pile → the game ends
+- A **trick** can occur in two ways:
+  - When a player finishes paying their penalty.
+  - When a player runs out of cards, either at the start of their turn or while paying a penalty.
 - The game **ends** when one player can no longer respond by playing a card, in general.
 - The game **enters a loop** as soon as decks identical to previous ones are played during the game, **not** counting number cards!
 
