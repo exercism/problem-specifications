@@ -12,7 +12,7 @@ You start to wonder.
 _Will this game ever finish?
 Or could we keep playing forever?_
 
-Later, driven by curiosity, you search online and to your surprise you discover that what happened wasn’t just bad luck.
+Later, driven by curiosity, you search online and to your surprise you discover that what happened wasn't just bad luck.
 You and your grandmother may have stumbled upon one of the longest possible sequences!
 Suddenly, you're hooked.
 What began as a casual game has turned into a quest: _how long can such a game really last?_
