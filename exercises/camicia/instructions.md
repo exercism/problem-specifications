@@ -25,34 +25,44 @@ Your program will receive the initial configuration of two players’ decks and 
 - The game **ends** when one player can no longer respond by playing a card, in general.
 - The game **enters a loop** as soon as decks identical to previous ones are played during the game, **not** counting number cards!
 
-## Example
+## Examples
 
-Here’s a simple example of input and output.
-
-```json
-"input": {
-  "playerA": "--------------------------",
-  "playerB": "----------AAAAKKKKQQQQJJJJ"
-},
-"output": {
-  "status": "finished",
-  "cards": 40,
-  "tricks": 4
-}
+A small example of a match that ends:
+```
+Player A: "2A78Q10"
+Player B: "3456K9J"
+Pile: 2 → 3 → A → 4 → 5 → 6 → K → 7 → 8 → Q → 9 → J → 10
+(status: "finished", cards: 13, tricks: 1)
 ```
 
-### Explanation
+A small example of a match that goes into a loop:
+```
+Player A: "J23"
+Player B: "4J5"
+Pile: J → 4
+(cards: 2, tricks: 1)
 
-- Player A only has number cards, so can never defend against a payment card.
-- Player B has a long sequence of payment cards: Aces, Kings, Queens, and Jacks.
-- Each payment card forces a payment, which Player A cannot counter with a payment card of their own, so Player B repeatedly wins the pile (repeatedly completes a trick).
-- In the end, player B captures their opponent's entire deck by playing 40 cards in just 4 "tricks" (turns in which a deck is collected).
+Player A: "23J4"
+Player B: "J5"
+Pile: 2 → J → 3
+(cards: 5, tricks: 2)
+
+Player A: "J4"
+Player B: "52J3"
+Pile: 5 → J → 2
+(cards: 8, tricks: 3)
+
+Player A: "45J2"
+Player B: "J3"
+Payment card configuration already viewed!
+(status: "loop", cards: 8, tricks: 3)
+```
 
 ## Your Task
 
 - Parse the two players' decks from the input.
 - Simulate the game following the rules above.
-- Determine is the final game status is `"finished"` or `"loop"`.
+- Determine the following information regarding the game:
   - `"status"`: `"finished"` or `"loop"`
   - `"cards"`: total number of cards played throughout the game
   - `"tricks"`: number of times the central pile was collected
