@@ -7,7 +7,7 @@ Your program will receive the initial configuration of two players' decks and mu
 
 - The deck is split between **two players**.
   Each player's cards are represented as a string where the leftmost character is the top of the deck.
-- A round consists of both players taking a turn.
+- A round consists of both players playing at least one card/turn.
 - Players take a turn by placing the **top card** of their deck onto a central pile.
 - If the card is a **number card** (2-10), play simply passes to the other player.
 - If the card is a **payment card**, a penalty must be paid:
@@ -22,9 +22,9 @@ Your program will receive the initial configuration of two players' decks and mu
 - The moment when the winner of the round collects the cards from the central pile is called a **trick**.
 - A **trick** can occur in two ways:
   - When a player finishes paying their penalty.
-  - When a player runs out of cards, either at the start of their turn or while paying a penalty.
+  - When a player runs out of cards, either at the start of their round or while paying a penalty.
 - The game **ends** when one player can no longer play a card.
-  This can occur at the start of a turn or while paying a penalty.
+  This can occur at the start of a round or while paying a penalty.
 - The game **enters a loop** as soon as decks identical to previous ones are played during the game, **not** counting number cards!
 
 ## Examples
