@@ -50,27 +50,24 @@ status: "finished", cards: 13, tricks: 1
 
 This is a small example of a match that loops.
 
-```text
-Player A: "J23"
-Player B: "4J5"
-Pile: J → 4
-(cards: 2, tricks: 1)
+| Round | Player A | Player B | Pile  | Penalty Due |
+| :---- | :------- | :------- | :---- | :---------- |
+| 1     | J 2 3    | 4 J 5    | -     | -           |
+| 1     | 2 3      | 4 J 5    | J     | Player B: 1 |
+| 1     | 2 3      | J 5      | J 4   | -           |
+| 2     | 2 3 J 4  | J 5      | -     | -           |
+| 2     | 3 J 4    | J 5      | 2     | -           |
+| 2     | 3 J 4    | 5        | 2 J   | Player A: 1 |
+| 2     | J 4      | 5        | 2 J 3 | -           |
+| 3     | J 4      | 5 2 J 3  | -     | -           |
+| 3     | J 4      | 2 J 3    | 5     | -           |
+| 3     | 4        | 2 J 3    | 5 J   | Player B: 1 |
+| 3     | 4        | J 3      | 5 J 2 | -           |
+| 4     | 4 5 J 2  | J 3      | -     | -           |
 
-Player A: "23J4"
-Player B: "J5"
-Pile: 2 → J → 3
-(cards: 5, tricks: 2)
+The start of round 4 matches the start of round 2.
 
-Player A: "J4"
-Player B: "52J3"
-Pile: 5 → J → 2
-(cards: 8, tricks: 3)
-
-Player A: "45J2"
-Player B: "J3"
-Payment card configuration already viewed!
-(status: "loop", cards: 8, tricks: 3)
-```
+status: "loop", cards: 8, tricks: 3
 
 ## Your Task
 
