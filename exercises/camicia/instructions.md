@@ -29,6 +29,7 @@ Your program will receive the initial configuration of two players' decks and mu
 ## Examples
 
 A small example of a match that ends.
+
 | Round   | Player A     | Player B      | Pile                       | Penalty Due |
 | :------ | :----------- | :------------ | :------------------------- | :---------- |
 | 1       | 2 A 7 8 Q 10 | 3 4 5 6 K 9 J |                            | -           |
