@@ -6,7 +6,7 @@ Your program will receive the initial configuration of two players' decks and mu
 ## Rules
 
 - The deck is split between **two players**.
-  Each player's cards are represented as a string where the leftmost character is the top of the deck.
+  The player's cards are read from left to right, where the leftmost card is the top of the deck.
 - A round consists of both players playing at least one card/turn.
 - Players take a turn by placing the **top card** of their deck onto a central pile.
 - If the card is a **number card** (2-10), play simply passes to the other player.
@@ -18,12 +18,10 @@ Your program will receive the initial configuration of two players' decks and mu
 - If the player paying a penalty reveals another payment card, that player stops paying the penalty.
   The other player must then pay a penalty based on the new payment card.
 - If the penalty is fully paid without interruption, the player who laid the **last payment card** collects the central pile and places it at the bottom of their deck.
-  That player then starts the next round _only_ if the opponent still has cards in their deck.
-- The moment when the winner of the round collects the cards from the central pile is called a **trick**.
-- A **trick** can occur in two ways:
-  - When a player finishes paying their penalty, whether or not they run out of cards in the process
-  - When a player cannot respond to a number card with another number card because their deck has been emptied.
-- The game **ends** when one player runs out of cards while paying a penalty in full or in part, or when they cannot respond to a number card due to empty deck.
+  That player then starts the next round.
+- The moment when a player collects cards from the central pile is called a **trick**.
+- If a player has all the cards in their possession after a trick, the game **ends**.
+- The game **ends** when one player has all the cards in their deck.
 - The game **enters a loop** as soon as decks identical to previous ones are played during the game, **not** counting number cards!
 
 ## Examples
