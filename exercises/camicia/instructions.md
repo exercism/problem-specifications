@@ -17,7 +17,7 @@ Your program will receive the initial configuration of two players' decks and mu
   - A → opponent must pay 4 cards
 - If the player paying a penalty reveals another payment card, that player stops paying the penalty.
   The other player must then pay a penalty based on the new payment card.
-- If the penalty is fully paid without interruption, the player who laid the **last payment card** collects the central pile and places it at the bottom of their deck.
+- If the penalty is fully paid without interruption, the player who placed the **last payment card** collects the central pile and places it at the bottom of their deck.
   That player then starts the next round.
 - The moment when a player collects cards from the central pile is called a **trick**.
 - If a player has all the cards in their possession after a trick, the game **ends**.
