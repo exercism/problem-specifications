@@ -70,8 +70,7 @@ status: "loop", cards: 8, tricks: 3
 
 ## Your Task
 
-- Parse the two players' decks from the input.
-- Simulate the game following the rules above.
+- Using the input, simulate the game following the rules above.
 - Determine the following information regarding the game:
   - `status`: `"finished"` or `"loop"`
   - `cards`: total number of cards played throughout the game
