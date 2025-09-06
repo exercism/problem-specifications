@@ -21,7 +21,7 @@ Your program will receive the initial configuration of two players' decks and mu
   That player then starts the next round.
 - The moment when a player collects cards from the central pile is called a **trick**.
 - If a player has all the cards in their possession after a trick, the game **ends**.
-- The game **enters a loop** as soon as decks identical to previous ones are played during the game, **not** counting number cards!
+- The game **enters a loop** as soon as the decks are identical to what they were earlier during the game, **not** counting number cards!
 
 ## Examples
 
