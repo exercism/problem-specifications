@@ -72,9 +72,9 @@ status: "loop", cards: 8, tricks: 3
 
 - Using the input, simulate the game following the rules above.
 - Determine the following information regarding the game:
-  - `status`: `"finished"` or `"loop"`
-  - `cards`: total number of cards played throughout the game
-  - `tricks`: number of times the central pile was collected
+  - **Status**: `"finished"` or `"loop"`
+  - **Cards**: total number of cards played throughout the game
+  - **Tricks**: number of times the central pile was collected
 
 ~~~~exercism/advanced
 For those who want to take on a more exciting challenge, the hunt for other records for the longest game with an end is still open.
