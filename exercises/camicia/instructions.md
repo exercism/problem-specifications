@@ -28,22 +28,23 @@ Your program will receive the initial configuration of two players' decks and mu
 
 A small example of a match that ends.
 
-| Round | Player A     | Player B      | Pile                       | Penalty Due |
-| :---- | :----------- | :------------ | :------------------------- | :---------- |
-| 1     | 2 A 7 8 Q 10 | 3 4 5 6 K 9 J |                            | -           |
-| 1     | A 7 8 Q 10   | 3 4 5 6 K 9 J | 2                          | -           |
-| 1     | A 7 8 Q 10   | 4 5 6 K 9 J   | 2 3                        | -           |
-| 1     | 7 8 Q 10     | 4 5 6 K 9 J   | 2 3 A                      | Player B: 4 |
-| 1     | 7 8 Q 10     | 5 6 K 9 J     | 2 3 A 4                    | Player B: 3 |
-| 1     | 7 8 Q 10     | 6 K 9 J       | 2 3 A 4 5                  | Player B: 2 |
-| 1     | 7 8 Q 10     | K 9 J         | 2 3 A 4 5 6                | Player B: 1 |
-| 1     | 7 8 Q 10     | 9 J           | 2 3 A 4 5 6 K              | Player A: 3 |
-| 1     | 8 Q 10       | 9 J           | 2 3 A 4 5 6 K 7            | Player A: 2 |
-| 1     | Q 10         | 9 J           | 2 3 A 4 5 6 K 7 8          | Player A: 1 |
-| 1     | 10           | 9 J           | 2 3 A 4 5 6 K 7 8 Q        | Player B: 2 |
-| 1     | 10           | J             | 2 3 A 4 5 6 K 7 8 Q 9      | Player B: 1 |
-| 1     | 10           | -             | 2 3 A 4 5 6 K 7 8 Q 9 J    | Player A: 1 |
-| 1     | -            | -             | 2 3 A 4 5 6 K 7 8 Q 9 J 10 | -           |
+| Round | Player A     | Player B                   | Pile                       | Penalty Due |
+| :---- | :----------- | :------------------------- | :------------------------- | :---------- |
+| 1     | 2 A 7 8 Q 10 | 3 4 5 6 K 9 J              |                            | -           |
+| 1     | A 7 8 Q 10   | 3 4 5 6 K 9 J              | 2                          | -           |
+| 1     | A 7 8 Q 10   | 4 5 6 K 9 J                | 2 3                        | -           |
+| 1     | 7 8 Q 10     | 4 5 6 K 9 J                | 2 3 A                      | Player B: 4 |
+| 1     | 7 8 Q 10     | 5 6 K 9 J                  | 2 3 A 4                    | Player B: 3 |
+| 1     | 7 8 Q 10     | 6 K 9 J                    | 2 3 A 4 5                  | Player B: 2 |
+| 1     | 7 8 Q 10     | K 9 J                      | 2 3 A 4 5 6                | Player B: 1 |
+| 1     | 7 8 Q 10     | 9 J                        | 2 3 A 4 5 6 K              | Player A: 3 |
+| 1     | 8 Q 10       | 9 J                        | 2 3 A 4 5 6 K 7            | Player A: 2 |
+| 1     | Q 10         | 9 J                        | 2 3 A 4 5 6 K 7 8          | Player A: 1 |
+| 1     | 10           | 9 J                        | 2 3 A 4 5 6 K 7 8 Q        | Player B: 2 |
+| 1     | 10           | J                          | 2 3 A 4 5 6 K 7 8 Q 9      | Player B: 1 |
+| 1     | 10           | -                          | 2 3 A 4 5 6 K 7 8 Q 9 J    | Player A: 1 |
+| 1     | -            | -                          | 2 3 A 4 5 6 K 7 8 Q 9 J 10 | -           |
+| 2     | -            | 2 3 A 4 5 6 K 7 8 Q 9 J 10 | -                          | -           |
 
 status: "finished", cards: 13, tricks: 1
 
