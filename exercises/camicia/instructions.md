@@ -7,7 +7,7 @@ Your program will receive the initial configuration of two players' decks and mu
 
 - The deck is split between **two players**.
   The player's cards are read from left to right, where the leftmost card is the top of the deck.
-- A round consists of both players playing at least one card/turn.
+- A round consists of both players playing at least one card.
 - Players take a turn by placing the **top card** of their deck onto a central pile.
 - If the card is a **number card** (2-10), play simply passes to the other player.
 - If the card is a **payment card**, a penalty must be paid:
