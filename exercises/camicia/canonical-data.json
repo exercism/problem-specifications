@@ -114,6 +114,20 @@
       }
     },
     {
+      "uuid": "5be39bb6-1b34-4ce6-a1cd-0fcc142bb272",
+      "description": "simple loop with decks of 3 cards",
+      "property": "simulateGame",
+      "input": {
+        "playerA": ["J", "2", "3"],
+        "playerB": ["4", "J", "5"]
+      },
+      "expected": {
+        "status": "loop",
+        "cards": 8,
+        "tricks": 3
+      }
+    },
+    {
       "uuid": "2795dc21-0a2a-4c38-87c2-5a42e1ff15eb",
       "description": "the story is starting to get a bit complicated",
       "property": "simulateGame",
@@ -516,20 +530,6 @@
         "status": "finished",
         "cards": 12,
         "tricks": 4
-      }
-    },
-    {
-      "uuid": "5be39bb6-1b34-4ce6-a1cd-0fcc142bb272",
-      "description": "simple loop with decks of 3 cards",
-      "property": "simulateGame",
-      "input": {
-        "playerA": ["J", "2", "3"],
-        "playerB": ["4", "J", "5"]
-      },
-      "expected": {
-        "status": "loop",
-        "cards": 8,
-        "tricks": 3
       }
     },
     {
