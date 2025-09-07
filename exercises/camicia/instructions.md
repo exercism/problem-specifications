@@ -46,7 +46,7 @@ A small example of a match that ends.
 | 1     | -            | -                          | 2 3 A 4 5 6 K 7 8 Q 9 J 10 | -           |
 | 2     | -            | 2 3 A 4 5 6 K 7 8 Q 9 J 10 | -                          | -           |
 
-status: "finished", cards: 13, tricks: 1
+status: `"finished"`, cards: 13, tricks: 1
 
 This is a small example of a match that loops.
 
