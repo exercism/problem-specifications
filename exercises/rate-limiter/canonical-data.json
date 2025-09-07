@@ -1,0 +1,128 @@
+{
+  "exercise": "rate-limiter",
+  "comments": [
+    "This exercise specifies a fixed-window, per-key rate limiter.",
+    "Tests assume an injected time source that can advance deterministically,",
+    "avoiding sleeps. Each \"allow\" operation occurs at the current time;",
+    "an \"advance\" operation moves the current time forward by a duration in milliseconds.",
+    "",
+    "Property: rateLimiter",
+    "Input: limit (integer), windowMillis (integer), operations (array)",
+    "Operations: { op: 'allow', key: string } or { op: 'advance', millis: integer }",
+    "Expected: an array of booleans corresponding to each 'allow' operation in order."
+  ],
+  "cases": [
+    {
+      "uuid": "3f7d0b0a-9a7a-4f2b-9b5b-8a2c3d4e5f6a",
+      "description": "allows up to the limit within a window",
+      "property": "rateLimiter",
+      "input": {
+        "limit": 3,
+        "windowMillis": 200,
+        "operations": [
+          { "op": "allow", "key": "alice" },
+          { "op": "allow", "key": "alice" },
+          { "op": "allow", "key": "alice" },
+          { "op": "allow", "key": "alice" }
+        ]
+      },
+      "expected": [true, true, true, false]
+    },
+    {
+      "uuid": "d2b4c1e0-1c0a-4d8e-87a1-9b4fbc8ad9e2",
+      "description": "resets after window passes",
+      "property": "rateLimiter",
+      "input": {
+        "limit": 3,
+        "windowMillis": 200,
+        "operations": [
+          { "op": "allow", "key": "alice" },
+          { "op": "allow", "key": "alice" },
+          { "op": "allow", "key": "alice" },
+          { "op": "allow", "key": "alice" },
+          { "op": "advance", "millis": 200 },
+          { "op": "allow", "key": "alice" }
+        ]
+      },
+      "expected": [true, true, true, false, true]
+    },
+    {
+      "uuid": "a8b2f6c4-2d2b-4f0d-9a8c-bf2f6e1c3a5d",
+      "description": "separate keys have independent limits and windows",
+      "property": "rateLimiter",
+      "input": {
+        "limit": 2,
+        "windowMillis": 100,
+        "operations": [
+          { "op": "allow", "key": "alice" },
+          { "op": "allow", "key": "alice" },
+          { "op": "allow", "key": "bob" },
+          { "op": "allow", "key": "bob" },
+          { "op": "allow", "key": "alice" },
+          { "op": "advance", "millis": 100 },
+          { "op": "allow", "key": "alice" },
+          { "op": "allow", "key": "bob" }
+        ]
+      },
+      "expected": [true, true, true, true, false, true, true]
+    },
+    {
+      "uuid": "4e1f2a3b-5c6d-4e7f-8a9b-0c1d2e3f4a5b",
+      "description": "exactly at window boundary the counter resets",
+      "property": "rateLimiter",
+      "input": {
+        "limit": 2,
+        "windowMillis": 100,
+        "operations": [
+          { "op": "allow", "key": "alice" },
+          { "op": "allow", "key": "alice" },
+          { "op": "advance", "millis": 100 },
+          { "op": "allow", "key": "alice" }
+        ]
+      },
+      "expected": [true, true, true]
+    },
+    {
+      "uuid": "9b7c6d5e-4f3a-4b2c-8d1e-2f3a4b5c6d7e",
+      "description": "multiple windows do not carry over counts",
+      "property": "rateLimiter",
+      "input": {
+        "limit": 1,
+        "windowMillis": 50,
+        "operations": [
+          { "op": "allow", "key": "k" },
+          { "op": "allow", "key": "k" },
+          { "op": "advance", "millis": 50 },
+          { "op": "allow", "key": "k" },
+          { "op": "allow", "key": "k" },
+          { "op": "advance", "millis": 50 },
+          { "op": "allow", "key": "k" }
+        ]
+      },
+      "expected": [true, false, true, false, true]
+    },
+    {
+      "uuid": "c3d2e1f0-4a5b-4c6d-8e9f-a0b1c2d3e4f5",
+      "description": "invalid configuration: non-positive limit",
+      "property": "rateLimiter",
+      "input": {
+        "limit": 0,
+        "windowMillis": 100,
+        "operations": []
+      },
+      "expected": { "error": "invalid limit" }
+    },
+    {
+      "uuid": "e1f2a3b4-5c6d-4e7f-8a9b-0c1d2e3f4a5b",
+      "description": "invalid configuration: non-positive window duration",
+      "property": "rateLimiter",
+      "input": {
+        "limit": 2,
+        "windowMillis": 0,
+        "operations": []
+      },
+      "expected": { "error": "invalid window" }
+    }
+  ]
+}
+
