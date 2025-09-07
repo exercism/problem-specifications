@@ -67,7 +67,7 @@ This is a small example of a match that loops.
 
 The start of round 4 matches the start of round 2.
 
-status: "loop", cards: 8, tricks: 3
+status: `"loop"`, cards: 8, tricks: 3
 
 ## Your Task
 
