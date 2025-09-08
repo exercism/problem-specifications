@@ -66,6 +66,7 @@ This is a small example of a match that loops.
 | 4     | 4 5 J 2  | J 3      | -     | -           |
 
 The start of round 4 matches the start of round 2.
+Recall, the value of the number cards does not matter.
 
 status: `"loop"`, cards: 8, tricks: 3
 
