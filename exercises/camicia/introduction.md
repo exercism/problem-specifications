@@ -4,8 +4,8 @@ One rainy afternoon, you sit at the kitchen table playing cards with your grandm
 The game is her take on [Camicia][bmn].
 
 At first it feels like just another friendly match: cards slapped down, laughter across the table, the occasional victorious grin from Nonna.
-But as the game drags on, something strange happens.
-The pile keeps growing.
+But as the game stretches on, something strange happens.
+The same cards keep cycling back.
 You play card after card, yet the end never seems to come.
 
 You start to wonder.
