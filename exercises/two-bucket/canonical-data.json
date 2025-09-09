@@ -98,6 +98,44 @@
       }
     },
     {
+      "uuid": "58d70152-bf2b-46bb-ad54-be58ebe94c03",
+      "description": "Measure using bucket one much bigger than bucket two",
+      "comments": [
+        "Verify the solution is able to pour several times from bucket one to two with no refill"
+      ],
+      "property": "measure",
+      "input": {
+        "bucketOne": 5,
+        "bucketTwo": 1,
+        "goal": 2,
+        "startBucket": "one"
+      },
+      "expected": {
+        "moves": 6,
+        "goalBucket": "one",
+        "otherBucket": 1
+      }
+    },
+    {
+      "uuid": "9dbe6499-caa5-4a58-b5ce-c988d71b8981",
+      "description": "Measure using bucket one much smaller than bucket two",
+      "comments": [
+        "Verify the solution is able to pour several times from bucket one to two without emptying"
+      ],
+      "property": "measure",
+      "input": {
+        "bucketOne": 3,
+        "bucketTwo": 15,
+        "goal": 9,
+        "startBucket": "one"
+      },
+      "expected": {
+        "moves": 6,
+        "goalBucket": "two",
+        "otherBucket": 0
+      }
+    },
+    {
       "uuid": "449be72d-b10a-4f4b-a959-ca741e333b72",
       "description": "Not possible to reach the goal",
       "property": "measure",
