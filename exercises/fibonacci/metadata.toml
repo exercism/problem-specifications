@@ -1,0 +1,4 @@
+title = "Fibonacci suite"
+blurb = "Fibonacci suite is based on the sum of the previos two Fibonacci numbers"
+source = "Inspired by the exercise in scala red book"
+source_url = "https://simple.wikipedia.org/wiki/Fibonacci_number"

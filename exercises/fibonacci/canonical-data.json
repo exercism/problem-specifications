@@ -1,0 +1,51 @@
+{
+  "exercise": "fibonacci-suite",
+  "cases": [
+    {
+      "uuid": "17146bd5-2e80-4557-ab4c-05632b6b0d01",
+      "description": "Starting point 0",
+      "property": "",
+      "input": {
+        "number": 0
+      },
+      "expected": 0
+    },
+    {
+      "uuid": "5a02fd08-d336-4607-8006-246fe6fa9fb1",
+      "description": "starting point 1",
+      "property": "",
+      "input": {
+                "number": 1
+          },
+        "expected": [1]
+    },
+{
+      "uuid": "5a02fd08-d336-4607-8006-246fe6fa9fb3",
+      "description": "number 3",
+      "property": "",
+      "input": {
+                "number": 3
+          },
+        "expected": [2]
+    },
+    {
+      "uuid": "5a02fd08-d336-4607-8006-246fe6fa9fb5",
+      "description": "number 5",
+      "property": "",
+      "input": {
+                "number": 5
+          },
+        "expected": [5]
+    },
+    {
+      "uuid": "5a02fd08-d336-4607-8006-246fe6fa9fb2",
+      "description": "number 20",
+      "property": "",
+      "input": {
+                "number": 20
+          },
+        "expected": [6765]
+    }
+
+  ]
+}
