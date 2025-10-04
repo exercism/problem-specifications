@@ -8,7 +8,7 @@ Rules:
 - Numbers ending in 1 (except for 11) → `st`
 - Numbers ending in 2 (except for 12) → `nd`
 - Numbers ending in 3 (except for 13) → `rd`
-- All other numbers not ending in 1, 2, or 3 → `th`
+- All other numbers → `th`
 
 Examples:
 
