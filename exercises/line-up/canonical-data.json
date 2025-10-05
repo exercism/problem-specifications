@@ -28,6 +28,46 @@
       "expected": "Maarten, you are the 9th customer we serve today. Thank you!"
     },
     {
+      "uuid": "f370aae9-7ae7-4247-90ce-e8ff8c6934df",
+      "description": "format non-exceptional ordinal numeral 5",
+      "property": "format",
+      "input": {
+        "name": "Petronila",
+        "number": 5
+      },
+      "expected": "Petronila, you are the 5th customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "37f10dea-42a2-49de-bb92-0b690b677908",
+      "description": "format non-exceptional ordinal numeral 6",
+      "property": "format",
+      "input": {
+        "name": "Attakullakulla",
+        "number": 6
+      },
+      "expected": "Attakullakulla, you are the 6th customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "d8dfb9a2-3a1f-4fee-9dae-01af3600054e",
+      "description": "format non-exceptional ordinal numeral 7",
+      "property": "format",
+      "input": {
+        "name": "Kate",
+        "number": 7
+      },
+      "expected": "Kate, you are the 7th customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "505ec372-1803-42b1-9377-6934890fd055",
+      "description": "format non-exceptional ordinal numeral 8",
+      "property": "format",
+      "input": {
+        "name": "Maximiliano",
+        "number": 8
+      },
+      "expected": "Maximiliano, you are the 8th customer we serve today. Thank you!"
+    },
+    {
       "uuid": "8267072d-be1f-4f70-b34a-76b7557a47b9",
       "description": "format exceptional ordinal numeral 1",
       "property": "format",
