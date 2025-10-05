@@ -1,10 +1,10 @@
 {
   "exercise": "line-up",
   "comments": [
-    "Names are chosen without Unicode characters to keep the exercise simple. ",
+    "Names are chosen without Unicode characters to keep the exercise simple.",
     "",
-    "The tests are ordered starting with the most common case and coming to   ",
-    "more special cases later on.                                             "
+    "The tests are ordered starting with the most common case and coming to",
+    "more special cases later on."
   ],
   "cases": [
     {
