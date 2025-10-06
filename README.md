@@ -72,21 +72,25 @@ The file format is described in [canonical-data.schema.json](./canonical-data.sc
     " languages.                                                         ",
     "                                                                    ",
     " In addition to a mainstream implementation path, this information  ",
-    " can also document significant variations.                          "
+    " can also document significant variations.                          ",
+    "                                                                    ",
+    " Space padding comments can make them a bit easier to read but is   ",
+    " not required.                                                      ",
+    "                                                                    "
   ],
   "cases": [
     {
       "comments": [
-        " A test case must have 'uuid', 'description', 'property', ",
-        " 'input' and 'expected' properties. The rest is optional. ",
-        "                                                          ",
-        " The 'property' is a string in lowerCamelCase identifying ",
-        " the type of test, but most of the times it is just the   ",
-        " name of a function being tested.                         ",
-        "                                                          ",
-        " Test cases can have any number of additional keys, and   ",
-        " most of them also have an 'expected' one, defining the   ",
-        " value a test should return.                              "
+        "A test case must have 'uuid', 'description', 'property',",
+        "'input' and 'expected' properties. The rest is optional.",
+        "",
+        "The 'property' is a string in lowerCamelCase identifying",
+        "the type of test, but most of the times it is just the",
+        "name of a function being tested.",
+        "",
+        "Test cases can have any number of additional keys, and",
+        "most of them also have an 'expected' one, defining the",
+        "value a test should return."
       ],
       "uuid": "31e9db74-86b9-4b14-a320-9ea910337289",
       "description": "Foo'ing a word returns it reversed",
@@ -108,8 +112,8 @@ The file format is described in [canonical-data.schema.json](./canonical-data.sc
     },
     {
       "comments": [
-        " Test cases can be arbitrarily grouped with a description ",
-        " to make organization easier.                             "
+        "Test cases can be arbitrarily grouped with a description",
+        "to make organization easier."
       ],
       "description": "Abnormal inputs: numbers",
       "cases": [
