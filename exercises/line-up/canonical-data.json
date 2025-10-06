@@ -1,0 +1,201 @@
+{
+  "exercise": "line-up",
+  "comments": [
+    "Names are chosen without Unicode characters to keep the exercise simple.",
+    "",
+    "The tests are ordered starting with small regular cases and coming to",
+    "bigger and irregular cases later on."
+  ],
+  "cases": [
+    {
+      "uuid": "7760d1b8-4864-4db4-953b-0fa7c047dbc0",
+      "description": "format smallest non-exceptional ordinal numeral 4",
+      "property": "format",
+      "input": {
+        "name": "Gianna",
+        "number": 4
+      },
+      "expected": "Gianna, you are the 4th customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "e8b7c715-6baa-4f7b-8fb3-2fa48044ab7a",
+      "description": "format greatest single digit non-exceptional ordinal numeral 9",
+      "property": "format",
+      "input": {
+        "name": "Maarten",
+        "number": 9
+      },
+      "expected": "Maarten, you are the 9th customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "f370aae9-7ae7-4247-90ce-e8ff8c6934df",
+      "description": "format non-exceptional ordinal numeral 5",
+      "property": "format",
+      "input": {
+        "name": "Petronila",
+        "number": 5
+      },
+      "expected": "Petronila, you are the 5th customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "37f10dea-42a2-49de-bb92-0b690b677908",
+      "description": "format non-exceptional ordinal numeral 6",
+      "property": "format",
+      "input": {
+        "name": "Attakullakulla",
+        "number": 6
+      },
+      "expected": "Attakullakulla, you are the 6th customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "d8dfb9a2-3a1f-4fee-9dae-01af3600054e",
+      "description": "format non-exceptional ordinal numeral 7",
+      "property": "format",
+      "input": {
+        "name": "Kate",
+        "number": 7
+      },
+      "expected": "Kate, you are the 7th customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "505ec372-1803-42b1-9377-6934890fd055",
+      "description": "format non-exceptional ordinal numeral 8",
+      "property": "format",
+      "input": {
+        "name": "Maximiliano",
+        "number": 8
+      },
+      "expected": "Maximiliano, you are the 8th customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "8267072d-be1f-4f70-b34a-76b7557a47b9",
+      "description": "format exceptional ordinal numeral 1",
+      "property": "format",
+      "input": {
+        "name": "Mary",
+        "number": 1
+      },
+      "expected": "Mary, you are the 1st customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "4d8753cb-0364-4b29-84b8-4374a4fa2e3f",
+      "description": "format exceptional ordinal numeral 2",
+      "property": "format",
+      "input": {
+        "name": "Haruto",
+        "number": 2
+      },
+      "expected": "Haruto, you are the 2nd customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "8d44c223-3a7e-4f48-a0ca-78e67bf98aa7",
+      "description": "format exceptional ordinal numeral 3",
+      "property": "format",
+      "input": {
+        "name": "Henriette",
+        "number": 3
+      },
+      "expected": "Henriette, you are the 3rd customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "6c4f6c88-b306-4f40-bc78-97cdd583c21a",
+      "description": "format smallest two digit non-exceptional ordinal numeral 10",
+      "property": "format",
+      "input": {
+        "name": "Alvarez",
+        "number": 10
+      },
+      "expected": "Alvarez, you are the 10th customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "e257a43f-d2b1-457a-97df-25f0923fc62a",
+      "description": "format non-exceptional ordinal numeral 11",
+      "property": "format",
+      "input": {
+        "name": "Jacqueline",
+        "number": 11
+      },
+      "expected": "Jacqueline, you are the 11th customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "bb1db695-4d64-457f-81b8-4f5a2107e3f4",
+      "description": "format non-exceptional ordinal numeral 12",
+      "property": "format",
+      "input": {
+        "name": "Juan",
+        "number": 12
+      },
+      "expected": "Juan, you are the 12th customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "60a3187c-9403-4835-97de-4f10ebfd63e2",
+      "description": "format non-exceptional ordinal numeral 13",
+      "property": "format",
+      "input": {
+        "name": "Patricia",
+        "number": 13
+      },
+      "expected": "Patricia, you are the 13th customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "2bdcebc5-c029-4874-b6cc-e9bec80d603a",
+      "description": "format exceptional ordinal numeral 21",
+      "property": "format",
+      "input": {
+        "name": "Washi",
+        "number": 21
+      },
+      "expected": "Washi, you are the 21st customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "74ee2317-0295-49d2-baf0-d56bcefa14e3",
+      "description": "format exceptional ordinal numeral 62",
+      "property": "format",
+      "input": {
+        "name": "Nayra",
+        "number": 62
+      },
+      "expected": "Nayra, you are the 62nd customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "b37c332d-7f68-40e3-8503-e43cbd67a0c4",
+      "description": "format exceptional ordinal numeral 100",
+      "property": "format",
+      "input": {
+        "name": "John",
+        "number": 100
+      },
+      "expected": "John, you are the 100th customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "0375f250-ce92-4195-9555-00e28ccc4d99",
+      "description": "format exceptional ordinal numeral 101",
+      "property": "format",
+      "input": {
+        "name": "Zeinab",
+        "number": 101
+      },
+      "expected": "Zeinab, you are the 101st customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "0d8a4974-9a8a-45a4-aca7-a9fb473c9836",
+      "description": "format non-exceptional ordinal numeral 112",
+      "property": "format",
+      "input": {
+        "name": "Knud",
+        "number": 112
+      },
+      "expected": "Knud, you are the 112th customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "06b62efe-199e-4ce7-970d-4bf73945713f",
+      "description": "format exceptional ordinal numeral 123",
+      "property": "format",
+      "input": {
+        "name": "Yma",
+        "number": 123
+      },
+      "expected": "Yma, you are the 123rd customer we serve today. Thank you!"
+    }
+  ]
+}
