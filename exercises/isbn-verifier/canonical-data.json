@@ -61,7 +61,20 @@
     },
     {
       "uuid": "28025280-2c39-4092-9719-f3234b89c627",
+      "description": "X is only valid as a check digit",
+      "property": "isValid",
+      "input": {
+        "isbn": "3-598-2X507-9"
+      },
+      "expected": false
+    },
+    {
+      "uuid": "0153f517-3008-4832-a168-8155c2ec0d94",
+      "reimplements": "28025280-2c39-4092-9719-f3234b89c627",
       "description": "X is only valid as a check digit - X character is substituted for 10 and multiplied",
+      "comments": [
+        "Rename this test due to multiple tests on X that should be only valid as a check digit"
+      ],
       "property": "isValid",
       "input": {
         "isbn": "3-598-2X507-9"
