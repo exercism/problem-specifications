@@ -69,6 +69,15 @@
       "expected": false
     },
     {
+      "uuid": "fdb14c99-4cf8-43c5-b06d-eb1638eff343",
+      "description": "X is not substituted by the value 10",
+      "property": "isValid",
+      "input": {
+        "isbn": "3-598-2X507-5"
+      },
+      "expected": false
+    },
+    {
       "uuid": "f6294e61-7e79-46b3-977b-f48789a4945b",
       "description": "valid isbn without separating dashes",
       "property": "isValid",
