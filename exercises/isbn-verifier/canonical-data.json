@@ -61,10 +61,28 @@
     },
     {
       "uuid": "28025280-2c39-4092-9719-f3234b89c627",
-      "description": "X is only valid as a check digit",
+      "description": "X is only valid as a check digit - X character is substituted for 10 and multiplied",
       "property": "isValid",
       "input": {
         "isbn": "3-598-2X507-9"
+      },
+      "expected": false
+    },
+    {
+      "uuid": "fdb14c99-4cf8-43c5-b06d-eb1638eff343",
+      "description": "X is only valid as a check digit - X character is substituted for 10 and not multiplied",
+      "property": "isValid",
+      "input": {
+        "isbn": "3-598-2X507-5"
+      },
+      "expected": false
+    },
+    {
+      "uuid": "47fa54cb-507e-45d3-901a-096be447dfd9",
+      "description": "X is only valid as a check digit - X character is ignored altogether",
+      "property": "isValid",
+      "input": {
+        "isbn": "3-598-2X517-1"
       },
       "expected": false
     },
