@@ -5,9 +5,9 @@ Yaʻqūb expects to use numbers from 1 up to 999.
 
 Rules:
 
-- Numbers ending in 1 (except for 11) → `"st"`
-- Numbers ending in 2 (except for 12) → `"nd"`
-- Numbers ending in 3 (except for 13) → `"rd"`
+- Numbers ending in 1 (unless ending in 11) → `"st"`
+- Numbers ending in 2 (unless ending in 12) → `"nd"`
+- Numbers ending in 3 (unless ending in 13) → `"rd"`
 - All other numbers → `"th"`
 
 Examples:
