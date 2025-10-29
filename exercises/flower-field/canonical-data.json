@@ -196,6 +196,15 @@
         "1*22*2",
         "111111"
       ]
+    },
+    {
+      "uuid": "6e4ac13a-3e43-4728-a2e3-3551d4b1a996",
+      "description": "multiple adjacent flowers",
+      "property": "annotate",
+      "input": {
+        "garden": [" ** "]
+      },
+      "expected": ["1**1"]
     }
   ]
 }
