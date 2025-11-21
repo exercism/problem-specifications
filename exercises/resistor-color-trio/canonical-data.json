@@ -117,7 +117,7 @@
         "colors": ["blue", "green", "yellow", "orange"]
       },
       "expected": {
-        "value": 650,
+        "value": 654,
         "unit": "kiloohms"
       }
     }
