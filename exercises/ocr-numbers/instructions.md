@@ -1,3 +1,5 @@
+# Instructions
+
 Optical Character Recognition or OCR is software that converts images of text into machine-readable text.
 Given a grid of characters representing some digits, convert the grid to a string of digits.
 If the grid has multiple rows of cells, the rows should be separated in the output with a `","`.
