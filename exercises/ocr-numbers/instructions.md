@@ -18,7 +18,7 @@ If the grid has multiple rows of cells, the rows should be separated in the outp
 
 The following input (without the comments) is converted to `"1234567890"`.
 
-```
+```text
       _  _     _  _  _  _  _  _  #
     | _| _||_||_ |_   ||_||_|| | # Decimal numbers.
     ||_  _|  | _||_|  ||_| _||_| #
@@ -27,7 +27,7 @@ The following input (without the comments) is converted to `"1234567890"`.
 
 The following input is converted to `"123,456,789"`.
 
-```
+```text
     _  _
   | _| _|
   ||_  _|
