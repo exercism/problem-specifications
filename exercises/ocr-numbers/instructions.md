@@ -4,15 +4,15 @@ Optical Character Recognition or OCR is software that converts images of text in
 Given a grid of characters representing some digits, convert the grid to a string of digits.
 If the grid has multiple rows of cells, the rows should be separated in the output with a `","`.
 
-* The grid is made of one of more lines of cells.
-* Each line of the grid is made of one or more cells.
-* Each cell is three columns wide and four rows high (3x4) and represents one digit.
-* Digits are drawn using pipes (`"|"`), underscores (`"_"`), and spaces (`" "`).
+- The grid is made of one of more lines of cells.
+- Each line of the grid is made of one or more cells.
+- Each cell is three columns wide and four rows high (3x4) and represents one digit.
+- Digits are drawn using pipes (`"|"`), underscores (`"_"`), and spaces (`" "`).
 
 ## Edge cases
 
-* If the input is not a valid size, your program should indicate there is an error.
-* If the input is the correct size, but a cell is not recognizable, your program should output a `"?"` for that character.
+- If the input is not a valid size, your program should indicate there is an error.
+- If the input is the correct size, but a cell is not recognizable, your program should output a `"?"` for that character.
 
 ## Examples
 
