@@ -76,7 +76,7 @@
       }
     },
     {
-      "uuid": "",
+      "uuid": "af31ae02-7e5b-4452-a990-bccb3fca9148",
       "description": "A degenerate binary tree",
       "property": "treeFromTraversals",
       "input": {
@@ -98,7 +98,7 @@
       }
     },
     {
-      "uuid": "",
+      "uuid": "ee54463d-a719-4aae-ade4-190d30ce7320",
       "description": "Another degenerate binary tree",
       "property": "treeFromTraversals",
       "input": {
@@ -120,7 +120,7 @@
       }
     },
     {
-      "uuid": "",
+      "uuid": "87123c08-c155-4486-90a4-e2f75b0f3e8f",
       "description": "Tree with many more items",
       "property": "treeFromTraversals",
       "input": {
