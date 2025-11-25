@@ -74,6 +74,80 @@
       "expected": {
         "error": "traversals must contain unique items"
       }
+    },
+    {
+      "uuid": "af31ae02-7e5b-4452-a990-bccb3fca9148",
+      "description": "A degenerate binary tree",
+      "property": "treeFromTraversals",
+      "input": {
+        "preorder": ["a", "b", "c", "d"],
+        "inorder": ["d", "c", "b", "a"]
+      },
+      "expected": {
+        "v": "a",
+        "l": {
+          "v": "b",
+          "l": {
+            "v": "c",
+            "l": { "v": "d", "l": {}, "r": {} },
+            "r": {}
+          },
+          "r": {}
+        },
+        "r": {}
+      }
+    },
+    {
+      "uuid": "ee54463d-a719-4aae-ade4-190d30ce7320",
+      "description": "Another degenerate binary tree",
+      "property": "treeFromTraversals",
+      "input": {
+        "preorder": ["a", "b", "c", "d"],
+        "inorder": ["a", "b", "c", "d"]
+      },
+      "expected": {
+        "v": "a",
+        "l": {},
+        "r": {
+          "v": "b",
+          "l": {},
+          "r": {
+            "v": "c",
+            "l": {},
+            "r": { "v": "d", "l": {}, "r": {} }
+          }
+        }
+      }
+    },
+    {
+      "uuid": "87123c08-c155-4486-90a4-e2f75b0f3e8f",
+      "description": "Tree with many more items",
+      "property": "treeFromTraversals",
+      "input": {
+        "preorder": ["a", "b", "d", "g", "h", "c", "e", "f", "i"],
+        "inorder": ["g", "d", "h", "b", "a", "e", "c", "i", "f"]
+      },
+      "expected": {
+        "v": "a",
+        "l": {
+          "v": "b",
+          "l": {
+            "v": "d",
+            "l": { "v": "g", "l": {}, "r": {} },
+            "r": { "v": "h", "l": {}, "r": {} }
+          },
+          "r": {}
+        },
+        "r": {
+          "v": "c",
+          "l": { "v": "e", "l": {}, "r": {} },
+          "r": {
+            "v": "f",
+            "l": { "v": "i", "l": {}, "r": {} },
+            "r": {}
+          }
+        }
+      }
     }
   ]
 }
