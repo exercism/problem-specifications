@@ -27,17 +27,21 @@ The following input (without the comments) is converted to `"1234567890"`.
 
 The following input is converted to `"123,456,789"`.
 
+<!-- prettier-ignore-start -->
+
 ```text
-    _  _
+    _  _ 
   | _| _|
   ||_  _|
-
-    _  _
-|_||_ |_
+         
+    _  _ 
+|_||_ |_ 
   | _||_|
-
- _  _  _
+         
+ _  _  _ 
   ||_||_|
   ||_| _|
-
+         
 ```
+
+<!-- prettier-ignore-end -->
