@@ -1,6 +1,6 @@
 title = "Pig Latin"
 blurb = "Implement a program that translates from English to Pig Latin."
 source = "The Pig Latin exercise at Test First Teaching by Ultrasaurus"
-source_url = "https://github.com/ultrasaurus/test-first-teaching/blob/master/learn_ruby/pig_latin/"
+source_url = "https://github.com/ultrasaurus/test-first-teaching/tree/master/learn_ruby/pig_latin"
 deep_dive_youtube_id = "tEhyRvJa7mg"
 deep_dive_blurb = "We take a look at pattern matching and regular expressions as well as a nice Prolog solution, and we ask - did you solve the exercise or just make the tests pass?"
