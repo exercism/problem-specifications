@@ -68,7 +68,7 @@
           "description": "Perfect square abundant number is classified correctly",
           "property": "classify",
           "input": {
-             "number": 196
+            "number": 196
           },
           "expected": "abundant"
         }
