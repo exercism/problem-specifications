@@ -62,6 +62,15 @@
             "number": 33550335
           },
           "expected": "abundant"
+        },
+        {
+          "uuid": "05f15b93-849c-45e9-9c7d-1ea131ef7d10",
+          "description": "perfect square abundant number",
+          "property": "classify",
+          "input": {
+             "number": 196
+          },
+          "expected": "abundant"
         }
       ]
     },
