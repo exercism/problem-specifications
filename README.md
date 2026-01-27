@@ -287,7 +287,7 @@ When creating a new exercise the design team needs to be informed so that a new 
 
 `canonical-data.json` for each exercise is checked for compliance against the [canonical-data.schema.json](canonical-data.schema.json).
 In order to run these tests, you will need to have `yarn` installed on your system.
-Follow [the official Yarn installation directions](https://yarnpkg.com/en/docs/install).
+Follow [the official Yarn installation directions](https://yarnpkg.com/getting-started/install).
 
 Install the required packages:
 
