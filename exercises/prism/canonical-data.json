@@ -107,7 +107,7 @@
     },
     {
       "uuid": "96dacffb-d821-4cdf-aed8-f152ce063195",
-      "description": "who said they can't spin?",
+      "description": "large angle",
       "property": "findSequence",
       "input": {
         "start": {"x": 0, "y": 0, "angle": 2340},
