@@ -15,7 +15,7 @@
     },
     {
       "uuid": "ec0ca17c-0c5f-44fb-89ba-b76395bdaf1c",
-      "description": "1 prism 1 hit",
+      "description": "one prism one hit",
       "property": "findSequence",
       "input": {
         "start": {"x": 0, "y": 0, "angle": 0},
