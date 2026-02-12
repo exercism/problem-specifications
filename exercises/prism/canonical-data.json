@@ -233,7 +233,7 @@
     },
     {
       "uuid": "e077fc91-4e4a-46b3-a0f5-0ba00321da56",
-      "description": "complex path with multiple prisms, floating-point precision",
+      "description": "complex path with multiple prisms floating point precision",
       "scenarios": ["floating-point"],
       "property": "findSequence",
       "input": {
