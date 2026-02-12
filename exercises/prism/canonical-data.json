@@ -75,7 +75,7 @@
     },
     {
       "uuid": "acc723ea-597b-4a50-8d1b-b980fe867d4c",
-      "description": "going left",
+      "description": "going left zero hits",
       "property": "findSequence",
       "input": {
         "start": {"x": 0, "y": 0, "angle": 180},
