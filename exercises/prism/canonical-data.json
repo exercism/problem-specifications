@@ -177,7 +177,7 @@
     },
     {
       "uuid": "8d9a3cc8-e846-4a3b-a137-4bfc4aa70bd1",
-      "description": "multiple prisms, floating-point precision",
+      "description": "multiple prisms floating point precision",
       "scenarios": ["floating-point"],
       "property": "findSequence",
       "input": {
