@@ -59,7 +59,7 @@
     },
     {
       "uuid": "78295b3c-7438-492d-8010-9c63f5c223d7",
-      "description": "going down",
+      "description": "going down zero hits",
       "property": "findSequence",
       "input": {
         "start": {"x": 0, "y": 0, "angle": -90},
