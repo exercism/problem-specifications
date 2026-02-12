@@ -8,15 +8,13 @@ Consider this crystal array configuration:
 
 ```code
 {
-  "input": {
-    "start": { "x": 0, "y": 0, "angle": 0 },
-    "prisms": [
-      { "id": 1, "x": 10, "y": 0, "angle": 90 },
-      { "id": 2, "x": 20, "y": 0, "angle": 0 },
-      { "id": 3, "x": 10, "y": 10, "angle": -90 },
-      { "id": 4, "x": 30, "y": 10, "angle": 45 }
-    ]
-  }
+  "start": { "x": 0, "y": 0, "angle": 0 },
+  "prisms": [
+    { "id": 1, "x": 10, "y": 0, "angle": 90 },
+    { "id": 2, "x": 20, "y": 0, "angle": 0 },
+    { "id": 3, "x": 10, "y": 10, "angle": -90 },
+    { "id": 4, "x": 30, "y": 10, "angle": 45 }
+  ]
 }
 ```
 
