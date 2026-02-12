@@ -121,7 +121,7 @@
     },
     {
       "uuid": "513a7caa-957f-4c5d-9820-076842de113c",
-      "description": "upward refraction",
+      "description": "upward refraction two hits",
       "property": "findSequence",
       "input": {
         "start": {"x": 0, "y": 0, "angle": 0},
@@ -136,7 +136,7 @@
     },
     {
       "uuid": "d452b7c7-9761-4ea9-81a9-2de1d73eb9ef",
-      "description": "downward refraction",
+      "description": "downward refraction two hits",
       "property": "findSequence",
       "input": {
         "start": {"x": 0, "y": 0, "angle": 0},
