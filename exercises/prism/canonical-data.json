@@ -29,7 +29,7 @@
     },
     {
       "uuid": "0db955f2-0a27-4c82-ba67-197bd6202069",
-      "description": "1 prism 1 miss",
+      "description": "one prism zero hits",
       "property": "findSequence",
       "input": {
         "start": {"x": 0, "y": 0, "angle": 0},
