@@ -91,7 +91,7 @@
     },
     {
       "uuid": "3f19b9df-9eaa-4f18-a2db-76132f466d17",
-      "description": "still going left",
+      "description": "negative angle",
       "property": "findSequence",
       "input": {
         "start": {"x": 0, "y": 0, "angle": -180},
