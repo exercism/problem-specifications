@@ -25,8 +25,8 @@ Consider this crystal array configuration:
 The laser starts at the origin `(0, 0)` and fires horizontally to the right at angle 0°.
 Here's the step-by-step beam path:
 
-**Step 1**: The beam travels along the x-axis (y = 0) and first encounters **Crystal #1** at position `(10, 0)`. 
-This crystal has a refraction angle of 90°, which means it bends the beam perpendicular to its current path. 
+**Step 1**: The beam travels along the x-axis (y = 0) and first encounters **Crystal #1** at position `(10, 0)`.
+This crystal has a refraction angle of 90°, which means it bends the beam perpendicular to its current path.
 The beam, originally traveling at 0°, is now redirected to 90° (straight up).
 
 **Step 2**: The beam now travels vertically upward from position `(10, 0)` and strikes **Crystal #3** at position `(10, 10)`.
