@@ -1,0 +1,181 @@
+{
+  "exercise": "mazy-mice",
+  "comments": [
+    "The following checks should be considered:                          ",
+    "                                                                    ",
+    "The dimensions of the maze are correct:                             ",
+    "  - the number of lines is equal to rows * 2 + 1                    ",
+    "  - the width of each line in characters is equal to columns * 2 + 1",
+    "The maze contains only valid characters.                            ",
+    "The maze has a single entrance on the left side.                    ",
+    "The maze has a single exit on the right side.                       ",
+    "The maze is perfect:                                                ",
+    "  - there is a single path from the entrance to the exit            ",
+    "  - there are no loops in the maze                                  ",
+    "  - there are no inaccessible sections in the maze                  ",
+    "The maze is random:                                                 ",
+    "  - the maze is different each time it is generated                 ",
+    "  - the maze is the same if the same seed is used                   ",
+    "  - two mazes with different seeds should not be equal              ",
+    "The rows and cols must be between 5 and 100                         "
+  ],
+  "cases": [
+    {
+      "uuid": "e01f6db6-613c-4b55-9c09-e87edc0b04dd",
+      "description": "The dimensions of the maze are correct",
+      "property": "generateMaze",
+      "input": {
+        "rows": 6,
+        "cols": 18
+      },
+      "expected": {
+        "width": 37,
+        "height": 13
+      }
+    },
+    {
+      "uuid": "4782cea6-a1e3-48b2-b825-a805890b5118",
+      "description": "The maze contains only valid characters",
+      "property": "generateMaze",
+      "input": {
+        "rows": 6,
+        "cols": 18
+      },
+      "expected": true
+    },
+    {
+      "uuid": "1433a6ff-d18e-4ade-b37c-40b286218f07",
+      "description": "The maze has a single entrance on the left side",
+      "property": "generateMaze",
+      "input": {
+        "rows": 6,
+        "cols": 18
+      },
+      "expected": true
+    },
+    {
+      "uuid": "a0be2a1c-4ec1-412a-8a30-36d6b1d96df2",
+      "description": "The maze has a single exit on the right side",
+      "property": "generateMaze",
+      "input": {
+        "rows": 6,
+        "cols": 18
+      },
+      "expected": true
+    },
+    {
+      "uuid": "1f7f50f5-4a3a-4e96-8c5e-92b284fd8b3b",
+      "description": "the smallest square maze is perfect",
+      "property": "generateMaze",
+      "input": {
+        "rows": 5,
+        "cols": 5
+      },
+      "expected": true
+    },
+    {
+      "uuid": "2a8e8f63-7e89-4c9a-8d1f-1439a7d9a3e9",
+      "description": "the small rectangular maze is perfect",
+      "property": "generateMaze",
+      "input": {
+        "rows": 5,
+        "cols": 10
+      },
+      "expected": true
+    },
+    {
+      "uuid": "3b6e8d5c-2a8d-4f03-9e7a-6c8f2a4e4f88",
+      "description": "the square maze is perfect",
+      "property": "generateMaze",
+      "input": {
+        "rows": 10,
+        "cols": 10
+      },
+      "expected": true
+    },
+    {
+      "uuid": "4c7f6e5b-5e45-4a8d-8e8a-7f3e3e4e5f99",
+      "description": "the large rectangular maze is perfect",
+      "property": "generateMaze",
+      "input": {
+        "rows": 10,
+        "cols": 20
+      },
+      "expected": true
+    },
+    {
+      "uuid": "5d8f7f6c-6e46-4a9d-8e8b-8f3f3f4e6f00",
+      "description": "the rectangular maze with aspect 2:1 is perfect",
+      "property": "generateMaze",
+      "input": {
+        "rows": 20,
+        "cols": 10
+      },
+      "expected": true
+    },
+    {
+      "uuid": "6e9f8f7d-7e47-4a9e-8e8c-9f3f3f4e7f01",
+      "description": "the huge rectangular maze is perfect",
+      "property": "generateMaze",
+      "input": {
+        "rows": 20,
+        "cols": 100
+      },
+      "expected": true
+    },
+    {
+      "uuid": "7fa0a0b1-8e48-4a9f-8e8d-af4f4f5e8f02",
+      "description": "the huge square maze is perfect",
+      "property": "generateMaze",
+      "input": {
+        "rows": 100,
+        "cols": 100
+      },
+      "expected": true
+    },
+    {
+      "uuid": "8fb1c1d2-9e49-4aa0-8e8e-bf5f5f6e9f03",
+      "description": "if the seed parameter is specified, the perfect maze generated",
+      "property": "generateMaze",
+      "input": {
+        "rows": 50,
+        "cols": 50,
+        "seed": 2342342
+      },
+      "expected": true
+    },
+    {
+      "uuid": "9fc2d2e3-af4a-4ab1-8e8f-cf6f6f7eaf04",
+      "description": "if the seed parameter is omitted, random mazes should be generated",
+      "property": "generateMaze",
+      "input": {
+        "rows": 8,
+        "cols": 16
+      },
+      "expected": true
+    },
+    {
+      "uuid": "a0d3e4f4-b05b-4ac2-8e8a-df7f7f8eaf05",
+      "description": "if the seed parameter is specified, the same maze should be generated",
+      "property": "generateMaze",
+      "input": {
+        "rows": 8,
+        "cols": 16,
+        "seed": 123
+      },
+      "expected": true
+    },
+    {
+      "uuid": "b2f1a0e5-1c3a-4d5e-9f2b-8a7b6c5d4e3f",
+      "description": "Error: rows less than 5",
+      "property": "generateMaze",
+      "input": {
+        "rows": 4,
+        "cols": 10
+      },
+      "expected": {
+        "error": "rows must be between 5 and 100"
+      }
+    }
+  ]
+}
