@@ -380,7 +380,8 @@
       "cases": [
         {
           "uuid": "b97d00b6-2fab-435d-ae74-3233dcc13698",
-          "description": "Empty linked list to list (LIFO) is empty",
+          "description": "Empty linked list to list is empty",
+          "comments": ["toList LIFO"],
           "property": "list",
           "input": {
             "initialValues": [],
@@ -395,7 +396,8 @@
         },
         {
           "uuid": "eedeb95f-b5cf-431d-8ad6-5854ba6b251c",
-          "description": "To list (LIFO) with multiple values",
+          "description": "To list with multiple values",
+          "comments": ["toList LIFO"],
           "property": "list",
           "input": {
             "initialValues": [1, 2, 3],
@@ -410,7 +412,8 @@
         },
         {
           "uuid": "838678de-eaf3-4c14-b34e-7e35b6d851e8",
-          "description": "To list (LIFO) after a pop",
+          "description": "To list after a pop",
+          "comments": ["toList LIFO"],
           "property": "list",
           "input": {
             "initialValues": [],
@@ -451,7 +454,8 @@
       "cases": [
         {
           "uuid": "03fc83a5-48a8-470b-a2d2-a286c5e8365f",
-          "description": "Empty linked list to list (FIFO) is empty",
+          "description": "Empty linked list to list is empty",
+          "comments": ["toList FIFO"],
           "property": "list",
           "input": {
             "initialValues": [],
@@ -466,7 +470,8 @@
         },
         {
           "uuid": "1282484e-a58c-426a-972e-90746bda61fc",
-          "description": "To list (FIFO) with multiple values",
+          "description": "To list with multiple values",
+          "comments": ["toList FIFO"],
           "property": "list",
           "input": {
             "initialValues": [1, 2, 3],
@@ -481,7 +486,8 @@
         },
         {
           "uuid": "05ca3109-1249-4c0c-a567-a3b2f8352a7c",
-          "description": "To list (FIFO) after a pop",
+          "description": "To list after a pop",
+          "comments": ["toList FIFO"],
           "property": "list",
           "input": {
             "initialValues": [],
