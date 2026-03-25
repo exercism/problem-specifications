@@ -521,7 +521,7 @@
       "cases": [
         {
           "uuid": "5e6c1a3d-e34b-46d3-be59-3f132a820ed5",
-          "description": "Reversed empty list is same list",
+          "description": "Reversed empty list has same values",
           "property": "list",
           "input": {
             "initialValues": [],
