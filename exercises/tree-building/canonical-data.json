@@ -1,0 +1,304 @@
+{
+  "exercise": "tree-building",
+  "cases": [
+    {
+      "uuid": "761790a3-4c27-461a-b4e9-8bce8ccee5a1",
+      "description": "empty list",
+      "property": "buildTree",
+      "input": {
+        "records": []
+      },
+      "expected": {}
+    },
+    {
+      "uuid": "dcc89dc3-eb39-4f26-a3cd-964e607c95ff",
+      "description": "single record",
+      "property": "buildTree",
+      "input": {
+        "records": [
+          {"recordId": 0, "parentId": 0}
+        ]
+      },
+      "expected": {
+        "node": {
+          "id": 0,
+          "children": []
+        }
+      }
+    },
+    {
+      "uuid": "dcdb80f0-e5da-43e1-8b8d-6f307be89c0e",
+      "description": "three records in order",
+      "property": "buildTree",
+      "input": {
+        "records": [
+          {"recordId": 0, "parentId": 0},
+          {"recordId": 1, "parentId": 0},
+          {"recordId": 2, "parentId": 0}
+        ]
+      },
+      "expected": {
+        "node": {
+          "id": 0,
+          "children": [
+            {"recordId": 1, "parentId": 0},
+            {"recordId": 2, "parentId": 0}
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "2ff5b8f8-d95e-401e-9359-233919488d22",
+      "description": "three records in reverse order",
+      "property": "buildTree",
+      "input": {
+        "records": [
+          {"recordId": 2, "parentId": 0},
+          {"recordId": 1, "parentId": 0},
+          {"recordId": 0, "parentId": 0}
+        ]
+      },
+      "expected": {
+        "node": {
+          "id": 0,
+          "children": [
+            {"recordId": 1, "parentId": 0},
+            {"recordId": 2, "parentId": 0}
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "de798d3b-8905-4446-a114-a0dd2476d945",
+      "description": "more than two children",
+      "property": "buildTree",
+      "input": {
+        "records": [
+          {"recordId": 0, "parentId": 0},
+          {"recordId": 1, "parentId": 0},
+          {"recordId": 2, "parentId": 0},
+          {"recordId": 3, "parentId": 0}
+        ]
+      },
+      "expected": {
+        "node": {
+          "id": 0,
+          "children": [
+            {"recordId": 1, "parentId": 0},
+            {"recordId": 2, "parentId": 0},
+            {"recordId": 3, "parentId": 0}
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "13dd9b3c-6137-415f-b6fe-5044c1dfbc50",
+      "description": "binary tree",
+      "property": "buildTree",
+      "input": {
+        "records": [
+          {"recordId": 5, "parentId": 1},
+          {"recordId": 3, "parentId": 2},
+          {"recordId": 2, "parentId": 0},
+          {"recordId": 4, "parentId": 1},
+          {"recordId": 1, "parentId": 0},
+          {"recordId": 0, "parentId": 0},
+          {"recordId": 6, "parentId": 2}
+	]
+      },
+      "expected": {
+        "node": {
+          "id": 0,
+          "children": [
+            {
+              "recordId": 1, "children": [
+                {"recordId": 4},
+                {"recordId": 5}
+              ]
+            },
+            {
+              "recordId": 2, "children": [
+                {"recordId": 3},
+                {"recordId": 6}
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "5cfd29dc-166b-47da-84ca-1c60b5ae5941",
+      "description": "unbalanced tree",
+      "property": "buildTree",
+      "input": {
+        "records": [
+          {"recordId": 5, "parentId": 2},
+          {"recordId": 3, "parentId": 2},
+          {"recordId": 2, "parentId": 0},
+          {"recordId": 4, "parentId": 1},
+          {"recordId": 1, "parentId": 0},
+          {"recordId": 0, "parentId": 0},
+          {"recordId": 6, "parentId": 2}
+	]
+      },
+      "expected": {
+        "node": {
+          "id": 0,
+          "children": [
+            {
+              "recordId": 1, "children": [
+                {"recordId": 4}
+              ]
+            },
+            {
+              "recordId": 2, "children": [
+                {"recordId": 3},
+                {"recordId": 5},
+                {"recordId": 6}
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "uuid": "a05ddb5d-2d11-4948-88d3-b5f18a44ddce",
+      "description": "one root node and has parent",
+      "property": "buildTree",
+      "input": {
+        "records": [
+          {"recordId": 0, "parentId": 1}
+	]
+      },
+      "expected": {
+        "error": "node parent_id should be smaller than its record_id"
+      }
+    },
+    {
+      "uuid": "9ed09df2-8fd6-4e37-aa37-e7753c057a1a",
+      "description": "root node has parent",
+      "property": "buildTree",
+      "input": {
+        "records": [
+          {"recordId": 0, "parentId": 1},
+          {"recordId": 1, "parentId": 0}
+	]
+      },
+      "expected": {
+        "error": "node parent_id should be smaller than its record_id"
+      }
+    },
+    {
+      "uuid": "8755a2c4-2c6b-4396-b155-b5bf4b6bc280",
+      "description": "no root node",
+      "property": "buildTree",
+      "input": {
+        "records": [
+          {"recordId": 1, "parentId": 0},
+          {"recordId": 2, "parentId": 0}
+	]
+      },
+      "expected": {
+        "error": "record id is invalid or out of order"
+      }
+    },
+    {
+      "uuid": "c6ef8f9a-4045-4949-a1e1-e0ae804e4af4",
+      "description": "duplicate node",
+      "property": "buildTree",
+      "input": {
+        "records": [
+          {"recordId": 0, "parentId": 0},
+          {"recordId": 1, "parentId": 0},
+          {"recordId": 1, "parentId": 0}
+	]
+      },
+      "expected": {
+        "error": "record id is invalid or out of order"
+      }
+    },
+    {
+      "uuid": "7a7b77a6-3447-4905-b79c-d22bfe43f408",
+      "description": "duplicate root",
+      "property": "buildTree",
+      "input": {
+        "records": [
+          {"recordId": 0, "parentId": 0},
+          {"recordId": 0, "parentId": 0}
+	]
+      },
+      "expected": {
+        "error": "record id is invalid or out of order"
+      }
+    },
+    {
+      "uuid": "c6f51bd7-3608-4390-b446-dfd1bcbf3ddc",
+      "description": "non-continuous",
+      "property": "buildTree",
+      "input": {
+        "records": [
+          {"recordId": 2, "parentId": 0},
+          {"recordId": 4, "parentId": 2},
+          {"recordId": 1, "parentId": 0},
+          {"recordId": 0, "parentId": 0}
+	]
+      },
+      "expected": {
+        "error": "record id is invalid or out of order"
+      }
+    },
+    {
+      "uuid": "1f3d1b50-4494-4b22-b88a-68f32f7d321d",
+      "description": "cycle directly",
+      "property": "buildTree",
+      "input": {
+        "records": [
+          {"recordId": 5, "parentId": 2},
+          {"recordId": 3, "parentId": 2},
+          {"recordId": 2, "parentId": 2},
+          {"recordId": 4, "parentId": 1},
+          {"recordId": 1, "parentId": 0},
+          {"recordId": 0, "parentId": 0},
+          {"recordId": 6, "parentId": 3}
+	]
+      },
+      "expected": {
+        "error": "record id is invalid or out of order"
+      }
+    },
+    {
+      "uuid": "ac568b50-3f9b-4cb4-b602-e0eb13de4269",
+      "description": "cycle indirectly",
+      "property": "buildTree",
+      "input": {
+        "records": [
+          {"recordId": 5, "parentId": 2},
+          {"recordId": 3, "parentId": 2},
+          {"recordId": 2, "parentId": 6},
+          {"recordId": 4, "parentId": 1},
+          {"recordId": 1, "parentId": 0},
+          {"recordId": 0, "parentId": 0},
+          {"recordId": 6, "parentId": 3}
+	]
+      },
+      "expected": {
+        "error": "record id is invalid or out of order"
+      }
+    },
+    {
+      "uuid": "cf954b21-3cef-420c-8e72-d19547505e1f",
+      "description": "higher id parent of lower id",
+      "property": "buildTree",
+      "input": {
+        "records": [
+          {"recordId": 0, "parentId": 0},
+          {"recordId": 2, "parentId": 0},
+          {"recordId": 1, "parentId": 2}
+	]
+      },
+      "expected": {
+        "error": "record id is invalid or out of order"
+      }
+    }
+  ]
+}
