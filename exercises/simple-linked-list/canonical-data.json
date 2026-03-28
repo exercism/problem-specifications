@@ -591,6 +591,41 @@
           "expected": {}
         },
         {
+          "uuid": "1210eeda-b23f-4790-930c-7ac6d0c8e723",
+          "reimplements": "92851ebe-9f52-4406-b92e-0718c441a2ab",
+          "description": "Reversed non-empty list is reversed",
+          "comments": [
+            "This test does not use toList as toList can be implemented different ways.",
+            "Perform a count after the reverse"
+          ],
+          "property": "list",
+          "input": {
+            "initialValues": [1, 2, 3],
+            "operations": [
+              {
+                "operation": "reverse"
+              },
+              {
+                "operation": "count",
+                "expected": 3
+              },
+              {
+                "operation": "pop",
+                "expected": 1
+              },
+              {
+                "operation": "pop",
+                "expected": 2
+              },
+              {
+                "operation": "pop",
+                "expected": 3
+              }
+            ]
+          },
+          "expected": {}
+        },
+        {
           "uuid": "9b53af96-7494-4cfa-9b77-b7366fed5c4c",
           "description": "Double reverse",
           "comments": [
