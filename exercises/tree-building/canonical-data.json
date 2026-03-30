@@ -1,5 +1,9 @@
 {
   "exercise": "tree-building",
+  "comments": [
+    "Per the description, this is a refactoring exercise.",
+    "The expectation is that the stub file has a poorly written but working implementation."
+  ],
   "cases": [
     {
       "uuid": "761790a3-4c27-461a-b4e9-8bce8ccee5a1",
