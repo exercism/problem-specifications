@@ -1,5 +1,9 @@
 {
   "exercise": "ledger",
+  "comments": [
+    "Per the description, this is a refactoring exercise.",
+    "The expectation is that the stub file has a poorly written but working implementation."
+  ],
   "cases": [
     {
       "uuid": "d131ecae-a30e-436c-b8f3-858039a27234",
