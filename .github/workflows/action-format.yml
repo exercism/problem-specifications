@@ -7,7 +7,7 @@ on:
 jobs:
   format:
     name: 'Format'
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     if: github.event.issue.pull_request != '' && contains(github.event.comment.body, '/format')
     steps:
       - name: 'Post acknowledgement that it will format code'
@@ -67,7 +67,7 @@ jobs:
       - name: Use Node.js LTS (16.x)
         uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238
         with:
-          node-version: '16'
+          node-version: 20
 
       # https://github.com/actions/cache/blob/main/examples.md#node---yarn
       - name: Get yarn cache directory path
