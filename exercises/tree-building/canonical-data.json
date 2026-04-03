@@ -19,9 +19,7 @@
       "description": "single record",
       "property": "buildTree",
       "input": {
-        "records": [
-          {"recordId": 0, "parentId": 0}
-        ]
+        "records": [{ "recordId": 0, "parentId": 0 }]
       },
       "expected": {
         "node": {
@@ -36,17 +34,17 @@
       "property": "buildTree",
       "input": {
         "records": [
-          {"recordId": 0, "parentId": 0},
-          {"recordId": 1, "parentId": 0},
-          {"recordId": 2, "parentId": 0}
+          { "recordId": 0, "parentId": 0 },
+          { "recordId": 1, "parentId": 0 },
+          { "recordId": 2, "parentId": 0 }
         ]
       },
       "expected": {
         "node": {
           "id": 0,
           "children": [
-            {"recordId": 1, "parentId": 0},
-            {"recordId": 2, "parentId": 0}
+            { "recordId": 1, "parentId": 0 },
+            { "recordId": 2, "parentId": 0 }
           ]
         }
       }
@@ -57,17 +55,17 @@
       "property": "buildTree",
       "input": {
         "records": [
-          {"recordId": 2, "parentId": 0},
-          {"recordId": 1, "parentId": 0},
-          {"recordId": 0, "parentId": 0}
+          { "recordId": 2, "parentId": 0 },
+          { "recordId": 1, "parentId": 0 },
+          { "recordId": 0, "parentId": 0 }
         ]
       },
       "expected": {
         "node": {
           "id": 0,
           "children": [
-            {"recordId": 1, "parentId": 0},
-            {"recordId": 2, "parentId": 0}
+            { "recordId": 1, "parentId": 0 },
+            { "recordId": 2, "parentId": 0 }
           ]
         }
       }
@@ -78,19 +76,19 @@
       "property": "buildTree",
       "input": {
         "records": [
-          {"recordId": 0, "parentId": 0},
-          {"recordId": 1, "parentId": 0},
-          {"recordId": 2, "parentId": 0},
-          {"recordId": 3, "parentId": 0}
+          { "recordId": 0, "parentId": 0 },
+          { "recordId": 1, "parentId": 0 },
+          { "recordId": 2, "parentId": 0 },
+          { "recordId": 3, "parentId": 0 }
         ]
       },
       "expected": {
         "node": {
           "id": 0,
           "children": [
-            {"recordId": 1, "parentId": 0},
-            {"recordId": 2, "parentId": 0},
-            {"recordId": 3, "parentId": 0}
+            { "recordId": 1, "parentId": 0 },
+            { "recordId": 2, "parentId": 0 },
+            { "recordId": 3, "parentId": 0 }
           ]
         }
       }
@@ -101,30 +99,26 @@
       "property": "buildTree",
       "input": {
         "records": [
-          {"recordId": 5, "parentId": 1},
-          {"recordId": 3, "parentId": 2},
-          {"recordId": 2, "parentId": 0},
-          {"recordId": 4, "parentId": 1},
-          {"recordId": 1, "parentId": 0},
-          {"recordId": 0, "parentId": 0},
-          {"recordId": 6, "parentId": 2}
-	]
+          { "recordId": 5, "parentId": 1 },
+          { "recordId": 3, "parentId": 2 },
+          { "recordId": 2, "parentId": 0 },
+          { "recordId": 4, "parentId": 1 },
+          { "recordId": 1, "parentId": 0 },
+          { "recordId": 0, "parentId": 0 },
+          { "recordId": 6, "parentId": 2 }
+        ]
       },
       "expected": {
         "node": {
           "id": 0,
           "children": [
             {
-              "recordId": 1, "children": [
-                {"recordId": 4},
-                {"recordId": 5}
-              ]
+              "recordId": 1,
+              "children": [{ "recordId": 4 }, { "recordId": 5 }]
             },
             {
-              "recordId": 2, "children": [
-                {"recordId": 3},
-                {"recordId": 6}
-              ]
+              "recordId": 2,
+              "children": [{ "recordId": 3 }, { "recordId": 6 }]
             }
           ]
         }
@@ -136,29 +130,29 @@
       "property": "buildTree",
       "input": {
         "records": [
-          {"recordId": 5, "parentId": 2},
-          {"recordId": 3, "parentId": 2},
-          {"recordId": 2, "parentId": 0},
-          {"recordId": 4, "parentId": 1},
-          {"recordId": 1, "parentId": 0},
-          {"recordId": 0, "parentId": 0},
-          {"recordId": 6, "parentId": 2}
-	]
+          { "recordId": 5, "parentId": 2 },
+          { "recordId": 3, "parentId": 2 },
+          { "recordId": 2, "parentId": 0 },
+          { "recordId": 4, "parentId": 1 },
+          { "recordId": 1, "parentId": 0 },
+          { "recordId": 0, "parentId": 0 },
+          { "recordId": 6, "parentId": 2 }
+        ]
       },
       "expected": {
         "node": {
           "id": 0,
           "children": [
             {
-              "recordId": 1, "children": [
-                {"recordId": 4}
-              ]
+              "recordId": 1,
+              "children": [{ "recordId": 4 }]
             },
             {
-              "recordId": 2, "children": [
-                {"recordId": 3},
-                {"recordId": 5},
-                {"recordId": 6}
+              "recordId": 2,
+              "children": [
+                { "recordId": 3 },
+                { "recordId": 5 },
+                { "recordId": 6 }
               ]
             }
           ]
@@ -170,9 +164,7 @@
       "description": "one root node and has parent",
       "property": "buildTree",
       "input": {
-        "records": [
-          {"recordId": 0, "parentId": 1}
-	]
+        "records": [{ "recordId": 0, "parentId": 1 }]
       },
       "expected": {
         "error": "node parent_id should be smaller than its record_id"
@@ -184,9 +176,9 @@
       "property": "buildTree",
       "input": {
         "records": [
-          {"recordId": 0, "parentId": 1},
-          {"recordId": 1, "parentId": 0}
-	]
+          { "recordId": 0, "parentId": 1 },
+          { "recordId": 1, "parentId": 0 }
+        ]
       },
       "expected": {
         "error": "node parent_id should be smaller than its record_id"
@@ -198,9 +190,9 @@
       "property": "buildTree",
       "input": {
         "records": [
-          {"recordId": 1, "parentId": 0},
-          {"recordId": 2, "parentId": 0}
-	]
+          { "recordId": 1, "parentId": 0 },
+          { "recordId": 2, "parentId": 0 }
+        ]
       },
       "expected": {
         "error": "record id is invalid or out of order"
@@ -212,10 +204,10 @@
       "property": "buildTree",
       "input": {
         "records": [
-          {"recordId": 0, "parentId": 0},
-          {"recordId": 1, "parentId": 0},
-          {"recordId": 1, "parentId": 0}
-	]
+          { "recordId": 0, "parentId": 0 },
+          { "recordId": 1, "parentId": 0 },
+          { "recordId": 1, "parentId": 0 }
+        ]
       },
       "expected": {
         "error": "record id is invalid or out of order"
@@ -227,9 +219,9 @@
       "property": "buildTree",
       "input": {
         "records": [
-          {"recordId": 0, "parentId": 0},
-          {"recordId": 0, "parentId": 0}
-	]
+          { "recordId": 0, "parentId": 0 },
+          { "recordId": 0, "parentId": 0 }
+        ]
       },
       "expected": {
         "error": "record id is invalid or out of order"
@@ -241,11 +233,11 @@
       "property": "buildTree",
       "input": {
         "records": [
-          {"recordId": 2, "parentId": 0},
-          {"recordId": 4, "parentId": 2},
-          {"recordId": 1, "parentId": 0},
-          {"recordId": 0, "parentId": 0}
-	]
+          { "recordId": 2, "parentId": 0 },
+          { "recordId": 4, "parentId": 2 },
+          { "recordId": 1, "parentId": 0 },
+          { "recordId": 0, "parentId": 0 }
+        ]
       },
       "expected": {
         "error": "record id is invalid or out of order"
@@ -257,14 +249,14 @@
       "property": "buildTree",
       "input": {
         "records": [
-          {"recordId": 5, "parentId": 2},
-          {"recordId": 3, "parentId": 2},
-          {"recordId": 2, "parentId": 2},
-          {"recordId": 4, "parentId": 1},
-          {"recordId": 1, "parentId": 0},
-          {"recordId": 0, "parentId": 0},
-          {"recordId": 6, "parentId": 3}
-	]
+          { "recordId": 5, "parentId": 2 },
+          { "recordId": 3, "parentId": 2 },
+          { "recordId": 2, "parentId": 2 },
+          { "recordId": 4, "parentId": 1 },
+          { "recordId": 1, "parentId": 0 },
+          { "recordId": 0, "parentId": 0 },
+          { "recordId": 6, "parentId": 3 }
+        ]
       },
       "expected": {
         "error": "record id is invalid or out of order"
@@ -276,14 +268,14 @@
       "property": "buildTree",
       "input": {
         "records": [
-          {"recordId": 5, "parentId": 2},
-          {"recordId": 3, "parentId": 2},
-          {"recordId": 2, "parentId": 6},
-          {"recordId": 4, "parentId": 1},
-          {"recordId": 1, "parentId": 0},
-          {"recordId": 0, "parentId": 0},
-          {"recordId": 6, "parentId": 3}
-	]
+          { "recordId": 5, "parentId": 2 },
+          { "recordId": 3, "parentId": 2 },
+          { "recordId": 2, "parentId": 6 },
+          { "recordId": 4, "parentId": 1 },
+          { "recordId": 1, "parentId": 0 },
+          { "recordId": 0, "parentId": 0 },
+          { "recordId": 6, "parentId": 3 }
+        ]
       },
       "expected": {
         "error": "record id is invalid or out of order"
@@ -295,10 +287,10 @@
       "property": "buildTree",
       "input": {
         "records": [
-          {"recordId": 0, "parentId": 0},
-          {"recordId": 2, "parentId": 0},
-          {"recordId": 1, "parentId": 2}
-	]
+          { "recordId": 0, "parentId": 0 },
+          { "recordId": 2, "parentId": 0 },
+          { "recordId": 1, "parentId": 2 }
+        ]
       },
       "expected": {
         "error": "record id is invalid or out of order"
