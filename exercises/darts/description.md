@@ -18,13 +18,18 @@ Of course, they are all centered at the same point — that is, the circles are 
 
 Given a point in the target (defined by its [Cartesian coordinates][cartesian-coordinates] `x` and `y`, where `x` and `y` are [real][real-numbers]), calculate the correct score earned by a dart landing at that point.
 
+~~~~exercism/note
+To find which circle a dart falls in, you can compute the [distance][distance-formula] from the point to the center (0, 0) and compare it against each circle's radius.
+~~~~
+
 ## Credit
 
 The scoreboard image was created by [habere-et-dispertire][habere-et-dispertire] using [Inkscape][inkscape].
 
 [darts]: https://en.wikipedia.org/wiki/Darts
 [darts-target]: https://en.wikipedia.org/wiki/Darts#/media/File:Darts_in_a_dartboard.jpg
-[concentric]: https://mathworld.wolfram.com/ConcentricCircles.html
+[concentric]: https://en.wikipedia.org/wiki/Concentric_objects
+[distance-formula]: https://www.mathsisfun.com/algebra/distance-2-points.html
 [cartesian-coordinates]: https://www.mathsisfun.com/data/cartesian-coordinates.html
 [real-numbers]: https://www.mathsisfun.com/numbers/real-numbers.html
 [habere-et-dispertire]: https://exercism.org/profiles/habere-et-dispertire
