@@ -186,6 +186,22 @@
           "expected": {}
         },
         {
+          "uuid": "f3197f0a-1fea-45a5-939f-4a5ea60387ec",
+          "reimplements": "70d747a1-2e84-4ebc-bc3f-dcbee6a05f6b",
+          "description": "Can push to an empty list",
+          "property": "list",
+          "input": {
+            "initialValues": [],
+            "operations": [
+              {
+                "operation": "push",
+                "value": 1
+              }
+            ]
+          },
+          "expected": {}
+        },
+        {
           "uuid": "391e332e-1f91-4033-b1e0-0e0c17812fa7",
           "description": "Can push to a non-empty list",
           "property": "list",
