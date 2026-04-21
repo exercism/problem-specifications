@@ -44,6 +44,9 @@ formats = {
   'dominoes' => {
     'dominoes' => :single_line,
   },
+  'dot-dsl' => {
+    'text' => :multi_line,
+  },
   'flatten-array' => {
     'array' => :multi_line_deep,
     'expected' => :multi_line,
