@@ -1,0 +1,376 @@
+{
+  "exercise": "dot-dsl",
+  "comments": [
+    "The inputs and outputs are represented as arrays of strings to",
+    "improve readability in this JSON file.",
+    "Your track may choose whether to present the input as a single",
+    "string (concatenating all the lines) or as the list."
+  ],
+  "cases": [
+    {
+      "uuid": "3a50c618-2571-466b-9ee9-346d9943912e",
+      "description": "empty graph",
+      "property": "parse",
+      "input": {
+        "text": [
+          "graph {",
+          "}"
+        ]
+      },
+      "expected": {
+        "nodes": {},
+        "edges": {},
+        "attrs": {}
+      }
+    },
+    {
+      "uuid": "5067feea-e49b-4a9d-865e-4502d6b0540c",
+      "description": "graph with one node",
+      "property": "parse",
+      "input": {
+        "text": [
+          "graph {",
+          "    a;",
+          "}"
+        ]
+      },
+      "expected": {
+        "nodes": {
+          "a": {}
+        },
+        "edges": {},
+        "attrs": {}
+      }
+    },
+    {
+      "uuid": "b66cf871-88c6-489a-b0b9-7c79b6819c45",
+      "description": "graph with one node with attribute",
+      "property": "parse",
+      "input": {
+        "text": [
+          "graph {",
+          "    a [color=green];",
+          "}"
+        ]
+      },
+      "expected": {
+        "nodes": {
+          "a": {
+            "color": "green"
+          }
+        },
+        "edges": {},
+        "attrs": {}
+      }
+    },
+    {
+      "uuid": "f7841da3-c0f8-4541-b594-21b626a764d2",
+      "description": "graph with one edge",
+      "property": "parse",
+      "input": {
+        "text": [
+          "graph {",
+          "    a -- b;",
+          "}"
+        ]
+      },
+      "expected": {
+        "nodes": {
+          "a": {},
+          "b": {}
+        },
+        "edges": {
+          "{a b}": {}
+        },
+        "attrs": {}
+      }
+    },
+    {
+      "uuid": "bbee70e1-6b0d-4f3a-bd4e-41cd2cfc0e39",
+      "description": "graph with one attribute",
+      "property": "parse",
+      "input": {
+        "text": [
+          "graph {",
+          "    [foo=1];",
+          "}"
+        ]
+      },
+      "expected": {
+        "nodes": {},
+        "edges": {},
+        "attrs": {
+          "foo": 1
+        }
+      }
+    },
+    {
+      "uuid": "ac736158-6684-418d-93d5-7b284e43294e",
+      "description": "graph with comments",
+      "property": "parse",
+      "input": {
+        "text": [
+          "graph {",
+          "    // a C-like comment",
+          "    # a shell-like comment",
+          "    [foo=1];",
+          "}"
+        ]
+      },
+      "expected": {
+        "nodes": {},
+        "edges": {},
+        "attrs": {
+          "foo": 1
+        }
+      }
+    },
+    {
+      "uuid": "69068da9-7690-4d4d-a728-f5c2bf132a33",
+      "description": "graph with nodes, edges, and attributes",
+      "property": "parse",
+      "input": {
+        "text": [
+          "graph {",
+          "    [foo=1];",
+          "    [title=\"Testing Attrs\"];",
+          "    a [color=green];",
+          "    b [label=\"Beta!\"];",
+          "    b -- c;",
+          "    a -- b [color=blue];",
+          "    [bar=true];",
+          "}"
+        ]
+      },
+      "expected": {
+        "nodes": {
+          "a": {
+            "color": "green"
+          },
+          "b": {
+            "label": "Beta!"
+          },
+          "c": {}
+        },
+        "edges": {
+          "{a b}": {
+            "color": "blue"
+          },
+          "{b c}": {}
+        },
+        "attrs": {
+          "foo": 1,
+          "title": "Testing Attrs",
+          "bar": true
+        }
+      }
+    },
+    {
+      "uuid": "f6c53993-3937-4959-bcde-dc16411113ae",
+      "description": "multiple edges on one line",
+      "property": "parse",
+      "input": {
+        "text": [
+          "graph {",
+          "    a -- b -- c -- d [style=dotted];",
+          "}"
+        ]
+      },
+      "expected": {
+        "nodes": {
+          "a": {},
+          "b": {},
+          "c": {},
+          "d": {}
+        },
+        "edges": {
+          "{a b}": {
+            "style": "dotted"
+          },
+          "{b c}": {
+            "style": "dotted"
+          },
+          "{c d}": {
+            "style": "dotted"
+          }
+        },
+        "attrs": {}
+      }
+    },
+    {
+      "uuid": "b853dfc1-1f05-45aa-bc98-b0fc6b57529b",
+      "description": "only 1 edge between nodes",
+      "property": "parse",
+      "input": {
+        "text": [
+          "graph {",
+          "    a -- b;",
+          "    a -- b;",
+          "    b -- a [color=blue];",
+          "}"
+        ]
+      },
+      "expected": {
+        "nodes": {
+          "a": {},
+          "b": {}
+        },
+        "edges": {
+          "{a b}": {
+            "color": "blue"
+          }
+        },
+        "attrs": {}
+      }
+    },
+    {
+      "uuid": "bdc0fdac-aa46-457f-8385-65736ccdc1c7",
+      "description": "malformed input",
+      "property": "parse",
+      "input": {
+        "text": [
+          "graphical {",
+          "}"
+        ]
+      },
+      "expected": {
+        "error": "invalid graph"
+      }
+    },
+    {
+      "uuid": "f5c4f77d-359c-434a-9c33-b9eb795bafdd",
+      "description": "malformed edge",
+      "property": "parse",
+      "input": {
+        "text": [
+          "graph {",
+          "    a --;",
+          "}"
+        ]
+      },
+      "expected": {
+        "error": "invalid edge"
+      }
+    },
+    {
+      "uuid": "2238f6b8-20bb-489f-8ca0-084d1771d758",
+      "description": "malformed edge 2",
+      "property": "parse",
+      "input": {
+        "text": [
+          "graph {",
+          "    a b;",
+          "}"
+        ]
+      },
+      "expected": {
+        "error": "invalid edge"
+      }
+    },
+    {
+      "uuid": "4e3a4386-9e80-4315-b70f-253a06a2234e",
+      "description": "invalid edge type",
+      "property": "parse",
+      "input": {
+        "text": [
+          "graph {",
+          "    a == b;",
+          "} "
+        ]
+      },
+      "expected": {
+        "error": "invalid edge"
+      }
+    },
+    {
+      "uuid": "793adce3-bd19-4458-ac41-c989f7f8d9db",
+      "description": "malformed multiple edges",
+      "property": "parse",
+      "input": {
+        "text": [
+          "graph {",
+          "    a -- b --;",
+          "}"
+        ]
+      },
+      "expected": {
+        "error": "invalid edge"
+      }
+    },
+    {
+      "uuid": "e2930b2c-3a03-4d8f-abe9-78a125a915a7",
+      "description": "malformed multiple edges",
+      "property": "parse",
+      "input": {
+        "text": [
+          "graph {",
+          "    a -- b c;",
+          "}"
+        ]
+      },
+      "expected": {
+        "error": "invalid edge"
+      }
+    },
+    {
+      "uuid": "55d3f722-f9f1-46e1-b308-da61607952ab",
+      "description": "empty attribute",
+      "property": "parse",
+      "input": {
+        "text": [
+          "graph {",
+          "    a [];",
+          "}"
+        ]
+      },
+      "expected": {
+        "error": "invalid attribute"
+      }
+    },
+    {
+      "uuid": "4ee2a9c3-54b1-4825-bd58-2b78c2c53953",
+      "description": "malformed attribute",
+      "property": "parse",
+      "input": {
+        "text": [
+          "graph {",
+          "    a [name];",
+          "}"
+        ]
+      },
+      "expected": {
+        "error": "invalid attribute"
+      }
+    },
+    {
+      "uuid": "382a13c8-6419-4286-8dd2-eac708f3e2a8",
+      "description": "empty attribute name",
+      "property": "parse",
+      "input": {
+        "text": [
+          "graph {",
+          "    a [=value];",
+          "}"
+        ]
+      },
+      "expected": {
+        "error": "invalid attribute"
+      }
+    },
+    {
+      "uuid": "a6f9e6ab-8c3e-4475-a9fe-5dd061cadec6",
+      "description": "non-alphanumeric node name",
+      "property": "parse",
+      "input": {
+        "text": [
+          "graph {",
+          "    ? [key=value];",
+          "}"
+        ]
+      },
+      "expected": {
+        "error": "node name must be alphanumeric"
+      }
+    }
+  ]
+}
