@@ -284,7 +284,7 @@
     },
     {
       "uuid": "793adce3-bd19-4458-ac41-c989f7f8d9db",
-      "description": "malformed multiple edges",
+      "description": "multiple edges missing a node",
       "property": "parse",
       "input": {
         "text": [
@@ -299,7 +299,7 @@
     },
     {
       "uuid": "e2930b2c-3a03-4d8f-abe9-78a125a915a7",
-      "description": "malformed multiple edges",
+      "description": "multiple edges missing a connector",
       "property": "parse",
       "input": {
         "text": [
