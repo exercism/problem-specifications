@@ -1,0 +1,146 @@
+{
+  "exercise": "save-the-cow",
+  "comments": [
+    "The expected values may be returned from the guess function, or returned from a separate game state call.",
+    "They may also be accessed from a different call for each value, based on what is most idiomatic for the language.",
+    "To explore objects, each guessed letter should be a separate call."
+  ],
+  "cases": [
+    {
+      "uuid": "71d340f9-fc29-4826-872e-ad7d0b83dd98",
+      "description": "Initially 9 failures are allowed and no letters are guessed",
+      "property": "guess",
+      "input": {
+        "word": "loot",
+        "guesses": []
+      },
+      "expected": {
+        "state": "Ongoing",
+        "maskedWord": "____",
+        "remainingFailures": 9
+      }
+    },
+    {
+      "uuid": "76759c24-8f1a-4fc8-9ffd-d6a1ff0cf03b",
+      "description": "After 10 failures the game is over",
+      "property": "guess",
+      "input": {
+        "word": "loot",
+        "guesses": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
+      },
+      "expected": {
+        "state": "Lose",
+        "maskedWord": "____",
+        "remainingFailures": 0
+      }
+    },
+    {
+      "uuid": "d6f2e202-7857-46fb-b709-43a7f3f3b2de",
+      "description": "Losing with several correct guesses",
+      "property": "guess",
+      "input": {
+        "word": "loot",
+        "guesses": ["t", "o", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
+      },
+      "expected": {
+        "state": "Lose",
+        "maskedWord": "_oot",
+        "remainingFailures": 0
+      }
+    },
+    {
+      "uuid": "71bc0cda-2032-4637-80c8-fc8771124c08",
+      "description": "Feeding a correct letter removes underscores",
+      "property": "guess",
+      "input": {
+        "word": "loot",
+        "guesses": ["t"]
+      },
+      "expected": {
+        "state": "Ongoing",
+        "maskedWord": "___t",
+        "remainingFailures": 9
+      }
+    },
+    {
+      "uuid": "5b568a1c-867d-418f-97a8-7b6f8a7ca0a2",
+      "description": "Feeding a correct letter twice counts as a failure",
+      "property": "guess",
+      "input": {
+        "word": "loot",
+        "guesses": ["t", "t"]
+      },
+      "expected": {
+        "state": "Ongoing",
+        "maskedWord": "___t",
+        "remainingFailures": 8
+      }
+    },
+    {
+      "uuid": "3d40f15b-0271-4c5d-b1a4-3e1f66ff221f",
+      "description": "Guessing a repeated letter reveals all instances",
+      "property": "guess",
+      "input": {
+        "word": "loot",
+        "guesses": ["t", "t", "o"]
+      },
+      "expected": {
+        "state": "Ongoing",
+        "maskedWord": "_oot",
+        "remainingFailures": 8
+      }
+    },
+    {
+      "uuid": "11a86435-e401-4250-a26e-3b0d8c4049ad",
+      "description": "Getting all the letters right makes for a win",
+      "property": "guess",
+      "input": {
+        "word": "loot",
+        "guesses": ["t", "t", "o", "l"]
+      },
+      "expected": {
+        "state": "Win",
+        "maskedWord": "loot",
+        "remainingFailures": 8
+      }
+    },
+    {
+      "uuid": "b3d81876-84ee-45bb-b531-baa1b05b4709",
+      "description": "Winning on the last guess is still a win",
+      "property": "guess",
+      "input": {
+        "word": "loot",
+        "guesses": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "t", "o", "l"]
+      },
+      "expected": {
+        "state": "Win",
+        "maskedWord": "loot",
+        "remainingFailures": 0
+      }
+    },
+    {
+      "uuid": "cf204398-5e9f-402f-8bff-42cb7cbbbda9",
+      "description": "Guessing after a lose is error",
+      "property": "guess",
+      "input": {
+        "word": "loot",
+        "guesses": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"]
+      },
+      "expected": {
+        "error": "cannot guess after the game is lost"
+      }
+    },
+    {
+      "uuid": "c2ec5b3d-4923-4a0e-a485-6aa6e78c7ece",
+      "description": "Guessing after a win is error",
+      "property": "guess",
+      "input": {
+        "word": "loot",
+        "guesses": ["t", "o", "l", "l"]
+      },
+      "expected": {
+        "error": "cannot guess after the game is won"
+      }
+    }
+  ]
+}
