@@ -3,7 +3,8 @@
   "comments": [
     "The expected values may be returned from the guess function, or returned from a separate game state call.",
     "They may also be accessed from a different call for each value, based on what is most idiomatic for the language.",
-    "To explore objects, each guessed letter should be a separate call."
+    "To explore objects, each guessed letter should be a separate call.",
+    "Tracks are encouraged, but not required, to use a functional reactive programming-based (FRP) approach where appropriate."
   ],
   "cases": [
     {
