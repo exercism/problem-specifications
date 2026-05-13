@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Search files for lines matching a search string and return all matching lines.
 
