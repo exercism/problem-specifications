@@ -236,6 +236,15 @@
         "heyBob": "\nDoes this cryogenic chamber make\n me look fat?"
       },
       "expected": "Sure."
+    },
+    {
+      "uuid": "3c954328-86fb-4c71-8961-e18d6a5e2517",
+      "description": "Shouting statement containing question mark",
+      "property": "response",
+      "input": {
+        "heyBob": "DO LIONS EAT PEOPLE? AHHHHH."
+      },
+      "expected": "Whoa, chill out!"
     }
   ]
 }
