@@ -29,6 +29,15 @@
       "expected": "Whoa, chill out!"
     },
     {
+      "uuid": "3c954328-86fb-4c71-8961-e18d6a5e2517",
+      "description": "shouting statement containing question mark",
+      "property": "response",
+      "input": {
+        "heyBob": "DO LIONS EAT PEOPLE? AHHHHH."
+      },
+      "expected": "Whoa, chill out!"
+    },
+    {
       "uuid": "8a2e771d-d6f1-4e3f-b6c6-b41495556e37",
       "description": "asking a question",
       "property": "response",
@@ -236,15 +245,6 @@
         "heyBob": "\nDoes this cryogenic chamber make\n me look fat?"
       },
       "expected": "Sure."
-    },
-    {
-      "uuid": "3c954328-86fb-4c71-8961-e18d6a5e2517",
-      "description": "shouting statement containing question mark",
-      "property": "response",
-      "input": {
-        "heyBob": "DO LIONS EAT PEOPLE? AHHHHH."
-      },
-      "expected": "Whoa, chill out!"
     }
   ]
 }
