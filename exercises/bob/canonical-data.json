@@ -30,7 +30,7 @@
     },
     {
       "uuid": "3c954328-86fb-4c71-8961-e18d6a5e2517",
-      "description": "shouting statement containing question mark",
+      "description": "shouting a statement containing a question mark",
       "property": "response",
       "input": {
         "heyBob": "DO LIONS EAT PEOPLE? AHHHHH."
