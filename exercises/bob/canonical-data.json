@@ -2,13 +2,13 @@
   "exercise": "bob",
   "cases": [
     {
-      "uuid": "e162fead-606f-437a-a166-d051915cea8e",
-      "description": "stating something",
+      "uuid": "8a2e771d-d6f1-4e3f-b6c6-b41495556e37",
+      "description": "asking a question",
       "property": "response",
       "input": {
-        "heyBob": "Tom-ay-to, tom-aaaah-to."
+        "heyBob": "Does this cryogenic chamber make me look fat?"
       },
-      "expected": "Whatever."
+      "expected": "Sure."
     },
     {
       "uuid": "73a966dc-8017-47d6-bb32-cf07d1a5fcd9",
@@ -20,31 +20,31 @@
       "expected": "Whoa, chill out!"
     },
     {
-      "uuid": "d6c98afd-df35-4806-b55e-2c457c3ab748",
-      "description": "shouting gibberish",
+      "uuid": "a5193c61-4a92-4f68-93e2-f554eb385ec6",
+      "description": "forceful question",
       "property": "response",
       "input": {
-        "heyBob": "FCECDFCAAB"
+        "heyBob": "WHAT'S GOING ON?"
       },
-      "expected": "Whoa, chill out!"
+      "expected": "Calm down, I know what I'm doing!"
     },
     {
-      "uuid": "3c954328-86fb-4c71-8961-e18d6a5e2517",
-      "description": "shouting a statement containing a question mark",
+      "uuid": "bc39f7c6-f543-41be-9a43-fd1c2f753fc0",
+      "description": "silence",
       "property": "response",
       "input": {
-        "heyBob": "DO LIONS EAT PEOPLE? AHHHHH."
+        "heyBob": ""
       },
-      "expected": "Whoa, chill out!"
+      "expected": "Fine. Be that way!"
     },
     {
-      "uuid": "8a2e771d-d6f1-4e3f-b6c6-b41495556e37",
-      "description": "asking a question",
+      "uuid": "e162fead-606f-437a-a166-d051915cea8e",
+      "description": "stating something",
       "property": "response",
       "input": {
-        "heyBob": "Does this cryogenic chamber make me look fat?"
+        "heyBob": "Tom-ay-to, tom-aaaah-to."
       },
-      "expected": "Sure."
+      "expected": "Whatever."
     },
     {
       "uuid": "81080c62-4e4d-4066-b30a-48d8d76920d9",
@@ -65,51 +65,6 @@
       "expected": "Sure."
     },
     {
-      "uuid": "c02f9179-ab16-4aa7-a8dc-940145c385f7",
-      "description": "talking forcefully",
-      "property": "response",
-      "input": {
-        "heyBob": "Hi there!"
-      },
-      "expected": "Whatever."
-    },
-    {
-      "uuid": "153c0e25-9bb5-4ec5-966e-598463658bcd",
-      "description": "using acronyms in regular speech",
-      "property": "response",
-      "input": {
-        "heyBob": "It's OK if you don't want to go work for NASA."
-      },
-      "expected": "Whatever."
-    },
-    {
-      "uuid": "a5193c61-4a92-4f68-93e2-f554eb385ec6",
-      "description": "forceful question",
-      "property": "response",
-      "input": {
-        "heyBob": "WHAT'S GOING ON?"
-      },
-      "expected": "Calm down, I know what I'm doing!"
-    },
-    {
-      "uuid": "a20e0c54-2224-4dde-8b10-bd2cdd4f61bc",
-      "description": "shouting numbers",
-      "property": "response",
-      "input": {
-        "heyBob": "1, 2, 3 GO!"
-      },
-      "expected": "Whoa, chill out!"
-    },
-    {
-      "uuid": "f7bc4b92-bdff-421e-a238-ae97f230ccac",
-      "description": "no letters",
-      "property": "response",
-      "input": {
-        "heyBob": "1, 2, 3"
-      },
-      "expected": "Whatever."
-    },
-    {
       "uuid": "bb0011c5-cd52-4a5b-8bfb-a87b6283b0e2",
       "description": "question with no letters",
       "property": "response",
@@ -117,33 +72,6 @@
         "heyBob": "4?"
       },
       "expected": "Sure."
-    },
-    {
-      "uuid": "496143c8-1c31-4c01-8a08-88427af85c66",
-      "description": "shouting with special characters",
-      "property": "response",
-      "input": {
-        "heyBob": "ZOMG THE %^*@#$(*^ ZOMBIES ARE COMING!!11!!1!"
-      },
-      "expected": "Whoa, chill out!"
-    },
-    {
-      "uuid": "e6793c1c-43bd-4b8d-bc11-499aea73925f",
-      "description": "shouting with no exclamation mark",
-      "property": "response",
-      "input": {
-        "heyBob": "I HATE THE DENTIST"
-      },
-      "expected": "Whoa, chill out!"
-    },
-    {
-      "uuid": "aa8097cc-c548-4951-8856-14a404dd236a",
-      "description": "statement containing question mark",
-      "property": "response",
-      "input": {
-        "heyBob": "Ending with ? means a question."
-      },
-      "expected": "Whatever."
     },
     {
       "uuid": "9bfc677d-ea3a-45f2-be44-35bc8fa3753e",
@@ -164,13 +92,69 @@
       "expected": "Sure."
     },
     {
-      "uuid": "bc39f7c6-f543-41be-9a43-fd1c2f753fc0",
-      "description": "silence",
+      "uuid": "05b304d6-f83b-46e7-81e0-4cd3ca647900",
+      "description": "ending with whitespace",
       "property": "response",
       "input": {
-        "heyBob": ""
+        "heyBob": "Okay if like my  spacebar  quite a bit?   "
       },
-      "expected": "Fine. Be that way!"
+      "expected": "Sure."
+    },
+    {
+      "uuid": "2c7278ac-f955-4eb4-bf8f-e33eb4116a15",
+      "reimplements": "66953780-165b-4e7e-8ce3-4bcb80b6385a",
+      "description": "multiple line question",
+      "comments": ["Use one sentence, spanning multiple lines."],
+      "property": "response",
+      "input": {
+        "heyBob": "\nDoes this cryogenic chamber make\n me look fat?"
+      },
+      "expected": "Sure."
+    },
+    {
+      "uuid": "d6c98afd-df35-4806-b55e-2c457c3ab748",
+      "description": "shouting gibberish",
+      "property": "response",
+      "input": {
+        "heyBob": "FCECDFCAAB"
+      },
+      "expected": "Whoa, chill out!"
+    },
+    {
+      "uuid": "3c954328-86fb-4c71-8961-e18d6a5e2517",
+      "description": "shouting a statement containing a question mark",
+      "property": "response",
+      "input": {
+        "heyBob": "DO LIONS EAT PEOPLE? AHHHHH."
+      },
+      "expected": "Whoa, chill out!"
+    },
+    {
+      "uuid": "a20e0c54-2224-4dde-8b10-bd2cdd4f61bc",
+      "description": "shouting numbers",
+      "property": "response",
+      "input": {
+        "heyBob": "1, 2, 3 GO!"
+      },
+      "expected": "Whoa, chill out!"
+    },
+    {
+      "uuid": "496143c8-1c31-4c01-8a08-88427af85c66",
+      "description": "shouting with special characters",
+      "property": "response",
+      "input": {
+        "heyBob": "ZOMG THE %^*@#$(*^ ZOMBIES ARE COMING!!11!!1!"
+      },
+      "expected": "Whoa, chill out!"
+    },
+    {
+      "uuid": "e6793c1c-43bd-4b8d-bc11-499aea73925f",
+      "description": "shouting with no exclamation mark",
+      "property": "response",
+      "input": {
+        "heyBob": "I HATE THE DENTIST"
+      },
+      "expected": "Whoa, chill out!"
     },
     {
       "uuid": "d6c47565-372b-4b09-b1dd-c40552b8378b",
@@ -191,6 +175,51 @@
       "expected": "Fine. Be that way!"
     },
     {
+      "uuid": "72bd5ad3-9b2f-4931-a988-dce1f5771de2",
+      "description": "other whitespace",
+      "property": "response",
+      "input": {
+        "heyBob": "\n\r \t"
+      },
+      "expected": "Fine. Be that way!"
+    },
+    {
+      "uuid": "c02f9179-ab16-4aa7-a8dc-940145c385f7",
+      "description": "talking forcefully",
+      "property": "response",
+      "input": {
+        "heyBob": "Hi there!"
+      },
+      "expected": "Whatever."
+    },
+    {
+      "uuid": "153c0e25-9bb5-4ec5-966e-598463658bcd",
+      "description": "using acronyms in regular speech",
+      "property": "response",
+      "input": {
+        "heyBob": "It's OK if you don't want to go work for NASA."
+      },
+      "expected": "Whatever."
+    },
+    {
+      "uuid": "f7bc4b92-bdff-421e-a238-ae97f230ccac",
+      "description": "no letters",
+      "property": "response",
+      "input": {
+        "heyBob": "1, 2, 3"
+      },
+      "expected": "Whatever."
+    },
+    {
+      "uuid": "aa8097cc-c548-4951-8856-14a404dd236a",
+      "description": "statement containing question mark",
+      "property": "response",
+      "input": {
+        "heyBob": "Ending with ? means a question."
+      },
+      "expected": "Whatever."
+    },
+    {
       "uuid": "66953780-165b-4e7e-8ce3-4bcb80b6385a",
       "description": "multiple line question",
       "property": "response",
@@ -209,24 +238,6 @@
       "expected": "Whatever."
     },
     {
-      "uuid": "05b304d6-f83b-46e7-81e0-4cd3ca647900",
-      "description": "ending with whitespace",
-      "property": "response",
-      "input": {
-        "heyBob": "Okay if like my  spacebar  quite a bit?   "
-      },
-      "expected": "Sure."
-    },
-    {
-      "uuid": "72bd5ad3-9b2f-4931-a988-dce1f5771de2",
-      "description": "other whitespace",
-      "property": "response",
-      "input": {
-        "heyBob": "\n\r \t"
-      },
-      "expected": "Fine. Be that way!"
-    },
-    {
       "uuid": "12983553-8601-46a8-92fa-fcaa3bc4a2a0",
       "description": "non-question ending with whitespace",
       "property": "response",
@@ -234,17 +245,6 @@
         "heyBob": "This is a statement ending with whitespace      "
       },
       "expected": "Whatever."
-    },
-    {
-      "uuid": "2c7278ac-f955-4eb4-bf8f-e33eb4116a15",
-      "reimplements": "66953780-165b-4e7e-8ce3-4bcb80b6385a",
-      "description": "multiple line question",
-      "comments": ["Use one sentence, spanning multiple lines."],
-      "property": "response",
-      "input": {
-        "heyBob": "\nDoes this cryogenic chamber make\n me look fat?"
-      },
-      "expected": "Sure."
     }
   ]
 }
