@@ -90,6 +90,31 @@ jobs:
 
           exit "$fail"
 
+      - name: Verify that reimplemented test cases appear before the case that reimplements them
+        run: |
+          fail=0
+
+          for f in exercises/*/canonical-data.json; do
+              violations=$(jq -r '
+                  [.. | objects | select(has("uuid"))] as $all         # all cases in document order
+                  | ($all | map(.uuid)) as $uuids
+                  | $all | to_entries[]
+                  | select(.value.reimplements != null)                # only reimplementing cases
+                  | . as $e
+                  | ($uuids | index($e.value.reimplements)) as $target
+                  | select($target != null and $target > $e.key)       # target appears AFTER the reimplementer
+                  | "  case \($e.value.uuid) reimplements \($e.value.reimplements), which appears later in the file"
+              ' "$f")
+
+              if [ -n "$violations" ]; then
+                  echo "$f: a reimplemented test case must appear before the case that reimplements it."
+                  echo "$violations"
+                  fail=1
+              fi
+          done
+
+          exit "$fail"
+
       - name: Verify that all scenarios are defined in the schema
         run: |
           canonical_data_schema_file="canonical-data.schema.json"

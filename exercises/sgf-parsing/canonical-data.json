@@ -335,6 +335,20 @@
       }
     },
     {
+      "uuid": "11c36323-93fc-495d-bb23-c88ee5844b8c",
+      "description": "escaped property",
+      "property": "parse",
+      "input": {
+        "encoded": "(;A[\\]b\\nc\\nd\\t\\te \\n\\]])"
+      },
+      "expected": {
+        "properties": {
+          "A": ["]b\\nc\\nd  e \\n]"]
+        },
+        "children": []
+      }
+    },
+    {
       "uuid": "08e4b8ba-bb07-4431-a3d9-b1f4cdea6dab",
       "reimplements": "11c36323-93fc-495d-bb23-c88ee5844b8c",
       "description": "mixing various kinds of whitespace and escaped characters in property value",
@@ -363,20 +377,6 @@
       "expected": {
         "properties": {
           "A": ["]b\ncd  e\\ ]"]
-        },
-        "children": []
-      }
-    },
-    {
-      "uuid": "11c36323-93fc-495d-bb23-c88ee5844b8c",
-      "description": "escaped property",
-      "property": "parse",
-      "input": {
-        "encoded": "(;A[\\]b\\nc\\nd\\t\\te \\n\\]])"
-      },
-      "expected": {
-        "properties": {
-          "A": ["]b\\nc\\nd  e \\n]"]
         },
         "children": []
       }
