@@ -101,6 +101,15 @@
       "expected": "Sure."
     },
     {
+      "uuid": "66953780-165b-4e7e-8ce3-4bcb80b6385a",
+      "description": "multiple line question",
+      "property": "response",
+      "input": {
+        "heyBob": "\nDoes this cryogenic chamber make me look fat?\nNo."
+      },
+      "expected": "Whatever."
+    },
+    {
       "uuid": "2c7278ac-f955-4eb4-bf8f-e33eb4116a15",
       "reimplements": "66953780-165b-4e7e-8ce3-4bcb80b6385a",
       "description": "multiple line question",
@@ -216,15 +225,6 @@
       "property": "response",
       "input": {
         "heyBob": "Ending with ? means a question."
-      },
-      "expected": "Whatever."
-    },
-    {
-      "uuid": "66953780-165b-4e7e-8ce3-4bcb80b6385a",
-      "description": "multiple line question",
-      "property": "response",
-      "input": {
-        "heyBob": "\nDoes this cryogenic chamber make me look fat?\nNo."
       },
       "expected": "Whatever."
     },
