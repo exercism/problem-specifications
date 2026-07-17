@@ -168,6 +168,16 @@
         "description": "Q3"
       },
       "expected": "2023-09-29T08:00:00"
+    },
+    {
+      "uuid": "7c8f1616-be62-417e-bbd5-a60fa743eccc",
+      "description": "Q2 starting in the last month of the second quarter translates to the last workday of the second quarter of this year",
+      "property": "deliveryDate",
+      "input": {
+        "meetingStart": "2019-06-15T09:50:00",
+        "description": "Q2"
+      },
+      "expected": "2019-06-28T08:00:00"
     }
   ]
 }
