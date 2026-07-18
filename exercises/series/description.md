@@ -13,7 +13,7 @@ And the following 4-digit series:
 - "4914"
 - "9142"
 
-And if you ask for a 6-digit series from a 5-digit string, you deserve whatever you get.
+Trying to extract a 6-digit series from a 5-digit string should result in an error.
 
 Note that these series are only required to occupy _adjacent positions_ in the input;
 the digits need not be _numerically consecutive_.
