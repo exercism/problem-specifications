@@ -1,0 +1,552 @@
+{
+  // TODO: slug uniqueness - maybe with "allOf not" constraint?
+  // TODO: concept exercise concepts are not in any other concept exercise concepts - maybe with "allOf not" constraint?
+  // TODO: concept exercise concepts match concepts slugs - maybe with "allOf" that adds "enum" constraint?
+  // TODO: concept exercise prerequisites do not match any concepts of the same exercises - maybe with "allOf not" constraint?
+  // TODO: concept exercise prerequisites match concepts slugs?
+  // TODO: practice exercise pratices match concepts slugs?
+  // TODO: practice exercise prerequisites match any concept exercise's concepts values
+  // TODO: practice exercise prerequisites match the concepts slug of one of the concepts
+
+  "comments": [
+    " This is a JSON Schema for a language track's 'config.json' ",
+    " file.                                                      ",
+    "                                                            ",
+    " Standardized property names may help when automatically    ",
+    " deriving JSON parsers in some languages, so we followed    ",
+    " a few conventions from the 'Google JSON Style Guide'.      ",
+    "                                                            ",
+    " Additionally, this schema strictly enforces letters, in    ",
+    " lowerCamelCase, for naming the 'property' being tested. We ",
+    " expect this regularity will allow an easier automatic      ",
+    " generation of function's names in test generators,         ",
+    " slightly reducing the amount of manually generated code.   ",
+    "                                                            ",
+    " This schema is a self-describing schema, per the proposal  ",
+    " for such by Snowplow Analytics.                            "
+  ],
+
+  "$schema": "http://json-schema.org/draft-07/schema#",
+
+  "self": {
+    "vendor": "io.exercism",
+    "name": "track-config",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+
+  "title": "Track configuration",
+  "description": "Describes a language track's configuration. It contains vital information like the track's exercises and concepts.",
+
+  "$ref": "#/definitions/trackConfig",
+
+  "definitions": {
+    "trackConfig": {
+      "description": "This is the top-level file structure",
+      "type": "object",
+      "properties": {
+        "language": { "$ref": "#/definitions/language" },
+        "slug": { "$ref": "#/definitions/languageSlug" },
+        "active": { "$ref": "#/definitions/active" },
+        "blurb": { "$ref": "#/definitions/blurb" },
+        "version": { "$ref": "#/definitions/version" },
+        "online_editor": { "$ref": "#/definitions/onlineEditor" },
+        "status": { "$ref": "#/definitions/trackStatus" },
+        "files": { "$ref": "#/definitions/files" },
+        "test_runner": { "$ref": "#/definitions/testRunner" },
+        "exercises": { "$ref": "#/definitions/exercises" },
+        "concepts": { "$ref": "#/definitions/concepts" },
+        "key_features": { "$ref": "#/definitions/keyFeatures" },
+        "tags": { "$ref": "#/definitions/tags" }
+      },
+      "required": [
+        "language",
+        "slug",
+        "active",
+        "blurb",
+        "version",
+        "status",
+        "online_editor",
+        "exercises",
+        "concepts",
+        "tags"
+      ],
+      "allOf": [
+        {
+          "$ref": "#/definitions/status-testRunner-true-implies-testRunner-required"
+        }
+      ],
+      "additionalProperties": false
+    },
+
+    "language": {
+      "description": "The track's language (e.g. \"C#\").",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255
+    },
+
+    "languageSlug": {
+      "description": "The track's language as a lowercased, kebab-case string (e.g. \"csharp\").",
+      "$ref": "#/definitions/slug"
+    },
+
+    "active": {
+      "description": "Indicates if the track is active (i.e. students can join the track on the website).",
+      "type": "boolean"
+    },
+
+    "blurb": {
+      "description": "A short description of the language.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 400
+    },
+
+    "version": {
+      "description": "The version of the config.json file.",
+      "type": "integer",
+      "const": 3
+      // TODO: Should this not be hard-coded? Is it even needed with a versioned schema?
+    },
+
+    "onlineEditor": {
+      "description": "Descries settings used for the online editor.",
+      "type": "object",
+      "properties": {
+        "indent_style": { "$ref": "#/definitions/indentStyle" },
+        "indent_size": { "$ref": "#/definitions/indentSize" },
+        "highlightjs_language": { "$ref": "#/definitions/highlightJsLanguage" }
+      },
+      "required": [ "indent_style", "indent_size", "highlightjs_language" ],
+      "additionalProperties": false
+    },
+
+    "trackStatus": {
+      "description": "Describes which v3 features should be enabled.",
+      "type": "object",
+          "properties": {
+            "concept_exercises": {
+              "description": "Indicates if concept exercises have been built.",
+              "type": "boolean"
+            },
+            "test_runner": {
+              "description": "Indicates if a test runner has been implemented.",
+              "type": "boolean"
+            },
+            "representer": {
+              "description": "Indicates if a representer has been implemented.",
+              "type": "boolean"
+            },
+            "analyzer": {
+              "description": "Indicates if an analyzer has been implemented",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "concept_exercises",
+            "test_runner",
+            "representer",
+            "analyzer"
+          ],
+          "additionalProperties": false
+    },
+
+    "files": {
+      "description": "Patterns for the locations of the files used in an exercise, relative to the exercise's directory.",
+      "type": "object",
+      "properties": {
+        "solution": {
+          "description": "Stub implementation file(s) pattern.",
+          "$ref": "#/definitions/filePaths"
+        },
+        "test": {
+          "description": "Test file(s) pattern.",
+          "$ref": "#/definitions/filePaths"
+        },
+        "example": {
+          "description": "Example implementation file(s) pattern.",
+          "$ref": "#/definitions/filePaths"
+        },
+        "exemplar": {
+          "description": "Exemplar implementation file(s) pattern.",
+          "$ref": "#/definitions/filePaths"
+        },
+        "editor": {
+          "description": "Additional read-only editor file(s) patterns.",
+          "$ref": "#/definitions/filePaths"
+        }
+      },
+      "additionalProperties": false
+      // TODO: Generally, these arrays should not overlap
+      // TODO: the example and exemplar arrays can overlap
+      // TODO: If the track is "d" or "plsql" the solution and test arrays can overlap
+    },
+
+    "testRunner": {
+      "description": "Describes the track's test runner (if any).",
+      "type": "object",
+      "properties": {
+        "average_run_time": {
+          "description": "The number of seconds the test runner takes on average to run.",
+          "type": "number",
+          "multipleOf": 0.1
+        }
+      },
+      "required": [ "average_run_time" ],
+      "additionalProperties": false
+    },
+
+    "exercises": {
+      "description": "All exercises in the track.",
+      "type": "object",
+      "properties": {
+        "concept": {
+          "description": "The track's concept exercises. Exercises are ordered on the website in the same order they are listed here, and should match the typical order in which they should be solved.",
+          "type": "array",
+          "items": { "$ref": "#/definitions/conceptExercise" },
+          "uniqueItems": true
+        },
+        "practice": {
+          "description": "The track's practice exercises. The \"Recommended Order\" of the Practice Exercises on the website corresponds with the order of the exercises.",
+          "type": "array",
+          "items": { "$ref": "#/definitions/practiceExercise" },
+          "uniqueItems": true
+        },
+        "foregone": {
+          "description": "Exercises from the problem-specifications repo that a track knows it doesn't want to implement and so would like Configlet to ignore.",
+          "type": "array",
+          "items": { "$ref": "#/definitions/exerciseSlug" },
+          "uniqueItems": true
+          // TODO: values mst not match any concept or practice exercise slugs
+        }
+      },
+      "required": [ "concept", "practice" ],
+      "additionalProperties": false
+    },
+
+    "concepts": {
+      "description": "The tracks concepts.",
+      "type": "array",
+      "items": { "$ref": "#/definitions/concept" },
+      "uniqueItems": true
+    },
+
+    "keyFeatures": {
+      "description": "Succinctly describe what the most important features of the language are. Intended to promote the more interesting features of a language to potential students.",
+      "type": "array",
+      "items": { "$ref": "#/definitions/keyFeature" },
+      "uniqueItems": true,
+      "minItems": 6,
+      "maxItems": 6
+    },
+
+    "tags": {
+      "description": "Tags allow searching for tracks with a certain tag combination. A track should choose their tags based on the general usage of their language",
+      "type": "array",
+      "items": { "$ref": "#/definitions/tag" },
+      "uniqueItems": true
+    },
+
+    "indentStyle": {
+      "type": "string",
+      "enum": [ "space", "tab" ]
+    },
+
+    "indentSize": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 8
+    },
+
+    "highlightJsLanguage": {
+      "description": "The language identifier for Highlight.js.",
+      "type": "string",
+      "minLength": 1
+      // TODO: String must have at least 1 non-whitespace char (pattern)
+      // TODO: Possible to pull in values from highlightjs as a sub-schema or smthg?
+    },
+
+    "filePaths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+      // TODO: Strings must be valid file path patterns
+      // TODO: Strings must allow placeholders
+    },
+
+    "conceptExercise": {
+      "description": "Represents a single concept exercise implemented by the track.",
+      "type": "object",
+      "properties": {
+        "uuid": { "$ref": "#/definitions/exerciseUuid" },
+        "slug": { "$ref": "#/definitions/exerciseSlug" },
+        "name": { "$ref": "#/definitions/exerciseName" },
+        "concepts": { "$ref": "#/definitions/exerciseConcepts" },
+        "prerequisites": { "$ref": "#/definitions/exercisePrerequisites" },
+        "status": { "$ref": "#/definitions/exerciseStatus" }
+      },
+      "required": [
+        "uuid",
+        "slug",
+        "name",
+        "concepts",
+        "prerequisites"
+      ],
+      "additionalProperties": false
+      // TODO: concepts array must be non-empty if status != deprecated
+      // TODO: concepts array must be empty if status == deprecated
+    },
+
+    "practiceExercise": {
+      "description": "Represents a single practice exercise implemented by the track.",
+      "type": "object",
+      "properties": {
+        "uuid": { "$ref": "#/definitions/exerciseUuid" },
+        "slug": { "$ref": "#/definitions/exerciseSlug" },
+        "name": { "$ref": "#/definitions/exerciseName" },
+        "practices": { "$ref": "#/definitions/exercisePractices" },
+        "prerequisites": { "$ref": "#/definitions/exercisePrerequisites" },
+        "difficulty": { "$ref": "#/definitions/exerciseDifficulty" },
+        "status": { "$ref": "#/definitions/exerciseStatus" }
+      },
+      "required": [
+        "uuid",
+        "slug",
+        "name",
+        "practices",
+        "prerequisites",
+        "difficulty"
+      ],
+      "additionalProperties": false
+      // TODO: practices array must be non-empty if status != deprecated
+      // TODO: practices array must be empty if status == deprecated
+      // TODO: prerequisites array must be non-empty if status != deprecated
+      // TODO: prerequisites array must be empty if status == deprecated
+      // TODO: must be one exercise with slug == hello-world
+      // TODO: prerequisites array must be empty if slug == "hello-world"
+      // TODO: status must either be omitted or "active" if slug == "hello-world"
+    },
+
+    "concept": {
+      "description": "Represents a single concept described by the track.",
+      "type": "object",
+      "properties": {
+        "uuid": { "$ref": "#/definitions/uuid" },
+        "slug": { "$ref": "#/definitions/conceptSlug" },
+        "name": { "$ref": "#/definitions/conceptName" }
+      },
+      "required": [ "uuid", "slug", "name" ],
+      "additionalProperties": false
+    },
+
+    "keyFeature": {
+      "description": "A single key feature",
+      "type": "object",
+      "properties": {
+        "title": { "$ref": "#/definitions/featureTitle" },
+        "content": { "$ref": "#/definitions/featureContent" },
+        "icon": { "$ref": "#/definitions/featureIcon" }
+      },
+      "required": [ "title", "content", "icon" ],
+      "additionalProperties": false
+    },
+
+    "tag": {
+      "description": "A single tag.",
+      "type": "string",
+      "enum": [
+        "paradigm/declarative",
+        "paradigm/functional",
+        "paradigm/imperative",
+        "paradigm/logic",
+        "paradigm/object_oriented",
+        "paradigm/procedural",
+        "typing/static",
+        "typing/dynamic",
+        "typing/strong",
+        "typing/weak",
+        "execution_mode/compiled",
+        "execution_mode/interpreted",
+        "platform/windows",
+        "platform/mac",
+        "platform/linux",
+        "platform/ios",
+        "platform/android",
+        "platform/web",
+        "runtime/standalone_executable",
+        "runtime/language_specific",
+        "runtime/clr",
+        "runtime/jvm",
+        "runtime/beam",
+        "runtime/wasmtime",
+        "used_for/artificial_intelligence",
+        "used_for/backends",
+        "used_for/cross_platform_development",
+        "used_for/embedded_systems",
+        "used_for/financial_systems",
+        "used_for/frontends",
+        "used_for/games",
+        "used_for/guis",
+        "used_for/mobile",
+        "used_for/robotics",
+        "used_for/scientific_calculations",
+        "used_for/scripts",
+        "used_for/web_development"
+      ]
+    },
+
+    "exerciseUuid": {
+      "description": "Uniquely identifies the exercise. The UUID must be unique both within the track as well as across all tracks, and must never change.",
+      "$ref": "#/definitions/uuid"
+    },
+
+    "exerciseSlug": {
+      "description": "The slug must be unique across all concept and practice exercise slugs within the track.",
+      "$ref": "#/definitions/slug"
+    },
+
+    "exerciseName": {
+      "description": "The exercise's name in title case",
+      "type": "string",
+      "$ref": "#/definitions/titleCase",
+      "minLength": 1,
+      "maxLength": 255
+    },
+
+    "exerciseConcepts": {
+      "description": "Concepts that are taught by this exercise",
+      "type": "array",
+      "items": { "$ref": "#/definitions/slug" },
+      "uniqueItems": true
+    },
+
+    "exercisePractices": {
+      "description": "Concepts that the exercise is helping students practice",
+      "type": "array",
+      "items": { "$ref": "#/definitions/slug" },
+      "uniqueItems": true
+    },
+
+    "exercisePrerequisites": {
+      "description": "Concepts that must be unlocked before a student can start this exercise",
+      "type": "array",
+      "items": { "$ref": "#/definitions/slug" },
+      "uniqueItems": true
+    },
+
+    "exerciseDifficulty": {
+      "description": "The difficulty of the exercise. The website interprets the difficulty as follows: 1,2,3: easy; 4,5,6,7: medium; 8,9,10: hard.",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10
+    },
+
+    "exerciseStatus": {
+      "description": "The exercise's status.",
+      "type": "string",
+      "enum": [ "wip", "beta", "active", "deprecated" ],
+      "default": "active"
+    },
+
+    "conceptSlug": {
+      "description": "The concept's slug. The slug must be unique across all concepts within the track",
+      "$ref": "#/definitions/slug"
+    },
+
+    "conceptName": {
+      "description": "The concept's name in title case",
+      "type": "string",
+      "$ref": "#/definitions/titleCase",
+      "minLength": 1,
+      "maxLength": 255
+    },
+
+    "featureTitle": {
+      "description": "A concise heading for the key feature. Titles should strive to use as little technical jargon as possible, bearing in mind that students might not be familiar with what language-specific jargon means before learning that language.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 25
+      // TODO: Title should be sentence case
+    },
+
+    "featureContent": {
+      "description": "A description of the key feature.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+
+    "featureIcon": {
+      "description": "The icon to show for the key feature. You can choose an icon that you think fits, regardless of its name.",
+      "type": "string",
+      "enum": [
+        "community",
+        "concurrency",
+        "cross-platform",
+        "documentation",
+        "dynamically-typed",
+        "easy",
+        "embeddable",
+        "evolving",
+        "expressive",
+        "extensible",
+        "fast",
+        "fun",
+        "functional",
+        "garbage-collected",
+        "general-purpose",
+        "homoiconic",
+        "immutable",
+        "interactive",
+        "interop",
+        "multi-paradigm",
+        "portable",
+        "powerful",
+        "productive",
+        "safe",
+        "scientific",
+        "small",
+        "stable",
+        "statically-typed",
+        "tooling",
+        "web",
+        "widely-used"
+      ]
+    },
+
+    "uuid": {
+      "$comment": "A version 4 UUID (compliant with RFC 4122) in the canonical textual representation",
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+
+    "slug": {
+      "$comment": "A lowercase, kebab-case string containing only letters, numbers and dashes.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255,
+      "pattern": "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$"
+      // TODO: this pattern differs from the one specified in the docs: `^[a-z0-9]+(-[a-z0-9]+)*$`
+    },
+
+    "titleCase": {
+      "pattern": "\b([A-Z0-9])+[A-Za-z0-9]*"
+      // TODO: this does not match the spec in the Exercism docs :(
+    }
+
+    "status-testRunner-true-implies-testRunner-required": {
+      "$comment": "test_runner object is required if status.test_runner is true",
+      "anyOf": [
+        {
+          "not": {
+            "properties": { "status": { "properties": { "test_runner": { "const": true }}}}
+          }
+        },
+        { "required": [ "test_runner" ] }
+      ]
+    }
+  }
+}
