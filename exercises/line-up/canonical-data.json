@@ -148,6 +148,46 @@
       "expected": "Washi, you are the 21st customer we serve today. Thank you!"
     },
     {
+      "uuid": "a98e2e22-ab41-4557-a7c2-efedc19c16da",
+      "description": "format exceptional ordinal numeral 22",
+      "property": "format",
+      "input": {
+        "name": "Ingrid",
+        "number": 22
+      },
+      "expected": "Ingrid, you are the 22nd customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "ab45d2fb-e0ee-4016-b605-76917584db0a",
+      "description": "format exceptional ordinal numeral 33",
+      "property": "format",
+      "input": {
+        "name": "Mario",
+        "number": 33
+      },
+      "expected": "Mario, you are the 33rd customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "3f6c408c-4331-42b6-bb6c-3ad0823e568a",
+      "description": "format non-exceptional ordinal numeral 44",
+      "property": "format",
+      "input": {
+        "name": "Ugo",
+        "number": 44
+      },
+      "expected": "Ugo, you are the 44th customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "c9243603-9f17-45b3-9a41-db9ebdbf08e1",
+      "description": "format exceptional ordinal numeral 52",
+      "property": "format",
+      "input": {
+        "name": "Quentin",
+        "number": 52
+      },
+      "expected": "Quentin, you are the 52nd customer we serve today. Thank you!"
+    },
+    {
       "uuid": "74ee2317-0295-49d2-baf0-d56bcefa14e3",
       "description": "format exceptional ordinal numeral 62",
       "property": "format",
@@ -156,6 +196,16 @@
         "number": 62
       },
       "expected": "Nayra, you are the 62nd customer we serve today. Thank you!"
+    },
+    {
+      "uuid": "8db52cd9-9689-413f-a812-6c36fcfd0d07",
+      "description": "format exceptional ordinal numeral 91",
+      "property": "format",
+      "input": {
+        "name": "Boris",
+        "number": 91
+      },
+      "expected": "Boris, you are the 91st customer we serve today. Thank you!"
     },
     {
       "uuid": "b37c332d-7f68-40e3-8503-e43cbd67a0c4",
