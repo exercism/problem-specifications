@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Calculate the Hamming difference between two DNA strands.
 

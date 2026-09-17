@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 The [ISBN-10 verification process][isbn-verification] is used to validate book identification numbers.
 These normally contain dashes and look like: `3-598-21508-8`

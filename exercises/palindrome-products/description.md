@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Detect palindrome products in a given range.
 

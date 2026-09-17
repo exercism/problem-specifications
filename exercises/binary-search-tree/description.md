@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Insert and search for numbers in a binary tree.
 

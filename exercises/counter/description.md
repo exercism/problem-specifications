@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 **NOTE: This exercise has been deprecated.**
 

@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Tally the results of a small football competition.
 

@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Score a bowling game.
 

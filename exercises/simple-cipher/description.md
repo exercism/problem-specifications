@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Create an implementation of the [Vigenère cipher][wiki].
 The Vigenère cipher is a simple substitution cipher.

@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Given an alphametics puzzle, find the correct solution.
 

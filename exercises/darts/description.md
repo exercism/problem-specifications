@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Calculate the points scored in a single toss of a Darts game.
 

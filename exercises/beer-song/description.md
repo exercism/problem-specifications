@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Recite the lyrics to that beloved classic, that field-trip favorite: 99 Bottles of Beer on the Wall.
 

@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Your job is to translate RNA sequences into proteins.
 

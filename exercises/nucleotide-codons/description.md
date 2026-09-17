@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Translate a given codon into the name of the amino acid that it encodes, possibly using shorthand.
 

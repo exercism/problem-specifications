@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 A **complex number** is expressed in the form `z = a + b * i`, where:
 

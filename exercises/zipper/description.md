@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Creating a zipper for a binary tree.
 

@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Your task in this exercise is to write code that returns the lyrics of the song: "The Twelve Days of Christmas."
 

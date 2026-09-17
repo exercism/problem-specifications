@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Convert a phrase to its acronym.
 

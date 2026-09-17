@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Implement the logic of the hangman game using functional reactive programming.
 

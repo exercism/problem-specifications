@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Refactor a tree building algorithm.
 

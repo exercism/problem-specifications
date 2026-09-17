@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Compute the result for a game of Hex / Polygon.
 

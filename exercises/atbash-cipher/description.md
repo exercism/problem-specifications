@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Create an implementation of the Atbash cipher, an ancient encryption system created in the Middle East.
 

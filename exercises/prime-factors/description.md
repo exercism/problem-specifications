@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Compute the prime factors of a given natural number.
 
