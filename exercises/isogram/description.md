@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Determine if a word or phrase is an isogram.
 

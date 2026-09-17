@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 To try and encourage more sales of different books from a popular 5 book series, a bookshop has decided to offer discounts on multiple book purchases.
 

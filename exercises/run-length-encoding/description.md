@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Implement run-length encoding and decoding.
 

@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Each of us inherits from our biological parents a set of chemical instructions known as DNA that influence how our bodies are constructed.
 All known life depends on DNA!

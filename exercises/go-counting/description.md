@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Count the scored points on a Go board.
 

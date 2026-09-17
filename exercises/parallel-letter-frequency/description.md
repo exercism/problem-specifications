@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Count the frequency of letters in texts using parallel computation.
 

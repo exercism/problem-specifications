@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Implement encoding and decoding for the rail fence cipher.
 

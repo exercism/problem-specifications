@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Given two buckets of different size and which bucket to fill first, determine how many actions are required to measure an exact number of liters by strategically transferring fluid between the buckets.
 

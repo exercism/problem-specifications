@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Given a number n, determine what the nth prime is.
 

@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 A rational number is defined as the quotient of two integers `a` and `b`, called the numerator and denominator, respectively, where `b != 0`.
 

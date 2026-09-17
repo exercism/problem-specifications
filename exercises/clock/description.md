@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Implement a clock that handles times without dates.
 

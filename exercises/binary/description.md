@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Convert a binary number, represented as a string (e.g. '101010'), to its decimal equivalent using first principles.
 

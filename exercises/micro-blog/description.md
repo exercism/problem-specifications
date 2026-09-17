@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 You have identified a gap in the social media market for very very short posts.
 Now that Twitter allows 280 character posts, people wanting quick social media updates aren't being served.

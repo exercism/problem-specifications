@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Given any two lists `A` and `B`, determine if:
 

@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Convert a trinary number, represented as a string (e.g. '102012'), to its decimal equivalent using first principles.
 

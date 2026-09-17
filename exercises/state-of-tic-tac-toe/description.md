@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 In this exercise, you're going to implement a program that determines the state of a [tic-tac-toe][] game.
 (_You may also know the game as "noughts and crosses" or "Xs and Os"._)

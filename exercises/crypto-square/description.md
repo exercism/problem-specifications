@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Implement the classic method for composing secret messages called a square code.
 

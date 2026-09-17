@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Manage a game player's High Score list.
 

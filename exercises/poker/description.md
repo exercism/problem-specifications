@@ -1,4 +1,4 @@
-# Description
+# Instructions
 
 Pick the best hand(s) from a list of poker hands.
 
