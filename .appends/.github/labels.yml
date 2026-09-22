@@ -75,6 +75,10 @@
   description: ""
   color: "ededed"
 
+- name: "ready-to-translate"
+  description: "The English in this PR is final; queue its translations"
+  color: "1d76db"
+
 - name: "todo"
   description: ""
   color: "C6FC00"
