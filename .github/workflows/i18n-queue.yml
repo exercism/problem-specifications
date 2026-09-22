@@ -18,6 +18,13 @@
 #      and closes the issue. Closing the issue re-runs the PR's
 #      `i18n completeness` check, which then passes.
 #
+# The PR gets a reply at each step, so a maintainer watching it can follow
+# along. This workflow replies when it opens the issue. exercism/i18n's
+# rerun-source-check.yml replies when the issue closes, and when the translator
+# labels it `needs-attention` because the run hit a problem or is waiting for
+# approval over the word limit. exercism/i18n's scripts/pr-reply.mjs holds the
+# wording of every reply.
+#
 # Jobs:
 #
 #   queue     Runs when the label is added, and opens the issue (or updates the
@@ -25,6 +32,8 @@
 #             move an open issue to the new head commit. A rebase or force-push
 #             can remove the old commit from the PR, and the translator only
 #             accepts commits that are in the PR.
+#   announce  Runs after `queue` opens a new issue (never when it updates one),
+#             and replies on the PR with a link to it.
 #   hold      Runs on each push while the label is on. If the push changed
 #             English, it removes the label and asks a maintainer to add it
 #             again once the copy is final.
@@ -48,7 +57,10 @@
 #    and escapes paths before they go into Markdown. The workflow passes the PR
 #    title only as an environment variable, and the issue body as a file.
 #  - Each job's GITHUB_TOKEN has only the permissions that job needs. The
-#    exercism/i18n token is a separate secret.
+#    jobs that read the PR's files have read access only, except `hold`, which
+#    removes the label. `announce` can write to pull requests to post its reply,
+#    and reads nothing from the PR. The exercism/i18n token is a separate
+#    secret.
 #
 # exercism/i18n defines which files count as English, in
 # scripts/lib/content-types.mjs and scripts/lib/website-english.mjs.
@@ -72,6 +84,8 @@ jobs:
     permissions:
       contents: read
       pull-requests: read
+    outputs:
+      opened: ${{ steps.issue.outputs.opened }}
     # If the label is removed and added again quickly, only the latest run
     # continues. Pushes use a separate group, so a push straight after the label
     # is added cannot cancel the run that opens the issue.
@@ -128,6 +142,7 @@ jobs:
           grep '^count=' out.txt >> "$GITHUB_OUTPUT"
 
       - name: Open or update the i18n issue
+        id: issue
         if: steps.changed.outputs.count != '0'
         env:
           # An organisation secret on `exercism`, available to every repo. It is
@@ -189,6 +204,7 @@ jobs:
             exit 0
           fi
 
+          OPENED=false
           if [ -n "$EXISTING" ]; then
             gh issue edit "$EXISTING" --repo "$I18N_REPO" --title "$TITLE" --body-file body.md
             if [ "$ACTION" = "synchronize" ]; then
@@ -199,6 +215,7 @@ jobs:
             NUMBER="$EXISTING"
           else
             NUMBER=$(gh issue create --repo "$I18N_REPO" --title "$TITLE" --body-file body.md --label translation | sed -E 's#.*/issues/([0-9]+).*#\1#')
+            OPENED=true
           fi
           echo "Wrote ${I18N_REPO}#${NUMBER} at ${HEAD_SHA}."
 
@@ -208,7 +225,54 @@ jobs:
           if [ "$(labelled)" = "false" ] && [[ "$NUMBER" =~ ^[1-9][0-9]*$ ]]; then
             gh issue close "$NUMBER" --repo "$I18N_REPO" --reason "not planned" \
               --comment "Withdrawn: \`ready-to-translate\` came off ${REPO}#${PR_NUMBER} while this was being written."
+            OPENED=false
           fi
+
+          # Tells `announce` to reply on the PR, only for a new issue that is
+          # still wanted.
+          if [ "$OPENED" = "true" ] && [[ "$NUMBER" =~ ^[1-9][0-9]*$ ]]; then
+            echo "opened=${NUMBER}" >> "$GITHUB_OUTPUT"
+          fi
+
+  announce:
+    needs: queue
+    if: ${{ needs.queue.outputs.opened != '' }}
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      # Checks out exercism/i18n only, for the reply's wording.
+      - name: Check out exercism/i18n (scripts only)
+        uses: actions/checkout@v7
+        with:
+          repository: exercism/i18n
+          ref: main
+          path: i18n
+          persist-credentials: false
+          sparse-checkout: |
+            scripts
+            locales.json
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      - name: Reply on the PR with the issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          ISSUE: ${{ needs.queue.outputs.opened }}
+        run: |
+          set -euo pipefail
+          [[ "$ISSUE" =~ ^[1-9][0-9]*$ ]] || { echo "Not an issue number; no reply."; exit 0; }
+          node i18n/scripts/pr-reply.mjs started --issue="$ISSUE" --out=reply.md > /dev/null
+          # A failed reply leaves the queued issue as it is, so it only warns.
+          if ! gh api "repos/${REPO}/issues/${PR_NUMBER}/comments" -F body=@reply.md > /dev/null; then
+            echo "::warning::Could not reply on ${REPO}#${PR_NUMBER} about exercism/i18n#${ISSUE}."
+            exit 0
+          fi
+          echo "Replied on ${REPO}#${PR_NUMBER} about exercism/i18n#${ISSUE}."
 
   hold:
     if: ${{ github.event.action == 'synchronize' && contains(github.event.pull_request.labels.*.name, 'ready-to-translate') }}
