@@ -38,8 +38,8 @@ E       E
 
 ## These are the full requirements
 
-- The diamond has a square shape (width equals height).
 - The letters form a diamond shape.
+- The width of the diamond is equal to its height.
 - The top half has the letters in ascending order.
 - The bottom half has the letters in descending order.
 - All rows, except the first and last, have exactly two identical letters.
