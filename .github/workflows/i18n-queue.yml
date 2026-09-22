@@ -236,7 +236,10 @@ jobs:
 
   announce:
     needs: queue
-    if: ${{ needs.queue.outputs.opened != '' }}
+    # `queue` depends on `hold`, which is skipped on label events, and GitHub
+    # skips a job with no status check in its `if` when any job before it was
+    # skipped. So this checks `queue`'s result itself.
+    if: ${{ !cancelled() && needs.queue.result == 'success' && needs.queue.outputs.opened != '' }}
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
