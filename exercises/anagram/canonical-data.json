@@ -239,6 +239,17 @@
         "candidates": ["€a"]
       },
       "expected": []
+    },
+    {
+      "uuid": "f71ff033-1c2c-45f3-8498-8fd20c30c306",
+      "description": "different characters may use the same unicode code points",
+      "scenarios": ["unicode"],
+      "property": "findAnagrams",
+      "input": {
+        "subject": "üy",
+        "candidates": ["uÿ"]
+      },
+      "expected": []
     }
   ]
 }
