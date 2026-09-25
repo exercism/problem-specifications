@@ -366,12 +366,21 @@
         },
         {
           "uuid": "fcc03d1e-42e0-4712-b689-d54ad761f360",
-          "description": "non-empty list",
+          "description": "non-empty even-length list",
           "property": "reverse",
           "input": {
             "list": [1, 3, 5, 7]
           },
           "expected": [7, 5, 3, 1]
+        },
+        {
+          "uuid": "64d77184-5f74-4845-b158-545d2dd2df98",
+          "description": "non-empty odd-length list",
+          "property": "reverse",
+          "input": {
+            "list": [1, 3, 5, 7, 9, 11, 13]
+          },
+          "expected": [13, 11, 9, 7, 5, 3, 1]
         },
         {
           "uuid": "40872990-b5b8-4cb8-9085-d91fc0d05d26",
