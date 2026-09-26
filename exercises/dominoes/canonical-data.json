@@ -170,6 +170,20 @@
         "dominoes": [[1, 2], [2, 3], [3, 1], [4, 5], [5, 6], [6, 4]]
       },
       "expected": false
+    },
+    {
+      "uuid": "709f7b9e-239d-4e20-b4a1-61f46257a647",
+      "description": "can't try forever",
+      "comments": [
+        "Some solutions try to build a chain and backtrack when none is found",
+        "but can end up in infinite loops, when not properly taken care of.",
+        "This ensures that such cases are identified."
+      ],
+      "property": "canChain",
+      "input": {
+        "dominoes": [[1, 2], [2, 4], [4, 2], [4, 3]]
+      },
+      "expected": false
     }
   ]
 }
