@@ -1,0 +1,4 @@
+title = "Resistor Color Tolerance"
+blurb = "Convert color codes as used on resistors with different bands to a human-readable label."
+source = "Ported from the Python Track"
+source_url = "https://github.com/exercism/python/tree/main/exercises/practice/resistor-color-expert"
