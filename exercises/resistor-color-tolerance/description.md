@@ -4,16 +4,19 @@ In this exercise, you are going to create a helpful program so that you don't ha
 The program will take 1, 4, or 5 colors as input and output the correct value in ohms.
 The color bands are encoded as follows:
 
-- black: 0
-- brown: 1
-- red: 2
-- orange: 3
-- yellow: 4
-- green: 5
-- blue: 6
-- violet: 7
-- grey: 8
-- white: 9
+| Color       | Value |
+|-------------|-------|
+| Black       | 0     |
+| Brown       | 1     |
+| Red         | 2     |
+| Orange      | 3     |
+| Yellow      | 4     |
+| Green       | 5     |
+| Blue        | 6     |
+| Violet      | 7     |
+| Gray        | 8     |
+| White       | 9     |
+|-------------|-------|
 
 In [`Resistor Color Trio`][resistor-color-trio-exercise] you decoded the first three color bands.
 For instance: orange-orange-brown translated to the main value `330`.
