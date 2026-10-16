@@ -25,17 +25,16 @@ For example, if the last band is green, the maximum tolerance will be `±0.5%`.
 
 The tolerance band will have one of these values:
 
-| Color  | Tolerance |
-|--------|----------:|
-| Grey   | ±0.05%    |
-| Violet | ±0.10%    |
-| Blue   | ±0.25%    |
-| Green  | ±0.50%    |
-| Brown  | ±1.00%    |
-| Red    | ±2.00%    |
-| Gold   | ±5.00%    |
-| Silver | ±10.00%   |
-|--------|-----------|
+| Color    |   Tolerance |
+| -------- | ----------: |
+| Grey     |      ±0.05% |
+| Violet   |      ±0.10% |
+| Blue     |      ±0.25% |
+| Green    |      ±0.50% |
+| Brown    |      ±1.00% |
+| Red      |      ±2.00% |
+| Gold     |      ±5.00% |
+| Silver   |     ±10.00% |
 
 The four-band resistor is built up like this:
 
