@@ -4,18 +4,18 @@ In this exercise, you are going to create a helpful program so that you don't ha
 The program will take 1, 4, or 5 colors as input and output the correct value in ohms.
 The color bands are encoded as follows:
 
-| Color         | Value   |
-| ------------- | ------- |
-| Black         | 0       |
-| Brown         | 1       |
-| Red           | 2       |
-| Orange        | 3       |
-| Yellow        | 4       |
-| Green         | 5       |
-| Blue          | 6       |
-| Violet        | 7       |
-| Gray          | 8       |
-| White         | 9       |
+| Color  | Value |
+| ------ | ----- |
+| Black  | 0     |
+| Brown  | 1     |
+| Red    | 2     |
+| Orange | 3     |
+| Yellow | 4     |
+| Green  | 5     |
+| Blue   | 6     |
+| Violet | 7     |
+| Gray   | 8     |
+| White  | 9     |
 
 In [`Resistor Color Trio`][resistor-color-trio-exercise] you decoded the first three color bands.
 For instance: orange-orange-brown translated to the main value `330`.
@@ -25,16 +25,16 @@ For example, if the last band is green, the maximum tolerance will be `±0.5%`.
 
 The tolerance band will have one of these values:
 
-| Color    |   Tolerance |
-| -------- | ----------: |
-| Grey     |      ±0.05% |
-| Violet   |      ±0.10% |
-| Blue     |      ±0.25% |
-| Green    |      ±0.50% |
-| Brown    |      ±1.00% |
-| Red      |      ±2.00% |
-| Gold     |      ±5.00% |
-| Silver   |     ±10.00% |
+| Color  | Tolerance |
+| ------ | --------: |
+| Grey   |    ±0.05% |
+| Violet |    ±0.10% |
+| Blue   |    ±0.25% |
+| Green  |    ±0.50% |
+| Brown  |    ±1.00% |
+| Red    |    ±2.00% |
+| Gold   |    ±5.00% |
+| Silver |   ±10.00% |
 
 The four-band resistor is built up like this:
 
