@@ -1,0 +1,167 @@
+{
+  "exercise": "resistor-color-tolerance",
+  "cases": [
+    {
+      "uuid": "fb677832-9a1b-4493-a5b0-786db5a8479c",
+      "description": "Orange, orange, black and red",
+      "property": "labelDecoder",
+      "input": {
+        "colors": ["orange", "orange", "black", "red"]
+      },
+      "expected": {
+        "value": 33,
+        "unit": "ohms",
+        "tolerance": "±2%"
+      }
+    },
+    {
+      "uuid": "8bdeb354-b8cf-47c1-96e4-84dceda90f8c",
+      "description": "Blue, gray, brown and violet",
+      "property": "labelDecoder",
+      "input": {
+        "colors": ["blue", "grey", "brown", "violet"]
+      },
+      "expected": {
+        "value": 680,
+        "unit": "ohms",
+        "tolerance": "±0.1%"
+      }
+    },
+    {
+      "uuid": "b4ef8864-09fc-443b-b4fb-82835c081637",
+      "description": "Red, black, red and green",
+      "property": "labelDecoder",
+      "input": {
+        "colors": ["red", "black", "red", "green"]
+      },
+      "expected": {
+        "value": 2,
+        "unit": "kiloohms",
+        "tolerance": "±0.5%"
+      }
+    },
+    {
+      "uuid": "c001757b-d388-4f42-9987-23e42bc22d68",
+      "description": "Green, brownm orange and grey",
+      "property": "labelDecoder",
+      "input": {
+        "colors": ["green", "brown", "orange", "grey"]
+      },
+      "expected": {
+        "value": 51,
+        "unit": "kiloohms",
+        "tolerance": "±0.5%"
+      }
+    },
+    {
+      "uuid": "1cb18e15-1fc5-4375-8a24-ca6eee130a27",
+      "description": "Only one band",
+      "comments": [
+        "One band resistors only have the color black with a value of 0 and no tolerance."
+      ],
+      "property": "labelDecoder",
+      "input": {
+        "colors": ["black"]
+      },
+      "expected": {
+        "value": 0,
+        "unit": "ohms"
+      }
+    },
+    {
+      "uuid": "7e6841b9-0d11-43fb-85ad-be50e49b0656",
+      "description": "Orange, orange, yellow, black and brown",
+      "property": "labelDecoder",
+      "input": {
+        "colors": ["orange", "orange", "yellow", "black", "brown"]
+      },
+      "expected": {
+        "value": 334,
+        "unit": "ohms",
+        "tolerance": "±1%"
+      }
+    },
+    {
+      "uuid": "00019463-44d1-47f5-b59f-f3e7defc03d9",
+      "description": "Red, green, yellow, yellow and brown",
+      "property": "labelDecoder",
+      "input": {
+        "colors": ["red", "green", "yellow", "yellow", "brown"]
+      },
+      "expected": {
+        "value": 2.54,
+        "unit": "megaohms",
+        "tolerance": "±1%"
+      }
+    },
+    {
+      "uuid": "7998837e-fdfa-48c6-9191-0ab27c4777cc",
+      "description": "Blue, gray, white, brown and brown",
+      "scenarios": ["floating-point"],
+      "property": "labelDecoder",
+      "input": {
+        "colors": ["blue", "grey", "white", "brown", "brown"]
+      },
+      "expected": {
+        "value": 6.89,
+        "unit": "kiloohms",
+        "tolerance": "±1%"
+      }
+    },
+    {
+      "uuid": "51554e9f-c21d-4a73-a54c-1d9a973eaed0",
+      "description": "Violet, orange, red and gray",
+      "scenarios": ["floating-point"],
+      "property": "labelDecoder",
+      "input": {
+        "colors": ["violet", "orange", "red", "grey"]
+      },
+      "expected": {
+        "value": 7.3,
+        "unit": "kiloohms",
+        "tolerance": "±0.05%"
+      }
+    },
+    {
+      "uuid": "68aa7ba3-2334-411a-b3a4-7c47fe20fd99",
+      "description": "Brown, red, orange, green and blue",
+      "scenarios": ["floating-point"],
+      "property": "labelDecoder",
+      "input": {
+        "colors": ["brown", "red", "orange", "green", "blue"]
+      },
+      "expected": {
+        "value": 12.3,
+        "unit": "megaohms",
+        "tolerance": "±0.25%"
+      }
+    },
+    {
+      "uuid": "f6069edc-099b-429b-b2a9-bbe2537d2fae",
+      "description": "Brown, black, brown, yellow and violet",
+      "scenarios": ["floating-point"],
+      "property": "labelDecoder",
+      "input": {
+        "colors": ["brown", "black", "brown", "yellow", "violet"]
+      },
+      "expected": {
+        "value": 1.01,
+        "unit": "megaohms",
+        "tolerance": "±0.1%"
+      }
+    },
+    {
+      "uuid": "8fce56df-326e-45fe-9265-b69c334b9023",
+      "description": "Brown, black, red and red",
+      "property": "labelDecoder",
+      "input": {
+        "colors": ["brown", "black", "red", "red"]
+      },
+      "expected": {
+        "value": 1,
+        "unit": "kiloohms",
+        "tolerance": "±2%"
+      }
+    }
+  ]
+}
