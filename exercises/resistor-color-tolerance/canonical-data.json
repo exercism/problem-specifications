@@ -54,6 +54,20 @@
       }
     },
     {
+      "uuid": "a182cca5-4f3c-49f2-8d46-709d11624353",
+      "reimplements": "c001757b-d388-4f42-9987-23e42bc22d68",
+      "description": "Green, brownm orange and grey",
+      "property": "labelDecoder",
+      "input": {
+        "colors": ["green", "brown", "orange", "grey"]
+      },
+      "expected": {
+        "value": 51,
+        "unit": "kiloohms",
+        "tolerance": "±0.05%"
+      }
+    },
+    {
       "uuid": "1cb18e15-1fc5-4375-8a24-ca6eee130a27",
       "description": "Only one band",
       "comments": [
