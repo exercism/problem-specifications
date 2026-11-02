@@ -235,6 +235,23 @@
             "phrase": "quick fast run"
           },
           "expected": "ickquay astfay unray"
+        },
+        {
+          "uuid": "44616581-5ce3-4a81-82d0-40c7ab13d2d0",
+          "reimplements": "44616581-5ce3-4a81-82d0-40c7ab13d2cf",
+          "description": "a whole phrase",
+          "comments": [
+            "Adds a variety of word types to test phrase",
+            "so that phrase contain words of different types",
+            "",
+            "(unlike the original test, in which a phrase",
+            "contains only words starting with consonants)"
+          ],
+          "property": "translate",
+          "input": {
+            "phrase": "why do squids enjoy xrays"
+          },
+          "expected": "ywhay oday idssquay enjoyay xrayay"
         }
       ]
     }
