@@ -252,6 +252,19 @@
             "phrase": "why do squids enjoy xrays"
           },
           "expected": "ywhay oday idssquay enjoyay xrayay"
+        },
+        {
+          "uuid": "44616581-5ce3-4a81-82d0-40c7ab13d2d1",
+          "reimplements": "44616581-5ce3-4a81-82d0-40c7ab13d2d0",
+          "description": "a whole phrase",
+          "comments": [
+            "A typo in expected value is fixed (missing 's' in xraysay)"
+          ],
+          "property": "translate",
+          "input": {
+            "phrase": "why do squids enjoy xrays"
+          },
+          "expected": "ywhay oday idssquay enjoyay xraysay"
         }
       ]
     }
