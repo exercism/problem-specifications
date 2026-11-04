@@ -241,11 +241,32 @@
           "reimplements": "44616581-5ce3-4a81-82d0-40c7ab13d2cf",
           "description": "a whole phrase",
           "comments": [
-            "Adds a variety of word types to test phrase",
-            "so that phrase contain words of different types",
+            "This test is invalid. Do not use it.",
             "",
-            "(unlike the original test, in which a phrase",
-            "contains only words starting with consonants)"
+            "It have a typo that is caused by attempt to type",
+            "by hand the expectation message provided in forum.",
+            "The Exercism forum only have graphical interface",
+            "(to the best the current test author knows), and the",
+            "development machine lacks any graphical interface,",
+            "so the current test author tried to type phrase",
+            "and the expecation message from smartphone screen",
+            "to development machine console by hand.",
+            "",
+            "Use original test or the next reimplementation."
+          ],
+          "property": "translate",
+          "input": {
+            "phrase": "why do squids enjoy xrays"
+          },
+          "expected": "ywhay oday idssquay enjoyay xrayay"
+        },
+        {
+          "uuid": "44616581-5ce3-4a81-82d0-40c7ab13d2d1",
+          "reimplements": "44616581-5ce3-4a81-82d0-40c7ab13d2d0",
+          "description": "a whole phrase",
+          "comments": [
+            "Adds a variety of word types to test phrase",
+            "so that phrase contain words of different types"
           ],
           "property": "translate",
           "input": {
