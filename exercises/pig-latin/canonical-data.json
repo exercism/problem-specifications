@@ -241,18 +241,7 @@
           "reimplements": "44616581-5ce3-4a81-82d0-40c7ab13d2cf",
           "description": "a whole phrase",
           "comments": [
-            "This test is invalid. Do not use it.",
-            "",
-            "It have a typo that is caused by attempt to type",
-            "by hand the expectation message provided in forum.",
-            "The Exercism forum only have graphical interface",
-            "(to the best the current test author knows), and the",
-            "development machine lacks any graphical interface,",
-            "so the current test author tried to type phrase",
-            "and the expecation message from smartphone screen",
-            "to development machine console by hand.",
-            "",
-            "Use original test or the next reimplementation."
+            "Expectation string in this attempt is not correct."
           ],
           "property": "translate",
           "input": {
@@ -273,7 +262,7 @@
             "phrase": "why do squids enjoy xrays"
           },
           "expected": "ywhay oday idssquay enjoyay xraysay"
-        }
+        }r
       ]
     }
   ]
