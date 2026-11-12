@@ -520,6 +520,31 @@
           "expected": [11]
         },
         {
+          "uuid": "3ce7a6d1-8a01-48f3-9ee8-66ae48a7dac6",
+          "description": "can use built-in words as they were when the word was defined",
+          "property": "evaluate",
+          "input": {
+            "instructions": [
+              ": sum + ;",
+              ": + * ;",
+              "2 3 sum"
+            ]
+          },
+          "expected": [5]
+        },
+        {
+          "uuid": "9972320e-dc7c-496e-a880-f09ea5009559",
+          "description": "can define word that uses built-in word with the same name",
+          "property": "evaluate",
+          "input": {
+            "instructions": [
+              ": dup dup dup ;",
+              "1 dup"
+            ]
+          },
+          "expected": [1, 1, 1]
+        },
+        {
           "uuid": "35958cee-a976-4a0f-9378-f678518fa322",
           "description": "cannot redefine non-negative numbers",
           "property": "evaluate",
