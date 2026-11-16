@@ -42,7 +42,7 @@
     },
     {
       "uuid": "c001757b-d388-4f42-9987-23e42bc22d68",
-      "description": "Green, brownm orange and grey",
+      "description": "Green, brown, orange and grey",
       "property": "labelDecoder",
       "input": {
         "colors": ["green", "brown", "orange", "grey"]
