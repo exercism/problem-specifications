@@ -16,7 +16,7 @@
     },
     {
       "uuid": "8bdeb354-b8cf-47c1-96e4-84dceda90f8c",
-      "description": "Blue, gray, brown and violet",
+      "description": "Blue, grey, brown and violet",
       "property": "labelDecoder",
       "input": {
         "colors": ["blue", "grey", "brown", "violet"]
@@ -110,7 +110,7 @@
     },
     {
       "uuid": "7998837e-fdfa-48c6-9191-0ab27c4777cc",
-      "description": "Blue, gray, white, brown and brown",
+      "description": "Blue, grey, white, brown and brown",
       "scenarios": ["floating-point"],
       "property": "labelDecoder",
       "input": {
@@ -124,7 +124,7 @@
     },
     {
       "uuid": "51554e9f-c21d-4a73-a54c-1d9a973eaed0",
-      "description": "Violet, orange, red and gray",
+      "description": "Violet, orange, red and grey",
       "scenarios": ["floating-point"],
       "property": "labelDecoder",
       "input": {
