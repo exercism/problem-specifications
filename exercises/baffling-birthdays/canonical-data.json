@@ -3,7 +3,7 @@
   "comments": [
     "Dates are formatted as 'YYYY-MM-DD'.",
     "",
-    "To increase the likelihood of consistent result, the tests should run the code returning random results many times.",
+    "To increase the likelihood of consistent results, the tests should run the code returning random results many times.",
     "",
     "The expected probability values should be compared using some tolerance to allow for small deviations."
   ],

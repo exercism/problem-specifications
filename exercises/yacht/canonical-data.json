@@ -2,7 +2,7 @@
   "exercise": "yacht",
   "comments": [
     "The dice are represented always as a list of exactly five integers",
-    "with values between 1 and 6 inclusive. The category is an string.",
+    "with values between 1 and 6 inclusive. The category is a string.",
     "the categories are 'ones' to 'sixes',",
     "Then 'full house',",
     "     'four of a kind'",

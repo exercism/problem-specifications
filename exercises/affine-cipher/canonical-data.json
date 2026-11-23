@@ -1,7 +1,7 @@
 {
   "exercise": "affine-cipher",
   "comments": [
-    "The test are divided into two groups: ",
+    "The tests are divided into two groups: ",
     "* Encoding from English to affine cipher",
     "* Decoding from affine cipher to all-lowercase-mashed-together English"
   ],
