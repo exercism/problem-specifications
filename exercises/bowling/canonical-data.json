@@ -226,7 +226,7 @@
     },
     {
       "uuid": "6380495a-8bc4-4cdb-a59f-5f0212dbed01",
-      "description": "the second bonus rolls after a strike in the last frame cannot be a strike if the first one is not a strike",
+      "description": "the second bonus roll after a strike in the last frame cannot be a strike if the first one is not a strike",
       "property": "roll",
       "input": {
         "previousRolls": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6],
