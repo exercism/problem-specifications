@@ -110,7 +110,7 @@
     },
     {
       "uuid": "d572bdba-c127-43ed-bdcd-6222ac83d9f7",
-      "description": "6 level nesting",
+      "description": "5 level nesting with multiple nested arrays",
       "property": "flatten",
       "input": {
         "array": [
@@ -238,7 +238,7 @@
     },
     {
       "uuid": "ef1d4790-1b1e-4939-a179-51ace0829dbd",
-      "description": "6 level nest list with null values",
+      "description": "4 level nest list with null values",
       "property": "flatten",
       "input": {
         "array": [
@@ -278,7 +278,7 @@
     {
       "uuid": "dc90a09c-5376-449c-a7b3-c2d20d540069",
       "reimplements": "ef1d4790-1b1e-4939-a179-51ace0829dbd",
-      "description": "6 level nested array with null values",
+      "description": "4 level nested array with null values",
       "comments": ["Replaces references to lists with arrays in description."],
       "property": "flatten",
       "input": {

@@ -284,7 +284,7 @@
         },
         {
           "uuid": "aeee1ef3-93c7-4cd5-af10-876f8c9ccc73",
-          "description": "Multiple files, one match, print file names flag",
+          "description": "Multiple files, several matches, print file names flag",
           "property": "grep",
           "input": {
             "pattern": "who",

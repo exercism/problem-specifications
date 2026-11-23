@@ -189,7 +189,7 @@
     },
     {
       "uuid": "3f6c408c-4331-42b6-bb6c-3ad0823e568a",
-      "description": "format non-exceptional ordinal numeral 72 ending in nd even though it is a multiple of 12",
+      "description": "format exceptional ordinal numeral 72 ending in nd even though it is a multiple of 12",
       "property": "format",
       "input": {
         "name": "Ugo",
@@ -209,7 +209,7 @@
     },
     {
       "uuid": "b37c332d-7f68-40e3-8503-e43cbd67a0c4",
-      "description": "format exceptional ordinal numeral 100",
+      "description": "format non-exceptional ordinal numeral 100",
       "property": "format",
       "input": {
         "name": "John",
