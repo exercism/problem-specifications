@@ -131,7 +131,7 @@
     },
     {
       "uuid": "0d0b8f6a-1915-46f5-a630-1ff06af9da08",
-      "description": "4M in the ninth month translates to the first workday of the fourth month of next year",
+      "description": "4M in the eleventh month translates to the first workday of the fourth month of next year",
       "property": "deliveryDate",
       "input": {
         "meetingStart": "2019-11-18T15:15:00",

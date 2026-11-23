@@ -63,7 +63,7 @@
     },
     {
       "uuid": "a9743178-5642-4cc0-8fdb-00d6b031c3a0",
-      "description": "1500 pieces landscape puzzle with 30 rows and 1.6 aspect ratio",
+      "description": "1500 pieces landscape puzzle with 30 rows and 5:3 aspect ratio",
       "property": "jigsawData",
       "input": {
         "rows": 30,
