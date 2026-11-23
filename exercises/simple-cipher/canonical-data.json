@@ -33,7 +33,7 @@
         },
         {
           "uuid": "8143c684-6df6-46ba-bd1f-dea8fcb5d265",
-          "description": "Is reversible. I.e., if you apply decode in a encoded result, you must see the same plaintext encode parameter as a result of the decode method",
+          "description": "Is reversible. I.e., if you apply decode to an encoded result, you must see the same plaintext encode parameter as a result of the decode method",
           "scenarios": ["random"],
           "property": "decode",
           "input": {
@@ -79,7 +79,7 @@
         },
         {
           "uuid": "70a16473-7339-43df-902d-93408c69e9d1",
-          "description": "Is reversible. I.e., if you apply decode in a encoded result, you must see the same plaintext encode parameter as a result of the decode method",
+          "description": "Is reversible. I.e., if you apply decode to an encoded result, you must see the same plaintext encode parameter as a result of the decode method",
           "property": "decode",
           "input": {
             "key": "abcdefghij",

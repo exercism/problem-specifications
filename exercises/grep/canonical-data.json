@@ -238,7 +238,7 @@
       ]
     },
     {
-      "description": "Test grepping multiples files at once",
+      "description": "Test grepping multiple files at once",
       "cases": [
         {
           "uuid": "ba496a23-6149-41c6-a027-28064ed533e5",

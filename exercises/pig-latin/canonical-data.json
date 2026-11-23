@@ -242,7 +242,7 @@
           "description": "a whole phrase",
           "comments": [
             "Adds a variety of word types to test phrase",
-            "so that phrase contain words of different types",
+            "so that the phrase contains words of different types",
             "",
             "(unlike the original test, in which a phrase",
             "contains only words starting with consonants)"
