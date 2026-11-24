@@ -13,12 +13,12 @@ Although all monoalphabetic ciphers are weak, the affine cipher is much stronger
 The encryption function is:
 
 ```text
-E(i) = (ai + b) mod m
+E(x) = (ax + b) mod m
 ```
 
 Where:
 
-- `i` is the letter's index from `0` to the length of the alphabet - 1.
+- `x` is the letter's index from `0` to the length of the alphabet - 1.
 - `m` is the length of the alphabet.
   For the Latin alphabet `m` is `26`.
 - `a` and `b` are integers which make up the encryption key.
@@ -42,7 +42,7 @@ D(y) = (a^-1)(y - b) mod m
 
 Where:
 
-- `y` is the numeric value of an encrypted letter, i.e., `y = E(i)`
+- `y` is the numeric value of an encrypted letter, i.e., `y = E(x)`
 - it is important to note that `a^-1` is the modular multiplicative inverse (MMI) of `a mod m`
 - the modular multiplicative inverse only exists if `a` and `m` are coprime.
 
