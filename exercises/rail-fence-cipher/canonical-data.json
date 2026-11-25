@@ -1,9 +1,6 @@
 {
   "exercise": "rail-fence-cipher",
-  "comments": [
-    "The tests do not expect any normalization or cleaning.",
-    "That trade is tested in enough other exercises."
-  ],
+  "comments": ["The tests do not expect any normalization or cleaning."],
   "cases": [
     {
       "description": "encode",
