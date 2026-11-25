@@ -1,6 +1,6 @@
 # Instructions
 
-In a word search puzzle, you find specific words hidden in a rectangular grid of letters
+In a word search puzzle, you find specific words hidden in a rectangular grid of letters.
 
 For example:
 
