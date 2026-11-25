@@ -1,4 +1,4 @@
 title = "Grep"
-blurb = "Search files for lines matching a search string."
+blurb = "Search files for lines matching a pattern."
 source = "Conversation with Nate Foster."
 source_url = "https://www.cs.cornell.edu/courses/cs3110/2014sp/hw/0/ps0.pdf"

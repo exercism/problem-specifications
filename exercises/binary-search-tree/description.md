@@ -6,7 +6,7 @@ When we need to represent sorted data, an array does not make a good data struct
 
 Say we have the array `[1, 3, 4, 5]`, and we add 2 to it so it becomes `[1, 3, 4, 5, 2]`.
 Now we must sort the entire array again!
-We can improve on this by realizing that we only need to make space for the new item `[1, nil, 3, 4, 5]`, and then add the item in the space we added.
+We can improve on this by realizing that we only need to make space for the new item `[1, nil, 3, 4, 5]`, and then adding the item in the space we added.
 But this still requires us to shift many elements down by one.
 
 Binary Search Trees, however, can operate on sorted data much more efficiently.
