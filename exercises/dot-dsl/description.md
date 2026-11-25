@@ -3,7 +3,7 @@
 A [Domain Specific Language (DSL)][dsl] is a small language optimized for a specific domain.
 Since a DSL is targeted, it can greatly impact productivity/understanding by allowing the writer to declare _what_ they want rather than _how_.
 
-One problem area where they are applied are complex customizations/configurations.
+One problem area where they are applied is complex customizations/configurations.
 
 For example the [DOT language][dot-language] allows you to write a textual description of a graph which is then transformed into a picture by one of the [Graphviz][graphviz] tools (such as `dot`).
 A simple graph looks like this:

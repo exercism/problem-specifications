@@ -1,6 +1,6 @@
 # Instructions
 
-Your task is to convert a number between 1 and 31 to a sequence of actions in the secret handshake.
+Your task is to convert a number between 0 and 31 to a sequence of actions in the secret handshake.
 
 The sequence of actions is chosen by looking at the rightmost five digits of the number once it's been converted to binary.
 Start at the right-most digit and move left.
