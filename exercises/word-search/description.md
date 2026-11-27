@@ -1,6 +1,6 @@
 # Instructions
 
-In word search puzzles you get a square of letters and have to find specific words in them.
+In a word search puzzle, you find specific words hidden in a rectangular grid of letters.
 
 For example:
 

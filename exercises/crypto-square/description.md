@@ -57,7 +57,7 @@ For phrases that are `n` characters short of the perfect rectangle, pad each of 
 "imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn  sseoau "
 ```
 
-Notice that were we to stack these, we could visually decode the ciphertext back in to the original message:
+Notice that were we to stack these, we could visually decode the ciphertext back into the original message:
 
 ```text
 "imtgdvs"

@@ -64,7 +64,7 @@ More information regarding how to find a Modular Multiplicative Inverse and what
 Finding MMI for `a = 15`:
 
 - `(15 * x) mod 26 = 1`
-- `(15 * 7) mod 26 = 1`, ie. `105 mod 26 = 1`
+- `(15 * 7) mod 26 = 1`, i.e. `105 mod 26 = 1`
 - `7` is the MMI of `15 mod 26`
 
 [mmi]: https://en.wikipedia.org/wiki/Modular_multiplicative_inverse

@@ -20,7 +20,7 @@ An SGF file may look like this:
 This is a tree with three nodes:
 
 - The top level node has three properties: FF\[4\] (key = "FF", value
-  = "4"), C\[root\](key = "C", value = "root") and SZ\[19\] (key =
+  = "4"), C\[root\] (key = "C", value = "root") and SZ\[19\] (key =
   "SZ", value = "19"). (FF indicates the version of SGF, C is a
   comment and SZ is the size of the board.)
   - The top level node has a single child which has a single property:
